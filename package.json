@@ -1,0 +1,34 @@
+{
+  "name": "@thunderbird-tools/knowledge",
+  "version": "0.1.0",
+  "description": "Standalone Thunderbird knowledge center with a tb-tools integration",
+  "type": "module",
+  "license": "ISC",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "bin": {
+    "tb-knowledge": "cli.mjs"
+  },
+  "exports": {
+    ".": "./service.mjs",
+    "./store": "./store.mjs",
+    "./sync": "./sync.mjs",
+    "./cli": "./cli.mjs",
+    "./instructions": "./instructions.mjs",
+    "./generate": "./generate.mjs",
+    "./import": "./import.mjs",
+    "./learning": "./learning.mjs"
+  },
+  "optionalDependencies": {
+    "@huggingface/transformers": "4.3.0"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "files": [
+    "*.mjs",
+    "AGENTS.md",
+    "README.md"
+  ]
+}

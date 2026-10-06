@@ -1,0 +1,12 @@
+node_modules/
+*.tgz
+.DS_Store
+coverage/
+private/
+shared/
+models/
+guides/
+history.git/
+transport.git/
+*.sqlite*
+knowledge-settings.json
