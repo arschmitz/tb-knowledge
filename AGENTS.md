@@ -4,6 +4,12 @@ This repository contains shared knowledge for Thunderbird and its tb-tools
 console. Use simple, direct English. Keep exact identifiers, source links, review
 quotes, and validation limits.
 
+Read CONSUMING.md for retrieval and indexing. SCHEMA.md defines the durable data.
+tb-tools with Codex is the main consumer; other agents can use ordinary file and
+Git tools. Keep useful project lessons in this repository, including style,
+syntax, names, tests, architecture, and breakages. Local capture alone does not
+complete a knowledge contribution.
+
 ## Before implementation or review
 
 1. Identify the affected component, paths, symbols, bug, and review revision.

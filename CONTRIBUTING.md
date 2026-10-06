@@ -19,7 +19,7 @@ give the new note a new unique name, and state the correction explicitly.
 Contradictory claims are a knowledge issue, not a file conflict. Keep both claims,
 their scope, and evidence. Add a resolution only when evidence supports it.
 
-AGENTS.md, README.md, FORMAT.md, and this document define shared conventions.
+AGENTS.md, README.md, FORMAT.md, CONSUMING.md, SCHEMA.md, and this document define shared conventions.
 Changes need deliberate review. Automatic learning must not edit them. Resolve
 such conflicts manually after checking both changes. Console sync stops and
 reports unresolved conflicts rather than discarding content.

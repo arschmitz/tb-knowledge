@@ -7,6 +7,8 @@ running console is required.
 
 Start with [AGENTS.md](AGENTS.md). Follow [CONTRIBUTING.md](CONTRIBUTING.md) when
 adding knowledge and [FORMAT.md](FORMAT.md) when writing a note.
+Read [CONSUMING.md](CONSUMING.md) for task retrieval and index setup, and
+[SCHEMA.md](SCHEMA.md) for the durable record format.
 
 - `notes/`: focused Markdown notes with scope, evidence, and uncertainty. Initial
   notes preserve selected knowledge from earlier work. They remain provisional.
@@ -21,9 +23,9 @@ sources stay in `~/.tb-tools/knowledge`. This repository works without those cac
 
 ## Sharing through GitHub
 
-Publish this repository to the GitHub destination you choose. Give readers read
-access and approved contributors write access. Set this clone's `origin` remote
-to that destination. No remote has been supplied by this setup.
+The shared remote is [arschmitz/tb-knowledge](https://github.com/arschmitz/tb-knowledge).
+Give readers read access and approved contributors write access. Set each clone's
+`origin` remote to that repository. Use a separate clone for each writer.
 
 Set `ai.knowledge.repositoryDirectory` in tb-tools to this checkout. The console
 reads its memories, adds eligible evidence, commits new files, and syncs `origin`
@@ -35,6 +37,9 @@ Different uniquely named contributions normally merge without text conflicts.
 Conflicting claims still need evidence to resolve them. Shared instruction changes
 require deliberate review and may require a manual merge.
 
-This starts with a small curated seed from existing memories. It does not publish
-all private transcripts or imported notes. Future shared records grow from the
-repositories enabled in the console configuration.
+History-study findings, syntax and naming lessons, and older project imports feed
+this repository. Console writers publish useful scoped lessons for enabled
+repositories automatically. Raw private sources stay local; their useful claims
+retain explicit provenance and uncertainty. See CONSUMING.md for copied summaries,
+portability corrections, and missing-source limits. The human style guide remains
+a separate publication draft.
