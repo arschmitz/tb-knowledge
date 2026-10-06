@@ -93,11 +93,23 @@ production defect does not justify an unrelated rewrite.
 
 ## Deliver and learn
 
+Self-review the actual final test diff against its purpose, callers, state and
+cleanup contract, naming/style, meaningful assertions and coequal accessibility
+criteria. Resolve the configured CodeRabbit CLI and check its version/options;
+use a mode that covers the actual committed or uncommitted test changes without
+creating a commit just for the review. Recheck useful findings independently.
+Record unavailable or inconclusive automated review separately. Do not treat
+passing assertions as a substitute for this source and test review.
+
 Report test paths, manifest changes, the acceptance-criterion mapping, exact
 commands/outcomes, regression-detection evidence and gaps. Use
 `Minimum test coverage:` when drafting an implementation story. Review the final
 diff and confirm unrelated work remains. Commit, amend or publish only within the
 task's authorization.
+Only report complete coverage when each applicable criterion and final check is
+supported by evidence. Keep unrun, failed or blocked checks visible. Record
+repaired earlier failures with their passing replacement checks; do not carry
+withdrawn findings forward as current defects.
 
 Save useful test-harness and behavior lessons in the shared knowledge clone using
 AGENTS.md and FORMAT.md, with source references, validation and uncertainty. Keep
