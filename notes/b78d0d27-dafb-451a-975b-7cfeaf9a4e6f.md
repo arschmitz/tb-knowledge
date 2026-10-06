@@ -1,0 +1,35 @@
+<!-- knowledge: {"repository":"thunderbird","at":"2026-10-06T19:28:47.208Z","paths":["mail/base/content/widgets/auto-tree-view.mjs"],"source":{"reference":"https://github.com/thunderbird/thunderbird-desktop/commit/46228449fd6","status":"supported","publicationKey":"1daa2de00b686912d6c06815413c4e9fd4081c65a3b64efd38b0d2aa73e3d77e"}} -->
+# Apply persisted sort before attaching a new tree view
+
+The D207127 reviewer questioned apparent recursive sorting and display churn. The landed view setter reads sortColumn and sortDirection from xulStore, calls view.sortBy before super.view, then updates the header. Sorting before attachment avoids showing unsorted rows and redrawing them immediately. Current code preserves that order; its header update now uses aria-sort based on the view’s accepted values.
+
+Scope: Tree view sorting.
+
+Paths:
+
+- `mail/base/content/widgets/auto-tree-view.mjs`
+
+## Evidence
+
+[Shared lesson record](../records/609a634c165a13fa7c041f0aa94f0da186cf21181609c6a40b051df12acc4519.json).
+
+- https://github.com/thunderbird/thunderbird-desktop/commit/46228449fd6
+- https://bugzilla.mozilla.org/show_bug.cgi?id=1890731
+- https://phabricator.services.mozilla.com/D207127
+- https://github.com/thunderbird/thunderbird-desktop/commit/0d100fc07fb3
+
+Source record: `4c20c2df80ee703660ee8dc4561b544d04f29e952f9d36e6c26ca7693856fd54`
+
+~~~
+view.sortBy(sortColumn, sortDirection);
+~~~
+
+## Validation and limits
+
+Status: **supported**. This backfill preserves earlier findings and their uncertainty. It does not count unstudied commits as complete. Historical test outcomes remain reported outcomes. No runtime tests or builds were rerun for publication.
+
+Some source material is an older import or lacks independent public-access confirmation. Its useful lesson is included as recorded context. Raw personal transcripts stay outside this repository. Exact earlier evidence IDs: `3d7490d24cff92ed9979b05bacb3659d60ea9c9a526da6b949adfa0677297401`, `6dd7768b12a6a3dfac9404d0c29c3097ac4e6d0b431c16ed2184fcd1a3e973a7`.
+
+## Correction
+
+The earlier capture stayed in the private local store. This contribution places the learned claim in the shared repository. Earlier lesson records: `c6a9fa2eb110064fb154e8f127a11e8d5eaadb8ad065dd50508d7a0fb254d42e`.

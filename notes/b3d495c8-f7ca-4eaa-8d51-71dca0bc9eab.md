@@ -1,0 +1,26 @@
+<!-- knowledge: {"repository":"thunderbird","at":"2026-10-06T19:25:18.044Z","paths":[],"source":{"reference":"knowledge-record:fc327268ed309a8b5ddc0fd304a2d93defc9d1b3a8c91fa245f6a06b4d792a9e","status":"provisional","publicationKey":"7ba0ed1d9424fa6662f7dc4f986c8b3ce709a2fdd7ab30f9ba06ac526bd4f6e2"}} -->
+# Thunderbird D320748 PDF.js actor rename exact patch review
+
+`Pdfjs` becomes `PdfJs` in `mail/base/content/mailWindow.js`, `mail/components/MailGlue.sys.mjs`, `mail/components/prompts/PromptCollection.sys.mjs`, and `mail/test/browser/keyboard/browser_pdfSpace.js`; full-tree search found exactly those four actor-name references. `PDFJS:Save`, `pdfjs:saveComplete`, and `OnBeforeUnloadPDFjs*` are protocol/localization identifiers and correctly remain unchanged. [Task 1]
+
+Scope: general.
+
+This is a workflow or historical planning observation.
+
+## Evidence
+
+[Shared lesson record](../records/fc327268ed309a8b5ddc0fd304a2d93defc9d1b3a8c91fa245f6a06b4d792a9e.json).
+
+- See the original record IDs below. This imported claim has no independently checked public source link.
+
+
+
+## Validation and limits
+
+Status: **provisional**. This backfill preserves earlier findings and their uncertainty. It does not count unstudied commits as complete. Historical test outcomes remain reported outcomes. No runtime tests or builds were rerun for publication.
+
+Some source material is an older import or lacks independent public-access confirmation. Its useful lesson is included as recorded context. Raw personal transcripts stay outside this repository. Exact earlier evidence IDs: `0afeefe3e85fa1b49d4fe6b46c2c92a8cc58fcc1482d17a9fd67f12c95c6e019`.
+
+## Correction
+
+The earlier capture stayed in the private local store. This contribution places the learned claim in the shared repository. Earlier lesson records: `598bed72d7775baea56d8cccc761e73f61fe14c2792426616b62a1b2571ad3b4`.

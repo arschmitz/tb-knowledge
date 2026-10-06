@@ -1,0 +1,26 @@
+<!-- knowledge: {"repository":"thunderbird","at":"2026-10-06T19:25:18.046Z","paths":[],"source":{"reference":"knowledge-record:c986d82e2bbf6833716b624db896e5be8d868c4a918a12bd1bba760fc33456d1","status":"provisional","publicationKey":"2c23046dd2cb9348e0b2d0376a1f7b1c0381243293fad4b6272da3ba25372a69"}} -->
+# Thunderbird Account Hub focused custom-element ESLint fixes
+
+Focused validation passed with `../mach lint --linter eslint mail/components/accountcreation/content/widgets/account-hub-radio-card-large.mjs` and `git diff --check` (0 problems); this establishes lint/whitespace coverage, not runtime behavior coverage. [Task 1]
+
+Scope: general.
+
+This is a workflow or historical planning observation.
+
+## Evidence
+
+[Shared lesson record](../records/c986d82e2bbf6833716b624db896e5be8d868c4a918a12bd1bba760fc33456d1.json).
+
+- See the original record IDs below. This imported claim has no independently checked public source link.
+
+
+
+## Validation and limits
+
+Status: **provisional**. This backfill preserves earlier findings and their uncertainty. It does not count unstudied commits as complete. Historical test outcomes remain reported outcomes. No runtime tests or builds were rerun for publication.
+
+Some source material is an older import or lacks independent public-access confirmation. Its useful lesson is included as recorded context. Raw personal transcripts stay outside this repository. Exact earlier evidence IDs: `c010f744cf1f3de9f162b27f32722d0a5e4cade3f5ff9874c1d62d5082e934e4`.
+
+## Correction
+
+The earlier capture stayed in the private local store. This contribution places the learned claim in the shared repository. Earlier lesson records: `88e6f8280fbaefc1be31d2d03ca3e67b7237d66e40ce0cb629de90bbd6966233`.
