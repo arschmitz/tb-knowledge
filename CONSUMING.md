@@ -30,10 +30,10 @@ and exceptions. The human publication style guide remains a separate draft.
 Use Node.js 22.13 or later and the tb-tools checkout. Put local caches in a
 separate directory. A fresh clone is enough to rebuild exact search:
 
-The implementation is available on the tb-tools branch
-[`codex/standalone-knowledge`](https://github.com/arschmitz/tb-tools/tree/codex/standalone-knowledge).
-Use that branch until these changes enter the default branch. This is console
-code; this knowledge repository keeps only data and consumer instructions.
+The implementation is available on the tb-tools default branch,
+[`master`](https://github.com/arschmitz/tb-tools/tree/master).
+This is console code; this knowledge repository keeps only data and consumer
+instructions.
 
 ```sh
 node /path/to/tb-tools/commands/knowledge/cli.mjs rebuild \
