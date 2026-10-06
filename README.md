@@ -9,6 +9,8 @@ Start with [AGENTS.md](AGENTS.md). Follow [CONTRIBUTING.md](CONTRIBUTING.md) whe
 adding knowledge and [FORMAT.md](FORMAT.md) when writing a note.
 Read [CONSUMING.md](CONSUMING.md) for task retrieval and index setup, and
 [SCHEMA.md](SCHEMA.md) for the durable record format.
+Use [SKILLS.md](SKILLS.md) to select a standalone review, local verification,
+test-writing, CI-debugging or conflict-resolution workflow.
 
 - `notes/`: focused Markdown notes with scope, evidence, and uncertainty. Initial
   notes preserve selected knowledge from earlier work. They remain provisional.
@@ -16,6 +18,8 @@ Read [CONSUMING.md](CONSUMING.md) for task retrieval and index setup, and
   use a digest of their content as their name. Search can be rebuilt from these
   records and the Markdown notes.
 - `AGENTS.md`: how to retrieve, apply, and extend this memory.
+- `skills/`: shareable workflow instructions and references. These retain the
+  specialized criteria without requiring the console or replacing personal skills.
 
 Search, automatic capture, learning, and sync code belong to the tb-tools console,
 not this repository. Local indexes, models, personal task history, and private

@@ -5,6 +5,12 @@ search, cited learning, source checks, private capture, and Git sync. Other agen
 can use the same notes and records with file and Git tools. They do not need to
 run the console or an AI learning job.
 
+For a repeatable task workflow, select a standalone skill from SKILLS.md. A plain
+agent can read its SKILL.md directly. Codex can discover a separately installed
+folder. Neither path replaces the console or personal variants. Skills are
+reviewed instructions; the console syncs them but does not index them as lesson
+evidence or run learning over their text.
+
 ## Start with a task
 
 Read AGENTS.md. Identify the repository (`thunderbird` or `tb-tools`), component,

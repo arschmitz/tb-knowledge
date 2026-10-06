@@ -5,6 +5,7 @@ console. Use simple, direct English. Keep exact identifiers, source links, revie
 quotes, and validation limits.
 
 Read CONSUMING.md for retrieval and indexing. SCHEMA.md defines the durable data.
+SKILLS.md lists standalone workflows. Read only the skill needed for the task.
 tb-tools with Codex is the main consumer; other agents can use ordinary file and
 Git tools. Keep useful project lessons in this repository, including style,
 syntax, names, tests, architecture, and breakages. Local capture alone does not
@@ -48,6 +49,10 @@ Never edit or delete an existing note or record to replace a claim. Add a new
 note identifying the old file or ID, what changes, why, and the exact replacement
 evidence. Keep scope narrow. A new date alone cannot supersede a decision.
 If disagreement remains, preserve both accounts and mark it unresolved.
+
+Skills and their references are reviewed instructions, separate from immutable
+evidence. Keep console and personal variants intact. Do not let automatic learning
+edit skills or treat their instruction text as learned source evidence.
 
 Fetch before pushing. Merge new uniquely named files and retry rejected pushes.
 Never force-push or discard another contributor's records. Follow CONTRIBUTING.md

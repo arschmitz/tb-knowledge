@@ -5,6 +5,13 @@ This document lets other consumers read the durable data without SQLite or Codex
 The repository contains data and instructions. It does not contain executable
 indexing or learning code.
 
+SKILLS.md and `skills/<name>/SKILL.md` with their Markdown references are reviewed
+workflow instructions. They are not JSON records or Markdown knowledge notes.
+The console accepts their regular, non-executable files during Git sync and does
+not add their text to evidence, lessons or extraction jobs. They can be updated
+through deliberate review; immutable note/record correction rules do not apply
+to instruction edits.
+
 ## JSON records
 
 Each `records/<id>.json` file contains one UTF-8 JSON object:
