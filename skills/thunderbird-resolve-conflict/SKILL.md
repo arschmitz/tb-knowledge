@@ -1,6 +1,6 @@
 ---
 name: thunderbird-resolve-conflict
-description: Resolve active Thunderbird Git conflicts as one coherent batch, preserve both sides' behavior and unrelated work, validate the result, and stage only the requested paths without advancing the sequencer.
+description: Resolve active Thunderbird Git conflicts using project contract/dependency knowledge, guarded index snapshots, both sides' behavior, detailed style/accessibility checks and focused validation, without implicit sequencer advancement.
 ---
 
 # Resolve a Thunderbird conflict
@@ -8,6 +8,23 @@ description: Resolve active Thunderbird Git conflicts as one coherent batch, pre
 Resolve the requested active conflicts, rather than only explaining them. Treat
 all related conflicted files as one batch. Preserve the intent and dependencies
 of both sides. Use simple, direct English.
+
+## Required references and knowledge workflow
+
+Read [knowledge.md](references/knowledge.md) first. Locate the shared clone, read
+its instructions, and search conflict paths, renamed symbols, both contracts,
+dependency decisions, known breakages and relevant style/test lessons. Use
+`tb knowledge search --repository thunderbird 'terms'` and `tb knowledge show ID`,
+or scoped `rg` in `notes/` and `records/`. Check evidence against both sides and
+the current source/index. Record applied/rejected/inapplicable decisions. Save
+specific dependency and combined-behavior lessons with validation, not just a
+statement that conflict markers were removed.
+
+Read [conflict mechanics](references/conflict-mechanics.md) for snapshots,
+ours/theirs orientation, conflict classes, dependencies, concurrent edits,
+staging and completion. Read [style and formatting](references/style-and-formatting.md)
+for the merged code, [accessibility](references/accessibility.md) for affected
+UI/lifecycle, and [validation](references/validation.md) before checks/builds/tests.
 
 ## Establish the actual Git state
 
@@ -82,6 +99,14 @@ and dependent refs, preserve recovery evidence and use expected-old-value guards
 never move a branch based on an assumed hash.
 
 ## Deliver and learn
+
+Before completion, confirm every requested path has a deliberate decision;
+required behavior/dependencies from both sides remain; syntax/resources/names
+agree; applicable style and a11y checks are complete; the unmerged index and final
+marker scan reflect current state; and unrelated staged/unstaged work remains.
+Report actual staged paths, any remaining unresolved entries and validation gaps.
+Include knowledge used and saved new lessons. State whether the operation remains
+waiting, or was advanced under explicit authorization.
 
 Show one combined resolution diff and explain each behavior retained from either
 side. Report staged paths, remaining conflicts, exact commands/results, runtime

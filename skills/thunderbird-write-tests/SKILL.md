@@ -1,6 +1,6 @@
 ---
 name: thunderbird-write-tests
-description: Add focused Thunderbird regression tests that prove behavior, use the right comm harness and manifests, cover accessibility and asynchronous state, and run with matching source and binaries.
+description: Write Thunderbird regression tests using project behavior and breakage lessons, accepted test names/helpers/manifests, meaningful async and accessibility assertions, and matching-source validation.
 ---
 
 # Write Thunderbird tests
@@ -9,6 +9,23 @@ Write the smallest durable test set for the requested behavior. Preserve the
 patch's intended behavior and accessibility. A test must detect a real failure;
 matching implementation text, internal call counts or incidental markup is not
 enough. Use simple, direct English in names, comments and the report.
+
+## Required references and knowledge workflow
+
+Read [knowledge.md](references/knowledge.md) first. Find the shared clone, read its
+instructions, and search the component, behavior, known breakage, helper, test
+path, exact failure, and file/task naming conventions. Use
+`tb knowledge search --repository thunderbird 'terms'` and `tb knowledge show ID`,
+or scoped `rg` in `notes/` and `records/`. Follow cited evidence and current source.
+Use relevant lessons in the assertion map; record rejected/inapplicable claims.
+Save new behavior, test-design and harness lessons with actual validation.
+
+Read [test design](references/test-design.md) before authoring. It covers harness
+choice, acceptance/assertion mapping, fixtures, task/file names, manifest details,
+async timelines, meaningful UI assertions, cleanup and red/green proof.
+Read [style and formatting](references/style-and-formatting.md) for edited files,
+[accessibility](references/accessibility.md) for the full affected UI/lifecycle
+pass, and [validation](references/validation.md) before building or testing.
 
 ## Establish the contract and harness
 
@@ -92,6 +109,13 @@ coverage precisely. Keep source changes within the requested task; a discovered
 production defect does not justify an unrelated rewrite.
 
 ## Deliver and learn
+
+Before declaring completion, confirm each criterion has a real protecting
+assertion or a justified gap; files/resources are registered; task names/messages
+explain failures; cleanup survives early failures; the final test was discovered
+and reached its assertions; and proving edits were restored. Complete independent
+source/style/accessibility review and record knowledge use and new saved lessons.
+Do not treat a harness failure or unselected test as regression detection.
 
 Self-review the actual final test diff against its purpose, callers, state and
 cleanup contract, naming/style, meaningful assertions and coequal accessibility

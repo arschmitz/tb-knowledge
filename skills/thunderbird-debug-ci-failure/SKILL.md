@@ -1,6 +1,6 @@
 ---
 name: thunderbird-debug-ci-failure
-description: Investigate Thunderbird Treeherder or Taskcluster failures, attribute every failed job from exact logs and source, and validate requested repairs without hiding existing or unknown failures.
+description: Debug Thunderbird CI using exact per-job logs, project knowledge, independent existing-error comparisons and source causality; validate requested repairs without hiding unknown errors or failed runs.
 ---
 
 # Debug a Thunderbird CI failure
@@ -9,7 +9,30 @@ Continuous integration (CI) runs builds and tests remotely. Start with the selec
 push and task artifacts, not a red dashboard label. Keep the observed run outcome,
 patch attribution and repair state separate. Use simple, direct English.
 
+## Required references and knowledge workflow
+
+Read [knowledge.md](references/knowledge.md) first. Locate the shared clone and
+search exact signatures, jobs/tests, affected paths, provenance errors and prior
+repair/rejection lessons. Use `tb knowledge search --repository thunderbird 'terms'`
+and `tb knowledge show ID`, or scoped `rg` in `notes/` and `records/`. Verify prior
+comparisons are independent and current source still has the claimed mechanism.
+Keep decisions and all material unmatched errors visible. Save new signature,
+behavior, breakage, repair and recovery evidence through the knowledge workflow.
+
+Read [job evidence and repair](references/job-evidence-and-repair.md) for artifact
+selection, signature ledgers, classification, retries/timeouts, provenance,
+ownership, repairs and complete output. Use [validation](references/validation.md)
+before local checks. For source repairs, read
+[style and formatting](references/style-and-formatting.md) and the full applicable
+[accessibility](references/accessibility.md) pass. Diagnosis uses those sections
+when they explain a failure, without authorizing edits.
+
 ## Identify the run and evidence
+
+Use the task's selected investigation checkout and paired Gecko parent. If the
+console supplies an isolated checkout of the tested source tree, use only that
+checkout. Diagnosis must not edit source, tests, index, branches or refs. A later
+requested repair uses its assigned isolated current-source checkout and permissions.
 
 - Record the requested revision, tested `comm` and Gecko revisions, parent/base,
   complete outgoing stack, push ID, every requested failed job ID, run/retry,
@@ -115,6 +138,15 @@ Resume authorized recoverable work through validation and the requested rerun;
 stop duplicate retries or publication when ownership or outcome is uncertain.
 
 ## Deliver and retain evidence
+
+Before reporting, reconcile the requested IDs with the final ledger: no missing
+or duplicate job; no ignored material signature; every existing match has raw
+independent evidence; every patch cause has a source mechanism/owner; every
+remaining gap stays `unknown`. Keep observed run status, patch attribution,
+current repair state, local validation and actual rerun state separate. For a
+repair, inspect the cumulative diff, naming/style, tests and full affected a11y
+criteria; recheck other fixups before authorized publication. Include consulted
+knowledge and saved new lesson references. Do not manufacture complete coverage.
 
 Use the requested schema. For per-job JSON classification, return
 `failures: [{id, cause, reason, evidence}]`, with `cause` equal to `patch`,
