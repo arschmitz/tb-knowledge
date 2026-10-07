@@ -1,0 +1,20 @@
+<!-- knowledge: {"repository":"thunderbird","at":"2026-10-07T02:02:16.310Z","paths":["mail/base/content/about3Pane.js","mail/base/test/browser/browser_groupedBySortPersistence.js"],"source":{"reference":"knowledge-record:997e731eee9a8c1bbbf579a01369edec4d786042c1af4ae8715abbeaecbcecf0","recordId":"997e731eee9a8c1bbbf579a01369edec4d786042c1af4ae8715abbeaecbcecf0","status":"supported","publicationKey":"6c58f033c1578e8a3bb93dbb36afe60460b548ca4f1c43a0753701450801a87c"}} -->
+# Virtual grouping persistence needs frontend transitions and a folder round trip
+
+The current grouped-sort controller rebuilds the view in a batch and explicitly writes gDBView.viewFlags from gViewWrapper._viewFlags for virtual folders when entering and leaving grouping. A backend setter or rebuild alone is insufficient evidence that the frontend persists the desired state. The regression test calls real sortController actions, switches away and back, and checks type, order and grouping for one and multiple backing folders. This adds concrete current evidence to the existing persistence lesson. Manual test proposal: cover both enable and disable transitions and reopen the virtual folder; a setter-only assertion can miss the broken frontend sequence. No runtime test was run in this study.
+
+Scope: message-list.
+
+## Evidence
+
+[Lesson record](../records/997e731eee9a8c1bbbf579a01369edec4d786042c1af4ae8715abbeaecbcecf0.json).
+
+- [Supporting record](../records/142d08896e639355196639957c6635809253a6012f9eea933656e535661d1ade.json)
+- [Supporting record](../records/6c245faee7f54e68e26ebe85c52a1f2183f89866c0bb42396f58ff163815d56f.json)
+- [Supporting record](../records/8b8b3dcd7275d3f4557d71794ea944ae61970c3a95e1fcf0ed78caedbc5e425e.json)
+- [Supporting record](../records/e699726306936a29ccd82e36e60c78acf83908e707c8dd859d04da1072d71690.json)
+- [Supporting record](../records/ff981aab25d8ac0e118224668204bebd421680d2420477145615665c2b29eb5a.json)
+
+## Validation and limits
+
+Status: **supported**. Quoted evidence supports the claim; its interpretation still needs current-source checks.
