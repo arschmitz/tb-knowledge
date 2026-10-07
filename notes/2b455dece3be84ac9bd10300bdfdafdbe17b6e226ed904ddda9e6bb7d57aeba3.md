@@ -1,0 +1,20 @@
+<!-- knowledge: {"repository":"thunderbird","at":"2026-10-07T07:59:45.107Z","paths":["mail/components/im/content/chat-messenger.js"],"source":{"reference":"knowledge-record:2b455dece3be84ac9bd10300bdfdafdbe17b6e226ed904ddda9e6bb7d57aeba3","recordId":"2b455dece3be84ac9bd10300bdfdafdbe17b6e226ed904ddda9e6bb7d57aeba3","status":"supported","publicationKey":"a77802d24185f8d09ecbb8c0afdda327084a7a302a7ccfae82da04a46b288f09"}} -->
+# Load restored chat conversations for either core/tab initialization order
+
+The chat tab calls the shared loader when opened after ChatCore initialization, and initAfterChatCore calls it when a tab already exists. The observer routes chat-core-initialized to that method. The loader sorts restored conversations by case-folded title and adds them through the same path. Preserve both entry orders rather than leaving restoration only in tab opening. These observations are scoped to the cited accepted source and historical changes. Full Bugzilla and historical review timeline/inline discussion remain pending. No Thunderbird runtime, build, lint or live accessibility check was run.
+
+Scope: mail/components/im.
+
+## Evidence
+
+[Lesson record](../records/2b455dece3be84ac9bd10300bdfdafdbe17b6e226ed904ddda9e6bb7d57aeba3.json).
+
+- [Supporting record](../records/011df7b7fcd1087f3720412e2a8be2b7c6310c467a2faa6df632396991adeba6.json)
+- [Supporting record](../records/4f48d349df6214dff41d165dc94e744f95df08a535f007b036f8fdc8800c0751.json)
+- [Supporting record](../records/7ddc113d4b3f6c03edc5dc540980ef3c9249ed191dfe628a9de8793545b7ec0a.json)
+- [Supporting record](../records/7eea799102c6117a72b103c1e7da0a552b76ad7d331ca31c6135c16121503ead.json)
+- [Supporting record](../records/cd1752a86f67ef310ee3781fa54852b352f3a46739fb859e4341d3482da23c9b.json)
+
+## Validation and limits
+
+Status: **supported**. Quoted evidence supports the claim; its interpretation still needs current-source checks.
