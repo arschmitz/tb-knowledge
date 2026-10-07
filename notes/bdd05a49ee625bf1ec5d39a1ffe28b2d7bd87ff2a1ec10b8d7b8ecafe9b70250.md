@@ -1,0 +1,22 @@
+<!-- knowledge: {"repository":"thunderbird","at":"2026-10-07T03:35:34.381Z","paths":["mail/components/extensions/test/browser/browser_ext_cloudFile.js","mail/components/cloudfile/cloudFileAccounts.sys.mjs","mail/components/extensions/parent/ext-cloudFile.js"],"source":{"reference":"knowledge-record:bdd05a49ee625bf1ec5d39a1ffe28b2d7bd87ff2a1ec10b8d7b8ecafe9b70250","recordId":"bdd05a49ee625bf1ec5d39a1ffe28b2d7bd87ff2a1ec10b8d7b8ecafe9b70250","status":"supported","publicationKey":"671f45d205fa7ce04c67904b72f267ed61e6c61a914c0733a7f893ad9d8c40f5"}} -->
+# Preserve the owner of cloud-file error constants during a rename
+
+1008 changes one upload test's string-error branch from cloudFileAccounts.constants to account.constants. The accepted snapshot still has that branch. constants is defined on the cloudFileAccounts manager, while its registered extension provider returns a CloudFileAccount with no constants member in the checked class. Other upload handlers retain the manager lookup. This is an unresolved static owner mismatch limited to the string-error branch; the affected task's ordinary NS_OK upload does not establish that the branch was exercised. No failing test was reproduced and no repair is claimed.
+
+Scope: Cloud-file test constant owner.
+
+## Evidence
+
+[Lesson record](../records/bdd05a49ee625bf1ec5d39a1ffe28b2d7bd87ff2a1ec10b8d7b8ecafe9b70250.json).
+
+- [Supporting record](../records/03539770533f788539f3d585642527b4d2f42b5eae02c8f68f80e4c185b73ddb.json)
+- [Supporting record](../records/5327fb55f74ef2b59b678723ce457f0a57b06d46ff562fb02e2e5af548bcc821.json)
+- [Supporting record](../records/6125d84133111a0dc0db0af5a237011071624771830a059f699b63f29321597f.json)
+- [Supporting record](../records/d182ed1646fa07af16e6e32d24b2ae70b8ed8a45cc6b68d3fe313699f2918862.json)
+- [Supporting record](../records/df2ce99b8c603a1af5d6af4577b7ef2368c497a976388c1aa14893adb9d4b5ea.json)
+- [Supporting record](../records/ed2e38399ff0f42d097c198b228705cba3b156830f5c16e18ab4087eae2c0bfd.json)
+- [Supporting record](../records/ffa763eab16272c301d1159e83c332c3c5b64ff5e0fb1b267f21c221812d9ad1.json)
+
+## Validation and limits
+
+Status: **supported**. Quoted evidence supports the claim; its interpretation still needs current-source checks.
