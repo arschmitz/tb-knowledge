@@ -38,7 +38,10 @@ AGENTS.md. It is supplied directly to console AI turns and to the configured loc
 Codex instructions. It does not depend on a search match. Read the
 [cited practical guide](notes/81596887-76aa-4804-932a-d01b73042690.md) for sentence
 forms, before/after examples, rules versus suggestions, and study limits.
-The guide is provisional. The exhaustive study is not yet complete.
+The guide is provisional. The
+[coverage report](notes/dcf42054-6e08-4658-b6c1-d45f17f0674a.md) records the completed
+file census and automated grammar pass, source-link corrections, and remaining
+extraction and meaning limits. It does not claim a manual review of every comment.
 
 These are deliberate user-directed instruction changes. Automatic learning must
 not edit them. Historical comments remain evidence, not authority. Do not use the
