@@ -31,6 +31,22 @@ requests, and proposed rules. Prefer newer accepted source in the same scope.
 Keep rules outside lint and formatting visible. Preserve older counterexamples
 and exceptions. The human publication style guide remains a separate draft.
 
+## Comment-writing guidance
+
+When writing or reviewing Thunderbird comments, apply the concise guidance in
+AGENTS.md. It is supplied directly to console AI turns and to the configured local
+Codex instructions. It does not depend on a search match. Read the
+[cited practical guide](notes/81596887-76aa-4804-932a-d01b73042690.md) for sentence
+forms, before/after examples, rules versus suggestions, and study limits.
+The guide is provisional. The exhaustive study is not yet complete.
+
+These are deliberate user-directed instruction changes. Automatic learning must
+not edit them. Historical comments remain evidence, not authority. Do not use the
+guide to demand unrelated comment cleanup or to report harmless wording choices
+as defects. A fresh local Codex chat receives the guidance through its global
+AGENTS.md. Other computers need equivalent instructions or must read this checkout's
+AGENTS.md; publication cannot change every Codex chat's loaded context.
+
 ## Optional tb-tools index
 
 Use Node.js 22.13 or later and the tb-tools checkout. Put local caches in a
