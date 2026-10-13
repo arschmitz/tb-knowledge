@@ -1,0 +1,3907 @@
+<!-- knowledge: {"repository": "git:314d8065c5ad68c7e5c5f92d", "at": "2026-10-13T04:22:06.018534+00:00", "paths": ["gfx/skia/skia/include/private/base/SkFeatures.h", "gfx/skia/skia/include/private/base/SkFixed.h", "gfx/skia/skia/include/private/base/SkFloatingPoint.h", "gfx/skia/skia/include/private/base/SkLoadUserConfig.h", "gfx/skia/skia/include/private/base/SkLog.h", "gfx/skia/skia/include/private/base/SkLogPriority.h", "gfx/skia/skia/include/private/base/SkMacros.h", "gfx/skia/skia/include/private/base/SkMalloc.h", "gfx/skia/skia/include/private/base/SkMath.h", "gfx/skia/skia/include/private/base/SkMutex.h", "gfx/skia/skia/include/private/base/SkNoncopyable.h", "gfx/skia/skia/include/private/base/SkOnce.h", "gfx/skia/skia/include/private/base/SkPoint_impl.h", "gfx/skia/skia/include/private/base/SkSafe32.h", "gfx/skia/skia/include/private/base/SkSemaphore.h", "gfx/skia/skia/include/private/base/SkSpan_impl.h", "gfx/skia/skia/include/private/base/SkTArray.h", "gfx/skia/skia/include/private/base/SkTDArray.h", "gfx/skia/skia/include/private/base/SkTFitsIn.h", "gfx/skia/skia/include/private/base/SkTLogic.h", "gfx/skia/skia/include/private/base/SkTPin.h", "gfx/skia/skia/include/private/base/SkTemplates.h", "gfx/skia/skia/include/private/base/SkThreadAnnotations.h", "gfx/skia/skia/include/private/base/SkThreadID.h", "gfx/skia/skia/include/private/base/SkTo.h", "gfx/skia/skia/include/private/base/SkTypeTraits.h", "gfx/skia/skia/include/private/chromium/GrDeferredDisplayList.h", "gfx/skia/skia/include/private/chromium/GrDeferredDisplayListRecorder.h", "gfx/skia/skia/include/private/chromium/GrPromiseImageTexture.h", "gfx/skia/skia/include/private/chromium/GrSurfaceCharacterization.h", "gfx/skia/skia/include/private/chromium/GrVkSecondaryCBDrawContext.h", "gfx/skia/skia/include/private/chromium/SkChromeRemoteGlyphCache.h", "gfx/skia/skia/include/private/chromium/SkCodecsICCProfileChromium.h", "gfx/skia/skia/include/private/chromium/SkDiscardableMemory.h", "gfx/skia/skia/include/private/chromium/SkExifChromium.h", "gfx/skia/skia/include/private/chromium/SkImageChromium.h", "gfx/skia/skia/include/private/chromium/SkPMColor.h", "gfx/skia/skia/include/private/chromium/Slug.h", "gfx/skia/skia/include/private/gpu/ganesh/GrContext_Base.h", "gfx/skia/skia/include/private/gpu/ganesh/GrD3DTypesMinimal.h", "gfx/skia/skia/include/private/gpu/ganesh/GrImageContext.h", "gfx/skia/skia/include/private/gpu/ganesh/GrTextureGenerator.h", "gfx/skia/skia/include/private/gpu/ganesh/GrTypesPriv.h", "gfx/skia/skia/include/private/gpu/vk/SkiaVulkan.h", "gfx/skia/skia/include/sksl/SkSLDebugTrace.h", "gfx/skia/skia/include/sksl/SkSLVersion.h", "gfx/skia/skia/include/utils/SkCamera.h", "gfx/skia/skia/include/utils/SkCanvasStateUtils.h", "gfx/skia/skia/include/utils/SkCustomTypeface.h", "gfx/skia/skia/include/utils/SkEventTracer.h", "gfx/skia/skia/include/utils/SkNWayCanvas.h", "gfx/skia/skia/include/utils/SkNoDrawCanvas.h", "gfx/skia/skia/include/utils/SkNullCanvas.h", "gfx/skia/skia/include/utils/SkOrderedFontMgr.h", "gfx/skia/skia/include/utils/SkPaintFilterCanvas.h", "gfx/skia/skia/include/utils/SkParse.h", "gfx/skia/skia/include/utils/SkParsePath.h", "gfx/skia/skia/include/utils/SkShadowUtils.h", "gfx/skia/skia/include/utils/SkTextUtils.h", "gfx/skia/skia/include/utils/SkTraceEventPhase.h", "gfx/skia/skia/include/utils/mac/SkCGUtils.h", "gfx/skia/skia/modules/skcms/skcms.cc", "gfx/skia/skia/modules/skcms/skcms.h", "gfx/skia/skia/modules/skcms/src/Transform_inl.h", "gfx/skia/skia/modules/skcms/src/skcms_Transform.h", "gfx/skia/skia/modules/skcms/src/skcms_TransformBaseline.cc", "gfx/skia/skia/modules/skcms/src/skcms_TransformHsw.cc", "gfx/skia/skia/modules/skcms/src/skcms_TransformSkx.cc", "gfx/skia/skia/modules/skcms/src/skcms_internals.h", "gfx/skia/skia/modules/skcms/src/skcms_public.h", "gfx/skia/skia/src/base/SkArenaAlloc.cpp", "gfx/skia/skia/src/base/SkArenaAlloc.h", "gfx/skia/skia/src/base/SkArenaAllocList.h", "gfx/skia/skia/src/base/SkAutoLocaleSetter.h", "gfx/skia/skia/src/base/SkAutoMalloc.h", "gfx/skia/skia/src/base/SkBase64.cpp", "gfx/skia/skia/src/base/SkBase64.h", "gfx/skia/skia/src/base/SkBezierCurves.cpp", "gfx/skia/skia/src/base/SkBezierCurves.h", "gfx/skia/skia/src/base/SkBitmaskEnum.h", "gfx/skia/skia/src/base/SkBlockAllocator.cpp", "gfx/skia/skia/src/base/SkBlockAllocator.h", "gfx/skia/skia/src/base/SkBuffer.cpp", "gfx/skia/skia/src/base/SkBuffer.h", "gfx/skia/skia/src/base/SkContainers.cpp", "gfx/skia/skia/src/base/SkCubics.cpp", "gfx/skia/skia/src/base/SkCubics.h", "gfx/skia/skia/src/base/SkDebug.cpp", "gfx/skia/skia/src/base/SkDeque.cpp", "gfx/skia/skia/src/base/SkEndian.h", "gfx/skia/skia/src/base/SkEnumBitMask.h", "gfx/skia/skia/src/base/SkFixedArray.h", "gfx/skia/skia/src/base/SkFloatBits.h", "gfx/skia/skia/src/base/SkFloatingPoint.cpp", "gfx/skia/skia/src/base/SkHalf.cpp", "gfx/skia/skia/src/base/SkHalf.h", "gfx/skia/skia/src/base/SkLeanWindows.h", "gfx/skia/skia/src/base/SkLog.cpp", "gfx/skia/skia/src/base/SkMSAN.h", "gfx/skia/skia/src/base/SkMalloc.cpp", "gfx/skia/skia/src/base/SkMathPriv.cpp", "gfx/skia/skia/src/base/SkMathPriv.h", "gfx/skia/skia/src/base/SkNoDestructor.h", "gfx/skia/skia/src/base/SkQuads.cpp", "gfx/skia/skia/src/base/SkQuads.h", "gfx/skia/skia/src/base/SkRandom.h", "gfx/skia/skia/src/base/SkRectMemcpy.h", "gfx/skia/skia/src/base/SkSafeMath.cpp", "gfx/skia/skia/src/base/SkSafeMath.h", "gfx/skia/skia/src/base/SkScopeExit.h", "gfx/skia/skia/src/base/SkSemaphore.cpp", "gfx/skia/skia/src/base/SkSharedMutex.cpp", "gfx/skia/skia/src/base/SkSharedMutex.h", "gfx/skia/skia/src/base/SkSpinlock.cpp", "gfx/skia/skia/src/base/SkSpinlock.h", "gfx/skia/skia/src/base/SkStringView.h", "gfx/skia/skia/src/base/SkTBlockList.h", "gfx/skia/skia/src/base/SkTDArray.cpp", "gfx/skia/skia/src/base/SkTDPQueue.h", "gfx/skia/skia/src/base/SkTInternalLList.h", "gfx/skia/skia/src/base/SkTLazy.h", "gfx/skia/skia/src/base/SkTSearch.cpp", "gfx/skia/skia/src/base/SkTSearch.h", "gfx/skia/skia/src/base/SkTSort.h", "gfx/skia/skia/src/base/SkThreadID.cpp", "gfx/skia/skia/src/base/SkTime.cpp", "gfx/skia/skia/src/base/SkTime.h", "gfx/skia/skia/src/base/SkUTF.cpp", "gfx/skia/skia/src/base/SkUTF.h", "gfx/skia/skia/src/base/SkUtils.cpp", "gfx/skia/skia/src/base/SkUtils.h", "gfx/skia/skia/src/base/SkVx.h", "gfx/skia/skia/src/base/SkZip.h", "gfx/skia/skia/src/codec/SkCodec.cpp", "gfx/skia/skia/src/codec/SkCodecImageGenerator.cpp", "gfx/skia/skia/src/codec/SkCodecImageGenerator.h", "gfx/skia/skia/src/codec/SkCodecPriv.h", "gfx/skia/skia/src/codec/SkColorPalette.cpp", "gfx/skia/skia/src/codec/SkColorPalette.h", "gfx/skia/skia/src/codec/SkEncodedInfo.cpp", "gfx/skia/skia/src/codec/SkFrameHolder.h", "gfx/skia/skia/src/codec/SkImageGenerator_FromEncoded.cpp", "gfx/skia/skia/src/codec/SkPixmapUtils.cpp", "gfx/skia/skia/src/codec/SkPixmapUtilsPriv.h", "gfx/skia/skia/src/codec/SkSampler.cpp", "gfx/skia/skia/src/codec/SkSampler.h", "gfx/skia/skia/src/core/Sk4px.h", "gfx/skia/skia/src/core/SkAAClip.cpp", "gfx/skia/skia/src/core/SkAAClip.h", "gfx/skia/skia/src/core/SkATrace.cpp"], "source": {"reference": "Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b", "revision": "1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b", "status": "provisional", "study": "architecture-study-20261013"}} -->
+# firefox/gfx native and TypeScript syntax map 81
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser versions: {"tree-sitter": "0.25.2", "tree-sitter-c": "0.24.2", "tree-sitter-cpp": "0.23.4", "tree-sitter-rust": "0.24.2", "tree-sitter-java": "0.23.5", "tree-sitter-typescript": "0.23.2"}.
+
+Tree-sitter parses written syntax without executing it. Entries identify declarations and function bodies with source ranges. Names can be unqualified or inferred from an assignment. They do not resolve overloaded symbols or runtime receivers. C/C++ header files use the C++ grammar. Macros and build flags are not expanded. `contains-errors` means the tree has error or missing nodes; its entries remain partial candidates. A clean syntax tree is not proof that the file compiles. Objective-C, Kotlin, IDL, and embedded code are outside this parser pass and remain in the structural census.
+
+### gfx/skia/skia/include/private/base/SkFeatures.h
+
+Blob: `9ea8063a627a8ddd64edaa80a86ec77f488e3286`. Grammar: cpp. Status: syntax-clean.
+
+- include <TargetConditionals.h> @15
+
+### gfx/skia/skia/include/private/base/SkFixed.h
+
+Blob: `2c8f2fb56c188c5d85f4852bff968bb4c491da4d`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkAssert.h" @11
+- include "include/private/base/SkDebug.h" @12
+- include "include/private/base/SkMath.h" @13
+- include "include/private/base/SkTPin.h" @14
+- include <cstdint> @16
+- function_definition SkFloatToFixed_Check @45-50
+- function_definition SkIntToFixed @62-68
+- function_definition SkFixedRoundToFixed @80-82
+- function_definition SkFixedCeilToFixed @83-85
+- function_definition SkFixedFloorToFixed @86-88
+- function_definition SkFixedMul @96-98
+- include <cstring> @105
+- function_definition SkFloatToFixed_arm @111-117
+
+### gfx/skia/skia/include/private/base/SkFloatingPoint.h
+
+Blob: `a732d5967ee8456703ef038c4db7dc1d4105486a`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkAttributes.h" @11
+- include "include/private/base/SkMath.h" @12
+- include <cmath> @14
+- include <cstdint> @15
+- include <limits> @16
+- include <type_traits> @17
+- function_definition sk_float_sgn @23-25
+- function_definition sk_float_degrees_to_radians @27-29
+- function_definition sk_float_radians_to_degrees @31-33
+- function_definition SkIsNaN @41-43
+- function_definition SkIsFinite @50-55
+- function_definition SkIsFinite @58-66
+- function_definition sk_float_saturate2int @89-94
+- function_definition sk_double_saturate2int @99-104
+- function_definition sk_float_saturate2int64 @109-114
+- function_definition sk_double_to_float @135-137
+- function_definition sk_float_midpoint @146-149
+- function_definition sk_float_rsqrt @151-151
+- function_definition sk_ieee_float_divide @160-162
+- function_definition sk_ieee_double_divide @165-167
+
+### gfx/skia/skia/include/private/base/SkLoadUserConfig.h
+
+Blob: `c1005e017842aa46dfe2af05b01db3d5c9266d74`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkFeatures.h" @11
+- include "include/private/base/SkLogPriority.h" @13
+- include SK_USER_CONFIG_HEADER @24
+- include "SkUserConfig.h" @30
+- include "include/config/SkUserConfig.h" @32
+
+### gfx/skia/skia/include/private/base/SkLog.h
+
+Blob: `260e2f6c32d4768d387edc8b7290b27ac9081dca`. Grammar: cpp. Status: contains-errors.
+
+- include <cstdarg> @11
+- include "include/private/base/SkAPI.h" @13
+- include "include/private/base/SkAttributes.h" @14
+- include "include/private/base/SkLoadUserConfig.h" @15
+- include "include/private/base/SkLogPriority.h" @16
+- function_definition MapGraphitePriority @30-38
+
+### gfx/skia/skia/include/private/base/SkLogPriority.h
+
+Blob: `3ddfc964ffbedf66d22f0d71c462c06a3342a6b8`. Grammar: cpp. Status: syntax-clean.
+
+- enum_specifier SkLogPriority @27-33
+
+### gfx/skia/skia/include/private/base/SkMacros.h
+
+Blob: `7759b871258b98e694449e25d04bd4beaa1c2453`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkTo.h" @10
+- include "mozilla/MemoryChecking.h" @55
+- class_specifier SkTFlagsMask @122-129
+- function_definition SkTFlagsMask @124-124
+- function_definition SkTFlagsMask @125-125
+- function_definition value @126-126
+
+### gfx/skia/skia/include/private/base/SkMalloc.h
+
+Blob: `2147a35e59e360a0f1a330ab6a2feb84e9ea3229`. Grammar: cpp. Status: contains-errors.
+
+- include <cstring> @11
+- include "include/private/base/SkAPI.h" @13
+- enum_specifier SkMalloc_DEFINED @29-41
+- function_definition sk_malloc_throw @67-69
+- function_definition sk_calloc_throw @71-73
+- function_definition sk_calloc_canfail @75-83
+- function_definition sk_malloc_canfail @93-101
+- function_definition sk_bzero @105-110
+- function_definition sk_careful_memcpy @125-132
+- function_definition sk_careful_memmove @134-141
+- function_definition sk_careful_memcmp @143-150
+
+### gfx/skia/skia/include/private/base/SkMath.h
+
+Blob: `34bfa739f7a97632d25130c3253671ac641eb2ea`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkAssert.h" @11
+- include "include/private/base/SkCPUTypes.h" @12
+- include <cstdint> @14
+- include <climits> @15
+- function_definition sk_64_mul @33-35
+- function_definition SkLeftShift @37-39
+- function_definition SkLeftShift @41-43
+- function_definition SkIsPow2 @51-53
+- function_definition SkMul16ShiftRound @61-67
+- function_definition SkMulDiv255Round @73-75
+
+### gfx/skia/skia/include/private/base/SkMutex.h
+
+Blob: `2ebb45bf51ca07e64cadb4be8f0d89f6405a7df0`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkAssert.h" @11
+- include "include/private/base/SkDebug.h" @12
+- include "include/private/base/SkSemaphore.h" @13
+- include "include/private/base/SkThreadAnnotations.h" @14
+- include "include/private/base/SkThreadID.h" @15
+- class_specifier SK_CAPABILITY @25-25
+- function_definition SkDEBUGCODE @54-55
+- function_definition SkAutoMutexExclusive @57-70
+- class_specifier SK_SCOPED_CAPABILITY @57-57
+- function_definition SK_ACQUIRE @59-59
+- function_definition SK_RELEASE_CAPABILITY @60-60
+- function_definition SkAutoMutexExclusive @62-62
+- function_definition SkAutoMutexExclusive @63-63
+
+### gfx/skia/skia/include/private/base/SkNoncopyable.h
+
+Blob: `ec4a4e51611995120ecf75504170f028a57f1fdd`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkAPI.h" @11
+- function_definition SkNoncopyable @18-28
+- class_specifier SK_API @18-18
+- function_definition SkNoncopyable @22-22
+
+### gfx/skia/skia/include/private/base/SkOnce.h
+
+Blob: `97ce6b6311e0bfaf27f1f1ceb93e3244c9dad2c4`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkThreadAnnotations.h" @11
+- include <atomic> @13
+- include <cstdint> @14
+- include <utility> @15
+- class_specifier SkOnce @22-53
+- function_definition SkOnce @24-24
+- function_definition operator() @27-48
+- enum_specifier State @51-51
+
+### gfx/skia/skia/include/private/base/SkPoint_impl.h
+
+Blob: `e3843b240b2ff4d31ca94400be18d32103e71923`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkAPI.h" @11
+- include "include/private/base/SkFloatingPoint.h" @12
+- include "include/private/base/SkSafe32.h" @13
+- include <cmath> @15
+- include <cstdint> @16
+- struct_specifier SkIPoint @18-18
+- struct_specifier SkIPoint @28-151
+- function_definition Make @38-40
+- function_definition x @46-46
+- function_definition y @52-52
+- function_definition isZero @58-58
+- function_definition set @65-68
+- function_definition operator- @74-76
+- function_definition operator+= @82-85
+- function_definition operator-= @91-94
+- function_definition equals @102-104
+- function_definition operator== @112-114
+- function_definition operator!= @122-124
+- function_definition operator- @134-136
+- function_definition operator+ @148-150
+- struct_specifier SkPoint @153-153
+- function_definition SkPoint @163-558
+- struct_specifier SK_API @163-163
+- function_definition Make @173-175
+- function_definition x @181-181
+- function_definition y @187-187
+- function_definition isZero @193-193
+- function_definition set @200-203
+- function_definition iset @214-217
+- function_definition iset @227-230
+- function_definition setAbs @236-239
+- function_definition Offset @247-249
+- function_definition Offset @258-262
+- function_definition offset @269-272
+- function_definition length @282-282
+- function_definition distanceToOrigin @292-292
+- function_definition scale @353-353
+- function_definition negate @357-360
+- function_definition operator- @366-368
+- function_definition operator+= @374-377
+- function_definition operator-= @383-386
+- function_definition operator* @393-395
+- function_definition (anonymous) @402-406
+- function_definition isFinite @412-414
+- function_definition equals @422-424
+- function_definition operator== @432-434
+- function_definition operator!= @442-444
+- function_definition operator- @455-457
+- function_definition operator+ @469-471
+- function_definition Distance @508-510
+- function_definition DotProduct @518-520
+- function_definition CrossProduct @532-534
+- function_definition cross @545-547
+- function_definition dot @554-556
+
+### gfx/skia/skia/include/private/base/SkSafe32.h
+
+Blob: `88e7a22443a11dd8dab4da67d8a6ba3db0f6e00e`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkAssert.h" @11
+- include "include/private/base/SkMath.h" @12
+- include <cstdint> @14
+- function_definition Sk64_pin_to_s32 @16-18
+- function_definition Sk32_sat_add @20-22
+- function_definition Sk32_sat_sub @24-26
+- function_definition Sk32_can_overflow_add @30-32
+- function_definition Sk32_can_overflow_sub @33-35
+- function_definition SkAbs32 @41-47
+
+### gfx/skia/skia/include/private/base/SkSemaphore.h
+
+Blob: `f78ee86625a42a870ee92683590eac27e2522a34`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkAPI.h" @11
+- include "include/private/base/SkOnce.h" @12
+- include "include/private/base/SkThreadAnnotations.h" @13
+- include <algorithm> @15
+- include <atomic> @16
+- class_specifier SkSemaphore @18-54
+- function_definition SkSemaphore @20-20
+- struct_specifier OSSemaphore @46-46
+- function_definition signal @56-72
+- function_definition wait @74-82
+
+### gfx/skia/skia/include/private/base/SkSpan_impl.h
+
+Blob: `1119bcc653c53585b35d443ffbeaadceef13b6ee`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkAssert.h" @32
+- include "include/private/base/SkDebug.h" @33
+- include "include/private/base/SkTo.h" @34
+- include <cstddef> @36
+- include <initializer_list> @37
+- include <iterator> @38
+- include <limits> @39
+- include <utility> @40
+- include <type_traits> @44
+- class_specifier SkSpan @86-139
+- function_definition SkSpan @88-88
+- function_definition SkSpan @91-94
+- function_definition SkSpan @96-96
+- function_definition SkSpan @97-97
+- function_definition SkSpan @98-98
+- function_definition SkSpan @100-100
+- function_definition SkSpan @101-102
+- function_definition (anonymous) @104-104
+- function_definition (anonymous) @106-108
+- function_definition (anonymous) @109-109
+- function_definition (anonymous) @110-110
+- function_definition begin @111-111
+- function_definition end @112-112
+- function_definition rbegin @113-113
+- function_definition rend @114-114
+- function_definition data @115-115
+- function_definition size @116-116
+- function_definition empty @117-117
+- function_definition size_bytes @118-118
+- function_definition first @119-121
+- function_definition last @122-125
+- function_definition subspan @126-128
+- function_definition subspan @129-137
+- include <span> @152
+
+### gfx/skia/skia/include/private/base/SkTArray.h
+
+Blob: `1a833f1086e37a9db2ad6079f60eda20f3dd05e4`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkASAN.h" @11
+- include "include/private/base/SkAlignedStorage.h" @12
+- include "include/private/base/SkAssert.h" @13
+- include "include/private/base/SkAttributes.h" @14
+- include "include/private/base/SkContainers.h" @15
+- include "include/private/base/SkDebug.h" @16
+- include "include/private/base/SkMalloc.h" @17
+- include "include/private/base/SkMath.h" @18
+- include "include/private/base/SkSpan_impl.h" @19
+- include "include/private/base/SkTo.h" @20
+- include "include/private/base/SkTypeTraits.h" @21
+- include <algorithm> @23
+- include <climits> @24
+- include <cstddef> @25
+- include <cstdint> @26
+- include <cstring> @27
+- include <initializer_list> @28
+- include <new> @29
+- include <utility> @30
+- class_specifier TArray @40-221
+- function_definition TArray @47-47
+- function_definition TArray @52-52
+- function_definition TArray @57-57
+- function_definition TArray @59-69
+- function_definition TArray @76-79
+- function_definition TArray @84-84
+- function_definition TArray @89-89
+- function_definition (anonymous) @91-100
+- function_definition (anonymous) @102-131
+- function_definition ~TArray @133-139
+- function_definition reset @144-152
+- function_definition reset @157-162
+- function_definition reserve @169-174
+- function_definition reserve_exact @180-185
+- function_definition removeShuffle @187-195
+- function_definition empty @198-198
+- function_definition (anonymous) @204-207
+- function_definition (anonymous) @213-219
+- function_definition SkTArray_DEFINED @230-236
+- function_definition (anonymous) @247-253
+- function_definition push_back_n @266-273
+- function_definition push_back_n @279-286
+- function_definition push_back_n @292-301
+- function_definition move_back_n @306-315
+- function_definition pop_back @320-324
+- function_definition pop_back_n @329-337
+- function_definition resize_back @342-353
+- function_definition swap @357-376
+- function_definition move_back @382-395
+- function_definition begin @397-399
+- function_definition begin @400-402
+- function_definition end @406-411
+- function_definition end @412-417
+- function_definition data @418-418
+- function_definition data @419-419
+- function_definition size @420-420
+- function_definition size_bytes @421-421
+- function_definition resize @422-422
+- function_definition clear @424-427
+- function_definition shrink_to_fit @429-447
+- function_definition SkTArray_DEFINED @452-454
+- function_definition SkTArray_DEFINED @456-458
+- function_definition SkTArray_DEFINED @460-460
+- function_definition SkTArray_DEFINED @461-461
+- function_definition SkTArray_DEFINED @466-469
+- function_definition SkTArray_DEFINED @471-474
+- function_definition SkTArray_DEFINED @479-482
+- function_definition SkTArray_DEFINED @484-487
+- function_definition SkTArray_DEFINED @492-494
+- function_definition SkTArray_DEFINED @496-498
+- function_definition operator== @500-511
+- function_definition operator!= @513-515
+- function_definition capacity @517-519
+- function_definition TArray @544-547
+- function_definition TArray @549-552
+- function_definition setDataFromBytes @566-574
+- function_definition setData @576-584
+- function_definition unpoison @586-594
+- function_definition poison @596-604
+- function_definition changeSize @606-610
+- function_definition TCast @619-622
+- function_definition Bytes @624-627
+- function_definition Allocate @629-631
+- function_definition initData @633-636
+- function_definition destroyAll @638-647
+- function_definition copy @652-662
+- function_definition move @664-673
+- function_definition move @675-684
+- function_definition push_back_raw @688-693
+- function_definition growAndConstructAtEnd @696-702
+- function_definition checkRealloc @704-714
+- function_definition preallocateNewData @716-731
+- function_definition installDataAndUpdateCapacity @733-740
+- function_definition swap @751-753
+- class_specifier STArray @757-822
+- function_definition STArray @768-770
+- function_definition STArray @773-775
+- function_definition STArray @777-779
+- function_definition STArray @781-782
+- function_definition STArray @784-785
+- function_definition STArray @787-788
+- function_definition STArray @790-791
+- function_definition STArray @793-794
+- function_definition STArray @796-797
+- function_definition (anonymous) @799-802
+- function_definition (anonymous) @804-807
+- function_definition (anonymous) @809-812
+- function_definition (anonymous) @814-817
+
+### gfx/skia/skia/include/private/base/SkTDArray.h
+
+Blob: `c752f44324261a19eecb1d8e657bebaa738c3234`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkAPI.h" @11
+- include "include/private/base/SkAssert.h" @12
+- include "include/private/base/SkDebug.h" @13
+- include "include/private/base/SkTo.h" @14
+- include <cstddef> @16
+- include <initializer_list> @17
+- include <utility> @18
+- function_definition SkTDStorage @20-80
+- class_specifier SK_SPI @20-20
+- function_definition empty @39-39
+- function_definition clear @40-40
+- function_definition size @41-41
+- function_definition size_bytes @43-43
+- function_definition capacity @46-46
+- function_definition data @50-50
+- function_definition data @51-51
+- function_definition pop_back @68-71
+- function_definition operator!= @74-76
+- function_definition safe_bytes @83-88
+- function_definition address @90-90
+- function_definition swap @108-110
+- class_specifier SkTDArray @115-241
+- function_definition SkTDArray @117-117
+- function_definition SkTDArray @118-118
+- function_definition SkTDArray @119-119
+- function_definition SkTDArray @122-122
+- function_definition (anonymous) @123-126
+- function_definition SkTDArray @129-129
+- function_definition (anonymous) @130-133
+- function_definition operator== @135-137
+- function_definition operator!= @138-138
+- function_definition swap @140-143
+- function_definition empty @145-145
+- function_definition size @148-148
+- function_definition capacity @153-153
+- function_definition size_bytes @156-156
+- function_definition data @158-158
+- function_definition data @159-159
+- function_definition begin @160-160
+- function_definition begin @161-161
+- function_definition end @162-162
+- function_definition end @163-163
+- function_definition (anonymous) @165-167
+- function_definition (anonymous) @168-170
+- function_definition (anonymous) @172-175
+- function_definition (anonymous) @176-179
+- function_definition reset @181-183
+- function_definition clear @185-187
+- function_definition resize @193-195
+- function_definition reserve @197-199
+- function_definition append @201-204
+- function_definition append @205-208
+- function_definition append @209-211
+- function_definition insert @213-215
+- function_definition insert @216-218
+- function_definition remove @220-222
+- function_definition removeShuffle @224-226
+- function_definition push_back @229-232
+- function_definition pop_back @233-233
+- function_definition shrink_to_fit @235-237
+- function_definition swap @243-243
+
+### gfx/skia/skia/include/private/base/SkTFitsIn.h
+
+Blob: `82e97b641af33f0e9f0dfd8e676047ddad8a0630`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkDebug.h" @11
+- include <limits> @13
+- include <type_traits> @14
+- struct_specifier sk_strip_enum @20-22
+- struct_specifier sk_strip_enum<T, typename std::enable_if<std::is_enum<T>::value>::type> @25-27
+- function_definition SkTFitsIn @71-92
+
+### gfx/skia/skia/include/private/base/SkTLogic.h
+
+Blob: `26f363c94699e256ad0bbc394899481ec3e3d89d`. Grammar: cpp. Status: syntax-clean.
+
+- include <iterator> @15
+- include <type_traits> @16
+- include "include/private/base/SkTo.h" @17
+- struct_specifier copy_const @26-28
+- struct_specifier copy_volatile @31-33
+- struct_specifier copy_cv @36-38
+- function_definition SkCount @54-54
+
+### gfx/skia/skia/include/private/base/SkTPin.h
+
+Blob: `93b07bea066927288cfec99faf6426e43575689b`. Grammar: cpp. Status: syntax-clean.
+
+- include <algorithm> @11
+- function_definition (anonymous) @19-21
+
+### gfx/skia/skia/include/private/base/SkTemplates.h
+
+Blob: `fb3793d352c7fbb6882e8e34f53aa9730cd7bfb5`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkAlign.h" @11
+- include "include/private/base/SkAssert.h" @12
+- include "include/private/base/SkDebug.h" @13
+- include "include/private/base/SkMalloc.h" @14
+- include "include/private/base/SkTLogic.h" @15
+- include "include/private/base/SkTo.h" @16
+- include <algorithm> @18
+- include <array> @19
+- include <cstddef> @20
+- include <cstdint> @21
+- include <cstring> @22
+- include <memory> @23
+- include <type_traits> @24
+- include <utility> @25
+- function_definition sk_ignore_unused_variable @38-38
+- function_definition SkTAbs @44-49
+- function_definition SkTAfter @54-56
+- function_definition SkTAddOffset @61-65
+- struct_specifier SkOverloadedFunctionObject @67-72
+- function_definition operator() @69-71
+- class_specifier SkAutoTCallVProc @85-94
+- function_definition SkAutoTCallVProc @90-90
+- function_definition SkAutoTCallVProc @91-91
+- function_definition (anonymous) @93-93
+- class_specifier AutoTArray @101-168
+- function_definition AutoTArray @103-103
+- function_definition AutoTArray @105-107
+- function_definition AutoTArray @110-110
+- function_definition AutoTArray @112-114
+- function_definition (anonymous) @116-122
+- function_definition reset @125-128
+- function_definition get @130-130
+- function_definition (anonymous) @132-134
+- function_definition data @136-136
+- function_definition data @137-137
+- function_definition size @139-139
+- function_definition empty @140-140
+- function_definition size_bytes @141-141
+- function_definition begin @143-145
+- function_definition begin @146-148
+- function_definition end @152-157
+- function_definition end @158-163
+- class_specifier AutoSTArray @175-308
+- function_definition AutoSTArray @177-177
+- function_definition (anonymous) @178-178
+- function_definition AutoSTArray @180-192
+- function_definition (anonymous) @193-193
+- function_definition AutoSTArray @196-199
+- function_definition AutoSTArray @202-206
+- function_definition ~AutoSTArray @208-210
+- function_definition reset @213-243
+- function_definition trimTo @246-257
+- function_definition count @260-260
+- function_definition get @263-263
+- function_definition begin @265-265
+- function_definition begin @267-267
+- function_definition end @269-269
+- function_definition end @271-271
+- function_definition (anonymous) @274-276
+- function_definition data @279-279
+- function_definition data @280-280
+- function_definition size @281-281
+- class_specifier AutoTMalloc @316-363
+- function_definition AutoTMalloc @319-319
+- function_definition AutoTMalloc @322-323
+- function_definition AutoTMalloc @325-325
+- function_definition (anonymous) @326-326
+- function_definition realloc @329-331
+- function_definition reset @334-338
+- function_definition get @340-340
+- function_definition (anonymous) @342-342
+- function_definition (anonymous) @344-344
+- function_definition (anonymous) @346-346
+- function_definition (anonymous) @348-348
+- function_definition data @351-351
+- function_definition data @352-352
+- function_definition release @359-359
+- class_specifier AutoSTMalloc @369-484
+- function_definition AutoSTMalloc @371-371
+- function_definition AutoSTMalloc @373-381
+- function_definition AutoSTMalloc @383-383
+- function_definition (anonymous) @384-384
+- function_definition AutoSTMalloc @386-395
+- function_definition (anonymous) @396-396
+- function_definition ~AutoSTMalloc @398-402
+- function_definition reset @405-418
+- function_definition get @420-420
+- function_definition (anonymous) @422-424
+- function_definition (anonymous) @426-428
+- function_definition (anonymous) @430-432
+- function_definition (anonymous) @434-436
+- function_definition data @439-439
+- function_definition data @440-440
+- function_definition realloc @443-458
+- function_definition SkMakeArrayFromIndexSequence @491-494
+- function_definition SkMakeArray @496-499
+
+### gfx/skia/skia/include/private/base/SkThreadAnnotations.h
+
+Blob: `a67fbaaca086412e22797a92f34a3da6a1e1c391`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkFeatures.h" @11
+- function_definition sk_potentially_blocking_region_begin @87-91
+- function_definition sk_potentially_blocking_region_end @92-96
+
+### gfx/skia/skia/include/private/base/SkThreadID.h
+
+Blob: `18984884c96f7654130341e8bfa5b56bdbcd58d9`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkAPI.h" @11
+- include "include/private/base/SkDebug.h" @12
+- include <cstdint> @14
+
+### gfx/skia/skia/include/private/base/SkTo.h
+
+Blob: `118544100300de1d07256ddebb9d228baef70501`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkAssert.h" @10
+- include "include/private/base/SkTFitsIn.h" @11
+- include <cstddef> @13
+- include <cstdint> @14
+- function_definition SkTo @16-19
+- function_definition SkToS8 @21-21
+- function_definition SkToU8 @22-22
+- function_definition SkToS16 @23-23
+- function_definition SkToU16 @24-24
+- function_definition SkToS32 @25-25
+- function_definition SkToU32 @26-26
+- function_definition SkToS64 @27-27
+- function_definition SkToU64 @28-28
+- function_definition SkToInt @29-29
+- function_definition SkToUInt @30-30
+- function_definition SkToSizeT @31-31
+- function_definition SkToBool @35-37
+
+### gfx/skia/skia/include/private/base/SkTypeTraits.h
+
+Blob: `736f7897763d510bcf8bec52a767821e61035b44`. Grammar: cpp. Status: syntax-clean.
+
+- include <memory> @7
+- include <type_traits> @8
+- struct_specifier sk_has_trivially_relocatable_member @12-12
+- struct_specifier sk_has_trivially_relocatable_member<T, std::void_t<typename T::sk_is_trivially_relocatable>> @17-18
+- struct_specifier sk_is_trivially_relocatable @22-23
+- struct_specifier sk_is_trivially_relocatable<std::unique_ptr<T>> @28-28
+
+### gfx/skia/skia/include/private/chromium/GrDeferredDisplayList.h
+
+Blob: `2bd63b2d71b53bdaf7c240a67750483d7cdfdb58`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkRefCnt.h" @11
+- include "include/core/SkTypes.h" @12
+- include "include/gpu/ganesh/GrRecordingContext.h" @13
+- include "include/private/base/SkTArray.h" @14
+- include "include/private/chromium/GrSurfaceCharacterization.h" @15
+- class_specifier GrDirectContext @17-17
+- class_specifier GrRenderTargetProxy @18-18
+- class_specifier GrRenderTask @19-19
+- class_specifier GrDeferredDisplayListPriv @20-20
+- class_specifier SkSurface @21-21
+- class_specifier GrDeferredDisplayList @27-95
+- function_definition (anonymous) @31-33
+- function_definition ProgramIterator @37-51
+- class_specifier SK_API @37-37
+- class_specifier LazyProxyData @65-75
+- function_definition (anonymous) @81-83
+
+### gfx/skia/skia/include/private/chromium/GrDeferredDisplayListRecorder.h
+
+Blob: `9059940613e473bfd2e88835eec3e9c9d540d01d`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkRefCnt.h" @11
+- include "include/core/SkTypes.h" @12
+- include "include/private/chromium/GrDeferredDisplayList.h" @13
+- include "include/private/chromium/GrSurfaceCharacterization.h" @14
+- class_specifier GrRecordingContext @16-16
+- class_specifier GrRenderTargetProxy @17-17
+- class_specifier SkCanvas @18-18
+- class_specifier SkSurface @19-19
+- function_definition GrDeferredDisplayListRecorder @33-60
+- class_specifier SK_API @33-33
+- function_definition (anonymous) @38-40
+
+### gfx/skia/skia/include/private/chromium/GrPromiseImageTexture.h
+
+Blob: `6a6cc13a70bc62c1192d13379062a98b93e4a35c`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkRefCnt.h" @11
+- include "include/core/SkTypes.h" @12
+- include "include/gpu/ganesh/GrBackendSurface.h" @13
+- function_definition SkNVRefCnt @19-41
+- class_specifier SK_API @19-19
+- function_definition GrPromiseImageTexture @22-22
+- function_definition GrPromiseImageTexture @23-23
+- function_definition Make @28-33
+- function_definition backendTexture @35-35
+
+### gfx/skia/skia/include/private/chromium/GrSurfaceCharacterization.h
+
+Blob: `642cc56470160ebb5262f88f508f9385cc5dfce7`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkColorSpace.h" @11
+- include "include/core/SkColorType.h" @12
+- include "include/core/SkImageInfo.h" @13
+- include "include/core/SkRefCnt.h" @14
+- include "include/core/SkSize.h" @15
+- include "include/core/SkSurfaceProps.h" @16
+- include "include/core/SkTypes.h" @17
+- include "include/gpu/GpuTypes.h" @18
+- include "include/gpu/ganesh/GrBackendSurface.h" @19
+- include "include/gpu/ganesh/GrContextThreadSafeProxy.h" @20
+- include "include/gpu/ganesh/GrTypes.h" @21
+- include "include/private/base/SkDebug.h" @22
+- include <cstddef> @24
+- include <utility> @25
+- function_definition GrSurfaceCharacterization @34-209
+- class_specifier SK_API @34-34
+- enum_specifier Textureable @36-36
+- enum_specifier UsesGLFBO0 @37-37
+- enum_specifier VkRTSupportsInputAttachment @41-41
+- enum_specifier VulkanSecondaryCBCompatible @43-43
+- function_definition GrSurfaceCharacterization @45-54
+- function_definition GrSurfaceCharacterization @56-56
+- function_definition GrSurfaceCharacterization @59-59
+- function_definition operator!= @62-64
+- function_definition contextInfo @89-89
+- function_definition refContextInfo @90-90
+- function_definition cacheMaxResourceBytes @91-91
+- function_definition isValid @93-93
+- function_definition (anonymous) @95-95
+- function_definition (anonymous) @96-96
+- function_definition origin @97-97
+- function_definition dimensions @98-98
+- function_definition width @99-99
+- function_definition height @100-100
+- function_definition colorType @101-101
+- function_definition sampleCount @102-102
+- function_definition isTextureable @103-103
+- function_definition isMipMapped @104-104
+- function_definition usesGLFBO0 @105-105
+- function_definition vkRTSupportsInputAttachment @106-108
+- function_definition vulkanSecondaryCBCompatible @109-111
+- function_definition isProtected @112-112
+- function_definition colorSpace @113-113
+- function_definition refColorSpace @114-114
+- function_definition (anonymous) @115-115
+- function_definition GrSurfaceCharacterization @127-158
+- function_definition set @160-193
+
+### gfx/skia/skia/include/private/chromium/GrVkSecondaryCBDrawContext.h
+
+Blob: `80bed158a07d4291601d5cd793be4a0e6aa95a08`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkRefCnt.h" @11
+- include "include/core/SkSurfaceProps.h" @12
+- include "include/core/SkTypes.h" @13
+- include <memory> @15
+- class_specifier GrBackendSemaphore @17-17
+- class_specifier GrDeferredDisplayList @18-18
+- class_specifier GrRecordingContext @19-19
+- class_specifier GrSurfaceCharacterization @20-20
+- struct_specifier GrVkDrawableInfo @21-21
+- class_specifier Device @23-23
+- class_specifier SkCanvas @25-25
+- struct_specifier SkImageInfo @26-26
+- class_specifier SkSurfaceProps @27-27
+- function_definition GrVkSecondaryCBDrawContext @62-129
+- class_specifier SK_SPI @62-62
+- function_definition (anonymous) @108-108
+
+### gfx/skia/skia/include/private/chromium/SkChromeRemoteGlyphCache.h
+
+Blob: `032d05ef2a113639581c7c015ccd1db55e905996`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkRefCnt.h" @11
+- include "include/core/SkTypeface.h" @12
+- include "include/private/base/SkAPI.h" @13
+- include <cstddef> @15
+- include <cstdint> @16
+- include <memory> @17
+- include <vector> @18
+- class_specifier SkAutoDescriptor @20-20
+- class_specifier SkCanvas @21-21
+- class_specifier SkColorSpace @22-22
+- class_specifier SkStrikeCache @23-23
+- class_specifier SkStrikeClientImpl @24-24
+- class_specifier SkStrikeServerImpl @25-25
+- class_specifier SkSurfaceProps @26-26
+- class_specifier Slug @27-27
+- class_specifier SkStrikeServer @31-80
+- class_specifier DiscardableHandleManager @35-54
+- function_definition DiscardableHandleManager @37-37
+- function_definition createHandle @41-41
+- class_specifier SkStrikeClient @82-149
+- enum_specifier CacheMissType @86-99
+- class_specifier DiscardableHandleManager @102-123
+- function_definition ~DiscardableHandleManager @104-104
+- function_definition assertHandleValid @110-110
+- struct_specifier ReadFailureData @114-121
+- function_definition notifyReadFailure @122-122
+
+### gfx/skia/skia/include/private/chromium/SkCodecsICCProfileChromium.h
+
+Blob: `72aa3632ddc571f427a17e7b0f1d1e97fbf87570`. Grammar: cpp. Status: contains-errors.
+
+- include <memory> @11
+- include "include/core/SkData.h" @13
+- include "include/core/SkRefCnt.h" @14
+- include "include/private/base/SkAPI.h" @15
+- include "modules/skcms/skcms.h" @16
+- function_definition ICCProfileChromium @22-48
+- class_specifier SK_API @22-22
+
+### gfx/skia/skia/include/private/chromium/SkDiscardableMemory.h
+
+Blob: `3aa9870360502f8806afe8bf89a6cba7d2786aee`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkRefCnt.h" @11
+- include "include/core/SkTypes.h" @12
+- function_definition SkDiscardableMemory @18-68
+- class_specifier SK_SPI @18-18
+- class_specifier Factory @30-35
+- function_definition ~SkDiscardableMemory @39-39
+- function_definition SkDiscardableMemory @66-66
+
+### gfx/skia/skia/include/private/chromium/SkExifChromium.h
+
+Blob: `4d11a9029d453d284e6ff68c94cb8d7d8e58cb6c`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkAPI.h" @11
+
+### gfx/skia/skia/include/private/chromium/SkImageChromium.h
+
+Blob: `7c62ba581b62ecaf3669ebee110c3b31f6c978d3`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkRefCnt.h" @11
+- include "include/private/base/SkAPI.h" @12
+- class_specifier GrBackendFormat @14-14
+- class_specifier GrContextThreadSafeProxy @15-15
+- class_specifier GrPromiseImageTexture @16-16
+- class_specifier GrDirectContext @17-17
+- class_specifier GrYUVABackendTextureInfo @18-18
+- class_specifier SkColorSpace @19-19
+- class_specifier SkImage @20-20
+- enum_specifier SkAlphaType @21-21
+- enum_specifier SkColorType @22-22
+- enum_specifier GrSurfaceOrigin @23-23
+- enum_specifier Mipmapped @25-25
+- struct_specifier SkISize @27-27
+- function_definition GetContext @111-113
+
+### gfx/skia/skia/include/private/chromium/SkPMColor.h
+
+Blob: `0a47f78f722af0e3cf5d8609492969345edf47e0`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkColor.h" @11
+- include "include/private/base/SkAPI.h" @12
+- include <cstdint> @14
+
+### gfx/skia/skia/include/private/chromium/Slug.h
+
+Blob: `0ee6082b8a8529e535e53539e2ac2279d51c2ff5`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkRect.h" @11
+- include "include/core/SkRefCnt.h" @12
+- include "include/private/base/SkAPI.h" @13
+- include <cstddef> @15
+- include <cstdint> @16
+- class_specifier SkCanvas @18-18
+- class_specifier SkData @19-19
+- class_specifier SkPaint @20-20
+- class_specifier SkReadBuffer @21-21
+- class_specifier SkStrikeClient @22-22
+- class_specifier SkTextBlob @23-23
+- class_specifier SkWriteBuffer @24-24
+- struct_specifier SkDeserialProcs @25-25
+- struct_specifier SkPoint @26-26
+- function_definition SkRefCnt @33-67
+- class_specifier SK_API @33-33
+- function_definition uniqueID @62-62
+
+### gfx/skia/skia/include/private/gpu/ganesh/GrContext_Base.h
+
+Blob: `352f516be915fb95e6e25c392c9f6819e8f5960c`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkRefCnt.h" @11
+- include "include/gpu/ganesh/GrTypes.h" @12
+- include "include/private/base/SkAPI.h" @13
+- include <cstdint> @15
+- class_specifier GrBaseContextPriv @17-17
+- class_specifier GrCaps @18-18
+- class_specifier GrContextThreadSafeProxy @19-19
+- class_specifier GrDirectContext @20-20
+- class_specifier GrImageContext @21-21
+- class_specifier GrRecordingContext @22-22
+- enum_specifier SkColorType @23-23
+- enum_specifier SkTextureCompressionType @24-24
+- struct_specifier GrContextOptions @25-25
+- class_specifier GrBackendFormat @26-26
+- class_specifier GrContext_Base @28-102
+- function_definition asDirectContext @35-35
+- function_definition matches @83-85
+- function_definition asImageContext @95-95
+- function_definition asRecordingContext @96-96
+
+### gfx/skia/skia/include/private/gpu/ganesh/GrD3DTypesMinimal.h
+
+Blob: `84db9c1567f0d05c99737f0f7c6a9d74ca85bc7f`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/core/SkRefCnt.h" @13
+- include <dxgiformat.h> @15
+- include <memory> @16
+- include "include/gpu/ganesh/GrTypes.h" @18
+- struct_specifier ID3D12Resource @20-20
+- class_specifier GrD3DResourceState @21-21
+- struct_specifier GrD3DSurfaceInfo @23-23
+- struct_specifier GrD3DTextureResourceInfo @24-24
+- struct_specifier GrD3DTextureResourceSpec @25-25
+- struct_specifier GrD3DFenceInfo @26-26
+- struct_specifier GrD3DBackendSurfaceInfo @34-58
+
+### gfx/skia/skia/include/private/gpu/ganesh/GrImageContext.h
+
+Blob: `726966ffa520d344dd70b59f1f017203a3fa9aaf`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkRefCnt.h" @11
+- include "include/private/base/SingleOwner.h" @12
+- include "include/private/base/SkAPI.h" @13
+- include "include/private/gpu/ganesh/GrContext_Base.h" @14
+- class_specifier GrContextThreadSafeProxy @16-16
+- class_specifier GrImageContextPriv @17-17
+- class_specifier GrImageContext @22-54
+- function_definition singleOwner @39-39
+- function_definition asImageContext @41-41
+
+### gfx/skia/skia/include/private/gpu/ganesh/GrTextureGenerator.h
+
+Blob: `7a0f347d3b45bf48807ad00a35e5bda716876879`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkImageGenerator.h" @11
+- include "include/gpu/ganesh/GrTypes.h" @12
+- include "include/private/base/SkAPI.h" @13
+- include <cstdint> @15
+- class_specifier GrRecordingContext @17-17
+- class_specifier GrSurfaceProxyView @18-18
+- enum_specifier GrImageTexGenPolicy @19-19
+- enum_specifier Mipmapped @20-20
+- struct_specifier SkImageInfo @21-21
+- function_definition GrTextureGenerator @23-64
+- class_specifier SK_API @23-23
+- function_definition origin @60-60
+
+### gfx/skia/skia/include/private/gpu/ganesh/GrTypesPriv.h
+
+Blob: `b56e32176a191c3c328cbbda83892f1aeed3eab0`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkColor.h" @11
+- include "include/core/SkColorType.h" @12
+- include "include/core/SkData.h" @13
+- include "include/core/SkPath.h" @14
+- include "include/core/SkPathTypes.h" @15
+- include "include/core/SkRefCnt.h" @16
+- include "include/private/base/SkAssert.h" @17
+- include "include/private/base/SkDebug.h" @18
+- include "include/private/base/SkMacros.h" @19
+- include "include/private/base/SkTypeTraits.h" @20
+- include <cstddef> @22
+- include <cstdint> @23
+- include <functional> @24
+- include <type_traits> @25
+- class_specifier GrSurfaceProxy @27-27
+- enum_specifier Mipmapped @30-30
+- function_definition GrSizeDivRoundUp @37-37
+- enum_specifier GrPrimitiveType @42-48
+- function_definition GrIsPrimTypeLines @51-53
+- enum_specifier GrPrimitiveRestart @55-58
+- enum_specifier GrTexturable @63-66
+- enum_specifier GrDDLProvider @70-73
+- enum_specifier GrWrapOwnership @76-82
+- enum_specifier GrWrapCacheable @84-97
+- enum_specifier GrBudgetedType @99-112
+- enum_specifier GrScissorTest @114-117
+- enum_specifier GrMemoryless @122-131
+- struct_specifier GrMipLevel @133-143
+- enum_specifier GrSemaphoreWrapType @145-148
+- enum_specifier GrLoadOp @154-158
+- enum_specifier GrStoreOp @164-167
+- enum_specifier GrAA @172-175
+- enum_specifier GrFillRule @177-180
+- function_definition GrFillRuleForPathFillType @182-192
+- function_definition GrFillRuleForSkPath @194-196
+- enum_specifier GrAAType @199-208
+- function_definition GrAATypeIsHW @211-221
+- enum_specifier GrClampType @227-231
+- enum_specifier GrQuadAAFlags @246-254
+- function_definition SkToGrQuadAAFlags @258-260
+- enum_specifier GrTextureType @267-273
+- enum_specifier GrShaderType @275-280
+- enum_specifier GrShaderFlags @283-287
+- function_definition GrTextureTypeHasRestrictedSampling @293-304
+- enum_specifier GrVertexAttribType @311-350
+- enum_specifier GrClipEdgeType @360-367
+- function_definition GrClipEdgeTypeIsFill @370-372
+- function_definition GrClipEdgeTypeIsInverseFill @374-377
+- function_definition GrClipEdgeTypeIsAA @379-382
+- function_definition GrInvertClipEdgeType @384-396
+- enum_specifier GrIOType @401-405
+- enum_specifier GrGpuBufferType @410-417
+- enum_specifier GrAccessPattern @423-432
+- enum_specifier GrInternalSurfaceFlags @435-462
+- enum_specifier GrBackendObjectOwnership @495-500
+- enum_specifier GpuPathRenderers @505-517
+- enum_specifier GrMipmapStatus @522-526
+- enum_specifier GrColorType @539-586
+- function_definition GrColorTypeToSkColorType @590-630
+- function_definition SkColorTypeToGrColorType @632-665
+- function_definition GrColorTypeChannelFlags @667-707
+- enum_specifier GrColorTypeEncoding @712-719
+- class_specifier GrColorFormatDesc @726-800
+- function_definition MakeRGBA @728-730
+- function_definition MakeRGBA @732-734
+- function_definition MakeRGB @736-738
+- function_definition MakeRGB @740-742
+- function_definition MakeAlpha @744-746
+- function_definition MakeR @748-750
+- function_definition MakeRG @752-754
+- function_definition MakeGray @756-758
+- function_definition MakeGrayAlpha @760-762
+- function_definition MakeInvalid @764-764
+- function_definition r @766-766
+- function_definition g @767-767
+- function_definition b @768-768
+- function_definition a @769-769
+- function_definition operator[] @770-778
+- function_definition gray @780-780
+- function_definition encoding @782-782
+- function_definition GrColorFormatDesc @792-792
+- function_definition GrColorFormatDesc @794-799
+- function_definition GrGetColorTypeDesc @802-878
+- function_definition GrColorTypeClampType @880-886
+- function_definition GrColorTypeIsWiderThan @890-898
+- function_definition GrColorTypeIsAlphaOnly @900-902
+- function_definition GrColorTypeHasAlpha @904-906
+- function_definition GrColorTypeBytesPerPixel @908-948
+- enum_specifier GrDstSampleFlags @950-954
+
+### gfx/skia/skia/include/private/gpu/vk/SkiaVulkan.h
+
+Blob: `aa7329fa9e9675926dc87dcb99a17081d06d0095`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/core/SkTypes.h" @11
+- include "include/third_party/vulkan/vulkan/vulkan_core.h" @16
+- include <vulkan/vulkan_core.h> @20
+- include "include/third_party/vulkan/vulkan/vulkan_android.h" @26
+- include <vulkan/vulkan_android.h> @30
+
+### gfx/skia/skia/include/sksl/SkSLDebugTrace.h
+
+Blob: `e6a4023fa80d6e78e02ed7d6117c67c277aca9d4`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/core/SkRefCnt.h" @11
+- class_specifier SkWStream @13-13
+- class_specifier DebugTrace @17-21
+
+### gfx/skia/skia/include/sksl/SkSLVersion.h
+
+Blob: `ad059d580ef89975f9bd74e4dbb37b62a64a98de`. Grammar: cpp. Status: syntax-clean.
+
+- enum_specifier Version @13-23
+
+### gfx/skia/skia/include/utils/SkCamera.h
+
+Blob: `536691875e4f4cfb4ff91e8a9ce45331edb80a0e`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkM44.h" @13
+- include "include/core/SkMatrix.h" @14
+- include "include/core/SkScalar.h" @15
+- include "include/core/SkTypes.h" @16
+- include "include/private/base/SkNoncopyable.h" @17
+- class_specifier SkCanvas @24-24
+- class_specifier SkPatch3D @27-50
+- function_definition dotWith @36-38
+- function_definition rotate @41-41
+- function_definition rotateDegrees @42-42
+- class_specifier SkCamera3D @53-71
+- function_definition SkNoncopyable @74-107
+- class_specifier SK_API @74-74
+- struct_specifier Rec @100-103
+
+### gfx/skia/skia/include/utils/SkCanvasStateUtils.h
+
+Blob: `0172e379310671780302d4fa3c64be09cff62e4a`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/core/SkTypes.h" @11
+- include <memory> @13
+- class_specifier SkCanvas @15-15
+- class_specifier SkCanvasState @16-16
+- function_definition SkCanvasStateUtils @33-79
+- class_specifier SK_API @33-33
+
+### gfx/skia/skia/include/utils/SkCustomTypeface.h
+
+Blob: `7793db02d130f5d9c9d027eb27ef886a9a5bbd81`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkDrawable.h" @11
+- include "include/core/SkFontMetrics.h" @12
+- include "include/core/SkFontStyle.h" @13
+- include "include/core/SkFourByteTag.h" @14
+- include "include/core/SkPath.h" @15
+- include "include/core/SkRect.h" @16
+- include "include/core/SkRefCnt.h" @17
+- include "include/core/SkTypeface.h" @18
+- include "include/core/SkTypes.h" @19
+- include <memory> @21
+- include <vector> @22
+- class_specifier SkStream @24-24
+- class_specifier SkStreamAsset @25-25
+- struct_specifier SkFontArguments @26-26
+- function_definition SkCustomTypefaceBuilder @28-68
+- class_specifier SK_API @28-28
+- struct_specifier GlyphRec @44-56
+- function_definition isDrawable @52-55
+
+### gfx/skia/skia/include/utils/SkEventTracer.h
+
+Blob: `8a6188fd506858e89d73e224cee6a57b49908b20`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkTypes.h" @19
+- include <cstdint> @21
+- function_definition SkEventTracer @23-91
+- class_specifier SK_API @23-23
+- function_definition ~SkEventTracer @46-46
+- enum_specifier CategoryGroupEnabledFlags @52-59
+- function_definition newTracingSection @81-81
+- function_definition SkEventTracer @85-85
+- function_definition onExit @90-90
+
+### gfx/skia/skia/include/utils/SkNWayCanvas.h
+
+Blob: `0332a1432bb5dbcc0276454ec11680650318618b`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkCanvasVirtualEnforcer.h" @12
+- include "include/core/SkColor.h" @13
+- include "include/core/SkM44.h" @14
+- include "include/core/SkRefCnt.h" @15
+- include "include/core/SkSamplingOptions.h" @16
+- include "include/core/SkScalar.h" @17
+- include "include/core/SkTypes.h" @18
+- include "include/private/base/SkTDArray.h" @19
+- include "include/utils/SkNoDrawCanvas.h" @20
+- include <cstddef> @22
+- class_specifier GlyphRunList @25-25
+- class_specifier SkCanvas @28-28
+- class_specifier SkData @29-29
+- class_specifier SkDrawable @30-30
+- class_specifier SkImage @31-31
+- class_specifier SkMatrix @32-32
+- class_specifier SkPaint @33-33
+- class_specifier SkPath @34-34
+- class_specifier SkPicture @35-35
+- class_specifier SkRRect @36-36
+- class_specifier SkRegion @37-37
+- class_specifier SkShader @38-38
+- class_specifier SkTextBlob @39-39
+- class_specifier SkVertices @40-40
+- enum_specifier SkBlendMode @41-41
+- enum_specifier SkClipOp @42-42
+- struct_specifier SkDrawShadowRec @43-43
+- struct_specifier SkPoint @44-44
+- struct_specifier SkRSXform @45-45
+- struct_specifier SkRect @46-46
+- class_specifier Slug @48-48
+- function_definition SkCanvasVirtualEnforcer @50-120
+- class_specifier SK_API @50-50
+- class_specifier Iter @117-117
+
+### gfx/skia/skia/include/utils/SkNoDrawCanvas.h
+
+Blob: `14e917df7ec6354321fdd446a6a48166755a99c0`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkCanvas.h" @11
+- include "include/core/SkCanvasVirtualEnforcer.h" @12
+- struct_specifier SkIRect @14-14
+- function_definition SkCanvasVirtualEnforcer @24-76
+- class_specifier SK_API @24-24
+- function_definition resetCanvas @30-30
+- function_definition resetCanvas @31-31
+- function_definition onDrawAnnotation @38-38
+- function_definition onDrawDRRect @39-39
+- function_definition onDrawDrawable @40-40
+- function_definition onDrawTextBlob @41-41
+- function_definition onDrawPatch @42-43
+- function_definition onDrawPaint @45-45
+- function_definition onDrawBehind @46-46
+- function_definition onDrawPoints @47-47
+- function_definition onDrawRect @48-48
+- function_definition onDrawRegion @49-49
+- function_definition onDrawOval @50-50
+- function_definition onDrawArc @51-51
+- function_definition onDrawRRect @52-52
+- function_definition onDrawPath @53-53
+- function_definition onDrawImage2 @55-56
+- function_definition onDrawImageRect2 @57-58
+- function_definition onDrawImageLattice2 @59-60
+- function_definition onDrawAtlas2 @61-62
+- function_definition onDrawVerticesObject @64-64
+- function_definition onDrawShadowRec @65-65
+- function_definition onDrawPicture @66-66
+- function_definition onDrawEdgeAAQuad @68-69
+- function_definition onDrawEdgeAAImageSet2 @70-72
+
+### gfx/skia/skia/include/utils/SkNullCanvas.h
+
+Blob: `a77e3e3de9bb806944612e1c48f80b3191c5e6d0`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkTypes.h" @11
+- include <memory> @13
+- class_specifier SkCanvas @15-15
+
+### gfx/skia/skia/include/utils/SkOrderedFontMgr.h
+
+Blob: `48f839fdad457114a03ef239c1c582769c6c6e32`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkFontMgr.h" @11
+- include "include/core/SkRefCnt.h" @12
+- include "include/core/SkTypes.h" @13
+- include <memory> @15
+- include <vector> @16
+- class_specifier SkData @18-18
+- class_specifier SkFontStyle @19-19
+- class_specifier SkStreamAsset @20-20
+- class_specifier SkString @21-21
+- class_specifier SkTypeface @22-22
+- struct_specifier SkFontArguments @23-23
+- function_definition SkOrderedFontMgr @32-64
+- class_specifier SK_API @32-32
+
+### gfx/skia/skia/include/utils/SkPaintFilterCanvas.h
+
+Blob: `9a036e6df576dd5791b2cc44f4502418cb4d2a52`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkCanvas.h" @11
+- include "include/core/SkCanvasVirtualEnforcer.h" @12
+- include "include/core/SkColor.h" @13
+- include "include/core/SkImageInfo.h" @14
+- include "include/core/SkRefCnt.h" @15
+- include "include/core/SkSamplingOptions.h" @16
+- include "include/core/SkScalar.h" @17
+- include "include/core/SkSize.h" @18
+- include "include/core/SkTypes.h" @19
+- include "include/private/base/SkTDArray.h" @20
+- include "include/utils/SkNWayCanvas.h" @21
+- include <cstddef> @23
+- class_specifier GlyphRunList @26-26
+- class_specifier GrRecordingContext @29-29
+- class_specifier SkData @30-30
+- class_specifier SkDrawable @31-31
+- class_specifier SkImage @32-32
+- class_specifier SkMatrix @33-33
+- class_specifier SkPaint @34-34
+- class_specifier SkPath @35-35
+- class_specifier SkPicture @36-36
+- class_specifier SkPixmap @37-37
+- class_specifier SkRRect @38-38
+- class_specifier SkRegion @39-39
+- class_specifier SkSurface @40-40
+- class_specifier SkSurfaceProps @41-41
+- class_specifier SkTextBlob @42-42
+- class_specifier SkVertices @43-43
+- enum_specifier SkBlendMode @44-44
+- struct_specifier SkDrawShadowRec @45-45
+- struct_specifier SkPoint @46-46
+- struct_specifier SkRSXform @47-47
+- struct_specifier SkRect @48-48
+- function_definition SkCanvasVirtualEnforcer @54-138
+- class_specifier SK_API @54-54
+- enum_specifier Type @62-64
+- function_definition getBaseLayerSize @67-67
+- function_definition recordingContext @68-68
+- class_specifier AutoPaintFilter @129-129
+- function_definition proxy @131-131
+- function_definition internal_private_asPaintFilterCanvas @133-135
+
+### gfx/skia/skia/include/utils/SkParse.h
+
+Blob: `6493a35e86319c076f08a56d9cd57a47c6bbb9df`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/core/SkColor.h" @13
+- include "include/core/SkScalar.h" @14
+- include "include/core/SkTypes.h" @15
+- include <cstddef> @17
+- include <cstdint> @18
+- function_definition SkParse @20-34
+- class_specifier SK_API @20-20
+
+### gfx/skia/skia/include/utils/SkParsePath.h
+
+Blob: `2c83a4ed08170ae22410675aee5f19f0586f336c`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/core/SkPath.h" @13
+- class_specifier SkString @15-15
+- function_definition SkParsePath @17-31
+- class_specifier SK_API @17-17
+- function_definition FromSVGString @21-27
+- enum_specifier PathEncoding @29-29
+
+### gfx/skia/skia/include/utils/SkShadowUtils.h
+
+Blob: `d37eaf484e1b713903b801c5fceff55e939a6062`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/core/SkColor.h" @11
+- include "include/core/SkScalar.h" @12
+- include "include/core/SkTypes.h" @13
+- include <cstdint> @15
+- class_specifier SkCanvas @17-17
+- class_specifier SkMatrix @18-18
+- class_specifier SkPath @19-19
+- struct_specifier SkPoint3 @20-20
+- struct_specifier SkRect @21-21
+- enum_specifier SkShadowFlags @23-36
+- function_definition SkShadowUtils @38-100
+- class_specifier SK_API @38-38
+
+### gfx/skia/skia/include/utils/SkTextUtils.h
+
+Blob: `a7363c94e100d943abdd13a09a2f7c90e2d5bbcf`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkFontTypes.h" @11
+- include "include/core/SkScalar.h" @12
+- include "include/core/SkTypes.h" @13
+- include <cstddef> @15
+- include <cstring> @16
+- class_specifier SkCanvas @18-18
+- class_specifier SkFont @19-19
+- class_specifier SkPaint @20-20
+- class_specifier SkPath @21-21
+- function_definition SkTextUtils @23-41
+- class_specifier SK_API @23-23
+- enum_specifier Align @25-29
+- function_definition DrawString @34-37
+
+### gfx/skia/skia/include/utils/SkTraceEventPhase.h
+
+Blob: `38457be24b40798467a0392467990c31b50daf68`. Grammar: cpp. Status: syntax-clean.
+
+
+### gfx/skia/skia/include/utils/mac/SkCGUtils.h
+
+Blob: `73d89c174adc279a02bc5bb8c9c20c6d3428d796`. Grammar: cpp. Status: contains-errors.
+
+- include "include/core/SkImage.h" @11
+- include "include/core/SkImageInfo.h" @12
+- include "include/core/SkPixmap.h" @13
+- include "include/core/SkSize.h" @14
+- include <ApplicationServices/ApplicationServices.h> @19
+- include <CoreGraphics/CoreGraphics.h> @23
+- class_specifier SkBitmap @26-26
+- class_specifier SkColorSpace @27-27
+- class_specifier SkData @28-28
+- class_specifier SkPixmap @29-29
+- class_specifier SkStreamRewindable @30-30
+- function_definition SkCopyPixelsFromCGImage @57-59
+
+### gfx/skia/skia/modules/skcms/skcms.cc
+
+Blob: `889cef2108ff22b0bb12527c3a865917e1cb2323`. Grammar: cpp. Status: contains-errors.
+
+- include "src/skcms_public.h" @8
+- include "src/skcms_internals.h" @9
+- include "src/skcms_Transform.h" @10
+- include <assert.h> @11
+- include <float.h> @12
+- include <limits.h> @13
+- include <stdlib.h> @14
+- include <string.h> @15
+- include <arm_neon.h> @18
+- include <immintrin.h> @20
+- include <smmintrin.h> @28
+- include <avxintrin.h> @29
+- include <avx2intrin.h> @30
+- include <avx512fintrin.h> @31
+- include <avx512dqintrin.h> @32
+- function_definition skcms_DisableRuntimeCPUDetection @40-42
+- function_definition log2f_ @44-59
+- function_definition logf_ @60-63
+- function_definition exp2f_ @65-90
+- function_definition powf_ @93-101
+- function_definition expf_ @103-106
+- function_definition fmaxf_ @108-108
+- function_definition fminf_ @109-109
+- function_definition isfinitef_ @111-111
+- function_definition minus_1_ulp @113-119
+- struct_specifier TF_PQish @124-124
+- struct_specifier TF_HLGish @125-125
+- function_definition TFKind_marker @130-133
+- function_definition classify @135-191
+- function_definition skcms_TransferFunction_getType @193-195
+- function_definition skcms_TransferFunction_isSRGBish @196-198
+- function_definition skcms_TransferFunction_isPQish @199-201
+- function_definition skcms_TransferFunction_isHLGish @202-204
+- function_definition skcms_TransferFunction_isPQ @205-207
+- function_definition skcms_TransferFunction_isHLG @208-210
+- function_definition skcms_TransferFunction_makePQish @212-218
+- function_definition skcms_TransferFunction_makeScaledHLGish @220-226
+- function_definition skcms_TransferFunction_makePQ @228-235
+- function_definition skcms_TransferFunction_makeHLG @237-248
+- function_definition skcms_TransferFunction_eval @250-299
+- function_definition eval_curve @302-326
+- function_definition skcms_MaxRoundtripError @328-338
+- function_definition skcms_AreApproximateInverses @340-342
+- enum_specifier (anonymous) @345-377
+- function_definition read_big_u16 @379-387
+- function_definition read_big_u32 @389-397
+- function_definition read_big_i32 @399-401
+- function_definition read_big_fixed @403-405
+- struct_specifier header_Layout @409-431
+- struct_specifier tag_Layout @433-437
+- function_definition get_tag_table @439-441
+- struct_specifier sf32_Layout @445-449
+- function_definition skcms_GetCHAD @451-468
+- struct_specifier XYZ_Layout @472-478
+- function_definition read_tag_xyz @480-491
+- function_definition skcms_GetWTPT @493-497
+- function_definition data_color_space_channel_count @499-528
+- function_definition skcms_GetInputChannelCount @530-560
+- function_definition read_to_XYZD50 @562-567
+- struct_specifier para_Layout @569-575
+- function_definition read_curve_para @577-644
+- enum_specifier (anonymous) @585-585
+- struct_specifier curv_Layout @646-651
+- function_definition read_curve_curv @656-715
+- struct_specifier mft_CommonLayout @718-726
+- struct_specifier mft1_Layout @728-732
+- struct_specifier mft2_Layout @734-740
+- function_definition read_mft_common @742-768
+- function_definition read_mft_common @771-794
+- function_definition init_tables @797-849
+- function_definition read_tag_mft1 @852-867
+- function_definition read_tag_mft2 @870-891
+- function_definition read_curves @893-918
+- struct_specifier mAB_or_mBA_Layout @921-932
+- struct_specifier CLUT_Layout @934-939
+- function_definition read_tag_mab @941-1076
+- function_definition read_tag_mba @1080-1211
+- function_definition fit_linear @1215-1265
+- function_definition canonicalize_identity @1268-1282
+- function_definition read_a2b @1284-1307
+- function_definition read_b2a @1309-1332
+- struct_specifier CICP_Layout @1334-1341
+- function_definition read_cicp @1343-1355
+- function_definition skcms_GetTagByIndex @1357-1365
+- function_definition skcms_GetTagBySignature @1367-1380
+- function_definition usable_as_src @1382-1385
+- function_definition skcms_ParseWithA2BPriority @1387-1537
+- function_definition skcms_sRGB_profile @1540-1636
+- function_definition skcms_XYZD50_profile @1638-1734
+- function_definition skcms_sRGB_TransferFunction @1736-1738
+- function_definition skcms_sRGB_Inverse_TransferFunction @1740-1744
+- function_definition skcms_Identity_TransferFunction @1746-1749
+- function_definition skcms_ApproximatelyEqualProfiles @1770-1826
+- function_definition skcms_TRCs_AreApproximateInverse @1828-1837
+- function_definition is_zero_to_one @1839-1841
+- struct_specifier skcms_Vector3 @1843-1843
+- function_definition mv_mul @1845-1853
+- function_definition skcms_AdaptToXYZD50 @1855-1894
+- function_definition skcms_PrimariesToXYZD50 @1896-1938
+- function_definition skcms_Matrix3x3_invert @1941-1996
+- function_definition skcms_Matrix3x3_concat @1998-2007
+- function_definition skcms_TransferFunction_invert @2012-2125
+- function_definition rg_nonlinear @2166-2192
+- function_definition gauss_newton_step @2194-2273
+- function_definition max_roundtrip_error_checked @2275-2288
+- function_definition fit_nonlinear @2291-2348
+- function_definition skcms_ApproximateCurve @2350-2449
+- enum_specifier CpuType @2451-2451
+- function_definition cpu_type @2453-2511
+- function_definition tf_is_gamma @2513-2516
+- struct_specifier OpAndArg @2518-2521
+- function_definition select_curve_op @2523-2561
+- struct_specifier OpType @2524-2526
+- function_definition select_curve_ops @2564-2609
+- struct_specifier FusableOps @2580-2582
+- function_definition bytes_per_pixel @2611-2637
+- function_definition has_cicp_pq_trc @2643-2646
+- function_definition has_cicp_hlg_trc @2648-2651
+- function_definition set_reference_pq_ish_trc @2654-2666
+- function_definition set_sdr_hlg_ish_trc @2672-2676
+- function_definition prep_for_destination @2678-2729
+- function_definition skcms_Transform @2731-3115
+- function_definition assert_usable_as_destination @3117-3127
+- function_definition skcms_MakeUsableAsDestination @3129-3160
+- function_definition skcms_MakeUsableAsDestinationWithSingleCurve @3162-3197
+
+### gfx/skia/skia/modules/skcms/skcms.h
+
+Blob: `7a9d4c1897b65639a094708bec63c948eb98da62`. Grammar: cpp. Status: syntax-clean.
+
+- include "src/skcms_public.h" @10
+
+### gfx/skia/skia/modules/skcms/src/Transform_inl.h
+
+Blob: `88d6c8728a49af49ae8ed92a91d6e6aebe31d9e5`. Grammar: cpp. Status: contains-errors.
+
+- function_definition load @98-102
+- function_definition store @104-106
+- function_definition cast @111-118
+- function_definition bit_pun @121-124
+- function_definition to_fixed @129-129
+- function_definition if_then_else @141-144
+- function_definition F_from_Half @148-173
+- function_definition Half_from_F @178-197
+- function_definition swap_endian_16 @201-203
+- function_definition swap_endian_16x4 @206-209
+- function_definition min_ @212-212
+- function_definition max_ @213-213
+- function_definition min_ @215-215
+- function_definition max_ @216-216
+- function_definition min_ @218-218
+- function_definition max_ @219-219
+- function_definition floor_ @222-248
+- function_definition approx_log2 @250-262
+- function_definition approx_log @264-267
+- function_definition approx_exp2 @269-278
+- function_definition approx_pow @280-283
+- function_definition approx_exp @285-288
+- function_definition strip_sign @290-294
+- function_definition apply_sign @296-298
+- function_definition apply_tf @301-312
+- function_definition apply_gamma @315-319
+- function_definition apply_pq @321-331
+- function_definition apply_hlg @333-345
+- function_definition apply_hlginv @347-360
+- function_definition compute_Y_in_xyzd50 @365-369
+- function_definition load_3 @373-384
+- function_definition load_4 @387-398
+- function_definition store_3 @401-415
+- function_definition store_4 @418-432
+- function_definition gather_8 @435-450
+- function_definition gather_16 @452-471
+- function_definition gather_32 @473-493
+- function_definition gather_24 @495-531
+- function_definition gather_48 @534-586
+- function_definition F_from_U8 @589-591
+- function_definition F_from_U16_BE @593-599
+- function_definition U16_from_F @601-604
+- function_definition minus_1_ulp @606-608
+- function_definition table @610-632
+- function_definition sample_clut_8 @634-640
+- function_definition sample_clut_8 @642-650
+- function_definition sample_clut_16 @652-668
+- function_definition sample_clut_16 @670-676
+- function_definition clut @678-757
+- function_definition clut @759-763
+- function_definition clut @764-768
+- struct_specifier NoCtx @770-770
+- struct_specifier Ctx @772-776
+- function_definition (anonymous) @774-774
+- function_definition (anonymous) @775-775
+- struct_specifier StageList @793-793
+- struct_specifier StageList @795-797
+- function_definition STAGE @833-835
+- function_definition STAGE @837-839
+- function_definition STAGE @841-845
+- function_definition STAGE @847-854
+- function_definition STAGE @856-862
+- function_definition STAGE @864-887
+- function_definition STAGE @889-896
+- function_definition STAGE @898-905
+- function_definition STAGE @907-912
+- function_definition STAGE @914-921
+- function_definition STAGE @923-937
+- function_definition STAGE @939-957
+- function_definition STAGE @959-977
+- function_definition STAGE @979-997
+- function_definition STAGE @999-1016
+- function_definition STAGE @1018-1039
+- function_definition STAGE @1041-1055
+- function_definition STAGE @1057-1073
+- function_definition STAGE @1075-1079
+- function_definition STAGE @1081-1086
+- function_definition STAGE @1088-1093
+- function_definition STAGE @1095-1097
+- function_definition STAGE @1099-1103
+- function_definition STAGE @1105-1110
+- function_definition STAGE @1112-1122
+- function_definition STAGE @1124-1134
+- function_definition STAGE @1136-1155
+- function_definition STAGE @1158-1174
+- function_definition STAGE @1176-1176
+- function_definition STAGE @1177-1177
+- function_definition STAGE @1178-1178
+- function_definition STAGE @1179-1179
+- function_definition STAGE @1181-1185
+- function_definition STAGE @1187-1187
+- function_definition STAGE @1188-1188
+- function_definition STAGE @1189-1189
+- function_definition STAGE @1190-1190
+- function_definition STAGE @1192-1196
+- function_definition STAGE @1198-1198
+- function_definition STAGE @1199-1199
+- function_definition STAGE @1200-1200
+- function_definition STAGE @1201-1201
+- function_definition STAGE @1203-1207
+- function_definition STAGE @1209-1209
+- function_definition STAGE @1210-1210
+- function_definition STAGE @1211-1211
+- function_definition STAGE @1212-1212
+- function_definition STAGE @1214-1218
+- function_definition STAGE @1221-1239
+- function_definition STAGE @1241-1241
+- function_definition STAGE @1242-1242
+- function_definition STAGE @1243-1243
+- function_definition STAGE @1244-1244
+- function_definition STAGE @1246-1250
+- function_definition STAGE @1253-1267
+- function_definition STAGE @1269-1269
+- function_definition STAGE @1270-1270
+- function_definition STAGE @1271-1271
+- function_definition STAGE @1272-1272
+- function_definition STAGE @1274-1281
+- function_definition STAGE @1283-1285
+- function_definition FINAL_STAGE @1289-1291
+- function_definition FINAL_STAGE @1293-1296
+- function_definition FINAL_STAGE @1298-1302
+- function_definition FINAL_STAGE @1304-1309
+- function_definition FINAL_STAGE @1311-1315
+- function_definition FINAL_STAGE @1317-1337
+- function_definition FINAL_STAGE @1339-1344
+- function_definition FINAL_STAGE @1346-1350
+- function_definition FINAL_STAGE @1352-1358
+- function_definition FINAL_STAGE @1360-1365
+- function_definition FINAL_STAGE @1367-1384
+- function_definition FINAL_STAGE @1386-1405
+- function_definition FINAL_STAGE @1407-1427
+- function_definition FINAL_STAGE @1429-1448
+- function_definition FINAL_STAGE @1450-1470
+- function_definition FINAL_STAGE @1472-1495
+- function_definition FINAL_STAGE @1497-1513
+- function_definition FINAL_STAGE @1515-1533
+- function_definition exec_stages @1537-1539
+- function_definition exec_stages @1543-1556
+- function_definition run_program @1561-1597
+
+### gfx/skia/skia/modules/skcms/src/skcms_Transform.h
+
+Blob: `868d71a68177e5f0d54099f065f674224c397e11`. Grammar: cpp. Status: contains-errors.
+
+- include <stddef.h> @10
+- include <stdint.h> @11
+- enum_specifier Op @112-117
+- struct_specifier VecHelper @138-140
+
+### gfx/skia/skia/modules/skcms/src/skcms_TransformBaseline.cc
+
+Blob: `706cc2ca219295fb164cb213e7197dcb5751da78`. Grammar: cpp. Status: syntax-clean.
+
+- include "skcms_public.h" @8
+- include "skcms_internals.h" @9
+- include "skcms_Transform.h" @10
+- include <assert.h> @11
+- include <float.h> @12
+- include <limits.h> @13
+- include <stdlib.h> @14
+- include <string.h> @15
+- include <arm_neon.h> @18
+- include <immintrin.h> @20
+- include <smmintrin.h> @28
+- include <lsxintrin.h> @31
+- include "Transform_inl.h" @47
+
+### gfx/skia/skia/modules/skcms/src/skcms_TransformHsw.cc
+
+Blob: `7349f524f868760d214957e74489d7fbae6b90a8`. Grammar: cpp. Status: syntax-clean.
+
+- include "skcms_public.h" @8
+- include "skcms_internals.h" @9
+- include "skcms_Transform.h" @10
+- include <assert.h> @11
+- include <float.h> @12
+- include <limits.h> @13
+- include <stdlib.h> @14
+- include <string.h> @15
+- include <arm_neon.h> @18
+- include <immintrin.h> @20
+- include <smmintrin.h> @28
+- include <avxintrin.h> @29
+- include <avx2intrin.h> @30
+- include <avx512fintrin.h> @31
+- include <avx512dqintrin.h> @32
+- function_definition run_program @41-46
+- include "Transform_inl.h" @56
+
+### gfx/skia/skia/modules/skcms/src/skcms_TransformSkx.cc
+
+Blob: `8ded464c09ba5f28c369861d362a39b4d1c98d12`. Grammar: cpp. Status: syntax-clean.
+
+- include "skcms_public.h" @8
+- include "skcms_internals.h" @9
+- include "skcms_Transform.h" @10
+- include <assert.h> @11
+- include <float.h> @12
+- include <limits.h> @13
+- include <stdlib.h> @14
+- include <string.h> @15
+- include <arm_neon.h> @18
+- include <immintrin.h> @20
+- include <smmintrin.h> @28
+- include <avxintrin.h> @29
+- include <avx2intrin.h> @30
+- include <avx512fintrin.h> @31
+- include <avx512dqintrin.h> @32
+- function_definition run_program @41-46
+- include "Transform_inl.h" @53
+
+### gfx/skia/skia/modules/skcms/src/skcms_internals.h
+
+Blob: `02aa7b77a586c9e0e13e366aa43cdb563a57341b`. Grammar: cpp. Status: contains-errors.
+
+- include <stdbool.h> @13
+- include <stdint.h> @14
+- struct_specifier skcms_ICCTag @126-131
+- struct_specifier skcms_ICCProfile @133-133
+- struct_specifier skcms_TransferFunction @134-134
+- function_definition floorf_ @148-151
+- function_definition fabsf_ @152-152
+
+### gfx/skia/skia/modules/skcms/src/skcms_public.h
+
+Blob: `fc1075cf23cbf2ef65ec64aeb95b20f20eaaefac`. Grammar: cpp. Status: contains-errors.
+
+- include <stdbool.h> @41
+- include <stddef.h> @42
+- include <stdint.h> @43
+- include <string.h> @44
+- struct_specifier skcms_Matrix3x3 @51-53
+- struct_specifier skcms_Matrix3x4 @60-62
+- struct_specifier skcms_TransferFunction @71-73
+- enum_specifier skcms_TFType @79-87
+- function_definition skcms_TransferFunction_makeHLGish @110-114
+- struct_specifier (anonymous) @161-167
+- struct_specifier (anonymous) @168-172
+- struct_specifier skcms_A2B @179-199
+- struct_specifier skcms_B2A @201-221
+- struct_specifier skcms_CICP @223-228
+- struct_specifier skcms_ICCProfile @230-267
+- function_definition skcms_Parse @305-312
+- enum_specifier skcms_Signature @328-359
+- enum_specifier skcms_PixelFormat @361-414
+- enum_specifier skcms_AlphaFormat @426-433
+- function_definition skcms_Init @474-478
+- function_definition skcms_SetTransferFunction @480-487
+- function_definition skcms_SetXYZD50 @489-492
+
+### gfx/skia/skia/src/base/SkArenaAlloc.cpp
+
+Blob: `4ef9ff621ad52b7c950d41c063a0c06ccdf8ef58`. Grammar: cpp. Status: syntax-clean.
+
+- include "src/base/SkArenaAlloc.h" @8
+- include "include/private/base/SkMalloc.h" @10
+- include <algorithm> @12
+- include <cassert> @13
+- include <cstddef> @14
+- function_definition end_chain @16-16
+- function_definition SkArenaAlloc @18-32
+- function_definition ~SkArenaAlloc @34-36
+- function_definition installFooter @38-43
+- function_definition SkipPod @45-50
+- function_definition RunDtorsOnBlock @52-62
+- function_definition NextBlock @64-71
+- function_definition ensureSpace @73-107
+- function_definition allocObjectWithFooter @109-144
+- function_definition SkArenaAllocWithReset @146-152
+- function_definition reset @154-160
+- function_definition isEmpty @162-165
+
+### gfx/skia/skia/src/base/SkArenaAlloc.h
+
+Blob: `fd3e652dafaeeb1dd3452d77934bb3851c4a8c99`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkASAN.h" @11
+- include "include/private/base/SkAssert.h" @12
+- include "include/private/base/SkSpan_impl.h" @13
+- include "include/private/base/SkTFitsIn.h" @14
+- include "include/private/base/SkTo.h" @15
+- include <algorithm> @17
+- include <array> @18
+- include <cstdint> @19
+- include <cstdlib> @20
+- include <cstring> @21
+- include <limits> @22
+- include <new> @23
+- include <type_traits> @24
+- include <utility> @25
+- class_specifier SkFibBlockSizes @34-64
+- function_definition SkFibBlockSizes @41-47
+- function_definition nextBlockSize @49-59
+- class_specifier SkArenaAlloc @106-320
+- function_definition SkArenaAlloc @110-111
+- function_definition SkArenaAlloc @113-113
+- function_definition (anonymous) @114-114
+- function_definition SkArenaAlloc @115-115
+- function_definition (anonymous) @116-116
+- function_definition make @121-149
+- function_definition make @152-156
+- function_definition make @159-169
+- function_definition makeArrayDefault @172-179
+- function_definition makeArray @182-189
+- function_definition makeInitializedArray @192-198
+- function_definition makeArrayCopy @201-211
+- function_definition makeBytesAlignedTo @214-220
+- struct_specifier Footer @224-227
+- function_definition cursor @229-229
+- function_definition end @230-230
+- function_definition AssertRelease @233-233
+- function_definition installRaw @240-244
+- function_definition allocObject @249-265
+- function_definition allocUninitializedArray @270-313
+- class_specifier SkArenaAllocWithReset @322-339
+- function_definition SkArenaAllocWithReset @326-327
+- class_specifier SkSTArenaAlloc @347-356
+- function_definition SkSTArenaAlloc @349-350
+- function_definition ~SkSTArenaAlloc @352-355
+- class_specifier SkSTArenaAllocWithReset @359-369
+- function_definition SkSTArenaAllocWithReset @362-363
+- function_definition ~SkSTArenaAllocWithReset @365-368
+
+### gfx/skia/skia/src/base/SkArenaAllocList.h
+
+Blob: `b6bb59bc7872b04944787d3b09a4252162e07490`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkAssert.h" @11
+- include "src/base/SkArenaAlloc.h" @12
+- include <utility> @14
+- class_specifier SkArenaAllocList @21-61
+- struct_specifier Node @23-23
+- function_definition SkArenaAllocList @26-26
+- function_definition reset @28-28
+- class_specifier Iter @33-46
+- function_definition Iter @35-35
+- function_definition (anonymous) @37-37
+- function_definition operator-> @38-38
+- function_definition operator== @39-39
+- function_definition operator!= @40-40
+- function_definition Iter @44-44
+- function_definition begin @48-48
+- function_definition end @49-49
+- function_definition tail @50-50
+- struct_specifier Node @53-58
+- function_definition Node @55-55
+- function_definition (anonymous) @65-74
+- function_definition (anonymous) @77-80
+
+### gfx/skia/skia/src/base/SkAutoLocaleSetter.h
+
+Blob: `90bcbb32bc406c0bff13ebdaf804e7d379b91f48`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkNoncopyable.h" @11
+- include <optional> @14
+- include <string> @15
+- include <locale.h> @19
+- include <xlocale.h> @23
+- include <cstring> @24
+- class_specifier SkAutoLocaleSetter @40-89
+- function_definition SkAutoLocaleSetter @42-65
+- function_definition ~SkAutoLocaleSetter @67-79
+
+### gfx/skia/skia/src/base/SkAutoMalloc.h
+
+Blob: `7a4cca710fd3c1e25f6cd66a467d379d9d04017f`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkAlign.h" @11
+- include "include/private/base/SkAssert.h" @12
+- include "include/private/base/SkMalloc.h" @13
+- include "include/private/base/SkNoncopyable.h" @14
+- include <cstddef> @16
+- include <cstdint> @17
+- include <memory> @18
+- class_specifier SkAutoMalloc @25-82
+- function_definition SkAutoMalloc @27-28
+- enum_specifier OnShrink @34-48
+- function_definition reset @53-59
+- function_definition get @64-64
+- function_definition get @65-65
+- function_definition release @71-74
+- struct_specifier WrapFree @77-79
+- function_definition operator() @78-78
+- class_specifier SkAutoSMalloc @90-175
+- function_definition SkAutoSMalloc @96-99
+- function_definition SkAutoSMalloc @105-109
+- function_definition ~SkAutoSMalloc @115-119
+- function_definition get @126-126
+- function_definition reset @133-158
+
+### gfx/skia/skia/src/base/SkBase64.cpp
+
+Blob: `ac2bc7eed28e203a7bc71b31e5307e5640ce4766`. Grammar: cpp. Status: syntax-clean.
+
+- include "src/base/SkBase64.h" @9
+- include "include/private/base/SkAssert.h" @11
+- include <cstdint> @13
+- function_definition Decode @37-107
+- function_definition Encode @113-156
+
+### gfx/skia/skia/src/base/SkBase64.h
+
+Blob: `e48d861d2dd2f9ab094f086306fc6744f9430aa8`. Grammar: cpp. Status: syntax-clean.
+
+- include <cstddef> @11
+- struct_specifier SkBase64 @13-58
+- enum_specifier Error @15-19
+- function_definition EncodedSize @40-44
+
+### gfx/skia/skia/src/base/SkBezierCurves.cpp
+
+Blob: `e58e11df50851e35bfe54d8696afaea6c73df546`. Grammar: cpp. Status: syntax-clean.
+
+- include "src/base/SkBezierCurves.h" @8
+- include "include/private/base/SkAssert.h" @10
+- include "include/private/base/SkFloatingPoint.h" @11
+- include "include/private/base/SkPoint_impl.h" @12
+- include "include/private/base/SkSpan_impl.h" @13
+- include "src/base/SkCubics.h" @14
+- include "src/base/SkQuads.h" @15
+- include <cstddef> @17
+- function_definition interpolate @19-21
+- function_definition EvalAt @23-55
+- function_definition Subdivide @59-97
+- function_definition ConvertToPolynomial @99-115
+- struct_specifier DPoint @118-122
+- function_definition DPoint @119-119
+- function_definition DPoint @120-120
+- function_definition operator- @124-126
+- function_definition operator+ @128-130
+- function_definition operator- @132-134
+- function_definition operator* @136-138
+- function_definition pinTRange @141-150
+- function_definition IntersectWithHorizontalLine @153-168
+- function_definition Intersect @170-187
+- function_definition IntersectWithHorizontalLine @189-206
+- function_definition Intersect @208-227
+
+### gfx/skia/skia/src/base/SkBezierCurves.h
+
+Blob: `581c03277cafd11485554335235781090044f044`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkSpan_impl.h" @10
+- include <array> @12
+- struct_specifier SkPoint @14-14
+- class_specifier SkBezierCubic @27-74
+- class_specifier SkBezierQuad @76-100
+
+### gfx/skia/skia/src/base/SkBitmaskEnum.h
+
+Blob: `b25045359d837af78474082ae987bd02303cd6d8`. Grammar: cpp. Status: syntax-clean.
+
+- include <type_traits> @10
+- struct_specifier is_bitmask_enum @13-13
+- function_definition Any @16-18
+- function_definition operator| @22-25
+- function_definition operator|= @28-30
+- function_definition operator& @33-36
+- function_definition operator&= @39-41
+- function_definition operator^ @44-47
+- function_definition operator^= @50-52
+- function_definition operator~ @55-57
+
+### gfx/skia/skia/src/base/SkBlockAllocator.cpp
+
+Blob: `e62fc2078dff3348ed54357989e4586cd99df88d`. Grammar: cpp. Status: contains-errors.
+
+- include "src/base/SkBlockAllocator.h" @8
+- include "include/private/base/SkDebug.h" @10
+- include "include/private/base/SkTo.h" @11
+- include <vector> @14
+- function_definition SkBlockAllocator @17-33
+- function_definition Block::Block @35-46
+- function_definition Block::~Block @48-53
+- function_definition totalSize @55-63
+- function_definition totalUsableSpace @65-75
+- function_definition totalSpaceInUse @77-84
+- function_definition findOwningBlock @86-98
+- function_definition releaseBlock @100-152
+- function_definition stealHeapBlocks @154-167
+- function_definition reset @169-192
+- function_definition resetScratchSpace @194-199
+- function_definition addBlock @201-263
+- function_definition validate @266-301
+
+### gfx/skia/skia/src/base/SkBlockAllocator.h
+
+Blob: `02de0f60e7fb5d39165cb08d4a4f8d567d865648`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkASAN.h" @11
+- include "include/private/base/SkAlign.h" @12
+- include "include/private/base/SkAssert.h" @13
+- include "include/private/base/SkDebug.h" @14
+- include "include/private/base/SkMacros.h" @15
+- include "include/private/base/SkMath.h" @16
+- include "include/private/base/SkNoncopyable.h" @17
+- include <algorithm> @19
+- include <cstddef> @20
+- include <cstdint> @21
+- include <limits> @22
+- include <new> @23
+- include <type_traits> @24
+- class_specifier SkBlockAllocator @56-476
+- enum_specifier GrowthPolicy @62-68
+- class_specifier Block @71-165
+- function_definition operator delete @74-74
+- function_definition avail @78-78
+- function_definition firstAlignedOffset @85-85
+- function_definition ptr @88-91
+- function_definition ptr @92-92
+- function_definition metadata @96-96
+- function_definition setMetadata @97-97
+- function_definition poisonRange @129-131
+- function_definition unpoisonRange @132-134
+- function_definition cursor @138-138
+- function_definition isScratch @143-143
+- function_definition markAsScratch @144-147
+- struct_specifier ByteRange @169-174
+- function_definition ~SkBlockAllocator @187-187
+- function_definition operator delete @188-188
+- function_definition preallocSize @230-233
+- function_definition preallocUsableSpace @239-241
+- function_definition metadata @248-248
+- function_definition setMetadata @253-253
+- enum_specifier ReserveFlags @285-295
+- function_definition currentBlock @315-315
+- function_definition currentBlock @316-316
+- function_definition headBlock @318-318
+- function_definition headBlock @319-319
+- function_definition owningBlock @337-339
+- function_definition findOwningBlock @346-348
+- class_specifier BlockIter @389-389
+- function_definition BaseHeadBlockSize @438-440
+- function_definition scratchBlockSize @447-447
+- class_specifier SkSBlockAllocator @481-513
+- function_definition SkSBlockAllocator @485-487
+- function_definition SkSBlockAllocator @488-490
+- function_definition SkSBlockAllocator @492-494
+- function_definition ~SkSBlockAllocator @496-498
+- function_definition operator-> @500-500
+- function_definition operator-> @501-501
+- function_definition allocator @503-503
+- function_definition allocator @504-506
+- function_definition BlockOverhead @521-524
+- function_definition Overhead @527-532
+- function_definition MaxBlockSize @535-540
+- function_definition reserve @543-563
+- function_definition allocate @566-603
+- function_definition owningBlock @606-624
+- function_definition Block::alignedOffset @627-644
+- function_definition Block::resize @646-672
+- function_definition Block::release @677-689
+- class_specifier SkBlockAllocator::BlockIter @693-739
+- function_definition BlockIter @700-700
+- class_specifier Item @702-732
+- function_definition operator!= @704-704
+- function_definition operator* @706-706
+- function_definition (anonymous) @708-711
+- function_definition Item @716-716
+- function_definition advance @718-727
+- function_definition begin @734-734
+- function_definition end @735-735
+- function_definition blocks @741-743
+- function_definition blocks @744-746
+- function_definition rblocks @747-749
+- function_definition rblocks @750-752
+
+### gfx/skia/skia/src/base/SkBuffer.cpp
+
+Blob: `bb397822159b1b2b5fde2cd2bb00a7306fc7330e`. Grammar: cpp. Status: syntax-clean.
+
+- include "src/base/SkBuffer.h" @8
+- include "include/private/base/SkAlign.h" @10
+- include "include/private/base/SkMalloc.h" @11
+- include <cstdint> @13
+- function_definition skip @17-25
+- function_definition read @27-33
+- function_definition skipToAlign4 @35-45
+- function_definition skip @49-53
+- function_definition writeNoSizeCheck @55-61
+- function_definition padToAlign4 @63-77
+- function_definition AssertBuffer32 @81-85
+
+### gfx/skia/skia/src/base/SkBuffer.h
+
+Blob: `84d9dd27e271360611f515d605e0df3833f5842a`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkAssert.h" @11
+- include "include/private/base/SkNoncopyable.h" @12
+- include "src/base/SkSafeMath.h" @13
+- include <cstddef> @15
+- include <cstdint> @16
+- class_specifier SkRBuffer @27-79
+- function_definition SkRBuffer @29-29
+- function_definition SkRBuffer @33-38
+- function_definition pos @43-43
+- function_definition size @47-47
+- function_definition eof @52-52
+- function_definition available @54-54
+- function_definition isValid @56-56
+- function_definition readU8 @64-64
+- function_definition readS32 @65-65
+- function_definition readU32 @66-66
+- function_definition skipCount @70-72
+- class_specifier SkWBuffer @89-132
+- function_definition SkWBuffer @91-91
+- function_definition SkWBuffer @92-92
+- function_definition SkWBuffer @93-93
+- function_definition reset @95-99
+- function_definition reset @101-106
+- function_definition pos @108-108
+- function_definition write @111-115
+- function_definition writePtr @119-119
+- function_definition writeScalar @120-120
+- function_definition write32 @121-121
+- function_definition write16 @122-122
+- function_definition write8 @123-123
+- function_definition writeBool @124-124
+
+### gfx/skia/skia/src/base/SkContainers.cpp
+
+Blob: `5a2014abf6e08aa10a9d5f604573a1f38c57ebcd`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkContainers.h" @4
+- include "include/private/base/SkAlign.h" @6
+- include "include/private/base/SkAssert.h" @7
+- include "include/private/base/SkMalloc.h" @8
+- include "include/private/base/SkTo.h" @9
+- include <algorithm> @11
+- include <cstddef> @12
+- function_definition complete_size @18-24
+- function_definition allocate @27-37
+- function_definition roundUpCapacity @39-48
+- function_definition growthFactorCapacity @50-59
+- function_definition sk_allocate_canfail @62-67
+- function_definition sk_allocate_throw @69-77
+- function_definition sk_report_container_overflow_and_die @79-81
+
+### gfx/skia/skia/src/base/SkCubics.cpp
+
+Blob: `c7e99d0932e92e170c9b23ac26e549444fc3e6df`. Grammar: cpp. Status: syntax-clean.
+
+- include "src/base/SkCubics.h" @8
+- include "include/private/base/SkAssert.h" @10
+- include "include/private/base/SkFloatingPoint.h" @11
+- include "include/private/base/SkTPin.h" @12
+- include "src/base/SkQuads.h" @13
+- include <algorithm> @15
+- include <cmath> @16
+- function_definition nearly_equal @18-23
+- function_definition close_to_a_quadratic @29-34
+- function_definition RootsReal @36-123
+- function_definition RootsValidT @125-149
+- function_definition approximately_zero @151-155
+- function_definition find_extrema_valid_t @157-172
+- function_definition binary_search @174-204
+- function_definition BinarySearchRootsValidT @206-239
+
+### gfx/skia/skia/src/base/SkCubics.h
+
+Blob: `acc4be6156002f1b7f71da5416db4bc3a49c122f`. Grammar: cpp. Status: syntax-clean.
+
+- include <cmath> @10
+- class_specifier SkCubics @16-58
+- function_definition EvalAt @51-53
+- function_definition EvalAt @55-57
+
+### gfx/skia/skia/src/base/SkDebug.cpp
+
+Blob: `41577765647d4efa3a849e701059d0b939d5f6c4`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkDebug.h" @7
+- include <cstdarg> @9
+- include "include/private/base/SkAssert.h" @11
+- include "include/private/base/SkAttributes.h" @12
+- include "include/private/base/SkLog.h" @13
+- function_definition SkDebugfForDumpStackTrace @16-18
+- function_definition SkDebugf @22-27
+
+### gfx/skia/skia/src/base/SkDeque.cpp
+
+Blob: `ffff336f903031f384a986d490c75a4d95cc6528`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkAssert.h" @8
+- include "include/private/base/SkDeque.h" @9
+- include "include/private/base/SkMalloc.h" @10
+- include <cstddef> @12
+- struct_specifier SkDeque::Block @14-29
+- function_definition start @21-21
+- function_definition start @22-22
+- function_definition init @24-28
+- function_definition SkDeque @31-39
+- function_definition SkDeque @41-57
+- function_definition ~SkDeque @59-70
+- function_definition push_front @72-110
+- function_definition push_back @112-151
+- function_definition pop_front @153-185
+- function_definition pop_back @187-219
+- function_definition numBlocksAllocated @221-229
+- function_definition allocateBlock @231-235
+- function_definition freeBlock @237-239
+- function_definition Iter::Iter @243-243
+- function_definition Iter::Iter @245-247
+- function_definition Iter::next @251-266
+- function_definition Iter::prev @270-285
+- function_definition Iter::reset @292-310
+
+### gfx/skia/skia/src/base/SkEndian.h
+
+Blob: `d015f8bff2bfcd19340479bc335347d0866b9acd`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkAssert.h" @11
+- include "include/private/base/SkFeatures.h" @12
+- include <cstdint> @14
+- function_definition SkEndianSwap16 @33-35
+- struct_specifier SkTEndianSwap16 @37-39
+- function_definition SkEndianSwap16s @44-51
+- function_definition SkEndianSwap32 @56-61
+- struct_specifier SkTEndianSwap32 @63-68
+- function_definition SkEndianSwap32s @73-80
+- function_definition SkEndianSwap64 @85-94
+- struct_specifier SkTEndianSwap64 @95-104
+- function_definition SkEndianSwap64s @109-116
+
+### gfx/skia/skia/src/base/SkEnumBitMask.h
+
+Blob: `d894a72ea0a0f8b25088421fa5533515178d57b4`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkAttributes.h" @11
+- include <type_traits> @13
+- class_specifier SkEnumBitMask @36-67
+- function_definition SkEnumBitMask @39-39
+- function_definition SkEnumBitMask @40-40
+- function_definition (anonymous) @42-42
+- function_definition value @43-43
+- function_definition operator== @45-45
+- function_definition operator!= @46-46
+- function_definition operator| @48-50
+- function_definition operator& @51-53
+- function_definition operator^ @54-56
+- function_definition operator~ @57-57
+- function_definition (anonymous) @59-59
+- function_definition (anonymous) @60-60
+- function_definition (anonymous) @61-61
+- function_definition SkEnumBitMask @64-64
+
+### gfx/skia/skia/src/base/SkFixedArray.h
+
+Blob: `0a7d62180221a2ffa51e61d03a096fb7e875dd7c`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkAssert.h" @11
+- include "include/private/base/SkSpan_impl.h" @12
+- include <cstdint> @14
+- include <cstring> @15
+- include <initializer_list> @16
+- include <type_traits> @17
+- class_specifier FixedArray @30-228
+- function_definition FixedArray @34-34
+- function_definition FixedArray @36-41
+- function_definition FixedArray @43-48
+- function_definition FixedArray @50-52
+- function_definition FixedArray @54-56
+- function_definition (anonymous) @58-63
+- function_definition (anonymous) @65-68
+- function_definition (anonymous) @70-73
+- function_definition operator== @75-77
+- function_definition operator!= @79-81
+- function_definition size @83-85
+- function_definition empty @87-89
+- function_definition clear @91-93
+- function_definition reset @95-99
+- function_definition resize @101-112
+- function_definition (anonymous) @114-119
+- function_definition push_back @121-124
+- function_definition push_back_n @126-135
+- function_definition push_back_n @137-146
+- function_definition pop_back @148-151
+- function_definition pop_back_n @153-156
+- function_definition removeShuffle @158-165
+- function_definition data @167-169
+- function_definition data @171-173
+- function_definition begin @175-177
+- function_definition begin @179-181
+- function_definition end @183-185
+- function_definition end @187-189
+- function_definition (anonymous) @191-194
+- function_definition (anonymous) @196-199
+- function_definition (anonymous) @201-204
+- function_definition (anonymous) @206-209
+- function_definition reserve @211-215
+- function_definition capacity @217-219
+
+### gfx/skia/skia/src/base/SkFloatBits.h
+
+Blob: `3ffd09711cfdf46be30b20bfe15c02b7cf2d5a8c`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkMath.h" @11
+- include <cstdint> @13
+- include <cstring> @14
+- function_definition SkSignBitTo2sCompliment @20-26
+- function_definition Sk2sComplimentToSignBit @31-38
+- function_definition SkFloat2Bits @41-45
+- function_definition SkBits2Float @48-52
+- function_definition SkFloatAs2sCompliment @59-61
+- function_definition Sk2sComplimentAsFloat @66-68
+
+### gfx/skia/skia/src/base/SkFloatingPoint.cpp
+
+Blob: `e5a9ac2685870e7396c620e2747ee4cd1289575d`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkFloatingPoint.h" @8
+- include <algorithm> @10
+- include <cmath> @11
+- include <cstring> @12
+- include <limits> @13
+- function_definition magnitude @19-28
+- function_definition sk_doubles_nearly_equal_ulps @30-52
+- function_definition sk_double_nearly_zero @54-56
+
+### gfx/skia/skia/src/base/SkHalf.cpp
+
+Blob: `43c1bfd1fe8482e6e72a89041a76e754c6ecdaa7`. Grammar: cpp. Status: syntax-clean.
+
+- include "src/base/SkHalf.h" @8
+- include "include/private/base/SkFloatingPoint.h" @10
+- include "src/base/SkVx.h" @11
+- function_definition SkFloatToHalf @16-22
+- function_definition SkHalfToFloat @24-26
+
+### gfx/skia/skia/src/base/SkHalf.h
+
+Blob: `0bbdd4a1e69064233ee9f9bb4778f9f59a6b47aa`. Grammar: cpp. Status: syntax-clean.
+
+- include <cstdint> @11
+
+### gfx/skia/skia/src/base/SkLeanWindows.h
+
+Blob: `d43150db7640b7d2dfc6f629e63b5de92bf49af8`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkFeatures.h" @10
+- include <windows.h> @23
+
+### gfx/skia/skia/src/base/SkLog.cpp
+
+Blob: `31ec7a1a176268cc56ad09acb58f66aec7557e98`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkLog.h" @7
+- include <cstdarg> @9
+- function_definition SkLog @12-17
+
+### gfx/skia/skia/src/base/SkMSAN.h
+
+Blob: `85fa2fce4b4d5c3ec782b57acace83cab65bd43a`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkAssert.h" @11
+- include <cstddef> @13
+- include <string.h> @14
+- function_definition sk_msan_assert_initialized @24-30
+- function_definition sk_msan_mark_initialized @34-41
+
+### gfx/skia/skia/src/base/SkMalloc.cpp
+
+Blob: `064204b9153bfa30dff59b030ab8b3adb1692495`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkMalloc.h" @4
+- include "src/base/SkSafeMath.h" @6
+- function_definition sk_calloc_throw @8-10
+- function_definition sk_malloc_throw @12-14
+- function_definition sk_realloc_throw @16-18
+- function_definition sk_malloc_canfail @20-22
+
+### gfx/skia/skia/src/base/SkMathPriv.cpp
+
+Blob: `19f15c4390db76ab8a1dd2f3b1ce082a2a9d3645`. Grammar: cpp. Status: syntax-clean.
+
+- include "src/base/SkMathPriv.h" @8
+- include "include/private/base/SkAssert.h" @10
+- include <cstdint> @12
+- function_definition SkSqrtBits @18-39
+
+### gfx/skia/skia/src/base/SkMathPriv.h
+
+Blob: `e3bdef7bf24fe651bb2ccda1b72d9159b66822b7`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkAssert.h" @11
+- include "include/private/base/SkCPUTypes.h" @12
+- include "include/private/base/SkTemplates.h" @13
+- include <bit> @15
+- include <cstddef> @16
+- include <cstdint> @17
+- function_definition SkCLZ @22-24
+- function_definition SkCTZ @29-31
+- function_definition SkPopCount @36-38
+- function_definition SkSqrt32 @47-47
+- function_definition SkClampPos @52-54
+- function_definition SkTDivMod @60-63
+- function_definition SkApplySign @72-75
+- function_definition SkCopySign32 @78-80
+- function_definition SkClampUMax @87-92
+- function_definition sk_negate_to_size_t @98-107
+- function_definition SkMulDiv255Trunc @114-119
+- function_definition SkMulDiv255Ceiling @124-129
+- function_definition SkDiv255Round @133-136
+- include <stdlib.h> @142
+- function_definition SkBSwap32 @143-143
+- function_definition SkBSwap32 @145-145
+- function_definition SkNextLog2 @157-160
+- function_definition SkPrevLog2 @171-174
+- function_definition SkNextPow2 @181-184
+- function_definition SkPrevPow2 @191-194
+- function_definition SkNextSizePow2 @201-218
+- function_definition SkFitsInFixed @221-223
+
+### gfx/skia/skia/src/base/SkNoDestructor.h
+
+Blob: `5b0f5e21817f8352455151954faca770ff72813d`. Grammar: cpp. Status: syntax-clean.
+
+- include <cstddef> @10
+- include <new> @11
+- include <type_traits> @12
+- include <utility> @13
+- class_specifier SkNoDestructor @84-135
+- function_definition SkNoDestructor @95-97
+- function_definition SkNoDestructor @101-101
+- function_definition SkNoDestructor @102-102
+- function_definition SkNoDestructor @104-104
+- function_definition (anonymous) @105-105
+- function_definition ~SkNoDestructor @107-107
+- function_definition (anonymous) @109-109
+- function_definition (anonymous) @110-110
+- function_definition operator-> @112-112
+- function_definition operator-> @113-113
+- function_definition get @115-115
+- function_definition get @116-116
+
+### gfx/skia/skia/src/base/SkQuads.cpp
+
+Blob: `e98b5e09f8bb7a03b58d5a7f06f7f9dd2a91386f`. Grammar: cpp. Status: syntax-clean.
+
+- include "src/base/SkQuads.h" @8
+- include "include/private/base/SkAssert.h" @10
+- include "include/private/base/SkFloatingPoint.h" @11
+- include <cmath> @13
+- include <limits> @14
+- function_definition solve_linear @18-31
+- function_definition close_to_linear @37-45
+- function_definition Discriminant @47-96
+- function_definition Roots @98-129
+- function_definition zero_if_tiny @131-133
+- function_definition RootsReal @135-162
+- function_definition EvalAt @164-167
+
+### gfx/skia/skia/src/base/SkQuads.h
+
+Blob: `7812991f3b6c2b4ed84c94ce82ccab59385ecaf9`. Grammar: cpp. Status: syntax-clean.
+
+- class_specifier SkQuads @15-73
+- struct_specifier RootResult @32-36
+
+### gfx/skia/skia/src/base/SkRandom.h
+
+Blob: `8e9d37c626ca1754027c7cab29f024e3dfa4587b`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkAssert.h" @11
+- include "include/private/base/SkFixed.h" @12
+- include "src/base/SkFloatBits.h" @13
+- include <cstdint> @15
+- class_specifier SkRandom @27-171
+- function_definition SkRandom @29-29
+- function_definition SkRandom @30-30
+- function_definition SkRandom @31-31
+- function_definition (anonymous) @33-38
+- function_definition nextU @42-46
+- function_definition nextS @50-50
+- function_definition nextF @55-59
+- function_definition nextRangeF @64-66
+- function_definition nextBits @72-75
+- function_definition nextRangeU @80-88
+- function_definition nextULessThan @93-96
+- function_definition nextUScalar1 @101-101
+- function_definition nextRangeScalar @106-108
+- function_definition nextSScalar1 @113-113
+- function_definition nextBool @117-117
+- function_definition nextBiasedBool @121-124
+- function_definition setSeed @128-128
+- function_definition init @134-144
+- function_definition NextLCG @145-145
+- function_definition nextUFixed1 @150-150
+- function_definition nextSFixed1 @155-155
+- enum_specifier (anonymous) @159-162
+- enum_specifier (anonymous) @164-167
+
+### gfx/skia/skia/src/base/SkRectMemcpy.h
+
+Blob: `07ba0f0c652debb35907247300c558453acf15bd`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkAssert.h" @11
+- include "include/private/base/SkTemplates.h" @12
+- include <cstring> @14
+- function_definition SkRectMemcpy @16-30
+
+### gfx/skia/skia/src/base/SkSafeMath.cpp
+
+Blob: `cb69125edb2b8272da1764c0472922937c99c4e4`. Grammar: cpp. Status: syntax-clean.
+
+- include "src/base/SkSafeMath.h" @8
+- function_definition Add @10-14
+- function_definition Mul @16-20
+
+### gfx/skia/skia/src/base/SkSafeMath.h
+
+Blob: `590098a5cadde0093d9829436a99afb3965a0581`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkAssert.h" @11
+- include "include/private/base/SkDebug.h" @12
+- include "include/private/base/SkTFitsIn.h" @13
+- include <cstddef> @15
+- include <cstdint> @16
+- include <limits> @17
+- class_specifier SkSafeMath @22-129
+- function_definition SkSafeMath @24-24
+- function_definition ok @26-26
+- function_definition (anonymous) @27-27
+- function_definition mul @29-31
+- function_definition add @33-37
+- function_definition addInt @43-53
+- function_definition subInt @55-61
+- function_definition mulInt @63-70
+- function_definition alignUp @72-75
+- function_definition castTo @77-82
+- function_definition Align4 @87-90
+- function_definition mul32 @93-100
+- function_definition mul64 @102-127
+
+### gfx/skia/skia/src/base/SkScopeExit.h
+
+Blob: `1c247704d60c658845283dcc959b73a494b8cb4d`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkMacros.h" @11
+- include <functional> @13
+- include <utility> @14
+- class_specifier SkScopeExit @17-41
+- function_definition SkScopeExit @19-19
+- function_definition SkScopeExit @20-20
+- function_definition SkScopeExit @21-21
+- function_definition ~SkScopeExit @23-27
+- function_definition clear @29-29
+- function_definition (anonymous) @31-34
+- function_definition SkScopeExit @39-39
+- function_definition (anonymous) @40-40
+
+### gfx/skia/skia/src/base/SkSemaphore.cpp
+
+Blob: `cb85fa9745f5054aba08e42d637db495fc44d8c3`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkSemaphore.h" @8
+- include "include/private/base/SkFeatures.h" @10
+- include <dispatch/dispatch.h> @13
+- struct_specifier SkSemaphore::OSSemaphore @15-23
+- function_definition OSSemaphore @18-18
+- function_definition ~OSSemaphore @19-19
+- function_definition signal @21-21
+- function_definition wait @22-22
+- include "src/base/SkLeanWindows.h" @25
+- struct_specifier SkSemaphore::OSSemaphore @27-42
+- function_definition OSSemaphore @30-35
+- function_definition ~OSSemaphore @36-36
+- function_definition signal @38-40
+- function_definition wait @41-41
+- include <errno.h> @45
+- include <semaphore.h> @46
+- struct_specifier SkSemaphore::OSSemaphore @47-58
+- function_definition OSSemaphore @50-50
+- function_definition ~OSSemaphore @51-51
+- function_definition signal @53-53
+- function_definition wait @54-57
+- function_definition ~SkSemaphore @63-65
+- function_definition osSignal @67-70
+- function_definition osWait @72-75
+- function_definition try_wait @77-83
+
+### gfx/skia/skia/src/base/SkSharedMutex.cpp
+
+Blob: `b77150167536fb45f92bacc03b451b04fab7e9c3`. Grammar: cpp. Status: contains-errors.
+
+- include "src/base/SkSharedMutex.h" @8
+- include "include/private/base/SkAssert.h" @10
+- include "include/private/base/SkSemaphore.h" @11
+- include <cinttypes> @13
+- include <cstdint> @14
+- include "include/private/base/SkTDArray.h" @85
+- include "include/private/base/SkThreadID.h" @86
+- class_specifier SkSharedMutex::ThreadIDSet @88-127
+- function_definition find @91-96
+- function_definition tryAdd @99-105
+- function_definition tryRemove @107-115
+- function_definition swap @117-119
+- function_definition count @121-123
+- function_definition SkSharedMutex @129-134
+- function_definition ~SkSharedMutex @136-136
+- function_definition acquire @138-162
+- function_definition release @167-194
+- function_definition assertHeld @196-201
+- function_definition acquireShared @203-228
+- function_definition releaseShared @230-249
+- function_definition assertHeldShared @251-255
+- enum_specifier (anonymous) @270-277
+- function_definition SkSharedMutex @279-279
+- function_definition ~SkSharedMutex @280-280
+- function_definition acquire @281-292
+- function_definition release @294-333
+- function_definition acquireShared @335-356
+- function_definition releaseShared @358-371
+
+### gfx/skia/skia/src/base/SkSharedMutex.h
+
+Blob: `f480852da299a5e88930b5aa9edd772ec66ec91c`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkDebug.h" @11
+- include "include/private/base/SkSemaphore.h" @12
+- include "include/private/base/SkThreadAnnotations.h" @13
+- include "include/private/base/SkMutex.h" @16
+- include <memory> @17
+- class_specifier SK_CAPABILITY @32-32
+- class_specifier ThreadIDSet @56-56
+- function_definition assertHeld @72-72
+- function_definition assertHeldShared @73-73
+- function_definition SkAutoSharedMutexExclusive @76-86
+- class_specifier SK_SCOPED_CAPABILITY @76-76
+- function_definition SK_ACQUIRE @78-81
+- function_definition SK_RELEASE_CAPABILITY @82-82
+- function_definition SkAutoSharedMutexShared @88-102
+- class_specifier SK_SCOPED_CAPABILITY @88-88
+- function_definition SK_ACQUIRE_SHARED @90-93
+- function_definition SK_RELEASE_CAPABILITY @98-98
+
+### gfx/skia/skia/src/base/SkSpinlock.cpp
+
+Blob: `d99ffa367f36568ea7fa0602c3d1e5064ad18098`. Grammar: cpp. Status: syntax-clean.
+
+- include "src/base/SkSpinlock.h" @8
+- include "include/private/base/SkFeatures.h" @10
+- include "include/private/base/SkThreadAnnotations.h" @11
+- include "include/private/base/SkMutex.h" @14
+- include <execinfo.h> @15
+- include <stdio.h> @16
+- function_definition debug_trace @18-30
+- function_definition debug_trace @32-32
+- include <emmintrin.h> @37
+- function_definition do_pause @38-38
+- function_definition do_pause @40-40
+- function_definition contendedAcquire @43-52
+
+### gfx/skia/skia/src/base/SkSpinlock.h
+
+Blob: `ce239284ccfeff1d59b82325badf53bfd895b434`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkAPI.h" @11
+- include "include/private/base/SkThreadAnnotations.h" @12
+- include <atomic> @14
+- class_specifier SK_CAPABILITY @16-16
+- function_definition SK_ACQUIRE @20-26
+- function_definition SK_TRY_ACQUIRE @29-36
+- function_definition SK_RELEASE_CAPABILITY @38-41
+- function_definition SkAutoSpinlock @49-58
+- class_specifier SK_SCOPED_CAPABILITY @49-49
+- function_definition SK_ACQUIRE @51-53
+- function_definition SK_RELEASE_CAPABILITY @54-54
+
+### gfx/skia/skia/src/base/SkStringView.h
+
+Blob: `58b261e12da0482bc9556c794b1eb72e0a3c34c3`. Grammar: cpp. Status: syntax-clean.
+
+- include <cstring> @11
+- include <string_view> @12
+- function_definition starts_with @17-22
+- function_definition starts_with @24-26
+- function_definition ends_with @28-34
+- function_definition ends_with @36-38
+- function_definition contains @41-43
+- function_definition contains @45-47
+
+### gfx/skia/skia/src/base/SkTBlockList.h
+
+Blob: `93a3594bd8810f979ea086e857bb48cf7b01b399`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkAssert.h" @11
+- include "include/private/base/SkDebug.h" @12
+- include "include/private/base/SkTo.h" @13
+- include "src/base/SkBlockAllocator.h" @14
+- include <algorithm> @16
+- include <cstring> @17
+- include <type_traits> @18
+- include <utility> @19
+- class_specifier BlockIndexIterator @28-28
+- class_specifier SkTBlockList @56-303
+- function_definition SkTBlockList @62-62
+- function_definition SkTBlockList @68-69
+- function_definition SkTBlockList @77-81
+- function_definition ~SkTBlockList @83-83
+- function_definition (anonymous) @90-92
+- function_definition (anonymous) @93-95
+- function_definition (anonymous) @96-98
+- function_definition (anonymous) @101-103
+- function_definition reserve @117-125
+- function_definition pop_back @130-148
+- function_definition reset @153-162
+- function_definition count @167-180
+- function_definition empty @185-185
+- function_definition (anonymous) @190-195
+- function_definition (anonymous) @196-199
+- function_definition (anonymous) @204-207
+- function_definition (anonymous) @208-211
+- function_definition (anonymous) @217-236
+- function_definition (anonymous) @237-239
+- function_definition (anonymous) @250-252
+- function_definition (anonymous) @253-255
+- function_definition First @256-258
+- function_definition Last @259-261
+- function_definition Increment @262-264
+- function_definition Decrement @265-267
+- function_definition pushItem @269-277
+- function_definition items @297-297
+- function_definition items @298-298
+- function_definition ritems @301-301
+- function_definition ritems @302-302
+- function_definition concat @307-376
+- class_specifier BlockIndexIterator @392-455
+- function_definition BlockIndexIterator @395-395
+- class_specifier Item @397-448
+- function_definition operator!= @399-401
+- function_definition operator* @403-406
+- function_definition (anonymous) @408-419
+- function_definition Item @425-427
+- function_definition setIndices @429-443
+- function_definition begin @450-450
+- function_definition end @451-451
+
+### gfx/skia/skia/src/base/SkTDArray.cpp
+
+Blob: `c58f12c888b38f0de911e2d98120e822835bae99`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkTDArray.h" @8
+- include "include/private/base/SkMalloc.h" @10
+- include "include/private/base/SkTFitsIn.h" @11
+- include "include/private/base/SkTo.h" @12
+- include <climits> @14
+- include <cstddef> @15
+- include <cstdint> @16
+- include <cstring> @17
+- include <new> @18
+- function_definition SkTDStorage @20-22
+- function_definition SkTDStorage @24-35
+- function_definition SkTDStorage @37-38
+- function_definition (anonymous) @40-52
+- function_definition SkTDStorage @54-58
+- function_definition (anonymous) @60-66
+- function_definition ~SkTDStorage @68-70
+- function_definition reset @72-76
+- function_definition swap @78-84
+- function_definition resize @86-92
+- function_definition reserve @94-127
+- function_definition shrink_to_fit @129-142
+- function_definition erase @144-155
+- function_definition removeShuffle @157-164
+- function_definition prepend @166-168
+- function_definition append @170-176
+- function_definition append @178-186
+- function_definition append @188-190
+- function_definition insert @192-194
+- function_definition insert @196-212
+- function_definition operator== @214-216
+- function_definition calculateSizeOrDie @218-229
+- function_definition moveTail @231-237
+- function_definition copySrc @239-242
+
+### gfx/skia/skia/src/base/SkTDPQueue.h
+
+Blob: `3a897130f2040bb6df4bea37b90785b2ddbf71e4`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkAssert.h" @11
+- include "include/private/base/SkDebug.h" @12
+- include "include/private/base/SkTDArray.h" @13
+- include "include/private/base/SkTo.h" @14
+- include "src/base/SkTSort.h" @15
+- include <utility> @17
+- class_specifier SkTDPQueue @33-220
+- function_definition SkTDPQueue @35-35
+- function_definition SkTDPQueue @36-36
+- function_definition SkTDPQueue @38-38
+- function_definition (anonymous) @39-39
+- function_definition SkTDPQueue @41-41
+- function_definition (anonymous) @42-42
+- function_definition count @45-45
+- function_definition (anonymous) @48-48
+- function_definition (anonymous) @49-49
+- function_definition pop @52-66
+- function_definition (anonymous) @54-54
+- function_definition insert @69-76
+- function_definition remove @79-94
+- function_definition priorityDidChange @99-106
+- function_definition at @110-110
+- function_definition sort @115-123
+- function_definition LeftOf @126-126
+- function_definition ParentOf @127-127
+- function_definition percolateUpOrDown @129-135
+- function_definition percolateUpIfNecessary @137-158
+- function_definition percolateDownIfNecessary @160-198
+- function_definition setIndex @200-205
+- function_definition validate @207-217
+
+### gfx/skia/skia/src/base/SkTInternalLList.h
+
+Blob: `7d80a95b6ff206d289d9fdc59a7d7eaf9e37ab4a`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkAssert.h" @11
+- include "include/private/base/SkDebug.h" @12
+- include "include/private/base/SkTo.h" @13
+- class_specifier SkTInternalLList @29-302
+- function_definition SkTInternalLList @31-31
+- function_definition reset @33-36
+- function_definition remove @38-62
+- function_definition addToHead @64-81
+- function_definition addToTail @83-100
+- function_definition addBefore @107-129
+- function_definition addAfter @136-158
+- function_definition concat @160-183
+- function_definition isEmpty @185-188
+- function_definition head @190-190
+- function_definition tail @191-191
+- class_specifier Iter @193-247
+- enum_specifier IterStart @195-198
+- function_definition Iter @200-200
+- function_definition Iter @201-201
+- function_definition (anonymous) @202-202
+- function_definition init @204-213
+- function_definition get @215-215
+- function_definition next @220-227
+- function_definition prev @229-236
+- function_definition operator!= @241-241
+- function_definition operator* @242-242
+- function_definition operator++ @243-243
+- function_definition begin @249-253
+- function_definition end @255-255
+- function_definition validate @258-274
+- function_definition isInList @280-282
+- function_definition countEntries @287-293
+- function_definition SkTInternalLList @300-300
+- function_definition (anonymous) @301-301
+
+### gfx/skia/skia/src/base/SkTLazy.h
+
+Blob: `8f4fe59438646f74f3f4d0eaf91c274151639fe4`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkAssert.h" @11
+- include <optional> @13
+- include <utility> @14
+- function_definition SkOptAddressOrNull @16-18
+- function_definition SkOptAddressOrNull @20-22
+- class_specifier SkTLazy @28-121
+- function_definition SkTLazy @30-30
+- function_definition SkTLazy @31-31
+- function_definition SkTLazy @32-32
+- function_definition SkTLazy @33-33
+- function_definition ~SkTLazy @35-35
+- function_definition (anonymous) @37-40
+- function_definition (anonymous) @42-45
+- function_definition init @53-56
+- function_definition set @64-67
+- function_definition set @69-72
+- function_definition reset @77-79
+- function_definition isValid @85-85
+- function_definition get @91-94
+- function_definition get @95-98
+- function_definition operator-> @100-100
+- function_definition operator-> @101-101
+- function_definition (anonymous) @103-106
+- function_definition (anonymous) @107-110
+- function_definition getMaybeNull @116-116
+- function_definition getMaybeNull @117-117
+- class_specifier SkTCopyOnFirstWrite @147-214
+- function_definition SkTCopyOnFirstWrite @149-149
+- function_definition SkTCopyOnFirstWrite @151-151
+- function_definition SkTCopyOnFirstWrite @154-154
+- function_definition SkTCopyOnFirstWrite @156-156
+- function_definition SkTCopyOnFirstWrite @157-157
+- function_definition (anonymous) @159-163
+- function_definition (anonymous) @165-169
+- function_definition init @172-176
+- function_definition initIfNeeded @180-185
+- function_definition writable @190-197
+- function_definition get @199-199
+- function_definition operator-> @205-205
+- function_definition (anonymous) @207-207
+- function_definition (anonymous) @209-209
+
+### gfx/skia/skia/src/base/SkTSearch.cpp
+
+Blob: `d91772e03b6947ddfb5c0beca3f15930fcdc4781`. Grammar: cpp. Status: syntax-clean.
+
+- include "src/base/SkTSearch.h" @9
+- include "include/private/base/SkMalloc.h" @11
+- include <cstring> @13
+- include <ctype.h> @14
+- function_definition index_into_base @16-20
+- function_definition SkStrSearch @22-56
+- function_definition SkStrSearch @58-62
+- function_definition SkStrLCSearch @64-72
+- function_definition SkStrLCSearch @74-78
+- function_definition SkAutoAsciiToLC @82-110
+- function_definition ~SkAutoAsciiToLC @112-117
+
+### gfx/skia/skia/src/base/SkTSearch.h
+
+Blob: `59867ef97a1730d06923be097efc6036edfadf9f`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkAssert.h" @13
+- include <cstddef> @15
+- function_definition SkTSearch @41-71
+- function_definition SkTSearch @75-78
+- function_definition SkTSearch @82-84
+- function_definition SkTSearch @89-92
+- class_specifier SkAutoAsciiToLC @112-127
+- function_definition lc @117-117
+- function_definition length @118-118
+- enum_specifier (anonymous) @123-125
+
+### gfx/skia/skia/src/base/SkTSort.h
+
+Blob: `a1d35cc158639b73e872610203bb43ad2ffa1bbf`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkTo.h" @11
+- include "src/base/SkMathPriv.h" @12
+- include <cstddef> @14
+- include <utility> @15
+- function_definition SkTHeapSort_SiftUp @34-57
+- function_definition SkTHeapSort_SiftDown @68-84
+- function_definition SkTHeapSort @93-103
+- function_definition SkTHeapSort @106-108
+- function_definition SkTInsertionSort @114-128
+- function_definition SkTQSort_Partition @133-148
+- function_definition SkTIntroSort @163-184
+- function_definition SkTQSort @194-202
+- function_definition SkTQSort @205-207
+- function_definition SkTQSort @210-212
+
+### gfx/skia/skia/src/base/SkThreadID.cpp
+
+Blob: `e5b7a06c7cc10f9069b1e3cc0b670fdd9c217a50`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/private/base/SkThreadID.h" @8
+- include "src/base/SkLeanWindows.h" @11
+- function_definition SkGetThreadID @12-12
+- include <pthread.h> @14
+- function_definition SkGetThreadID @15-15
+
+### gfx/skia/skia/src/base/SkTime.cpp
+
+Blob: `b05dde4e4e0924851d5bb60074d061ff6da684d5`. Grammar: cpp. Status: syntax-clean.
+
+- include "src/base/SkTime.h" @8
+- include <time.h> @15
+- function_definition GetNSecs @16-21
+- struct_specifier timespec @18-18
+- include <chrono> @23
+- include <ratio> @24
+- function_definition GetNSecs @25-29
+
+### gfx/skia/skia/src/base/SkTime.h
+
+Blob: `3940035e12d8f27cf75ed434e89b1ea64155792a`. Grammar: cpp. Status: syntax-clean.
+
+- function_definition GetSecs @16-16
+- function_definition GetMSecs @17-17
+
+### gfx/skia/skia/src/base/SkUTF.cpp
+
+Blob: `8a529da16eaff23b60f7c59947c6100c6a4137b9`. Grammar: cpp. Status: syntax-clean.
+
+- include "src/base/SkUTF.h" @4
+- include "include/private/base/SkTFitsIn.h" @6
+- function_definition left_shift @8-10
+- function_definition is_align2 @12-12
+- function_definition is_align4 @14-14
+- function_definition utf16_is_high_surrogate @16-16
+- function_definition utf16_is_low_surrogate @18-18
+- function_definition utf8_byte_type @28-40
+- function_definition utf8_type_is_valid_leading_byte @41-41
+- function_definition utf8_byte_is_continuation @43-43
+- function_definition CountUTF8 @47-68
+- function_definition CountUTF16 @70-94
+- function_definition CountUTF32 @96-110
+- function_definition next_fail @113-116
+- function_definition NextUTF8 @118-152
+- function_definition NextUTF8WithReplacement @154-157
+- function_definition NextUTF16 @159-195
+- function_definition NextUTF32 @197-212
+- function_definition ToUTF8 @214-241
+- function_definition ToUTF16 @243-257
+- function_definition UTF8ToUTF16 @259-289
+- function_definition UTF16ToUTF8 @291-321
+
+### gfx/skia/skia/src/base/SkUTF.h
+
+Blob: `d9a19f604dd97a89d2916b4758cd5ac699bd61d9`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkAPI.h" @6
+- include <cstddef> @8
+- include <cstdint> @9
+- function_definition IsLeadingSurrogateUTF16 @91-91
+- function_definition IsTrailingSurrogateUTF16 @97-97
+
+### gfx/skia/skia/src/base/SkUtils.cpp
+
+Blob: `b9852e938986b379a07eaf4ab3517779d3bc5378`. Grammar: cpp. Status: syntax-clean.
+
+- include "src/base/SkUtils.h" @8
+
+### gfx/skia/skia/src/base/SkUtils.h
+
+Blob: `5a4759927a74e15482abfec6871948eff7b6019e`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkAttributes.h" @11
+- include <cstring> @13
+- include <type_traits> @14
+- function_definition sk_unaligned_load @46-58
+- function_definition sk_unaligned_store @61-64
+- function_definition sk_bit_cast @68-73
+
+### gfx/skia/skia/src/base/SkVx.h
+
+Blob: `7dc4d8e24d29ccf840a3084659a4a4c0bd829a94`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkFeatures.h" @22
+- include "include/private/base/SkLoadUserConfig.h" @23
+- include "src/base/SkUtils.h" @24
+- include <algorithm> @25
+- include <cassert> @26
+- include <cmath> @27
+- include <cstdint> @28
+- include <cstring> @29
+- include <initializer_list> @30
+- include <type_traits> @31
+- include <utility> @32
+- include <immintrin.h> @43
+- include <smmintrin.h> @45
+- include <emmintrin.h> @47
+- include <xmmintrin.h> @48
+- include <arm_neon.h> @50
+- include <wasm_simd128.h> @52
+- include <lasxintrin.h> @54
+- include <lsxintrin.h> @55
+- include <lsxintrin.h> @57
+- struct_specifier Vec @79-79
+- struct_specifier Vec @86-121
+- function_definition Vec @95-95
+- function_definition Vec @100-107
+- function_definition operator[] @109-109
+- function_definition (anonymous) @110-110
+- function_definition Load @112-114
+- function_definition store @115-118
+- struct_specifier Vec<4,T> @126-174
+- function_definition Vec @129-129
+- function_definition Vec @136-143
+- function_definition operator[] @145-145
+- function_definition (anonymous) @146-146
+- function_definition Load @148-150
+- function_definition store @151-153
+- function_definition (anonymous) @155-155
+- function_definition (anonymous) @156-156
+- function_definition (anonymous) @157-157
+- function_definition (anonymous) @158-158
+- function_definition (anonymous) @159-159
+- function_definition (anonymous) @160-160
+- function_definition xy @162-162
+- function_definition zw @163-163
+- function_definition x @164-164
+- function_definition y @165-165
+- function_definition z @166-166
+- function_definition w @167-167
+- function_definition yxwz @170-170
+- function_definition zwxy @171-171
+- struct_specifier Vec<2,T> @177-214
+- function_definition Vec @180-180
+- function_definition Vec @184-191
+- function_definition operator[] @193-193
+- function_definition (anonymous) @194-194
+- function_definition Load @196-198
+- function_definition store @199-201
+- function_definition (anonymous) @203-203
+- function_definition (anonymous) @204-204
+- function_definition x @206-206
+- function_definition y @207-207
+- function_definition yx @210-210
+- function_definition xyxy @211-211
+- struct_specifier Vec<1,T> @217-236
+- function_definition Vec @220-220
+- function_definition Vec @221-221
+- function_definition Vec @223-225
+- function_definition operator[] @227-227
+- function_definition (anonymous) @228-228
+- function_definition Load @230-232
+- function_definition store @233-235
+- struct_specifier Mask @239-239
+- struct_specifier Mask<float > @240-240
+- struct_specifier Mask<double> @241-241
+- function_definition join @245-250
+- struct_specifier VExtHelper @268-270
+- function_definition to_vec @277-277
+- function_definition to_vext @280-280
+- function_definition to_vec @281-281
+- function_definition operator+ @283-285
+- function_definition operator- @286-288
+- function_definition operator* @289-291
+- function_definition operator/ @292-294
+- function_definition operator^ @296-298
+- function_definition operator& @299-301
+- function_definition operator| @302-304
+- function_definition operator! @306-306
+- function_definition operator- @307-307
+- function_definition operator~ @308-308
+- function_definition operator<< @310-310
+- function_definition operator>> @311-311
+- function_definition operator== @313-315
+- function_definition operator!= @316-318
+- function_definition operator<= @319-321
+- function_definition operator>= @322-324
+- function_definition operator< @325-327
+- function_definition operator> @328-330
+- function_definition operator+ @338-338
+- function_definition operator- @339-339
+- function_definition operator* @340-340
+- function_definition operator/ @341-341
+- function_definition operator^ @343-343
+- function_definition operator& @344-344
+- function_definition operator| @345-345
+- function_definition operator! @347-347
+- function_definition operator- @348-348
+- function_definition operator~ @349-349
+- function_definition operator<< @351-351
+- function_definition operator>> @352-352
+- function_definition operator== @354-356
+- function_definition operator!= @357-359
+- function_definition operator<= @360-362
+- function_definition operator>= @363-365
+- function_definition operator< @366-368
+- function_definition operator> @369-371
+- function_definition operator+ @374-376
+- function_definition operator- @377-379
+- function_definition operator* @380-382
+- function_definition operator/ @383-385
+- function_definition operator^ @387-389
+- function_definition operator& @390-392
+- function_definition operator| @393-395
+- function_definition operator! @397-397
+- function_definition operator- @398-398
+- function_definition operator~ @399-399
+- function_definition operator<< @401-401
+- function_definition operator>> @402-402
+- function_definition operator== @404-406
+- function_definition operator!= @407-409
+- function_definition operator<= @410-412
+- function_definition operator>= @413-415
+- function_definition operator< @416-418
+- function_definition operator> @419-421
+- function_definition operator+ @425-425
+- function_definition operator- @426-426
+- function_definition operator* @427-427
+- function_definition operator/ @428-428
+- function_definition operator^ @429-429
+- function_definition operator& @430-430
+- function_definition operator| @431-431
+- function_definition operator== @432-432
+- function_definition operator!= @433-433
+- function_definition operator<= @434-434
+- function_definition operator>= @435-435
+- function_definition operator< @436-436
+- function_definition operator> @437-437
+- function_definition operator+ @439-439
+- function_definition operator- @440-440
+- function_definition operator* @441-441
+- function_definition operator/ @442-442
+- function_definition operator^ @443-443
+- function_definition operator& @444-444
+- function_definition operator| @445-445
+- function_definition operator== @446-446
+- function_definition operator!= @447-447
+- function_definition operator<= @448-448
+- function_definition operator>= @449-449
+- function_definition operator< @450-450
+- function_definition operator> @451-451
+- function_definition (anonymous) @453-453
+- function_definition (anonymous) @454-454
+- function_definition (anonymous) @455-455
+- function_definition (anonymous) @456-456
+- function_definition (anonymous) @457-457
+- function_definition (anonymous) @458-458
+- function_definition (anonymous) @459-459
+- function_definition (anonymous) @461-461
+- function_definition (anonymous) @462-462
+- function_definition (anonymous) @463-463
+- function_definition (anonymous) @464-464
+- function_definition (anonymous) @465-465
+- function_definition (anonymous) @466-466
+- function_definition (anonymous) @467-467
+- function_definition (anonymous) @469-469
+- function_definition (anonymous) @470-470
+- function_definition naive_if_then_else @477-480
+- function_definition if_then_else @482-486
+- function_definition if_then_else @487-531
+- function_definition any @533-533
+- function_definition any @534-583
+- function_definition all @585-585
+- function_definition all @586-626
+- function_definition cast @631-631
+- function_definition cast @634-640
+- function_definition min @643-643
+- function_definition max @644-644
+- function_definition min @645-645
+- function_definition max @646-646
+- function_definition min @648-648
+- function_definition max @649-649
+- function_definition min @651-651
+- function_definition max @652-652
+- function_definition min @653-653
+- function_definition max @654-654
+- function_definition pin @658-660
+- function_definition shuffle @670-677
+- function_definition map @683-695
+- function_definition map @698-701
+- function_definition ceil @703-703
+- function_definition floor @704-704
+- function_definition trunc @705-705
+- function_definition round @706-706
+- function_definition sqrt @707-707
+- function_definition abs @708-708
+- function_definition fma @709-715
+- function_definition lrint @717-719
+- function_definition lrint @720-743
+- function_definition fract @745-745
+- function_definition to_half @751-786
+- function_definition from_half @791-816
+- function_definition div255 @819-821
+- function_definition approx_scale @825-831
+- function_definition enable_if_t<std::is_unsigned_v<T>, Vec<N,T>> saturated_add @834-860
+- class_specifier ScaledDividerU32 @880-905
+- function_definition ScaledDividerU32 @882-886
+- function_definition divide @888-897
+- function_definition half @899-899
+- function_definition divisorFactor @900-900
+- function_definition mull @908-922
+- function_definition mull @924-938
+- function_definition mulhi @940-964
+- function_definition dot @966-982
+- function_definition cross @984-987
+- function_definition length @989-991
+- function_definition length @993-995
+- function_definition normalize @997-999
+- function_definition normalize @1001-1003
+- function_definition isfinite @1005-1009
+- function_definition strided_load4 @1015-1024
+- function_definition strided_load4 @1025-1032
+- function_definition strided_load4 @1064-1078
+- function_definition strided_load4 @1093-1107
+- function_definition strided_load2 @1114-1117
+- function_definition strided_load2 @1118-1121
+
+### gfx/skia/skia/src/base/SkZip.h
+
+Blob: `6ece1fd6b6e0082953df0c06e2d356f5aca9f718`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/base/SkAssert.h" @11
+- include "include/private/base/SkDebug.h" @12
+- include "include/private/base/SkSpan_impl.h" @13
+- include <algorithm> @15
+- include <cstddef> @16
+- include <cstdint> @17
+- include <iterator> @18
+- include <tuple> @19
+- include <utility> @20
+- class_specifier SkZip @25-126
+- class_specifier Iterator @28-49
+- function_definition Iterator @35-35
+- function_definition Iterator @36-36
+- function_definition (anonymous) @37-37
+- function_definition operator++ @38-38
+- function_definition operator== @39-39
+- function_definition operator!= @40-40
+- function_definition operator* @41-41
+- function_definition operator- @42-44
+- function_definition SkZip @55-55
+- function_definition SkZip @56-56
+- function_definition SkZip @57-57
+- function_definition SkZip @58-58
+- function_definition (anonymous) @59-59
+- function_definition SkZip @69-69
+- function_definition operator[] @71-71
+- function_definition size @72-72
+- function_definition empty @73-73
+- function_definition front @74-74
+- function_definition back @75-75
+- function_definition begin @76-76
+- function_definition end @77-77
+- function_definition get @78-80
+- function_definition data @81-81
+- function_definition first @82-86
+- function_definition last @87-91
+- function_definition subspan @92-97
+- function_definition SkZip @100-100
+- function_definition index @102-106
+- function_definition indexDetail @109-111
+- function_definition pointersAt @113-117
+- function_definition pointersAtDetail @120-122
+- class_specifier SkMakeZipDetail @128-202
+- struct_specifier DecayPointer @129-132
+- struct_specifier ContiguousMemory @135-135
+- struct_specifier ContiguousMemory<T*> @136-140
+- function_definition Data @138-138
+- function_definition Size @139-139
+- struct_specifier ContiguousMemory<T(&)[N]> @141-145
+- function_definition Data @143-143
+- function_definition Size @144-144
+- struct_specifier ContiguousMemory<SkSpan<T>> @148-152
+- function_definition Data @150-150
+- function_definition Size @151-151
+- struct_specifier ContiguousMemory<C&> @154-158
+- function_definition Data @156-156
+- function_definition Size @157-157
+- struct_specifier PickOneSize @162-162
+- struct_specifier PickOneSize<T*, Ts...> @163-167
+- function_definition Size @164-166
+- struct_specifier PickOneSize<T(&)[N], Ts...> @168-170
+- function_definition Size @169-169
+- struct_specifier PickOneSize<SkSpan<T>, Ts...> @171-173
+- function_definition Size @172-172
+- struct_specifier PickOneSize<C&, Ts...> @174-176
+- function_definition Size @175-175
+- function_definition MakeZip @180-201
+- function_definition SkMakeZip @208-210
+
+### gfx/skia/skia/src/codec/SkCodec.cpp
+
+Blob: `27ea0f5f87829d3671386079627d9dabb6e76e87`. Grammar: cpp. Status: contains-errors.
+
+- include "include/codec/SkCodec.h" @8
+- include "include/codec/SkCodecAnimation.h" @10
+- include "include/codec/SkPixmapUtils.h" @11
+- include "include/core/SkAlphaType.h" @12
+- include "include/core/SkBitmap.h" @13
+- include "include/core/SkColorSpace.h" @14
+- include "include/core/SkColorType.h" @15
+- include "include/core/SkData.h" @16
+- include "include/core/SkImage.h" @17
+- include "include/core/SkImageInfo.h" @18
+- include "include/core/SkMatrix.h" @19
+- include "include/core/SkStream.h" @20
+- include "include/private/base/SkTemplates.h" @21
+- include "modules/skcms/skcms.h" @22
+- include "src/base/SkNoDestructor.h" @23
+- include "src/codec/SkCodecPriv.h" @24
+- include "src/codec/SkFrameHolder.h" @25
+- include "src/codec/SkPixmapUtilsPriv.h" @26
+- include "src/codec/SkSampler.h" @27
+- include "src/core/SkColorPriv.h" @28
+- include <string> @30
+- include <string_view> @31
+- include <utility> @32
+- include "include/private/base/SkOnce.h" @35
+- include "include/codec/SkAvifDecoder.h" @38
+- include "experimental/rust_bmp/decoder/SkBmpRustDecoder.h" @42
+- include "include/codec/SkBmpDecoder.h" @44
+- include "include/codec/SkGifDecoder.h" @48
+- include "include/codec/SkIcoDecoder.h" @52
+- include "include/codec/SkJpegDecoder.h" @56
+- include "include/codec/SkJpegxlDecoder.h" @60
+- include "include/codec/SkPngDecoder.h" @64
+- include "include/codec/SkPngRustDecoder.h" @66
+- include "include/codec/SkRawDecoder.h" @70
+- include "include/codec/SkWbmpDecoder.h" @74
+- include "include/codec/SkWebpDecoder.h" @78
+- function_definition get_decoders_for_editing @85-134
+- function_definition (anonymous) @136-139
+- function_definition Register @141-150
+- function_definition HasDecoder @152-159
+- function_definition MakeFromStream @163-168
+- function_definition MakeFromStream @169-242
+- function_definition MakeFromData @244-246
+- function_definition MakeFromData @247-254
+- function_definition SkCodec @256-265
+- function_definition ~SkCodec @267-267
+- function_definition queryYUVAInfo @269-276
+- function_definition getYUVAPlanes @278-286
+- function_definition conversionSupported @288-311
+- function_definition rewindStream @313-320
+- function_definition rewindIfNeeded @322-337
+- function_definition frame_rect_on_screen @339-346
+- function_definition zero_rect @348-376
+- function_definition handleFrameIndex @378-473
+- function_definition allocateFromBudget @475-481
+- function_definition getPixels @483-492
+- function_definition getPixelsBudgeted @494-556
+- function_definition getImage @558-598
+- function_definition getImage @600-608
+- function_definition startIncrementalDecode @610-662
+- function_definition startScanlineDecode @665-716
+- function_definition getScanlines @718-735
+- function_definition skipScanlines @737-753
+- function_definition outputScanline @755-758
+- function_definition onOutputScanline @760-771
+- function_definition fillIncompleteImage @773-789
+- function_definition SelectXformFormat @791-830
+- function_definition initializeColorXform @832-882
+- function_definition applyColorXform @884-890
+- function_definition getFrameInfo @892-909
+- function_definition ResultToString @911-939
+- function_definition fillIn @941-953
+- function_definition independent @955-957
+- function_definition restore_bg @959-961
+- function_definition setAlphaAndRequiredFrame @1005-1077
+- function_definition getEncodedData @1079-1093
+
+### gfx/skia/skia/src/codec/SkCodecImageGenerator.cpp
+
+Blob: `118dfa285421d127d1bbace17eadaa51c01e033c`. Grammar: cpp. Status: syntax-clean.
+
+- include "src/codec/SkCodecImageGenerator.h" @7
+- include "include/codec/SkEncodedOrigin.h" @9
+- include "include/codec/SkPixmapUtils.h" @10
+- include "include/core/SkAlphaType.h" @11
+- include "include/core/SkData.h" @12
+- include "include/core/SkImageInfo.h" @13
+- include "include/core/SkPixmap.h" @14
+- include "include/core/SkStream.h" @15
+- include "include/core/SkTypes.h" @16
+- include "src/codec/SkCodecPriv.h" @17
+- include "src/codec/SkPixmapUtilsPriv.h" @18
+- include "src/core/SkStreamPriv.h" @19
+- include <utility> @21
+- function_definition MakeFromEncodedCodec @23-31
+- function_definition MakeFromCodec @33-38
+- function_definition adjust_info @40-54
+- function_definition SkCodecImageGenerator @56-58
+- function_definition onRefEncodedData @60-66
+- function_definition getPixels @68-84
+- function_definition onGetPixels @86-89
+- function_definition onQueryYUVAInfo @91-95
+- function_definition onGetYUVAPlanes @97-106
+- function_definition getScaledDimensions @108-114
+
+### gfx/skia/skia/src/codec/SkCodecImageGenerator.h
+
+Blob: `c6a3da88385f3ed81c9078deb83bec5ee6d7c262`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/codec/SkCodec.h" @10
+- include "include/core/SkData.h" @11
+- include "include/core/SkImageGenerator.h" @12
+- include "include/core/SkRefCnt.h" @13
+- include "include/core/SkSize.h" @14
+- include "include/core/SkYUVAPixmaps.h" @15
+- include <cstddef> @17
+- include <memory> @18
+- include <optional> @19
+- enum_specifier SkAlphaType @21-21
+- struct_specifier SkImageInfo @22-22
+- class_specifier SkCodecImageGenerator @24-126
+- function_definition getFrameCount @76-76
+- function_definition getFrameInfo @85-87
+- function_definition getRepetitionCount @103-103
+
+### gfx/skia/skia/src/codec/SkCodecPriv.h
+
+Blob: `94b8a7b8173f3a31c9e1098bba1221c80ba06a5a`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/codec/SkCodec.h" @11
+- include "include/codec/SkEncodedOrigin.h" @12
+- include "include/core/SkImageInfo.h" @13
+- include "include/core/SkTypes.h" @14
+- include "include/private/SkEncodedInfo.h" @15
+- include "modules/skcms/skcms.h" @16
+- include "src/codec/SkColorPalette.h" @17
+- include "src/core/SkColorData.h" @18
+- include "src/base/SkEndian.h" @19
+- include <memory> @21
+- include <string_view> @22
+- class_specifier ColorProfile @36-102
+- enum_specifier DataSpace @68-73
+- function_definition profile @86-86
+- function_definition data @87-87
+- class_specifier SkCodecPriv @106-348
+- function_definition (anonymous) @108-111
+- function_definition GetScaleFromSampleSize @118-118
+- function_definition IsValidSubset @120-122
+- function_definition GetSampledDimension @128-136
+- function_definition GetStartCoord @144-144
+- function_definition GetDstCoord @154-154
+- function_definition IsCoordNecessary @164-175
+- function_definition ValidAlpha @177-192
+- function_definition GetColorPtr @197-199
+- function_definition ComputeRowBytesPixelsPerByte @204-206
+- function_definition ComputeRowBytesBytesPerPixel @211-213
+- function_definition ComputeRowBytes @218-228
+- function_definition UnsafeGetByte @234-234
+- function_definition UnsafeGetShort @240-248
+- function_definition UnsafeGetInt @254-262
+- function_definition IsValidEndianMarker @270-278
+- function_definition GetEndianShort @280-286
+- function_definition GetEndianInt @288-294
+- function_definition PremultiplyARGBasRGBA @296-304
+- function_definition PremultiplyARGBasBGRA @306-314
+- function_definition IsRGBA @316-322
+- function_definition ChoosePackColorProc @327-342
+- function_definition GetEncodedData @344-347
+
+### gfx/skia/skia/src/codec/SkColorPalette.cpp
+
+Blob: `6e2c0b147766fcd2bf8869ed79c8f48e657b36fc`. Grammar: cpp. Status: syntax-clean.
+
+- include "src/codec/SkColorPalette.h" @7
+- include "include/private/base/SkMalloc.h" @9
+- include <cstring> @11
+- function_definition SkColorPalette @13-21
+- function_definition ~SkColorPalette @23-25
+
+### gfx/skia/skia/src/codec/SkColorPalette.h
+
+Blob: `53bb3c333351f47e35eebf3fe3ca8f0e88339359`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/core/SkColor.h" @11
+- include "include/core/SkRefCnt.h" @12
+- include "include/core/SkTypes.h" @13
+- class_specifier SkColorPalette @22-49
+- function_definition count @31-31
+- function_definition operator[] @36-39
+- function_definition readColors @42-42
+
+### gfx/skia/skia/src/codec/SkEncodedInfo.cpp
+
+Blob: `357f6441edacdcd81bc167d2bdb096c36f60a779`. Grammar: cpp. Status: contains-errors.
+
+- include "include/private/SkEncodedInfo.h" @8
+- include "src/codec/SkCodecPriv.h" @10
+- function_definition makeImageInfo @12-28
+- function_definition Make @31-34
+- function_definition Make @37-42
+- function_definition Make @45-50
+- function_definition Make @53-64
+- function_definition profile @66-69
+- function_definition profileData @71-74
+- function_definition copy @76-83
+- function_definition SkEncodedInfo @85-85
+- function_definition ~SkEncodedInfo @87-87
+- function_definition SkEncodedInfo @89-100
+
+### gfx/skia/skia/src/codec/SkFrameHolder.h
+
+Blob: `b4fdb6f6422d702dec9eee67cd58ee89a267f585`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/codec/SkCodec.h" @11
+- include "include/codec/SkCodecAnimation.h" @12
+- include "include/core/SkRect.h" @13
+- include "include/core/SkTypes.h" @14
+- include "include/private/SkEncodedInfo.h" @15
+- include "include/private/base/SkNoncopyable.h" @16
+- class_specifier SkFrame @24-162
+- function_definition SkFrame @26-34
+- function_definition ~SkFrame @36-36
+- function_definition SkFrame @47-47
+- function_definition frameId @52-52
+- function_definition reportedAlpha @61-63
+- function_definition hasAlpha @69-69
+- function_definition setHasAlpha @74-74
+- function_definition reachedStartOfData @80-80
+- function_definition getRequiredFrame @87-90
+- function_definition setRequiredFrame @95-95
+- function_definition setXYWH @100-102
+- function_definition frameRect @107-107
+- function_definition xOffset @109-109
+- function_definition yOffset @110-110
+- function_definition width @111-111
+- function_definition height @112-112
+- function_definition getDisposalMethod @114-116
+- function_definition setDisposalMethod @118-120
+- function_definition setDuration @125-127
+- function_definition getDuration @132-134
+- function_definition setBlend @136-138
+- function_definition getBlend @140-142
+- class_specifier SkFrameHolder @168-203
+- function_definition SkFrameHolder @170-173
+- function_definition ~SkFrameHolder @175-175
+- function_definition screenWidth @181-181
+- function_definition screenHeight @182-182
+- function_definition getFrame @194-196
+
+### gfx/skia/skia/src/codec/SkImageGenerator_FromEncoded.cpp
+
+Blob: `178a47e1f442ba07bcc4398600dbf68bb1184f2c`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/codec/SkCodec.h" @8
+- include "include/core/SkAlphaType.h" @9
+- include "include/core/SkData.h" @10
+- include "include/core/SkGraphics.h" @11
+- include "include/core/SkImage.h" @12
+- include "include/core/SkImageGenerator.h" @13
+- include "include/core/SkRefCnt.h" @14
+- include "include/core/SkTypes.h" @15
+- include "src/codec/SkCodecImageGenerator.h" @16
+- include "src/image/SkImageGeneratorPriv.h" @17
+- include <memory> @19
+- include <optional> @20
+- include <utility> @21
+- function_definition SetImageGeneratorFromEncodedDataFactory @25-31
+- function_definition MakeFromEncoded @35-46
+- function_definition DeferredFromEncodedData @52-58
+- function_definition DeferredImage @64-67
+
+### gfx/skia/skia/src/codec/SkPixmapUtils.cpp
+
+Blob: `10800654e0a8c54dd1bfd597aa6ff977055ce848`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/codec/SkPixmapUtils.h" @8
+- include "include/codec/SkEncodedOrigin.h" @10
+- include "include/core/SkBitmap.h" @11
+- include "include/core/SkBlendMode.h" @12
+- include "include/core/SkCanvas.h" @13
+- include "include/core/SkImage.h" @14
+- include "include/core/SkMatrix.h" @15
+- include "include/core/SkPaint.h" @16
+- include "include/core/SkPixmap.h" @17
+- include "include/core/SkRefCnt.h" @18
+- include "include/core/SkSamplingOptions.h" @19
+- include "include/core/SkSurface.h" @20
+- include <utility> @22
+- function_definition draw_orientation @24-40
+- function_definition Orient @44-68
+- function_definition SwapWidthHeight @70-72
+
+### gfx/skia/skia/src/codec/SkPixmapUtilsPriv.h
+
+Blob: `1928a27cdcdd79e74c9aeb247b28e89d9ec20e6a`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/codec/SkEncodedOrigin.h" @11
+- include "include/codec/SkPixmapUtils.h" @12
+- include "include/core/SkImageInfo.h" @13
+- include "include/core/SkPixmap.h" @14
+- include "src/core/SkAutoPixmapStorage.h" @15
+- function_definition Orient @30-50
+
+### gfx/skia/skia/src/codec/SkSampler.cpp
+
+Blob: `c8e879689dbaf07e2ca9e1ea6abd252e8aca941c`. Grammar: cpp. Status: syntax-clean.
+
+- include "src/codec/SkSampler.h" @8
+- include "include/codec/SkCodec.h" @10
+- include "include/core/SkColorType.h" @11
+- include "include/core/SkImageInfo.h" @12
+- include "include/private/base/SkTemplates.h" @13
+- include "src/codec/SkCodecPriv.h" @14
+- include "src/core/SkMemset.h" @15
+- include <cstdint> @17
+- include <cstring> @18
+- function_definition Fill @20-71
+
+### gfx/skia/skia/src/codec/SkSampler.h
+
+Blob: `177a99114fda1f07b1de1ba4b58e0a34db716a34`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/codec/SkCodec.h" @10
+- include "include/core/SkTypes.h" @11
+- include "include/private/base/SkNoncopyable.h" @12
+- include "src/codec/SkCodecPriv.h" @13
+- include <cstddef> @15
+- struct_specifier SkImageInfo @17-17
+- class_specifier SkSampler @19-87
+- function_definition setSampleX @25-27
+- function_definition setSampleY @32-34
+- function_definition sampleY @39-41
+- function_definition rowNeeded @48-50
+- function_definition SkSampler @78-80
+- function_definition ~SkSampler @82-82
+
+### gfx/skia/skia/src/core/Sk4px.h
+
+Blob: `d5d481e7e300fd2018e06d1a0b1c547fae649f3b`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/core/SkColor.h" @11
+- include "src/base/SkVx.h" @12
+- include "src/core/SkColorData.h" @13
+- class_specifier Sk4px @16-244
+- function_definition Sk4px @18-18
+- function_definition DupPMColor @20-26
+- function_definition alphas @29-32
+- function_definition inv @33-33
+- function_definition Load4 @36-40
+- function_definition Load2 @41-45
+- function_definition Load1 @46-50
+- function_definition Load4Alphas @54-57
+- function_definition Load2Alphas @59-62
+- function_definition store4 @64-64
+- function_definition store2 @65-65
+- function_definition store1 @66-66
+- class_specifier Wide @70-85
+- function_definition Wide @72-72
+- function_definition div255 @75-75
+- function_definition operator * @77-77
+- function_definition operator + @78-78
+- function_definition operator - @79-79
+- function_definition operator >> @80-80
+- function_definition operator << @81-81
+- function_definition widen @88-88
+- function_definition mulWiden @90-90
+- function_definition operator * @93-93
+- function_definition operator + @95-95
+- function_definition operator - @96-96
+- function_definition operator < @97-97
+- function_definition operator & @98-98
+- function_definition thenElse @99-101
+- function_definition approxMulDiv255 @105-107
+- function_definition saturatedAdd @109-111
+- function_definition MapSrc @116-144
+- function_definition MapDstSrc @148-175
+- function_definition MapDstAlpha @179-206
+- function_definition MapDstSrcAlpha @210-238
+- function_definition Sk4px @241-241
+
+### gfx/skia/skia/src/core/SkAAClip.cpp
+
+Blob: `65353eb11d560bae8bff9a73cddc6e8bfc8fefd5`. Grammar: cpp. Status: contains-errors.
+
+- include "src/core/SkAAClip.h" @8
+- include "include/core/SkClipOp.h" @10
+- include "include/core/SkPath.h" @11
+- include "include/core/SkRegion.h" @12
+- include "include/core/SkTypes.h" @13
+- include "include/private/base/SkCPUTypes.h" @14
+- include "include/private/base/SkDebug.h" @15
+- include "include/private/base/SkMacros.h" @16
+- include "include/private/base/SkMalloc.h" @17
+- include "include/private/base/SkMath.h" @18
+- include "include/private/base/SkTDArray.h" @19
+- include "include/private/base/SkTo.h" @20
+- include "src/core/SkBlitter.h" @21
+- include "src/core/SkColorData.h" @22
+- include "src/core/SkMask.h" @23
+- include "src/core/SkPathPriv.h" @24
+- include "src/core/SkScan.h" @25
+- include <algorithm> @27
+- include <atomic> @28
+- include <cstring> @29
+- class_specifier AutoAAClipValidate @33-43
+- function_definition AutoAAClipValidate @35-37
+- function_definition ~AutoAAClipValidate @38-40
+- function_definition compute_row_length @57-68
+- struct_specifier YOffset @74-77
+- class_specifier RowIter @79-124
+- function_definition RowIter @81-95
+- function_definition done @97-97
+- function_definition left @98-98
+- function_definition right @99-99
+- function_definition alpha @100-100
+- function_definition next @101-115
+- class_specifier Iter @126-170
+- function_definition Iter @128-128
+- function_definition Iter @130-136
+- function_definition done @138-138
+- function_definition top @139-139
+- function_definition bottom @140-140
+- function_definition data @141-141
+- function_definition next @143-160
+- struct_specifier SkAAClip::RunHead @176-243
+- function_definition yoffsets @181-183
+- function_definition yoffsets @184-186
+- function_definition data @187-189
+- function_definition data @190-192
+- function_definition Alloc @194-201
+- function_definition ComputeRowSizeForWidth @203-212
+- function_definition AllocRect @214-231
+- function_definition Iterate @233-242
+- class_specifier SkAAClip::Builder @247-536
+- class_specifier Blitter @248-248
+- struct_specifier Row @251-255
+- function_definition Builder @263-268
+- function_definition ~Builder @270-277
+- function_definition addRun @287-322
+- function_definition addColumn @324-332
+- function_definition addRectRun @334-345
+- function_definition addAntiRectRun @347-386
+- function_definition finish @388-436
+- function_definition dump @438-454
+- function_definition validate @456-478
+- function_definition flushRowH @480-486
+- function_definition flushRow @488-522
+- function_definition AppendRun @524-535
+- function_definition Builder::operateX @538-602
+- function_definition Builder::operateY @604-684
+- class_specifier SkAAClip::Builder::Blitter @686-829
+- function_definition checkForYGap @695-704
+- function_definition Blitter @707-713
+- function_definition finish @715-719
+- function_definition blitV @728-740
+- function_definition blitRect @742-747
+- function_definition blitAntiRect @749-755
+- function_definition blitMask @757-758
+- function_definition blitH @760-764
+- function_definition blitAntiH @766-806
+- function_definition recordMinY @820-824
+- function_definition unexpected @826-828
+- function_definition Builder::applyClipOp @831-834
+- function_definition Builder::blitPath @836-849
+- function_definition copyToMask @853-891
+- function_definition validate @895-927
+- function_definition dump_one_row @929-950
+- function_definition debug @952-967
+- function_definition count_left_right_zeros @974-1009
+- function_definition trim_row_left_right @1013-1055
+- function_definition trimLeftRight @1057-1116
+- function_definition row_is_all_zeros @1118-1131
+- function_definition trimTopBottom @1133-1207
+- function_definition trimBounds @1216-1232
+- function_definition SkAAClip @1236-1239
+- function_definition SkAAClip @1241-1245
+- function_definition ~SkAAClip @1247-1249
+- function_definition (anonymous) @1251-1264
+- function_definition setEmpty @1266-1271
+- function_definition setRect @1273-1285
+- function_definition isRect @1287-1313
+- function_definition setRegion @1315-1401
+- function_definition setPath @1403-1428
+- function_definition op @1432-1463
+- function_definition op @1465-1492
+- function_definition op @1494-1526
+- function_definition translate @1530-1547
+- function_definition freeRuns @1549-1556
+- function_definition findRow @1558-1576
+- function_definition findX @1578-1595
+- function_definition quickContains @1597-1624
+- function_definition expandToRuns @1628-1653
+- function_definition ~SkAAClipBlitter @1655-1657
+- function_definition ensureRunsAndAA @1659-1669
+- function_definition blitH @1671-1695
+- function_definition merge @1697-1739
+- function_definition blitAntiH @1741-1752
+- function_definition blitV @1754-1780
+- function_definition blitRect @1782-1792
+- function_definition small_memcpy @1797-1799
+- function_definition small_bzero @1801-1803
+- function_definition mergeOne @1805-1807
+- function_definition mergeOne @1809-1816
+- function_definition mergeT @1819-1849
+- function_definition find_merge_aa_proc @1851-1865
+- function_definition bit2byte @1867-1872
+- function_definition upscaleBW2A8 @1874-1913
+- function_definition blitMask @1915-1975
+
+### gfx/skia/skia/src/core/SkAAClip.h
+
+Blob: `b36a2183665f30179bdedb561bb159afea27d440`. Grammar: cpp. Status: syntax-clean.
+
+- include "include/core/SkColor.h" @11
+- include "include/core/SkRect.h" @12
+- include "include/private/base/SkAssert.h" @13
+- include "src/base/SkAutoMalloc.h" @14
+- include "src/core/SkBlitter.h" @15
+- include <cstdint> @16
+- include "include/private/base/SkDebug.h" @17
+- class_specifier SkPath @19-19
+- class_specifier SkRegion @20-20
+- enum_specifier SkClipOp @21-21
+- struct_specifier SkMask @22-22
+- struct_specifier SkMaskBuilder @23-23
+- class_specifier SkAAClip @25-88
+- function_definition isEmpty @33-33
+- function_definition (anonymous) @34-34
+- function_definition quickContains @57-59
+- function_definition validate @65-65
+- function_definition debug @66-66
+- class_specifier Builder @70-70
+- struct_specifier RunHead @71-71
+- class_specifier SkAAClipBlitter @92-126
+- function_definition SkAAClipBlitter @94-94
+- function_definition init @97-102
+- enum_specifier (anonymous) @119-121
+
+### gfx/skia/skia/src/core/SkATrace.cpp
+
+Blob: `4a8da403315695058b2b5fc064a66e7ae76e4933`. Grammar: cpp. Status: syntax-clean.
+
+- include "src/core/SkATrace.h" @8
+- include "include/utils/SkTraceEventPhase.h" @10
+- include <dlfcn.h> @13
+- include <cutils/trace.h> @17
+- include "src/core/SkTraceEventCommon.h" @18
+- function_definition SkATrace @21-37
+- function_definition addTraceEvent @39-59
+- function_definition updateTraceEventDuration @61-68
+- function_definition getCategoryGroupEnabled @70-76
+
+## Validation and limits
+
+This is a declaration map. Function contracts, callers, memory ownership, thread use, generated bindings, feature selection, cleanup, and reasons need implementation and caller review. No compilation or runtime tests ran. Imports and includes are literal navigation hints only. No complete call graph is claimed.

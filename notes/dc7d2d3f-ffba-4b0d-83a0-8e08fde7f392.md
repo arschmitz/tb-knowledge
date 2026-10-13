@@ -1,0 +1,3974 @@
+<!-- knowledge: {"repository": "git:314d8065c5ad68c7e5c5f92d", "at": "2026-10-13T04:22:06.018534+00:00", "paths": ["media/libvorbis/lib/vorbis_floor1.c", "media/libvorbis/lib/vorbis_info.c", "media/libvorbis/lib/vorbis_lookup.c", "media/libvorbis/lib/vorbis_lpc.c", "media/libvorbis/lib/vorbis_lsp.c", "media/libvorbis/lib/vorbis_mapping0.c", "media/libvorbis/lib/vorbis_mdct.c", "media/libvorbis/lib/vorbis_psy.c", "media/libvorbis/lib/vorbis_registry.c", "media/libvorbis/lib/vorbis_res0.c", "media/libvorbis/lib/vorbis_sharedbook.c", "media/libvorbis/lib/vorbis_smallft.c", "media/libvorbis/lib/vorbis_synthesis.c", "media/libvorbis/lib/vorbis_window.c", "media/libvorbis/lib/vorbisenc.c", "media/libvorbis/lib/window.h", "media/libvpx/config/generic/vp8_rtcd.h", "media/libvpx/config/generic/vp9_rtcd.h", "media/libvpx/config/generic/vpx_config.c", "media/libvpx/config/generic/vpx_config.h", "media/libvpx/config/generic/vpx_dsp_rtcd.h", "media/libvpx/config/generic/vpx_scale_rtcd.h", "media/libvpx/config/linux/arm/vp8_rtcd.h", "media/libvpx/config/linux/arm/vp9_rtcd.h", "media/libvpx/config/linux/arm/vpx_config.c", "media/libvpx/config/linux/arm/vpx_config.h", "media/libvpx/config/linux/arm/vpx_dsp_rtcd.h", "media/libvpx/config/linux/arm/vpx_scale_rtcd.h", "media/libvpx/config/linux/arm64/vp8_rtcd.h", "media/libvpx/config/linux/arm64/vp9_rtcd.h", "media/libvpx/config/linux/arm64/vpx_config.c", "media/libvpx/config/linux/arm64/vpx_config.h", "media/libvpx/config/linux/arm64/vpx_dsp_rtcd.h", "media/libvpx/config/linux/arm64/vpx_scale_rtcd.h", "media/libvpx/config/linux/ia32/vp8_rtcd.h", "media/libvpx/config/linux/ia32/vp9_rtcd.h", "media/libvpx/config/linux/ia32/vpx_config.c", "media/libvpx/config/linux/ia32/vpx_config.h", "media/libvpx/config/linux/ia32/vpx_dsp_rtcd.h", "media/libvpx/config/linux/ia32/vpx_scale_rtcd.h", "media/libvpx/config/linux/loongarch64/vp8_rtcd.h", "media/libvpx/config/linux/loongarch64/vp9_rtcd.h", "media/libvpx/config/linux/loongarch64/vpx_config.c", "media/libvpx/config/linux/loongarch64/vpx_config.h", "media/libvpx/config/linux/loongarch64/vpx_dsp_rtcd.h", "media/libvpx/config/linux/loongarch64/vpx_scale_rtcd.h", "media/libvpx/config/linux/x64/vp8_rtcd.h", "media/libvpx/config/linux/x64/vp9_rtcd.h", "media/libvpx/config/linux/x64/vpx_config.c", "media/libvpx/config/linux/x64/vpx_config.h", "media/libvpx/config/linux/x64/vpx_dsp_rtcd.h", "media/libvpx/config/linux/x64/vpx_scale_rtcd.h", "media/libvpx/config/mac/arm64/vp8_rtcd.h", "media/libvpx/config/mac/arm64/vp9_rtcd.h", "media/libvpx/config/mac/arm64/vpx_config.c", "media/libvpx/config/mac/arm64/vpx_config.h", "media/libvpx/config/mac/arm64/vpx_dsp_rtcd.h", "media/libvpx/config/mac/arm64/vpx_scale_rtcd.h", "media/libvpx/config/mac/ia32/vp8_rtcd.h", "media/libvpx/config/mac/ia32/vp9_rtcd.h", "media/libvpx/config/mac/ia32/vpx_config.c", "media/libvpx/config/mac/ia32/vpx_config.h", "media/libvpx/config/mac/ia32/vpx_dsp_rtcd.h", "media/libvpx/config/mac/ia32/vpx_scale_rtcd.h", "media/libvpx/config/mac/x64/vp8_rtcd.h", "media/libvpx/config/mac/x64/vp9_rtcd.h", "media/libvpx/config/mac/x64/vpx_config.c", "media/libvpx/config/mac/x64/vpx_config.h", "media/libvpx/config/mac/x64/vpx_dsp_rtcd.h", "media/libvpx/config/mac/x64/vpx_scale_rtcd.h", "media/libvpx/config/vpx_version.h", "media/libvpx/config/win/aarch64/vp8_rtcd.h", "media/libvpx/config/win/aarch64/vp9_rtcd.h", "media/libvpx/config/win/aarch64/vpx_config.c", "media/libvpx/config/win/aarch64/vpx_config.h", "media/libvpx/config/win/aarch64/vpx_dsp_rtcd.h", "media/libvpx/config/win/aarch64/vpx_scale_rtcd.h", "media/libvpx/config/win/ia32/vp8_rtcd.h", "media/libvpx/config/win/ia32/vp9_rtcd.h", "media/libvpx/config/win/ia32/vpx_config.c", "media/libvpx/config/win/ia32/vpx_config.h", "media/libvpx/config/win/ia32/vpx_dsp_rtcd.h", "media/libvpx/config/win/ia32/vpx_scale_rtcd.h", "media/libvpx/config/win/x64/vp8_rtcd.h", "media/libvpx/config/win/x64/vp9_rtcd.h", "media/libvpx/config/win/x64/vpx_config.c", "media/libvpx/config/win/x64/vpx_config.h", "media/libvpx/config/win/x64/vpx_dsp_rtcd.h", "media/libvpx/config/win/x64/vpx_scale_rtcd.h", "media/libvpx/libvpx/args.c", "media/libvpx/libvpx/args.h", "media/libvpx/libvpx/examples/decode_to_md5.c", "media/libvpx/libvpx/examples/decode_with_drops.c", "media/libvpx/libvpx/examples/postproc.c", "media/libvpx/libvpx/examples/set_maps.c", "media/libvpx/libvpx/examples/simple_decoder.c", "media/libvpx/libvpx/examples/simple_encoder.c", "media/libvpx/libvpx/examples/svc_context.h", "media/libvpx/libvpx/examples/svc_encodeframe.c", "media/libvpx/libvpx/examples/twopass_encoder.c", "media/libvpx/libvpx/examples/vp8_multi_resolution_encoder.c", "media/libvpx/libvpx/examples/vp8cx_set_ref.c", "media/libvpx/libvpx/examples/vp9_lossless_encoder.c", "media/libvpx/libvpx/examples/vp9_spatial_svc_encoder.c", "media/libvpx/libvpx/examples/vp9cx_set_ref.c", "media/libvpx/libvpx/examples/vpx_dec_fuzzer.cc", "media/libvpx/libvpx/examples/vpx_enc_fuzzer.cc", "media/libvpx/libvpx/examples/vpx_temporal_svc_encoder.c", "media/libvpx/libvpx/ivfdec.c", "media/libvpx/libvpx/ivfdec.h", "media/libvpx/libvpx/ivfenc.c", "media/libvpx/libvpx/ivfenc.h", "media/libvpx/libvpx/md5_utils.c", "media/libvpx/libvpx/md5_utils.h", "media/libvpx/libvpx/rate_hist.c", "media/libvpx/libvpx/rate_hist.h", "media/libvpx/libvpx/test/acm_random.h", "media/libvpx/libvpx/test/active_map_refresh_test.cc", "media/libvpx/libvpx/test/active_map_test.cc", "media/libvpx/libvpx/test/add_noise_test.cc", "media/libvpx/libvpx/test/alt_ref_aq_segment_test.cc", "media/libvpx/libvpx/test/altref_test.cc", "media/libvpx/libvpx/test/aq_segment_test.cc", "media/libvpx/libvpx/test/avg_test.cc", "media/libvpx/libvpx/test/bench.cc", "media/libvpx/libvpx/test/bench.h", "media/libvpx/libvpx/test/blockiness_test.cc", "media/libvpx/libvpx/test/borders_test.cc", "media/libvpx/libvpx/test/buffer.h", "media/libvpx/libvpx/test/byte_alignment_test.cc", "media/libvpx/libvpx/test/clear_system_state.h", "media/libvpx/libvpx/test/codec_factory.h", "media/libvpx/libvpx/test/comp_avg_pred_test.cc", "media/libvpx/libvpx/test/config_test.cc", "media/libvpx/libvpx/test/consistency_test.cc", "media/libvpx/libvpx/test/convolve_test.cc", "media/libvpx/libvpx/test/cpu_speed_test.cc", "media/libvpx/libvpx/test/cq_test.cc", "media/libvpx/libvpx/test/dct16x16_test.cc", "media/libvpx/libvpx/test/dct32x32_test.cc", "media/libvpx/libvpx/test/dct_partial_test.cc", "media/libvpx/libvpx/test/dct_test.cc", "media/libvpx/libvpx/test/decode_api_test.cc", "media/libvpx/libvpx/test/decode_corrupted.cc", "media/libvpx/libvpx/test/decode_perf_test.cc", "media/libvpx/libvpx/test/decode_svc_test.cc", "media/libvpx/libvpx/test/decode_test_driver.cc", "media/libvpx/libvpx/test/decode_test_driver.h", "media/libvpx/libvpx/test/encode_api_test.cc", "media/libvpx/libvpx/test/encode_perf_test.cc"], "source": {"reference": "Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b", "revision": "1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b", "status": "provisional", "study": "architecture-study-20261013"}} -->
+# firefox/media native and TypeScript syntax map 167
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser versions: {"tree-sitter": "0.25.2", "tree-sitter-c": "0.24.2", "tree-sitter-cpp": "0.23.4", "tree-sitter-rust": "0.24.2", "tree-sitter-java": "0.23.5", "tree-sitter-typescript": "0.23.2"}.
+
+Tree-sitter parses written syntax without executing it. Entries identify declarations and function bodies with source ranges. Names can be unqualified or inferred from an assignment. They do not resolve overloaded symbols or runtime receivers. C/C++ header files use the C++ grammar. Macros and build flags are not expanded. `contains-errors` means the tree has error or missing nodes; its entries remain partial candidates. A clean syntax tree is not proof that the file compiles. Objective-C, Kotlin, IDL, and embedded code are outside this parser pass and remain in the structural census.
+
+### media/libvorbis/lib/vorbis_floor1.c
+
+Blob: `00a5a97b8ce2937d19e4bef260cda1e84f98b996`. Grammar: c. Status: syntax-clean.
+
+- include <stdlib.h> @17
+- include <string.h> @18
+- include <math.h> @19
+- include <ogg/ogg.h> @20
+- include "vorbis/codec.h" @21
+- include "codec_internal.h" @22
+- include "registry.h" @23
+- include "codebook.h" @24
+- include "misc.h" @25
+- include "scales.h" @26
+- include <stdio.h> @28
+- struct_specifier lsfit_acc @32-49
+- function_definition floor1_free_info @53-59
+- function_definition floor1_free_look @61-72
+- function_definition floor1_pack @74-110
+- function_definition icomp @112-114
+- function_definition floor1_unpack @116-178
+- function_definition floor1_look @180-255
+- function_definition render_point @257-271
+- function_definition vorbis_dBquant @273-278
+- function_definition render_line @347-374
+- function_definition render_line0 @376-403
+- function_definition accumulate_fit @406-454
+- function_definition fit_line @456-514
+- function_definition inspect_error @516-565
+- function_definition post_Y @567-574
+- function_definition floor1_fit @576-729
+- function_definition floor1_interpolate_fit @731-750
+- function_definition floor1_encode @753-953
+- function_definition floor1_inverse1 @955-1039
+- function_definition floor1_inverse2 @1041-1080
+
+### media/libvorbis/lib/vorbis_info.c
+
+Blob: `16608104f1f7ca2ec91f590b021183f439b585c8`. Grammar: c. Status: syntax-clean.
+
+- include <stdlib.h> @20
+- include <string.h> @21
+- include <ogg/ogg.h> @22
+- include "vorbis/codec.h" @23
+- include "codec_internal.h" @24
+- include "codebook.h" @25
+- include "registry.h" @26
+- include "window.h" @27
+- include "psy.h" @28
+- include "misc.h" @29
+- include "os.h" @30
+- function_definition _v_writestring @36-41
+- function_definition _v_readstring @43-47
+- function_definition _v_toupper @49-51
+- function_definition vorbis_comment_init @53-55
+- function_definition vorbis_comment_add @57-67
+- function_definition vorbis_comment_add_tag @69-77
+- function_definition tagcompare @81-89
+- function_definition vorbis_comment_query @91-113
+- function_definition vorbis_comment_query_count @115-129
+- function_definition vorbis_comment_clear @131-143
+- function_definition vorbis_info_blocksize @147-150
+- function_definition vorbis_info_init @153-156
+- function_definition vorbis_info_clear @158-207
+- function_definition _vorbis_unpack_info @211-245
+- function_definition _vorbis_unpack_comment @247-275
+- function_definition _vorbis_unpack_books @279-354
+- function_definition vorbis_synthesis_idheader @357-379
+- function_definition vorbis_synthesis_headerin @386-452
+- function_definition _vorbis_pack_info @456-482
+- function_definition _vorbis_pack_comment @484-512
+- function_definition _vorbis_pack_books @514-568
+- function_definition vorbis_commentheader_out @570-592
+- function_definition vorbis_analysis_headerout @594-673
+- function_definition vorbis_granule_time @675-688
+- function_definition vorbis_version_string @690-692
+
+### media/libvorbis/lib/vorbis_lookup.c
+
+Blob: `7cd01a44d38dfdc048bae7ebf1d91e2d8928841a`. Grammar: c. Status: syntax-clean.
+
+- include <math.h> @17
+- include "lookup.h" @18
+- include "lookup_data.h" @19
+- include "os.h" @20
+- include "misc.h" @21
+- function_definition vorbis_coslook @26-31
+- function_definition vorbis_invsqlook @34-38
+- function_definition vorbis_invsq2explook @41-43
+- include <stdio.h> @45
+- function_definition vorbis_fromdBlook @47-52
+- function_definition vorbis_invsqlook_i @61-73
+- function_definition vorbis_fromdBlook_i @77-82
+- function_definition vorbis_coslook_i @86-91
+
+### media/libvorbis/lib/vorbis_lpc.c
+
+Blob: `877da47f8efeb9ee138479f4a152d793e0fdc878`. Grammar: c. Status: syntax-clean.
+
+- include <stdlib.h> @45
+- include <string.h> @46
+- include <math.h> @47
+- include "os.h" @48
+- include "smallft.h" @49
+- include "lpc.h" @50
+- include "scales.h" @51
+- include "misc.h" @52
+- function_definition vorbis_lpc_from_data @60-130
+- function_definition vorbis_lpc_predict @132-159
+
+### media/libvorbis/lib/vorbis_lsp.c
+
+Blob: `a92882a1313e9fee6a19854e9645d322aeefd1d0`. Grammar: c. Status: syntax-clean.
+
+- include <math.h> @35
+- include <string.h> @36
+- include <stdlib.h> @37
+- include "lsp.h" @38
+- include "os.h" @39
+- include "misc.h" @40
+- include "lookup.h" @41
+- include "scales.h" @42
+- include "vorbis_lookup.c" @60
+- function_definition vorbis_lsp_to_curve @65-113
+- include "vorbis_lookup.c" @118
+- function_definition vorbis_lsp_to_curve @140-239
+- function_definition vorbis_lsp_to_curve @248-281
+- function_definition cheby @286-296
+- function_definition comp @298-300
+- function_definition Laguerre_With_Deflation @310-360
+- function_definition Newton_Raphson @364-399
+- function_definition vorbis_lpc_to_lsp @403-454
+
+### media/libvorbis/lib/vorbis_mapping0.c
+
+Blob: `efa0fbcd93bb26e931aaa2a105b018f44d73974f`. Grammar: c. Status: contains-errors.
+
+- include <stdlib.h> @17
+- include <stdio.h> @18
+- include <string.h> @19
+- include <math.h> @20
+- include <ogg/ogg.h> @21
+- include "vorbis/codec.h" @22
+- include "codec_internal.h" @23
+- include "codebook.h" @24
+- include "window.h" @25
+- include "registry.h" @26
+- include "psy.h" @27
+- include "misc.h" @28
+- function_definition mapping0_free_info @39-45
+- function_definition mapping0_pack @47-88
+- function_definition mapping0_unpack @91-147
+- include "os.h" @149
+- include "lpc.h" @150
+- include "lsp.h" @151
+- include "envelope.h" @152
+- include "mdct.h" @153
+- include "psy.h" @154
+- include "scales.h" @155
+- function_definition mapping0_inverse @698-799
+
+### media/libvorbis/lib/vorbis_mdct.c
+
+Blob: `2a0ff8d01ba232634d259829eb2c0c25a5f2426d`. Grammar: c. Status: contains-errors.
+
+- include <stdio.h> @39
+- include <stdlib.h> @40
+- include <string.h> @41
+- include <math.h> @42
+- include "vorbis/codec.h" @43
+- include "mdct.h" @44
+- include "os.h" @45
+- include "misc.h" @46
+- function_definition mdct_init @51-90
+- function_definition mdct_butterfly_8 @93-114
+- function_definition mdct_butterfly_16 @117-149
+- function_definition mdct_butterfly_32 @152-213
+- function_definition mdct_butterfly_first @216-260
+- function_definition mdct_butterfly_generic @263-314
+- function_definition mdct_butterflies @316-336
+- function_definition mdct_clear @338-344
+- function_definition mdct_bitreverse @346-394
+- function_definition mdct_backward @396-490
+- function_definition mdct_forward @492-562
+
+### media/libvorbis/lib/vorbis_psy.c
+
+Blob: `d0901bf2738b63ff185e728e77ebc20056836253`. Grammar: c. Status: syntax-clean.
+
+- include <stdlib.h> @17
+- include <math.h> @18
+- include <string.h> @19
+- include "vorbis/codec.h" @20
+- include "codec_internal.h" @21
+- include "masking.h" @23
+- include "psy.h" @24
+- include "os.h" @25
+- include "lpc.h" @26
+- include "smallft.h" @27
+- include "scales.h" @28
+- include "misc.h" @29
+- function_definition _vp_global_look @35-45
+- function_definition _vp_global_free @47-52
+- function_definition _vi_gpsy_free @54-59
+- function_definition _vi_psy_free @61-66
+- function_definition min_curve @68-72
+- function_definition max_curve @73-77
+- function_definition attenuate_curve @79-83
+- function_definition setup_tone_curves @85-264
+- function_definition _vp_psy_init @266-362
+- function_definition _vp_psy_clear @364-387
+- function_definition seed_curve @390-415
+- function_definition seed_loop @417-452
+- function_definition seed_chase @454-508
+- include <stdio.h> @511
+- function_definition max_seeds @512-545
+- function_definition bark_noise_hybridmp @547-704
+- function_definition _vp_noisemask @706-752
+- function_definition _vp_tonemask @754-777
+- function_definition _vp_offset_and_mix @779-835
+- function_definition _vp_ampmax_decay @837-848
+- function_definition apsort @918-922
+- function_definition flag_lossless @924-935
+- function_definition noise_normalize @941-1010
+- function_definition _vp_couple_quantize_normalize @1014-1213
+
+### media/libvorbis/lib/vorbis_registry.c
+
+Blob: `db0f67b2e28d3549f4077274c9d61d6cf4d0c34b`. Grammar: c. Status: syntax-clean.
+
+- include "vorbis/codec.h" @17
+- include "codec_internal.h" @18
+- include "registry.h" @19
+- include "misc.h" @20
+
+### media/libvorbis/lib/vorbis_res0.c
+
+Blob: `6e008f318f95f75295fb9fd2ffbc49b6fefea565`. Grammar: c. Status: contains-errors.
+
+- include <stdlib.h> @22
+- include <string.h> @23
+- include <math.h> @24
+- include <ogg/ogg.h> @25
+- include "vorbis/codec.h" @26
+- include "codec_internal.h" @27
+- include "registry.h" @28
+- include "codebook.h" @29
+- include "misc.h" @30
+- include "os.h" @31
+- include <stdio.h> @34
+- struct_specifier vorbis_look_residue0 @37-64
+- function_definition res0_free_info @66-72
+- function_definition res0_free_look @74-150
+- function_definition icount @152-159
+- function_definition res0_pack @162-189
+- function_definition res0_unpack @192-254
+- function_definition res0_look @256-319
+- function_definition local_book_besterror @322-384
+- function_definition _encodepart @390-410
+- function_definition _01class @412-474
+- function_definition _2class @479-532
+- function_definition _01forward @534-648
+- function_definition _01inverse @651-711
+- function_definition res0_inverse @713-723
+- function_definition res1_forward @725-743
+- function_definition res1_class @745-755
+- function_definition res1_inverse @757-767
+- function_definition res2_class @769-778
+- function_definition res2_forward @783-809
+- function_definition res2_inverse @812-864
+
+### media/libvorbis/lib/vorbis_sharedbook.c
+
+Blob: `1e5d4b38f31b403e1dbbdbb51678ce6406b9935b`. Grammar: c. Status: syntax-clean.
+
+- include <stdlib.h> @17
+- include <limits.h> @18
+- include <math.h> @19
+- include <string.h> @20
+- include <ogg/ogg.h> @21
+- include "os.h" @22
+- include "misc.h" @23
+- include "vorbis/codec.h" @24
+- include "codebook.h" @25
+- include "scales.h" @26
+- function_definition ov_ilog @30-34
+- function_definition _float32_pack @45-58
+- function_definition _float32_unpack @60-74
+- function_definition _make_words @79-163
+- function_definition dec_make_words @169-238
+- function_definition _book_maptype1_quantvals @243-278
+- function_definition _book_unquantize @285-334
+- function_definition vorbis_staticbook_destroy @336-343
+- function_definition vorbis_book_clear @345-352
+- function_definition vorbis_decbook_clear @354-362
+- function_definition vorbis_book_init_encode @364-377
+- function_definition bitreverse @379-385
+- function_definition sort64a @387-390
+- function_definition vorbis_book_init_decode @393-667
+- function_definition vorbis_book_codeword @669-674
+- function_definition vorbis_book_codelen @676-681
+- include <stdio.h> @689
+- function_definition run_test @765-779
+- function_definition main @781-796
+
+### media/libvorbis/lib/vorbis_smallft.c
+
+Blob: `f93d7bf270cc6ee618b9b3a044c6e5d5c92e36d2`. Grammar: c. Status: syntax-clean.
+
+- include <stdlib.h> @30
+- include <string.h> @31
+- include <math.h> @32
+- include "smallft.h" @33
+- include "os.h" @34
+- include "misc.h" @35
+- function_definition drfti1 @37-105
+- function_definition fdrffti @107-111
+- function_definition dradf2 @113-166
+- function_definition dradf4 @168-268
+- function_definition dradfg @270-570
+- function_definition drftf1 @572-631
+- function_definition dradb2 @633-683
+- function_definition dradb3 @685-746
+- function_definition dradb4 @748-837
+- function_definition dradbg @839-1151
+- function_definition drftb1 @1153-1229
+- function_definition drft_forward @1231-1234
+- function_definition drft_backward @1236-1239
+- function_definition drft_init @1241-1246
+- function_definition drft_clear @1248-1254
+
+### media/libvorbis/lib/vorbis_synthesis.c
+
+Blob: `3e2d6812704308eccf1d27a907d3ef14fd7c4b57`. Grammar: c. Status: syntax-clean.
+
+- include <stdio.h> @17
+- include <ogg/ogg.h> @18
+- include "vorbis/codec.h" @19
+- include "codec_internal.h" @20
+- include "registry.h" @21
+- include "misc.h" @22
+- include "os.h" @23
+- function_definition vorbis_synthesis @25-89
+- function_definition vorbis_synthesis_trackonly @93-140
+- function_definition vorbis_packet_blocksize @142-164
+- function_definition vorbis_synthesis_halfrate @166-174
+- function_definition vorbis_synthesis_halfrate_p @176-179
+
+### media/libvorbis/lib/vorbis_window.c
+
+Blob: `2151b278d14f17ee0ab1e35336048eadf4193e86`. Grammar: c. Status: syntax-clean.
+
+- include <stdlib.h> @17
+- include <math.h> @18
+- include "os.h" @19
+- include "misc.h" @20
+- include "window.h" @21
+- function_definition _vorbis_window_get @2098-2100
+- function_definition _vorbis_apply_window @2102-2135
+
+### media/libvorbis/lib/vorbisenc.c
+
+Blob: `c453e3a3e2319251235e57aabb8ecfd337014289`. Grammar: c. Status: syntax-clean.
+
+- include <stdlib.h> @17
+- include <string.h> @18
+- include <math.h> @19
+- include <float.h> @20
+- include "vorbis/codec.h" @22
+- include "vorbis/vorbisenc.h" @23
+- include "codec_internal.h" @25
+- include "os.h" @27
+- include "misc.h" @28
+- struct_specifier static_bookblock @34-36
+- struct_specifier vorbis_residue_template @38-47
+- struct_specifier vorbis_mapping_template @49-52
+- struct_specifier vp_adjblock @54-56
+- struct_specifier compandblock @58-60
+- struct_specifier att3 @69-73
+- struct_specifier adj3 @74-74
+- struct_specifier adj_stereo @76-81
+- struct_specifier noiseguard @83-87
+- struct_specifier noise3 @88-90
+- struct_specifier ve_setup_data_template @92-142
+- include "modes/setup_44.h" @155
+- include "modes/setup_44u.h" @156
+- include "modes/setup_44p51.h" @157
+- include "modes/setup_32.h" @158
+- include "modes/setup_8.h" @159
+- include "modes/setup_11.h" @160
+- include "modes/setup_16.h" @161
+- include "modes/setup_22.h" @162
+- include "modes/setup_X.h" @163
+- function_definition vorbis_encode_floor_setup @190-226
+- function_definition vorbis_encode_global_psych_setup @228-253
+- function_definition vorbis_encode_global_stereo @255-302
+- function_definition vorbis_encode_psyset_setup @304-332
+- function_definition vorbis_encode_tonemask_setup @334-356
+- function_definition vorbis_encode_compand_setup @359-379
+- function_definition vorbis_encode_peak_setup @381-391
+- function_definition vorbis_encode_noisebias_setup @393-423
+- function_definition vorbis_encode_ath_setup @425-432
+- function_definition book_dup_or_new @435-441
+- function_definition vorbis_encode_blocksize_setup @443-454
+- function_definition vorbis_encode_residue_setup @456-586
+- function_definition vorbis_encode_map_n_res_setup @589-616
+- function_definition setting_to_approx_bitrate @618-631
+- function_definition get_setup_template @633-673
+- function_definition vorbis_encode_setup_init @682-861
+- function_definition vorbis_encode_setup_setting @863-902
+- function_definition vorbis_encode_setup_vbr @904-927
+- function_definition vorbis_encode_init_vbr @929-947
+- function_definition vorbis_encode_setup_managed @949-999
+- function_definition vorbis_encode_init @1001-1022
+- function_definition vorbis_encode_ctl @1024-1226
+- struct_specifier ovectl_ratemanage_arg @1038-1038
+- struct_specifier ovectl_ratemanage_arg @1039-1039
+- struct_specifier ovectl_ratemanage_arg @1056-1056
+- struct_specifier ovectl_ratemanage_arg @1057-1057
+- struct_specifier ovectl_ratemanage_arg @1071-1071
+- struct_specifier ovectl_ratemanage_arg @1072-1072
+- struct_specifier ovectl_ratemanage_arg @1083-1083
+- struct_specifier ovectl_ratemanage_arg @1084-1084
+- struct_specifier ovectl_ratemanage2_arg @1102-1102
+- struct_specifier ovectl_ratemanage2_arg @1103-1103
+- struct_specifier ovectl_ratemanage2_arg @1117-1117
+- struct_specifier ovectl_ratemanage2_arg @1118-1118
+
+### media/libvorbis/lib/window.h
+
+Blob: `33d83f85f9a047c3ab6ed2c015b59804e21af6e4`. Grammar: cpp. Status: syntax-clean.
+
+
+### media/libvpx/config/generic/vp8_rtcd.h
+
+Blob: `b02a669b2d7eaf68ce9ae0b23d2f54b9fdebe577`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier blockd @25-25
+- struct_specifier macroblockd @26-26
+- struct_specifier loop_filter_info @27-27
+- struct_specifier block @30-30
+- struct_specifier macroblock @31-31
+- struct_specifier variance_vtable @32-32
+- struct_specifier yv12_buffer_config @34-34
+- struct_specifier blockd @85-85
+- struct_specifier macroblock @88-88
+- struct_specifier block @88-88
+- struct_specifier blockd @88-88
+- struct_specifier variance_vtable @88-88
+- struct_specifier block @91-91
+- struct_specifier blockd @91-91
+- struct_specifier loop_filter_info @94-94
+- struct_specifier loop_filter_info @97-97
+- struct_specifier loop_filter_info @100-100
+- struct_specifier loop_filter_info @103-103
+- struct_specifier macroblock @118-118
+- struct_specifier macroblock @121-121
+- struct_specifier macroblock @124-124
+- struct_specifier block @124-124
+- struct_specifier blockd @124-124
+- struct_specifier variance_vtable @124-124
+- struct_specifier block @127-127
+- struct_specifier blockd @127-127
+- include "vpx_config.h" @165
+- function_definition setup_rtcd_internal @168-170
+
+### media/libvpx/config/generic/vp9_rtcd.h
+
+Blob: `1f5f911a459f210e2511bf818052d9451f70d1cf`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vp9/common/vp9_common.h" @26
+- include "vp9/common/vp9_enums.h" @27
+- include "vp9/common/vp9_filter.h" @28
+- include "vp9/encoder/vp9_temporal_filter.h" @30
+- struct_specifier macroblockd @33-33
+- struct_specifier macroblock @36-36
+- struct_specifier macroblock_plane @37-37
+- struct_specifier vp9_sad_table @38-38
+- struct_specifier ScanOrder @39-39
+- struct_specifier search_site_config @40-40
+- struct_specifier mv @41-41
+- struct_specifier yv12_buffer_config @43-43
+- struct_specifier macroblock @58-58
+- struct_specifier search_site_config @58-58
+- struct_specifier mv @58-58
+- struct_specifier mv @58-58
+- struct_specifier vp9_sad_table @58-58
+- struct_specifier mv @58-58
+- struct_specifier macroblock_plane @82-82
+- struct_specifier ScanOrder @82-82
+- struct_specifier macroblock_plane @85-85
+- struct_specifier ScanOrder @85-85
+- struct_specifier yv12_buffer_config @88-88
+- struct_specifier yv12_buffer_config @88-88
+- include "vpx_config.h" @102
+- function_definition setup_rtcd_internal @105-107
+
+### media/libvpx/config/generic/vpx_config.c
+
+Blob: `6494e70be7e277817c60f596acac4e0f6053f757`. Grammar: c. Status: syntax-clean.
+
+- include "vpx/vpx_codec.h" @8
+- function_definition vpx_codec_build_config @10-10
+
+### media/libvpx/config/generic/vpx_config.h
+
+Blob: `842cb90b1a41dd6eca2e00835d6a6de3b2f0a8b1`. Grammar: cpp. Status: syntax-clean.
+
+
+### media/libvpx/config/generic/vpx_dsp_rtcd.h
+
+Blob: `c9dd3bf5c533372ae546020f478e7a8ca89ca4a5`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vpx_dsp/vpx_dsp_common.h" @26
+- include "vpx_dsp/vpx_filter.h" @27
+- struct_specifier macroblock_plane @29-29
+- struct_specifier ScanOrder @30-30
+- struct_specifier macroblock_plane @362-362
+- struct_specifier ScanOrder @362-362
+- struct_specifier macroblock_plane @365-365
+- struct_specifier ScanOrder @365-365
+- include "vpx_config.h" @742
+- function_definition setup_rtcd_internal @745-747
+
+### media/libvpx/config/generic/vpx_scale_rtcd.h
+
+Blob: `a551ca2adbf2f5c4c7d17abfc0f884edf872d385`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier yv12_buffer_config @21-21
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @51-51
+- struct_specifier yv12_buffer_config @54-54
+- struct_specifier yv12_buffer_config @57-57
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @63-63
+- struct_specifier yv12_buffer_config @63-63
+- include "vpx_config.h" @68
+- function_definition setup_rtcd_internal @71-73
+
+### media/libvpx/config/linux/arm/vp8_rtcd.h
+
+Blob: `ecc40ebafea0caea202d82cba0f2b06d506b670c`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier blockd @25-25
+- struct_specifier macroblockd @26-26
+- struct_specifier loop_filter_info @27-27
+- struct_specifier block @30-30
+- struct_specifier macroblock @31-31
+- struct_specifier variance_vtable @32-32
+- struct_specifier yv12_buffer_config @34-34
+- struct_specifier blockd @98-98
+- struct_specifier blockd @99-99
+- struct_specifier blockd @100-100
+- struct_specifier macroblock @102-102
+- struct_specifier block @102-102
+- struct_specifier blockd @102-102
+- struct_specifier variance_vtable @102-102
+- struct_specifier block @105-105
+- struct_specifier blockd @105-105
+- struct_specifier block @106-106
+- struct_specifier blockd @106-106
+- struct_specifier block @107-107
+- struct_specifier blockd @107-107
+- struct_specifier loop_filter_info @109-109
+- struct_specifier loop_filter_info @110-110
+- struct_specifier loop_filter_info @113-113
+- struct_specifier loop_filter_info @114-114
+- struct_specifier loop_filter_info @117-117
+- struct_specifier loop_filter_info @118-118
+- struct_specifier loop_filter_info @121-121
+- struct_specifier loop_filter_info @122-122
+- struct_specifier macroblock @141-141
+- struct_specifier macroblock @144-144
+- struct_specifier macroblock @147-147
+- struct_specifier block @147-147
+- struct_specifier blockd @147-147
+- struct_specifier variance_vtable @147-147
+- struct_specifier block @150-150
+- struct_specifier blockd @150-150
+- include "vpx_config.h" @194
+- include "vpx_ports/arm.h" @197
+- function_definition setup_rtcd_internal @198-268
+
+### media/libvpx/config/linux/arm/vp9_rtcd.h
+
+Blob: `d8c8f2857bb4916620566068c9e9a58c85d31603`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vp9/common/vp9_common.h" @26
+- include "vp9/common/vp9_enums.h" @27
+- include "vp9/common/vp9_filter.h" @28
+- include "vp9/encoder/vp9_temporal_filter.h" @30
+- struct_specifier macroblockd @33-33
+- struct_specifier macroblock @36-36
+- struct_specifier macroblock_plane @37-37
+- struct_specifier vp9_sad_table @38-38
+- struct_specifier ScanOrder @39-39
+- struct_specifier search_site_config @40-40
+- struct_specifier mv @41-41
+- struct_specifier yv12_buffer_config @43-43
+- struct_specifier macroblock @57-57
+- struct_specifier search_site_config @57-57
+- struct_specifier mv @57-57
+- struct_specifier mv @57-57
+- struct_specifier vp9_sad_table @57-57
+- struct_specifier mv @57-57
+- struct_specifier macroblock @58-58
+- struct_specifier search_site_config @58-58
+- struct_specifier mv @58-58
+- struct_specifier mv @58-58
+- struct_specifier vp9_sad_table @58-58
+- struct_specifier mv @58-58
+- struct_specifier macroblock @59-59
+- struct_specifier macroblock_plane @88-88
+- struct_specifier ScanOrder @88-88
+- struct_specifier macroblock_plane @89-89
+- struct_specifier ScanOrder @89-89
+- struct_specifier macroblock_plane @92-92
+- struct_specifier ScanOrder @92-92
+- struct_specifier macroblock_plane @93-93
+- struct_specifier ScanOrder @93-93
+- struct_specifier yv12_buffer_config @96-96
+- struct_specifier yv12_buffer_config @96-96
+- struct_specifier yv12_buffer_config @97-97
+- struct_specifier yv12_buffer_config @97-97
+- struct_specifier yv12_buffer_config @98-98
+- include "vpx_config.h" @102
+- include "vpx_ports/arm.h" @105
+- function_definition setup_rtcd_internal @106-136
+
+### media/libvpx/config/linux/arm/vpx_config.c
+
+Blob: `12bf1f983e2a0731e26a60d92bdc3512a72c96b5`. Grammar: c. Status: syntax-clean.
+
+- include "vpx/vpx_codec.h" @8
+- function_definition vpx_codec_build_config @10-10
+
+### media/libvpx/config/linux/arm/vpx_config.h
+
+Blob: `f2157254d5a21cf87bc01cc847af2e08a7b70844`. Grammar: cpp. Status: syntax-clean.
+
+
+### media/libvpx/config/linux/arm/vpx_dsp_rtcd.h
+
+Blob: `f0f9ce158eb8e68ab6afa8c5a3df80776eb07236`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vpx_dsp/vpx_dsp_common.h" @26
+- include "vpx_dsp/vpx_filter.h" @27
+- struct_specifier macroblock_plane @29-29
+- struct_specifier ScanOrder @30-30
+- struct_specifier macroblock_plane @464-464
+- struct_specifier ScanOrder @464-464
+- struct_specifier macroblock_plane @465-465
+- struct_specifier ScanOrder @465-465
+- struct_specifier macroblock_plane @468-468
+- struct_specifier ScanOrder @468-468
+- struct_specifier macroblock_plane @469-469
+- struct_specifier ScanOrder @469-469
+- include "vpx_config.h" @964
+- include "vpx_ports/arm.h" @967
+- function_definition setup_rtcd_internal @968-1418
+
+### media/libvpx/config/linux/arm/vpx_scale_rtcd.h
+
+Blob: `9678750545fd2481f8870c26afd26a54744cc2eb`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier yv12_buffer_config @21-21
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @51-51
+- struct_specifier yv12_buffer_config @54-54
+- struct_specifier yv12_buffer_config @57-57
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @63-63
+- struct_specifier yv12_buffer_config @63-63
+- include "vpx_config.h" @68
+- include "vpx_ports/arm.h" @71
+- function_definition setup_rtcd_internal @72-78
+
+### media/libvpx/config/linux/arm64/vp8_rtcd.h
+
+Blob: `84cddbcda915f26b3c254b5b3311d7a707bdcda7`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier blockd @25-25
+- struct_specifier macroblockd @26-26
+- struct_specifier loop_filter_info @27-27
+- struct_specifier block @30-30
+- struct_specifier macroblock @31-31
+- struct_specifier variance_vtable @32-32
+- struct_specifier yv12_buffer_config @34-34
+- struct_specifier blockd @98-98
+- struct_specifier blockd @99-99
+- struct_specifier macroblock @102-102
+- struct_specifier block @102-102
+- struct_specifier blockd @102-102
+- struct_specifier variance_vtable @102-102
+- struct_specifier block @105-105
+- struct_specifier blockd @105-105
+- struct_specifier block @106-106
+- struct_specifier blockd @106-106
+- struct_specifier loop_filter_info @109-109
+- struct_specifier loop_filter_info @110-110
+- struct_specifier loop_filter_info @113-113
+- struct_specifier loop_filter_info @114-114
+- struct_specifier loop_filter_info @117-117
+- struct_specifier loop_filter_info @118-118
+- struct_specifier loop_filter_info @121-121
+- struct_specifier loop_filter_info @122-122
+- struct_specifier macroblock @141-141
+- struct_specifier macroblock @144-144
+- struct_specifier macroblock @147-147
+- struct_specifier block @147-147
+- struct_specifier blockd @147-147
+- struct_specifier variance_vtable @147-147
+- struct_specifier block @150-150
+- struct_specifier blockd @150-150
+- include "vpx_config.h" @194
+- include "vpx_ports/arm.h" @197
+- function_definition setup_rtcd_internal @198-204
+
+### media/libvpx/config/linux/arm64/vp9_rtcd.h
+
+Blob: `fa8c44f45fc9f2dea53148ced52d5de4ad867c7a`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vp9/common/vp9_common.h" @26
+- include "vp9/common/vp9_enums.h" @27
+- include "vp9/common/vp9_filter.h" @28
+- include "vp9/encoder/vp9_temporal_filter.h" @30
+- struct_specifier macroblockd @33-33
+- struct_specifier macroblock @36-36
+- struct_specifier macroblock_plane @37-37
+- struct_specifier vp9_sad_table @38-38
+- struct_specifier ScanOrder @39-39
+- struct_specifier search_site_config @40-40
+- struct_specifier mv @41-41
+- struct_specifier yv12_buffer_config @43-43
+- struct_specifier macroblock @57-57
+- struct_specifier search_site_config @57-57
+- struct_specifier mv @57-57
+- struct_specifier mv @57-57
+- struct_specifier vp9_sad_table @57-57
+- struct_specifier mv @57-57
+- struct_specifier macroblock @58-58
+- struct_specifier search_site_config @58-58
+- struct_specifier mv @58-58
+- struct_specifier mv @58-58
+- struct_specifier vp9_sad_table @58-58
+- struct_specifier mv @58-58
+- struct_specifier macroblock_plane @88-88
+- struct_specifier ScanOrder @88-88
+- struct_specifier macroblock_plane @89-89
+- struct_specifier ScanOrder @89-89
+- struct_specifier macroblock_plane @92-92
+- struct_specifier ScanOrder @92-92
+- struct_specifier macroblock_plane @93-93
+- struct_specifier ScanOrder @93-93
+- struct_specifier yv12_buffer_config @96-96
+- struct_specifier yv12_buffer_config @96-96
+- struct_specifier yv12_buffer_config @97-97
+- struct_specifier yv12_buffer_config @97-97
+- include "vpx_config.h" @102
+- include "vpx_ports/arm.h" @105
+- function_definition setup_rtcd_internal @106-112
+
+### media/libvpx/config/linux/arm64/vpx_config.c
+
+Blob: `2dce1f8245e32e77daa47ca1d59e9da4bf64a964`. Grammar: c. Status: syntax-clean.
+
+- include "vpx/vpx_codec.h" @8
+- function_definition vpx_codec_build_config @10-10
+
+### media/libvpx/config/linux/arm64/vpx_config.h
+
+Blob: `c75879de4c4c3acb200fcbf3f89bea0e0c8682bd`. Grammar: cpp. Status: syntax-clean.
+
+
+### media/libvpx/config/linux/arm64/vpx_dsp_rtcd.h
+
+Blob: `775ae4f98451ff5280620a02e554362ae8b5cb66`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vpx_dsp/vpx_dsp_common.h" @26
+- include "vpx_dsp/vpx_filter.h" @27
+- struct_specifier macroblock_plane @29-29
+- struct_specifier ScanOrder @30-30
+- struct_specifier macroblock_plane @483-483
+- struct_specifier ScanOrder @483-483
+- struct_specifier macroblock_plane @484-484
+- struct_specifier ScanOrder @484-484
+- struct_specifier macroblock_plane @487-487
+- struct_specifier ScanOrder @487-487
+- struct_specifier macroblock_plane @488-488
+- struct_specifier ScanOrder @488-488
+- include "vpx_config.h" @1048
+- include "vpx_ports/arm.h" @1051
+- function_definition setup_rtcd_internal @1052-1220
+
+### media/libvpx/config/linux/arm64/vpx_scale_rtcd.h
+
+Blob: `9678750545fd2481f8870c26afd26a54744cc2eb`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier yv12_buffer_config @21-21
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @51-51
+- struct_specifier yv12_buffer_config @54-54
+- struct_specifier yv12_buffer_config @57-57
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @63-63
+- struct_specifier yv12_buffer_config @63-63
+- include "vpx_config.h" @68
+- include "vpx_ports/arm.h" @71
+- function_definition setup_rtcd_internal @72-78
+
+### media/libvpx/config/linux/ia32/vp8_rtcd.h
+
+Blob: `57334ac719850777117fe3cc96766508abdebe93`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier blockd @25-25
+- struct_specifier macroblockd @26-26
+- struct_specifier loop_filter_info @27-27
+- struct_specifier block @30-30
+- struct_specifier macroblock @31-31
+- struct_specifier variance_vtable @32-32
+- struct_specifier yv12_buffer_config @34-34
+- struct_specifier blockd @103-103
+- struct_specifier blockd @104-104
+- struct_specifier blockd @105-105
+- struct_specifier macroblock @107-107
+- struct_specifier block @107-107
+- struct_specifier blockd @107-107
+- struct_specifier variance_vtable @107-107
+- struct_specifier macroblock @108-108
+- struct_specifier block @108-108
+- struct_specifier blockd @108-108
+- struct_specifier variance_vtable @108-108
+- struct_specifier macroblock @109-109
+- struct_specifier block @111-111
+- struct_specifier blockd @111-111
+- struct_specifier block @112-112
+- struct_specifier blockd @112-112
+- struct_specifier block @113-113
+- struct_specifier blockd @113-113
+- struct_specifier block @114-114
+- struct_specifier blockd @114-114
+- struct_specifier loop_filter_info @127-127
+- struct_specifier loop_filter_info @128-128
+- struct_specifier loop_filter_info @131-131
+- struct_specifier loop_filter_info @132-132
+- struct_specifier loop_filter_info @135-135
+- struct_specifier loop_filter_info @136-136
+- struct_specifier loop_filter_info @139-139
+- struct_specifier loop_filter_info @140-140
+- struct_specifier macroblock @159-159
+- struct_specifier macroblock @160-160
+- struct_specifier macroblock @161-161
+- struct_specifier macroblock @163-163
+- struct_specifier macroblock @164-164
+- struct_specifier macroblock @165-165
+- struct_specifier macroblock @167-167
+- struct_specifier block @167-167
+- struct_specifier blockd @167-167
+- struct_specifier variance_vtable @167-167
+- struct_specifier macroblock @168-168
+- struct_specifier block @168-168
+- struct_specifier blockd @168-168
+- struct_specifier variance_vtable @168-168
+- struct_specifier macroblock @169-169
+- struct_specifier block @171-171
+- struct_specifier blockd @171-171
+- struct_specifier block @172-172
+- struct_specifier blockd @172-172
+- struct_specifier block @173-173
+- struct_specifier blockd @173-173
+- struct_specifier block @174-174
+- struct_specifier blockd @174-174
+- include "vpx_ports/x86.h" @226
+- function_definition setup_rtcd_internal @227-326
+
+### media/libvpx/config/linux/ia32/vp9_rtcd.h
+
+Blob: `71be54b24dad807f50349a9efe0baf1ffd0d7411`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vp9/common/vp9_common.h" @26
+- include "vp9/common/vp9_enums.h" @27
+- include "vp9/common/vp9_filter.h" @28
+- include "vp9/encoder/vp9_temporal_filter.h" @30
+- struct_specifier macroblockd @33-33
+- struct_specifier macroblock @36-36
+- struct_specifier macroblock_plane @37-37
+- struct_specifier vp9_sad_table @38-38
+- struct_specifier ScanOrder @39-39
+- struct_specifier search_site_config @40-40
+- struct_specifier mv @41-41
+- struct_specifier yv12_buffer_config @43-43
+- struct_specifier macroblock @63-63
+- struct_specifier search_site_config @63-63
+- struct_specifier mv @63-63
+- struct_specifier mv @63-63
+- struct_specifier vp9_sad_table @63-63
+- struct_specifier mv @63-63
+- struct_specifier macroblock_plane @102-102
+- struct_specifier ScanOrder @102-102
+- struct_specifier macroblock_plane @103-103
+- struct_specifier ScanOrder @103-103
+- struct_specifier macroblock_plane @104-104
+- struct_specifier ScanOrder @104-104
+- struct_specifier macroblock_plane @105-105
+- struct_specifier ScanOrder @105-105
+- struct_specifier macroblock_plane @108-108
+- struct_specifier ScanOrder @108-108
+- struct_specifier macroblock_plane @109-109
+- struct_specifier ScanOrder @109-109
+- struct_specifier macroblock_plane @110-110
+- struct_specifier ScanOrder @110-110
+- struct_specifier yv12_buffer_config @113-113
+- struct_specifier yv12_buffer_config @113-113
+- struct_specifier yv12_buffer_config @114-114
+- struct_specifier yv12_buffer_config @114-114
+- struct_specifier yv12_buffer_config @115-115
+- include "vpx_ports/x86.h" @135
+- function_definition setup_rtcd_internal @136-186
+
+### media/libvpx/config/linux/ia32/vpx_config.c
+
+Blob: `33c9588e85a64ddea5cdeba82bf1a7e1aff2081b`. Grammar: c. Status: syntax-clean.
+
+- include "vpx/vpx_codec.h" @8
+- function_definition vpx_codec_build_config @10-10
+
+### media/libvpx/config/linux/ia32/vpx_config.h
+
+Blob: `1691bc8bd66733e119044cd8136211d27a18f9b9`. Grammar: cpp. Status: syntax-clean.
+
+
+### media/libvpx/config/linux/ia32/vpx_dsp_rtcd.h
+
+Blob: `df02fdb19ab7f58d9930a3ee3160a6a121dc56c9`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vpx_dsp/vpx_dsp_common.h" @26
+- include "vpx_dsp/vpx_filter.h" @27
+- struct_specifier macroblock_plane @29-29
+- struct_specifier ScanOrder @30-30
+- struct_specifier macroblock_plane @502-502
+- struct_specifier ScanOrder @502-502
+- struct_specifier macroblock_plane @503-503
+- struct_specifier ScanOrder @503-503
+- struct_specifier macroblock_plane @504-504
+- struct_specifier ScanOrder @504-504
+- struct_specifier macroblock_plane @505-505
+- struct_specifier ScanOrder @505-505
+- struct_specifier macroblock_plane @506-506
+- struct_specifier ScanOrder @506-506
+- struct_specifier macroblock_plane @509-509
+- struct_specifier ScanOrder @509-509
+- struct_specifier macroblock_plane @510-510
+- struct_specifier ScanOrder @510-510
+- struct_specifier macroblock_plane @511-511
+- struct_specifier ScanOrder @511-511
+- struct_specifier macroblock_plane @512-512
+- struct_specifier ScanOrder @512-512
+- include "vpx_ports/x86.h" @1070
+- function_definition setup_rtcd_internal @1071-1607
+
+### media/libvpx/config/linux/ia32/vpx_scale_rtcd.h
+
+Blob: `4244dd70e262644bcd989375beb445721d6fcadc`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier yv12_buffer_config @21-21
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @51-51
+- struct_specifier yv12_buffer_config @54-54
+- struct_specifier yv12_buffer_config @57-57
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @63-63
+- struct_specifier yv12_buffer_config @63-63
+- include "vpx_ports/x86.h" @69
+- function_definition setup_rtcd_internal @70-76
+
+### media/libvpx/config/linux/loongarch64/vp8_rtcd.h
+
+Blob: `fca3fa3cc028586e3070e94d5f095197b4bd31f1`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier blockd @25-25
+- struct_specifier macroblockd @26-26
+- struct_specifier loop_filter_info @27-27
+- struct_specifier block @30-30
+- struct_specifier macroblock @31-31
+- struct_specifier variance_vtable @32-32
+- struct_specifier yv12_buffer_config @34-34
+- struct_specifier blockd @89-89
+- struct_specifier macroblock @92-92
+- struct_specifier block @92-92
+- struct_specifier blockd @92-92
+- struct_specifier variance_vtable @92-92
+- struct_specifier macroblock @93-93
+- struct_specifier block @93-93
+- struct_specifier blockd @93-93
+- struct_specifier variance_vtable @93-93
+- struct_specifier macroblock @94-94
+- struct_specifier block @96-96
+- struct_specifier blockd @96-96
+- struct_specifier loop_filter_info @99-99
+- struct_specifier loop_filter_info @100-100
+- struct_specifier loop_filter_info @103-103
+- struct_specifier loop_filter_info @104-104
+- struct_specifier loop_filter_info @107-107
+- struct_specifier loop_filter_info @108-108
+- struct_specifier loop_filter_info @111-111
+- struct_specifier loop_filter_info @112-112
+- struct_specifier macroblock @127-127
+- struct_specifier macroblock @128-128
+- struct_specifier macroblock @129-129
+- struct_specifier macroblock @131-131
+- struct_specifier macroblock @134-134
+- struct_specifier block @134-134
+- struct_specifier blockd @134-134
+- struct_specifier variance_vtable @134-134
+- struct_specifier block @137-137
+- struct_specifier blockd @137-137
+- struct_specifier block @138-138
+- struct_specifier blockd @138-138
+- struct_specifier block @139-139
+- struct_specifier blockd @139-139
+- include "vpx_config.h" @178
+- include "vpx_ports/loongarch.h" @181
+- function_definition setup_rtcd_internal @182-219
+
+### media/libvpx/config/linux/loongarch64/vp9_rtcd.h
+
+Blob: `c61cf275fca12472bc1370d2ffd1ed1311a6cf8b`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vp9/common/vp9_common.h" @26
+- include "vp9/common/vp9_enums.h" @27
+- include "vp9/common/vp9_filter.h" @28
+- include "vp9/encoder/vp9_temporal_filter.h" @30
+- struct_specifier macroblockd @33-33
+- struct_specifier macroblock @36-36
+- struct_specifier macroblock_plane @37-37
+- struct_specifier vp9_sad_table @38-38
+- struct_specifier ScanOrder @39-39
+- struct_specifier search_site_config @40-40
+- struct_specifier mv @41-41
+- struct_specifier yv12_buffer_config @43-43
+- struct_specifier macroblock @55-55
+- struct_specifier search_site_config @55-55
+- struct_specifier mv @55-55
+- struct_specifier mv @55-55
+- struct_specifier vp9_sad_table @55-55
+- struct_specifier mv @55-55
+- struct_specifier macroblock_plane @79-79
+- struct_specifier ScanOrder @79-79
+- struct_specifier macroblock_plane @82-82
+- struct_specifier ScanOrder @82-82
+- struct_specifier yv12_buffer_config @85-85
+- struct_specifier yv12_buffer_config @85-85
+- include "vpx_config.h" @90
+- include "vpx_ports/loongarch.h" @93
+- function_definition setup_rtcd_internal @94-99
+
+### media/libvpx/config/linux/loongarch64/vpx_config.c
+
+Blob: `fbacdb22010ccf73da8597681ea97c7034df95d7`. Grammar: c. Status: syntax-clean.
+
+- include "vpx/vpx_codec.h" @8
+- function_definition vpx_codec_build_config @10-10
+
+### media/libvpx/config/linux/loongarch64/vpx_config.h
+
+Blob: `5678604d6c7a3cabf9a96a96822afaa6ba65f265`. Grammar: cpp. Status: syntax-clean.
+
+
+### media/libvpx/config/linux/loongarch64/vpx_dsp_rtcd.h
+
+Blob: `866f0a94094460040bddd42c605e59933adc8431`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vpx_dsp/vpx_dsp_common.h" @26
+- include "vpx_dsp/vpx_filter.h" @27
+- struct_specifier macroblock_plane @29-29
+- struct_specifier ScanOrder @30-30
+- struct_specifier macroblock_plane @396-396
+- struct_specifier ScanOrder @396-396
+- struct_specifier macroblock_plane @397-397
+- struct_specifier ScanOrder @397-397
+- struct_specifier macroblock_plane @400-400
+- struct_specifier ScanOrder @400-400
+- struct_specifier macroblock_plane @401-401
+- struct_specifier ScanOrder @401-401
+- include "vpx_config.h" @799
+- include "vpx_ports/loongarch.h" @802
+- function_definition setup_rtcd_internal @803-922
+
+### media/libvpx/config/linux/loongarch64/vpx_scale_rtcd.h
+
+Blob: `5f3a497c8ee3de4f50d125c055eb8053d31e2ae4`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier yv12_buffer_config @21-21
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @51-51
+- struct_specifier yv12_buffer_config @54-54
+- struct_specifier yv12_buffer_config @57-57
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @63-63
+- struct_specifier yv12_buffer_config @63-63
+- include "vpx_config.h" @68
+- include "vpx_ports/loongarch.h" @71
+- function_definition setup_rtcd_internal @72-77
+
+### media/libvpx/config/linux/x64/vp8_rtcd.h
+
+Blob: `c2dcf5e3ef1ec9eb1d35bffb8172091a919ae043`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier blockd @25-25
+- struct_specifier macroblockd @26-26
+- struct_specifier loop_filter_info @27-27
+- struct_specifier block @30-30
+- struct_specifier macroblock @31-31
+- struct_specifier variance_vtable @32-32
+- struct_specifier yv12_buffer_config @34-34
+- struct_specifier blockd @103-103
+- struct_specifier blockd @104-104
+- struct_specifier macroblock @107-107
+- struct_specifier block @107-107
+- struct_specifier blockd @107-107
+- struct_specifier variance_vtable @107-107
+- struct_specifier macroblock @108-108
+- struct_specifier block @108-108
+- struct_specifier blockd @108-108
+- struct_specifier variance_vtable @108-108
+- struct_specifier block @111-111
+- struct_specifier blockd @111-111
+- struct_specifier block @112-112
+- struct_specifier blockd @112-112
+- struct_specifier block @113-113
+- struct_specifier blockd @113-113
+- struct_specifier block @114-114
+- struct_specifier blockd @114-114
+- struct_specifier loop_filter_info @127-127
+- struct_specifier loop_filter_info @128-128
+- struct_specifier loop_filter_info @131-131
+- struct_specifier loop_filter_info @132-132
+- struct_specifier loop_filter_info @135-135
+- struct_specifier loop_filter_info @136-136
+- struct_specifier loop_filter_info @139-139
+- struct_specifier loop_filter_info @140-140
+- struct_specifier macroblock @159-159
+- struct_specifier macroblock @160-160
+- struct_specifier macroblock @163-163
+- struct_specifier macroblock @164-164
+- struct_specifier macroblock @167-167
+- struct_specifier block @167-167
+- struct_specifier blockd @167-167
+- struct_specifier variance_vtable @167-167
+- struct_specifier macroblock @168-168
+- struct_specifier block @168-168
+- struct_specifier blockd @168-168
+- struct_specifier variance_vtable @168-168
+- struct_specifier block @171-171
+- struct_specifier blockd @171-171
+- struct_specifier block @172-172
+- struct_specifier blockd @172-172
+- struct_specifier block @173-173
+- struct_specifier blockd @173-173
+- struct_specifier block @174-174
+- struct_specifier blockd @174-174
+- include "vpx_ports/x86.h" @226
+- function_definition setup_rtcd_internal @227-251
+
+### media/libvpx/config/linux/x64/vp9_rtcd.h
+
+Blob: `d1830443706ec7f8340a601ac7f6b10da476f252`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vp9/common/vp9_common.h" @26
+- include "vp9/common/vp9_enums.h" @27
+- include "vp9/common/vp9_filter.h" @28
+- include "vp9/encoder/vp9_temporal_filter.h" @30
+- struct_specifier macroblockd @33-33
+- struct_specifier macroblock @36-36
+- struct_specifier macroblock_plane @37-37
+- struct_specifier vp9_sad_table @38-38
+- struct_specifier ScanOrder @39-39
+- struct_specifier search_site_config @40-40
+- struct_specifier mv @41-41
+- struct_specifier yv12_buffer_config @43-43
+- struct_specifier macroblock @63-63
+- struct_specifier search_site_config @63-63
+- struct_specifier mv @63-63
+- struct_specifier mv @63-63
+- struct_specifier vp9_sad_table @63-63
+- struct_specifier mv @63-63
+- struct_specifier macroblock_plane @102-102
+- struct_specifier ScanOrder @102-102
+- struct_specifier macroblock_plane @103-103
+- struct_specifier ScanOrder @103-103
+- struct_specifier macroblock_plane @104-104
+- struct_specifier ScanOrder @104-104
+- struct_specifier macroblock_plane @105-105
+- struct_specifier ScanOrder @105-105
+- struct_specifier macroblock_plane @108-108
+- struct_specifier ScanOrder @108-108
+- struct_specifier macroblock_plane @109-109
+- struct_specifier ScanOrder @109-109
+- struct_specifier macroblock_plane @110-110
+- struct_specifier ScanOrder @110-110
+- struct_specifier yv12_buffer_config @113-113
+- struct_specifier yv12_buffer_config @113-113
+- struct_specifier yv12_buffer_config @114-114
+- struct_specifier yv12_buffer_config @114-114
+- struct_specifier yv12_buffer_config @115-115
+- include "vpx_ports/x86.h" @135
+- function_definition setup_rtcd_internal @136-165
+
+### media/libvpx/config/linux/x64/vpx_config.c
+
+Blob: `9a2a2ab2867bb8457424f28c2e64bd70e7cba456`. Grammar: c. Status: syntax-clean.
+
+- include "vpx/vpx_codec.h" @8
+- function_definition vpx_codec_build_config @10-10
+
+### media/libvpx/config/linux/x64/vpx_config.h
+
+Blob: `10bb977e7da4500f705249d1342e015e352f55f4`. Grammar: cpp. Status: syntax-clean.
+
+
+### media/libvpx/config/linux/x64/vpx_dsp_rtcd.h
+
+Blob: `bac8edb57fe30cfb1c33c08c3629737d1347e0cb`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vpx_dsp/vpx_dsp_common.h" @26
+- include "vpx_dsp/vpx_filter.h" @27
+- struct_specifier macroblock_plane @29-29
+- struct_specifier ScanOrder @30-30
+- struct_specifier macroblock_plane @504-504
+- struct_specifier ScanOrder @504-504
+- struct_specifier macroblock_plane @505-505
+- struct_specifier ScanOrder @505-505
+- struct_specifier macroblock_plane @506-506
+- struct_specifier ScanOrder @506-506
+- struct_specifier macroblock_plane @507-507
+- struct_specifier ScanOrder @507-507
+- struct_specifier macroblock_plane @508-508
+- struct_specifier ScanOrder @508-508
+- struct_specifier macroblock_plane @511-511
+- struct_specifier ScanOrder @511-511
+- struct_specifier macroblock_plane @512-512
+- struct_specifier ScanOrder @512-512
+- struct_specifier macroblock_plane @513-513
+- struct_specifier ScanOrder @513-513
+- struct_specifier macroblock_plane @514-514
+- struct_specifier ScanOrder @514-514
+- include "vpx_ports/x86.h" @1072
+- function_definition setup_rtcd_internal @1073-1299
+
+### media/libvpx/config/linux/x64/vpx_scale_rtcd.h
+
+Blob: `4244dd70e262644bcd989375beb445721d6fcadc`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier yv12_buffer_config @21-21
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @51-51
+- struct_specifier yv12_buffer_config @54-54
+- struct_specifier yv12_buffer_config @57-57
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @63-63
+- struct_specifier yv12_buffer_config @63-63
+- include "vpx_ports/x86.h" @69
+- function_definition setup_rtcd_internal @70-76
+
+### media/libvpx/config/mac/arm64/vp8_rtcd.h
+
+Blob: `3d2755b8b52fa01cd4d955c94dfc5d4b82f7dfde`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier blockd @25-25
+- struct_specifier macroblockd @26-26
+- struct_specifier loop_filter_info @27-27
+- struct_specifier block @30-30
+- struct_specifier macroblock @31-31
+- struct_specifier variance_vtable @32-32
+- struct_specifier yv12_buffer_config @34-34
+- struct_specifier blockd @98-98
+- struct_specifier blockd @99-99
+- struct_specifier macroblock @102-102
+- struct_specifier block @102-102
+- struct_specifier blockd @102-102
+- struct_specifier variance_vtable @102-102
+- struct_specifier block @105-105
+- struct_specifier blockd @105-105
+- struct_specifier block @106-106
+- struct_specifier blockd @106-106
+- struct_specifier loop_filter_info @109-109
+- struct_specifier loop_filter_info @110-110
+- struct_specifier loop_filter_info @113-113
+- struct_specifier loop_filter_info @114-114
+- struct_specifier loop_filter_info @117-117
+- struct_specifier loop_filter_info @118-118
+- struct_specifier loop_filter_info @121-121
+- struct_specifier loop_filter_info @122-122
+- struct_specifier macroblock @141-141
+- struct_specifier macroblock @144-144
+- struct_specifier macroblock @147-147
+- struct_specifier block @147-147
+- struct_specifier blockd @147-147
+- struct_specifier variance_vtable @147-147
+- struct_specifier block @150-150
+- struct_specifier blockd @150-150
+- include "vpx_config.h" @197
+- include "vpx_ports/arm.h" @200
+- function_definition setup_rtcd_internal @201-207
+
+### media/libvpx/config/mac/arm64/vp9_rtcd.h
+
+Blob: `174b6033f7693d0cabce28cf9864375793215bc4`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vp9/common/vp9_common.h" @26
+- include "vp9/common/vp9_enums.h" @27
+- include "vp9/common/vp9_filter.h" @28
+- include "vp9/encoder/vp9_temporal_filter.h" @30
+- struct_specifier macroblockd @33-33
+- struct_specifier macroblock @36-36
+- struct_specifier macroblock_plane @37-37
+- struct_specifier vp9_sad_table @38-38
+- struct_specifier ScanOrder @39-39
+- struct_specifier search_site_config @40-40
+- struct_specifier mv @41-41
+- struct_specifier yv12_buffer_config @43-43
+- struct_specifier macroblock @63-63
+- struct_specifier search_site_config @63-63
+- struct_specifier mv @63-63
+- struct_specifier mv @63-63
+- struct_specifier vp9_sad_table @63-63
+- struct_specifier mv @63-63
+- struct_specifier macroblock @64-64
+- struct_specifier search_site_config @64-64
+- struct_specifier mv @64-64
+- struct_specifier mv @64-64
+- struct_specifier vp9_sad_table @64-64
+- struct_specifier mv @64-64
+- struct_specifier macroblock_plane @94-94
+- struct_specifier ScanOrder @94-94
+- struct_specifier macroblock_plane @95-95
+- struct_specifier ScanOrder @95-95
+- struct_specifier macroblock_plane @98-98
+- struct_specifier ScanOrder @98-98
+- struct_specifier macroblock_plane @99-99
+- struct_specifier ScanOrder @99-99
+- struct_specifier yv12_buffer_config @102-102
+- struct_specifier yv12_buffer_config @102-102
+- struct_specifier yv12_buffer_config @103-103
+- struct_specifier yv12_buffer_config @103-103
+- include "vpx_config.h" @126
+- include "vpx_ports/arm.h" @129
+- function_definition setup_rtcd_internal @130-149
+
+### media/libvpx/config/mac/arm64/vpx_config.c
+
+Blob: `f918e11af888eaabb6f1191c11fb3a5740c019c1`. Grammar: c. Status: syntax-clean.
+
+- include "vpx/vpx_codec.h" @8
+- function_definition vpx_codec_build_config @10-10
+
+### media/libvpx/config/mac/arm64/vpx_config.h
+
+Blob: `2beec8ed0f42d78f15cc33bd8afdc66698a37b3e`. Grammar: cpp. Status: syntax-clean.
+
+
+### media/libvpx/config/mac/arm64/vpx_dsp_rtcd.h
+
+Blob: `58474e7391825a6ac3735f70c39316917f1f7ac9`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vpx_dsp/vpx_dsp_common.h" @26
+- include "vpx_dsp/vpx_filter.h" @27
+- struct_specifier macroblock_plane @29-29
+- struct_specifier ScanOrder @30-30
+- struct_specifier macroblock_plane @483-483
+- struct_specifier ScanOrder @483-483
+- struct_specifier macroblock_plane @484-484
+- struct_specifier ScanOrder @484-484
+- struct_specifier macroblock_plane @487-487
+- struct_specifier ScanOrder @487-487
+- struct_specifier macroblock_plane @488-488
+- struct_specifier ScanOrder @488-488
+- include "vpx_config.h" @1049
+- include "vpx_ports/arm.h" @1052
+- function_definition setup_rtcd_internal @1053-1223
+
+### media/libvpx/config/mac/arm64/vpx_scale_rtcd.h
+
+Blob: `9678750545fd2481f8870c26afd26a54744cc2eb`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier yv12_buffer_config @21-21
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @51-51
+- struct_specifier yv12_buffer_config @54-54
+- struct_specifier yv12_buffer_config @57-57
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @63-63
+- struct_specifier yv12_buffer_config @63-63
+- include "vpx_config.h" @68
+- include "vpx_ports/arm.h" @71
+- function_definition setup_rtcd_internal @72-78
+
+### media/libvpx/config/mac/ia32/vp8_rtcd.h
+
+Blob: `57334ac719850777117fe3cc96766508abdebe93`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier blockd @25-25
+- struct_specifier macroblockd @26-26
+- struct_specifier loop_filter_info @27-27
+- struct_specifier block @30-30
+- struct_specifier macroblock @31-31
+- struct_specifier variance_vtable @32-32
+- struct_specifier yv12_buffer_config @34-34
+- struct_specifier blockd @103-103
+- struct_specifier blockd @104-104
+- struct_specifier blockd @105-105
+- struct_specifier macroblock @107-107
+- struct_specifier block @107-107
+- struct_specifier blockd @107-107
+- struct_specifier variance_vtable @107-107
+- struct_specifier macroblock @108-108
+- struct_specifier block @108-108
+- struct_specifier blockd @108-108
+- struct_specifier variance_vtable @108-108
+- struct_specifier macroblock @109-109
+- struct_specifier block @111-111
+- struct_specifier blockd @111-111
+- struct_specifier block @112-112
+- struct_specifier blockd @112-112
+- struct_specifier block @113-113
+- struct_specifier blockd @113-113
+- struct_specifier block @114-114
+- struct_specifier blockd @114-114
+- struct_specifier loop_filter_info @127-127
+- struct_specifier loop_filter_info @128-128
+- struct_specifier loop_filter_info @131-131
+- struct_specifier loop_filter_info @132-132
+- struct_specifier loop_filter_info @135-135
+- struct_specifier loop_filter_info @136-136
+- struct_specifier loop_filter_info @139-139
+- struct_specifier loop_filter_info @140-140
+- struct_specifier macroblock @159-159
+- struct_specifier macroblock @160-160
+- struct_specifier macroblock @161-161
+- struct_specifier macroblock @163-163
+- struct_specifier macroblock @164-164
+- struct_specifier macroblock @165-165
+- struct_specifier macroblock @167-167
+- struct_specifier block @167-167
+- struct_specifier blockd @167-167
+- struct_specifier variance_vtable @167-167
+- struct_specifier macroblock @168-168
+- struct_specifier block @168-168
+- struct_specifier blockd @168-168
+- struct_specifier variance_vtable @168-168
+- struct_specifier macroblock @169-169
+- struct_specifier block @171-171
+- struct_specifier blockd @171-171
+- struct_specifier block @172-172
+- struct_specifier blockd @172-172
+- struct_specifier block @173-173
+- struct_specifier blockd @173-173
+- struct_specifier block @174-174
+- struct_specifier blockd @174-174
+- include "vpx_ports/x86.h" @226
+- function_definition setup_rtcd_internal @227-326
+
+### media/libvpx/config/mac/ia32/vp9_rtcd.h
+
+Blob: `71be54b24dad807f50349a9efe0baf1ffd0d7411`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vp9/common/vp9_common.h" @26
+- include "vp9/common/vp9_enums.h" @27
+- include "vp9/common/vp9_filter.h" @28
+- include "vp9/encoder/vp9_temporal_filter.h" @30
+- struct_specifier macroblockd @33-33
+- struct_specifier macroblock @36-36
+- struct_specifier macroblock_plane @37-37
+- struct_specifier vp9_sad_table @38-38
+- struct_specifier ScanOrder @39-39
+- struct_specifier search_site_config @40-40
+- struct_specifier mv @41-41
+- struct_specifier yv12_buffer_config @43-43
+- struct_specifier macroblock @63-63
+- struct_specifier search_site_config @63-63
+- struct_specifier mv @63-63
+- struct_specifier mv @63-63
+- struct_specifier vp9_sad_table @63-63
+- struct_specifier mv @63-63
+- struct_specifier macroblock_plane @102-102
+- struct_specifier ScanOrder @102-102
+- struct_specifier macroblock_plane @103-103
+- struct_specifier ScanOrder @103-103
+- struct_specifier macroblock_plane @104-104
+- struct_specifier ScanOrder @104-104
+- struct_specifier macroblock_plane @105-105
+- struct_specifier ScanOrder @105-105
+- struct_specifier macroblock_plane @108-108
+- struct_specifier ScanOrder @108-108
+- struct_specifier macroblock_plane @109-109
+- struct_specifier ScanOrder @109-109
+- struct_specifier macroblock_plane @110-110
+- struct_specifier ScanOrder @110-110
+- struct_specifier yv12_buffer_config @113-113
+- struct_specifier yv12_buffer_config @113-113
+- struct_specifier yv12_buffer_config @114-114
+- struct_specifier yv12_buffer_config @114-114
+- struct_specifier yv12_buffer_config @115-115
+- include "vpx_ports/x86.h" @135
+- function_definition setup_rtcd_internal @136-186
+
+### media/libvpx/config/mac/ia32/vpx_config.c
+
+Blob: `ff9465fbd5b664c4276054786512506f675c181d`. Grammar: c. Status: syntax-clean.
+
+- include "vpx/vpx_codec.h" @8
+- function_definition vpx_codec_build_config @10-10
+
+### media/libvpx/config/mac/ia32/vpx_config.h
+
+Blob: `1691bc8bd66733e119044cd8136211d27a18f9b9`. Grammar: cpp. Status: syntax-clean.
+
+
+### media/libvpx/config/mac/ia32/vpx_dsp_rtcd.h
+
+Blob: `df02fdb19ab7f58d9930a3ee3160a6a121dc56c9`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vpx_dsp/vpx_dsp_common.h" @26
+- include "vpx_dsp/vpx_filter.h" @27
+- struct_specifier macroblock_plane @29-29
+- struct_specifier ScanOrder @30-30
+- struct_specifier macroblock_plane @502-502
+- struct_specifier ScanOrder @502-502
+- struct_specifier macroblock_plane @503-503
+- struct_specifier ScanOrder @503-503
+- struct_specifier macroblock_plane @504-504
+- struct_specifier ScanOrder @504-504
+- struct_specifier macroblock_plane @505-505
+- struct_specifier ScanOrder @505-505
+- struct_specifier macroblock_plane @506-506
+- struct_specifier ScanOrder @506-506
+- struct_specifier macroblock_plane @509-509
+- struct_specifier ScanOrder @509-509
+- struct_specifier macroblock_plane @510-510
+- struct_specifier ScanOrder @510-510
+- struct_specifier macroblock_plane @511-511
+- struct_specifier ScanOrder @511-511
+- struct_specifier macroblock_plane @512-512
+- struct_specifier ScanOrder @512-512
+- include "vpx_ports/x86.h" @1070
+- function_definition setup_rtcd_internal @1071-1607
+
+### media/libvpx/config/mac/ia32/vpx_scale_rtcd.h
+
+Blob: `4244dd70e262644bcd989375beb445721d6fcadc`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier yv12_buffer_config @21-21
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @51-51
+- struct_specifier yv12_buffer_config @54-54
+- struct_specifier yv12_buffer_config @57-57
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @63-63
+- struct_specifier yv12_buffer_config @63-63
+- include "vpx_ports/x86.h" @69
+- function_definition setup_rtcd_internal @70-76
+
+### media/libvpx/config/mac/x64/vp8_rtcd.h
+
+Blob: `c2dcf5e3ef1ec9eb1d35bffb8172091a919ae043`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier blockd @25-25
+- struct_specifier macroblockd @26-26
+- struct_specifier loop_filter_info @27-27
+- struct_specifier block @30-30
+- struct_specifier macroblock @31-31
+- struct_specifier variance_vtable @32-32
+- struct_specifier yv12_buffer_config @34-34
+- struct_specifier blockd @103-103
+- struct_specifier blockd @104-104
+- struct_specifier macroblock @107-107
+- struct_specifier block @107-107
+- struct_specifier blockd @107-107
+- struct_specifier variance_vtable @107-107
+- struct_specifier macroblock @108-108
+- struct_specifier block @108-108
+- struct_specifier blockd @108-108
+- struct_specifier variance_vtable @108-108
+- struct_specifier block @111-111
+- struct_specifier blockd @111-111
+- struct_specifier block @112-112
+- struct_specifier blockd @112-112
+- struct_specifier block @113-113
+- struct_specifier blockd @113-113
+- struct_specifier block @114-114
+- struct_specifier blockd @114-114
+- struct_specifier loop_filter_info @127-127
+- struct_specifier loop_filter_info @128-128
+- struct_specifier loop_filter_info @131-131
+- struct_specifier loop_filter_info @132-132
+- struct_specifier loop_filter_info @135-135
+- struct_specifier loop_filter_info @136-136
+- struct_specifier loop_filter_info @139-139
+- struct_specifier loop_filter_info @140-140
+- struct_specifier macroblock @159-159
+- struct_specifier macroblock @160-160
+- struct_specifier macroblock @163-163
+- struct_specifier macroblock @164-164
+- struct_specifier macroblock @167-167
+- struct_specifier block @167-167
+- struct_specifier blockd @167-167
+- struct_specifier variance_vtable @167-167
+- struct_specifier macroblock @168-168
+- struct_specifier block @168-168
+- struct_specifier blockd @168-168
+- struct_specifier variance_vtable @168-168
+- struct_specifier block @171-171
+- struct_specifier blockd @171-171
+- struct_specifier block @172-172
+- struct_specifier blockd @172-172
+- struct_specifier block @173-173
+- struct_specifier blockd @173-173
+- struct_specifier block @174-174
+- struct_specifier blockd @174-174
+- include "vpx_ports/x86.h" @226
+- function_definition setup_rtcd_internal @227-251
+
+### media/libvpx/config/mac/x64/vp9_rtcd.h
+
+Blob: `d1830443706ec7f8340a601ac7f6b10da476f252`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vp9/common/vp9_common.h" @26
+- include "vp9/common/vp9_enums.h" @27
+- include "vp9/common/vp9_filter.h" @28
+- include "vp9/encoder/vp9_temporal_filter.h" @30
+- struct_specifier macroblockd @33-33
+- struct_specifier macroblock @36-36
+- struct_specifier macroblock_plane @37-37
+- struct_specifier vp9_sad_table @38-38
+- struct_specifier ScanOrder @39-39
+- struct_specifier search_site_config @40-40
+- struct_specifier mv @41-41
+- struct_specifier yv12_buffer_config @43-43
+- struct_specifier macroblock @63-63
+- struct_specifier search_site_config @63-63
+- struct_specifier mv @63-63
+- struct_specifier mv @63-63
+- struct_specifier vp9_sad_table @63-63
+- struct_specifier mv @63-63
+- struct_specifier macroblock_plane @102-102
+- struct_specifier ScanOrder @102-102
+- struct_specifier macroblock_plane @103-103
+- struct_specifier ScanOrder @103-103
+- struct_specifier macroblock_plane @104-104
+- struct_specifier ScanOrder @104-104
+- struct_specifier macroblock_plane @105-105
+- struct_specifier ScanOrder @105-105
+- struct_specifier macroblock_plane @108-108
+- struct_specifier ScanOrder @108-108
+- struct_specifier macroblock_plane @109-109
+- struct_specifier ScanOrder @109-109
+- struct_specifier macroblock_plane @110-110
+- struct_specifier ScanOrder @110-110
+- struct_specifier yv12_buffer_config @113-113
+- struct_specifier yv12_buffer_config @113-113
+- struct_specifier yv12_buffer_config @114-114
+- struct_specifier yv12_buffer_config @114-114
+- struct_specifier yv12_buffer_config @115-115
+- include "vpx_ports/x86.h" @135
+- function_definition setup_rtcd_internal @136-165
+
+### media/libvpx/config/mac/x64/vpx_config.c
+
+Blob: `4590f90f0ebd83225be1171103b178e8ddd2b81f`. Grammar: c. Status: syntax-clean.
+
+- include "vpx/vpx_codec.h" @8
+- function_definition vpx_codec_build_config @10-10
+
+### media/libvpx/config/mac/x64/vpx_config.h
+
+Blob: `10bb977e7da4500f705249d1342e015e352f55f4`. Grammar: cpp. Status: syntax-clean.
+
+
+### media/libvpx/config/mac/x64/vpx_dsp_rtcd.h
+
+Blob: `bac8edb57fe30cfb1c33c08c3629737d1347e0cb`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vpx_dsp/vpx_dsp_common.h" @26
+- include "vpx_dsp/vpx_filter.h" @27
+- struct_specifier macroblock_plane @29-29
+- struct_specifier ScanOrder @30-30
+- struct_specifier macroblock_plane @504-504
+- struct_specifier ScanOrder @504-504
+- struct_specifier macroblock_plane @505-505
+- struct_specifier ScanOrder @505-505
+- struct_specifier macroblock_plane @506-506
+- struct_specifier ScanOrder @506-506
+- struct_specifier macroblock_plane @507-507
+- struct_specifier ScanOrder @507-507
+- struct_specifier macroblock_plane @508-508
+- struct_specifier ScanOrder @508-508
+- struct_specifier macroblock_plane @511-511
+- struct_specifier ScanOrder @511-511
+- struct_specifier macroblock_plane @512-512
+- struct_specifier ScanOrder @512-512
+- struct_specifier macroblock_plane @513-513
+- struct_specifier ScanOrder @513-513
+- struct_specifier macroblock_plane @514-514
+- struct_specifier ScanOrder @514-514
+- include "vpx_ports/x86.h" @1072
+- function_definition setup_rtcd_internal @1073-1299
+
+### media/libvpx/config/mac/x64/vpx_scale_rtcd.h
+
+Blob: `4244dd70e262644bcd989375beb445721d6fcadc`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier yv12_buffer_config @21-21
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @51-51
+- struct_specifier yv12_buffer_config @54-54
+- struct_specifier yv12_buffer_config @57-57
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @63-63
+- struct_specifier yv12_buffer_config @63-63
+- include "vpx_ports/x86.h" @69
+- function_definition setup_rtcd_internal @70-76
+
+### media/libvpx/config/vpx_version.h
+
+Blob: `9b49754b1c59cdf0310702db37f6d2706e75c0b1`. Grammar: cpp. Status: syntax-clean.
+
+
+### media/libvpx/config/win/aarch64/vp8_rtcd.h
+
+Blob: `84cddbcda915f26b3c254b5b3311d7a707bdcda7`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier blockd @25-25
+- struct_specifier macroblockd @26-26
+- struct_specifier loop_filter_info @27-27
+- struct_specifier block @30-30
+- struct_specifier macroblock @31-31
+- struct_specifier variance_vtable @32-32
+- struct_specifier yv12_buffer_config @34-34
+- struct_specifier blockd @98-98
+- struct_specifier blockd @99-99
+- struct_specifier macroblock @102-102
+- struct_specifier block @102-102
+- struct_specifier blockd @102-102
+- struct_specifier variance_vtable @102-102
+- struct_specifier block @105-105
+- struct_specifier blockd @105-105
+- struct_specifier block @106-106
+- struct_specifier blockd @106-106
+- struct_specifier loop_filter_info @109-109
+- struct_specifier loop_filter_info @110-110
+- struct_specifier loop_filter_info @113-113
+- struct_specifier loop_filter_info @114-114
+- struct_specifier loop_filter_info @117-117
+- struct_specifier loop_filter_info @118-118
+- struct_specifier loop_filter_info @121-121
+- struct_specifier loop_filter_info @122-122
+- struct_specifier macroblock @141-141
+- struct_specifier macroblock @144-144
+- struct_specifier macroblock @147-147
+- struct_specifier block @147-147
+- struct_specifier blockd @147-147
+- struct_specifier variance_vtable @147-147
+- struct_specifier block @150-150
+- struct_specifier blockd @150-150
+- include "vpx_config.h" @194
+- include "vpx_ports/arm.h" @197
+- function_definition setup_rtcd_internal @198-204
+
+### media/libvpx/config/win/aarch64/vp9_rtcd.h
+
+Blob: `fa8c44f45fc9f2dea53148ced52d5de4ad867c7a`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vp9/common/vp9_common.h" @26
+- include "vp9/common/vp9_enums.h" @27
+- include "vp9/common/vp9_filter.h" @28
+- include "vp9/encoder/vp9_temporal_filter.h" @30
+- struct_specifier macroblockd @33-33
+- struct_specifier macroblock @36-36
+- struct_specifier macroblock_plane @37-37
+- struct_specifier vp9_sad_table @38-38
+- struct_specifier ScanOrder @39-39
+- struct_specifier search_site_config @40-40
+- struct_specifier mv @41-41
+- struct_specifier yv12_buffer_config @43-43
+- struct_specifier macroblock @57-57
+- struct_specifier search_site_config @57-57
+- struct_specifier mv @57-57
+- struct_specifier mv @57-57
+- struct_specifier vp9_sad_table @57-57
+- struct_specifier mv @57-57
+- struct_specifier macroblock @58-58
+- struct_specifier search_site_config @58-58
+- struct_specifier mv @58-58
+- struct_specifier mv @58-58
+- struct_specifier vp9_sad_table @58-58
+- struct_specifier mv @58-58
+- struct_specifier macroblock_plane @88-88
+- struct_specifier ScanOrder @88-88
+- struct_specifier macroblock_plane @89-89
+- struct_specifier ScanOrder @89-89
+- struct_specifier macroblock_plane @92-92
+- struct_specifier ScanOrder @92-92
+- struct_specifier macroblock_plane @93-93
+- struct_specifier ScanOrder @93-93
+- struct_specifier yv12_buffer_config @96-96
+- struct_specifier yv12_buffer_config @96-96
+- struct_specifier yv12_buffer_config @97-97
+- struct_specifier yv12_buffer_config @97-97
+- include "vpx_config.h" @102
+- include "vpx_ports/arm.h" @105
+- function_definition setup_rtcd_internal @106-112
+
+### media/libvpx/config/win/aarch64/vpx_config.c
+
+Blob: `809e36cf16f0b01c2f329acdb117a73bbe700f88`. Grammar: c. Status: syntax-clean.
+
+- include "vpx/vpx_codec.h" @8
+- function_definition vpx_codec_build_config @10-10
+
+### media/libvpx/config/win/aarch64/vpx_config.h
+
+Blob: `b0ef200aff10e82fc2efb74d895525fb8689cefe`. Grammar: cpp. Status: syntax-clean.
+
+
+### media/libvpx/config/win/aarch64/vpx_dsp_rtcd.h
+
+Blob: `775ae4f98451ff5280620a02e554362ae8b5cb66`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vpx_dsp/vpx_dsp_common.h" @26
+- include "vpx_dsp/vpx_filter.h" @27
+- struct_specifier macroblock_plane @29-29
+- struct_specifier ScanOrder @30-30
+- struct_specifier macroblock_plane @483-483
+- struct_specifier ScanOrder @483-483
+- struct_specifier macroblock_plane @484-484
+- struct_specifier ScanOrder @484-484
+- struct_specifier macroblock_plane @487-487
+- struct_specifier ScanOrder @487-487
+- struct_specifier macroblock_plane @488-488
+- struct_specifier ScanOrder @488-488
+- include "vpx_config.h" @1048
+- include "vpx_ports/arm.h" @1051
+- function_definition setup_rtcd_internal @1052-1220
+
+### media/libvpx/config/win/aarch64/vpx_scale_rtcd.h
+
+Blob: `9678750545fd2481f8870c26afd26a54744cc2eb`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier yv12_buffer_config @21-21
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @51-51
+- struct_specifier yv12_buffer_config @54-54
+- struct_specifier yv12_buffer_config @57-57
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @63-63
+- struct_specifier yv12_buffer_config @63-63
+- include "vpx_config.h" @68
+- include "vpx_ports/arm.h" @71
+- function_definition setup_rtcd_internal @72-78
+
+### media/libvpx/config/win/ia32/vp8_rtcd.h
+
+Blob: `57334ac719850777117fe3cc96766508abdebe93`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier blockd @25-25
+- struct_specifier macroblockd @26-26
+- struct_specifier loop_filter_info @27-27
+- struct_specifier block @30-30
+- struct_specifier macroblock @31-31
+- struct_specifier variance_vtable @32-32
+- struct_specifier yv12_buffer_config @34-34
+- struct_specifier blockd @103-103
+- struct_specifier blockd @104-104
+- struct_specifier blockd @105-105
+- struct_specifier macroblock @107-107
+- struct_specifier block @107-107
+- struct_specifier blockd @107-107
+- struct_specifier variance_vtable @107-107
+- struct_specifier macroblock @108-108
+- struct_specifier block @108-108
+- struct_specifier blockd @108-108
+- struct_specifier variance_vtable @108-108
+- struct_specifier macroblock @109-109
+- struct_specifier block @111-111
+- struct_specifier blockd @111-111
+- struct_specifier block @112-112
+- struct_specifier blockd @112-112
+- struct_specifier block @113-113
+- struct_specifier blockd @113-113
+- struct_specifier block @114-114
+- struct_specifier blockd @114-114
+- struct_specifier loop_filter_info @127-127
+- struct_specifier loop_filter_info @128-128
+- struct_specifier loop_filter_info @131-131
+- struct_specifier loop_filter_info @132-132
+- struct_specifier loop_filter_info @135-135
+- struct_specifier loop_filter_info @136-136
+- struct_specifier loop_filter_info @139-139
+- struct_specifier loop_filter_info @140-140
+- struct_specifier macroblock @159-159
+- struct_specifier macroblock @160-160
+- struct_specifier macroblock @161-161
+- struct_specifier macroblock @163-163
+- struct_specifier macroblock @164-164
+- struct_specifier macroblock @165-165
+- struct_specifier macroblock @167-167
+- struct_specifier block @167-167
+- struct_specifier blockd @167-167
+- struct_specifier variance_vtable @167-167
+- struct_specifier macroblock @168-168
+- struct_specifier block @168-168
+- struct_specifier blockd @168-168
+- struct_specifier variance_vtable @168-168
+- struct_specifier macroblock @169-169
+- struct_specifier block @171-171
+- struct_specifier blockd @171-171
+- struct_specifier block @172-172
+- struct_specifier blockd @172-172
+- struct_specifier block @173-173
+- struct_specifier blockd @173-173
+- struct_specifier block @174-174
+- struct_specifier blockd @174-174
+- include "vpx_ports/x86.h" @226
+- function_definition setup_rtcd_internal @227-326
+
+### media/libvpx/config/win/ia32/vp9_rtcd.h
+
+Blob: `71be54b24dad807f50349a9efe0baf1ffd0d7411`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vp9/common/vp9_common.h" @26
+- include "vp9/common/vp9_enums.h" @27
+- include "vp9/common/vp9_filter.h" @28
+- include "vp9/encoder/vp9_temporal_filter.h" @30
+- struct_specifier macroblockd @33-33
+- struct_specifier macroblock @36-36
+- struct_specifier macroblock_plane @37-37
+- struct_specifier vp9_sad_table @38-38
+- struct_specifier ScanOrder @39-39
+- struct_specifier search_site_config @40-40
+- struct_specifier mv @41-41
+- struct_specifier yv12_buffer_config @43-43
+- struct_specifier macroblock @63-63
+- struct_specifier search_site_config @63-63
+- struct_specifier mv @63-63
+- struct_specifier mv @63-63
+- struct_specifier vp9_sad_table @63-63
+- struct_specifier mv @63-63
+- struct_specifier macroblock_plane @102-102
+- struct_specifier ScanOrder @102-102
+- struct_specifier macroblock_plane @103-103
+- struct_specifier ScanOrder @103-103
+- struct_specifier macroblock_plane @104-104
+- struct_specifier ScanOrder @104-104
+- struct_specifier macroblock_plane @105-105
+- struct_specifier ScanOrder @105-105
+- struct_specifier macroblock_plane @108-108
+- struct_specifier ScanOrder @108-108
+- struct_specifier macroblock_plane @109-109
+- struct_specifier ScanOrder @109-109
+- struct_specifier macroblock_plane @110-110
+- struct_specifier ScanOrder @110-110
+- struct_specifier yv12_buffer_config @113-113
+- struct_specifier yv12_buffer_config @113-113
+- struct_specifier yv12_buffer_config @114-114
+- struct_specifier yv12_buffer_config @114-114
+- struct_specifier yv12_buffer_config @115-115
+- include "vpx_ports/x86.h" @135
+- function_definition setup_rtcd_internal @136-186
+
+### media/libvpx/config/win/ia32/vpx_config.c
+
+Blob: `babdbee58f0c9c809b2c18419463bd9eb91e5e4f`. Grammar: c. Status: syntax-clean.
+
+- include "vpx/vpx_codec.h" @8
+- function_definition vpx_codec_build_config @10-10
+
+### media/libvpx/config/win/ia32/vpx_config.h
+
+Blob: `5d1698b87d9bef0b000cfbb4ed1deaf31a5f1541`. Grammar: cpp. Status: syntax-clean.
+
+
+### media/libvpx/config/win/ia32/vpx_dsp_rtcd.h
+
+Blob: `df02fdb19ab7f58d9930a3ee3160a6a121dc56c9`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vpx_dsp/vpx_dsp_common.h" @26
+- include "vpx_dsp/vpx_filter.h" @27
+- struct_specifier macroblock_plane @29-29
+- struct_specifier ScanOrder @30-30
+- struct_specifier macroblock_plane @502-502
+- struct_specifier ScanOrder @502-502
+- struct_specifier macroblock_plane @503-503
+- struct_specifier ScanOrder @503-503
+- struct_specifier macroblock_plane @504-504
+- struct_specifier ScanOrder @504-504
+- struct_specifier macroblock_plane @505-505
+- struct_specifier ScanOrder @505-505
+- struct_specifier macroblock_plane @506-506
+- struct_specifier ScanOrder @506-506
+- struct_specifier macroblock_plane @509-509
+- struct_specifier ScanOrder @509-509
+- struct_specifier macroblock_plane @510-510
+- struct_specifier ScanOrder @510-510
+- struct_specifier macroblock_plane @511-511
+- struct_specifier ScanOrder @511-511
+- struct_specifier macroblock_plane @512-512
+- struct_specifier ScanOrder @512-512
+- include "vpx_ports/x86.h" @1070
+- function_definition setup_rtcd_internal @1071-1607
+
+### media/libvpx/config/win/ia32/vpx_scale_rtcd.h
+
+Blob: `4244dd70e262644bcd989375beb445721d6fcadc`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier yv12_buffer_config @21-21
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @51-51
+- struct_specifier yv12_buffer_config @54-54
+- struct_specifier yv12_buffer_config @57-57
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @63-63
+- struct_specifier yv12_buffer_config @63-63
+- include "vpx_ports/x86.h" @69
+- function_definition setup_rtcd_internal @70-76
+
+### media/libvpx/config/win/x64/vp8_rtcd.h
+
+Blob: `c2dcf5e3ef1ec9eb1d35bffb8172091a919ae043`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier blockd @25-25
+- struct_specifier macroblockd @26-26
+- struct_specifier loop_filter_info @27-27
+- struct_specifier block @30-30
+- struct_specifier macroblock @31-31
+- struct_specifier variance_vtable @32-32
+- struct_specifier yv12_buffer_config @34-34
+- struct_specifier blockd @103-103
+- struct_specifier blockd @104-104
+- struct_specifier macroblock @107-107
+- struct_specifier block @107-107
+- struct_specifier blockd @107-107
+- struct_specifier variance_vtable @107-107
+- struct_specifier macroblock @108-108
+- struct_specifier block @108-108
+- struct_specifier blockd @108-108
+- struct_specifier variance_vtable @108-108
+- struct_specifier block @111-111
+- struct_specifier blockd @111-111
+- struct_specifier block @112-112
+- struct_specifier blockd @112-112
+- struct_specifier block @113-113
+- struct_specifier blockd @113-113
+- struct_specifier block @114-114
+- struct_specifier blockd @114-114
+- struct_specifier loop_filter_info @127-127
+- struct_specifier loop_filter_info @128-128
+- struct_specifier loop_filter_info @131-131
+- struct_specifier loop_filter_info @132-132
+- struct_specifier loop_filter_info @135-135
+- struct_specifier loop_filter_info @136-136
+- struct_specifier loop_filter_info @139-139
+- struct_specifier loop_filter_info @140-140
+- struct_specifier macroblock @159-159
+- struct_specifier macroblock @160-160
+- struct_specifier macroblock @163-163
+- struct_specifier macroblock @164-164
+- struct_specifier macroblock @167-167
+- struct_specifier block @167-167
+- struct_specifier blockd @167-167
+- struct_specifier variance_vtable @167-167
+- struct_specifier macroblock @168-168
+- struct_specifier block @168-168
+- struct_specifier blockd @168-168
+- struct_specifier variance_vtable @168-168
+- struct_specifier block @171-171
+- struct_specifier blockd @171-171
+- struct_specifier block @172-172
+- struct_specifier blockd @172-172
+- struct_specifier block @173-173
+- struct_specifier blockd @173-173
+- struct_specifier block @174-174
+- struct_specifier blockd @174-174
+- include "vpx_ports/x86.h" @226
+- function_definition setup_rtcd_internal @227-251
+
+### media/libvpx/config/win/x64/vp9_rtcd.h
+
+Blob: `d1830443706ec7f8340a601ac7f6b10da476f252`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vp9/common/vp9_common.h" @26
+- include "vp9/common/vp9_enums.h" @27
+- include "vp9/common/vp9_filter.h" @28
+- include "vp9/encoder/vp9_temporal_filter.h" @30
+- struct_specifier macroblockd @33-33
+- struct_specifier macroblock @36-36
+- struct_specifier macroblock_plane @37-37
+- struct_specifier vp9_sad_table @38-38
+- struct_specifier ScanOrder @39-39
+- struct_specifier search_site_config @40-40
+- struct_specifier mv @41-41
+- struct_specifier yv12_buffer_config @43-43
+- struct_specifier macroblock @63-63
+- struct_specifier search_site_config @63-63
+- struct_specifier mv @63-63
+- struct_specifier mv @63-63
+- struct_specifier vp9_sad_table @63-63
+- struct_specifier mv @63-63
+- struct_specifier macroblock_plane @102-102
+- struct_specifier ScanOrder @102-102
+- struct_specifier macroblock_plane @103-103
+- struct_specifier ScanOrder @103-103
+- struct_specifier macroblock_plane @104-104
+- struct_specifier ScanOrder @104-104
+- struct_specifier macroblock_plane @105-105
+- struct_specifier ScanOrder @105-105
+- struct_specifier macroblock_plane @108-108
+- struct_specifier ScanOrder @108-108
+- struct_specifier macroblock_plane @109-109
+- struct_specifier ScanOrder @109-109
+- struct_specifier macroblock_plane @110-110
+- struct_specifier ScanOrder @110-110
+- struct_specifier yv12_buffer_config @113-113
+- struct_specifier yv12_buffer_config @113-113
+- struct_specifier yv12_buffer_config @114-114
+- struct_specifier yv12_buffer_config @114-114
+- struct_specifier yv12_buffer_config @115-115
+- include "vpx_ports/x86.h" @135
+- function_definition setup_rtcd_internal @136-165
+
+### media/libvpx/config/win/x64/vpx_config.c
+
+Blob: `c2cd8b19d6780963130d39a0f1e316dc47f7fecb`. Grammar: c. Status: syntax-clean.
+
+- include "vpx/vpx_codec.h" @8
+- function_definition vpx_codec_build_config @10-10
+
+### media/libvpx/config/win/x64/vpx_config.h
+
+Blob: `ef467a359643fae26b14c98c5cdee182e1d0c844`. Grammar: cpp. Status: syntax-clean.
+
+
+### media/libvpx/config/win/x64/vpx_dsp_rtcd.h
+
+Blob: `bac8edb57fe30cfb1c33c08c3629737d1347e0cb`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_integer.h" @25
+- include "vpx_dsp/vpx_dsp_common.h" @26
+- include "vpx_dsp/vpx_filter.h" @27
+- struct_specifier macroblock_plane @29-29
+- struct_specifier ScanOrder @30-30
+- struct_specifier macroblock_plane @504-504
+- struct_specifier ScanOrder @504-504
+- struct_specifier macroblock_plane @505-505
+- struct_specifier ScanOrder @505-505
+- struct_specifier macroblock_plane @506-506
+- struct_specifier ScanOrder @506-506
+- struct_specifier macroblock_plane @507-507
+- struct_specifier ScanOrder @507-507
+- struct_specifier macroblock_plane @508-508
+- struct_specifier ScanOrder @508-508
+- struct_specifier macroblock_plane @511-511
+- struct_specifier ScanOrder @511-511
+- struct_specifier macroblock_plane @512-512
+- struct_specifier ScanOrder @512-512
+- struct_specifier macroblock_plane @513-513
+- struct_specifier ScanOrder @513-513
+- struct_specifier macroblock_plane @514-514
+- struct_specifier ScanOrder @514-514
+- include "vpx_ports/x86.h" @1072
+- function_definition setup_rtcd_internal @1073-1299
+
+### media/libvpx/config/win/x64/vpx_scale_rtcd.h
+
+Blob: `4244dd70e262644bcd989375beb445721d6fcadc`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier yv12_buffer_config @21-21
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @48-48
+- struct_specifier yv12_buffer_config @51-51
+- struct_specifier yv12_buffer_config @54-54
+- struct_specifier yv12_buffer_config @57-57
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @60-60
+- struct_specifier yv12_buffer_config @63-63
+- struct_specifier yv12_buffer_config @63-63
+- include "vpx_ports/x86.h" @69
+- function_definition setup_rtcd_internal @70-76
+
+### media/libvpx/libvpx/args.c
+
+Blob: `f7dfacf8a45eba07708d34078a176eaea5ca3edf`. Grammar: c. Status: syntax-clean.
+
+- include <stdio.h> @11
+- include <stdlib.h> @12
+- include <string.h> @13
+- include <limits.h> @14
+- include "args.h" @15
+- include "vpx/vpx_integer.h" @17
+- function_definition arg_init @27-36
+- struct_specifier arg @27-27
+- struct_specifier arg @28-28
+- function_definition arg_match @38-76
+- struct_specifier arg @38-38
+- struct_specifier arg_def @38-38
+- struct_specifier arg @39-39
+- function_definition arg_next @78-82
+- struct_specifier arg @78-78
+- function_definition argv_dup @84-91
+- function_definition arg_show_usage @93-129
+- struct_specifier arg_def @93-93
+- struct_specifier arg_def @95-95
+- struct_specifier arg_enum_list @121-121
+- function_definition arg_parse_uint @131-145
+- struct_specifier arg @131-131
+- function_definition arg_parse_int @147-161
+- struct_specifier arg @147-147
+- struct_specifier vpx_rational @163-166
+- function_definition arg_parse_rational @167-197
+- struct_specifier vpx_rational @167-167
+- struct_specifier arg @167-167
+- struct_specifier vpx_rational @170-170
+- function_definition arg_parse_enum @199-217
+- struct_specifier arg @199-199
+- struct_specifier arg_enum_list @200-200
+- function_definition arg_parse_enum_or_int @219-222
+- struct_specifier arg @219-219
+
+### media/libvpx/libvpx/args.h
+
+Blob: `6b3cc1c28b94559bc75d3016a5f5b69d31c7ea68`. Grammar: cpp. Status: contains-errors.
+
+- include <stdio.h> @13
+- struct_specifier arg @19-25
+- struct_specifier arg_def @24-24
+- struct_specifier arg_enum_list @27-30
+- struct_specifier arg_def @33-39
+- struct_specifier arg_enum_list @38-38
+- struct_specifier arg @44-44
+- struct_specifier arg_def @44-44
+- struct_specifier arg @45-45
+- struct_specifier arg_def @46-46
+- struct_specifier arg @50-50
+- struct_specifier arg @51-51
+- struct_specifier vpx_rational @52-52
+- struct_specifier arg @52-52
+- struct_specifier arg @53-53
+- struct_specifier arg @54-54
+
+### media/libvpx/libvpx/examples/decode_to_md5.c
+
+Blob: `51959f37df764adbcd01c5180e1445a9e1dbb594`. Grammar: c. Status: syntax-clean.
+
+- include <stdio.h> @32
+- include <stdlib.h> @33
+- include <string.h> @34
+- include "vpx/vp8dx.h" @36
+- include "vpx/vpx_decoder.h" @37
+- include "../md5_utils.h" @39
+- include "../tools_common.h" @40
+- include "../video_reader.h" @41
+- include "./vpx_config.h" @42
+- function_definition get_image_md5 @44-63
+- function_definition print_md5 @65-69
+- function_definition usage_exit @73-76
+- function_definition main @78-132
+
+### media/libvpx/libvpx/examples/decode_with_drops.c
+
+Blob: `03c79a456161858fa7affbe0203add51cda2f8ae`. Grammar: c. Status: syntax-clean.
+
+- include <stdio.h> @55
+- include <stdlib.h> @56
+- include <string.h> @57
+- include "vpx/vp8dx.h" @59
+- include "vpx/vpx_decoder.h" @60
+- include "../tools_common.h" @62
+- include "../video_reader.h" @63
+- include "./vpx_config.h" @64
+- function_definition usage_exit @68-71
+- function_definition main @73-148
+
+### media/libvpx/libvpx/examples/postproc.c
+
+Blob: `b53c15ea15104dd7103de5e6b2c9567e98e9c401`. Grammar: c. Status: syntax-clean.
+
+- include <stdio.h> @42
+- include <stdlib.h> @43
+- include <string.h> @44
+- include "vpx/vp8dx.h" @46
+- include "vpx/vpx_decoder.h" @47
+- include "../tools_common.h" @49
+- include "../video_reader.h" @50
+- include "./vpx_config.h" @51
+- function_definition usage_exit @55-58
+- function_definition main @60-133
+
+### media/libvpx/libvpx/examples/set_maps.c
+
+Blob: `05c7f54b3327ff5f2dd742034c4a3fa18baed0ab`. Grammar: c. Status: syntax-clean.
+
+- include <assert.h> @44
+- include <stdio.h> @45
+- include <stdlib.h> @46
+- include <string.h> @47
+- include "vpx/vp8cx.h" @49
+- include "vpx/vpx_encoder.h" @50
+- include "../tools_common.h" @52
+- include "../video_writer.h" @53
+- function_definition usage_exit @57-61
+- function_definition set_roi_map @63-94
+- function_definition set_active_map @96-111
+- function_definition unset_active_map @113-123
+- function_definition encode_frame @125-151
+- function_definition main @153-244
+
+### media/libvpx/libvpx/examples/simple_decoder.c
+
+Blob: `d089e826d5b8ea4cd243460d3a0adab4de4f2f56`. Grammar: c. Status: syntax-clean.
+
+- include <stdio.h> @78
+- include <stdlib.h> @79
+- include <string.h> @80
+- include "vpx/vpx_decoder.h" @82
+- include "../tools_common.h" @84
+- include "../video_reader.h" @85
+- include "./vpx_config.h" @86
+- function_definition usage_exit @90-93
+- function_definition main @95-149
+
+### media/libvpx/libvpx/examples/simple_encoder.c
+
+Blob: `4b09a817105c3b1b35bfafc2f0110bf480a267fd`. Grammar: c. Status: syntax-clean.
+
+- include <stdio.h> @98
+- include <stdlib.h> @99
+- include <string.h> @100
+- include "vpx/vpx_encoder.h" @102
+- include "../tools_common.h" @104
+- include "../video_writer.h" @105
+- function_definition usage_exit @109-116
+- function_definition encode_frame @118-143
+- function_definition main @146-248
+
+### media/libvpx/libvpx/examples/svc_context.h
+
+Blob: `7ca987dc831dc72fdb25b8d99d16b6e74309df1f`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vp8cx.h" @19
+- include "vpx/vpx_encoder.h" @20
+- enum_specifier SVC_LOG_LEVEL @26-30
+- struct_specifier SvcContext @32-45
+- struct_specifier SvcInternal @50-74
+- struct_specifier vpx_image @96-96
+
+### media/libvpx/libvpx/examples/svc_encodeframe.c
+
+Blob: `54843f0f0f2bd26be4a7fb0db473ee0e990d3736`. Grammar: c. Status: contains-errors.
+
+- include <assert.h> @16
+- include <math.h> @17
+- include <limits.h> @18
+- include <stdarg.h> @19
+- include <stdio.h> @20
+- include <stdlib.h> @21
+- include <string.h> @22
+- include "../tools_common.h" @24
+- include "./vpx_config.h" @25
+- include "./svc_context.h" @26
+- include "vpx/vp8cx.h" @27
+- include "vpx/vpx_encoder.h" @28
+- include "vpx_mem/vpx_mem.h" @29
+- include "vp9/common/vp9_onyxc_int.h" @30
+- enum_specifier LAYER_OPTION_TYPE @61-67
+- struct_specifier FrameData @75-80
+- struct_specifier FrameData @79-79
+- function_definition get_svc_internal @82-92
+- function_definition get_const_svc_internal @94-97
+- function_definition extract_option @119-138
+- function_definition parse_layer_options_from_string @140-180
+- function_definition parse_options @189-275
+- function_definition vpx_svc_set_options @277-285
+- function_definition assign_layer_bitrates @287-378
+- function_definition vpx_svc_init @380-533
+- function_definition vpx_svc_encode @539-555
+- struct_specifier vpx_image @540-540
+- function_definition calc_psnr @557-560
+- function_definition vpx_svc_dump_statistics @563-614
+- function_definition vpx_svc_release @616-626
+
+### media/libvpx/libvpx/examples/twopass_encoder.c
+
+Blob: `d7bdccc2564a1e21a9f3d683e21cdcb39da27781`. Grammar: c. Status: syntax-clean.
+
+- include <stdio.h> @50
+- include <stdlib.h> @51
+- include <string.h> @52
+- include "vpx/vpx_encoder.h" @54
+- include "../tools_common.h" @56
+- include "../video_writer.h" @57
+- function_definition usage_exit @61-67
+- function_definition get_frame_stats @69-94
+- function_definition encode_frame @96-122
+- function_definition pass0 @124-151
+- function_definition pass1 @153-189
+- function_definition main @191-257
+
+### media/libvpx/libvpx/examples/vp8_multi_resolution_encoder.c
+
+Blob: `60161da90a70de4a650ff90734d3441b20be352a`. Grammar: c. Status: syntax-clean.
+
+- include "./vpx_config.h" @23
+- include <stdio.h> @25
+- include <stdlib.h> @26
+- include <stdarg.h> @27
+- include <math.h> @28
+- include <assert.h> @29
+- include <sys/time.h> @30
+- include "vpx_ports/vpx_timer.h" @31
+- include "vpx/vpx_encoder.h" @32
+- include "vpx/vp8cx.h" @33
+- include "vpx_ports/mem_ops.h" @34
+- include "../tools_common.h" @35
+- function_definition usage_exit @39-39
+- include "third_party/libyuv/include/libyuv/basic_types.h" @57
+- include "third_party/libyuv/include/libyuv/scale.h" @58
+- include "third_party/libyuv/include/libyuv/cpu_id.h" @59
+- function_definition mulres_read_frame @63-75
+- function_definition mulres_read_frame_by_row @77-121
+- function_definition write_ivf_file_header @123-143
+- function_definition write_ivf_frame_header @145-158
+- function_definition set_temporal_layer_pattern @165-280
+- function_definition main @285-665
+- struct_specifier vpx_usec_timer @539-539
+
+### media/libvpx/libvpx/examples/vp8cx_set_ref.c
+
+Blob: `104e8ebbc79b5d41b43ec2b9c56174534f24f4a8`. Grammar: c. Status: syntax-clean.
+
+- include <stdio.h> @48
+- include <stdlib.h> @49
+- include <string.h> @50
+- include "vpx/vp8cx.h" @52
+- include "vpx/vpx_encoder.h" @53
+- include "vp8/common/common.h" @54
+- include "../tools_common.h" @56
+- include "../video_writer.h" @57
+- function_definition usage_exit @61-65
+- function_definition encode_frame @67-93
+- function_definition main @95-188
+
+### media/libvpx/libvpx/examples/vp9_lossless_encoder.c
+
+Blob: `01504d40c9ff32f351b360bf41c30893480ede0c`. Grammar: c. Status: syntax-clean.
+
+- include <stdio.h> @11
+- include <stdlib.h> @12
+- include <string.h> @13
+- include "vpx/vpx_encoder.h" @15
+- include "vpx/vp8cx.h" @16
+- include "vp9/common/vp9_common.h" @17
+- include "../tools_common.h" @19
+- include "../video_writer.h" @20
+- function_definition usage_exit @24-30
+- function_definition encode_frame @32-57
+- function_definition main @59-138
+
+### media/libvpx/libvpx/examples/vp9_spatial_svc_encoder.c
+
+Blob: `16e6aba6cdc11f42545f3271fa2de2279133b3f7`. Grammar: c. Status: contains-errors.
+
+- include <assert.h> @17
+- include <limits.h> @18
+- include <math.h> @19
+- include <stdarg.h> @20
+- include <stdio.h> @21
+- include <stdlib.h> @22
+- include <string.h> @23
+- include <time.h> @24
+- include "../args.h" @26
+- include "../tools_common.h" @27
+- include "../video_writer.h" @28
+- include "../vpx_ports/bitops.h" @30
+- include "../vpx_ports/vpx_timer.h" @31
+- include "./svc_context.h" @32
+- include "vpx/vp8cx.h" @33
+- include "vpx/vpx_decoder.h" @34
+- include "vpx/vpx_encoder.h" @35
+- include "../vpxstats.h" @36
+- include "./y4minput.h" @37
+- struct_specifier arg_enum_list @98-98
+- struct_specifier arg_enum_list @111-111
+- struct_specifier AppInput @169-177
+- struct_specifier VpxInputContext @173-173
+- function_definition usage_exit @181-187
+- function_definition parse_command_line @189-392
+- struct_specifier arg @192-192
+- struct_specifier RateControlStats @396-422
+- function_definition set_rate_control_stats @426-462
+- struct_specifier RateControlStats @426-426
+- function_definition printout_rate_control_summary @464-518
+- struct_specifier RateControlStats @464-464
+- function_definition parse_superframe_index @520-567
+- function_definition set_frame_flags_bypass_mode_ex0 @574-653
+- function_definition set_frame_flags_bypass_mode_ex1 @657-718
+- function_definition test_decode @721-773
+- struct_specifier vp9_ref_frame @724-724
+- function_definition svc_output_rc_stats @777-875
+- struct_specifier RateControlStats @780-780
+- function_definition main @878-1248
+- struct_specifier RateControlStats @898-898
+- struct_specifier vpx_usec_timer @904-904
+- struct_specifier RateControlStats @917-917
+
+### media/libvpx/libvpx/examples/vp9cx_set_ref.c
+
+Blob: `6e12d668b0a4aa8fb177f7302d44aed100828c11`. Grammar: c. Status: syntax-clean.
+
+- include <stdio.h> @49
+- include <stdlib.h> @50
+- include <string.h> @51
+- include "vpx/vp8cx.h" @53
+- include "vpx/vpx_decoder.h" @54
+- include "vpx/vpx_encoder.h" @55
+- include "vp9/common/vp9_common.h" @56
+- include "./tools_common.h" @58
+- include "./video_writer.h" @59
+- function_definition usage_exit @63-69
+- function_definition testing_decode @71-104
+- struct_specifier vp9_ref_frame @74-74
+- function_definition encode_frame @106-154
+- function_definition main @156-320
+
+### media/libvpx/libvpx/examples/vpx_dec_fuzzer.cc
+
+Blob: `86d2d3539276fd73c00be245f2b02d1afaf5136b`. Grammar: cpp. Status: syntax-clean.
+
+- include <stddef.h> @65
+- include <stdint.h> @66
+- include <stdio.h> @67
+- include <stdlib.h> @68
+- include <algorithm> @69
+- include <memory> @70
+- include "third_party/nalloc/nalloc.h" @72
+- include "vpx/vp8dx.h" @73
+- include "vpx/vpx_decoder.h" @74
+- include "vpx_ports/mem_ops.h" @75
+- function_definition usage_exit @83-83
+- function_definition LLVMFuzzerTestOneInput @85-159
+
+### media/libvpx/libvpx/examples/vpx_enc_fuzzer.cc
+
+Blob: `d71994b60e3ca7f563a474d84e3711a6edbaa619`. Grammar: cpp. Status: syntax-clean.
+
+- include <assert.h> @65
+- include <stddef.h> @66
+- include <stdint.h> @67
+- include <stdio.h> @68
+- include <stdlib.h> @69
+- include <string.h> @70
+- include "vpx/vp8cx.h" @72
+- include "vpx/vpx_encoder.h" @73
+- include "vpx_ports/mem_ops.h" @74
+- include "third_party/nalloc/nalloc.h" @75
+- function_definition usage_exit @83-83
+- function_definition vpx_img_plane_width @85-90
+- function_definition vpx_img_plane_height @92-97
+- function_definition fuzz_vpx_img_read @99-136
+- function_definition encode_frame @138-159
+- function_definition LLVMFuzzerTestOneInput @161-256
+
+### media/libvpx/libvpx/examples/vpx_temporal_svc_encoder.c
+
+Blob: `3848b245a2d84daa9e0bb326ea83620473bb8052`. Grammar: c. Status: contains-errors.
+
+- include <assert.h> @15
+- include <math.h> @16
+- include <stdio.h> @17
+- include <stdlib.h> @18
+- include <string.h> @19
+- include "./vpx_config.h" @21
+- include "./y4minput.h" @22
+- include "../vpx_ports/vpx_timer.h" @23
+- include "vpx/vp8cx.h" @24
+- include "vpx/vpx_encoder.h" @25
+- include "vpx_ports/bitops.h" @26
+- include "../tools_common.h" @28
+- include "../video_writer.h" @29
+- function_definition usage_exit @35-35
+- enum_specifier denoiserStateVp8 @38-44
+- enum_specifier denoiserStateVp9 @47-52
+- struct_specifier RateControlMetrics @57-84
+- function_definition set_rate_control_metrics @92-124
+- struct_specifier RateControlMetrics @92-92
+- function_definition printout_rate_control_summary @126-172
+- struct_specifier RateControlMetrics @126-126
+- function_definition set_roi_map @175-240
+- function_definition set_roi_skip_map @242-272
+- function_definition set_temporal_layer_pattern @280-605
+- function_definition read_mask @608-626
+- function_definition main @629-1075
+- struct_specifier VpxInputContext @654-654
+- struct_specifier RateControlMetrics @655-655
+- struct_specifier vpx_usec_timer @946-946
+
+### media/libvpx/libvpx/ivfdec.c
+
+Blob: `3e179bc6ed2bd168357a883d441b505e28145e01`. Grammar: c. Status: syntax-clean.
+
+- include <stdio.h> @11
+- include <stdlib.h> @12
+- include <string.h> @13
+- include "vpx_ports/mem_ops.h" @15
+- include "./ivfdec.h" @17
+- function_definition fix_framerate @21-38
+- function_definition file_is_ivf @40-71
+- struct_specifier VpxInputContext @40-40
+- function_definition ivf_read_frame @73-112
+
+### media/libvpx/libvpx/ivfdec.h
+
+Blob: `847cd79f3fef64dfa0072152c9f54aaa0fc06889`. Grammar: cpp. Status: contains-errors.
+
+- include "./tools_common.h" @13
+- struct_specifier VpxInputContext @19-19
+
+### media/libvpx/libvpx/ivfenc.c
+
+Blob: `2e8e04283ab773a25efa0b1830c404a54e08f788`. Grammar: c. Status: syntax-clean.
+
+- include "./ivfenc.h" @11
+- include "vpx/vpx_encoder.h" @13
+- include "vpx_ports/mem_ops.h" @14
+- function_definition ivf_write_file_header_with_video_info @16-37
+- function_definition ivf_write_file_header @39-43
+- struct_specifier vpx_codec_enc_cfg @39-39
+- function_definition ivf_write_frame_header @45-52
+- function_definition ivf_write_frame_size @54-59
+
+### media/libvpx/libvpx/ivfenc.h
+
+Blob: `27b6910805722844e58191cf2e2603bb23363cb5`. Grammar: cpp. Status: contains-errors.
+
+- include "./tools_common.h" @13
+- include "vpx/vpx_encoder.h" @15
+- struct_specifier vpx_codec_enc_cfg @17-17
+- struct_specifier vpx_codec_cx_pkt @18-18
+- struct_specifier vpx_codec_enc_cfg @29-29
+
+### media/libvpx/libvpx/md5_utils.c
+
+Blob: `abd8d43c3953011626b854a75f8fd8db8e68dadb`. Grammar: c. Status: contains-errors.
+
+- include <string.h> @23
+- include "md5_utils.h" @25
+- include "vpx_ports/compiler_attributes.h" @26
+- function_definition byteSwap @28-43
+- function_definition MD5Init @49-57
+- struct_specifier MD5Context @49-49
+- function_definition MD5Update @63-98
+- struct_specifier MD5Context @63-63
+- function_definition MD5Final @104-133
+- struct_specifier MD5Context @104-104
+- function_definition MD5Transform @154-235
+
+### media/libvpx/libvpx/md5_utils.h
+
+Blob: `e0d5a2d1fbd4f6f40b5ebcbad9f46ae1427c5076`. Grammar: cpp. Status: contains-errors.
+
+- struct_specifier MD5Context @33-33
+- struct_specifier MD5Context @34-38
+- struct_specifier MD5Context @40-40
+- struct_specifier MD5Context @41-41
+- struct_specifier MD5Context @42-42
+
+### media/libvpx/libvpx/rate_hist.c
+
+Blob: `6a056cac10e971c1491d7eeb9b8fe59d8a4a73ac`. Grammar: c. Status: syntax-clean.
+
+- include <assert.h> @11
+- include <limits.h> @12
+- include <math.h> @13
+- include <stdint.h> @14
+- include <stdio.h> @15
+- include <stdlib.h> @16
+- include "./rate_hist.h" @18
+- struct_specifier hist_bucket @23-27
+- struct_specifier rate_hist @29-36
+- struct_specifier hist_bucket @34-34
+- function_definition init_rate_histogram @38-70
+- struct_specifier rate_hist @38-38
+- struct_specifier rate_hist @41-41
+- function_definition destroy_rate_histogram @72-78
+- struct_specifier rate_hist @72-72
+- function_definition update_rate_histogram @80-126
+- struct_specifier rate_hist @80-80
+- function_definition merge_hist_buckets @128-194
+- struct_specifier hist_bucket @128-128
+- function_definition show_histogram @196-256
+- struct_specifier hist_bucket @196-196
+- function_definition show_q_histogram @258-277
+- struct_specifier hist_bucket @259-259
+- function_definition show_rate_histogram @279-294
+- struct_specifier rate_hist @279-279
+
+### media/libvpx/libvpx/rate_hist.h
+
+Blob: `d6a4c685195d6265a18ef8c5bab4d8beaa2bf81b`. Grammar: cpp. Status: contains-errors.
+
+- include "vpx/vpx_encoder.h" @14
+- struct_specifier rate_hist @20-20
+- struct_specifier rate_hist @22-22
+- struct_specifier rate_hist @25-25
+- struct_specifier rate_hist @27-27
+- struct_specifier rate_hist @33-33
+
+### media/libvpx/libvpx/test/acm_random.h
+
+Blob: `7500cb8266c1cc6c76a3924660894fa9b1801a8a`. Grammar: cpp. Status: syntax-clean.
+
+- include <assert.h> @14
+- include <limits> @16
+- include "gtest/gtest.h" @18
+- include "vpx/vpx_integer.h" @20
+- class_specifier ACMRandom @24-91
+- function_definition ACMRandom @26-26
+- function_definition ACMRandom @28-28
+- function_definition Reset @30-30
+- function_definition Rand16 @31-35
+- function_definition Rand20Signed @37-41
+- function_definition Rand16Signed @43-46
+- function_definition Rand12 @48-53
+- function_definition Rand10 @55-60
+- function_definition Rand8 @62-67
+- function_definition Rand8Extremes @69-74
+- function_definition RandRange @76-81
+- function_definition PseudoUniform @83-83
+- function_definition operator() @85-85
+- function_definition DeterministicSeed @87-87
+
+### media/libvpx/libvpx/test/active_map_refresh_test.cc
+
+Blob: `a0b46059a7464a4b493d9b4729e41c15c82af6a2`. Grammar: cpp. Status: syntax-clean.
+
+- include <algorithm> @10
+- include "gtest/gtest.h" @11
+- include "test/codec_factory.h" @12
+- include "test/encode_test_driver.h" @13
+- include "test/util.h" @14
+- include "test/y4m_video_source.h" @15
+- function_definition CheckMb @20-47
+- function_definition GenerateMap @49-56
+- class_specifier ActiveMapRefreshTest @60-104
+- function_definition ActiveMapRefreshTest @64-64
+- function_definition ~ActiveMapRefreshTest @65-65
+- function_definition SetUp @67-71
+- function_definition PreEncodeFrameHook @73-100
+- function_definition TEST_P @106-123
+
+### media/libvpx/libvpx/test/active_map_test.cc
+
+Blob: `e8976b416a991ca77b7eb5bb64b4b2f33d0999f9`. Grammar: cpp. Status: syntax-clean.
+
+- include <climits> @10
+- include <vector> @11
+- include "gtest/gtest.h" @12
+- include "test/codec_factory.h" @13
+- include "test/encode_test_driver.h" @14
+- include "test/i420_video_source.h" @15
+- include "test/util.h" @16
+- class_specifier ActiveMapTest @20-73
+- function_definition ActiveMapTest @28-28
+- function_definition ~ActiveMapTest @29-29
+- function_definition SetUp @31-35
+- function_definition PreEncodeFrameHook @37-70
+- function_definition TEST_P @75-88
+
+### media/libvpx/libvpx/test/add_noise_test.cc
+
+Blob: `f6f30bb5946e57e6f64569e09c8e40767a1cd35f`. Grammar: cpp. Status: syntax-clean.
+
+- include <math.h> @10
+- include <memory> @12
+- include <tuple> @13
+- include "gtest/gtest.h" @15
+- include "test/clear_system_state.h" @16
+- include "test/register_state_check.h" @17
+- include "test/util.h" @18
+- include "./vpx_dsp_rtcd.h" @19
+- include "vpx/vpx_integer.h" @20
+- include "vpx_config.h" @21
+- include "vpx_dsp/postproc.h" @22
+- include "vpx_mem/vpx_mem.h" @23
+- class_specifier AddNoiseTest @35-40
+- function_definition TearDown @38-38
+- function_definition ~AddNoiseTest @39-39
+- function_definition stddev6 @42-48
+- function_definition TEST_P @50-100
+- function_definition TEST_P @102-132
+
+### media/libvpx/libvpx/test/alt_ref_aq_segment_test.cc
+
+Blob: `ade82d7ed2111e1507e9a1a25c7d2f3b9b247009`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @10
+- include "test/codec_factory.h" @11
+- include "test/encode_test_driver.h" @12
+- include "test/i420_video_source.h" @13
+- include "test/util.h" @14
+- class_specifier AltRefAqSegmentTest @18-46
+- function_definition AltRefAqSegmentTest @22-22
+- function_definition ~AltRefAqSegmentTest @23-23
+- function_definition SetUp @25-31
+- function_definition PreEncodeFrameHook @33-41
+- function_definition TEST_P @51-67
+- function_definition TEST_P @72-88
+- function_definition TEST_P @93-109
+- function_definition TEST_P @114-130
+- function_definition TEST_P @135-151
+
+### media/libvpx/libvpx/test/altref_test.cc
+
+Blob: `e98edcba4aea693b88e0229b4cf786c14cfc8227`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @10
+- include "test/codec_factory.h" @11
+- include "test/encode_test_driver.h" @12
+- include "test/i420_video_source.h" @13
+- include "test/util.h" @14
+- include "vpx_config.h" @15
+- class_specifier AltRefTest @24-53
+- function_definition AltRefTest @27-27
+- function_definition ~AltRefTest @28-28
+- function_definition SetUp @30-33
+- function_definition BeginPassHook @35-35
+- function_definition PreEncodeFrameHook @37-43
+- function_definition FramePktHook @45-47
+- function_definition altref_count @49-49
+- function_definition TEST_P @55-65
+- class_specifier AltRefForcedKeyTestLarge @72-116
+- function_definition AltRefForcedKeyTestLarge @76-78
+- function_definition ~AltRefForcedKeyTestLarge @79-79
+- function_definition SetUp @81-86
+- function_definition PreEncodeFrameHook @88-102
+- function_definition FramePktHook @104-110
+- function_definition TEST_P @118-130
+- function_definition TEST_P @132-144
+
+### media/libvpx/libvpx/test/aq_segment_test.cc
+
+Blob: `f7e9a118fc9f5c66a93d346580850a464b5d8dc5`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @10
+- include "test/codec_factory.h" @11
+- include "test/encode_test_driver.h" @12
+- include "test/i420_video_source.h" @13
+- include "test/util.h" @14
+- class_specifier AqSegmentTest @18-43
+- function_definition AqSegmentTest @22-22
+- function_definition ~AqSegmentTest @23-23
+- function_definition SetUp @25-30
+- function_definition PreEncodeFrameHook @32-39
+- function_definition TEST_P @47-63
+- function_definition TEST_P @67-83
+- function_definition TEST_P @87-103
+
+### media/libvpx/libvpx/test/avg_test.cc
+
+Blob: `bbc8ba0a0315c10f716208a517ec707f448f7351`. Grammar: cpp. Status: syntax-clean.
+
+- include <limits.h> @11
+- include <stdio.h> @12
+- include <string.h> @13
+- include <tuple> @14
+- include "gtest/gtest.h" @16
+- include "./vp9_rtcd.h" @18
+- include "./vpx_config.h" @19
+- include "./vpx_dsp_rtcd.h" @20
+- include "test/acm_random.h" @22
+- include "test/clear_system_state.h" @23
+- include "test/register_state_check.h" @24
+- include "test/util.h" @25
+- include "vpx/vpx_codec.h" @26
+- include "vpx_mem/vpx_mem.h" @27
+- include "vpx_ports/vpx_timer.h" @28
+- class_specifier AverageTestBase @35-96
+- function_definition AverageTestBase @37-39
+- function_definition TearDown @41-45
+- function_definition SetUp @52-59
+- function_definition ReferenceAverage8x8 @62-68
+- function_definition ReferenceAverage4x4 @70-76
+- function_definition FillConstant @78-82
+- function_definition FillRandom @84-88
+- class_specifier AverageTest @101-125
+- function_definition AverageTest @104-104
+- function_definition CheckAverages @107-124
+- class_specifier AverageTestHBD @128-152
+- function_definition AverageTestHBD @131-131
+- function_definition CheckAverages @134-151
+- class_specifier IntProRowTest @161-205
+- function_definition IntProRowTest @164-169
+- function_definition SetUp @172-181
+- function_definition TearDown @183-190
+- function_definition RunComparison @192-198
+- class_specifier IntProColTest @212-232
+- function_definition IntProColTest @215-218
+- function_definition RunComparison @221-225
+- class_specifier SatdTest @239-276
+- function_definition SetUp @242-249
+- function_definition TearDown @251-254
+- function_definition FillConstant @256-258
+- function_definition Check @262-266
+- function_definition GetCoeff @268-268
+- class_specifier SatdLowbdTest @278-286
+- function_definition FillRandom @280-285
+- class_specifier BlockErrorTestFP @292-345
+- function_definition SetUp @296-306
+- function_definition TearDown @308-312
+- function_definition FillConstant @314-317
+- function_definition FillRandom @319-325
+- function_definition Check @327-332
+- function_definition GetCoeff @334-334
+- function_definition GetDQCoeff @336-336
+- function_definition TEST_P @347-350
+- function_definition TEST_P @352-355
+- function_definition TEST_P @357-364
+- function_definition TEST_P @366-369
+- function_definition TEST_P @371-374
+- function_definition TEST_P @376-384
+- function_definition TEST_P @388-391
+- function_definition TEST_P @393-396
+- function_definition TEST_P @398-401
+- function_definition TEST_P @403-406
+- function_definition TEST_P @408-411
+- function_definition TEST_P @413-416
+- function_definition TEST_P @419-424
+- function_definition TEST_P @426-431
+- function_definition TEST_P @433-446
+- function_definition TEST_P @448-462
+- class_specifier SatdHighbdTest @465-472
+- function_definition FillRandom @467-471
+- function_definition TEST_P @474-479
+- function_definition TEST_P @481-486
+- function_definition TEST_P @488-501
+- function_definition TEST_P @503-517
+- function_definition TEST_P @520-525
+- function_definition TEST_P @527-532
+- function_definition TEST_P @534-547
+- function_definition TEST_P @549-564
+
+### media/libvpx/libvpx/test/bench.cc
+
+Blob: `0783f2a734bf8a8ca4e85d0195495c806b382b2f`. Grammar: cpp. Status: syntax-clean.
+
+- include <stdio.h> @11
+- include <algorithm> @12
+- include <cstdlib> @13
+- include "test/bench.h" @15
+- include "vpx_ports/vpx_timer.h" @16
+- function_definition RunNTimes @18-28
+- function_definition PrintMedian @30-39
+
+### media/libvpx/libvpx/test/bench.h
+
+Blob: `203e4d247ef69b187f18822ed40edecfb20851eb`. Grammar: cpp. Status: syntax-clean.
+
+- class_specifier AbstractBench @17-30
+- function_definition ~AbstractBench @19-19
+
+### media/libvpx/libvpx/test/blockiness_test.cc
+
+Blob: `6e8301bb52ef0155b7bb04041ad18c34a9d972b3`. Grammar: cpp. Status: syntax-clean.
+
+- include <limits.h> @11
+- include <stdio.h> @12
+- include <string.h> @13
+- include <tuple> @14
+- include "gtest/gtest.h" @16
+- include "./vpx_config.h" @18
+- include "./vp9_rtcd.h" @20
+- include "test/acm_random.h" @23
+- include "test/clear_system_state.h" @24
+- include "test/register_state_check.h" @25
+- include "test/util.h" @26
+- include "vpx_mem/vpx_mem.h" @28
+- include "vp9/encoder/vp9_blockiness.h" @29
+- class_specifier BlockinessTestBase @34-139
+- function_definition BlockinessTestBase @36-36
+- function_definition SetUpTestSuite @38-43
+- function_definition TearDownTestSuite @45-50
+- function_definition TearDown @52-52
+- function_definition SetUp @59-63
+- function_definition FillConstant @65-72
+- function_definition FillConstant @74-76
+- function_definition FillRandom @78-84
+- function_definition FillRandom @86-88
+- function_definition FillRandomBlocky @90-96
+- function_definition FillCheckerboard @98-108
+- function_definition Blur @110-131
+- class_specifier BlockinessVP9Test @143-154
+- function_definition BlockinessVP9Test @147-147
+- function_definition GetBlockiness @150-153
+- function_definition TEST_P @161-169
+- function_definition TEST_P @171-179
+- function_definition TEST_P @181-192
+- function_definition TEST_P @194-206
+
+### media/libvpx/libvpx/test/borders_test.cc
+
+Blob: `57ee179aafc5c81b0aa1fa57a09c1fae37b625b5`. Grammar: cpp. Status: syntax-clean.
+
+- include <climits> @10
+- include <vector> @11
+- include "gtest/gtest.h" @12
+- include "test/codec_factory.h" @13
+- include "test/encode_test_driver.h" @14
+- include "test/i420_video_source.h" @15
+- include "test/util.h" @16
+- include "vpx_config.h" @17
+- class_specifier BordersTest @21-48
+- function_definition BordersTest @25-25
+- function_definition ~BordersTest @26-26
+- function_definition SetUp @28-31
+- function_definition PreEncodeFrameHook @33-42
+- function_definition FramePktHook @44-47
+- function_definition TEST_P @50-65
+- function_definition TEST_P @66-81
+
+### media/libvpx/libvpx/test/buffer.h
+
+Blob: `f2846323b35c47d882141f4b1e43700df6c00391`. Grammar: cpp. Status: syntax-clean.
+
+- include <stdio.h> @14
+- include <limits> @16
+- include "gtest/gtest.h" @18
+- include "test/acm_random.h" @20
+- include "vpx/vpx_integer.h" @21
+- include "vpx_mem/vpx_mem.h" @22
+- class_specifier Buffer @27-149
+- function_definition Buffer @29-34
+- function_definition Buffer @36-42
+- function_definition Buffer @44-48
+- function_definition Buffer @50-54
+- function_definition ~Buffer @56-62
+- function_definition stride @66-66
+- function_definition Init @105-132
+- function_definition TopLeftPixel @152-155
+- function_definition Set @158-167
+- function_definition Set @170-179
+- function_definition Set @182-201
+- function_definition CopyFrom @204-217
+- function_definition DumpBuffer @220-229
+- function_definition HasPadding @232-235
+- function_definition PrintDifference @238-275
+- function_definition SetPadding @278-286
+- function_definition CheckValues @289-301
+- function_definition CheckPadding @304-347
+- function_definition CheckValues @350-366
+- function_definition BufferSizesMatch @369-380
+
+### media/libvpx/libvpx/test/byte_alignment_test.cc
+
+Blob: `ba6fffc524b7a77da526a5568e0d9c41f1bc9605`. Grammar: cpp. Status: syntax-clean.
+
+- include <string> @11
+- include "./vpx_config.h" @13
+- include "test/codec_factory.h" @14
+- include "test/decode_test_driver.h" @15
+- include "test/md5_helper.h" @16
+- include "test/util.h" @17
+- include "test/webm_video_source.h" @19
+- struct_specifier ByteAlignmentTestParam @32-36
+- class_specifier ByteAlignmentTest @55-157
+- function_definition ByteAlignmentTest @58-59
+- function_definition SetUp @61-72
+- function_definition TearDown @74-79
+- function_definition SetByteAlignment @81-83
+- function_definition DecodeOneFrame @85-91
+- function_definition DecodeRemainingFrames @93-101
+- function_definition CheckByteAlignment @106-108
+- function_definition CheckDecodedFrames @112-127
+- function_definition OpenMd5File @130-134
+- function_definition CheckMd5 @136-152
+- function_definition TEST_F @159-170
+- function_definition TEST_P @172-178
+
+### media/libvpx/libvpx/test/clear_system_state.h
+
+Blob: `ba3c0b386a1b9cd9dead3f6d063ee4ffd688b6bb`. Grammar: cpp. Status: syntax-clean.
+
+- include "./vpx_config.h" @13
+- include "vpx_ports/system_state.h" @14
+- function_definition ClearSystemState @20-20
+
+### media/libvpx/libvpx/test/codec_factory.h
+
+Blob: `179ccdf011e27802690f64bca5b98180cd454ead`. Grammar: cpp. Status: syntax-clean.
+
+- include <tuple> @13
+- include "./vpx_config.h" @15
+- include "vpx/vpx_decoder.h" @16
+- include "vpx/vpx_encoder.h" @17
+- include "vpx/vp8cx.h" @19
+- include "vpx/vp8dx.h" @22
+- include "test/decode_test_driver.h" @25
+- include "test/encode_test_driver.h" @26
+- class_specifier CodecFactory @31-49
+- function_definition CodecFactory @33-33
+- function_definition ~CodecFactory @35-35
+- class_specifier CodecTestWithParam @56-58
+- class_specifier CodecTestWith2Params @61-63
+- class_specifier CodecTestWith3Params @66-68
+- class_specifier CodecTestWith4Params @71-73
+- class_specifier VP8Decoder @79-94
+- function_definition VP8Decoder @81-81
+- function_definition VP8Decoder @83-84
+- function_definition CodecInterface @87-93
+- class_specifier VP8Encoder @96-110
+- function_definition VP8Encoder @98-100
+- function_definition CodecInterface @103-109
+- class_specifier VP8CodecFactory @112-155
+- function_definition VP8CodecFactory @114-114
+- function_definition CreateDecoder @116-118
+- function_definition CreateDecoder @120-129
+- function_definition CreateEncoder @131-143
+- function_definition DefaultEncoderConfig @145-154
+- class_specifier VP9Decoder @176-191
+- function_definition VP9Decoder @178-178
+- function_definition VP9Decoder @180-181
+- function_definition CodecInterface @184-190
+- class_specifier VP9Encoder @193-207
+- function_definition VP9Encoder @195-197
+- function_definition CodecInterface @200-206
+- class_specifier VP9CodecFactory @209-252
+- function_definition VP9CodecFactory @211-211
+- function_definition CreateDecoder @213-215
+- function_definition CreateDecoder @217-226
+- function_definition CreateEncoder @228-240
+- function_definition DefaultEncoderConfig @242-251
+
+### media/libvpx/libvpx/test/comp_avg_pred_test.cc
+
+Blob: `de9842a88f4036a1a775a0ab28821b08a924703c`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @11
+- include "./vpx_dsp_rtcd.h" @13
+- include "test/acm_random.h" @15
+- include "test/buffer.h" @16
+- include "test/register_state_check.h" @17
+- include "vpx_config.h" @18
+- include "vpx_ports/vpx_timer.h" @19
+- function_definition avg_with_rounding @27-29
+- function_definition reference_pred @32-45
+- class_specifier AvgPredTest @51-65
+- function_definition SetUp @53-56
+- function_definition TestSizeCombinations @68-117
+- function_definition TestCompareReferenceRandom @120-156
+- function_definition TestSpeed @159-203
+- function_definition TEST_P @207-207
+- function_definition TEST_P @209-209
+- function_definition TEST_P @211-211
+- function_definition highbd_wrapper @246-249
+- function_definition TEST_P @253-253
+- function_definition TEST_P @255-255
+- function_definition TEST_P @257-257
+
+### media/libvpx/libvpx/test/config_test.cc
+
+Blob: `d3aca4cfb557408fba652e5c11fae6c238493cc5`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @10
+- include "test/codec_factory.h" @11
+- include "test/encode_test_driver.h" @12
+- include "test/util.h" @13
+- include "test/video_source.h" @14
+- class_specifier ConfigTest @18-49
+- function_definition ConfigTest @22-24
+- function_definition ~ConfigTest @25-25
+- function_definition SetUp @27-30
+- function_definition BeginPassHook @32-35
+- function_definition PreEncodeFrameHook @37-40
+- function_definition FramePktHook @42-44
+- function_definition TEST_P @51-59
+
+### media/libvpx/libvpx/test/consistency_test.cc
+
+Blob: `3e73bec492cfcf7f8d1c2f1a74de25e35119988a`. Grammar: cpp. Status: syntax-clean.
+
+- include <limits.h> @11
+- include <stdio.h> @12
+- include <string.h> @13
+- include <tuple> @14
+- include "gtest/gtest.h" @16
+- include "./vpx_config.h" @18
+- include "./vp9_rtcd.h" @20
+- include "test/acm_random.h" @23
+- include "test/clear_system_state.h" @24
+- include "test/register_state_check.h" @25
+- include "test/util.h" @26
+- include "vpx_dsp/ssim.h" @27
+- include "vpx_mem/vpx_mem.h" @28
+- class_specifier ConsistencyTestBase @38-128
+- function_definition ConsistencyTestBase @40-40
+- function_definition SetUpTestSuite @42-52
+- function_definition ClearSsim @54-54
+- function_definition TearDownTestSuite @55-66
+- function_definition TearDown @68-68
+- function_definition SetUp @75-79
+- function_definition FillRandom @81-87
+- function_definition FillRandom @89-91
+- function_definition Copy @93-95
+- function_definition Blur @97-118
+- class_specifier ConsistencyVP9Test @132-145
+- function_definition ConsistencyVP9Test @136-136
+- function_definition CheckConsistency @139-144
+- function_definition TEST_P @153-199
+
+### media/libvpx/libvpx/test/convolve_test.cc
+
+Blob: `90bdcbc108603018494180208580afac84059374`. Grammar: cpp. Status: contains-errors.
+
+- include <string.h> @11
+- include <tuple> @12
+- include "gtest/gtest.h" @14
+- include "./vp9_rtcd.h" @16
+- include "./vpx_config.h" @17
+- include "./vpx_dsp_rtcd.h" @18
+- include "test/acm_random.h" @19
+- include "test/clear_system_state.h" @20
+- include "test/register_state_check.h" @21
+- include "test/util.h" @22
+- include "vp9/common/vp9_common.h" @23
+- include "vp9/common/vp9_filter.h" @24
+- include "vpx_dsp/vpx_dsp_common.h" @25
+- include "vpx_dsp/vpx_filter.h" @26
+- include "vpx_mem/vpx_mem.h" @27
+- include "vpx_ports/mem.h" @28
+- include "vpx_ports/vpx_timer.h" @29
+- struct_specifier ConvolveFunctions @54-86
+- function_definition ConvolveFunctions @55-76
+- struct_specifier ConvolveFunctions12Tap @91-104
+- function_definition ConvolveFunctions12Tap @92-98
+- function_definition clip_pixel @127-127
+- function_definition filter_block2d_8_c @129-195
+- function_definition block2d_average_c @197-207
+- function_definition filter_average_block2d_8_c @209-222
+- function_definition highbd_filter_block2d_8_c @225-299
+- function_definition highbd_block2d_average_c @301-312
+- function_definition highbd_filter_average_block2d_8_c @314-327
+- function_definition wrapper_filter_average_block2d_8_c @330-350
+- function_definition wrapper_filter_block2d_8_c @352-372
+- class_specifier ConvolveTest @374-574
+- function_definition SetUpTestSuite @376-394
+- function_definition TearDown @396-396
+- function_definition TearDownTestSuite @398-413
+- function_definition Width @423-423
+- function_definition Height @424-424
+- function_definition BorderLeft @425-428
+- function_definition BorderTop @429-429
+- function_definition IsIndexInBorder @431-436
+- function_definition SetUp @438-476
+- function_definition SetConstantInput @478-483
+- function_definition CopyOutputToRef @485-491
+- function_definition CheckGuardBlocks @493-499
+- function_definition input @501-512
+- function_definition output @514-525
+- function_definition output_ref @527-538
+- function_definition lookup @540-550
+- function_definition assign_val @552-562
+- class_specifier ConvolveTest12Tap @585-753
+- function_definition SetUpTestSuite @587-601
+- function_definition TearDown @603-603
+- function_definition TearDownTestSuite @605-616
+- function_definition Width @626-626
+- function_definition Height @627-627
+- function_definition BorderLeft @628-631
+- function_definition BorderTop @632-632
+- function_definition IsIndexInBorder @634-639
+- function_definition SetUp @641-679
+- function_definition SetConstantInput @681-686
+- function_definition CheckGuardBlocks @688-694
+- function_definition input @696-707
+- function_definition output @709-720
+- function_definition lookup @722-732
+- function_definition assign_val @734-744
+- function_definition TEST_P @762-842
+- function_definition TEST_P @844-945
+- function_definition TEST_P @947-968
+- function_definition TEST_P @970-991
+- function_definition TEST_P @993-1014
+- function_definition TEST_P @1017-1017
+- function_definition TEST_P @1019-1037
+- function_definition TEST_P @1039-1057
+- function_definition TEST_P @1059-1080
+- function_definition TEST_P @1082-1103
+- function_definition TEST_P @1105-1126
+- function_definition TEST_P @1128-1149
+- function_definition TEST_P @1151-1172
+- function_definition TEST_P @1174-1195
+- function_definition TEST_P @1197-1218
+- function_definition TEST_P @1219-1240
+- function_definition TEST_P @1242-1258
+- function_definition TEST_P @1260-1280
+- function_definition TEST_P @1282-1298
+- function_definition TEST_P @1300-1316
+- function_definition TEST_P @1318-1334
+- function_definition TEST @1339-1358
+- function_definition TEST_P @1364-1442
+- function_definition TEST_P @1444-1539
+- function_definition TEST_P @1547-1586
+
+### media/libvpx/libvpx/test/cpu_speed_test.cc
+
+Blob: `6e0a0466337c93b3b73457c441fa483cd14c5acb`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @10
+- include "test/codec_factory.h" @11
+- include "test/encode_test_driver.h" @12
+- include "test/i420_video_source.h" @13
+- include "test/util.h" @14
+- include "test/y4m_video_source.h" @15
+- class_specifier CpuSpeedTest @21-67
+- function_definition CpuSpeedTest @25-28
+- function_definition ~CpuSpeedTest @29-29
+- function_definition SetUp @31-41
+- function_definition BeginPassHook @43-43
+- function_definition PreEncodeFrameHook @45-57
+- function_definition PSNRPktHook @59-61
+- function_definition TEST_P @69-87
+- function_definition TEST_P @89-102
+- function_definition TEST_P @104-117
+- function_definition TEST_P @119-134
+- function_definition TEST_P @136-149
+
+### media/libvpx/libvpx/test/cq_test.cc
+
+Blob: `52590d0666682777f61006b0068ca2a204dda04e`. Grammar: cpp. Status: syntax-clean.
+
+- include <cmath> @10
+- include <map> @11
+- include "gtest/gtest.h" @12
+- include "test/codec_factory.h" @13
+- include "test/encode_test_driver.h" @14
+- include "test/i420_video_source.h" @15
+- include "test/util.h" @16
+- include "vpx_config.h" @17
+- class_specifier CQTest @27-102
+- function_definition SetUpTestSuite @33-33
+- function_definition TearDownTestSuite @35-47
+- function_definition CQTest @50-52
+- function_definition ~CQTest @54-54
+- function_definition SetUp @56-59
+- function_definition BeginPassHook @61-65
+- function_definition PreEncodeFrameHook @67-75
+- function_definition PSNRPktHook @77-80
+- function_definition FramePktHook @82-84
+- function_definition GetLinearPSNROverBitrate @86-89
+- function_definition cq_level @91-91
+- function_definition file_size @92-92
+- function_definition n_frames @93-93
+- function_definition TEST_P @106-133
+
+### media/libvpx/libvpx/test/dct16x16_test.cc
+
+Blob: `a3382ab64e64bee4659c63b31f9cdc51be535047`. Grammar: cpp. Status: contains-errors.
+
+- include <math.h> @11
+- include <stdlib.h> @12
+- include <string.h> @13
+- include <tuple> @14
+- include "gtest/gtest.h" @16
+- include "./vp9_rtcd.h" @18
+- include "./vpx_dsp_rtcd.h" @19
+- include "test/acm_random.h" @20
+- include "test/clear_system_state.h" @21
+- include "test/register_state_check.h" @22
+- include "test/util.h" @23
+- include "vp9/common/vp9_entropy.h" @24
+- include "vp9/common/vp9_scan.h" @25
+- include "vpx/vpx_codec.h" @26
+- include "vpx/vpx_integer.h" @27
+- include "vpx_config.h" @28
+- include "vpx_ports/mem.h" @29
+- include "vpx_ports/vpx_timer.h" @30
+- function_definition butterfly_16x16_dct_1d @53-207
+- function_definition reference_16x16_dct_2d @209-225
+- function_definition fdct16x16_ref @238-241
+- function_definition idct16x16_ref @243-246
+- function_definition fht16x16_ref @248-250
+- function_definition iht16x16_ref @252-255
+- function_definition idct16x16_10 @258-260
+- function_definition idct16x16_12 @262-264
+- function_definition idct16x16_10_ref @266-269
+- function_definition idct16x16_12_ref @271-274
+- function_definition iht16x16_10 @276-278
+- function_definition iht16x16_12 @280-282
+- function_definition idct16x16_10_add_10_c @285-287
+- function_definition idct16x16_10_add_12_c @289-291
+- function_definition idct16x16_256_add_10_sse2 @293-295
+- function_definition idct16x16_256_add_12_sse2 @297-299
+- function_definition idct16x16_10_add_10_sse2 @301-303
+- function_definition idct16x16_10_add_12_sse2 @305-307
+- class_specifier Trans16x16TestBase @311-726
+- function_definition ~Trans16x16TestBase @313-313
+- function_definition RunAccuracyCheck @320-379
+- function_definition RunCoeffCheck @381-401
+- function_definition RunMemCheck @403-432
+- function_definition RunQuantCheck @434-493
+- function_definition RunInvAccuracyCheck @495-550
+- function_definition RunSpeedTest @552-588
+- function_definition CompareInvReference @590-644
+- function_definition RunInvTrans16x16SpeedTest @646-718
+- class_specifier Trans16x16DCT @728-764
+- function_definition ~Trans16x16DCT @731-731
+- function_definition SetUp @733-751
+- function_definition TearDown @752-752
+- function_definition RunFwdTxfm @755-757
+- function_definition RunInvTxfm @758-760
+- function_definition TEST_P @766-766
+- function_definition TEST_P @768-768
+- function_definition TEST_P @770-770
+- function_definition TEST_P @772-776
+- function_definition TEST_P @778-778
+- function_definition TEST_P @780-780
+- class_specifier Trans16x16HT @782-818
+- function_definition ~Trans16x16HT @785-785
+- function_definition SetUp @787-805
+- function_definition TearDown @806-806
+- function_definition RunFwdTxfm @809-811
+- function_definition RunInvTxfm @812-814
+- function_definition TEST_P @820-820
+- function_definition TEST_P @822-822
+- function_definition TEST_P @824-824
+- function_definition TEST_P @826-830
+- class_specifier InvTrans16x16DCT @832-857
+- function_definition ~InvTrans16x16DCT @835-835
+- function_definition SetUp @837-844
+- function_definition TearDown @845-845
+- function_definition RunFwdTxfm @848-849
+- function_definition RunInvTxfm @850-852
+- function_definition TEST_P @860-862
+- function_definition TEST_P @864-866
+
+### media/libvpx/libvpx/test/dct32x32_test.cc
+
+Blob: `77447481cb722387d038d0c49b97e1d95aefa7d8`. Grammar: cpp. Status: contains-errors.
+
+- include <math.h> @11
+- include <stdlib.h> @12
+- include <string.h> @13
+- include <tuple> @14
+- include "gtest/gtest.h" @16
+- include "./vp9_rtcd.h" @18
+- include "./vpx_config.h" @19
+- include "./vpx_dsp_rtcd.h" @20
+- include "test/acm_random.h" @21
+- include "test/bench.h" @22
+- include "test/clear_system_state.h" @23
+- include "test/register_state_check.h" @24
+- include "test/util.h" @25
+- include "vp9/common/vp9_entropy.h" @26
+- include "vp9/common/vp9_scan.h" @27
+- include "vpx/vpx_codec.h" @28
+- include "vpx/vpx_integer.h" @29
+- include "vpx_ports/mem.h" @30
+- include "vpx_ports/vpx_timer.h" @31
+- function_definition reference_32x32_dct_1d @39-48
+- function_definition reference_32x32_dct_2d @50-67
+- function_definition idct32x32_10 @79-81
+- function_definition idct32x32_12 @83-85
+- class_specifier Trans32x32Test @88-113
+- function_definition ~Trans32x32Test @91-91
+- function_definition SetUp @92-99
+- function_definition TearDown @101-101
+- function_definition Run @115-115
+- function_definition TEST_P @117-180
+- function_definition TEST_P @182-209
+- function_definition TEST_P @211-251
+- function_definition TEST_P @253-264
+- function_definition TEST_P @266-319
+- class_specifier InvTrans32x32Test @321-482
+- function_definition ~InvTrans32x32Test @323-323
+- function_definition SetUp @324-334
+- function_definition TearDown @336-336
+- function_definition RunRefTxfm @339-341
+- function_definition RunInvTxfm @342-344
+- function_definition RunInvTrans32x32SpeedTest @355-426
+- function_definition CompareInvReference32x32 @428-481
+- function_definition TEST_P @486-486
+- function_definition TEST_P @487-487
+
+### media/libvpx/libvpx/test/dct_partial_test.cc
+
+Blob: `dc4921ab949fd12f14d95c01bc2b2078673e3323`. Grammar: cpp. Status: syntax-clean.
+
+- include <math.h> @11
+- include <stdlib.h> @12
+- include <string.h> @13
+- include <limits> @14
+- include <tuple> @15
+- include "gtest/gtest.h" @17
+- include "./vpx_dsp_rtcd.h" @19
+- include "test/acm_random.h" @20
+- include "test/buffer.h" @21
+- include "test/clear_system_state.h" @22
+- include "test/register_state_check.h" @23
+- include "test/util.h" @24
+- include "vpx_config.h" @25
+- include "vpx/vpx_codec.h" @26
+- include "vpx/vpx_integer.h" @27
+- include "vpx_dsp/vpx_dsp_common.h" @28
+- function_definition partial_fdct_ref @41-61
+- class_specifier PartialFdctTest @63-110
+- function_definition PartialFdctTest @65-69
+- function_definition TearDown @71-71
+- function_definition RunTest @74-105
+- function_definition TEST_P @112-112
+
+### media/libvpx/libvpx/test/dct_test.cc
+
+Blob: `7c581674f1b00f40a449a64460b587e85b2f5b4a`. Grammar: cpp. Status: contains-errors.
+
+- include <math.h> @11
+- include <stdlib.h> @12
+- include <string.h> @13
+- include <tuple> @14
+- include "gtest/gtest.h" @16
+- include "./vp9_rtcd.h" @18
+- include "./vpx_dsp_rtcd.h" @19
+- include "test/acm_random.h" @20
+- include "test/buffer.h" @21
+- include "test/clear_system_state.h" @22
+- include "test/register_state_check.h" @23
+- include "test/util.h" @24
+- include "vp9/common/vp9_entropy.h" @25
+- include "vpx_config.h" @26
+- include "vpx/vpx_codec.h" @27
+- include "vpx/vpx_integer.h" @28
+- include "vpx_ports/mem.h" @29
+- function_definition fdct_wrapper @49-52
+- function_definition idct_wrapper @55-60
+- function_definition iht_wrapper @63-67
+- function_definition highbd_idct_wrapper @77-81
+- function_definition highbd_iht_wrapper @84-87
+- struct_specifier FuncInfo @90-95
+- function_definition fdct_ref @100-114
+- function_definition fht_ref @116-128
+- function_definition fwht_ref @130-134
+- class_specifier TransTestBase @136-425
+- function_definition SetUp @138-168
+- function_definition TearDown @170-176
+- function_definition InitMem @178-198
+- function_definition RunFwdTxfm @200-202
+- function_definition RunInvTxfm @204-206
+- function_definition RunAccuracyCheck @209-269
+- function_definition RunCoeffCheck @271-299
+- function_definition RunMemCheck @301-352
+- function_definition RunInvAccuracyCheck @354-410
+- class_specifier TransDCT @429-432
+- function_definition TransDCT @431-431
+- function_definition TEST_P @434-442
+- function_definition TEST_P @444-444
+- function_definition TEST_P @446-446
+- function_definition TEST_P @448-448
+- class_specifier TransHT @618-621
+- function_definition TransHT @620-620
+- function_definition TEST_P @623-625
+- function_definition TEST_P @627-627
+- function_definition TEST_P @629-629
+- function_definition TEST_P @631-631
+- class_specifier TransWHT @742-745
+- function_definition TransWHT @744-744
+- function_definition TEST_P @747-747
+- function_definition TEST_P @749-749
+- function_definition TEST_P @751-751
+- function_definition TEST_P @753-753
+
+### media/libvpx/libvpx/test/decode_api_test.cc
+
+Blob: `b95d5191e18c9274ff4ba7b66351640436fb4449`. Grammar: cpp. Status: contains-errors.
+
+- include <array> @11
+- include <vector> @12
+- include "gtest/gtest.h" @14
+- include "./vpx_config.h" @16
+- include "test/ivf_video_source.h" @17
+- include "test/video_source.h" @18
+- include "vpx/vp8cx.h" @20
+- include "vpx/vp8dx.h" @22
+- include "vpx/vpx_decoder.h" @23
+- include "vpx/vpx_encoder.h" @24
+- function_definition TEST @30-72
+- function_definition TEST @75-87
+- function_definition TEST @89-103
+- function_definition TEST @107-143
+- function_definition TEST @146-155
+- function_definition TEST @163-244
+- function_definition TEST @252-355
+- class_specifier PatternVideoSource @255-272
+- function_definition FillFrame @257-271
+- function_definition TestVp9Controls @362-397
+- function_definition TEST @399-423
+- function_definition TestPeekInfo @425-446
+- function_definition TEST @448-461
+- function_definition TEST @463-472
+- function_definition TEST @474-515
+- function_definition TEST @518-533
+
+### media/libvpx/libvpx/test/decode_corrupted.cc
+
+Blob: `55919d0f49d71259d1724f0c33e6031b3cb5d583`. Grammar: cpp. Status: syntax-clean.
+
+- include <tuple> @11
+- include "gtest/gtest.h" @13
+- include "test/codec_factory.h" @15
+- include "test/encode_test_driver.h" @16
+- include "test/util.h" @17
+- include "test/i420_video_source.h" @18
+- include "vpx_config.h" @19
+- include "vpx_mem/vpx_mem.h" @20
+- class_specifier DecodeCorruptedFrameTest @24-78
+- function_definition DecodeCorruptedFrameTest @29-29
+- function_definition ~DecodeCorruptedFrameTest @32-32
+- function_definition SetUp @34-46
+- function_definition PreEncodeFrameHook @48-51
+- function_definition MismatchHook @53-54
+- function_definition MutateEncoderOutputHook @56-68
+- function_definition HandleDecodeResult @70-75
+- function_definition TEST_P @80-88
+
+### media/libvpx/libvpx/test/decode_perf_test.cc
+
+Blob: `69c30a9e800cc97de3b0089e2e7f4abf3938f013`. Grammar: cpp. Status: syntax-clean.
+
+- include <string> @11
+- include <tuple> @12
+- include "test/codec_factory.h" @14
+- include "test/decode_test_driver.h" @15
+- include "test/encode_test_driver.h" @16
+- include "test/i420_video_source.h" @17
+- include "test/ivf_video_source.h" @18
+- include "test/md5_helper.h" @19
+- include "test/util.h" @20
+- include "test/webm_video_source.h" @21
+- include "vpx/vpx_codec.h" @22
+- include "vpx_ports/vpx_timer.h" @23
+- include "./ivfenc.h" @24
+- class_specifier DecodePerfTest @74-74
+- function_definition TEST_P @76-108
+- class_specifier VP9NewEncodeDecodePerfTest @113-189
+- function_definition VP9NewEncodeDecodePerfTest @117-119
+- function_definition ~VP9NewEncodeDecodePerfTest @121-121
+- function_definition SetUp @123-138
+- function_definition PreEncodeFrameHook @140-147
+- function_definition BeginPassHook @149-154
+- function_definition EndPassHook @156-164
+- function_definition FramePktHook @166-178
+- function_definition DoDecode @180-180
+- function_definition set_speed @182-182
+- struct_specifier EncodePerfTestVideo @191-201
+- function_definition EncodePerfTestVideo @192-195
+- function_definition TEST_P @207-259
+
+### media/libvpx/libvpx/test/decode_svc_test.cc
+
+Blob: `7098e7b27048e1cad59ac77cb839ccf2784bdfc4`. Grammar: cpp. Status: syntax-clean.
+
+- include <memory> @11
+- include <string> @12
+- include "test/codec_factory.h" @14
+- include "test/decode_test_driver.h" @15
+- include "test/ivf_video_source.h" @16
+- include "test/test_vectors.h" @17
+- include "test/util.h" @18
+- class_specifier DecodeSvcTest @24-47
+- function_definition DecodeSvcTest @27-27
+- function_definition ~DecodeSvcTest @28-28
+- function_definition PreDecodeFrameHook @30-34
+- function_definition DecompressedFrameHook @36-41
+- function_definition TEST_P @54-66
+- function_definition TEST_P @71-83
+- function_definition TEST_P @88-100
+- function_definition TEST_P @106-118
+
+### media/libvpx/libvpx/test/decode_test_driver.cc
+
+Blob: `af87bc25fbdedb823f48438bbf999085081d93d9`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @11
+- include "test/codec_factory.h" @13
+- include "test/decode_test_driver.h" @14
+- include "test/register_state_check.h" @15
+- include "test/video_source.h" @16
+- function_definition PeekStream @22-26
+- function_definition DecodeFrame @28-30
+- function_definition DecodeFrame @32-40
+- function_definition IsVP8 @42-45
+- function_definition HandlePeekResult @47-65
+- function_definition RunLoop @67-106
+- function_definition RunLoop @108-111
+- function_definition set_cfg @113-115
+- function_definition set_flags @117-117
+
+### media/libvpx/libvpx/test/decode_test_driver.h
+
+Blob: `81f5001ebc5da4802e51d568217ce377711e54e3`. Grammar: cpp. Status: syntax-clean.
+
+- include <cstring> @13
+- include "gtest/gtest.h" @14
+- include "./vpx_config.h" @15
+- include "vpx/vpx_decoder.h" @16
+- class_specifier CodecFactory @20-20
+- class_specifier CompressedVideoSource @21-21
+- class_specifier DxDataIterator @24-34
+- function_definition DxDataIterator @26-27
+- function_definition Next @29-29
+- class_specifier Decoder @39-115
+- function_definition Decoder @41-44
+- function_definition Decoder @46-49
+- function_definition ~Decoder @51-51
+- function_definition GetDxData @61-61
+- function_definition Control @63-63
+- function_definition Control @65-69
+- function_definition Control @71-75
+- function_definition DecodeError @77-80
+- function_definition SetFrameBufferFunctions @83-89
+- function_definition GetDecoderName @91-93
+- function_definition GetDecoder @97-97
+- function_definition InitOnce @102-109
+- class_specifier DecoderTest @118-158
+- function_definition PreDecodeFrameHook @129-130
+- function_definition HandleDecodeResult @133-138
+- function_definition DecompressedFrameHook @141-142
+- function_definition DecoderTest @150-151
+- function_definition ~DecoderTest @153-153
+
+### media/libvpx/libvpx/test/encode_api_test.cc
+
+Blob: `73baf0c0e3a42772fb83b56cef0278be015c1e4c`. Grammar: cpp. Status: contains-errors.
+
+- include <array> @11
+- include <cmath> @12
+- include <cassert> @13
+- include <climits> @14
+- include <cstdint> @15
+- include <cstdio> @16
+- include <cstdlib> @17
+- include <cstring> @18
+- include <initializer_list> @19
+- include <memory> @20
+- include <vector> @21
+- include "gtest/gtest.h" @23
+- include "test/acm_random.h" @24
+- include "test/video_source.h" @25
+- include "test/y4m_video_source.h" @26
+- include "test/yuv_video_source.h" @27
+- include "./vpx_config.h" @29
+- include "vpx/vp8cx.h" @30
+- include "vpx/vpx_codec.h" @31
+- include "vpx/vpx_encoder.h" @32
+- include "vpx/vpx_image.h" @33
+- include "vpx_mem/vpx_mem.h" @34
+- include "vp9/encoder/vp9_encoder.h" @37
+- include "vp9/encoder/vp9_firstpass_stats.h" @38
+- function_definition IsVP9 @52-56
+- function_definition Memset16 @58-64
+- function_definition CreateImage @66-112
+- function_definition InitCodec @114-123
+- function_definition EncodeWithConfig @127-138
+- function_definition TEST @140-178
+- function_definition TEST @180-268
+- struct_specifier UVStride @190-193
+- function_definition TEST @270-286
+- function_definition TEST @288-303
+- function_definition TEST @306-330
+- function_definition TEST @337-386
+- function_definition TEST @389-413
+- function_definition TEST @416-449
+- function_definition TEST @451-534
+- function_definition TEST @537-573
+- class_specifier VP8Encoder @576-592
+- function_definition VP8Encoder @578-578
+- function_definition ~VP8Encoder @594-598
+- function_definition Configure @600-631
+- function_definition Encode @633-651
+- function_definition TEST @656-666
+- function_definition TEST @668-685
+- struct_specifier Encoder @673-676
+- function_definition ~Encoder @674-674
+- function_definition TEST @692-740
+- function_definition TEST @742-777
+- function_definition TEST @779-813
+- function_definition TEST @817-860
+- function_definition EncodeOssFuzz69906 @863-906
+- function_definition TEST @908-918
+- function_definition TEST @920-965
+- function_definition TEST @967-991
+- function_definition TEST @994-1015
+- function_definition TEST @1018-1032
+- function_definition TEST @1040-1084
+- function_definition TEST @1087-1111
+- function_definition TEST @1118-1186
+- function_definition TEST @1197-1253
+- function_definition TEST @1256-1362
+- struct_specifier kCodecs @1257-1260
+- function_definition TEST @1364-1394
+- struct_specifier Encoder @1372-1375
+- function_definition ~Encoder @1373-1373
+- function_definition TEST @1396-1438
+- struct_specifier Encoder @1404-1407
+- function_definition ~Encoder @1405-1405
+- function_definition TEST @1440-1456
+- function_definition TEST @1458-1480
+- function_definition TEST @1482-1510
+- function_definition TEST @1512-1563
+- function_definition TEST @1565-1619
+- function_definition TEST @1625-1652
+- struct_specifier Encoder @1635-1638
+- function_definition ~Encoder @1636-1636
+- class_specifier VP9Encoder @1656-1685
+- function_definition VP9Encoder @1658-1660
+- function_definition VP9Encoder @1664-1666
+- function_definition ~VP9Encoder @1687-1691
+- function_definition Configure @1693-1738
+- function_definition Encode @1740-1755
+- function_definition TEST @1758-1768
+- function_definition TEST @1773-1793
+- function_definition TEST @1798-1840
+- function_definition TEST @1842-1859
+- function_definition TEST @1862-1871
+- function_definition TEST @1876-1902
+- function_definition TEST @1907-1930
+- function_definition TEST @1935-1949
+- function_definition TEST @1954-1968
+- function_definition TEST @1970-1987
+- function_definition TEST @1992-2036
+- function_definition TEST @2038-2049
+- function_definition TEST @2054-2080
+- function_definition TEST @2085-2116
+- function_definition FillPlane @2118-2123
+- function_definition TEST @2127-2174
+- function_definition TEST @2176-2180
+- function_definition TEST @2182-2195
+- function_definition TEST @2197-2216
+- function_definition TEST @2218-2238
+- function_definition TEST @2240-2250
+- function_definition TEST @2252-2259
+- function_definition TEST @2261-2275
+- function_definition TEST @2279-2316
+- function_definition TEST @2324-2389
+- function_definition TEST @2397-2462
+- function_definition TEST @2465-2478
+- function_definition TEST @2480-2491
+- function_definition TEST @2493-2504
+- function_definition TEST @2506-2520
+- function_definition TEST @2522-2582
+- function_definition TEST @2585-2698
+- struct_specifier Encoder @2629-2632
+- function_definition ~Encoder @2630-2630
+- function_definition TEST @2700-2734
+- function_definition TEST @2736-2770
+- function_definition TEST @2772-2850
+- function_definition TEST @2852-2873
+- function_definition TEST @2875-2891
+- function_definition TEST @2897-2929
+- function_definition TestEncoderImageMismatch @2931-2966
+- function_definition TEST @2968-2970
+- function_definition TEST @2972-2974
+- function_definition TEST @2977-3054
+- function_definition TEST @3056-3067
+- function_definition TEST @3071-3143
+- function_definition TEST @3145-3160
+- function_definition VerifyVp9EncoderMidstreamReconfig @3164-3217
+- function_definition TEST @3221-3224
+- function_definition TEST @3229-3232
+- function_definition TEST @3236-3239
+- function_definition TEST @3243-3246
+- function_definition VerifyVp9UnsafeCastEosCount @3250-3267
+- function_definition TEST @3269-3269
+- function_definition TEST @3271-3271
+- function_definition TEST @3273-3273
+- function_definition TEST @3275-3349
+- function_definition TEST @3352-3391
+- function_definition TEST @3396-3442
+- function_definition TEST @3447-3490
+- function_definition TEST @3493-3529
+- function_definition TEST @3534-3552
+- function_definition TEST @3559-3610
+- function_definition TEST @3613-3664
+- function_definition TEST @3666-3709
+
+### media/libvpx/libvpx/test/encode_perf_test.cc
+
+Blob: `75d6838f602070a6c83e0e8fd7b36d34ef2aa408`. Grammar: cpp. Status: syntax-clean.
+
+- include <cstdio> @10
+- include <string> @11
+- include "gtest/gtest.h" @12
+- include "test/codec_factory.h" @13
+- include "test/encode_test_driver.h" @14
+- include "test/i420_video_source.h" @15
+- include "test/util.h" @16
+- include "test/y4m_video_source.h" @17
+- include "vpx/vpx_codec.h" @18
+- include "vpx_ports/vpx_timer.h" @19
+- struct_specifier EncodePerfTestVideo @26-36
+- function_definition EncodePerfTestVideo @27-30
+- class_specifier VP9EncodePerfTest @56-122
+- function_definition VP9EncodePerfTest @60-62
+- function_definition ~VP9EncodePerfTest @64-64
+- function_definition SetUp @66-83
+- function_definition PreEncodeFrameHook @85-94
+- function_definition BeginPassHook @96-99
+- function_definition PSNRPktHook @101-105
+- function_definition DoDecode @108-108
+- function_definition min_psnr @110-110
+- function_definition set_speed @112-112
+- function_definition set_threads @114-114
+- function_definition TEST_P @124-184
+
+## Validation and limits
+
+This is a declaration map. Function contracts, callers, memory ownership, thread use, generated bindings, feature selection, cleanup, and reasons need implementation and caller review. No compilation or runtime tests ran. Imports and includes are literal navigation hints only. No complete call graph is claimed.

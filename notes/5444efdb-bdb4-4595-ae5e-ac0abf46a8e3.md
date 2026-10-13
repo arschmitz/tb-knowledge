@@ -1,0 +1,3881 @@
+<!-- knowledge: {"repository": "git:314d8065c5ad68c7e5c5f92d", "at": "2026-10-13T04:22:06.018534+00:00", "paths": ["dom/quota/ForwardDecls.h", "dom/quota/GroupInfo.cpp", "dom/quota/GroupInfo.h", "dom/quota/GroupInfoPair.cpp", "dom/quota/GroupInfoPair.h", "dom/quota/GroupInfoPairImpl.h", "dom/quota/HashKeys.h", "dom/quota/IPCStreamCipherStrategy.h", "dom/quota/InitializationTypes.cpp", "dom/quota/InitializationTypes.h", "dom/quota/MozPromiseUtils.h", "dom/quota/NSSCipherStrategy.cpp", "dom/quota/NSSCipherStrategy.h", "dom/quota/NSSRandomAccessCipherStrategy.cpp", "dom/quota/NSSRandomAccessCipherStrategy.h", "dom/quota/NormalOriginOperationBase.cpp", "dom/quota/NormalOriginOperationBase.h", "dom/quota/NotifyUtils.cpp", "dom/quota/NotifyUtils.h", "dom/quota/NotifyUtilsCommon.cpp", "dom/quota/NotifyUtilsCommon.h", "dom/quota/OpenClientDirectoryInfo.cpp", "dom/quota/OpenClientDirectoryInfo.h", "dom/quota/OpenClientDirectoryUtils.h", "dom/quota/OriginCacheMap.h", "dom/quota/OriginDirectoryLock.cpp", "dom/quota/OriginDirectoryLock.h", "dom/quota/OriginInfo.cpp", "dom/quota/OriginInfo.h", "dom/quota/OriginOperationBase.cpp", "dom/quota/OriginOperationBase.h", "dom/quota/OriginOperationCallbacks.h", "dom/quota/OriginOperations.cpp", "dom/quota/OriginOperations.h", "dom/quota/OriginParser.cpp", "dom/quota/OriginParser.h", "dom/quota/OriginScope.h", "dom/quota/OriginUpserter.cpp", "dom/quota/OriginUpserter.h", "dom/quota/PersistenceScope.cpp", "dom/quota/PersistenceScope.h", "dom/quota/PersistenceType.cpp", "dom/quota/PersistenceType.h", "dom/quota/PrincipalUtils.cpp", "dom/quota/PrincipalUtils.h", "dom/quota/PromiseUtils.cpp", "dom/quota/PromiseUtils.h", "dom/quota/QMResult.cpp", "dom/quota/QMResult.h", "dom/quota/QuotaCommon.cpp", "dom/quota/QuotaCommon.h", "dom/quota/QuotaManager.h", "dom/quota/QuotaManagerImpl.h", "dom/quota/QuotaManagerService.cpp", "dom/quota/QuotaManagerService.h", "dom/quota/QuotaObject.cpp", "dom/quota/QuotaObject.h", "dom/quota/QuotaParent.cpp", "dom/quota/QuotaParent.h", "dom/quota/QuotaPrefs.cpp", "dom/quota/QuotaPrefs.h", "dom/quota/QuotaRequestBase.cpp", "dom/quota/QuotaRequestBase.h", "dom/quota/QuotaRequests.cpp", "dom/quota/QuotaRequests.h", "dom/quota/QuotaResults.cpp", "dom/quota/QuotaResults.h", "dom/quota/QuotaUsageRequestChild.cpp", "dom/quota/QuotaUsageRequestChild.h", "dom/quota/QuotaUsageRequestParent.cpp", "dom/quota/QuotaUsageRequestParent.h", "dom/quota/RemoteQuotaObject.cpp", "dom/quota/RemoteQuotaObject.h", "dom/quota/RemoteQuotaObjectChild.cpp", "dom/quota/RemoteQuotaObjectChild.h", "dom/quota/RemoteQuotaObjectParent.cpp", "dom/quota/RemoteQuotaObjectParent.h", "dom/quota/RemoteQuotaObjectParentTracker.h", "dom/quota/RemoveParen.h", "dom/quota/ResolvableNormalOriginOp.h", "dom/quota/ResultExtensions.h", "dom/quota/SanitizationUtils.cpp", "dom/quota/SanitizationUtils.h", "dom/quota/ScopedLogExtraInfo.cpp", "dom/quota/ScopedLogExtraInfo.h", "dom/quota/SerializationHelpers.h", "dom/quota/StorageHelpers.cpp", "dom/quota/StorageHelpers.h", "dom/quota/StorageManager.cpp", "dom/quota/StorageManager.h", "dom/quota/StorageOriginAttributes.cpp", "dom/quota/StorageOriginAttributes.h", "dom/quota/StreamUtils.cpp", "dom/quota/StreamUtils.h", "dom/quota/StringifyUtils.cpp", "dom/quota/StringifyUtils.h", "dom/quota/TargetPtrHolder.h", "dom/quota/ThreadUtils.cpp", "dom/quota/ThreadUtils.h", "dom/quota/UniversalDirectoryLock.cpp", "dom/quota/UniversalDirectoryLock.h", "dom/quota/UsageInfo.h", "dom/quota/nsIndexedDBProtocolHandler.cpp", "dom/quota/nsIndexedDBProtocolHandler.h", "dom/quota/test/gtest/Common.cpp", "dom/quota/test/gtest/Common.h", "dom/quota/test/gtest/QuotaManagerDependencyFixture.cpp", "dom/quota/test/gtest/QuotaManagerDependencyFixture.h", "dom/quota/test/gtest/QuotaManagerTestHelpers.cpp", "dom/quota/test/gtest/QuotaManagerTestHelpers.h", "dom/quota/test/gtest/QuotaTestChild.h", "dom/quota/test/gtest/QuotaTestParent.h", "dom/quota/test/gtest/TestCheckedUnsafePtr.cpp", "dom/quota/test/gtest/TestClientDirectoryLockHandle.cpp", "dom/quota/test/gtest/TestClientStorageScope.cpp", "dom/quota/test/gtest/TestClientUsageArray.cpp", "dom/quota/test/gtest/TestCommonMetadata.cpp", "dom/quota/test/gtest/TestDate.cpp", "dom/quota/test/gtest/TestDirectoryLock.cpp", "dom/quota/test/gtest/TestEncryptedRandomAccessBlock.cpp", "dom/quota/test/gtest/TestEncryptedRandomAccessStream.cpp", "dom/quota/test/gtest/TestEncryptedStream.cpp", "dom/quota/test/gtest/TestFileOutputStream.cpp", "dom/quota/test/gtest/TestFlatten.cpp", "dom/quota/test/gtest/TestForwardDecls.cpp", "dom/quota/test/gtest/TestMozPromiseUtils.cpp", "dom/quota/test/gtest/TestNSSCipherStrategy.cpp", "dom/quota/test/gtest/TestNSSRandomAccessCipherStrategy.cpp", "dom/quota/test/gtest/TestOpenClientDirectoryInfo.cpp", "dom/quota/test/gtest/TestOriginParser.cpp", "dom/quota/test/gtest/TestOriginScope.cpp", "dom/quota/test/gtest/TestPersistenceScope.cpp", "dom/quota/test/gtest/TestPersistenceType.cpp", "dom/quota/test/gtest/TestQMResult.cpp", "dom/quota/test/gtest/TestQuotaCommon.cpp", "dom/quota/test/gtest/TestQuotaManager.cpp", "dom/quota/test/gtest/TestResultExtensions.cpp", "dom/quota/test/gtest/TestScopedLogExtraInfo.cpp", "dom/quota/test/gtest/TestStorageConnection.cpp", "dom/quota/test/gtest/TestStorageOriginAttributes.cpp", "dom/quota/test/gtest/TestStringifyUtils.cpp", "dom/quota/test/gtest/TestTelemetry.cpp", "dom/quota/test/gtest/TestThreadUtils.cpp", "dom/quota/test/gtest/TestUsageInfo.cpp", "dom/reporting/CSPViolationReportBody.cpp", "dom/reporting/CSPViolationReportBody.h", "dom/reporting/ConnectionAllowlistViolationReportBody.cpp", "dom/reporting/ConnectionAllowlistViolationReportBody.h", "dom/reporting/CrashReport.cpp", "dom/reporting/CrashReport.h"], "source": {"reference": "Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b", "revision": "1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b", "status": "provisional", "study": "architecture-study-20261013"}} -->
+# firefox/dom native and TypeScript syntax map 46
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser versions: {"tree-sitter": "0.25.2", "tree-sitter-c": "0.24.2", "tree-sitter-cpp": "0.23.4", "tree-sitter-rust": "0.24.2", "tree-sitter-java": "0.23.5", "tree-sitter-typescript": "0.23.2"}.
+
+Tree-sitter parses written syntax without executing it. Entries identify declarations and function bodies with source ranges. Names can be unqualified or inferred from an assignment. They do not resolve overloaded symbols or runtime receivers. C/C++ header files use the C++ grammar. Macros and build flags are not expanded. `contains-errors` means the tree has error or missing nodes; its entries remain partial candidates. A clean syntax tree is not proof that the file compiles. Objective-C, Kotlin, IDL, and embedded code are outside this parser pass and remain in the structural census.
+
+### dom/quota/ForwardDecls.h
+
+Blob: `baed2d4147e9a5f9cc16ff7cac29b15178d58191`. Grammar: cpp. Status: syntax-clean.
+
+- include <cstdint> @8
+- include <functional> @9
+- include "mozilla/dom/quota/CommonMetadataArrayFwd.h" @11
+- include "mozilla/dom/quota/Config.h" @12
+- include "nsStringFwd.h" @13
+- include "nsTArrayForwardDeclare.h" @14
+- enum_specifier nsresult @16-16
+- class_specifier RefPtr @18-18
+- class_specifier Maybe @25-25
+- class_specifier QMResult @30-30
+- struct_specifier Ok @35-35
+- class_specifier Result @37-37
+- class_specifier MozPromise @42-42
+- class_specifier BoolResponse @55-55
+- class_specifier UInt64Response @56-56
+- class_specifier CStringArrayResponse @57-57
+- enum_specifier ResponseRejectReason @58-58
+- class_specifier ClientDirectoryLock @78-78
+- class_specifier UniversalDirectoryLock @79-79
+- struct_specifier ClientMetadata @86-86
+- struct_specifier OriginMetadata @87-87
+- struct_specifier PrincipalMetadata @88-88
+- class_specifier UsageInfo @93-93
+- class_specifier OriginUsageMetadataArrayResponse @105-105
+- class_specifier UsageInfoResponse @106-106
+
+### dom/quota/GroupInfo.cpp
+
+Blob: `d3cd0b1a9ea2628000eb2afe04cec53429bb83f5`. Grammar: cpp. Status: syntax-clean.
+
+- include "GroupInfo.h" @5
+- include "GroupInfoPair.h" @7
+- include "OriginInfo.h" @8
+- include "mozilla/dom/quota/AssertionsImpl.h" @9
+- function_definition LockedGetOriginInfo @13-25
+- function_definition (anonymous) @27-30
+- function_definition LockedAddOriginInfo @32-69
+- function_definition LockedAdjustUsageForRemovedOriginInfo @71-85
+- function_definition LockedRemoveOriginInfo @87-107
+- function_definition LockedRemoveOriginInfos @109-116
+
+### dom/quota/GroupInfo.h
+
+Blob: `69fb0098f86a290938515375b1f7438950274667`. Grammar: cpp. Status: contains-errors.
+
+- include "OriginInfo.h" @8
+- include "mozilla/NotNull.h" @9
+- include "mozilla/dom/quota/Assertions.h" @10
+- include "mozilla/dom/quota/PersistenceType.h" @11
+- include "nsISupportsImpl.h" @12
+- include "nsTArray.h" @13
+- class_specifier GroupInfoPair @17-17
+- class_specifier OriginInfo @18-18
+- class_specifier DirtyTrackingAutoLock @19-19
+- class_specifier GroupInfo @21-75
+- function_definition GroupInfo @29-36
+- function_definition GetPersistenceType @40-40
+- function_definition LockedHasOriginInfos @58-62
+
+### dom/quota/GroupInfoPair.cpp
+
+Blob: `1bef3775e69a5e316d97475ecf8e138c518ec1e5`. Grammar: cpp. Status: syntax-clean.
+
+- include "GroupInfoPair.h" @5
+- function_definition (anonymous) @9-24
+
+### dom/quota/GroupInfoPair.h
+
+Blob: `4cbd4c211c32347003161a50914b5b1400b946da`. Grammar: cpp. Status: contains-errors.
+
+- include "GroupInfo.h" @8
+- include "mozilla/dom/quota/Assertions.h" @9
+- include "mozilla/dom/quota/PersistenceType.h" @10
+- include "nsISupportsImpl.h" @11
+- include "nsString.h" @12
+- class_specifier GroupInfo @16-16
+- class_specifier GroupInfoPair @20-90
+- function_definition GroupInfoPair @22-25
+- function_definition (anonymous) @29-29
+- function_definition (anonymous) @31-31
+- function_definition LockedGetGroupInfo @33-38
+- function_definition LockedSetGroupInfo @40-48
+- function_definition LockedClearGroupInfo @50-57
+- function_definition LockedHasGroupInfos @59-64
+
+### dom/quota/GroupInfoPairImpl.h
+
+Blob: `0b111fd586b0dc346f2f98cb8f813a13d77c1257`. Grammar: cpp. Status: syntax-clean.
+
+- include <algorithm> @8
+- include "GroupInfo.h" @10
+- include "GroupInfoPair.h" @11
+- include "OriginInfo.h" @12
+- function_definition MaybeInsertOriginInfos @17-32
+- function_definition MaybeInsertNonPersistedOriginInfos @35-39
+- function_definition MaybeInsertNonPersistedZeroUsageOriginInfos @42-49
+
+### dom/quota/HashKeys.h
+
+Blob: `df7f5d5cb664725db2b37ca00c0678fef488ed93`. Grammar: cpp. Status: syntax-clean.
+
+- include "nsHashKeys.h" @8
+- class_specifier nsCStringHashKeyWithDisabledMemmove @13-19
+- function_definition nsCStringHashKeyWithDisabledMemmove @15-17
+- enum_specifier (anonymous) @18-18
+
+### dom/quota/IPCStreamCipherStrategy.h
+
+Blob: `dfdcba2be736a3dcb33a1fd7d4190a05bacf4101`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/dom/quota/NSSCipherStrategy.h" @8
+
+### dom/quota/InitializationTypes.cpp
+
+Blob: `fb32a6f6200dad8b5d59de1c78cba2a5639f3b8b`. Grammar: cpp. Status: syntax-clean.
+
+- include "InitializationTypes.h" @5
+- function_definition GetString @10-43
+- function_definition GetString @46-57
+- function_definition GetString @60-71
+
+### dom/quota/InitializationTypes.h
+
+Blob: `5a063867835c1a53785e853933dcd39282f1634f`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/TypedEnumBits.h" @8
+- include "mozilla/dom/quota/FirstInitializationAttempts.h" @9
+- include "nsLiteralString.h" @10
+- include "nsStringFwd.h" @11
+- include "nsTHashMap.h" @12
+- struct_specifier CreateIfNonExistent @15-15
+- enum_specifier Initialization @20-35
+- enum_specifier GroupInitialization @37-41
+- enum_specifier OriginInitialization @43-47
+- class_specifier StringGenerator @53-63
+- class_specifier InitializationInfo @71-102
+- function_definition (anonymous) @79-82
+- function_definition (anonymous) @84-87
+- function_definition ResetGroupInitializationInfos @89-89
+- function_definition (anonymous) @91-94
+- function_definition (anonymous) @96-99
+- function_definition ResetOriginInitializationInfos @101-101
+
+### dom/quota/MozPromiseUtils.h
+
+Blob: `6d2919c5a242f03208d3796e9fbf96e2feb23e08`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/MozPromise.h" @8
+- include "nsThreadUtils.h" @9
+- struct_specifier IsExclusiveMozPromise @16-18
+- struct_specifier IsExclusiveMozPromise<
+    MozPromise<ResolveValueT, RejectValueT, IsExclusive>> @22-25
+- function_definition Map @30-46
+- function_definition Map @49-65
+- function_definition Map @68-84
+- function_definition Map @87-103
+
+### dom/quota/NSSCipherStrategy.cpp
+
+Blob: `57b6b90c6c7b921219f49f360ae77f9ab6021a36`. Grammar: cpp. Status: syntax-clean.
+
+- include "NSSCipherStrategy.h" @5
+- include <utility> @7
+- include "CipherStrategyUtils.h" @9
+- include "mozilla/Assertions.h" @10
+- include "nsNSSComponent.h" @13
+- include "pk11pub.h" @14
+- include "pkcs11t.h" @15
+- include "seccomon.h" @16
+- include "secmodt.h" @17
+- function_definition GenerateKey @25-27
+- function_definition Init @29-62
+- function_definition Cipher @64-100
+- function_definition MakeBlockPrefix @102-105
+- function_definition SerializeKey @107-109
+- function_definition DeserializeKey @111-115
+
+### dom/quota/NSSCipherStrategy.h
+
+Blob: `40ae78b8a88bb530e8157734e41040fb2e74d562`. Grammar: cpp. Status: syntax-clean.
+
+- include <array> @8
+- include <cstddef> @9
+- include <cstdint> @10
+- include "CipherStrategy.h" @12
+- include "ErrorList.h" @13
+- include "ScopedNSSTypes.h" @14
+- include "mozilla/InitializedOnce.h" @15
+- include "mozilla/Result.h" @16
+- include "mozilla/Span.h" @17
+- struct_specifier NSSCipherStrategy @21-51
+
+### dom/quota/NSSRandomAccessCipherStrategy.cpp
+
+Blob: `7dad8bc011fb75e1cbd713b0b6664ad53decf345`. Grammar: cpp. Status: syntax-clean.
+
+- include "NSSRandomAccessCipherStrategy.h" @5
+- include <array> @7
+- include <cstdint> @8
+- include "CipherStrategyUtils.h" @10
+- include "mozilla/Maybe.h" @11
+- include "mozilla/ResultExtensions.h" @12
+- include "mozilla/Span.h" @13
+- function_definition GenerateKey @17-20
+- function_definition Init @22-26
+- function_definition Encrypt @28-53
+- function_definition Decrypt @55-80
+- function_definition MakeBlockNonce @82-85
+- function_definition SerializeKey @87-90
+- function_definition DeserializeKey @92-96
+- function_definition InitContextWithDerivedKey @98-127
+- function_definition DeriveKey @130-190
+
+### dom/quota/NSSRandomAccessCipherStrategy.h
+
+Blob: `5b94930312416d9e0f3387a563e9eb4a0456db1e`. Grammar: cpp. Status: syntax-clean.
+
+- include <array> @8
+- include <cstddef> @9
+- include <cstdint> @10
+- include "CipherStrategy.h" @12
+- include "ScopedNSSTypes.h" @13
+- include "mozilla/Maybe.h" @14
+- include "mozilla/ResultExtensions.h" @15
+- include "mozilla/Span.h" @16
+- struct_specifier NSSRandomAccessCipherStrategy @35-98
+- struct_specifier EncryptionInput @50-56
+- struct_specifier EncryptionOutput @58-61
+- struct_specifier DecryptionInput @68-75
+- struct_specifier DecryptionOutput @77-79
+
+### dom/quota/NormalOriginOperationBase.cpp
+
+Blob: `08918af10dfbcb96364bd5e72dd5491296b23089`. Grammar: cpp. Status: syntax-clean.
+
+- include "NormalOriginOperationBase.h" @5
+- include "mozilla/dom/quota/QuotaManager.h" @7
+- function_definition NormalOriginOperationBase @11-15
+- function_definition ~NormalOriginOperationBase @17-19
+- function_definition Open @21-25
+- function_definition UnblockOpen @27-35
+
+### dom/quota/NormalOriginOperationBase.h
+
+Blob: `08983ea31adfc9d9e8fb1dbc48d310b9e249e452`. Grammar: cpp. Status: syntax-clean.
+
+- include "OriginOperationBase.h" @8
+- include "mozilla/Atomics.h" @9
+- include "mozilla/dom/quota/CheckedUnsafePtr.h" @10
+- class_specifier NormalOriginOperationBase @14-47
+- function_definition (anonymous) @18-18
+- function_definition Cancel @20-20
+
+### dom/quota/NotifyUtils.cpp
+
+Blob: `cef927264ff15e34e2d902f00a25f3f1b5282ca4`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/dom/quota/NotifyUtils.h" @5
+- include "mozilla/RefPtr.h" @7
+- include "mozilla/StaticPrefs_dom.h" @8
+- include "mozilla/dom/quota/NotifyUtilsCommon.h" @9
+- include "mozilla/dom/quota/QuotaManager.h" @10
+- include "nsError.h" @11
+- include "nsSupportsPrimitives.h" @12
+- function_definition NotifyStoragePressure @16-29
+- function_definition NotifyMaintenanceStarted @31-39
+- function_definition NotifyClientDirectoryOpeningStarted @41-49
+- function_definition NotifyGroupInitializationStarted @51-57
+- function_definition NotifyOriginInitializationStarted @59-65
+
+### dom/quota/NotifyUtils.h
+
+Blob: `6b42864430e6d22f5e51458ac2d1ec9027b671d1`. Grammar: cpp. Status: syntax-clean.
+
+- include <cstdint> @8
+- class_specifier QuotaManager @12-12
+
+### dom/quota/NotifyUtilsCommon.cpp
+
+Blob: `415e699305f5089060403dce58ee29f3f08d5e20`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/dom/quota/NotifyUtilsCommon.h" @5
+- include "mozilla/Services.h" @7
+- include "mozilla/dom/quota/QuotaCommon.h" @8
+- include "mozilla/dom/quota/ResultExtensions.h" @9
+- include "nsCOMPtr.h" @10
+- include "nsError.h" @11
+- include "nsIObserverService.h" @12
+- include "nsThreadUtils.h" @13
+- function_definition NotifyObserversOnMainThread @17-37
+
+### dom/quota/NotifyUtilsCommon.h
+
+Blob: `d50980e96936c993f8d851552eaceed5153af4ae`. Grammar: cpp. Status: syntax-clean.
+
+- include <functional> @8
+- include "mozilla/AlreadyAddRefed.h" @10
+- class_specifier nsISupports @12-12
+
+### dom/quota/OpenClientDirectoryInfo.cpp
+
+Blob: `5f0779f97ada87365a32794992970c38a0eba4ab`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/dom/quota/OpenClientDirectoryInfo.h" @5
+- include "mozilla/dom/quota/AssertionsImpl.h" @7
+- include "mozilla/dom/quota/UniversalDirectoryLock.h" @8
+- function_definition OpenClientDirectoryInfo @12-14
+- function_definition ~OpenClientDirectoryInfo @16-18
+- function_definition AssertIsOnOwningThread @20-22
+- function_definition SetFirstAccessPromise @24-31
+- function_definition AcquireFirstAccessPromise @33-38
+- function_definition SetLastAccessDirectoryLock @40-47
+- function_definition HasLastAccessDirectoryLock @49-53
+- function_definition ForgetLastAccessDirectoryLock @55-61
+- function_definition ClientDirectoryLockHandleCount @63-67
+- function_definition IncreaseClientDirectoryLockHandleCount @69-74
+- function_definition DecreaseClientDirectoryLockHandleCount @76-81
+
+### dom/quota/OpenClientDirectoryInfo.h
+
+Blob: `58f7fd8feae680b6a5ce4d2715d1784d1a4026fa`. Grammar: cpp. Status: contains-errors.
+
+- include <cstdint> @8
+- include "mozilla/dom/quota/ForwardDecls.h" @10
+- include "nsISupportsImpl.h" @11
+- class_specifier UniversalDirectoryLock @15-15
+- class_specifier OpenClientDirectoryInfo @48-83
+
+### dom/quota/OpenClientDirectoryUtils.h
+
+Blob: `91d182ace116dcfbe7bb460df577cb33ed498bd6`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/MozPromise.h" @8
+- include "mozilla/RefPtr.h" @9
+- include "mozilla/dom/quota/ArtificialFailure.h" @10
+- include "mozilla/dom/quota/ClientDirectoryLock.h" @11
+- include "mozilla/dom/quota/ClientDirectoryLockHandle.h" @12
+- include "mozilla/dom/quota/DirectoryLock.h" @13
+- include "mozilla/dom/quota/DirectoryLockInlines.h" @14
+- include "mozilla/dom/quota/ForwardDecls.h" @15
+- include "mozilla/dom/quota/QuotaManager.h" @16
+- include "mozilla/dom/quota/UniversalDirectoryLock.h" @17
+- function_definition CreateDirectoryLockForInitialization @22-45
+- class_specifier MaybeInitializeHelper @48-73
+- function_definition MaybeInitializeHelper @50-53
+- function_definition operator() @55-68
+- function_definition MaybeInitialize @76-80
+- function_definition MaybeInitialize @82-92
+- class_specifier MaybeFinalizeHelper @97-140
+- function_definition MaybeFinalizeHelper @99-106
+- function_definition operator() @108-133
+- function_definition MaybeFinalize @143-150
+
+### dom/quota/OriginCacheMap.h
+
+Blob: `e0190c1ce103e50764dd48b48deede5c69d7c0c2`. Grammar: cpp. Status: syntax-clean.
+
+- include <utility> @8
+- include "PLDHashTable.h" @10
+- include "mozilla/HashFunctions.h" @11
+- include "mozilla/Maybe.h" @12
+- include "mozilla/Result.h" @13
+- include "mozilla/dom/quota/Assertions.h" @14
+- include "mozilla/dom/quota/CommonMetadata.h" @15
+- include "mozilla/dom/quota/PersistenceType.h" @16
+- include "mozilla/dom/quota/ResultExtensions.h" @17
+- include "nsHashKeys.h" @18
+- include "nsTHashMap.h" @19
+- class_specifier OriginCacheMap @31-117
+- function_definition OriginCacheMap @33-33
+- function_definition Activate @35-38
+- function_definition IsActive @40-43
+- function_definition InsertOrUpdate @45-53
+- function_definition Extract @55-63
+- function_definition IsEmpty @65-68
+- function_definition ForEachEntry @71-78
+- class_specifier KeyHashKey @88-111
+- function_definition KeyHashKey @93-93
+- function_definition KeyHashKey @94-95
+- function_definition ~KeyHashKey @96-96
+- function_definition GetKey @98-98
+- function_definition KeyEquals @99-99
+- function_definition KeyToPointer @101-101
+- function_definition HashKey @102-105
+- enum_specifier (anonymous) @107-107
+
+### dom/quota/OriginDirectoryLock.cpp
+
+Blob: `6b98434d3d81374f3a14f65a2bc88c9cbb535cbd`. Grammar: cpp. Status: syntax-clean.
+
+- include "OriginDirectoryLock.h" @5
+- include <utility> @7
+- include "mozilla/Assertions.h" @9
+- include "mozilla/NotNull.h" @10
+- include "mozilla/RefPtr.h" @11
+- include "mozilla/dom/Nullable.h" @12
+- include "mozilla/dom/quota/CommonMetadata.h" @13
+- include "mozilla/dom/quota/DirectoryLockCategory.h" @14
+- include "mozilla/dom/quota/OriginScope.h" @15
+- include "mozilla/dom/quota/PersistenceScope.h" @16
+- include "mozilla/dom/quota/QuotaManager.h" @17
+- include "nsString.h" @18
+- function_definition CreateForEviction @23-38
+
+### dom/quota/OriginDirectoryLock.h
+
+Blob: `7eaef1c1ff185bf2fa9ca2573a41ea5e1ba56b72`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/dom/quota/DirectoryLockImpl.h" @8
+- include "mozilla/dom/quota/PersistenceType.h" @9
+- include "nsStringFwd.h" @10
+- class_specifier RefPtr @13-13
+- class_specifier MovingNotNull @18-18
+- struct_specifier OriginMetadata @24-24
+- class_specifier QuotaManager @25-25
+- class_specifier OriginDirectoryLock @28-54
+- function_definition GetPersistenceType @39-41
+- function_definition OriginMetadata @43-45
+- function_definition (anonymous) @47-47
+
+### dom/quota/OriginInfo.cpp
+
+Blob: `5a703e2532ca60563dc85b994b2e0aa2af7e0d72`. Grammar: cpp. Status: syntax-clean.
+
+- include "OriginInfo.h" @5
+- include "DirtyTrackingAutoLock.h" @7
+- include "GroupInfo.h" @8
+- include "GroupInfoPair.h" @9
+- include "OriginUpserter.h" @10
+- include "mozIStorageConnection.h" @11
+- include "mozIStorageStatement.h" @12
+- include "mozilla/dom/quota/AssertionsImpl.h" @13
+- include "mozilla/dom/quota/QuotaCommon.h" @14
+- include "mozilla/dom/quota/ResultExtensions.h" @15
+- include "mozilla/dom/quota/UsageInfo.h" @16
+- function_definition OriginInfo @33-58
+- function_definition CheckIfUsageIsConsistent @61-63
+- function_definition LockedUsage @66-70
+- function_definition FlattenToOriginMetadata @72-80
+- function_definition LockedFlattenToOriginStateMetadata @82-86
+- function_definition LockedFlattenToFullOriginMetadata @88-93
+- function_definition LockedBindToStatement @95-126
+- function_definition UpdateDirtyMetadata @128-152
+- function_definition LockedDecreaseUsage @154-180
+- function_definition LockedResetUsageForClient @182-204
+- function_definition LockedGetUsageForClient @206-217
+- function_definition LockedPersist @219-230
+- function_definition LockedTruncateUsages @232-261
+- function_definition LockedUpdateUsages @263-327
+- function_definition LockedUpdateUsagesForEviction @329-395
+- function_definition MakeDirty @397-408
+- function_definition LockedDirectoryCreated @410-415
+
+### dom/quota/OriginInfo.h
+
+Blob: `daaf93fb99fac3d8735494b8c8c25251c041670f`. Grammar: cpp. Status: contains-errors.
+
+- include "Assertions.h" @8
+- include "ClientUsageArray.h" @9
+- include "mozilla/ThreadSafeWeakPtr.h" @10
+- include "mozilla/dom/quota/QuotaManager.h" @11
+- class_specifier DirtyTrackingAutoLock @15-15
+- class_specifier CanonicalQuotaObject @17-17
+- class_specifier GroupInfo @18-18
+- class_specifier OriginUpserter @19-19
+- class_specifier OriginInfo @21-201
+- function_definition GetGroupInfo @37-37
+- function_definition (anonymous) @39-39
+- function_definition LockedAccessTime @43-47
+- function_definition LockedMaintenanceDate @49-53
+- function_definition LockedAccessed @55-59
+- function_definition LockedPersisted @61-65
+- function_definition LockedDirty @67-71
+- function_definition IsPrivate @73-73
+- function_definition IsExtensionOrigin @75-75
+- function_definition LockedDirectoryExists @77-81
+- function_definition LockedSetClean @83-86
+- function_definition ~OriginInfo @102-106
+- function_definition LockedUpdateAccessTime @116-125
+- function_definition LockedUpdateMaintenanceDate @127-131
+- function_definition LockedUpdateAccessed @133-140
+- function_definition GetLastModifiedTime @155-155
+- function_definition IsDirty @187-187
+- class_specifier OriginInfoAccessTimeComparator @203-214
+- function_definition Equals @205-208
+- function_definition LessThan @210-213
+
+### dom/quota/OriginOperationBase.cpp
+
+Blob: `8b51392418c8fe16549e9ecdd61186ad507e8431`. Grammar: cpp. Status: contains-errors.
+
+- include "OriginOperationBase.h" @5
+- include "mozilla/Assertions.h" @7
+- include "mozilla/MozPromise.h" @8
+- include "mozilla/StaticPrefs_dom.h" @9
+- include "mozilla/dom/quota/OriginOperationCallbacks.h" @10
+- include "mozilla/dom/quota/QuotaManager.h" @11
+- include "mozilla/dom/quota/ResultExtensions.h" @12
+- include "mozilla/dom/quota/TargetPtrHolder.h" @13
+- include "nsError.h" @14
+- include "nsIThread.h" @15
+- include "nsThreadUtils.h" @16
+- function_definition ResolveOrRejectCallback @23-38
+- function_definition OriginOperationBase @42-53
+- function_definition ~OriginOperationBase @55-55
+- function_definition RunImmediately @57-126
+- function_definition GetCallbacks @128-133
+- function_definition DoInit @135-139
+- function_definition DirectoryOpen @142-146
+
+### dom/quota/OriginOperationBase.h
+
+Blob: `a54ae582917a65975b1c538cbd2e67d238502f6f`. Grammar: cpp. Status: contains-errors.
+
+- include "ErrorList.h" @8
+- include "mozilla/NotNull.h" @9
+- include "mozilla/RefPtr.h" @10
+- include "mozilla/dom/quota/BackgroundThreadObject.h" @11
+- include "mozilla/dom/quota/Config.h" @12
+- include "mozilla/dom/quota/ForwardDecls.h" @13
+- include "mozilla/dom/quota/OriginOperationCallbacks.h" @14
+- include "mozilla/dom/quota/StringifyUtils.h" @15
+- include "nsISupportsImpl.h" @16
+- class_specifier QuotaManager @20-20
+- class_specifier OriginOperationBase @22-67
+- function_definition Name @38-38
+- function_definition DoStringify @66-66
+
+### dom/quota/OriginOperationCallbacks.h
+
+Blob: `d606c37df6ffd8e9c3565ff06a1706b0aa484fad`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/Maybe.h" @8
+- include "mozilla/MozPromise.h" @9
+- include "mozilla/RefPtr.h" @10
+- include "mozilla/dom/quota/ForwardDecls.h" @11
+- struct_specifier OriginOperationCallbackOptions @15-20
+- struct_specifier OriginOperationCallbacks @22-27
+- class_specifier OriginOperationCallbackHolders @29-63
+- function_definition GetCallbacks @37-62
+
+### dom/quota/OriginOperations.cpp
+
+Blob: `175390050cc8c1b8e2e04f5f7c9c8a5da467f43d`. Grammar: cpp. Status: contains-errors.
+
+- include "OriginOperations.h" @5
+- include <algorithm> @7
+- include <cstdint> @8
+- include <utility> @9
+- include "ErrorList.h" @11
+- include "FileUtils.h" @12
+- include "GroupInfo.h" @13
+- include "MainThreadUtils.h" @14
+- include "NormalOriginOperationBase.h" @15
+- include "OriginInfo.h" @16
+- include "OriginOperationBase.h" @17
+- include "OriginParser.h" @18
+- include "QuotaRequestBase.h" @19
+- include "ResolvableNormalOriginOp.h" @20
+- include "mozilla/Assertions.h" @21
+- include "mozilla/Atomics.h" @22
+- include "mozilla/Maybe.h" @23
+- include "mozilla/NotNull.h" @24
+- include "mozilla/ProfilerLabels.h" @25
+- include "mozilla/RefPtr.h" @26
+- include "mozilla/Result.h" @27
+- include "mozilla/ResultExtensions.h" @28
+- include "mozilla/StaticPrefs_dom.h" @29
+- include "mozilla/dom/Nullable.h" @30
+- include "mozilla/dom/quota/AssertionsImpl.h" @31
+- include "mozilla/dom/quota/Client.h" @32
+- include "mozilla/dom/quota/CommonMetadata.h" @33
+- include "mozilla/dom/quota/Constants.h" @34
+- include "mozilla/dom/quota/Date.h" @35
+- include "mozilla/dom/quota/DirectoryLock.h" @36
+- include "mozilla/dom/quota/DirectoryLockInlines.h" @37
+- include "mozilla/dom/quota/OriginDirectoryLock.h" @38
+- include "mozilla/dom/quota/OriginScope.h" @39
+- include "mozilla/dom/quota/PQuota.h" @40
+- include "mozilla/dom/quota/PQuotaRequest.h" @41
+- include "mozilla/dom/quota/PQuotaUsageRequest.h" @42
+- include "mozilla/dom/quota/PersistenceScope.h" @43
+- include "mozilla/dom/quota/PersistenceType.h" @44
+- include "mozilla/dom/quota/PrincipalUtils.h" @45
+- include "mozilla/dom/quota/QuotaCommon.h" @46
+- include "mozilla/dom/quota/QuotaManager.h" @47
+- include "mozilla/dom/quota/QuotaManagerImpl.h" @48
+- include "mozilla/dom/quota/ResultExtensions.h" @49
+- include "mozilla/dom/quota/StreamUtils.h" @50
+- include "mozilla/dom/quota/UniversalDirectoryLock.h" @51
+- include "mozilla/dom/quota/UsageInfo.h" @52
+- include "mozilla/fallible.h" @53
+- include "mozilla/glean/DomQuotaMetrics.h" @54
+- include "mozilla/ipc/BackgroundParent.h" @55
+- include "mozilla/ipc/PBackgroundSharedTypes.h" @56
+- include "nsCOMPtr.h" @57
+- include "nsDebug.h" @58
+- include "nsError.h" @59
+- include "nsHashKeys.h" @60
+- include "nsIBinaryOutputStream.h" @61
+- include "nsIFile.h" @62
+- include "nsIObjectOutputStream.h" @63
+- include "nsIOutputStream.h" @64
+- include "nsLiteralString.h" @65
+- include "nsPrintfCString.h" @66
+- include "nsString.h" @67
+- include "nsTArray.h" @68
+- include "nsTHashMap.h" @69
+- include "prthread.h" @70
+- include "prtime.h" @71
+- function_definition RecordCorruptionUnrecovered @76-82
+- class_specifier OpenStorageDirectoryHelper @88-102
+- function_definition OpenStorageDirectoryHelper @90-92
+- class_specifier FinalizeOriginEvictionOp @104-126
+- function_definition FinalizeOriginEvictionOp @108-114
+- function_definition ~FinalizeOriginEvictionOp @119-119
+- class_specifier SaveOriginAccessTimeOp @128-155
+- function_definition SaveOriginAccessTimeOp @134-143
+- function_definition ~SaveOriginAccessTimeOp @146-146
+- class_specifier ClearPrivateRepositoryOp @157-177
+- function_definition ClearPrivateRepositoryOp @160-165
+- function_definition ~ClearPrivateRepositoryOp @168-168
+- function_definition UnwrapResolveValue @174-174
+- class_specifier ShutdownStorageOp @179-203
+- function_definition ShutdownStorageOp @183-187
+- function_definition ~ShutdownStorageOp @190-190
+- function_definition UnwrapResolveValue @200-200
+- class_specifier CancelableHelper @205-208
+- class_specifier TraverseRepositoryHelper @214-230
+- function_definition TraverseRepositoryHelper @216-216
+- function_definition ~TraverseRepositoryHelper @219-219
+- class_specifier OriginUsageHelper @232-243
+- class_specifier GetUsageOp @245-280
+- function_definition ~GetUsageOp @259-259
+- class_specifier GetOriginUsageOp @282-307
+- function_definition ~GetOriginUsageOp @294-294
+- class_specifier StorageNameOp @309-325
+- function_definition ~StorageNameOp @316-316
+- class_specifier InitializedRequestBase @327-338
+- class_specifier StorageInitializedOp @340-353
+- function_definition StorageInitializedOp @342-345
+- function_definition ~StorageInitializedOp @348-348
+- class_specifier PersistentStorageInitializedOp @355-368
+- function_definition PersistentStorageInitializedOp @357-360
+- function_definition ~PersistentStorageInitializedOp @363-363
+- class_specifier TemporaryStorageInitializedOp @370-383
+- function_definition TemporaryStorageInitializedOp @372-375
+- function_definition ~TemporaryStorageInitializedOp @378-378
+- class_specifier TemporaryGroupInitializedOp @385-405
+- function_definition ~TemporaryGroupInitializedOp @396-396
+- class_specifier InitializedOriginRequestBase @407-420
+- class_specifier PersistentOriginInitializedOp @422-435
+- function_definition ~PersistentOriginInitializedOp @430-430
+- class_specifier TemporaryOriginInitializedOp @437-451
+- function_definition ~TemporaryOriginInitializedOp @446-446
+- class_specifier InitOp @453-470
+- function_definition ~InitOp @461-461
+- class_specifier InitializePersistentStorageOp @472-491
+- function_definition ~InitializePersistentStorageOp @482-482
+- class_specifier InitTemporaryStorageOp @493-512
+- function_definition ~InitTemporaryStorageOp @503-503
+- class_specifier InitializeTemporaryGroupOp @514-533
+- function_definition ~InitializeTemporaryGroupOp @524-524
+- class_specifier InitializeOriginRequestBase @535-550
+- class_specifier InitializePersistentOriginOp @552-565
+- function_definition ~InitializePersistentOriginOp @560-560
+- class_specifier InitializeTemporaryOriginOp @567-583
+- function_definition ~InitializeTemporaryOriginOp @578-578
+- class_specifier InitializeClientBase @585-599
+- class_specifier InitializePersistentClientOp @601-612
+- class_specifier InitializeTemporaryClientOp @614-627
+- class_specifier GetFullOriginMetadataOp @629-650
+- class_specifier GetCachedOriginUsageOp @652-674
+- function_definition ~GetCachedOriginUsageOp @663-663
+- class_specifier ListCachedOriginsOp @676-695
+- function_definition ~ListCachedOriginsOp @686-686
+- class_specifier ClearStorageOp @697-716
+- function_definition ~ClearStorageOp @703-703
+- class_specifier ClearRequestBase @718-803
+- function_definition ClearRequestBase @726-731
+- function_definition DoStringify @747-756
+- function_definition UseCachedTemporaryOrigins @758-765
+- function_definition IsNonActionableFileError @767-802
+- class_specifier ClearOriginOp @805-827
+- function_definition ~ClearOriginOp @816-816
+- class_specifier ClearClientOp @829-858
+- function_definition ~ClearClientOp @845-845
+- class_specifier ClearStoragesForOriginPrefixOp @860-884
+- function_definition ~ClearStoragesForOriginPrefixOp @873-873
+- class_specifier ClearDataOp @886-903
+- function_definition ~ClearDataOp @894-894
+- class_specifier ShutdownOriginOp @905-932
+- function_definition ~ShutdownOriginOp @919-919
+- class_specifier ShutdownClientOp @934-963
+- function_definition ~ShutdownClientOp @950-950
+- class_specifier PersistRequestBase @965-981
+- class_specifier PersistedOp @983-996
+- function_definition ~PersistedOp @991-991
+- class_specifier PersistOp @998-1009
+- function_definition ~PersistOp @1004-1004
+- class_specifier EstimateOp @1013-1039
+- enum_specifier Scope @1015-1015
+- function_definition ~EstimateOp @1028-1028
+- class_specifier ListOriginsOp @1041-1066
+- function_definition ~ListOriginsOp @1051-1051
+- function_definition CreateFinalizeOriginEvictionOp @1068-1073
+- function_definition CreateSaveOriginAccessTimeLock @1075-1084
+- function_definition CreateSaveOriginAccessTimeOp @1086-1092
+- function_definition CreateClearPrivateRepositoryOp @1094-1097
+- function_definition CreateShutdownStorageOp @1099-1102
+- function_definition CreateGetUsageOp @1104-1108
+- function_definition CreateGetOriginUsageOp @1110-1114
+- function_definition CreateStorageNameOp @1116-1119
+- function_definition CreateStorageInitializedOp @1121-1124
+- function_definition CreatePersistentStorageInitializedOp @1126-1129
+- function_definition CreateTemporaryStorageInitializedOp @1131-1134
+- function_definition CreateTemporaryGroupInitializedOp @1136-1141
+- function_definition CreatePersistentOriginInitializedOp @1143-1148
+- function_definition CreateTemporaryOriginInitializedOp @1150-1155
+- function_definition CreateInitOp @1157-1162
+- function_definition CreateInitializePersistentStorageOp @1164-1169
+- function_definition CreateInitTemporaryStorageOp @1171-1176
+- function_definition CreateInitializeTemporaryGroupOp @1178-1184
+- function_definition CreateInitializePersistentOriginOp @1186-1192
+- function_definition CreateInitializeTemporaryOriginOp @1194-1201
+- function_definition CreateInitializePersistentClientOp @1203-1209
+- function_definition CreateInitializeTemporaryClientOp @1211-1218
+- function_definition CreateGetFullOriginMetadataOp @1220-1224
+- function_definition CreateGetCachedOriginUsageOp @1226-1231
+- function_definition CreateListCachedOriginsOp @1233-1236
+- function_definition CreateClearStorageOp @1238-1241
+- function_definition CreateClearOriginOp @1243-1249
+- function_definition CreateClearClientOp @1251-1257
+- function_definition CreateClearStoragesForOriginPrefixOp @1259-1266
+- function_definition CreateClearDataOp @1268-1272
+- function_definition CreateShutdownOriginOp @1274-1280
+- function_definition CreateShutdownClientOp @1282-1289
+- function_definition CreatePersistedOp @1291-1295
+- function_definition CreatePersistOp @1297-1301
+- function_definition CreateEstimateOp @1303-1309
+- function_definition CreateEstimateGroupUsageOp @1311-1317
+- function_definition CreateListOriginsOp @1319-1322
+- function_definition OpenStorageDirectory @1325-1345
+- function_definition Open @1347-1352
+- function_definition DoDirectoryWork @1354-1367
+- function_definition UnblockOpen @1369-1388
+- function_definition OpenDirectory @1390-1396
+- function_definition DoDirectoryWork @1398-1445
+- function_definition UnwrapResolveValue @1447-1447
+- function_definition CloseDirectory @1449-1453
+- function_definition OpenDirectory @1455-1463
+- function_definition DoDirectoryWork @1465-1488
+- function_definition CloseDirectory @1490-1494
+- function_definition OpenDirectory @1496-1505
+- function_definition DirectoryOpen @1508-1514
+- function_definition DoDirectoryWork @1517-1528
+- function_definition CloseDirectory @1530-1534
+- function_definition TraverseRepository @1536-1587
+- function_definition GetUsageForOrigin @1589-1618
+- function_definition GetUsageForOriginEntries @1620-1692
+- function_definition GetUsageOp @1694-1700
+- function_definition ProcessOriginInternal @1702-1746
+- function_definition (anonymous) @1748-1752
+- function_definition ProcessOrigin @1757-1795
+- function_definition QM_TRY_UNWRAP @1762-1783
+- function_definition OpenDirectory @1797-1804
+- function_definition DoDirectoryWork @1806-1835
+- function_definition UnwrapResolveValue @1837-1841
+- function_definition CloseDirectory @1843-1847
+- function_definition GetOriginUsageOp @1849-1856
+- function_definition DoInit @1858-1867
+- function_definition OpenDirectory @1869-1876
+- function_definition (anonymous) @1878-1882
+- function_definition DoDirectoryWork @1884-1906
+- function_definition UnwrapResolveValue @1908-1912
+- function_definition CloseDirectory @1914-1918
+- function_definition StorageNameOp @1920-1923
+- function_definition OpenDirectory @1925-1929
+- function_definition DoDirectoryWork @1931-1939
+- function_definition GetResponse @1941-1949
+- function_definition CloseDirectory @1951-1951
+- function_definition InitializedRequestBase @1953-1958
+- function_definition OpenDirectory @1960-1964
+- function_definition CloseDirectory @1966-1966
+- function_definition DoDirectoryWork @1968-1976
+- function_definition UnwrapResolveValue @1978-1982
+- function_definition DoDirectoryWork @1984-1993
+- function_definition UnwrapResolveValue @1995-1999
+- function_definition DoDirectoryWork @2001-2010
+- function_definition UnwrapResolveValue @2012-2016
+- function_definition TemporaryGroupInitializedOp @2018-2026
+- function_definition OpenDirectory @2028-2032
+- function_definition DoDirectoryWork @2034-2044
+- function_definition UnwrapResolveValue @2046-2050
+- function_definition CloseDirectory @2052-2052
+- function_definition InitializedOriginRequestBase @2054-2061
+- function_definition OpenDirectory @2063-2067
+- function_definition CloseDirectory @2069-2071
+- function_definition PersistentOriginInitializedOp @2073-2081
+- function_definition DoDirectoryWork @2083-2093
+- function_definition UnwrapResolveValue @2095-2099
+- function_definition TemporaryOriginInitializedOp @2101-2110
+- function_definition DoDirectoryWork @2112-2122
+- function_definition UnwrapResolveValue @2124-2128
+- function_definition InitOp @2130-2136
+- function_definition OpenDirectory @2138-2143
+- function_definition DoDirectoryWork @2145-2156
+- function_definition UnwrapResolveValue @2158-2158
+- function_definition CloseDirectory @2160-2164
+- function_definition InitializePersistentStorageOp @2166-2173
+- function_definition OpenDirectory @2175-2180
+- function_definition DoDirectoryWork @2182-2198
+- function_definition UnwrapResolveValue @2200-2204
+- function_definition CloseDirectory @2206-2210
+- function_definition InitTemporaryStorageOp @2212-2219
+- function_definition OpenDirectory @2221-2226
+- function_definition DoDirectoryWork @2228-2250
+- function_definition UnwrapResolveValue @2252-2256
+- function_definition CloseDirectory @2258-2262
+- function_definition InitializeTemporaryGroupOp @2264-2273
+- function_definition OpenDirectory @2275-2280
+- function_definition DoDirectoryWork @2282-2298
+- function_definition UnwrapResolveValue @2300-2304
+- function_definition CloseDirectory @2306-2310
+- function_definition InitializeOriginRequestBase @2312-2321
+- function_definition OpenDirectory @2323-2328
+- function_definition CloseDirectory @2330-2334
+- function_definition InitializePersistentOriginOp @2336-2345
+- function_definition DoDirectoryWork @2347-2364
+- function_definition UnwrapResolveValue @2366-2370
+- function_definition InitializeTemporaryOriginOp @2372-2383
+- function_definition DoDirectoryWork @2385-2405
+- function_definition UnwrapResolveValue @2407-2411
+- function_definition InitializeClientBase @2413-2422
+- function_definition OpenDirectory @2424-2429
+- function_definition CloseDirectory @2431-2435
+- function_definition InitializePersistentClientOp @2437-2445
+- function_definition DoDirectoryWork @2447-2466
+- function_definition UnwrapResolveValue @2468-2472
+- function_definition InitializeTemporaryClientOp @2474-2483
+- function_definition DoDirectoryWork @2485-2516
+- function_definition UnwrapResolveValue @2518-2522
+- function_definition GetFullOriginMetadataOp @2524-2531
+- function_definition DoInit @2533-2545
+- function_definition OpenDirectory @2547-2556
+- function_definition DoDirectoryWork @2558-2570
+- function_definition GetResponse @2572-2578
+- function_definition CloseDirectory @2580-2584
+- function_definition GetCachedOriginUsageOp @2586-2594
+- function_definition DoInit @2596-2605
+- function_definition OpenDirectory @2607-2617
+- function_definition DoDirectoryWork @2619-2635
+- function_definition UnwrapResolveValue @2637-2641
+- function_definition CloseDirectory @2643-2647
+- function_definition ListCachedOriginsOp @2649-2654
+- function_definition OpenDirectory @2656-2663
+- function_definition DoDirectoryWork @2665-2687
+- function_definition UnwrapResolveValue @2689-2694
+- function_definition CloseDirectory @2696-2700
+- function_definition ClearStorageOp @2702-2707
+- function_definition DeleteFiles @2709-2732
+- function_definition DeleteStorageFile @2734-2750
+- function_definition OpenDirectory @2752-2760
+- function_definition DoDirectoryWork @2762-2777
+- function_definition UnwrapResolveValue @2779-2783
+- function_definition CloseDirectory @2785-2789
+- function_definition DeleteFiles @2791-2807
+- function_definition DeleteFiles @2809-2878
+- function_definition DeleteFilesInternal @2881-3089
+- function_definition ClearOriginOp @3091-3101
+- function_definition DoInit @3103-3112
+- function_definition OpenDirectory @3114-3121
+- function_definition DoDirectoryWork @3123-3141
+- function_definition UnwrapResolveValue @3143-3147
+- function_definition CloseDirectory @3149-3153
+- function_definition ClearClientOp @3155-3167
+- function_definition DoInit @3169-3178
+- function_definition OpenDirectory @3180-3187
+- function_definition DeleteFiles @3189-3233
+- function_definition DoDirectoryWork @3235-3255
+- function_definition UnwrapResolveValue @3257-3261
+- function_definition CloseDirectory @3263-3267
+- function_definition ClearStoragesForOriginPrefixOp @3269-3280
+- function_definition DoInit @3282-3291
+- function_definition OpenDirectory @3293-3300
+- function_definition DoDirectoryWork @3302-3321
+- function_definition UnwrapResolveValue @3323-3327
+- function_definition CloseDirectory @3329-3333
+- function_definition ClearDataOp @3335-3338
+- function_definition OpenDirectory @3340-3347
+- function_definition DoDirectoryWork @3349-3377
+- function_definition UnwrapResolveValue @3379-3383
+- function_definition CloseDirectory @3385-3389
+- function_definition ShutdownOriginOp @3391-3402
+- function_definition DoInit @3404-3413
+- function_definition OpenDirectory @3415-3424
+- function_definition CollectOriginMetadata @3426-3445
+- function_definition DoDirectoryWork @3447-3464
+- function_definition UnwrapResolveValue @3466-3470
+- function_definition CloseDirectory @3472-3476
+- function_definition ShutdownClientOp @3478-3490
+- function_definition DoInit @3492-3501
+- function_definition OpenDirectory @3503-3512
+- function_definition CollectOriginMetadata @3514-3532
+- function_definition DoDirectoryWork @3534-3553
+- function_definition UnwrapResolveValue @3555-3559
+- function_definition CloseDirectory @3561-3565
+- function_definition PersistRequestBase @3567-3574
+- function_definition DoInit @3576-3586
+- function_definition OpenDirectory @3588-3596
+- function_definition CloseDirectory @3598-3602
+- function_definition PersistedOp @3604-3610
+- function_definition DoDirectoryWork @3612-3649
+- function_definition GetResponse @3651-3658
+- function_definition PersistOp @3660-3665
+- function_definition DoDirectoryWork @3667-3792
+- function_definition QM_TRY_UNWRAP @3752-3788
+- function_definition GetResponse @3794-3798
+- function_definition EstimateOp @3800-3807
+- function_definition DoInit @3809-3821
+- function_definition OpenDirectory @3823-3834
+- function_definition DoDirectoryWork @3836-3849
+- function_definition GetResponse @3851-3860
+- function_definition CloseDirectory @3862-3866
+- function_definition ListOriginsOp @3868-3872
+- function_definition OpenDirectory @3874-3881
+- function_definition DoDirectoryWork @3883-3902
+- function_definition (anonymous) @3904-3908
+- function_definition ProcessOrigin @3910-3948
+- function_definition QM_TRY_UNWRAP @3916-3937
+- function_definition UnwrapResolveValue @3950-3955
+- function_definition CloseDirectory @3957-3961
+
+### dom/quota/OriginOperations.h
+
+Blob: `8ac2b92b68100c10673df7efc330b3bdd80d8bb2`. Grammar: cpp. Status: syntax-clean.
+
+- include <cstdint> @8
+- include "mozilla/dom/quota/Client.h" @10
+- include "mozilla/dom/quota/PersistenceType.h" @11
+- include "nsTArrayForwardDeclare.h" @12
+- class_specifier RefPtr @15-15
+- class_specifier Maybe @20-20
+- class_specifier MovingNotNull @22-22
+- class_specifier OriginAttributesPattern @23-23
+- struct_specifier ClientMetadata @27-27
+- class_specifier EstimateGroupUsageParams @28-28
+- class_specifier EstimateParams @29-29
+- class_specifier GetFullOriginMetadataParams @30-30
+- class_specifier NormalOriginOperationBase @31-31
+- class_specifier OriginDirectoryLock @32-32
+- struct_specifier OriginMetadata @33-33
+- class_specifier OriginOperationBase @34-34
+- class_specifier QuotaManager @35-35
+- class_specifier QuotaRequestBase @36-36
+- class_specifier QuotaUsageRequestBase @37-37
+- class_specifier RequestParams @38-38
+- class_specifier ResolvableNormalOriginOp @40-40
+- class_specifier UniversalDirectoryLock @41-41
+- class_specifier UsageRequestParams @42-42
+
+### dom/quota/OriginParser.cpp
+
+Blob: `48cd3d7177b68bb78c5cce4c7d0831fdead443e0`. Grammar: cpp. Status: syntax-clean.
+
+- include "OriginParser.h" @5
+- include <regex> @7
+- include "mozilla/OriginAttributes.h" @9
+- include "mozilla/dom/quota/Constants.h" @10
+- include "mozilla/dom/quota/QuotaCommon.h" @11
+- function_definition ParseOrigin @16-43
+- function_definition Parse @45-122
+- function_definition HandleScheme @124-165
+- function_definition HandlePathnameComponent @167-178
+- function_definition HandleToken @180-458
+- function_definition HandleTrailingSeparator @460-467
+- function_definition IsUUIDOrigin @469-479
+- function_definition IsUserContextSuffix @481-485
+- function_definition IsUserContextPattern @487-496
+
+### dom/quota/OriginParser.h
+
+Blob: `a8f93755a1e864a2add351d0537a3f755e73d650`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/Attributes.h" @8
+- include "mozilla/dom/Nullable.h" @9
+- include "nsCharSeparatedTokenizer.h" @10
+- include "nsString.h" @11
+- include "nsTArray.h" @12
+- class_specifier OriginAttributes @16-16
+- class_specifier OriginAttributesPattern @17-17
+- function_definition OriginParser @21-99
+- class_specifier MOZ_STACK_CLASS @21-21
+- enum_specifier ResultType @23-23
+- enum_specifier SchemeType @29-29
+- enum_specifier State @31-54
+
+### dom/quota/OriginScope.h
+
+Blob: `c8e393d2b5a9b7899019d92e9ba3cad265569bd4`. Grammar: cpp. Status: syntax-clean.
+
+- include <utility> @8
+- include "mozilla/Assertions.h" @10
+- include "mozilla/OriginAttributes.h" @11
+- include "mozilla/UniquePtr.h" @12
+- include "mozilla/Variant.h" @13
+- include "mozilla/dom/quota/CommonMetadata.h" @14
+- include "nsStringFlags.h" @15
+- include "nsStringFwd.h" @16
+- class_specifier OriginScope @20-413
+- class_specifier Origin @21-64
+- function_definition Origin @27-30
+- function_definition Origin @32-35
+- function_definition Origin @37-37
+- function_definition operator== @39-39
+- function_definition (anonymous) @41-43
+- function_definition (anonymous) @45-45
+- function_definition (anonymous) @47-47
+- function_definition (anonymous) @49-49
+- function_definition (anonymous) @51-55
+- function_definition InitMembers @58-63
+- class_specifier Prefix @66-79
+- function_definition Prefix @72-74
+- function_definition (anonymous) @76-76
+- function_definition (anonymous) @78-78
+- class_specifier Group @81-112
+- function_definition Group @87-87
+- function_definition Group @89-92
+- function_definition Group @94-94
+- function_definition (anonymous) @96-96
+- function_definition (anonymous) @98-98
+- function_definition (anonymous) @100-104
+- function_definition InitMembers @107-111
+- class_specifier Pattern @114-145
+- function_definition Pattern @118-119
+- function_definition Pattern @121-124
+- function_definition Pattern @126-127
+- function_definition Pattern @129-129
+- function_definition (anonymous) @131-135
+- function_definition GetJSONPattern @137-144
+- struct_specifier Null @147-147
+- function_definition OriginScope @154-154
+- function_definition FromOrigin @157-159
+- function_definition FromPrefix @161-163
+- function_definition FromGroup @165-167
+- function_definition FromPattern @169-171
+- function_definition FromJSONPattern @173-175
+- function_definition FromNull @177-177
+- function_definition IsOrigin @179-179
+- function_definition IsPrefix @181-181
+- function_definition IsPattern @183-183
+- function_definition IsNull @185-185
+- function_definition SetFromOrigin @187-189
+- function_definition SetFromPrefix @191-193
+- function_definition SetFromPattern @195-197
+- function_definition SetFromJSONPattern @199-201
+- function_definition SetFromNull @203-203
+- function_definition (anonymous) @205-209
+- function_definition (anonymous) @211-215
+- function_definition (anonymous) @217-224
+- function_definition (anonymous) @226-230
+- function_definition GetJSONPattern @232-236
+- function_definition Matches @238-264
+- struct_specifier Matcher @239-261
+- function_definition Matcher @242-242
+- function_definition operator() @244-246
+- function_definition operator() @248-250
+- function_definition operator() @252-254
+- function_definition operator() @256-258
+- function_definition operator() @260-260
+- function_definition Clone @266-266
+- function_definition OriginScope @270-270
+- function_definition OriginScope @272-272
+- function_definition OriginScope @274-274
+- function_definition OriginScope @276-276
+- function_definition OriginScope @278-278
+- function_definition OriginScope @281-281
+- function_definition MatchesOrigin @283-312
+- struct_specifier OriginMatcher @284-309
+- function_definition OriginMatcher @287-287
+- function_definition operator() @289-291
+- function_definition operator() @293-295
+- function_definition operator() @297-299
+- function_definition operator() @301-303
+- function_definition operator() @305-308
+- function_definition MatchesPrefix @314-346
+- struct_specifier PrefixMatcher @315-343
+- function_definition PrefixMatcher @318-318
+- function_definition operator() @320-322
+- function_definition operator() @324-326
+- function_definition operator() @328-330
+- function_definition operator() @332-337
+- function_definition operator() @339-342
+- function_definition MatchesGroup @348-377
+- struct_specifier GroupMatcher @349-374
+- function_definition GroupMatcher @352-352
+- function_definition operator() @354-356
+- function_definition operator() @358-360
+- function_definition operator() @362-364
+- function_definition operator() @366-368
+- function_definition operator() @370-373
+- function_definition MatchesPattern @379-412
+- struct_specifier PatternMatcher @380-408
+- function_definition PatternMatcher @383-383
+- function_definition operator() @385-387
+- function_definition operator() @389-394
+- function_definition operator() @396-398
+- function_definition operator() @400-402
+- function_definition operator() @404-407
+
+### dom/quota/OriginUpserter.cpp
+
+Blob: `21cc85800ae35693def300d4fde7f49f1f31d1e7`. Grammar: cpp. Status: contains-errors.
+
+- include "OriginUpserter.h" @7
+- include "OriginInfo.h" @9
+- include "mozIStorageConnection.h" @10
+- include "mozIStorageStatement.h" @11
+- include "mozilla/dom/quota/QuotaCommon.h" @12
+- include "mozilla/dom/quota/ResultExtensions.h" @13
+- include "nsISupportsImpl.h" @14
+- function_definition OriginUpserter @20-22
+- function_definition Refresh @24-36
+- function_definition Reset @38-84
+
+### dom/quota/OriginUpserter.h
+
+Blob: `cb3f28a8975fad4b6bd528ca7c50d50c5f56dde9`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/Result.h" @10
+- include "nsCOMPtr.h" @11
+- class_specifier mozIStorageConnection @13-13
+- class_specifier mozIStorageStatement @14-14
+- struct_specifier FullOriginMetadata @18-18
+- class_specifier OriginInfo @19-19
+- class_specifier OriginUpserter @21-39
+- function_definition OriginUpserter @23-25
+- function_definition ~OriginUpserter @32-32
+
+### dom/quota/PersistenceScope.cpp
+
+Blob: `4ed886416ec689cf814c418a6a67e5bcbe0618c6`. Grammar: cpp. Status: syntax-clean.
+
+- include "PersistenceScope.h" @5
+- function_definition MatchesPersistentPersistenceScope @9-15
+- function_definition MatchesBestEffortPersistenceScope @17-24
+
+### dom/quota/PersistenceScope.h
+
+Blob: `402bb254cba3fe9f727eeca999ff437acf8ff258`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/Assertions.h" @8
+- include "mozilla/EnumSet.h" @9
+- include "mozilla/Variant.h" @10
+- include "mozilla/dom/quota/PersistenceType.h" @11
+- class_specifier PersistenceScope @15-162
+- class_specifier Value @16-23
+- function_definition Value @20-20
+- function_definition GetValue @22-22
+- class_specifier Set @25-32
+- function_definition Set @29-29
+- function_definition (anonymous) @31-31
+- struct_specifier Null @34-34
+- function_definition PersistenceScope @41-41
+- function_definition operator== @43-43
+- function_definition CreateFromValue @46-48
+- function_definition CreateFromSet @51-53
+- function_definition CreateFromNull @55-57
+- function_definition IsValue @59-59
+- function_definition IsSet @61-61
+- function_definition IsNull @63-63
+- function_definition SetFromValue @65-67
+- function_definition SetFromNull @69-69
+- function_definition GetValue @71-75
+- function_definition (anonymous) @77-81
+- function_definition Matches @83-99
+- struct_specifier Matcher @84-96
+- function_definition Matcher @87-87
+- function_definition operator() @89-91
+- function_definition operator() @93-93
+- function_definition operator() @95-95
+- function_definition PersistenceScope @103-103
+- function_definition PersistenceScope @105-105
+- function_definition PersistenceScope @107-107
+- function_definition PersistenceScope @110-110
+- function_definition MatchesValue @112-133
+- struct_specifier ValueMatcher @113-130
+- function_definition ValueMatcher @116-116
+- function_definition operator() @118-120
+- function_definition operator() @122-124
+- function_definition operator() @126-129
+- function_definition MatchesSet @135-161
+- struct_specifier SetMatcher @136-158
+- function_definition SetMatcher @139-139
+- function_definition operator() @141-143
+- function_definition operator() @145-152
+- function_definition operator() @154-157
+
+### dom/quota/PersistenceType.cpp
+
+Blob: `1bdbbbfed52fd05914713e1c21ca0e388110fdd9`. Grammar: cpp. Status: syntax-clean.
+
+- include "PersistenceType.h" @5
+- include "nsIFile.h" @7
+- include "nsLiteralString.h" @8
+- include "nsString.h" @9
+- struct_specifier PersistenceTypeTraits @33-33
+- struct_specifier PersistenceTypeTraits<PERSISTENCE_TYPE_PERSISTENT> @36-51
+- function_definition From @40-42
+- function_definition From @44-44
+- function_definition From @46-50
+- function_definition To<nsLiteralCString> @54-57
+- struct_specifier PersistenceTypeTraits<PERSISTENCE_TYPE_TEMPORARY> @60-75
+- function_definition From @64-66
+- function_definition From @68-68
+- function_definition From @70-74
+- function_definition To<nsLiteralCString> @78-81
+- struct_specifier PersistenceTypeTraits<PERSISTENCE_TYPE_DEFAULT> @84-99
+- function_definition From @88-90
+- function_definition From @92-92
+- function_definition From @94-98
+- function_definition To<nsLiteralCString> @102-105
+- struct_specifier PersistenceTypeTraits<PERSISTENCE_TYPE_PRIVATE> @108-123
+- function_definition From @112-114
+- function_definition From @116-116
+- function_definition From @118-122
+- function_definition To<nsLiteralCString> @126-129
+- function_definition TypeTo_impl @132-149
+- function_definition TypeFrom_impl @152-170
+- function_definition BadPersistenceType @172-172
+- function_definition IsTemporaryPersistenceType @176-180
+- function_definition IsValidPersistenceType @182-193
+- function_definition IsBestEffortPersistenceType @195-207
+- function_definition PersistenceTypeToString @209-216
+- function_definition PersistenceTypeFromString @218-221
+- function_definition PersistenceTypeFromString @223-229
+- function_definition PersistenceTypeFromInt32 @231-234
+- function_definition PersistenceTypeFromFile @236-239
+- function_definition ComplementaryPersistenceTypes @241-256
+
+### dom/quota/PersistenceType.h
+
+Blob: `24f6e539d18f4ea181c6cdc6e6c1ad41cb17b353`. Grammar: cpp. Status: syntax-clean.
+
+- include <array> @8
+- include <cstdint> @9
+- include "mozilla/Maybe.h" @11
+- include "mozilla/fallible.h" @12
+- include "nsStringFwd.h" @13
+- class_specifier nsIFile @15-15
+- enum_specifier PersistenceType @19-27
+
+### dom/quota/PrincipalUtils.cpp
+
+Blob: `85e8755fb70cfb96c01798ed30ba5bcdce81436d`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/dom/quota/PrincipalUtils.h" @5
+- include "OriginParser.h" @7
+- include "mozilla/SystemPrincipal.h" @8
+- include "mozilla/dom/quota/CommonMetadata.h" @9
+- include "mozilla/dom/quota/Constants.h" @10
+- include "mozilla/dom/quota/QuotaCommon.h" @11
+- include "mozilla/dom/quota/QuotaManager.h" @12
+- include "mozilla/dom/quota/ResultExtensions.h" @13
+- include "mozilla/ipc/PBackgroundSharedTypes.h" @14
+- include "nsIScriptObjectPrincipal.h" @15
+- include "nsNetUtil.h" @16
+- include "nsPIDOMWindow.h" @17
+- function_definition IsPrincipalInfoValid @23-93
+- function_definition GetInfoFromValidatedPrincipalInfo @95-153
+- function_definition GetGroupFromValidatedPrincipalInfo @155-179
+- function_definition GetOriginFromValidatedPrincipalInfo @181-205
+- function_definition GetInfoFromPrincipal @207-243
+- function_definition GetInfoFromWindow @245-257
+- function_definition GetOriginFromPrincipal @259-282
+- function_definition GetOriginFromWindow @284-296
+- function_definition GetInfoForChrome @298-304
+- function_definition GetGroupForChrome @306-306
+- function_definition GetOriginForChrome @308-310
+
+### dom/quota/PrincipalUtils.h
+
+Blob: `139379c0849f81660c181b9c5864d63330bb852c`. Grammar: cpp. Status: syntax-clean.
+
+- include <cstdint> @8
+- include "nsStringFwd.h" @10
+- class_specifier nsIPrincipal @12-12
+- class_specifier nsPIDOMWindowOuter @13-13
+- enum_specifier nsresult @14-14
+- class_specifier Result @19-19
+- class_specifier PrincipalInfo @25-25
+- struct_specifier PrincipalMetadata @31-31
+- class_specifier QuotaManager @32-32
+
+### dom/quota/PromiseUtils.cpp
+
+Blob: `1b223c7760b0eea258d9e737d53cbcf9d330883c`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/dom/quota/PromiseUtils.h" @5
+- include "MainThreadUtils.h" @7
+- include "jsapi.h" @8
+- include "mozilla/Assertions.h" @9
+- include "mozilla/ErrorResult.h" @10
+- include "mozilla/RefPtr.h" @11
+- include "mozilla/dom/Promise.h" @12
+- include "nsDebug.h" @13
+- include "xpcpublic.h" @14
+- function_definition CreatePromise @18-36
+
+### dom/quota/PromiseUtils.h
+
+Blob: `78c5c2a2ac8b4c8270576946e9e05074ba766b36`. Grammar: cpp. Status: syntax-clean.
+
+- include "ErrorList.h" @8
+- include "jstypes.h" @9
+- struct_specifier JS_PUBLIC_API @11-11
+- class_specifier Promise @14-14
+
+### dom/quota/QMResult.cpp
+
+Blob: `5263bf7c714d85593836081803643d62a3e1727f`. Grammar: cpp. Status: syntax-clean.
+
+- include "QMResult.h" @5
+- include "mozilla/Atomics.h" @8
+- function_definition QMResult @20-21
+
+### dom/quota/QMResult.h
+
+Blob: `f6c0a741fa3b1cbe22aa5e050929ad0ec455b8d9`. Grammar: cpp. Status: syntax-clean.
+
+- include "ErrorList.h" @8
+- include "mozilla/dom/quota/Config.h" @9
+- include "mozilla/dom/quota/ForwardDecls.h" @10
+- class_specifier QMResult @20-49
+- function_definition QMResult @26-26
+- function_definition StackId @30-30
+- function_definition FrameId @32-32
+- function_definition NSResult @34-34
+- function_definition Propagate @42-44
+- function_definition QMResult @47-48
+- function_definition ToQMResult @52-52
+
+### dom/quota/QuotaCommon.cpp
+
+Blob: `9ed0728334aad61ae57d874fd03da3c826799e0e`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/dom/quota/QuotaCommon.h" @5
+- include "base/process_util.h" @8
+- include "mozIStorageConnection.h" @10
+- include "mozIStorageStatement.h" @11
+- include "mozilla/ErrorNames.h" @12
+- include "mozilla/Logging.h" @13
+- include "mozilla/MozPromise.h" @14
+- include "mozilla/SourcePathLiteral.h" @15
+- include "mozilla/TextUtils.h" @16
+- include "mozilla/dom/quota/ResultExtensions.h" @17
+- include "mozilla/dom/quota/ScopedLogExtraInfo.h" @18
+- include "mozilla/glean/DomQuotaMetrics.h" @19
+- include "nsIConsoleService.h" @20
+- include "nsIFile.h" @21
+- include "nsServiceManagerUtils.h" @22
+- include "nsStringFlags.h" @23
+- include "nsTStringRepr.h" @24
+- include "nsUnicharUtils.h" @25
+- include "nsXPCOM.h" @26
+- include "nsXULAppAPI.h" @27
+- include "mozilla/Atomics.h" @30
+- include "mozilla/StaticPrefs_dom.h" @31
+- include "mozilla/ipc/BackgroundParent.h" @32
+- include "nsILocalFileWin.h" @33
+- function_definition CreateAndRejectBoolPromise @38-41
+- function_definition CreateAndRejectInt64Promise @43-46
+- function_definition CreateAndRejectBoolPromiseFromQMResult @48-51
+- function_definition AnonymizeCString @70-88
+- function_definition GetQuotaManagerLogger @99-99
+- function_definition AnonymizeCString @101-106
+- function_definition AnonymizeOriginString @108-119
+- function_definition CacheUseDOSDevicePathSyntaxPrefValue @122-131
+- function_definition QM_NewLocalFile @134-158
+- function_definition QM_TRY_UNWRAP @135-141
+- function_definition GetLeafName @160-173
+- function_definition CloneFileAndAppend @175-183
+- function_definition GetDirEntryKind @185-203
+- function_definition CreateStatement @205-210
+- function_definition ExecuteSingleStep @213-226
+- function_definition CreateAndExecuteSingleStepStatement @239-247
+- function_definition GetTreeBase @265-269
+- function_definition GetSourceTreeBase @271-276
+- function_definition GetObjdirDistIncludeTreeBase @278-284
+- function_definition StripRelativeComponents @291-305
+- function_definition MapDistIncludePathToSource @307-335
+- function_definition MakeSourceFileRelativePath @337-387
+- function_definition LogError @397-665
+- function_definition WarnIfFileIsUnknown @669-710
+- function_definition DatabasePassesIntegrityCheck @713-728
+
+### dom/quota/QuotaCommon.h
+
+Blob: `65c9b44a16d295826f41eb3ccc935dafdc2979d6`. Grammar: cpp. Status: contains-errors.
+
+- include <algorithm> @8
+- include <cstddef> @9
+- include <cstdint> @10
+- include <type_traits> @11
+- include <utility> @12
+- include "mozIStorageStatement.h" @14
+- include "mozilla/Assertions.h" @15
+- include "mozilla/Atomics.h" @16
+- include "mozilla/Attributes.h" @17
+- include "mozilla/GeckoTrace.h" @18
+- include "mozilla/Likely.h" @19
+- include "mozilla/MacroArgs.h" @20
+- include "mozilla/Maybe.h" @21
+- include "mozilla/ResultExtensions.h" @22
+- include "mozilla/StaticString.h" @23
+- include "mozilla/Try.h" @24
+- include "mozilla/dom/quota/Config.h" @25
+- include "mozilla/Variant.h" @27
+- include "mozilla/dom/QMResult.h" @29
+- include "mozilla/dom/quota/FirstInitializationAttemptsImpl.h" @30
+- include "mozilla/dom/quota/RemoveParen.h" @31
+- include "mozilla/dom/quota/ScopedLogExtraInfo.h" @32
+- include "mozilla/ipc/ProtocolUtils.h" @33
+- include "nsCOMPtr.h" @34
+- include "nsDebug.h" @35
+- include "nsError.h" @36
+- include "nsIDirectoryEnumerator.h" @37
+- include "nsIEventTarget.h" @38
+- include "nsIFile.h" @39
+- include "nsLiteralString.h" @40
+- include "nsPrintfCString.h" @41
+- include "nsReadableUtils.h" @42
+- include "nsString.h" @43
+- include "nsTArray.h" @44
+- include "nsTLiteralString.h" @45
+- class_specifier NotNull @49-49
+- struct_specifier IpcFailCustomRetVal @437-449
+- function_definition IpcFailCustomRetVal @438-440
+- function_definition operator() @443-446
+- function_definition OrElseIf @988-994
+- class_specifier mozIStorageConnection @1072-1072
+- class_specifier mozIStorageStatement @1073-1073
+- class_specifier nsIFile @1074-1074
+- class_specifier LogModule @1078-1078
+- struct_specifier CreateIfNonExistent @1080-1080
+- struct_specifier NotOk @1082-1082
+- function_definition OkIf @1086-1091
+- function_definition OkToOk @1095-1097
+- function_definition ErrToOkOrErr @1101-1106
+- function_definition ErrToDefaultOkOrErr @1109-1114
+- function_definition IsSpecificError @1120-1122
+- function_definition IsSpecificError @1126-1128
+- function_definition ErrToOk @1139-1141
+- function_definition ErrToOkFromQMResult @1144-1146
+- function_definition ErrToDefaultOk @1152-1154
+- function_definition CreateAndRejectMozPromise @1157-1164
+- function_definition CollectEach @1186-1205
+- function_definition ReduceEach @1212-1229
+- function_definition Reduce @1235-1246
+- function_definition CollectEachInRange @1249-1256
+- function_definition CollectWhile @1269-1272
+- class_specifier GenericErrorResult<mozilla::ipc::IPCResult> @1275-1292
+- function_definition GenericErrorResult @1282-1285
+- function_definition GenericErrorResult @1287-1289
+- function_definition (anonymous) @1291-1291
+- function_definition AnonymizedCString @1315-1319
+- function_definition AnonymizedOriginString @1323-1327
+- enum_specifier nsIFileKind @1340-1344
+- enum_specifier SingleStepResult @1353-1353
+- enum_specifier Severity @1403-1408
+- function_definition HandleError @1444-1469
+- function_definition HandleError @1472-1475
+- function_definition HandleErrorReturnNothing @1479-1485
+- function_definition HandleErrorWithCleanupReturnNothing @1488-1496
+- struct_specifier invokabilize_impl @1503-1505
+- function_definition operator() @1504-1504
+- struct_specifier invokabilize_impl<R (&)(Args...)> @1508-1512
+- function_definition operator() @1509-1511
+- struct_specifier invokabilize_impl<R (*)(Args...)> @1515-1519
+- function_definition operator() @1516-1518
+- function_definition invokabilize @1522-1524
+- function_definition HandleCustomRetVal @1529-1552
+- function_definition CreateAndExecuteSingleStepStatement @1556-1565
+- function_definition CollectWhileHasResult @1568-1575
+- function_definition CollectElementsWhileHasResult @1580-1593
+- function_definition CollectElementsWhileHasResultTyped @1596-1600
+- function_definition CollectEachFile @1604-1623
+- function_definition CollectEachFile @1627-1630
+- function_definition CollectEachFileAtomicCancelable @1633-1637
+- function_definition ReduceEachFileAtomicCancelable @1640-1657
+- function_definition IsDatabaseCorruptionError @1659-1662
+- enum_specifier IntegrityCheckMode @1664-1664
+- function_definition CallWithDelayedRetriesIfAccessDenied @1675-1700
+- function_definition UnsupportedReturnType @1705-1707
+- function_definition ExecuteInitialization @1712-1754
+- function_definition ExecuteInitialization @1757-1778
+
+### dom/quota/QuotaManager.h
+
+Blob: `a0cbab2e5ffabcd7afc059efe30548cacaf04f1b`. Grammar: cpp. Status: contains-errors.
+
+- include <cstdint> @8
+- include <utility> @9
+- include "Client.h" @11
+- include "ErrorList.h" @12
+- include "PLDHashTable.h" @13
+- include "mozilla/AlreadyAddRefed.h" @14
+- include "mozilla/Assertions.h" @15
+- include "mozilla/InitializedOnce.h" @16
+- include "mozilla/MozPromise.h" @17
+- include "mozilla/Mutex.h" @18
+- include "mozilla/RefPtr.h" @19
+- include "mozilla/Result.h" @20
+- include "mozilla/ThreadBound.h" @21
+- include "mozilla/dom/Nullable.h" @22
+- include "mozilla/dom/UnboundedMPSCQueue.h" @23
+- include "mozilla/dom/ipc/IdType.h" @24
+- include "mozilla/dom/quota/Assertions.h" @25
+- include "mozilla/dom/quota/BackgroundThreadObject.h" @26
+- include "mozilla/dom/quota/CommonMetadata.h" @27
+- include "mozilla/dom/quota/DirectoryLockCategory.h" @28
+- include "mozilla/dom/quota/ForwardDecls.h" @29
+- include "mozilla/dom/quota/HashKeys.h" @30
+- include "mozilla/dom/quota/InitializationTypes.h" @31
+- include "mozilla/dom/quota/NotifyUtils.h" @32
+- include "mozilla/dom/quota/OpenClientDirectoryInfo.h" @33
+- include "mozilla/dom/quota/OriginOperationCallbacks.h" @34
+- include "mozilla/dom/quota/PersistenceType.h" @35
+- include "nsCOMPtr.h" @36
+- include "nsClassHashtable.h" @37
+- include "nsDebug.h" @38
+- include "nsHashKeys.h" @39
+- include "nsISupports.h" @40
+- include "nsStringFwd.h" @41
+- include "nsTArray.h" @42
+- include "nsTHashMap.h" @43
+- include "nsTStringRepr.h" @44
+- include "nscore.h" @45
+- include "prenv.h" @46
+- class_specifier mozIStorageConnection @50-50
+- class_specifier nsIEventTarget @51-51
+- class_specifier nsIFile @52-52
+- class_specifier nsIRunnable @53-53
+- class_specifier nsIThread @54-54
+- class_specifier nsITimer @55-55
+- class_specifier OriginAttributes @59-59
+- class_specifier OriginAttributesPattern @60-60
+- class_specifier PrincipalInfo @64-64
+- class_specifier CanonicalQuotaObject @72-72
+- class_specifier ClearDataOp @73-73
+- class_specifier ClearRequestBase @74-74
+- class_specifier ClientStorageScope @75-75
+- class_specifier ClientUsageArray @76-76
+- class_specifier ClientDirectoryLock @77-77
+- class_specifier ClientDirectoryLockHandle @78-78
+- class_specifier DirectoryLockImpl @79-79
+- class_specifier DirtyTrackingAutoLock @80-80
+- class_specifier GroupInfo @81-81
+- class_specifier GroupInfoPair @82-82
+- class_specifier NormalOriginOperationBase @83-83
+- class_specifier OriginCacheMap @84-84
+- class_specifier OriginDirectoryLock @85-85
+- class_specifier OriginInfo @86-86
+- class_specifier OriginScope @87-87
+- class_specifier OriginUpserter @88-88
+- class_specifier QuotaObject @89-89
+- class_specifier SaveOriginAccessTimeOp @90-90
+- class_specifier UniversalDirectoryLock @91-91
+- class_specifier GTEST_CLASS @94-94
+- class_specifier QuotaManager @98-431
+- class_specifier test::GTEST_CLASS @119-119
+- class_specifier Observer @130-130
+- function_definition IsRunningXPCShellTests @142-146
+- function_definition IsRunningGTests @148-151
+- function_definition IsPersistentOriginInitializedInternal @195-199
+- function_definition IsTemporaryStorageInitializedInternal @201-205
+- function_definition RemoveQuotaForRepository @249-252
+- function_definition RemoveQuotaForOrigin @254-258
+- function_definition IsStorageInitialized @415-419
+- function_definition IsStorageInitializedInternal @421-424
+- function_definition IsPersistentStorageInitialized @453-457
+- function_definition IsPersistentStorageInitializedInternal @459-463
+- function_definition IsTemporaryStorageInitialized @569-573
+- function_definition StartIdleMaintenance @655-663
+- function_definition StopIdleMaintenance @665-671
+- function_definition AssertCurrentThreadOwnsQuotaMutex @673-675
+- function_definition AssertNotCurrentThreadOwnsQuotaMutex @677-679
+- function_definition IOThread @681-681
+- function_definition (anonymous) @687-687
+- function_definition (anonymous) @689-689
+- function_definition (anonymous) @691-691
+- function_definition (anonymous) @693-709
+- enum_specifier CacheInvalidationLevel @793-805
+- struct_specifier RenameAndInitInfo @906-906
+- function_definition ReleaseIOThreadObjects @982-988
+- struct_specifier BackgroundThreadAccessible @1210-1220
+- struct_specifier IOThreadAccessible @1234-1245
+
+### dom/quota/QuotaManagerImpl.h
+
+Blob: `a4673fdbee49370138a351f09a7eb4c34a64f345`. Grammar: cpp. Status: syntax-clean.
+
+- include "GroupInfo.h" @8
+- include "GroupInfoPair.h" @9
+- include "OriginInfo.h" @10
+- include "mozilla/dom/quota/QuotaManager.h" @11
+- function_definition WithOriginInfo @16-26
+- function_definition CollectPendingOriginsForListing @29-48
+- function_definition MaybeRecordQuotaManagerShutdownStepWith @51-57
+
+### dom/quota/QuotaManagerService.cpp
+
+Blob: `25f405f2617d8f12252f29306e775ba0d1319469`. Grammar: cpp. Status: contains-errors.
+
+- include "QuotaManagerService.h" @5
+- include "ActorsChild.h" @8
+- include "Client.h" @9
+- include "QuotaManager.h" @10
+- include "QuotaRequests.h" @11
+- include "QuotaResults.h" @12
+- include <cstdint> @15
+- include <cstring> @16
+- include <utility> @17
+- include "MainThreadUtils.h" @19
+- include "mozilla/Assertions.h" @20
+- include "mozilla/Atomics.h" @21
+- include "mozilla/ClearOnShutdown.h" @22
+- include "mozilla/Hal.h" @23
+- include "mozilla/Maybe.h" @24
+- include "mozilla/OriginAttributes.h" @25
+- include "mozilla/RefPtr.h" @26
+- include "mozilla/Services.h" @27
+- include "mozilla/StaticPrefs_dom.h" @28
+- include "mozilla/StaticPtr.h" @29
+- include "mozilla/dom/quota/PQuota.h" @30
+- include "mozilla/dom/quota/PersistenceType.h" @31
+- include "mozilla/dom/quota/PrincipalUtils.h" @32
+- include "mozilla/dom/quota/QuotaUsageRequestChild.h" @33
+- include "mozilla/dom/quota/ResultExtensions.h" @34
+- include "mozilla/fallible.h" @35
+- include "mozilla/hal_sandbox/PHal.h" @36
+- include "mozilla/ipc/BackgroundChild.h" @37
+- include "mozilla/ipc/BackgroundUtils.h" @38
+- include "mozilla/ipc/Endpoint.h" @39
+- include "mozilla/ipc/PBackgroundChild.h" @40
+- include "mozilla/ipc/PBackgroundSharedTypes.h" @41
+- include "nsCOMPtr.h" @42
+- include "nsContentUtils.h" @43
+- include "nsDebug.h" @44
+- include "nsError.h" @45
+- include "nsIObserverService.h" @46
+- include "nsIPrincipal.h" @47
+- include "nsIUserIdleService.h" @48
+- include "nsServiceManagerUtils.h" @49
+- include "nsStringFwd.h" @50
+- include "nsVariant.h" @51
+- include "nsXULAppAPI.h" @52
+- include "nscore.h" @53
+- function_definition CheckedPrincipalToPrincipalInfo @74-93
+- struct_specifier ResponseTypeTraits @96-96
+- struct_specifier ResponseTypeTraits<BoolResponse> @99-107
+- function_definition CreateVariant @102-106
+- struct_specifier ResponseTypeTraits<UInt64Response> @110-118
+- function_definition CreateVariant @113-117
+- struct_specifier ResponseTypeTraits<CStringArrayResponse> @121-147
+- function_definition CreateVariant @124-146
+- struct_specifier ResponseTypeTraits<OriginUsageMetadataArrayResponse> @150-179
+- function_definition CreateVariant @154-178
+- struct_specifier ResponseTypeTraits<UsageInfoResponse> @182-194
+- function_definition CreateVariant @185-193
+- class_specifier ResponsePromiseResolveOrRejectCallback @197-233
+- function_definition ResponsePromiseResolveOrRejectCallback @199-200
+- function_definition operator() @202-229
+- class_specifier QuotaManagerService::PendingRequestInfo @254-266
+- function_definition PendingRequestInfo @259-259
+- function_definition ~PendingRequestInfo @261-261
+- function_definition GetRequest @263-263
+- class_specifier QuotaManagerService::RequestInfo @268-279
+- function_definition RequestInfo @272-276
+- class_specifier QuotaManagerService::IdleMaintenanceInfo @281-289
+- function_definition IdleMaintenanceInfo @285-286
+- function_definition QuotaManagerService @291-296
+- function_definition ~QuotaManagerService @298-301
+- function_definition GetOrCreate @304-330
+- function_definition Get @333-336
+- function_definition FactoryCreate @339-342
+- function_definition ClearBackgroundActor @344-348
+- function_definition AbortOperationsForProcess @350-364
+- function_definition Init @366-384
+- function_definition Destroy @386-394
+- function_definition EnsureBackgroundActor @396-427
+- function_definition InitiateRequest @429-441
+- function_definition PerformIdleMaintenance @443-490
+- function_definition RemoveIdleObserver @492-507
+- function_definition StorageName @514-536
+- function_definition StorageInitialized @538-557
+- function_definition PersistentStorageInitialized @559-578
+- function_definition TemporaryStorageInitialized @580-599
+- function_definition TemporaryGroupInitialized @601-633
+- function_definition PersistentOriginInitialized @635-667
+- function_definition TemporaryOriginInitialized @669-718
+- function_definition QM_TRY_INSPECT @682-707
+- function_definition Init @720-739
+- function_definition InitializePersistentStorage @741-760
+- function_definition InitTemporaryStorage @762-781
+- function_definition InitializeAllTemporaryOrigins @783-802
+- function_definition InitializeTemporaryGroup @804-836
+- function_definition InitializePersistentOrigin @838-870
+- function_definition InitializeTemporaryOrigin @872-922
+- function_definition QM_TRY_INSPECT @885-910
+- function_definition InitializePersistentClient @924-967
+- function_definition QM_TRY_INSPECT @937-957
+- function_definition InitializeTemporaryClient @969-1030
+- function_definition QM_TRY_INSPECT @983-1008
+- function_definition GetFullOriginMetadata @1032-1064
+- function_definition GetUsage @1066-1092
+- function_definition GetUsageForPrincipal @1094-1134
+- function_definition GetCachedUsageForPrincipal @1136-1164
+- function_definition Clear @1166-1184
+- function_definition ClearStoragesForPrivateBrowsing @1186-1201
+- function_definition ClearStoragesForOriginAttributesPattern @1203-1221
+- function_definition ClearStoragesForPrincipal @1223-1267
+- function_definition QM_TRY_INSPECT @1232-1257
+- function_definition ClearStoragesForClient @1269-1325
+- function_definition QM_TRY_INSPECT @1279-1304
+- function_definition ClearStoragesForOriginPrefix @1327-1380
+- function_definition QM_TRY_INSPECT @1336-1369
+- function_definition Reset @1382-1400
+- function_definition ResetStoragesForPrincipal @1402-1447
+- function_definition QM_TRY_INSPECT @1411-1436
+- function_definition ResetStoragesForClient @1449-1506
+- function_definition QM_TRY_INSPECT @1459-1484
+- function_definition Persisted @1508-1534
+- function_definition Persist @1536-1562
+- function_definition Estimate @1564-1589
+- function_definition EstimateGroupUsage @1591-1620
+- function_definition ListOrigins @1622-1636
+- function_definition ListCachedOrigins @1638-1652
+- function_definition SetThumbnailPrivateIdentityId @1654-1665
+- function_definition Observe @1667-1709
+- function_definition Notify @1711-1714
+- function_definition RequestInfo::InitiateRequest @1716-1729
+- function_definition IdleMaintenanceInfo::InitiateRequest @1731-1748
+
+### dom/quota/QuotaManagerService.h
+
+Blob: `87504844b3337879d8d6cd6d1e78d21a99799fe3`. Grammar: cpp. Status: contains-errors.
+
+- include "ErrorList.h" @8
+- include "mozilla/AlreadyAddRefed.h" @9
+- include "mozilla/HalBatteryInformation.h" @10
+- include "mozilla/dom/ipc/IdType.h" @11
+- include "nsIObserver.h" @12
+- include "nsIQuotaManagerService.h" @13
+- include "nsIQuotaManagerServiceInternal.h" @14
+- include "nsISupports.h" @15
+- class_specifier nsIPrincipal @20-20
+- class_specifier nsIQuotaRequest @21-21
+- class_specifier nsIQuotaUsageCallback @22-22
+- class_specifier nsIQuotaUsageRequest @23-23
+- class_specifier PBackgroundChild @28-28
+- class_specifier BatteryInformation @33-33
+- class_specifier QuotaChild @38-38
+- class_specifier QuotaManager @39-39
+- class_specifier QuotaManagerService @41-97
+- class_specifier BackgroundCreateCallback @47-47
+- class_specifier PendingRequestInfo @48-48
+- class_specifier UsageRequestInfo @49-49
+- class_specifier RequestInfo @50-50
+- class_specifier IdleMaintenanceInfo @51-51
+
+### dom/quota/QuotaObject.cpp
+
+Blob: `3a9f0b71be8df3144d287300a398afb34da05f12`. Grammar: cpp. Status: syntax-clean.
+
+- include "QuotaObject.h" @5
+- include "CanonicalQuotaObject.h" @7
+- include "RemoteQuotaObject.h" @8
+- include "mozilla/dom/quota/IPCQuotaObject.h" @9
+- include "mozilla/dom/quota/PRemoteQuotaObject.h" @10
+- include "mozilla/dom/quota/RemoteQuotaObjectChild.h" @11
+- include "mozilla/dom/quota/RemoteQuotaObjectParent.h" @12
+- include "mozilla/dom/quota/RemoteQuotaObjectParentTracker.h" @13
+- include "mozilla/ipc/BackgroundParent.h" @14
+- include "nsIInterfaceRequestor.h" @15
+- include "nsIInterfaceRequestorUtils.h" @16
+- function_definition AsCanonicalQuotaObject @20-22
+- function_definition AsRemoteQuotaObject @24-26
+- function_definition Serialize @28-56
+- function_definition Deserialize @59-69
+
+### dom/quota/QuotaObject.h
+
+Blob: `2c4bd011169d9e69879d4b8a40709685cec7d872`. Grammar: cpp. Status: contains-errors.
+
+- include "nsISupportsImpl.h" @8
+- class_specifier nsIInterfaceRequestor @10-10
+- class_specifier CanonicalQuotaObject @14-14
+- class_specifier IPCQuotaObject @15-15
+- class_specifier RemoteQuotaObject @16-16
+- class_specifier QuotaObject @29-64
+- function_definition QuotaObject @59-59
+- function_definition ~QuotaObject @61-61
+
+### dom/quota/QuotaParent.cpp
+
+Blob: `4156a403ba542f611efb379f00beafc4cbd1730f`. Grammar: cpp. Status: contains-errors.
+
+- include "QuotaParent.h" @5
+- include <mozilla/Assertions.h> @7
+- include "OriginOperations.h" @9
+- include "QuotaRequestBase.h" @10
+- include "mozilla/RefPtr.h" @11
+- include "mozilla/dom/quota/ErrorHandling.h" @12
+- include "mozilla/dom/quota/PQuota.h" @13
+- include "mozilla/dom/quota/PQuotaRequestParent.h" @14
+- include "mozilla/dom/quota/PQuotaUsageRequestParent.h" @15
+- include "mozilla/dom/quota/PrincipalUtils.h" @16
+- include "mozilla/dom/quota/QuotaManager.h" @17
+- include "mozilla/dom/quota/QuotaUsageRequestParent.h" @18
+- include "mozilla/dom/quota/ResultExtensions.h" @19
+- include "mozilla/ipc/BackgroundParent.h" @20
+- include "nsDebug.h" @21
+- include "nsError.h" @22
+- class_specifier PromiseResolveOrRejectCallbackBase @38-51
+- function_definition PromiseResolveOrRejectCallbackBase @40-42
+- function_definition CanSend @45-45
+- class_specifier PromiseResolveOrRejectCallback @54-56
+- class_specifier PromiseResolveOrRejectCallback<PromiseType, ResolverType, true> @59-82
+- function_definition PromiseResolveOrRejectCallback @69-70
+- function_definition operator() @72-81
+- class_specifier PromiseResolveOrRejectCallback<PromiseType, ResolverType, false> @85-109
+- function_definition PromiseResolveOrRejectCallback @95-96
+- function_definition operator() @98-108
+- function_definition AllocPQuotaParent @129-139
+- function_definition ~Quota @142-142
+- function_definition ~Quota @144-144
+- function_definition TrustParams @147-156
+- function_definition VerifyIsParentProcessActor @158-163
+- function_definition VerifyPrincipalInfo @165-170
+- function_definition VerifyRequestParams @172-246
+- function_definition ActorDestroy @248-254
+- function_definition AllocPQuotaRequestParent @256-313
+- function_definition RecvPQuotaRequestConstructor @315-326
+- function_definition DeallocPQuotaRequestParent @328-336
+- function_definition RecvStorageInitialized @338-356
+- function_definition RecvPersistentStorageInitialized @358-376
+- function_definition RecvTemporaryStorageInitialized @378-396
+- function_definition RecvTemporaryGroupInitialized @398-425
+- function_definition RecvPersistentOriginInitialized @427-456
+- function_definition RecvTemporaryOriginInitialized @458-491
+- function_definition RecvInitializeStorage @493-511
+- function_definition RecvInitializePersistentStorage @513-531
+- function_definition RecvInitializeAllTemporaryOrigins @533-555
+- function_definition RecvInitializeTemporaryGroup @557-584
+- function_definition RecvInitializePersistentOrigin @586-615
+- function_definition RecvInitializeTemporaryOrigin @617-651
+- function_definition RecvInitializePersistentClient @653-688
+- function_definition RecvInitializeTemporaryClient @690-729
+- function_definition RecvInitializeTemporaryStorage @731-749
+- function_definition RecvGetUsage @751-789
+- function_definition RecvGetOriginUsage @791-830
+- function_definition RecvGetCachedOriginUsage @832-854
+- function_definition RecvListOrigins @856-874
+- function_definition RecvListCachedOrigins @876-894
+- function_definition RecvClearStoragesForOrigin @896-924
+- function_definition RecvClearStoragesForClient @926-958
+- function_definition RecvClearStoragesForOriginPrefix @960-990
+- function_definition RecvClearStoragesForOriginAttributesPattern @992-1013
+- function_definition RecvClearStoragesForPrivateBrowsing @1015-1035
+- function_definition RecvClearStorage @1037-1055
+- function_definition RecvShutdownStoragesForOrigin @1057-1085
+- function_definition RecvShutdownStoragesForClient @1087-1119
+- function_definition RecvShutdownStorage @1121-1139
+- function_definition RecvStartIdleMaintenance @1141-1164
+- function_definition RecvStopIdleMaintenance @1166-1189
+- function_definition RecvAbortOperationsForProcess @1191-1215
+- function_definition RecvSetThumbnailPrivateIdentityId @1217-1243
+
+### dom/quota/QuotaParent.h
+
+Blob: `2670cefd27028949cf7ecc9f47cf7f1457ea533d`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/Result.h" @8
+- include "mozilla/dom/quota/PQuotaParent.h" @9
+- include "nsISupportsImpl.h" @10
+- class_specifier Quota @14-176
+- function_definition Quota @20-20
+
+### dom/quota/QuotaPrefs.cpp
+
+Blob: `a377f932219444f5b584ba24d51201fe70d287a5`. Grammar: cpp. Status: syntax-clean.
+
+- include "QuotaPrefs.h" @5
+- include "mozilla/StaticPrefs_dom.h" @7
+- include "prenv.h" @8
+- function_definition LazyOriginInitializationEnabled @19-23
+- function_definition TriggerOriginInitializationInBackgroundEnabled @26-30
+- function_definition IncrementalOriginInitializationEnabled @33-41
+
+### dom/quota/QuotaPrefs.h
+
+Blob: `f1a54db62f4a440ad0ee8dfb77b8a12cee5fe829`. Grammar: cpp. Status: syntax-clean.
+
+- class_specifier QuotaPrefs @14-21
+
+### dom/quota/QuotaRequestBase.cpp
+
+Blob: `219460b47908ac102407a1b6ff0a01c120a41d4e`. Grammar: cpp. Status: syntax-clean.
+
+- include "QuotaRequestBase.h" @5
+- include "mozilla/dom/quota/PQuotaUsageRequest.h" @7
+- include "mozilla/dom/quota/QuotaManager.h" @8
+- function_definition QuotaRequestBase @12-15
+- function_definition ~QuotaRequestBase @17-20
+- function_definition SendResults @22-40
+- function_definition ActorDestroy @42-46
+
+### dom/quota/QuotaRequestBase.h
+
+Blob: `b9faee5f0ffd97713f58d3b8219483c515734bf2`. Grammar: cpp. Status: contains-errors.
+
+- include "NormalOriginOperationBase.h" @8
+- include "mozilla/dom/quota/PQuotaRequestParent.h" @9
+- class_specifier RequestResponse @13-13
+- class_specifier QuotaRequestBase @15-48
+- function_definition NoteActorDestroyed @26-30
+- function_definition IsActorDestroyed @32-36
+
+### dom/quota/QuotaRequests.cpp
+
+Blob: `0a07349a693baf7e81ad4607261b5f0636350b2c`. Grammar: cpp. Status: contains-errors.
+
+- include "QuotaRequests.h" @5
+- include "ActorsChild.h" @8
+- include "mozilla/ErrorNames.h" @11
+- include "mozilla/dom/quota/QuotaUsageRequestChild.h" @12
+- include "nsDebug.h" @13
+- include "nsIQuotaCallbacks.h" @14
+- include "nsISupportsUtils.h" @15
+- include "nsIVariant.h" @16
+- include "nsStringFwd.h" @17
+- include "nscore.h" @18
+- class_specifier Runnable @21-21
+- function_definition RequestBase @26-28
+- function_definition RequestBase @30-35
+- function_definition AssertIsOnOwningThread @39-41
+- function_definition SetError @45-54
+- function_definition GetPrincipal @65-72
+- function_definition GetResultCode @74-85
+- function_definition GetResultName @87-97
+- function_definition UsageRequest @99-103
+- function_definition UsageRequest @105-114
+- function_definition ~UsageRequest @116-116
+- function_definition SetBackgroundActor @118-129
+- function_definition SetResult @131-141
+- function_definition GetResult @152-163
+- function_definition GetCallback @165-172
+- function_definition SetCallback @174-180
+- function_definition Cancel @182-198
+- function_definition FireCallback @200-208
+- function_definition Request @210-210
+- function_definition Request @212-215
+- function_definition Request @217-220
+- function_definition ~Request @222-222
+- function_definition SetResult @224-234
+- function_definition GetResult @236-247
+- function_definition GetCallback @258-265
+- function_definition SetCallback @267-273
+- function_definition FireCallback @275-284
+
+### dom/quota/QuotaRequests.h
+
+Blob: `0ac08c1285c80a79aa879f5d9ff0b4317db9a290`. Grammar: cpp. Status: contains-errors.
+
+- include "ErrorList.h" @8
+- include "nsCOMPtr.h" @9
+- include "nsCycleCollectionParticipant.h" @10
+- include "nsIPrincipal.h" @11
+- include "nsIQuotaRequests.h" @12
+- include "nsISupports.h" @13
+- class_specifier nsIQuotaCallback @15-15
+- class_specifier nsIQuotaUsageCallback @16-16
+- class_specifier nsIVariant @17-17
+- class_specifier QuotaUsageRequestChild @21-21
+- class_specifier RequestBase @23-36
+- function_definition ~RequestBase @50-50
+- class_specifier UsageRequest @55-88
+- function_definition ClearBackgroundActor @71-75
+- class_specifier Request @90-113
+
+### dom/quota/QuotaResults.cpp
+
+Blob: `457998f980ea91bda221587c580928099d528db1`. Grammar: cpp. Status: contains-errors.
+
+- include "QuotaResults.h" @5
+- include "ErrorList.h" @7
+- include "mozilla/Assertions.h" @8
+- include "mozilla/dom/quota/Assertions.h" @9
+- include "nscore.h" @10
+- function_definition FullOriginMetadataResult @14-16
+- function_definition GetSuffix @20-24
+- function_definition GetGroup @26-30
+- function_definition GetOrigin @32-36
+- function_definition GetStorageOrigin @38-42
+- function_definition GetPrivate @44-50
+- function_definition GetPersistenceType @52-57
+- function_definition GetLastAccessTime @59-65
+- function_definition GetLastMaintenanceDate @67-74
+- function_definition GetAccessed @76-82
+- function_definition GetPersisted @84-90
+- function_definition GetClientUsages @92-96
+- function_definition GetOriginUsage @98-104
+- function_definition GetQuotaVersion @106-112
+- function_definition UsageResult @114-119
+- function_definition GetOrigin @123-127
+- function_definition GetPersisted @129-135
+- function_definition GetUsage @137-143
+- function_definition GetLastAccessed @145-151
+- function_definition OriginUsageResult @153-154
+- function_definition GetDatabaseUsage @158-164
+- function_definition GetFileUsage @166-172
+- function_definition GetUsage @174-180
+- function_definition GetDatabaseUsageIsExplicit @182-188
+- function_definition GetFileUsageIsExplicit @190-196
+- function_definition GetTotalUsageIsExplicit @198-204
+- function_definition (anonymous) @206-206
+- function_definition EstimateResult @208-209
+- function_definition GetUsage @213-219
+- function_definition GetLimit @221-227
+
+### dom/quota/QuotaResults.h
+
+Blob: `659c8ceccb06a1fe293363668819a122d059eafe`. Grammar: cpp. Status: contains-errors.
+
+- include <cstdint> @8
+- include "mozilla/dom/quota/CommonMetadata.h" @10
+- include "mozilla/dom/quota/UsageInfo.h" @11
+- include "nsIQuotaResults.h" @12
+- include "nsISupports.h" @13
+- include "nsString.h" @14
+- function_definition ~FullOriginMetadataResult @26-26
+- function_definition ~UsageResult @43-43
+- function_definition ~OriginUsageResult @56-56
+- class_specifier EstimateResult @62-76
+- function_definition ~EstimateResult @70-70
+
+### dom/quota/QuotaUsageRequestChild.cpp
+
+Blob: `1636367b65997acc375bd0499582f194d84e713f`. Grammar: cpp. Status: syntax-clean.
+
+- include "QuotaUsageRequestChild.h" @5
+- include "QuotaRequests.h" @8
+- include "mozilla/Assertions.h" @11
+- function_definition QuotaUsageRequestChild @15-20
+- function_definition ~QuotaUsageRequestChild @22-26
+- function_definition AssertIsOnOwningThread @30-33
+- function_definition Recv__delete__ @37-42
+- function_definition ActorDestroy @44-53
+
+### dom/quota/QuotaUsageRequestChild.h
+
+Blob: `1407b2255b6de6a5bc313921e0b72f144f2eb921`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/RefPtr.h" @8
+- include "mozilla/dom/quota/PQuotaUsageRequestChild.h" @9
+- include "nsISupportsImpl.h" @10
+- class_specifier QuotaManagerService @14-14
+- class_specifier UsageRequest @15-15
+- class_specifier QuotaUsageRequestChild @17-29
+
+### dom/quota/QuotaUsageRequestParent.cpp
+
+Blob: `9d24598e3899402a15c4244f770e94ec0ad9c149`. Grammar: cpp. Status: syntax-clean.
+
+- include "QuotaUsageRequestParent.h" @5
+- function_definition ~QuotaUsageRequestParent @9-11
+- function_definition OnCancel @13-17
+- function_definition Destroy @19-25
+- function_definition RecvCancel @27-33
+- function_definition ActorDestroy @35-39
+
+### dom/quota/QuotaUsageRequestParent.h
+
+Blob: `70b8aab13d57a4226d92c38f67f4a50875ce585d`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/dom/quota/BackgroundThreadObject.h" @8
+- include "mozilla/dom/quota/ForwardDecls.h" @9
+- include "mozilla/dom/quota/PQuotaUsageRequestParent.h" @10
+- class_specifier QuotaUsageRequestParent @14-34
+- function_definition QuotaUsageRequestParent @17-17
+
+### dom/quota/RemoteQuotaObject.cpp
+
+Blob: `b888a9c0b7c34706938c3fdc6b05c774fc027f57`. Grammar: cpp. Status: syntax-clean.
+
+- include "RemoteQuotaObject.h" @5
+- include "mozilla/dom/quota/RemoteQuotaObjectChild.h" @7
+- include "mozilla/ipc/BackgroundParent.h" @8
+- function_definition RemoteQuotaObject @12-17
+- function_definition ~RemoteQuotaObject @19-23
+- function_definition ClearActor @25-29
+- function_definition Close @31-40
+- function_definition (anonymous) @42-42
+- function_definition MaybeUpdateSize @44-61
+
+### dom/quota/RemoteQuotaObject.h
+
+Blob: `7fb074854d6da691626a18e5d68ce265224961a4`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/dom/quota/QuotaObject.h" @8
+- class_specifier RemoteQuotaObjectChild @12-12
+- class_specifier RemoteQuotaObject @15-41
+- function_definition IncreaseSize @31-31
+- function_definition DisableQuotaCheck @33-33
+- function_definition EnableQuotaCheck @35-35
+
+### dom/quota/RemoteQuotaObjectChild.cpp
+
+Blob: `abfd7a32931ee33de982edf3edbe7390e2106e37`. Grammar: cpp. Status: syntax-clean.
+
+- include "RemoteQuotaObjectChild.h" @5
+- include "RemoteQuotaObject.h" @7
+- function_definition RemoteQuotaObjectChild @11-12
+- function_definition ~RemoteQuotaObjectChild @14-14
+- function_definition SetRemoteQuotaObject @16-22
+- function_definition ActorDestroy @24-29
+
+### dom/quota/RemoteQuotaObjectChild.h
+
+Blob: `c2ef810e900f52e8e7b2a823eb0044eaba48f078`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/dom/quota/PRemoteQuotaObjectChild.h" @8
+- class_specifier RemoteQuotaObject @12-12
+- class_specifier RemoteQuotaObjectChild @14-29
+
+### dom/quota/RemoteQuotaObjectParent.cpp
+
+Blob: `d3c5440c0808571da9bae2464a36db2a5c88a50f`. Grammar: cpp. Status: contains-errors.
+
+- include "RemoteQuotaObjectParent.h" @5
+- include "CanonicalQuotaObject.h" @7
+- include "mozilla/dom/quota/RemoteQuotaObjectParentTracker.h" @8
+- include "mozilla/dom/quota/ResultExtensions.h" @9
+- include "mozilla/ipc/BackgroundParent.h" @10
+- function_definition RemoteQuotaObjectParent @14-18
+- function_definition ~RemoteQuotaObjectParent @20-20
+- function_definition RecvMaybeUpdateSize @22-35
+- function_definition ActorDestroy @37-45
+- function_definition CheckFileAfterClose @47-60
+
+### dom/quota/RemoteQuotaObjectParent.h
+
+Blob: `cf1d9c4fabfa05e045b2bbda3c20c081e46f7bb6`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/dom/quota/PRemoteQuotaObjectParent.h" @8
+- class_specifier CanonicalQuotaObject @12-12
+- class_specifier RemoteQuotaObjectParentTracker @13-13
+- class_specifier RemoteQuotaObjectParent @15-35
+
+### dom/quota/RemoteQuotaObjectParentTracker.h
+
+Blob: `0b3be8dd9d81534a5aca9c36654679fe368879fb`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/NotNull.h" @8
+- include "nsISupports.h" @9
+- class_specifier RemoteQuotaObjectParent @16-16
+- class_specifier RemoteQuotaObjectParentTracker @18-31
+- function_definition ~RemoteQuotaObjectParentTracker @30-30
+
+### dom/quota/RemoveParen.h
+
+Blob: `3ce1191e32e9114598bc964b9f0cd9267eb52a18`. Grammar: cpp. Status: syntax-clean.
+
+
+### dom/quota/ResolvableNormalOriginOp.h
+
+Blob: `852fcee00f819cdd63d086c16bb9da6e244da521`. Grammar: cpp. Status: contains-errors.
+
+- include "NormalOriginOperationBase.h" @8
+- include "mozilla/MozPromise.h" @9
+- include "mozilla/dom/FlippedOnce.h" @10
+- class_specifier ResolvableNormalOriginOp @15-62
+- function_definition OnResults @21-25
+- function_definition ResolvableNormalOriginOp @28-32
+- function_definition ~ResolvableNormalOriginOp @34-34
+- function_definition ResolveValueConsumed @39-39
+- function_definition SendResults @43-56
+
+### dom/quota/ResultExtensions.h
+
+Blob: `6f3c0b9e46cd8002a0f9dee17be61d52bb2cfd90`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/Result.h" @8
+- include "mozilla/ResultExtensions.h" @9
+- include "mozilla/dom/QMResult.h" @10
+- include "mozilla/dom/quota/Config.h" @11
+- include "mozilla/dom/quota/RemoveParen.h" @12
+- include "nsError.h" @13
+- include "mozilla/ResultVariant.h" @16
+- class_specifier GenericErrorResult<bool> @24-39
+- function_definition GenericErrorResult @31-33
+- function_definition GenericErrorResult @35-36
+- function_definition bool @38-38
+- function_definition ToResult @43-48
+- function_definition ToNSResult @50-50
+- function_definition ToNSResult @54-54
+- class_specifier GenericErrorResult<QMResult> @59-87
+- function_definition GenericErrorResult @66-69
+- function_definition GenericErrorResult @71-74
+- function_definition GenericErrorResult @76-78
+- function_definition GenericErrorResult @80-82
+- function_definition (anonymous) @84-84
+- function_definition (anonymous) @86-86
+- struct_specifier ResultTypeTraits<QMResult> @90-96
+- function_definition From @91-91
+- function_definition From @93-93
+- function_definition From @95-95
+- function_definition ToResult @99-104
+- function_definition ToResult @107-112
+- function_definition ToResultTransform @116-119
+- function_definition ToResultGet @123-130
+
+### dom/quota/SanitizationUtils.cpp
+
+Blob: `f52d1262ee0d9a6f7393b58575689f560e36c421`. Grammar: cpp. Status: contains-errors.
+
+- include "SanitizationUtils.h" @5
+- include "mozilla/dom/quota/QuotaManager.h" @7
+- include "nsString.h" @8
+- function_definition MakeSanitizedOriginCString @12-24
+- function_definition MakeSanitizedOriginString @26-30
+
+### dom/quota/SanitizationUtils.h
+
+Blob: `346091c54574f771e6eebad52ed47a2c51ba288d`. Grammar: cpp. Status: syntax-clean.
+
+- include "nsStringFwd.h" @8
+
+### dom/quota/ScopedLogExtraInfo.cpp
+
+Blob: `8c48bd8dcd0dc322a28acb6ebc0e92deb796c7a3`. Grammar: cpp. Status: contains-errors.
+
+- include "ScopedLogExtraInfo.h" @5
+- function_definition FindSlot @18-34
+- function_definition ~ScopedLogExtraInfo @36-43
+- function_definition ScopedLogExtraInfo @45-51
+- function_definition GetExtraInfoMap @53-73
+- function_definition Initialize @75-79
+- function_definition AddInfo @81-87
+
+### dom/quota/ScopedLogExtraInfo.h
+
+Blob: `d378f6d3539f41a6652e6e6b81a3daf3614c3adb`. Grammar: cpp. Status: contains-errors.
+
+- include <map> @8
+- include "mozilla/Attributes.h" @10
+- include "mozilla/Tainting.h" @11
+- include "mozilla/ThreadLocal.h" @12
+- include "mozilla/dom/quota/Config.h" @13
+- include "nsString.h" @14
+- include "nsXULAppAPI.h" @15
+- function_definition ScopedLogExtraInfo @19-69
+- struct_specifier MOZ_STACK_CLASS @19-19
+- function_definition ScopedLogExtraInfo @43-43
+- function_definition ~ScopedLogExtraInfo @57-67
+
+### dom/quota/SerializationHelpers.h
+
+Blob: `053cf894a09d9d6795460bca0e0e51a11e6110ee`. Grammar: cpp. Status: contains-errors.
+
+- include "ipc/EnumSerializer.h" @8
+- include "ipc/IPCMessageUtils.h" @9
+- include "ipc/IPCMessageUtilsSpecializations.h" @10
+- include "mozilla/OriginAttributes.h" @11
+- include "mozilla/dom/quota/Client.h" @12
+- include "mozilla/dom/quota/CommonMetadata.h" @13
+- include "mozilla/dom/quota/PersistenceType.h" @14
+- include "mozilla/dom/quota/UsageInfo.h" @15
+- struct_specifier ParamTraits<mozilla::dom::quota::PersistenceType> @20-24
+- struct_specifier ParamTraits<mozilla::dom::quota::Client::Type> @27-30
+- struct_specifier ParamTraits<mozilla::dom::quota::ClientUsageArray> @33-52
+- function_definition Write @36-41
+- function_definition Read @43-51
+- struct_specifier ParamTraits<mozilla::dom::quota::DatabaseUsageType> @74-90
+- function_definition Write @77-79
+- function_definition Read @81-89
+- struct_specifier ParamTraits<mozilla::dom::quota::FileUsageType> @93-109
+- function_definition Write @96-98
+- function_definition Read @100-108
+- struct_specifier ParamTraits<mozilla::dom::quota::UsageInfo> @112-135
+- function_definition Write @115-118
+- function_definition Read @120-134
+
+### dom/quota/StorageHelpers.cpp
+
+Blob: `2ade32d9069c619d5f1d60fb6baf66914b98c9c5`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/dom/quota/StorageHelpers.h" @5
+- include "mozilla/dom/quota/QuotaCommon.h" @7
+- include "mozilla/dom/quota/ResultExtensions.h" @8
+- function_definition AutoDatabaseAttacher @12-18
+- function_definition ~AutoDatabaseAttacher @20-24
+- function_definition Attach @26-55
+- function_definition Detach @57-66
+
+### dom/quota/StorageHelpers.h
+
+Blob: `36a015106f78135ac6d9133493aa77c7c546fe05`. Grammar: cpp. Status: contains-errors.
+
+- include "mozIStorageConnection.h" @8
+- include "mozilla/dom/quota/QuotaCommon.h" @9
+- include "nsCOMPtr.h" @10
+- include "nsString.h" @11
+- function_definition AutoDatabaseAttacher @29-48
+- class_specifier MOZ_STACK_CLASS @29-29
+- function_definition AutoDatabaseAttacher @37-37
+
+### dom/quota/StorageManager.cpp
+
+Blob: `60591a4272aafefe091070e7ea120ff78c147f8d`. Grammar: cpp. Status: contains-errors.
+
+- include "StorageManager.h" @5
+- include <cstdint> @7
+- include <cstdlib> @8
+- include "ErrorList.h" @10
+- include "MainThreadUtils.h" @11
+- include "fs/FileSystemRequestHandler.h" @12
+- include "js/CallArgs.h" @13
+- include "js/TypeDecls.h" @14
+- include "mozilla/Attributes.h" @15
+- include "mozilla/ErrorResult.h" @16
+- include "mozilla/Maybe.h" @17
+- include "mozilla/Mutex.h" @18
+- include "mozilla/RefPtr.h" @19
+- include "mozilla/dom/BindingDeclarations.h" @20
+- include "mozilla/dom/Document.h" @21
+- include "mozilla/dom/FileSystemManager.h" @22
+- include "mozilla/dom/Promise.h" @23
+- include "mozilla/dom/PromiseWorkerProxy.h" @24
+- include "mozilla/dom/StorageManagerBinding.h" @25
+- include "mozilla/dom/WorkerCommon.h" @26
+- include "mozilla/dom/WorkerPrivate.h" @27
+- include "mozilla/dom/WorkerRunnable.h" @28
+- include "mozilla/dom/WorkerStatus.h" @29
+- include "mozilla/dom/quota/QuotaManagerService.h" @30
+- include "nsContentPermissionHelper.h" @31
+- include "nsContentUtils.h" @32
+- include "nsDebug.h" @33
+- include "nsError.h" @34
+- include "nsIGlobalObject.h" @35
+- include "nsIPrincipal.h" @36
+- include "nsIQuotaCallbacks.h" @37
+- include "nsIQuotaManagerService.h" @38
+- include "nsIQuotaRequests.h" @39
+- include "nsIQuotaResults.h" @40
+- include "nsIVariant.h" @41
+- include "nsLiteralString.h" @42
+- include "nsPIDOMWindow.h" @43
+- include "nsString.h" @44
+- include "nsStringFlags.h" @45
+- include "nsTLiteralString.h" @46
+- include "nscore.h" @47
+- class_specifier JSObject @49-49
+- struct_specifier JSContext @50-50
+- struct_specifier nsID @51-51
+- class_specifier Runnable @54-54
+- class_specifier RequestResolver @65-113
+- enum_specifier Type @67-67
+- class_specifier FinishWorkerRunnable @70-70
+- function_definition RequestResolver @83-90
+- function_definition RequestResolver @92-96
+- class_specifier RequestResolver::FinishWorkerRunnable @116-129
+- function_definition FinishWorkerRunnable @121-126
+- class_specifier EstimateWorkerMainThreadRunnable @131-146
+- function_definition EstimateWorkerMainThreadRunnable @135-143
+- class_specifier PersistedWorkerMainThreadRunnable @148-164
+- function_definition PersistedWorkerMainThreadRunnable @153-161
+- class_specifier PersistentStoragePermissionRequest @170-198
+- function_definition PersistentStoragePermissionRequest @175-184
+- function_definition ~PersistentStoragePermissionRequest @197-197
+- function_definition Estimate @200-230
+- function_definition Persisted @232-258
+- function_definition ExecuteOpOnMainOrWorkerThread @260-393
+- function_definition ResolveOrReject @401-415
+- function_definition AutoCleanup @402-408
+- class_specifier MOZ_STACK_CLASS @402-402
+- function_definition ~AutoCleanup @410-414
+- function_definition GetStorageEstimate @456-481
+- function_definition GetPersisted @483-508
+- function_definition OnCompleteInternal @510-542
+- function_definition Finish @544-568
+- function_definition OnComplete @570-583
+- function_definition FinishWorkerRunnable::WorkerRun @585-595
+- function_definition MainThreadRun @597-622
+- function_definition MainThreadRun @624-649
+- function_definition Start @651-667
+- function_definition Cancel @675-686
+- function_definition Allow @688-710
+- function_definition StorageManager @716-718
+- function_definition ~StorageManager @720-720
+- function_definition Shutdown @741-746
+- function_definition GetFileSystemManager @748-756
+- function_definition WrapObject @760-763
+- function_definition Persisted @767-772
+- function_definition Persist @774-779
+- function_definition Estimate @781-786
+- function_definition GetDirectory @788-790
+
+### dom/quota/StorageManager.h
+
+Blob: `d161fc0bc86ddc280ab75520dfdaece6ae1b6d70`. Grammar: cpp. Status: contains-errors.
+
+- include "js/TypeDecls.h" @8
+- include "mozilla/AlreadyAddRefed.h" @9
+- include "nsCOMPtr.h" @10
+- include "nsCycleCollectionParticipant.h" @11
+- include "nsISupports.h" @12
+- include "nsWrapperCache.h" @13
+- class_specifier JSObject @15-15
+- class_specifier nsIGlobalObject @16-16
+- struct_specifier JSContext @17-17
+- class_specifier ErrorResult @20-20
+- class_specifier FileSystemManager @24-24
+- class_specifier Promise @25-25
+- struct_specifier StorageEstimate @26-26
+- class_specifier StorageManager @28-60
+- function_definition GetParentObject @42-42
+
+### dom/quota/StorageOriginAttributes.cpp
+
+Blob: `7b6f676f0366f8d653be8abfa9defc5b769503c9`. Grammar: cpp. Status: syntax-clean.
+
+- include "StorageOriginAttributes.h" @5
+- include "mozilla/Assertions.h" @7
+- include "mozilla/dom/quota/QuotaManager.h" @8
+- include "nsString.h" @9
+- include "nsURLHelper.h" @10
+- function_definition CreateSuffix @14-56
+- function_definition PopulateFromSuffix @58-88
+- function_definition PopulateFromOrigin @90-103
+
+### dom/quota/StorageOriginAttributes.h
+
+Blob: `cf2183ebd1f142ef1ca6d763cbe7b52618f7bc7b`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/OriginAttributes.h" @8
+- class_specifier StorageOriginAttributes @14-53
+- function_definition StorageOriginAttributes @16-16
+- function_definition StorageOriginAttributes @18-19
+- function_definition InIsolatedMozBrowser @21-21
+- function_definition UserContextId @23-23
+- function_definition SetInIsolatedMozBrowser @27-29
+- function_definition SetUserContextId @31-33
+
+### dom/quota/StreamUtils.cpp
+
+Blob: `f8e844727a35e0a17a260431674d58f579de95c7`. Grammar: cpp. Status: contains-errors.
+
+- include "StreamUtils.h" @5
+- include "mozilla/GeckoTrace.h" @7
+- include "mozilla/Result.h" @8
+- include "mozilla/dom/quota/Assertions.h" @9
+- include "mozilla/dom/quota/QuotaCommon.h" @10
+- include "mozilla/dom/quota/ResultExtensions.h" @11
+- include "nsCOMPtr.h" @12
+- include "nsIFile.h" @13
+- include "nsIObjectInputStream.h" @14
+- include "nsIObjectOutputStream.h" @15
+- include "nsIOutputStream.h" @16
+- include "nsIRandomAccessStream.h" @17
+- include "nsNetUtil.h" @18
+- include "prio.h" @19
+- function_definition GetOutputStream @23-55
+- function_definition GetBinaryOutputStream @57-65
+- function_definition GetBinaryInputStream @67-87
+
+### dom/quota/StreamUtils.h
+
+Blob: `c115186087c428f920649dc3ab03883079814c62`. Grammar: cpp. Status: syntax-clean.
+
+- include "nsStringFwd.h" @8
+- class_specifier nsIBinaryInputStream @10-10
+- class_specifier nsIBinaryOutputStream @11-11
+- class_specifier nsCOMPtr @13-13
+- class_specifier nsIFile @14-14
+- class_specifier nsIOutputStream @15-15
+- enum_specifier nsresult @16-16
+- class_specifier Result @21-21
+- enum_specifier FileFlag @25-25
+
+### dom/quota/StringifyUtils.cpp
+
+Blob: `2a8a12b60239e02e0cf9ea49fd4c361c7deb1a76`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/dom/quota/StringifyUtils.h" @5
+- include "mozilla/ThreadLocal.h" @7
+- include "nsTHashSet.h" @8
+- function_definition Stringify @19-30
+- function_definition InitTLS @32-38
+- function_definition IsActive @40-44
+- function_definition SetActive @46-63
+
+### dom/quota/StringifyUtils.h
+
+Blob: `4ce16c4a534f3c0121659435eb80132140508ecb`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/ThreadLocal.h" @8
+- include "nsLiteralString.h" @9
+- include "nsTHashSet.h" @10
+- class_specifier Stringifyable @33-47
+
+### dom/quota/TargetPtrHolder.h
+
+Blob: `822cf95fe239e153ea9d4fdb6ef5b4c52b29616c`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/RefPtr.h" @8
+- include "nsCOMPtr.h" @9
+- include "nsProxyRelease.h" @10
+- include "nsThreadUtils.h" @11
+- class_specifier TargetPtrHolder @17-22
+- function_definition TargetPtrHolder @28-28
+- function_definition ~TargetPtrHolder @32-38
+- function_definition get @40-44
+- function_definition MOZ_NO_ADDREF_RELEASE_ON_RETURN @46-46
+- function_definition operator! @48-48
+
+### dom/quota/ThreadUtils.cpp
+
+Blob: `23e9c1a1ad73fc02901f5816281571caf030911c`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/dom/quota/ThreadUtils.h" @5
+- include "mozilla/dom/quota/QuotaCommon.h" @7
+- include "mozilla/dom/quota/ResultExtensions.h" @8
+- include "nsIThreadInternal.h" @9
+- include "nsThreadPool.h" @10
+- include "nsThreadUtils.h" @11
+- include "prinrval.h" @12
+- include "prthread.h" @13
+- class_specifier RunAfterProcessingCurrentEventHelper @19-30
+- function_definition Init @34-44
+- function_definition OnDispatchedEvent @48-51
+- function_definition OnProcessNextEvent @53-57
+- function_definition AfterProcessNextEvent @59-70
+- function_definition RunAfterProcessingCurrentEvent @72-82
+- function_definition SleepIfEnabled @84-89
+
+### dom/quota/ThreadUtils.h
+
+Blob: `95afb2b307f6ad22f0f50917867d88d9b433015b`. Grammar: cpp. Status: syntax-clean.
+
+- include <cstdint> @8
+- include <functional> @9
+- include "mozilla/StaticPrefsBase.h" @11
+- enum_specifier nsresult @13-13
+
+### dom/quota/UniversalDirectoryLock.cpp
+
+Blob: `5b0f3f2311e63f8f4514f60fd9304bb71b65136e`. Grammar: cpp. Status: syntax-clean.
+
+- include "UniversalDirectoryLock.h" @5
+- include <utility> @7
+- include "mozilla/Assertions.h" @9
+- include "mozilla/NotNull.h" @10
+- include "mozilla/RefPtr.h" @11
+- include "mozilla/ReverseIterator.h" @12
+- include "mozilla/dom/Nullable.h" @13
+- include "mozilla/dom/quota/ClientDirectoryLock.h" @14
+- include "mozilla/dom/quota/CommonMetadata.h" @15
+- include "mozilla/dom/quota/OriginScope.h" @16
+- include "mozilla/dom/quota/PersistenceScope.h" @17
+- include "mozilla/dom/quota/QuotaManager.h" @18
+- include "nsDebug.h" @19
+- include "nsString.h" @20
+- function_definition SpecializeForClient @24-73
+- function_definition CreateInternal @76-87
+
+### dom/quota/UniversalDirectoryLock.h
+
+Blob: `9f4d4ae36dbe19c98b168d0e66640f593f795cce`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/dom/quota/Client.h" @8
+- include "mozilla/dom/quota/DirectoryLockImpl.h" @9
+- include "mozilla/dom/quota/PersistenceType.h" @10
+- class_specifier RefPtr @13-13
+- class_specifier MovingNotNull @18-18
+- struct_specifier Nullable @25-25
+- class_specifier ClientDirectoruLock @31-31
+- enum_specifier DirectoryLockCategory @32-32
+- struct_specifier OriginMetadata @33-33
+- class_specifier OriginScope @34-34
+- class_specifier PersistenceScope @35-35
+- class_specifier QuotaManager @36-36
+- class_specifier UniversalDirectoryLock @48-66
+
+### dom/quota/UsageInfo.h
+
+Blob: `0d395c209a8ff3d17df27e470ea35f4ccbc7db07`. Grammar: cpp. Status: syntax-clean.
+
+- include <cstdint> @8
+- include "mozilla/CheckedInt.h" @10
+- include "mozilla/Maybe.h" @11
+- enum_specifier UsageKind @15-15
+- function_definition AddCapped @18-26
+- struct_specifier Usage @29-48
+- function_definition Usage @30-30
+- function_definition GetValue @32-32
+- function_definition (anonymous) @34-38
+- function_definition operator+ @40-44
+- class_specifier UsageInfo @54-97
+- function_definition UsageInfo @56-56
+- function_definition UsageInfo @58-58
+- function_definition UsageInfo @60-60
+- function_definition operator+ @62-66
+- function_definition (anonymous) @68-72
+- function_definition (anonymous) @74-77
+- function_definition (anonymous) @79-82
+- function_definition DatabaseUsage @84-84
+- function_definition FileUsage @86-86
+- function_definition TotalUsage @88-92
+
+### dom/quota/nsIndexedDBProtocolHandler.cpp
+
+Blob: `4a8af8ed04298ea2267e1191e500018f2f7727d1`. Grammar: cpp. Status: contains-errors.
+
+- include "nsIndexedDBProtocolHandler.h" @6
+- include <cstdint> @8
+- include "ErrorList.h" @10
+- include "nsIWeakReference.h" @11
+- include "nsStandardURL.h" @12
+- include "nsStringFwd.h" @13
+- include "nscore.h" @14
+- function_definition nsIndexedDBProtocolHandler @18-18
+- function_definition ~nsIndexedDBProtocolHandler @20-20
+- function_definition GetScheme @25-28
+- function_definition NewChannel @30-34
+- function_definition AllowPort @36-41
+
+### dom/quota/nsIndexedDBProtocolHandler.h
+
+Blob: `57782b16f5a3564db4e0bd20b96ec2304d50013b`. Grammar: cpp. Status: contains-errors.
+
+- include "nsIProtocolHandler.h" @8
+- include "nsISupports.h" @9
+- include "nsWeakReference.h" @10
+- class_specifier nsIndexedDBProtocolHandler @12-22
+
+### dom/quota/test/gtest/Common.cpp
+
+Blob: `0cb6ee9834d0c7fd334178ec930a0bf4ce032a80`. Grammar: cpp. Status: syntax-clean.
+
+- include "Common.h" @5
+- include "mozilla/dom/QMResult.h" @7
+- function_definition SetUpTestCase @15-17
+- function_definition IncreaseExpectedStackId @20-20
+- function_definition ExpectedStackId @23-23
+
+### dom/quota/test/gtest/Common.h
+
+Blob: `d55e6ee56157dbd1f06aed9afe11c0998c2a37bf`. Grammar: cpp. Status: syntax-clean.
+
+- include <cstdint> @8
+- include "gtest/gtest.h" @10
+- include "mozilla/dom/quota/Config.h" @11
+- class_specifier DOM_Quota_Test @15-27
+
+### dom/quota/test/gtest/QuotaManagerDependencyFixture.cpp
+
+Blob: `9177ea74d05650ec896d2545ac7b9fe23eed57d9`. Grammar: cpp. Status: contains-errors.
+
+- include "QuotaManagerDependencyFixture.h" @5
+- include "DirectoryMetadata.h" @7
+- include "QuotaManagerTestHelpers.h" @8
+- include "mozIStorageService.h" @9
+- include "mozStorageCID.h" @10
+- include "mozilla/BasePrincipal.h" @11
+- include "mozilla/dom/ScriptSettings.h" @12
+- include "mozilla/dom/quota/QuotaManagerService.h" @13
+- include "mozilla/dom/quota/ResultExtensions.h" @14
+- include "mozilla/dom/quota/StreamUtils.h" @15
+- include "mozilla/dom/quota/UsageInfo.h" @16
+- include "mozilla/gtest/MozAssertions.h" @17
+- include "mozilla/ipc/BackgroundUtils.h" @18
+- include "mozilla/ipc/PBackgroundSharedTypes.h" @19
+- include "nsIBinaryInputStream.h" @20
+- include "nsIPrefBranch.h" @21
+- include "nsIPrefService.h" @22
+- include "nsIQuotaCallbacks.h" @23
+- include "nsIQuotaRequests.h" @24
+- include "nsIVariant.h" @25
+- include "nsScriptSecurityManager.h" @26
+- class_specifier RequestResolver @32-50
+- function_definition RequestResolver @34-34
+- function_definition IsDone @36-36
+- function_definition OnComplete @38-44
+- function_definition ~RequestResolver @47-47
+- function_definition CreateContentPrincipalInfo @52-61
+- function_definition InitializeFixture @68-99
+- function_definition ShutdownFixture @102-116
+- function_definition InitializeStorage @119-126
+- function_definition StorageInitialized @129-143
+- function_definition AssertStorageInitialized @146-150
+- function_definition AssertStorageNotInitialized @153-157
+- function_definition ClearStorage @160-167
+- function_definition ShutdownStorage @170-177
+- function_definition InitializeTemporaryStorage @180-187
+- function_definition TemporaryStorageInitialized @190-204
+- function_definition AssertTemporaryStorageInitialized @207-211
+- function_definition AssertTemporaryStorageNotInitialized @214-218
+- function_definition ShutdownTemporaryStorage @221-226
+- function_definition InitializeTemporaryOrigin @229-238
+- function_definition TemporaryOriginInitialized @241-257
+- function_definition AssertTemporaryOriginInitialized @260-265
+- function_definition AssertTemporaryOriginNotInitialized @268-273
+- function_definition SaveOriginAccessTime @276-285
+- function_definition GetOriginUsage @288-308
+- function_definition GetCachedOriginUsage @311-331
+- function_definition ClearStoragesForOrigin @334-347
+- function_definition InitializePersistentClient @350-358
+- function_definition InitializeTemporaryClient @361-370
+- function_definition ListOrigins @373-385
+- function_definition ListCachedOrigins @388-400
+- function_definition ClearStoragesForOriginAttributesPattern @403-416
+- function_definition ProcessPendingNormalOriginOperations @419-426
+- function_definition GetOriginStateMetadata @429-441
+- function_definition LoadDirectoryMetadataHeader @444-480
+- function_definition TotalDirectoryIterations @483-492
+- function_definition SaveOriginAccessTimeCount @495-504
+- function_definition SaveOriginAccessTimeCountInternal @507-516
+- function_definition GetTestPrincipalMetadata @519-521
+- function_definition GetTestPersistentOriginMetadata @524-527
+- function_definition GetTestPersistentClientMetadata @530-533
+- function_definition GetTestOriginMetadata @536-538
+- function_definition GetTestClientMetadata @541-543
+- function_definition GetTestPrivateOriginMetadata @546-548
+- function_definition GetTestPrivateClientMetadata @551-553
+- function_definition GetOtherTestPrincipalMetadata @556-560
+- function_definition GetOtherTestOriginMetadata @563-565
+- function_definition GetOtherTestClientMetadata @568-570
+- function_definition EnsureQuotaManager @573-600
+
+### dom/quota/test/gtest/QuotaManagerDependencyFixture.h
+
+Blob: `a9ce75c6d1bf8fe55b0d65586f9573aa34eb775b`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @8
+- include "mozilla/MozPromise.h" @9
+- include "mozilla/SpinEventLoopUntil.h" @10
+- include "mozilla/dom/quota/ClientDirectoryLock.h" @11
+- include "mozilla/dom/quota/ClientDirectoryLockHandle.h" @12
+- include "mozilla/dom/quota/DirectoryLock.h" @13
+- include "mozilla/dom/quota/DirectoryLockInlines.h" @14
+- include "mozilla/dom/quota/ForwardDecls.h" @15
+- include "mozilla/dom/quota/QuotaManager.h" @16
+- class_specifier QuotaManagerDependencyFixture @30-266
+- function_definition PerformOnBackgroundThread @91-96
+- function_definition PerformOnIOThread @100-108
+- function_definition PerformOnThread @113-148
+- function_definition PerformClientDirectoryLockTest @152-168
+- function_definition PerformClientDirectoryTest @171-207
+- function_definition Await @212-244
+- function_definition (anonymous) @246-248
+
+### dom/quota/test/gtest/QuotaManagerTestHelpers.cpp
+
+Blob: `f73bfa9ccba0465960cb6e038a0ed416ee4b844f`. Grammar: cpp. Status: syntax-clean.
+
+- include "QuotaManagerTestHelpers.h" @5
+- include "mozilla/dom/quota/CommonMetadata.h" @7
+- include "nsIDUtils.h" @8
+- include "nsString.h" @9
+- function_definition GetPrincipalMetadata @13-17
+- function_definition GetPrincipalMetadata @19-27
+- function_definition GetPrincipalMetadata @29-40
+- function_definition GetOriginMetadata @42-47
+- function_definition GetFullOriginMetadata @49-59
+
+### dom/quota/test/gtest/QuotaManagerTestHelpers.h
+
+Blob: `18dcda203e221195f2f4c96a1303c9e10dead390`. Grammar: cpp. Status: syntax-clean.
+
+- include "nsStringFwd.h" @8
+- struct_specifier PrincipalMetadata @12-12
+- struct_specifier OriginMetadata @13-13
+- struct_specifier OriginStateMetadata @14-14
+- struct_specifier FullOriginMetadata @15-15
+
+### dom/quota/test/gtest/QuotaTestChild.h
+
+Blob: `3c3b284f8e6e190d9e6da7702a058ee0b8abc1d1`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/dom/quota/PQuotaTestChild.h" @8
+- class_specifier QuotaTestChild @12-17
+- function_definition ~QuotaTestChild @16-16
+
+### dom/quota/test/gtest/QuotaTestParent.h
+
+Blob: `1a21149794ac955dfeca45abd0fd17d7c77b44bd`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/dom/quota/PQuotaTestParent.h" @8
+- class_specifier QuotaTestParent @12-30
+- function_definition ~QuotaTestParent @29-29
+
+### dom/quota/test/gtest/TestCheckedUnsafePtr.cpp
+
+Blob: `fe770ab46109abd6c3444051a0946ee69b029606`. Grammar: cpp. Status: syntax-clean.
+
+- include <type_traits> @5
+- include "gtest/gtest.h" @7
+- include "mozilla/dom/quota/CheckedUnsafePtr.h" @8
+- class_specifier NoCheckTestType @12-13
+- class_specifier TestCheckingPolicy @25-35
+- function_definition TestCheckingPolicy @27-28
+- function_definition NotifyCheckFailure @32-32
+- struct_specifier BasePointee @37-40
+- function_definition BasePointee @38-39
+- struct_specifier DerivedPointee @42-44
+- class_specifier CheckedUnsafePtrTest @46-49
+- function_definition TEST_F @51-56
+- class_specifier TypedCheckedUnsafePtrTest @59-59
+- function_definition TYPED_TEST_P @63-69
+- function_definition TYPED_TEST_P @71-78
+- function_definition TYPED_TEST_P @80-88
+- function_definition TYPED_TEST_P @90-95
+- function_definition TYPED_TEST_P @97-105
+- function_definition TYPED_TEST_P @107-114
+- function_definition TYPED_TEST_P @116-129
+- function_definition TYPED_TEST_P @131-145
+
+### dom/quota/test/gtest/TestClientDirectoryLockHandle.cpp
+
+Blob: `243a8b21ee3de092ffc2a0fad2745e964a6cb108`. Grammar: cpp. Status: syntax-clean.
+
+- include "QuotaManagerDependencyFixture.h" @5
+- include "mozilla/dom/quota/ClientDirectoryLockHandle.h" @6
+- include "mozilla/dom/quota/ConditionalCompilation.h" @7
+- class_specifier DOM_Quota_ClientDirectoryLockHandle @11-17
+- function_definition SetUpTestCase @14-14
+- function_definition TearDownTestCase @16-16
+- function_definition TEST_F @19-32
+- function_definition TEST_F @34-45
+- function_definition TEST_F @47-61
+- function_definition TEST_F @63-78
+
+### dom/quota/test/gtest/TestClientStorageScope.cpp
+
+Blob: `ab1305258dfa37c6b961e9d229ea70d5644b5e67`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/dom/quota/ClientStorageScope.h" @6
+- function_definition TEST @10-30
+- function_definition TEST @32-81
+- function_definition TEST @83-108
+
+### dom/quota/test/gtest/TestClientUsageArray.cpp
+
+Blob: `6e85a77f740a0836d7f27c026c3a1df0e578cd6b`. Grammar: cpp. Status: syntax-clean.
+
+- include "ClientUsageArray.h" @5
+- include "gtest/gtest.h" @6
+- function_definition TEST @10-15
+
+### dom/quota/test/gtest/TestCommonMetadata.cpp
+
+Blob: `13b05ff69ba3baaa0778241916b0186e17b77dca`. Grammar: cpp. Status: syntax-clean.
+
+- include "QuotaManagerTestHelpers.h" @5
+- include "gtest/gtest.h" @6
+- include "mozilla/dom/quota/CommonMetadata.h" @7
+- include "nsString.h" @8
+- function_definition TEST @12-64
+- function_definition TEST @66-111
+- function_definition TEST @113-170
+- function_definition TEST @174-182
+- function_definition TEST @184-341
+- function_definition TEST @343-448
+- function_definition TEST @450-458
+
+### dom/quota/test/gtest/TestDate.cpp
+
+Blob: `460e85aa2ccbf2493fae8c4e03921b70307ff962`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/dom/quota/Date.h" @6
+- function_definition TEST @10-14
+- function_definition TEST @16-20
+- function_definition TEST @22-26
+- function_definition TEST @28-56
+
+### dom/quota/test/gtest/TestDirectoryLock.cpp
+
+Blob: `9e2809c13657d1c90db2819fb0a86b56d3988f18`. Grammar: cpp. Status: contains-errors.
+
+- include "DirectoryLockImpl.h" @5
+- include "QuotaManagerDependencyFixture.h" @6
+- include "gtest/gtest.h" @7
+- include "mozilla/SpinEventLoopUntil.h" @8
+- include "mozilla/dom/quota/OriginScope.h" @9
+- include "mozilla/dom/quota/UniversalDirectoryLock.h" @10
+- class_specifier DOM_Quota_DirectoryLock @14-19
+- function_definition SetUpTestCase @16-16
+- function_definition TearDownTestCase @18-18
+- class_specifier DOM_Quota_DirectoryLockWithBoolTriple @23-25
+- function_definition TEST_F @27-38
+- function_definition TEST_F @41-87
+- function_definition TEST_P @89-115
+
+### dom/quota/test/gtest/TestEncryptedRandomAccessBlock.cpp
+
+Blob: `af7ed1197e1ab568357ffb473763fb197dd25a26`. Grammar: cpp. Status: syntax-clean.
+
+- include <algorithm> @5
+- include <array> @6
+- include <cstring> @7
+- include <numeric> @8
+- include "EncryptedRandomAccessBlock.h" @10
+- include "EncryptedRandomAccessBlockView.h" @11
+- include "gtest/gtest.h" @12
+- function_definition IsAllZero @16-19
+- function_definition TEST @21-28
+- function_definition TEST @30-53
+- function_definition TEST @55-70
+- function_definition TEST @72-81
+- function_definition TEST @83-98
+- function_definition TEST @100-116
+- function_definition TEST @118-131
+- function_definition TEST @133-146
+- function_definition TEST @148-164
+
+### dom/quota/test/gtest/TestEncryptedRandomAccessStream.cpp
+
+Blob: `9fee308321f129c381fec336464f86d8ea487083`. Grammar: cpp. Status: syntax-clean.
+
+- include <algorithm> @5
+- include <array> @6
+- include <cstdint> @7
+- include <cstring> @8
+- include <limits> @9
+- include <utility> @10
+- include <vector> @11
+- include "DummyRandomAccessCipherStrategy.h" @13
+- include "EncryptedRandomAccessBlock.h" @14
+- include "EncryptedRandomAccessBlockView.h" @15
+- include "EncryptedRandomAccessStream.h" @16
+- include "EncryptedRandomAccessStream_impl.h" @17
+- include "ErrorList.h" @18
+- include "NSSRandomAccessCipherStrategy.h" @19
+- include "gtest/gtest.h" @20
+- include "mozilla/EndianUtils.h" @21
+- include "mozilla/NotNull.h" @22
+- include "mozilla/Result.h" @23
+- include "mozilla/ResultExtensions.h" @24
+- include "nsCOMPtr.h" @25
+- include "nsDirectoryServiceDefs.h" @26
+- include "nsDirectoryServiceUtils.h" @27
+- include "nsIFile.h" @28
+- include "nsIFileStreams.h" @29
+- include "nsIRandomAccessStream.h" @30
+- include "nsISeekableStream.h" @31
+- include "nsNetUtil.h" @32
+- function_definition CreatePlaintext @49-55
+- function_definition CreateOverwritePattern @59-65
+- function_definition XorWithDummyCipherStrategy @68-74
+- struct_specifier DecryptFailingDummyRandomAccessCipherStrategy @76-81
+- function_definition Decrypt @78-80
+- struct_specifier EncryptFailingDummyRandomAccessCipherStrategy @83-88
+- function_definition Encrypt @85-87
+- function_definition ErrorSegmentWriter @90-93
+- struct_specifier PartialSegmentWriterClosure @95-106
+- function_definition PartialSegmentWriterClosure @96-99
+- function_definition PartialSegmentWriter @108-120
+- function_definition ErrorSegmentReader @122-125
+- struct_specifier PartialSegmentReaderClosure @127-138
+- function_definition PartialSegmentReaderClosure @128-131
+- function_definition PartialSegmentReader @140-152
+- struct_specifier ScopedTestFileStream @158-181
+- function_definition ScopedTestFileStream @159-159
+- function_definition ScopedTestFileStream @160-162
+- function_definition ScopedTestFileStream @164-164
+- function_definition (anonymous) @165-165
+- function_definition ScopedTestFileStream @167-167
+- function_definition (anonymous) @168-168
+- function_definition ~ScopedTestFileStream @170-177
+- function_definition CreateEncryptedFileStream @214-287
+- function_definition CreateEncryptedRandomAccessStream @289-298
+- function_definition ReadDataFromStream @304-312
+- function_definition ReadDataFromFile @316-321
+- struct_specifier DecryptedBlockLayout @324-328
+- function_definition ReadDecryptedBlock @335-363
+- function_definition ExpectPaddedFinalBlock @365-378
+- function_definition QueryFileMetadata @382-386
+- function_definition CreateEncryptedTestStream @388-399
+- class_specifier ParameterizedEncryptedRandomAccessStreamTest @405-406
+- class_specifier GapFillEncryptedRandomAccessStreamTest @408-409
+- class_specifier WriteToEmptyStreamEncryptedRandomAccessStreamTest @411-412
+- struct_specifier SetEOFResizeCase @416-420
+- class_specifier SetEOFResizeEncryptedRandomAccessStreamTest @422-423
+- struct_specifier SetEOFBufferedExpandCase @425-429
+- class_specifier SetEOFBufferedExpandEncryptedRandomAccessStreamTest @431-432
+- class_specifier GetSizeAfterSetEOFEncryptedRandomAccessStreamTest @434-435
+- function_definition TEST @441-475
+- function_definition TEST @477-501
+- function_definition TEST @503-528
+- function_definition TEST @530-568
+- function_definition TEST @570-586
+- function_definition TEST_P @592-612
+- function_definition TEST_P @614-644
+- function_definition TEST_P @646-666
+- function_definition TEST_P @668-692
+- function_definition TEST_P @694-720
+- function_definition TEST @722-757
+- function_definition TEST @759-779
+- function_definition TEST_P @781-808
+- function_definition TEST_P @814-842
+- function_definition TEST @844-865
+- function_definition TEST @874-903
+- function_definition TEST @909-933
+- function_definition TEST @935-964
+- function_definition TEST_P @966-989
+- function_definition TEST @991-1017
+- function_definition TEST @1019-1049
+- function_definition TEST @1051-1077
+- function_definition TEST_P @1079-1105
+- function_definition TEST_P @1107-1137
+- function_definition TEST @1139-1157
+- function_definition TEST_P @1159-1189
+- function_definition TEST_P @1195-1221
+- function_definition TEST_P @1227-1253
+- function_definition TEST_P @1268-1300
+- function_definition TEST_P @1302-1339
+- function_definition TEST_P @1341-1368
+- function_definition TEST @1370-1410
+- function_definition TEST_P @1414-1441
+- function_definition TEST_P @1443-1478
+- function_definition TEST_P @1480-1514
+- function_definition TEST @1516-1553
+- function_definition TEST_P @1557-1603
+- function_definition TEST @1609-1668
+- function_definition TEST @1674-1700
+- function_definition TEST @1702-1726
+- function_definition TEST @1728-1774
+- function_definition TEST_P @1776-1818
+- function_definition TEST @1823-1851
+- function_definition TEST @1861-1888
+- function_definition TEST @1892-1922
+- function_definition TEST_P @1928-1962
+- function_definition TEST @1964-1985
+- function_definition TEST @1995-2039
+- function_definition TEST @2041-2075
+- function_definition TEST @2081-2100
+- function_definition TEST @2102-2135
+- function_definition TEST_P @2166-2241
+- function_definition TEST @2245-2293
+- function_definition TEST @2297-2346
+- function_definition TEST_P @2350-2390
+- function_definition TEST @2394-2441
+- function_definition TEST @2445-2494
+- function_definition TEST @2496-2534
+- function_definition TEST @2536-2594
+- function_definition TEST @2596-2655
+- function_definition TEST @2657-2707
+- function_definition TEST @2711-2725
+- function_definition TEST @2731-2764
+- function_definition TEST @2766-2807
+- function_definition TEST @2813-2878
+- function_definition TEST @2880-2903
+- function_definition TEST @2905-2926
+- function_definition TEST_P @2928-2944
+- function_definition TEST @2946-2960
+- function_definition TEST @2962-2979
+
+### dom/quota/test/gtest/TestEncryptedStream.cpp
+
+Blob: `a34225aefb399ae890e8daf547ce922ab59ed049`. Grammar: cpp. Status: contains-errors.
+
+- include <algorithm> @5
+- include <cstdint> @6
+- include <new> @7
+- include <numeric> @8
+- include <string> @9
+- include <utility> @10
+- include <vector> @11
+- include "ErrorList.h" @13
+- include "gmock/gmock.h" @14
+- include "gtest/gtest.h" @15
+- include "mozilla/Assertions.h" @16
+- include "mozilla/Attributes.h" @17
+- include "mozilla/FixedBufferOutputStream.h" @18
+- include "mozilla/NotNull.h" @19
+- include "mozilla/RefPtr.h" @20
+- include "mozilla/Span.h" @21
+- include "mozilla/UniquePtr.h" @22
+- include "mozilla/dom/SafeRefPtr.h" @23
+- include "mozilla/dom/quota/DecryptingInputStream_impl.h" @24
+- include "mozilla/dom/quota/DummyCipherStrategy.h" @25
+- include "mozilla/dom/quota/EncryptedBlock.h" @26
+- include "mozilla/dom/quota/EncryptingOutputStream_impl.h" @27
+- include "mozilla/dom/quota/NSSCipherStrategy.h" @28
+- include "nsCOMPtr.h" @29
+- include "nsError.h" @30
+- include "nsICloneableInputStream.h" @31
+- include "nsIInputStream.h" @32
+- include "nsIOutputStream.h" @33
+- include "nsISeekableStream.h" @34
+- include "nsISupports.h" @35
+- include "nsITellableStream.h" @36
+- include "nsStreamUtils.h" @37
+- include "nsString.h" @38
+- include "nsStringFwd.h" @39
+- include "nsTArray.h" @40
+- include "nscore.h" @41
+- include "nss.h" @42
+- class_specifier ArrayBufferInputStream @49-70
+- function_definition SetCloseOnEOF @54-54
+- function_definition Close @92-96
+- function_definition Available @98-111
+- function_definition StreamStatus @113-116
+- function_definition Read @118-122
+- function_definition ReadSegments @124-169
+- function_definition IsNonBlocking @171-177
+- function_definition Tell @179-188
+- function_definition Seek @190-220
+- function_definition SetEOF @222-225
+- function_definition GetCloneable @227-230
+- function_definition Clone @232-238
+- class_specifier DOM_Quota_EncryptedStream @244-264
+- function_definition SetUpTestCase @246-255
+- function_definition TearDownTestCase @257-257
+- struct_specifier NSSInitContextDeleter @260-262
+- function_definition operator() @261-261
+- enum_specifier FlushMode @270-270
+- enum_specifier ChunkSize @271-271
+- function_definition EffectiveChunkSize @276-287
+- struct_specifier TestParams @289-323
+- function_definition DataSize @298-298
+- function_definition EffectiveWriteChunkSize @300-302
+- function_definition EffectiveReadChunkSize @304-306
+- function_definition BlockSize @308-308
+- function_definition FlushMode @310-310
+- enum_specifier FlushMode @310-310
+- function_definition CloseOnEOF @312-312
+- enum_specifier FlushMode @321-321
+- function_definition TestParamToString @325-347
+- class_specifier ParametrizedCryptTest @349-351
+- function_definition MakeTestData @353-358
+- function_definition WriteTestData @361-387
+- function_definition NoExtraChecks @390-392
+- function_definition ReadTestData @396-430
+- function_definition ReadTestData @434-445
+- function_definition DoRoundtripTest @450-476
+- function_definition TEST_P @478-489
+- function_definition TEST_P @491-507
+- function_definition TEST_P @509-559
+- function_definition TEST_P @561-578
+- function_definition TEST_P @580-598
+- function_definition TEST_P @600-629
+- function_definition TEST_P @632-652
+- function_definition TEST_P @654-666
+- enum_specifier SeekOffset @668-677
+- function_definition SeekTestParamToString @696-749
+- class_specifier ParametrizedSeekCryptTest @751-851
+- function_definition DoSeekTest @756-850
+- function_definition TEST_P @853-855
+- function_definition TEST_P @857-859
+
+### dom/quota/test/gtest/TestFileOutputStream.cpp
+
+Blob: `f1e825cbaeb827046146261f7470952d51676839`. Grammar: cpp. Status: syntax-clean.
+
+- include "QuotaManagerDependencyFixture.h" @5
+- include "mozilla/dom/quota/Client.h" @6
+- include "mozilla/dom/quota/ClientDirectoryLock.h" @7
+- include "mozilla/dom/quota/ClientDirectoryLockHandle.h" @8
+- include "mozilla/dom/quota/CommonMetadata.h" @9
+- include "mozilla/dom/quota/FileStreams.h" @10
+- include "mozilla/dom/quota/QuotaManager.h" @11
+- include "mozilla/gtest/MozAssertions.h" @12
+- include "nsIPrefBranch.h" @13
+- include "nsIPrefService.h" @14
+- function_definition GetOutputStreamTestOriginMetadata @18-25
+- class_specifier TestFileOutputStream @27-50
+- function_definition SetUpTestCase @29-36
+- function_definition TearDownTestCase @38-47
+- function_definition TEST_F @52-219
+
+### dom/quota/test/gtest/TestFlatten.cpp
+
+Blob: `7e6d80c777b5f484d64625c5b1b6043120a5bc16`. Grammar: cpp. Status: syntax-clean.
+
+- include "Flatten.h" @5
+- include "gtest/gtest.h" @6
+- include "nsTArray.h" @7
+- function_definition TEST @15-25
+- function_definition TEST @27-37
+- function_definition TEST @39-50
+- function_definition TEST @55-68
+- function_definition TEST @70-83
+- function_definition TEST @85-98
+
+### dom/quota/test/gtest/TestForwardDecls.cpp
+
+Blob: `96be28c50f94ecdcccb07b1fe39d33ab4d7774bd`. Grammar: cpp. Status: syntax-clean.
+
+- include <type_traits> @5
+- include "mozilla/dom/quota/ForwardDecls.h" @7
+
+### dom/quota/test/gtest/TestMozPromiseUtils.cpp
+
+Blob: `2fed740abf9f6feb1037507b029f5fae9bd75ce2`. Grammar: cpp. Status: syntax-clean.
+
+- include "QuotaManagerDependencyFixture.h" @5
+- include "mozilla/dom/quota/MozPromiseUtils.h" @6
+- function_definition TEST @10-18
+- function_definition TEST @20-30
+- function_definition TEST @32-40
+
+### dom/quota/test/gtest/TestNSSCipherStrategy.cpp
+
+Blob: `4657c3467a490b26ad2673cf1f67227f02840b95`. Grammar: cpp. Status: syntax-clean.
+
+- include <array> @5
+- include <cstdint> @6
+- include <numeric> @7
+- include <set> @8
+- include <vector> @9
+- include "NSSCipherStrategy.h" @11
+- include "gtest/gtest.h" @12
+- include "mozilla/Span.h" @13
+- function_definition MakeKey @25-29
+- function_definition MakePlaintext @31-35
+- function_definition NonceOf @37-39
+- function_definition TEST @43-61
+- function_definition TEST @68-92
+- function_definition TEST @96-122
+- function_definition TEST @124-149
+- function_definition TEST @154-187
+
+### dom/quota/test/gtest/TestNSSRandomAccessCipherStrategy.cpp
+
+Blob: `1f07cc19a9c5c5ac0b6ac3b2e2244187a851a302`. Grammar: cpp. Status: syntax-clean.
+
+- include <array> @5
+- include <cstddef> @6
+- include <cstdint> @7
+- include <numeric> @8
+- include "NSSRandomAccessCipherStrategy.h" @10
+- include "gtest/gtest.h" @11
+- function_definition MakeTestData @18-22
+- function_definition MakeTestKey @24-26
+- function_definition MakeTestNonce @28-30
+- function_definition MakeTestAad @32-34
+- function_definition MakeTestPlaintext @36-38
+- struct_specifier EncryptionTestData @40-47
+- function_definition MakeEncryptionTestData @49-56
+- function_definition TEST @58-77
+- function_definition TEST @79-111
+- function_definition TEST @113-144
+- function_definition TEST @146-178
+- function_definition TEST @180-213
+- function_definition TEST @215-247
+- function_definition TEST @249-281
+- function_definition TEST @283-316
+- function_definition TEST @318-346
+- function_definition TEST @348-375
+- function_definition TEST @377-405
+
+### dom/quota/test/gtest/TestOpenClientDirectoryInfo.cpp
+
+Blob: `aff52298828b0c14c799c73e1df753b9e1cc3123`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/dom/quota/OpenClientDirectoryInfo.h" @6
+- function_definition TEST @10-27
+
+### dom/quota/test/gtest/TestOriginParser.cpp
+
+Blob: `8576b9d2baff787d67d252e4101625f8db5db09e`. Grammar: cpp. Status: syntax-clean.
+
+- include "OriginParser.h" @5
+- include "gtest/gtest.h" @6
+- include "mozilla/OriginAttributes.h" @7
+- include "nsFmtString.h" @8
+- function_definition TEST @12-15
+- function_definition TEST @17-26
+- function_definition TEST @28-37
+- function_definition TEST @39-48
+- function_definition TEST @50-67
+- function_definition TEST @69-84
+
+### dom/quota/test/gtest/TestOriginScope.cpp
+
+Blob: `b95b0a6b29033dfd4aeb2dfdc700795ddab3eac5`. Grammar: cpp. Status: syntax-clean.
+
+- include "QuotaManagerTestHelpers.h" @5
+- include "gtest/gtest.h" @6
+- include "mozilla/dom/quota/OriginScope.h" @7
+- include "nsStringFwd.h" @8
+- include "nsTDependentString.h" @9
+- include "nsTLiteralString.h" @10
+- function_definition TEST @16-43
+- function_definition TEST @45-99
+- function_definition TEST @101-160
+
+### dom/quota/test/gtest/TestPersistenceScope.cpp
+
+Blob: `d20522c2bb8c110954ac031a192d6535042034a6`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/dom/quota/PersistenceScope.h" @6
+- function_definition TEST @10-25
+- function_definition TEST @27-71
+- function_definition TEST @73-123
+
+### dom/quota/test/gtest/TestPersistenceType.cpp
+
+Blob: `30b87ce8292c99a01c070e08b8334276e139f5fe`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/dom/quota/PersistenceType.h" @6
+- include "nsDirectoryServiceDefs.h" @7
+- include "nsDirectoryServiceUtils.h" @8
+- include "nsIFile.h" @9
+- function_definition TEST @13-38
+- function_definition TEST @40-46
+
+### dom/quota/test/gtest/TestQMResult.cpp
+
+Blob: `eb8accad6cac9ca1005f80c1f8a8dc62d895aaa7`. Grammar: cpp. Status: syntax-clean.
+
+- include "Common.h" @5
+- include "gtest/gtest.h" @6
+- include "mozilla/dom/QMResult.h" @7
+- class_specifier DOM_Quota_QMResult @12-12
+- function_definition TEST_F @15-23
+- function_definition TEST_F @26-38
+- function_definition TEST_F @41-55
+- function_definition TEST_F @58-70
+
+### dom/quota/test/gtest/TestQuotaCommon.cpp
+
+Blob: `a7834915805c5df02009076ca790eb2ff60bfdca`. Grammar: cpp. Status: contains-errors.
+
+- include <array> @5
+- include <cstddef> @6
+- include <cstdint> @7
+- include <new> @8
+- include <type_traits> @9
+- include <utility> @10
+- include <vector> @11
+- include "ErrorList.h" @13
+- include "gtest/gtest.h" @14
+- include "mozilla/Assertions.h" @15
+- include "mozilla/Result.h" @16
+- include "mozilla/ResultExtensions.h" @17
+- include "mozilla/ResultVariant.h" @18
+- include "mozilla/SourcePathLiteral.h" @19
+- include "mozilla/dom/quota/QuotaCommon.h" @20
+- include "mozilla/dom/quota/QuotaTestParent.h" @21
+- include "mozilla/dom/quota/ResultExtensions.h" @22
+- include "nsCOMPtr.h" @23
+- include "nsDirectoryServiceDefs.h" @24
+- include "nsDirectoryServiceUtils.h" @25
+- include "nsIFile.h" @26
+- include "nsLiteralString.h" @27
+- include "nsString.h" @28
+- include "nsStringFwd.h" @29
+- include "nsTLiteralString.h" @30
+- class_specifier nsISupports @32-32
+- function_definition CheckUnknownFileEntry @38-76
+- function_definition TEST @80-105
+- function_definition RecvTry_Success_CustomErr_QmIpcFail @107-114
+- function_definition RecvTry_Success_CustomErr_IpcFail @116-123
+- function_definition QM_TRY_INSPECT @128-135
+- function_definition QM_TRY_INSPECT @140-147
+- function_definition TEST @154-168
+- function_definition TEST @170-180
+- function_definition TEST @182-192
+- function_definition TEST @195-209
+- function_definition TEST @211-222
+- function_definition TEST @230-244
+- function_definition TEST @246-257
+- function_definition TEST @265-287
+- function_definition TEST @289-306
+- function_definition TEST @308-322
+- function_definition TEST @324-338
+- function_definition TEST @340-363
+- function_definition TEST @365-376
+- function_definition TEST @378-399
+- function_definition TEST @401-426
+- function_definition TEST @428-468
+- function_definition TEST @470-475
+- function_definition TEST @477-499
+- function_definition TEST @501-523
+- function_definition TEST @525-555
+- function_definition TEST @557-587
+- function_definition TEST @589-619
+- function_definition QM_TRY_INSPECT @626-632
+- function_definition TEST @638-648
+- function_definition TEST @650-660
+- function_definition QM_TRY_INSPECT @668-675
+- function_definition QM_TRY_INSPECT @686-691
+- function_definition QM_TRY_INSPECT @729-737
+- function_definition TEST @744-760
+- function_definition TEST @762-779
+- function_definition TEST @781-806
+- function_definition TEST @808-821
+- function_definition TEST @823-846
+- function_definition TEST @848-875
+- function_definition QM_TRY_INSPECT @879-884
+- function_definition QM_TRY_INSPECT @888-1067
+- function_definition QM_TRY_INSPECT @891-893
+- function_definition TEST @895-960
+- function_definition QM_TRY_INSPECT @898-931
+- function_definition QM_TRY_INSPECT @898-903
+- function_definition TEST @905-926
+- function_definition TEST @933-955
+- function_definition TEST @962-995
+- function_definition QM_TRY_INSPECT @978-983
+- function_definition TEST @997-1031
+- function_definition QM_TRY_INSPECT @1014-1019
+- function_definition TEST @1033-1061
+- function_definition QM_TRY_UNWRAP @1075-1080
+- function_definition QM_TRY_UNWRAP @1084-1089
+- function_definition TEST @1091-1103
+- function_definition TEST @1105-1118
+- function_definition TEST @1120-1132
+- function_definition TEST @1135-1148
+- function_definition TEST @1151-1172
+- function_definition TEST @1174-1192
+- function_definition TEST @1194-1207
+- function_definition TEST @1209-1222
+- function_definition TEST @1224-1238
+- function_definition TEST @1240-1262
+- function_definition TEST @1264-1285
+- function_definition TEST @1287-1297
+- function_definition TEST @1299-1318
+- function_definition TEST @1320-1339
+- function_definition TEST @1341-1355
+- function_definition TEST @1357-1373
+- function_definition TEST @1375-1389
+- function_definition TEST @1391-1410
+- function_definition TEST @1412-1426
+- function_definition TEST @1428-1447
+- function_definition QM_WARNONLY_TRY_UNWRAP @1455-1461
+- function_definition QM_WARNONLY_TRY_UNWRAP @1475-1484
+- function_definition QM_WARNONLY_TRY_UNWRAP @1497-1503
+- function_definition TEST @1509-2285
+- function_definition QM_WARNONLY_TRY_UNWRAP @1517-1525
+- function_definition TEST @1532-1551
+- function_definition TEST @1553-1573
+- function_definition TEST @1575-1595
+- function_definition TEST @1597-1623
+- function_definition TEST @1625-1651
+- function_definition TEST @1653-1679
+- function_definition TEST @1681-1707
+- function_definition TEST @1709-1714
+- function_definition TEST @1716-1721
+- function_definition TEST @1723-1728
+- function_definition TEST @1730-1735
+- function_definition TEST @1737-1742
+- function_definition TEST @1744-1749
+- function_definition TEST @1751-1756
+- function_definition TEST @1758-1763
+- function_definition TEST @1765-1770
+- function_definition TEST @1772-1777
+- function_definition TEST @1779-1784
+- function_definition TEST @1786-1792
+- function_definition TEST @1794-1800
+- function_definition TEST @1802-1806
+- function_definition TEST @1808-1813
+- function_definition TEST @1815-1821
+- function_definition TEST @1823-1829
+- function_definition TEST @1831-1834
+- function_definition TEST @1836-1839
+- function_definition TEST @1841-1846
+- function_definition TEST @1848-1853
+- function_definition TEST @1855-1860
+- function_definition TEST @1862-1867
+- function_definition TEST @1869-1873
+- function_definition TEST @1875-1880
+- class_specifier StringPairParameterized @1882-1883
+- function_definition TEST_P @1885-1889
+- struct_specifier Failed @1902-1902
+- function_definition Fail @1904-1904
+- function_definition Task1 @1906-1911
+- function_definition Condition @1914-1916
+- function_definition TEST @1918-1936
+- function_definition TEST @1938-1955
+- function_definition TEST @1957-1974
+- function_definition TEST @1976-1993
+- function_definition TEST @1995-2012
+- function_definition TEST @2014-2026
+- function_definition TEST @2028-2041
+- function_definition TEST @2043-2057
+- function_definition TEST @2059-2078
+- function_definition TEST @2080-2102
+- function_definition TEST @2104-2115
+- function_definition TEST @2117-2130
+- function_definition TEST @2132-2145
+- function_definition TEST @2147-2162
+- function_definition TEST @2164-2174
+- function_definition MakeTreePath @2176-2184
+- function_definition MakeSourceTreePath @2186-2189
+- function_definition MakeObjdirDistIncludeTreePath @2191-2196
+- function_definition TEST @2198-2209
+- function_definition TEST @2211-2226
+- function_definition TEST @2228-2239
+- function_definition TEST @2241-2256
+- function_definition TEST @2258-2269
+- function_definition TEST @2271-2279
+
+### dom/quota/test/gtest/TestQuotaManager.cpp
+
+Blob: `64eed6013792965ee1168c659f07a5f6d7d02310`. Grammar: cpp. Status: contains-errors.
+
+- include "QuotaManagerDependencyFixture.h" @5
+- include "QuotaManagerTestHelpers.h" @6
+- include "gtest/gtest.h" @7
+- include "mozilla/BasePrincipal.h" @8
+- include "mozilla/dom/quota/Client.h" @9
+- include "mozilla/dom/quota/ClientDirectoryLock.h" @10
+- include "mozilla/dom/quota/ClientDirectoryLockHandle.h" @11
+- include "mozilla/dom/quota/CommonMetadata.h" @12
+- include "mozilla/dom/quota/DirectoryLock.h" @13
+- include "mozilla/dom/quota/DirectoryLockInlines.h" @14
+- include "mozilla/dom/quota/OriginScope.h" @15
+- include "mozilla/dom/quota/PersistenceScope.h" @16
+- include "mozilla/dom/quota/QuotaManager.h" @17
+- include "mozilla/dom/quota/ResultExtensions.h" @18
+- include "mozilla/dom/quota/UniversalDirectoryLock.h" @19
+- include "mozilla/gtest/MozAssertions.h" @20
+- include "mozilla/ipc/PBackgroundSharedTypes.h" @21
+- include "nsFmtString.h" @22
+- include "nsIFile.h" @23
+- include "nsIPrefBranch.h" @24
+- include "nsIPrefService.h" @25
+- include "prtime.h" @26
+- class_specifier TestQuotaManager @30-39
+- function_definition SetUpTestCase @32-32
+- function_definition TearDownTestCase @34-34
+- function_definition TearDown @36-38
+- class_specifier TestQuotaManagerAndClearStorage @41-44
+- function_definition TearDown @43-43
+- class_specifier TestQuotaManagerAndClearStorageWithBoolPair @48-50
+- class_specifier TestQuotaManagerAndShutdownFixture @52-58
+- function_definition SetUp @55-55
+- function_definition TearDown @57-57
+- function_definition TEST_F @60-71
+- function_definition TEST_F @75-172
+- function_definition TEST_F @176-251
+- function_definition TEST_F @255-296
+- function_definition TEST_F @300-359
+- function_definition TEST_F @364-417
+- function_definition TEST_F @421-482
+- function_definition TEST_F @486-556
+- function_definition TEST_F @561-635
+- function_definition TEST_F @640-722
+- function_definition TEST_F @728-898
+- function_definition TEST_F @902-998
+- function_definition TEST_F @1002-1077
+- function_definition TEST_F @1081-1124
+- function_definition TEST_F @1128-1188
+- function_definition TEST_F @1193-1248
+- function_definition TEST_F @1250-1348
+- function_definition TEST_F @1351-1371
+- function_definition TEST_F @1374-1400
+- function_definition TEST_F @1404-1431
+- function_definition TEST_F @1436-1478
+- function_definition TEST_F @1482-1528
+- function_definition TEST_F @1533-1572
+- function_definition TEST_F @1577-1620
+- function_definition TEST_F @1623-1650
+- function_definition TEST_F @1654-1687
+- function_definition TEST_F @1692-1742
+- function_definition TEST_F @1749-1809
+- function_definition TEST_F @1811-1853
+- function_definition TEST_F @1857-1907
+- function_definition TEST_F @1911-1952
+- function_definition TEST_F @1954-1997
+- function_definition TEST_F @1999-2040
+- function_definition TEST_F @2044-2094
+- function_definition TEST_F @2098-2139
+- function_definition TEST_F @2141-2184
+- function_definition TEST_F @2186-2239
+- function_definition TEST_F @2243-2306
+- function_definition TEST_F @2310-2361
+- function_definition TEST_F @2363-2416
+- function_definition TEST_F @2418-2467
+- function_definition TEST_F @2469-2524
+- function_definition TEST_F @2526-2583
+- function_definition TEST_F @2585-2650
+- function_definition TEST_F @2653-2693
+- function_definition TEST_F @2697-2757
+- function_definition TEST_F @2760-2808
+- function_definition TEST_F @2810-2857
+- function_definition TEST_F @2859-2911
+- function_definition TEST_F @2914-2967
+- function_definition TEST_F @2970-3017
+- function_definition TEST_F @3019-3067
+- function_definition TEST_F @3070-3117
+- function_definition TEST_F @3119-3159
+- function_definition TEST_F @3161-3199
+- function_definition TEST_F @3201-3244
+- function_definition TEST_F @3247-3294
+- function_definition TEST_F @3296-3343
+- function_definition TEST_F @3345-3396
+- function_definition TEST_F @3399-3451
+- function_definition TEST_F @3454-3478
+- function_definition TEST_F @3481-3511
+- function_definition TEST_F @3515-3546
+- function_definition TEST_F @3554-3584
+- function_definition TEST_F @3588-3617
+- function_definition TEST_F @3619-3630
+- function_definition TEST_F @3632-3652
+- function_definition TEST_F @3654-3669
+- function_definition TEST_F @3671-3689
+- function_definition TEST_F @3691-3722
+- function_definition TEST_F @3724-3753
+- function_definition TEST_F @3755-3784
+- function_definition TEST_P @3786-3867
+- function_definition TEST_F @3869-3938
+- function_definition TEST_F @3970-4122
+- function_definition TEST_F @4126-4135
+- function_definition TEST_F @4137-4147
+- function_definition TEST_F @4149-4158
+
+### dom/quota/test/gtest/TestResultExtensions.cpp
+
+Blob: `9840881e0857e68022c73a98dbbb011126495a16`. Grammar: cpp. Status: contains-errors.
+
+- include "Common.h" @5
+- include "gtest/gtest.h" @6
+- include "mozilla/dom/QMResult.h" @7
+- include "mozilla/dom/quota/ResultExtensions.h" @8
+- class_specifier TestClass @14-25
+- function_definition NonOverloadedNoInputComplex @18-21
+- function_definition NonOverloadedNoInputFailsComplex @22-24
+- class_specifier DOM_Quota_ResultExtensions_ToResult @28-28
+- class_specifier DOM_Quota_ResultExtensions_GenericErrorResult @29-29
+- function_definition TEST_F @31-46
+- function_definition TEST_F @48-86
+- function_definition TEST_F @88-103
+- function_definition TEST_F @105-140
+- function_definition TEST @142-153
+- function_definition TEST @155-166
+- function_definition TEST @168-181
+- function_definition TEST @183-196
+- function_definition TEST @198-203
+- function_definition TEST @211-225
+- function_definition TEST @227-232
+- function_definition TEST @240-247
+- function_definition TEST @256-263
+- function_definition TEST @272-300
+- function_definition TEST @302-331
+
+### dom/quota/test/gtest/TestScopedLogExtraInfo.cpp
+
+Blob: `cc516c2d2d5e2f7899acef8b430dde6ac10680b7`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/dom/quota/ScopedLogExtraInfo.h" @6
+- function_definition TEST @10-34
+- function_definition TEST @36-77
+
+### dom/quota/test/gtest/TestStorageConnection.cpp
+
+Blob: `701549a991ae862e483bf9530665c64c62d402d9`. Grammar: cpp. Status: contains-errors.
+
+- include "QuotaManagerDependencyFixture.h" @5
+- include "mozIStorageConnection.h" @6
+- include "mozIStorageService.h" @7
+- include "mozStorageCID.h" @8
+- include "mozilla/dom/quota/IPCStreamCipherStrategy.h" @9
+- include "mozilla/dom/quota/QuotaCommon.h" @10
+- include "mozilla/dom/quota/QuotaManager.h" @11
+- include "mozilla/dom/quota/QuotaObject.h" @12
+- include "mozilla/dom/quota/ResultExtensions.h" @13
+- include "nsIFile.h" @14
+- include "nsIFileProtocolHandler.h" @15
+- include "nsIFileURL.h" @16
+- include "nsIURIMutator.h" @17
+- include "nss.h" @18
+- struct_specifier NSSInitContextDeleter @22-24
+- function_definition operator() @23-23
+- function_definition InitializeClientDirectory @30-49
+- function_definition CreateStorageConnection @51-151
+- class_specifier TestStorageConnection @155-185
+- function_definition SetUpTestCase @157-168
+- function_definition TearDownTestCase @170-174
+- function_definition TearDown @176-178
+- struct_specifier NSSInitContextDeleter @181-183
+- function_definition operator() @182-182
+- function_definition TEST_F @190-213
+- function_definition TEST_F @215-242
+- function_definition TEST_F @244-274
+
+### dom/quota/test/gtest/TestStorageOriginAttributes.cpp
+
+Blob: `1571c2ee408d409d9a667bc39b1ea2c0d6fc921e`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/StorageOriginAttributes.h" @6
+- function_definition TEST @10-18
+- function_definition TEST @20-35
+- function_definition TEST @37-49
+- function_definition TEST @51-64
+- function_definition TEST @66-79
+- function_definition TEST @81-116
+- function_definition TEST @118-141
+- function_definition TEST @143-156
+- function_definition TEST @158-172
+- function_definition TEST @174-188
+- function_definition TEST @190-199
+- function_definition TEST @201-211
+- function_definition TEST @213-223
+- function_definition TEST @225-236
+
+### dom/quota/test/gtest/TestStringifyUtils.cpp
+
+Blob: `64c2f8c2131c2b1f14e84de017f28509b6e3cc88`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/dom/quota/StringifyUtils.h" @6
+- class_specifier B @10-10
+- class_specifier A @11-19
+- function_definition A @13-13
+- function_definition setB @15-15
+- class_specifier B @21-29
+- function_definition B @23-23
+- function_definition setA @25-25
+- function_definition DoStringify @31-34
+- function_definition DoStringify @36-39
+- function_definition TEST @41-55
+
+### dom/quota/test/gtest/TestTelemetry.cpp
+
+Blob: `433fc80d0f5bdd8ca7bf7f17b21aef214a83e5cb`. Grammar: cpp. Status: syntax-clean.
+
+- include "QuotaManagerDependencyFixture.h" @5
+- include "mozilla/glean/DomQuotaMetrics.h" @6
+- include "mozilla/glean/fog_ffi_generated.h" @7
+- function_definition TEST @11-45
+
+### dom/quota/test/gtest/TestThreadUtils.cpp
+
+Blob: `245db4ac5318497d27feda0cb521a233d2a4b03b`. Grammar: cpp. Status: syntax-clean.
+
+- include "QuotaManagerDependencyFixture.h" @5
+- include "mozilla/dom/quota/QuotaManager.h" @6
+- include "mozilla/dom/quota/ThreadUtils.h" @7
+- include "mozilla/gtest/MozAssertions.h" @8
+- function_definition GetRefCount @14-20
+- class_specifier OneTimeRunnable @22-72
+- enum_specifier State @24-24
+- function_definition Init @26-31
+- function_definition Create @33-38
+- function_definition GetState @40-40
+- function_definition GetCurrent @42-42
+- function_definition GetCurrentRefCount @44-46
+- function_definition Run @48-54
+- function_definition OneTimeRunnable @57-61
+- function_definition ~OneTimeRunnable @63-66
+- class_specifier TestThreadUtils @80-85
+- function_definition SetUpTestCase @82-82
+- function_definition TearDownTestCase @84-84
+- function_definition TEST_F @87-136
+- function_definition TEST_F @138-187
+
+### dom/quota/test/gtest/TestUsageInfo.cpp
+
+Blob: `31a0e9d57ebcf21a3593520d9a30c7d3f22bf074`. Grammar: cpp. Status: syntax-clean.
+
+- include <cstdint> @5
+- include "gtest/gtest.h" @7
+- include "mozilla/Maybe.h" @8
+- include "mozilla/dom/quota/QuotaCommon.h" @9
+- include "mozilla/dom/quota/UsageInfo.h" @10
+- function_definition TEST @20-25
+- function_definition TEST @27-36
+- function_definition TEST @38-47
+- function_definition TEST @49-58
+- function_definition TEST @60-69
+- function_definition TEST @71-81
+- function_definition TEST @83-93
+- function_definition TEST @95-105
+- function_definition TEST @107-117
+- function_definition TEST @119-129
+
+### dom/reporting/CSPViolationReportBody.cpp
+
+Blob: `a05eb4b9fc9146b8335115df05db11864dd0349b`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/dom/CSPViolationReportBody.h" @5
+- include "mozilla/JSONWriter.h" @7
+- include "mozilla/dom/ReportingBinding.h" @8
+- function_definition CSPViolationReportBody @12-32
+- function_definition ~CSPViolationReportBody @34-34
+- function_definition WrapObject @36-39
+- function_definition GetBlockedURL @41-43
+- function_definition GetDocumentURL @45-47
+- function_definition GetReferrer @49-51
+- function_definition GetEffectiveDirective @53-56
+- function_definition GetOriginalPolicy @58-60
+- function_definition GetSourceFile @62-64
+- function_definition GetSample @66-68
+- function_definition Disposition @70-73
+- function_definition StatusCode @75-75
+- function_definition GetLineNumber @77-79
+- function_definition GetColumnNumber @81-83
+- function_definition ToJSON @85-157
+
+### dom/reporting/CSPViolationReportBody.h
+
+Blob: `da7b6139414a70795030be6040db1628abd6df2c`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/dom/Nullable.h" @8
+- include "mozilla/dom/ReportBody.h" @9
+- include "mozilla/dom/SecurityPolicyViolationEvent.h" @10
+- class_specifier CSPViolationReportBody @14-62
+
+### dom/reporting/ConnectionAllowlistViolationReportBody.cpp
+
+Blob: `33a3e34f2a9ba811f391dc12020e2a1a8e1234d2`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/dom/ConnectionAllowlistViolationReportBody.h" @5
+- include "mozilla/JSONWriter.h" @7
+- include "mozilla/dom/BindingUtils.h" @8
+- function_definition ConnectionAllowlistViolationReportBody @12-20
+- function_definition ~ConnectionAllowlistViolationReportBody @22-23
+- function_definition WrapObject @25-29
+- function_definition GetUrl @31-33
+- function_definition GetConnection @35-38
+- function_definition GetAllowlist @40-43
+- function_definition Disposition @45-48
+- function_definition ToJSON @50-63
+
+### dom/reporting/ConnectionAllowlistViolationReportBody.h
+
+Blob: `912938c7c04eb55583d2dbc3943428cbe3b688e9`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/dom/ReportBody.h" @8
+- include "mozilla/dom/ReportingBinding.h" @9
+- include "nsTArray.h" @10
+- class_specifier ConnectionAllowlistViolationReportBody @17-45
+
+### dom/reporting/CrashReport.cpp
+
+Blob: `a173f373ca242a6e8e3f59dee78c840a28ca8e42`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/dom/CrashReport.h" @5
+- include "mozilla/JSONStringWriteFuncs.h" @7
+- include "mozilla/dom/Navigator.h" @8
+- include "mozilla/dom/ReportDeliver.h" @9
+- include "mozilla/dom/ReportingHeader.h" @10
+- include "nsIPrincipal.h" @11
+- include "nsIURIMutator.h" @12
+- include "nsString.h" @13
+- function_definition Deliver @18-61
+
+### dom/reporting/CrashReport.h
+
+Blob: `1ed86668de4b8815d844ff6c565360f30b8169a1`. Grammar: cpp. Status: syntax-clean.
+
+- include "nsCOMPtr.h" @8
+- class_specifier nsIPrincipal @10-10
+- class_specifier CrashReport @14-17
+
+## Validation and limits
+
+This is a declaration map. Function contracts, callers, memory ownership, thread use, generated bindings, feature selection, cleanup, and reasons need implementation and caller review. No compilation or runtime tests ran. Imports and includes are literal navigation hints only. No complete call graph is claimed.
