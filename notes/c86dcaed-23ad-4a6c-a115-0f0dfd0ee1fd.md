@@ -1,0 +1,1241 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["js"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013","portableCopies":["06ab8583ccd926f3ebad0c17f28811a77f9cba6605922b709402bf505569976c"],"sourceAt":"2026-10-13T04:17:22.071Z","correctionOf":"notes/b5a961a4-2a5f-43af-947c-3cf7a2d015de.md"}} -->
+# firefox/js JavaScript function map 625
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-computed-property-name-from-integer-separators.js
+
+Blob: `44aa87db00d38ec815479d65a58e8eb1d1af02e8`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @42-44; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @38-45
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-computed-property-name-from-math.js
+
+Blob: `e146251c4eb739688ef1db73ff7088dad735d511`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @42-44; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @38-45
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-computed-property-name-from-multiplicative-expression-div.js
+
+Blob: `0d26171ee7ed361f752b503cfb0822b77fa7a7a3`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @42-44; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @38-45
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-computed-property-name-from-multiplicative-expression-mult.js
+
+Blob: `f95ec64b93c42d3efb0c2a47f3cf815f4b17b9a7`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @42-44; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @38-45
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-computed-property-name-from-null.js
+
+Blob: `ea49134f5087fe6022320ffda2143172d2f37e99`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @42-44; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @38-45
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-computed-property-name-from-numeric-literal.js
+
+Blob: `cda6602bc7b9339e96e3bc697b5aae17d0a7bef5`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @42-44; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @38-45
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-computed-property-name-from-string-literal.js
+
+Blob: `09c7f5ce57a8ca4c718842a3cc4a2475c951960d`. Role: test-path,source. Parse: module.
+
+- 1 @39-41; FunctionExpression; parameters=0; async=false; generator=false
+- 1 @42-44; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @38-45
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-computed-property-name-from-yield-expression.js
+
+Blob: `3ad6aa530a1b6e4c64452d49863d6b55dba20ccd`. Role: test-path,source. Parse: module.
+
+- g @36-67; FunctionDeclaration; parameters=0; async=false; generator=true
+- (anonymous) @40-42; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-45; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @39-46
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-additive-expression-add.js
+
+Blob: `ea6ffb38500651678e3f8763bc6f547e6d50c82b`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @38-42
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-additive-expression-subtract.js
+
+Blob: `98eef5ec8b88563d1d18a97fa65b69bb0cd9ee48`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @38-42
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-arrow-function-expression.js
+
+Blob: `7a295dd4eb2a82019238e154b5ba514b8ead3ee6`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-39; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @41-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @47-47; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @51-51; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @55-55; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @59-59; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @38-42
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-assignment-expression-assignment.js
+
+Blob: `bb04fb5d343ece6bfcbe1f876b823019c598ddd0`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @39-43
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-assignment-expression-bitwise-or.js
+
+Blob: `736ca0d344c3d1051d05f8a37f1dc7da2fbd7f5a`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @39-43
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-assignment-expression-coalesce.js
+
+Blob: `1c726926e36a90a0f81c22e4def9e8f4629a0c42`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @39-43
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-assignment-expression-logical-and.js
+
+Blob: `692d88d7b5cf03b5a0f814846d6a49102c8e1e3a`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @39-43
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-assignment-expression-logical-or.js
+
+Blob: `a92aa655b736296c1f6656228803a20a3cbe223e`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @39-43
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-async-arrow-function-expression.js
+
+Blob: `2b28a7edddefc58d618a71f78dddf6c55b46d3d0`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-39; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @41-41; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @47-47; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @51-51; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @55-55; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @59-59; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- Class (anonymous) @38-42
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-await-expression.js
+
+Blob: `25ef78cae5ee518649e3037ca8c83e6c0aca246d`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @40-44
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-condition-expression-false.js
+
+Blob: `e03c8b7f8957acd76a15b4d1cc0ea881774558e1`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @38-42
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-condition-expression-true.js
+
+Blob: `ad0ab90036dc1f24ddaeb16202d44346bd5e035f`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @38-42
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-decimal-e-notational-literal.js
+
+Blob: `8c2c102ea3c47305313c5b719870c69db646b4aa`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @38-42
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-decimal-literal.js
+
+Blob: `661b7f5fd443ac4f571b14f8f792b8dde3f6b746`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @38-42
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-exponetiation-expression.js
+
+Blob: `3e8f3e601844c2d9171c56d33e95fa0cc1fbfdfc`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @38-42
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-expression-coalesce.js
+
+Blob: `e8fd6d9cac336d3ba04829243db78b721bf457b1`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @39-43
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-expression-logical-and.js
+
+Blob: `12d8b5a909277e875b59b5597b788500e2e4340d`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @39-43
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-expression-logical-or.js
+
+Blob: `8e8bfc82aa3913e78f7c33b3ca754af4c8696c13`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @39-43
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-function-declaration.js
+
+Blob: `aeeb9adbc8b6a469e550ff20dafcbbdefced1db3`. Role: test-path,source. Parse: module.
+
+- f @36-36; FunctionDeclaration; parameters=0; async=false; generator=false
+- Class (anonymous) @39-43
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-function-expression.js
+
+Blob: `9eaea1afdbc0c69f82ee807a61bf8cd94e4cab06`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-39; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @41-41; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @47-47; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @51-51; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @55-55; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @59-59; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @38-42
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-generator-function-declaration.js
+
+Blob: `35ff6866b27814a879261cff9b9f5918a92ee886`. Role: test-path,source. Parse: module.
+
+- g @36-36; FunctionDeclaration; parameters=0; async=false; generator=true
+- Class (anonymous) @39-43
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-identifier.js
+
+Blob: `2d39292d1b8d6a70bf26c3ee12fb703ed4f88ea0`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @40-44
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-integer-e-notational-literal.js
+
+Blob: `a8696e07cf749347f8a12c17c2d1327d01849cc5`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @38-42
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-integer-separators.js
+
+Blob: `012230a62e04288be606af02a7489cb95c9caa83`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @38-42
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-math.js
+
+Blob: `b506f576fed8babe39c6352ba32caec086926089`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @38-42
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-multiplicative-expression-div.js
+
+Blob: `7a779fca7d43fe5ed5aa728040c5709e15b2eb22`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @38-42
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-multiplicative-expression-mult.js
+
+Blob: `25ee51bee9493bfa75b981a374998e39a9063357`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @38-42
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-null.js
+
+Blob: `50b533c9d3dbd9effb377c24b900789c3adbf5aa`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @38-42
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-numeric-literal.js
+
+Blob: `2f66cd43842b26cee8dc369d21ec974a3633f709`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @38-42
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-string-literal.js
+
+Blob: `d3e613bed3660129b1a6f79f4a43aaac250737ab`. Role: test-path,source. Parse: module.
+
+- Class (anonymous) @38-42
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-computed-property-name-from-yield-expression.js
+
+Blob: `b48c6f884ce292c5a2af422f20d1b3f14b84f0af`. Role: test-path,source. Parse: module.
+
+- g @36-64; FunctionDeclaration; parameters=0; async=false; generator=true
+- Class (anonymous) @39-43
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-additive-expression-add.js
+
+Blob: `71eec0118ad224f26354b3bf1211defe93cda2ba`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-45; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @38-46
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-additive-expression-subtract.js
+
+Blob: `97dbdbf6e2e461f5635660e366349db9102bb211`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-45; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @38-46
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-arrow-function-expression.js
+
+Blob: `c0c57223a8ac2dd42ab8733ae4a2ff8d68be7fb0`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-39; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-45; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-43; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @51-51; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @55-55; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @59-59; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @63-63; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @38-46
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-assignment-expression-assignment.js
+
+Blob: `d5724dedda5c291d138e286430fc61d534597df2`. Role: test-path,source. Parse: module.
+
+- (anonymous) @40-42; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @44-46; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @39-47
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-assignment-expression-bitwise-or.js
+
+Blob: `0363c3513dd967af6449008583b04691cdff7b35`. Role: test-path,source. Parse: module.
+
+- (anonymous) @40-42; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @44-46; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @39-47
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-assignment-expression-coalesce.js
+
+Blob: `3dee6a56292cbf1c7ed065171a6ab81b5122baca`. Role: test-path,source. Parse: module.
+
+- (anonymous) @40-42; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @44-46; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @39-47
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-assignment-expression-logical-and.js
+
+Blob: `f2299078af2713f27a3e26e8b4f5672e0f94218c`. Role: test-path,source. Parse: module.
+
+- (anonymous) @40-42; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @44-46; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @39-47
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-assignment-expression-logical-or.js
+
+Blob: `bad6dbd0aa45ec0dc56abebf1834cc384c92e5e2`. Role: test-path,source. Parse: module.
+
+- (anonymous) @40-42; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @44-46; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @39-47
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-async-arrow-function-expression.js
+
+Blob: `1205a426baebf6f082c08d72df53e8da82d01072`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-39; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @43-45; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-43; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @51-51; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @55-55; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @59-59; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @63-63; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- Class (anonymous) @38-46
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-await-expression.js
+
+Blob: `195a54bafcda0f959e0288691a6ce45a6ced6a7d`. Role: test-path,source. Parse: module.
+
+- (anonymous) @41-43; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @45-47; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @40-48
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-condition-expression-false.js
+
+Blob: `bd79d94e1a0bb5075be698bf32c2dfdf4e18599f`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-45; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @38-46
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-condition-expression-true.js
+
+Blob: `ebab97ae185cecdfb4807db7030e5cef8d674cd5`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-45; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @38-46
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-decimal-e-notational-literal.js
+
+Blob: `3f58d25b791e7f62daa8c5db2660f248346bad34`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-45; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @38-46
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-decimal-literal.js
+
+Blob: `3d97072386f9923b8947d3586dc2da42a361dca2`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-45; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @38-46
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-exponetiation-expression.js
+
+Blob: `524720575e8d43afd71346e200f4b31ee6f999b3`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-45; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @38-46
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-expression-coalesce.js
+
+Blob: `a7cf9a1929d8c766ad37884f94f5fa392616198e`. Role: test-path,source. Parse: module.
+
+- (anonymous) @40-42; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @44-46; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @39-47
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-expression-logical-and.js
+
+Blob: `5c4ba7c819b752c896c91326f2bc29de5b12bd28`. Role: test-path,source. Parse: module.
+
+- (anonymous) @40-42; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @44-46; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @39-47
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-expression-logical-or.js
+
+Blob: `0f960760fac0ad46bc132aa2aa1926dc4748dc1e`. Role: test-path,source. Parse: module.
+
+- (anonymous) @40-42; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @44-46; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @39-47
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-function-declaration.js
+
+Blob: `27d7dcd92d5ff40d71b4c1349565e84f685ec585`. Role: test-path,source. Parse: module.
+
+- f @36-36; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @40-42; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @44-46; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @39-47
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-function-expression.js
+
+Blob: `087ffd71fa9a3f39ade812929f546c9705c2a040`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-39; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-45; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-43; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @51-51; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @55-55; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @59-59; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @63-63; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @38-46
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-generator-function-declaration.js
+
+Blob: `cee833fe2632266d8456b70cfc1c0be750846da5`. Role: test-path,source. Parse: module.
+
+- g @36-36; FunctionDeclaration; parameters=0; async=false; generator=true
+- (anonymous) @40-42; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @44-46; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @39-47
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-identifier.js
+
+Blob: `5fed37d68ff901cf262a3474bd755f8726bd8114`. Role: test-path,source. Parse: module.
+
+- x @41-43; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- x @45-47; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @40-48
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-integer-e-notational-literal.js
+
+Blob: `40eb283d21395d2a1d96add755c76376a4196b63`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-45; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @38-46
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-integer-separators.js
+
+Blob: `1683c8839fcfd1aa04e6bd6db5945963437d845b`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-45; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @38-46
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-math.js
+
+Blob: `a2c3cd15f281dff94a01a09894b107a79adb0f8b`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-45; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @38-46
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-multiplicative-expression-div.js
+
+Blob: `60660f747ce73aec8c39495d1b80e81238fd23d3`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-45; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @38-46
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-multiplicative-expression-mult.js
+
+Blob: `40a2ae3d4e320d234770185a83ea85ed4ce90c1c`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-45; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @38-46
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-null.js
+
+Blob: `10fd20ff21072466ed1b5b87239cebd13d3c4f47`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-45; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @38-46
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-numeric-literal.js
+
+Blob: `64cb221ce7904a15dccaf531b66b061016af1791`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-45; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @38-46
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-string-literal.js
+
+Blob: `a12c75180710a1d8842256d3137a64e6b170d96a`. Role: test-path,source. Parse: module.
+
+- 1 @39-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- 1 @43-45; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @38-46
+
+### js/src/tests/test262/language/statements/class/cpn-class-decl-fields-methods-computed-property-name-from-yield-expression.js
+
+Blob: `24ab16a2c633ae4be2bb48951ea754dd97b78fb6`. Role: test-path,source. Parse: module.
+
+- g @36-68; FunctionDeclaration; parameters=0; async=false; generator=true
+- (anonymous) @40-42; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @44-46; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @39-47
+
+### js/src/tests/test262/language/statements/class/cptn-decl.js
+
+Blob: `f3beb693c1dc65f7f600a9b3bf6e588bf12c0147`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/class/decorator/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/class/decorator/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/class/decorator/syntax/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/class/decorator/syntax/class-valid/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/class/decorator/syntax/class-valid/decorator-member-expr-private-identifier.js
+
+Blob: `a21bb602362fe0f1991db03ecfff907ad1b5a6eb`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected character '@'
+
+
+### js/src/tests/test262/language/statements/class/decorator/syntax/class-valid/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/class/decorator/syntax/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/class/decorator/syntax/valid/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/class/decorator/syntax/valid/class-element-decorator-call-expr-identifier-reference.js
+
+Blob: `587f6a77530409a329341edc253aff0d02c8dbe3`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected character '@'
+
+
+### js/src/tests/test262/language/statements/class/decorator/syntax/valid/class-element-decorator-member-expr-decorator-member-expr.js
+
+Blob: `244a73882b239cd93db0907882d8526153ee079e`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected character '@'
+
+
+### js/src/tests/test262/language/statements/class/decorator/syntax/valid/class-element-decorator-member-expr-identifier-reference.js
+
+Blob: `71928dcff21d8379b68363f0c5396f53dd512440`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected character '@'
+
+
+### js/src/tests/test262/language/statements/class/decorator/syntax/valid/class-element-decorator-parenthesized-expr-identifier-reference.js
+
+Blob: `faf794542fab888c37ad28abf858ed6219452866`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected character '@'
+
+
+### js/src/tests/test262/language/statements/class/decorator/syntax/valid/decorator-call-expr-identifier-reference-yield.js
+
+Blob: `c26fa92cb1798ecd564dc7a1594428c3072044f7`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected character '@'
+
+
+### js/src/tests/test262/language/statements/class/decorator/syntax/valid/decorator-call-expr-identifier-reference.js
+
+Blob: `7bcc2fe9dbdec20337405ce08ba8d671e4100040`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected character '@'
+
+
+### js/src/tests/test262/language/statements/class/decorator/syntax/valid/decorator-member-expr-decorator-member-expr.js
+
+Blob: `91b46dd233b3598845bb7512c9d6f34db37d3af0`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected character '@'
+
+
+### js/src/tests/test262/language/statements/class/decorator/syntax/valid/decorator-member-expr-identifier-reference-yield.js
+
+Blob: `5322bb23c2afe5c8ab0bc414ff5f5f1c2529fbea`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected character '@'
+
+
+### js/src/tests/test262/language/statements/class/decorator/syntax/valid/decorator-member-expr-identifier-reference.js
+
+Blob: `3583925291effadf20b397ac8bbc304afda79913`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected character '@'
+
+
+### js/src/tests/test262/language/statements/class/decorator/syntax/valid/decorator-parenthesized-expr-identifier-reference-yield.js
+
+Blob: `276f6ca1f11e825bc588cb193b3b94435b64413b`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected character '@'
+
+
+### js/src/tests/test262/language/statements/class/decorator/syntax/valid/decorator-parenthesized-expr-identifier-reference.js
+
+Blob: `8bab7aeeed6f91d102bb2d9a08a7e1c310ca5710`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected character '@'
+
+
+### js/src/tests/test262/language/statements/class/decorator/syntax/valid/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/class/definition/accessors.js
+
+Blob: `aea9a749463f0f13d0c5947a536d0eefa92bc80a`. Role: test-path,source. Parse: module.
+
+- assertAccessorDescriptor @9-25; FunctionDeclaration; parameters=2; async=false; generator=false
+- constructor @29-31; FunctionExpression; parameters=1; async=false; generator=false
+- x @33-33; FunctionExpression; parameters=0; async=false; generator=false
+- x @34-34; FunctionExpression; parameters=1; async=false; generator=false
+- staticX @36-36; FunctionExpression; parameters=0; async=false; generator=false
+- staticX @37-37; FunctionExpression; parameters=1; async=false; generator=false
+- Class C @28-38
+
+### js/src/tests/test262/language/statements/class/definition/basics.js
+
+Blob: `bead8794e5c3a356cb15d6c0a4f6d4822a3044bb`. Role: test-path,source. Parse: module.
+
+- constructor @36-36; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @42-42; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @42-42
+- Class (anonymous) @39-39
+- Class D2 @36-36
+- Class D @22-22
+- Class C @8-8
+
+### js/src/tests/test262/language/statements/class/definition/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/class/definition/class-method-returns-promise.js
+
+Blob: `faa55ae7a0de3404756bd183a6c26eee1ab77917`. Role: test-path,source. Parse: module.
+
+- method @12-12; FunctionExpression; parameters=0; async=true; generator=false
+- Class Foo @11-13
+
+### js/src/tests/test262/language/statements/class/definition/constructable-but-no-prototype.js
+
+Blob: `f765200b243bfbbcd2af7facae3fb82f2c87b2ef`. Role: test-path,source. Parse: module.
+
+- (anonymous) @8-8; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @9-11; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @10-10
+
+### js/src/tests/test262/language/statements/class/definition/constructor-property.js
+
+Blob: `d19269c38e8311f52c1e46cec51e7abed6713117`. Role: test-path,source. Parse: module.
+
+- Class C @8-8
+
+### js/src/tests/test262/language/statements/class/definition/constructor-strict-by-default.js
+
+Blob: `5680bfcc052af572176a7de28115af2d99efbce4`. Role: test-path,source. Parse: module.
+
+- constructor @9-13; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @10-12; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @8-14
+
+### js/src/tests/test262/language/statements/class/definition/constructor.js
+
+Blob: `c084dbdb2985bd2ecca1a356db757c46c9c9c7bc`. Role: test-path,source. Parse: module.
+
+- constructor @10-17; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @9-18
+
+### js/src/tests/test262/language/statements/class/definition/early-errors-class-async-method-duplicate-parameters.js
+
+Blob: `58ec8e3d987e976008c8c3091d0fc7f2005bb4f2`. Role: test-path,source. Parse: failed.
+
+Failure: Argument name clash
+
+
+### js/src/tests/test262/language/statements/class/definition/early-errors-class-method-NSPL-with-USD.js
+
+Blob: `49482b14a34b9fb20c92322ac7fcf02b2e0f81dd`. Role: test-path,source. Parse: failed.
+
+Failure: Illegal 'use strict' directive in function with non-simple parameter list
+
+
+### js/src/tests/test262/language/statements/class/definition/early-errors-class-method-arguments-in-formal-parameters.js
+
+Blob: `08efd9e9b632481de2d27faf4c517b3c727493f6`. Role: test-path,source. Parse: failed.
+
+Failure: Binding arguments in strict mode
+
+
+### js/src/tests/test262/language/statements/class/definition/early-errors-class-method-await-in-formals-default.js
+
+Blob: `c4a99c4b581162270f932f1b8e818eee9df517e1`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token )
+
+
+### js/src/tests/test262/language/statements/class/definition/early-errors-class-method-await-in-formals.js
+
+Blob: `67641cd169db6725ec435488f23b8dece67e7ffa`. Role: test-path,source. Parse: failed.
+
+Failure: Cannot use 'await' as identifier inside an async function
+
+
+### js/src/tests/test262/language/statements/class/definition/early-errors-class-method-body-contains-super-call.js
+
+Blob: `61fc064ca41a8e4d00f6819a2d4eadabde0613b7`. Role: test-path,source. Parse: failed.
+
+Failure: super() call outside constructor of a subclass
+
+
+### js/src/tests/test262/language/statements/class/definition/early-errors-class-method-duplicate-parameters.js
+
+Blob: `b92ae46a085ca03f97492fcc6a5731d89ac139a6`. Role: test-path,source. Parse: failed.
+
+Failure: Argument name clash
+
+
+### js/src/tests/test262/language/statements/class/definition/early-errors-class-method-eval-in-formal-parameters.js
+
+Blob: `16f456926e7a78fbe40f2c14ee4032e18b0bf7b4`. Role: test-path,source. Parse: failed.
+
+Failure: Binding eval in strict mode
+
+
+### js/src/tests/test262/language/statements/class/definition/early-errors-class-method-formals-body-duplicate.js
+
+Blob: `e1986d88ac314982e2b277d4333f0592a26e9a61`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token foo
+
+
+### js/src/tests/test262/language/statements/class/definition/early-errors-class-method-formals-contains-super-call.js
+
+Blob: `ebcc041b35db6e9b4f90f7bb2543ab22a9762c7e`. Role: test-path,source. Parse: failed.
+
+Failure: super() call outside constructor of a subclass
+
+
+### js/src/tests/test262/language/statements/class/definition/fn-length-static-precedence-order.js
+
+Blob: `ec6501c61f8bcb0529674d94556f155dca4cb4c1`. Role: test-path,source. Parse: module.
+
+- method @28-30; FunctionExpression; parameters=0; async=false; generator=false
+- length @31-33; FunctionExpression; parameters=0; async=false; generator=false
+- attr @40-45; FunctionExpression; parameters=0; async=false; generator=false
+- length @51-53; FunctionExpression; parameters=0; async=false; generator=false
+- length @59-61; FunctionExpression; parameters=1; async=false; generator=false
+- length @67-69; FunctionExpression; parameters=0; async=false; generator=true
+- Class E @66-70
+- Class D @58-62
+- Class C @50-54
+- Class B @39-46
+- Class A @27-34
+
+### js/src/tests/test262/language/statements/class/definition/fn-length-static-precedence.js
+
+Blob: `51ac1bf7aac3321df15d1796a73068c95003034e`. Role: test-path,source. Parse: module.
+
+- method @27-29; FunctionExpression; parameters=0; async=false; generator=false
+- length @30-32; FunctionExpression; parameters=0; async=false; generator=false
+- attr @39-44; FunctionExpression; parameters=0; async=false; generator=false
+- length @51-56; FunctionExpression; parameters=0; async=false; generator=false
+- length @63-65; FunctionExpression; parameters=1; async=false; generator=false
+- length @71-73; FunctionExpression; parameters=0; async=false; generator=true
+- Class E @70-74
+- Class D @62-66
+- Class C @50-57
+- Class B @38-45
+- Class A @26-33
+
+### js/src/tests/test262/language/statements/class/definition/fn-name-accessor-get.js
+
+Blob: `07631be5aadcbec0c53dbd5a840ece0fdb91a4ab`. Role: test-path,source. Parse: module.
+
+- id @21-21; FunctionExpression; parameters=0; async=false; generator=false
+- anonSym @22-22; FunctionExpression; parameters=0; async=false; generator=false
+- namedSym @23-23; FunctionExpression; parameters=0; async=false; generator=false
+- id @24-24; FunctionExpression; parameters=0; async=false; generator=false
+- anonSym @25-25; FunctionExpression; parameters=0; async=false; generator=false
+- namedSym @26-26; FunctionExpression; parameters=0; async=false; generator=false
+- Class A @20-27
+
+### js/src/tests/test262/language/statements/class/definition/fn-name-accessor-set.js
+
+Blob: `393007fc8b82dab84f325ee22d14d20452c3bb14`. Role: test-path,source. Parse: module.
+
+- id @22-22; FunctionExpression; parameters=1; async=false; generator=false
+- anonSym @23-23; FunctionExpression; parameters=1; async=false; generator=false
+- namedSym @24-24; FunctionExpression; parameters=1; async=false; generator=false
+- id @25-25; FunctionExpression; parameters=1; async=false; generator=false
+- anonSym @26-26; FunctionExpression; parameters=1; async=false; generator=false
+- namedSym @27-27; FunctionExpression; parameters=1; async=false; generator=false
+- Class A @21-28
+
+### js/src/tests/test262/language/statements/class/definition/fn-name-gen-method.js
+
+Blob: `0bb20c7bde4b498ac7be23539f6b6ddc4ce34c44`. Role: test-path,source. Parse: module.
+
+- id @22-22; FunctionExpression; parameters=0; async=false; generator=true
+- anonSym @23-23; FunctionExpression; parameters=0; async=false; generator=true
+- namedSym @24-24; FunctionExpression; parameters=0; async=false; generator=true
+- id @25-25; FunctionExpression; parameters=0; async=false; generator=true
+- anonSym @26-26; FunctionExpression; parameters=0; async=false; generator=true
+- namedSym @27-27; FunctionExpression; parameters=0; async=false; generator=true
+- Class A @21-28
+
+### js/src/tests/test262/language/statements/class/definition/fn-name-method.js
+
+Blob: `e080b65fd9d80f6ec29cec3807ae9b69a51c266f`. Role: test-path,source. Parse: module.
+
+- id @21-21; FunctionExpression; parameters=0; async=false; generator=false
+- anonSym @22-22; FunctionExpression; parameters=0; async=false; generator=false
+- namedSym @23-23; FunctionExpression; parameters=0; async=false; generator=false
+- id @24-24; FunctionExpression; parameters=0; async=false; generator=false
+- anonSym @25-25; FunctionExpression; parameters=0; async=false; generator=false
+- namedSym @26-26; FunctionExpression; parameters=0; async=false; generator=false
+- Class A @20-27
+
+### js/src/tests/test262/language/statements/class/definition/fn-name-static-precedence-order.js
+
+Blob: `b9e64a64b672b630cbf96de356ae0903e7237e8b`. Role: test-path,source. Parse: module.
+
+- method @25-27; FunctionExpression; parameters=0; async=false; generator=false
+- name @28-30; FunctionExpression; parameters=0; async=false; generator=false
+- attr @37-42; FunctionExpression; parameters=0; async=false; generator=false
+- name @48-50; FunctionExpression; parameters=0; async=false; generator=false
+- name @56-58; FunctionExpression; parameters=1; async=false; generator=false
+- name @64-66; FunctionExpression; parameters=0; async=false; generator=true
+- Class E @63-67
+- Class D @55-59
+- Class C @47-51
+- Class B @36-43
+- Class A @24-31
+
+### js/src/tests/test262/language/statements/class/definition/fn-name-static-precedence.js
+
+Blob: `0521ae7681e421fc920d2ed55ffaf5e1e7200532`. Role: test-path,source. Parse: module.
+
+- method @24-26; FunctionExpression; parameters=0; async=false; generator=false
+- name @27-29; FunctionExpression; parameters=0; async=false; generator=false
+- attr @36-41; FunctionExpression; parameters=0; async=false; generator=false
+- name @48-53; FunctionExpression; parameters=0; async=false; generator=false
+- name @60-62; FunctionExpression; parameters=1; async=false; generator=false
+- name @68-70; FunctionExpression; parameters=0; async=false; generator=true
+- Class E @67-71
+- Class D @59-63
+- Class C @47-54
+- Class B @35-42
+- Class A @23-30
+
+### js/src/tests/test262/language/statements/class/definition/getters-non-configurable-err.js
+
+Blob: `90745ff90121d1f5cbabb00d0936294c8402bc1b`. Role: test-path,source. Parse: module.
+
+- (anonymous) @15-17; FunctionExpression; parameters=0; async=false; generator=false
+- prototype @16-16; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @16-16
+
+### js/src/tests/test262/language/statements/class/definition/getters-prop-desc.js
+
+Blob: `bc3b262132952f9f7d36fd0d9212c052b4cc5bbb`. Role: test-path,source. Parse: module.
+
+- assertGetterDescriptor @10-19; FunctionDeclaration; parameters=2; async=false; generator=false
+- x @22-22; FunctionExpression; parameters=0; async=false; generator=false
+- staticX @23-23; FunctionExpression; parameters=0; async=false; generator=false
+- y @24-24; FunctionExpression; parameters=0; async=false; generator=false
+- staticY @25-25; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @21-26
+
+### js/src/tests/test262/language/statements/class/definition/getters-restricted-ids.js
+
+Blob: `ab41252801f600e98bad485f7bd44b0502ed9545`. Role: test-path,source. Parse: module.
+
+- eval @9-11; FunctionExpression; parameters=0; async=false; generator=false
+- arguments @12-14; FunctionExpression; parameters=0; async=false; generator=false
+- eval @15-17; FunctionExpression; parameters=0; async=false; generator=false
+- arguments @18-20; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @8-21
+
+### js/src/tests/test262/language/statements/class/definition/implicit-constructor.js
+
+Blob: `1d9d689c480beb7663565dc8d37fdbcc71c65b87`. Role: test-path,source. Parse: module.
+
+- Class C @8-8
+
+### js/src/tests/test262/language/statements/class/definition/invalid-extends.js
+
+Blob: `3bd1f15781dd52d7b2b6dccb8a1cb344f513002d`. Role: test-path,source. Parse: module.
+
+- (anonymous) @8-10; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @12-15; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @17-20; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @19-19
+- Class C @14-14
+- Class C @9-9
+
+### js/src/tests/test262/language/statements/class/definition/methods-async-super-call-body.js
+
+Blob: `36930de14e89ac96779ab97df8bb63f3a8294e44`. Role: test-path,source. Parse: module.
+
+- method @14-16; FunctionExpression; parameters=0; async=true; generator=false
+- method @20-23; FunctionExpression; parameters=0; async=true; generator=false
+- Class B @19-24
+- Class A @13-17
+
+### js/src/tests/test262/language/statements/class/definition/methods-async-super-call-param.js
+
+Blob: `a2ca86be8de84cf7eb16f3d037cee93cfd51df02`. Role: test-path,source. Parse: module.
+
+- method @15-17; FunctionExpression; parameters=0; async=true; generator=false
+- method @21-23; FunctionExpression; parameters=1; async=true; generator=false
+- Class B @20-24
+- Class A @14-18
+
+### js/src/tests/test262/language/statements/class/definition/methods-gen-no-yield.js
+
+Blob: `ac2dfca13578b778a8a3c38b7bc3a70a060d12e5`. Role: test-path,source. Parse: module.
+
+- foo @14-14; FunctionExpression; parameters=1; async=false; generator=true
+- Class A @13-15
+
+### js/src/tests/test262/language/statements/class/definition/methods-gen-return.js
+
+Blob: `28aea0b76e13ceeb9fa02dd15f18dfbc492714c1`. Role: test-path,source. Parse: module.
+
+- g1 @13-13; FunctionExpression; parameters=0; async=false; generator=true
+- g2 @14-14; FunctionExpression; parameters=0; async=false; generator=true
+- Class A @12-15
+
+### js/src/tests/test262/language/statements/class/definition/methods-gen-yield-as-expression-with-rhs.js
+
+Blob: `a3f779c06e567f68f16741992d2fb9b4100fd3f5`. Role: test-path,source. Parse: module.
+
+- g1 @13-13; FunctionExpression; parameters=0; async=false; generator=true
+- g2 @14-14; FunctionExpression; parameters=0; async=false; generator=true
+- g3 @15-15; FunctionExpression; parameters=0; async=false; generator=true
+- g4 @16-16; FunctionExpression; parameters=0; async=false; generator=true
+- g5 @17-17; FunctionExpression; parameters=0; async=false; generator=true
+- Class A @12-18
+
+### js/src/tests/test262/language/statements/class/definition/methods-gen-yield-as-expression-without-rhs.js
+
+Blob: `ff508eba030f5ab8df2c3a3d54ec17141400b295`. Role: test-path,source. Parse: module.
+
+- g1 @13-13; FunctionExpression; parameters=0; async=false; generator=true
+- g2 @14-14; FunctionExpression; parameters=0; async=false; generator=true
+- g3 @15-15; FunctionExpression; parameters=0; async=false; generator=true
+- g4 @16-16; FunctionExpression; parameters=0; async=false; generator=true
+- g5 @17-17; FunctionExpression; parameters=0; async=false; generator=true
+- Class A @12-18
+
+### js/src/tests/test262/language/statements/class/definition/methods-gen-yield-as-function-expression-binding-identifier.js
+
+Blob: `2a98edaadd6805aa0452b3e8e2472eb1f603ae23`. Role: test-path,source. Parse: failed.
+
+Failure: The keyword 'yield' is reserved
+
+
+### js/src/tests/test262/language/statements/class/definition/methods-gen-yield-as-generator-method-binding-identifier.js
+
+Blob: `4f57eaced28e2d8fcf6a7d854d35e1eb4096ead3`. Role: test-path,source. Parse: module.
+
+- yield @14-14; FunctionExpression; parameters=0; async=false; generator=true
+- Class A @13-15
+
+### js/src/tests/test262/language/statements/class/definition/methods-gen-yield-as-identifier-in-nested-function.js
+
+Blob: `623e6c76069c73adf84e04e4ccb09b11d7eeb1a8`. Role: test-path,source. Parse: failed.
+
+Failure: The keyword 'yield' is reserved
+
+
+### js/src/tests/test262/language/statements/class/definition/methods-gen-yield-as-literal-property-name.js
+
+Blob: `d4b8018ca8366c98a110a89ce910cbbf5f6c57bd`. Role: test-path,source. Parse: module.
+
+- g @14-16; FunctionExpression; parameters=0; async=false; generator=true
+- yield @15-15; FunctionExpression; parameters=0; async=false; generator=false
+- Class A @13-17
+
+### js/src/tests/test262/language/statements/class/definition/methods-gen-yield-as-logical-or-expression.js
+
+Blob: `e5a4d10d84453ef0deecda088bf1f6f4546a0cca`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ?
+
+
+### js/src/tests/test262/language/statements/class/definition/methods-gen-yield-as-parameter.js
+
+Blob: `9f9d33397e5f91a9c2e7213d2bda5c3ef315c363`. Role: test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### js/src/tests/test262/language/statements/class/definition/methods-gen-yield-as-property-name.js
+
+Blob: `14460998927ddc7f8732a9c2393e3b812d0320c0`. Role: test-path,source. Parse: module.
+
+- g @14-16; FunctionExpression; parameters=0; async=false; generator=true
+- Class A @13-17
+
+### js/src/tests/test262/language/statements/class/definition/methods-gen-yield-as-statement.js
+
+Blob: `da5f9ce7a8d79996ad76ecd3ad36f62486634276`. Role: test-path,source. Parse: module.
+
+- g1 @13-13; FunctionExpression; parameters=0; async=false; generator=true
+- g2 @14-14; FunctionExpression; parameters=0; async=false; generator=true
+- Class A @12-15
+
+### js/src/tests/test262/language/statements/class/definition/methods-gen-yield-as-yield-operand.js
+
+Blob: `284e46f4cadc46e97d740e5cd025d3dfd0a76d81`. Role: test-path,source. Parse: module.
+
+- g @14-16; FunctionExpression; parameters=0; async=false; generator=true
+- Class A @13-17
+
+### js/src/tests/test262/language/statements/class/definition/methods-gen-yield-newline.js
+
+Blob: `d3e8224c8b6620fc29aebda5e42e50e6f41a4096`. Role: test-path,source. Parse: module.
+
+- g @13-16; FunctionExpression; parameters=0; async=false; generator=true
+- Class A @12-17
+
+### js/src/tests/test262/language/statements/class/definition/methods-gen-yield-star-after-newline.js
+
+Blob: `134aefa0c33117caefed5e93e6695d7dc5f863b3`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token *
+
+
+### js/src/tests/test262/language/statements/class/definition/methods-gen-yield-star-before-newline.js
+
+Blob: `0aa7bfe406aada2dbb6ff97911887e4436dd7310`. Role: test-path,source. Parse: module.
+
+- g @13-16; FunctionExpression; parameters=0; async=false; generator=true
+- g2 @18-18; FunctionExpression; parameters=0; async=false; generator=true
+- Class A @12-17
+
+### js/src/tests/test262/language/statements/class/definition/methods-gen-yield-weak-binding.js
+
+Blob: `35db3f0baf94c874d0cf34119e66458e04b61453`. Role: test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### js/src/tests/test262/language/statements/class/definition/methods-named-eval-arguments.js
+
+Blob: `bb995271177b924c3586353b56c4d3eaae18a58f`. Role: test-path,source. Parse: module.
+
+- eval @9-11; FunctionExpression; parameters=0; async=false; generator=false
+- arguments @12-14; FunctionExpression; parameters=0; async=false; generator=false
+- eval @15-17; FunctionExpression; parameters=0; async=false; generator=false
+- arguments @18-20; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @8-21
+
+### js/src/tests/test262/language/statements/class/definition/methods-restricted-properties.js
+
+Blob: `f01bb2a64310a95b7bb9f57b73488db032951ab8`. Role: test-path,source. Parse: module.
+
+- method @13-13; FunctionExpression; parameters=0; async=false; generator=false
+- accessor @14-14; FunctionExpression; parameters=0; async=false; generator=false
+- accessor @15-15; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @54-56; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @58-60; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @62-64; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @66-68; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @72-74; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @76-78; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @80-82; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @84-86; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @90-92; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @94-96; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @98-100; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @102-104; FunctionExpression; parameters=0; async=false; generator=false
+- Class Class @12-16
+
+### js/src/tests/test262/language/statements/class/definition/methods.js
+
+Blob: `66ad98189a7326c658275a110a4e409765e4bb2d`. Role: test-path,source. Parse: module.
+
+- assertMethodDescriptor @8-15; FunctionDeclaration; parameters=2; async=false; generator=false
+- method @18-18; FunctionExpression; parameters=0; async=false; generator=false
+- staticMethod @19-19; FunctionExpression; parameters=0; async=false; generator=false
+- method2 @20-20; FunctionExpression; parameters=0; async=false; generator=false
+- staticMethod2 @21-21; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @17-22
+
+### js/src/tests/test262/language/statements/class/definition/numeric-property-names.js
+
+Blob: `f974c11a885a2dff009b9d55f146741be04ff596`. Role: test-path,source. Parse: module.
+
+- assertMethodDescriptor @8-15; FunctionDeclaration; parameters=2; async=false; generator=false
+- assertGetterDescriptor @17-24; FunctionDeclaration; parameters=2; async=false; generator=false
+- assertSetterDescriptor @26-33; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @36-36; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @37-37; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @38-38; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @40-40; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @41-41; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @42-42; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @54-54; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @55-55; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @56-56; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @57-57; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @53-58
+- Class B @35-43
+
+### js/src/tests/test262/language/statements/class/definition/prototype-getter.js
+
+Blob: `cbfe6ac1b7a358e7760b2fc69cae3d1440aafc98`. Role: test-path,source. Parse: module.
+
+- (anonymous) @9-9; FunctionExpression; parameters=0; async=false; generator=false
+- get @11-14; FunctionExpression; parameters=0; async=false; generator=false
+- get @22-25; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @28-30; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @29-29
+- Class C @17-17
+
+### js/src/tests/test262/language/statements/class/definition/prototype-property.js
+
+Blob: `1c9110ca042eac17798eeeaabe9dd051c36eda43`. Role: test-path,source. Parse: module.
+
+- Class C @8-8
+
+### js/src/tests/test262/language/statements/class/definition/prototype-setter.js
+
+Blob: `f6618c5a9c7b760b4f515ef8f129b2e8192a6071`. Role: test-path,source. Parse: module.
+
+- (anonymous) @8-8; FunctionExpression; parameters=0; async=false; generator=false
+- set @10-12; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @14-16; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @15-15
+
+### js/src/tests/test262/language/statements/class/definition/prototype-wiring.js
+
+Blob: `608bde058648bd355b8f66e7e7d79adcb85cdccb`. Role: test-path,source. Parse: module.
+
+- constructor @10-12; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @16-18; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @44-44; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @45-45; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @48-50; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @62-64; FunctionExpression; parameters=2; async=false; generator=false
+- Class Subclass3 @61-65
+- Class Subclass2 @47-51
+- Class Subclass @15-19
+- Class Base @9-13
+
+### js/src/tests/test262/language/statements/class/definition/setters-non-configurable-err.js
+
+Blob: `69e2dac8e6d95828c152bc4b3879ec3498020c67`. Role: test-path,source. Parse: module.
+
+- (anonymous) @15-17; FunctionExpression; parameters=0; async=false; generator=false
+- prototype @16-16; FunctionExpression; parameters=1; async=false; generator=false
+- Class C @16-16
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.
+
+## Retrieval correction
+
+This copy preserves the source map in [b5a961a4-2a5f-43af-947c-3cf7a2d015de.md](b5a961a4-2a5f-43af-947c-3cf7a2d015de.md). The original was imported and committed by concurrent console maintenance during this study. Its full path metadata could exceed the console search budget. This copy uses component scope metadata while keeping every file path in the body. It adds no independent behavior evidence. Original record: `06ab8583ccd926f3ebad0c17f28811a77f9cba6605922b709402bf505569976c`.

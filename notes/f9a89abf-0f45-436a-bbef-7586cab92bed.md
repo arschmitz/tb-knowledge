@@ -1,0 +1,1017 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:14:46.642314+00:00","paths":["layout"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013","portableCopies":["9b55f840c5896637e840f9f47514110b24b8fe39d5170ef3f56496df6d40776c"],"sourceAt":"2026-10-13T04:14:46.642314+00:00","correctionOf":"notes/beb5c23a-a3b7-4d16-bbe5-971e1fb46550.md"}} -->
+# firefox/layout structural source map 369
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. This is an automated navigation map, not a behavior review.
+Each row gives the repository-relative path, Git blob ID, byte size, role inferred from the path, declaration candidates, and literal dependency candidates. `@N` is the source line.
+Candidates come from line-based patterns. They can miss multiline, anonymous, macro-generated, and language-specific declarations or match comments and fixture text. Dependencies are not resolved imports, runtime calls, or a complete graph. No candidates does not mean no functions or dependencies.
+Imported code and tests are included. Binary and non-UTF-8 files have a census entry but no declaration extraction. Symlink contents are scanned as text, not followed. No uncommitted changes, build products, ignored files, or untracked files are studied.
+
+## File map
+
+`layout/reftests/css-animations/no-stacking-context-animation-ref.html` | `efc029d03e1e22ae18ba42b570a22bf3c6dddf81` | 321 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/no-stacking-context-offset-distance-animation-with-offset-path-none.html` | `c8dd6981488a8a97467311731015a17d98af542a` | 421 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/no-stacking-context-opacity-removing-animation-in-delay.html` | `806e82f9b00725637ac9c52dd10191071910aa44` | 1269 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/no-stacking-context-transform-removing-animation-in-delay.html` | `2e4cd9abe27f38441f58a6331ada38ff6e0daed0` | 1290 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/no-style-sharing-with-animations-ref.html` | `0218b02f8acd07f28a0d839d32e5b5cec9596a93` | 132 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/no-style-sharing-with-animations.html` | `02dc960ca2baea66172012ed9db164233d6f7453` | 582 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/opacity-animation-in-delay.html` | `cafa34881fbc834e0a6e4a13588f380b9602cdae` | 383 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/opacity-animation-in-fixed-opacity-parent-ref.html` | `ff69f708eb876f5338369d5cc86082fd3984234c` | 530 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/opacity-animation-in-fixed-opacity-parent.html` | `aa9044571162c12de19e594ec53f668d5809747b` | 655 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/partially-out-of-view-animation-ref.html` | `fafb98b2dc0b3f6bbbf8440d9049e2980b1996b7` | 229 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/partially-out-of-view-animation.html` | `2bc2af6c69fc0293bea65778d200bf9767036623` | 726 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/reframe-and-animation-starts-at-the-same-time-ref.html` | `65387b5998e28416de545a1d4788bb581593bfee` | 202 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/reframe-and-animation-starts-at-the-same-time.html` | `325236b2a77e8fb9406a4fcb7972b3f0f4a6fcf8` | 634 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/reftest.list` | `1011609096080274a1759f97a0ee80944b77d6ba` | 7776 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/replace-with-new-positive-delay-animation-ref.html` | `3c822f514a503927a68a5766f57dafcfa680c796` | 158 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/replace-with-new-positive-delay-animation.html` | `fbafd2cca844cf84168268ae86352a724d6cb413` | 1200 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/screen-animations-notref.html` | `73a026f6033bfa86aade8859ccb01e6f5a335a44` | 150 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/screen-animations-ref.html` | `8830913084c3b934bdf7ee2beb6b71358df038ec` | 149 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/screen-animations.html` | `ba1a0aa14ecc81351c864727aa83b2fc64754cfe` | 223 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/scroll-timeline-in-delay-omta-ref.html` | `c6caf3029fcf5207744511ce49d0ccd8f923c0e9` | 288 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/scroll-timeline-in-delay-omta.html` | `4a9393d3f594dbf1d8bd958c6469d8fe6ae9618f` | 1955 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-animation-ref.html` | `817056c1ce88a901b2e96c7e0db512ba84abf1f0` | 296 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-lose-opacity-1.html` | `80ce2ea72503198eb754d35733fc8d59ac66b0d1` | 451 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-lose-transform-none.html` | `f08ec41beef09361510d6af0451a28c5a4b9fe07` | 489 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-offset-path-none-animation.html` | `53bbf4bf822a72a943172e1e8ca06d91c5ec94e0` | 450 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-offset-path-none-in-delay.html` | `568e8ea25a1c4116a01162a5a4e31398698116e0` | 406 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-offset-path-none-with-fill-backwards.html` | `50143d36bc1de285fa0529cf69b0512dc52553d5` | 465 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-offset-path-none-with-fill-forwards.html` | `1fc8700fee2617781a5bb5020458a57081034b35` | 456 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-opacity-1-animation.html` | `3a4fe7bf45890a97496a7711b63baaabefd0d0d5` | 421 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-opacity-1-in-delay.html` | `4e441397c807256875748010527f208d35ebd751` | 379 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-opacity-1-on-table.html` | `f3da311909e99553b971bb633e2f5ae7c25560a8` | 464 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-opacity-1-with-fill-backwards.html` | `484da2979d3411e5aa3e77ecceebf64a69b3212a` | 438 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-opacity-1-with-fill-forwards.html` | `5fdda4f9dd89e592f4f779132df7ae3c7184bdd1` | 429 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-opacity-removing-important-in-delay.html` | `f89240d230afe2e593c15f3c878144317f84a737` | 1106 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-opacity-win-in-delay-on-main-thread.html` | `8d35bf6225ecfc0b8fcfb2a1b0ef19d1a4864ad1` | 617 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-opacity-win-in-delay.html` | `c60177d08f73fdf01452f00b4d37b820f81f6cd8` | 491 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-opacity-wins-over-transition.html` | `38993a8dd4207ce2cde807ef549e200b22561b03` | 880 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-paused-on-opacity-1.html` | `b27985a6ca6056b7d678d019a2221229931d0df4` | 421 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-paused-on-transform-none.html` | `cd029084989975542d150f63434d6367cad444d3` | 444 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-transform-none-animation-on-svg.html` | `6192d58b704388bfe2603f9d63ecb148486b55a9` | 498 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-transform-none-animation-with-backface-visibility.html` | `c96be7d4cc3f637078a86a1b67c5054a6ffe1738` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-transform-none-animation-with-preserve-3d.html` | `37b3f851677aa99861f5918e65ba277e106f80bc` | 551 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-transform-none-animation.html` | `53213b452d32d6e443cda14a7569f541776d096f` | 442 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-transform-none-in-delay.html` | `c52e8825d330bb03fe6bc8779f7c5639934cc3cc` | 400 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-transform-none-with-fill-backwards.html` | `d0515c2945521254e9fc2a5614afbf9d6ee3f860` | 459 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-transform-none-with-fill-forwards.html` | `2d9610232c7c162bcbc59ade89e1b0f9316e1e3c` | 450 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-transform-removing-important-in-delay.html` | `0b39dd4d4e37f1ec623beecc100ed189c24ca413` | 1183 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-transform-win-in-delay-on-main-thread.html` | `2f61168946e52e95b379eb45e1f4dcc45f2ef0ff` | 666 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-transform-win-in-delay.html` | `5a864faf474ea4eca28290999347e79741e6ec3f` | 540 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stacking-context-transform-wins-over-transition.html` | `8d1de575e0e085978b7b7825c6f55d3f07f9f21c` | 931 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/stop-animation-on-discarded-pseudo-element.html` | `fccfade1cc09207f7db0c6faf7fe656d83f9b120` | 794 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/transform-animation-in-delay-ref.html` | `9c161fe0474529e7350c264542d54d883fc2ff24` | 183 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/transform-animation-in-delay.html` | `0ed13934f4174c58483904ba9afe67c52ac16cbc` | 417 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/updating-animation-on-marker-pseudo-element-ref.html` | `9eab1517b7ea40cf52c731613e81b0722fe8c912` | 209 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/updating-animation-on-marker-pseudo-element.html` | `fc1d29cd38cdbe3d39e6031983ee98cbb64a58ea` | 888 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/updating-animation-on-pseudo-element-ref.html` | `7196f11503c52b423b04bfe7951fa0e462bb57bd` | 153 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-animations/updating-animation-on-pseudo-element.html` | `cae7d2723c2909542c644dfbc993f88962c13599` | 832 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/as-image/black100x100.png` | `061e686c159157b87d2df26950bc1d6997d659f6` | 15438 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`layout/reftests/css-blending/as-image/blue100x100.png` | `79f972cd5fa4aa8cbe252523afc47b98278bf0a0` | 47176 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`layout/reftests/css-blending/as-image/brown100x100.png` | `f1a2d6d849f90f2330159d9d71a3948850c70a35` | 47836 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`layout/reftests/css-blending/as-image/green100x100.jpg` | `5b920f7c0678cf3f159ff509b63c09606c677f21` | 3595 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`layout/reftests/css-blending/as-image/green100x100.png` | `0eea75c96a76ed107369990ae47ddc8e2e4470f9` | 47813 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`layout/reftests/css-blending/as-image/green100x100_alpha.png` | `1402d81f45630d958b521869480bf14b272d2807` | 47847 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`layout/reftests/css-blending/as-image/green_square.svg` | `7cb1675e38431350b3dc1194b0de451c273e02cb` | 136 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/as-image/red100x100.png` | `adb1bed7f0ea5ae6f48228ff191024be64eda6de` | 47519 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`layout/reftests/css-blending/as-image/red_green.gif` | `c86b56d4121df62487d63e3f42464241e23da610` | 317 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`layout/reftests/css-blending/as-image/white_square.svg` | `f9b0367c79a105110baf4546bae4b8c4a0935d70` | 135 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blend-mode-body-fixed-ref.html` | `b668ceba783976af884abd5304383eb9bb5e49df` | 222 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blend-mode-body-fixed.html` | `facbbc0ecbb17342d073af9e4d694b2c86025ae0` | 363 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blend-mode-body-image-ref.html` | `e51dcd439231b89a30d6d0221941cb8ffd1380f1` | 248 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blend-mode-body-image.html` | `9447e5b2d328a400c811aa403379a8fe5996af13` | 336 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blend-mode-body-transparent-image-ref.html` | `20ac6209eea98cebf7c08758cd74a013ccd383da` | 233 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blend-mode-body-transparent-image.html` | `2c1b0f63925fe7883a25d5337af82ad87fe83174` | 491 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-alpha-ref.html` | `6a7055938dbd98c9fcf3d8a8ab0b5eed1c336ba2` | 1518 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-alpha.html` | `ba17205b8fc72dd951546cbe2ae6fbf971c426b3` | 457 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-background-attachement-fixed-ref.html` | `fded2192dd9107f9e75fb6cd295d4181df53022f` | 303 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-background-attachement-fixed-scroll-ref.html` | `2f5d424b7dbab197650b8cec6df6fc974ab95ad5` | 415 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-background-attachement-fixed-scroll.html` | `91a72aeeab68500d9c26a758818baebf50d67322` | 753 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-background-attachement-fixed.html` | `2439d9a23860bcbb54fc3bdf358129ca4372df5f` | 372 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-background-clip-content-box-ref.html` | `a860deb063685b76051ece32d352a8e141955c55` | 304 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-background-clip-content-box.html` | `5793259e195fab7abb0f9e15079d939251dbafe8` | 374 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-background-clip-padding-box-ref.html` | `da516d82d7e5c532acd1c7395f1e1354ef6c83a8` | 341 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-background-clip-padding-box.html` | `95c20bdd40d22b69bd6ce489f5d741eb2f3a22b6` | 411 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-background-origin-border-box.html` | `9c732e2a01003f06e13adc38cbe871300ec59707` | 374 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-background-origin-content-box.html` | `ccb6fd235cb501990637d4139d1783c65932394e` | 392 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-background-origin-ref.html` | `55bdb862eccd6a6fc88885796e04bfcba4ec6757` | 291 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-background-position-percentage-ref.html` | `af22521f94168e9d9c749d08cad82d77a6066816` | 329 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-background-position-percentage.html` | `2b9de1cb5fc96fedfc8ee309a7aeff4657ed71ca` | 393 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-background-repeat-no-repeat-ref.html` | `686ce93b93ce3989b61cd25ae711b94e5d12adee` | 308 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-background-repeat-no-repeat.html` | `3b66f50e2ae6e3246fa314b18f4057b02ab85336` | 398 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-background-size-contain.html` | `417f6d984ff51234ed6f442a003f16f2dda6d2b2` | 366 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-background-size-cover.html` | `0a942d901b0349643b3386ea712416ad00c5753c` | 359 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-background-size-percentage.html` | `d8aebef8458b1a2c0adfb36f948625d3ee883c60` | 368 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-background-size-pixels.html` | `73b5c28a4c3127de0a8f2038c0dd26b864e65e40` | 367 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-background-size-ref.html` | `fa512a6ce2fad8378eaa607a80d6bc09cda55470` | 256 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-color-burn-ref.svg` | `48191f349e541ccfec682b86c12224ea703f6d08` | 1413 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-color-burn.html` | `b6307608dc728a37b59c5213415e3c3f5efee367` | 300 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-color-dodge-ref.svg` | `724a4e184bc27b990f9cb191ccba3052d41a3c5d` | 1425 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-color-dodge.html` | `51efd478f0074a411de4ce2406a36f58ce4b89bf` | 299 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-color-ref.svg` | `2936015617570c962aeb195bf0cc469427fc459e` | 1434 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-color.html` | `6e00e094f1cb06aca684a54ee1fdf17dab2aaabd` | 293 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-darken-ref.svg` | `d4d16a54bef46f6ff2f8defe32444e50a8abd3a0` | 1404 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-darken.html` | `a4286d16724ae75ddedd7ce2d8865a25e5872d8f` | 294 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-difference-ref.svg` | `c04c51e0abacee6cf97b11a5c5900ad61ebd65ce` | 1437 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-difference.html` | `647d5d8cbeaf7dd9fa928ef9caec81360e42d51f` | 298 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-exclusion-ref.svg` | `b4edd89076a05188d9bb28cd84ecc8396c0686ca` | 1441 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-exclusion.html` | `f1a9f81e1a91ff7d8531bc10750a8a85c88a5639` | 297 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-gradient-color-ref.html` | `09dd590607ecf24802e8c973ddc3b2de61d22aab` | 422 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-gradient-color.html` | `b5df02bca9069eff9822691b9586aad8204fd005` | 456 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-gradient-gradient-ref.html` | `6dd4b183973082d3c8bcf3b9785ae41df30407b5` | 452 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-gradient-gradient.html` | `f8d9dc6d76301ba32ef2f04a95d4cc661c693bda` | 501 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-gradient-image-ref.html` | `09dd590607ecf24802e8c973ddc3b2de61d22aab` | 422 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-gradient-image.html` | `0ffe44d829937e46fd7943aa61506a43fd1845c1` | 454 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-hard-light-ref.svg` | `21afb50c38f15b61d4684fb90dd663ab8c4593df` | 1417 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-hard-light.html` | `61ac1533bac057fb4d034a663e630aaa5e819d95` | 298 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-hue-ref.svg` | `907064b5434d0341b3700e94418db6635bb1cdd7` | 1435 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-hue.html` | `8ae44e5d2ac3ccf4a87de5c70d6c7445efb01e93` | 291 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-image-color-959674-ref.html` | `319e455d217521a81e4a0b1dba459493c8570860` | 257 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-image-color-959674.html` | `21876a64789d85ee503ed51d6eb3e3bb9d58e801` | 502 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-image-color-gif-ref.html` | `ed0cad8ea855b2f3a5dd044eccadf289a8a5babc` | 151 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-image-color-gif.html` | `c68d617322cb793f030e1a253205538432bfec8d` | 377 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-image-color-jpg.html` | `2832caeb537086eb3577c503f44b968c3048881b` | 458 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-image-color-png.html` | `6ded901a31532153c0357a79dcd556f9a625bd89` | 457 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-image-color-ref.html` | `d9ebe355eaaba7b18c35c70e8d787a674ea663af` | 406 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-image-color-svg-as-data-uri.html` | `6f2ac24a342beb4139b4b78b955e0455cb5e0429` | 691 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-image-color-svg.html` | `8a3f05d4639e11ef4f1eef30f27a6bb95f34684a` | 457 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-image-color-transform3d.html` | `9980418d5ced3bbdd79968ed3d858d91c0340425` | 527 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-image-gradient.html` | `6b9e48d4615178f57e7674a258aac0ac111b767b` | 454 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-image-image-ref.html` | `b123024a78619454bea18a026182eb227df6c27c` | 407 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-image-image.html` | `846f7cd10b4320c92850822a451d0add90b4e61c` | 461 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-isolation-parent-child-color.html` | `0a8ca887f7756694a32fd89f328d8d9ff663ec71` | 475 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-isolation-parent-child-image.html` | `00629b1f13c149b921e70f207426249ce83793ad` | 490 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-isolation-parent-child-ref.html` | `d1becbc8c80dbce0181c12ebfb8c931c66c021b4` | 295 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-isolation-ref.html` | `8b1a50d534e82df16bfd26782f525995c671f524` | 423 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-isolation.html` | `80ead0163b06740ccbbda7584a6f6724a5651dc7` | 516 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-lighten-ref.svg` | `4ec1bf08a06c546cdc57fd224fd221fe534c8df6` | 1447 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-lighten.html` | `cd69c4c6093d29a8ef43ac2e4afa447d18362c3f` | 295 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-list-repeat-ref.html` | `e87329c0c46f4938fa2cfff73b6b481983938229` | 538 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-list-repeat.html` | `53eb0f040ec7f160362e7d00aada86355e723df7` | 564 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-luminosity-ref.svg` | `8dc3c2247fd9198c954edb204ded49fd5831af3f` | 1434 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-luminosity.html` | `4c530c91327476348bc9962f5785f5a219e69691` | 298 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-moz-element-ref.html` | `70298325c45abd4a5f01a8edfc3edfcd4d1dc3b6` | 302 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-moz-element.html` | `11272a70f692c3129ff14c731eedd89ce15e53db` | 383 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-multiple-images-ref.html` | `e15793e7ba8c5a545e8e22b5d26a96bd3170f22e` | 546 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-multiple-images.html` | `274ab18c09b3ff39b9d35c2ab0e3ec93a6e5e039` | 578 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-multiply-ref.svg` | `0addf25093c86c9f9bf3c780b785c35397eb278d` | 1401 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-multiply.html` | `2174ed5b448f1839fc5dedfabe27cbd8fd24665e` | 296 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-normal-ref.svg` | `8b86b744877e9d7924e188d973bf2778e83f3be3` | 1425 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-normal.html` | `f860846c7b951f015b047761f349d83a0b51ad12` | 294 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-overlay-ref.svg` | `320697f710619f564bb80d801a68d7b579d90c10` | 1417 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-overlay.html` | `a5be65fa9878d5c4c7090b9cccf3fdba7f6763f3` | 295 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-saturation-ref.svg` | `a8fb06a5a86be88ea37421cf00788dcb14e7c545` | 1431 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-saturation.html` | `ed5173346aa173900ff3a3224fd700a0ae7ede73` | 298 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-screen-ref.svg` | `d99af71dc90d8b89a1fa66fa2877324763b79b43` | 1447 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-screen.html` | `5f5fe0f56be0ab1d4d61da4d0586a025b5ce3411` | 294 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-soft-light-ref.svg` | `485314e389cbf8b8ea568aa44ca075581c8991a3` | 1486 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/background-blending-soft-light.html` | `13cf76fce4181aa708827ea2918616fb5298841d` | 298 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/blend-canvas-ref.html` | `fd74b7a2826440ea3f36224fbb41b7b1902ebbb1` | 534 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/blend-canvas.html` | `4989e35dba7c5d5080ae5af7ed4cc64a1e4785a3` | 565 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/blend-constant-background-color-ref.html` | `4fbe7d3decf61b7d666758afc4bd65412a5adebc` | 336 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/blend-constant-background-color.html` | `e9e3e1c6aa5a21203f4176dbf4b5224b4e82d927` | 367 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/blend-difference-stacking-ref.html` | `34dd86e82d2156fb45b6061ad6fdff57adbb373a` | 546 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/blend-difference-stacking.html` | `3c1e55de3ecd113342b2c2899156ce2e7519c41c` | 439 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/blend-gradient-background-color-ref.html` | `53b2f65468302dc00c63fa3f136d2bb62c23f8df` | 367 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/blend-gradient-background-color.html` | `10a938cc79cb4e1ca046ad89dfd736e4cdfed86d` | 392 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/blend-image-ref.html` | `b8a85f2360250439b5236b77813e37cb0b851e00` | 329 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/blend-image.html` | `ac0b2c1670092e988d3e767228ba5c3df0970b8f` | 359 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/blend-isolation-ref.html` | `e4d76e534d3765280a34bcf6a925eef8c6337f6e` | 244 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/blend-isolation.html` | `802d7fd97da0f99cecb7748a1e8f3fd74895cd67` | 412 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/blend-modes.css` | `9a827c7bd031c39a9d1ab6848e0ae2ba5fea191c` | 743 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/bug1281593-ref.html` | `2f3933c03f88be83b57039c1018b2d68ab493005` | 914 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/bug1281593.html` | `ecd589675f89a57822b46a6078ef0ecf1f725ed2` | 926 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/clipped-mixblendmode-containing-unclipped-stuff-ref.html` | `71b215e1bcafc5aa1d9163bfe54746636455650c` | 935 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/clipped-mixblendmode-containing-unclipped-stuff.html` | `f82b50b617b3e5a640e7cdc40f69cf44635c483a` | 831 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/clipped-opacity-containing-unclipped-mixblendmode-ref.html` | `307483ac6bea3645da123d7c1fd9daaadcef3918` | 733 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/clipped-opacity-containing-unclipped-mixblendmode.html` | `444116feeb63fa5533d673b44505ff6b29b40f3d` | 761 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/mix-blend-mode-952051-ref.html` | `3a3e4328f5838333f62e14edd82436b2dfd81014` | 443 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/mix-blend-mode-952051.html` | `4895a6f72114f605b93c3e16ec3ede9d13bffb66` | 828 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/mix-blend-mode-and-filter-ref.html` | `ef56627380c1ad5449879156ffa4bc867e85c674` | 744 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/mix-blend-mode-and-filter-ref.svg` | `f9aa828666304d1f4315cf978cefe91829ba4359` | 459 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/mix-blend-mode-and-filter.html` | `80f2dd46e90362b8e60b8546ffa579ff2f461214` | 827 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/mix-blend-mode-and-filter.svg` | `49c1f5fea7a52543bbc8238fed90e4a1467446c4` | 774 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/mix-blend-mode-child-of-blended-has-opacity-ref.html` | `89f580bbb7d210c7d2ebb6d84fa8ea722ccc74a3` | 839 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/mix-blend-mode-child-of-blended-has-opacity.html` | `8ed9be7f259660346d4f4fb09e08bd171c74902d` | 1331 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/mix-blend-mode-culling-1207041-ref.html` | `f098be2b9414c9d318426f7c86aeb6d27668e843` | 332 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/mix-blend-mode-culling-1207041.html` | `bcb4afc06ff84dd7ea9c0f61f178bf27668e0167` | 360 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/mix-blend-mode-dest-alpha-1135271-ref.html` | `e8ff8a610916ab025ddd5fc5bc5766e3f170dee8` | 303 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/mix-blend-mode-dest-alpha-1135271.html` | `f36dfe53fb8104dde63606bcc6c62ca983f14a00` | 335 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/mix-blend-mode-nested-976533-ref.html` | `8680fd663312e58c88f06f9e9835e78cb6e0deb2` | 687 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/mix-blend-mode-nested-976533.html` | `8f97cd84cb7f0f8036a5f68a08b35dcc9755fb76` | 921 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/mix-blend-mode-soft-light-ref.html` | `c21fadac227e1d9b410e3a55065b7fa4039f5aed` | 305 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/mix-blend-mode-soft-light.html` | `bcfd809a4af0ec8d72b6349fae4d43e45e794b79` | 413 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/mix-blend-mode-transformed-ref.html` | `e0042d62703cc7c2037144a5938bfe010daddc83` | 411 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/mix-blend-mode-transformed.html` | `01d9e0bfa566e80219eaeaba86bcc42673c87a03` | 520 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-blending/reftest.list` | `6cca30640aa1ad1fe743705ea5620ce73f9c6ba7` | 8185 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-break/1405443-ref.html` | `096dd6c3ea2be42117fcdd2a39dc50a6a9241368` | 402 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/1405443.html` | `8fb19ffb1a4c8a67895dd078ab121705efc2cbbf` | 414 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/box-decoration-break-1-ref.html` | `431c499a1f6622a84a0539667a2efb644a5ee1ca` | 2192 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/box-decoration-break-1.html` | `e0326ccc1fa267ca3aef8cb27726185a024466d6` | 1984 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/box-decoration-break-block-border-padding-ref.html` | `2720386c11696d922c5696125f6cb985dd582d32` | 1527 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/box-decoration-break-block-border-padding.html` | `73f3e9503c649f6f35a10e5776fc8f2c6be01fac` | 1344 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/box-decoration-break-block-margin-ref.html` | `cbc8e3c42dfde344626649cf6f0d2677034677e0` | 2595 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/box-decoration-break-block-margin.html` | `5c3b7e2d4143fb58fe181093b9c2a46c11c978ea` | 2030 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/box-decoration-break-border-image-ref.html` | `98d8e75ba9a76f924d3ae82307d951a0e942401a` | 4724 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/box-decoration-break-border-image.html` | `31d8dabb6629ad497325d3f4cfa7a9b5ccbfba91` | 2914 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/box-decoration-break-bug-1235152-ref.html` | `ec53798020d68187a27727f8fa36460a11237a16` | 1440 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/box-decoration-break-bug-1235152.html` | `7cb9fc9234ae2560b51d7603a1d334806b7bd522` | 1513 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/box-decoration-break-bug-1249913-ref.html` | `cc9c93f8627076940a0fd2698d33fa2953f8bc07` | 1891 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/box-decoration-break-bug-1249913.html` | `adba4bb125568d34c850db47f0faa54f62a8b2c5` | 1810 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/box-decoration-break-first-letter-ref.html` | `4875b4716e63aa5082cdf942de991395f6a57ac0` | 3473 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/box-decoration-break-first-letter.html` | `16853af338df3ba5e2329c87316962a3881be6eb` | 3320 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/box-decoration-break-with-bidi-ref.html` | `976d5b5ce99f46355cb25364ddab6ac7cfb8709d` | 2233 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/box-decoration-break-with-bidi.html` | `1dec2105f687fa1ed725da399630450d56ea88ca` | 2088 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/box-decoration-break-with-inset-box-shadow-1-ref.html` | `f372a0f920edd1698e72017e62ed54bcd53fab77` | 7339 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/box-decoration-break-with-inset-box-shadow-1.html` | `97e64700cc9b4b3b7fa6a1c489dfaa506c6fb24d` | 5913 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/box-decoration-break-with-outset-box-shadow-1-ref.html` | `938fc391480faea2e1b56cc00a109f74ba1255ae` | 7169 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/box-decoration-break-with-outset-box-shadow-1.html` | `417bf76ca434bb0b1777e3451659aaa3fb459358` | 5751 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/green-circle-alpha-32x32.png` | `a007675a176123cab7291d684537dde8961ecec7` | 396 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`layout/reftests/css-break/reftest.list` | `f0b6386ccc98eaae58a8bb2a979e17366b8e307d` | 1210 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-break/vertical-wm-001-ref.html` | `bfc4d308d8c996f27f4126be26633fb53065f302` | 1513 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/vertical-wm-001.html` | `7a4c5087ad022d16c440783b2afa619aa28449e1` | 1559 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/vertical-wm-002-ref.html` | `e4f5d655d8c6b46a69ba57d2939688a57de1864b` | 1513 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-break/vertical-wm-002.html` | `5d776346803a77ca59f0c01793bbe6670d54ddf9` | 1559 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-calc/background-image-gradient-1-ref.html` | `f6d30e282d29c337990e9ce508603e0b2ad748ad` | 285 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-calc/background-image-gradient-1.html` | `2a8b5296044de47031b2b438786a3a202fd49a51` | 309 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-calc/line-height-1-ref.html` | `a21826367fe89aefeef68b6989a979e17d4adf38` | 1159 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-calc/line-height-1.html` | `f586d0dbfbc7dbd4248bde042b19603358baad28` | 1358 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-calc/line-height-2-ref.html` | `d1086080a39cec3148fd985149aabff834333876` | 472 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-calc/line-height-2.html` | `fc37d31fd31cc898cc1b11ffc4a60f09e3535df1` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-calc/reftest.list` | `f8749773fc0bc682d12668d2be6667bf7a015540` | 163 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-charset/pass.html` | `31d07cfd584c20947e1ff6c0d9909e2cdc735000` | 99 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-charset/reftest.list` | `ef6505576ae67853828204fd6864a2cf83062a7b` | 450 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-charset/test-attribute.css` | `8fcd96f5d42eca00f1726afbacc763659099977a` | 44 bytes | test-path,markup-or-style | binary-NUL | mode 100644
+
+`layout/reftests/css-charset/test-attribute.html` | `8befd8f49acf2631329bcb1c6cc8b35692d4f36c` | 589 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-charset/test-charset-leading-space.css` | `69b4324aaff4f567b7657f6cd4ee2be1255f3430` | 84 bytes | test-path,markup-or-style | binary-NUL | mode 100644
+
+`layout/reftests/css-charset/test-charset-leading-space.html` | `086c1be4f1bc433b3c46cadc4fe889c9e140d0e7` | 603 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-charset/test-charset-quotes.css` | `67f9f21f45d4c8b96d66bf548e68b086739cb43f` | 82 bytes | test-path,markup-or-style | binary-NUL | mode 100644
+
+`layout/reftests/css-charset/test-charset-quotes.html` | `57e749cb30dd935bb920e783f338a4ca96f649e5` | 596 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-charset/test-charset-trailing-space.css` | `c1f9d451e271d400e21f1ad8a8631936311e71af` | 84 bytes | test-path,markup-or-style | binary-NUL | mode 100644
+
+`layout/reftests/css-charset/test-charset-trailing-space.html` | `6090e294c0ed98b9a99c9369eb95bfe290ac7344` | 604 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-charset/test-charset-utf-16-be-bom.css` | `a5d0914b4963dc36a906b1406e53c6bc7f30e18e` | 84 bytes | test-path,markup-or-style | binary-NUL | mode 100644
+
+`layout/reftests/css-charset/test-charset-utf-16-be-bom.html` | `8947490e972874c9daa2b71015f64b3fa392348f` | 603 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-charset/test-charset-utf-16-be-no-bom.css` | `f877df030cec5a8afb5609441c439242008151e8` | 82 bytes | test-path,markup-or-style | binary-NUL | mode 100644
+
+`layout/reftests/css-charset/test-charset-utf-16-be-no-bom.html` | `a617959c9fcdb072533e8d5ee867bb316609dba2` | 703 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-charset/test-charset-utf-16-bom-be.css` | `21e4206f72601da4acc514a816cdaacf03c285f7` | 84 bytes | test-path,markup-or-style | binary-NUL | mode 100644
+
+`layout/reftests/css-charset/test-charset-utf-16-bom-be.html` | `b0c29cfd204e945c4f2a43e8c20f5154627d25a6` | 601 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-charset/test-charset-utf-16-bom-le.css` | `ddf7fd00ae5f617392eb77d3d4b1e315d6192e6a` | 84 bytes | test-path,markup-or-style | binary-NUL | mode 100644
+
+`layout/reftests/css-charset/test-charset-utf-16-bom-le.html` | `fc5f5b9e01749f6555c3739f5af8a4e5c3b404d6` | 601 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-charset/test-charset-utf-16-le-bom.css` | `3aab85e0b2b3fd88980b9cadb78f3364d023a6d6` | 84 bytes | test-path,markup-or-style | binary-NUL | mode 100644
+
+`layout/reftests/css-charset/test-charset-utf-16-le-bom.html` | `1ceaffaf43d527fe29312d0c0f87caa340f59543` | 603 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-charset/test-charset-utf-16-le-no-bom.css` | `b2a1129c0429b85cf06c09495272bda041a07699` | 82 bytes | test-path,markup-or-style | binary-NUL | mode 100644
+
+`layout/reftests/css-charset/test-charset-utf-16-le-no-bom.html` | `d0c3875a290632c815027847815180a556e16fd8` | 703 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-default/reftest.list` | `9b5ec048ba1abe67f1eef919c5383c15d1ea2891` | 65 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-default/submit-button/default-multiple-submit-1.html` | `19c71e3c22a2b28880ba60c98ff1d73ee68693af` | 488 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-default/submit-button/default-multiple-submit-2.html` | `1fb2289ca65791cb993a48e09fe5fe6977917d2f` | 433 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-default/submit-button/default-multiple-submit-ref.html` | `3d89f8bcd82747bdbc9298180217caabf33006c5` | 147 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-default/submit-button/default-submit-button-1.html` | `4363ecf9cac621893f5bf5d7abb2e568ff3a86a8` | 271 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-default/submit-button/default-submit-button-2.html` | `c25cdbb87a1ff2900ae74f3f4b7835595613a043` | 381 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-default/submit-button/default-submit-button-3.html` | `c9c5747a093ff01de8e49c40abac59e0999872e6` | 404 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-default/submit-button/default-submit-button-4.html` | `9ccaf760791145a46db21574d1dd64d34eb90c73` | 570 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-default/submit-button/default-submit-button-5.html` | `1b9f50659a65e29e123fe2e0b9fa67f8ce17f211` | 585 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-default/submit-button/default-submit-button-6.html` | `b01952c43e474b67224457b5db5d78fbc4fe2828` | 588 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-default/submit-button/default-submit-button-7.html` | `85aa374533ffc735d37534f562e0cd290da573f9` | 593 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-default/submit-button/default-submit-button-ref.html` | `4f890374f9a1c980e076a3a3b8083cc4e0876c19` | 92 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-default/submit-button/default-submit-button-style.css` | `429d6d227446c32e4dcb5a288a7a6e1a0319f993` | 71 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-default/submit-button/reftest.list` | `df645e876193c6a44e74b227c688786add52c781` | 558 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/button/button-fieldset-1.html` | `56c6c2812bf0ff7eac6022749b570e3abbfc19bd` | 249 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/button/button-fieldset-2.html` | `e8fff167322efdb19906130c50475ca52cb39807` | 261 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/button/button-fieldset-3.html` | `002881d84cd4c67b2984d9b35e079073aeae42dd` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/button/button-fieldset-4.html` | `ed82a0479b2882ce3134500c59c88a2b30bf5ed3` | 516 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/button/button-fieldset-legend-1.html` | `3e9e510eca9bcb74c67f12f95ef662bd7871338d` | 246 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/button/button-fieldset-legend-2.html` | `b7fe250fa07ba5f4b607e26973c37693e2fff667` | 271 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/button/button-fieldset-legend-3.html` | `f9127b8d5e02ee41f4bf76eb698f23d61481f8bd` | 298 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/button/button-fieldset-legend-4.html` | `1e8840ded352c1d9ab621c82a657691ddcaf6cbc` | 296 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/button/button-fieldset-legend-5.html` | `29b7a40d66657dc2f7132387fccf26d570b48445` | 347 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/button/button-fieldset-legend-ref-1.html` | `69c8ff5f2bcbb2e7f890ee4e666648e2004a5b76` | 221 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/button/button-fieldset-legend-ref-2.html` | `62dec99da6c365517b0b616a072b0bb421751b73` | 252 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/button/button-fieldset-legend-ref-3.html` | `8807601e09132acb627bdbeb141a2438acb7b60b` | 274 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/button/button-fieldset-legend-ref-4.html` | `df92d4480a570a978969dda8f388be0db8f81744` | 274 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/button/button-fieldset-legend-ref-5.html` | `7520a19bff75a904f53b643f82c8426f5a4c0cce` | 315 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/button/button-fieldset-ref.html` | `7941c7ddee80d8df99d8366d5b70631afff1cd08` | 237 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/button/reftest.list` | `98ebc1d5043b2b108371783d139ac625d2143bb8` | 584 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/button/style.css` | `7e476eb822cc24f5c0b3ff0302eb27ed0fe5a2fc` | 216 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/fieldset/fieldset-disabled.html` | `6cd4fbfead3f88c94142c524a2dab43f115d0c24` | 161 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/fieldset/fieldset-enabled.html` | `32915278e439f57181ca576d398c7d0fd5687723` | 151 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/fieldset/fieldset-fieldset-1.html` | `9b1ae9f11da246c402bc288378e8148226d06f64` | 253 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/fieldset/fieldset-fieldset-2.html` | `01176a31e718dd1feb7eda5edfc954e7722c35cb` | 265 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/fieldset/fieldset-fieldset-3.html` | `4c09335469e12c44e89d0a045720cc8ffb5d1a6b` | 558 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/fieldset/fieldset-fieldset-4.html` | `e6558129650162234eb2248af54507d2e0b83755` | 520 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/fieldset/fieldset-fieldset-ref.html` | `ade7fc477c69f7884c4127a00b89be9bd13c9e2c` | 241 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/fieldset/fieldset-legend-1.html` | `04781eb60418db47a78b7d2674f276bc75a6360b` | 250 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/fieldset/fieldset-legend-2.html` | `e201ee1664922dac2d23faa4a3c7983c1e0ef426` | 275 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/fieldset/fieldset-legend-3.html` | `d9ca78dc3119c48a88a6f9d5f4a78aa1a3ffd310` | 302 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/fieldset/fieldset-legend-4.html` | `67c728ef19a5a4b1363eeba1e25b20cff4a535a9` | 300 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/fieldset/fieldset-legend-5.html` | `c3f82ae2a427df4106297094f843347631e1f57e` | 351 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/fieldset/fieldset-legend-ref-1.html` | `83f1925ad70ab4dba0af9c05861a328b0b8db2b8` | 225 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/fieldset/fieldset-legend-ref-2.html` | `33fe2455cd49ffbf4ab0b7b8945edee457378405` | 256 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/fieldset/fieldset-legend-ref-3.html` | `7aaff27f191ce8c58a87f1a5056a35120ca2963b` | 278 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/fieldset/fieldset-legend-ref-4.html` | `9f1a267a6a6ae526a83cc71fe11d210465827646` | 278 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/fieldset/fieldset-legend-ref-5.html` | `00df3f8348c3d95416e40467ae5c3844eba365c0` | 319 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/fieldset/fieldset-ref.html` | `7f66bc698f9d12fff176237fc348839169005355` | 147 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/fieldset/reftest.list` | `cabdaa8e53258a0fc9461517acca59ad51c03551` | 635 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/fieldset/style.css` | `7e476eb822cc24f5c0b3ff0302eb27ed0fe5a2fc` | 216 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/input/input-fieldset-1.html` | `b50f3b0f1d40e1f051b098aff4a2a2bf45e27bad` | 239 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/input/input-fieldset-2.html` | `acfbbca5f4b0a9d0725d4c1e1fe65c7b74154773` | 251 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/input/input-fieldset-3.html` | `de095cee6e5d4bd19a7f558a634e0276ded46142` | 544 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/input/input-fieldset-4.html` | `fa0fe1ac7ccf26ba0867b7dd7d6c45940ebb91a7` | 506 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/input/input-fieldset-legend-1.html` | `d56517ac7dfb1681ad0f0d2433e50e74515b4504` | 236 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/input/input-fieldset-legend-2.html` | `d564e14040821172494e91358bf12d033f29715d` | 261 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/input/input-fieldset-legend-3.html` | `89c41119f512660043e1d09c3b8be01f0b7ed78e` | 288 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/input/input-fieldset-legend-4.html` | `33eec83fefcab88762d893b92e16093075aa4214` | 286 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/input/input-fieldset-legend-5.html` | `4226c9672b8479abc410a82897ca6d7a6de98d7c` | 337 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/input/input-fieldset-legend-ref-1.html` | `5511e567b1530e6bf7c9c73701d4edda7ec6d675` | 211 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/input/input-fieldset-legend-ref-2.html` | `4d0658b642ce02bb22655ee34bf4da541c124695` | 242 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/input/input-fieldset-legend-ref-3.html` | `15fb4d9cee494b121233c6db13a6d4edb27dd165` | 264 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/input/input-fieldset-legend-ref-4.html` | `3fdd2b4ddbc024e62ca0cc3a824bdc687b1a5248` | 264 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/input/input-fieldset-legend-ref-5.html` | `fc2c01f0008f7b213b27b61041b93bdec71fc89f` | 305 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/input/input-fieldset-ref.html` | `0108ffc32aa00c925eabc8da05ce5f954f5c1183` | 227 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/input/reftest.list` | `210e59e9b57a53dc44f54012464e99ddf80a6c89` | 566 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/input/style.css` | `7e476eb822cc24f5c0b3ff0302eb27ed0fe5a2fc` | 216 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/label/label-ref.html` | `0fb84bc0a8c25ffff6096fd906642ce3a70b2fd1` | 144 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/label/label.html` | `4283f38ee4778acf39b5b04ff14f0ee50b5dce97` | 141 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/label/reftest.list` | `31f85dd9486fa67fc3845d684f49d38ac2729724` | 29 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/label/style.css` | `5bf7b20ce300cded7133559b05b6f6351a0f50f9` | 162 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/object/object-ref.html` | `10a4da84abce6ba00879bc90216005348edb812d` | 146 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/object/object.html` | `74424ec0f3a291eff21b015e941a5add2cf66b1e` | 143 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/object/reftest.list` | `471500b97752f368e95e7c8100b60c08ebeb9c88` | 31 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/object/style.css` | `089452c08ee991dc075f9e0366a779b779d73e1f` | 164 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/output/output-ref.html` | `cc4687f54e83e7fcb770f0520db416c6523207f2` | 146 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/output/output.html` | `a42173e979107752b0d050a2c46a88c7316cf46a` | 143 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/output/reftest.list` | `0f02f9cf9fa773966112536bf21af43aefea250b` | 31 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/output/style.css` | `4e6012320f9ee3de8b81c19a0290efd4ed63a344` | 164 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/reftest.list` | `de177a7a8d6dff2650c1423f2e1651b796bdbd0f` | 226 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/select/reftest.list` | `9a7f56df91c655c6b2dde8585ad3c1baeb57eae3` | 900 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/select/select-fieldset-1.html` | `84874986fea3197882f24a90bd372f6282aa968b` | 249 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/select/select-fieldset-2.html` | `4e34c7fefb2d53804e7bd054b0efe0451e4a377a` | 261 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/select/select-fieldset-3.html` | `c30347271ad7347cf930821e2ce0b6e2ec00a28d` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/select/select-fieldset-4.html` | `b168a2193c3f4b36bf2a565dc0cc2064eee3ba8f` | 516 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/select/select-fieldset-legend-1.html` | `944303b88a56f39ea24e913b6af8f407f255308f` | 246 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/select/select-fieldset-legend-2.html` | `7a3507be234ede4205ca72c4f5a329cc7f1d92e7` | 271 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/select/select-fieldset-legend-3.html` | `29a98a88acb999902d1424318e5a009cec263049` | 298 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/select/select-fieldset-legend-4.html` | `4cbc3ca85629b11536d5fe851ed39aab9edb5fac` | 296 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/select/select-fieldset-legend-5.html` | `0218b95481cfa896021a48cfd5c0a68e6eee53d4` | 347 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/select/select-fieldset-legend-ref-1.html` | `57c42ddc22ed5e1d060a5a350b315f8339e4055e` | 221 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/select/select-fieldset-legend-ref-2.html` | `d21ba476ee939b247113058fdbf1449783af4d9f` | 261 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/select/select-fieldset-legend-ref-3.html` | `d4b147fa1a4e1c2ada7bbf60ef293a3e05144783` | 283 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/select/select-fieldset-legend-ref-4.html` | `55df97e20af4a907020125f5cbb37c0e98530770` | 274 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/select/select-fieldset-legend-ref-5.html` | `1c3275c90be69de499a9f3bbcba5ba9d528d7146` | 315 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/select/select-fieldset-ref-disabled.html` | `273223696b6c9c4a185ef58f432a8085826d95a1` | 246 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/select/select-fieldset-ref.html` | `e85e16f6b1bc83125801bb1abf63569ee5c5fbdc` | 237 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/select/style.css` | `7e476eb822cc24f5c0b3ff0302eb27ed0fe5a2fc` | 216 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/textarea/reftest.list` | `70f8c663be9bf92e306ca13a5870cc7cdab229ff` | 666 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/textarea/style.css` | `7e476eb822cc24f5c0b3ff0302eb27ed0fe5a2fc` | 216 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/textarea/textarea-fieldset-1.html` | `6c040b67ea276ec0f5b10ca68fc0077140691561` | 253 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/textarea/textarea-fieldset-2.html` | `6c22f2c17534aa355a82550f76e3b4efce016867` | 265 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/textarea/textarea-fieldset-3.html` | `82172c45f48c5c8b86f91ece9116f9ffc78ac0f7` | 558 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/textarea/textarea-fieldset-4.html` | `a4ba7a10067f9813a9605b41b366ecd64c1e5ef7` | 520 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/textarea/textarea-fieldset-legend-1.html` | `5ab543a8645332dbfb23c06ffcce303d7b348bd4` | 250 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/textarea/textarea-fieldset-legend-2.html` | `3385d534ba692c953c31f15bddb317075ecbd285` | 275 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/textarea/textarea-fieldset-legend-3.html` | `d3c94ee5d7aba300b593cd146e5b5181f653e98e` | 302 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/textarea/textarea-fieldset-legend-4.html` | `8d04971bd811eb8c7c4141268d0fdef3f0b96dcf` | 300 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/textarea/textarea-fieldset-legend-5.html` | `856023ad9e893e247d1cc108bb6fc25f8b2fa081` | 351 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/textarea/textarea-fieldset-legend-ref-1.html` | `d3824560dd54b4b2a393e99c7e90044855f4ebb9` | 225 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/textarea/textarea-fieldset-legend-ref-2.html` | `f508a5d307dd4c8c3718f1313b08236eded891bd` | 256 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/textarea/textarea-fieldset-legend-ref-3.html` | `799c2b876302e552a6838a2832e56d61f48be574` | 278 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/textarea/textarea-fieldset-legend-ref-4.html` | `83ee46e60104acfc289d8398c7690939145c3ef6` | 278 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/textarea/textarea-fieldset-legend-ref-5.html` | `dd63a89a21870a27abaf68363dc1d602c3a7c076` | 319 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-disabled/textarea/textarea-fieldset-ref.html` | `1cc1d344dc6549e37b26db34e0eb8644b2b29097` | 241 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-495385-2d-ref.html` | `c926c70375e6b9f0f5e3876dc58095217e7be255` | 712 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-495385-2d.html` | `d88f9f0a37e63b757485f7b6150feedd2c6da774` | 1932 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-acid-dyn-1.html` | `b82cd0f4c1d1448b81f98ada0cc170c4e066211f` | 1307 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-acid-dyn-2.html` | `8a798af10b45d604f12aaf8d39f2e34769bb4cc4` | 1309 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-acid-dyn-3.html` | `8dbcf8a9decc087bda3124ac0ed0c1254e06c959` | 1345 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-acid-ref.html` | `6cf995cc77308642452e183a9c2ec79e73a57e6c` | 6871 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-acid.html` | `974aae5b317976974434ce787a266ace486c27e5` | 8193 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-dyn-insert-text-ref.html` | `a212e025ebcda4b77248331c63314db932df043c` | 238 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-dyn-insert-text.html` | `f3b0c0c9517556cd2f2b9dbe0f92f88d2331a429` | 527 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-generated-content-2.html` | `842c61e988605c7c3eb1d2aa384f2d1e51383542` | 8509 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-generated-content-ref.html` | `29ee8b20d862bc82b845a522d8746c1e1f71c530` | 4131 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-generated-content.html` | `16c9a998a3463cf6db03994c469acc8aa45c19ad` | 7806 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-list-item-child-ref.html` | `25a9d3fe533998a9179b88d317a6fa82760a1a8e` | 155 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-list-item-child.html` | `8a4916e5a44cc7a76cbb8cdc2dc6d038df3940c4` | 458 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-state-change-ref.html` | `244572a685b6d5d8f4797f12a6d2aff0f22c1757` | 280 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-state-change.html` | `4af9a8b00028ae75a8c20d6a59303027744d57c0` | 791 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-style-inheritance-1-dom-mutations.html` | `c46bef29551c916a22a62e619c3c9e61c44f41bf` | 3536 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-style-inheritance-1-ref.html` | `37649f545aff687fbaa43a31d0f1ae62c9ba897c` | 1612 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-style-inheritance-1-stylechange.html` | `0f68aa5b09b93d248db87efa8909eddd73a4081a` | 2419 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-style-inheritance-1.html` | `3dab318b95dfed1d71938165ea85215ecd93ac50` | 1743 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-suppression-dynamic-ref.html` | `3e8063e38517ba92331c342ead8ccd71a8a176a6` | 362 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-suppression-dynamic.html` | `341b5804af4f1004fa36f8d76c02ef7db1701b37` | 481 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-tables-2.xhtml` | `d301f59005d128dc335e89ada988b96c673a050d` | 753 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-tables-3-ref.xhtml` | `15fae7e197088b7899859e0ceab9993c8c1c898e` | 616 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-tables-3.xhtml` | `f8649080564c2d57d6d86225e80acad47401e4a0` | 686 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-tables-ref.xhtml` | `223b33fea1228e64b4a0c6c9830eded9a71adf14` | 603 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-tables.xhtml` | `ce2aa774ed1f5101e9f11a3b9f68e4989a560948` | 753 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-visibility-hidden-2.html` | `6ba1afdd2b020c69fa297c2846e3dbf5355b2c62` | 798 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-visibility-hidden-ref.html` | `0c8e1b786ecef77ada661553aed88d723c9ce05d` | 443 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-visibility-hidden.html` | `57d6fe3c1d11402de3339468f9f77bda20c3756b` | 807 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-writing-mode-1-ref.html` | `00ede6bd09f9aaf6ab496b8027683daf82172931` | 446 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-writing-mode-1.html` | `781acfa99e8eb6c5545bd16bb2f71726a69bd565` | 756 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-writing-mode-2-ref.html` | `f0f0690ed3649baf943e0f0b04f4b3ef22ea5cc6` | 429 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-contents-writing-mode-2.html` | `03bde8b7695b77dd9c6173ebee93a0b42f8c35b1` | 721 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-flow-root-001-ref.html` | `fcb5ac277ee72f8dd4d70d66b7b6ce736225940e` | 1162 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/display-flow-root-001.html` | `3d1dcb020df129dd10d66bb4b04d62c3c280cfb6` | 1699 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-display/reftest.list` | `47c1551f2052611b74cd5845c9e654ebfa94ccc1` | 1981 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/button/button-fieldset-1.html` | `56c6c2812bf0ff7eac6022749b570e3abbfc19bd` | 249 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/button/button-fieldset-2.html` | `e8fff167322efdb19906130c50475ca52cb39807` | 261 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/button/button-fieldset-3.html` | `002881d84cd4c67b2984d9b35e079073aeae42dd` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/button/button-fieldset-4.html` | `ed82a0479b2882ce3134500c59c88a2b30bf5ed3` | 516 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/button/button-fieldset-legend-1.html` | `3e9e510eca9bcb74c67f12f95ef662bd7871338d` | 246 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/button/button-fieldset-legend-2.html` | `b7fe250fa07ba5f4b607e26973c37693e2fff667` | 271 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/button/button-fieldset-legend-3.html` | `f9127b8d5e02ee41f4bf76eb698f23d61481f8bd` | 298 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/button/button-fieldset-legend-4.html` | `1e8840ded352c1d9ab621c82a657691ddcaf6cbc` | 296 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/button/button-fieldset-legend-5.html` | `29b7a40d66657dc2f7132387fccf26d570b48445` | 347 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/button/button-fieldset-legend-ref-1.html` | `69c8ff5f2bcbb2e7f890ee4e666648e2004a5b76` | 221 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/button/button-fieldset-legend-ref-2.html` | `62dec99da6c365517b0b616a072b0bb421751b73` | 252 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/button/button-fieldset-legend-ref-3.html` | `8807601e09132acb627bdbeb141a2438acb7b60b` | 274 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/button/button-fieldset-legend-ref-4.html` | `df92d4480a570a978969dda8f388be0db8f81744` | 274 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/button/button-fieldset-legend-ref-5.html` | `7520a19bff75a904f53b643f82c8426f5a4c0cce` | 315 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/button/button-fieldset-ref.html` | `7941c7ddee80d8df99d8366d5b70631afff1cd08` | 237 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/button/reftest.list` | `a28f72739a27919d2ad1fda31e2dc75b6841ae6d` | 644 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/button/style.css` | `3846239d0d0d8d6cee499bf55c36a2a69d8bec83` | 214 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/fieldset/fieldset-disabled.html` | `6cd4fbfead3f88c94142c524a2dab43f115d0c24` | 161 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/fieldset/fieldset-enabled.html` | `32915278e439f57181ca576d398c7d0fd5687723` | 151 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/fieldset/fieldset-fieldset-1.html` | `9b1ae9f11da246c402bc288378e8148226d06f64` | 253 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/fieldset/fieldset-fieldset-2.html` | `01176a31e718dd1feb7eda5edfc954e7722c35cb` | 265 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/fieldset/fieldset-fieldset-3.html` | `4c09335469e12c44e89d0a045720cc8ffb5d1a6b` | 558 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/fieldset/fieldset-fieldset-4.html` | `e6558129650162234eb2248af54507d2e0b83755` | 520 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/fieldset/fieldset-fieldset-ref.html` | `ade7fc477c69f7884c4127a00b89be9bd13c9e2c` | 241 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/fieldset/fieldset-legend-1.html` | `04781eb60418db47a78b7d2674f276bc75a6360b` | 250 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/fieldset/fieldset-legend-2.html` | `e201ee1664922dac2d23faa4a3c7983c1e0ef426` | 275 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/fieldset/fieldset-legend-3.html` | `d9ca78dc3119c48a88a6f9d5f4a78aa1a3ffd310` | 302 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/fieldset/fieldset-legend-4.html` | `67c728ef19a5a4b1363eeba1e25b20cff4a535a9` | 300 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/fieldset/fieldset-legend-5.html` | `c3f82ae2a427df4106297094f843347631e1f57e` | 351 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/fieldset/fieldset-legend-ref-1.html` | `83f1925ad70ab4dba0af9c05861a328b0b8db2b8` | 225 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/fieldset/fieldset-legend-ref-2.html` | `33fe2455cd49ffbf4ab0b7b8945edee457378405` | 256 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/fieldset/fieldset-legend-ref-3.html` | `7aaff27f191ce8c58a87f1a5056a35120ca2963b` | 278 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/fieldset/fieldset-legend-ref-4.html` | `9f1a267a6a6ae526a83cc71fe11d210465827646` | 278 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/fieldset/fieldset-legend-ref-5.html` | `00df3f8348c3d95416e40467ae5c3844eba365c0` | 319 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/fieldset/fieldset-ref.html` | `7f66bc698f9d12fff176237fc348839169005355` | 147 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/fieldset/reftest.list` | `c5b92e083bc5380cae2544f78d9f5bf633db7fc9` | 664 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/fieldset/style.css` | `7b804aa6f16618695b4c93172abf94d66dc559f2` | 223 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/input/input-fieldset-1.html` | `b50f3b0f1d40e1f051b098aff4a2a2bf45e27bad` | 239 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/input/input-fieldset-2.html` | `acfbbca5f4b0a9d0725d4c1e1fe65c7b74154773` | 251 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/input/input-fieldset-3.html` | `de095cee6e5d4bd19a7f558a634e0276ded46142` | 544 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/input/input-fieldset-4.html` | `fa0fe1ac7ccf26ba0867b7dd7d6c45940ebb91a7` | 506 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/input/input-fieldset-legend-1.html` | `d56517ac7dfb1681ad0f0d2433e50e74515b4504` | 236 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/input/input-fieldset-legend-2.html` | `d564e14040821172494e91358bf12d033f29715d` | 261 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/input/input-fieldset-legend-3.html` | `89c41119f512660043e1d09c3b8be01f0b7ed78e` | 288 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/input/input-fieldset-legend-4.html` | `33eec83fefcab88762d893b92e16093075aa4214` | 286 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/input/input-fieldset-legend-5.html` | `4226c9672b8479abc410a82897ca6d7a6de98d7c` | 337 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/input/input-fieldset-legend-ref-1.html` | `5511e567b1530e6bf7c9c73701d4edda7ec6d675` | 211 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/input/input-fieldset-legend-ref-2.html` | `4d0658b642ce02bb22655ee34bf4da541c124695` | 242 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/input/input-fieldset-legend-ref-3.html` | `15fb4d9cee494b121233c6db13a6d4edb27dd165` | 264 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/input/input-fieldset-legend-ref-4.html` | `3fdd2b4ddbc024e62ca0cc3a824bdc687b1a5248` | 264 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/input/input-fieldset-legend-ref-5.html` | `fc2c01f0008f7b213b27b61041b93bdec71fc89f` | 305 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/input/input-fieldset-ref.html` | `0108ffc32aa00c925eabc8da05ce5f954f5c1183` | 227 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/input/reftest.list` | `4ed82a20e066d29812d2e5d4522e6a533bfaff23` | 611 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/input/style.css` | `3846239d0d0d8d6cee499bf55c36a2a69d8bec83` | 214 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/label/label-ref.html` | `0fb84bc0a8c25ffff6096fd906642ce3a70b2fd1` | 144 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/label/label.html` | `7c41405fd0af77e0592b1699b0dbdcee2909833b` | 132 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/label/reftest.list` | `31f85dd9486fa67fc3845d684f49d38ac2729724` | 29 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/label/style.css` | `7f9529ec9481a6048135d0e4cca638c77444436e` | 160 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/object/object-ref.html` | `10a4da84abce6ba00879bc90216005348edb812d` | 146 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/object/object.html` | `799e0eb98cfc37fdf035d4de67ae2d1eb48e8d28` | 134 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/object/reftest.list` | `471500b97752f368e95e7c8100b60c08ebeb9c88` | 31 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/object/style.css` | `fb18c7a9660b18cbd03098d84baf8ba30d953b3d` | 162 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/optgroup/optgroup-fieldset-1.html` | `0b7ee5a768f30ea8b61d9c19e1cd84cd81dc2215` | 213 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/optgroup/optgroup-fieldset-ref.html` | `c8fde1c2b58359285b17ef066ccc39fca53a6a46` | 195 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/optgroup/reftest.list` | `89601d319dccfb4c0aab5d55689e95378c15944d` | 70 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/optgroup/style.css` | `3846239d0d0d8d6cee499bf55c36a2a69d8bec83` | 214 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/option/option-fieldset-1.html` | `c2d9b7a3424c47de99f2625d9028c5f5c7117811` | 209 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/option/option-fieldset-ref.html` | `7d103ce8cbcd515291a20439eefcabf40f3e8ad8` | 191 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/option/reftest.list` | `4a782d2f405228a3fbbdead97c9515ef7795c47d` | 51 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/option/style.css` | `3846239d0d0d8d6cee499bf55c36a2a69d8bec83` | 214 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/output/output-ref.html` | `cc4687f54e83e7fcb770f0520db416c6523207f2` | 146 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/output/output.html` | `c264159d4cddff7d58f4ad40fefcef898bb93a0c` | 134 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/output/reftest.list` | `0f02f9cf9fa773966112536bf21af43aefea250b` | 31 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/output/style.css` | `ae740e20d415eaa53998d461536b1ae9b2a6e026` | 162 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/reftest.list` | `649617cfc471b4f6da282472b951ddeef6580443` | 284 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/select/reftest.list` | `694b0ba774d89887034573f446102e0ec34c4492` | 672 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/select/select-fieldset-1.html` | `84874986fea3197882f24a90bd372f6282aa968b` | 249 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/select/select-fieldset-2.html` | `4e34c7fefb2d53804e7bd054b0efe0451e4a377a` | 261 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/select/select-fieldset-3.html` | `c30347271ad7347cf930821e2ce0b6e2ec00a28d` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/select/select-fieldset-4.html` | `b168a2193c3f4b36bf2a565dc0cc2064eee3ba8f` | 516 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/select/select-fieldset-legend-1.html` | `944303b88a56f39ea24e913b6af8f407f255308f` | 246 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/select/select-fieldset-legend-2.html` | `7a3507be234ede4205ca72c4f5a329cc7f1d92e7` | 271 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/select/select-fieldset-legend-3.html` | `29a98a88acb999902d1424318e5a009cec263049` | 298 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/select/select-fieldset-legend-4.html` | `4cbc3ca85629b11536d5fe851ed39aab9edb5fac` | 296 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/select/select-fieldset-legend-5.html` | `0218b95481cfa896021a48cfd5c0a68e6eee53d4` | 347 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/select/select-fieldset-legend-ref-1.html` | `57c42ddc22ed5e1d060a5a350b315f8339e4055e` | 221 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/select/select-fieldset-legend-ref-2.html` | `d21ba476ee939b247113058fdbf1449783af4d9f` | 261 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/select/select-fieldset-legend-ref-3.html` | `d4b147fa1a4e1c2ada7bbf60ef293a3e05144783` | 283 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/select/select-fieldset-legend-ref-4.html` | `55df97e20af4a907020125f5cbb37c0e98530770` | 274 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/select/select-fieldset-legend-ref-5.html` | `1c3275c90be69de499a9f3bbcba5ba9d528d7146` | 315 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/select/select-fieldset-ref-disabled.html` | `273223696b6c9c4a185ef58f432a8085826d95a1` | 246 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/select/select-fieldset-ref.html` | `e85e16f6b1bc83125801bb1abf63569ee5c5fbdc` | 237 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/select/style.css` | `b79686e37f881830e5ef5abfae931bb389389ed1` | 251 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/textarea/reftest.list` | `a5b72e393f38d08ba80bd183f5cd0a4dafbf659b` | 681 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`layout/reftests/css-enabled/textarea/style.css` | `3846239d0d0d8d6cee499bf55c36a2a69d8bec83` | 214 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+## Validation and limits
+
+Every listed blob was read from the pinned Git tree and its Git SHA-1 was recomputed. Extraction is structural only. Read implementations, callers, build conditions, and tests before making a behavior claim. Runtime behavior and historical reasons remain unverified. Reproduce a file with `git show 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b:path` in the corresponding source clone. The full study coverage and navigation note records aggregate results.
+
+## Retrieval correction
+
+This copy preserves the source map in [beb5c23a-a3b7-4d16-bbe5-971e1fb46550.md](beb5c23a-a3b7-4d16-bbe5-971e1fb46550.md). The original was imported and committed by concurrent console maintenance during this study. Its full path metadata could exceed the console search budget. This copy uses component scope metadata while keeping every file path in the body. It adds no independent behavior evidence. Original record: `9b55f840c5896637e840f9f47514110b24b8fe39d5170ef3f56496df6d40776c`.

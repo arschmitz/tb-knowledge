@@ -1,0 +1,1319 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:14:46.642314+00:00","paths":["devtools"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013","portableCopies":["8a1eeeeecf24e51973e78fa16047509aa3762c4578690fa83a5f99db77e87de2"],"sourceAt":"2026-10-13T04:14:46.642314+00:00","correctionOf":"notes/c9899d12-7fbb-4cd9-b57c-a8021dd0f886.md"}} -->
+# firefox/devtools structural source map 60
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. This is an automated navigation map, not a behavior review.
+Each row gives the repository-relative path, Git blob ID, byte size, role inferred from the path, declaration candidates, and literal dependency candidates. `@N` is the source line.
+Candidates come from line-based patterns. They can miss multiline, anonymous, macro-generated, and language-specific declarations or match comments and fixture text. Dependencies are not resolved imports, runtime calls, or a complete graph. No candidates does not mean no functions or dependencies.
+Imported code and tests are included. Binary and non-UTF-8 files have a census entry but no declaration extraction. Symlink contents are scanned as text, not followed. No uncommitted changes, build products, ignored files, or untracked files are studied.
+
+## File map
+
+`devtools/client/jsonview/test/browser_jsonview_save_json.js` | `c490aa0104090d436780a6568d1553dcac3dc904` | 5163 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: awaitSavedFileContents@18; createTemporarySaveDirectory@64; registerCleanupFunction@78; add_task@85; add_task@134; add_task@147
+
+`devtools/client/jsonview/test/browser_jsonview_serviceworker.js` | `c8be1a939a30c168b650c1cf331903eed2e09fce` | 2658 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@10; countRows@88
+
+`devtools/client/jsonview/test/browser_jsonview_slash.js` | `f8abeca7befcd7546977a08116814cad8bf3cdc6` | 458 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@6
+
+`devtools/client/jsonview/test/browser_jsonview_theme.js` | `c66d197256663a37ff34da26fa8678de3750a110` | 847 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@8; getTheme@27
+
+`devtools/client/jsonview/test/browser_jsonview_url_linkification.js` | `d5c0095095f89d2ca7e4bd90691bd2328911b41c` | 2622 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@8; add_task@27; testLinkNavigation@59
+
+`devtools/client/jsonview/test/browser_jsonview_valid_json.js` | `b42ff642deeac7cb92e99273701e552d137e7661` | 1540 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@8; countRows@45
+
+`devtools/client/jsonview/test/chunked_json.sjs` | `554b62bafdb02a7324842480e9cf390acee38aa6` | 981 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/jsonview/test/csp_json.json` | `9fc9368255d549ce2ddbecab1c56c6d7d4ff8c6f` | 16 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/jsonview/test/csp_json.json^headers^` | `d6d0a72a4bcfbafad771382d682a99ca0332f8b2` | 93 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/jsonview/test/doc_with_json_in_iframe.html` | `7f13d6c45be21c6f25159a24daa3e1e8c97d0368` | 58 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/jsonview/test/empty.html` | `c50eddd41faba2ecc8928e459288fe612b999170` | 16 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/jsonview/test/head.js` | `503eba8609a1b846f74f3b73ed1accab51bc46a1` | 9712 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: registerCleanupFunction@18; addJsonViewTab@48; function@87; clickJsonNode@136; selectJsonViewContentTab@148; getElementCount@182; getElementText@194; getElementAttr@207; getRowText@226; focusElement@236; sendString@257; waitForTime@276; waitForFilter@280; normalizeNewLines@312
+
+`devtools/client/jsonview/test/invalid_json.json` | `004e1e20324524b3c50834da3fd42ed7b0bea09a` | 4 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/jsonview/test/invalid_json.json^headers^` | `6010bfd188582e05b867d5f98eac8c9654772609` | 46 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/jsonview/test/json_multipart.sjs` | `3ed7cd567e29febab50f8b8048c389b2adcc66a4` | 877 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/jsonview/test/jsonl_no_contenttype.jsonl` | `91872ba2e36d82bed27d573d2cb3c6eaf66820f1` | 16 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/jsonview/test/jsonl_no_contenttype.jsonl^headers^` | `a1f9e38d9090c74e488c9dbce3bc339e243e3e60` | 25 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/jsonview/test/manifest_json.json` | `b178f7acf4f02175e21071c90b408675abff59a0` | 1054 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/jsonview/test/manifest_json.json^headers^` | `2bab061d43ab9e533b0160ca506231939886cd89` | 55 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/jsonview/test/passthrough-sw.js` | `019d218bc2fb44c82945454591fe1e56413c8ba4` | 93 bytes | test-path,source | UTF-8 | mode 100644
+
+`devtools/client/jsonview/test/simple_json.json` | `d1544242f5af31c67d573437448ae881c44e99cf` | 20 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/jsonview/test/simple_json.json^headers^` | `6010bfd188582e05b867d5f98eac8c9654772609` | 46 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/jsonview/test/valid_json.json` | `ca7356ccdb019a1f3402a4e3b41ce4fa83fc1b59` | 74 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/jsonview/test/valid_json.json^headers^` | `6010bfd188582e05b867d5f98eac8c9654772609` | 46 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/locales-preview/settings.ftl` | `6e9fd32579d1c636745fac647207067992e113f0` | 688 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales-preview/speculative-loads.ftl` | `53745181f1ce230bdd065d424cb10e55dd104bb4` | 911 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/aboutdebugging.ftl` | `63089706be49edf9c1228c4e163328ed9966a97c` | 21825 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/accessibility.ftl` | `87060318ad37b9ac69d737732dda4daf4f5b08a3` | 4341 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/accessibility.properties` | `de3b3fe88516bd6e23ee478dd9e0c47818a92512` | 16022 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/animationinspector.properties` | `09e4afffe0fb5327991653774b6144060402b208` | 9005 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/application.ftl` | `70f2e919f72d37920bb74610cde8c1c18304bb65` | 7348 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/boxmodel.properties` | `62bd19d05e0dd04fba4ba74a1e3d09607e580add` | 2462 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/changes.properties` | `e17858fbfc24362da1762eab6157909bf813ed8e` | 3071 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/compatibility.ftl` | `b5a86719eb1219c8cc1e2178aae1d996f60d2d7c` | 1939 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/components.properties` | `64b02904b6ceff1cea85c77f3e7159a7f9a46860` | 4683 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/debugger.properties` | `cd3ce1e1477c8555f12858734c7b24759b265769` | 57223 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/device.properties` | `9c7e26b704bd701f10089cffb67948765eb1ba74` | 940 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/dom.properties` | `7b530cea660130fa29fa192a14b2a1bcf42495d6` | 876 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/filterwidget.properties` | `d777ab92ea2fcc95faae9ecd4a1d0a6003de2556` | 2586 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/font-inspector.properties` | `61792ae5346210394308985d0a578b49a029ad82` | 4901 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/har.properties` | `45cd17e41c322c0f95ca05c3088dba1718cc19a3` | 1091 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/inspector.ftl` | `a3723fca7f1bfc4a59d6b9ce551561edd94384cc` | 3758 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/inspector.properties` | `825f1e6a3ccff275e515d9c56858d0050ad11b99` | 28627 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/jsonview.properties` | `a50abb88a1b76a03b106ecf9fec21475d741cdb4` | 2361 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/layout.properties` | `bc28929b7128cdede98151d1c3a3e2c537b8e2ff` | 7156 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/memory.properties` | `47097101ea049d1eda757fa460180826037dd9c9` | 19218 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/menus.properties` | `bd925dde064708096de642086b09bd2f3cc81ffd` | 1146 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/netmonitor.ftl` | `abb431156b9383371d5acea7713c9292dc02cc00` | 1746 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/netmonitor.properties` | `8c3d1d52d6a575cbd395b070295d60e891b642cd` | 85618 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/network-throttling.properties` | `c91528be2eb39dd275c0e338625252c37daf00a8` | 2038 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/perftools.ftl` | `bfb33878c44367d352ec0ae2eec1138a181317ae` | 8832 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/responsive.properties` | `9c9876fe79690d7afb7fd68a0f175c7da8f903d5` | 8277 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/shared.properties` | `33dd14544503ac8e964ca6b5e2fd6fe28b95b59a` | 1328 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/sourceeditor.properties` | `0a2f5c4a9081b3bc94fa1d6cb9f7b3f2b092e048` | 5030 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/startup.properties` | `5dbbba56d0ad06cc7cefb7fa4157a07033022a2e` | 12563 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/storage.ftl` | `4e733dae9b790ca8cc017fcb24388a8123e8883e` | 6172 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/styleeditor.ftl` | `083acd846290d85c28fd81e91fbb7fdac570887e` | 2344 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/styleeditor.properties` | `f0850fda32fa0a83a0f842e2c3f699caa217f1d9` | 3502 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/toolbox-options.ftl` | `bb2adabb911f11e476596931a87ffac77b0c85d6` | 12658 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/toolbox.ftl` | `95f767e43f036937c0a0a63350484d01397f3e41` | 2882 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/toolbox.properties` | `3308b17ae27c36e64596524f45c98455a8c3bf7c` | 12545 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/en-US/tooltips.ftl` | `dc0f7fc5d05aff7377467c87216c79ea0b8aea06` | 16982 bytes | localization-or-properties | UTF-8 | mode 100644
+
+`devtools/client/locales/jar.mn` | `761b80a51daf2ed8c7f4b02f7cb618f71ad8ab9c` | 604 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/locales/l10n.ini` | `24f71146650175cc52df694fb8d90c5f5fe455b0` | 380 bytes | data-or-other | UTF-8 | mode 100644
+
+`devtools/client/locales/l10n.toml` | `6fed60516c309d73c0678417d5b98ee32391b60e` | 358 bytes | data-or-other | UTF-8 | mode 100644
+
+`devtools/client/locales/moz.build` | `527b359d11f2469b044f12905f09ccbbafd038ee` | 228 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/memory/.eslintrc.mjs` | `25ad7312cd8110faae85ec849e271cef6cd12c47` | 392 bytes | source | UTF-8 | mode 100644
+Dependencies: globals@5
+
+`devtools/client/memory/actions/allocations.js` | `47bc68e1c292d4e904a1a1f6a92176f2ae61f8ca` | 1161 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/actions/census-display.js` | `9abd16d99b0b641a9c2ccdb5771c603d00fa736d` | 1188 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/actions/diffing.js` | `1442cbc0a721868608554cce510742c3d9d8f785` | 5786 bytes | source | UTF-8 | mode 100644
+Declarations: function@27; function@148
+
+`devtools/client/memory/actions/filter.js` | `1b48c140bc24faa353306b1e2bd17d05884bebc3` | 1557 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/actions/front.js` | `3ae10ea9cc2c7695183306583c5d9e0c562ec6bf` | 445 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/actions/io.js` | `bedd5d8bfc90b00537ae54550cecbcf82be264d5` | 3048 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/actions/label-display.js` | `cd90fcff3bb268dc3e072ea10da2a196ec08ef75` | 1308 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/actions/moz.build` | `aebb3e21cf7085eb939f3b098039346e4decc85a` | 470 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/memory/actions/refresh.js` | `33401fa29975d107f4e7df38d6dd484f8399fc1f` | 1606 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/actions/sizes.js` | `c5a98e23e9feffab2c8d5f869f5ed5cba6b1799e` | 430 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/actions/snapshot.js` | `c8e44e1a7c2bd83d3bed97feb99aa39168394df1` | 26403 bytes | source | UTF-8 | mode 100644
+Declarations: getCacheKey@142; task@146; makeTakeCensusTask@184; getCacheKey@203; task@207; getCacheKey@557; task@561; getCacheKey@601; task@605; getCacheKey@656; getCacheKey@726; task@730
+
+`devtools/client/memory/actions/task-cache.js` | `c472cb69da0bfdaa28dd669bbd967684624001eb` | 2682 bytes | source | UTF-8 | mode 100644
+Declarations: constructor@14; get@24; put@35; remove@46; function@68; dispatch@88
+
+`devtools/client/memory/actions/tree-map-display.js` | `38de0478c3a9749e57e0ac9e9395125a676d8770` | 1258 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/actions/view.js` | `5f1ab5c26355f59c45b6b420ffba32c25ea521b4` | 1986 bytes | source | UTF-8 | mode 100644
+Declarations: function@19; function@34
+
+`devtools/client/memory/app.js` | `7719a41327b2d32a833f2b532f058cd1503474ea` | 14122 bytes | source | UTF-8 | mode 100644
+Declarations: MemoryApp@94; propTypes@95; childContextTypes@114; defaultProps@122; constructor@126; getChildContext@134; componentDidMount@142; componentWillUnmount@149; onKeyDown@153; _getCensusDisplays@176; _getLabelDisplays@190; _getTreeMapDisplays@202; render@212; mapStateToProps@437
+
+`devtools/client/memory/components/Census.js` | `536f8069bd2e443d926afb862bb36aedb2883186` | 2638 bytes | source | UTF-8 | mode 100644
+Declarations: Census@26; propTypes@27; render@39
+
+`devtools/client/memory/components/CensusHeader.js` | `ea8d95495285874200fc18f8c49c311a526ed151` | 2012 bytes | source | UTF-8 | mode 100644
+Declarations: CensusHeader@14; propTypes@15; render@21
+
+`devtools/client/memory/components/CensusTreeItem.js` | `f862bb49b5716bdc64a3f2e491d166e38ea254d8` | 5710 bytes | source | UTF-8 | mode 100644
+Declarations: CensusTreeItem@26; propTypes@27; constructor@43; shouldComponentUpdate@48; toLabel@58; render@83
+
+`devtools/client/memory/components/DominatorTree.js` | `8eac21f547c8e1f481476524ccb847eaf8c6f263` | 7498 bytes | source | UTF-8 | mode 100644
+Declarations: DominatorTreeSubtreeFetchingClass@39; propTypes@40; shouldComponentUpdate@46; render@50; DominatorTreeSiblingLinkClass@71; propTypes@72; shouldComponentUpdate@80; render@84; DominatorTree@110; propTypes@111; shouldComponentUpdate@122; render@132
+
+`devtools/client/memory/components/DominatorTreeHeader.js` | `74fe638e971be566eb812733c847fea47ed5b516` | 1322 bytes | source | UTF-8 | mode 100644
+Declarations: DominatorTreeHeader@13; propTypes@14; render@18
+
+`devtools/client/memory/components/DominatorTreeItem.js` | `25898ebbf50da70c8cc882108a95a0d7e909e741` | 5006 bytes | source | UTF-8 | mode 100644
+Declarations: SeparatorClass@29; render@30; DominatorTreeItem@37; propTypes@38; shouldComponentUpdate@50; render@59
+
+`devtools/client/memory/components/Heap.js` | `6fc1c343ef6b56fe34e7c561019a21cc477d8fa2` | 14803 bytes | source | UTF-8 | mode 100644
+Declarations: getState@72; shouldDisplayStatus@106; getStateStatusText@134; shouldDisplayThrobber@154; getError@167; Heap@212; propTypes@213; constructor@236; _renderHeapView@255; _renderInitial@271; _renderStatus@284; _renderError@301; _renderTreeMap@363; render@468
+
+`devtools/client/memory/components/Individuals.js` | `8d445daae38216ecbc483b46ca28b04dbbfaaadd` | 2061 bytes | source | UTF-8 | mode 100644
+Declarations: Individuals@26; propTypes@27; render@36
+
+`devtools/client/memory/components/IndividualsHeader.js` | `7857e994cbe217f64872520367a9482461fab625` | 1312 bytes | source | UTF-8 | mode 100644
+Declarations: IndividualsHeader@13; propTypes@14; render@18
+
+`devtools/client/memory/components/List.js` | `d24ff5c53a76f9e624f588e6e3882942fffa6a91` | 1289 bytes | source | UTF-8 | mode 100644
+Declarations: List@18; propTypes@19; render@27
+
+`devtools/client/memory/components/ShortestPaths.js` | `afde4814ab39f1918f69d818ade7ff599a57b5f3` | 5272 bytes | source | UTF-8 | mode 100644
+Declarations: stringifyLabel@27; ShortestPaths@56; propTypes@57; constructor@66; componentDidMount@72; shouldComponentUpdate@78; componentDidUpdate@82; componentWillUnmount@88; _renderGraph@94; render@157
+
+`devtools/client/memory/components/SnapshotListItem.js` | `c714ab49ed3ae2b892b405fc356926554c65cbaf` | 3929 bytes | source | UTF-8 | mode 100644
+Declarations: SnapshotListItem@28; propTypes@29; render@40
+
+`devtools/client/memory/components/Toolbar.js` | `da5486d0958acb936a43448a074cdb7bc96e1692` | 9538 bytes | source | UTF-8 | mode 100644
+Declarations: Toolbar@16; propTypes@17; render@42
+
+`devtools/client/memory/components/TreeMap.js` | `4856e8511172859aacc5ad836cecdb33aedd8577` | 1995 bytes | source | UTF-8 | mode 100644
+Declarations: TreeMap@14; propTypes@15; constructor@21; componentDidMount@28; shouldComponentUpdate@35; componentDidUpdate@41; componentWillUnmount@49; _stopVisualization@55; _startVisualization@62; render@69
+
+`devtools/client/memory/components/moz.build` | `13e0057690a179d77edd9fe8c0d5002a05d84d5a` | 562 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/memory/components/tree-map/canvas-utils.js` | `375f13764f856c6db591db26c70c334a85c59bc3` | 3846 bytes | source | UTF-8 | mode 100644
+Declarations: Canvases@29; constructor@35; destroy@52; createContainingDiv@67; createCanvas@81; handleResizes@105; resize@109
+
+`devtools/client/memory/components/tree-map/color-coarse-type.js` | `5914fc042cac8c9de7b059487d882e8c69db8777` | 1577 bytes | source | UTF-8 | mode 100644
+Declarations: findCoarseTypeIndex@28; depthColorFactor@44; typeColorFactor@54
+
+`devtools/client/memory/components/tree-map/drag-zoom.js` | `1a753d1179fd88074faabf8ec8630c1aefb413ef` | 10386 bytes | source | UTF-8 | mode 100644
+Declarations: DragZoom@22; constructor@28; createUpdateLoop@91; update@94; setHandlers@159; setDragHandlers@190; startDrag@193; stopDrag@198; drag@203; setScrollHandlers@246; handleWheel@249; getScrollDelta@304; keepInView@319
+
+`devtools/client/memory/components/tree-map/draw.js` | `824676f287dc6a0bcbd7d756b10670fb04d28c72` | 9760 bytes | source | UTF-8 | mode 100644
+Declarations: drawFullTreemap@59; drawZoomedTreemap@66; borderWidth@286
+
+`devtools/client/memory/components/tree-map/moz.build` | `dcf3a59678bfb423954169e3ab984a8b2301b51d` | 321 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/memory/components/tree-map/start.js` | `5b2f69d6a44c1bc66c8ab42c4fc9a4d09233a406` | 1166 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/constants.js` | `a7c362df09ce0dc985197c2e34db3fb2ccf47bf0` | 12212 bytes | source | UTF-8 | mode 100644
+Declarations: tooltip@157; tooltip@169; tooltip@179; tooltip@207; tooltip@216; tooltip@231
+
+`devtools/client/memory/dominator-tree-lazy-children.js` | `a37975a48220ec3bc8efa676e72c9b85fcf90c2a` | 1715 bytes | source | UTF-8 | mode 100644
+Declarations: DominatorTreeLazyChildren@15
+
+`devtools/client/memory/index.xhtml` | `8ecc631dec68e00bc89f7972e685d4400edca418` | 1553 bytes | markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/memory/initializer.js` | `1eb869093730c95ef421ad3fd501bdb76441dfa9` | 2496 bytes | source | UTF-8 | mode 100644
+Declarations: onStateChange@74
+
+`devtools/client/memory/models.js` | `fa9ee605ca726670d9dbb72c1e3564eba9712bd5` | 17519 bytes | source | UTF-8 | mode 100644
+Declarations: catchAndIgnore@43; function@44; catchAndIgnore@107; catchAndIgnore@141; catchAndIgnore@152; catchAndIgnore@208; catchAndIgnore@292; catchAndIgnore@326; catchAndIgnore@344; catchAndIgnore@368; catchAndIgnore@402; catchAndIgnore@437; view@509; catchAndIgnore@510; catchAndIgnore@528
+
+`devtools/client/memory/moz.build` | `3cbd134d8a2007b0a60dc31e0670885092378eeb` | 699 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/memory/panel.js` | `9528964de34d8632d3ef2f2f5d73477e98adaa76` | 2113 bytes | source | UTF-8 | mode 100644
+Declarations: MemoryPanel@10; constructor@11; open@29; _onTargetAvailable@43; destroy@53
+
+`devtools/client/memory/reducers.js` | `964f2c5cfd7148f02580d8d0a83737ac8e540b14` | 1270 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/reducers/allocations.js` | `895e61676d7fe447027ed9b413e25e8a14e29cb7` | 1264 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/reducers/census-display.js` | `59a9d9ca5c8c8984c2c9cbe0390aaeff6ee22c7f` | 689 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/reducers/diffing.js` | `f017276ff23bef07c811ae7331b0c741e66a3243` | 5128 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/reducers/errors.js` | `ad1c8bd62169ec4f52bd63ceb9dfdc800754f32c` | 616 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/reducers/filter.js` | `3a1ad7d8cbf5245206d39361388dc9375847624d` | 487 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/reducers/front.js` | `92ff6c151c070c71a202d92c721c0cf813c26b9e` | 426 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/reducers/individuals.js` | `57b096f870dfa2494b518a639d19923af2a7f33e` | 2353 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/reducers/label-display.js` | `678930a91a00075d69014aa867f19128a9af662e` | 667 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/reducers/moz.build` | `2cccf48a9914209d502e33968dcf668ad50543a1` | 458 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/memory/reducers/sizes.js` | `f79e9f6b28e02bf20d39b1660600fe5a99473530` | 731 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/reducers/snapshots.js` | `d510a169c93466085438cf5c6379423c49038523` | 13922 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/reducers/tree-map-display.js` | `7f145e818191ac1421a7a6404c436ae7dafb6a9e` | 680 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/reducers/view.js` | `99dab7ef0370085005a0383bdc3b8ae839ebef6d` | 1378 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/store.js` | `9739ca0fd57f87653666fbe1d59a96c68cb7bcd6` | 540 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/memory/test/browser/browser.toml` | `f58f52c4b94843838c24ea702911b51326062260` | 1119 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/memory/test/browser/browser_memory_allocationStackDisplay_01.js` | `e145732b7ab5aed927cea344ad0df94d05a5eb98` | 1786 bytes | test-path,source | UTF-8 | mode 100644
+
+`devtools/client/memory/test/browser/browser_memory_allocationStackDisplay_02.js` | `b9c80c394c308e59b08a0fb1a3e5824855a489d3` | 1767 bytes | test-path,source | UTF-8 | mode 100644
+
+`devtools/client/memory/test/browser/browser_memory_clear_snapshots.js` | `333459cc3e551b01d02c025b8e3eac41589c104d` | 2566 bytes | test-path,source | UTF-8 | mode 100644
+
+`devtools/client/memory/test/browser/browser_memory_diff_01.js` | `638586f667cb3be8e6acde04579ecea4367e1a4f` | 2817 bytes | test-path,source | UTF-8 | mode 100644
+
+`devtools/client/memory/test/browser/browser_memory_displays_01.js` | `7e9561796d5cf91c35fe7b490f0925f0e6f25076` | 1435 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $$@21; findNameCell@43
+
+`devtools/client/memory/test/browser/browser_memory_dominator_trees_01.js` | `374d1d65baa18408b149048287c920315f155ebd` | 5350 bytes | test-path,source | UTF-8 | mode 100644
+
+`devtools/client/memory/test/browser/browser_memory_dominator_trees_02.js` | `fea3603c526f9eb3b4eece08a06d7ba92dd1f997` | 2331 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: clickOnNodeArrow@19
+
+`devtools/client/memory/test/browser/browser_memory_filter_01.js` | `7f2e39ac2086479078a1fff98a056f0084bf98c7` | 3261 bytes | test-path,source | UTF-8 | mode 100644
+
+`devtools/client/memory/test/browser/browser_memory_fission_switch_target.js` | `5d0d474d7632df41ced65eba2494dd5c164a65f0` | 2269 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@17; takeAndWaitSnapshot@54; asyncWaitUntil@55; getNodeNames@74
+
+`devtools/client/memory/test/browser/browser_memory_individuals_01.js` | `7be5fb2ac446a1f0fc28c6a02c23e0018115bcd2` | 2251 bytes | test-path,source | UTF-8 | mode 100644
+
+`devtools/client/memory/test/browser/browser_memory_keyboard-snapshot-list.js` | `7a2e2e12f79ae7d874dac9372a3b1fbef76a5e1d` | 4353 bytes | test-path,source | UTF-8 | mode 100644
+
+`devtools/client/memory/test/browser/browser_memory_keyboard.js` | `642eacd43c1cdff777135adacf673faa42c9a01f` | 4023 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: waitUntilFocused@20; waitUntilExpanded@32
+
+`devtools/client/memory/test/browser/browser_memory_no_allocation_stacks.js` | `086bc77ef549308b17947551bb1a483ee103d4de` | 1655 bytes | test-path,source | UTF-8 | mode 100644
+
+`devtools/client/memory/test/browser/browser_memory_no_auto_expand.js` | `f4e9800f2837aefe7829f45c85055b504fac94b3` | 1573 bytes | test-path,source | UTF-8 | mode 100644
+
+`devtools/client/memory/test/browser/browser_memory_percents_01.js` | `8e9202b705f9fe8077f38beb66527caefe697397` | 1875 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: checkCells@19
+
+`devtools/client/memory/test/browser/browser_memory_refresh_does_not_leak.js` | `c44eb0652890829409c87837b755897a972eaa9b` | 4090 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getWindowsInSnapshot@21
+
+`devtools/client/memory/test/browser/browser_memory_simple_01.js` | `acafb46ca19b0e77d77cf3dfea6d0be7dabc9763` | 1913 bytes | test-path,source | UTF-8 | mode 100644
+
+`devtools/client/memory/test/browser/browser_memory_transferHeapSnapshot_e10s_01.js` | `169a968653682417b580cb66424c2f5c7eda6942` | 1131 bytes | test-path,source | UTF-8 | mode 100644
+
+`devtools/client/memory/test/browser/browser_memory_tree_map-01.js` | `97e69f6f6d2c3091b7d841c162ff1a8a5fa6d133` | 3639 bytes | test-path,source | UTF-8 | mode 100644
+
+`devtools/client/memory/test/browser/browser_memory_tree_map-02.js` | `f48bb66c13ca60ae9b7bfd9f6bacee1e92e341f1` | 5370 bytes | test-path,source | UTF-8 | mode 100644
+
+`devtools/client/memory/test/browser/doc_big_tree.html` | `9fe74cd28b8298f4b88624dbe4e5bfaab5c995a6` | 369 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/memory/test/browser/doc_empty.html` | `ef123d8d202b2b9fe2ad3bb8a8ccc7f67f69f62f` | 142 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/memory/test/browser/doc_steady_allocation.html` | `3e168507fa1bcba740e50645e8833bc670d08bc5` | 388 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/memory/test/browser/head.js` | `a85a08b0a2ebc1377a7ae2c15591727872720d34` | 7198 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: makeMemoryTest@53; dumpn@77; waitUntilDominatorTreeState@92; takeSnapshot@109; clearSnapshots@120; waitUntilState@123; setCensusDisplay@134; waitUntilState@147; getDisplayedSnapshotStatus@164; getSelectedSnapshotIndex@174; waitUntilSnapshotSelected@186; waitUntilCensusState@200; createRAFMock@236; floatEquality@262
+
+`devtools/client/memory/test/chrome/chrome.toml` | `0414f9d74be65937e05852a4a29db13d9217a91f` | 492 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/memory/test/chrome/head.js` | `26e4457ab20fb4c97b5c295f40d7c00e4679c99d` | 9089 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: makeTestDominatorTreeNode@128; makeTestCensusNode@280; onNextAnimationFrame@329; renderComponent@338; onNextAnimationFrame@343; dumpn@351
+
+`devtools/client/memory/test/chrome/test_CensusTreeItem_01.html` | `21d900b66894e370592b5ccf32a6810e73025327` | 2493 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/memory/test/chrome/test_DominatorTreeItem_01.html` | `c8cb6b603648d4fe973c50e158cf5b18142a2f01` | 1644 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/memory/test/chrome/test_DominatorTree_01.html` | `0067a0f412e3e265b0d838d055c46b862cb03314` | 1873 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/memory/test/chrome/test_DominatorTree_02.html` | `66aad9529641653f052b47045162daddbb60e3c5` | 1798 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/memory/test/chrome/test_DominatorTree_03.html` | `6fcfa3d5772f7a1b6612d7c314cddfe9f58d4910` | 2753 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/memory/test/chrome/test_Heap_01.html` | `2facc3d22126f43f5d1d79db8183c43942c14622` | 1709 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/memory/test/chrome/test_Heap_02.html` | `343ee667145a7eed603952f76c44f252fc589f59` | 2581 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/memory/test/chrome/test_Heap_03.html` | `69f95f427525c60b544723b940a781d9abe4d905` | 3138 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/memory/test/chrome/test_Heap_04.html` | `76de5e4826668a424cc6a4c27709892b50830ebb` | 4480 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/memory/test/chrome/test_Heap_05.html` | `2b68ac7e7cd99fafa338cd69e9efc36c754a4c47` | 4865 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/memory/test/chrome/test_List_01.html` | `4ffab49620b9a32a924fa54a0de790601d1190f8` | 2539 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/memory/test/chrome/test_ShortestPaths_01.html` | `29905bfaca395bb5c99d834f74319a779ef444bc` | 3588 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/memory/test/chrome/test_ShortestPaths_02.html` | `cbf0370d22612616d8dd97d1f8f527d39fcf0d92` | 1680 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/memory/test/chrome/test_SnapshotListItem_01.html` | `20fc137479eab56da52547a9815308af151e2cd5` | 1676 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/memory/test/chrome/test_Toolbar_01.html` | `3bf934c77c1650e7048d2ac398031749e5ba7ef3` | 1666 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/memory/test/chrome/test_TreeMap_01.html` | `7b8b98b9a7ca65b2cbe2a15225120dc96d2edb19` | 1447 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/memory/test/xpcshell/head.js` | `1c935b52c8a7b0efacbef3dccf9dc7f06d9c7e6f` | 5449 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: registerCleanupFunction@12; registerCleanupFunction@35; dumpn@43; initDebugger@47; StubbedMemoryFront@53; function@68; function@76; function@81; waitUntilSnapshotState@84; findReportLeafIndex@99; waitUntilCensusState@116; createTempFile@141; waitForDispatch@169
+
+`devtools/client/memory/test/xpcshell/test_action-clear-snapshots_01.js` | `9511ba413fcd431f05e7a6d9cff03f9a8fdffd0e` | 1280 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@17
+
+`devtools/client/memory/test/xpcshell/test_action-clear-snapshots_02.js` | `09f1fa6b54bebb5d6727be6574f6a707b955df24` | 1817 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@19
+
+`devtools/client/memory/test/xpcshell/test_action-clear-snapshots_03.js` | `b920c5264bd83e7d882e2fc1103a60b450796520` | 1686 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@18
+
+`devtools/client/memory/test/xpcshell/test_action-clear-snapshots_04.js` | `723029c90b970c805999e3962806cc0c8de2acc0` | 1774 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@18
+
+`devtools/client/memory/test/xpcshell/test_action-clear-snapshots_05.js` | `485e0f05139bb5eca264a6176f6e76870dacb140` | 1606 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@17; deleteHeapSnapshot@34
+
+`devtools/client/memory/test/xpcshell/test_action-clear-snapshots_06.js` | `0fe84daaea1f9bc1c47e999b5da45ed250f88ffa` | 2019 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@21
+
+`devtools/client/memory/test/xpcshell/test_action-export-snapshot.js` | `c481ab1315f3ca7c3b707951a560a11d4a1fddf6` | 1323 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@19
+
+`devtools/client/memory/test/xpcshell/test_action-filter-01.js` | `b16e66a62c78baf1c7470bd46204567a0fdbf48d` | 619 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@12
+
+`devtools/client/memory/test/xpcshell/test_action-filter-02.js` | `828b976aa31564e12c99424c90632ea45eb73aab` | 2619 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@23
+
+`devtools/client/memory/test/xpcshell/test_action-filter-03.js` | `2fcc3e9156b548be233ee5b9e3a5703f8c58903b` | 2028 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@25
+
+`devtools/client/memory/test/xpcshell/test_action-import-snapshot-and-census.js` | `3e97f7c45f75d0b3675875073e1d821682e2867c` | 3820 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@24; waitUntilState@71; stripUnique@124
+
+`devtools/client/memory/test/xpcshell/test_action-import-snapshot-dominator-tree.js` | `3c11268e94f86af7f448dc1039b87949d5f9d19f` | 3034 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@25; waitUntilState@62; hasExpectedState@84
+
+`devtools/client/memory/test/xpcshell/test_action-select-snapshot.js` | `f4abac423bb2e3b822f526e08ff9b8fe42537cbc` | 1218 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@15; waitUntilState@32; isDone@44
+
+`devtools/client/memory/test/xpcshell/test_action-set-display-and-refresh-01.js` | `6f1332c3398ca13dec1d76dcadf7b52996503336` | 5748 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@32; waitUntilState@63
+
+`devtools/client/memory/test/xpcshell/test_action-set-display-and-refresh-02.js` | `2b2b91bc972ea1001fc38d3c30fe811668796680` | 1988 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@35
+
+`devtools/client/memory/test/xpcshell/test_action-set-display.js` | `dfc14f609a5066d82a48c5026d42ef64ae145a6e` | 2118 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@30
+
+`devtools/client/memory/test/xpcshell/test_action-take-census.js` | `005208024bb407e1e08835c0eccf641a42bfacc7` | 2317 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@25; waitUntilState@34; waitUntilState@44
+
+`devtools/client/memory/test/xpcshell/test_action-take-snapshot-and-census.js` | `ce7d166aca445d4686393686037d74e2093c6e35` | 1965 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@17; waitUntilState@51
+
+`devtools/client/memory/test/xpcshell/test_action-take-snapshot.js` | `e8bd46898c3aceb6061a4bcc17b3fa5354cbb712` | 1799 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@15; checkState@25; waitUntilState@54
+
+`devtools/client/memory/test/xpcshell/test_action-toggle-inverted-and-refresh-01.js` | `6744390ecd98f15f02c9a9443c8792e3b36d755e` | 2906 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@25
+
+`devtools/client/memory/test/xpcshell/test_action-toggle-inverted-and-refresh-02.js` | `7047f6410ec1867730458196dca93f7f6def39b6` | 2365 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@26
+
+`devtools/client/memory/test/xpcshell/test_action-toggle-inverted.js` | `8d946303fa6686224a28e7b0f4ebb31e27b287e6` | 942 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@15
+
+`devtools/client/memory/test/xpcshell/test_action-toggle-recording-allocations.js` | `9ff428b09303fc11951fa71d22f5b4e11d0a5549` | 1692 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@14; hasTargetWatcherSupport@20; updateConfiguration@25; waitUntilState@39; waitUntilState@41; waitUntilState@46; waitUntilState@48
+
+`devtools/client/memory/test/xpcshell/test_action_diffing_01.js` | `ede92d0ed74dd06336ce8afaee1f063bda00b933` | 764 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@12
+
+`devtools/client/memory/test/xpcshell/test_action_diffing_02.js` | `b0c4f21fc1d5e43e4d97f0874568c5b547449b21` | 1558 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@22
+
+`devtools/client/memory/test/xpcshell/test_action_diffing_03.js` | `8db0e8568b67929df92fe82f30e5757dec42dded` | 4023 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@29
+
+`devtools/client/memory/test/xpcshell/test_action_diffing_04.js` | `92a57276bbb99c83113e0e995cc877a6a57de082` | 2828 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@25
+
+`devtools/client/memory/test/xpcshell/test_action_diffing_05.js` | `885ae5c1d45010634fa9b4249219d565b1d02bf6` | 3780 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@32
+
+`devtools/client/memory/test/xpcshell/test_dominator_trees_01.js` | `9b8bbb2533c9bab400d37693b2b956546eb685ce` | 2394 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@17
+
+`devtools/client/memory/test/xpcshell/test_dominator_trees_02.js` | `eb38591286d659bd17cfbfbf1502024565f666d4` | 2456 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@21
+
+`devtools/client/memory/test/xpcshell/test_dominator_trees_03.js` | `e46c1969c6436e9f60651262e6d9e63fbf80a87c` | 2233 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@20
+
+`devtools/client/memory/test/xpcshell/test_dominator_trees_04.js` | `d9814590a9d4f2f506324e10cfa4da7efb5e2526` | 2694 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@21
+
+`devtools/client/memory/test/xpcshell/test_dominator_trees_05.js` | `7f6ed31bb3bd8ba5c3a8d1a48f166d6f13fa5870` | 2025 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@23
+
+`devtools/client/memory/test/xpcshell/test_dominator_trees_06.js` | `7caffb972eef7afe52ad3752ac12643e0930fab3` | 4179 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@22; findNode@47; findNewNode@133
+
+`devtools/client/memory/test/xpcshell/test_dominator_trees_07.js` | `21fda9d951034c3864138727d83bee7e6287a153` | 4633 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@23; findNode@48; findNodeRev@70; findNodeWithId@138
+
+`devtools/client/memory/test/xpcshell/test_dominator_trees_08.js` | `e61c8b66b8e97e1c10cefdd1a21f19ab87198c86` | 2742 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@25
+
+`devtools/client/memory/test/xpcshell/test_dominator_trees_09.js` | `b87964970e1ff20d2a1c1f0e5744d208fc48b33c` | 2626 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@25
+
+`devtools/client/memory/test/xpcshell/test_dominator_trees_10.js` | `f6dc7914619d374bbce0597bae521ce8601cc983` | 2605 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@25
+
+`devtools/client/memory/test/xpcshell/test_individuals_01.js` | `92785371366ef853db04e1c334f4bd1619967aa3` | 2210 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@27
+
+`devtools/client/memory/test/xpcshell/test_individuals_02.js` | `76d34187a04fa5c43e5185aa0d712973680a21e7` | 2613 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@30
+
+`devtools/client/memory/test/xpcshell/test_individuals_03.js` | `db31bcf347455afbcaeaa172da525d11dc0e2505` | 3149 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@32
+
+`devtools/client/memory/test/xpcshell/test_individuals_04.js` | `f2cd71d4b91900e8fd75fcb1b93f7aedea23c705` | 2580 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@30
+
+`devtools/client/memory/test/xpcshell/test_individuals_05.js` | `506751916a95f226b082688ed208af256fa43896` | 2402 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@31
+
+`devtools/client/memory/test/xpcshell/test_individuals_06.js` | `54aa759464321748a5bcc6f99effaff517f060b5` | 2342 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@29
+
+`devtools/client/memory/test/xpcshell/test_pop_view_01.js` | `da44d1d125e046ea0dfde562db63e9e0679f2305` | 2320 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@28
+
+`devtools/client/memory/test/xpcshell/test_tree-map-01.js` | `1e91a43ec979194351bc061b875196e2b1cf0461` | 1872 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@10
+
+`devtools/client/memory/test/xpcshell/test_tree-map-02.js` | `528c59dcfa1c928a57e63f7400c3a8f09b8e5a86` | 2389 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@10
+
+`devtools/client/memory/test/xpcshell/test_utils-get-snapshot-totals.js` | `cbb72586a46b5dd68d4e9152f1dcb47da336bb87` | 2807 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@29; aggregate@94
+
+`devtools/client/memory/test/xpcshell/test_utils.js` | `c3acad611625badc98c0b867a281c30249189603` | 3270 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@18
+
+`devtools/client/memory/test/xpcshell/xpcshell.toml` | `97cad61987795e8e2e4d405587f90ec98bc9f329` | 1852 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/memory/utils.js` | `0a2ed895520131238eb060026be0e5a5845383b0` | 15145 bytes | source | UTF-8 | mode 100644
+Declarations: getCustomDisplaysHelper@54
+
+`devtools/client/menus.js` | `eea566de50a02a3c73827281306d68706679488c` | 5906 bytes | source | UTF-8 | mode 100644
+Declarations: oncommand@70; oncommand@87; disabled@94; oncommand@105; oncommand@113; oncommand@124; oncommand@136; oncommand@190
+
+`devtools/client/moz.build` | `6fa98cb0e64363c040eb59a9fd8742a0238763a8` | 924 bytes | build-registration | UTF-8 | mode 100644
+Dependencies: ../templates.mozbuild@5
+
+`devtools/client/netmonitor/docs/architecture.md` | `feb3c7cab3398b2a9bf028c32e1a0cdb33e88406` | 1825 bytes | documentation | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/index.html` | `439821264017c436fb6c8063b6a7bf1156d27980` | 812 bytes | markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/initializer.js` | `15c2780e42d7462a4bc9a85c7442f98f4a18a140` | 1220 bytes | source | UTF-8 | mode 100644
+Declarations: initialize@33
+
+`devtools/client/netmonitor/moz.build` | `e70f0c61c43fefadeec471edbdaeb9740f38526b` | 670 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/panel.js` | `2c3aff0805e44b24939e955ade09f2009d801d96` | 998 bytes | source | UTF-8 | mode 100644
+Declarations: NetMonitorPanel@7; constructor@8; open@13; destroy@30
+
+`devtools/client/netmonitor/src/actions/batching.js` | `f3b84f950dfb5f19f4d136ac1bebe441cb08ef66` | 954 bytes | source | UTF-8 | mode 100644
+Declarations: batchActions@19; batchEnable@26; batchReset@33; batchFlush@39
+
+`devtools/client/netmonitor/src/actions/filters.js` | `5aa5a99c10b112a3860bab1fed0e3b9866bb1a70` | 1439 bytes | source | UTF-8 | mode 100644
+Declarations: toggleRequestFilterType@20; enableRequestFilterTypeOnly@35; setRequestFilterText@47
+
+`devtools/client/netmonitor/src/actions/http-custom-request.js` | `a4152de94c6f5699446dcc0571c815a9c9913902` | 3509 bytes | source | UTF-8 | mode 100644
+Declarations: openHTTPCustomRequest@37; toggleHTTPCustomRequestPanel@51; sendHTTPCustomRequest@73; async@74
+
+`devtools/client/netmonitor/src/actions/index.js` | `6e28281ab75573b82e63df01e7d327dcdb1b4357` | 1414 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/actions/messages.js` | `a8f49e9735bfa827967bec23f9a81539c81fcb0b` | 3919 bytes | source | UTF-8 | mode 100644
+Declarations: addMessage@28; selectMessage@40; openMessageDetails@53; clearMessages@64; toggleMessageFilterType@74; toggleControlFrames@85; setMessageFilterText@95; resetMessageColumns@106; toggleMessageColumn@117; closeConnection@132; selectMessageDelta@148
+
+`devtools/client/netmonitor/src/actions/moz.build` | `fc74e8cc560a01f0b41c9605a0d89be37e17391d` | 457 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/actions/request-blocking.js` | `ab2a1430a93cee752075c431ddf80e778c5a283b` | 3529 bytes | source | UTF-8 | mode 100644
+Declarations: toggleRequestBlockingPanel@23; async@24; toggleBlockingEnabled@37; removeBlockedUrl@44; removeAllBlockedUrls@51; enableAllBlockedUrls@55; disableAllBlockedUrls@59; addBlockedUrl@63; toggleBlockedUrl@70; updateBlockedUrl@77; openRequestBlocking@85; async@86; closeRequestBlocking@106; openRequestBlockingAndAddUrl@116; async@117; openRequestBlockingAndDisableUrls@129; async@130
+
+`devtools/client/netmonitor/src/actions/requests.js` | `759e62a98c25322c43d6fd1637463c3ac4b285cf` | 4251 bytes | source | UTF-8 | mode 100644
+Declarations: addRequest@28; updateRequest@37; setEventStreamFlag@46; cloneRequest@58; rightClickRequest@68; cloneSelectedRequest@79; sendCustomRequest@88; async@89; removeSelectedCustomRequest@139; clearRequests@152; toggleRecording@162; async@163
+
+`devtools/client/netmonitor/src/actions/search.js` | `7aeb2c91a77e7715ff75ae56d2ea86380d7e0417` | 8219 bytes | source | UTF-8 | mode 100644
+Declarations: search@45; loadResource@117; searchResource@136; async@137; addSearchResult@160; addSearchQuery@171; clearSearchResults@181; clearSearchResultAndCancel@192; updateSearchStatus@202; closeSearch@212; openSearch@224; toggleCaseSensitiveSearch@240; toggleSearchPanel@249; addOngoingSearch@269; stopOngoingSearch@279; navigate@298; setTargetSearchResult@313
+
+`devtools/client/netmonitor/src/actions/selection.js` | `4603fcb61cf75831cf8fb4280988001bcb5080c4` | 2060 bytes | source | UTF-8 | mode 100644
+Declarations: selectRequest@20; selectRequestByIndex@31; selectDelta@48
+
+`devtools/client/netmonitor/src/actions/sort.js` | `06c3f92c54c926cae2eeb7f6a178d2fa5d135144` | 424 bytes | source | UTF-8 | mode 100644
+Declarations: sortBy@11
+
+`devtools/client/netmonitor/src/actions/timing-markers.js` | `cce53e8100abc22fbd6ce91fd6ade5729dffd709` | 532 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/actions/ui.js` | `cb06d0395905353c45ec70a4b25174d3029bdcdb` | 5779 bytes | source | UTF-8 | mode 100644
+Declarations: openNetworkDetails@35; openNetworkActionBar@55; resizeNetworkDetails@68; enablePersistentLogs@81; disableBrowserCache@94; openStatistics@107; resetColumns@128; resizeWaterfall@137; selectDetailsPanelTab@149; selectActionBarTab@161; toggleColumn@173; setColumnsWidth@185; toggleNetworkDetails@195; toggleNetworkActionBar@203; togglePersistentLogs@211; toggleBrowserCache@219; toggleStatistics@227; setHeadersUrlPreviewExpanded@232; setDefaultRawResponse@239
+
+`devtools/client/netmonitor/src/api.js` | `f945ab5785cc2c110005d81277bdd86569c9a1a1` | 5855 bytes | source | UTF-8 | mode 100644
+Declarations: NetMonitorAPI@35; constructor@38; connect@50; destroy@82; getHar@97; onPayloadReady@115; fetchResponseContent@157; addRequestFinishedListener@169; removeRequestFinishedListener@173; hasRequestFinishedListeners@177; getHarExportConnector@184; resendRequest@209
+
+`devtools/client/netmonitor/src/app.js` | `26e27d0fe24e1a064949e570d7591add88e76bf4` | 5497 bytes | source | UTF-8 | mode 100644
+Declarations: NetMonitorApp@48; constructor@52; bootstrap@56; destroy@113; inspectRequest@136
+
+`devtools/client/netmonitor/src/assets/icons/play.svg` | `b41216f0c2cef918f3d87fd7def1f15d106105ed` | 429 bytes | markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/assets/icons/shield.svg` | `dd7676d59ffc3d22758f75928b2f6b5dd74bc341` | 1029 bytes | markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/assets/icons/turtle.svg` | `1f308649f3003319a31332a2bcdbb867aeee09a5` | 591 bytes | markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/assets/styles/CustomRequestPanel.css` | `0eadb6175e823dbf0b48efb39ed21b0b3db20833` | 4653 bytes | markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/assets/styles/HTTPCustomRequestPanel.css` | `df2b7d670ea5c3fa708872ffa5b8bcf8def1b5c5` | 11401 bytes | markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/assets/styles/HeadersPanel.css` | `7715dc684897ab3d8affaf9ed6177732e33b3fc7` | 4931 bytes | markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/assets/styles/NetworkActionBar.css` | `0ad4b5d7e17926333e1f589b667af142467be4fd` | 334 bytes | markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/assets/styles/NetworkDetailsBar.css` | `03e5f65371473cbdd8ba62a502cc7220a355a241` | 14156 bytes | markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/assets/styles/RequestBlockingPanel.css` | `527606a546175b02ad0e6ea5584a2114f7e9bddc` | 4320 bytes | markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/assets/styles/RequestList.css` | `06196abe3ee5ea84f3d42882b6d8f8325ab22c67` | 17432 bytes | markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/assets/styles/StatisticsPanel.css` | `07df548d622497da1bc1b59e688edc408e6532bd` | 3577 bytes | markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/assets/styles/StatusBar.css` | `db6216a4896643b9dfb8a37b1964c1a28d2a090c` | 1745 bytes | markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/assets/styles/StatusCode.css` | `712dcab0fc39da8ae32bdd7c67366d671a4297e4` | 3083 bytes | markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/assets/styles/Toolbar.css` | `3d238d9b8735c22031b12d1a53bbfa6b3dae2f7a` | 2809 bytes | markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/assets/styles/UrlPreview.css` | `38650b14a9df04d001616bead33b49be247fef63` | 2181 bytes | markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/assets/styles/messages.css` | `7315b1b761a7e4cfc79901b9a009929de619e2a5` | 3729 bytes | markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/assets/styles/netmonitor.css` | `789081f7892345eb781b316af2932584fab3867b` | 4040 bytes | markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/assets/styles/search.css` | `65726a3077bb5419fbf3ed543d189f7c7cd53e53` | 2877 bytes | markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/assets/styles/variables.css` | `f37c224f151e7cb9f9db836de9065024975785bf` | 2951 bytes | markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/components/App.js` | `6b99ffa4636735a373e22490da0fd640e55a9327` | 3448 bytes | source | UTF-8 | mode 100644
+Declarations: App@51; propTypes@52; render@74
+
+`devtools/client/netmonitor/src/components/CustomRequestPanel.js` | `15f5dc981497d405c223cea6e2b87cfbfe5f28bb` | 11601 bytes | source | UTF-8 | mode 100644
+Declarations: CustomRequestPanel@51; propTypes@52; componentDidMount@62; UNSAFE_componentWillReceiveProps@73; parseRequestText@89; updateCustomRequestFields@110; render@197
+
+`devtools/client/netmonitor/src/components/DropHarHandler.js` | `6456f12ab3ba607bcbaaed1f95c0c35892564e24` | 3323 bytes | source | UTF-8 | mode 100644
+Declarations: DropHarHandler@34; propTypes@35; constructor@46; onDragEnter@58; onDragLeave@67; onDragOver@74; onDrop@79; render@105; readFile@121; startDragging@131; stopDragging@135
+
+`devtools/client/netmonitor/src/components/MonitorPanel.js` | `1281a2f7b1da0d0aceb7f625eebe3599146834bb` | 8385 bytes | source | UTF-8 | mode 100644
+Declarations: MonitorPanel@64; propTypes@65; constructor@85; componentDidMount@97; UNSAFE_componentWillReceiveProps@103; componentDidUpdate@107; componentWillUnmount@116; persistDetailsPanelSize@121; onLayoutChange@155; onNetworkDetailsResized@162; renderActionBar@172; render@202
+
+`devtools/client/netmonitor/src/components/NetworkActionBar.js` | `3ef0664b5a05e93c615f834c57d0e54c6e0b2cda` | 4139 bytes | source | UTF-8 | mode 100644
+Declarations: NetworkActionBar@54; propTypes@55; render@64
+
+`devtools/client/netmonitor/src/components/SecurityState.js` | `38dc1d632b088965130bf376e810a5e15e095ee0` | 2193 bytes | source | UTF-8 | mode 100644
+Declarations: SecurityState@23; propTypes@24; shouldComponentUpdate@31; render@39
+
+`devtools/client/netmonitor/src/components/StatisticsPanel.js` | `fd0c39691bae6778b95f616f6a3bb1c4bd493b70` | 9347 bytes | source | UTF-8 | mode 100644
+Declarations: StatisticsPanel@56; propTypes@57; constructor@68; UNSAFE_componentWillMount@82; componentDidMount@86; UNSAFE_componentWillReceiveProps@97; componentDidUpdate@107; componentWillUnmount@132; createMDNLink@137; unmountMDNLinkContainers@159; createChart@165; onLayoutChange@240; render@246
+
+`devtools/client/netmonitor/src/components/StatusBar.js` | `d8a050bd30f04453e971da879c0091800a039da1` | 5459 bytes | source | UTF-8 | mode 100644
+Declarations: StatusBar@42; propTypes@43; shouldComponentUpdate@52; render@64
+
+`devtools/client/netmonitor/src/components/StatusCode.js` | `5b0014f6550cb6000f255ce53f087e5d9cb7d103` | 3775 bytes | source | UTF-8 | mode 100644
+Declarations: StatusCode@35; propTypes@36; shouldComponentUpdate@42; render@50; onMouseOver@114; getStatusTooltip@129
+
+`devtools/client/netmonitor/src/components/TabboxPanel.js` | `c15fd7f276de9b5d871749b01cb0e61c3bb8d93f` | 8422 bytes | source | UTF-8 | mode 100644
+Declarations: TabboxPanel@74; propTypes@75; defaultProps@95; componentDidMount@100; componentWillUnmount@105; closeOnEsc@109; render@121
+
+`devtools/client/netmonitor/src/components/Toolbar.js` | `abf24ec2738c3aeb17a607efea01200c62c207f0` | 22126 bytes | source | UTF-8 | mode 100644
+Declarations: Toolbar@141; propTypes@142; constructor@180; componentDidMount@194; shouldComponentUpdate@232; componentWillUnmount@249; toggleRequestFilterType@264; updatePersistentLogsEnabled@271; updateBrowserCacheDisabled@282; autocompleteProvider@288; onSearchBoxFocusKeyboardShortcut@292; onSearchBoxFocus@298; renderSeparator@313; renderClearButton@320; renderToggleRecordingButton@332; renderBlockingButton@344; renderSearchButton@379; renderHTTPCustomRequestButton@394; renderFilterButtons@423; renderCacheCheckbox@444; renderThrottlingMenu@464; renderFilterBox@478; renderSettingsMenuButton@497; renderSettingsMenuItems@512; render@564
+
+`devtools/client/netmonitor/src/components/messages/ColumnData.js` | `8a2b79cfede63c17d0283dd9bfc9157ac8f33bae` | 1828 bytes | source | UTF-8 | mode 100644
+Declarations: ColumnData@22; propTypes@23; render@30
+
+`devtools/client/netmonitor/src/components/messages/ColumnEventName.js` | `2d71b718fbc57172980d10d169a1845a76a29f47` | 1038 bytes | source | UTF-8 | mode 100644
+Declarations: ColumnEventName@16; propTypes@17; shouldComponentUpdate@23; render@27
+
+`devtools/client/netmonitor/src/components/messages/ColumnFinBit.js` | `9884ca91df00b5804ce9e072c5b44ce6df5d39e0` | 1033 bytes | source | UTF-8 | mode 100644
+Declarations: ColumnFinBit@16; propTypes@17; shouldComponentUpdate@23; render@27
+
+`devtools/client/netmonitor/src/components/messages/ColumnLastEventId.js` | `f41a2d45f54ddbc955724b096bc494a602a81aff` | 1056 bytes | source | UTF-8 | mode 100644
+Declarations: ColumnLastEventId@16; propTypes@17; shouldComponentUpdate@23; render@27
+
+`devtools/client/netmonitor/src/components/messages/ColumnMaskBit.js` | `5733e6ef51205c212a7328916ca1c9d42c6c4b66` | 1042 bytes | source | UTF-8 | mode 100644
+Declarations: ColumnMaskBit@16; propTypes@17; shouldComponentUpdate@23; render@27
+
+`devtools/client/netmonitor/src/components/messages/ColumnOpCode.js` | `50bc7237264e3b28fc9238fa813007b0c001b34c` | 1011 bytes | source | UTF-8 | mode 100644
+Declarations: ColumnOpCode@16; propTypes@17; shouldComponentUpdate@23; render@27
+
+`devtools/client/netmonitor/src/components/messages/ColumnRetry.js` | `42a731928274679e6b0c60831d293e834ead70a4` | 1002 bytes | source | UTF-8 | mode 100644
+Declarations: ColumnRetry@16; propTypes@17; shouldComponentUpdate@23; render@27
+
+`devtools/client/netmonitor/src/components/messages/ColumnSize.js` | `a81459de37a8182ff5f873e29c7ae7a2d1416a79` | 1166 bytes | source | UTF-8 | mode 100644
+Declarations: ColumnSize@19; propTypes@20; shouldComponentUpdate@26; render@30
+
+`devtools/client/netmonitor/src/components/messages/ColumnTime.js` | `061846268ece5aae0bda4d84ec43ae3e9aa98a5b` | 1601 bytes | source | UTF-8 | mode 100644
+Declarations: ColumnTime@16; propTypes@17; shouldComponentUpdate@23; formatTime@35; render@44
+
+`devtools/client/netmonitor/src/components/messages/MessageFilterMenu.js` | `61b78173ab761450cf2a5a5e89d015d605505154` | 3639 bytes | source | UTF-8 | mode 100644
+Declarations: MessageFilterMenu@24; propTypes@25; constructor@37; onShowFilterMenu@42; render@99
+
+`devtools/client/netmonitor/src/components/messages/MessageListContent.js` | `42a85ba4e7ca0d2b9247399197c84eea7bffd066` | 12863 bytes | source | UTF-8 | mode 100644
+Declarations: MessageListContent@59; propTypes@60; constructor@76; componentDidMount@94; componentDidUpdate@105; componentWillUnmount@157; setupScrollToBottom@170; toggleTruncationCheckBox@198; onClick@206; onContextMenu@210; onKeyDown@226; render@257
+
+`devtools/client/netmonitor/src/components/messages/MessageListContextMenu.js` | `79b4b62dee97a445a152b3dfb4b0def6246cf629` | 2991 bytes | source | UTF-8 | mode 100644
+Declarations: MessageListContextMenu@29; constructor@30; open@37; copyMessagePayload@91
+
+`devtools/client/netmonitor/src/components/messages/MessageListHeader.js` | `359f7846311db9c348b63af1f424179cb7fc64c3` | 3285 bytes | source | UTF-8 | mode 100644
+Declarations: MessageListHeader@29; propTypes@30; constructor@38; onContextMenu@44; getVisibleColumns@60; renderColumn@68; renderColumns@94; render@99
+
+`devtools/client/netmonitor/src/components/messages/MessageListHeaderContextMenu.js` | `edf99bd5ac93c1520c09adb4421bb4e96cfb8186` | 1777 bytes | source | UTF-8 | mode 100644
+Declarations: MessageListHeaderContextMenu@17; constructor@18; open@25
+
+`devtools/client/netmonitor/src/components/messages/MessageListItem.js` | `d42903e496a7eae4aeadb3adb281a9a4965143bd` | 3658 bytes | source | UTF-8 | mode 100644
+Declarations: MessageListItem@75; propTypes@76; render@88
+
+`devtools/client/netmonitor/src/components/messages/MessagePayload.js` | `9238d882c705820ac98cd8da0c9460692159626b` | 12445 bytes | source | UTF-8 | mode 100644
+Declarations: MessagePayload@68; propTypes@69; constructor@77; componentDidMount@92; componentDidUpdate@96; updateMessagePayload@102; parsePayload@119; parseJsonl@267; parseSocketIOPayload@284; parseSignalR@306; parseActionCable@346; toggleRawData@359; renderRawDataBtn@365; renderData@392; render@396
+
+`devtools/client/netmonitor/src/components/messages/MessagesView.js` | `54605e547b739ab8c61a71088c25cd0aa1652bc8` | 5141 bytes | source | UTF-8 | mode 100644
+Declarations: MessagesView@51; propTypes@52; constructor@63; componentDidUpdate@74; componentWillUnmount@88; persistMessagesPanelSize@93; handleContainerElement@106; clearFilterText@115; render@121
+
+`devtools/client/netmonitor/src/components/messages/RawData.js` | `c9600679c0b255ab4f6d122fd7b5e7332dab1e3a` | 909 bytes | source | UTF-8 | mode 100644
+Declarations: RawData@16; propTypes@17; render@23
+
+`devtools/client/netmonitor/src/components/messages/StatusBar.js` | `5f6badce960dc284c68313e2a55bdc5a916c154c` | 4025 bytes | source | UTF-8 | mode 100644
+Declarations: StatusBar@54; propTypes@55; shouldComponentUpdate@62; render@70
+
+`devtools/client/netmonitor/src/components/messages/Toolbar.js` | `4c6d6239c55e5ab5dab3ddcb188f30a084bf818b` | 4426 bytes | source | UTF-8 | mode 100644
+Declarations: Toolbar@49; propTypes@50; componentWillUnmount@63; renderSeparator@71; renderClearButton@78; renderMessageFilterMenu@92; renderFilterBox@111; render@122
+
+`devtools/client/netmonitor/src/components/messages/cbor.js` | `2dfe4dd464d56cd6a173f72775ecd8b07def59cc` | 7663 bytes | source | UTF-8 | mode 100644
+Declarations: decode@29; commitRead@44; readArrayBuffer@48; readFloat16@51; readFloat32@74; readFloat64@77; readUint8@80; readUint16@83; readUint32@86; readUint64@89; readBreak@92; readLength@99; readIndefiniteStringLength@120; appendUtf16Data@132; decodeItem@166
+
+`devtools/client/netmonitor/src/components/messages/moz.build` | `b5b8751d30abbde2d2fb76f09df6ee5e376b6f00` | 776 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/components/messages/msgpack.js` | `e54e2707e95a903553deab9e865c9f58dd6c7e99` | 9858 bytes | source | UTF-8 | mode 100644
+Declarations: deserialize@23; read@49; readInt@174; readUInt@193; readFloat@202; readBin@214; readMap@223; readArray@235; readStr@246; readExt@255; readExtDate@268; decodeUtf8@306
+
+`devtools/client/netmonitor/src/components/messages/parsers/moz.build` | `11376825acf1003ace1e4cd474baac34c097bcc6` | 782 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/components/messages/parsers/signalr/HandshakeProtocol.js` | `c1c64d67176707248583876e1acb3257f29f9028` | 3047 bytes | source | UTF-8 | mode 100644
+Declarations: HandshakeProtocol@19; writeHandshakeRequest@21; parseHandshakeResponse@26
+
+`devtools/client/netmonitor/src/components/messages/parsers/signalr/IHubProtocol.js` | `fec2cdbff4ea561697cb146bceea28a29b086ef8` | 1904 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/components/messages/parsers/signalr/JSONHubProtocol.js` | `2af23fae5e24c582bdf9435467ff2bbfb0ff8bc7` | 4187 bytes | source | UTF-8 | mode 100644
+Declarations: JsonHubProtocol@19; parseMessages@25; writeMessage@77; isInvocationMessage@80; isStreamItemMessage@92; isCompletionMessage@101; assertNotEmptyString@116
+
+`devtools/client/netmonitor/src/components/messages/parsers/signalr/TextMessageFormat.js` | `a9ec58ee367195080396a5c99d468cc37b815048` | 963 bytes | source | UTF-8 | mode 100644
+Declarations: TextMessageFormat@16; write@17; parse@20
+
+`devtools/client/netmonitor/src/components/messages/parsers/signalr/Utils.js` | `77b00daf45d4eb0b8baaab7d4ae4797b3f73516f` | 720 bytes | source | UTF-8 | mode 100644
+Declarations: isArrayBuffer@16
+
+`devtools/client/netmonitor/src/components/messages/parsers/signalr/index.js` | `927b0a0922e42fdee052f38c8873396276d19f95` | 624 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/components/messages/parsers/signalr/moz.build` | `48329513f24f48ee3755e415d9aab5f3712d0967` | 356 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/components/messages/parsers/socket-io/binary.js` | `afb63f6bd2506527479a1f5cad6b04dc370ff08e` | 1385 bytes | source | UTF-8 | mode 100644
+Declarations: _reconstructPacket@30
+
+`devtools/client/netmonitor/src/components/messages/parsers/socket-io/component-emitter.js` | `2d9f027021296078b2ca4185886177c6c2c40fe7` | 1559 bytes | source | UTF-8 | mode 100644
+Declarations: Emitter@20; mixin@34
+
+`devtools/client/netmonitor/src/components/messages/parsers/socket-io/index.js` | `70b2c5c7075e3f624289dacebcbcd5b597c47c69` | 6028 bytes | source | UTF-8 | mode 100644
+Declarations: Decoder@83; BinaryReconstructor@103; decodeString@189; tryParse@265; error@285
+
+`devtools/client/netmonitor/src/components/messages/parsers/socket-io/is-buffer.js` | `b9ac2d443a1e036f441debe74c9fae4884fb9b65` | 1040 bytes | source | UTF-8 | mode 100644
+Declarations: isBuf@33
+
+`devtools/client/netmonitor/src/components/messages/parsers/socket-io/moz.build` | `d38ca19dd65790615ab8f793b1927fdbfb1ee936` | 300 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/components/messages/parsers/sockjs/index.js` | `ce04ab84e67d2c90a68e4757a42f603d8aa9142d` | 1309 bytes | source | UTF-8 | mode 100644
+Declarations: parseSockJS@16
+
+`devtools/client/netmonitor/src/components/messages/parsers/sockjs/moz.build` | `e1ca52aa96dc6ad85e9d31c5c9c9c3e5d04b74cd` | 235 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/components/messages/parsers/stomp/byte.js` | `a55d5bff7a1f591483a4ef8bbeb1e549c2b98cb4` | 1352 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/components/messages/parsers/stomp/frame.js` | `7e8c1d42a7d7d51eb7ee2a9043a5689554cf8c41` | 6243 bytes | source | UTF-8 | mode 100644
+Declarations: FrameImpl@27; constructor@35; body@59; binaryBody@68; fromRawFrame@79; toString@105; serialize@115; serializeCmdAndHeaders@122; isBodyEmpty@147; bodyLength@150; sizeOfUTF8@158; toUnit8Array@161; marshall@180; hdrValueEscape@187; hdrValueUnEscape@197
+
+`devtools/client/netmonitor/src/components/messages/parsers/stomp/index.js` | `d5d441c5434beea566e91cf6041a71e72ccc6ecb` | 1076 bytes | source | UTF-8 | mode 100644
+Declarations: parseStompJs@17; onFrame@20
+
+`devtools/client/netmonitor/src/components/messages/parsers/stomp/moz.build` | `420c7479db671f4580fd73bea038d5697569dc95` | 283 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/components/messages/parsers/stomp/parser.js` | `c3e48785959fc89f08f4260c9c8d3be768ab0a28` | 7634 bytes | source | UTF-8 | mode 100644
+Declarations: Parser@76; constructor@85; parseChunk@93
+
+`devtools/client/netmonitor/src/components/messages/parsers/wamp/arrayParser.js` | `de73a7986c69899df706de966b2bdc64d39e335e` | 8853 bytes | source | UTF-8 | mode 100644
+Declarations: parseWampArray@38; WampMessage@93; constructor@94; HelloMessage@99; constructor@100; WelcomeMessage@105; constructor@106; AbortMessage@111; constructor@112; ChallengeMessage@117; constructor@118; AuthenticateMessage@123; constructor@124; GoodbyeMessage@129; constructor@130; ErrorMessage@135; constructor@136; PublishMessage@148; constructor@149; PublishedMessage@155; constructor@156; SubscribeMessage@161; constructor@162; SubscribedMessage@167; constructor@168; UnsubscribeMessage@173; constructor@174; UnsubscribedMessage@179; constructor@180; EventMessage@185; constructor@186; CallMessage@197; constructor@198; CancelMessage@209; constructor@210; ResultMessage@215; constructor@216; RegisterMessage@222; constructor@223; RegisteredMessage@228; constructor@229; UnregisterMessage@234; constructor@235; UnregisteredMessage@240; constructor@241; InvocationMessage@246; constructor@247; InterruptMessage@258; constructor@259; YieldMessage@264; constructor@265
+
+`devtools/client/netmonitor/src/components/messages/parsers/wamp/moz.build` | `b6b7c910362f272888927e351e7362d2d6723cb2` | 263 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/components/messages/parsers/wamp/serializers.js` | `c2139d320c145981c30099477eb4062776ac813a` | 2004 bytes | source | UTF-8 | mode 100644
+Declarations: WampSerializer@13; deserializeMessage@14; stringToBinary@20; JsonSerializer@29; constructor@30; deserializeToArray@35; MessagePackSerializer@40; constructor@41; deserializeToArray@46; CBORSerializer@52; constructor@53; deserializeToArray@58
+
+`devtools/client/netmonitor/src/components/moz.build` | `2b10c2eade955b56a3148774dfbc256c056c1daf` | 613 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/components/new-request/HTTPCustomRequestPanel.js` | `fce0130c2467b8b76363f889456f3253ecc439ba` | 14916 bytes | source | UTF-8 | mode 100644
+Declarations: HTTPCustomRequestPanel@88; propTypes@89; constructor@97; componentDidMount@123; componentDidUpdate@185; componentWillUnmount@195; handleChangeURL@201; handleInputChange@210; updateInputMapItem@230; addInputMapItem@241; deleteInputMapItem@250; checkInputMapItem@256; onUpdateQueryParams@270; createQueryParamsListFromURL@294; handleClear@306; render@316
+
+`devtools/client/netmonitor/src/components/new-request/InputMap.js` | `1279f22c2070c0fd58a87480c7efbdf7174c03e5` | 6272 bytes | source | UTF-8 | mode 100644
+Declarations: InputMap@31; propTypes@32; constructor@49; render@60
+
+`devtools/client/netmonitor/src/components/new-request/moz.build` | `7e47799a220d51bfc54122215d062bebaa170ecc` | 271 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/components/previews/FontPreview.js` | `a18fb2cb2b346d57790a9d4abb3f4a18c04d4667` | 3614 bytes | source | UTF-8 | mode 100644
+Declarations: FontPreview@35; propTypes@36; constructor@44; componentDidMount@55; componentDidUpdate@62; componentWillUnmount@69; onThemeChanged@76; getPreview@85; render@108
+
+`devtools/client/netmonitor/src/components/previews/HtmlPreview.js` | `7e2107dc81e3bbbb886ae158ce7f71725fb8f60a` | 3018 bytes | source | UTF-8 | mode 100644
+Declarations: HTMLPreview@17; propTypes@18; componentDidMount@26; componentDidUpdate@50; componentWillUnmount@54; render@92
+
+`devtools/client/netmonitor/src/components/previews/ImagePreview.js` | `6516f84f4851381f251fe16a3e1d04ca6e4b209a` | 2599 bytes | source | UTF-8 | mode 100644
+Declarations: ImagePreview@29; propTypes@30; constructor@39; updateDimensions@52; render@61
+
+`devtools/client/netmonitor/src/components/previews/SourcePreview.js` | `25ad725c4b2f50247578b390cdf37d776697070e` | 9087 bytes | source | UTF-8 | mode 100644
+Declarations: scrollList@31; requestAnimationFrame@41; setTimeout@42; find@54; findNext@59; findPrev@63; doSearch@67; isWhitespace@104; clearSearch@108; SourcePreview@117; propTypes@118; componentDidMount@143; componentDidUpdate@151; componentWillUnmount@161; getSourceEditorModeForMimetype@187; loadEditor@192; updateEditor@210; unloadEditor@222; findSearchResult@229; clearHighlightLineAfterDuration@251; render@278
+
+`devtools/client/netmonitor/src/components/previews/UrlPreview.js` | `53d8fb903ea7636664e68797ac1505c65c56d991` | 8435 bytes | source | UTF-8 | mode 100644
+Declarations: UrlPreview@67; propTypes@68; constructor@79; shouldComponentUpdate@85; renderRow@93; renderValue@112; parseUrl@197; render@249
+
+`devtools/client/netmonitor/src/components/previews/moz.build` | `0252ec3246b39e9f8b0df18357fd3cccfec1c6ae` | 331 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/components/request-blocking/RequestBlockingPanel.js` | `ea024dcc061096e232aadc83c61816aecea5cee3` | 9915 bytes | source | UTF-8 | mode 100644
+Declarations: RequestBlockingPanel@48; propTypes@49; constructor@65; componentDidMount@73; componentDidUpdate@77; componentWillUnmount@86; scrollToBottom@92; renderEnableBar@104; renderItemContent@127; renderEditForm@160; renderBlockedList@202; renderAddForm@257; renderEmptyListNotice@294; render@308
+
+`devtools/client/netmonitor/src/components/request-blocking/moz.build` | `7ce0f7ecc6a4eed30c507e3712003131fbf5df4c` | 250 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/components/request-details/CachePanel.js` | `f2beb49938155590df029c470ef43ec74c70ca79` | 4379 bytes | source | UTF-8 | mode 100644
+Declarations: CachePanel@44; propTypes@45; componentDidMount@53; UNSAFE_componentWillReceiveProps@59; renderSummary@64; getProperties@81; getDate@98; render@106
+
+`devtools/client/netmonitor/src/components/request-details/CookiesPanel.js` | `3e9c3558564a3ec371c9323e8db705b391a388e3` | 6350 bytes | source | UTF-8 | mode 100644
+Declarations: CookiesPanel@57; propTypes@58; constructor@67; componentDidMount@74; UNSAFE_componentWillReceiveProps@83; getProperties@98; renderRow@123; getTargetCookiePath@139; render@155
+
+`devtools/client/netmonitor/src/components/request-details/HeadersPanel.js` | `e5fc37b495fd6f2f073e271aee580798e1d70905` | 26354 bytes | source | UTF-8 | mode 100644
+Declarations: HeadersPanel@249; propTypes@250; constructor@268; componentDidMount@288; UNSAFE_componentWillReceiveProps@294; getHeadersDisplayTitle@300; getProperties@312; toggleRawHeader@325; renderSummary@341; getTargetHeaderPath@360; renderRow@381; renderRawHeadersBtn@429; renderValue@453; getShouldOpen@478; onShowResendMenu@495; onShowHeadersContextMenu@523; render@530
+
+`devtools/client/netmonitor/src/components/request-details/NetworkDetailsBar.js` | `756e4030260f326354ec4a080ab25137aac5474f` | 3462 bytes | source | UTF-8 | mode 100644
+Declarations: NetworkDetailsBar@38
+
+`devtools/client/netmonitor/src/components/request-details/PropertiesView.js` | `0b2708f183dfb0c676da0c5e66523c2a2521f432` | 8316 bytes | source | UTF-8 | mode 100644
+Declarations: PropertiesView@68; propTypes@69; defaultProps@90; constructor@102; shouldComponentUpdate@117; onFilter@126; getSelectedPath@138; scrollSelectedIntoView@151; onContextMenuRow@170; renderValueWithRep@192; render@225
+
+`devtools/client/netmonitor/src/components/request-details/RequestPanel.js` | `c6a1dd9f794b67c015197065395789b5758eba1a` | 10740 bytes | source | UTF-8 | mode 100644
+Declarations: RequestPanel@67; propTypes@68; constructor@78; componentDidMount@90; UNSAFE_componentWillReceiveProps@100; shouldComponentUpdate@122; getProperties@148; toggleRawRequestPayload@163; renderRawRequestPayloadBtn@169; parseStructuredPayload@205; renderRequestPayload@225; render@229
+
+`devtools/client/netmonitor/src/components/request-details/ResponsePanel.js` | `9d871644850e8ba137b3d48a9c0438667a304b3c` | 17778 bytes | source | UTF-8 | mode 100644
+Declarations: ResponsePanel@93; propTypes@94; constructor@107; componentDidMount@124; UNSAFE_componentWillReceiveProps@133; shouldComponentUpdate@161; handleJSONResponse@179; renderCORSBlockedReason@228; toggleRawResponsePayload@273; renderJsonHtmlAndSource@294; renderRawResponsePayloadBtn@381; renderResponsePayload@412; renderXssiStrippedCharsInfoBox@425; render@450
+
+`devtools/client/netmonitor/src/components/request-details/SecurityPanel.js` | `7caff8bb21873bce29a9290a476bf52cfb6a08a8` | 10546 bytes | source | UTF-8 | mode 100644
+Declarations: SecurityPanel@227; propTypes@228; componentDidMount@236; UNSAFE_componentWillReceiveProps@242; renderValue@247; render@281
+
+`devtools/client/netmonitor/src/components/request-details/StackTracePanel.js` | `767e74e48c90e6ff57fedaf8ba7997fb5d523ac7` | 2440 bytes | source | UTF-8 | mode 100644
+Declarations: StackTracePanel@28; propTypes@29; componentDidMount@42; UNSAFE_componentWillReceiveProps@54; render@62
+
+`devtools/client/netmonitor/src/components/request-details/TimingsPanel.js` | `40733083a19cffe2f185a6260310fcc77bc9f0f9` | 8220 bytes | source | UTF-8 | mode 100644
+Declarations: TimingsPanel@40; propTypes@41; componentDidMount@49; UNSAFE_componentWillReceiveProps@55; renderServiceWorkerTimings@60; renderServerTimings@118; render@162
+
+`devtools/client/netmonitor/src/components/request-details/moz.build` | `09896f2de3fd5652a9499d853c51a5a9b95b23fd` | 459 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/components/request-list/RequestList.js` | `56a62df5cbbccd0d85c0e2fc672baf16eb27028f` | 1507 bytes | source | UTF-8 | mode 100644
+Declarations: RequestList@33
+
+`devtools/client/netmonitor/src/components/request-list/RequestListColumnContentSize.js` | `eef099dc0852904e4f335d7b3c071698b7b3d32c` | 1241 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListColumnContentSize@16; propTypes@17; shouldComponentUpdate@23; render@27
+
+`devtools/client/netmonitor/src/components/request-list/RequestListColumnCookies.js` | `08cd1e7ae4dac4fbe80730ab5a08bd4d6eb8fc6d` | 2111 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListColumnCookies@16; propTypes@17; componentDidMount@24; UNSAFE_componentWillReceiveProps@30; shouldComponentUpdate@35; render@45
+
+`devtools/client/netmonitor/src/components/request-list/RequestListColumnDomain.js` | `d81688e430e15badfd0bcc76d39df330d47d645a` | 1818 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListColumnDomain@27; propTypes@28; shouldComponentUpdate@35; render@43
+
+`devtools/client/netmonitor/src/components/request-list/RequestListColumnFile.js` | `6f62eaa7d974c99bde549a50b88787046b35b008` | 3138 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListColumnFile@35; propTypes@36; shouldComponentUpdate@46; render@53
+
+`devtools/client/netmonitor/src/components/request-list/RequestListColumnInitiator.js` | `9f115b2b7eaea28912e7ef48b63f106fc5b9006a` | 2115 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListColumnInitiator@16; propTypes@17; shouldComponentUpdate@24; render@28
+
+`devtools/client/netmonitor/src/components/request-list/RequestListColumnMethod.js` | `3c39d9e563b48f6fbaedce37614d41857de9160c` | 943 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListColumnMethod@13; propTypes@14; shouldComponentUpdate@20; render@24
+
+`devtools/client/netmonitor/src/components/request-list/RequestListColumnOverride.js` | `307f055f6d467004ac810bc601545e7de74104c2` | 2047 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListColumnOverrideContent@23; propTypes@24; render@32; RequestListColumnOverride@59; propTypes@60; render@66
+
+`devtools/client/netmonitor/src/components/request-list/RequestListColumnPath.js` | `55f70dd684f79356362ae2116928fcb734203c2c` | 2432 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListColumnPath@29; propTypes@30; shouldComponentUpdate@39; render@46
+
+`devtools/client/netmonitor/src/components/request-list/RequestListColumnPriority.js` | `2f5a2308a19ac69c5ab240cd5c9396c18bcc7b0d` | 1256 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListColumnPriority@16; propTypes@17; shouldComponentUpdate@23; render@30
+
+`devtools/client/netmonitor/src/components/request-list/RequestListColumnProtocol.js` | `8d470461681a288bf84409cd080fe12adde7f6e1` | 1175 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListColumnProtocol@16; propTypes@17; shouldComponentUpdate@23; render@30
+
+`devtools/client/netmonitor/src/components/request-list/RequestListColumnRemoteIP.js` | `5b6e7a0b405b61a0f4c2fb8f9521f740cab31117` | 1249 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListColumnRemoteIP@16; propTypes@17; shouldComponentUpdate@23; render@27
+
+`devtools/client/netmonitor/src/components/request-list/RequestListColumnResponseHeader.js` | `71574c568fceee02b35ff2bc74ba4f55431d16be` | 2033 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListColumnResponseHeader@21; propTypes@22; componentDidMount@30; UNSAFE_componentWillReceiveProps@36; shouldComponentUpdate@41; render@47
+
+`devtools/client/netmonitor/src/components/request-list/RequestListColumnScheme.js` | `250e8f61d4a5ad56b300afea2c70678b5b2c2321` | 1043 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListColumnScheme@13; propTypes@14; shouldComponentUpdate@20; render@26
+
+`devtools/client/netmonitor/src/components/request-list/RequestListColumnSetCookies.js` | `e1a81bc41226cebe6cfc541243215ea243766cd8` | 2144 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListColumnSetCookies@16; propTypes@17; componentDidMount@24; UNSAFE_componentWillReceiveProps@30; shouldComponentUpdate@35; render@45
+
+`devtools/client/netmonitor/src/components/request-list/RequestListColumnStatus.js` | `566bd72106bdfa8cc6e254e502b5abfa6e76936e` | 1013 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListColumnStatus@20; propTypes@21; render@27
+
+`devtools/client/netmonitor/src/components/request-list/RequestListColumnTime.js` | `1fb951e4d5c78c81b2a51c66a545fba64426e3f2` | 2811 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListColumnTime@32; propTypes@33; componentDidMount@43; UNSAFE_componentWillReceiveProps@49; shouldComponentUpdate@54; getTime@58; render@77
+
+`devtools/client/netmonitor/src/components/request-list/RequestListColumnTransferredSize.js` | `e744ab1830fe4007d715bd50d5416be0ed0acb73` | 2450 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListColumnTransferredSize@35; propTypes@36; shouldComponentUpdate@42; render@50
+
+`devtools/client/netmonitor/src/components/request-list/RequestListColumnType.js` | `74b006ca31f7e2dca4361b7ddaca8cfce963f112` | 1469 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListColumnType@20; propTypes@21; shouldComponentUpdate@27; render@34
+
+`devtools/client/netmonitor/src/components/request-list/RequestListColumnUrl.js` | `b8da857a4f7109a6430bd67b28c1794664de291a` | 3192 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListColumnUrl@38; propTypes@39; shouldComponentUpdate@48; render@55
+
+`devtools/client/netmonitor/src/components/request-list/RequestListColumnWaterfall.js` | `b095e82bd1604aa27186311776b1bee0271012c6` | 5395 bytes | source | UTF-8 | mode 100644
+Declarations: propTypes@37; constructor@48; componentDidMount@53; UNSAFE_componentWillReceiveProps@59; shouldComponentUpdate@66; handleMouseOver@78; timingTooltip@84; timingBoxes@110; render@176
+
+`devtools/client/netmonitor/src/components/request-list/RequestListContent.js` | `4bfca8653787a5a77af8e4905a50b62d052b7487` | 18137 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListContentComponent@70; propTypes@71; constructor@109; UNSAFE_componentWillMount@129; componentDidMount@134; componentDidUpdate@156; componentWillUnmount@171; onResize@187; requestAnimationFrame@190; onIntersect@199; onHover@235; onScroll@278; onMouseDown@282; onClick@292; onKeyDown@300; openRequestInTab@335; onDoubleClick@347; onMiddleMouseButtonDown@351; onDragStart@355; onContextMenu@359; render@395
+
+`devtools/client/netmonitor/src/components/request-list/RequestListEmptyNotice.js` | `1ae6279556c5264de033ef172f65c55dff95f177` | 3912 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListEmptyNotice@47; propTypes@48; render@56
+
+`devtools/client/netmonitor/src/components/request-list/RequestListHeader.js` | `f9d6b45f64dd31c232cea106192ceeac1f66f4ff` | 25398 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListHeaderContent@53; propTypes@54; constructor@72; UNSAFE_componentWillMount@86; componentDidMount@96; componentDidUpdate@109; componentWillUnmount@119; totalCellWidth@130; resizeColumnToFitContent@148; onContextMenu@219; onHeaderClick@224; drawBackground@234; resizeWaterfall@242; waterfallDivisionLabels@261; waterfallLabel@312; onStartMove@330; onMove@342; onStopMove@403; getCompensateHeader@426; moveWaterfall@438; allColumnsAtMinWidth@479; autoSizeWidths@499; shouldUpdateWidths@542; updateColumnsWidth@569; px2percent@595; getVisibleColumns@603; getMinWidth@611; renderColumn@622; renderColumns@705; render@710
+
+`devtools/client/netmonitor/src/components/request-list/RequestListItem.js` | `b941d76e25b36f535c21e190748a19e55f88259d` | 14140 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListItem@271; propTypes@272; componentDidMount@302; UNSAFE_componentWillReceiveProps@321; shouldComponentUpdate@332; componentDidUpdate@345; componentWillUnmount@354; render@360
+
+`devtools/client/netmonitor/src/components/request-list/moz.build` | `77dc1005a5fa6a68f07bf20515002827cd6d137e` | 1067 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/components/search/SearchPanel.js` | `a76531f69abc3724f7317c89a1e49dd31d716bc7` | 12906 bytes | source | UTF-8 | mode 100644
+Declarations: SearchPanel@66; propTypes@67; constructor@95; componentDidMount@107; componentDidUpdate@113; onClickTreeRow@119; renderLabel@130; onContextMenuTreeRow@156; openRequestListContextMenu@197; renderTree@239; renderValue@261; render@337
+
+`devtools/client/netmonitor/src/components/search/StatusBar.js` | `ab73d73896c819e1153146ba4c7f5174b2132430` | 2920 bytes | source | UTF-8 | mode 100644
+Declarations: StatusBar@32; propTypes@33; getSearchStatusDoneLabel@41; renderStatus@58; render@75
+
+`devtools/client/netmonitor/src/components/search/Toolbar.js` | `07dde40a5afabbabe4e9a43203b95b3157d59428` | 4687 bytes | source | UTF-8 | mode 100644
+Declarations: Toolbar@35; propTypes@36; renderSeparator@54; onKeyDown@64; renderModifiers@78; renderClearButton@89; renderCaseSensitiveButton@103; renderFilterBox@118; render@134
+
+`devtools/client/netmonitor/src/components/search/moz.build` | `7c48392d10e2c997307ac759aeb470a241afa9d5` | 305 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/components/search/search-provider.js` | `9c6af67d4479782647d27fea1126b25503c2c4a0` | 2108 bytes | source | UTF-8 | mode 100644
+Declarations: getChildren@22; hasChildren@33; getLabel@37; getValue@46; getKey@55; getType@64; getResourceTooltipLabel@73; getResourceLabel@82
+
+`devtools/client/netmonitor/src/connector/firefox-data-provider.js` | `7d12150585c5bcbc97b7c7765688dea8a26fb875` | 30739 bytes | source | UTF-8 | mode 100644
+Declarations: FirefoxDataProvider@29; constructor@40; clear@105; destroy@116; enableActions@128; addRequest@138; updateRequest@155; fetchResponseContent@208; fetchRequestHeaders@219; fetchResponseHeaders@230; fetchEarlyHintResponseHeaders@241; fetchPostData@255; fetchRequestCookies@277; fetchResponseCookies@302; fetchResponseCache@327; hasPendingRequests@341; getLongString@356; onStackTraceAvailable@396; onDecodedBodySizeAvailable@428; onNetworkResourceAvailable@447; onNetworkResourceUpdated@496; onWebSocketOpened@531; onWebSocketClosed@541; onFrameSent@553; onFrameReceived@563; addMessage@573; requestData@593; onRequestHeaders@731; onEarlyHintsResponseHeaders@744; onResponseHeaders@760; onRequestCookies@773; onRequestPostData@786; onSecurityInfo@799; onResponseCookies@812; onResponseCache@825; onResponseContent@838; onEventTimings@855; onStackTrace@873; onEventSourceConnectionClosed@885; onEventReceived@891; setEventStreamFlag@896; emit@905; emitForTests@915
+
+`devtools/client/netmonitor/src/connector/har-metadata-collector.js` | `bf9313a36cdb7449a7dafc4ffd4ccdf77124d87e` | 2090 bytes | source | UTF-8 | mode 100644
+Declarations: HarMetadataCollector@21; constructor@26; destroy@33; clear@44; connect@54; getHarData@62
+
+`devtools/client/netmonitor/src/connector/index.js` | `4beb08dea2062cbe3dbe3bff588b05b70ca1db53` | 17276 bytes | source | UTF-8 | mode 100644
+Declarations: Connector@40; constructor@44; networkResources@73; currentTarget@83; connect@94; disconnect@133; clear@169; pause@186; resume@196; onResourceAvailable@204; onResourceUpdated@282; enableActions@288; willNavigate@292; navigate@317; onReloaded@340; onDocEvent@352; updatePersist@389; triggerActivity@407; predicate@436; predicate@454; getLongString@491; getHarData@498; getToolbox@507; viewSourceInDebugger@517; requestData@530; getTimingMarker@534; updateNetworkThrottling@543; emitForTests@577
+
+`devtools/client/netmonitor/src/connector/moz.build` | `4f65ddea0e62b593b11116ab46447c0cade9f8e6` | 300 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/constants.js` | `ab0c7586aeae1e242ae71798f60ceee20811d2af` | 15540 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/create-store.js` | `38423e709fcd3d955a9c88273e8b04964092bee4` | 4816 bytes | source | UTF-8 | mode 100644
+Declarations: configureStore@65; getColumnState@104; getMessageColumnState@119; getColumnsData@134; getFiltersState@155; getJsonPref@174
+
+`devtools/client/netmonitor/src/har/README.md` | `fe3e362aafae5c5efd70f4548e902a78d17f8e22` | 1770 bytes | documentation | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/har/har-automation.js` | `346ea4ae43700040ac3579f6caf6ea7e6e19d030` | 6457 bytes | source | UTF-8 | mode 100644
+Declarations: log@24; HarAutomation@41; initialize@44; destroy@51; startMonitoring@63; pageLoadBegin@89; resetCollector@93; pageLoadDone@117; autoExport@127; triggerExport@150; clear@163; executeExport@173; getString@216; getDefaultTargetFile@230
+
+`devtools/client/netmonitor/src/har/har-builder-utils.js` | `e669263681bd04f0ed3393a471e98013274c21a2` | 637 bytes | source | UTF-8 | mode 100644
+Declarations: buildHarLog@12
+
+`devtools/client/netmonitor/src/har/har-builder.js` | `af28e46691f4df7b89deecc82639741c34c1b140` | 20173 bytes | source | UTF-8 | mode 100644
+Declarations: HarBuilder@31; constructor@57; build@79; buildPages@106; buildPagesFromTargetTitles@117; buildPage@139; getPage@157; buildEntry@171; buildPageTimings@230; buildRequest@251; buildHeaders@291; appendHeadersPostData@299; buildCookies@314; buildNameValuePairs@322; buildPostData@344; buildResponse@405; buildContent@458; buildCache@501; buildCacheEntry@528; fetchData@556; findKeys@580; findValue@602; dateToHarString@626; f@627
+
+`devtools/client/netmonitor/src/har/har-collector.js` | `a3dc5628659a98d8e18ccf455b09591b33e3f23b` | 13873 bytes | source | UTF-8 | mode 100644
+Declarations: log@13; HarCollector@20; constructor@21; start@39; stop@49; clear@59; waitForHarLoad@69; waitForResponses@81; waitForAll@88; waitForTimeout@120; resetPageLoadTimeout@142; getFile@160; getItems@164; onResourceAvailable@170; onResourceUpdated@209; getData@301; onRequestHeaders@331; onRequestCookies@344; onRequestPostData@357; onResponseHeaders@378; onResponseCookies@391; onResponseContent@404; onEventTimings@423; getLongHeaders@430; getString@455; waitForAll@470
+
+`devtools/client/netmonitor/src/har/har-exporter.js` | `88160b29882995da72d6c81630751eb5712c28fd` | 8063 bytes | source | UTF-8 | mode 100644
+Declarations: log@26; save@75; _zip@123; copy@154; getHar@167; fetchHarData@175; buildHarData@241; stringify@258
+
+`devtools/client/netmonitor/src/har/har-importer.js` | `bf0a951d137221b4bd8e111b379e030b5a4a076c` | 5132 bytes | source | UTF-8 | mode 100644
+Declarations: HarImporter@24; constructor@25; import@31; doImport@36
+
+`devtools/client/netmonitor/src/har/har-menu-utils.js` | `2f9e38ea42354a7909aade82a3c02fd394bd935a` | 3261 bytes | source | UTF-8 | mode 100644
+Declarations: copyAllAsHar@31; saveAsHar@46; saveAllAsHar@55; openHarFile@62; appendPreview@90; getDefaultHarOptions@101; readFile@111
+
+`devtools/client/netmonitor/src/har/har-utils.js` | `42375573086f41b5b3bcd8da3bbfc035433b7384` | 4727 bytes | source | UTF-8 | mode 100644
+Declarations: formatDate@20; getHarFileName@35; saveToFile@63; getLocalDirectory@146
+
+`devtools/client/netmonitor/src/har/moz.build` | `449c4562ac82b5ac4288295f92ed6178f928f09a` | 506 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/har/test/browser-harautomation.toml` | `a6b72ab728452e63be1a6bec1b134252a2d38039` | 446 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/har/test/browser.toml` | `c4f491fc6c161cd05a7eb13ead0aa67af1512736` | 1001 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/har/test/browser_harautomation_simple.js` | `823436711230c11e603ebc6c6647e3d93e328c68` | 1316 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@16; waitUntil@33
+
+`devtools/client/netmonitor/src/har/test/browser_net_har_copy_all_as_har.js` | `c447088e59badf14b800a7c945e6a7d536bc8a79` | 8533 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@20; testSimpleReload@34; testResponseBodyLimits@68; testManyReloads@104; testClearedRequests@146; function@171; assertNavigationRequestEntry@211; reloadAndCopyAllAsHar@237
+
+`devtools/client/netmonitor/src/har/test/browser_net_har_copy_all_as_har_cached.js` | `6396f321f01665b45d0efcbc0c8dc8b99c255c91` | 1294 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@12
+
+`devtools/client/netmonitor/src/har/test/browser_net_har_image_priority.js` | `5f8aec46361b5dfe63ce1153a96d8fd23b4ffc43` | 1434 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@6
+
+`devtools/client/netmonitor/src/har/test/browser_net_har_import.js` | `259ebb0d31d1d858248d5818e396c7bc672b8e03` | 4005 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@9; compare@83
+
+`devtools/client/netmonitor/src/har/test/browser_net_har_import_no-mime.js` | `36e616c6efa9a89f0204a1e5244cbdcaa383dcc6` | 1875 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@9
+
+`devtools/client/netmonitor/src/har/test/browser_net_har_multipage.js` | `542b825e19128d5958ae9827c8d493855ddb2674` | 5386 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@14; testHARWithNavigation@21; function@65; assertPageDetails@150; assertPageRequests@155
+
+`devtools/client/netmonitor/src/har/test/browser_net_har_post_data.js` | `0640364a3904fa1f7ed30d19dca61055aa3e092d` | 1421 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@9
+
+`devtools/client/netmonitor/src/har/test/browser_net_har_post_data_on_get.js` | `206fc43da6f082e4288c869b324138b011c6e830` | 1276 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@9
+
+`devtools/client/netmonitor/src/har/test/browser_net_har_save_as_har.js` | `209d611b5940dbe055236e58d02e09d5d1cf1339` | 1069 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@6
+
+`devtools/client/netmonitor/src/har/test/browser_net_har_throttle_upload.js` | `24f7d482ca02fdcd810b4ad5865bcb6158822b57` | 2004 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@8; throttleUploadTest@13; function@43
+
+`devtools/client/netmonitor/src/har/test/head.js` | `e91cc6a50954442c90ae24c24c2614ceb99b7a30` | 2936 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: copyAllAsHARWithContextMenu@24; saveAsHARWithContextMenu@53
+
+`devtools/client/netmonitor/src/har/test/html_har_images-and-text.html` | `5d25499b4b0cd0e9e2fba9a8b27b150a8b762452` | 26350 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/har/test/html_har_import-test-page.html` | `04d5ec33ba120c2e9d30b18a0806b9e65d57b683` | 1422 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/har/test/html_har_multipage_iframe.html` | `4e0fc96344df5f44f60737a427b9ec30f9f4aea8` | 604 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/har/test/html_har_multipage_page.html` | `d36fbca52b5429500d9bfd0f56e913549d650177` | 734 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/har/test/html_har_post-data-test-page.html` | `9be2e3c16aae423e94f5f901ba5bc2bd163838dd` | 1421 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/har/test/sjs_cache-test-server.sjs` | `66081fe1bb9f98ae26233967c100bbcc9f639078` | 515 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/har/test/sjs_cookies-test-server.sjs` | `a86a0f13cdf90072ee5659763749b86092057575` | 430 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/middleware/batching.js` | `f0730448483bce240b1d31332c482a81659b6b2d` | 3243 bytes | source | UTF-8 | mode 100644
+Declarations: batchingMiddleware@23; setEnabled@60; resetQueue@69; flushQueue@78; flushActions@84; DelayedTask@101; constructor@103; promise@120; cancel@127; runNow@138
+
+`devtools/client/netmonitor/src/middleware/event-telemetry.js` | `026dfab4ba0d4716c3d62001bcc118f371754145` | 4963 bytes | source | UTF-8 | mode 100644
+Declarations: eventTelemetryMiddleware@26; filterChange@104; sidePanelChange@147; sendCustomRequest@158; throttlingChange@166; persistenceChange@176; selectMessage@188
+
+`devtools/client/netmonitor/src/middleware/moz.build` | `4e551c24c8c62baee4e4bf6109558b7c3da1434e` | 328 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/middleware/prefs.js` | `716a9e35652c5e9ca28e5a7c66a182486048be1a` | 3572 bytes | source | UTF-8 | mode 100644
+Declarations: prefsMiddleware@26; persistVisibleColumns@88; persistVisibleWebSocketsColumns@106; persistColumnsData@124
+
+`devtools/client/netmonitor/src/middleware/request-blocking.js` | `bb2a310a8dba836274293a05e6cdf04ca61eb984` | 1716 bytes | source | UTF-8 | mode 100644
+Declarations: requestBlockingMiddleware@37
+
+`devtools/client/netmonitor/src/middleware/throttling.js` | `ac72b556bbf9652121fb363f2aae2605e14dff7b` | 783 bytes | source | UTF-8 | mode 100644
+Declarations: throttlingMiddleware@16
+
+`devtools/client/netmonitor/src/moz.build` | `b3ba8c506033803e5b3cdd93481ab9f92944ace1` | 458 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/reducers/batching.js` | `bc4f02beb2c6d4d5a92cf4858aec8c23982f2a79` | 816 bytes | source | UTF-8 | mode 100644
+Declarations: batchingReducer@16
+
+`devtools/client/netmonitor/src/reducers/filters.js` | `452cc1fd555a0792695e08f3d7ef61d7792f558b` | 2598 bytes | source | UTF-8 | mode 100644
+Declarations: FilterTypes@14; Filters@30; toggleRequestFilterType@40; enableRequestFilterTypeOnly@63; filters@74
+
+`devtools/client/netmonitor/src/reducers/index.js` | `5c5bc73c25cd989651032b4cae4f8ae1a3e1dbe0` | 1720 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/reducers/messages.js` | `321c1068ff3fe9ad991b24ccadd2149564a56504` | 8155 bytes | source | UTF-8 | mode 100644
+Declarations: getMessageDefaultColumnsState@49; Messages@66; setCurrentChannel@93; updateCurrentChannel@128; addMessage@143; selectMessage@164; openMessageDetails@181; clearMessages@194; toggleMessageFilterType@210; toggleControlFrames@223; setMessageFilterText@233; toggleColumn@246; resetColumns@268; closeConnection@285; mapSet@300; messages@315
+
+`devtools/client/netmonitor/src/reducers/moz.build` | `7123d391ed5f3fd9446f4fc4de8b88958214ce68` | 428 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/reducers/request-blocking.js` | `00b6e44d770442eee44cbb3841ccb0b649dce54d` | 4718 bytes | source | UTF-8 | mode 100644
+Declarations: RequestBlocking@20; requestBlockingReducer@28; syncedBlockedUrls@55; toggleBlockingEnabled@67; addBlockedUrl@74; removeBlockedUrl@98; removeAllBlockedUrls@105; enableAllBlockedUrls@112; disableAllBlockedUrls@123; updateBlockedUrl@134; toggleBlockedUrl@155; disableOrRemoveMatchingUrls@169
+
+`devtools/client/netmonitor/src/reducers/requests.js` | `d551e86b273e918c6c0d210c00fb275796f5fe4d` | 8788 bytes | source | UTF-8 | mode 100644
+Declarations: Requests@31; requestsReducer@55; addRequest@178; updateRequest@216; setEventStreamFlag@244; cloneRequest@267; closeCustomRequest@303
+
+`devtools/client/netmonitor/src/reducers/search.js` | `d016f13f05c1d708f4e302113dd506dc0d10bbf5` | 2979 bytes | source | UTF-8 | mode 100644
+Declarations: Search@25; search@39; onAddSearchQuery@59; onAddSearchResult@69; onClearSearchResults@83; onAddOngoingSearch@93; onToggleCaseSensitiveSearch@103; onUpdateSearchStatus@110; onSetTargetSearchResult@120
+
+`devtools/client/netmonitor/src/reducers/sort.js` | `be17800e8b39aadad70dfb20119a83533d1adfdf` | 1233 bytes | source | UTF-8 | mode 100644
+Declarations: Sort@12; sortReducer@20
+
+`devtools/client/netmonitor/src/reducers/statistics.js` | `d05547c974863be932a0f91fe5b439976933cd59` | 5280 bytes | source | UTF-8 | mode 100644
+Declarations: initStatisticsData@24; Statistics@40; statisticsReducer@61; addRequest@108; updateStatisticsData@120; setData@168
+
+`devtools/client/netmonitor/src/reducers/timing-markers.js` | `8a168ea848db324b291fca5ad0e0196bbd72b5be` | 1773 bytes | source | UTF-8 | mode 100644
+Declarations: TimingMarkers@14; addRequest@22; addTimingMarker@34; clearTimingMarkers@58; timingMarkers@62
+
+`devtools/client/netmonitor/src/reducers/ui.js` | `f2f1f3cde3be42490b69cc687cd498410717c4a6` | 6950 bytes | source | UTF-8 | mode 100644
+Declarations: Columns@56; ColumnsData@66; UI@75; resetColumns@101; resizeWaterfall@109; openNetworkDetails@119; openNetworkAction@129; resizeNetworkDetails@139; enablePersistentLogs@153; disableBrowserCache@163; openStatistics@173; setDetailsPanelTab@183; setActionBarTab@193; setHeadersUrlPreviewExpanded@203; toggleColumn@213; setColumnsWidth@229; setDefaultRawResponse@253; ui@260
+
+`devtools/client/netmonitor/src/selectors/index.js` | `0a0a596790d3c008c5b789c3b41b2967676c87ab` | 878 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/selectors/messages.js` | `d12b465b94bf718bd2054fdbc754c5dc91711e4c` | 4507 bytes | source | UTF-8 | mode 100644
+Declarations: typeFilter@48; searchFilter@57; looksLikeRegex@70; regexFromText@74
+
+`devtools/client/netmonitor/src/selectors/moz.build` | `f46b798270c413cb5969c821ebb217033302f503` | 349 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/selectors/requests.js` | `960f926841267d432c2f6e8439222e0a84d11b2f` | 5739 bytes | source | UTF-8 | mode 100644
+Declarations: sortWithClones@23; getRequestById@154; getRequestByChannelId@158; getDisplayedRequestById@164; getRecordingState@172; getOverriddenUrl@187; hasOverride@191
+
+`devtools/client/netmonitor/src/selectors/search.js` | `8ab0191a42c791f43326c8f6a3d2dc1c360bc0f4` | 775 bytes | source | UTF-8 | mode 100644
+Declarations: getOngoingSearch@7; getSearchStatus@11; getSearchResultCount@15; getSearchResourceCount@24
+
+`devtools/client/netmonitor/src/selectors/statistics.js` | `49dee1874ea55492e865fff8b712f9ed4458bce9` | 522 bytes | source | UTF-8 | mode 100644
+Declarations: getStatisticsData@7
+
+`devtools/client/netmonitor/src/selectors/timing-markers.js` | `385552990486265c7e19e657ccdb42d0ebda71d0` | 487 bytes | source | UTF-8 | mode 100644
+Declarations: getDisplayedTimingMarker@7
+
+`devtools/client/netmonitor/src/selectors/ui.js` | `83c19378e74a1d6c6186de85c6786563f07b30a2` | 2278 bytes | source | UTF-8 | mode 100644
+Declarations: getVisibleColumns@51
+
+`devtools/client/netmonitor/src/utils/build-query.js` | `8b763f72c89f2c2f4e647fdb0b03f990a7890f03` | 1931 bytes | source | UTF-8 | mode 100644
+Declarations: ignoreWhiteSpace@7; escapeRegExp@11; wholeMatch@16; buildFlags@24; buildQuery@40
+
+`devtools/client/netmonitor/src/utils/context-menu-utils.js` | `68d257fe370b3955ab20de7aaf8d7fc752f1042f` | 852 bytes | source | UTF-8 | mode 100644
+Declarations: baseCopyFormatter@11; baseCopyAllFormatter@24
+
+`devtools/client/netmonitor/src/utils/doc-utils.js` | `602523eaf6a92150a3538cb6bf7865429bc818a5` | 6460 bytes | source | UTF-8 | mode 100644
+Declarations: getHeadersURL@146; getHTTPStatusCodeURL@163; getNetMonitorTimingsURL@176; getPerformanceAnalysisURL@185; getFilterBoxURL@194; getTrackingProtectionURL@203; getCORSErrorURL@215
+
+`devtools/client/netmonitor/src/utils/filter-autocomplete-provider.js` | `88fe4563897a755417e9b19c077dfbf33b027c82` | 6748 bytes | source | UTF-8 | mode 100644
+Declarations: getAutocompleteValuesForFlag@26; getLastTokenFlagValues@94; autocompleteProvider@151
+
+`devtools/client/netmonitor/src/utils/filter-predicates.js` | `63105dec0c7b37f339b5c9597232ad49e6d61874` | 3643 bytes | source | UTF-8 | mode 100644
+Declarations: all@19; isHtml@23; isCss@29; isJs@33; isXHR@42; isFont@47; isImage@58; isMedia@68; isWS@81; isOther@118
+
+`devtools/client/netmonitor/src/utils/filter-text-utils.js` | `20cbf4ff5af8ae85750738265a0dc6cb50040514` | 8832 bytes | source | UTF-8 | mode 100644
+Declarations: parseFilters@56; processFlagFilter@108; isFlagFilterMatch@135; isSizeMatch@255; isTextFilterMatch@259; isFreetextMatch@273
+
+`devtools/client/netmonitor/src/utils/firefox/moz.build` | `a988e796fba67c336074f650b70c0ce60c19f204` | 249 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/utils/firefox/open-request-in-tab.js` | `9deeb1bffc8118fc6534014327ff5c63b88739ab` | 1764 bytes | source | UTF-8 | mode 100644
+Declarations: openRequestInTab@17; getInputStreamFromString@51
+
+`devtools/client/netmonitor/src/utils/format-utils.js` | `92aef00702d88cc0123509d39cfa98f2a6b099b3` | 4676 bytes | source | UTF-8 | mode 100644
+Declarations: getSizeWithDecimals@30; getTimeWithDecimals@34; formatDecimals@38; getFormattedSize@46; getFormattedTime@79; getFormattedIPAndPort@98; getRequestPriorityAsText@112; getRequestPriorityAsNumber@133
+
+`devtools/client/netmonitor/src/utils/headers-provider.js` | `9976e87ca5ed36ba174bf2accb4ee536a0cb85f6` | 2212 bytes | source | UTF-8 | mode 100644
+Declarations: getChildren@24; hasChildren@33; getLabel@42; getValue@49; getKey@56; getType@63; HeaderList@74; Header@82
+
+`devtools/client/netmonitor/src/utils/l10n.js` | `f21ffe9feef458632d0de47dd143e91077b34597` | 1276 bytes | source | UTF-8 | mode 100644
+Declarations: getBlockedReasonString@19
+
+`devtools/client/netmonitor/src/utils/moz.build` | `e3cd519a8291380056c328397a6c760cc5923366` | 735 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/utils/powershell.js` | `a5e4a7efc9619746858a6f3d8f01e40fb1398ade` | 5475 bytes | source | UTF-8 | mode 100644
+Declarations: escapeStr@58; generateCommand@65
+
+`devtools/client/netmonitor/src/utils/prefs.js` | `3c988f42943ad2bff0da3fad4769b54afbad7ddd` | 680 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/utils/request-blocking.js` | `67b217afe0bd0d5cb1cd3077b2b4c431f661420a` | 413 bytes | source | UTF-8 | mode 100644
+Declarations: hasMatchingBlockingRequestPattern@7
+
+`devtools/client/netmonitor/src/utils/request-utils.js` | `3682927167df4117df405cbf90dbdcb825b437d3` | 27855 bytes | source | UTF-8 | mode 100644
+Declarations: getFormDataSections@54; fetchHeaders@97; fetchNetworkUpdatePacket@112; formDataURI@152; writeHeaderText@167; decodeUnicodeBase64@183; getAbbreviatedMimeType@198; getFileName@214; getUrl@225; getUrlProperty@239; getUrlBaseName@252; getUrlQuery@263; getUrlBaseNameWithQuery@273; getUrlHostName@291; getUrlHost@301; getUrlScheme@312; getUrlPath@323; getUrlDetails@332; getUrlToolTip@386; parseQueryString@411; parseFormData@437; ipToLong@463; propertiesEqual@500; getStartTime@512; getEndTime@524; getResponseTime@537; getFormattedProtocol@547; getResponseHeader@585; getRequestHeader@603; updateFormDataSections@620; getMessagePayload@661; processNetworkUpdates@677; isBase64@699; isJsonlContentType@720; isJsonlResponse@739; parseJSONL@758; parseJSON@774; removeXSSIString@837; getRequestHeadersRawText@876; responseIsFresh@897
+
+`devtools/client/netmonitor/src/utils/sort-predicates.js` | `9043bdcb1403f792243c2d44937d7f2aac297845` | 9477 bytes | source | UTF-8 | mode 100644
+Declarations: compareValues@35; waterfall@48; priority@53; status@58; method@63; file@68; path@75; url@82; protocol@89; scheme@94; startTime@102; endTime@107; responseTime@112; duration@117; latency@122; compareHeader@132; domain@170; remoteip@177; cause@184; initiator@191; setCookies@231; cookies@244; type@256; getStatusValue@263; getTransferedSizeValue@275; transferred@292; contentSize@300
+
+`devtools/client/netmonitor/src/utils/sort-utils.js` | `62c96dbfae2994306c52c2f84c790c9ce3c0d6d1` | 1115 bytes | source | UTF-8 | mode 100644
+Declarations: sortObjectKeys@13
+
+`devtools/client/netmonitor/src/utils/tooltips.js` | `2f87e8654a02947a229e702144015e3b9c0f505c` | 487 bytes | source | UTF-8 | mode 100644
+Declarations: limitTooltipLength@13
+
+`devtools/client/netmonitor/src/widgets/HeadersPanelContextMenu.js` | `02a591d7b57e18f4d9648ddc49a3b6b205603879` | 3903 bytes | source | UTF-8 | mode 100644
+Declarations: HeadersPanelContextMenu@27; constructor@28; open@40; copyAll@88; copyValue@113; getSummaryContent@133
+
+`devtools/client/netmonitor/src/widgets/PropertiesViewContextMenu.js` | `8e7e7680ca76903dcace8f6531dfc396cd308630` | 3342 bytes | source | UTF-8 | mode 100644
+Declarations: PropertiesViewContextMenu@27; constructor@28; open@43; copyAll@72; copyValue@97
+
+`devtools/client/netmonitor/src/widgets/RequestBlockingContextMenu.js` | `f6a10b0ca319c38944e988f7ee08bd91628647f3` | 1915 bytes | source | UTF-8 | mode 100644
+Declarations: RequestBlockingContextMenu@18; constructor@19; createMenu@23; open@68
+
+`devtools/client/netmonitor/src/widgets/RequestListContextMenu.js` | `099f2dea7e8dced9f6923e90e4e9bedb858b9fc3` | 26338 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListContextMenu@78; constructor@79; createCopySubMenu@83; createMenu@295; async@442; openRequestInTab@519; open@531; openInDebugger@552; openInStyleEditor@560; copyUrl@568; copyUrlParams@576; copyPostData@585; copyAsPowerShell@653; generateFetchString@683; copyAsFetch@751; useAsFetch@765; copyResponseHeaders@806; copyImageAsDataUri@822; getResponseContent@831; saveResponseAs@853; copyResponse@862; fetchRequestHeaders@870
+
+`devtools/client/netmonitor/src/widgets/RequestListHeaderContextMenu.js` | `5a9b6ecaee6fa171f66ec2aa2f8f973bd17d755f` | 3306 bytes | source | UTF-8 | mode 100644
+Declarations: RequestListHeaderContextMenu@35; constructor@36; open@43; getVisibleColumns@47
+
+`devtools/client/netmonitor/src/widgets/WaterfallBackground.js` | `de01e751b5816c36026dcdfa25bc64a67685165a` | 5356 bytes | source | UTF-8 | mode 100644
+Declarations: WaterfallBackground@25; constructor@26; setImageElement@40; draw@46; drawPixelAt@97; drawTimestamp@112; getThemeColorAsRgba@153; destroy@168
+
+`devtools/client/netmonitor/src/widgets/moz.build` | `106deca9357624c666f2ecbde6842cb29cbf916d` | 428 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/workers/moz.build` | `ddd0212af5d6c574c6769ac13324452289c96958` | 226 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/workers/search/index.js` | `79a00329546ace2145fcf5885a683727860fa4aa` | 804 bytes | source | UTF-8 | mode 100644
+Declarations: SearchDispatcher@14; constructor@15
+
+`devtools/client/netmonitor/src/workers/search/moz.build` | `fc72ea78ac0d762be8348f1acaecd1f5622a690b` | 269 bytes | build-registration | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/src/workers/search/search.js` | `85fdc2871f426dcb09ccfd6b9e36d8a674bbe114` | 9116 bytes | source | UTF-8 | mode 100644
+Declarations: searchInResource@14; getResults@129; find@141; findMatches@158; searchInProperties@182; getType@208; getValue@219; searchInText@233; searchInArray@285; getTruncatedValue@307; searchInObject@327; getMatches@368
+
+`devtools/client/netmonitor/src/workers/search/worker.js` | `fbedb4a7cec186b52c00ade4432ffb50f23bbfca` | 711 bytes | source | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/test/.eslintrc.mjs` | `d50ad902c9e04cccf3aed18bcc976203be35dbc8` | 463 bytes | test-path,source | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/test/OstrichLicense.txt` | `14c043d601cc55a74640d8c5c82957d2c84f2ad8` | 4299 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/test/browser_al.toml` | `a8bdc60948356af0e4979c0192ae96c4f8626189` | 7818 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/test/browser_http3.toml` | `6bc3a27fd58d2a252caad08b0fa8f8f1e25c4722` | 292 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/test/browser_mz.toml` | `a4c0822e018000177b95e5b22bbc3cef1ee917ef` | 8442 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`devtools/client/netmonitor/test/browser_net_accessibility-01.js` | `58ac0c91fec70d4f54f8a87b5041fad807a59722` | 2252 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@10; check@25
+
+`devtools/client/netmonitor/test/browser_net_accessibility-02.js` | `e650a83ad4f4554617bc1a4e0e77e0f24e76cf63` | 3503 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@10; check@25
+
+`devtools/client/netmonitor/test/browser_net_api-calls.js` | `e0fd12bbd3d30a89b1d7b1a6f4dfa8c9700c2c8c` | 1309 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@11
+
+`devtools/client/netmonitor/test/browser_net_auth-request.js` | `76b8398db9b857b6b03f368fd3012f232d2af2ee` | 2796 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getUniqueAuthURL@23; cleanupAuthManager@28; add_task@35; waitUntil@73
+
+`devtools/client/netmonitor/test/browser_net_autoscroll.js` | `1717569ce96e7d2b0ffcf12f27f47a254ba766bf` | 4098 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@10; waitForRequestListToAppear@79; waitForRequestsToOverflowContainer@88; scrolledToBottom@103; waitSomeTime@107; waitForScroll@112; waitUntil@114
+
+`devtools/client/netmonitor/test/browser_net_background_update.js` | `e46db87a7998413f72555a757ecd0f4716722a0b` | 1608 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@10; waitUntil@33
+
+`devtools/client/netmonitor/test/browser_net_basic-search.js` | `e0fec7fb45ecb4003d46eaae7f69ccb559798bfa` | 2764 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@11
+
+`devtools/client/netmonitor/test/browser_net_block-before-network.js` | `d572c53bc2145a7aa0953f2ef9422e6c922656b2` | 3322 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@10; fetchCount@33; function@37; setupTestServer@86
+
+`devtools/client/netmonitor/test/browser_net_block-context.js` | `dfdf7f2d2b57096cc8c4788a492aa3938f935caf` | 5367 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@10; waitForBlockingAction@49; waitForBlockingAction@50; waitForBlockingAction@136; openMenuAndClick@142; reloadPage@154; getCheckedCheckboxes@166; getListitems@173; checkIfRequestIsBlocked@177
+
+`devtools/client/netmonitor/test/browser_net_block-csp.js` | `eaa36cb6dd4d0e61574f152d6527fcbbf4dc06ae` | 2993 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@10; testRequestsBlockedByCSP@26
+
+`devtools/client/netmonitor/test/browser_net_block-draganddrop.js` | `5e24775eae5d8fab5c636c1162c36ddd5ff8c207` | 4759 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@10; DataTransfer@11; constructor@12; setData@20; getData@35; wasGetDataTriggered@45; wasSetDataTriggered@49
+
+`devtools/client/netmonitor/test/browser_net_block-extensions.js` | `7b54c8457bee0e637a9350d011f7272df21f1e4d` | 2652 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@9; background@18
+
+`devtools/client/netmonitor/test/browser_net_block-pattern.js` | `32666e6d69d087b1825630555ed268941cd6fa11` | 3848 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@12; function@46; function@53; function@60; function@67; function@112
+
+`devtools/client/netmonitor/test/browser_net_block-serviceworker.js` | `b9ea8081e1e25d5a9af0b5f60066edbd64fa2473` | 2091 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@12
+
+`devtools/client/netmonitor/test/browser_net_block.js` | `0a58c2c60a0d15998149f23f5a17302e787a1154` | 5383 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@10
+
+`devtools/client/netmonitor/test/browser_net_brotli.js` | `91983bd883e704635570fb10e8826d9b32beeb8e` | 2394 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@13; waitUntil@38; testResponse@69
+
+`devtools/client/netmonitor/test/browser_net_cache_details.js` | `19284380fb9031c6c1a853860302425965a8aa23` | 4868 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@7; waitFor@52; waitFor@67; waitFor@75; getCacheDetailsValue@126
+
+`devtools/client/netmonitor/test/browser_net_cache_details_revalidated.js` | `99c04869f241b592531c2ec66cee901ff642a5f8` | 2528 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@9
+
+`devtools/client/netmonitor/test/browser_net_cache_svg_size.js` | `d65442a1a0a191903430c4f6f79b11b99f3657e7` | 3975 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@9; waitFor@84
+
+`devtools/client/netmonitor/test/browser_net_cached-status.js` | `5d5fbba3e057da439250f9ea91a49c4662479696` | 4223 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@10; observe@98; waitUntil@125; performRequestsAndWait@143
+
+`devtools/client/netmonitor/test/browser_net_cause_redirect.js` | `040c2663c0a3d7eb7c98543d5890701f8adf6805` | 4730 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@11; add_task@83; performRequests@146; function@150
+
+`devtools/client/netmonitor/test/browser_net_cause_source_map.js` | `663cc5c4bcf19fe5be072170ca832901966b8fdc` | 2117 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@12; waitUntil@41
+
+`devtools/client/netmonitor/test/browser_net_charts-01.js` | `7f901e158f03a991e2619a3cee653827b86e8aaf` | 3775 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@10
+
+`devtools/client/netmonitor/test/browser_net_charts-02.js` | `106ec883804eac3d2384e27d511379bb8967a368` | 1913 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@11
+
+`devtools/client/netmonitor/test/browser_net_charts-03.js` | `f938bb39323f7f02842846cb74f68697c00ea38f` | 5277 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@10
+
+`devtools/client/netmonitor/test/browser_net_charts-04.js` | `686608fb812c93e57900316ceae042357fbdb837` | 3135 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@11
+
+`devtools/client/netmonitor/test/browser_net_charts-05.js` | `5a75eee610105cc2ca0b525e166c828e327ddb1c` | 2262 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@10
+
+`devtools/client/netmonitor/test/browser_net_charts-06.js` | `a41e997873a2167d34ebb39ed2b5608bb979a04a` | 1658 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@10
+
+## Validation and limits
+
+Every listed blob was read from the pinned Git tree and its Git SHA-1 was recomputed. Extraction is structural only. Read implementations, callers, build conditions, and tests before making a behavior claim. Runtime behavior and historical reasons remain unverified. Reproduce a file with `git show 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b:path` in the corresponding source clone. The full study coverage and navigation note records aggregate results.
+
+## Retrieval correction
+
+This copy preserves the source map in [c9899d12-7fbb-4cd9-b57c-a8021dd0f886.md](c9899d12-7fbb-4cd9-b57c-a8021dd0f886.md). The original was imported and committed by concurrent console maintenance during this study. Its full path metadata could exceed the console search budget. This copy uses component scope metadata while keeping every file path in the body. It adds no independent behavior evidence. Original record: `8a1eeeeecf24e51973e78fa16047509aa3762c4578690fa83a5f99db77e87de2`.

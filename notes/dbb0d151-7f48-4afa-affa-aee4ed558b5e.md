@@ -1,0 +1,1348 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["js"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013","portableCopies":["3194eb06126529c4878821a0b64d09930bf85d0ca833eb23bc749ea06572aa03"],"sourceAt":"2026-10-13T04:17:22.071Z","correctionOf":"notes/399c1ddf-981c-46c9-99dd-fa3fee2104e0.md"}} -->
+# firefox/js JavaScript function map 637
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### js/src/tests/test262/language/statements/class/dstr/private-gen-meth-static-obj-ptrn-prop-ary-trailing-comma.js
+
+Blob: `d3a8f48c77b90e70dc6a0409a06678a76603d976`. Role: test-path,source. Parse: module.
+
+- method @71-74; FunctionExpression; parameters=1; async=false; generator=true
+- method @76-78; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @70-79
+
+### js/src/tests/test262/language/statements/class/dstr/private-gen-meth-static-obj-ptrn-prop-ary.js
+
+Blob: `71896ded799faeff7e7cb178846317ce85fae1e7`. Role: test-path,source. Parse: module.
+
+- method @72-81; FunctionExpression; parameters=1; async=false; generator=true
+- (anonymous) @77-79; FunctionExpression; parameters=0; async=false; generator=false
+- method @83-85; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @71-86
+
+### js/src/tests/test262/language/statements/class/dstr/private-gen-meth-static-obj-ptrn-prop-id-init-skipped.js
+
+Blob: `b633c84655fa6d8fa5727b6c80036d72caf2b484`. Role: test-path,source. Parse: module.
+
+- counter @70-72; FunctionDeclaration; parameters=0; async=false; generator=false
+- method @76-96; FunctionExpression; parameters=1; async=false; generator=true
+- (anonymous) @83-85; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @86-88; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @89-91; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @92-94; FunctionExpression; parameters=0; async=false; generator=false
+- method @98-100; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @75-101
+
+### js/src/tests/test262/language/statements/class/dstr/private-gen-meth-static-obj-ptrn-prop-id-init.js
+
+Blob: `2139b734c905677650d7497c45bb6a28c293d7a3`. Role: test-path,source. Parse: module.
+
+- method @71-77; FunctionExpression; parameters=1; async=false; generator=true
+- (anonymous) @73-75; FunctionExpression; parameters=0; async=false; generator=false
+- method @79-81; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @70-82
+
+### js/src/tests/test262/language/statements/class/dstr/private-gen-meth-static-obj-ptrn-prop-id-trailing-comma.js
+
+Blob: `382fe94c8e3a072e3ade09d27875d5ed264f409c`. Role: test-path,source. Parse: module.
+
+- method @71-78; FunctionExpression; parameters=1; async=false; generator=true
+- (anonymous) @74-76; FunctionExpression; parameters=0; async=false; generator=false
+- method @80-82; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @70-83
+
+### js/src/tests/test262/language/statements/class/dstr/private-gen-meth-static-obj-ptrn-prop-id.js
+
+Blob: `5555927ec6c543a2ff4f51c5894311163e44c23a`. Role: test-path,source. Parse: module.
+
+- method @71-77; FunctionExpression; parameters=1; async=false; generator=true
+- (anonymous) @73-75; FunctionExpression; parameters=0; async=false; generator=false
+- method @79-81; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @70-82
+
+### js/src/tests/test262/language/statements/class/dstr/private-gen-meth-static-obj-ptrn-prop-obj-init.js
+
+Blob: `d2d132a25f307af75bd4d47fced6279de7b6f512`. Role: test-path,source. Parse: module.
+
+- method @74-83; FunctionExpression; parameters=1; async=false; generator=true
+- (anonymous) @79-81; FunctionExpression; parameters=0; async=false; generator=false
+- method @85-87; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @73-88
+
+### js/src/tests/test262/language/statements/class/dstr/private-gen-meth-static-obj-ptrn-prop-obj.js
+
+Blob: `1dec9e2a75de65488c6415a92b3ea3a95ed60490`. Role: test-path,source. Parse: module.
+
+- method @72-81; FunctionExpression; parameters=1; async=false; generator=true
+- (anonymous) @77-79; FunctionExpression; parameters=0; async=false; generator=false
+- method @83-85; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @71-86
+
+### js/src/tests/test262/language/statements/class/dstr/private-gen-meth-static-obj-ptrn-rest-getter.js
+
+Blob: `518777f02daeb127e332e4214ec369a8d1de8ab8`. Role: test-path,source. Parse: module.
+
+- method @66-76; FunctionExpression; parameters=1; async=false; generator=true
+- method @78-80; FunctionExpression; parameters=0; async=false; generator=false
+- v @83-83; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @65-81
+
+### js/src/tests/test262/language/statements/class/dstr/private-gen-meth-static-obj-ptrn-rest-skip-non-enumerable.js
+
+Blob: `660628a74cdca7e5504621d2e503b9bbe1186e60`. Role: test-path,source. Parse: module.
+
+- method @67-84; FunctionExpression; parameters=1; async=false; generator=true
+- method @86-88; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @66-89
+
+### js/src/tests/test262/language/statements/class/dstr/private-gen-meth-static-obj-ptrn-rest-val-obj.js
+
+Blob: `5f18d266b4539ba20a7c3cfb0664fd9a8ceb1594`. Role: test-path,source. Parse: module.
+
+- method @65-83; FunctionExpression; parameters=1; async=false; generator=true
+- method @85-87; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @64-88
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-init-iter-close.js
+
+Blob: `e67f314cf9d639a2593b58af35b755c682ff4aaf`. Role: test-path,source. Parse: module.
+
+- iter.[computed] @71-81; FunctionExpression; parameters=0; async=false; generator=false
+- next @73-75; FunctionExpression; parameters=0; async=false; generator=false
+- return @76-79; FunctionExpression; parameters=0; async=false; generator=false
+- method @85-88; FunctionExpression; parameters=1; async=false; generator=false
+- method @90-92; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @84-93
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-init-iter-no-close.js
+
+Blob: `80eafc152b352c6aa0dba9e608c1cab5e4cc3fb0`. Role: test-path,source. Parse: module.
+
+- iter.[computed] @71-81; FunctionExpression; parameters=0; async=false; generator=false
+- next @73-75; FunctionExpression; parameters=0; async=false; generator=false
+- return @76-79; FunctionExpression; parameters=0; async=false; generator=false
+- method @85-88; FunctionExpression; parameters=1; async=false; generator=false
+- method @90-92; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @84-93
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-name-iter-val.js
+
+Blob: `027780a582f67e492b1bbefe7ea377b4718343e8`. Role: test-path,source. Parse: module.
+
+- method @82-87; FunctionExpression; parameters=1; async=false; generator=false
+- method @89-91; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @81-92
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-ary-elem-init.js
+
+Blob: `bf66e3f137f0b52f3abc3fc78c98055d91996fea`. Role: test-path,source. Parse: module.
+
+- method @74-79; FunctionExpression; parameters=1; async=false; generator=false
+- method @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @73-84
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-ary-elem-iter.js
+
+Blob: `e1b2d300b22178c573ba9590c19808a3a9c6f7c3`. Role: test-path,source. Parse: module.
+
+- method @75-80; FunctionExpression; parameters=1; async=false; generator=false
+- method @82-84; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @74-85
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-ary-elision-init.js
+
+Blob: `3d0edf64e3c942d71d9ce5f52098b827afffef8b`. Role: test-path,source. Parse: module.
+
+- g @74-78; FunctionDeclaration; parameters=0; async=false; generator=true
+- method @82-86; FunctionExpression; parameters=1; async=false; generator=false
+- method @88-90; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @81-91
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-ary-elision-iter.js
+
+Blob: `41b0bbd28e83dddcaa4b3bbf628812f8d923d267`. Role: test-path,source. Parse: module.
+
+- g @74-76; FunctionDeclaration; parameters=0; async=false; generator=true
+- method @80-83; FunctionExpression; parameters=1; async=false; generator=false
+- method @85-87; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @79-88
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-ary-empty-init.js
+
+Blob: `a15d5f03b414c7e35758900d737ddc5ef9a897ec`. Role: test-path,source. Parse: module.
+
+- (anonymous) @74-74; FunctionExpression; parameters=0; async=false; generator=true
+- method @78-82; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @78-78; FunctionExpression; parameters=0; async=false; generator=false
+- method @84-86; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @77-87
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-ary-empty-iter.js
+
+Blob: `15a6a738f1db5e115ca2d36effd723cb67c4da7c`. Role: test-path,source. Parse: module.
+
+- method @76-79; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @76-76; FunctionExpression; parameters=0; async=false; generator=false
+- method @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @75-84
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-ary-rest-init.js
+
+Blob: `07b66e65fa6dcf65460382bff00ea77ee9338ba4`. Role: test-path,source. Parse: module.
+
+- method @75-83; FunctionExpression; parameters=1; async=false; generator=false
+- method @85-87; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @74-88
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-ary-rest-iter.js
+
+Blob: `859c676e53a558f7d0cfc2b67f1125a52913b745`. Role: test-path,source. Parse: module.
+
+- method @77-86; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @77-77; FunctionExpression; parameters=0; async=false; generator=false
+- method @88-90; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @76-91
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-id-init-exhausted.js
+
+Blob: `73bda913c4517ac5e511367de9d37326a44a0ec4`. Role: test-path,source. Parse: module.
+
+- method @75-78; FunctionExpression; parameters=1; async=false; generator=false
+- method @80-82; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @74-83
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-id-init-fn-name-arrow.js
+
+Blob: `530f7fb021497a72370ecef93b599f96716ec95a`. Role: test-path,source. Parse: module.
+
+- method @76-79; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @76-76; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- method @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @75-84
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-id-init-fn-name-class.js
+
+Blob: `a20b5791924d3a99c28b6af5b324cf038a2045c7`. Role: test-path,source. Parse: module.
+
+- method @76-81; FunctionExpression; parameters=1; async=false; generator=false
+- name @76-76; FunctionExpression; parameters=0; async=false; generator=false
+- method @83-85; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @75-86
+- Class (anonymous) @76-76
+- Class X @76-76
+- Class (anonymous) @76-76
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-id-init-fn-name-cover.js
+
+Blob: `2cf571fbdedbba37248b8706dba52f9e50c804a5`. Role: test-path,source. Parse: module.
+
+- method @76-80; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @76-76; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @76-76; FunctionExpression; parameters=0; async=false; generator=false
+- method @82-84; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @75-85
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-id-init-fn-name-fn.js
+
+Blob: `7f69ab7bcbe77870b0a0c245fdbf6302e38b820b`. Role: test-path,source. Parse: module.
+
+- method @76-80; FunctionExpression; parameters=1; async=false; generator=false
+- x @76-76; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @76-76; FunctionExpression; parameters=0; async=false; generator=false
+- method @82-84; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @75-85
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-id-init-fn-name-gen.js
+
+Blob: `71080d2f59795b4336dd3db1cc9d2fd181db38b4`. Role: test-path,source. Parse: module.
+
+- method @77-81; FunctionExpression; parameters=1; async=false; generator=false
+- x @77-77; FunctionExpression; parameters=0; async=false; generator=true
+- (anonymous) @77-77; FunctionExpression; parameters=0; async=false; generator=true
+- method @83-85; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @76-86
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-id-init-hole.js
+
+Blob: `b1f9271bde196eda292a9ce4647bf0a18fe3b42b`. Role: test-path,source. Parse: module.
+
+- method @70-74; FunctionExpression; parameters=1; async=false; generator=false
+- method @76-78; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @69-79
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-id-init-skipped.js
+
+Blob: `98e8938e8fdeaff8b14899da94dc34ad44533276`. Role: test-path,source. Parse: module.
+
+- counter @70-72; FunctionDeclaration; parameters=0; async=false; generator=false
+- method @76-83; FunctionExpression; parameters=1; async=false; generator=false
+- method @85-87; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @75-88
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-id-init-undef.js
+
+Blob: `b4bf7edd2f077ed270ca87e64014789be9133fcb`. Role: test-path,source. Parse: module.
+
+- method @74-77; FunctionExpression; parameters=1; async=false; generator=false
+- method @79-81; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @73-82
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-id-iter-complete.js
+
+Blob: `9d796f54b95f113871d8ff452ae005fd3bffe2ea`. Role: test-path,source. Parse: module.
+
+- method @78-81; FunctionExpression; parameters=1; async=false; generator=false
+- method @83-85; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @77-86
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-id-iter-done.js
+
+Blob: `3526bd3efb913775f63bb4a01db8053f04fdab17`. Role: test-path,source. Parse: module.
+
+- method @73-76; FunctionExpression; parameters=1; async=false; generator=false
+- method @78-80; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @72-81
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-id-iter-val-array-prototype.js
+
+Blob: `4485b873154c5203eaa1e5af99724646decfe93f`. Role: test-path,source. Parse: module.
+
+- Array.prototype.[computed] @78-88; FunctionExpression; parameters=0; async=false; generator=true
+- method @92-97; FunctionExpression; parameters=1; async=false; generator=false
+- method @99-101; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @91-102
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-id-iter-val.js
+
+Blob: `7b6b625439f9adb383336d50fc74b57a90ac7c7e`. Role: test-path,source. Parse: module.
+
+- method @82-87; FunctionExpression; parameters=1; async=false; generator=false
+- method @89-91; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @81-92
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-obj-id-init.js
+
+Blob: `cfc80094cf6f9cc686763c97c14faa5c11dd8208`. Role: test-path,source. Parse: module.
+
+- method @74-79; FunctionExpression; parameters=1; async=false; generator=false
+- method @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @73-84
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-obj-id.js
+
+Blob: `da9b35a11f49170639046883a24538f94fcc7229`. Role: test-path,source. Parse: module.
+
+- method @74-79; FunctionExpression; parameters=1; async=false; generator=false
+- method @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @73-84
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-obj-prop-id-init.js
+
+Blob: `78d4f981709df998d3f005646b9f7fd81d532954`. Role: test-path,source. Parse: module.
+
+- method @74-89; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @79-81; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @82-84; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @85-87; FunctionExpression; parameters=0; async=false; generator=false
+- method @91-93; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @73-94
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elem-obj-prop-id.js
+
+Blob: `26f2957c1b1073f4ec604ecc27f611110e48cf9c`. Role: test-path,source. Parse: module.
+
+- method @74-89; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @79-81; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @82-84; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @85-87; FunctionExpression; parameters=0; async=false; generator=false
+- method @91-93; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @73-94
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elision-exhausted.js
+
+Blob: `867d9001d92f9c9cd188f07170b6bad8ebbced69`. Role: test-path,source. Parse: module.
+
+- (anonymous) @76-76; FunctionExpression; parameters=0; async=false; generator=true
+- method @81-84; FunctionExpression; parameters=1; async=false; generator=false
+- method @86-88; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @80-89
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-elision.js
+
+Blob: `c1cf084dd6955831a67c7e2cdc3eb02ae5f7d58d`. Role: test-path,source. Parse: module.
+
+- g @81-85; FunctionDeclaration; parameters=0; async=false; generator=true
+- method @89-93; FunctionExpression; parameters=1; async=false; generator=false
+- method @95-97; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @88-98
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-empty.js
+
+Blob: `01e416e35954d0a16a7f2b4f48e0a3a6a6d885d8`. Role: test-path,source. Parse: module.
+
+- (anonymous) @67-69; FunctionExpression; parameters=0; async=false; generator=true
+- method @73-76; FunctionExpression; parameters=1; async=false; generator=false
+- method @78-80; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @72-81
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-rest-ary-elem.js
+
+Blob: `62abf52a4ba8d79d20b3e332a05aa452e3904014`. Role: test-path,source. Parse: module.
+
+- method @95-100; FunctionExpression; parameters=1; async=false; generator=false
+- method @102-104; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @94-105
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-rest-ary-elision.js
+
+Blob: `885840c43bf6e71710ebf29645a3cb36a0d0ac85`. Role: test-path,source. Parse: module.
+
+- g @94-98; FunctionDeclaration; parameters=0; async=false; generator=true
+- method @102-106; FunctionExpression; parameters=1; async=false; generator=false
+- method @108-110; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @101-111
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-rest-ary-empty.js
+
+Blob: `c98ab4b72facdb9579f112f173b8a3447822a455`. Role: test-path,source. Parse: module.
+
+- (anonymous) @80-82; FunctionExpression; parameters=0; async=false; generator=true
+- method @86-89; FunctionExpression; parameters=1; async=false; generator=false
+- method @91-93; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @85-94
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-rest-ary-rest.js
+
+Blob: `a271cd97424d7d4031b300b0817b3f1902884abd`. Role: test-path,source. Parse: module.
+
+- method @76-85; FunctionExpression; parameters=1; async=false; generator=false
+- method @87-89; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @75-90
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-rest-id-direct.js
+
+Blob: `41b1e92abc7c33cd3365d713670b45f0da59241b`. Role: test-path,source. Parse: module.
+
+- method @76-80; FunctionExpression; parameters=1; async=false; generator=false
+- method @82-84; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @75-85
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-rest-id-elision.js
+
+Blob: `0fea03cdf7d3234e4af5110507e3cb21e9ed2b84`. Role: test-path,source. Parse: module.
+
+- method @73-81; FunctionExpression; parameters=1; async=false; generator=false
+- method @83-85; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @72-86
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-rest-id-exhausted.js
+
+Blob: `70926f7d704743d0296c127e7a5590c8deae3ce8`. Role: test-path,source. Parse: module.
+
+- method @73-77; FunctionExpression; parameters=1; async=false; generator=false
+- method @79-81; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @72-82
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-rest-id.js
+
+Blob: `4a062e592317fc00b52547fa2dd915929ea2a0b7`. Role: test-path,source. Parse: module.
+
+- method @70-78; FunctionExpression; parameters=1; async=false; generator=false
+- method @80-82; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @69-83
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-rest-init-ary.js
+
+Blob: `1caf23d11deaa2ff2907e9fdb3a58be7784d0c87`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token =
+
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-rest-init-id.js
+
+Blob: `e951bf6636216a39c32db680769b5de17fba2c2c`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token =
+
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-rest-init-obj.js
+
+Blob: `dd5a1a293d3c413a6f9edb0ee04f66d280bc8a2a`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token =
+
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-rest-not-final-ary.js
+
+Blob: `7d85a9947800434a74946d15602c0ac390a5a1f7`. Role: test-path,source. Parse: failed.
+
+Failure: Comma is not permitted after the rest element
+
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-rest-not-final-id.js
+
+Blob: `564123314cd9a8a2eb6d9d8c7fe4b309471a59c3`. Role: test-path,source. Parse: failed.
+
+Failure: Comma is not permitted after the rest element
+
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-rest-not-final-obj.js
+
+Blob: `3b293c3670fe4727a0e9505d844fd1a07913bcc7`. Role: test-path,source. Parse: failed.
+
+Failure: Comma is not permitted after the rest element
+
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-rest-obj-id.js
+
+Blob: `0813d1068f7975109725a93c11050506904f86ed`. Role: test-path,source. Parse: module.
+
+- method @75-78; FunctionExpression; parameters=1; async=false; generator=false
+- method @80-82; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @74-83
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-ary-ptrn-rest-obj-prop-id.js
+
+Blob: `dd166a1b45eb32eabc7f927575587bbbf4b5fddd`. Role: test-path,source. Parse: module.
+
+- method @76-85; FunctionExpression; parameters=1; async=false; generator=false
+- method @87-89; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @75-90
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-init-iter-close.js
+
+Blob: `9a9529a6c962993e0873cb70efe6064efec7d7b1`. Role: test-path,source. Parse: module.
+
+- iter.[computed] @71-81; FunctionExpression; parameters=0; async=false; generator=false
+- next @73-75; FunctionExpression; parameters=0; async=false; generator=false
+- return @76-79; FunctionExpression; parameters=0; async=false; generator=false
+- method @85-88; FunctionExpression; parameters=1; async=false; generator=false
+- method @90-92; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @84-93
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-init-iter-no-close.js
+
+Blob: `25e96952e73709f490fa1e5d76e941b245170e3c`. Role: test-path,source. Parse: module.
+
+- iter.[computed] @71-81; FunctionExpression; parameters=0; async=false; generator=false
+- next @73-75; FunctionExpression; parameters=0; async=false; generator=false
+- return @76-79; FunctionExpression; parameters=0; async=false; generator=false
+- method @85-88; FunctionExpression; parameters=1; async=false; generator=false
+- method @90-92; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @84-93
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-name-iter-val.js
+
+Blob: `3f2f674dd406906a04c2d752fc5cfe718434a243`. Role: test-path,source. Parse: module.
+
+- method @82-87; FunctionExpression; parameters=1; async=false; generator=false
+- method @89-91; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @81-92
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-ary-elem-init.js
+
+Blob: `c0c419b43939771d17fcd3d4d2558bc6354506f7`. Role: test-path,source. Parse: module.
+
+- method @74-79; FunctionExpression; parameters=1; async=false; generator=false
+- method @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @73-84
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-ary-elem-iter.js
+
+Blob: `49db54bded92896b6277cc1a9eaf8f44ddde8387`. Role: test-path,source. Parse: module.
+
+- method @75-80; FunctionExpression; parameters=1; async=false; generator=false
+- method @82-84; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @74-85
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-ary-elision-init.js
+
+Blob: `213ce44ec1d8cb1603cf7375715e653acca9afb1`. Role: test-path,source. Parse: module.
+
+- g @74-78; FunctionDeclaration; parameters=0; async=false; generator=true
+- method @82-86; FunctionExpression; parameters=1; async=false; generator=false
+- method @88-90; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @81-91
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-ary-elision-iter.js
+
+Blob: `6cf5fa2f1c92a15e35eaaedd5d6e5bd5c0b71dcb`. Role: test-path,source. Parse: module.
+
+- g @74-76; FunctionDeclaration; parameters=0; async=false; generator=true
+- method @80-83; FunctionExpression; parameters=1; async=false; generator=false
+- method @85-87; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @79-88
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-ary-empty-init.js
+
+Blob: `b6a61f348894891e7c549fb09956f7fb40a43b97`. Role: test-path,source. Parse: module.
+
+- (anonymous) @74-74; FunctionExpression; parameters=0; async=false; generator=true
+- method @78-82; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @78-78; FunctionExpression; parameters=0; async=false; generator=false
+- method @84-86; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @77-87
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-ary-empty-iter.js
+
+Blob: `6e035507d2e1a17b9525a0bb96e3fd5e2bd4233f`. Role: test-path,source. Parse: module.
+
+- method @76-79; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @76-76; FunctionExpression; parameters=0; async=false; generator=false
+- method @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @75-84
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-ary-rest-init.js
+
+Blob: `051f06268b47ec23a490589227714d9ee9025c48`. Role: test-path,source. Parse: module.
+
+- method @75-83; FunctionExpression; parameters=1; async=false; generator=false
+- method @85-87; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @74-88
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-ary-rest-iter.js
+
+Blob: `65bc609182c72b8c0fc8c141538449cceb02cd85`. Role: test-path,source. Parse: module.
+
+- method @77-86; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @77-77; FunctionExpression; parameters=0; async=false; generator=false
+- method @88-90; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @76-91
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-id-init-exhausted.js
+
+Blob: `61be2a8e69bd8247b819651d177e1fb4d8a980c8`. Role: test-path,source. Parse: module.
+
+- method @75-78; FunctionExpression; parameters=1; async=false; generator=false
+- method @80-82; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @74-83
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-id-init-fn-name-arrow.js
+
+Blob: `08d3628327473fad855e91a9c86cc990cf7a95fc`. Role: test-path,source. Parse: module.
+
+- method @76-79; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @76-76; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- method @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @75-84
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-id-init-fn-name-class.js
+
+Blob: `6cb3dd7dc3963a2efd807157fa1c618d10463b78`. Role: test-path,source. Parse: module.
+
+- method @76-81; FunctionExpression; parameters=1; async=false; generator=false
+- name @76-76; FunctionExpression; parameters=0; async=false; generator=false
+- method @83-85; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @75-86
+- Class (anonymous) @76-76
+- Class X @76-76
+- Class (anonymous) @76-76
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-id-init-fn-name-cover.js
+
+Blob: `e3695c9aa05cf1786a1926804b354096203c0b71`. Role: test-path,source. Parse: module.
+
+- method @76-80; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @76-76; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @76-76; FunctionExpression; parameters=0; async=false; generator=false
+- method @82-84; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @75-85
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-id-init-fn-name-fn.js
+
+Blob: `d479070e878066f7ecae878d23480e278cbbd9b6`. Role: test-path,source. Parse: module.
+
+- method @76-80; FunctionExpression; parameters=1; async=false; generator=false
+- x @76-76; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @76-76; FunctionExpression; parameters=0; async=false; generator=false
+- method @82-84; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @75-85
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-id-init-fn-name-gen.js
+
+Blob: `c4e5267b8eb52e88d67ef7938d589abea7946b50`. Role: test-path,source. Parse: module.
+
+- method @77-81; FunctionExpression; parameters=1; async=false; generator=false
+- x @77-77; FunctionExpression; parameters=0; async=false; generator=true
+- (anonymous) @77-77; FunctionExpression; parameters=0; async=false; generator=true
+- method @83-85; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @76-86
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-id-init-hole.js
+
+Blob: `01bf4e1e627b0c2ef0703ee17e47eeedd1d7b719`. Role: test-path,source. Parse: module.
+
+- method @70-74; FunctionExpression; parameters=1; async=false; generator=false
+- method @76-78; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @69-79
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-id-init-skipped.js
+
+Blob: `7158fd91636312f6a7325485dd3149aec00748da`. Role: test-path,source. Parse: module.
+
+- counter @70-72; FunctionDeclaration; parameters=0; async=false; generator=false
+- method @76-83; FunctionExpression; parameters=1; async=false; generator=false
+- method @85-87; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @75-88
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-id-init-undef.js
+
+Blob: `803968e74877cd18f3ed17f5e2ea83397ea5b6c9`. Role: test-path,source. Parse: module.
+
+- method @74-77; FunctionExpression; parameters=1; async=false; generator=false
+- method @79-81; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @73-82
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-id-iter-complete.js
+
+Blob: `81cb2bf874624862f7a6510830445dc8631ea099`. Role: test-path,source. Parse: module.
+
+- method @78-81; FunctionExpression; parameters=1; async=false; generator=false
+- method @83-85; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @77-86
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-id-iter-done.js
+
+Blob: `f6a7172213a8d295cb8b60a5399c5ea6cfba21fe`. Role: test-path,source. Parse: module.
+
+- method @73-76; FunctionExpression; parameters=1; async=false; generator=false
+- method @78-80; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @72-81
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-id-iter-val-array-prototype.js
+
+Blob: `d9df8bda9d2bdb906ff28d48c2e3f7e3baadab12`. Role: test-path,source. Parse: module.
+
+- Array.prototype.[computed] @78-88; FunctionExpression; parameters=0; async=false; generator=true
+- method @92-97; FunctionExpression; parameters=1; async=false; generator=false
+- method @99-101; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @91-102
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-id-iter-val.js
+
+Blob: `05fab512680e4184251e3140a064350c4910b83b`. Role: test-path,source. Parse: module.
+
+- method @82-87; FunctionExpression; parameters=1; async=false; generator=false
+- method @89-91; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @81-92
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-obj-id-init.js
+
+Blob: `1c906c9262342aab791877c75b2b4d37d894e7a6`. Role: test-path,source. Parse: module.
+
+- method @74-79; FunctionExpression; parameters=1; async=false; generator=false
+- method @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @73-84
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-obj-id.js
+
+Blob: `27db293fbb08ad3bf0f3d45d78f3b231ee9f3995`. Role: test-path,source. Parse: module.
+
+- method @74-79; FunctionExpression; parameters=1; async=false; generator=false
+- method @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @73-84
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-obj-prop-id-init.js
+
+Blob: `70f555da9dd1a31b9f52f1fa5380796896d71a39`. Role: test-path,source. Parse: module.
+
+- method @74-89; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @79-81; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @82-84; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @85-87; FunctionExpression; parameters=0; async=false; generator=false
+- method @91-93; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @73-94
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elem-obj-prop-id.js
+
+Blob: `41c1420324fa0b32eedf49d143e388df8acd64a9`. Role: test-path,source. Parse: module.
+
+- method @74-89; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @79-81; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @82-84; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @85-87; FunctionExpression; parameters=0; async=false; generator=false
+- method @91-93; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @73-94
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elision-exhausted.js
+
+Blob: `6d67bd00324b4f341214970ac0a56707746cab8d`. Role: test-path,source. Parse: module.
+
+- (anonymous) @76-76; FunctionExpression; parameters=0; async=false; generator=true
+- method @81-84; FunctionExpression; parameters=1; async=false; generator=false
+- method @86-88; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @80-89
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-elision.js
+
+Blob: `c83d9d705e9b5f64d5cd2015a6dd3f2c08058a21`. Role: test-path,source. Parse: module.
+
+- g @81-85; FunctionDeclaration; parameters=0; async=false; generator=true
+- method @89-93; FunctionExpression; parameters=1; async=false; generator=false
+- method @95-97; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @88-98
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-empty.js
+
+Blob: `ec1ab86696858fc8b85d8ca34f99a0d99a559026`. Role: test-path,source. Parse: module.
+
+- (anonymous) @67-69; FunctionExpression; parameters=0; async=false; generator=true
+- method @73-76; FunctionExpression; parameters=1; async=false; generator=false
+- method @78-80; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @72-81
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-rest-ary-elem.js
+
+Blob: `624564c5b7a13f429c3f2d3ac98d576fefc20bc8`. Role: test-path,source. Parse: module.
+
+- method @95-100; FunctionExpression; parameters=1; async=false; generator=false
+- method @102-104; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @94-105
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-rest-ary-elision.js
+
+Blob: `457bd3334d2fd2ba28c961e044d443c088ca51e2`. Role: test-path,source. Parse: module.
+
+- g @94-98; FunctionDeclaration; parameters=0; async=false; generator=true
+- method @102-106; FunctionExpression; parameters=1; async=false; generator=false
+- method @108-110; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @101-111
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-rest-ary-empty.js
+
+Blob: `08361b0b02cd9b46c4cdd2e1d4a149cf3d200f50`. Role: test-path,source. Parse: module.
+
+- (anonymous) @80-82; FunctionExpression; parameters=0; async=false; generator=true
+- method @86-89; FunctionExpression; parameters=1; async=false; generator=false
+- method @91-93; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @85-94
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-rest-ary-rest.js
+
+Blob: `41faa91bfbd07595499418eba37050824d4a8b9a`. Role: test-path,source. Parse: module.
+
+- method @76-85; FunctionExpression; parameters=1; async=false; generator=false
+- method @87-89; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @75-90
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-rest-id-direct.js
+
+Blob: `cb25bdd0f4f1d262ff4a6370a276c1dcfa8ad34a`. Role: test-path,source. Parse: module.
+
+- method @76-80; FunctionExpression; parameters=1; async=false; generator=false
+- method @82-84; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @75-85
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-rest-id-elision.js
+
+Blob: `ce84f0b190af870720398afee8f36c372d125041`. Role: test-path,source. Parse: module.
+
+- method @73-81; FunctionExpression; parameters=1; async=false; generator=false
+- method @83-85; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @72-86
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-rest-id-exhausted.js
+
+Blob: `d275436adaf5971383a9fd03d4e56160d5b7c1b6`. Role: test-path,source. Parse: module.
+
+- method @73-77; FunctionExpression; parameters=1; async=false; generator=false
+- method @79-81; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @72-82
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-rest-id.js
+
+Blob: `6cde98bae8333bd8fd2e458a30aa18d1f679f708`. Role: test-path,source. Parse: module.
+
+- method @70-78; FunctionExpression; parameters=1; async=false; generator=false
+- method @80-82; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @69-83
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-rest-init-ary.js
+
+Blob: `5a897fd71416243d7bef72132446bebe607c3033`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token =
+
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-rest-init-id.js
+
+Blob: `f659b3f79e3e4a8f26961a2cd781d3239c6ab300`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token =
+
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-rest-init-obj.js
+
+Blob: `949cd85abc200adcc946e01e34f0a9dc5f266eb6`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token =
+
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-rest-not-final-ary.js
+
+Blob: `5dc3556f1cf6d3f7dda8b60269867139b6c3fb78`. Role: test-path,source. Parse: failed.
+
+Failure: Comma is not permitted after the rest element
+
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-rest-not-final-id.js
+
+Blob: `3d87f97704215dae4984d29666b4b095b41737d6`. Role: test-path,source. Parse: failed.
+
+Failure: Comma is not permitted after the rest element
+
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-rest-not-final-obj.js
+
+Blob: `35419eb2703779a3defa082d12d3a1af2a931f53`. Role: test-path,source. Parse: failed.
+
+Failure: Comma is not permitted after the rest element
+
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-rest-obj-id.js
+
+Blob: `b7c3b6186ac5d0d8641cd0d626d6600c72310ee5`. Role: test-path,source. Parse: module.
+
+- method @75-78; FunctionExpression; parameters=1; async=false; generator=false
+- method @80-82; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @74-83
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-ary-ptrn-rest-obj-prop-id.js
+
+Blob: `59877ad5297d0e145e0c7b00639338694d280609`. Role: test-path,source. Parse: module.
+
+- method @76-85; FunctionExpression; parameters=1; async=false; generator=false
+- method @87-89; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @75-90
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-obj-ptrn-empty.js
+
+Blob: `9a14bb6f69b6b3ec4e8422af93647e5c8b196468`. Role: test-path,source. Parse: module.
+
+- get @67-69; FunctionExpression; parameters=0; async=false; generator=false
+- method @74-77; FunctionExpression; parameters=1; async=false; generator=false
+- method @79-81; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @73-82
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-obj-ptrn-id-init-fn-name-arrow.js
+
+Blob: `1f5df2558692b2fb4797cd87295baa332cdac3c3`. Role: test-path,source. Parse: module.
+
+- method @75-78; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @75-75; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- method @80-82; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @74-83
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-obj-ptrn-id-init-fn-name-class.js
+
+Blob: `7e2f45b61225963c90866cdbc392f5d39030b3cc`. Role: test-path,source. Parse: module.
+
+- method @75-80; FunctionExpression; parameters=1; async=false; generator=false
+- name @75-75; FunctionExpression; parameters=0; async=false; generator=false
+- method @82-84; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @74-85
+- Class (anonymous) @75-75
+- Class X @75-75
+- Class (anonymous) @75-75
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-obj-ptrn-id-init-fn-name-cover.js
+
+Blob: `44e84582ce3abbc0458a07d00ac7c6bac917ab76`. Role: test-path,source. Parse: module.
+
+- method @75-79; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @75-75; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @75-75; FunctionExpression; parameters=0; async=false; generator=false
+- method @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @74-84
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-obj-ptrn-id-init-fn-name-fn.js
+
+Blob: `8f1b11c85f53a443e22bcb14c038096341fcd8a9`. Role: test-path,source. Parse: module.
+
+- method @75-79; FunctionExpression; parameters=1; async=false; generator=false
+- x @75-75; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @75-75; FunctionExpression; parameters=0; async=false; generator=false
+- method @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @74-84
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-obj-ptrn-id-init-fn-name-gen.js
+
+Blob: `fade38e1b05d195dea7886469845c8834779d826`. Role: test-path,source. Parse: module.
+
+- method @76-80; FunctionExpression; parameters=1; async=false; generator=false
+- x @76-76; FunctionExpression; parameters=0; async=false; generator=true
+- (anonymous) @76-76; FunctionExpression; parameters=0; async=false; generator=true
+- method @82-84; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @75-85
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-obj-ptrn-id-init-skipped.js
+
+Blob: `eaa3b6bd2f5c529e168b8fb363ebf779b88b5bc9`. Role: test-path,source. Parse: module.
+
+- counter @69-71; FunctionDeclaration; parameters=0; async=false; generator=false
+- method @75-82; FunctionExpression; parameters=1; async=false; generator=false
+- method @84-86; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @74-87
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-obj-ptrn-id-trailing-comma.js
+
+Blob: `57f52851fbce3baf47f31bb4d15c24403894cc6a`. Role: test-path,source. Parse: module.
+
+- method @69-72; FunctionExpression; parameters=1; async=false; generator=false
+- method @74-76; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @68-77
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-obj-ptrn-prop-ary-init.js
+
+Blob: `99fd8affa7c00840d7484980256b2aab6d359266`. Role: test-path,source. Parse: module.
+
+- method @72-81; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @77-79; FunctionExpression; parameters=0; async=false; generator=false
+- method @83-85; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @71-86
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-obj-ptrn-prop-ary-trailing-comma.js
+
+Blob: `212dc77a490d1e64eb886dd444a7ef106b8bb879`. Role: test-path,source. Parse: module.
+
+- method @69-72; FunctionExpression; parameters=1; async=false; generator=false
+- method @74-76; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @68-77
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-obj-ptrn-prop-ary.js
+
+Blob: `a5209a9c97f7edcf6ef5e30644fafbac15885e6b`. Role: test-path,source. Parse: module.
+
+- method @70-79; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @75-77; FunctionExpression; parameters=0; async=false; generator=false
+- method @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @69-84
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-obj-ptrn-prop-id-init-skipped.js
+
+Blob: `c9007f940bf1e686c641d7583b05677200b2be9e`. Role: test-path,source. Parse: module.
+
+- counter @68-70; FunctionDeclaration; parameters=0; async=false; generator=false
+- method @74-94; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @84-86; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @87-89; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @90-92; FunctionExpression; parameters=0; async=false; generator=false
+- method @96-98; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @73-99
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-obj-ptrn-prop-id-init.js
+
+Blob: `880544be5e1096593f85e7a3a06d41364f88b444`. Role: test-path,source. Parse: module.
+
+- method @69-75; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @71-73; FunctionExpression; parameters=0; async=false; generator=false
+- method @77-79; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @68-80
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-obj-ptrn-prop-id-trailing-comma.js
+
+Blob: `5b23b7fe7a097965a66e3ded107c37850df1370c`. Role: test-path,source. Parse: module.
+
+- method @69-76; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @72-74; FunctionExpression; parameters=0; async=false; generator=false
+- method @78-80; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @68-81
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-obj-ptrn-prop-id.js
+
+Blob: `2acafc5edfee4e7ce620f2e541d1dca976221558`. Role: test-path,source. Parse: module.
+
+- method @69-75; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @71-73; FunctionExpression; parameters=0; async=false; generator=false
+- method @77-79; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @68-80
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-obj-ptrn-prop-obj-init.js
+
+Blob: `9778adeb4b57616e4b5e06e5f51578c28bf78e8e`. Role: test-path,source. Parse: module.
+
+- method @72-81; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @77-79; FunctionExpression; parameters=0; async=false; generator=false
+- method @83-85; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @71-86
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-obj-ptrn-prop-obj.js
+
+Blob: `5842f1912c35caf385e9ba431557efbc3e4699c7`. Role: test-path,source. Parse: module.
+
+- method @70-79; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @75-77; FunctionExpression; parameters=0; async=false; generator=false
+- method @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @69-84
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-obj-ptrn-rest-getter.js
+
+Blob: `15f34504d9f8ae086896b978d5f1ec304ebdeaea`. Role: test-path,source. Parse: module.
+
+- method @64-74; FunctionExpression; parameters=1; async=false; generator=false
+- v @64-64; FunctionExpression; parameters=0; async=false; generator=false
+- method @76-78; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @63-79
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-obj-ptrn-rest-skip-non-enumerable.js
+
+Blob: `9a4f251c6528b1e2242fadb0302f000ded3cbd62`. Role: test-path,source. Parse: module.
+
+- method @65-82; FunctionExpression; parameters=1; async=false; generator=false
+- method @84-86; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @64-87
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-dflt-obj-ptrn-rest-val-obj.js
+
+Blob: `5437d9d9bcd9ff6609ed5f1e28dd307027877082`. Role: test-path,source. Parse: module.
+
+- method @63-81; FunctionExpression; parameters=1; async=false; generator=false
+- method @83-85; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @62-86
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-obj-ptrn-empty.js
+
+Blob: `c0e13217a1dfbde974001e034a4c388b2cd96d50`. Role: test-path,source. Parse: module.
+
+- get @67-69; FunctionExpression; parameters=0; async=false; generator=false
+- method @74-77; FunctionExpression; parameters=1; async=false; generator=false
+- method @79-81; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @73-82
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-obj-ptrn-id-init-fn-name-arrow.js
+
+Blob: `2330d077b2920e62ab7d71c30807bde68ad5c3bc`. Role: test-path,source. Parse: module.
+
+- method @75-78; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @75-75; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- method @80-82; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @74-83
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-obj-ptrn-id-init-fn-name-class.js
+
+Blob: `4af2ecddda086e4939ea250d032aab987eaefd57`. Role: test-path,source. Parse: module.
+
+- method @75-80; FunctionExpression; parameters=1; async=false; generator=false
+- name @75-75; FunctionExpression; parameters=0; async=false; generator=false
+- method @82-84; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @74-85
+- Class (anonymous) @75-75
+- Class X @75-75
+- Class (anonymous) @75-75
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-obj-ptrn-id-init-fn-name-cover.js
+
+Blob: `ecbe73d7b1d2d762b4ea9c5bd489bc3a3f82fc1f`. Role: test-path,source. Parse: module.
+
+- method @75-79; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @75-75; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @75-75; FunctionExpression; parameters=0; async=false; generator=false
+- method @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @74-84
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-obj-ptrn-id-init-fn-name-fn.js
+
+Blob: `e63746391e4ffbcf830a8703b187aae7e98bb13e`. Role: test-path,source. Parse: module.
+
+- method @75-79; FunctionExpression; parameters=1; async=false; generator=false
+- x @75-75; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @75-75; FunctionExpression; parameters=0; async=false; generator=false
+- method @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @74-84
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-obj-ptrn-id-init-fn-name-gen.js
+
+Blob: `03030476130d24fa669672a9ea60b3f9d4982e7a`. Role: test-path,source. Parse: module.
+
+- method @76-80; FunctionExpression; parameters=1; async=false; generator=false
+- x @76-76; FunctionExpression; parameters=0; async=false; generator=true
+- (anonymous) @76-76; FunctionExpression; parameters=0; async=false; generator=true
+- method @82-84; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @75-85
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-obj-ptrn-id-init-skipped.js
+
+Blob: `8235421dd3df704cac65491935240eea68205d51`. Role: test-path,source. Parse: module.
+
+- counter @69-71; FunctionDeclaration; parameters=0; async=false; generator=false
+- method @75-82; FunctionExpression; parameters=1; async=false; generator=false
+- method @84-86; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @74-87
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-obj-ptrn-id-trailing-comma.js
+
+Blob: `6a82712de9233e3042541cf50eb95aedb3602e0a`. Role: test-path,source. Parse: module.
+
+- method @69-72; FunctionExpression; parameters=1; async=false; generator=false
+- method @74-76; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @68-77
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-obj-ptrn-prop-ary-init.js
+
+Blob: `1093eadb3ca1ac8b9f4c3a96d062c8d098e5926a`. Role: test-path,source. Parse: module.
+
+- method @72-81; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @77-79; FunctionExpression; parameters=0; async=false; generator=false
+- method @83-85; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @71-86
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-obj-ptrn-prop-ary-trailing-comma.js
+
+Blob: `dcab838f149c808188e7d4d00c5ad3088a6a93f6`. Role: test-path,source. Parse: module.
+
+- method @69-72; FunctionExpression; parameters=1; async=false; generator=false
+- method @74-76; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @68-77
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-obj-ptrn-prop-ary.js
+
+Blob: `334f8b2c57635086fa576a48bd5685603203891c`. Role: test-path,source. Parse: module.
+
+- method @70-79; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @75-77; FunctionExpression; parameters=0; async=false; generator=false
+- method @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @69-84
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-obj-ptrn-prop-id-init-skipped.js
+
+Blob: `c271947ded53489481252d116d872219f008382f`. Role: test-path,source. Parse: module.
+
+- counter @68-70; FunctionDeclaration; parameters=0; async=false; generator=false
+- method @74-94; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @84-86; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @87-89; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @90-92; FunctionExpression; parameters=0; async=false; generator=false
+- method @96-98; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @73-99
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-obj-ptrn-prop-id-init.js
+
+Blob: `ea288eb7dc98a32b2b4689d2c8c2e3f619c2a5ff`. Role: test-path,source. Parse: module.
+
+- method @69-75; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @71-73; FunctionExpression; parameters=0; async=false; generator=false
+- method @77-79; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @68-80
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-obj-ptrn-prop-id-trailing-comma.js
+
+Blob: `ac53632f7a07adfdff39aeb162ee1ba0d464695b`. Role: test-path,source. Parse: module.
+
+- method @69-76; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @72-74; FunctionExpression; parameters=0; async=false; generator=false
+- method @78-80; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @68-81
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-obj-ptrn-prop-id.js
+
+Blob: `06d30c1eb32f6642bffc3e1ed5bdb5f1657ae2dd`. Role: test-path,source. Parse: module.
+
+- method @69-75; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @71-73; FunctionExpression; parameters=0; async=false; generator=false
+- method @77-79; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @68-80
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-obj-ptrn-prop-obj-init.js
+
+Blob: `b8199b954a68e3142ebab08ec6426389c55e6865`. Role: test-path,source. Parse: module.
+
+- method @72-81; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @77-79; FunctionExpression; parameters=0; async=false; generator=false
+- method @83-85; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @71-86
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-obj-ptrn-prop-obj.js
+
+Blob: `9b785b375872a3c2baa283d361c74bb384de96b8`. Role: test-path,source. Parse: module.
+
+- method @70-79; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @75-77; FunctionExpression; parameters=0; async=false; generator=false
+- method @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @69-84
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-obj-ptrn-rest-getter.js
+
+Blob: `48a01f4bd3812009a61f7e5555d0bd13b483ed3f`. Role: test-path,source. Parse: module.
+
+- method @64-74; FunctionExpression; parameters=1; async=false; generator=false
+- method @76-78; FunctionExpression; parameters=0; async=false; generator=false
+- v @81-81; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @63-79
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-obj-ptrn-rest-skip-non-enumerable.js
+
+Blob: `53c2d12d1307a77b50a6851238e08d78d22194e6`. Role: test-path,source. Parse: module.
+
+- method @65-82; FunctionExpression; parameters=1; async=false; generator=false
+- method @84-86; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @64-87
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-obj-ptrn-rest-val-obj.js
+
+Blob: `ce05388c5c215ab90b4be70a54d7b749bc2af5b3`. Role: test-path,source. Parse: module.
+
+- method @63-81; FunctionExpression; parameters=1; async=false; generator=false
+- method @83-85; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @62-86
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-static-ary-init-iter-close.js
+
+Blob: `67fef4ff993323450ef200eb0e28a979c7d0f7e1`. Role: test-path,source. Parse: module.
+
+- iter.[computed] @71-81; FunctionExpression; parameters=0; async=false; generator=false
+- next @73-75; FunctionExpression; parameters=0; async=false; generator=false
+- return @76-79; FunctionExpression; parameters=0; async=false; generator=false
+- method @85-88; FunctionExpression; parameters=1; async=false; generator=false
+- method @90-92; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @84-93
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-static-ary-init-iter-no-close.js
+
+Blob: `86276e0d00dc33e48fd7cd199c78a72f1050b311`. Role: test-path,source. Parse: module.
+
+- iter.[computed] @71-81; FunctionExpression; parameters=0; async=false; generator=false
+- next @73-75; FunctionExpression; parameters=0; async=false; generator=false
+- return @76-79; FunctionExpression; parameters=0; async=false; generator=false
+- method @85-88; FunctionExpression; parameters=1; async=false; generator=false
+- method @90-92; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @84-93
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-static-ary-name-iter-val.js
+
+Blob: `dddf6a08aafdbf9c5713e2632a71748d0f9c478e`. Role: test-path,source. Parse: module.
+
+- method @82-87; FunctionExpression; parameters=1; async=false; generator=false
+- method @89-91; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @81-92
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-static-ary-ptrn-elem-ary-elem-init.js
+
+Blob: `60133160890786f04275be17279e1a1d6e2697b8`. Role: test-path,source. Parse: module.
+
+- method @74-79; FunctionExpression; parameters=1; async=false; generator=false
+- method @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @73-84
+
+### js/src/tests/test262/language/statements/class/dstr/private-meth-static-ary-ptrn-elem-ary-elem-iter.js
+
+Blob: `ce59e7de594a02f0964aee0f59c9cdc1eab781bf`. Role: test-path,source. Parse: module.
+
+- method @75-80; FunctionExpression; parameters=1; async=false; generator=false
+- method @82-84; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @74-85
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.
+
+## Retrieval correction
+
+This copy preserves the source map in [399c1ddf-981c-46c9-99dd-fa3fee2104e0.md](399c1ddf-981c-46c9-99dd-fa3fee2104e0.md). The original was imported and committed by concurrent console maintenance during this study. Its full path metadata could exceed the console search budget. This copy uses component scope metadata while keeping every file path in the body. It adds no independent behavior evidence. Original record: `3194eb06126529c4878821a0b64d09930bf85d0ca833eb23bc749ea06572aa03`.

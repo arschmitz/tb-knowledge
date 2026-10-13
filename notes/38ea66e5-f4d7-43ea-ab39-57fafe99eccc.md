@@ -1,0 +1,1241 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:14:46.642314+00:00","paths":["third_party"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013","portableCopies":["19acf7d127f422715d95f72315b114b489854a4e22306541135e5a2008635a63"],"sourceAt":"2026-10-13T04:14:46.642314+00:00","correctionOf":"notes/9c978783-60ce-4ddf-98a7-6c47e828ba5a.md"}} -->
+# firefox/third_party structural source map 976
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. This is an automated navigation map, not a behavior review.
+Each row gives the repository-relative path, Git blob ID, byte size, role inferred from the path, declaration candidates, and literal dependency candidates. `@N` is the source line.
+Candidates come from line-based patterns. They can miss multiline, anonymous, macro-generated, and language-specific declarations or match comments and fixture text. Dependencies are not resolved imports, runtime calls, or a complete graph. No candidates does not mean no functions or dependencies.
+Imported code and tests are included. Binary and non-UTF-8 files have a census entry but no declaration extraction. Symlink contents are scanned as text, not followed. No uncommitted changes, build products, ignored files, or untracked files are studied.
+
+## File map
+
+`third_party/python/gyp/test/mac/gyptest-postbuild-copy-bundle.py` | `1f04d1cb36a0738542048ece09e5d66ef69bd022` | 2697 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/gyptest-postbuild-defaults.py` | `0f7d25bd89b74760b789b34091d43ff6049e6893` | 780 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Dependencies: __future__@11
+
+`third_party/python/gyp/test/mac/gyptest-postbuild-fail.py` | `1a229df6955e871396fca95cd30fbd057466dc63` | 2284 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+Dependencies: __future__@11
+
+`third_party/python/gyp/test/mac/gyptest-postbuild-multiple-configurations.py` | `84694f36ccadd36f1460ba148d12880a40c0fdf6` | 687 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/gyptest-postbuild-static-library.py` | `8f9a6ebcb09de6cd98dff13432d722b201a7fdd7` | 819 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/gyptest-postbuild.py` | `684e7b8426d1de9ed87e1e9fecf4db50c78f61b9` | 1708 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/gyptest-prefixheader.py` | `0cf85f94225bf8d4624a2891e0693f92d1300e18` | 472 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/gyptest-rebuild.py` | `c7d8cad02d556355397f7340559e99a802526e1d` | 1384 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+Dependencies: __future__@11
+
+`third_party/python/gyp/test/mac/gyptest-rpath.py` | `a82e2fd56205307275081105d45288712f6262bc` | 1319 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: GetRpaths@26
+
+`third_party/python/gyp/test/mac/gyptest-sdkroot.py` | `f8edbaa583de1be66d4812d4edd04f07c46ff6be` | 1561 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: GetSDKPath@26; SelectSDK@37
+Dependencies: __future__@11
+
+`third_party/python/gyp/test/mac/gyptest-sourceless-module.py` | `f2801c20aa2397db3d5e03c4a687f932fbb3ba34` | 2609 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Dependencies: __future__@11
+
+`third_party/python/gyp/test/mac/gyptest-strip-default.py` | `b851782fd52d6970972a698f25534f101d8a5468` | 2504 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: OutPath@29; CheckNsyms@32
+Dependencies: __future__@11
+
+`third_party/python/gyp/test/mac/gyptest-strip.py` | `d4694834ac405de9fac24dc37a420111ade37b28` | 2112 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+Declarations: OutPath@32; CheckNsyms@35
+Dependencies: __future__@11
+
+`third_party/python/gyp/test/mac/gyptest-swift-library.py` | `d3433753fd07407d6eb598eb0a5fb45326098dbe` | 1934 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: CheckHasSymbolName@27
+Dependencies: __future__@11
+
+`third_party/python/gyp/test/mac/gyptest-type-envvars.py` | `a5203c5f1e2050961dac9913a744c1ee9cf0bb3a` | 642 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/gyptest-unicode-settings.py` | `a71b3bd9a32eea95be53b3571ed0be2c16cff64e` | 539 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/gyptest-xcode-env-order.py` | `bda19988b2fca3987243553b5c9f531a657033d8` | 3408 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+Dependencies: __future__@11
+
+`third_party/python/gyp/test/mac/gyptest-xcode-gcc-clang.py` | `981c3fc564a9d681a3ba540f7437883baca3e78b` | 1403 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/gyptest-xcode-gcc.py` | `a1d201ae0319246092f0d323dfe924637de68663` | 1872 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: IgnoreOutput@17; CompilerVersion@20; CompilerSupportsWarnAboutInvalidOffsetOfMacro@25
+
+`third_party/python/gyp/test/mac/gyptest-xcode-support-actions.py` | `ecc1402972cd80a4d4879f3caf36248b64473eeb` | 575 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/gyptest-xctest.py` | `fb478bb31c443dcfec88b628f23f41a78f2521d1` | 1262 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/gyptest-xcuitest.py` | `410de297d00f552d66aa6217bb976d49e03b32ee` | 1118 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/identical-name/proxy/proxy.cc` | `8e1782da63d59639f319329bd6fdbb01f31a385c` | 15 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/identical-name/proxy/proxy.gyp` | `38f44af1b57eec4a3b4077d0c0157627bec133bc` | 190 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/identical-name/proxy/testlib/testlib.cc` | `8e1782da63d59639f319329bd6fdbb01f31a385c` | 15 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/identical-name/proxy/testlib/testlib.gyp` | `ed1c62e982eaf0ee473737aebf30addb85a29121` | 152 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/identical-name/test-should-fail.gyp` | `72bfc7af0f8ef0c32fea3702a206a41a363e4cda` | 176 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/identical-name/test.gyp` | `717220e8666ad97b568f08a3d647643653982dec` | 204 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/identical-name/test.gypi` | `61b7c2badf3d6330491f830e7dc23f27589991b9` | 102 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/identical-name/testlib/main.cc` | `5c2fa9bb6a78e27b752659a26b8562d1f33b90f2` | 48 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@1
+
+`third_party/python/gyp/test/mac/identical-name/testlib/testlib.gyp` | `aa8b851004dc1744dd9ea726f31ae052b512945e` | 318 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/identical-name/testlib/void.cc` | `8e1782da63d59639f319329bd6fdbb01f31a385c` | 15 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/infoplist-process/Info.plist` | `cb65721f43b59b8feb0796f300c8b5a8e8790cc1` | 1111 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/infoplist-process/main.c` | `1bf4b2a11abd99b0655222eb96624b9abed72423` | 187 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@5
+
+`third_party/python/gyp/test/mac/infoplist-process/test1.gyp` | `bc625a968be756ed9e162889211e30ee15fed09a` | 617 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/infoplist-process/test2.gyp` | `ecfbc9f64c9cff5423b2e4a074f5716559a13b98` | 606 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/infoplist-process/test3.gyp` | `be8fe75a53ec7b596116d9778b7b7116bec6905d` | 603 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/installname/Info.plist` | `5e05a5190c89319f64f3b900f19dc1473bb7fdfc` | 837 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/installname/file.c` | `a39fce095f2f3a24df55aa72932ac1e5385e655c` | 22 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: f@1
+
+`third_party/python/gyp/test/mac/installname/main.c` | `237c8ce181774d991a9dbdd8cacf1a5fb9f199f1` | 14 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@1
+
+`third_party/python/gyp/test/mac/installname/test.gyp` | `60c867ff122a1b2c3cca90a8cf67343a53fc97cd` | 2760 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/kext/GypKext/GypKext-Info.plist` | `84226099c14c1340b909937187616993c67b99ff` | 1075 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/kext/GypKext/GypKext.c` | `9b611b0dc51ca249ae7687fa9c0b3ad193a17e24` | 447 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: GypKext_start@8; GypKext_stop@13
+Dependencies: sys/systm.h@5; mach/mach_types.h@6
+
+`third_party/python/gyp/test/mac/kext/kext.gyp` | `5b93087543a3af6acec37adde9ba1603f9cb0b85` | 444 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/ldflags-libtool/file.c` | `56757a701bf5cfd58c3d4b546d3444da4cf30711` | 12 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: f@1
+
+`third_party/python/gyp/test/mac/ldflags-libtool/test.gyp` | `4e7aa07106bb53996c5323a6f47bffa63b948a0c` | 423 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/ldflags/subdirectory/Info.plist` | `5f5e9abfbb5d52951235921830ac80a959d8223e` | 241 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/ldflags/subdirectory/file.c` | `90c45543bf62c15e3320e785eb821bdea556e2bf` | 24 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: f@1; g@2
+
+`third_party/python/gyp/test/mac/ldflags/subdirectory/symbol_list.def` | `0ab7543b1fddc341a85a0e7d0488dbe4a4614eac` | 3 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/ldflags/subdirectory/test.gyp` | `db00c7465ca05d6606158d86a8f999c9f843fdaf` | 1988 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/libraries/subdir/README.txt` | `4031ded85f6301250ab8c1f985f9531d9c94db55` | 77 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/libraries/subdir/hello.cc` | `a43554c8caf8f096b2b8e5c176e4b7817cbd41ec` | 253 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@7
+Dependencies: iostream@5
+
+`third_party/python/gyp/test/mac/libraries/subdir/mylib.c` | `e771991e836a6742ad8ae37db6f90659adc25461` | 198 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: my_foo@5
+
+`third_party/python/gyp/test/mac/libraries/subdir/test.gyp` | `59fef51017b5bc13f91bc1d6c72103022ae0c5f3` | 1525 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/libtool-zero/mylib.c` | `b26d61bd6ba91717a068fb4d6d4056f401473c68` | 198 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: my_foo@5
+
+`third_party/python/gyp/test/mac/libtool-zero/test.gyp` | `0d6ee5535eede15eea19a8f9fe73e5da83dc88bb` | 377 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/loadable-module-bundle-product-extension/src.cc` | `3d878e9697d61b687bb334c2f9127280dcc9c339` | 190 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: test@5
+
+`third_party/python/gyp/test/mac/loadable-module-bundle-product-extension/test.gyp` | `684a2c02aa33c4093041fa7360cd687b7bfddf80` | 639 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/loadable-module/Info.plist` | `f6607aebd91cae19f8b9d460004eea399a31c3ad` | 803 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/loadable-module/module.c` | `958453834744cb0af67af7d3996b2faf8327e47d` | 244 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: SuperFly@5
+
+`third_party/python/gyp/test/mac/loadable-module/test.gyp` | `3c8a5309d25879ca705c66a4b43ee24b78d70c76` | 440 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/lto/asmfile.S` | `ea23759a39b9cebd8f9db203f993341943c44f42` | 18 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/lto/ccfile.cc` | `2503afd7b1670f5e6a41d95e15748356d4d924a8` | 16 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: ccfun@1
+
+`third_party/python/gyp/test/mac/lto/cfile.c` | `d02ef4b8d6848db8c2edb25f457218492b8de0a7` | 15 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: cfun@1
+
+`third_party/python/gyp/test/mac/lto/mfile.m` | `85b7d93afef0d8ab68d47c795ae76de5fe8b9d78` | 15 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: mfun@1
+
+`third_party/python/gyp/test/mac/lto/mmfile.mm` | `beaa3595f8039de572bbe0bf3f20925212c61824` | 16 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: mmfun@1
+
+`third_party/python/gyp/test/mac/lto/test.gyp` | `0a8e85183d781071624e8e26e0140fa86587e855` | 715 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/missing-cfbundlesignature/Info.plist` | `0c3167488440d63892f75ec23429e1672af0fa71` | 311 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/missing-cfbundlesignature/Other-Info.plist` | `47095281c8a0c892da0a798280c621677fe143b1` | 375 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/missing-cfbundlesignature/Third-Info.plist` | `5b61fe2664ec351f32722d76cea70b0b0ad11a00` | 397 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/missing-cfbundlesignature/file.c` | `237c8ce181774d991a9dbdd8cacf1a5fb9f199f1` | 14 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@1
+
+`third_party/python/gyp/test/mac/missing-cfbundlesignature/test.gyp` | `b50cc2791a031d443e7b522c9d1a65df5cc34eff` | 812 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/non-strs-flattened-to-env/Info.plist` | `11fc4b660d77cd6f81463ca428be97f127a64dd5` | 482 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/non-strs-flattened-to-env/main.c` | `1711567ef566703fcd9c33e0a236b1b30454df6a` | 187 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@5
+
+`third_party/python/gyp/test/mac/non-strs-flattened-to-env/test.gyp` | `aaf821c92570101e877a650e53e9c54df0420715` | 744 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/objc-arc/c-file.c` | `208935946f748b9afb73095f194fd95ac591408a` | 121 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: c_fun@5
+
+`third_party/python/gyp/test/mac/objc-arc/cc-file.cc` | `70deb60b9a3666c9312ce80d984d3cbff8144123` | 124 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: cc_fun@5
+
+`third_party/python/gyp/test/mac/objc-arc/m-file-arc-weak.m` | `4ab7c51a82cca7c6706fca8cfd1730e479e03159` | 238 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: m_fun@9
+
+`third_party/python/gyp/test/mac/objc-arc/m-file-no-arc.m` | `4f067abb6767180de647e74ac583acd4227f24ea` | 241 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: m_fun@9
+
+`third_party/python/gyp/test/mac/objc-arc/m-file.m` | `8234ba582db48dca9d5bb0ef6a2900fd386f52f4` | 218 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: m_fun@9
+
+`third_party/python/gyp/test/mac/objc-arc/mm-file-arc-weak.mm` | `f9d4b6759a3afceb1972046f402bb78569d94827` | 241 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: mm_fun@9
+
+`third_party/python/gyp/test/mac/objc-arc/mm-file-no-arc.mm` | `823f52febaf83a95ed9c1fcb87cf1db78ca957df` | 244 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: mm_fun@9
+
+`third_party/python/gyp/test/mac/objc-arc/mm-file.mm` | `90150ef0b6a5716b34fc6075959c84345f8706d1` | 221 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: mm_fun@9
+
+`third_party/python/gyp/test/mac/objc-arc/test.gyp` | `87ddda962e776de3c4ea114fd76c32db23050f03` | 1079 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/objc-gc/c-file.c` | `2855a00eaaa6933a701e0cd792cf5a0775ffe7ba` | 16 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: c_fun@1
+
+`third_party/python/gyp/test/mac/objc-gc/cc-file.cc` | `71e47a0126fea6c1b2df2fe681e3796a1b4b2370` | 17 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: cc_fun@1
+
+`third_party/python/gyp/test/mac/objc-gc/main.m` | `1a87f8e70fe29c5981926e81ca7ceb2d4a3a4254` | 134 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@3
+
+`third_party/python/gyp/test/mac/objc-gc/needs-gc-mm.mm` | `fc3fee9f34ab7b854cf796b4c88c109636114bfb` | 22 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: objcpp_fun@1
+
+`third_party/python/gyp/test/mac/objc-gc/needs-gc.m` | `ca77976b1da1b607aa488960ecadc90c8fa60e92` | 20 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: objc_fun@1
+
+`third_party/python/gyp/test/mac/objc-gc/test.gyp` | `4d827c1b39c5435e3a3da9c5a102cd77e9c61e3e` | 2609 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/postbuild-copy-bundle/Framework-Info.plist` | `ec36829c080546d5d70e30096f0e46f9f3bc09bb` | 889 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/postbuild-copy-bundle/TestApp-Info.plist` | `98fd5152000f7b7d980f67b14a470e335864f00d` | 979 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/postbuild-copy-bundle/copied.txt` | `178413886a8f4e19b3d4114d419fbfcfa2db26f3` | 16 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/postbuild-copy-bundle/empty.c` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/postbuild-copy-bundle/main.c` | `21c1963526223324e9d9c78f45151b144fceb9d0` | 173 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@4
+
+`third_party/python/gyp/test/mac/postbuild-copy-bundle/postbuild-copy-framework.sh` | `930fec66126d07e5aa2121bcbf17a293282af842` | 208 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/postbuild-copy-bundle/resource_file.sb` | `42057fa2357faf5b30dfc63ac5605b3cd9d1b368` | 42 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/postbuild-copy-bundle/test.gyp` | `a03e6432f2a46981a579610155d2303ab87e5497` | 1292 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/postbuild-defaults/Info.plist` | `d3f54d76cdc235c0601480cf2dd7c2072e6492a2` | 443 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/postbuild-defaults/main.c` | `1711567ef566703fcd9c33e0a236b1b30454df6a` | 187 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@5
+
+`third_party/python/gyp/test/mac/postbuild-defaults/postbuild-defaults.sh` | `56af2a8329bd67df5b990452feb44f9670691a8e` | 582 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/postbuild-defaults/test.gyp` | `be0a075efc6f0c5b6274a426ab390d5aa58c6d87` | 657 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/postbuild-fail/file.c` | `91695b10c6f1834d3feb953750586a6e3cab454b` | 210 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: f@6
+
+`third_party/python/gyp/test/mac/postbuild-fail/postbuild-fail.sh` | `dc1a60d987e28849569e103e664fd6c1a45639cd` | 180 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/postbuild-fail/test.gyp` | `e63283db036bdd9511a268ec8088b6c1eb0532dd` | 969 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/postbuild-fail/touch-dynamic.sh` | `a388a64102bf6b13dd2464731ed449a78e1873df` | 220 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/postbuild-fail/touch-static.sh` | `97ecaa68682f516bfd0ed72cb4e7c7b597e735ff` | 219 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/postbuild-multiple-configurations/main.c` | `21c1963526223324e9d9c78f45151b144fceb9d0` | 173 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@4
+
+`third_party/python/gyp/test/mac/postbuild-multiple-configurations/postbuild-touch-file.sh` | `b6170cf7a7f863140a23657468471af2c9a7d9f7` | 215 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/postbuild-multiple-configurations/test.gyp` | `c350b20d6832cf007fe5f9f13c67a595030bdf9e` | 565 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/postbuild-static-library/empty.c` | `9554336c0c396d50f0ba3571255440d9da34d6e8` | 171 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: f@4
+
+`third_party/python/gyp/test/mac/postbuild-static-library/postbuild-touch-file.sh` | `37de4de4f6db9831d19a45eb404fc04490adfbf3` | 203 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/postbuild-static-library/test.gyp` | `9ef55a0afa95f2534efe6342e6ec9410aed56f21` | 836 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/postbuilds/copy.sh` | `ecad0381db854b44a3aa70ab01acef5358b61d8a` | 21 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/postbuilds/file.c` | `653e71ff7ecc67f3f4690d0e7625029b45f88a2f` | 171 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: f@4
+
+`third_party/python/gyp/test/mac/postbuilds/file_g.c` | `0f7849d2080fbc4506ebcbd47b4134bdd2ec6e58` | 171 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: g@4
+
+`third_party/python/gyp/test/mac/postbuilds/file_h.c` | `521d1f4d56d1be6313a1a97d4a3a2e5c974b7409` | 171 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: h@4
+
+`third_party/python/gyp/test/mac/postbuilds/script/shared_library_postbuild.sh` | `c623c8bf21870d953a6aa97d0b06277613e3bf1b` | 493 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/postbuilds/script/static_library_postbuild.sh` | `2bf09b34e1c998b5b79b8a76dab4be883ca0080b` | 504 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/postbuilds/subdirectory/copied_file.txt` | `a634f85b6cc452e74cf49c1cda79657cb6c7a7e2` | 48 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/postbuilds/subdirectory/nested_target.gyp` | `6d4f2395e375b3984f2f01a04318e82ec6a2d2cb` | 1322 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/postbuilds/test.gyp` | `7c0b523f86f0e28b10ad6584b12099f9759f0608` | 2474 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/prefixheader/file.c` | `d0b39d1f6d8bb460947b4d38aa09e65c94d170b0` | 24 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: f@1
+
+`third_party/python/gyp/test/mac/prefixheader/file.cc` | `d0b39d1f6d8bb460947b4d38aa09e65c94d170b0` | 24 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: f@1
+
+`third_party/python/gyp/test/mac/prefixheader/file.m` | `d0b39d1f6d8bb460947b4d38aa09e65c94d170b0` | 24 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: f@1
+
+`third_party/python/gyp/test/mac/prefixheader/file.mm` | `d0b39d1f6d8bb460947b4d38aa09e65c94d170b0` | 24 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: f@1
+
+`third_party/python/gyp/test/mac/prefixheader/header.h` | `0716e500c5a69de9cd033fa0bc6935b78055ee64` | 19 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: int@1
+
+`third_party/python/gyp/test/mac/prefixheader/test.gyp` | `7e6b1af807f258547ee76db870af66c8e5f7db97` | 2063 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/rebuild/TestApp-Info.plist` | `98fd5152000f7b7d980f67b14a470e335864f00d` | 979 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/rebuild/delay-touch.sh` | `7caf105b6e05cbd7718f76975e4748248d5b2527` | 78 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/rebuild/empty.c` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/rebuild/main.c` | `237c8ce181774d991a9dbdd8cacf1a5fb9f199f1` | 14 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@1
+
+`third_party/python/gyp/test/mac/rebuild/test.gyp` | `15b4e4ef2f5b955199b4c2e3fd1c00deea724d3a` | 1388 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/rpath/file.c` | `56757a701bf5cfd58c3d4b546d3444da4cf30711` | 12 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: f@1
+
+`third_party/python/gyp/test/mac/rpath/main.c` | `237c8ce181774d991a9dbdd8cacf1a5fb9f199f1` | 14 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@1
+
+`third_party/python/gyp/test/mac/rpath/test.gyp` | `7255cb7cd20b0aac784d98da5a356559cea2bdd8` | 1313 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/sdkroot/file.cc` | `13ae9710402af2ac7f546c57be10d9f86b24cda8` | 47 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@4
+Dependencies: map@1
+
+`third_party/python/gyp/test/mac/sdkroot/test.gyp` | `2fc11a0280b38902593a37e62559dfd1aa8ed50a` | 807 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/sdkroot/test_shorthand.sh` | `ac4ac229aeefa106d8ddf6b09814c9c633f63622` | 434 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/sourceless-module/empty.c` | `237c8ce181774d991a9dbdd8cacf1a5fb9f199f1` | 14 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@1
+
+`third_party/python/gyp/test/mac/sourceless-module/empty.txt` | `139597f9cb07c5d48bed18984ec4747f4b4f3438` | 2 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/sourceless-module/fun.c` | `d64ff8ca23dbf931bfe440e6ea616d19eaef852b` | 23 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: f@1
+
+`third_party/python/gyp/test/mac/sourceless-module/test.gyp` | `cbbe63df02df38da78e2812c496e3577f8fa90ba` | 2453 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/strip/file.c` | `a4c504de7170cc280b4785552aa65dc4e500f9b5` | 658 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: the_static_function@5; __attribute__@6; the_hidden_function@9; the_visible_function@11; the_function@17
+
+`third_party/python/gyp/test/mac/strip/main.c` | `b2291a6b09ecd3ae0d08976b6a7d975c85c2250b` | 683 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: the_static_function@5; __attribute__@6; the_hidden_function@9; the_visible_function@11; the_function@13; main@19
+
+`third_party/python/gyp/test/mac/strip/strip.saves` | `b60ca62857a217f56ad1b725658bc185b8c24a56` | 227 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/strip/subdirectory/nested_file.c` | `50daa6c13b49e73669404fc62edfc33929556e5f` | 19 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: nested_f@1
+
+`third_party/python/gyp/test/mac/strip/subdirectory/nested_strip.saves` | `d434c0ef458870b247bebd24f31b870c0a8a4261` | 227 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/strip/subdirectory/subdirectory.gyp` | `5d0d190914e556f85f0437addc669ea7e7b15dcf` | 1132 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/strip/subdirectory/test_reading_save_file_from_postbuild.sh` | `976943680ee9a9f63aa7f83265a642e1d3946115` | 57 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/strip/test-defaults.gyp` | `e688b955a742f0edc2c9c6be0ee3fc030a735e75` | 1187 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/strip/test.gyp` | `2558aa91bbe9542675e9286b78da4c2df05d121c` | 3565 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/swift-library/Info.plist` | `804990ca5e806235a3a16f0674609746cae08d9e` | 870 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/swift-library/file.swift` | `88db7da5c6cb105b8845ff30e553ad7481306351` | 116 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/swift-library/test.gyp` | `373a677cbd86d6a27791bba40ad50d91d24440e5` | 542 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/type_envvars/file.c` | `9cddaf1b0b401b4c7ab5da9072e45c2c5e8cb666` | 186 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: f@5; main@6
+
+`third_party/python/gyp/test/mac/type_envvars/test.gyp` | `465670056bde3875cc2cc5efed556a4e2a43dd21` | 2477 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/type_envvars/test_bundle_executable.sh` | `9a08c8f0ccae9e4358bfe63341ce307d4907bc74` | 1267 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/type_envvars/test_bundle_loadable_module.sh` | `b5c7638293b2f667a1f7136a31cca631e9ce30ce` | 1485 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/type_envvars/test_bundle_shared_library.sh` | `9c2dc0626f5b6e875b8bdec07eb9c0a968b12b00` | 1575 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/type_envvars/test_check_sdkroot.sh` | `1297dbeff11bbbeea9296d24621d529d1823f3bc` | 1362 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/type_envvars/test_nonbundle_executable.sh` | `9fbbd95b8dd99fe2dbe3c5e3fc9fa1db18c36f4d` | 1377 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/type_envvars/test_nonbundle_loadable_module.sh` | `b4c3ba976ef266d93f56187aa8092a377cdc0739` | 1287 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/type_envvars/test_nonbundle_none.sh` | `e2dc7fd9cd56e661d2f95e33fd306c5cca97f616` | 1302 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/type_envvars/test_nonbundle_shared_library.sh` | `ba63ec1a48fa98e705c3f23972b3f07f30a92cf5` | 1305 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/type_envvars/test_nonbundle_static_library.sh` | `63aac57b0b34605b4fe8c12d0eb60ecf80758a23` | 1289 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/unicode-settings/file.cc` | `b2f997621bea95c08664e45bcbdc81f3c264a051` | 15 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@1
+
+`third_party/python/gyp/test/mac/unicode-settings/test.gyp` | `b331ae453f1954e6d29a06a4e8b685b3cf01ed5e` | 529 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/unicode-settings/test_bundle_display_name.sh` | `95dd6267a33d02913d1d4cb8209e64225c1963d3` | 204 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/mac/xcode-env-order/Info.plist` | `e11f21e52d13c42cc0002282493e31dbf90fd2a9` | 1705 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/xcode-env-order/file.ext1` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/xcode-env-order/file.ext2` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/xcode-env-order/file.ext3` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/xcode-env-order/main.c` | `1bf4b2a11abd99b0655222eb96624b9abed72423` | 187 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@5
+
+`third_party/python/gyp/test/mac/xcode-env-order/test.gyp` | `8f975f7d6b17feabd001f0c5f5ee55846f0f7124` | 5079 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/xcode-gcc/aliasing.cc` | `16a41efb15cc331f9f666444c35d5ea962d164ab` | 159 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: check@3; main@9
+Dependencies: stdio.h@1
+
+`third_party/python/gyp/test/mac/xcode-gcc/test-clang.gyp` | `9f4a98ae73fce423ef234dd2dcf0f752a7226b88` | 1100 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/xcode-gcc/test.gyp` | `1ca8b215d8763f0b8ebe0acf2ccdf4350fc0a89c` | 1640 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/xcode-gcc/valid_c.c` | `2b10ac3ed75818842adab67419edb300841ac795` | 258 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: FunctionInCFile@7
+
+`third_party/python/gyp/test/mac/xcode-gcc/valid_cc.cc` | `31cddc3c9cc37dbeeed13a9db7c166c3e4b1f13c` | 257 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: FunctionInCCFile@7
+
+`third_party/python/gyp/test/mac/xcode-gcc/valid_m.m` | `95bddb27238fd0ce995e3900d11453e800cd552e` | 268 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: FunctionInMFile@7
+
+`third_party/python/gyp/test/mac/xcode-gcc/valid_mm.mm` | `a7db7e3ad6de74464570fd02333620d192552488` | 267 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: FunctionInMMFile@7
+
+`third_party/python/gyp/test/mac/xcode-gcc/warn_about_invalid_offsetof_macro.cc` | `4a4612be0dc9edfbea46521768edc9a593da013a` | 379 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: MyStruct@7; main@12
+
+`third_party/python/gyp/test/mac/xcode-gcc/warn_about_missing_newline.c` | `6faf0895dbb686f04276c8784eed9378a4701064` | 242 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@6
+
+`third_party/python/gyp/test/mac/xcode-support-actions/source.c` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/xcode-support-actions/test.gyp` | `ad81b8c456c120a9c27603d2182f14cf2ad785a9` | 681 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/xctest/MyClass.h` | `dde13aa33d75a0fc8df6b68b0c6df77e188d0d05` | 230 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/xctest/MyClass.m` | `df11471b075b79e38b3aa5d4a75a0a71be502f1a` | 210 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/xctest/TestCase.m` | `36846a1fda24b27c8dd10f497be91228b5ae0672` | 389 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/xctest/resource.txt` | `257cc5642cb1a054f08cc83f2d943e56fd3ebe99` | 4 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/xctest/test.gyp` | `ac25656b3561d3f3206bbd5494425bc7fb5837c1` | 1012 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/xctest/test.xcodeproj/xcshareddata/xcschemes/classes.xcscheme` | `6bd1bb9696df345e5671a250e3d762cde0155d32` | 2441 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/xcuitest/Info.plist` | `ae8852b8360897f5dd163fadadcc38138669948e` | 837 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/xcuitest/MyAppDelegate.h` | `445be2cb427e27e5bdd1d167c9058c3b6710acf7` | 249 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/xcuitest/MyAppDelegate.m` | `6ad60fa9d4f64f70f8056a6e4d27d000796bef41` | 520 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/xcuitest/TestCase.m` | `1f32b7af7457095cd08adda6d2d30d9e09a63476` | 385 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/xcuitest/main.m` | `e7cb62e6394627f125870a3043d19ce0a3ccac38` | 391 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@9
+
+`third_party/python/gyp/test/mac/xcuitest/resource.txt` | `257cc5642cb1a054f08cc83f2d943e56fd3ebe99` | 4 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/mac/xcuitest/test.gyp` | `80cdf9032d095ccd36a22d5e9f578c4c81575a9d` | 1615 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/make/dependencies.gyp` | `e2bee24fcefd9fbf36cab32f8d0253454aed3dde` | 298 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/make/gyptest-dependencies.py` | `d215f7678252141c37cc21fc58117bc984d2f28e` | 662 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/make/gyptest-noload.py` | `1f5103315cfcc1ca2ef6519e65bec1ed8ccd2730` | 2023 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+Dependencies: __future__@13
+
+`third_party/python/gyp/test/make/main.cc` | `3b9a705c2434445ac50a1ddd2b56e69673636b09` | 260 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@9
+Dependencies: stdio.h@5; main.h@7
+
+`third_party/python/gyp/test/make/main.h` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/make/noload/all.gyp` | `1617a9e97c94929dd8f6e2db3c2f3b2705d06d57` | 362 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/make/noload/lib/shared.c` | `51776c5acfab6d16bc1ec35297e6140a7688c199` | 59 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Dependencies: shared.h@1
+
+`third_party/python/gyp/test/make/noload/lib/shared.gyp` | `8a8841b3a06e82fd9fd2b8b419641a0823b05641` | 325 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/make/noload/lib/shared.h` | `a21da7538bf08bf54b1fa35cd6f2bf04c17d61d9` | 32 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/make/noload/main.c` | `26ec1889ad3501aea652b80fc528acc787da3fd1` | 118 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@5
+Dependencies: stdio.h@1; lib/shared.h@3
+
+`third_party/python/gyp/test/make_global_settings/ar/gyptest-make_global_settings_ar.py` | `aabc5618d5fc822c4b5a0daed380b395f15a80de` | 3838 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: resolve_path@15; verify_ar_target@26; verify_ar_host@52
+
+`third_party/python/gyp/test/make_global_settings/ar/make_global_settings_ar.gyp` | `3430d82a517aec983ecfefec1595399982f3dfb6` | 659 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/make_global_settings/basics/gyptest-make_global_settings.py` | `8f48875967d3de125ad4851700c34d5d68d5c7bb` | 1291 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Dependencies: __future__@11
+
+`third_party/python/gyp/test/make_global_settings/basics/make_global_settings.gyp` | `47dbc8570fe7dc57e76687971cd03edfad72ed38` | 362 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/make_global_settings/env-wrapper/gyptest-wrapper.py` | `409799e315a1ec6c6ec20fb49c08333911d758fb` | 1473 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Dependencies: __future__@11
+
+`third_party/python/gyp/test/make_global_settings/env-wrapper/wrapper.gyp` | `1698d71dd4a0c9d88478ba277d70706381ab0191` | 365 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/make_global_settings/full-toolchain/bar.cc` | `afb422ba1a86542c24371f48e9f4ae807c24733d` | 30 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/make_global_settings/full-toolchain/foo.c` | `afb422ba1a86542c24371f48e9f4ae807c24733d` | 30 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/make_global_settings/full-toolchain/gyptest-make_global_settings.py` | `542fd631c24938469dfb411ff9c6d416c4bccc49` | 1803 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Dependencies: __future__@11
+
+`third_party/python/gyp/test/make_global_settings/full-toolchain/make_global_settings.gyp` | `2c3266322d4f7690361863d510d4a0e4c4ed4948` | 515 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/make_global_settings/full-toolchain/my_nm.py` | `2c4e678110bb21e21d624b1b62e276de6e775249` | 300 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+Dependencies: __future__@5
+
+`third_party/python/gyp/test/make_global_settings/full-toolchain/my_readelf.py` | `626665435e680eceae0317e35eff209c2bc16bd7` | 310 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+Dependencies: __future__@5
+
+`third_party/python/gyp/test/make_global_settings/ld/gyptest-make_global_settings_ld.py` | `e5f50fbb5bc6640b23601c73099bd4f97f17b734` | 4164 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: resolve_path@15; verify_ld_target@26; verify_ld_host@52
+
+`third_party/python/gyp/test/make_global_settings/ld/make_global_settings_ld.gyp` | `6837c77326153c3afdee418404127c1527af27cf` | 659 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/make_global_settings/wrapper/gyptest-wrapper.py` | `7ef4314b3e8ca115424e23195b32ef6e5a5808b3` | 1588 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Dependencies: __future__@11
+
+`third_party/python/gyp/test/make_global_settings/wrapper/wrapper.gyp` | `3d4cd04b164532e1eb448f34632b3b69f2564764` | 489 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/many-actions/file0` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/many-actions/file1` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/many-actions/file2` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/many-actions/file3` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/many-actions/file4` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/many-actions/gyptest-many-actions-unsorted.py` | `6927d1c7a750c3d12f69fd36452785b3c9f967d9` | 1006 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Dependencies: __future__@12
+
+`third_party/python/gyp/test/many-actions/gyptest-many-actions.py` | `4a525d32d65d42ddfdd842ee0923276d908ce5e5` | 647 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Dependencies: __future__@12
+
+`third_party/python/gyp/test/many-actions/many-actions-unsorted.gyp` | `eec79fe8d8570ce96804ef4c7c3393e62c4d42fd` | 4117 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/many-actions/many-actions.gyp` | `38545d2d88565a228d49203eb36a270f62906780` | 47837 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/module/gyptest-default.py` | `7fecf3ca4d2b2ad8a444b720545d9c7c62f8ea6c` | 660 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/module/src/lib1.c` | `8de0e94bee70508485202df3f628c00b670df808` | 150 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: module_main@6
+Dependencies: stdio.h@1
+
+`third_party/python/gyp/test/module/src/lib2.c` | `266396dc91cc3f6d94f60054e27fed0a13d1b221` | 150 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: module_main@6
+Dependencies: stdio.h@1
+
+`third_party/python/gyp/test/module/src/module.gyp` | `2bc398bb3bf6b57d9d274cd21131c4073bcccd04` | 1132 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/module/src/program.c` | `7cc3dd34663f77d170a7f2f64693bdb936c12987` | 2803 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: void@22; CallModule@26; main@89
+Dependencies: stdio.h@1; stdlib.h@2; windows.h@5; dlfcn.h@7; libgen.h@8; string.h@9; sys/param.h@10
+
+`third_party/python/gyp/test/msvs/buildevents/buildevents.gyp` | `e0304dd5c617186f217879569028c0e7f688fc94` | 366 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/buildevents/gyptest-msbuild-supports-prepostbuild.py` | `208f43456041319de5002345b9662ec03441f761` | 732 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/msvs/buildevents/gyptest-ninja-warnings.py` | `be4ec9921ac20a3b2336140f76d7bee7570c57b2` | 710 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/msvs/buildevents/main.cc` | `03c0285a6cc856103f8adad4d35dc76e42a51042` | 174 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@5
+
+`third_party/python/gyp/test/msvs/config_attrs/gyptest-config_attrs.py` | `29a8022bd4eee7304856d6c09ad89498920f714c` | 891 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Dependencies: __future__@13
+
+`third_party/python/gyp/test/msvs/config_attrs/hello.c` | `faadc75e2c0a5975e50cc6e9a8ee1c83e2c248bb` | 243 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@7
+Dependencies: stdio.h@5
+
+`third_party/python/gyp/test/msvs/config_attrs/hello.gyp` | `810a80edd8034c363f63ff2be29b4da22d4f1cf3` | 500 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/express/base/base.gyp` | `b7c9fc6d81f1e9ee487d7d76c2940ac3ad132cea` | 409 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/express/express.gyp` | `917abe2cc0b17083418b52e615c74b99e1f9cc16` | 387 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/express/gyptest-express.py` | `54c06f664ae7515f1ca71c08d73e075c5a0d6f7b` | 753 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/msvs/external_builder/external.gyp` | `abe5b5889c3565a17886ae4ee7284f2031e3e1dc` | 1607 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/external_builder/external_builder.py` | `ddfc1e5e33c10b247ba11adfb2e3b39e0aaf07b0` | 245 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/external_builder/gyptest-all.py` | `72faa7ab7f8e19cd9e2f5f27aed3543e553cd830` | 1878 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/external_builder/hello.cpp` | `bc0c0265b53750cc100156f780cbf0050aaf6048` | 240 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@7
+Dependencies: stdio.h@5
+
+`third_party/python/gyp/test/msvs/external_builder/hello.z` | `aa478827b50f552feae808e98e83275669ffa808` | 201 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/external_builder/msbuild_action.py` | `632d786922fd52851f7253abd644a6279084d3ed` | 243 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/external_builder/msbuild_rule.py` | `0d6e315775f7644da9f39466ae4f51a525ebca6b` | 295 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/filters/filters.gyp` | `a4106dc8eb30be1c1d3562780d1f03ab69f66ea8` | 1002 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/filters/gyptest-filters-2008.py` | `41ca085823a9bdf74056f16d298dcbd46498b47a` | 1599 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: strip_ws@15
+
+`third_party/python/gyp/test/msvs/filters/gyptest-filters-2010.py` | `d8131d5d7bd38e92ef57fb2262c51859a226be05` | 1517 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/list_excluded/gyptest-all.py` | `5a370f6b47643157c53ad506b2152c2199a239a5` | 1292 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/list_excluded/hello.cpp` | `bc0c0265b53750cc100156f780cbf0050aaf6048` | 240 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@7
+Dependencies: stdio.h@5
+
+`third_party/python/gyp/test/msvs/list_excluded/hello_exclude.gyp` | `aa160f2367a19224886708cedb92c68449e32367` | 412 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/list_excluded/hello_mac.cpp` | `b9f6242c4b3ab590edf1154cc674db818cc75464` | 236 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: hello2@7
+Dependencies: stdio.h@5
+
+`third_party/python/gyp/test/msvs/missing_sources/gyptest-missing.py` | `62a99ef0f105cef60a454217b5d2bc6f4646ae5b` | 1413 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/missing_sources/hello_missing.gyp` | `c08926bbff4ea3aed30c19d02371d883f0f353f1` | 309 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/multiple_actions_error_handling/action_fail.py` | `286fc4e1329aa9302303cfebe3f80878267e6a45` | 181 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/multiple_actions_error_handling/action_succeed.py` | `35543731976775ce8bfaee0abe082f2b8310d7b9` | 181 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/multiple_actions_error_handling/actions.gyp` | `ab99e929e2496628ac3e4e24c8a89e92b634eda8` | 908 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/multiple_actions_error_handling/gyptest.py` | `3aa6b8fdb2b52b9e3f2b6a2f221cf91f8f1a4834` | 647 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/props/AppName.props` | `b688f663d588131b0a15e148b7495743ec6efc75` | 458 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/props/AppName.vsprops` | `84b9af3800c6205727f2ae884650e948fe354dcf` | 241 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/props/gyptest-props.py` | `abd4df2241e26762d5fb1fa98890ba56893e764c` | 475 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/props/hello.c` | `faadc75e2c0a5975e50cc6e9a8ee1c83e2c248bb` | 243 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@7
+Dependencies: stdio.h@5
+
+`third_party/python/gyp/test/msvs/props/hello.gyp` | `5a58317fa7bdb9e1d4c19092ef25c0afecbce8c1` | 478 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/rules_stdout_stderr/dummy.bar` | `25178696d2bad754523d99b7cab33e788c3bfef5` | 218 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/rules_stdout_stderr/dummy.foo` | `6a7990bb98c1278db2d2da9cfa8f996b0fda9cd1` | 218 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/rules_stdout_stderr/gyptest-rules-stdout-stderr.py` | `804505a23d26a2d419370a5365e045d05d24ec3f` | 750 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/rules_stdout_stderr/rule_stderr.py` | `2081513ec8837601ebe077928d2bc3eb528a576e` | 277 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Dependencies: __future__@6
+
+`third_party/python/gyp/test/msvs/rules_stdout_stderr/rule_stdout.py` | `4c073ebc4537be16ead14379e75e14fa257c1251` | 249 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Dependencies: __future__@6
+
+`third_party/python/gyp/test/msvs/rules_stdout_stderr/rules-stdout-stderr.gyp` | `ce93643f8e7ef35d577a3c50a089750b37e9287c` | 1173 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/shared_output/common.gypi` | `c6fa341d68ca09a8584c0930d0c2a69f13a23eda` | 431 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/shared_output/gyptest-shared_output.py` | `270b280e6ba92f597395b6934090d5f6d4c553e3` | 1394 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/shared_output/hello.c` | `698e4fd36c3f4b5d5ed3be32f43650297d11b8ed` | 247 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@9
+Dependencies: stdio.h@7
+
+`third_party/python/gyp/test/msvs/shared_output/hello.gyp` | `f80e5cfca1d0f4df56aa61b782356a078eaf8b94` | 448 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/shared_output/there/there.c` | `698e4fd36c3f4b5d5ed3be32f43650297d11b8ed` | 247 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@9
+Dependencies: stdio.h@7
+
+`third_party/python/gyp/test/msvs/shared_output/there/there.gyp` | `56feff326ce37a943318da0223c0a9ab6c72ad46` | 333 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/uldi2010/gyptest-all.py` | `cc248fbd635c49e3721fd4ce6a55bd6e6794698f` | 491 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/uldi2010/hello.c` | `06e6a029052bf70e747fd35bb04a08a4aca32644` | 277 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@9
+Dependencies: stdio.h@5
+
+`third_party/python/gyp/test/msvs/uldi2010/hello.gyp` | `a2bf2badb18fccf457cbf5175e8abdd5475f37d1` | 528 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/msvs/uldi2010/hello2.c` | `e2f23238d1648d1c60eccb53c72ac236c999c876` | 239 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: hello2@7
+Dependencies: stdio.h@5
+
+`third_party/python/gyp/test/multiple-targets/gyptest-all.py` | `3ef50090d1a0c8ef5436c447adb870dedc1c415d` | 658 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/multiple-targets/gyptest-default.py` | `db15d794c376f08e05c4fcb351fa24708dd31728` | 635 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/multiple-targets/src/common.c` | `f1df7c1431464bfee76a2bd08aff784de28286d2` | 87 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: common@3
+Dependencies: stdio.h@1
+
+`third_party/python/gyp/test/multiple-targets/src/multiple.gyp` | `3db4ea30cd0b29bed8fc04272fd36f65d1482821` | 457 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/multiple-targets/src/prog1.c` | `fbf8d4cd7cce1421d4e79c62abdcded61fa5e990` | 124 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@5
+Dependencies: stdio.h@1
+
+`third_party/python/gyp/test/multiple-targets/src/prog2.c` | `a94b5c155ed0db56d0355f96283cc4bccb007519` | 124 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@5
+Dependencies: stdio.h@1
+
+`third_party/python/gyp/test/ninja/action-rule-hash/gyptest-action-rule-hash.py` | `7147fd2fc31ac64c56dd7123154c11edd0c64120` | 938 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/ninja/action-rule-hash/subdir/action-rule-hash.gyp` | `0e88a3019fa881a60e069f7e330620c0cb8b0c5e` | 726 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/ninja/action-rule-hash/subdir/emit.py` | `6b1712557450a164789bc64841ac8d5b226507ce` | 295 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/ninja/action_dependencies/gyptest-action-dependencies.py` | `89813bab17e3185cdbd3ea84812f15bd97aff17d` | 2126 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+Dependencies: __future__@12
+
+`third_party/python/gyp/test/ninja/action_dependencies/src/a.c` | `4d7af9b26ca50dd68a792ce89726a028ac17365d` | 209 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: funcA@8
+Dependencies: a.h@6
+
+`third_party/python/gyp/test/ninja/action_dependencies/src/a.h` | `335db5673985dbb201ddd6af9f4519c33e14d982` | 247 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Dependencies: a/generated.h@9
+
+`third_party/python/gyp/test/ninja/action_dependencies/src/action_dependencies.gyp` | `5baa7a7d47e33463010475d6e5f8466d5ffc0de3` | 1975 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/ninja/action_dependencies/src/b.c` | `824464695a8617f43960f664d39a9261b6e74e7c` | 375 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@10
+Dependencies: stdio.h@6; b.h@8
+
+`third_party/python/gyp/test/ninja/action_dependencies/src/b.h` | `91362cd899731123908398c78effa436e9643663` | 237 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Dependencies: a.h@9
+
+`third_party/python/gyp/test/ninja/action_dependencies/src/c.c` | `b412087ec870e3623c9356a79c1b10a45086354f` | 212 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: funcC@8
+Dependencies: c.h@6
+
+`third_party/python/gyp/test/ninja/action_dependencies/src/c.h` | `c81a45bbe76fe676891da8d422e24a5aac47b9e6` | 247 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Dependencies: c/generated.h@9
+
+`third_party/python/gyp/test/ninja/action_dependencies/src/emit.py` | `8ed12f7393bfa6ef4269f2a5f862ba529dda05e0` | 260 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/ninja/chained-dependency/chained-dependency.gyp` | `3fe68ae85a7ffc629ca3e29742d6657db181252c` | 1314 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/ninja/chained-dependency/chained.c` | `c1ff1a7b12010b2b15b7ea099db53acccd121777` | 62 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@3
+Dependencies: generated/header.h@1
+
+`third_party/python/gyp/test/ninja/chained-dependency/gyptest-chained-dependency.py` | `d8763f1d3db5b4b7a3aed37ba339ad1a4f1fb385` | 909 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/ninja/empty-and-non-empty-duplicate-name/gyptest-empty-and-non-empty-duplicate-name.py` | `0bdca66cdcc794eaa8ec4f4953e519f62e553b0e` | 708 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/ninja/empty-and-non-empty-duplicate-name/subdir/included.gyp` | `1b9fc42f3f47190927fe41c194886f5b83b235b0` | 387 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/ninja/empty-and-non-empty-duplicate-name/test.gyp` | `9aa6287c7c9318c7c8bbbf9f0fffb36a8615fbee` | 400 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/ninja/normalize-paths-win/gyptest-normalize-paths.py` | `f56dbe5921e2e896c55d363e323c59d7f6180159` | 1406 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/ninja/normalize-paths-win/hello.cc` | `1711567ef566703fcd9c33e0a236b1b30454df6a` | 187 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@5
+
+`third_party/python/gyp/test/ninja/normalize-paths-win/normalize-paths.gyp` | `544d06456d91cc03b46b6dddf1579c78022d2e38` | 1644 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/ninja/s-needs-no-depfiles/empty.s` | `218d8921e515dd953a198cde4ef124ea4554c65e` | 38 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/ninja/s-needs-no-depfiles/gyptest-s-needs-no-depfiles.py` | `77a3245d4625a0fc2afb94b3d1ba5e97fa0635e9` | 1243 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/ninja/s-needs-no-depfiles/s-needs-no-depfiles.gyp` | `bd66b1a70a82c34199bf80439ce25be2451c6bf5` | 288 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/ninja/solibs_avoid_relinking/gyptest-solibs-avoid-relinking.py` | `fd4470ac2378c0e8344fbc5573cc47158cf55373` | 1605 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+Dependencies: __future__@12
+
+`third_party/python/gyp/test/ninja/solibs_avoid_relinking/main.cc` | `2cd74d3c770a988bda86480e19eb8709a427f2b5` | 50 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@3
+
+`third_party/python/gyp/test/ninja/solibs_avoid_relinking/solib.cc` | `0856cd4e007b2e49c2ecb015f81648aab3f30ec2` | 117 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: foo@6
+
+`third_party/python/gyp/test/ninja/solibs_avoid_relinking/solibs_avoid_relinking.gyp` | `e816351d684f554986d74562f711be62b3112cea` | 850 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/ninja/use-console/foo.bar` | `07c476a8664bbf222d28a70b1cf8910a4bfcd507` | 201 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/ninja/use-console/gyptest-use-console.py` | `f76fcd98296eae07279203a5b1fc8742793b014f` | 732 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/ninja/use-console/use-console.gyp` | `84e63184c675d731796e3d44fcaf3d84383f362b` | 1304 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/ninja/use-custom-environment-files/gyptest-use-custom-environment-files.py` | `0c44b1d1c9870492b356124e4a4ec5e2406a5d12` | 690 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/ninja/use-custom-environment-files/use-custom-environment-files.cc` | `1711567ef566703fcd9c33e0a236b1b30454df6a` | 187 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@5
+
+`third_party/python/gyp/test/ninja/use-custom-environment-files/use-custom-environment-files.gyp` | `dbc95a9439c28b13023e0dab1d90ad40215f2fcd` | 351 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/no-cpp/gyptest-no-cpp.py` | `a5d64512afffeac017fde2ec01db2ed21070526b` | 1497 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: LinksLibStdCpp@27
+
+`third_party/python/gyp/test/no-cpp/src/call-f-main.c` | `8b95c5910ecc9a8c2253b00e5ee72c3245ba62b1` | 31 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@2
+
+`third_party/python/gyp/test/no-cpp/src/empty-main.c` | `237c8ce181774d991a9dbdd8cacf1a5fb9f199f1` | 14 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@1
+
+`third_party/python/gyp/test/no-cpp/src/f.cc` | `02f50f21a0ae32db8a572d94259dc326e478f406` | 57 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: f@3
+
+`third_party/python/gyp/test/no-cpp/src/test.gyp` | `417015ec803225b47892e17e6e0b9967ede45aa7` | 674 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/no-output/gyptest-no-output.py` | `bf9a0b5aaa4c24199d5a30a4b8c4b4d023eaad01` | 580 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/no-output/src/nooutput.gyp` | `c40124efc1eee90b7fc0b4ba15bb21adbf800d37` | 346 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/product/gyptest-product.py` | `53eb5c376b61c3f4cfcd3bd64a7e2df6db46ddc4` | 1512 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/product/hello.c` | `41fdff0e382361da1e120bdc9d0f233c527437cb` | 304 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: func1@7; main@11
+Dependencies: stdio.h@5
+
+`third_party/python/gyp/test/product/product.gyp` | `c25eaaacb51b516c08a64341832b250feaa75c47` | 2670 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/prune_targets/gyptest-prune-targets.py` | `b2c90f717e69f5b87c7acc40627eb600525b0a29` | 2285 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/prune_targets/lib1.cc` | `692b7de6d82c927503c21607863f671307fa6cd1` | 180 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: libfunc1@5
+
+`third_party/python/gyp/test/prune_targets/lib2.cc` | `aed394afcff768af538513e67e47170f954a36c3` | 180 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: libfunc2@5
+
+`third_party/python/gyp/test/prune_targets/lib3.cc` | `af0f717b020e5bebb15a650338520ff2bc9becf9` | 180 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: libfunc3@5
+
+`third_party/python/gyp/test/prune_targets/lib_indirect.cc` | `92d9ea40db811b235b37f10542b635a3222d9886` | 188 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: libfunc_indirect@5
+
+`third_party/python/gyp/test/prune_targets/program.cc` | `c9ac070ecd97bb7d3dc74b9d4de6dac25a61466b` | 187 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@5
+
+`third_party/python/gyp/test/prune_targets/test1.gyp` | `b65ec19fa4c02d28e41447ba91f64e69b087e8fe` | 640 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/prune_targets/test2.gyp` | `16f0fd3290de9c439fd7ccd085ad6cd918014ab9` | 705 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/relative/foo/a/a.cc` | `7d1c95344856590d78251205ecc52b7b9a09f884` | 194 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@7
+
+`third_party/python/gyp/test/relative/foo/a/a.gyp` | `66316ac681f809fd432634c4b1d84fba01c7cc7d` | 203 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/relative/foo/a/c/c.cc` | `9d2247168441ecde1939d3524e47769aade1423e` | 194 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: func@7
+
+`third_party/python/gyp/test/relative/foo/a/c/c.gyp` | `c1f087db9934feac7834f14df15617a9c0007504` | 182 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/relative/foo/b/b.cc` | `011d59cebb323689401c011ee32792297c185970` | 195 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: func2@7
+
+`third_party/python/gyp/test/relative/foo/b/b.gyp` | `0ebe4533d3f3f7965fdc9943310e7d24a9e3c47f` | 122 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/relative/gyptest-default.py` | `685cdfd75e464352ae47678f3856e3d65d231ec8` | 682 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/rename/filecase/file.c` | `76e8197013aabca95639bb3d9e5de847b0c0a5fd` | 25 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@1
+
+`third_party/python/gyp/test/rename/filecase/test-casesensitive.gyp` | `48eaa6eb679da9db3e47c7fffc4a5bd0e9aada8a` | 334 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rename/filecase/test.gyp` | `eaee9337b6c0a6c7462d0207c2bd5bb976c8d68f` | 306 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rename/gyptest-filecase.py` | `daed5180d3e6fee08c08256f700c4267b7109348` | 1110 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/restat/gyptest-restat.py` | `87379044dda4a44319cdbe123ea8be5d9aca37ff` | 914 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/restat/src/create_intermediate.py` | `a4d7450371d96f9d7ac1a1cb09576668b1ae2cf8` | 347 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/restat/src/restat.gyp` | `ff020e0ce667b572963f1022c15c2c445eceb479` | 1220 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/restat/src/touch.py` | `7cd781a90ce67b9868fcbf136beff066d38d07f5` | 350 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules-dirname/gyptest-dirname.py` | `da5429cbad4e30c2a14d467f3fc441ff4696439a` | 1617 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+Dependencies: __future__@11
+
+`third_party/python/gyp/test/rules-dirname/src/actions.gyp` | `c5693c6c9e15cc167a447bdaaaa3ec7548efd5b8` | 336 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules-dirname/src/copy-file.py` | `271a72b6b1a32c98e928bc92eebd725bdfd6044c` | 284 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/rules-dirname/src/subdir/a/b/c.gencc` | `29cb5f79ad79421d9787ce6774bfaafdcdf3bd26` | 98 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules-dirname/src/subdir/a/b/c.printvars` | `cc4561dc41426af2ae144e516a75db0fa5e4a933` | 37 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules-dirname/src/subdir/foo/bar/baz.gencc` | `90b4ce9243c527ef1b66fae67b3430b0836c561a` | 105 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules-dirname/src/subdir/foo/bar/baz.printvars` | `cc4561dc41426af2ae144e516a75db0fa5e4a933` | 37 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules-dirname/src/subdir/input-rule-dirname.gyp` | `da749a2231fe119b158eb900d0f96fcb458d8206` | 3735 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules-dirname/src/subdir/main.cc` | `3bb8e01395ee83a64777142dd1fb9f86e28c533d` | 298 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: gen@4; main@10
+
+`third_party/python/gyp/test/rules-dirname/src/subdir/nodir.gencc` | `720f589bc2cb8c98dfd8c84636d57a66bf9ce10b` | 109 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules-dirname/src/subdir/printvars.py` | `ef3d92e8cf7ec8bef88396d34dcbca6c0c955acc` | 279 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/rules-rebuild/gyptest-all.py` | `aaaa2a6e6f908462ff2441d5019c3ca593801a5e` | 1662 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/rules-rebuild/gyptest-default.py` | `ac3f0209aa042996a3a5a6df01b2059d2288ad44` | 2242 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/rules-rebuild/src/main.c` | `bd8fbb20ea313f131d03cc8810b5cebbbc83c3dc` | 157 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@6
+Dependencies: stdio.h@1
+
+`third_party/python/gyp/test/rules-rebuild/src/make-sources.py` | `dd9e52856e3e5e4ff42bfa32f04cae592560d481` | 457 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+Declarations: write_file@12
+
+`third_party/python/gyp/test/rules-rebuild/src/prog1.in` | `191b00ef1e6a606145215c3e424d2c763fbc0940` | 96 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules-rebuild/src/prog2.in` | `7bfac5104c9ca254bfa3db22f9d8792d0415342b` | 96 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules-rebuild/src/same_target.gyp` | `22ba56056d2655fe4af657ff0fa6c0a3aeccc750` | 694 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules-use-built-dependencies/gyptest-use-built-dependencies.py` | `a57c36d5b0dda4427eade04e4ad5e8adb928ebac` | 620 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/rules-use-built-dependencies/src/main.cc` | `937d2845992205b32f3c13d756297ddce935ec4a` | 427 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@6
+Dependencies: stdio.h@4
+
+`third_party/python/gyp/test/rules-use-built-dependencies/src/use-built-dependencies-rule.gyp` | `92bfeda39288f1fcf4f6683e6f7c6a58a7f53c4a` | 1152 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules-variables/gyptest-rules-variables.py` | `16afc22ef9b751c2fe3e78a235baa668c5c9088c` | 846 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+Dependencies: __future__@11
+
+`third_party/python/gyp/test/rules-variables/src/input_ext.c` | `f41e73ef8adb67680eee5c27074f1ef81874f2bf` | 226 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: input_ext@7
+Dependencies: stdio.h@5
+
+`third_party/python/gyp/test/rules-variables/src/input_name/test.c` | `e28b74d1158ab560a7f9bd965a839d2150306b0d` | 228 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: input_name@7
+Dependencies: stdio.h@5
+
+`third_party/python/gyp/test/rules-variables/src/input_path/subdir/test.c` | `403dbbda4cf3d58a0790ca5eeb3e1bd483705670` | 228 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: input_path@7
+Dependencies: stdio.h@5
+
+`third_party/python/gyp/test/rules-variables/src/subdir/input_dirname.c` | `40cecd87d9ff3e22838d713aa138b6110b80d431` | 234 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: input_dirname@7
+Dependencies: stdio.h@5
+
+`third_party/python/gyp/test/rules-variables/src/subdir/test.c` | `6c0280b8adf9f4c3a121f8fdc7097f1993044261` | 402 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@11
+
+`third_party/python/gyp/test/rules-variables/src/test.input_root.c` | `33a7740a5cb9394256e4234dfa9f3362ce8f9055` | 228 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: input_root@7
+Dependencies: stdio.h@5
+
+`third_party/python/gyp/test/rules-variables/src/variables.gyp` | `6debba12e345bb0741b910fd6f54a3ed35174a9c` | 1353 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/gyptest-all.py` | `0520c2f6a03489ac3975ac0fdecf2fd72c0d70c7` | 2231 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+Dependencies: __future__@11
+
+`third_party/python/gyp/test/rules/gyptest-default.py` | `5d01094197bb1ebadf9699380acee79607a42f5b` | 1909 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+Dependencies: __future__@11
+
+`third_party/python/gyp/test/rules/gyptest-input-root.py` | `92bade6d48be01d8a8a01e4ae35b6e80bd0b894a` | 574 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/rules/gyptest-special-variables.py` | `05ea7cee16e323879f2eb30406bc9ab1ac7a442e` | 487 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/actions.gyp` | `84376a719378034fa3d982bc9e298c4049541b78` | 624 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/an_asm.S` | `eeb13455500135532ec2c44981f9cdcbf2091680` | 192 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/as.bat` | `903c31a72696bf83fde680b811fc7722f322dc75` | 226 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/copy-file.py` | `7bdfbfd4bd65bd13f2f576de818d8fe928fb1567` | 284 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/rules/src/external/external.gyp` | `b28174f57c3c9155c67ea5888f7229798ac4c00a` | 1697 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/external/file1.in` | `86ac3ad389d0f323bbee5c0e327a1eac429281ab` | 20 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/external/file2.in` | `bf83d8ecece5756d51f6bc1e28ea3d7b7cb9ffa7` | 20 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/input-root.gyp` | `b6600e767c8ead8db822da0561f1ef5f5bd53fc8` | 717 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/noaction/file1.in` | `86ac3ad389d0f323bbee5c0e327a1eac429281ab` | 20 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/noaction/no_action_with_rules_fails.gyp` | `9b6a65629f3b86742f8be97cde67e6975eb0dedb` | 994 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/rule.py` | `8a1f36dedb18111a724c0d63a7f48f0f9afab9b6` | 335 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+Declarations: main@12
+Dependencies: stdio.h@10
+
+`third_party/python/gyp/test/rules/src/somefile.ext` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/special-variables.gyp` | `d1443af5ba0fd41b81b0f3951d3fbfacac1a6e79` | 855 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/subdir1/executable.gyp` | `c34cce5a92e23e8c7d53789f7f0a4d035e21e4d7` | 965 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/subdir1/function1.in` | `60ff28949b9af580cfe6838bd2dd4f5fd2f75312` | 84 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/subdir1/function2.in` | `0fcfc03fdb91ea9e915ad5351c36efe143f1c2aa` | 84 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/subdir1/program.c` | `6b11ff9f6753ced0ecb808814cb2837709705187` | 176 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@6
+Dependencies: stdio.h@1
+
+`third_party/python/gyp/test/rules/src/subdir2/both_rule_and_action_input.gyp` | `e5e6f3ec2b19ec0161be21db13d4f7d124e2cd84` | 1183 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/subdir2/file1.in` | `86ac3ad389d0f323bbee5c0e327a1eac429281ab` | 20 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/subdir2/file2.in` | `bf83d8ecece5756d51f6bc1e28ea3d7b7cb9ffa7` | 20 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/subdir2/never_used.gyp` | `17f6f553710cdd6701abe0a074628584fb232859` | 775 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/subdir2/no_action.gyp` | `ffa1cefe182f95ab2cb0ebb9b5d3f7e23cddf673` | 1006 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/subdir2/no_inputs.gyp` | `e61a1a3ff674ac45244100403f90c212c028a742` | 790 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/subdir2/none.gyp` | `38bcdabdf6616e91f676ee4780e764dee9f16316` | 748 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/subdir2/program.c` | `e5db175148e7069017a85c2e47d1f420624d636a` | 251 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@8
+Dependencies: stdio.h@6
+
+`third_party/python/gyp/test/rules/src/subdir3/executable2.gyp` | `a2a528fc7bea186dc9bf8d9136b370a21bc2592a` | 950 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/subdir3/function3.in` | `99f46ab05e6ec4b182eaa59d05264d67f2c773a1` | 95 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/subdir3/program.c` | `c38eead50e89fadbf9deb7610f270acc63b54780` | 132 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@5
+Dependencies: stdio.h@1
+
+`third_party/python/gyp/test/rules/src/subdir4/asm-function.assem` | `ed47cade95926f3dc2cb1a0b63e0dc390d6de39b` | 199 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/subdir4/build-asm.gyp` | `fe0fe93787e1e753e764753d3ef53627ae0af786` | 1193 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/rules/src/subdir4/program.c` | `ad647f4eb991b1312a9f35f742802f8eb5ae73b5` | 361 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: asm_function@7; main@12
+Dependencies: stdio.h@1
+
+`third_party/python/gyp/test/same-gyp-name/gyptest-all.py` | `cda1a72d4d1e400444b794e9a8163e33478453e1` | 794 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/same-gyp-name/gyptest-default.py` | `5e4bba0012e5bb639ef94fc1e1571af680f3b1e6` | 784 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/same-gyp-name/gyptest-library.py` | `957a4a52d64cace4be6b4a4064fc56219b0d37dc` | 435 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-gyp-name/library/one/sub.gyp` | `1bed941e547f3047b55461d447fd62e6b08e2341` | 253 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-gyp-name/library/test.gyp` | `552a77ed7eef2aef2a92a66d0ff9dec781794106` | 352 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-gyp-name/library/two/sub.gyp` | `934c98a496e38b59ec7d1415cef731e617766cfc` | 253 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-gyp-name/src/all.gyp` | `229f02ea845c7720910b581076fc669b2804bc60` | 354 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-gyp-name/src/subdir1/executable.gyp` | `82483b4c69666d082b593d40f22e8b73c2dd9fae` | 303 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-gyp-name/src/subdir1/main1.cc` | `3645558324d720f09b010996528bb83a8423dc2b` | 82 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@3
+Dependencies: stdio.h@1
+
+`third_party/python/gyp/test/same-gyp-name/src/subdir2/executable.gyp` | `e3537013eb1815e40f8d8f91613c8ff91aad95ee` | 303 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-gyp-name/src/subdir2/main2.cc` | `0c724dee35fe00076e0b3f78d5e18d0583224afa` | 82 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@3
+Dependencies: stdio.h@1
+
+`third_party/python/gyp/test/same-rule-output-file-name/gyptest-all.py` | `964e6b7721a7029502af18ad6d9e512056c475c4` | 540 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-rule-output-file-name/src/subdir1/subdir1.gyp` | `bff381a5a51037f002fdf0a0ee7ec70fc4761109` | 682 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-rule-output-file-name/src/subdir2/subdir2.gyp` | `12a35600a3118c5aecfeb58cd2acbd12fd9eb54f` | 682 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-rule-output-file-name/src/subdirs.gyp` | `25259a38f4e583824dc8413ddd8646834091e1fd` | 347 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-rule-output-file-name/src/touch.py` | `2291e9cc560430aceb760210ff10e11f8550bc55` | 263 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-source-file-name/gyptest-all.py` | `4c215027c2ae8ac5fa7b2aff5f7c8a529bf4ee72` | 718 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/same-source-file-name/gyptest-default.py` | `98757c26971564b1729e4ab1f77d3ae6418ababc` | 708 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/same-source-file-name/gyptest-pass-executable.py` | `1a3dcda23d56690f725f6213a6a72d1ece6d16a7` | 849 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/same-source-file-name/gyptest-pass-shared.py` | `a498f1a8460ba4746cbe59366979390cdf349f5f` | 401 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/same-source-file-name/gyptest-static.py` | `7fa27720403b3c6e5b9d1e23fe040feef3dc8f33` | 1094 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/same-source-file-name/src/all.gyp` | `4fe052c66871434f50959cc60a4a49099721f1bd` | 557 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-source-file-name/src/double-executable.gyp` | `477bd87e0d8c50c327053931692168dc91978714` | 421 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-source-file-name/src/double-shared.gyp` | `438b50f3f1168d6c0f9b16310f83bbecd67ac320` | 564 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-source-file-name/src/double-static.gyp` | `e49c0e1251020ce8c1a5e75cb468c1133af92ecf` | 464 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-source-file-name/src/func.c` | `e069c692a69c916e43ed5d0e9e6a182ce76d340e` | 82 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: func@3
+Dependencies: stdio.h@1
+
+`third_party/python/gyp/test/same-source-file-name/src/prog1.c` | `604e2b9c98f4d13e95c87d20909d1d1a501abf27` | 275 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@5
+Dependencies: stdio.h@1
+
+`third_party/python/gyp/test/same-source-file-name/src/prog2.c` | `466ee35003c3fc1c675f533cc66a699a7bbc41ed` | 275 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@5
+Dependencies: stdio.h@1
+
+`third_party/python/gyp/test/same-source-file-name/src/prog3.c` | `34d495ce08d056664e24b5349046ee0ad1a5243f` | 380 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@11
+Dependencies: stdio.h@5
+
+`third_party/python/gyp/test/same-source-file-name/src/subdir1/func.c` | `b73450d105ef301a41886b471f2edeed5f4fb03e` | 98 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: subdir1_func@3
+Dependencies: stdio.h@1
+
+`third_party/python/gyp/test/same-source-file-name/src/subdir2/func.c` | `0248b5720e0c92ed28c253166ecaef05d616fb69` | 98 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: subdir2_func@3
+Dependencies: stdio.h@1
+
+`third_party/python/gyp/test/same-target-name-different-directory/gyptest-all.py` | `755691b57647e1365065175864a44dc0f61c0a2a` | 1341 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-target-name-different-directory/src/subdir1/subdir1.gyp` | `d4ec2e679acf1624dc4422562d808822af4f8c31` | 1570 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-target-name-different-directory/src/subdir2/subdir2.gyp` | `9006d450b26218dc3beca6ddbb2f0137544d1039` | 1570 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-target-name-different-directory/src/subdirs.gyp` | `65413e73b2b8ca9b7e1dfc318bed24f529a25316` | 347 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-target-name-different-directory/src/touch.py` | `2291e9cc560430aceb760210ff10e11f8550bc55` | 263 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-target-name/gyptest-same-target-name.py` | `bfe5540f31223f357b3d0455287bf661d6f9dab6` | 436 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/same-target-name/src/all.gyp` | `ac16976da6af14a2275133ec4d29270cf72a4fe7` | 340 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-target-name/src/executable1.gyp` | `3c492c1b375603c1c0a88e078616ee0a120222bf` | 302 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/same-target-name/src/executable2.gyp` | `41e84a61c679bf5f99ee83295de8809a4f041eea` | 302 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/sanitize-rule-names/blah.S` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/sanitize-rule-names/gyptest-sanitize-rule-names.py` | `968a0ce5ce48e8001091e75953655791dc0982e1` | 479 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/sanitize-rule-names/hello.cc` | `1711567ef566703fcd9c33e0a236b1b30454df6a` | 187 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@5
+
+`third_party/python/gyp/test/sanitize-rule-names/sanitize-rule-names.gyp` | `184253e966df36a1bd634db76e11492697fe29fd` | 705 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/sanitize-rule-names/script.py` | `ae2efa1df46901a12301687c0c9a555b4c958260` | 237 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/self-dependency/common.gypi` | `aae221a5dd01093445a06a9b02409483ad1b5e4d` | 345 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/self-dependency/dep.gyp` | `2b6c9dda854fe3cce100331c9c3a7f1575c5b925` | 614 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/self-dependency/gyptest-self-dependency.py` | `82fab271c56fa5da83b12f3837d6e792dac00f6a` | 468 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/self-dependency/self_dependency.gyp` | `0ca76c669b6a686bf686c5b9a4be5e9ebc2b2c41` | 282 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/sibling/gyptest-all.py` | `318e1a3d843ba6bc51d448deebee438b4834b488` | 1282 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/sibling/gyptest-relocate.py` | `05fa9d96fed11a992e44348128e9910160a57bf3` | 1365 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/sibling/src/build/all.gyp` | `79c80c9363524d17fdd3200637b9ceb0110908f4` | 341 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/sibling/src/prog1/prog1.c` | `218e99401cb2598dddfdd30fed392ef022c7cdf1` | 85 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@3
+Dependencies: stdio.h@1
+
+`third_party/python/gyp/test/sibling/src/prog1/prog1.gyp` | `4532e4be101d0012912d1af348138e9cb842bd57` | 302 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/sibling/src/prog2/prog2.c` | `12a31883b93a99ca000a872b6ea439902cdc69eb` | 85 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@3
+Dependencies: stdio.h@1
+
+`third_party/python/gyp/test/sibling/src/prog2/prog2.gyp` | `4cf7f6eb2f4f4aee832f55c3ed91d83ce665af73` | 302 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/small/gyptest-small.py` | `e6cb25f3a720522f54b9fc935065c73a28be149c` | 1496 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/standalone-static-library/gyptest-standalone-static-library.py` | `50535abfc7b0a075be2aff535d3d19ae45225283` | 1747 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/standalone-static-library/invalid.gyp` | `54b32117e05ce27691a36649a8ff5b66a4586ed8` | 333 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/standalone-static-library/mylib.c` | `108be618c291fd0db73ec29f2d94a72944f023d7` | 85 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: print@3
+Dependencies: stdio.h@1
+
+`third_party/python/gyp/test/standalone-static-library/mylib.gyp` | `2d191de3197ae52b7e191be8bbea304378a67280` | 507 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/standalone-static-library/prog.c` | `8af5c90844be41631b43a13b53765ad3c92c7dae` | 68 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@3
+
+`third_party/python/gyp/test/standalone/gyptest-standalone.py` | `0581d5387954b03b02032b6444d65b1defda504b` | 941 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Dependencies: __future__@12
+
+`third_party/python/gyp/test/standalone/standalone.gyp` | `b2a6785430393caa6a196cbcce00e1a1acf69879` | 250 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`third_party/python/gyp/test/subdirectory/gyptest-SYMROOT-all.py` | `9dfb8b05d4ed4125d932be9142f424fab49b1f1e` | 1236 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/subdirectory/gyptest-SYMROOT-default.py` | `8796650905637f86c5882cf61f700731cc293306` | 1227 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/subdirectory/gyptest-subdir-all.py` | `d5c458454e88a39f5aec9205ba897375f2a5f2a3` | 972 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/subdirectory/gyptest-subdir-default.py` | `2cb6659beb8a7c6aba5dd1f566068432fc180049` | 959 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/subdirectory/gyptest-subdir2-deep.py` | `48548982f8c5d4d09d04f687627879298038f225` | 640 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/subdirectory/gyptest-top-all.py` | `b3c25b1f8d764b8ccd601d46190cbfd7ca38de68` | 1373 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/subdirectory/gyptest-top-default.py` | `2448dd98ea50dc51c2af8a9822a4352aeff174b5` | 1363 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+
+`third_party/python/gyp/test/subdirectory/src/prog1.c` | `218e99401cb2598dddfdd30fed392ef022c7cdf1` | 85 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@3
+Dependencies: stdio.h@1
+
+`third_party/python/gyp/test/subdirectory/src/prog1.gyp` | `2aa66ce7d7f1fc8e7286f6b74e3a545c837de748` | 407 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+## Validation and limits
+
+Every listed blob was read from the pinned Git tree and its Git SHA-1 was recomputed. Extraction is structural only. Read implementations, callers, build conditions, and tests before making a behavior claim. Runtime behavior and historical reasons remain unverified. Reproduce a file with `git show 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b:path` in the corresponding source clone. The full study coverage and navigation note records aggregate results.
+
+## Retrieval correction
+
+This copy preserves the source map in [9c978783-60ce-4ddf-98a7-6c47e828ba5a.md](9c978783-60ce-4ddf-98a7-6c47e828ba5a.md). The original was imported and committed by concurrent console maintenance during this study. Its full path metadata could exceed the console search budget. This copy uses component scope metadata while keeping every file path in the body. It adds no independent behavior evidence. Original record: `19acf7d127f422715d95f72315b114b489854a4e22306541135e5a2008635a63`.

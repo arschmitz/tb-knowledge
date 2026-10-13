@@ -1,0 +1,1387 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:14:46.642314+00:00","paths":["browser"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013","portableCopies":["027dcf3ad15d9a719da11fae6ed8691b2799270b9bb4921049cb692c52e2eb8b"],"sourceAt":"2026-10-13T04:14:46.642314+00:00","correctionOf":"notes/c239053c-e350-4b2f-bdee-569bff61a34a.md"}} -->
+# firefox/browser structural source map 24
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. This is an automated navigation map, not a behavior review.
+Each row gives the repository-relative path, Git blob ID, byte size, role inferred from the path, declaration candidates, and literal dependency candidates. `@N` is the source line.
+Candidates come from line-based patterns. They can miss multiline, anonymous, macro-generated, and language-specific declarations or match comments and fixture text. Dependencies are not resolved imports, runtime calls, or a complete graph. No candidates does not mean no functions or dependencies.
+Imported code and tests are included. Binary and non-UTF-8 files have a census entry but no declaration extraction. Symlink contents are scanned as text, not followed. No uncommitted changes, build products, ignored files, or untracked files are studied.
+
+## File map
+
+`browser/components/asrouter/content/asrouter-admin.html` | `032159c5e29c33c97bf173f305469daa9fde6d14` | 1379 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/arrow-down-tiny.svg` | `d3658972045c8968049de7781a8cc23308aaecaf` | 1081 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/checkmark-16.svg` | `3673a58f7fc9b40d65dd022376dc5836180e657b` | 820 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/close-16.svg` | `ba37e0785b1331d16241b51694d589a393d7947b` | 496 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/desktop-to-mobile-banner.svg` | `44d8aeedb9ec5babf6a4f5bd3c0701a76f314755` | 48100 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/desktop-to-mobile-eu-QR.svg` | `9cdd1288e4bca799b6e84f6147c15750bbe873b1` | 34370 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/desktop-to-mobile-non-eu-QR.svg` | `65d97d13a501917586b3cf2e57358fe43495ceb5` | 20878 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/fox-with-box-on-cloud.svg` | `0f92a36063ecf360fdc357a68c9ce08e27df8ab9` | 54309 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/fox-with-checkmark.svg` | `c7d6b361a722159b3b684a048af908a71524bc0f` | 23879 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/fox-with-devices.svg` | `b19844b6a4c5ca3591a844f4ab0fc04cda5faed3` | 32926 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/fox-with-locked-box.svg` | `0b02f7fc0ffa5b4d1cbe6453c1d6c8fb4a7a9d88` | 40847 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/fox-with-mobile.svg` | `ecd4fa722bfaa3f4d9e84f3013b962225b52ed00` | 17857 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/fox-with-profiles.svg` | `4221f172cb7bc93c3e0ea67f2f2239a52ea03d04` | 14237 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/glyph-mail-mask-16.svg` | `527ceb9cb6e87e6a2b90c9786684543eae99ebf4` | 3530 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/hero-relay-email-masks.svg` | `0f042b10625cd15dbb683f161ad2ee2cd88825b1` | 11880 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/kit-checkmark-flipped.svg` | `675d9bc4a38c53ce794c1dd5182636b8d1ee1353` | 25083 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/kit-checkmark.svg` | `e25faa484220e9df13154bb72268e85cb93bc88d` | 23260 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/kit-peek-bottom.svg` | `db667fff1dd26296596ef7823ddb6c30a8095b79` | 13027 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/kit-peek.svg` | `94c22803793ece34697a1ec8f7612cf2ea49a06f` | 11793 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/shield-checkmark-16.svg` | `3d656bc4b1ec4226b7eff7ff432010ed41fc1e5a` | 1570 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/smiling-fox-icon.svg` | `592323f7f54ea31af4a25ffa0e07a8f3daad7a77` | 2915 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/subtract-16.svg` | `71cdadc4e9fd100cb39b36ff63f26e137f6fdb17` | 455 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/tabgroups/hort-animated-dark.svg` | `f3ed890c21be2293e6a95887d3eadfb0e07525d2` | 33016 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/tabgroups/hort-animated-light.svg` | `21679e9b3b8885168d77b5f87867c7108fef4211` | 31894 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/tabgroups/hort-static-dark.svg` | `bbe38cc0b665e95cced76187f6f8f46a01e3af06` | 15322 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/tabgroups/hort-static-light.svg` | `51ebcd55c04f00faffc878d82f55f51311fa44f5` | 14796 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/tabgroups/vert-animated-dark.svg` | `145458e04f91a9b418284dc8284bad1aeea39594` | 21567 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/tabgroups/vert-animated-light.svg` | `ee412089899594d2216ac80bec80f165baaab630` | 22223 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/tabgroups/vert-static-dark.svg` | `e80f052b6a0b9467968a7c5079f0e6cbc6ed2f9e` | 13831 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/assets/tabgroups/vert-static-light.svg` | `db4ac894ae5cb5d20318d2473d295ee982cc59b0` | 13719 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/components/ASRouterAdmin/ASRouterAdmin.css` | `332dd1228f8de6e50bd431f7db16f11ac86ae72d` | 13483 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/components/asrouter-newtab-message/ASRouterNewTabMessageChild.sys.mjs` | `a9d264edf76d3726a890fe8288da3fe77f4604ee` | 1839 bytes | source | UTF-8 | mode 100644
+Declarations: ASRouterNewTabMessageChild@5; handleEvent@6
+
+`browser/components/asrouter/content/components/asrouter-newtab-message/ASRouterNewTabMessageParent.sys.mjs` | `14c91eac62dd5af51a0b3c919ca69cb007201130` | 2057 bytes | source | UTF-8 | mode 100644
+Declarations: ASRouterNewTabMessageParent@15; receiveMessage@16
+
+`browser/components/asrouter/content/components/asrouter-newtab-message/asrouter-newtab-message.css` | `0f6c112be6705c0c68b9c6da6efb94394bcaacae` | 2715 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/components/asrouter-newtab-message/asrouter-newtab-message.mjs` | `a1528ad680b0f8c3e88ad366f9b1d33fc335fb8c` | 14968 bytes | source | UTF-8 | mode 100644
+Declarations: ASRouterNewTabMessage@29; connectedCallback@65; disconnectedCallback@79; updated@92; setMatchedState@163; specialMessageAction@210; render@416
+Dependencies: chrome://global/content/vendor/lit.all.mjs@9; chrome://global/content/lit-utils.mjs@10; chrome://global/content/elements/moz-button.mjs@12
+
+`browser/components/asrouter/content/components/asrouter-newtab-message/asrouter-newtab-message.stories.mjs` | `847ab9df10ee27b8bc71a85507a7469e5fc75521` | 3913 bytes | source | UTF-8 | mode 100644
+Dependencies: lit.all.mjs@6; ./asrouter-newtab-message.mjs@7; ./asrouter-newtab-message.css@8
+
+`browser/components/asrouter/content/components/asrouter-newtab-multistage/asrouter-newtab-multistage.bundle.js` | `6c1a243c21257105374a48f7132d83c24d0a0bb8` | 272371 bytes | source | UTF-8 | mode 100644
+Declarations: checkPropTypes@50; emptyFunction@125; emptyFunctionWithReset@126; shim@130; getShim@144; emptyFunctionThatReturnsNull@214; getIteratorFn@237; is@323; PropTypeError@343; createChainableTypeChecker@351; checkType@356; createPrimitiveTypeChecker@409; validate@410; createAnyTypeChecker@429; createArrayOfTypeChecker@433; validate@434; createElementTypeChecker@454; validate@455; createElementTypeTypeChecker@466; validate@467; createInstanceTypeChecker@478; validate@479; createEnumTypeChecker@490; validate@505; createObjectOfTypeChecker@525; validate@526; createUnionTypeChecker@548; validate@565; createNodeChecker@583; validate@584; invalidValidatorError@593; createShapeTypeChecker@600; validate@601; createStrictShapeTypeChecker@622; validate@623; isNode@654; isSymbol@701; getPropType@726; getPreciseType@745; getPostfixForTypeWarning@762; getClassName@778; toObject@839; shouldUseNative@847; defaultSetTimout@930; defaultClearTimeout@933; runTimeout@956; runClearTimeout@981; cleanUpNextTick@1013; drainQueue@1028; Item@1066; noop@1080; isValidElementType@1147; typeOf@1152; isAsyncMode@1209; isConcurrentMode@1220; isContextConsumer@1223; isContextProvider@1226; isElement@1229; isForwardRef@1232; isFragment@1235; isLazy@1238; isMemo@1241; isPortal@1244; isProfiler@1247; isStrictMode@1250; isSuspense@1253; z@1301; pickConfigurableStyles@1401; resolveImageSrc@1414; requestAnimationFrame@1471; handleUserAction@1553; handleImpressionAction@1556; sendImpressionTelemetry@1571; sendDismissTelemetry@1598; fetchFlowParams@1605; sendEvent@1622; getLoadingStrategyFor@1630; handleCampaignAction@1633; getValidStyle@1645; getTileStyle@1658; useLanguageSwitcher@1687; LanguageSwitcher@1795; requestAnimationFrame@1809; translateMenuitem@2029; addMenuitems@2055; renderSegment@2260; getDefaultInstallCompleteLabel@2410; onClick@2431; handleInstallClick@2478; handleAuthorClick@2494; onClick@2598; _extends@2656; getOrderedIds@3028; evaluateTargeting@3459; onButtonClick@3475; determineProgressValue@3535; handleTileClick@3560; handleRemoveChecklistClick@3576; ContentTiles_extends@3933; getTileImpressionContext@3965; onKeyDown@4047; onFocusIn@4055; getTileMultiSelects@4118; getTileActiveMultiSelect@4121; resolveCornerImagePosition@4325; resolveDirectionalImage@4337; useMediaQuery@4454; ProtonScreen@4634; componentDidMount@4635; getScreenClassName@4651; renderPicture@4698; getLoadingStrategy@4714; renderNoodles@4783; renderLastCardImage@4796; renderCornerImage@4817; renderLanguageSwitcher@4845; renderDismissButton@4854; renderMoreButton@4874; renderStepsIndicator@4881; hasAnimatedContent@4920; getEffectiveBackground@4923; getEffectiveHeroImageUrl@4932; renderAnimationPlayPauseButton@4938; renderSecondarySection@4952; renderHeroText@4975; renderOrderedContent@5008; renderRTAMOIcon@5035; getCombinedInnerStyles@5046; getActionButtonsPosition@5055; renderActionButtons@5067; render@5084; addUtmParams@5762; requestAnimationFrame@5900; setTimeout@5924; setTimeout@5952; external_React_default@6264; WelcomeScreen@6345; constructor@6346; handleOpenURL@6350; handleMigrationIfNeeded@6391; applyThemeIfNeeded@6398; handlePickerAction@6406; resolveActionFromContent@6420; handleAction@6442; setMultiSelectActions@6533; setTextInputActions@6597; render@6654; MultistageWithDismiss@6712; onDismiss@6717; async@6813
+
+`browser/components/asrouter/content/components/asrouter-newtab-multistage/asrouter-newtab-multistage.css` | `961314430fff4a6e0affb312235c8a065eb5c4dc` | 244734 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/components/menu-message/menu-message.css` | `8ca09c1cee6b5b6fb2f6c234d470611ae9e768f0` | 5810 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/content/components/menu-message/menu-message.mjs` | `3a7fd6b672c5169b1c7f642c78700c7db5803a17` | 6890 bytes | source | UTF-8 | mode 100644
+Declarations: MenuMessage@15; constructor@41; handleClose@71; handlePrimaryButton@80; isRowLayout@86; isSplitLayout@90; renderIllustration@94; renderSplitLayout@109; renderRowLayout@144; renderColumnLayout@182; renderBody@216; render@226
+Dependencies: chrome://global/content/vendor/lit.all.mjs@5; chrome://global/content/lit-utils.mjs@6; chrome://global/content/elements/moz-button.mjs@8
+
+`browser/components/asrouter/content/components/menu-message/menu-message.stories.mjs` | `62eacedf0c2a9047e01f081eb1f99edb58668f34` | 3067 bytes | source | UTF-8 | mode 100644
+Dependencies: lit.all.mjs@6; chrome://global/content/elements/moz-card.mjs@7; ./menu-message.mjs@8
+
+`browser/components/asrouter/content/components/remote-text.js` | `970b7c37f9a93ef4a443c85b8f2b2ad605b67544` | 2710 bytes | source | UTF-8 | mode 100644
+Declarations: MozRemoteText@13; constructor@14; fluentAttributeValues@21; render@39; setVariable@60; observedAttributes@65; attributeChangedCallback@69; connectedCallback@73
+
+`browser/components/asrouter/content/render.js` | `66d6a05d3b816efbfaa36b685e235e81ce49ec9c` | 315 bytes | source | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/about-welcome.md` | `743564d5c2a39fc8c348bfcc2020e8671ae5245b` | 9334 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/aboutwelcome-1.png` | `416d82e342016fa8480652322c414db7f0268fee` | 122426 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/aboutwelcome-addons-picker.png` | `b9d8151be4cfb228dacda679dc30553d95dfd0e7` | 65230 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/aboutwelcome-migration-wizard.png` | `0b54ab8a5beb8aaaaad921a9cfa99303bf54c344` | 32282 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/aboutwelcome-mobile-downloads.png` | `8422f46c57bc8a6db7c92bd9e634987830f6a927` | 30971 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/aboutwelcome-multiselect.png` | `eb63039a0419345d021e959ad464bced34ece067` | 28402 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/aboutwelcome-res-1.png` | `32b2ccc08dbaa3636f07bf050385297fad92ba17` | 104640 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/aboutwelcome-single-select-picker.png` | `f0e8ff5ee05a3c29dcb8c0bfc847aa37801399ca` | 28594 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/aboutwelcome-themes.png` | `10a8ef280ecd9fa1c99ff5e476f1109a60edf2fb` | 27909 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/action-only.md` | `e62570f1f4fcc23dc411561ddc6e8516ff9bf1ac` | 1234 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/amo-install-page.png` | `09c8bbadcff708764b3d8734c3cb3878eb034ed2` | 507452 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/asrouter-general.png` | `1918d74bbbf3af931b7df2916e35e75c3764391a` | 414745 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/asrouter-impressions.png` | `5470776115b53608050074fab8b1f5a914d9dc21` | 299043 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/asrouter-newtab-message.md` | `c4fcc3c4b4bcb3ab3cfbd612af43109f719c582d` | 10235 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/asrouter-newtab-multistage-message.md` | `fe422c4c59fbb3943d7adb71cfab95a4af36941a` | 7273 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/asrouter-targeting.png` | `9a2955fe3d5512cea2248ca0229a709d2fbc4164` | 302978 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/building-and-testing.md` | `2e85a4a9e18160953ba78265395650d54f051370` | 4231 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/carousel-card.png` | `89ccdda0f886f712e737840d92341fd9ef59fdd9` | 36752 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/content-tiles.png` | `656fbbccb8d5a59bb972bf00f6ae94eaf20706c3` | 50892 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/debugging-docs.md` | `bf07c805ddf2d41bafda06c1a05e6bc042726d4e` | 5739 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/feature-callout-survey.png` | `396048d1ba2b5688c7634917430aa7bc9081aeb1` | 12534 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/feature-callout.md` | `2aa2fe12eaa5efc036c06b6248b8d21df3cb0db2` | 48893 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/feature-callout.png` | `8c710145b9470cff18d1965c1070f0bd3f709fa7` | 188755 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/first-run.md` | `1592fc669758a829359fb9c9a84426ffc6c95bf0` | 6225 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/frequency-caps.md` | `100e69a00f896cf46559347105feb0f302760853` | 3094 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/index.md` | `12fe03f1025986819563ec2e372e9f1e134f647b` | 4961 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/infobar.png` | `a0bf13768907dd30f63350a4d97c3b34f9e452f8` | 106424 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/infobars.md` | `7697e91aa1e60e2e3535393fac99a31509c65b1f` | 2367 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/menu-message-bottom-layout.png` | `5e4fad9b6fd9fae458fedfa444beaf32085e39c0` | 100745 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/menu-message-simple-layout.png` | `8fd603b7b1fe78b91a63f106fa31bff99f6dd63e` | 36549 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/menu-message-split-layout.png` | `752963e7e12398612e17a89cd68dc1b293843c85` | 81339 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/menu-message.md` | `814c5891618eaf33c61e0a45ddbbc6203c9bf08c` | 4116 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/menu-message.png` | `4a949787963d9f73bed1d497939b48be30a5e602` | 155514 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/message-groups.png` | `b07e891f7ec1d600156af3b6027f709f84bdf244` | 165762 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/message-routing-overview.png` | `0ec2ec3c14a638fc2bcbb1beab7f2aa68aec5525` | 50250 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/messaging-glossary.md` | `f467fd39b9bbe69b1b17e6eec9ec76d29604bfd8` | 14646 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/messaging-surfaces.md` | `c4356ab3b1925fc523487a4bba1dc9933040b84f` | 8117 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/moments-image.png` | `d6688264d02c1c0aaab6278d81acb9d0a63523e0` | 151811 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/moments-page.md` | `73af05ade91c8cb81033f6c831466a53de6329c9` | 3159 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/multi-message.md` | `ae2e94fd112f697b63d9fad0de07e3b2c431e66e` | 3234 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/multi-message.svg` | `12e28fe82418775cc43105a58132c2f6302286b2` | 13860 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/private-browsing.md` | `252f4f3f0a27fd5fbbf21c2057a92690b10f1e8d` | 2511 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/private-browsing.png` | `0ed1f56c4e134bb52b90433d8b544a0464bcba09` | 139858 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/remote_cfr.md` | `21d2f1d05bbd5c87edb0c05143a6e5e03b6f5836` | 9311 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/rtamo-landing-page.png` | `d74597c0b2becff91ce7d01a5fa554bf46b9841e` | 592997 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/selected-PB.png` | `ee6fdcc26e66b8ebbbc66e888c8bbadc56f8dbc6` | 24388 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/sidebar-chatbot-promo.md` | `96659cf69bb931ad068bd0fe4c3d203054120174` | 6178 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/skylight.md` | `547bd9c7e75e57f7874fe24338c6b867a03bef5d` | 2858 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/spotlight-tiles.png` | `fde60f8cb55a3e5b5c518d6ce3f0996112993401` | 16310 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/spotlight.md` | `8c85c8f2ce8a54a59adb4a6dae699d7bbf45ca2a` | 4193 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/spotlight.png` | `8bdd7f6ffd87cbe8e6503d25b01c805e0a6c8408` | 16396 bytes | data-or-other | binary-NUL | mode 100644
+
+`browser/components/asrouter/docs/targeting-attributes.md` | `eacad552b30bf848b24a253ec48065181e8d81e6` | 44720 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/targeting-guide.md` | `0fd59b7ffccc841b8f6cef6b15c55783d20524ab` | 4541 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/docs/telemetry.md` | `4e69caa57f6518de9d9678d7572373359d4f8afa` | 6626 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/asrouter/jar.mn` | `ea04f17e4f59a5379a817bd3cc493faa9477e9e5` | 4758 bytes | build-registration | UTF-8 | mode 100644
+
+`browser/components/asrouter/karma.mc.config.js` | `eecf5cfd511398a61eb0352bcb38b4ff07153361` | 11025 bytes | source | UTF-8 | mode 100644
+
+`browser/components/asrouter/metrics.yaml` | `4d27127f3cf6c03b6b4cf2ca93bcf9b5d3accd40` | 42155 bytes | data-or-other | UTF-8 | mode 100644
+
+`browser/components/asrouter/modules/ASRouter.sys.mjs` | `443451cae1a800039d8c4691ba8554158c433bf7` | 98735 bytes | source | UTF-8 | mode 100644
+Declarations: isMozillaInternalPage@136; isMozillaWebpage@154; isThirdPartyPage@164; reportError@179; errors@187; _localLoader@200; _remoteLoaderCache@204; _remoteLoader@226; _remoteSettingsLoader@338; _getRemoteSettingsMessages@410; _getRemoteSettingsLanguagePackRecord@421; _experimentsAPILoader@448; _handleRemoteSettingsUndesiredEvent@572; _getMessageLoader@590; shouldProviderUpdate@613; _loadDataForProvider@620; loadMessagesForProvider@645; _delocalizeValues@712; cleanupCache@746; locale@767; _ASRouter@790; constructor@791; onPrefChange@831; _updateMessageProviders@864; state@931; state@935; _resetInitialization@950; hasGroupsEnabled@968; isExcludedByProvider@983; _checkGroupEnabled@1001; loadAllMessageGroups@1023; loadMessagesFromAllProviders@1053; _fireMessagesLoadedTrigger@1127; _onLocaleChanged@1157; observe@1181; toWaitForInitFunc@1189; uninit@1293; setState@1327; updateTargetingParameters@1350; getMessageById@1364; _loadLocalProviders@1368; _updateMultiprofileData@1378; getTargetingParameters@1402; resolve@1404; _handleTargetingError@1447; _getMessagesContext@1461; messageImpressions@1466; previousSessionEnd@1469; screenImpressions@1472; evaluateExpression@1478; unblockAll@1492; hasValidProfileScope@1496; isUnblockedMessage@1518; isBelowFrequencyCaps@1531; _isBelowItemFrequencyCap@1574; _shouldSkipForAutomation@1603; _findProvider@1614; _isAllowedActionOnlyMessageAction@1629; routeCFRMessage@1675; addScreenImpression@1787; addImpression@1812; _addImpressionForItem@1871; getLongestPeriod@1905; cleanupImpressions@1925; _cleanupImpressionsForItems@1966; _cleanupMultiProfileImpressions@2063; shouldShowMessagesToProfile@2098; setMessageById@2230; blockMessageById@2234; unblockMessageById@2290; resetGroupsState@2322; resetMessageState@2331; resetScreenImpressions@2358; editState@2377; _validPreviewEndpoint@2420; _loadAllowHosts@2439; _triggerHandler@2444; setAttributionString@2458; forceAttribution@2470; sendPBNewTabMessage@2494; _recordReachEvent@2541; hasMessageForTrigger@2594; _onExperimentEnrollmentsUpdated@2725; forcePBWindow@2742
+Dependencies: resource:///modules/asrouter/MessagingExperimentConstants.sys.mjs@83; resource:///modules/asrouter/OnboardingMessageProvider.sys.mjs@84
+
+`browser/components/asrouter/modules/ASRouterDefaultConfig.sys.mjs` | `1f83fb3b4106b270465edbfe2f7458640a94e814` | 3019 bytes | source | UTF-8 | mode 100644
+Dependencies: resource:///modules/asrouter/ASRouter.sys.mjs@5; resource:///modules/asrouter/ASRouterParentProcessMessageHandler.sys.mjs@6; resource:///modules/asrouter/ASRouterTelemetry.sys.mjs@7; resource:///modules/asrouter/ASRouterPreferences.sys.mjs@20; resource:///modules/asrouter/ASRouterTargeting.sys.mjs@21; resource:///modules/asrouter/ASRouterStorage.sys.mjs@22
+
+`browser/components/asrouter/modules/ASRouterNewTabHook.sys.mjs` | `53e825db9381be3175282677b6f0abb621d2f28d` | 3536 bytes | source | UTF-8 | mode 100644
+Declarations: ASRouterNewTabHookInstance@5; constructor@6; initialize@36; destroy@52; connect@70; disconnect@78; AwaitSingleton@83; constructor@84
+
+`browser/components/asrouter/modules/ASRouterParentProcessMessageHandler.sys.mjs` | `390bfcd647c428473d6edc69e7c3f980d61300be` | 6060 bytes | source | UTF-8 | mode 100644
+Declarations: ASRouterParentProcessMessageHandler@9; handleCFRAction@26; handleMessage@47
+Dependencies: resource:///modules/asrouter/ASRouterPreferences.sys.mjs@5; resource:///modules/asrouter/ASRouterScreenUtils.sys.mjs@6; resource:///modules/asrouter/ActorConstants.mjs@7
+
+`browser/components/asrouter/modules/ASRouterPreferences.sys.mjs` | `6795175a68ed6ddc0e7e589d2d9e1a2080615dd4` | 9804 bytes | source | UTF-8 | mode 100644
+Declarations: _ASRouterPreferences@85; constructor@86; _transformPersonalizedCfrScores@104; _getProviderConfig@114; providers@132; enableOrDisableProvider@145; resetProviderPref@161; _migrateProviderPrefs@176; _maybeSetMessagingProfileID@200; devtoolsEnabled@242; observe@252; getUserPreference@262; getAllUserPreferences@267; setUserPreference@275; addListener@282; removeListener@286; init@290; uninit@311
+
+`browser/components/asrouter/modules/ASRouterScreenUtils.sys.mjs` | `922a4fe314ad44127c54998ccf14683f2c18a764` | 8464 bytes | source | UTF-8 | mode 100644
+Declarations: removeScreens@23; evaluateScreenTargeting@38; getUnhandledCampaignAction@55; evaluateTargetingAndRemoveScreens@76; prepareContentForFirstPaint@107; filterTileTargeting@124; addScreenImpression@171; hasSeenScreen@181; isAllowedImpressionAction@193; handleImpressionAction@228
+
+`browser/components/asrouter/modules/ASRouterStorage.sys.mjs` | `7026dd26d7c6beb2e9767ff2d33e92a1de872ede` | 13173 bytes | source | UTF-8 | mode 100644
+Declarations: ASRouterStorage@15; constructor@22; pendingWriteCount@33; db@37; _trackedSet@47; flush@55; getDbTable@65; _getStore@85; _get@89; _getAll@95; _getAllKeys@101; _set@107; _openDatabase@113; createOrOpenDb@136; _registerLifecycleHandlers@162; _requestWrapper@173; getSharedMessageImpressions@192; getSharedMessageBlocklist@235; setSharedMessageImpressions@268; async@285; async@297; setSharedMessageBlocked@339; async@385; resetSharedMessageStorage@412; async@421; getDefaultOptions@448
+
+`browser/components/asrouter/modules/ASRouterTargeting.sys.mjs` | `a74fb2e2fc607a80f1aab7303cb68195f6722624` | 63692 bytes | source | UTF-8 | mode 100644
+Declarations: _extractMailDomainFromURI@273; CachedTargetingGetter@292; expire@302; get@306; CacheUnhandledCampaignAction@317; expire@321; get@325; CheckBrowserNeedsUpdate@354; setUp@361; expire@365; get@369; expireAll@401; getMailtoHandlerHost@489; getProfileGroupProfileCount@527; findBackupsInWellKnownLocations@544; getRelayProfileInfo@562; getCrashData@572; sortMessagesByWeightedRank@606; getSortedMessages@625; parseAboutPageURL@673; getAutofillRecords@718; decodeAttributionValue@738; getPinStatus@760; getSelectedTabURI@764; locale@778; localeLanguageCode@781; browserSettings@787; attributionData@793; currentDate@797; currentTabPageCategory@802; canCreateSelectableProfiles@806; hasSelectableProfiles@812; profileAgeCreated@815; profileAgeReset@818; profileLastUse@821; canResetProfile@831; isFirefoxReinstalled@834; usesFirefoxSync@837; isFxAEnabled@840; isFxASignedIn@843; sync@857; xpinstallEnabled@864; addonsInfo@868; searchEngines@914; recentSearchCount@947; isDefaultBrowser@957; isDefaultBrowserUncached@960; hasAttemptedSetDefault@963; isOneClickSetDefaultEnabled@966; devToolsOpenedCount@971; topFrecentSites@974; recentBookmarks@984; pinnedSites@987; providerCohorts@998; totalBookmarksCount@1004; firefoxVersion@1007; region@1010; needsUpdate@1013; savedTabGroups@1016; currentTabGroups@1019; tabsOpenInTopWindow@1030; installedWebAppsCount@1039; currentTabInstalledAsWebApp@1042; hasPinnedTabs@1063; hasActiveAIWindow@1075; isSmartTabGroupingAllowed@1078; hasAccessedFxAPanel@1081; userPrefs@1084; totalBlockedCount@1090; blockedCountByType@1093; attachedFxAOAuthClients@1120; relayProfileInfo@1130; relayEmailMasksCount@1133; isRelayFreeTier@1138; platformName@1143; userId@1146; profileRestartCount@1149; homePageSettings@1163; newtabSettings@1175; activeNotifications@1187; isMajorUpgrade@1237; hasActiveEnterprisePolicies@1241; userMonthlyActivity@1245; allowedNotificationOrigins@1249; doesAppNeedPin@1256; doesAppNeedPinUncached@1265; doesAppNeedPrivatePin@1269; launchOnLoginEnabled@1273; launchOnLoginAllowedByPolicy@1283; isMSIX@1290; packageFamilyName@1303; isBackgroundTaskMode@1324; backgroundTaskName@1338; userPrefersReducedMotion@1345; distributionId@1354; fxViewButtonAreaType@1366; alltabsButtonAreaType@1371; html@1377; pdf@1380; mailto@1383; defaultPDFHandler@1388; mailtoHandlerHost@1392; creditCardsSaved@1396; addressesSaved@1400; hasMigratedBookmarks@1409; hasMigratedCSVPasswords@1420; hasMigratedHistory@1429; hasMigratedPasswords@1438; useEmbeddedMigrationWizard@1450; newtabAddonVersion@1460; isRTAMO@1470; isDeviceMigration@1485; isSmartWindowOnboarding@1497; unhandledCampaignAction@1512; primaryResolution@1524; archBits@1543; systemArch@1556; memoryMB@1564; totalSearches@1577; profileGroupId@1581; currentProfileId@1585; profileGroupProfileCount@1592; buildId@1596; backupsInfo@1600; backupArchiveEnabled@1612; backupRestoreEnabled@1622; isEncryptedBackup@1632; isPrivateWindow@1641; isTaskbarTabWindow@1652; canRestoreLastSession@1662; autoRestoreSessionEnabled@1671; tabNotesCount@1679; userWeekdaysActiveInLastMonth@1684; userActiveDaysWithHundredPlusSites@1696; experimentsLoaded@1707; crashCount@1731; daysSinceLastCrash@1742; crashCountInLastDay@1759; crashCountInLastWeek@1773; isLaunchOnLogin@1785; previousSessionCrashed@1794; addAIWindowTargeting@1799; QuitDuringSnapshotError@1818; observe@1852; resolve@1866; getMessageTriggers@1937; isTriggerMatch@1944; getCachedEvaluation@1985; checkMessageTargeting@2006
+
+`browser/components/asrouter/modules/ASRouterTelemetry.sys.mjs` | `1ae15f8a75f1d9fdf6471ded6d8fd4835fcdb6df` | 9214 bytes | source | UTF-8 | mode 100644
+Declarations: ASRouterTelemetry@42; constructor@43; telemetryClientId@47; getOrCreateImpressionId@54; isInCFRCohort@68; createASRouterEvent@78; applyCFRPolicy@136; applyToolbarBadgePolicy@156; applyInfoBarPolicy@164; applySpotlightPolicy@171; applyToastNotificationPolicy@178; applyMenuMessagePolicy@185; applySmartWindowPromoPolicy@192; applySidebarChatBotPromoPolicy@199; applyMomentsPolicy@206; applyActionOnlyPolicy@213; applyNewtabMessagePolicy@220; applyUndesiredEventPolicy@227; handleASRouterUserEvent@233; SendASRouterUndesiredEvent@247; onAction@253
+
+`browser/components/asrouter/modules/ASRouterTriggerListeners.sys.mjs` | `c49400864be76220249f465da1a0e66044c298d7` | 72734 bytes | source | UTF-8 | mode 100644
+Declarations: isPrivateWindow@59; checkURLMatch@74; isDirectNavigationUrlbarResult@156; createMatchPatternSet@172; init@205; observe@218; uninit@250; init@276; receiveMessage@301; uninit@314; init@338; observe@346; uninit@357; init@384; uninit@405; handlePlacesEvents@416; init@451; uninit@472; init@521; _updateVisits@570; onTabSwitch@585; triggerHandler@601; onLocationChange@623; uninit@646; init@693; uninit@737; observe@753; _isAddressBarUrlNavigation@776; onLocationChange@785; init@841; uninit@853; handlePlacesEvents@864; init@925; uninit@934; observe@944; init@985; uninit@993; observe@1001; init@1060; uninit@1089; observe@1108; _shouldShowCaptivePortalVPNPromo@1177; init@1181; observe@1189; uninit@1208; init@1226; observe@1237; uninit@1254; init@1275; handleEvent@1290; uninit@1315; init@1334; handleEvent@1349; uninit@1365; init@1384; handleEvent@1399; uninit@1414; init@1433; handleEvent@1448; uninit@1463; init@1482; handleEvent@1497; uninit@1512; _isVisible@1560; _soundPlaying@1565; init@1570; observe@1611; handleEvent@1668; _onActive@1701; uninit@1725; log@1743; init@1761; uninit@1786; showFeatureCalloutTour@1804; onLocationChange@1835; handleEvent@1859; onBrowserWindow@1905; init@1918; uninit@1943; showFeatureCalloutTour@1961; onLocationChange@1992; handleEvent@2018; onBrowserWindow@2066; init@2079; handleEvent@2103; uninit@2141; init@2159; uninit@2180; _clearVisit@2194; handleEvent@2202; init@2268; uninit@2271; init@2288; uninit@2291
+
+`browser/components/asrouter/modules/ActorConstants.mjs` | `ecf1bc19d434f4a2297bfb8aefc0035cd28c803b` | 1421 bytes | source | UTF-8 | mode 100644
+
+`browser/components/asrouter/modules/BookmarksBarButton.sys.mjs` | `f7d10657993dc47382262ec08c9cb7d49a843d38` | 4083 bytes | source | UTF-8 | mode 100644
+Declarations: showBookmarksBarButton@18; handleExperimentUpdate@46; onCreated@54; onCommand@79; onWidgetRemoved@105; onDestroyed@109
+
+`browser/components/asrouter/modules/FeatureCallout.sys.mjs` | `bb0eba92ef596e1c30176f563863a04f81286f33` | 97373 bytes | source | UTF-8 | mode 100644
+Declarations: FeatureCallout@33; setupFeatureTourProgress@103; teardownFeatureTourProgress@113; featureTourProgress@120; _loadPageEventManager@130; _addPositionListeners@137; _removePositionListeners@144; _addPanelConflictListeners@151; _removePanelConflictListeners@159; onViewOpen@171; _handlePrefChange@175; _advanceScreens@213; _advanceOnTourPrefChange@320; handleEvent@424; _addCalloutLinkElements@513; _getAnchor@712; _isElementVisible@807; _resolveSelectorAndScope@835; _convertPopupAttachmentPoint@958; _getPanelPositionString@999; _setPanelMethods@1016; _createContainer@1079; _positionCallout@1217; availableSpace@1330; position@1338; availableSpace@1349; position@1353; availableSpace@1364; position@1368; availableSpace@1386; position@1390; availableSpace@1408; position@1416; availableSpace@1427; position@1435; availableSpace@1446; position@1454; availableSpace@1465; position@1473; _setupWindowFunctions@1655; _clearWindowFunctions@1703; _emitEvent@1719; endTour@1723; _dismiss@1787; _addScriptsAndRender@1800; _observeRender@1835; _updateConfig@1849; _loadConfig@1922; _renderCallout@1940; _attachPageEventListeners@1991; _handlePageEventAction@2011; _getUniqueElementIdentifier@2078; getAutoFocusElement@2124; showFeatureCallout@2161; _initTheme@2278; _applyTheme@2293; _setThemeVariable@2330
+
+`browser/components/asrouter/modules/FeatureCalloutBroker.sys.mjs` | `080d1c7d552964d4956275f201218f00f772e416` | 7882 bytes | source | UTF-8 | mode 100644
+Declarations: _FeatureCalloutBroker@40; makeFeatureCallout@48; showFeatureCallout@83; showCustomFeatureCallout@162; handleFeatureCalloutCallback@199; isCalloutShowing@212
+
+`browser/components/asrouter/modules/FeatureCalloutMessages.sys.mjs` | `ad4d1c7e928ffb5d235c98cd3a0708949f69b478` | 45585 bytes | source | UTF-8 | mode 100644
+Declarations: add24HourImpressionJEXLTargeting@49; getMessages@1319
+
+`browser/components/asrouter/modules/InfoBar.sys.mjs` | `fe95571d5b11a508939e05bc806e1c975c5c0bf7` | 27193 bytes | source | UTF-8 | mode 100644
+Declarations: InfoBarNotification@29; constructor@30; _ensureLinkTemplatesFor@54; _buildMessageFragment@84; showNotification@179; formatMessageConfig@289; formatButtonConfig@333; handleImpressionAction@344; addImpression@373; buttonCallback@395; dispatchUserAction@412; infobarCallback@423; _maybeAttachPrefObserver@468; _removePrefObserver@503; removeUniversalInfobars@522; sendUserEventTelemetry@551; maybeLoadCustomElement@569; maybeInsertFTL@578; isValidInfobarWindow@588; showNotificationAllWindows@614; _showWhenLoaded@642; _maybeReplaceActiveInfoBar@667; showInfoBarMessage@702; observe@804
+
+`browser/components/asrouter/modules/MenuMessage.sys.mjs` | `cbf43ace23a23f3283c6d3e01d901fbf191f7dab` | 11444 bytes | source | UTF-8 | mode 100644
+Declarations: showMenuMessage@37; shouldSuppressForSignedIn@78; preparePrimaryAction@98; showAppMenuMessage@124; hideAppMenuMessage@173; showPxiMenuMessage@191; hidePxiMenuMessage@239; constructMenuMessage@251; recordMenuMessageTelemetry@353
+
+`browser/components/asrouter/modules/MessagingExperimentConstants.sys.mjs` | `2cd0a1bfdbeccd1944ae8899328ea801e4052dbe` | 1876 bytes | source | UTF-8 | mode 100644
+
+`browser/components/asrouter/modules/MessagingTargetingConstants.sys.mjs` | `6397d209d1e82f6e3f7a63af22f6bdc8d83ac52f` | 4104 bytes | source | UTF-8 | mode 100644
+
+`browser/components/asrouter/modules/MomentsPageHub.sys.mjs` | `7c9ce32a05bdb9647ace78b4e2a3a861682c4801` | 4661 bytes | source | UTF-8 | mode 100644
+Declarations: _MomentsPageHub@16; constructor@17; _sendPing@53; sendUserEventTelemetry@60; getExpirationDate@76; executeAction@80; messageRequest@110; checkHomepageOverridePref@139; uninit@146
+
+`browser/components/asrouter/modules/OnboardingMessageProvider.sys.mjs` | `f7d5f7649c6cb902659ce9bde1f0a95ee2c13b5e` | 126286 bytes | source | UTF-8 | mode 100644
+Declarations: getExtraAttributes@3527; getMessages@3535; getPreonboardingMessages@3541; getPreonboardingVariablesWithDefaults@3556; getRestoredFromBackupMessage@3579; getUntranslatedMessages@3595; translateMessages@3601; _doesAppNeedPin@3631; _doesAppNeedDefault@3636; _shouldShowPrivacySegmentationScreen@3645; _doesHomepageNeedReset@3651; getUpgradeMessage@3658; removeScreens@3665; prepareMobileDownload@3675
+Dependencies: resource:///modules/asrouter/FeatureCalloutMessages.sys.mjs@21
+
+`browser/components/asrouter/modules/PageEventManager.sys.mjs` | `a31dbe19412a61823c8eaf2365c24eea4c1daa0d` | 5181 bytes | source | UTF-8 | mode 100644
+Declarations: PageEventManager@12; constructor@49; on@60; off@118; once@134; clear@145; emit@158
+
+`browser/components/asrouter/modules/PanelTestProvider.sys.mjs` | `bc310d29942fc44bf37022cbedbead1eb24da118` | 119152 bytes | source | UTF-8 | mode 100644
+Declarations: tagMessageForTesting@3718; getMessages@3728
+
+`browser/components/asrouter/modules/PinnableSitesProvider.sys.mjs` | `d52b8db85b19160962dce13855859482394d3df3` | 7258 bytes | source | UTF-8 | mode 100644
+Declarations: normalizeHost@37; getExcludedHosts@44; isAlreadyPinned@77; hasIcon@100; getPersonalizedSites@111; personalizedTiles@191; populateTile@214; hasPersonalizedTile@253; populate@262
+
+`browser/components/asrouter/modules/PreonboardingSplash.sys.mjs` | `ed0afa1ca7822c5ccacb0429d78450e8597b62b2` | 7531 bytes | source | UTF-8 | mode 100644
+Declarations: maybeShowStartupSplash@68; _shouldShow@86; _willShowAboutWelcome@140; _getSplashScreens@162; _show@201
+Dependencies: resource://gre/modules/XPCOMUtils.sys.mjs@20
+
+`browser/components/asrouter/modules/RemoteL10n.sys.mjs` | `822b3aec1593eddddca186976fb525756616c1c8` | 5744 bytes | source | UTF-8 | mode 100644
+Declarations: _RemoteL10n@134; constructor@135; createElement@139; setString@157; cfrFluentFileDir@168; cfrFluentFilePath@177; _createDOML10n@193; l10n@230; reloadL10n@237; isLocaleSupported@241; formatLocalizableText@255
+
+`browser/components/asrouter/modules/SidebarChatBotPromo.sys.mjs` | `6b9b65feb747132dc8493d79c8d9591ef9b284a5` | 6029 bytes | source | UTF-8 | mode 100644
+Declarations: getPromoElement@40; showPromo@76; hide@151; handleButtonAction@162; recordTelemetry@169; detachListeners@180; resolveText@188
+
+`browser/components/asrouter/modules/SmartWindowNewTabPromo.sys.mjs` | `b32b65982bd8f64ba56b9baa93a812ce61607f5f` | 4040 bytes | source | UTF-8 | mode 100644
+Declarations: showPromo@26; hide@112; recordTelemetry@120; detachListeners@131; resolveText@139
+
+`browser/components/asrouter/modules/Spotlight.sys.mjs` | `f75e48dadbf8cf15c96c80e065d5e370606cbc1f` | 5094 bytes | source | UTF-8 | mode 100644
+Declarations: isOpen@26; close@30; sendUserEventTelemetry@43; defaultDispatch@59; showSpotlightDialog@74
+
+`browser/components/asrouter/modules/ToastNotification.sys.mjs` | `f15adf09abad19b0ad3af180c29bb85806f31631` | 8226 bytes | source | UTF-8 | mode 100644
+Declarations: AlertsService@29; sendUserEventTelemetry@33; imageUrlForContent@51; showToastNotification@71
+Dependencies: resource://gre/modules/AppConstants.sys.mjs@5; resource://gre/modules/XPCOMUtils.sys.mjs@6
+
+`browser/components/asrouter/modules/ToolbarBadgeHub.sys.mjs` | `5289efadec6589b58d0d4b55ae447373f22aeefe` | 8924 bytes | source | UTF-8 | mode 100644
+Declarations: _ToolbarBadgeHub@17; constructor@18; maybeInsertFTL@63; _clearBadgeTimeout@67; removeAllNotifications@73; removeToolbarNotification@111; addToolbarNotification@129; registerBadgeToAllWindows@186; registerBadgeNotificationListener@207; messageRequest@226; _sendPing@238; sendUserEventTelemetry@245; uninit@259
+
+`browser/components/asrouter/modules/test2` | `b3e40fbf351c8253531ffe089950630308d6ea7f` | 5180 bytes | data-or-other | UTF-8 | mode 100644
+
+`browser/components/asrouter/moz.build` | `4ba87e39bdf56c986acc8b227b34b70536c070e1` | 3069 bytes | build-registration | UTF-8 | mode 100644
+
+`browser/components/asrouter/package-lock.json` | `0afb0df7aec97b428f9c5b825c330babf6abb8cb` | 282613 bytes | data-or-other | UTF-8 | mode 100644
+
+`browser/components/asrouter/package.json` | `b8b9159fe305bd0ea6bbc4b4e33c6a0fc4e49fb5` | 3229 bytes | data-or-other | UTF-8 | mode 100644
+
+`browser/components/asrouter/pings.yaml` | `15c86c26c5676fcd6a7596a8ca7d0a763f58200a` | 1472 bytes | data-or-other | UTF-8 | mode 100644
+
+`browser/components/asrouter/tests/InflightAssetsMessageProvider.sys.mjs` | `645f5ca4bafaa97408b673841475f53eed15d407` | 7432 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getMessages@10
+
+`browser/components/asrouter/tests/NimbusRolloutMessageProvider.sys.mjs` | `880b87d74f5aa948bf4e23bfbbe7c12261447855` | 304837 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getMessages@12
+
+`browser/components/asrouter/tests/browser/browser.toml` | `6cb65372ba15976810be3924785e2633cb330509` | 2174 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`browser/components/asrouter/tests/browser/browser_asrouter_bug1761522.js` | `a29772de9ef9250523d11a490a65ea92e3459213` | 7359 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: serveRemoteSettings@28; async@156; add_task@162; registerCleanupFunction@191; get@209
+
+`browser/components/asrouter/tests/browser/browser_asrouter_bug1800087.js` | `ce4e67374252d1b851800927f732e896da4b3a6f` | 1664 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@17; add_task@21
+
+`browser/components/asrouter/tests/browser/browser_asrouter_experimentsAPILoader.js` | `8f97c89f7120ee7a4fe30e70c6931f431e07e9c9` | 10191 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: setup@89; cleanup@105; assertMessageInState@127; add_task@143; add_task@161; add_task@179; add_task@195; add_task@223; add_task@245; add_task@265; add_task@306
+
+`browser/components/asrouter/tests/browser/browser_asrouter_group_frequency.js` | `73120d6faf25ace2c3e0217c6cc608fdafd73fb7` | 6520 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getInfobarBox@15; getInfobar@19; showAndDismissInfobar@28; add_setup@51; registerCleanupFunction@99; add_task@119
+
+`browser/components/asrouter/tests/browser/browser_asrouter_group_userprefs.js` | `b3704fbbb123e074701caa7b490fe7b3b083e619` | 6015 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getInfobarBox@19; getInfobar@23; add_setup@30; registerCleanupFunction@75; add_task@93
+
+`browser/components/asrouter/tests/browser/browser_asrouter_infobar.js` | `af1cbf976ab3899fa084e5fb1de205d3d2572af4` | 54407 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: recordImpression@24; registerCleanupFunction@36; add_task@53; add_task@106; add_task@174; add_task@218; non_dismissable_notification_does_not_show_close_button@245; getMessageEl@293; getMeaningfulNodes@297; showInfobar@305; add_task@320; add_task@336; add_task@373; add_task@413; add_task@438; add_task@507; add_task@573; add_task@642; add_task@676; add_task@720; add_task@745; add_task@810; test_buildMessageFragment_withInlineAnchor_openUrlAndSMA@852; add_task@924; add_task@966; add_task@1001; add_task@1068; test_impression_action_once_allowed_only_on_first_impression@1115; add_task@1177; add_task@1246; add_task@1293; add_task@1351; add_task@1401; inline_anchor_with_dismiss_closes_and_sends_telemetry@1438; add_task@1500; add_task@1541; add_task@1583; add_task@1670; add_task@1788; add_task@1831; add_task@1869; add_task@1928
+
+`browser/components/asrouter/tests/browser/browser_asrouter_menu_messages.js` | `f1138e5a2e0612dc154421ee80932b1c8f764636` | 27327 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: hideAllPopups@34; assertMessageInMenuSource@83; assertNoMessageInMenuSource@250; reopenMenuSource@318; withEachSource@375; add_setup@391; registerCleanupFunction@408; registerCleanupFunction@417; buildDefaultCtaMessage@425; add_task@454; add_task@504; withTestMessage@509; async@516; add_task@562; async@594; add_task@629; withTestMessage@634; async@643; add_task@730; withTestMessage@734; add_task@746; withTestMessage@753; stubSignedIn@762; add_task@771; withTestMessage@783; withTestMessage@790; withTestMessage@795; add_task@807; withTestMessage@815; async@820
+
+`browser/components/asrouter/tests/browser/browser_asrouter_momentspagehub.js` | `6901e0ee723105fd99c24c919e39aa660e66861f` | 3786 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@16
+
+`browser/components/asrouter/tests/browser/browser_asrouter_newtab_messages.js` | `9b7791f8bcb25d3b613508951171372f713d4ed4` | 42414 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@28; registerCleanupFunction@38; assertActiveNotifications@65; waitForNewTabMessage@72; add_task@84; withTestMessage@89; add_task@123; withTestMessage@135; add_task@181; add_task@239; withTestMessage@243; add_task@272; withTestMessage@276; add_task@305; withTestMessage@309; add_task@349; withTestMessage@353; add_task@387; withTestMessage@393; add_task@427; withTestMessage@432; add_task@473; withTestMessage@478; add_task@524; withTestMessage@544; add_task@586; withTestMessage@596; add_task@621; withTestMessage@637; add_task@675; withTestMessage@694; add_task@741; withTestMessage@761; add_task@790; withTestMessage@793; withTestMessage@826; add_task@850; withTestMessage@870; add_task@953; withTestMessage@969; add_task@1009; assertSingleButton@1023; async@1028; withTestMessage@1059; withTestMessage@1070; add_task@1085; withTestMessage@1109; add_task@1146; withTestMessage@1151; add_task@1183; withTestMessage@1188
+
+`browser/components/asrouter/tests/browser/browser_asrouter_newtab_multistage_messages.js` | `94c7b22b938959665abef0a11fae7179b2b53242` | 12692 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@18; registerCleanupFunction@31; add_task@46; withTestMessage@49; add_task@73; withTestMessage@77; add_task@120; withTestMessage@125; add_task@164; withTestMessage@168; add_task@200; withTestMessage@204; add_task@243; withTestMessage@272; add_task@313; withTestMessage@318
+
+`browser/components/asrouter/tests/browser/browser_asrouter_targeting.js` | `1e627d3bd4bac545c9ce3218839439b167bbf646` | 99742 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: sendFormAutofillMessage@120; removeAutofillRecords@128; add_task@159; add_task@174; add_task@189; add_task@201; onError@203; foo@209; add_task@225; add_task@240; add_task@261; add_task@280; add_task@299; add_task@321; add_task@368; add_task@396; add_task@417; add_task@445; add_task@468; add_task@485; add_task@501; add_task@518; registerCleanupFunction@524; add_task@543; registerCleanupFunction@549; add_task@568; add_task@599; add_task@638; add_task@658; add_task@728; add_task@795; add_task@815; add_task@847; add_task@871; add_task@895; add_task@919; add_task@952; add_task@974; add_task@999; add_task@1015; add_task@1029; add_task@1149; add_task@1256; add_task@1326; add_task@1335; add_task@1345; add_task@1353; add_task@1371; add_task@1399; add_task@1412; add_task@1457; add_task@1502; add_task@1526; add_task@1534; add_task@1553; FakeTabWithNote@1579; constructor@1583; add_task@1589; add_task@1635; add_task@1652; add_task@1671; add_task@1690; add_task@1704; add_task@1733; add_task@1746; add_task@1757; add_task@1764; add_task@1776; add_task@1791; add_task@1810; add_task@1835; add_task@1852; add_task@1862; add_task@1875; add_task@1890; add_task@1914; add_task@1930; add_task@1937; add_task@1945; add_task@1953; add_task@1992; add_task@2000; add_task@2026; add_task@2042; add_task@2053; add_task@2067; add_task@2078; registerCleanupFunction@2103; add_task@2146; add_task@2188; add_task@2206; add_task@2240; add_task@2262; add_task@2290; add_task@2320; registerCleanupFunction@2410; add_task@2429; registerCleanupFunction@2503; add_task@2522; add_task@2542; add_task@2548; add_task@2557; add_task@2565; add_task@2581; add_task@2605; check_activeNotifications_newtab_topic_selection_modal_shown_past@2630; add_task@2647; check_activeNotifications_newtab_topic_selection_modal_shown_recently@2673; add_task@2690; observe@2695; add_task@2716; add_task@2757; add_task@2776; add_task@2810; async@2871; async@2874; registerCleanupFunction@2882; add_task@2910; add_task@2929; add_task@2949; add_task@2986; add_task@3005; add_task@3030; registerCleanupFunction@3042; add_task@3070; registerCleanupFunction@3072; add_task@3097; registerCleanupFunction@3099; add_task@3134; registerCleanupFunction@3136; check_userWeekdaysActiveInLastMonth_counts_only_weekdays@3173; add_task@3196; add_task@3216; check_userActiveDaysWithHundredPlusSites_countsDaysAtOrAbove100@3234; add_task@3257; check_userActiveDaysWithHundredPlusSites_emptyActivityReturnsZero@3278; add_task@3296; add_task@3310; add_task@3326; add_task@3340; add_task@3356; add_task@3370; add_task@3391; add_task@3405; add_task@3431; add_task@3469
+
+`browser/components/asrouter/tests/browser/browser_asrouter_toast_notification-gif.js` | `7aec6400d68e0e739ff7bd266980b745511287da` | 3189 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getMessage@13; add_task@22; add_task@51
+
+`browser/components/asrouter/tests/browser/browser_asrouter_toast_notification.js` | `4bb4cc4ed1f514c30b0d36d1630a725ceb94b9da` | 6144 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getMessage@17; registerCleanupFunction@29; add_task@38; add_task@68; add_task@134; add_task@177
+
+`browser/components/asrouter/tests/browser/browser_asrouter_toolbarbadge.js` | `ab5cbbccc2b7dd3dbb774cbc207f77dca5f0b9bf` | 5605 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: clickToClearBadge@15; add_task@30; registerCleanupFunction@34; add_task@45; add_task@109
+
+`browser/components/asrouter/tests/browser/browser_asrouter_universal_infobar.js` | `67cb0e2663c9e519062df9815114de9b4755cb27` | 45451 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@63; registerCleanupFunction@69; add_task@74; add_task@113; add_task@151; add_task@188; add_task@214; add_task@234; add_task@249; add_task@277; add_task@316; add_task@353; add_task@375; add_task@395; add_task@505; add_task@581; add_task@714; add_task@801; removeObserver@857; registerCleanupFunction@862; add_task@917; add_task@980; add_task@1069; add_task@1147; add_task@1210; add_task@1273; add_task@1348; add_task@1418; add_task@1480; add_task@1522; add_task@1566
+
+`browser/components/asrouter/tests/browser/browser_backup_restore_spotlight.js` | `0fa8ce032f2341fb081cb139f7f4c31a44a3668d` | 5631 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: test_restore_from_backup_messages_not_suffixed_without_pref@15; add_task@32; registerCleanupFunction@37; test_restore_from_backup_messages_reeligible_when_timestamp_changes@64; registerCleanupFunction@70; add_task@128; registerCleanupFunction@133
+
+`browser/components/asrouter/tests/browser/browser_bookmarks_bar_button.js` | `5c35921726a926c133d0c0a3401888155a0724f2` | 7783 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getTestMessage@19; assertTelemetryScalars@46; add_task@66; add_task@92; add_task@132; add_task@183; add_task@211; add_task@241
+
+`browser/components/asrouter/tests/browser/browser_coenrolling_messaging_features.js` | `761880a5f455ef075b984161eb2cfee4d8226ef2` | 14054 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@24; registerCleanupFunction@26; add_task@32; add_task@274
+
+`browser/components/asrouter/tests/browser/browser_feature_callout.js` | `e2a21d64af30bad7d3c5f30c38188b7ff1f82593` | 14925 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@3; registerCleanupFunction@4; getArrowPosition@6; getTestMessage@15; showFeatureCallout@72; add_task@95; add_task@139; add_task@193; add_task@237; add_task@272; add_task@303; add_task@326; testStyles@351; testCallout@371; add_task@383; add_task@395; add_task@407; add_task@467
+
+`browser/components/asrouter/tests/browser/browser_feature_callout_in_chrome.js` | `2fdcbda50621fb9436b1531ea128d4c97f09033c` | 60589 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: openURLInWindow@20; openURLInNewTab@27; add_setup@164; add_task@178; async@392; add_task@474; add_task@615; add_task@638; add_task@653; feature_callout_renders_and_hides_in_chrome_when_switching_tabs@682; feature_callout_disappears_when_navigating_to_non_pdf_url_in_same_tab@736; feature_callout_disappears_when_closing_foreground_pdf_tab@774; feature_callout_does_not_appear_when_opening_background_pdf_tab@808; newtab_feature_callout_appears_in_browser_chrome_on_newtab@842; newtab_feature_callout_does_not_appear_when_opening_background_newtab_tab@878; newtab_feature_callout_does_not_appear_if_newtab_disabled@914; newtab_feature_callout_does_not_appear_in_browser_chrome_on_new_window@950; feature_callout_disappears_when_navigating_from_newtab_to_pdf_url_in_same_tab@985; feature_callout_disappears_when_navigating_from_newtab_to_pdf_url_in_different_tab@1024; feature_callout_is_positioned_relative_to_browser_window@1066; custom_position_callout_is_horizontally_reversed_in_rtl_layouts@1125; add_task@1168; add_task@1199; add_task@1246; add_task@1279; registerCleanupFunction@1288; async@1307; add_task@1375; registerCleanupFunction@1384; add_task@1452; registerCleanupFunction@1461; async@1490; add_task@1559; add_task@1640; add_task@1708; registerCleanupFunction@1717; add_task@1814
+
+`browser/components/asrouter/tests/browser/browser_feature_callout_panel.js` | `f6ee270f09159d3fe2647db19d8863352cb2cf09` | 28612 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getTestMessage@6; showFeatureCallout@52; testCalloutHiddenIf@87; add_task@116; testCalloutHiddenIf@117; add_task@140; add_task@148; add_task@157; testCalloutHiddenIf@158; add_task@177; async@180; add_task@204; async@208; add_task@222; async@266; recursiveTestMenuItems@299; add_task@367; add_task@424; async@438; add_task@501; add_task@538; async@581; add_task@657; async@713; add_task@778; add_task@808; add_task@860
+
+`browser/components/asrouter/tests/browser/browser_multistage_spotlight.js` | `2967d51fbd69f26fa44faa1b54b42a9a15822f3e` | 11467 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: waitForClick@16; showDialog@21; dialogClosed@31; add_task@38; add_task@65; add_task@99; add_task@159; add_task@208; add_task@234; add_task@270; add_task@303; add_task@338
+
+`browser/components/asrouter/tests/browser/browser_multistage_spotlight_telemetry.js` | `ba4aa3ca3510fab159ffa13dabd70caab5a7bd16` | 9494 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: waitForClick@14; waitForDialog@19; showAndWaitForDialog@27; add_task@37; add_task@59; registerCleanupFunction@64; do_not_send_impression_telemetry_from_default_dispatch@122; add_task@143; add_task@191; feedback_full_chat_sent_when_no_alternate_and_toggle_unchecked@257
+
+`browser/components/asrouter/tests/browser/browser_pinnable_sites_personalized.js` | `941392fa70c2a81bf7aed6f19341fd3657fd0255` | 7169 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@25; registerCleanupFunction@34; messageWithTile@47; showDialog@76; closeDialog@86; namesIn@94; stubHistory@101; add_task@113; add_task@162; add_task@185; add_task@208; add_task@232
+
+`browser/components/asrouter/tests/browser/browser_remote_l10n.js` | `9c854b1e74b04bb7f4e49eba89e9dc3e66c2a230` | 2169 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@14; registerCleanupFunction@38; add_task@51; add_task@60
+
+`browser/components/asrouter/tests/browser/browser_spotlight_carousel_nav.js` | `71caf7c0ce49ecef36a211b2fc3c3fd82bc430fe` | 5006 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: carouselScreen@19; dialogClosed@41; showCarousel@48; radioFor@70; keyboardNavigate@74; add_task@79; add_task@118; add_task@138
+
+`browser/components/asrouter/tests/browser/browser_trigger_listeners.js` | `dba07403242a5dc67ace50ed842e4cdff473b918` | 53737 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: _fireObservers@31; addIdleObserver@41; removeIdleObserver@44; waitForUrlLoad@53; test_formAutofillTrigger@59; notifyCreditCardSaved@67; add_setup@153; registerCleanupFunction@176; add_task@182; add_task@219; add_task@247; add_task@277; add_task@307; test_openURL_isAddressBarUrlNavigation_notLeakedForward@332; test_openURL_isAddressBarUrlNavigation_backNavigationAfterSearch@377; add_task@436; add_task@501; getTabClients@517; syncTabs@520; notifyUrlbarUserStartNavigation@591; test_openURL_isAddressBarUrlNavigation_sponsoredSuggestion@599; add_task@632; add_task@664; add_task@682; add_task@714; add_task@735; add_task@756; getIdleTriggerMock@787; add_task@810; add_task@824; add_task@842; add_task@863; add_task@885; add_task@890; add_task@932; add_task@952; add_task@977; add_task@1011; add_task@1041; add_task@1153; add_task@1184; add_task@1249; add_task@1292; add_task@1335; add_task@1359; test_userBookmarkFolderActivity_bookmarkInBuiltInFolder@1391; add_task@1420; add_task@1437; add_task@1477; add_task@1504; withSplitViewUsedTrigger@1546; trackTab@1578; createSplitView@1583; add_task@1606; withSplitViewUsedTrigger@1607; add_task@1625; withSplitViewUsedTrigger@1626; add_task@1646; withSplitViewUsedTrigger@1647; test_splitViewUsed_refires_on_return_without_incrementing_createCount@1672; async@1675; test_splitViewUsed_createCount_increments_on_new_split_view@1710; async@1713; add_task@1742; withSplitViewUsedTrigger@1743
+
+`browser/components/asrouter/tests/browser/browser_trigger_messagesLoaded.js` | `3a58ec198296a6db3ca148c730c802b4bce30516` | 5530 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: removeTestInfobars@52; add_setup@62; registerCleanupFunction@64; add_task@71
+
+`browser/components/asrouter/tests/browser/browser_trigger_nimbusUpdate.js` | `7911f55a597db1d05420f6f3bb102613a45a707b` | 5579 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: removeTestInfobars@52; add_setup@62; registerCleanupFunction@64; add_task@71
+
+`browser/components/asrouter/tests/browser/head.js` | `8daf82d1125ea116212d0ab96e5e3be35e1e6d9e` | 6109 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@43; pushPrefs@47; clearHistoryAndBookmarks@51; waitForUrlLoad@61; waitForCalloutScreen@67; waitForCalloutRemoved@75; TelemetrySpy@93; constructor@98; registerCleanupFunction@103; assertCalledWith@110; reset@126; restore@129; withTestMessage@161
+
+`browser/components/asrouter/tests/browser/messages/browser.toml` | `b933851cc6c81d72166a68de629c7229aa990fd1` | 76 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`browser/components/asrouter/tests/browser/messages/browser_messages_finish_setup.js` | `51f915687e3c2202254bf52dd489752428865ec1` | 6597 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getSetupButton@55; cleanup@64; add_task@71; add_task@122; add_task@188
+
+`browser/components/asrouter/tests/browser/messages/head.js` | `aeb3d03fc5a1c33447d3cffb473a9b0ff22058c7` | 364 bytes | test-path,source | UTF-8 | mode 100644
+
+`browser/components/asrouter/tests/chrome/chrome.toml` | `33280166dfcbeb0eea2a856c5d5f39978c6edeb1` | 38 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`browser/components/asrouter/tests/chrome/test_menu_message.html` | `3c7b2ee468a632918b25da94de3116cde53a384d` | 17590 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`browser/components/asrouter/tests/schemas/asrouter_event_ping.schema.json` | `4834a80e3b4a9c6c12b9a7b9f44398052196ff84` | 738 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`browser/components/asrouter/tests/unit/ASRouter.test.js` | `409c0d53172bd009b3eb624542e0a8b0ee48bd8b` | 124901 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@36; setMessageProviderPref@60; initASRouter@64; createRouterAndInit@111; beforeEach@118; documentGlobal@205; download@295; combineContexts@312; evalWithDefault@316; afterEach@331; describe@338; it@339; describe@346; it@347; it@355; it@365; it@372; it@401; it@414; it@422; it@429; it@452; it@476; it@488; it@494; it@498; it@508; describe@519; afterEach@521; it@523; it@530; it@537; it@550; it@571; it@619; it@648; describe@660; it@661; it@665; it@673; it@698; it@702; it@712; it@731; describe@752; it@753; it@767; describe@775; it@776; describe@787; it@788; it@794; describe@803; beforeEach@805; it@808; it@814; it@820; describe@831; beforeEach@839; it@843; it@867; it@875; it@889; it@901; it@927; it@948; it@976; it@989; it@1001; it@1024; it@1038; it@1072; it@1085; describe@1096; assertRouterContainsMessages@1097; it@1104; it@1122; it@1142; it@1174; it@1223; it@1261; it@1287; it@1307; it@1342; it@1357; it@1371; it@1394; describe@1424; it@1425; it@1442; it@1456; describe@1478; beforeEach@1479; it@1484; it@1497; it@1516; it@1532; it@1549; it@1571; it@1588; it@1598; it@1623; it@1653; it@1675; it@1692; it@1699; it@1731; it@1761; it@1795; describe@1806; it@1807; it@1818; it@1824; it@1834; it@1844; it@1852; describe@1864; it@1865; describe@1871; it@1872; it@1885; it@1910; describe@1917; it@1920; it@1932; it@1944; it@1960; it@1980; describe@2003; it@2004; it@2008; it@2020; it@2025; describe@2034; it@2035; it@2041; it@2054; describe@2060; it@2061; describe@2070; it@2071; describe@2086; beforeEach@2089; afterEach@2114; it@2117; describe@2134; it@2135; it@2181; it@2201; it@2208; it@2250; it@2277; it@2312; describe@2354; beforeEach@2356; afterEach@2360; it@2363; it@2374; describe@2387; it@2388; describe@2407; it@2408; describe@2420; it@2421; describe@2429; describe@2430; it@2431; describe@2489; it@2490; describe@2542; it@2543; describe@2555; it@2556; it@2562; it@2574; it@2580; it@2586; describe@2594; it@2595; it@2608; it@2618; it@2644; it@2657; it@2667; describe@2688; it@2689; it@2696; it@2709; it@2713; describe@2719; it@2720; it@2757; it@2769; describe@2800; it@2801; it@2833; describe@2853; beforeEach@2855; it@2859; it@2864; describe@2870; it@2871; it@2899; it@2932; it@2960; it@2983; describe@3007; it@3008; describe@3016; it@3017; it@3027; it@3037; it@3078; describe@3145; beforeEach@3148; it@3163; it@3179; it@3190; it@3201; it@3210; it@3221; it@3234; describe@3244; it@3245; describe@3264; it@3265; describe@3284; it@3285; describe@3298; it@3299; it@3328; it@3367; describe@3380; describe@3381; it@3382; it@3410; describe@3443; describe@3444; beforeEach@3445; it@3450; it@3469; describe@3488; it@3489; describe@3515; beforeEach@3516; it@3522; describe@3545; it@3546; it@3555; it@3571; describe@3588; beforeEach@3589; it@3595; it@3610; describe@3624; beforeEach@3625; it@3631; describe@3661; beforeEach@3662; it@3669; it@3682; it@3703
+Dependencies: modules/ASRouter.sys.mjs@1; modules/ASRouterTargeting.sys.mjs@2; modules/ASRouterTriggerListeners.sys.mjs@15; tests/unit/utils@16; modules/PanelTestProvider.sys.mjs@17; content-src/schemas/provider-response.schema.json@18
+
+`browser/components/asrouter/tests/unit/ASRouterChild.test.js` | `c6533e073dd8cca7c8d44c2d9d70b49a8d1cec31` | 1929 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@5; beforeEach@8; afterEach@17; describe@21; describe@22; it@32; it@48
+Dependencies: actors/ASRouterChild.sys.mjs@2; modules/ActorConstants.mjs@3
+
+`browser/components/asrouter/tests/unit/ASRouterNewTabHook.test.js` | `664b685881ad33bbc23ff9afdf0693d6c1f576b7` | 6385 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@4; beforeEach@7; afterEach@24; describe@27; describe@28; it@29; describe@38; it@39; it@43; describe@52; it@53; describe@65; beforeEach@69; describe@81; it@82; it@90; it@99; describe@112; it@113; it@123
+Dependencies: modules/ASRouterNewTabHook.sys.mjs@2
+
+`browser/components/asrouter/tests/unit/ASRouterParent.test.js` | `e65d7db825d9306f764ef713cce23484ca3944ca` | 2711 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@4; beforeEach@9; afterEach@36; describe@40; it@41; it@47; describe@56; it@57; it@64; describe@73; it@74
+Dependencies: actors/ASRouterParent.sys.mjs@1; modules/ActorConstants.mjs@2
+
+`browser/components/asrouter/tests/unit/ASRouterParentProcessMessageHandler.test.js` | `7bf40abbdc08b1497d152e1d27bcfd22187cdb86` | 13919 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@5; beforeEach@9; afterEach@84; describe@89; it@90; describe@95; it@96; it@104; it@126; describe@136; it@137; describe@143; it@144; describe@155; it@156; it@164; describe@172; it@173; describe@189; it@190; describe@197; it@198; describe@214; it@215; it@224; describe@230; it@231; describe@239; it@240; describe@246; it@247; describe@262; it@263; describe@278; it@279; describe@284; it@285; describe@290; it@291; describe@296; it@297; describe@302; it@303; describe@308; it@309; describe@319; it@320; describe@341; it@342; describe@357; it@358; describe@363; it@364; describe@373; it@374; describe@383; it@384; describe@389; it@390; describe@395; it@396; describe@401; it@402
+Dependencies: modules/ASRouterParentProcessMessageHandler.sys.mjs@1; modules/ASRouter.sys.mjs@2; modules/ActorConstants.mjs@3
+
+`browser/components/asrouter/tests/unit/ASRouterPreferences.test.js` | `fa413609acffb5b0a70ded5a7bb0a785678f1700` | 17743 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@27; beforeEach@38; afterEach@68; getPrefNameForProvider@72; setPrefForProvider@76; it@82; describe@85; it@86; it@90; providerJsonMatches@174; it@199; describe@207; it@208; it@213; it@234; describe@250; it@251; it@259; it@270; it@281; it@287; describe@297; it@298; it@305; it@315; describe@327; it@328; describe@338; it@339; it@351; it@363; it@368; describe@377; it@378; it@382; describe@388; it@389; describe@398; it@399; it@423; it@436; it@449; describe@464; it@465; it@472
+
+`browser/components/asrouter/tests/unit/ASRouterStorage.test.js` | `925b79f93f5daeb0d19f5edee07b25cbb5c98991` | 27838 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@6; beforeEach@10; afterEach@22; it@25; describe@28; it@29; it@33; it@44; it@62; it@75; it@83; it@94; describe@110; beforeEach@113; it@123; it@130; it@139; it@147; it@155; it@163; it@169; it@173; it@182; it@191; it@204; it@222; it@238; describe@262; it@263; it@271; assertMessageBlockedTransaction@281; describe@296; beforeEach@302; afterEach@338; describe@343; it@344; it@387; it@395; it@414; it@442; describe@456; it@457; it@473; it@495; it@509; it@529; it@542; it@555; it@571; it@602; describe@619; it@620; it@654; it@662; it@682; it@710; describe@724; it@725; it@737; it@761; it@769; it@785; it@794; it@810; it@841; it@872; it@888
+Dependencies: modules/ASRouterStorage.sys.mjs@1; tests/unit/utils@2
+
+`browser/components/asrouter/tests/unit/ASRouterTargeting.test.js` | `c0ae34f2209bfffac8b1043253cf9c7c88feda48` | 20273 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@13; beforeEach@22; combineContexts@34; evalWithDefault@38; afterEach@47; it@53; it@108; it@127; describe@142; it@143; it@171; it@199; describe@229; beforeEach@232; it@236; it@245; it@249; it@255; it@261; it@267; describe@275; it@276; it@282; it@289; it@299; describe@303; beforeEach@305; afterEach@309; it@312; it@328; it@341; describe@348; beforeEach@354; combineContexts@367; setTelemetrySource@371; evalWithDefault@375; afterEach@382; it@387; it@407; it@432; it@457; it@483; it@498; it@514; describe@531; beforeEach@538; it@543; it@555; it@565; it@573; describe@592; beforeEach@595; afterEach@599; assertSortsCorrectly@612; it@623; it@633; describe@649; beforeEach@653; afterEach@658; it@663; it@673; it@683
+Dependencies: modules/OnboardingMessageProvider.sys.mjs@6; modules/ASRouterPreferences.sys.mjs@7; tests/unit/utils@8
+
+`browser/components/asrouter/tests/unit/ASRouterTriggerListeners.test.js` | `2eae893892f84972bc3751d05f809b91b3e6ea6e` | 37441 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@5; home@30; current@33; beforeEach@38; afterEach@72; describe@96; beforeEach@100; afterEach@115; it@118; it@128; it@140; it@151; it@163; it@177; describe@188; describe@190; beforeEach@191; afterEach@197; it@200; it@210; describe@229; beforeEach@233; afterEach@239; it@243; it@252; it@262; it@282; it@296; it@312; describe@329; describe@330; it@331; it@345; describe@366; describe@367; beforeEach@368; afterEach@379; it@382; it@392; it@407; it@422; it@440; describe@449; beforeEach@451; afterEach@464; it@468; it@471; it@479; it@484; it@490; it@497; it@507; it@517; describe@532; beforeEach@533; afterEach@539; it@542; it@552; it@563; describe@582; describe@583; beforeEach@584; afterEach@587; it@591; it@596; it@603; describe@609; beforeEach@610; it@614; it@620; it@625; describe@631; describe@634; beforeEach@635; afterEach@642; it@646; it@651; it@658; it@662; describe@667; beforeEach@668; it@674; it@680; it@685; it@689; describe@695; describe@698; beforeEach@699; afterEach@703; it@707; it@712; it@719; describe@724; beforeEach@725; it@731; it@736; it@741; describe@747; it@748; describe@753; beforeEach@754; afterEach@767; it@771; it@777; it@785; describe@801; beforeEach@802; it@807; it@813; it@821; describe@830; beforeEach@831; afterEach@840; it@845; it@869; it@895; it@928; it@954; it@987; it@1014; host@1028; it@1045; it@1083
+Dependencies: modules/ASRouterTriggerListeners.sys.mjs@1; modules/ASRouterPreferences.sys.mjs@2; tests/unit/utils@3
+
+`browser/components/asrouter/tests/unit/MessageLoaderUtils.test.js` | `463e3886518e35f5f0a390176be1871d5664b31e` | 14068 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: set@6; get@9; describe@17; beforeEach@22; afterEach@27; describe@33; it@34; it@53; it@69; describe@94; assertReturnsCorrectMessages@104; it@113; it@128; it@143; it@157; it@171; set@175; get@178; it@206; it@220; it@239; it@260; it@281; describe@290; it@298; set@302; get@305; it@327; set@332; get@335; it@361; it@372; describe@400; it@401; it@404; it@410; it@420; describe@432; it@433
+Dependencies: modules/ASRouter.sys.mjs@1
+
+`browser/components/asrouter/tests/unit/MomentsPageHub.test.js` | `da6878822ca107496c319dab1d0e640d27691bac` | 9170 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@6; beforeEach@19; start@46; stopAndAccumulate@47; afterEach@54; it@59; it@70; it@97; it@102; describe@117; beforeEach@118; afterEach@126; it@129; it@142; it@150; it@167; describe@185; beforeEach@186; it@194; it@212; it@219; it@231; it@259; describe@280; beforeEach@282; it@285
+Dependencies: tests/unit/utils@1; modules/PanelTestProvider.sys.mjs@2; modules/MomentsPageHub.sys.mjs@3
+
+`browser/components/asrouter/tests/unit/RemoteL10n.test.js` | `9f35eadcf0401a0475c7090c91a33d3260c9fc6e` | 7753 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@4; beforeEach@11; afterEach@31; describe@35; it@36; it@39; it@46; it@58; describe@68; it@69; it@95; describe@121; beforeEach@126; it@135; it@140; it@153; it@158; it@163; describe@171; beforeEach@173; it@176; it@188; describe@196; it@197; it@200; it@203; describe@207; beforeEach@210; it@217; it@226
+Dependencies: modules/RemoteL10n.sys.mjs@1; tests/unit/utils@2
+
+`browser/components/asrouter/tests/unit/TargetingDocs.test.js` | `3f457f24ca894a16a18e4c8ceba9300ec52a6224` | 2484 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getHeadingsFromDocs@10; describe@23; describe@32; it@36; describe@45; it@63
+Dependencies: modules/ASRouterTargeting.sys.mjs@1; docs/targeting-attributes.md@2
+
+`browser/components/asrouter/tests/unit/ToolbarBadgeHub.test.js` | `f82f79f557efc54b0fe1d59501a7c46b3b6a5662` | 16062 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@5; beforeEach@24; afterEach@86; it@90; describe@93; it@94; describe@113; beforeEach@114; it@117; describe@128; beforeEach@130; it@137; it@149; it@158; it@164; describe@183; beforeEach@186; afterEach@198; it@201; it@207; it@216; it@228; describe@244; beforeEach@246; afterEach@261; it@264; it@294; describe@301; it@302; describe@315; beforeEach@318; it@327; it@333; it@339; it@348; it@357; it@366; it@384; it@396; describe@415; beforeEach@417; afterEach@430; it@433; describe@458; beforeEach@459; it@464; it@471
+Dependencies: modules/ToolbarBadgeHub.sys.mjs@1; tests/unit/utils@2; modules/OnboardingMessageProvider.sys.mjs@3
+
+`browser/components/asrouter/tests/unit/asrouter-utils.test.js` | `81252b4d504638af9de58beb8cf3d16c08c18999` | 3127 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@3; beforeEach@5; afterEach@9; describe@12; it@13; it@18; it@22; describe@32; it@33; describe@41; it@42; describe@50; it@51; describe@59; it@60; describe@68; it@69; describe@77; it@78; describe@86; it@87; describe@95; it@96; describe@104; it@105
+Dependencies: ../../content-src/asrouter-utils.mjs@1
+
+`browser/components/asrouter/tests/unit/constants.js` | `25ddbe1ac5d830852a73992aaa471580d7aa3da0` | 1867 bytes | test-path,source | UTF-8 | mode 100644
+
+`browser/components/asrouter/tests/unit/content-src/components/ASRouterAdmin.test.jsx` | `2a3d213f7912bdbbfaa768d7fbed55e925f352ef` | 10252 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@10; beforeEach@32; afterEach@45; it@49; it@52; describe@59; it@60; it@63; it@70; describe@98; beforeEach@99; describe@106; it@107; describe@116; beforeEach@117; it@136; it@152; it@168; it@185; it@205; describe@231; beforeEach@232; it@246; it@257; it@267; describe@277; fromBinary@280; it@289; it@303
+Dependencies: content-src/asrouter-utils@5; tests/unit/utils@6; react@7; enzyme@8
+
+`browser/components/asrouter/tests/unit/content-src/components/ActionChecklist.test.jsx` | `92b236fae0c713cad97a06fb4747ffde8500202a` | 10832 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@10; describe@13; beforeEach@58; afterEach@67; it@72; it@77; it@84; describe@116; it@117; it@131; it@155; it@170; describe@193; beforeEach@196; afterEach@204; it@219; it@230; it@242; it@254; it@268; it@282; it@294; describe@307; it@308; it@315; it@320; it@333; it@343
+Dependencies: react@1; enzyme@2; tests/unit/utils@8
+
+`browser/components/asrouter/tests/unit/content-src/components/AddonsPicker.test.jsx` | `14ca91696711d0efa37b3c0ebcb539e5c1b9052f` | 3675 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@6; beforeEach@33; afterEach@39; describe@46; beforeEach@47; it@57; it@61; it@66; it@71; describe@78; beforeEach@79; it@90; it@95; it@102; it@107; it@112
+Dependencies: react@1; enzyme@2; content-src/components/AddonsPicker@3; content-src/lib/multistage-utils.mjs@4
+
+`browser/components/asrouter/tests/unit/content-src/components/CTAParagraph.test.jsx` | `7b0eb4091a9874e983ce3d5352c0bfff3acdcaa8` | 1552 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@5; beforeEach@10; afterEach@26; it@30; it@34; it@39; it@46; it@52
+Dependencies: react@1; enzyme@2; content-src/components/CTAParagraph@3
+
+`browser/components/asrouter/tests/unit/content-src/components/CarouselNav.test.jsx` | `2394d43849960356da20109ec2b4459564fbea1f` | 2378 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@8; it@21; it@30; it@35; it@41; it@47; it@56; it@65
+Dependencies: react@4; enzyme@5; content-src/components/CarouselNav@6
+
+`browser/components/asrouter/tests/unit/content-src/components/ContentTiles.test.jsx` | `eb1a8b4a920f5d17fffd473cfc9fc52433c0e31e` | 43170 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@15; beforeEach@89; afterEach@117; it@122; it@126; it@131; it@135; it@152; it@165; it@208; it@241; it@268; it@283; it@306; it@344; it@393; it@429; it@460; it@496; it@554; it@605; it@741; it@806; it@897; it@920; it@936; it@967; it@1013; nextFrame@1016; delay@1019; waitFor@1022; waitFor@1078; it@1127; it@1158; it@1187; it@1246; it@1292; it@1340; it@1364; it@1392; it@1420; it@1432; it@1475; it@1513; it@1527; it@1547
+Dependencies: react@1; enzyme@2; content-src/components/ContentTiles@3; content-src/components/ActionChecklist@4; content-src/components/MobileDownloads@5; content-src/components/EmbeddedBackupRestore@6; content-src/components/EmbeddedMigrationWizard@7; content-src/components/EmbeddedThemePicker@8; content-src/components/TextBoxTile@9; content-src/components/ContentToggle@10; content-src/components/LinkParagraph@11; content-src/lib/multistage-utils.mjs@12; tests/unit/utils@13
+
+`browser/components/asrouter/tests/unit/content-src/components/ContentToggle.test.jsx` | `92b8644d8ceb1c15b71d62f3a417f231689a280b` | 1662 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@8; beforeEach@26; it@30; it@35; it@40; it@45; it@50
+Dependencies: react@4; enzyme@5; content-src/components/ContentToggle@6
+
+`browser/components/asrouter/tests/unit/content-src/components/EmbeddedBackupRestore.test.jsx` | `e25060a561a68c7ae2bc54e388d57ff9ee2565b4` | 3712 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@6; beforeEach@11; afterEach@25; it@33; it@55; it@67; it@92; it@120
+Dependencies: react@1; enzyme@2; content-src/components/EmbeddedBackupRestore@3; tests/unit/utils@4
+
+`browser/components/asrouter/tests/unit/content-src/components/EmbeddedFxBackupOptIn.test.jsx` | `6bc8563c1e98f61db8936ef14f3f9d5c8a07b85f` | 3112 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getFxBackupComponent@5; describe@9; it@10; it@15; it@30; it@45; it@60; it@84
+Dependencies: react@1; enzyme@2; content-src/components/EmbeddedFxBackupOptIn.jsx@3
+
+`browser/components/asrouter/tests/unit/content-src/components/EmbeddedThemePicker.test.jsx` | `184606e22c942ebd25a8747b63b162a9b3e9a7db` | 1488 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: extends@14; shown@15; flushPromises@22; describe@27; beforeEach@28; it@32; it@43; it@52
+Dependencies: react@5; enzyme@6; content-src/components/EmbeddedThemePicker@7
+
+`browser/components/asrouter/tests/unit/content-src/components/HelpText.test.jsx` | `e9b722b9d8f47bbb85990723d7246657d2e7542a` | 1429 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@6; it@7; it@12; it@29
+Dependencies: content-src/components/HelpText@1; content-src/components/MSLocalized@2; react@3; enzyme@4
+
+`browser/components/asrouter/tests/unit/content-src/components/HeroImage.test.jsx` | `244e64f906ed251e977f211352a42565171f5667` | 1130 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@5; beforeEach@11; it@17; it@21; it@26; it@31; it@36
+Dependencies: react@1; enzyme@2; content-src/components/HeroImage@3
+
+`browser/components/asrouter/tests/unit/content-src/components/InstallButton.test.jsx` | `58f8ebfebe6a81be07a3ac551529637be03dc327` | 1296 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@15; beforeEach@20; it@36; it@40; it@44
+Dependencies: react@1; enzyme@2; content-src/components/InstallButton@3
+
+`browser/components/asrouter/tests/unit/content-src/components/LinkParagraph.test.jsx` | `ced0cb955b340b80030537a8580376bcf24ef567` | 11553 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@5; beforeEach@10; afterEach@28; it@32; it@36; it@40; it@44; it@50; it@63; it@70; it@77; it@82; it@94; describe@101; beforeEach@122; it@131; it@137; it@144; it@154; it@167; it@177; it@187; it@204; it@213; it@220; it@231; it@239; it@247; it@255; it@263; it@278; it@299; preventDefault@309; preventDefault@316; it@322; it@336
+Dependencies: react@1; enzyme@2; content-src/components/LinkParagraph@3
+
+`browser/components/asrouter/tests/unit/content-src/components/MSLocalized.test.jsx` | `ee9c0c04a17afbf2dbf2879cceea20695d238c5f` | 5190 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@9; it@10; it@16; it@23; it@32; it@41; it@52; it@71; it@93; it@117; it@128; describe@139; it@140; it@149; describe@154; afterEach@155; it@159; it@168; it@178
+Dependencies: react@6; enzyme@7
+
+`browser/components/asrouter/tests/unit/content-src/components/MobileDownloads.test.jsx` | `db0c89620b25e9c019554705dcaf55875ccde289` | 1912 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@6; beforeEach@10; afterEach@19; describe@24; it@42; it@48; it@58
+Dependencies: react@1; enzyme@2; tests/unit/utils@3; content-src/components/MobileDownloads@4
+
+`browser/components/asrouter/tests/unit/content-src/components/MultiSelect.test.jsx` | `9f7b71a8e053fb73a14902a212db594fae5aaac0` | 18715 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@5; beforeEach@10; afterEach@82; it@86; it@97; it@111; it@119; it@131; it@150; it@161; it@176; it@222; it@268; it@308; it@344; it@358; describe@384; assertCardDesign@405; it@435; it@439; describe@444; beforeEach@447; it@473; it@479; it@492; it@506; it@516
+Dependencies: react@1; enzyme@2; content-src/components/MultiSelect@3
+
+`browser/components/asrouter/tests/unit/content-src/components/MultiStageAWProton.test.jsx` | `d42132c607182194a97a2378006b0bef8a6c5c0b` | 73531 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@16; beforeEach@19; afterEach@23; describe@28; it@29; it@67; it@100; describe@111; it@125; it@134; it@142; it@149; it@154; it@169; it@184; it@195; it@213; it@227; it@240; it@250; it@274; it@310; it@337; describe@355; it@361; it@376; it@390; it@404; it@423; it@437; it@464; it@487; it@504; it@524; it@538; it@579; it@609; it@644; it@681; it@695; it@712; it@730; it@748; it@767; it@790; it@805; it@820; it@850; it@864; it@878; it@892; it@910; it@929; it@948; it@992; it@1010; it@1029; it@1048; it@1066; it@1085; it@1123; it@1136; it@1148; it@1163; it@1184; it@1215; it@1228; it@1240; it@1262; it@1311; it@1352; it@1364; it@1377; it@1397; it@1431; it@1453; it@1475; it@1502; it@1524; it@1552; it@1578; it@1624; it@1668; describe@1714; prepConfig@1717; beforeEach@1738; it@1753; it@1766; it@1776; describe@1786; beforeEach@1788; it@1792; it@1797; describe@1803; beforeEach@1807; it@1828; describe@1853; it@1854; it@1862; it@1887; describe@1915; it@1927; describe@1934; it@1943; describe@1957; it@2006; describe@2019; it@2049; describe@2058; it@2060; it@2096; it@2128; it@2168; it@2205; it@2242
+Dependencies: modules/AboutWelcomeDefaults.sys.mjs@1; modules/ASRouterScreenUtils.sys.mjs@7; modules/OnboardingMessageProvider.sys.mjs@8; modules/PanelTestProvider.sys.mjs@9; content-src/lib/multistage-utils.mjs@10; ../../../../../../../toolkit/components/messaging-system/schemas/MultiStageProtonScreenSchemas/MultiStageProtonScreenSchemas.json@11; react@12; enzyme@13; prop-types@14
+
+`browser/components/asrouter/tests/unit/content-src/components/MultiStageAboutWelcome.test.jsx` | `d8205c5fc142af8706e83404d0f966904f4c8868` | 66165 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@22; beforeEach@34; afterEach@52; describe@57; it@58; it@64; it@78; it@90; it@103; it@143; describe@182; afterEach@187; it@232; it@244; it@283; it@293; it@306; it@348; it@398; it@454; it@500; it@555; it@575; it@614; it@641; it@692; it@737; describe@759; it@760; it@777; it@791; it@809; describe@826; describe@827; beforeEach@833; it@847; it@852; it@862; it@877; it@900; it@923; it@937; it@943; it@962; describe@978; it@1011; it@1017; describe@1027; it@1034; it@1038; describe@1052; beforeEach@1054; it@1128; it@1138; it@1151; it@1161; it@1171; it@1179; it@1184; it@1192; it@1201; it@1229; it@1242; it@1251; describe@1274; beforeEach@1277; it@1294; it@1302; it@1310; it@1322; it@1340; it@1374; it@1384; it@1445; it@1525; it@1746; it@1776; it@1802; it@1834; describe@1865; beforeEach@1871; afterEach@1888; it@1894; it@1931; it@1965
+Dependencies: tests/unit/utils@1; content-src/components/SingleSelect@9; react@10; enzyme@11; modules/AboutWelcomeDefaults.sys.mjs@12; content-src/lib/multistage-utils.mjs@13
+
+`browser/components/asrouter/tests/unit/content-src/components/MultistageWithDismiss.test.jsx` | `fb791265acb01df4e6dc58babc5023eb9774f532` | 4792 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@11; beforeEach@52; afterEach@69; describe@76; it@77; it@83; it@89; it@95; describe@106; it@107; it@113; it@119; it@130; it@142
+Dependencies: tests/unit/utils@1; content-src/components/MultistageWithDismiss@2; content-src/components/MultiStageAboutWelcome@3; react@4; enzyme@5
+
+`browser/components/asrouter/tests/unit/content-src/components/OnboardingVideoTest.test.jsx` | `078c8e17c4ae498ec2f37c38af4bcd391068c679` | 1195 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@5; beforeEach@8; afterEach@12; it@25; it@35
+Dependencies: react@1; enzyme@2; content-src/components/OnboardingVideo@3
+
+`browser/components/asrouter/tests/unit/content-src/components/PinnableSitesList.test.jsx` | `99f999f09d3c539f180c86cc20c66ebd6709cca8` | 13107 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@30; beforeEach@36; afterEach@47; it@52; it@63; it@70; it@81; it@95; it@108; it@125; it@138; it@165; it@184; it@204; it@224; it@245; it@269; it@291; it@313; it@334; it@348; it@375; it@390; it@405; it@421; it@441
+Dependencies: react@5; enzyme@6; content-src/components/PinnableSitesList@7; content-src/lib/multistage-utils.mjs@8; tests/unit/utils@9
+
+`browser/components/asrouter/tests/unit/content-src/components/TextBoxTile.test.jsx` | `39580bf67ae64ae7c42b1e92ddfecbe6763d124b` | 1755 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@8; it@24; it@29; it@37; it@42; it@50
+Dependencies: react@4; enzyme@5; content-src/components/TextBoxTile@6
+
+`browser/components/asrouter/tests/unit/content-src/components/TileButton.test.jsx` | `40ac32898ab9e1b2e67a578fc8c87377215d5fdf` | 2382 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@19; beforeEach@25; afterEach@33; it@50; it@61; it@67
+Dependencies: react@5; enzyme@6; content-src/components/TileButton@7; content-src/lib/multistage-utils.mjs@8; tests/unit/utils@9
+
+`browser/components/asrouter/tests/unit/content-src/lib/addUtmParams.test.js` | `f068a368132ebaee3ac91fd870795352977d4c57` | 1617 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@3; afterEach@5; it@6; it@10; it@16; it@23; it@27
+Dependencies: content-src/lib/addUtmParams.mjs@1
+
+`browser/components/asrouter/tests/unit/modules/ASRouterScreenUtils.test.jsx` | `8cf312bb2c2594302fe7bd635bbd220d5f602669` | 15349 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: describe@5; beforeEach@9; afterEach@20; describe@24; it@25; it@31; describe@38; it@39; it@51; describe@64; it@65; it@95; it@123; describe@151; it@152; it@169; it@187; it@216; it@233; it@251; it@280; it@299; describe@306; it@307; describe@319; it@320; describe@335; it@336; it@342; describe@348; beforeEach@350; it@357; it@378; it@395; it@420; it@441; it@454; it@464; it@479
+Dependencies: modules/ASRouterScreenUtils.sys.mjs@1; tests/unit/utils@2; modules/ASRouter.sys.mjs@3
+
+`browser/components/asrouter/tests/unit/unit-entry.js` | `c1217f598f9252202ad31a224e89e523723710c0` | 15847 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: JSWindowActorParent@54; sendAsyncMessage@55; JSWindowActorChild@60; sendAsyncMessage@61; sendQuery@65; contentWindow@69; updateGlobalOrObject@83; submitGleanPingForPing@107; getActiveAddons@110; isPlatformAndVersionAtMost@117; evaluateTargetingAndRemoveScreens@129; removeScreens@132; evaluateScreenTargeting@135; sendToDeviceEmailsSupported@140; constructor@146; post@149; defineLazyGetter@154; generateQI@158; importESModule@161; userId@166; Constructor@171; function@174; function@180; function@187; function@189; addObserver@192; getService@193; removeObserver@196; addObserver@201; executeQuery@202; getNewQuery@203; getNewQueryOptions@204; getService@205; insert@208; markPageAsTyped@209; removeObserver@210; pageFrecencyThreshold@211; createInstance@214; getService@220; addIdleObserver@223; removeIdleObserver@224; getService@229; createInstance@234; importGlobalProperties@254; error@261; dump@263; fetch@270; function@272; writeJSON@274; readJSON@277; read@280; makeDirectory@283; write@286; exists@289; remove@292; stat@295; async@302; writeAtomic@307; makeDir@308; stat@309; read@311; exists@312; remove@313; removeEmptyDir@314; join@317; join@328; joinRelative@331; getProfileDir@334; getLocalProfileDir@337; toFileURI@340; bookmarks@345; history@348; addListener@352; removeListener@353; function@368; getProperty@376; appLocaleAsBCP47@389; negotiateLanguages@392; removeMessageListener@397; addObserver@400; removeObserver@401; notifyObservers@402; generateUUID@405; getBaseDomain@416; getBaseDomainFromHost@419; getPublicSuffix@422; init@438; async@451; createNullPrincipal@454; getSystemPrincipal@455; getStartupInfo@466; getTime@469; defineLazyPreferenceGetter@491; generateQI@494; async@501; eval@504; formatMessages@510; formatValue@515; promiseConnectAccountURI@520; showFeatureCallout@527; setExperimentActive@531; ratioSample@540; kiosk@545; getMetadata@550; addExpirationFilter@558; removeExpirationFilter@559; getFxAccountsSingleton@562; AWEnsureAddonInstalled@563; AWWaitForNimbus@566; record@573; record@576; start@581; stopAndAccumulate@582; record@587; record@590; set@593; set@596; set@599; set@602; set@605; set@610; set@615; record@618; set@621; set@624; record@627; record@630; record@633; set@638; set@641; record@644; record@647; set@650; record@653; record@656; record@659; set@664; set@667; set@670; set@673; set@676; set@679; set@682; submit@688; submit@691; describe@703; after@704
+Dependencies: enzyme-adapter-react-16@9; chai-json-schema@10; enzyme@11; ../../content-src/schemas/FxMSCommon.schema.json@12
+
+`browser/components/asrouter/tests/unit/utils.js` | `a6d47fc7e1ac2001cb8ae7cca901b06f48cb9eb9` | 8280 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: GlobalOverrider@5; constructor@6; _override@19; set@34; reset@48; restore@56; FakensIPrefBranch@84; constructor@90; addObserver@106; removeObserver@109; setStringPref@112; getStringPref@115; setBoolPref@118; getBoolPref@121; setIntPref@124; getIntPref@127; setCharPref@130; getCharPref@133; clearUserPref@136; get@139; getPrefType@143; set@159; getChildList@171; prefHasUserValue@176; prefIsLocked@179; FakensIPrefService@188; getBranch@189; getDefaultBranch@190; setBoolPref@192; setIntPref@193; setStringPref@194; clearUserPref@195; FakePrefs@204; observe@205; ignore@208; observeBranch@211; ignoreBranch@212; set@213; FakeConsoleAPI@224; constructor@246; shouldLog@260; _log@266; FakeNimbusFeature@271; getEnrollmentMetadata@273; getVariable@274; getAllVariables@275; getAllEnrollments@276; getAllEnrollmentMetadata@277; onUpdate@278; offUpdate@279; recordExposureEvent@280; get@287; FakeLogger@300; constructor@301
+
+`browser/components/asrouter/tests/xpcshell/head.js` | `5645a42cb375adafd4fcee3fac4c5ed1fc1a2a53` | 3625 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertValidates@22; fetchSchema@30; schemaValidatorFor@39; makeValidators@53
+
+`browser/components/asrouter/tests/xpcshell/test_ASRouterPreferences_maybeSetMessagingProfileID.js` | `034a5c03807bd03e311f0df1dd3b889c68ee4405` | 1837 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@11; registerCleanupFunction@17
+
+`browser/components/asrouter/tests/xpcshell/test_ASRouterTargeting_attribution.js` | `11581bea866bb6969ef439182fb594101d99d990` | 2581 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@20; add_task@63
+
+`browser/components/asrouter/tests/xpcshell/test_ASRouterTargeting_snapshot.js` | `8a88e11958345f5d76525da13e638c1ecfbf695e` | 5259 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@11; foo@13; bar@17; add_task@28; foo@30; bar@33; qux@37; quux@40; corge@43; grault@45; garply@48; add_task@77; add_task@111; add_task@143; prop@187
+
+`browser/components/asrouter/tests/xpcshell/test_ASRouterTelemetry.js` | `8bbfc1d3a1f9bd5be2bbf49637de7691ea032569` | 17168 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertPingMatchesSchema@29; assertASRouterEventPingValid@46; add_setup@51; add_task@61; add_task@91; add_task@121; add_task@156; test_applyCFRPolicy_release_experiment_private_browsing@188; add_task@225; add_task@239; add_task@253; add_task@268; add_task@286; add_task@300; add_task@317; add_task@331; add_task@355; add_task@375; add_task@437; test_SendASRouterUndesiredEvent_calls_handleASRouterUserEvent@468; test_handleASRouterUserEvent_calls_submitGleanPingForPing@493; test_handleASRouterUserEvent_no_submit_unknown_pingTypes@525; test_isInCFRCohort_return_false_for_no_CFR_experiment@556; test_isInCFRCohort_return_true_for_registered_CFR_experiment@570
+
+`browser/components/asrouter/tests/xpcshell/test_ASRouter_getTargetingParameters.js` | `bda6d0cd41d7d48475b0e134a2de3b89c2feaedf` | 1555 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@11; foo@13; qux@17; corge@20; grault@22; add_task@46
+
+`browser/components/asrouter/tests/xpcshell/test_ASRouter_shouldShowMessagesToProfile.js` | `a2da8434cea7988979e9716cc56260e0104aa462` | 1977 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@15; registerCleanupFunction@22; function@46
+
+`browser/components/asrouter/tests/xpcshell/test_OnboardingMessageProvider.js` | `4db2158adcd04e10899b17617945508fb7e2a496` | 10563 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getOnboardingScreenById@14; getMessageById@20; checkTargeting@25; test_OnboardingMessageProvider_getUpgradeMessage_no_pin@35; test_OnboardingMessageProvider_getUpgradeMessage_pin_no_default@57; test_OnboardingMessageProvider_getUpgradeMessage_pin_and_default@80; add_task@101; add_task@117; registerCleanupFunction@119; test_OnboardingMessageProvider_getPinPrivateWindow_noPrivatePin@138; registerCleanupFunction@140; test_OnboardingMessageProvider_getNoPinPrivateWindow_noPin@166; registerCleanupFunction@168; add_task@192; registerCleanupFunction@201; add_task@254; test_OnboardingMessageProvider_getPinPrivateWindow_pinPBMPrefDisabled@282; registerCleanupFunction@287
+
+`browser/components/asrouter/tests/xpcshell/test_PanelTestProvider.js` | `223834ed2ccee7f488eeb1cd2b10ccfed99ce9c9` | 1942 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@11; add_task@18; add_task@52
+
+`browser/components/asrouter/tests/xpcshell/test_PinnableSitesProvider.js` | `0414677ce6e634537d2dbbfb3fd3ff2038b32f23` | 14522 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: contentWithTile@51; stubEnvironment@81; add_task@113; add_task@162; add_task@189; add_task@209; add_task@245; add_task@272; add_task@292; add_task@316; add_task@343; add_task@361; add_task@390; add_task@418; add_task@436; add_task@451; add_task@467
+
+`browser/components/asrouter/tests/xpcshell/test_PreonboardingSplash.js` | `fb45bfda07e81c221823cadd3d0bd056d743b836` | 14676 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@36; stubShow@44; stubSplashWillShow@60; restoreState@78; add_task@89; add_task@104; add_task@120; add_task@150; add_task@167; add_task@199; add_task@247; add_task@266; add_task@276; add_task@308; add_task@331; add_task@347; test_enabled_false_is_hard_opt_out_on_eligible_linux@376; add_task@399; add_task@428; add_task@457
+
+`browser/components/asrouter/tests/xpcshell/test_reach_experiments.js` | `5d893ba79ae888a9071e86e32f32252bcfec52a0` | 2637 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@26; add_task@32; depError@42; assertContains@51; add_task@58
+
+`browser/components/asrouter/tests/xpcshell/test_remoteExperiments.js` | `08954dee1b7e833b3b90e379bbb8a9309e2d9f6e` | 1208 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@8
+
+`browser/components/asrouter/tests/xpcshell/xpcshell.toml` | `0050a7d5c82c13d5de0d787934e0d227543537fd` | 852 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`browser/components/asrouter/webpack.asrouter-admin.config.js` | `88aa671e8b31400a0ddc31c9f0b5e8c134048ac8` | 1104 bytes | source | UTF-8 | mode 100644
+
+`browser/components/asrouter/webpack.asrouter-newtab-multistage.config.js` | `68b983c5f4d15641c2da2b1d8f5eaec63d16643f` | 709 bytes | source | UTF-8 | mode 100644
+
+`browser/components/asrouter/webpack.base.config.js` | `0b6e5061e9a06821dc6845a185620ba8e875c26e` | 890 bytes | source | UTF-8 | mode 100644
+
+`browser/components/asrouter/yamscripts.yml` | `7d7dea1853a8d5c187573ab1b13143eebb0d849a` | 2210 bytes | data-or-other | UTF-8 | mode 100644
+
+`browser/components/attribution/AttributionCode.sys.mjs` | `810b0b34e84271d3c5c82d922be7548d1f12703f` | 13022 bytes | source | UTF-8 | mode 100644
+Declarations: async@9; msixCampaignId@71; attributionFile@84; writeAttributionFile@99; allowedCodeKeys@120; parseAttributionCode@129; submitReferralCode@184; serializeAttributionData@202; _getMacAttrDataAsync@217; _getWindowsNSISAttrDataAsync@262; _getWindowsMSIXAttrDataAsync@266; getAttrDataAsync@289; getCachedAttributionData@379; deleteFileAsync@388; _clearCache@405
+Dependencies: resource://gre/modules/AppConstants.sys.mjs@14
+
+`browser/components/attribution/MacAttribution.sys.mjs` | `09ec083a44a9761c5deee8995c48419701406d9f` | 1690 bytes | source | UTF-8 | mode 100644
+Declarations: applicationPath@12; setAttributionString@17; getAttributionString@25; delAttributionString@46
+
+`browser/components/attribution/docs/index.md` | `98718f1d06e78bd8932ffefb3f7af3c47f2b65b7` | 8433 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/attribution/metrics.yaml` | `0c933b44efa493e435a7841aaa5fc0ba921d5be8` | 3938 bytes | data-or-other | UTF-8 | mode 100644
+
+`browser/components/attribution/moz.build` | `7391299ca422fbccac79922312014e4606553ace` | 611 bytes | build-registration | UTF-8 | mode 100644
+
+`browser/components/attribution/test/browser/browser.toml` | `c31897ab0f088bfaca30c1419e39ec1bc8025b12` | 296 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`browser/components/attribution/test/browser/browser_AttributionCode_Mac_telemetry.js` | `44d32410bd91aa09b423f90ece871f146b828e4e` | 3387 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@14; add_task@49; add_task@77; add_task@100
+
+`browser/components/attribution/test/browser/browser_AttributionCode_telemetry.js` | `9789d3580be193be14ae5d04f76e67e0d12be8ea` | 3097 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@8; registerCleanupFunction@9; add_task@49; registerCleanupFunction@50; registerCleanupFunction@80
+
+`browser/components/attribution/test/browser/head.js` | `b9e52758488909f64a3824d8a3e299319d2f938e` | 764 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@18; registerCleanupFunction@22
+
+`browser/components/attribution/test/xpcshell/head.js` | `8e2643412d4fec12a685e24973813287ebfabaca` | 5919 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: setupStubs@131
+
+`browser/components/attribution/test/xpcshell/test_AttributionCode.js` | `f2811c5f24bfa47ce989ca47efe8e29454455161` | 5195 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@14; add_task@22; add_task@70; add_task@126
+
+`browser/components/attribution/test/xpcshell/test_MacAttribution.js` | `5daa80af88226708539cfd20e329975e7874d14f` | 3768 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@54; add_task@62; add_task@92; add_task@128
+
+`browser/components/attribution/test/xpcshell/test_attribution_parsing.js` | `abf2456ce44ad0c375fd672634dfdc8e3f123b1f` | 1280 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@16; add_task@39
+
+`browser/components/attribution/test/xpcshell/test_referralAttribution.js` | `1888160005db05066cd6b78895148610754eb797` | 4724 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: resetState@14; add_setup@19; registerCleanupFunction@22; add_task@27; add_task@62; add_task@86; add_task@109; add_task@140
+
+`browser/components/attribution/test/xpcshell/xpcshell.toml` | `c3b61fb7d33b901588636883cde5873e8c525ed0` | 275 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`browser/components/backup/Archive.worker.mjs` | `fd2d62cd9be531bc11045b7d9d6b48aacca80c78` | 16244 bytes | source | UTF-8 | mode 100644
+Declarations: ArchiveWorker@22; constructor@25; parseArchiveHeader@288
+Dependencies: resource://gre/modules/workers/PromiseWorker.mjs@5; moz-src:///browser/components/backup/ArchiveUtils.sys.mjs@10; moz-src:///browser/components/backup/ArchiveEncryption.sys.mjs@11; moz-src:///browser/components/backup/BackupError.mjs@12; chrome://browser/content/backup/backup-constants.mjs@13
+
+`browser/components/backup/ArchiveEncryption.sys.mjs` | `3831f456989acd33b0e8abff883115f32302beed` | 19750 bytes | source | UTF-8 | mode 100644
+Declarations: setLastChunkOnNonce@40; lastChunkSetOnNonce@62; incrementNonce@77; ArchiveEncryptor@102; constructor@156; encrypt@223; confirm@296; initialize@328; ArchiveDecryptor@341; constructor@386; OSKeyStoreSecret@401; decrypt@524; isDone@603; initialize@621
+Dependencies: moz-src:///browser/components/backup/ArchiveUtils.sys.mjs@11
+
+`browser/components/backup/ArchiveEncryptionState.sys.mjs` | `84f0f6422e58f04a514bc4ab841ee7a07fef84b8` | 11039 bytes | source | UTF-8 | mode 100644
+Declarations: ArchiveEncryptionState@28; VERSION@52; GENERATED_RECOVERY_CODE_LENGTH@62; publicKey@72; backupAuthKey@81; salt@90; nonce@99; wrappedSecrets@109; constructor@113; serialize@245; initialize@338
+
+`browser/components/backup/ArchiveUtils.sys.mjs` | `449465d63494d85770ebacf435f499b5b4744c3f` | 9613 bytes | source | UTF-8 | mode 100644
+Declarations: arrayToBase64@19; stringToArray@36; SCHEMA_VERSION@52; ARCHIVE_FILE_VERSION@68; INLINE_MIME_START_MARKER@78; INLINE_MIME_END_MARKER@88; ARCHIVE_CHUNK_MAX_BYTES_SIZE@98; ARCHIVE_MAX_BYTES_SIZE@107; TAG_LENGTH@116; TAG_LENGTH_BYTES@125; computeBackupKeys@150; computeEncryptionKeys@239; countReplacementCharacters@308
+
+`browser/components/backup/BackupError.mjs` | `5ed964334b2de0557e2a23d3cd1ae28fb4f80652` | 1767 bytes | source | UTF-8 | mode 100644
+Declarations: BackupError@14; constructor@23; toMsg@45; fromMsg@59
+
+`browser/components/backup/BackupResources.sys.mjs` | `7bc1181a0b7aa5ecdba20e5af6c3e856ca173bf6` | 1959 bytes | source | UTF-8 | mode 100644
+Dependencies: moz-src:///browser/components/backup/resources/AddonsBackupResource.sys.mjs@12; moz-src:///browser/components/backup/resources/BookmarksBackupResource.sys.mjs@13; moz-src:///browser/components/backup/resources/CredentialsAndSecurityBackupResource.sys.mjs@14; moz-src:///browser/components/backup/resources/FormHistoryBackupResource.sys.mjs@15; moz-src:///browser/components/backup/resources/MiscDataBackupResource.sys.mjs@16; moz-src:///browser/components/backup/resources/PlacesBackupResource.sys.mjs@17; moz-src:///browser/components/backup/resources/PreferencesBackupResource.sys.mjs@18; moz-src:///browser/components/backup/resources/SessionStoreBackupResource.sys.mjs@19; moz-src:///browser/components/backup/resources/SelectableProfileBackupResource.sys.mjs@20; moz-src:///browser/components/backup/resources/SiteSettingsBackupResource.sys.mjs@21
+
+`browser/components/backup/BackupService.sys.mjs` | `c7c998d7fb2a5d46540cfd6d692bce0134923164` | 196080 bytes | source | UTF-8 | mode 100644
+Declarations: onUpdateScheduledBackups@136; onUpdateLocationDirPath@158; transform@206; onUpdateBackupErrorCode@233; onUpdateLastBackupFileName@246; BinaryReadableStream@284; constructor@294; start@304; onStartRequest@348; onDataAvailable@372; onStopRequest@396; onAfterLastPart@405; DecoderDecryptorTransformer@442; constructor@453; transform@468; flush@500; FileWriterStream@539; constructor@569; start@579; write@595; close@605; abort@625; BackupService@640; archiveEnabledStatus@710; restoreEnabledStatus@762; stateUpdate@836; setRecoveryError@845; setEmbeddedComponentPersistentData@858; DEFAULT_PARENT_DIR_PATH@1029; BACKUP_DIR_NAME@1042; BACKUP_DIR_PREF_NAME@1056; BACKUP_DIR_TRANSLATION@1069; BACKUP_FILE_NAME@1082; PROFILE_FOLDER_NAME@1097; SNAPSHOTS_FOLDER_NAME@1107; MANIFEST_FILE_NAME@1116; MANIFEST_SCHEMA@1135; POST_RECOVERY_FILE_NAME@1152; ARCHIVE_ENCRYPTION_STATE_FILE@1162; SCHEMAS@1171; RECOVERY_ZIP_FILE_NAME@1181; STATUS_OBSERVER_PREFS@1192; getSchemaForVersion@1210; COMPRESSION_LEVEL@1233; ARCHIVE_TEMPLATE@1243; RECOVERY_OSKEYSTORE_LABEL@1256; WRITE_BACKUP_LOCK_NAME@1266; REGENERATION_DEBOUNCE_RATE_MS@1276; oneDriveFolderPath@1285; docsDirFolderPath@1302; probeDefaultDirAccess@1323; init@1346; uninit@1368; get@1385; constructor@1401; postRecoveryComplete@1444; state@1506; resolveArchiveDestFolderPath@1530; resolveDownloadLink@1570; createAndPopulateStagingFolder@1607; async@1827; classifyLocationForTelemetry@1987; generateArchiveDateSuffix@2029; finalizeSingleFileArchive@2062; onStartRequest@2229; onStopRequest@2232; decompressRecoveryFile@2289; renderTemplate@2398; onStartRequest@2696; onDataAvailable@2720; onStopRequest@2744; onAfterLastPart@2763; createBinaryReadableStream@2801; sampleArchive@2846; deleteAndQuitCurrentSelectableProfile@3440; checkForPostRecovery@4057; maybeCleanupDesktopIni@4184; setParentDirPath@4232; onUpdateLocationDirPath@4263; onUpdateBackupErrorCode@4279; onUpdateLastBackupFileName@4293; onUpdateProfilesEnabledState@4317; getIconFromFilePath@4336; setScheduledBackups@4358; onUpdateScheduledBackups@4391; takeMeasurements@4422; loadEncryptionState@4489; enableEncryption@4550; disableEncryption@4599; initBackupScheduler@4656; uninitBackupScheduler@4722; onObserve@4776; initStatusObservers@4851; uninitStatusObservers@4883; cleanupBackupFiles@4964; onIdle@4995; _startupTimeUnixSeconds@5070; shouldAttemptBackup@5080; createBackupOnIdleDispatch@5153; onPlacesEvents@5222; onUninstalled@5257; setBackupFileToRestore@5266; loadBackupFileInfo@5279; resetLastBackupInternalState@5323; resetDefaultParentInternalState@5334; showBackupLocation@5343; editBackupLocation@5602; deleteLastBackup@5622; async@5633
+Dependencies: moz-src:///browser/components/backup/BackupResources.sys.mjs@5; resource://gre/modules/AppConstants.sys.mjs@6; resource://gre/modules/XPCOMUtils.sys.mjs@7; moz-src:///browser/components/backup/resources/BackupResource.sys.mjs@8; moz-src:///browser/components/backup/BackupError.mjs@22
+
+`browser/components/backup/MeasurementUtils.sys.mjs` | `bcab7101127651955226e3b703e726fab4ebd464` | 1855 bytes | source | UTF-8 | mode 100644
+Declarations: fuzzByteSize@29; measure@48
+
+`browser/components/backup/actors/BackupUIChild.sys.mjs` | `50f7d5aeabbaa946db53d740dabbb255c74530c3` | 8255 bytes | source | UTF-8 | mode 100644
+Declarations: BackupUIChild@23; handleEvent@52; receiveMessage@205
+
+`browser/components/backup/actors/BackupUIParent.sys.mjs` | `c20b416f1d159b4288af8b3e93db51c79657e0d0` | 12906 bytes | source | UTF-8 | mode 100644
+Declarations: BackupUIParent@29; constructor@49; actorCreated@67; didDestroy@78; handleEvent@89; receiveMessage@124; sendState@370
+
+`browser/components/backup/common/backup-constants.mjs` | `1bdb62feba162e39c21540a9474d143641e6604c` | 4553 bytes | source | UTF-8 | mode 100644
+Declarations: errorString@57
+
+`browser/components/backup/common/backup-errors.mjs` | `f9e7cf1606740f56fc7dc04ab34b294b0e731b67` | 1738 bytes | source | UTF-8 | mode 100644
+Declarations: getErrorL10nId@36
+Dependencies: chrome://browser/content/backup/backup-constants.mjs@5
+
+`browser/components/backup/content/ArchiveJSONBlock.1.schema.json` | `19fa5b113138611a4b057026d654907d25a1c041` | 1942 bytes | data-or-other | UTF-8 | mode 100644
+
+`browser/components/backup/content/ArchiveJSONBlock.2.schema.json` | `5c6d52f0731093c37f1a6ce8651691cdf8e2b0a5` | 1942 bytes | data-or-other | UTF-8 | mode 100644
+
+`browser/components/backup/content/BackupManifest.1.schema.json` | `31f7af1a8b0d7338f007d154d9b218d53e3f513b` | 3403 bytes | data-or-other | UTF-8 | mode 100644
+
+`browser/components/backup/content/BackupManifest.2.schema.json` | `06d69b577477120e59498ca187779aa1f0e25307` | 3797 bytes | data-or-other | UTF-8 | mode 100644
+
+`browser/components/backup/content/archive.css` | `02843d48cae67eb5258e76cba281092e9ca5b64e` | 1779 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/content/archive.js` | `330746fc347e36096056f96c315efeff8917c64a` | 914 bytes | source | UTF-8 | mode 100644
+
+`browser/components/backup/content/archive.template.html` | `49c827dd4e23f6b5a38a2e221103a530c40fc334` | 2559 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/content/backup-common.css` | `d47e3ce9230fd9ff3ab98df38700def5e96a90c0` | 795 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/content/backup-settings.css` | `46e279536d9d05441c778afd7d5a889c45d87836` | 1209 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/content/backup-settings.mjs` | `4d87a81a27e8c2e5e4a5ef225bbdb7e85a2a6fe0` | 17542 bytes | source | UTF-8 | mode 100644
+Declarations: BackupSettings@25; queries@37; dialogs@65; constructor@79; connectedCallback@109; handleEvent@128; handleBackupTrigger@163; handleShowScheduledBackups@171; handleToggleBackupEncryption@185; handleChangePassword@207; turnOnScheduledBackupsDialogTemplate@215; turnOffScheduledBackupsDialogTemplate@232; restoreFromBackupDialogTemplate@240; restoreFromBackupTemplate@246; handleShowRestoreDialog@259; handleLocationPickerClick@273; handleShowBackupLocation@286; handleEditBackupLocation@294; handleTurnOnScheduledBackupsDialogClose@306; handleEnableBackupEncryptionDialogClose@310; enableBackupEncryptionDialogTemplate@314; disableBackupEncryptionDialogTemplate@327; lastBackupInfoTemplate@333; backupLocationTemplate@361; sensitiveDataTemplate@384; inProgressMessageBarTemplate@414; errorBarTemplate@424; render@446
+Dependencies: chrome://global/content/vendor/lit.all.mjs@5; chrome://global/content/lit-utils.mjs@6; chrome://browser/content/backup/backup-errors.mjs@7; chrome://browser/content/backup/backup-constants.mjs@8; chrome://browser/content/backup/turn-on-scheduled-backups.mjs@11; chrome://browser/content/backup/turn-off-scheduled-backups.mjs@13; chrome://browser/content/backup/restore-from-backup.mjs@15; chrome://browser/content/backup/enable-backup-encryption.mjs@17; chrome://browser/content/backup/disable-backup-encryption.mjs@19
+
+`browser/components/backup/content/backup-settings.stories.mjs` | `9fa84d2c0655f124d6541ba5a81bf7f9849fbcd8` | 2448 bytes | source | UTF-8 | mode 100644
+Dependencies: lit.all.mjs@6; ./backup-settings.mjs@7
+
+`browser/components/backup/content/debug.html` | `8c0fa5acbe2fa88b0ea626b15f04cfc553fb9200` | 2878 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/content/debug.js` | `5205efce7e023432c1602761891f6a5c8d6a4105` | 9007 bytes | source | UTF-8 | mode 100644
+Declarations: init@17; handleEvent@34; secondsToHms@56; onButtonClick@63; onCheckboxClick@236; onStateUpdate@258
+
+`browser/components/backup/content/disable-backup-encryption.css` | `8cf92b5785d9515ff95aaffd7d9f0efc2f0b637f` | 792 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/content/disable-backup-encryption.mjs` | `a5457c0f0950d88c2af20ca34bbc7b71b57edc25` | 3594 bytes | source | UTF-8 | mode 100644
+Declarations: DisableBackupEncryption@17; queries@23; constructor@31; close@36; reset@46; handleConfirm@50; errorTemplate@58; contentTemplate@68; render@115
+Dependencies: chrome://global/content/vendor/lit.all.mjs@5; chrome://global/content/lit-utils.mjs@6; chrome://global/content/elements/moz-message-bar.mjs@9
+
+`browser/components/backup/content/disable-backup-encryption.stories.mjs` | `bb50dd9b06490a86ed9c8f07bb1c621f1a149764` | 1371 bytes | source | UTF-8 | mode 100644
+Dependencies: lit.all.mjs@6; chrome://global/content/elements/moz-card.mjs@7; chrome://browser/content/backup/backup-constants.mjs@8; ./disable-backup-encryption.mjs@9
+
+`browser/components/backup/content/enable-backup-encryption.css` | `d08333973b3bcb9c4d1f367ae5e5045773666efe` | 788 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/content/enable-backup-encryption.mjs` | `cf1e4588dfa52bd31d0498ece8fefc16f8bca1b3` | 6469 bytes | source | UTF-8 | mode 100644
+Declarations: getErrorL10nId@39; EnableBackupEncryption@47; queries@66; constructor@78; connectedCallback@87; handleEvent@94; close@105; reset@114; handleConfirm@121; descriptionTemplate@132; buttonGroupTemplate@151; errorTemplate@170; contentTemplate@181; render@210
+Dependencies: chrome://global/content/vendor/lit.all.mjs@5; chrome://global/content/lit-utils.mjs@6; chrome://global/content/elements/moz-message-bar.mjs@9; chrome://browser/content/backup/password-validation-inputs.mjs@11; chrome://browser/content/backup/backup-constants.mjs@13
+
+`browser/components/backup/content/enable-backup-encryption.stories.mjs` | `998397a33d783127c0d90086c6f3db244b752f6c` | 1709 bytes | source | UTF-8 | mode 100644
+Dependencies: lit.all.mjs@6; chrome://global/content/elements/moz-card.mjs@7; chrome://browser/content/backup/backup-constants.mjs@8; ./enable-backup-encryption.mjs@9
+
+`browser/components/backup/content/password-rules-tooltip.css` | `38afe229b354f1cca3614279fd8ed1760059f07e` | 2209 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/content/password-rules-tooltip.mjs` | `302eaec4d1c7c180e2517d974de9235643b86571` | 3253 bytes | source | UTF-8 | mode 100644
+Declarations: PasswordRulesTooltip@12; queries@19; constructor@25; _debounce@32; _handleResize@40; connectedCallback@46; disconnectedCallback@52; show@59; hide@64; positionPopover@68; _onBeforeToggle@84; render@88
+Dependencies: chrome://global/content/vendor/lit.all.mjs@5; chrome://global/content/lit-utils.mjs@6
+
+`browser/components/backup/content/password-validation-inputs.css` | `4106ebea2052243fce3af2580fce89d584d2ccaa` | 1787 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/content/password-validation-inputs.mjs` | `dfa6e7753d74e007424711232d24f06d1e226959` | 8021 bytes | source | UTF-8 | mode 100644
+Declarations: PasswordValidationInputs@15; queries@33; constructor@43; connectedCallback@51; disconnectedCallback@62; setInputValidity@67; reset@76; handleFocusNewPassword@93; handleBlurNewPassword@97; handleChangeNewPassword@103; handleChangeRepeatPassword@107; updatePasswordValidity@111; updated@171; contentTemplate@196; render@252
+Dependencies: chrome://global/content/vendor/lit.all.mjs@5; chrome://global/content/lit-utils.mjs@6; chrome://browser/content/backup/password-rules-tooltip.mjs@9
+
+`browser/components/backup/content/password-validation-inputs.stories.mjs` | `66a6b81751d22fb688c2f29281c5cb25a2ccb14f` | 872 bytes | source | UTF-8 | mode 100644
+Dependencies: lit.all.mjs@6; chrome://global/content/elements/moz-card.mjs@7; ./password-validation-inputs.mjs@8
+
+`browser/components/backup/content/restore-from-backup.css` | `89f2ae05c03a84b119f5759a1267e7eeac6d1adb` | 4346 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/content/restore-from-backup.mjs` | `b00bc53229251b68a357a29cdd89a8f7a63834e0` | 19156 bytes | source | UTF-8 | mode 100644
+Declarations: RestoreFromBackup@17; initializedPromise@30; queries@49; isIncorrectPassword@60; isFileError@64; constructor@73; connectedCallback@103; maybeGetBackupFileInfo@116; disconnectedCallback@125; updated@129; handleEvent@152; handleRestoreTypeChange@198; handleChooseBackupFile@202; getBackupFileInfo@216; handleCancel@231; handleConfirm@240; getSupportURLWithUTM@269; applyContentCustomizations@281; renderBackupFileInfo@290; renderBackupFileStatus@302; controlsTemplate@321; inputTemplate@395; passwordEntryTemplate@432; contentTemplate@497; headerTemplate@535; cancelButtonTemplate@545; errorTemplate@555; genericFileErrorTemplate@574; render@616
+Dependencies: chrome://global/content/vendor/lit.all.mjs@5; chrome://global/content/lit-utils.mjs@6; chrome://browser/content/backup/backup-constants.mjs@7; chrome://browser/content/backup/backup-errors.mjs@8; chrome://global/content/elements/moz-message-bar.mjs@11
+
+`browser/components/backup/content/restore-from-backup.stories.mjs` | `206509244d0d2b282943ff1c85b2900d2dc3dc22` | 3782 bytes | source | UTF-8 | mode 100644
+Dependencies: lit.all.mjs@6; chrome://global/content/elements/moz-card.mjs@8; ./restore-from-backup.mjs@10; chrome://browser/content/backup/backup-constants.mjs@12
+
+`browser/components/backup/content/turn-off-scheduled-backups.css` | `71052d41d5eed46fb8a3fe4ddb0da9d4680b5cb8` | 792 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/content/turn-off-scheduled-backups.mjs` | `7fff9fad08e5761fd180a6b65857d6a337308d5d` | 3235 bytes | source | UTF-8 | mode 100644
+Declarations: TurnOffScheduledBackups@12; queries@24; close@31; handleConfirm@40; contentTemplate@51; render@96
+Dependencies: chrome://global/content/vendor/lit.all.mjs@5; chrome://global/content/lit-utils.mjs@6
+
+`browser/components/backup/content/turn-off-scheduled-backups.stories.mjs` | `d9274a155165dec5e27bb178ff68dd0a52edd28b` | 865 bytes | source | UTF-8 | mode 100644
+Dependencies: lit.all.mjs@6; chrome://global/content/elements/moz-card.mjs@7; ./turn-off-scheduled-backups.mjs@8
+
+`browser/components/backup/content/turn-on-scheduled-backups.css` | `4c15dedd5f021c8455b75c9143c3ef6781ab37b9` | 4076 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/content/turn-on-scheduled-backups.mjs` | `c6976397d7a6888dc378d6487e84b474aa9236f5` | 17097 bytes | source | UTF-8 | mode 100644
+Declarations: getEnableErrorL10nId@27; TurnOnScheduledBackups@37; queries@113; constructor@126; showDefaultFilePath@148; connectedCallback@155; handleEvent@173; handleChooseLocation@233; close@244; handleConfirm@253; handleTogglePasswordOptions@284; updated@289; reset@303; defaultFilePathInputTemplate@336; customFilePathInputTemplate@366; errorTemplate@387; allOptionsTemplate@397; passwordsTemplate@453; contentTemplate@464; render@534
+Dependencies: chrome://global/content/vendor/lit.all.mjs@5; chrome://global/content/lit-utils.mjs@6; chrome://global/content/elements/moz-message-bar.mjs@9; chrome://browser/content/backup/password-validation-inputs.mjs@11; chrome://browser/content/backup/backup-constants.mjs@13
+
+`browser/components/backup/content/turn-on-scheduled-backups.stories.mjs` | `8247429fbe174e5c0c5f361049cbe325ace7f17f` | 2839 bytes | source | UTF-8 | mode 100644
+Dependencies: lit.all.mjs@6; chrome://global/content/elements/moz-card.mjs@7; chrome://browser/content/backup/backup-constants.mjs@8; ./turn-on-scheduled-backups.mjs@9
+
+`browser/components/backup/docs/architecture.md` | `e6dbeb45c73e0bd0390bd33fca33eb7bc25ae2af` | 5448 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/backup/docs/architecture.svg` | `219d0aae801ef13f2bc26a769e9ff5d2f640202e` | 94857 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/docs/archive-encryption.md` | `9c98248dd16eacaaa31913305e45224c279acabf` | 214 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/backup/docs/backup-resources.md` | `2985cd93546f973df536f8c7788521d797eb3f55` | 1456 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/backup/docs/backup-service.md` | `3222d7383d99d4fe7fc64f5a79990a28f1372551` | 138 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/backup/docs/backup-ui-actors.md` | `21111e3d72f82349d4b68a51c1dad3a5b78a6b84` | 700 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/backup/docs/index.md` | `ce75817c1cbc61d76b0edd59c4311d6c21377bee` | 294 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/backup/docs/schemas.md` | `3382e1d673b299b1c3815bce24147fc6697a3282` | 1526 bytes | documentation | UTF-8 | mode 100644
+
+`browser/components/backup/jar.mn` | `2c3dd5c2338086a903f72c0a83ff7e9bf833871e` | 3025 bytes | build-registration | UTF-8 | mode 100644
+
+`browser/components/backup/metrics.yaml` | `23a3ed9e7440f606293c80cd6dae313787445bd0` | 32764 bytes | data-or-other | UTF-8 | mode 100644
+
+`browser/components/backup/moz.build` | `3bcb9a03eb96bfb98fd163fe45b8075d83624baa` | 1525 bytes | build-registration | UTF-8 | mode 100644
+
+`browser/components/backup/pings.yaml` | `12d018b3e21539b054ab99e5348a5e714ccf8e71` | 1599 bytes | data-or-other | UTF-8 | mode 100644
+
+`browser/components/backup/resources/AddonsBackupResource.sys.mjs` | `3bc95746c9d42eec82e6d541d219240edf3c174d` | 5549 bytes | source | UTF-8 | mode 100644
+Declarations: AddonsBackupResource@10; key@11; requiresEncryption@15; recover@74; measure@90
+Dependencies: moz-src:///browser/components/backup/resources/BackupResource.sys.mjs@5
+
+`browser/components/backup/resources/BackupResource.sys.mjs` | `514f36abcb2b006a09385c1e077c8bd9dd4433fd` | 13475 bytes | source | UTF-8 | mode 100644
+Declarations: bytesToFuzzyKilobytes@47; BackupResource@58; key@66; requiresEncryption@82; priority@98; getFileSize@109; copySqliteDatabases@196; copyFiles@240; canBackupResource@263; backingUpPlaces@273; constructor@292; measure@302; backup@334; recover@370; postRecovery@394
+Dependencies: resource://gre/modules/XPCOMUtils.sys.mjs@5
+
+`browser/components/backup/resources/BookmarksBackupResource.sys.mjs` | `4a5126085d6e68ab4989ad5e7bb7e85de5333c02` | 2213 bytes | source | UTF-8 | mode 100644
+Declarations: BookmarksBackupResource@18; key@19; requiresEncryption@23; canBackupResource@27; priority@37; recover@56; postRecovery@68; measure@79
+Dependencies: moz-src:///browser/components/backup/resources/BackupResource.sys.mjs@5
+
+`browser/components/backup/resources/CookiesBackupResource.sys.mjs` | `c19619042058b322e1aca67cd36773b5a6eb1eff` | 1323 bytes | source | UTF-8 | mode 100644
+Declarations: CookiesBackupResource@10; key@11; requiresEncryption@15; canBackupResource@19; recover@35; measure@42
+Dependencies: moz-src:///browser/components/backup/resources/BackupResource.sys.mjs@5
+
+`browser/components/backup/resources/CredentialsAndSecurityBackupResource.sys.mjs` | `c2617807bd0019deb91d2ffdafde885f3df932a3` | 5139 bytes | source | UTF-8 | mode 100644
+Declarations: CredentialsAndSecurityBackupResource@25; key@26; requiresEncryption@30; recover@63; encryptAutofillData@97; measure@134
+Dependencies: moz-src:///browser/components/backup/resources/BackupResource.sys.mjs@5; resource://gre/modules/XPCOMUtils.sys.mjs@6
+
+`browser/components/backup/resources/FormHistoryBackupResource.sys.mjs` | `ad02510187a2da06fdc0bee81f1576fb0764883a` | 2168 bytes | source | UTF-8 | mode 100644
+Declarations: FormHistoryBackupResource@38; key@39; requiresEncryption@43; canBackupResource@47; recover@74; measure@82
+Dependencies: moz-src:///browser/components/backup/resources/BackupResource.sys.mjs@5; resource://gre/modules/XPCOMUtils.sys.mjs@6
+
+`browser/components/backup/resources/MiscDataBackupResource.sys.mjs` | `ce46dc9ea5fcd737e5562ad5388f8f75bc63da99` | 4522 bytes | source | UTF-8 | mode 100644
+Declarations: MiscDataBackupResource@25; key@26; requiresEncryption@30; recover@75; postRecovery@96; measure@116
+Dependencies: moz-src:///browser/components/backup/resources/BackupResource.sys.mjs@5
+
+`browser/components/backup/resources/PlacesBackupResource.sys.mjs` | `aa808df22ed9d9b0a1aa456b1b8c0251a27c589e` | 2679 bytes | source | UTF-8 | mode 100644
+Declarations: PlacesBackupResource@17; key@18; requiresEncryption@22; priority@26; canBackupResource@30; recover@68; measure@78
+Dependencies: moz-src:///browser/components/backup/resources/BackupResource.sys.mjs@5; moz-src:///browser/components/backup/MeasurementUtils.sys.mjs@6
+
+`browser/components/backup/resources/PreferencesBackupResource.sys.mjs` | `801d932f1ca14b807a1da49460f2cb63afce17cd` | 13342 bytes | source | UTF-8 | mode 100644
+Declarations: PreferencesBackupResource@35; key@36; requiresEncryption@40; dataCollectionPrefs@44; addPrefsToIgnoreInBackup@62; getPrefsFromBuffer@106; onError@120; recover@173; measure@338
+Dependencies: resource://gre/modules/AppConstants.sys.mjs@5; moz-src:///browser/components/backup/resources/BackupResource.sys.mjs@6
+
+`browser/components/backup/resources/SelectableProfileBackupResource.sys.mjs` | `65237f18752ff1454c1589d1966b466a0a2c67b3` | 6932 bytes | source | UTF-8 | mode 100644
+Declarations: SelectableProfileBackupResource@36; key@37; requiresEncryption@41; canBackupResource@45; recover@113; postRecovery@199; measure@218
+Dependencies: moz-src:///browser/components/backup/resources/BackupResource.sys.mjs@5
+
+`browser/components/backup/resources/SessionStoreBackupResource.sys.mjs` | `e78edb86dd7194feea3dc05c904341edd15b1c44` | 5046 bytes | source | UTF-8 | mode 100644
+Declarations: SessionStoreBackupResource@42; constructor@45; key@50; requiresEncryption@54; filteredSessionStoreState@65; Promise@109; recover@135; measure@144
+Dependencies: resource://gre/modules/XPCOMUtils.sys.mjs@5
+
+`browser/components/backup/resources/SiteSettingsBackupResource.sys.mjs` | `789f8da4f23bfd38f13a0691caa6774354d0670a` | 1986 bytes | source | UTF-8 | mode 100644
+Declarations: SiteSettingsBackupResource@27; key@28; requiresEncryption@32; priority@36; canBackupResource@40; recover@62; measure@77
+Dependencies: moz-src:///browser/components/backup/resources/BackupResource.sys.mjs@5; resource://gre/modules/XPCOMUtils.sys.mjs@6
+
+`browser/components/backup/tests/browser/browser.toml` | `acb9ca4018aa8225ef9d988a555cfb9285098d2d` | 878 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`browser/components/backup/tests/browser/browser_backup_policies.js` | `826d43176ee1ad6943b874c2e1e37342c6b71903` | 2747 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: checkPrefs@11; add_setup@33; registerCleanupFunction@44; add_task@49; add_task@61; add_task@75; add_task@89
+
+`browser/components/backup/tests/browser/browser_password_validation_inputs.js` | `c14e798e8830eb3ea5917b915580c769e328aea9` | 5412 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@12
+
+`browser/components/backup/tests/browser/browser_settings.js` | `3360af22d861ca9da191d04ae0fb64b5c59fb979` | 16160 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@14; registerCleanupFunction@16; add_task@26; add_task@85; add_task@189; add_task@345; registerCleanupFunction@379; registerCleanupFunction@428; add_task@478; add_task@501
+
+`browser/components/backup/tests/browser/browser_settings_create_backup.js` | `847968f88f6a0bc15ee801ace555751a2242cab0` | 8344 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@15; registerCleanupFunction@41; add_task@53; add_task@128; add_task@227
+
+`browser/components/backup/tests/browser/browser_settings_enable_backup_encryption.js` | `4c92c2877ba0039e742614f22c5e459e418a0c06` | 10116 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@12; test_enable_backup_encryption_change_password_confirm@134; add_task@254
+
+`browser/components/backup/tests/browser/browser_settings_errors.js` | `1911ef41e32792f6a1073685f196e84ae5c79bf8` | 1805 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@17; registerCleanupFunction@26
+
+`browser/components/backup/tests/browser/browser_settings_restore_from_backup.js` | `9acabf6e11542f8f03559182736eae7184b70d50` | 24410 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@12; registerCleanupFunction@29; add_task@37; add_task@88; add_task@231; add_task@280; add_task@405; add_task@453; add_task@503; add_task@557; add_task@581; assertNonEmbeddedSupportLink@643; add_task@664; add_task@698; add_task@745; add_task@753; checkVisibleStatusTemplate@761
+
+`browser/components/backup/tests/browser/browser_settings_turn_off_scheduled_backups.js` | `6e9ba51e3c3278be826118435c2351640fd6a970` | 4409 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: turnOffScheduledBackupsHelper@17; add_setup@52; registerCleanupFunction@57; add_task@67; turnOffScheduledBackupsHelper@77; add_task@106; turnOffScheduledBackupsHelper@130
+
+`browser/components/backup/tests/browser/browser_settings_turn_on_scheduled_backups.js` | `f3408ea7895bc9f7f26b8cae6f56eb75902d7f1b` | 27923 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: setup_mockFilePicker@12; add_setup@28; registerCleanupFunction@44; assertLocationInputLabelled@60; add_task@83; add_task@149; add_task@273; add_task@362; add_task@464; add_task@532; waitInitialRequestStateSettled@574; add_task@587; add_task@679; test_embedded_component_persistent_data_filepicker_cancelled@749; add_task@840
+
+`browser/components/backup/tests/browser/head.js` | `b656d61135d0a11276764a299186d05234601d93` | 5994 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: createMockValidityPassEventPromise@38; getAndMaybeInitBackupService@65; createMockPassInputEventPromise@82; openTurnOnScheduledBackupsDialog@101; initializedBackupWidgets@125; waitForBackupSettings@176
+
+`browser/components/backup/tests/chrome/chrome.toml` | `d020fc23387887f62be2976d4ba946f50adba2e5` | 740 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`browser/components/backup/tests/chrome/head.js` | `ea7dcc9ee3928da0f13c247bb7c4551fc0c48aa0` | 2598 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: createBackupServiceState@15; createMockValidityPassEventPromise@43; createMockPassInputEventPromise@74
+
+`browser/components/backup/tests/chrome/test_backup_settings.html` | `f25fe6a75f5ab6f74fee80578bbacc5db5540703` | 13004 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/tests/chrome/test_disable_backup_encryption.html` | `d80379654fad3d4ef953358c780b573fa69b9d42` | 2286 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/tests/chrome/test_enable_backup_encryption.html` | `3ae1e2e2d345b5208780234dda1e56ced43229e7` | 4913 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/tests/chrome/test_password_validation_inputs.html` | `22e051b1bd10444148e73eaeafcffd1b13db863e` | 2601 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/tests/chrome/test_restore_from_backup.html` | `7db5be12ee52017f5e9cf35c3edc030dedf9371a` | 25735 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/tests/chrome/test_trigger_create_backup.html` | `b6b64eca760aff57cc03994715f447861c9286ef` | 2113 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/tests/chrome/test_turn_off_scheduled_backups.html` | `c968f7fe2cbec926f3fead2a36e3a8064f9ab28f` | 2299 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/tests/chrome/test_turn_on_scheduled_backups.html` | `bd086947fda58bf1915bfac4f9d2456c865687ee` | 13170 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/tests/marionette/backup_test_base.py` | `05c279c4a77c8b42404f0544a9070f2c63113366` | 15770 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: BackupTestBase@14; __init__@24; setUp@28; tearDown@61; run_code@92; run_async_code@98; run_async@104; set_prefs@126; register_profile_and_restart@142; setup_selectable_profile@170; create_backup@202; recover_backup@218; get_store_id@241; get_store_id_pref@252; has_selectable_profiles@260; wait_for_post_recovery@271; assert_profile_source@282; get_all_profiles@301; get_original_profile_name@313; cleanup_selectable_profiles@325; init_selectable_profile_service@354; set_selectable_profile_metadata@365; get_selectable_profile_metadata@383
+Dependencies: marionette_harness@11
+
+`browser/components/backup/tests/marionette/compat-files/backups/v1_backup.html` | `3cc8d6799317d0bc9489d745e3f0e13b1e564abe` | 73795 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/tests/marionette/compat-files/backups/v2_legacy_backup.html` | `bbbdc305901038ceb728e75569d25933e4db1bc2` | 71618 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/tests/marionette/compat-files/backups/v2_selectable_backup.html` | `907f7d1ef79d185931ac732d8d42b33abaa745f4` | 68214 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/tests/marionette/compat-files/test_generate_backup_fixture.py` | `3487c12bf7f0abe0253be4d16b699357837c610f` | 8216 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: GenerateTestBackup@33; test_generate_current_version_backup@36; _generate_legacy_fixture@61; _generate_selectable_fixture@83; _add_selectable_profile_metadata_data@124; _add_common_test_data@127; _create_encrypted_backup@173; _save_fixture@207
+Dependencies: pathlib@24; backup_test_base@29; compat_config@30
+
+`browser/components/backup/tests/marionette/compat_config.py` | `259d4524f251aca3d71914b1bd1964c0d2e0184b` | 1983 bytes | test-path,source | UTF-8 | mode 100644
+
+`browser/components/backup/tests/marionette/http2-ca.pem` | `ef5a80172046e2832c2dc1a47e7ada590fad70e8` | 1042 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`browser/components/backup/tests/marionette/manifest.toml` | `c7330ee31c4ee82d6708b258912da356632de744` | 1776 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`browser/components/backup/tests/marionette/newtab-wallpaper.png` | `23d9b9c2c7c80ef4b30b37ab690b6cf8255b6440` | 16320 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`browser/components/backup/tests/marionette/test_backup.py` | `c7def8ae12f00085ece57d87a23f0c53447eb919` | 37486 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: BackupTest@14; setUp@19; tearDown@54; test_backup@62; test_backup_disablement_in_new_session@329; add_test_cookie@398; verify_recovered_test_cookie@424; add_test_login@437; verify_recovered_test_login@465; add_test_certificate@479; verify_recovered_test_certificate@518; add_test_saved_address@533; verify_recovered_saved_address@562; add_test_identity_credential@579; verify_recovered_identity_credential@609; add_test_form_history@644; verify_recovered_form_history@666; add_test_asrouter_snippets_data@685; verify_recovered_asrouter_snippets_data@704; add_test_protections_data@724; verify_recovered_protections_data@743; add_test_bookmarks@757; verify_recovered_bookmarks@776; add_test_history@793; verify_recovered_history@814; add_test_preferences@830; verify_recovered_preferences@837; add_test_permissions@845; add_test_newtab_wallpaper@859; verify_recovered_permissions@874; add_test_payment_methods@889; verify_recovered_payment_methods@909; add_test_sessionstore@968; verify_recovered_sessionstore@972; verify_recovered_newtab_wallpaper@991
+Dependencies: marionette_harness@11
+
+`browser/components/backup/tests/marionette/test_backup_legacy_to_selectable.py` | `7dc8b4b17c3325f94d566887eb99bef3f5861e23` | 5000 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: BackupLegacyToSelectableTest@16; test_backup_legacy_to_selectable@26
+Dependencies: pathlib@8; backup_test_base@13
+
+`browser/components/backup/tests/marionette/test_backup_replace_current_profile.py` | `0e2e82d104153fc34dc20cef9f092f3643c71fcd` | 11114 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: BackupReplaceCurrentProfileTest@16; test_replace_current_profile@26; test_replace_current_profile_legacy_backup_copies_metadata@118
+Dependencies: pathlib@8; backup_test_base@13
+
+`browser/components/backup/tests/marionette/test_backup_selectable_to_legacy.py` | `a5ba94c2a8c03d2d6ec9a1c177ab7c1b9b762c5a` | 16754 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: BackupSelectableToLegacyTest@16; test_backup_selectable_to_legacy@25; test_backup_selectable_to_legacy_replace@211; test_backup_selectable_to_disabled_selectable@304
+Dependencies: pathlib@8; backup_test_base@13
+
+`browser/components/backup/tests/marionette/test_backup_selectable_to_selectable.py` | `924fe1a8c4e37f16f91cd9d9f24e0e5f0b5acbdf` | 7268 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: BackupSelectableToSelectableTest@16; test_backup_selectable_to_selectable@25
+Dependencies: pathlib@8; backup_test_base@13
+
+`browser/components/backup/tests/marionette/test_compatibility.py` | `fe2cc123d0770f90af7792c0f7e9ea949a5d4477` | 12579 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: BackupCompatibilityTest@30; test_recover_v1_backup_selectable@33; test_recover_v1_backup_legacy@38; _test_recover_backup_selectable@43; _test_recover_backup_legacy@114; _verify_common_data@187; _get_backup_path@195; _recover_backup@200; _verify_login@238; _verify_bookmark@254; _verify_history@271; _verify_preference@288; _verify_selectable_profile_metadata@299
+Dependencies: pathlib@21; backup_test_base@26; compat_config@27
+
+`browser/components/backup/tests/xpcshell/data/break_over_unicode.html` | `52e0cd91419e75a9f2961a8e75e756ca50047e23` | 10671 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/tests/xpcshell/data/corrupt.zip` | `d7f5f42f93a894e15423ab156465922666a8fd0b` | 142 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`browser/components/backup/tests/xpcshell/data/fake_avatar.png` | `df88b394f9dbb285c7b8a9a89098245e61a1e087` | 53311 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`browser/components/backup/tests/xpcshell/data/missing_binary_block.html` | `4e83baa61ddc73208f59319080322f4ae473b01f` | 1002 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/tests/xpcshell/data/missing_json_block.html` | `785d7c109df24e5699a5f5263f671126797b09ea` | 683 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/tests/xpcshell/data/test_archive.template.html` | `60873aec4bf62dd90998f66fddc62b88fac00c73` | 2344 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`browser/components/backup/tests/xpcshell/data/test_keep_file_open.worker.js` | `5b2728517756c4021f04b1055c60a6b8dd82d5fd` | 993 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: OpenFileWorker@12; constructor@13; postMessage@19; dispatch@23; open@27; close@31
+
+`browser/components/backup/tests/xpcshell/data/test_xulstore.json` | `aec2c7f7c1fa40000ec7a6415a93c3a0b8870c42` | 299 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`browser/components/backup/tests/xpcshell/head.js` | `bb4fd1fb8aa9011b12d152f6cab82429ff721441` | 14521 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@35; registerCleanupFunction@56; FakeBackupResource1@91; key@92; requiresEncryption@95; FakeBackupResource2@103; key@104; requiresEncryption@107; priority@110; FakeBackupResource3@118; key@119; requiresEncryption@122; priority@125; createKilobyteSizedFile@137; createTestFiles@171; assertFilesExist@204; assertFilesDoNotExist@226; doFileRemovalOperation@252; maybeRemovePath@286; doFileRemovalOperation@288; seededRandomNumberGenerator@305; function@310; assertUint8ArraysSimilarity@358; setupProfile@391; assertSingleTimeMeasurement@429; createStubBackupFile@446
+
+`browser/components/backup/tests/xpcshell/test_AddonsBackupResource.js` | `20d8ea25c7aa8c61d24e167c5e8863c1834bfb2f` | 11622 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@13; add_task@226; add_task@258; add_task@342
+
+`browser/components/backup/tests/xpcshell/test_ArchiveEncryption.js` | `09f2914c6a03029f200e9eac365eced45d873da9` | 8984 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@22; add_task@34; add_task@47; add_task@108; add_task@205; add_task@295
+
+`browser/components/backup/tests/xpcshell/test_ArchiveEncryptionState.js` | `eec3087f4c67cf6a1b653a11e9e40b903bbbcb57` | 3715 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@16; test_ArchiveEncryptionState_serialization_deserialization@33; add_task@75; add_task@99
+
+`browser/components/backup/tests/xpcshell/test_ArchiveEncryption_nonce.js` | `1363f54b1bdc3032c55c06665c7ba96d0fbc7e6f` | 2284 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@16; add_task@72
+
+`browser/components/backup/tests/xpcshell/test_ArchiveUtils_countReplacementCharacters.js` | `99f9a3049a2fbf675f85d57ec263968c4237feda` | 2622 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@16; add_task@29; add_task@46; add_task@63; add_task@80; add_task@93
+
+`browser/components/backup/tests/xpcshell/test_BackupResource.js` | `cb7afede0342d4d4bff064ffd8be4dacef9507b4` | 8474 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@23; add_task@45; add_task@74; add_task@92; add_task@225; add_task@260
+
+`browser/components/backup/tests/xpcshell/test_BackupService.js` | `99adc25c8a51124934f6eb88b0d93b6855d07592` | 40754 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@49; testCreateBackupHelper@69; registerCleanupFunction@80; testDeleteLastBackupHelper@395; testCreateBackupHelper@403; doFileRemovalOperation@438; add_task@472; testCreateBackupHelper@478; add_task@499; testCreateBackupHelper@511; add_task@531; testCreateBackupHelper@540; makeFolderReadonly@557; test_createBackup_robustToFileSystemErrors@595; test_createBackup_override_readonly@651; openUniqueFileInFolder@705; closeTestFile@735; checkBackup@747; checkBackupWithUnremovableItems@776; registerCleanupFunction@781; test_createBackup_robustToNonReadonlyFileSystemErrorsAllowOneNonReadonly@846; test_createBackup_robustToNonReadonlyFileSystemErrors@861; add_task@870; registerCleanupFunction@876; test_editBackupLocation_robustToDeleteLastBackupException@927; add_task@973; test_checkForPostRecovery_resilient_to_resource_failure@1037; add_task@1099; add_task@1165; add_task@1174; add_task@1186; add_task@1294
+
+`browser/components/backup/tests/xpcshell/test_BackupService_archive.js` | `93545f1372615e1ce9210eb72cc2f76146179a63` | 14861 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertExtractionsMatch@31; add_setup@40; registerCleanupFunction@70; add_task@83; add_task@126; add_task@179; add_task@240; add_task@318; transform@366; add_task@392; add_task@427; add_task@440; add_task@466
+
+`browser/components/backup/tests/xpcshell/test_BackupService_crossProfileTypeRecovery.js` | `e647d64688dbee81c71565344c41455c579efc94` | 22916 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@16; createBackupAndRecover@34; add_task@282; add_task@316; add_task@353; add_task@405; add_task@445; add_task@485; test_replaceCurrentProfile_selectable_to_selectable_triggers_delete_and_quit@532; test_replaceCurrentProfile_false_does_not_trigger_delete_and_quit@570; test_replaceCurrentProfile_legacy_backup_copies_metadata@608; test_selectable_to_selectable_launches_with_editprofile_restored@659; test_selectable_backup_into_disabled_selectable_profiles@692
+
+`browser/components/backup/tests/xpcshell/test_BackupService_enable_disable_encryption.js` | `37a37d367b83d1d0ead6b094a3c3c5ecf7130d67` | 13673 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: backupServiceUsesPassword@32; add_setup@64; add_task@72; add_task@144; add_task@239; add_task@272; add_task@335
+
+`browser/components/backup/tests/xpcshell/test_BackupService_enabled.js` | `f0e0817a21afd686031064491261d09b243061d6` | 12310 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@25; registerCleanupFunction@42; add_task@54; disable@58; enable@64; add_task@70; disable@73; enable@77; add_task@83; add_task@103; disable@107; enable@113; add_task@119; disable@122; enable@125; add_task@131; disable@135; enable@141; add_task@154; test_selectableProfilesAllowed_updates_on_enableChanged@194; archiveTemplate@244; restoreTemplate@294; assertStatus@381
+
+`browser/components/backup/tests/xpcshell/test_BackupService_enabledListPref.js` | `0c46859ab8a9c11958535fc573dab523e60096ea` | 7418 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@12; registerCleanupFunction@15; add_task@20; add_task@51; add_task@86; add_task@113; add_task@148; add_task@165; add_task@182
+
+`browser/components/backup/tests/xpcshell/test_BackupService_finalizeSingleFileArchive.js` | `5f515d99f14e6168b323032f3149fcdb1c177d4d` | 5066 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@10; registerCleanupFunction@23; testFinalizeSingleFileArchive@44; add_task@72; add_task@82; add_task@102; add_task@121; add_task@141
+
+`browser/components/backup/tests/xpcshell/test_BackupService_internalPostRecovery.js` | `e5d35fc9a76a436ff0ba1f1922279b88869c6f53` | 3361 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@9; registerCleanupFunction@20; add_task@26
+
+`browser/components/backup/tests/xpcshell/test_BackupService_onedrive.js` | `ac466c4d742b6a2fc4b039b3b73c4006199cb960` | 7922 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: setupMockRegistryComponent@107; add_task@120; add_task@143; add_task@172; add_task@204
+
+`browser/components/backup/tests/xpcshell/test_BackupService_recoverFromSnapshotFolder.js` | `5cf1a8a89333ea9c62ee31134042c3c15d4498c4` | 6960 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@14; add_task@23; add_task@66; add_task@105; add_task@161
+
+`browser/components/backup/tests/xpcshell/test_BackupService_recoverFromSnapshotFolderIntoSelectableProfile.js` | `9f07cab9f693b00b88b16bf32ed7797ad8676030` | 3193 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@21; add_task@64
+
+`browser/components/backup/tests/xpcshell/test_BackupService_regeneration.js` | `af660f8d3edc53b0de61f5dc4c1b2b3d1e06fdd7` | 20666 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: addTestHistory@65; addTestCookie@90; expectRegeneration@123; setTimeout@161; expectNoRegeneration@190; setTimeout@231; add_setup@249; add_task@265; expectRegeneration@268; add_task@278; expectNoRegeneration@284; add_task@302; expectRegeneration@305; add_task@313; expectRegeneration@324; add_task@332; expectRegeneration@351; add_task@361; expectRegeneration@373; add_task@381; expectRegeneration@404; add_task@412; expectRegeneration@419; add_task@427; expectRegeneration@439; add_task@447; expectRegeneration@462; add_task@470; expectRegeneration@479; add_task@487; expectRegeneration@503; add_task@511; expectRegeneration@512; expectRegeneration@516; add_task@524; expectRegeneration@536; add_task@545; expectRegeneration@567; expectRegeneration@580; expectRegeneration@590; add_task@600; expectNoRegeneration@601; add_task@621; expectRegeneration@624; add_task@633; expectRegeneration@634; expectRegeneration@638; add_task@649; expectNoRegeneration@658
+
+`browser/components/backup/tests/xpcshell/test_BackupService_renderTemplate.js` | `5462b50086b29cdc53c2aeefeaed063061e18e9d` | 10044 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testRenderTemplate@24; add_setup@35; registerCleanupFunction@42; add_task@54; add_task@68; add_task@87; add_task@110; add_task@156; add_task@196; add_task@242; add_task@287; add_task@305
+
+`browser/components/backup/tests/xpcshell/test_BackupService_resolveArchiveDestFolderPath.js` | `d2c00c225436a2f99ed4d97e31bd12653a3eded3` | 3838 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@11; registerCleanupFunction@34; add_task@46; add_task@73; add_task@100
+
+`browser/components/backup/tests/xpcshell/test_BackupService_resolveDownloadLink.js` | `93424c7c1a1bdde8065db37c3749c49f4cba6176` | 974 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@9; add_task@22
+
+`browser/components/backup/tests/xpcshell/test_BackupService_restoreStepTelemetry.js` | `5391599d3413bfee9faed68c32dbe7cdc50cda46` | 9104 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@16; registerCleanupFunction@34; add_task@48; add_task@122; add_task@210; add_task@276
+
+`browser/components/backup/tests/xpcshell/test_BackupService_retryHeuristic.js` | `d57ee66576678db985c0c0bc775dd6cb13ed7a1e` | 10275 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: create_backup_failure_expected_calls@24; bsInProgressStateUpdate@97; add_setup@115; registerCleanupFunction@131; add_task@141; add_task@186; registerCleanupFunction@210; add_task@259; add_task@299
+
+`browser/components/backup/tests/xpcshell/test_BackupService_scheduler.js` | `a4dd0abede86524b8a3253d2b26bbb0396974bd7` | 11531 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: addIdleObserver@23; removeIdleObserver@24; add_setup@27; registerCleanupFunction@38; add_task@63; add_task@140; test_BackupService_onObserve_quit_application_granted@158; add_task@178; add_task@211; add_task@244; add_task@284; add_task@330
+
+`browser/components/backup/tests/xpcshell/test_BackupService_schema_versions.js` | `e740fa878ddd7ccdea070caef94da1bbdb696a27` | 1183 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@17
+
+`browser/components/backup/tests/xpcshell/test_BackupService_setParentDirPath.js` | `827abe141327df8a5877c113196beea3025539d4` | 1266 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@11; add_task@20; add_task@32
+
+`browser/components/backup/tests/xpcshell/test_BackupService_takeMeasurements.js` | `dd07600608b82e12454d265efa08b5b562390868` | 6246 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@6; add_task@15; add_task@42; add_task@61; add_task@76; add_task@106; add_task@136; add_task@182
+
+`browser/components/backup/tests/xpcshell/test_BackupService_telemetry.js` | `067afb9e93f3d44b050124bd61ccd09f59b5f5d4` | 11886 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getFile@20; add_setup@42; assertSingleTelemetryEvent@59; assertEventMatches@76; relativeToProfile@103; add_task@108; add_task@119; add_task@123; add_task@127; template@131; add_task@182; add_task@221; registerCleanupFunction@227; add_task@315; add_task@362
+
+`browser/components/backup/tests/xpcshell/test_BackupService_wrongPassword.js` | `28b0b21db27630dce741261cb49bbe57307e2068` | 3497 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@16; registerCleanupFunction@36; testWrongPassword@51; registerCleanupFunction@60; add_task@124; add_task@128
+
+`browser/components/backup/tests/xpcshell/test_BookmarksBackupResource.js` | `147f47c66a01772f832ac9163da300b7449db3cf` | 4735 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@16; add_task@61; add_task@104; add_task@139
+
+`browser/components/backup/tests/xpcshell/test_CookiesBackupResource.js` | `fbe189356eca62292c2fd2a4b2edec1c11e54969` | 7233 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@13; add_task@41; add_task@102; add_task@162; add_task@207
+
+`browser/components/backup/tests/xpcshell/test_CredentialsAndSecurityBackupResource.js` | `22abf70b0fab96e38d539f7dfaefc3425b5d16b0` | 10665 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@13; add_task@69; add_task@173; add_task@273
+
+`browser/components/backup/tests/xpcshell/test_FormHistoryBackupResource.js` | `9cd90ab62ec8b11c5a6de907188a459705449241` | 7119 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@13; add_task@45; add_task@106; add_task@183; add_task@199
+
+`browser/components/backup/tests/xpcshell/test_MeasurementUtils_fuzzByteSize.js` | `aafda91efc07d19631eea7e471db92591bf793a5` | 1744 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@6; add_task@15; add_task@24; add_task@33; add_task@42; add_task@51; add_task@60
+
+`browser/components/backup/tests/xpcshell/test_MiscDataBackupResource.js` | `293194153c66b6d9c81e8dcd6fb3c7aab8716f0e` | 8178 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@17; add_task@54; add_task@157; add_task@216
+
+`browser/components/backup/tests/xpcshell/test_PlacesBackupResource.js` | `5d6dd61eac7ddbaff6713c784a0ea26834d2978f` | 10441 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: registerCleanupFunction@13; add_task@26; add_task@64; add_task@136; add_task@219; add_task@268; add_task@306
+
+`browser/components/backup/tests/xpcshell/test_PreferencesBackupResource.js` | `52f3350806426663a2e292c7dc75306bbaf40701` | 18887 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@23; add_task@85; checkPrefsJsHasValidRecoveryTime@187; add_task@216; add_task@418; add_task@528
+
+`browser/components/backup/tests/xpcshell/test_PreferencesBackupResource_Nimbus.js` | `82817a02bf581bb75914bfc8a99a08d3786426f9` | 9133 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrefsFromMap@58; setPrefsFromMap@76; initFakeNimbusExperimentPrefs@109; uninitFakeNimbusExperimentPrefs@115; enrollFakeNimbusExperiment@127; unenrollFakeNimbusExperiment@148; checkNimbusHasSetPrefs@158; checkIgnoredBackupPrefs@192; checkBackupIgnoredNimbusPrefs@206; performBackup@240; add_task@294
+
+`browser/components/backup/tests/xpcshell/test_PreferencesBackupResource_searchEngines.js` | `46f465c8aaaa8ca051c8a304cfd1d9f049c6b90e` | 8810 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@33; add_task@81; add_task@192
+
+`browser/components/backup/tests/xpcshell/test_PreferencesBackupResource_selectableProfile.js` | `36ce53586abbec16a72f441dcb26c6d795247849` | 14824 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@18; add_task@70; add_task@133; add_task@248; test_recover_non_selectable_overwrites_stale_selectable_prefs@350
+
+`browser/components/backup/tests/xpcshell/test_ResourceFailures.js` | `d51039135cda9a773ad08403e8bf381f77a59194` | 4358 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@13; add_task@21; registerCleanupFunction@25
+
+`browser/components/backup/tests/xpcshell/test_SelectableProfileBackupResource.js` | `f935468196b257716d87a39fdbddf2d240a5c7f6` | 9862 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@20; add_task@27; add_task@121; add_task@250; add_task@274; add_task@303
+
+`browser/components/backup/tests/xpcshell/test_SessionStoreBackupResource.js` | `6d43bf322c58e13b13d7740b5264b26f498204df` | 8148 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@18; add_task@52; add_task@96; add_task@104; testBackupHelper@115; add_task@196
+
+`browser/components/backup/tests/xpcshell/test_SessionStoreBackupResource_mockSessionStore.js` | `de7fdbd53bb1aa14500f8e6ce5c18afd4c125ffe` | 8251 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@140; add_task@152; add_task@242
+
+`browser/components/backup/tests/xpcshell/test_SiteSettingsBackupResource.js` | `fe57a7c8102670f5f67548e228a5902156a262e5` | 6891 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@13; add_task@43; add_task@104; add_task@143; add_task@217
+
+`browser/components/backup/tests/xpcshell/test_backupService_findBackupsInWellKnownLocations.js` | `34c83d195a670c08015c18f060a83bebbaac6f3c` | 10625 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: setupBackupDir@12; touchBackupFile@19; test_findBackupsInWellKnownLocations_and_multipleFiles@26; add_task@120; add_task@152; add_task@190
+
+`browser/components/backup/tests/xpcshell/xpcshell.toml` | `3c06134b1fd1d51e6eb9cf1212f6908ab6e4734a` | 3325 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`browser/components/backup/triage.json` | `9e2062643b26460ba2aa07907e760e6549282a24` | 1643 bytes | data-or-other | UTF-8 | mode 100644
+
+`browser/components/build/components.conf` | `968241943771ae498e9c16ee12640447aa008de2` | 2022 bytes | build-registration | UTF-8 | mode 100644
+
+`browser/components/build/moz.build` | `dd5a3555f95e788af2296b5676a6205d6f69be2e` | 516 bytes | build-registration | UTF-8 | mode 100644
+
+`browser/components/build/nsBrowserCompsCID.h` | `b8aa6a97f5a7559f49c2ee55f850a243eb25cb3b` | 941 bytes | source | UTF-8 | mode 100644
+
+`browser/components/components.conf` | `bda9fc34377b61798b616bda7fbdd6ce8ac00eaf` | 3006 bytes | build-registration | UTF-8 | mode 100644
+
+`browser/components/contentanalysis/content/ContentAnalysis.sys.mjs` | `2d45f07861f916dd1b06a97c7a6677f2da161031` | 40671 bytes | source | UTF-8 | mode 100644
+Declarations: contentAnalysis@125; setMockContentAnalysisForTest@142; initialize@152; uninitialize@182; initializeObservers@194; uninitializeObservers@205; observe@214; showPanel@383; _disconnectFromView@400; _showMessage@452; _shouldShowBlockingNotification@500; _getResourceNameFromNameOrOperationType@514; _getResourceNameOrOperationTypeFromRequest@553; _removeSlowCAMessage@638; _getAllSlowCARequestInfos@665; _showSlowCAMessage@681; _getSlowDialogMessage@707; _getErrorDialogMessage@751; _warnDialogText@1116
+Dependencies: resource://gre/modules/XPCOMUtils.sys.mjs@14
+
+`browser/components/contentanalysis/content/tsconfig.json` | `19b0275782c7d291b5549ebc15486b402ca0b4a3` | 288 bytes | data-or-other | UTF-8 | mode 100644
+
+`browser/components/contentanalysis/moz.build` | `ec9b456adb8589189197cb9eaa748c0734f5384d` | 335 bytes | build-registration | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/content/ContainerCreationPanel.mjs` | `9868c288653b83717afb0403901c8adc0058bd4d` | 3336 bytes | source | UTF-8 | mode 100644
+Declarations: unpinAnchor@16; open@42
+Dependencies: chrome://browser/content/usercontext/ContainerEditor.mjs@5
+
+`browser/components/contextualidentity/content/ContainerEditor.mjs` | `7d789c2a1d9b12e875ed0fa638036dd85d8827b4` | 4622 bytes | source | UTF-8 | mode 100644
+Declarations: ContainerEditor@29; constructor@30; render@41; _createPicker@80; _buildSwatches@89; focus@110; isValid@114; commit@118
+
+`browser/components/contextualidentity/content/briefcase.svg` | `f643597cb92e41e5b85d56a672f01f730ac45596` | 1767 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/content/cart.svg` | `95d33be46b59715ae1cbf69e86d8091efffa0c72` | 1842 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/content/chill.svg` | `87d14ecb4438e3f8d49caf61e853a9faf0eebeb6` | 2505 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/content/circle.svg` | `ca83f25065f0243403a3b665e77995f06d579c27` | 855 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/content/container-select.css` | `d8c41ca0c7e56da9dfe12a4f5cad924e54e706c1` | 844 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/content/container-select.mjs` | `313bfdcd8edc1dcf04b45da919a797173507e05c` | 4126 bytes | source | UTF-8 | mode 100644
+Declarations: containerOptions@21; ContainerSelect@41; constructor@49; firstUpdated@58; inputStylesTemplate@69; populateOptions@84; willUpdate@98; updated@118
+Dependencies: chrome://global/content/vendor/lit.all.mjs@5; chrome://global/content/elements/moz-select.mjs@6
+
+`browser/components/contextualidentity/content/dollar.svg` | `aa9b133f75ed93b6af9d61804b0eb721b3da002f` | 2094 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/content/fence.svg` | `8b4cbce28b776779cbbad123e2ca64326e7af5d9` | 1536 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/content/fingerprint.svg` | `b324f1ee40b475f71f1c40ceb9ec19da086b8022` | 3452 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/content/food.svg` | `fc51935018ffa3103f83e04cfb5eaf8ff66f9f40` | 1499 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/content/fruit.svg` | `0714dd796cfc51e31f9b46c145085c267005d33a` | 1910 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/content/gift.svg` | `fb5a80054483d2734918a2aa6cd2996bc393f701` | 2023 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/content/pet.svg` | `bdaf322a914d83763480f757b38b6f05632f6a34` | 2474 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/content/tree.svg` | `27c6206545d544ef5ae7e04da56cf65b20b5221e` | 1393 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/content/usercontext.css` | `2e89d7e1dda9af2fce559a13b55f09706621fa14` | 8224 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/content/vacation.svg` | `b4847b157e53d216390980f5f6d2e4153193390c` | 3423 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/jar.mn` | `a62ea46b3290d947ea63b14dc851a7453db0676d` | 1524 bytes | build-registration | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/metrics.yaml` | `9680eb471cf1c9d190e337b7cab18703bcba4da8` | 6134 bytes | data-or-other | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/moz.build` | `aee212392a72108ac11f7ee664890c5d615fb5a8` | 359 bytes | build-registration | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/test/browser/blank.html` | `bcc2e389b8c592838d648ca2f8d35510515c4f62` | 52 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/test/browser/browser.toml` | `dc9a89fd6012a16f45aad01a9f497e3d76e374bc` | 2129 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/test/browser/browser_aboutURLs.js` | `82e321bf715de996ae0d6cd68c1e2f5adcf0d988` | 2496 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@7
+
+`browser/components/contextualidentity/test/browser/browser_blobUrl.js` | `636ffcc30131fb5908b0f2d6f9fd35d5d7ebc3e0` | 2661 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@9; add_task@15
+
+`browser/components/contextualidentity/test/browser/browser_broadcastchannel.js` | `49d52e436e6bc09f5d76e003fade4c4bd3f67223` | 2214 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: runTestForReceiver@6; function@31; function@43; add_setup@58; add_task@65
+
+`browser/components/contextualidentity/test/browser/browser_container_definitions_in_sync.js` | `04f694fe87b29b51b1fd053859e53dee03993fd8` | 3986 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: computedVar@6; resolveColor@18; add_task@36; add_task@60; add_task@76; add_task@91
+
+`browser/components/contextualidentity/test/browser/browser_count_and_remove.js` | `8f044db94e702be7fca29610a6bb855fead96007` | 2408 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: openTabInUserContext@4; add_setup@9; add_task@16
+
+`browser/components/contextualidentity/test/browser/browser_eme.js` | `8a80ca2015f8bbc9f7b2f504898f8f30f690b90e` | 5361 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: HexToBase64@23; Base64ToHex@35; ByteArrayToHex@44; generateKeyObject@55; generateKeyInfo@69; add_setup@80; add_task@91; function@105; function@174
+
+`browser/components/contextualidentity/test/browser/browser_favicon.js` | `ce421334d1bdb6a6888ac80a007bda567439b0c7` | 3940 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getIconFile@20; function@28; loadIndexHandler@37; loadFaviconHandler@54; add_setup@72; registerCleanupFunction@87; add_task@93; function@127
+
+`browser/components/contextualidentity/test/browser/browser_forgetAPI_EME_forgetThisSite.js` | `2bcaac4fb3255747ea11fdd81fd694acd0c10336` | 6230 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: HexToBase64@27; Base64ToHex@39; ByteArrayToHex@48; generateKeyObject@59; generateKeyInfo@73; setupEMEKey@85; function@93; checkEMEKey@153; add_setup@191; add_task@202
+
+`browser/components/contextualidentity/test/browser/browser_forgetAPI_cookie_getCookiesWithOriginAttributes.js` | `c314b20008d87e60c576491c614bb28fab82b939` | 2315 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getCookiesForOA@19; add_setup@27; add_task@34
+
+`browser/components/contextualidentity/test/browser/browser_forgetAPI_quota_clearStoragesForPrincipal.js` | `aab262a11756724ae2580591bfeea3f962807af2` | 4096 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: setupIndexedDB@20; function@24; checkIndexedDB@70; add_setup@97; add_task@104
+
+`browser/components/contextualidentity/test/browser/browser_forgetaboutsite.js` | `bdcc3452ec9fa4d19fc96d9bea375ed5b72006bf` | 11630 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: imageHandler@27; loadImagePageHandler@41; getCookiesForOA@59; createURI@63; getCacheStorage@67; OpenCacheEntry@82; CacheListener@85; onCacheEntryCheck@89; onCacheEntryAvailable@93; run@97; test_cookie_cleared@112; test_cache_cleared@154; test_image_cache_cleared@219; test_storage_cleared@269; function@285; add_setup@382; add_task@404; registerCleanupFunction@410
+
+`browser/components/contextualidentity/test/browser/browser_guessusercontext.js` | `25d12941ff784185acaa396c102c01d7e84bf8d2` | 3898 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: openTabInUserContext@20; registerCleanupFunction@29; add_setup@38; add_task@44; openURIFromExternal@101
+
+`browser/components/contextualidentity/test/browser/browser_imageCache.js` | `ec3645d9a4caeb63eb2e8485d2ced06c2f339cbd` | 1668 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: imageHandler@18; fileHandler@29; add_setup@36; add_task@43
+
+`browser/components/contextualidentity/test/browser/browser_middleClick.js` | `d6c0feb77e7dda9ed8d318290198896e27a8af5c` | 1440 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@8; function@30
+
+`browser/components/contextualidentity/test/browser/browser_newtabButton.js` | `e2e91b6401a13e1ba0244c4ed14e5edbdc23aa64` | 11190 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: findPopup@14; findContextPopup@18; add_setup@22; registerCleanupFunction@24; add_task@33; add_task@64; add_task@148; add_task@169; add_task@185; add_task@242; add_task@279
+
+`browser/components/contextualidentity/test/browser/browser_originattrs_reopenin.js` | `a80f58193f65fa9a4722222308993b2472f3383a` | 7266 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: handleEventLocal@29; add_setup@39; setupRemoteTypes@54; testReopenCommon@93; add_task@205; add_task@210
+
+`browser/components/contextualidentity/test/browser/browser_relatedTab.js` | `3451d3d16ebb7a7d532a52076c5d807c621f4c32` | 2518 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@7
+
+`browser/components/contextualidentity/test/browser/browser_reopenIn.js` | `845c31eff5a433f96764b0c653be66537d8bfb4a` | 4222 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: openTabMenuFor@9; openReopenMenuForTab@23; checkMenuItem@39; openTabInContainer@54; add_task@63; add_task@113; add_task@137
+
+`browser/components/contextualidentity/test/browser/browser_restore_getCookiesWithOriginAttributes.js` | `b3cacfbb2137537b656836c8de8be9572edf1c03` | 3081 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getCookiesForOA@22; add_setup@30; checkCookies@37; deleteCookies@51; add_task@69
+
+`browser/components/contextualidentity/test/browser/browser_saveLink.js` | `6c064ea0957dba7469279d14698eee8be1aee7b9` | 3883 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@11; add_task@29; onTransferComplete@80; registerCleanupFunction@89; createTemporarySaveDirectory@125
+
+`browser/components/contextualidentity/test/browser/browser_serviceworkers.js` | `9b07d2a9b9028e43b251e2bbd01d18b013b391ce` | 2968 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: openTabInUserContext@13; add_setup@24; add_task@36; allRegistered@65; promiseAllRegistered@91; onRegister@94; promiseUnregister@105; unregisterSucceeded@110; unregisterFailed@114
+
+`browser/components/contextualidentity/test/browser/browser_siteContainer_eligibility.js` | `09aafa7cd53d7c624cda2a17c7063e699377d22e` | 8201 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@7; add_task@46; add_task@80; assertNoRetarget@97; add_task@111; assertNoRetarget@115; add_task@147; assertNoRetarget@151; add_task@190; async@193; assertNoRetarget@196; add_task@215; assertNoRetarget@219; add_task@234; assertNoRetarget@251
+
+`browser/components/contextualidentity/test/browser/browser_siteContainer_redirect.js` | `0c7da582fd3faa6c33c24952dc16a10b1a16a245` | 8585 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: withDownload@9; onDownloadChanged@13; add_task@36; add_task@54; add_task@92; add_task@146; withPrefs@147; add_task@163; withDownload@176; add_task@205; assertNoRetarget@224; withDownload@225
+
+`browser/components/contextualidentity/test/browser/browser_siteContainer_retarget.js` | `a6962f56aaed130a0f954ee6ffd0056ecb1e86ea` | 8459 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: goBackTo@17; goForwardTo@23; add_task@29; add_task@64; add_task@82; add_task@107; add_task@126; add_task@161; add_task@180; async@183; add_task@204; async@228; add_task@245
+
+`browser/components/contextualidentity/test/browser/browser_siteContainer_serviceworker.js` | `804e7ce427480bd8620d8899b6c59def64df6c8a` | 5282 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: orgCookies@7; orgServiceWorkers@23; promiseOrgServiceWorker@38; onRegister@44; unregisterOrgServiceWorkers@56; unregisterSucceeded@62; unregisterFailed@65; add_task@78; add_task@111
+
+`browser/components/contextualidentity/test/browser/browser_siteContainer_webext.js` | `ebbf07f6af5dc1f3580348182be99b937f07b68b` | 5295 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: withRedirectExtension@12; test_webext_redirect_to_moz_extension_keeps_container@37; background@38; async@54; add_task@98; background@99; withRedirectExtension@110; add_task@128; background@129; withRedirectExtension@151
+
+`browser/components/contextualidentity/test/browser/browser_switchTab_across_user_context.js` | `b3b8fde2299a301db30f635604daa4277cb25508` | 4625 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@19; add_task@25; add_task@105
+
+`browser/components/contextualidentity/test/browser/browser_tab_color_update.js` | `e0b498fb968e3ffa2e5a37e0298d344e39776b1e` | 1541 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: openTabInUserContext@6; add_task@18; registerCleanupFunction@33
+
+`browser/components/contextualidentity/test/browser/browser_telemetry.js` | `eccc7399f3c260cfe1d0bb3175951d6673efa679` | 14220 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: openTabMenuFor@16; openReopenMenuForTab@30; openTabInContainer@46; add_task@59; add_task@111; add_task@172; add_task@220; add_task@273; add_task@327; add_task@353; add_task@413
+
+`browser/components/contextualidentity/test/browser/browser_urlbarContainerMenu.js` | `3f40cf43b2758663d772fe24c5aeca7756c29bb9` | 1877 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@5; registerCleanupFunction@10; openContainerTab@18; openContainerIndicatorMenu@27; add_task@36; add_task@41; add_task@50
+
+`browser/components/contextualidentity/test/browser/browser_usercontext.js` | `d85eec6dd53010fe1f00ccee4f0a802c652cc99e` | 2738 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: openTabInUserContext@12; add_setup@23; add_task@33
+
+`browser/components/contextualidentity/test/browser/browser_usercontextid_new_window.js` | `5fd4c6f3c2fc2b1c2af6cb61a7462c1f6dab9cb6` | 2807 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: openWindowWithUserContextId@15; add_setup@55; add_task@61; add_task@78
+
+`browser/components/contextualidentity/test/browser/browser_usercontextid_tabdrop.js` | `c2c457186e345a60d606548065739045c830f5c9` | 5607 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@6; add_task@69; add_task@133
+
+`browser/components/contextualidentity/test/browser/browser_windowName.js` | `256f84a8f6eda2866785da2588dd81766ccfba2e` | 2473 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@10; add_task@20; function@46
+
+`browser/components/contextualidentity/test/browser/browser_windowOpen.js` | `d550b03ed832c0ee215d9229f6bc55b85ce50ad1` | 1340 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@10; add_task@19
+
+`browser/components/contextualidentity/test/browser/empty_file.html` | `c6d11dcd573b400af64b5eb0fea890856f35c41b` | 88 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/test/browser/favicon-normal32.png` | `5535363c94df7314765551f65311ec6f98729d8e` | 344 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`browser/components/contextualidentity/test/browser/file_reflect_cookie_into_title.html` | `cc05453507deeb84c008e615c09b89d57a949f5e` | 719 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/test/browser/file_set_storages.html` | `16a16d8691279dba49f9f7352b6fa24d2a540f00` | 1224 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/test/browser/head.js` | `fc37eb372185d2d489d43584d72082b8834d4afc` | 2071 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: openTabMenuFor@1; openReopenMenuForTab@15; openTabInContainer@36; loadTestSubscript@46; openTabInUserContext@59
+
+`browser/components/contextualidentity/test/browser/head_siteContainer.js` | `771f525e3ac331b04b0e2bec2077308faede7a7c` | 6208 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: setContainerCookie@27; add_setup@43; registerCleanupFunction@52; processOriginAttributes@59; assertContainer@66; openTabIn@120; loadRetargeted@132; retargetFrom@140; assertLeftBehind@154; assertNoRetarget@163; navigateTo@175; withPrefs@183
+
+`browser/components/contextualidentity/test/browser/saveLink.sjs` | `754072d78746d37e80c06e797d4d5a099aa22563` | 1681 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/test/browser/serviceworker.html` | `11edd001a235d7a80848a4f4ff8ec78eeac6be8c` | 211 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/test/browser/siteContainer_redirect.sjs` | `7471172e68001557eea3e99c91410dc408a9c629` | 2022 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/test/browser/siteContainer_sw_intercept.js` | `ac3d5542dc8ae61b43a87fed46ee1f0bf7937315` | 1033 bytes | test-path,source | UTF-8 | mode 100644
+
+`browser/components/contextualidentity/test/browser/worker.js` | `2aba167d18788afc63401c79fa2ab9807b2b9621` | 33 bytes | test-path,source | UTF-8 | mode 100644
+
+`browser/components/controlcenter/content/assets/breach-alert-shield-check.svg` | `f9cf414d63137fb7211fdb281e46053f48b284b6` | 8791 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/controlcenter/content/assets/breach-alert-shield-cross.svg` | `43707c5b8e4b23face49c9891b21f8dcb5c10350` | 8345 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/controlcenter/content/assets/breach-alert-shield-warning.svg` | `dc720c09b20f30cc8d3173ea0a555a6558328e38` | 9146 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/controlcenter/content/assets/fox-concern.svg` | `d4ca24be91f039ff7294eb80ddb1111f0ddb95c1` | 21512 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/controlcenter/content/components/breach-alert-panel.css` | `ca6834c5d9e88937196be1e3a1c53a980065e61a` | 1581 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/controlcenter/content/components/breach-alert-panel.mjs` | `ff8e1b21d9a4203c30e111b2220e056fbdf478d4` | 3694 bytes | source | UTF-8 | mode 100644
+Declarations: BreachAlert@11; constructor@24; _handleCta@30; _handleDismiss@42; _dismissBreach@52; render@67
+Dependencies: chrome://global/content/vendor/lit.all.mjs@5; chrome://global/content/lit-utils.mjs@6
+
+`browser/components/controlcenter/content/components/breach-alert-panel.stories.mjs` | `9313f2081ebba737cad1e441045e72a0f9dade0d` | 1068 bytes | source | UTF-8 | mode 100644
+Dependencies: lit.all.mjs@6; ./breach-alert-panel.mjs@7
+
+`browser/components/controlcenter/content/identityPanel.inc.xhtml` | `d7f214f471f70de3805e0f5b3b2d77f49a06c4f1` | 6610 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/controlcenter/content/permissionPanel.inc.xhtml` | `aa5aa0949bea67b9ca6d7477144570f881b3d498` | 2769 bytes | markup-or-style | UTF-8 | mode 100644
+
+`browser/components/controlcenter/content/protectionsPanel.inc.xhtml` | `21f4a5255d5442af5668fda12fdde004d717fb4d` | 16557 bytes | markup-or-style | UTF-8 | mode 100644
+
+## Validation and limits
+
+Every listed blob was read from the pinned Git tree and its Git SHA-1 was recomputed. Extraction is structural only. Read implementations, callers, build conditions, and tests before making a behavior claim. Runtime behavior and historical reasons remain unverified. Reproduce a file with `git show 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b:path` in the corresponding source clone. The full study coverage and navigation note records aggregate results.
+
+## Retrieval correction
+
+This copy preserves the source map in [c239053c-e350-4b2f-bdee-569bff61a34a.md](c239053c-e350-4b2f-bdee-569bff61a34a.md). The original was imported and committed by concurrent console maintenance during this study. Its full path metadata could exceed the console search budget. This copy uses component scope metadata while keeping every file path in the body. It adds no independent behavior evidence. Original record: `027dcf3ad15d9a719da11fae6ed8691b2799270b9bb4921049cb692c52e2eb8b`.

@@ -1,0 +1,21 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:37:23.628Z","paths":["parser"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-relationships-20261013","parser":"espree 10.3.0"}} -->
+# firefox/parser dom relationship candidates 7409
+
+Each row is an observed syntax site: exact path, line range, enclosing function, written receiver or target, and literal key when available. This is added relationship coverage; definitions and imports remain in the earlier maps. Runtime targets, shared object identity, callback lifetimes, and matching-name links are unresolved unless a focused behavior note verifies them. A matching event, preference, Fluent ID, selector, or method name does not prove a connection.
+
+Role flags come from path heuristics plus the pinned third-party/generated exclusion lists. Imported and generated files are evidence of that source, not project policy. A generated marker alone is not ownership proof. The test category retains test-like call sites; the written receiver still needs verification; an assertion site does not prove which production behavior it checks or that it passed.
+
+- parser/htmlparser/tests/mochitest/parser_web_testrunner.js:54-54; function=writeErrorSummary; role=test-path,source; runtime=unresolved; call appendChild; target=$().appendChild; argument=createEl(); resolution=unresolved-runtime-target
+- parser/htmlparser/tests/mochitest/parser_web_testrunner.js:53-53; function=writeErrorSummary; role=test-path,source; runtime=unresolved; call appendChild; target=$().appendChild; argument=pre; resolution=unresolved-runtime-target
+- parser/htmlparser/tests/mochitest/parser_web_testrunner.js:52-52; function=writeErrorSummary; role=test-path,source; runtime=unresolved; call appendChild; target=pre.appendChild; argument=document.createTextNode(); resolution=unresolved-runtime-target
+- parser/htmlparser/tests/mochitest/parser_web_testrunner.js:51-51; function=writeErrorSummary; role=test-path,source; runtime=unresolved; call appendChild; target=pre.appendChild; argument=document.createTextNode(); resolution=unresolved-runtime-target
+- parser/htmlparser/tests/mochitest/parser_web_testrunner.js:50-50; function=writeErrorSummary; role=test-path,source; runtime=unresolved; call appendChild; target=pre.appendChild; argument=document.createTextNode(); resolution=unresolved-runtime-target
+- parser/htmlparser/tests/mochitest/parser_web_testrunner.js:48-48; function=writeErrorSummary; role=test-path,source; runtime=unresolved; call appendChild; target=$().appendChild; argument=document.createTextNode(); resolution=unresolved-runtime-target
+- parser/htmlparser/tests/mochitest/parser_web_testrunner.js:47-47; function=writeErrorSummary; role=test-path,source; runtime=unresolved; call appendChild; target=$().appendChild; argument=createEl(); resolution=unresolved-runtime-target
+- parser/htmlparser/tests/mochitest/parser_web_testrunner.js:46-46; function=writeErrorSummary; role=test-path,source; runtime=unresolved; call appendChild; target=$().appendChild; argument=createEl(); resolution=unresolved-runtime-target
+- parser/htmlparser/tests/mochitest/parser_web_testrunner.js:44-44; function=writeErrorSummary; role=test-path,source; runtime=unresolved; call appendChild; target=$().appendChild; argument=createEl(); resolution=unresolved-runtime-target
+- parser/htmlparser/tests/mochitest/parser_web_testrunner.js:42-42; function=writeErrorSummary; role=test-path,source; runtime=unresolved; call appendChild; target=$().appendChild; argument=createEl(); resolution=unresolved-runtime-target
+
+## Validation and limits
+
+The file parsed as a module or script. These rows record syntax, not executed branches. Suite is excluded. Non-JavaScript sites, aliases, computed keys, dynamically constructed topics, macros, and receiver implementations need separate checks. No complete call graph, behavior coverage, listener removal pairing, ownership proof, test assertion coverage, or passing test result is claimed. Read implementations and callers before changing behavior.

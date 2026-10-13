@@ -1,0 +1,1235 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:14:46.642314+00:00","paths":["security"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013","portableCopies":["1e08497382f49353cdf53ddd868cedfd8debe38cdc237782bed9271e86cee951"],"sourceAt":"2026-10-13T04:14:46.642314+00:00","correctionOf":"notes/63c6a950-4b08-4dcc-84c8-2f32081caedc.md"}} -->
+# firefox/security structural source map 487
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. This is an automated navigation map, not a behavior review.
+Each row gives the repository-relative path, Git blob ID, byte size, role inferred from the path, declaration candidates, and literal dependency candidates. `@N` is the source line.
+Candidates come from line-based patterns. They can miss multiline, anonymous, macro-generated, and language-specific declarations or match comments and fixture text. Dependencies are not resolved imports, runtime calls, or a complete graph. No candidates does not mean no functions or dependencies.
+Imported code and tests are included. Binary and non-UTF-8 files have a census entry but no declaration extraction. Symlink contents are scanned as text, not followed. No uncommitted changes, build products, ignored files, or untracked files are studied.
+
+## File map
+
+`security/sandbox/chromium/base/types/supports_ostream_operator.h` | `7e0100f970701100ad669cde55802706d176e25b` | 694 bytes | source | UTF-8 | mode 100644
+Declarations: base@12; requires@20
+Dependencies: ostream@8; type_traits@9; utility@10
+
+`security/sandbox/chromium/base/types/supports_to_string.h` | `ec612b23c3330a4e5b2f7c65aa2f9d5b1ded4bac` | 421 bytes | source | UTF-8 | mode 100644
+Declarations: base@8
+
+`security/sandbox/chromium/base/types/to_address.h` | `ac71b0103dcbe7771071c399586943963c9f4c59` | 1382 bytes | source | UTF-8 | mode 100644
+Declarations: base@19; requires@32; requires@33
+Dependencies: memory@8; type_traits@9
+
+`security/sandbox/chromium/base/unguessable_token.h` | `76b7079b94147d696013ee38a8c12448a474c237` | 5807 bytes | source | UTF-8 | mode 100644
+Declarations: base@21; UnguessableTokenHash@23; BASE_EXPORT@51; GetHighForSerialization@90; GetLowForSerialization@96; ToString@104; CreateForTesting@123; UnguessableTokenHash@144; operator@145
+Dependencies: stdint.h@8; string.h@9; compare@11; iosfwd@12; string_view@13; utility@14; base/base_export.h@16; base/check.h@17; base/containers/span.h@18; base/token.h@19
+
+`security/sandbox/chromium/base/version.cc` | `f4219dde826f56b93836545b40cd86a00b326b8a` | 6189 bytes | source | UTF-8 | mode 100644
+Declarations: base@18; Version::Version@98; components_@108; Version::IsValid@110; Version::IsValidWildcardString@115; Version::CompareToWildcardString@125; Version::CompareTo@164; Version::GetString@170
+Dependencies: base/version.h@5; stddef.h@7; algorithm@9; ostream@10; string_view@11; base/check_op.h@13; base/strings/string_number_conversions.h@14; base/strings/string_split.h@15; base/strings/string_util.h@16
+
+`security/sandbox/chromium/base/version.h` | `dc1e3c73d4e4b0ecd196c8fa98a7692e450532c5` | 2748 bytes | source | UTF-8 | mode 100644
+Declarations: base@17; BASE_EXPORT@21
+Dependencies: stdint.h@8; iosfwd@10; string@11; string_view@12; vector@13; base/base_export.h@15
+
+`security/sandbox/chromium/base/win/access_control_list.cc` | `04111f5a828ac4974319b3169bf819904a0196cf` | 7584 bytes | source | UTF-8 | mode 100644
+Declarations: base@24; AclToBuffer@28; EmptyAclToBuffer@43; ConvertAccessMode@50; ExplicitAccessEntry::Clone@93; inheritance_@104; ExplicitAccessEntry@110; AccessControlList::FromPACL@117; AccessControlList::AccessControlList@152; AccessControlList::Clone@217; AccessControlList::Clear@221; AccessControlList::AccessControlList@225
+Dependencies: base/win/access_control_list.h@5; windows.h@7; aclapi.h@9; stdint.h@10; string@12; utility@13; vector@14; base/check.h@16; base/compiler_specific.h@17; base/containers/heap_array.h@18; base/logging.h@19; base/notreached.h@20; base/numerics/checked_math.h@21; base/win/scoped_localalloc.h@22
+
+`security/sandbox/chromium/base/win/access_control_list.h` | `80a1d8cbd7f277819259dd57d336de88ac9c0556` | 5228 bytes | source | UTF-8 | mode 100644
+Declarations: base@21; class@24; BASE_EXPORT@27; mode@44; access_mask@45; inheritance@46; BASE_EXPORT@61; get@120; is_null@124
+Dependencies: stdint.h@8; memory@10; optional@11; string_view@12; vector@13; base/base_export.h@15; base/compiler_specific.h@16; base/containers/heap_array.h@17; base/win/sid.h@18; base/win/windows_types.h@19
+
+`security/sandbox/chromium/base/win/access_token.cc` | `62436f510ff220503edca0e4d24abe55d68f5f6d` | 26811 bytes | source | UTF-8 | mode 100644
+Declarations: base@27; struct@37; struct@50; enum@68; struct@82; BOOL@112; UnwrapSid@117; GetType@153; GetTokenStatistics@180; ConvertLuid@189; LookupPrivilege@221; GetPointer@248; sizeof@278; AccessToken::Group::IsIntegrity@313; AccessToken::Group::IsEnabled@317; AccessToken::Group::IsDenyOnly@321; AccessToken::Group::IsLogonId@325; sid_@330; AccessToken::Privilege::GetName@334; AccessToken::Privilege::IsEnabled@346; luid_@351; AccessToken::FromToken@363; AccessToken::User@436; AccessToken::UserGroup@440; AccessToken::Owner@447; AccessToken::PrimaryGroup@453; AccessToken::LogonId@460; AccessToken::IntegrityLevel@471; AccessToken::SetIntegrityLevel@483; AccessToken::SessionId@496; AccessToken::Groups@505; AccessToken::IsRestricted@509; AccessToken::RestrictedSids@513; AccessToken::IsAppContainer@517; AccessToken::AppContainerSid@526; AccessToken::Capabilities@541; AccessToken::LinkedToken@545; AccessToken::DefaultDacl@554; AccessToken::SetDefaultDacl@564; AccessToken::Id@574; AccessToken::AuthenticationId@578; AccessToken::Privileges@582; AccessToken::IsElevated@598; AccessToken::IsMember@607; AccessToken::IsMember@613; AccessToken::IsImpersonation@617; AccessToken::IsIdentification@621; AccessToken::ImpersonationLevel@625; GetPointer@681; AccessToken::RemovePrivilege@728; AccessToken::RemoveAllPrivileges@733; sizeof@743; AccessToken::is_valid@823; AccessToken::get@827; AccessToken::release@831; AccessToken::AccessToken@835
+Dependencies: base/win/access_token.h@10; windows.h@12; winternl.h@13; authz.h@15; memory@17; utility@18; base/containers/span.h@20; base/numerics/checked_math.h@21; base/strings/stringprintf.h@22; base/strings/utf_string_conversions.h@23; base/win/access_control_list.h@24; base/win/win_util.h@25
+
+`security/sandbox/chromium/base/win/access_token.h` | `613492a0db55aa665779bf34d00f462dc68b5061` | 14480 bytes | source | UTF-8 | mode 100644
+Declarations: base@21; class@24; BASE_EXPORT@32; BASE_EXPORT@35; GetAttributes@40; BASE_EXPORT@60; GetLuid@63; GetAttributes@65
+Dependencies: memory@8; optional@9; string@10; string_view@11; vector@12; base/base_export.h@14; base/compiler_specific.h@15; base/win/access_control_list.h@16; base/win/scoped_handle.h@17; base/win/sid.h@18; base/win/windows_types.h@19
+
+`security/sandbox/chromium/base/win/current_module.h` | `cc5a38751ee2baef3b85d1267cdeb062e17dd919` | 553 bytes | source | UTF-8 | mode 100644
+Dependencies: windows.h@8
+
+`security/sandbox/chromium/base/win/pe_image.cc` | `325738520b63b4a96b6dd11f9da323bffc2c5e96` | 21562 bytes | source | UTF-8 | mode 100644
+Declarations: base@23; win@24; EnumAllImportsStorage@27; StrCmpByByte@42; PdbInfo@52; PEImage::set_module@93; PEImage::GetDosHeader@97; PEImage::GetNTHeaders@101; PEImage::GetSectionHeader@108; PEImage::GetNumSections@119; PEImage::GetImageDirectoryEntrySize@123; PEImage::GetImageDirectoryEntryAddr@128; PEImage::GetImageSectionFromAddr@133; sizeof@162; PEImage::GetExportEntry@224; PEImage::GetProcAddress@242; PEImage::GetProcOrdinal@265; PEImage::EnumSections@318; PEImage::EnumExports@335; PEImage::EnumRelocs@393; PEImage::VerifyMagic@606; sizeof@620; PEImage::RVAToAddr@659; PEImageAsData::RVAToAddr@685
+Dependencies: base/win/pe_image.h@13; stddef.h@15; set@17; string@18; base/no_destructor.h@20; base/win/current_module.h@21
+
+`security/sandbox/chromium/base/win/pe_image.h` | `0666eea435f2dbd347f3bc62b1b0ab52996ef45c` | 12640 bytes | source | UTF-8 | mode 100644
+Declarations: base@19; win@20; PEImage@30; PEImage@84; PEImage@85; PEImageAsData@276; PEImageAsData@278; PEImage::IsOrdinal@283; PEImage::ToOrdinal@287; PEImage::module@291; PEImage::GetFirstImportChunk@295; PEImage::GetExportDirectory@300
+Dependencies: windows.h@14; delayimp.h@16; stdint.h@17
+
+`security/sandbox/chromium/base/win/scoped_handle.cc` | `131a747fc3977e5a2953440517937748cf651740` | 2745 bytes | source | UTF-8 | mode 100644
+Declarations: base@16; win@17; HandleTraits::CloseHandle@37; DisableHandleVerifier@57; OnHandleBeingClosed@61
+Dependencies: base/win/scoped_handle.h@5; string@7; base/check_op.h@9; base/debug/alias.h@10; base/logging.h@11; base/win/scoped_handle_verifier.h@12; base/win/win_util.h@13; base/win/windows_types.h@14
+
+`security/sandbox/chromium/base/win/scoped_handle.h` | `93114e5ed9f17b2edd0111efde9c644bc70fd612` | 7557 bytes | source | UTF-8 | mode 100644
+Declarations: base@30; win@31; class@33; GenericScopedHandle@53; GenericScopedHandle@57; GenericScopedHandle@59; handle_@64; is_valid@73; Set@81; get@96; Get@99; Close@116; HandleTraits@136; IsHandleValid@153; NullHandle@158; DummyVerifierTraits@162; BASE_EXPORT@181
+Dependencies: ostream@8; string_view@9; base/base_export.h@11; base/check_op.h@12; base/dcheck_is_on.h@13; base/gtest_prod_util.h@14; base/location.h@15; base/types/expected.h@16; base/win/windows_handle_util.h@17; base/win/windows_types.h@18; build/build_config.h@19; intrin.h@23
+
+`security/sandbox/chromium/base/win/scoped_handle_verifier.cc` | `cf58179f7a116b91174a4cc43027d341c2e26650` | 9074 bytes | source | UTF-8 | mode 100644
+Declarations: GetHandleVerifier@29; base@34; win@35; internal@36; AutoNativeLock@72; AutoNativeLock@74; thread_id@95; enabled_@105; ScopedHandleVerifier::Get@108; CloseHandleWrapper@116; ScopedHandleVerifier::InstallVerifier@143; ScopedHandleVerifier::CloseHandle@181; ScopedHandleVerifier::GetLock@193; ScopedHandleVerifier::Disable@216; ScopedHandleVerifier::GetModule@227; GetHandleVerifierModuleForTesting@288
+Dependencies: base/win/scoped_handle_verifier.h@5; windows.h@7; stddef.h@9; unordered_map@11; utility@12; base/auto_reset.h@14; base/compiler_specific.h@15; base/debug/alias.h@16; base/debug/stack_trace.h@17; base/memory/raw_ref.h@18; base/notreached.h@19; base/synchronization/lock_impl.h@20; base/trace_event/trace_event.h@21; base/win/base_win_buildflags.h@22; base/win/current_module.h@23; base/win/scoped_handle.h@24
+
+`security/sandbox/chromium/base/win/scoped_handle_verifier.h` | `8c2e200c3b090ea84c1b78590aaff7f965e28249` | 4521 bytes | source | UTF-8 | mode 100644
+Declarations: base@23; win@24; class@25; internal@26; HandleHash@28; operator@29; ScopedHandleVerifierInfo@34
+Dependencies: memory@13; unordered_map@14; base/base_export.h@16; base/debug/stack_trace.h@17; base/hash/hash.h@18; base/memory/raw_ptr.h@19; base/synchronization/lock_impl.h@20; base/win/windows_types.h@21
+
+`security/sandbox/chromium/base/win/scoped_localalloc.h` | `2f2ce1fb8feca308792b533472bc8ec27b3bf48f` | 904 bytes | source | UTF-8 | mode 100644
+Declarations: base@13; win@14; LocalAllocDeleter@17; operator@18; TakeLocalAlloc@28
+Dependencies: memory@8; utility@9; base/win/windows_types.h@11
+
+`security/sandbox/chromium/base/win/scoped_process_information.cc` | `6599fec85811477392ab0f3b07918ab8418469bd` | 3167 bytes | source | UTF-8 | mode 100644
+Declarations: base@10; win@11; CheckAndDuplicateHandle@18; ScopedProcessInformation::~ScopedProcessInformation@50; ScopedProcessInformation::IsValid@54; ScopedProcessInformation::Close@59; ScopedProcessInformation::Set@66; CheckAndDuplicateHandle@83; ScopedProcessInformation::Take@92; ScopedProcessInformation::TakeProcessHandle@104; ScopedProcessInformation::TakeThreadHandle@109
+Dependencies: base/win/scoped_process_information.h@5; base/logging.h@7; base/win/scoped_handle.h@8
+
+`security/sandbox/chromium/base/win/scoped_process_information.h` | `56501cbe07a78647e186ce07069cf7111d075739` | 2703 bytes | source | UTF-8 | mode 100644
+Declarations: base@13; win@14; BASE_EXPORT@18; process_handle@58; thread_handle@61; process_id@64; thread_id@67
+Dependencies: windows.h@8; base/base_export.h@10; base/win/scoped_handle.h@11
+
+`security/sandbox/chromium/base/win/security_descriptor.cc` | `aeefb11d44b50d03c594bdfb399199efd48bd601` | 16327 bytes | source | UTF-8 | mode 100644
+Declarations: base@24; CloneValue@28; UnwrapSid@35; UnwrapAcl@42; ConvertObjectType@49; GetGenericMappingForType@64; BOOL@189; BOOL@200; sd_@215; SecurityDescriptor::ToAbsolute@317; SecurityDescriptor::ToSelfRelative@341; SecurityDescriptor::Clone@366
+Dependencies: base/win/security_descriptor.h@5; windows.h@8; aclapi.h@11; sddl.h@12; utility@14; vector@15; base/compiler_specific.h@17; base/files/file_path.h@18; base/logging.h@19; base/notreached.h@20; base/numerics/checked_math.h@21; base/win/scoped_localalloc.h@22
+
+`security/sandbox/chromium/base/win/security_descriptor.h` | `951d7e186d3e032d03c692dfc48342651f29cb9a` | 10568 bytes | source | UTF-8 | mode 100644
+Declarations: base@22; class@26; AccessCheckResult@35; BASE_EXPORT@43; BASE_EXPORT@45; size@52; get@53; owner@212; set_owner@213; clear_owner@214; group@218; set_group@219; clear_group@220; dacl@224; set_dacl@225; clear_dacl@226; dacl_protected@229; set_dacl_protected@230; sacl@236; set_sacl@237; clear_sacl@238; sacl_protected@241; set_sacl_protected@242
+Dependencies: stdint.h@8; optional@10; string@11; vector@12; base/base_export.h@14; base/compiler_specific.h@15; base/files/file_path.h@16; base/win/access_control_list.h@17; base/win/access_token.h@18; base/win/sid.h@19; base/win/windows_types.h@20
+
+`security/sandbox/chromium/base/win/security_util.cc` | `dc95d3a3474f1c8a27298175f683d801a38a3a03` | 4733 bytes | source | UTF-8 | mode 100644
+Declarations: base@21; win@22; CloneSidVector@136; GetGrantedAccess@147; sizeof@150
+Dependencies: base/win/security_util.h@5; windows.h@7; winternl.h@8; optional@10; base/check.h@12; base/containers/to_vector.h@13; base/files/file_path.h@14; base/logging.h@15; base/threading/scoped_blocking_call.h@16; base/win/access_control_list.h@17; base/win/scoped_handle.h@18; base/win/security_descriptor.h@19
+
+`security/sandbox/chromium/base/win/security_util.h` | `15d5fcd6e11e92272735a0c4910f31997bda1403` | 2371 bytes | source | UTF-8 | mode 100644
+Declarations: base@15; FilePath@17; win@19
+Dependencies: optional@8; vector@9; base/base_export.h@11; base/win/sid.h@12; base/win/windows_types.h@13
+
+`security/sandbox/chromium/base/win/shlwapi.h` | `2ca59ee9ad0d95a3e09523df5add6c685acf21a8` | 707 bytes | source | UTF-8 | mode 100644
+Dependencies: base/win/windows_defines.inc@9; base/win/windows_undefines.inc@11; shlwapi.h@14; base/win/windows_undefines.inc@17; base/win/windows_defines.inc@19
+
+`security/sandbox/chromium/base/win/sid.cc` | `88fcfd80dfd088d4a7a2db09eee6d425a4ace7b6` | 12230 bytes | source | UTF-8 | mode 100644
+Declarations: base@38; FromNtAuthority@65; WellKnownCapabilityToRid@69; Sid::FromKnownCapability@106; NTSTATUS@112; Sid::FromNamedCapability@115; Sid::FromKnownSid@163; Sid::FromSddlString@232; Sid::FromPSID@241; Sid::GenerateRandomSid@249; Sid::FromIntegrityLevel@256; Sid::Sid@302; Sid@304; Sid::GetPSID@309; Sid::ToSddlString@314; Sid::Clone@323; Sid::Equal@327
+Dependencies: base/win/sid.h@10; windows.h@13; sddl.h@16; stdint.h@17; stdlib.h@18; algorithm@20; iterator@21; map@22; utility@23; base/check.h@25; base/no_destructor.h@26; base/rand_util.h@27; base/strings/string_util_win.h@28; base/win/scoped_handle.h@29; base/win/scoped_localalloc.h@30; base/win/windows_version.h@31; winternl.h@33; third_party/boringssl/src/include/openssl/sha.h@35
+
+`security/sandbox/chromium/base/win/sid.h` | `0deeb5a91136c45a06a3c095f64e9e6e5b0999e7` | 3712 bytes | source | UTF-8 | mode 100644
+Declarations: base@15; class@18; class@34; BASE_EXPORT@64
+Dependencies: optional@8; string@9; vector@10; base/base_export.h@12; base/win/windows_types.h@13
+
+`security/sandbox/chromium/base/win/startup_information.cc` | `f440e0c700d5e3c61d02769d578104664a7ca4df` | 1817 bytes | source | UTF-8 | mode 100644
+Declarations: base@9; win@10; StartupInformation::StartupInformation@12; StartupInformation::~StartupInformation@16
+Dependencies: base/win/startup_information.h@5; utility@7
+
+`security/sandbox/chromium/base/win/startup_information.h` | `9d7722c0648e1418b0a818bb70cf2b7e9fe0dad7` | 1496 bytes | source | UTF-8 | mode 100644
+Declarations: base@15; win@16; BASE_EXPORT@19; startup_info@36; startup_info@37; has_extended_startup_info@41
+Dependencies: windows.h@8; stddef.h@10; base/base_export.h@12; base/containers/heap_array.h@13
+
+`security/sandbox/chromium/base/win/static_constants.cc` | `05be71a73db14de83024f73dec52cfe7d1b8f56c` | 319 bytes | source | UTF-8 | mode 100644
+Declarations: base@7; win@8
+Dependencies: base/win/static_constants.h@5
+
+`security/sandbox/chromium/base/win/static_constants.h` | `a588e4cf52e5c4b6b06bb86ca4fb6cde4214ae0e` | 658 bytes | source | UTF-8 | mode 100644
+Declarations: base@13; win@14
+
+`security/sandbox/chromium/base/win/win_handle_types.h` | `503bf6f8b7b08fc1b879671e577e5d3e67fb10e2` | 507 bytes | source | UTF-8 | mode 100644
+Declarations: name@11; struct@12
+Dependencies: base/win/win_handle_types_list.inc@13
+
+`security/sandbox/chromium/base/win/win_handle_types_list.inc` | `917c4b2844767500461f786dbe8bc15c91ad825d` | 1202 bytes | data-or-other | UTF-8 | mode 100644
+
+`security/sandbox/chromium/base/win/win_util.cc` | `91d53fcf639189bea22470e5fb586072aa15ef07` | 48500 bytes | source | UTF-8 | mode 100644
+Declarations: base@105; win@106; GetPlatformRole@147; EnablePerMonitorV2@156; GetDomainEnrollmentStateStorage@176; GetRegisteredWithManagementStateStorage@181; GetAzureADJoinStateStorage@213; PinUser32Internal@254; IsValidTabletDisplayConfig@267; SetKeyboardPresentOnDeviceReason@331; StartsWith@364; IsWindows11TabletMode@373; GetProcessPowerThrottlingState@383; IsDeviceFormConvertible@461; IsChassisConvertible@487; ChassisType@510; GetConvertibilityEnabledOverride@549; GetConvertibleChassisKeyValue@569; HasCSMStateChanged@587; IsDeviceInTabletMode@601; QueryDeviceConvertibility@612; IsWindows10TabletMode@637; GetUserSidString@711; ScopedAllowBlockingForUserAccountControl@724; UserAccountControlIsEnabled@726; UserAccountIsUnnecessarilyElevated@744; RemoveCommandFromAutoRun@821; SetShouldCrashOnProcessDetach@833; ShouldCrashOnProcessDetach@837; SetAbortBehaviorForCrashReporting@841; IsDeviceUsedAsATablet@873; IsEnrolledToDomain@940; IsDeviceRegisteredWithManagement@944; IsJoinedToAzureAD@954; IsUser32AndGdi32Available@959; sizeof@965; GetLoadedModulesSnapshot@975; EnableFlicks@1022; DisableFlicks@1026; EnableHighDPISupport@1032; WStringFromGUID@1052; PinUser32@1067; GetWindowObjectName@1081; GetPointerDevice@1105; GetPointerDevices@1109; IsRunningUnderDesktopName@1127; IsCurrentSessionRemote@1141; IsAppVerifierLoaded@1170; ExpandEnvironmentVariables@1175; GetProcessEcoQoSState@1231; GetProcessTimerThrottleState@1236; SetProcessEcoQoSState@1241; SetProcessTimerThrottleState@1246; GetSerialNumber@1251; UnicodeStringToView@1273; ViewToUnicodeString@1277; EnableStrictHandleCheckingForCurrentProcess@1289; initial_state_@1299; ScopedDomainStateForTesting::~ScopedDomainStateForTesting@1303; initial_state_@1309; initial_state_@1319; ScopedAzureADJoinStateForTesting::~ScopedAzureADJoinStateForTesting@1321
+Dependencies: base/win/win_util.h@5; objbase.h@7; initguid.h@10; shobjidl.h@11; tchar.h@12; winternl.h@14; aclapi.h@17; cfgmgr32.h@18; inspectable.h@19; lm.h@20; mdmregistration.h@21; ntstatus.h@23; powrprof.h@25; propkey.h@26; psapi.h@27; roapi.h@28; sddl.h@29; setupapi.h@30; shellscalingapi.h@31; signal.h@32; stddef.h@33; stdlib.h@34; strsafe.h@35; tpcshrd.h@36; uiviewsettingsinterop.h@37; wbemidl.h@38; windows.system.profile.systemmanufacturers.h@39; windows.ui.viewmanagement.h@40; winstring.h@41; wrl/client.h@42; wrl/wrappers/corewrappers.h@43; limits@45; memory@46; optional@47; string_view@48; utility@49; base/base_switches.h@51; base/check_op.h@52; base/command_line.h@53; base/containers/heap_array.h@55; base/debug/crash_logging.h@56; base/debug/dump_without_crashing.h@57; base/files/file_path.h@59; base/logging.h@61; base/metrics/histogram_functions.h@63; base/notreached.h@64; base/scoped_native_library.h@65; base/strings/string_util.h@66; base/strings/string_util_win.h@68; base/strings/utf_string_conversions.h@70; base/task/sequenced_task_runner.h@71; base/task/thread_pool.h@72; base/threading/scoped_blocking_call.h@73; base/threading/scoped_thread_priority.h@74; base/threading/thread_restrictions.h@75; base/timer/elapsed_timer.h@76; base/win/access_token.h@77; base/win/com_init_util.h@78; base/win/core_winrt_util.h@79; base/win/hstring_reference.h@80; base/win/propvarutil.h@81; base/win/registry.h@82; base/win/scoped_bstr.h@83; base/win/scoped_co_mem.h@84; base/win/scoped_handle.h@85; base/win/scoped_hstring.h@86; base/win/scoped_propvariant.h@87; base/win/scoped_safearray.h@88; base/win/scoped_variant.h@89; base/win/shlwapi.h@90; base/win/static_constants.h@92; base/win/windows_version.h@94; base/win/wmi.h@95; intsafe.h@97; processthreadsapi.h@98
+
+`security/sandbox/chromium/base/win/win_util.h` | `ad0e35c8d1cab33b6886c7bd37dd37c7c8e80dae` | 22670 bytes | source | UTF-8 | mode 100644
+Declarations: IPropertyStore@41; _tagpropertykey@42; tagPOINTER_DEVICE_INFO@44; struct@46; base@48; NativeLibraryLoadError@50; win@52; class@334; BASE_EXPORT@391; BASE_EXPORT@407; BASE_EXPORT@424; BASE_EXPORT@439
+Dependencies: stdint.h@25; optional@27; string@28; string_view@29; typeinfo@30; vector@31; base/auto_reset.h@33; base/base_export.h@34; base/functional/callback_forward.h@35; base/strings/cstring_view.h@36; base/types/expected.h@37; base/win/scoped_handle.h@38; base/win/windows_types.h@39
+
+`security/sandbox/chromium/base/win/windows_defines.inc` | `579428defaae560f96208825667359ec75946250` | 519 bytes | data-or-other | UTF-8 | mode 100644
+
+`security/sandbox/chromium/base/win/windows_handle_util.h` | `17d0f06f8b491fec765b7afd7e334b6be63a1d51` | 1937 bytes | source | UTF-8 | mode 100644
+Declarations: base@12; IsPseudoHandle@14; HandleToUint32@33; Uint32ToHandle@41
+Dependencies: stdint.h@8; base/win/windows_types.h@10
+
+`security/sandbox/chromium/base/win/windows_types.h` | `65f917cbab5d854abc09c03efe606ed52fa10dcd` | 11908 bytes | source | UTF-8 | mode 100644
+Declarations: unsigned@23; long@24; __int64@25; unsigned@26; char@29; short@30; long@31; int@32; unsigned@33; unsigned@34; unsigned@35; void@36; void@37; void@38; int@39; unsigned@40; BYTE@41; DWORD@42; unsigned@43; WORD@44; WORD@45; __int64@48; unsigned@49; __int64@51; unsigned@52; __w64@54; __w64@55; __w64@57; __w64@58; UINT_PTR@61; LONG_PTR@62; LONG_PTR@63; _Return_type_success_@65; ULONG_PTR@67; LONG_PTR@68; DWORD@70; ACCESS_MASK@71; LONG@73; LONG@83; LPVOID@87; HICON@88; HINSTANCE@89; PVOID@90; PVOID@91; struct@95; struct@96; struct@97; struct@98; struct@99; struct@101; RTL_SRWLOCK@102; struct@104; GUID@105; GUID@106; GUID@107; struct@109; LOGFONTW@110; struct@112; struct@114; struct@116; struct@118; PVOID@120; PVOID@121; DWORD@122; HANDLE@124; struct@127; struct@129; struct@134; WIN32_FIND_DATAW@135; UINT_PTR@137; struct@138; struct@139; struct@140; struct@141; struct@142; CHROME_SRWLOCK@151; CHROME_CONDITION_VARIABLE@155; CHROME_LUID@159; CHROME_WIN32_FIND_DATA@168; CHROME_FORMATETC@172; CHROME_POINT@180; CHROME_MSG@185; INT_PTR@296; ChromeToWindowsType@334; ChromeToWindowsType@343; ChromeToWindowsType@351
+Dependencies: sal.h@12; specstrings.h@13; base/win/win_handle_types.h@15
+
+`security/sandbox/chromium/base/win/windows_undefines.inc` | `eb431604c7ed4a92e0948c1b1aaad10be1e43dcf` | 291 bytes | data-or-other | UTF-8 | mode 100644
+
+`security/sandbox/chromium/base/win/windows_version.cc` | `bd5b80383741d7403a60bc646833170abd2c2647` | 18037 bytes | source | UTF-8 | mode 100644
+Declarations: base@34; win@35; OSInfo::GetInstanceStorage@80; OSInfo::GetInstance@109; OSInfo::GetArchitecture@114; OSInfo::IsRunningEmulatedOnArm64@132; os_type_@165; OSInfo::Kernel32Version@258; OSInfo::Kernel32VersionNumber@266; OSInfo::Kernel32BaseVersion@279; OSInfo::IsWowDisabled@302; OSInfo::IsWowX86OnAMD64@306; OSInfo::IsWowX86OnARM64@311; OSInfo::IsWowAMD64OnARM64@316; OSInfo::IsWowX86OnOther@330; OSInfo::processor_model_name@335; OSInfo::processor_vendor_name@347; OSInfo::IsWindowsNSku@359; GetVersion@490; OSInfo::InitializeWowStatusValuesFromLegacyApi@520; OSInfo::InitializeWowStatusValuesForProcess@533
+Dependencies: base/win/windows_version.h@5; windows.h@7; memory@9; tuple@10; utility@11; base/check_op.h@13; base/debug/crash_logging.h@14; base/debug/dump_without_crashing.h@15; base/file_version_info_win.h@16; base/files/file_path.h@17; base/logging.h@18; base/no_destructor.h@19; base/strings/string_util.h@20; base/strings/utf_string_conversions.h@21; base/threading/thread_restrictions.h@22; base/win/registry.h@23; build/build_config.h@24
+
+`security/sandbox/chromium/base/win/windows_version.h` | `bf28cd9208d41d3ab099f44e626f349fa2e4e27e` | 9357 bytes | source | UTF-8 | mode 100644
+Declarations: _OSVERSIONINFOEXW@19; _SYSTEM_INFO@20; base@22; test@23; ScopedOSInfoOverride@24; base@28; win@29; class@35; VersionType@71; BASE_EXPORT@84; VersionNumber@86; ServicePack@93; WindowsArchitecture@103; class@178; class@188
+Dependencies: stddef.h@8; string@10; base/base_export.h@12; base/compiler_specific.h@13; base/gtest_prod_util.h@14; base/version.h@15
+
+`security/sandbox/chromium/build/build_config.h` | `dabd04900d6b455a35b292f017c8f7102834024d` | 12549 bytes | source | UTF-8 | mode 100644
+Dependencies: build/buildflag.h@59; TargetConditionals.h@73; features.h@97
+
+`security/sandbox/chromium/build/buildflag.h` | `634697986ceae78f0c9239e8824f40f551332b8c` | 1763 bytes | source | UTF-8 | mode 100644
+
+`security/sandbox/chromium/moz.yaml` | `89c6950a6dbd2170ac345cd3ac3ef651e960e0a0` | 19819 bytes | data-or-other | UTF-8 | mode 100644
+
+`security/sandbox/chromium/sandbox/features.cc` | `1ed46ef1522d8bda002356238472da8d65db17da` | 729 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@11; IsAppContainerSandboxSupported@13
+Dependencies: sandbox/features.h@5; base/win/windows_version.h@8
+
+`security/sandbox/chromium/sandbox/features.h` | `b54803c5833ed7cf0ac5cbf0423314454b1bdc11` | 492 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@10
+Dependencies: build/build_config.h@8
+
+`security/sandbox/chromium/sandbox/linux/bpf_dsl/bpf_dsl.cc` | `f7ff83d12cdb95263bdb71e237de25787f17f8dd` | 10373 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@21; bpf_dsl@22; ReturnResultExprImpl@25; ReturnResultExprImpl@27; IsAction@46; TrapResultExprImpl@53; handler_@56; IfThenResultExprImpl@74; else_result_@81; ConstBoolExprImpl@106; ConstBoolExprImpl@108; MaskedEqualBoolExprImpl@125; argno_@131; NegateBoolExprImpl@151; NegateBoolExprImpl@153; AndBoolExprImpl@170; lhs_@173; OrBoolExprImpl@192; lhs_@195; internal@216; ResultExprImpl::HasUnsafeTraps@218; ResultExprImpl::IsAllow@222; ResultExprImpl::IsDeny@226; DefaultMask@230; ArgEq@244; Allow@254; Error@258; Kill@263; Trace@267; Trap@271; UnsafeTrap@275; UserNotify@280; BoolConst@284; Not@288; AllOf@292; AllOf@296; AnyOf@300; AnyOf@304; If@308; Elser::Elser@312; Elser::ElseIf@319; Elser::Else@324; std@358
+Dependencies: sandbox/linux/bpf_dsl/bpf_dsl.h@5; stddef.h@7; stdint.h@8; limits@10; ostream@11; base/check.h@13; base/memory/raw_ptr.h@14; base/notreached.h@15; sandbox/linux/bpf_dsl/bpf_dsl_impl.h@16; sandbox/linux/bpf_dsl/errorcode.h@17; sandbox/linux/bpf_dsl/policy_compiler.h@18; sandbox/linux/system_headers/linux_seccomp.h@19
+
+`security/sandbox/chromium/sandbox/linux/bpf_dsl/bpf_dsl.h` | `41e8ea9e3da92258cf4366ebdcc89ad586dadee8` | 11852 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@74; bpf_dsl@75; Caser@78; Elser@80; SANDBOX_EXPORT@150; Arg@156; Arg@175; SANDBOX_EXPORT@187; SANDBOX_EXPORT@221; Caser@223; Caser@239; internal@252; num_@276; AllOf@327; AnyOf@332
+Dependencies: stddef.h@8; stdint.h@9; initializer_list@11; memory@12; utility@13; vector@14; sandbox/linux/bpf_dsl/bpf_dsl_forward.h@16; sandbox/linux/bpf_dsl/cons.h@17; sandbox/linux/bpf_dsl/trap_registry.h@18; sandbox/sandbox_export.h@19
+
+`security/sandbox/chromium/sandbox/linux/bpf_dsl/bpf_dsl_forward.h` | `1931205ffe07a50c7bd2a9db18753f3f44bc44bd` | 1093 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@12; bpf_dsl@13; internal@19; ResultExprImpl@20; BoolExprImpl@21; std@30
+Dependencies: memory@8; sandbox/sandbox_export.h@10
+
+`security/sandbox/chromium/sandbox/linux/bpf_dsl/bpf_dsl_impl.h` | `478b462b971bc23f4b9325061dcfa0a975aaa46f` | 1973 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@11; bpf_dsl@12; PolicyCompiler@13; internal@15; BoolExprImpl@18; BoolExprImpl@31; ResultExprImpl@36; ResultExprImpl@56
+Dependencies: sandbox/linux/bpf_dsl/codegen.h@8; sandbox/sandbox_export.h@9
+
+`security/sandbox/chromium/sandbox/linux/bpf_dsl/codegen.cc` | `610e08e96a718a3335c52efa618e68b9df5ce8d2` | 5307 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@47; CodeGen::CodeGen@55; CodeGen::~CodeGen@58; CodeGen::Compile@61; CodeGen::WithinRange@107; CodeGen::Append@124; CodeGen::Offset@143
+Dependencies: sandbox/linux/bpf_dsl/codegen.h@5; stddef.h@7; stdint.h@8; limits@10; ostream@11; utility@12; base/check_op.h@14; sandbox/linux/system_headers/linux_filter.h@15
+
+`security/sandbox/chromium/sandbox/linux/bpf_dsl/codegen.h` | `e12e272ff4851f084866a30476ba9599b8ed0bbe` | 4310 bytes | source | UTF-8 | mode 100644
+Declarations: sock_filter@17; sandbox@19; SANDBOX_EXPORT@51; std@55
+Dependencies: stddef.h@8; stdint.h@9; map@11; tuple@12; vector@13; sandbox/sandbox_export.h@15
+
+`security/sandbox/chromium/sandbox/linux/bpf_dsl/cons.h` | `52c36e011479660d401b8f106581f95d03f5cb49` | 3892 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@13; cons@14; Cell@58; ListIterator@60; Cons@68; Cell@74; Cell@76; begin@95; end@103; ListIterator@110; ListIterator@112; ListIterator@113
+Dependencies: memory@8; utility@9; sandbox/sandbox_export.h@11
+
+`security/sandbox/chromium/sandbox/linux/bpf_dsl/dump_bpf.cc` | `d9fe72c30c14a10ab4fb50c29f979a4a01a0f761` | 4714 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@22; bpf_dsl@23; AppendInstruction@82; DumpBPF::PrintProgram@149; DumpBPF::StringPrintProgram@153
+Dependencies: sandbox/linux/bpf_dsl/dump_bpf.h@5; inttypes.h@7; stddef.h@8; stdint.h@9; stdio.h@10; string@12; base/compiler_specific.h@14; base/strings/stringprintf.h@15; sandbox/linux/bpf_dsl/codegen.h@16; sandbox/linux/bpf_dsl/seccomp_macros.h@17; sandbox/linux/bpf_dsl/trap_registry.h@18; sandbox/linux/system_headers/linux_filter.h@19; sandbox/linux/system_headers/linux_seccomp.h@20
+
+`security/sandbox/chromium/sandbox/linux/bpf_dsl/dump_bpf.h` | `68d14a209a848374f7cb0bffb376ded2d491feba` | 807 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@13; bpf_dsl@14; SANDBOX_EXPORT@16
+Dependencies: string@8; sandbox/linux/bpf_dsl/codegen.h@10; sandbox/sandbox_export.h@11
+
+`security/sandbox/chromium/sandbox/linux/bpf_dsl/errorcode.h` | `2f7be3b98d16220dd40a54391f6152c9f13c17ad` | 911 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@10; bpf_dsl@11; SANDBOX_EXPORT@15
+Dependencies: sandbox/sandbox_export.h@8
+
+`security/sandbox/chromium/sandbox/linux/bpf_dsl/linux_syscall_ranges.h` | `6bc58c96d63c791c4c3603cfd0a6ed66c347ea06` | 2152 bytes | source | UTF-8 | mode 100644
+Dependencies: build/build_config.h@8; asm/unistd.h@40; asm/unistd.h@47
+
+`security/sandbox/chromium/sandbox/linux/bpf_dsl/policy.cc` | `1dc68542f93dda3af62e7eef3bf9ae95d568749c` | 411 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@11; bpf_dsl@12; Policy::InvalidSyscall@14
+Dependencies: sandbox/linux/bpf_dsl/policy.h@5; errno.h@7; sandbox/linux/bpf_dsl/bpf_dsl.h@9
+
+`security/sandbox/chromium/sandbox/linux/bpf_dsl/policy.h` | `aa306b09a0c4007c3d9f5db2f1c6bae52fb4bb54` | 1064 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@11; bpf_dsl@12; SANDBOX_EXPORT@15; Policy@17
+Dependencies: sandbox/linux/bpf_dsl/bpf_dsl_forward.h@8; sandbox/sandbox_export.h@9
+
+`security/sandbox/chromium/sandbox/linux/bpf_dsl/policy_compiler.cc` | `1f73a361c5b2c5c217c033d79dfe7da70f2c8655` | 17513 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@29; bpf_dsl@30; DefaultPanic@56; ReturnErrno@62; HasUnsafeTraps@71; PolicyCompiler@83; has_unsafe_traps_@94; PolicyCompiler::~PolicyCompiler@98; PolicyCompiler::Compile@101; PolicyCompiler::DangerousSetEscapePC@123; PolicyCompiler::SetPanicFunc@127; PolicyCompiler::AssemblePolicy@131; PolicyCompiler::CheckArch@141; PolicyCompiler::MaybeAddEscapeHatch@151; PolicyCompiler::DispatchSyscall@183; PolicyCompiler::CheckSyscallNumber@198; PolicyCompiler::FindRanges@219; PolicyCompiler::CompileResult@275; PolicyCompiler::Unexpected64bitArgument@429; PolicyCompiler::Return@443; PolicyCompiler::Trap@461; PolicyCompiler::IsRequiredForUnsafeTrap@466
+Dependencies: sandbox/linux/bpf_dsl/policy_compiler.h@5; errno.h@7; stddef.h@8; stdint.h@9; sys/syscall.h@10; array@12; bit@13; limits@14; ostream@15; base/check_op.h@17; sandbox/linux/bpf_dsl/bpf_dsl.h@18; sandbox/linux/bpf_dsl/bpf_dsl_impl.h@19; sandbox/linux/bpf_dsl/codegen.h@20; sandbox/linux/bpf_dsl/policy.h@21; sandbox/linux/bpf_dsl/seccomp_macros.h@22; sandbox/linux/bpf_dsl/syscall_set.h@23; sandbox/linux/seccomp-bpf/syscall.h@24; sandbox/linux/system_headers/linux_filter.h@25; sandbox/linux/system_headers/linux_seccomp.h@26; sandbox/linux/system_headers/linux_syscalls.h@27
+
+`security/sandbox/chromium/sandbox/linux/bpf_dsl/policy_compiler.h` | `6416649bfc7e586974fd8beaaa4d84a5bcae7425` | 5892 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@19; bpf_dsl@20; Policy@21; SANDBOX_EXPORT@26; Range@79; std@80; class@84
+Dependencies: stddef.h@8; stdint.h@9; vector@11; base/memory/raw_ptr.h@13; sandbox/linux/bpf_dsl/bpf_dsl_forward.h@14; sandbox/linux/bpf_dsl/codegen.h@15; sandbox/linux/bpf_dsl/trap_registry.h@16; sandbox/sandbox_export.h@17
+
+`security/sandbox/chromium/sandbox/linux/bpf_dsl/seccomp_macros.h` | `87d5825aa3ddb43e666e8e70deb6f4c429468023` | 15040 bytes | source | UTF-8 | mode 100644
+Declarations: regs_struct@56; user_regs_struct@76; user_regs_struct@113; regs_struct@155; user_regs@159; regs_struct@227; regs_struct@278; regs_struct@305
+Dependencies: sys/types.h@8; sys/user.h@13; stddef.h@16; build/build_config.h@20; sandbox/linux/system_headers/linux_seccomp.h@21
+
+`security/sandbox/chromium/sandbox/linux/bpf_dsl/syscall_set.cc` | `5a46ae9c927aacc4871cfceaeb1512bfe29a0fb9` | 4318 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@13; SyscallRange@30; SyscallSet::begin@50; SyscallSet::end@54; SyscallSet::IsValid@58; set_@72; SyscallSet::Iterator::NextSyscall@97
+Dependencies: sandbox/linux/bpf_dsl/syscall_set.h@5; stdint.h@7; base/check.h@9; build/build_config.h@10; sandbox/linux/bpf_dsl/linux_syscall_ranges.h@11
+
+`security/sandbox/chromium/sandbox/linux/bpf_dsl/syscall_set.h` | `6cb37e74dc8d73f4455cfbb33f31f59ad51332fe` | 3273 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@15; SANDBOX_EXPORT@30; Iterator@32; SyscallSet@34; All@45; ValidOnly@49; InvalidOnly@54; class@61; SyscallSet@63; SyscallSet@74; set_@83
+Dependencies: stdint.h@8; cstddef@10; iterator@11; sandbox/sandbox_export.h@13
+
+`security/sandbox/chromium/sandbox/linux/bpf_dsl/trap_registry.h` | `ff1893127709de7b2be420193d4c00e4e269d60b` | 2960 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@16; bpf_dsl@18; SANDBOX_EXPORT@23; intptr_t@37; Handler@39; fnc@42; TrapRegistry@74
+Dependencies: stdint.h@8; tuple@10; base/check.h@12; sandbox/linux/system_headers/linux_seccomp.h@13; sandbox/sandbox_export.h@14
+
+`security/sandbox/chromium/sandbox/linux/seccomp-bpf/die.cc` | `644233927013b654fedd6bd052dcab1fce11b82a` | 3023 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@23; Die::ExitGroup@25; sigaction@38; Die::SandboxDie@56; Die::RawSandboxDie@66; Die::SandboxInfo@73; Die::LogToStderr@79
+Dependencies: sandbox/linux/seccomp-bpf/die.h@5; errno.h@7; signal.h@8; stdio.h@9; sys/prctl.h@10; sys/syscall.h@11; unistd.h@12; string@14; tuple@15; base/logging.h@17; base/posix/eintr_wrapper.h@18; sandbox/linux/seccomp-bpf/syscall.h@19; sandbox/linux/services/syscall_wrappers.h@20; sandbox/linux/system_headers/linux_signal.h@21
+
+`security/sandbox/chromium/sandbox/linux/seccomp-bpf/die.h` | `3154dcaee953267ca8facae44357db086b57983b` | 2787 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@10; SANDBOX_EXPORT@23; EnableSimpleExit@56; SuppressInfoMessages@60
+Dependencies: sandbox/sandbox_export.h@8
+
+`security/sandbox/chromium/sandbox/linux/seccomp-bpf/syscall.cc` | `b0cdc71b8f9721c2ba944e53f7bfa4b9370ddb77` | 16791 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@17; Syscall::InvalidCall@327; Syscall::PutValueInUcontext@435
+Dependencies: sandbox/linux/seccomp-bpf/syscall.h@6; errno.h@8; stdint.h@9; ostream@11; base/check_op.h@13; build/build_config.h@14; sandbox/linux/bpf_dsl/seccomp_macros.h@15
+
+`security/sandbox/chromium/sandbox/linux/seccomp-bpf/syscall.h` | `e5675fab2a2aa281f8e90100cb06c6ce6cc9e0bb` | 5867 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@14; SANDBOX_EXPORT@18; T1@44; T2@45; T3@46; T4@47; T5@48; T6@49; T7@50; Call@52; T1@65; T2@66; T3@67; T4@68; T5@69; T6@70; Call@72; Call@86; Call@99; Call@104; Call@109; Call@114; Call@119; Call@123
+Dependencies: signal.h@8; stdint.h@9; sandbox/linux/system_headers/linux_signal.h@11; sandbox/sandbox_export.h@12
+
+`security/sandbox/chromium/sandbox/linux/seccomp-bpf/trap.cc` | `1316786d73a8a37cfa2c956c0c23b9e0d0ae15b7` | 14615 bytes | source | UTF-8 | mode 100644
+Declarations: arch_sigsys@32; GetIsInSigHandler@58; SetIsInSigHandler@63; sandbox::sys_sigprocmask@66; IsDefaultSignalAction@71; sandbox@80; Trap::Trap@82; sigaction@84; sigaction@90; sys_sigprocmask@106; Trap::Registry@111; Trap::SigSysAction@126; Trap::SigSys@146; arch_sigsys@167; arch_seccomp_data@237; Trap::Add@262; Trap::SandboxDebuggingAllowedByUser@341; Trap::EnableUnsafeTraps@346
+Dependencies: sandbox/linux/seccomp-bpf/trap.h@5; errno.h@7; signal.h@8; stddef.h@9; stdint.h@10; string.h@11; sys/syscall.h@12; algorithm@14; atomic@15; limits@16; tuple@17; base/compiler_specific.h@19; base/logging.h@20; base/memory/raw_ptr_exclusion.h@21; build/build_config.h@22; sandbox/linux/bpf_dsl/seccomp_macros.h@23; sandbox/linux/seccomp-bpf/die.h@24; sandbox/linux/seccomp-bpf/syscall.h@25; sandbox/linux/services/syscall_wrappers.h@26; sandbox/linux/system_headers/linux_seccomp.h@27; sandbox/linux/system_headers/linux_signal.h@28
+
+`security/sandbox/chromium/sandbox/linux/seccomp-bpf/trap.h` | `90e83e9f2c1e7c077695a658c9486ee20d312641` | 3094 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@18; SANDBOX_EXPORT@28
+Dependencies: stddef.h@8; stdint.h@9; map@11; base/memory/raw_ptr_exclusion.h@13; sandbox/linux/bpf_dsl/trap_registry.h@14; sandbox/linux/system_headers/linux_signal.h@15; sandbox/sandbox_export.h@16
+
+`security/sandbox/chromium/sandbox/linux/services/syscall_wrappers.cc` | `b7f4349b5c16444b85ceec2ad1d54c9336c936ee` | 6941 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@29; sys_getpid@31; sys_gettid@35; sys_write@39; sys_clone@72; sys_exit_group@76; rlimit64@89; sys_capget@95; sys_capset@104; sys_getresuid@108; sys_getresgid@125; sys_chroot@142; sys_unshare@146; sys_sigprocmask@150; sigaction@164; sys_stat@168; sys_lstat@180; kernel_stat64@194; landlock_restrict_self@223
+Dependencies: sandbox/linux/services/syscall_wrappers.h@5; fcntl.h@7; pthread.h@8; sched.h@9; setjmp.h@10; sys/resource.h@11; sys/syscall.h@12; sys/time.h@13; sys/types.h@14; unistd.h@15; cerrno@17; cstring@18; base/check.h@20; base/compiler_specific.h@21; base/logging.h@22; build/build_config.h@23; sandbox/linux/system_headers/capability.h@24; sandbox/linux/system_headers/linux_signal.h@25; sandbox/linux/system_headers/linux_stat.h@26; sandbox/linux/system_headers/linux_syscalls.h@27
+
+`security/sandbox/chromium/sandbox/linux/services/syscall_wrappers.h` | `d591dbce44dd19cf332b35569d720c80d62324d5` | 4701 bytes | source | UTF-8 | mode 100644
+Declarations: sock_fprog@16; rlimit64@17; cap_hdr@18; cap_data@19; kernel_stat@20; kernel_stat64@21; landlock_ruleset_attr@22; sandbox@24; rlimit64@61; sigaction@88; kernel_stat64@100
+Dependencies: signal.h@8; stdint.h@9; sys/types.h@10; cstddef@12; sandbox/sandbox_export.h@14
+
+`security/sandbox/chromium/sandbox/linux/system_headers/arm64_linux_syscalls.h` | `07c3dbdc8a3107c17d613776f6f8262851ae6f58` | 21468 bytes | source | UTF-8 | mode 100644
+Dependencies: asm-generic/unistd.h@15
+
+`security/sandbox/chromium/sandbox/linux/system_headers/arm_linux_syscalls.h` | `3dcd543514aa012345c8dcb7ed245ce6a95ebb45` | 36823 bytes | source | UTF-8 | mode 100644
+
+`security/sandbox/chromium/sandbox/linux/system_headers/capability.h` | `1db9bd5594ece81572c216521bf34effd4321fd9` | 1064 bytes | source | UTF-8 | mode 100644
+Declarations: cap_hdr@31; cap_data@36
+Dependencies: stdint.h@8
+
+`security/sandbox/chromium/sandbox/linux/system_headers/linux_filter.h` | `4945dd766a4758d8229c17ddc14a1f7c87883e90` | 1986 bytes | source | UTF-8 | mode 100644
+Declarations: sock_filter@12; sock_fprog@19; sock_filter@21
+Dependencies: stdint.h@8
+
+`security/sandbox/chromium/sandbox/linux/system_headers/linux_seccomp.h` | `981005faf06f23d2c5b30977f9daaaba2d355779` | 6128 bytes | source | UTF-8 | mode 100644
+Declarations: arch_seccomp_data@150; seccomp_notif_sizes@157; seccomp_notif@163; arch_seccomp_data@167; seccomp_notif_resp@170; seccomp_notif_addfd@177
+Dependencies: signal.h@8; stdint.h@9; sys/ioctl.h@10; build/build_config.h@12
+
+`security/sandbox/chromium/sandbox/linux/system_headers/linux_signal.h` | `69ccaf108157863ecfa326f8c8e01fd698c882be` | 3817 bytes | source | UTF-8 | mode 100644
+Declarations: siginfo_t@90; LinuxSigSet@97; LinuxSigSet@104; uint64_t@108; LinuxSigAction@113; LinuxSigAction@119
+Dependencies: stdint.h@8; build/build_config.h@10; signal.h@68
+
+`security/sandbox/chromium/sandbox/linux/system_headers/linux_stat.h` | `3aae8cbced775eed6ffa0eb4c5e18776b5554bf3` | 5209 bytes | source | UTF-8 | mode 100644
+Declarations: kernel_stat64@14; kernel_stat64@36; kernel_stat@60; kernel_stat@88; kernel_stat@109; kernel_stat@131; kernel_stat@154; sandbox@194; sandbox@203
+Dependencies: stdint.h@8; build/build_config.h@10; sandbox/linux/system_headers/linux_syscalls.h@11
+
+`security/sandbox/chromium/sandbox/linux/system_headers/linux_syscalls.h` | `450fe3b5427a6ceefc20b0429f5f3f335ac03be9` | 1647 bytes | source | UTF-8 | mode 100644
+Dependencies: sys/syscall.h@19; build/build_config.h@21; sandbox/linux/system_headers/x86_64_linux_syscalls.h@24; sandbox/linux/system_headers/x86_32_linux_syscalls.h@28; sandbox/linux/system_headers/arm_linux_syscalls.h@32; sandbox/linux/system_headers/mips_linux_syscalls.h@36; sandbox/linux/system_headers/mips64_linux_syscalls.h@40; sandbox/linux/system_headers/arm64_linux_syscalls.h@44
+
+`security/sandbox/chromium/sandbox/linux/system_headers/x86_32_linux_syscalls.h` | `46f24578b28cf1d0c0b6b745cb80913ee013b8df` | 29717 bytes | source | UTF-8 | mode 100644
+
+`security/sandbox/chromium/sandbox/linux/system_headers/x86_64_linux_syscalls.h` | `a6dfbf313a220acc6186df4fae1074e5fb3edda7` | 24560 bytes | source | UTF-8 | mode 100644
+
+`security/sandbox/chromium/sandbox/sandbox_export.h` | `443da7b5c6919919461da6949acaf21e4581bb56` | 517 bytes | source | UTF-8 | mode 100644
+
+`security/sandbox/chromium/sandbox/win/src/acl.cc` | `3ddfe5b113f9d0b1644dad0ae91ef2a75ff323c9` | 1688 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@11; GetIntegrityLevelRid@13
+Dependencies: sandbox/win/src/acl.h@5; windows.h@7; base/notreached.h@9
+
+`security/sandbox/chromium/sandbox/win/src/acl.h` | `59ce3307d789fca31fb6b49477e54bdd23f3f59f` | 1541 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@12
+Dependencies: base/win/security_descriptor.h@8; base/win/windows_types.h@9; sandbox/win/src/security_level.h@10
+
+`security/sandbox/chromium/sandbox/win/src/alternate_desktop.cc` | `f6017becb0f90b60dcf7fb92b585fed5ab2f8993` | 2403 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@13; AlternateDesktop::~AlternateDesktop@15; AlternateDesktop::Initialize@49; AlternateDesktop::GetDesktopName@73
+Dependencies: sandbox/win/src/alternate_desktop.h@5; windows.h@7; base/win/win_util.h@9; sandbox/win/src/acl.h@10; sandbox/win/src/window.h@11
+
+`security/sandbox/chromium/sandbox/win/src/alternate_desktop.h` | `45c3ab11710fd48130afb4adfaafc1c893b67ca3` | 1326 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@12; AlternateDesktop@14; integrity_@19
+Dependencies: sandbox/win/src/sandbox.h@8; string@10
+
+`security/sandbox/chromium/sandbox/win/src/app_container.h` | `2b63ad1dd1132afbe4dba19eeaa6c17b581fe8e8` | 2766 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@15; AppContainerType@17
+Dependencies: vector@8; base/win/security_descriptor.h@10; base/win/sid.h@11; base/win/windows_types.h@12; sandbox/win/src/security_capabilities.h@13
+
+`security/sandbox/chromium/sandbox/win/src/app_container_base.cc` | `eadfefeb816df39782d1f5c4461c5da7434bb16c` | 13315 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@25; FreeSidDeleter@29; operator@30; DerivePackageSid@33; BindFunc@51; UnregisterSid@66; GetProfilePath@91; ProfileLock@149; locked@167; AppContainerBase::ProfileExists@232; AppContainerBase::Delete@241; type_@268; AppContainerBase::~AppContainerBase@270; AppContainerBase::AddCapability@328; AppContainerBase::AddCapabilitySddl@337; AppContainerBase::AddImpersonationCapabilitySddl@362; AppContainerBase::GetImpersonationCapabilities@371; AppContainerBase::SetEnableLowPrivilegeAppContainer@383; AppContainerBase::GetEnableLowPrivilegeAppContainer@387; AppContainerBase::GetAppContainerType@391; AppContainerBase::GetSecurityCapabilities@396
+Dependencies: sandbox/win/src/app_container_base.h@5; windows.h@7; userenv.h@9; memory@11; optional@12; string@13; utility@14; base/files/file_util.h@16; base/path_service.h@17; base/types/expected.h@18; base/win/scoped_handle.h@19; base/win/security_descriptor.h@20; sandbox/win/src/acl.h@21; sandbox/win/src/restricted_token_utils.h@22; sandbox/win/src/win_utils.h@23
+
+`security/sandbox/chromium/sandbox/win/src/app_container_base.h` | `74eaa17145b425de262b87bc8f6ecabee3f2918c` | 4236 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@21; AppContainerBase@23
+Dependencies: memory@8; optional@9; string@10; vector@11; base/files/file_path.h@13; base/win/access_token.h@14; base/win/security_descriptor.h@15; base/win/sid.h@16; base/win/windows_types.h@17; sandbox/win/src/app_container.h@18; sandbox/win/src/sandbox_types.h@19
+
+`security/sandbox/chromium/sandbox/win/src/broker_services.cc` | `e40fffbad0fc9896f145766440f962ed25afa97e` | 28222 bytes | source | UTF-8 | mode 100644
+Declarations: AssociateCompletionPort@40; TargetEventsThreadParams@60; thread_pool@67; JobTracker@83; policy@85; PolicyDiagnosticList@97; PolicyDiagnosticList@99; push_back@101; sandbox@253; BrokerServicesBase::BrokerServicesBase@255; BrokerServicesBase::~BrokerServicesBase@326; BrokerServicesBase::CreatePolicy@349; BrokerServicesBase::GetDesktopName@672; BrokerServicesBase::CreateAlternateDesktop@705; BrokerServicesBase::DestroyDesktops@733; BrokerServicesBase::GetMetricsDelegate@738; BrokerServicesBase::FreezeTargetConfigForTesting@748
+Dependencies: sandbox/win/src/broker_services.h@5; stddef.h@7; algorithm@9; optional@10; utility@11; base/check_op.h@13; base/containers/contains.h@14; base/memory/ptr_util.h@15; base/notreached.h@16; base/task/thread_pool.h@18; base/threading/platform_thread.h@20; base/win/access_token.h@21; base/win/current_module.h@22; base/win/scoped_handle.h@23; base/win/sid.h@24; base/win/windows_version.h@25; build/build_config.h@26; sandbox/win/src/app_container.h@27; sandbox/win/src/process_mitigations.h@28; sandbox/win/src/sandbox.h@29; sandbox/win/src/sandbox_policy_base.h@30; sandbox/win/src/sandbox_policy_diagnostic.h@31; sandbox/win/src/startup_information_helper.h@32; sandbox/win/src/target_process.h@33; sandbox/win/src/threadpool.h@34; sandbox/win/src/win_utils.h@35
+
+`security/sandbox/chromium/sandbox/win/src/broker_services.h` | `9bf684087bcb9fca0714c958fd20a02921a79a53` | 7008 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@30; BrokerServicesBase@39
+Dependencies: map@8; memory@9; optional@10; set@11; string@12; string_view@13; utility@14; base/compiler_specific.h@16; base/containers/flat_map.h@17; base/memory/raw_ptr.h@18; base/memory/scoped_refptr.h@19; base/win/scoped_handle.h@20; base/win/scoped_process_information.h@21; sandbox/win/src/alternate_desktop.h@22; sandbox/win/src/crosscall_server.h@23; sandbox/win/src/sandbox.h@24; sandbox/win/src/sandbox_policy_base.h@25; sandbox/win/src/sharedmem_ipc_server.h@26; sandbox/win/src/threadpool.h@27; sandbox/win/src/win_utils.h@28
+
+`security/sandbox/chromium/sandbox/win/src/crosscall_client.h` | `81e56a93453ebd4f517aa45e3a73a9257369ac02` | 14617 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@47; class@49; CopyHelper@63; CopyHelper@65; Update@72; GetSize@78; IsInOut@81; GetType@84; CopyHelper@96; CopyHelper@98; Update@105; GetSize@111; IsInOut@114; GetType@117; CopyHelper@127; CopyHelper@129; Update@136; GetSize@142; IsInOut@147; GetType@149; InOutCountedBuffer@158; CountedBuffer@161; CopyHelper@167; CopyHelper@169; Update@175; GetSize@188; IsInOut@191; GetType@193; ActualCallParams@203
+Dependencies: stddef.h@8; stdint.h@9; string_view@11; base/compiler_specific.h@13; base/memory/raw_ptr_exclusion.h@14; base/memory/raw_ref.h@15; sandbox/win/src/crosscall_params.h@16; sandbox/win/src/sandbox.h@17
+
+`security/sandbox/chromium/sandbox/win/src/crosscall_params.h` | `8ad44c3f6783f691f84ac5c679b2215fe8772fa8` | 11144 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@39; Align@48; memcpy_wrapper@53; ParamInfo@85; CrossCallReturn@95; CrossCallParams@125; GetTag@131; GetParamsCount@138; GetCallReturn@141; IsInOut@144; SetIsInOut@147; tag_@157; ActualCallParams@205; ActualCallParams@208; CrossCallParams@216; OverrideSize@226; GetParamPtr@282; GetSize@289; ActualCallParams@292
+Dependencies: windows.h@8; lmaccess.h@10; stddef.h@11; stdint.h@12; base/compiler_specific.h@14; base/memory/raw_ptr_exclusion.h@15; sandbox/win/src/internal_types.h@16; sandbox/win/src/ipc_tags.h@17; sandbox/win/src/sandbox_nt_types.h@18; sandbox/win/src/sandbox_types.h@19
+
+`security/sandbox/chromium/sandbox/win/src/crosscall_server.cc` | `de61277205b8025416ddc158e28af0e8cce49a97` | 11942 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@35; ActualCallParams@38; ActualCallParams@39; ActualCallParams@40; ActualCallParams@41; ActualCallParams@42; ActualCallParams@43; ActualCallParams@44; ActualCallParams@45; ActualCallParams@46; ActualCallParams@47; GetActualBufferSize@51; GetMinDeclaredActualCallParamsSize@81; CrossCallParamsEx::CrossCallParamsEx@128; CrossCallParamsEx::GetParameter32@260; CrossCallParamsEx::GetParameterVoidPtr@271; CrossCallParamsEx::GetParameterStr@283; SetCallError@322; SetCallSuccess@327; Dispatcher::Dispatcher@344; Dispatcher::~Dispatcher@346
+Dependencies: sandbox/win/src/crosscall_server.h@5; stddef.h@7; stdint.h@8; atomic@10; string@11; vector@12; base/check.h@14; base/compiler_specific.h@15; base/strings/utf_string_conversions.h@16; sandbox/win/src/crosscall_client.h@17; sandbox/win/src/crosscall_params.h@18
+
+`security/sandbox/chromium/sandbox/win/src/crosscall_server.h` | `fcabf08932a7cda20b42f4c778fcf81ff78c3ed0` | 9481 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@48; InterceptionManager@50; CrossCallParamsEx@55; ClientInfo@111; IPCInfo@117; IPCParams@124; Matches@128; bool@144; bool@145; bool@146; bool@147; bool@148; bool@152; bool@157; bool@163; bool@170; bool@178; bool@187; IPCCall@213
+Dependencies: stdint.h@8; string@10; vector@11; base/compiler_specific.h@13; base/functional/callback.h@14; base/memory/raw_ptr.h@15; sandbox/win/src/crosscall_params.h@16; sandbox/win/src/ipc_tags.h@17
+
+`security/sandbox/chromium/sandbox/win/src/eat_resolver.cc` | `adfae7e1f7357af5cc48509c9ab3c5a2f57436b8` | 2771 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@15; EatResolverThunk::GetThunkSize@84
+Dependencies: sandbox/win/src/eat_resolver.h@5; ntstatus.h@7; stddef.h@8; base/compiler_specific.h@10; base/win/pe_image.h@11; sandbox/win/src/nt_internals.h@12; sandbox/win/src/sandbox_nt_util.h@13
+
+`security/sandbox/chromium/sandbox/win/src/eat_resolver.h` | `1071aee16f051fb70a01feccbf109aae513437a8` | 1660 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@14; EatResolverThunk@17; EatResolverThunk@19
+Dependencies: stddef.h@8; base/memory/raw_ptr_exclusion.h@10; sandbox/win/src/nt_internals.h@11; sandbox/win/src/resolver.h@12
+
+`security/sandbox/chromium/sandbox/win/src/filesystem_dispatcher.cc` | `d98f886a08aa5f0550a24be97075e4ad708ee92f` | 11026 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@22; policy_base_@25; ValidateFileOptions@86; RestrictDirectoryAccess@95
+Dependencies: sandbox/win/src/filesystem_dispatcher.h@5; ntstatus.h@7; stdint.h@8; sandbox/win/src/crosscall_client.h@10; sandbox/win/src/filesystem_interception.h@11; sandbox/win/src/filesystem_policy.h@12; sandbox/win/src/interception.h@13; sandbox/win/src/interceptors.h@14; sandbox/win/src/ipc_tags.h@15; sandbox/win/src/policy_broker.h@16; sandbox/win/src/policy_params.h@17; sandbox/win/src/sandbox.h@18; sandbox/win/src/sandbox_nt_util.h@19; sandbox/win/src/win_utils.h@20
+
+`security/sandbox/chromium/sandbox/win/src/filesystem_dispatcher.h` | `21ab08411c263854caced369584bbc5e3cf8f5b7` | 3035 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@18; FilesystemDispatcher@21
+Dependencies: stdint.h@8; string@10; string_view@11; base/memory/raw_ptr.h@13; sandbox/win/src/crosscall_server.h@14; sandbox/win/src/ipc_tags.h@15; sandbox/win/src/sandbox_policy_base.h@16
+
+`security/sandbox/chromium/sandbox/win/src/filesystem_interception.cc` | `fefb000833b95f234135fc091ea8d4ef7fdcf7e0` | 12968 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@26
+Dependencies: sandbox/win/src/filesystem_interception.h@5; ntstatus.h@7; stdint.h@8; sandbox/win/src/crosscall_client.h@10; sandbox/win/src/filesystem_policy.h@11; sandbox/win/src/ipc_tags.h@12; sandbox/win/src/policy_params.h@13; sandbox/win/src/policy_target.h@14; sandbox/win/src/sandbox_factory.h@15; sandbox/win/src/sandbox_nt_util.h@16; sandbox/win/src/sharedmem_ipc_client.h@17; sandbox/win/src/target_services.h@18; sandbox/win/src/win_utils.h@19; sandbox/win/TargetGeckoClient.h@20
+
+`security/sandbox/chromium/sandbox/win/src/filesystem_interception.h` | `6c1d5e4df7354ec01f579f5cb0c74c6eeed8f098` | 2575 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@11
+Dependencies: sandbox/win/src/nt_internals.h@8; sandbox/win/src/sandbox_types.h@9
+
+`security/sandbox/chromium/sandbox/win/src/filesystem_policy.cc` | `debce2aeef3978ca18c973a68d28b6088be3e1b1` | 10768 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@27; ObjectAttribs@31; ObjectAttribs@34
+Dependencies: sandbox/win/src/filesystem_policy.h@5; windows.h@7; winternl.h@8; ntstatus.h@10; stdint.h@11; string@13; base/notreached.h@15; base/win/scoped_handle.h@16; base/win/windows_handle_util.h@17; sandbox/win/src/internal_types.h@18; sandbox/win/src/ipc_tags.h@19; sandbox/win/src/nt_internals.h@20; sandbox/win/src/policy_engine_opcodes.h@21; sandbox/win/src/policy_params.h@22; sandbox/win/src/sandbox_nt_util.h@23; sandbox/win/src/sandbox_types.h@24; sandbox/win/src/win_utils.h@25
+
+`security/sandbox/chromium/sandbox/win/src/filesystem_policy.h` | `ddf28a689e254768f18071cbdf6ff4b71da73536` | 4735 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@17; FileSystemPolicy@20
+Dependencies: stdint.h@8; string@10; sandbox/win/src/crosscall_server.h@12; sandbox/win/src/nt_internals.h@13; sandbox/win/src/policy_low_level.h@14; sandbox/win/src/sandbox_policy.h@15
+
+`security/sandbox/chromium/sandbox/win/src/handle_closer.h` | `ed4d1e0cc191d50ae29d2d110a036073fb84b29d` | 747 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@13; HandleCloserConfig@16
+Dependencies: stddef.h@8; sandbox/win/src/interception.h@10; sandbox/win/src/target_process.h@11
+
+`security/sandbox/chromium/sandbox/win/src/handle_closer_agent.cc` | `2d0f08271097757e3093ae27d06917056a7a3469` | 8070 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@24; CsrssDisconnectWarmup@48; CsrssDisconnectCleanup@57; HandleCloserAgent::NeedsHandlesClosed@72; dummy_handle_@79; HandleCloserAgent::~HandleCloserAgent@81; HandleCloserAgent::AttemptToStuffHandleSlot@87; HandleCloserAgent::CloseHandles@155
+Dependencies: sandbox/win/src/handle_closer_agent.h@5; windows.h@7; stddef.h@9; winnls.h@10; base/check.h@12; base/containers/heap_array.h@13; base/containers/span.h@14; base/logging.h@15; base/strings/string_util.h@16; base/win/static_constants.h@17; base/win/win_util.h@18; base/win/windows_handle_util.h@19; sandbox/win/src/heap_helper.h@20; sandbox/win/src/sandbox_nt_util.h@21; sandbox/win/src/win_utils.h@22
+
+`security/sandbox/chromium/sandbox/win/src/handle_closer_agent.h` | `c33f8f41835dd905710823a15bc1d90285675834` | 1420 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@14; HandleCloserAgent@18; IsCsrssConnected@30
+Dependencies: string@8; base/win/scoped_handle.h@10; sandbox/win/src/handle_closer.h@11; sandbox/win/src/sandbox_types.h@12
+
+`security/sandbox/chromium/sandbox/win/src/heap_helper.cc` | `9778f2184ed1687b541a88e2e44a0803981a0b3d` | 3421 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@14; struct@25; _HEAP_32@34; _HEAP_64@51; ValidateHeap@74; HeapFlags@86; FindCsrPortHeap@100
+Dependencies: sandbox/win/src/heap_helper.h@5; windows.h@7; base/containers/heap_array.h@9; base/logging.h@10; base/memory/raw_ptr_exclusion.h@11; base/memory/ref_counted.h@12
+
+`security/sandbox/chromium/sandbox/win/src/heap_helper.h` | `0b3aad2f57478a23a8e8b03788e214c87bd8c2b1` | 801 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@10
+Dependencies: base/win/windows_types.h@8
+
+`security/sandbox/chromium/sandbox/win/src/interception.cc` | `f3f3f99f0d448f69d7adbd1e676f81b0b5d5cb32` | 17842 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@34; RoundUpToMultiple@45; internal@51; GetGranularAlignedRandomOffset@54; InterceptionManager::InterceptionData::InterceptionData@77; InterceptionManager::InterceptionData::~InterceptionData@82; child_@85; InterceptionManager::~InterceptionManager@86; InterceptionManager::AddToUnloadModules@124; InterceptionManager::InitializeInterceptions@137; InterceptionManager::GetBufferSize@162; InterceptionManager::SetupConfigBuffer@219; InterceptionManager::PatchNtdll@378
+Dependencies: sandbox/win/src/interception.h@8; stddef.h@10; stdint.h@11; set@13; string@14; base/bits.h@16; base/check_op.h@17; base/compiler_specific.h@18; base/containers/heap_array.h@19; base/notreached.h@20; base/rand_util.h@21; base/scoped_native_library.h@22; base/win/pe_image.h@23; sandbox/win/src/interception_internal.h@24; sandbox/win/src/interceptors.h@25; sandbox/win/src/internal_types.h@26; sandbox/win/src/sandbox.h@27; sandbox/win/src/sandbox_nt_util.h@28; sandbox/win/src/service_resolver.h@29; sandbox/win/src/target_interceptions.h@30; sandbox/win/src/target_process.h@31; sandbox/win/src/win_utils.h@32
+
+`security/sandbox/chromium/sandbox/win/src/interception.h` | `c05fb85ed35cee42e760b2737feae8d8c54bff36` | 11968 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@25; TargetProcess@27; InterceptionManager@60; InterceptionData@141
+Dependencies: stddef.h@12; list@14; string@15; base/gtest_prod_util.h@17; base/memory/raw_ptr_exclusion.h@18; base/memory/raw_ref.h@19; base/types/expected.h@20; sandbox/win/src/interception_internal.h@21; sandbox/win/src/interceptors.h@22; sandbox/win/src/sandbox_types.h@23
+
+`security/sandbox/chromium/sandbox/win/src/interception_agent.cc` | `4065f6a8e4eb645b0bf35ab70249e07a286a39fa` | 6822 bytes | source | UTF-8 | mode 100644
+Declarations: IsWithinRange@27; sandbox@34; InterceptionAgent::GetInterceptionAgent@42; InterceptionAgent::Init@61; InterceptionAgent::OnDllUnload@135; InterceptionAgent::GetResolver@200
+Dependencies: sandbox/win/src/interception_agent.h@13; windows.h@15; stddef.h@17; sandbox/win/src/eat_resolver.h@19; sandbox/win/src/interception_internal.h@20; sandbox/win/src/interceptors.h@21; sandbox/win/src/sandbox_nt_util.h@22
+
+`security/sandbox/chromium/sandbox/win/src/interception_agent.h` | `dd48a1363799dfedd69067a780a5332c3861e82f` | 3538 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@19; DllInterceptionData@22; SharedMemory@23; DllPatchInfo@24; ResolverThunk@26; InterceptionAgent@39
+Dependencies: windows.h@12; winternl.h@14; base/memory/raw_ptr_exclusion.h@16; sandbox/win/src/sandbox_types.h@17
+
+`security/sandbox/chromium/sandbox/win/src/interception_internal.h` | `e71bbbb9572a07c5c7ba995b5bf362eda810a816` | 3227 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@18; FunctionInfo@31; DllPatchInfo@42; SharedMemory@52; ThunkData@60; DllInterceptionData@65; PatchClientResultData@78; GetDllInterceptionDataSize@92
+Dependencies: stddef.h@12; base/memory/raw_ptr_exclusion.h@14; sandbox/win/src/interceptors.h@15; sandbox/win/src/sandbox_types.h@16
+
+`security/sandbox/chromium/sandbox/win/src/interceptors.h` | `ea7c08a58b885e65fa834c6d6c9e9d3f2f465a85` | 1269 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@12; InterceptorId@14; OriginalFunctions@50
+Dependencies: sandbox/win/src/interceptors_64.h@9
+
+`security/sandbox/chromium/sandbox/win/src/interceptors_64.cc` | `6e8e5d231c9b4df40c5d8305917ec040689b8e1d` | 13516 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@19; TargetNtImpersonateAnonymousToken64@52; TargetRegisterClassW64@286
+Dependencies: sandbox/win/src/interceptors_64.h@6; sandbox/win/src/filesystem_interception.h@8; sandbox/win/src/interceptors.h@9; sandbox/win/src/policy_target.h@10; sandbox/win/src/process_mitigations_win32k_interception.h@11; sandbox/win/src/process_thread_interception.h@12; sandbox/win/src/registry_interception.h@13; sandbox/win/src/sandbox_nt_types.h@14; sandbox/win/src/sandbox_types.h@15; sandbox/win/src/signed_interception.h@16; sandbox/win/src/target_interceptions.h@17
+
+`security/sandbox/chromium/sandbox/win/src/interceptors_64.h` | `3ef50cb83071233c7ade692b716bf946670140ae` | 8545 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@11
+Dependencies: sandbox/win/src/nt_internals.h@8; sandbox/win/src/sandbox_types.h@9
+
+`security/sandbox/chromium/sandbox/win/src/internal_types.h` | `2dab9a55f882eaedd4319efb6254553ef5d6e9cd` | 1708 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@13; ArgType@21; CountedBuffer@32; CountedBuffer@34; Size@36; Buffer@38; IPCInt@47; IPCInt@49; IPCInt@51; As32Bit@56; AsVoidPtr@58
+Dependencies: stdint.h@8; base/memory/raw_ptr.h@10; base/memory/raw_ptr_exclusion.h@11
+
+`security/sandbox/chromium/sandbox/win/src/ipc_args.cc` | `65e0f8dd5646fe5b9c6a28702f43eab39318f611` | 2759 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@13; ReleaseArgs@16
+Dependencies: sandbox/win/src/ipc_args.h@5; stddef.h@7; base/compiler_specific.h@9; sandbox/win/src/crosscall_params.h@10; sandbox/win/src/crosscall_server.h@11
+
+`security/sandbox/chromium/sandbox/win/src/ipc_args.h` | `c9f2fe8ec3d8e5feccd9029d7a06fc6d5daa8044` | 776 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@11
+Dependencies: sandbox/win/src/crosscall_params.h@8; sandbox/win/src/crosscall_server.h@9
+
+`security/sandbox/chromium/sandbox/win/src/ipc_tags.h` | `4547c7b317c945711000d95eb6fabe42affe01d9` | 1112 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@10; class@12
+Dependencies: cstdint@8
+
+`security/sandbox/chromium/sandbox/win/src/job.cc` | `d69d996018fa35a903f85e57a4f294f8809c2b0f` | 3607 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@15; sizeof@72; sizeof@79; Job::IsValid@86; Job::GetHandle@90; Job::SetActiveProcessLimit@94; sizeof@102; sizeof@110
+Dependencies: sandbox/win/src/job.h@5; windows.h@7; stddef.h@9; utility@11; sandbox/win/src/security_level.h@13
+
+`security/sandbox/chromium/sandbox/win/src/job.h` | `31037e1b7aff7cb46c1026075ba584b7a24239bc` | 1476 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@12; class@13; Job@19
+Dependencies: stddef.h@8; base/win/scoped_handle.h@10
+
+`security/sandbox/chromium/sandbox/win/src/nt_internals.h` | `acea069d0e488d44427f926d564f5a9fdb393002` | 15268 bytes | source | UTF-8 | mode 100644
+Declarations: NTSTATUS@20; NTSTATUS@33; NTSTATUS@41; struct@44; NTSTATUS@52; struct@60; NTSTATUS@69; struct@74; NTSTATUS@85; NTSTATUS@92; ULONG@101; NTSTATUS@105; NTSTATUS@117; enum@120; struct@125; NTSTATUS@131; CLIENT_ID@142; NTSTATUS@144; NTSTATUS@150; NTSTATUS@161; NTSTATUS@164; NTSTATUS@168; struct@176; NTSTATUS@192; NTSTATUS@199; NTSTATUS@205; NTSTATUS@212; NTSTATUS@217; NTSTATUS@226; NTSTATUS@232; NTSTATUS@236; PVOID@245; PVOID@248; PVOID@256; PVOID@258; BOOLEAN@262; NTSTATUS@266; NTSTATUS@274; enum@279; struct@286; NTSTATUS@290; NTSTATUS@298; enum@313; struct@324; struct@338; struct@363; NTSTATUS@368; NTSTATUS@375; NTSTATUS@384; NTSTATUS@390; int@398; size_t@402; size_t@404; void@406; NTSTATUS@410; LONG@415; ULONG@420
+Dependencies: windows.h@11; stddef.h@13; winternl.h@14
+
+`security/sandbox/chromium/sandbox/win/src/policy_broker.cc` | `7fee87db02d38e79d0cf38c81efb9d241ba9dac2` | 2613 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@27; SetupNtdllImports@29
+Dependencies: sandbox/win/src/policy_broker.h@5; stddef.h@7; map@9; base/check.h@11; base/win/pe_image.h@12; sandbox/win/src/interception.h@13; sandbox/win/src/interceptors.h@14; sandbox/win/src/internal_types.h@15; sandbox/win/src/policy_target.h@16; sandbox/win/src/process_thread_interception.h@17; sandbox/win/src/sandbox.h@18; sandbox/win/src/sandbox_nt_types.h@19; sandbox/win/src/sandbox_nt_util.h@20; sandbox/win/src/sandbox_types.h@21; sandbox/win/src/target_process.h@22
+
+`security/sandbox/chromium/sandbox/win/src/policy_broker.h` | `80f3ee65eb0c34d9dccf7d9217f8be63b7aa3cda` | 772 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@10; TargetProcess@12
+Dependencies: sandbox/win/src/interception.h@8
+
+`security/sandbox/chromium/sandbox/win/src/policy_engine_opcodes.cc` | `b5d0231723325778aec23c23e5124410c72212b0` | 13946 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@16; OpcodeFactory::memory_size@46; OpcodeFactory::MakeOpAlwaysFalse@60; OpcodeFactory::MakeOpAlwaysTrue@75; OpcodeFactory::MakeOpAction@91; OpcodeFactory::MakeBase@304; OpcodeFactory::AllocRelative@331
+Dependencies: sandbox/win/src/policy_engine_opcodes.h@5; stddef.h@7; stdint.h@8; base/check_op.h@10; base/compiler_specific.h@11; sandbox/win/src/sandbox_nt_types.h@12; sandbox/win/src/sandbox_nt_util.h@13; sandbox/win/src/sandbox_types.h@14
+
+`security/sandbox/chromium/sandbox/win/src/policy_engine_opcodes.h` | `8eb45012e9a3cd4c9d57cbc98ba611843533e92d` | 15427 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@51; EvalResult@57; OpcodeID@73; MatchContext@107; MatchContext@111; Clear@113; PolicyOpcode@134; GetArgument@154; SetArgument@163; IsAction@183; GetID@186; GetOptions@189; SetOptions@192; GetParameter@195; OpcodeArgument@200; PolicyBuffer@233; OpcodeFactory@263; OpcodeFactory@267; OpcodeFactory@273
+Dependencies: stddef.h@8; stdint.h@9; base/compiler_specific.h@11; base/memory/raw_ptr.h@12; base/numerics/safe_conversions.h@13; sandbox/win/src/policy_engine_params.h@14
+
+`security/sandbox/chromium/sandbox/win/src/policy_engine_params.h` | `991e5bfd21963268057820a8f9c5e2d4d8b938b7` | 6123 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@22; ParameterSet@61; ParameterSet@63; Get@66; Get@75; Get@84; IsValid@93; real_type_@99; Void2TypePointerCopy@105; ParameterSetEx@121; ParameterSetEx@123; ParameterSetEx@129; ParameterSet@132; ParameterSetEx@136; ParameterSet@139; ParameterSetEx@143; ParameterSet@146; ParameterSetEx@150; ParameterSet@153; ParamPickerMake@157; CountedParameterSetBase@161; CountedParameterSet@171; CountedParameterSet@172; GetBase@178
+Dependencies: stdint.h@8; string_view@10; base/compiler_specific.h@12; base/memory/raw_ptr.h@13; sandbox/win/src/internal_types.h@14; sandbox/win/src/nt_internals.h@15; sandbox/win/src/sandbox_nt_util.h@16
+
+`security/sandbox/chromium/sandbox/win/src/policy_engine_processor.cc` | `b14f08540fb35e96c515a4ecaaa19ba434aca855` | 3286 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@12; PolicyProcessor::SetInternalState@14; PolicyProcessor::GetAction@19
+Dependencies: sandbox/win/src/policy_engine_processor.h@5; stddef.h@7; stdint.h@8; base/compiler_specific.h@10
+
+`security/sandbox/chromium/sandbox/win/src/policy_engine_processor.h` | `cf085a6d5db40831e57229441814c74be3eeb021` | 5429 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@15; PolicyResult@62; PolicyProcessor@107; PolicyProcessor@113
+Dependencies: stddef.h@8; stdint.h@9; base/memory/raw_ptr.h@11; sandbox/win/src/policy_engine_opcodes.h@12; sandbox/win/src/policy_engine_params.h@13
+
+`security/sandbox/chromium/sandbox/win/src/policy_low_level.cc` | `dc7e7ec239ad622a8e8ab750e6f05a7e0b8159d2` | 11516 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@35; policy_store_@38; LowLevelPolicy::AddRule@43; LowLevelPolicy::~LowLevelPolicy@54; std@56; LowLevelPolicy::Done@69; std@70; std@71; std@72; PolicyRule::PolicyRule@136; PolicyRule::PolicyRule@144; PolicyRule::Done@288; PolicyRule::~PolicyRule@334
+Dependencies: sandbox/win/src/policy_low_level.h@5; stddef.h@7; stdint.h@8; map@10; string@11; base/compiler_specific.h@13
+
+`security/sandbox/chromium/sandbox/win/src/policy_low_level.h` | `86d98aa839137697ee5e10c571803c105f9b1791` | 6407 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@44; PolicyGlobal@71; NeedsIpc@74; PolicyRule@83; LowLevelPolicy@86; RuleNode@111; RuleType@120; RuleOp@126; PolicyRule@130; GetOpcodeCount@158
+Dependencies: stddef.h@8; stdint.h@9; list@11; string@12; base/compiler_specific.h@14; base/memory/raw_ptr.h@15; sandbox/win/src/ipc_tags.h@16; sandbox/win/src/policy_engine_opcodes.h@17; sandbox/win/src/policy_engine_params.h@18
+
+`security/sandbox/chromium/sandbox/win/src/policy_params.h` | `21d2c700af52902720e80c80f7f35b318b0e87eb` | 1108 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@10; ParameterSet@12; sandbox@19
+Dependencies: sandbox/win/src/policy_engine_params.h@8
+
+`security/sandbox/chromium/sandbox/win/src/policy_target.cc` | `7acb500a5ebada96df2ce1f10c50bb943aacbfb0` | 7038 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@23; QueryBroker@29
+Dependencies: sandbox/win/src/policy_target.h@5; ntstatus.h@7; stddef.h@8; base/compiler_specific.h@10; sandbox/win/src/crosscall_client.h@11; sandbox/win/src/ipc_tags.h@12; sandbox/win/src/policy_engine_processor.h@13; sandbox/win/src/policy_low_level.h@14; sandbox/win/src/policy_params.h@15; sandbox/win/src/sandbox_factory.h@16; sandbox/win/src/sandbox_nt_util.h@17; sandbox/win/src/sharedmem_ipc_client.h@18; sandbox/win/src/target_services.h@19
+
+`security/sandbox/chromium/sandbox/win/src/policy_target.h` | `5325de2b162b4d55db4dc0fdb713c5e4f7c71ec5` | 2221 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@12; CountedParameterSetBase@14
+Dependencies: sandbox/win/src/ipc_tags.h@8; sandbox/win/src/nt_internals.h@9; sandbox/win/src/sandbox_types.h@10
+
+`security/sandbox/chromium/sandbox/win/src/process_mitigations.cc` | `57fdcf5c4d47014dd925cb934037bc0aadaa3e32` | 23671 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@49; IsRunning32bitEmulatedOnArm64@81; IsUserCetWin32Available@91; sizeof@193; sizeof@250; sizeof@262; sizeof@281; sizeof@303; sizeof@326; SetStartingMitigations@341; RatchetDownSecurityMitigations@348; LockDownSecurityMitigations@357; ApplyMitigationsToCurrentThread@366; FilterPostStartupProcessMitigations@595; GetAllowedPostStartupProcessMitigations@625; CanSetProcessMitigationsPostStartup@646; CanSetProcessMitigationsPreStartup@651; CanSetMitigationsPerThread@657
+Dependencies: sandbox/win/src/process_mitigations.h@10; windows.h@12; stddef.h@14; wow64apiset.h@15; algorithm@17; ostream@18; base/check.h@20; base/check_op.h@21; base/files/file_path.h@22; base/notreached.h@23; base/rand_util.h@24; base/scoped_native_library.h@25; base/win/access_token.h@26; base/win/windows_version.h@27; build/build_config.h@28; sandbox/win/src/interception.h@29; sandbox/win/src/nt_internals.h@30; sandbox/win/src/restricted_token_utils.h@31; sandbox/win/src/win_utils.h@32
+
+`security/sandbox/chromium/sandbox/win/src/process_mitigations.h` | `a6159f51fc01002e324730cb3791157a27e25bb3` | 3193 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@14
+Dependencies: windows.h@8; stddef.h@10; sandbox/win/src/security_level.h@12
+
+`security/sandbox/chromium/sandbox/win/src/process_mitigations_win32k_dispatcher.cc` | `b21fc349777b9ecd3a81caa3e53fa2bed65f047a` | 2083 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@19; policy_base_@23; ProcessMitigationsWin32KDispatcher::~ProcessMitigationsWin32KDispatcher@26
+Dependencies: sandbox/win/src/process_mitigations_win32k_dispatcher.h@5; algorithm@7; string@8; base/memory/platform_shared_memory_region.h@10; base/memory/unsafe_shared_memory_region.h@11; base/unguessable_token.h@12; sandbox/win/src/interception.h@13; sandbox/win/src/interceptors.h@14; sandbox/win/src/ipc_tags.h@15; sandbox/win/src/process_mitigations_win32k_interception.h@16; sandbox/win/src/process_mitigations_win32k_policy.h@17
+
+`security/sandbox/chromium/sandbox/win/src/process_mitigations_win32k_dispatcher.h` | `01b05cf0e988533a30b11422ca2b1a2ff46df960` | 1216 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@14; ProcessMitigationsWin32KDispatcher@17
+Dependencies: base/memory/raw_ptr.h@8; base/synchronization/lock.h@9; sandbox/win/src/crosscall_server.h@10; sandbox/win/src/ipc_tags.h@11; sandbox/win/src/sandbox_policy_base.h@12
+
+`security/sandbox/chromium/sandbox/win/src/process_mitigations_win32k_interception.cc` | `00c5994669e188cddaf57748fe28094823242ad1` | 819 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@9; TargetGetStockObject@19
+Dependencies: sandbox/win/src/process_mitigations_win32k_interception.h@5; windows.h@7
+
+`security/sandbox/chromium/sandbox/win/src/process_mitigations_win32k_interception.h` | `a25b6f72ab65d38af73da0b1265cc9e09e622322` | 1645 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@12; BOOL@14
+Dependencies: windows.h@8; sandbox/win/src/sandbox_types.h@10
+
+`security/sandbox/chromium/sandbox/win/src/process_mitigations_win32k_policy.cc` | `891d4b5d2cd5f0fcbde022d54981a779d59c2b33` | 802 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@11
+Dependencies: sandbox/win/src/process_mitigations_win32k_policy.h@5; stddef.h@7; sandbox/win/src/process_mitigations_win32k_interception.h@9
+
+`security/sandbox/chromium/sandbox/win/src/process_mitigations_win32k_policy.h` | `19607664949d2b1a7d50fabc10f6d1405313e29a` | 865 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@10; ProcessMitigationsWin32KLockdownPolicy@14
+Dependencies: sandbox/win/src/policy_low_level.h@8
+
+`security/sandbox/chromium/sandbox/win/src/process_thread_dispatcher.cc` | `2f9a75f8e890ed88ac8154cbf733687c705e86a0` | 3840 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@21; ThreadProcessDispatcher::ThreadProcessDispatcher@23
+Dependencies: sandbox/win/src/process_thread_dispatcher.h@5; stddef.h@7; stdint.h@8; base/notreached.h@10; sandbox/win/src/crosscall_client.h@11; sandbox/win/src/interception.h@12; sandbox/win/src/interceptors.h@13; sandbox/win/src/ipc_tags.h@14; sandbox/win/src/policy_broker.h@15; sandbox/win/src/policy_params.h@16; sandbox/win/src/process_thread_interception.h@17; sandbox/win/src/process_thread_policy.h@18; sandbox/win/src/sandbox.h@19
+
+`security/sandbox/chromium/sandbox/win/src/process_thread_dispatcher.h` | `867c9706ae92f13f86735cdc3b28590dab38de13` | 1697 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@14; ThreadProcessDispatcher@17
+Dependencies: stdint.h@8; sandbox/win/src/crosscall_server.h@10; sandbox/win/src/ipc_tags.h@11; sandbox/win/src/sandbox_policy_base.h@12
+
+`security/sandbox/chromium/sandbox/win/src/process_thread_interception.cc` | `856a05e12cf7f8e1bdc998ac2d25ec383b1f558b` | 9593 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@20; CaptureParameter@37; ValidObjectAttributes@47
+Dependencies: sandbox/win/src/process_thread_interception.h@5; stdint.h@7; optional@9; sandbox/win/src/crosscall_client.h@10; sandbox/win/src/ipc_tags.h@11; sandbox/win/src/policy_params.h@12; sandbox/win/src/policy_target.h@13; sandbox/win/src/sandbox_factory.h@14; sandbox/win/src/sandbox_nt_util.h@15; sandbox/win/src/sharedmem_ipc_client.h@16; sandbox/win/src/target_services.h@17; sandbox/win/TargetGeckoClient.h@18
+
+`security/sandbox/chromium/sandbox/win/src/process_thread_interception.h` | `6c00ec18163b9ef432583397ddc13a8ccf97f075` | 2407 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@13
+Dependencies: windows.h@8; sandbox/win/src/nt_internals.h@10; sandbox/win/src/sandbox_types.h@11
+
+`security/sandbox/chromium/sandbox/win/src/process_thread_policy.cc` | `6df7e559c5fcefbd9cc8222ed19e209ae43ccff9` | 5889 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@26
+Dependencies: sandbox/win/src/process_thread_policy.h@5; ntstatus.h@7; stdint.h@8; memory@10; string@11; base/memory/free_deleter.h@13; base/win/scoped_handle.h@14; build/build_config.h@15; sandbox/win/src/broker_services.h@16; sandbox/win/src/ipc_tags.h@17; sandbox/win/src/nt_internals.h@18; sandbox/win/src/policy_engine_opcodes.h@19; sandbox/win/src/policy_params.h@20; sandbox/win/src/sandbox.h@21; sandbox/win/src/sandbox_nt_util.h@22; sandbox/win/src/sandbox_types.h@23; sandbox/win/src/win_utils.h@24
+
+`security/sandbox/chromium/sandbox/win/src/process_thread_policy.h` | `fb3cf77bd625bca5663ed4b490ba6cacb76939e1` | 2147 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@14; ProcessPolicy@17
+Dependencies: stdint.h@8; sandbox/win/src/crosscall_server.h@10; sandbox/win/src/policy_low_level.h@11; sandbox/win/src/sandbox_policy.h@12
+
+`security/sandbox/chromium/sandbox/win/src/resolver.cc` | `b48a2f29a7b6e58019516faf9eebb09e421b5e19` | 1897 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@15
+Dependencies: sandbox/win/src/resolver.h@5; windows.h@7; ntstatus.h@9; stddef.h@10; winternl.h@11; base/win/pe_image.h@13
+
+`security/sandbox/chromium/sandbox/win/src/resolver.h` | `d1e352cec83ab3d9a767ae528deb50221db86e8e` | 4873 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@17; ResolverThunk@24
+Dependencies: stddef.h@12; base/memory/raw_ptr_exclusion.h@14; base/win/windows_types.h@15
+
+`security/sandbox/chromium/sandbox/win/src/resolver_32.cc` | `1c3490786a7d16c8b9b75509f243d77348dbc135` | 3184 bytes | source | UTF-8 | mode 100644
+Declarations: InternalThunk@18; InternalThunk@40; sandbox@63; ResolverThunk::GetInternalThunkSize@84
+Dependencies: sandbox/win/src/resolver.h@5; windows.h@7; stddef.h@9; new@13
+
+`security/sandbox/chromium/sandbox/win/src/resolver_64.cc` | `bf39e219c2e381b0b68072adaa140776444a22a8` | 2340 bytes | source | UTF-8 | mode 100644
+Declarations: InternalThunk@24; InternalThunk@31; InternalThunk@48; InternalThunk@54; sandbox@70; ResolverThunk::GetInternalThunkSize@72
+Dependencies: sandbox/win/src/resolver.h@5; windows.h@7; ntstatus.h@9; stddef.h@10; new@14
+
+`security/sandbox/chromium/sandbox/win/src/restricted_token.cc` | `4ad87f88afad1a4f5a6aa15235dafa301a64a0cb` | 6851 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@21; RestrictedToken::GetRestrictedToken@26; RestrictedToken::AddSidForDenyOnly@43; RestrictedToken::AddSidForDenyOnly@47; RestrictedToken::AddUserSidForDenyOnly@51; RestrictedToken::DeleteAllPrivileges@55; RestrictedToken::AddRestrictingSid@60; RestrictedToken::AddRestrictingSid@64; RestrictedToken::AddRestrictingSidLogonSession@68; RestrictedToken::AddRestrictingSidCurrentUser@72; RestrictedToken::AddRestrictingSidAllSids@76; RestrictedToken::SetIntegrityLevel@81; RestrictedToken::SetLockdownDefaultDacl@85; RestrictedToken::GetRestrictedTokenForTesting@104
+Dependencies: sandbox/win/src/restricted_token.h@5; windows.h@7; stddef.h@9; algorithm@11; memory@12; utility@13; vector@14; base/logging.h@16; base/win/access_token.h@17; base/win/security_util.h@18; sandbox/win/src/acl.h@19
+
+`security/sandbox/chromium/sandbox/win/src/restricted_token.h` | `55cefb0b8ee94835c5808d3612ea956a5cb08fd2` | 7261 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@17; RestrictedToken@30
+Dependencies: vector@8; optional@10; base/win/access_control_list.h@11; base/win/access_token.h@12; base/win/sid.h@13; base/win/windows_types.h@14; sandbox/win/src/security_level.h@15
+
+`security/sandbox/chromium/sandbox/win/src/restricted_token_utils.cc` | `14742add6862ae3485e2c088ec29a4df9c4472dc` | 8072 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@21; HardenTokenIntegrityLevelPolicy@198
+Dependencies: sandbox/win/src/restricted_token_utils.h@5; memory@7; vector@8; optional@10; base/check.h@11; base/notreached.h@12; base/win/access_token.h@13; base/win/security_descriptor.h@14; sandbox/win/src/acl.h@15; sandbox/win/src/restricted_token.h@16; sandbox/win/src/sandbox_nt_util.h@17; sandbox/win/src/security_level.h@18; sandbox/win/src/win_utils.h@19
+
+`security/sandbox/chromium/sandbox/win/src/restricted_token_utils.h` | `36ec77cfdfb9dd8a1c218934a2d9dee1b7ba2e2f` | 2466 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@17; class@20
+Dependencies: optional@8; base/win/access_token.h@9; base/win/sid.h@10; base/win/windows_types.h@11; sandbox/win/src/security_level.h@12
+
+`security/sandbox/chromium/sandbox/win/src/sandbox.cc` | `8ae06bfbaf26f1a0d835b4a390374f0540e2a560` | 1583 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@13; SandboxFactory::GetBrokerServices@20; SandboxFactory::GetTargetServices@32
+Dependencies: sandbox/win/src/sandbox.h@5; windows.h@7; sandbox/win/src/broker_services.h@9; sandbox/win/src/sandbox_factory.h@10; sandbox/win/src/target_services.h@11
+
+`security/sandbox/chromium/sandbox/win/src/sandbox.h` | `dfb591c4d1bb4bad22232f82425106ee23dcf1ea` | 14292 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@39; BrokerServicesDelegate@41; BrokerServicesTargetTracker@42; PolicyDiagnosticsReceiver@43; ProcessState@44; TargetPolicy@45; TargetServices@46; class@47
+Dependencies: stddef.h@22; memory@24; optional@25; string@26; string_view@27; vector@28; base/compiler_specific.h@30; base/containers/span.h@31; base/environment.h@32; base/win/scoped_process_information.h@33; base/win/windows_types.h@34; sandbox/win/src/sandbox_policy.h@35; sandbox/win/src/sandbox_types.h@36
+
+`security/sandbox/chromium/sandbox/win/src/sandbox_factory.h` | `6435183850e1ca2e0f4ae39b9094acacb1a8d725` | 1907 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@33; SandboxFactory@35
+Dependencies: sandbox/win/src/sandbox.h@8
+
+`security/sandbox/chromium/sandbox/win/src/sandbox_globals.cc` | `5062b4f7698878e3ba6cdf11ff3af78de878d3cc` | 490 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@10
+Dependencies: windows.h@5; sandbox/win/src/sandbox_nt_types.h@7; sandbox/win/src/sandbox_types.h@8
+
+`security/sandbox/chromium/sandbox/win/src/sandbox_nt_types.h` | `30634f1bacac2f9ad7ce4b90893a55cde132e760` | 2450 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@11; NtExports@14; AllocationType@51
+Dependencies: base/compiler_specific.h@8; sandbox/win/src/nt_internals.h@9
+
+`security/sandbox/chromium/sandbox/win/src/sandbox_nt_util.cc` | `f1d6b5e204e3c539001bc3d4f73bec42ede62a96` | 25917 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@28; AlignToBoundary@46; FreeSpaceNearTo@59; FreeSpaceNearTo@64; Next@79; AllocateNearTo@110; AllocateNearTo@126; InitFunc@152; InitGlobalNt@160; PARTIAL_TEB@199; sandbox@214; CanAllocateNearTo@216; MapGlobalMemory@239; GetGlobalIPCMemory@276; GetGlobalPolicyMemoryForTesting@282; InitHeap@306; TouchMemory@324; ValidParameter@345; CopyData@355; NtHeapWString::NtHeapWString@365; NtHeapWString::is_valid@389; NtHeapWString::view@393; ResolveNTFunctionPtr@397; AllocAndGetFullPath@416; GetProcessId@454; IsSameProcess@471; AnsiToUnicode@538; GetImageInfoFromModule@570; GetBackingFilePath@628; ExtractModuleName@660; AutoProtectMemory::RevertProtection@735; GetCurrentClientId@789
+Dependencies: sandbox/win/src/sandbox_nt_util.h@10; ntstatus.h@12; stddef.h@13; stdint.h@14; optional@16; string@17; base/compiler_specific.h@19; base/containers/span.h@20; base/win/pe_image.h@21; base/win/win_util.h@22; sandbox/win/src/internal_types.h@23; sandbox/win/src/nt_internals.h@24; sandbox/win/src/sandbox_factory.h@25; sandbox/win/src/target_services.h@26
+
+`security/sandbox/chromium/sandbox/win/src/sandbox_nt_util.h` | `031b921a4d6a8e230abce92c509932ad4bd6a132` | 9748 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@69; NtAllocDeleter@101; operator@102; RequiredAccess@123; NtHeapWString@136; MappedModuleFlags@163; AutoProtectMemory@221; changed_@224
+Dependencies: intrin.h@8; stddef.h@9; stdint.h@10; memory@12; optional@13; string_view@14; base/compiler_specific.h@16; base/containers/span.h@17; base/memory/raw_ptr_exclusion.h@18; sandbox/win/src/nt_internals.h@19; sandbox/win/src/sandbox_nt_types.h@20
+
+`security/sandbox/chromium/sandbox/win/src/sandbox_policy.h` | `3227faf7489a07e842941ced9c1ba4cc67ebe0ea` | 14448 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@15; AppContainer@20; class@23; class@33; class@43
+Dependencies: stddef.h@8; stdint.h@9; base/containers/span.h@11; sandbox/win/src/sandbox_types.h@12; sandbox/win/src/security_level.h@13
+
+`security/sandbox/chromium/sandbox/win/src/sandbox_policy_base.cc` | `677bb48ecd8ff46f57186d975ce7ff57fc1b2a1b` | 25630 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@50; MakeBrokerPolicyMemory@68; IsInheritableHandle@78; ApplyZeroAppShimToSuspendedProcess@114; sizeof@129; policy_@168; ConfigBase::IsOnCreatingThread@171; ConfigBase::IsConfigured@179; ConfigBase::Freeze@183; ConfigBase::policy@197; ConfigBase::NeedsIpc@212; ConfigBase::blocklisted_dlls@228; ConfigBase::app_container@233; ConfigBase::~ConfigBase@238; ConfigBase::PolicyMaker@247; ConfigBase::AllowRegistryRead@266; ConfigBase::SetFakeGdiInit@273; ConfigBase::AllowExtraDll@283; ConfigBase::AddDllToUnload@300; ConfigBase::SetIntegrityLevel@304; ConfigBase::GetIntegrityLevel@311; ConfigBase::SetDelayedIntegrityLevel@315; ConfigBase::SetLowBox@319; ConfigBase::SetProcessMitigations@334; base::win::GetVersion@339; ConfigBase::GetProcessMitigations@348; ConfigBase::SetDelayedProcessMitigations@352; ConfigBase::GetDelayedProcessMitigations@359; ConfigBase::AddRestrictingRandomSid@363; ConfigBase::SetLockdownDefaultDacl@367; ConfigBase::AddAppContainerProfile@371; ConfigBase::GetAppContainer@402; ConfigBase::SetTokenLevel@406; ConfigBase::GetInitialTokenLevel@416; ConfigBase::GetLockdownTokenLevel@420; ConfigBase::SetDoNotUseRestrictingSIDs@424; ConfigBase::GetUseRestrictingSIDs@428; ConfigBase::SetForceKnownDllLoadingFallback@432; ConfigBase::SetJobLevel@436; ConfigBase::GetJobLevel@442; ConfigBase::SetJobMemoryLimit@446; ConfigBase::AddKernelObjectToClose@450; ConfigBase::SetDisconnectCsrss@470; ConfigBase::SetDesktop@480; ConfigBase::SetFilterEnvironment@484; ConfigBase::GetEnvironmentFiltered@488; ConfigBase::SetZeroAppShim@492; job_@504; PolicyBase::~PolicyBase@506; PolicyBase::GetConfig@512; PolicyBase::config@516; PolicyBase::SetConfig@530; PolicyBase::SetStdoutHandle@543; PolicyBase::SetStderrHandle@550; PolicyBase::AddHandleToShare@557; PolicyBase::InitJob@573; PolicyBase::GetJobHandle@586; PolicyBase::HasJob@590; PolicyBase::DropActiveProcessLimit@594; PolicyBase::ApplyToTarget@666; PolicyBase::GetStdoutHandle@766; PolicyBase::GetStderrHandle@770; PolicyBase::SetupAllInterceptions@774; PolicyBase::SetupHandleCloser@804; PolicyBase::AddDelegateData@826
+Dependencies: sandbox/win/src/sandbox_policy_base.h@10; stddef.h@12; stdint.h@13; memory@15; optional@16; utility@17; vector@18; base/containers/span.h@20; base/functional/callback.h@21; base/logging.h@22; base/notreached.h@23; base/win/access_control_list.h@24; base/win/access_token.h@25; base/win/sid.h@26; base/win/win_util.h@27; base/win/windows_handle_util.h@28; base/win/windows_version.h@29; sandbox/features.h@30; sandbox/win/src/acl.h@31; sandbox/win/src/crosscall_server.h@32; sandbox/win/src/filesystem_policy.h@33; sandbox/win/src/interception.h@34; sandbox/win/src/job.h@35; sandbox/win/src/policy_broker.h@36; sandbox/win/src/policy_engine_processor.h@37; sandbox/win/src/policy_low_level.h@38; sandbox/win/src/process_mitigations.h@39; sandbox/win/src/process_mitigations_win32k_policy.h@40; sandbox/win/src/process_thread_policy.h@41; sandbox/win/src/registry_policy.h@42; sandbox/win/src/restricted_token_utils.h@43; sandbox/win/src/sandbox_policy.h@44; sandbox/win/src/sandbox_policy_diagnostic.h@45; sandbox/win/src/signed_policy.h@46; sandbox/win/src/target_process.h@47; sandbox/win/src/top_level_dispatcher.h@48
+
+`security/sandbox/chromium/sandbox/win/src/sandbox_policy_base.h` | `592f0de02ba3b70a4fbf820791fc63e42bd538ba` | 10185 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@31; BrokerServicesBase@33; Dispatcher@34; LowLevelPolicy@35; PolicyDiagnostic@36; TargetProcess@37; PolicyGlobal@38; ConfigBase@44; integrity_level@127; delayed_integrity_level@128; add_restricting_random_sid@129; lockdown_default_dacl@130; is_csrss_connected@131; memory_limit@132; ui_exceptions@133; desktop@134; zero_appshim@136; PolicyBase@168
+Dependencies: stddef.h@8; stdint.h@9; memory@11; optional@12; string@13; string_view@14; vector@15; base/containers/span.h@17; base/dcheck_is_on.h@18; base/memory/raw_ptr.h@19; base/process/launch.h@20; base/win/access_token.h@21; base/win/windows_types.h@22; sandbox/win/src/app_container_base.h@23; sandbox/win/src/handle_closer.h@24; sandbox/win/src/ipc_tags.h@25; sandbox/win/src/job.h@26; sandbox/win/src/policy_engine_opcodes.h@27; sandbox/win/src/policy_engine_params.h@28; sandbox/win/src/sandbox_policy.h@29
+
+`security/sandbox/chromium/sandbox/win/src/sandbox_types.h` | `7345f4ab14a9264aa26b542f267ee95ce6c24f43` | 10339 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@13; ResultCode@21; TerminationCodes@184; BrokerServices@201; TargetServices@202; SandboxInterfaceInfo@205; InterceptionType@216
+Dependencies: base/functional/callback.h@8; base/memory/raw_ptr.h@9; base/process/kill.h@10; base/process/launch.h@11
+
+`security/sandbox/chromium/sandbox/win/src/security_capabilities.cc` | `e76913b851f3928f521a72664b5f17cc3b2ff979` | 1242 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@9; package_sid_@16; SecurityCapabilities@31; SecurityCapabilities::~SecurityCapabilities@33
+Dependencies: sandbox/win/src/security_capabilities.h@5; base/numerics/safe_conversions.h@6; base/win/security_util.h@7
+
+`security/sandbox/chromium/sandbox/win/src/security_capabilities.h` | `c5623635dcd75a8f53c5f13dda54367792f3f451` | 990 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@14; SecurityCapabilities@16
+Dependencies: windows.h@8; vector@10; base/win/sid.h@12
+
+`security/sandbox/chromium/sandbox/win/src/security_level.h` | `e266641cd5307acee19ea01db9d46bfc26313679` | 16686 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@10; IntegrityLevel@27; TokenLevel@85; class@129; uint64_t@140
+Dependencies: stdint.h@8
+
+`security/sandbox/chromium/sandbox/win/src/service_resolver.cc` | `638c11f44cc758c7866743eda7e73277b4949edc` | 2250 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@12; ServiceResolverThunk::AllowLocalPatches@43
+Dependencies: sandbox/win/src/service_resolver.h@5; ntstatus.h@7; base/notreached.h@9; base/win/pe_image.h@10
+
+`security/sandbox/chromium/sandbox/win/src/service_resolver.h` | `dc74bd6e52539932ef6f9beb4835ebc70280ab98` | 4481 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@13; relative_jump_@25
+Dependencies: stddef.h@8; base/win/windows_types.h@10; sandbox/win/src/resolver.h@11
+
+`security/sandbox/chromium/sandbox/win/src/service_resolver_32.cc` | `bb558a1cb4f6d9b1b94c93eab766b15bd4909003` | 10652 bytes | source | UTF-8 | mode 100644
+Declarations: ServiceEntry32@31; ServiceEntryWow64@54; ServiceFullThunk@83; IsWow64Process@94; IsFunctionAService32@101; sizeof@105; IsFunctionAServiceWow64@125; sizeof@129; sandbox@148; ServiceResolverThunk::GetThunkSize@184; ServiceResolverThunk::IsFunctionAService@214; sizeof@282
+Dependencies: sandbox/win/src/service_resolver.h@5; windows.h@7; winternl.h@8; ntstatus.h@10; stddef.h@11; base/compiler_specific.h@13; base/containers/heap_array.h@14
+
+`security/sandbox/chromium/sandbox/win/src/service_resolver_64.cc` | `8516e775cd0ecd588bbfc2858243d5deefbf8930` | 8703 bytes | source | UTF-8 | mode 100644
+Declarations: ServiceEntry@34; ServiceEntryW8@53; ServiceEntryWithInt2E@76; ServiceFullThunk@101; IsService@111; IsServiceW8@118; IsServiceWithInt2E@127; IsAnyService@137; ServiceEntry@148; ServiceFullThunk@154; IsService@160; IsAnyService@167; sandbox@177; ServiceResolverThunk::GetThunkSize@209; ServiceResolverThunk::IsFunctionAService@237; ServiceResolverThunk::VerifyJumpTargetForTesting@288
+Dependencies: sandbox/win/src/service_resolver.h@5; windows.h@7; winternl.h@8; ntstatus.h@10; stddef.h@11; memory@13; base/compiler_specific.h@15; base/containers/heap_array.h@16
+
+`security/sandbox/chromium/sandbox/win/src/sharedmem_ipc_client.cc` | `3228194cfcb7a05379ed67161ca26d301a8d447f` | 7181 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@18; WaitForSingleObjectWrapper@35; SharedMemIPCClient::GetBuffer@50; SharedMemIPCClient::FreeBuffer@63; control_@75; SharedMemIPCClient::LockFreeChannel@152; SharedMemIPCClient::ChannelIndexFromBuffer@179
+Dependencies: sandbox/win/src/sharedmem_ipc_client.h@5; stddef.h@7; string.h@8; base/check_op.h@10; base/compiler_specific.h@11; sandbox/win/src/crosscall_client.h@12; sandbox/win/src/crosscall_params.h@13; sandbox/win/src/sandbox.h@14; sandbox/win/src/sandbox_nt_types.h@15; sandbox/win/src/sandbox_nt_util.h@16
+
+`security/sandbox/chromium/sandbox/win/src/sharedmem_ipc_client.h` | `17e85a0b47e1b189b369c5683c278042718ec178` | 5245 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@57; ChannelState@60; ChannelControl@78; IPCControl@92; SharedMemIPCClient@104
+Dependencies: stddef.h@8; stdint.h@9; base/memory/raw_ptr_exclusion.h@11; sandbox/win/src/crosscall_params.h@12; sandbox/win/src/ipc_tags.h@13; sandbox/win/src/sandbox.h@14
+
+`security/sandbox/chromium/sandbox/win/src/sharedmem_ipc_server.cc` | `a7c5b417015697fa1168d39ec7f1ebe86749a5a0` | 13398 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@28; SharedMemIPCServer::ServerControl::ServerControl@42; SharedMemIPCServer::ServerControl::~ServerControl@44; call_dispatcher_@54; SharedMemIPCServer::~SharedMemIPCServer@58
+Dependencies: sandbox/win/src/sharedmem_ipc_server.h@5; stddef.h@7; stdint.h@8; base/check.h@10; base/compiler_specific.h@11; base/functional/callback.h@12; base/memory/ptr_util.h@13; base/notreached.h@14; sandbox/win/src/crosscall_params.h@15; sandbox/win/src/crosscall_server.h@16; sandbox/win/src/ipc_args.h@17; sandbox/win/src/sandbox.h@18; sandbox/win/src/sandbox_types.h@19; sandbox/win/src/sharedmem_ipc_client.h@20; sandbox/win/src/threadpool.h@21
+
+`security/sandbox/chromium/sandbox/win/src/sharedmem_ipc_server.h` | `270641c5e9545dfc84c1ca774f7b1b78fb61e8f7` | 6343 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@37; SharedMemIPCServer@41; ServerControl@94
+Dependencies: stdint.h@8; list@10; memory@11; base/gtest_prod_util.h@13; base/memory/raw_ptr.h@14; base/win/scoped_handle.h@15; sandbox/win/src/crosscall_params.h@16; sandbox/win/src/crosscall_server.h@17; sandbox/win/src/sharedmem_ipc_client.h@18; sandbox/win/src/threadpool.h@19
+
+`security/sandbox/chromium/sandbox/win/src/signed_dispatcher.cc` | `7efc7bf44b91882525c581ac5e43cfaab5623cfb` | 2541 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@24; policy_base_@27; SignedDispatcher::CreateSection@42
+Dependencies: sandbox/win/src/signed_dispatcher.h@5; stdint.h@7; string@9; base/strings/string_util.h@11; base/win/scoped_handle.h@12; base/win/windows_handle_util.h@13; sandbox/win/src/crosscall_client.h@14; sandbox/win/src/interception.h@15; sandbox/win/src/interceptors.h@16; sandbox/win/src/ipc_tags.h@17; sandbox/win/src/policy_params.h@18; sandbox/win/src/sandbox.h@19; sandbox/win/src/signed_interception.h@20; sandbox/win/src/signed_policy.h@21; sandbox/win/src/win_utils.h@22
+
+`security/sandbox/chromium/sandbox/win/src/signed_dispatcher.h` | `3de86f90c542131c557bbc3d755676226a5d937c` | 1167 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@16; SignedDispatcher@19
+Dependencies: stdint.h@8; base/memory/raw_ptr.h@10; sandbox/win/src/crosscall_server.h@11; sandbox/win/src/interception.h@12; sandbox/win/src/ipc_tags.h@13; sandbox/win/src/sandbox_policy_base.h@14
+
+`security/sandbox/chromium/sandbox/win/src/signed_interception.cc` | `737a1c49064669eea2011396fbf53e9264c402e3` | 4066 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@21
+Dependencies: sandbox/win/src/signed_interception.h@5; ntstatus.h@7; stdint.h@8; base/win/win_util.h@10; sandbox/win/src/crosscall_client.h@11; sandbox/win/src/ipc_tags.h@12; sandbox/win/src/policy_params.h@13; sandbox/win/src/policy_target.h@14; sandbox/win/src/sandbox_factory.h@15; sandbox/win/src/sandbox_nt_util.h@16; sandbox/win/src/sharedmem_ipc_client.h@17; sandbox/win/src/target_services.h@18; sandbox/win/TargetGeckoClient.h@19
+
+`security/sandbox/chromium/sandbox/win/src/signed_interception.h` | `f212095f00c0b967d9d225d9070eaaf6b503c49c` | 943 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@11
+Dependencies: sandbox/win/src/nt_internals.h@8; sandbox/win/src/sandbox_types.h@9
+
+`security/sandbox/chromium/sandbox/win/src/signed_policy.cc` | `679529683f93fe2b8cbbea8c44487bbf63153c9f` | 3393 bytes | source | UTF-8 | mode 100644
+Declarations: IsValidNtPath@21; sandbox@38
+Dependencies: sandbox/win/src/signed_policy.h@5; ntstatus.h@7; stdint.h@8; string@10; base/containers/contains.h@12; sandbox/win/src/ipc_tags.h@13; sandbox/win/src/policy_engine_opcodes.h@14; sandbox/win/src/policy_params.h@15; sandbox/win/src/sandbox_nt_util.h@16; sandbox/win/src/sandbox_policy.h@17; sandbox/win/src/win_utils.h@18
+
+`security/sandbox/chromium/sandbox/win/src/signed_policy.h` | `4ac0f3316be70f1adcd803473d5ede70afca6395` | 1247 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@16; SignedPolicy@19
+Dependencies: stdint.h@8; base/files/file_path.h@10; base/win/scoped_handle.h@11; sandbox/win/src/crosscall_server.h@12; sandbox/win/src/policy_engine_opcodes.h@13; sandbox/win/src/policy_low_level.h@14
+
+`security/sandbox/chromium/sandbox/win/src/startup_information_helper.cc` | `c09a9b1c826b9913303d80da731e5247d44c05fe` | 6934 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@23; StartupInformationHelper::StartupInformationHelper@26; StartupInformationHelper::~StartupInformationHelper@27; StartupInformationHelper::UpdateFlags@29; StartupInformationHelper::SetDesktop@33; StartupInformationHelper::SetMitigations@43; StartupInformationHelper::SetRestrictChildProcessCreation@49; StartupInformationHelper::AddInheritedHandle@63; StartupInformationHelper::SetAppContainer@75; StartupInformationHelper::AddJobToAssociate@89; StartupInformationHelper::CountAttributes@93; StartupInformationHelper::BuildStartupInformation@121; sizeof@161; sizeof@177; sizeof@198; StartupInformationHelper::SetFilterEnvironment@208; StartupInformationHelper::IsEnvironmentFiltered@212
+Dependencies: sandbox/win/src/startup_information_helper.h@6; windows.h@8; algorithm@10; vector@11; base/check.h@13; base/memory/scoped_refptr.h@14; base/win/startup_information.h@15; base/win/windows_handle_util.h@16; base/win/windows_version.h@17; sandbox/win/src/app_container.h@18; sandbox/win/src/nt_internals.h@19; sandbox/win/src/security_capabilities.h@20; sandbox/win/src/win_utils.h@21
+
+`security/sandbox/chromium/sandbox/win/src/startup_information_helper.h` | `08889270549e33162f439bb1d59362dbf52ebf83` | 4015 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@18; StartupInformationHelper@24; HasJobsToAssociate@50; ShouldInheritHandles@52; GetStartupInformation@67
+Dependencies: windows.h@8; vector@10; base/memory/scoped_refptr.h@12; base/win/startup_information.h@13; sandbox/win/src/app_container_base.h@14; sandbox/win/src/process_mitigations.h@15; sandbox/win/src/security_capabilities.h@16
+
+`security/sandbox/chromium/sandbox/win/src/target_interceptions.cc` | `89fba3e04ba409b1d77a63c0e7c2be4160d4d669` | 4056 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@15; SectionLoadState@19; sizeof@60
+Dependencies: sandbox/win/src/target_interceptions.h@5; ntstatus.h@7; base/compiler_specific.h@9; base/win/static_constants.h@10; sandbox/win/src/interception_agent.h@11; sandbox/win/src/sandbox_factory.h@12; sandbox/win/src/sandbox_nt_util.h@13
+
+`security/sandbox/chromium/sandbox/win/src/target_interceptions.h` | `b9d1d0e7bb406112637c4a5d87d04ece78463f0e` | 1614 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@11
+Dependencies: sandbox/win/src/nt_internals.h@8; sandbox/win/src/sandbox_types.h@9
+
+`security/sandbox/chromium/sandbox/win/src/target_process.cc` | `74a63e1d0c609983bfc89d90dc2c0f8426fe791d` | 17755 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@44; ParseEnvLine@51; CopyPolicyToTarget@66; CheckImpersonationToken@87; base_address_@115; TargetProcess::~TargetProcess@117; TargetProcess::GetChildAddress@260; TargetProcess::Terminate@428; TargetProcess::VerifySentinels@435
+Dependencies: sandbox/win/src/target_process.h@10; windows.h@12; processenv.h@14; stddef.h@15; stdint.h@16; limits@18; memory@19; string_view@20; utility@21; vector@22; base/containers/span.h@24; base/memory/free_deleter.h@25; base/numerics/safe_conversions.h@26; base/process/environment_internal.h@27; base/strings/string_util.h@28; base/win/access_token.h@29; base/win/current_module.h@30; base/win/scoped_handle.h@31; base/win/security_util.h@32; base/win/startup_information.h@33; sandbox/win/src/crosscall_client.h@34; sandbox/win/src/crosscall_server.h@35; sandbox/win/src/policy_low_level.h@36; sandbox/win/src/restricted_token_utils.h@37; sandbox/win/src/sandbox_nt_util.h@38; sandbox/win/src/sandbox_types.h@39; sandbox/win/src/sharedmem_ipc_server.h@40; sandbox/win/src/startup_information_helper.h@41; sandbox/win/src/win_utils.h@42
+
+`security/sandbox/chromium/sandbox/win/src/target_process.h` | `da06407b8abcc1166a3bc6c12c2b0b34524f0470` | 5104 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@26; Dispatcher@28; SharedMemIPCServer@29; ThreadPool@30; StartupInformationHelper@31; TargetProcess@35; Process@69; MainModule@73; ProcessId@81; MainThread@84
+Dependencies: stddef.h@8; stdint.h@9; memory@11; string_view@12; base/containers/span.h@14; base/environment.h@15; base/gtest_prod_util.h@16; base/memory/free_deleter.h@17; base/memory/raw_ptr.h@18; base/win/access_token.h@19; base/win/scoped_handle.h@20; base/win/scoped_process_information.h@21; base/win/sid.h@22; base/win/windows_types.h@23; sandbox/win/src/sandbox_types.h@24
+
+`security/sandbox/chromium/sandbox/win/src/target_services.cc` | `c03e25ab30cbaa79e04935808799418895d3d59e` | 9834 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@32; FlushRegKey@38; FlushCachedRegHandles@53; CloseOpenHandles@60; WarmupWindowsLocales@78; SetProcessIntegrityLevel@87; SetProcessAclIntegrityLevel@103; TargetServicesBase::TargetServicesBase@137; TargetServicesBase::Init@139; TargetServicesBase::LowerToken@150; TargetServicesBase::GetState@184; TargetServicesBase::GetInstance@188; TargetServicesBase::TestIPCPing@196; process_state_@247; ProcessState::InitCalled@249; ProcessState::RevertedToSelf@253; ProcessState::IsCsrssConnected@257; ProcessState::InitCompleted@261; ProcessState::SetInitCalled@265; ProcessState::SetRevertedToSelf@271; ProcessState::SetCsrssConnected@277; ProcessState::SetInitCompleted@281
+Dependencies: sandbox/win/src/target_services.h@6; windows.h@8; winsock2.h@9; process.h@11; stdint.h@12; new@14; optional@15; base/containers/span.h@17; base/logging.h@18; base/win/access_token.h@19; sandbox/win/src/acl.h@20; sandbox/win/src/crosscall_client.h@21; sandbox/win/src/handle_closer_agent.h@22; sandbox/win/src/ipc_tags.h@23; sandbox/win/src/process_mitigations.h@24; sandbox/win/src/restricted_token_utils.h@25; sandbox/win/src/sandbox.h@26; sandbox/win/src/sandbox_nt_util.h@27; sandbox/win/src/sandbox_types.h@28; sandbox/win/src/sharedmem_ipc_client.h@29; sandbox/win/TargetGeckoClient.h@30
+
+`security/sandbox/chromium/sandbox/win/src/target_services.h` | `f3378172756a17d5f209f5c5056aeb9a658918f5` | 2405 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@13; ProcessState@15; class@37; TargetServicesBase@52
+Dependencies: optional@8; base/containers/span.h@9; sandbox/win/src/sandbox.h@10; sandbox/win/src/win_utils.h@11
+
+`security/sandbox/chromium/sandbox/win/src/threadpool.cc` | `647909d2b7c5eca07063ea9bce45e4ef5f9c5ea3` | 1731 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@13; ThreadPool::UnRegisterWaits@37; ThreadPool::OutstandingWaits@62
+Dependencies: sandbox/win/src/threadpool.h@5; windows.h@7; stddef.h@9; vector@11
+
+`security/sandbox/chromium/sandbox/win/src/threadpool.h` | `db6c142b4e67fc9e2c9427fb6574b603ea44b488` | 3556 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@13; void@18; ThreadPool@43; PoolObject@74; std@79
+Dependencies: list@8; base/memory/raw_ptr.h@9; base/synchronization/lock.h@10; base/win/windows_types.h@11
+
+`security/sandbox/chromium/sandbox/win/src/top_level_dispatcher.cc` | `60c6847351a396f7850ad7b60a8ef80e8e45d9ac` | 5998 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@24; TopLevelDispatcher::TopLevelDispatcher@26; TopLevelDispatcher::~TopLevelDispatcher@91; TopLevelDispatcher::ipc_targets@93; TopLevelDispatcher::Ping@141; TopLevelDispatcher::GetDispatcher@165
+Dependencies: sandbox/win/src/top_level_dispatcher.h@5; stdint.h@7; string.h@8; base/check.h@10; base/compiler_specific.h@11; base/notreached.h@12; sandbox/win/src/crosscall_server.h@13; sandbox/win/src/filesystem_dispatcher.h@14; sandbox/win/src/interception.h@15; sandbox/win/src/internal_types.h@16; sandbox/win/src/ipc_tags.h@17; sandbox/win/src/process_mitigations_win32k_dispatcher.h@18; sandbox/win/src/process_thread_dispatcher.h@19; sandbox/win/src/registry_dispatcher.h@20; sandbox/win/src/sandbox_policy_base.h@21; sandbox/win/src/signed_dispatcher.h@22
+
+`security/sandbox/chromium/sandbox/win/src/top_level_dispatcher.h` | `754ac932409755302d87d4975bea31c1a2d225e4` | 1970 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@16; TopLevelDispatcher@20
+Dependencies: memory@8; base/memory/raw_ptr.h@10; sandbox/win/src/crosscall_server.h@11; sandbox/win/src/interception.h@12; sandbox/win/src/ipc_tags.h@13; sandbox/win/src/sandbox_policy_base.h@14
+
+`security/sandbox/chromium/sandbox/win/src/win_utils.cc` | `f4db8a965c2673cec6448719341efac3baf3342c` | 8442 bytes | source | UTF-8 | mode 100644
+Declarations: decltype@79; sandbox@91; IsPipe@93; GetNtPathFromWin32Path@99; GetPathFromHandle@109; GetTypeNameFromHandle@120; GetLastErrorFromNtStatus@160; GetProcessBaseAddress@166; ContainsNulCharacter@230; WarmupRandomnessInfrastructure@235
+Dependencies: sandbox/win/src/win_utils.h@5; windows.h@7; ntstatus.h@9; psapi.h@10; stddef.h@11; stdint.h@12; limits@14; map@15; memory@16; string@17; vector@18; base/check.h@20; base/compiler_specific.h@21; base/containers/span.h@22; base/numerics/safe_math.h@23; base/strings/string_util.h@24; base/win/scoped_handle.h@25; base/win/win_util.h@26; sandbox/win/src/internal_types.h@27; sandbox/win/src/nt_internals.h@28; sandbox/win/src/sandbox_nt_util.h@29
+
+`security/sandbox/chromium/sandbox/win/src/win_utils.h` | `525992b94ace35180e1f128cc4f2e307965e34cd` | 3093 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@19; SingletonBase@27; GetInstance@29
+Dependencies: stdint.h@8; stdlib.h@9; memory@11; optional@12; string@13; string_view@14; base/containers/span.h@16; base/win/windows_types.h@17
+
+`security/sandbox/chromium/sandbox/win/src/window.cc` | `4ff39527f3b39fddb4eafc57e31567b902c89825` | 5362 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@16; CreateAltWindowStation@18; CreateAltDesktop@52; GetFullDesktopName@138
+Dependencies: sandbox/win/src/window.h@5; windows.h@7; optional@9; base/notreached.h@11; base/win/security_descriptor.h@12; base/win/sid.h@13; base/win/win_util.h@14
+
+`security/sandbox/chromium/sandbox/win/src/window.h` | `0467430dc9a88828f1148c68623e6cfe5706679b` | 1438 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@13
+Dependencies: string@8; base/win/windows_types.h@10; sandbox/win/src/sandbox_types.h@11
+
+`security/sandbox/common/SandboxSettings.cpp` | `1ba2c794455249b8b0bcdba2c8b854bbf305d8f4` | 9156 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@24; GetContentWin32kLockdownEnabled@83; GetContentWin32kLockdownState@92; GetEffectiveContentSandboxLevel@115; IsContentSandboxEnabled@173; IsGPUSandboxEnabled@175; GetEffectiveSocketProcessSandboxLevel@177; GetEffectiveGpuSandboxLevel@195; GetLlvmProfileDir@207; GetLlvmProfileDir@221; ClampFlashSandboxLevel@237; SandboxSettings@252; SandboxSettings::GetContentWin32kLockdownState@271; SandboxSettings::GetContentWin32kLockdownStateString@277; NS_IMPL_COMPONENT_FACTORY@287
+Dependencies: mozilla/SandboxSettings.h@5; mozISandboxSettings.h@7; mozilla/Components.h@8; mozilla/Preferences.h@9; mozilla/StaticPrefs_media.h@10; mozilla/StaticPrefs_network.h@11; mozilla/StaticPrefs_security.h@12; nsAppRunner.h@13; nsServiceManagerUtils.h@14; prenv.h@15; PDMFactory.h@18; nsExceptionHandler.h@19
+
+`security/sandbox/common/SandboxSettings.h` | `cf74d8158a7f517d41374ed65ddb64d16ac67b74` | 1787 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@19
+Dependencies: string@9; nsIXULRuntime.h@12; mozilla/ipc/UtilityProcessSandboxing.h@15; nsXULAppAPI.h@16
+
+`security/sandbox/common/SandboxUtils.sys.mjs` | `1164782abef364ad7e4b54f011ae594478492ed0` | 4330 bytes | source | UTF-8 | mode 100644
+Declarations: SU_maybeWarnAboutMissingUserNamespaces@16; maybeWarnAboutDisabledContentSandbox@79; observeContentSandboxPref@113; observe@115
+Dependencies: resource://gre/modules/AppConstants.sys.mjs@5
+
+`security/sandbox/common/components.conf` | `3f29a36414c39842238038420ea85f895ba1f7da` | 674 bytes | build-registration | UTF-8 | mode 100644
+
+`security/sandbox/common/moz.build` | `96e8d106b9b9f37783ad78dfaab46e9da2346992` | 1272 bytes | build-registration | UTF-8 | mode 100644
+Dependencies: /ipc/chromium/chromium-config.mozbuild@51
+
+`security/sandbox/common/mozISandboxSettings.idl` | `b8a9d521b47ac4443c1f8644c080ee74bd45660c` | 964 bytes | source | UTF-8 | mode 100644
+Declarations: mozISandboxSettings@10
+Dependencies: nsISupports.idl@5
+
+`security/sandbox/common/test/PSandboxTesting.ipdl` | `ce0a07fc2d62810896dcfb48e47752b5b1db1e2d` | 531 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@5
+
+`security/sandbox/common/test/SandboxTest.cpp` | `ac82ec18bf412dd688e28bf77215bcd93717ad16` | 13840 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@33; UnsetEnvVariable@37; GeckoProcessStringToType@49; SandboxTest::StartTests@90; XRE_GeckoProcessTypeToString@129; SandboxTest::FinishTests@312; NS_IMPL_COMPONENT_FACTORY@360
+Dependencies: SandboxTest.h@5; GMPService.h@7; SandboxTestingChild.h@8; SandboxTestingParent.h@9; mozilla/Components.h@10; mozilla/Preferences.h@11; mozilla/RDDChild.h@12; mozilla/RDDProcessManager.h@13; mozilla/dom/ContentParent.h@14; mozilla/gfx/GPUChild.h@15; mozilla/gfx/GPUProcessManager.h@16; mozilla/gmp/GMPTypes.h@17; mozilla/ipc/Endpoint.h@18; mozilla/ipc/UtilityProcessManager.h@19; mozilla/ipc/UtilityProcessParent.h@20; mozilla/ipc/UtilityProcessSandboxing.h@21; mozilla/net/SocketProcessParent.h@22; nsIOService.h@23; nsAppDirectoryServiceDefs.h@26
+
+`security/sandbox/common/test/SandboxTest.h` | `b1771cf895227f6b158c91abf8e45f9779bcd3f1` | 1334 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@18; SandboxTest@20
+Dependencies: GMPService.h@7; SandboxTestingParent.h@8; mozISandboxTest.h@9; mozilla/GfxMessageUtils.h@10; mozilla/MozPromise.h@11; nsTArray.h@12
+
+`security/sandbox/common/test/SandboxTestingChild.cpp` | `c439a05b3050202d653e189252dbbff6b5bffa48` | 5487 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@19; SandboxTestingChild::IsTestThread@23; SandboxTestingChild::GetInstance@47; mThread@54; SandboxTestingChild::Bind@58; SandboxTestingChild::ActorDestroy@120; SandboxTestingChild::Destroy@126; SandboxTestingChild::RecvShutDown@132; SandboxTestingChild::ReportNoTests@137
+Dependencies: SandboxTestingChild.h@5; SandboxTestingChildTests.h@7; SandboxTestingThread.h@8; mozilla/ipc/Endpoint.h@9; mozilla/ipc/UtilityProcessChild.h@10; mozilla/ipc/UtilityProcessSandboxing.h@11; mozilla/Sandbox.h@14; nsXULAppAPI.h@17
+
+`security/sandbox/common/test/SandboxTestingChild.h` | `cad1a571a8dc3ca95dd30e4e3e003bb518122e57` | 2878 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@23; SandboxTestingThread@25; SandboxTestingChild@30
+Dependencies: mozilla/Maybe.h@8; mozilla/Monitor.h@9; mozilla/PSandboxTestingChild.h@10; mozilla/StaticPtr.h@11; mozilla/UniquePtr.h@12; nsISupports.h@13; nsString.h@16
+
+`security/sandbox/common/test/SandboxTestingChildTests.h` | `4341d5fa7879a6869274eaa61cf89f23d2267b04` | 44739 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ApplicationServices@63; mozilla@112; RunTestsSched@115; sched_param@116; sched_param@120; sched_param@125; RunGenericTests@133; timespec@139; RunMacTestLaunchProcess@272; RunTestsContent@372; stat@378; timespec@395; timespec@400; timespec@407; timespec@413; sockaddr_un@433; sockaddr_un@461; statfs@508; RunTestsSocket@660; addrinfo@667; stat@691; sockaddr_in6@721; msghdr@728; iovec@729; sockaddr_in6@762; mmsghdr@773; iovec@775; RunTestsRDD@811; rusage@823; utsname@859; statfs@896; RunTestsGMPlugin@923; utsname@930; RunTestsGenericUtility@1031; rusage@1044; utsname@1049; rusage@1082; RunTestsGPU@1124; dirent@1301; dirent@1309
+Dependencies: SandboxTestingChild.h@8; mozilla/ipc/UtilityProcessSandboxing.h@9; nsXULAppAPI.h@10; fcntl.h@13; netdb.h@14; arpa/inet.h@16; linux/memfd.h@17; linux/mempolicy.h@18; linux/mman.h@19; sched.h@20; sys/ioctl.h@21; sys/mman.h@22; sys/prctl.h@23; sys/resource.h@24; sys/socket.h@25; sys/statfs.h@26; sys/syscall.h@27; sys/sysmacros.h@28; sys/time.h@29; sys/un.h@30; sys/utsname.h@31; termios.h@32; mozilla/ProcInfo_linux.h@34; X11/Xlib.h@36; X11UndefineNone.h@37; sys/socket.h@40; sys/stat.h@41; sys/types.h@42; time.h@43; unistd.h@44; mozilla/Sandbox.h@48; emmintrin.h@51; AudioToolbox/AudioToolbox.h@53; CoreFoundation/CoreFoundation.h@54; CoreGraphics/CoreGraphics.h@55; dirent.h@56; fcntl.h@57; limits.h@58; spawn.h@59; sys/stat.h@60; sys/sysctl.h@61; unistd.h@62; ApplicationServices/ApplicationServices.h@64; stdio.h@70; winternl.h@71; mozilla/DynamicallyLinkedFunctionPtr.h@73; mozilla/WindowsProcessMitigations.h@74; nsAppDirectoryServiceDefs.h@75
+
+`security/sandbox/common/test/SandboxTestingParent.cpp` | `1d9c3d87d5b28d62537b8c57e7e027c812687491` | 4355 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@14; mShutdownDone@33; SandboxTestingParent::Bind@37; SandboxTestingParent::ShutdownSandboxTestThread@43; SandboxTestingParent::ActorDestroy@74; NS_NewRunnableFunction@81; SandboxTestingParent::RecvTestCompleted@97; NS_NewRunnableFunction@100
+Dependencies: SandboxTestingParent.h@5; SandboxTestingThread.h@7; mozilla/Services.h@8; mozilla/SyncRunnable.h@9; mozilla/ipc/Endpoint.h@10; nsDirectoryServiceUtils.h@11; nsIObserverService.h@12
+
+`security/sandbox/common/test/SandboxTestingParent.h` | `c8f3d7dec0eba62b9147a52b5e26edccc864b7ed` | 1721 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@16; SandboxTestingThread@18; SandboxTestingParent@20
+Dependencies: mozilla/Monitor.h@8; mozilla/PSandboxTestingParent.h@9; mozilla/UniquePtr.h@10
+
+`security/sandbox/common/test/SandboxTestingThread.h` | `8c9b630f677184b53af9c0abca5b8576b2ac08a7` | 1463 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@14; SandboxTestingThread@16; Dispatch@18; IsOnThread@22; Create@27; NS_NewNamedThread@31; SandboxTestingThread@43
+Dependencies: nsThreadManager.h@8
+
+`security/sandbox/common/test/mozISandboxTest.idl` | `a6ffdf6c766e11f70152a6cd21181f8c5ec77727` | 831 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozISandboxTest@10
+Dependencies: nsISupports.idl@5
+
+`security/sandbox/linux/LinuxSched.h` | `2e7e1294c94216529a45baa8530da3f99c1578f7` | 866 bytes | source | UTF-8 | mode 100644
+Dependencies: linux/sched.h@8
+
+`security/sandbox/linux/Sandbox.cpp` | `113b85453e091c0085ce06cff95c0ac1902b6c86` | 30249 bytes | source | UTF-8 | mode 100644
+Declarations: __sanitizer@65; signed@67; struct@70; mozilla@84; TakeSandboxReporterFd@97; ContextIsError@104; decltype@107; InstallSigSysHandler@180; sigaction@181; FindFreeSignalNumber@306; sigaction@308; SetThreadSandbox@320; SetThreadSandboxHandler@324; EnterChroot@337; BroadcastSetThreadSandbox@352; dirent@355; timespec@421; timespec@453; ApplySandboxWithTSync@485; IsLibPresent@496; RunGlibcLazyInitializers@562; SandboxLateInit@570; SetContentProcessSandbox@703; SetMediaPluginSandbox@740; SetRemoteDataDecoderSandbox@778; PR_GetEnv@780; SetSocketProcessSandbox@799; PR_GetEnv@801; SetUtilitySandbox@819; SetSandboxCrashOnError@853; DestroySandboxProfiler@859; CreateSandboxProfiler@861
+Dependencies: Sandbox.h@5; dirent.h@7; errno.h@8; fcntl.h@9; linux/futex.h@10; pthread.h@11; signal.h@12; stdio.h@13; stdlib.h@14; sys/mman.h@15; sys/prctl.h@16; sys/ptrace.h@17; sys/syscall.h@18; sys/time.h@19; unistd.h@20; dlfcn.h@22; LinuxSched.h@25; SandboxBrokerClient.h@26; SandboxChrootProto.h@27; SandboxFilter.h@28; SandboxInternal.h@29; SandboxLogging.h@30; SandboxOpenedFiles.h@31; SandboxProfilerChild.h@32; SandboxReporterClient.h@33; base/posix/eintr_wrapper.h@34; mozilla/Array.h@35; mozilla/Atomics.h@36; mozilla/Attributes.h@37; mozilla/SandboxInfo.h@38; mozilla/StackWalk.h@39; mozilla/UniquePtr.h@40; mozilla/ipc/UtilityProcessSandboxing.h@41; prenv.h@42; sandbox/linux/bpf_dsl/bpf_dsl.h@43; sandbox/linux/bpf_dsl/codegen.h@44; sandbox/linux/bpf_dsl/dump_bpf.h@45; sandbox/linux/bpf_dsl/policy.h@46; sandbox/linux/bpf_dsl/policy_compiler.h@47; sandbox/linux/bpf_dsl/seccomp_macros.h@48; sandbox/linux/seccomp-bpf/trap.h@49; sandbox/linux/system_headers/linux_filter.h@50; sandbox/linux/system_headers/linux_seccomp.h@51; sandbox/linux/system_headers/linux_syscalls.h@52; sandbox/linux/system_headers/linux_ucontext.h@54
+
+`security/sandbox/linux/Sandbox.h` | `37df5ce08e424d73625636a5cfa43f1faec353a4` | 3788 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@20; ipc@22; FileDescriptor@23; ContentProcessSandboxParams@35; SocketProcessSandboxParams@58
+Dependencies: vector@8; mozilla/Maybe.h@10; mozilla/Types.h@11; mozilla/UniquePtrExtensions.h@12; mozilla/ipc/UtilityProcessSandboxing.h@13; nsXULAppAPI.h@14
+
+`security/sandbox/linux/SandboxBrokerClient.cpp` | `33ebedef30567f582b87de7df2405ab8d8ffd959` | 9759 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@23; SandboxBrokerClient::SandboxBrokerClient@25; SandboxBrokerClient::~SandboxBrokerClient@27; iovec@68; SandboxBrokerClient::Open@163; SandboxBrokerClient::Access@175; SandboxBrokerClient::Stat@180; SandboxBrokerClient::LStat@189; SandboxBrokerClient::Chmod@198; SandboxBrokerClient::Link@203; SandboxBrokerClient::Rename@208; SandboxBrokerClient::Mkdir@213; SandboxBrokerClient::Unlink@218; SandboxBrokerClient::Rmdir@223
+Dependencies: SandboxBrokerClient.h@5; errno.h@7; fcntl.h@8; stdio.h@9; string.h@10; sys/socket.h@11; sys/stat.h@12; sys/types.h@13; sys/un.h@14; unistd.h@15; SandboxInfo.h@17; SandboxLogging.h@18; base/strings/safe_sprintf.h@19; mozilla/Assertions.h@20; mozilla/Atomics.h@21
+
+`security/sandbox/linux/SandboxBrokerClient.h` | `2f5c09526181ce2031ebf21deb0e639fc562c11f` | 1835 bytes | source | UTF-8 | mode 100644
+Declarations: stat@20; sockaddr_un@21; mozilla@23; SandboxBrokerClient@25
+Dependencies: broker/SandboxBrokerCommon.h@8; broker/SandboxBrokerUtils.h@9
+
+`security/sandbox/linux/SandboxChrootProto.h` | `a3c6355ce5c7c5fd69faadecf66aeea52f77e595` | 533 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@8
+
+`security/sandbox/linux/SandboxFilter.cpp` | `337bce4413f9d72978aed1b5eacb4e90286174c1` | 88985 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@174; SandboxPolicyCommon@180; const@191; BlockedSyscallTrap@193; ConvertError@200; DoSyscall@203; KcmpPolicyForMesa@220; SchedTrap@233; TKillCompatTrap@249; SetNoNewPrivsTrap@255; OpenTrap@268; AccessTrap@275; StatTrap@282; LStatTrap@289; ChmodTrap@296; LinkTrap@303; RenameTrap@310; MkdirTrap@317; RmdirTrap@324; UnlinkTrap@330; ReadlinkTrap@344; OpenAtTrap@353; AccessAtTrap@366; AccessAt2Trap@386; StatAtTrap@403; ChmodAtTrap@439; LinkAtTrap@458; RenameAtTrap@480; MkdirAtTrap@495; UnlinkAtTrap@508; ReadlinkAtTrap@536; SocketpairDatagramTrap@550; SocketcallUnpackTrap@557; FakeSocketTrapCommon@625; FakeSocketTrap@641; FakeSocketTrapLegacy@647; DoGetSockOpt@655; ConnectTrap@716; const@717; ConnectTrapLegacy@725; const@727; StatFsTrap@735; ClonePolicy@774; PrctlPolicy@798; MsgFlagsAllowed@818; UnpackSocketcallOrAllow@835; ContentSandboxPolicy@1437; BelowLevel@1443; AllowBelowLevel@1444; AllowBelowLevel@1447; GetPPidTrap@1451; mUsingRenderDoc@1463; GMPSandboxPolicy@1828; OpenTrap@1829; StatTrap@1865; UnameTrap@1882; GMPSandboxPolicy@1895; RDDSandboxPolicy@1985; IsCudaUvmFdBindAddr@1987; CudaUvmFdTrap@2002; RDDSandboxPolicy@2021; SocketProcessSandboxPolicy@2307; BelowLevel@2311; mParams@2316; FcntlTrap@2321; UtilitySandboxPolicy@2472; UtilitySandboxPolicy@2474
+Dependencies: SandboxFilter.h@5; asm/ioctls.h@7; asm/termbits.h@8; errno.h@9; fcntl.h@10; linux/ioctl.h@11; linux/ipc.h@12; linux/memfd.h@13; linux/mman.h@14; linux/net.h@15; linux/sched.h@16; linux/sockios.h@17; string.h@18; sys/ioctl.h@19; sys/mman.h@20; sys/prctl.h@21; sys/socket.h@22; sys/syscall.h@23; sys/un.h@24; sys/utsname.h@25; time.h@26; unistd.h@27; linux/wireless.h@29; algorithm@31; utility@32; Sandbox.h@34; SandboxBrokerClient.h@35; SandboxFilterUtil.h@36; SandboxInfo.h@37; SandboxInternal.h@38; SandboxLogging.h@39; SandboxOpenedFiles.h@40; mozilla/PodOperations.h@41; mozilla/ProcInfo_linux.h@42; mozilla/ProfilerPlatformMacros.h@43; mozilla/UniquePtr.h@44; prenv.h@45; sandbox/linux/bpf_dsl/bpf_dsl.h@46; sandbox/linux/system_headers/linux_seccomp.h@47; sandbox/linux/system_headers/linux_syscalls.h@48; asm/prctl.h@52
+
+`security/sandbox/linux/SandboxFilter.h` | `1c05fc0f6daef100ee4558a1b8dac7defca0fe3f` | 1221 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@10; bpf_dsl@11; Policy@12; mozilla@16; SandboxBrokerClient@17; ContentProcessSandboxParams@19; SocketProcessSandboxParams@20; SandboxOpenedFiles@25
+Dependencies: mozilla/UniquePtr.h@8
+
+`security/sandbox/linux/SandboxFilterUtil.cpp` | `568fd4d58ee94a44d65a12e1238ac84c02f5f5aa` | 5222 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@33
+Dependencies: SandboxFilterUtil.h@5; linux/ipc.h@8; linux/net.h@10; sys/socket.h@11; sys/syscall.h@12; unistd.h@13; mozilla/UniquePtr.h@15; sandbox/linux/bpf_dsl/bpf_dsl.h@16
+
+`security/sandbox/linux/SandboxFilterUtil.h` | `76bd75f55a2733cfedb81c0df508b8377b5c2007` | 7922 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@17; SandboxPolicyBase@31; EvaluateSocketCall@39; EvaluateIpcCall@49
+Dependencies: mozilla/Maybe.h@13; sandbox/linux/bpf_dsl/policy.h@14; sandbox/linux/system_headers/linux_syscalls.h@15
+
+`security/sandbox/linux/SandboxHooks.cpp` | `ff66c4031ed8a425c9dc784a519ffd653e508ba2` | 3196 bytes | source | UTF-8 | mode 100644
+Declarations: SigSetNeedsFixup@21; SigSetFixup@29; sigaction@83; sigaction@97
+Dependencies: dlfcn.h@5; errno.h@6; signal.h@7; stdio.h@8; sys/inotify.h@9; X11/Xlib.h@11; mozilla/Assertions.h@14; mozilla/Atomics.h@15; mozilla/Types.h@16
+
+`security/sandbox/linux/SandboxInfo.cpp` | `6a6e999c1cb0df19b752a9c6b10451bbaf74b4d8` | 8034 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@41; HasSeccompBPF@43; HasSeccompTSync@71; HasUserNamespaceSupport@86; CanCreateUserNamespace@111; SandboxInfo::SandboxInfo@188
+Dependencies: SandboxInfo.h@5; errno.h@7; stdlib.h@8; sys/prctl.h@9; sys/stat.h@10; sys/syscall.h@11; sys/wait.h@12; unistd.h@13; LinuxSched.h@15; SandboxLogging.h@16; base/posix/eintr_wrapper.h@17; mozilla/Assertions.h@18; mozilla/SandboxSettings.h@19; sandbox/linux/system_headers/linux_seccomp.h@20; sandbox/linux/system_headers/linux_syscalls.h@21; valgrind/valgrind.h@24
+
+`security/sandbox/linux/SandboxInfo.h` | `393223783cf34aed159e52f120617b83e04ccf2e` | 2353 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@15; SandboxInfo@17; Flags@25; Test@49; CanSandboxContent@52; CanSandboxMedia@57; AsInteger@62; Flags@66
+Dependencies: cstdint@8; mozilla/Types.h@10
+
+`security/sandbox/linux/SandboxInternal.h` | `38f1971c8055291a582eeee153700f377ee4710e` | 725 bytes | source | UTF-8 | mode 100644
+Declarations: sock_fprog@12; mozilla@14; void@20
+Dependencies: signal.h@8; mozilla/Types.h@10
+
+`security/sandbox/linux/SandboxLogging.cpp` | `8a06fd844b0303012329a69e20c5e06685f5b88e` | 3984 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@25; IOVecDrop@30; SandboxLogError@41; iovec@53; GetLibcErrorName@68
+Dependencies: SandboxLogging.h@5; android/log.h@8; stdio.h@10; string.h@11; sys/uio.h@12; unistd.h@13; algorithm@15; base/posix/eintr_wrapper.h@17
+
+`security/sandbox/linux/SandboxLogging.h` | `72abb6b3bbfd78647c49df138c4a5b89689df45d` | 3748 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@36
+Dependencies: base/strings/safe_sprintf.h@26; base/strings/safe_sprintf.h@29; errno.h@32; SandboxProfiler.h@34
+
+`security/sandbox/linux/SandboxOpenedFiles.cpp` | `3c845f892b4d4721b70810e44a6791622d915f76` | 1989 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@15; mExpectError@23; mPath@26; mPath@37; SandboxOpenedFile::GetDesc@39; SandboxOpenedFile::~SandboxOpenedFile@60; SandboxOpenedFiles::GetDesc@67
+Dependencies: SandboxOpenedFiles.h@5; errno.h@7; fcntl.h@8; unistd.h@9; utility@11; SandboxLogging.h@13
+
+`security/sandbox/linux/SandboxOpenedFiles.h` | `d32f65ee3df1c5868b53c39ed10c8111534a93f3` | 3252 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@22; SandboxOpenedFile@26; class@28; Error@29; IsOpen@51; TakeDesc@63; SandboxOpenedFiles@70; Add@81
+Dependencies: string@8; vector@9; mozilla/Atomics.h@11
+
+`security/sandbox/linux/SandboxProfiler.cpp` | `fb9f4f6e5dfbd8c4646900da51100475192c306d` | 11265 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@18; AutoForbidSignalContext::AutoForbidSignalContext@23; AutoForbidSignalContext::~AutoForbidSignalContext@25; UprofilerFuncPtrs@38; SandboxProfiler::Create@56; SandboxProfiler::SandboxProfiler@81; SandboxProfiler::Shutdown@91; SandboxProfiler::~SandboxProfiler@105; SandboxProfiler::ActiveWithQueue@116; SandboxProfiler::Signal@121; constexpr@123; SandboxProfiler::Wait@131; SandboxProfiler::ReportInit@134; constexpr@147; constexpr@157; SandboxProfiler::ReportLog@181; constexpr@201; constexpr@210; SandboxProfiler::ReportLogImpl@219; constexpr@268; constexpr@278; constexpr@332
+Dependencies: SandboxProfiler.h@5; time.h@7; unistd.h@8; SandboxInfo.h@10; SandboxProfilerChild.h@11; mozilla/Atomics.h@12; mozilla/DebugOnly.h@13; mozilla/PodOperations.h@14; mozilla/StaticPtr.h@15; public/GeckoTraceEvent.h@16
+
+`security/sandbox/linux/SandboxProfiler.h` | `98030eaff8b1241d133b65155fcb0967c9aea875` | 5207 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@24; MOZ_STACK_CLASS@29; class@36; UprofilerFuncPtrs@51; SandboxProfiler@54; Active@62
+Dependencies: linux/limits.h@8; semaphore.h@9; thread@11; MicroGeckoProfiler.h@13; ProfilerNativeStack.h@14; mozilla/BoundedMPSCQueue.h@15; mozilla/ProfileChunkedBuffer.h@16; mozilla/ProfilerState.h@17
+
+`security/sandbox/linux/SandboxProfilerChild.h` | `0fef3fd4cd643dcb17a665d513c750b22b5c4bc1` | 1228 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@16; SandboxProfiler::Init@19
+Dependencies: SandboxProfiler.h@8
+
+`security/sandbox/linux/SandboxProfilerObserver.h` | `e20ebca425f3cd75347d080cdbf78e3bca33df62` | 1832 bytes | source | UTF-8 | mode 100644
+Declarations: ProfilerStartupObserverForSandboxProfiler@24; RegisterProfilerObserversForSandboxProfiler@51
+Dependencies: mozilla/Sandbox.h@8; mozilla/Services.h@9; nsCOMPtr.h@10; nsIObserver.h@11; nsIObserverService.h@12; nsISupportsImpl.h@13
+
+`security/sandbox/linux/SandboxProfilerParent.h` | `2e1f0d1948ae372d7d21f392ef5aae2b1f09b862` | 2874 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@18; UprofilerFuncPtrs@20; SandboxProfiler::ReportLog@67
+Dependencies: SandboxInfo.h@8; SandboxProfiler.h@9; public/GeckoTraceEvent.h@10
+
+`security/sandbox/linux/SandboxReporterClient.cpp` | `515098b433fceef228b423d244037dd8598357c2` | 2707 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@25; mProcType@29; SandboxReporterClient::MakeReport@37; SandboxReporterClient::SendReport@61; iovec@64; msghdr@65
+Dependencies: SandboxReporterClient.h@5; errno.h@7; signal.h@8; sys/socket.h@9; sys/syscall.h@10; sys/types.h@11; time.h@12; SandboxLogging.h@14; mozilla/Assertions.h@15; mozilla/PodOperations.h@16; prenv.h@17; sandbox/linux/bpf_dsl/seccomp_macros.h@18; sandbox/linux/system_headers/linux_ucontext.h@20; ucontext.h@22
+
+`security/sandbox/linux/SandboxReporterClient.h` | `68f1a31675d12634e0a213c90e9d4f8572bf37f2` | 1326 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; SandboxReporterClient@15; MakeReportAndSend@28
+Dependencies: reporter/SandboxReporterCommon.h@8
+
+`security/sandbox/linux/broker/LICENSE-NOTICE.txt` | `5aa14ec15c9dde3ecb20400272d969415f19e203` | 1442 bytes | data-or-other | UTF-8 | mode 100644
+
+`security/sandbox/linux/broker/SandboxBroker.cpp` | `c1265bdaf81b232437741506ad0d11f8d050b038` | 37952 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@38; mChildPid@55; SandboxBroker::Terminate@100; SandboxBroker::~SandboxBroker@128; mMap@137; SandboxBroker::Policy::ValidatePath@142; stat@172; SandboxBroker::Policy::RemoveAllDenyRules@186; SandboxBroker::Policy::AddTree@195; stat@196; SandboxBroker::Policy::AddFutureDir@209; SandboxBroker::Policy::AddTreeInternal@213; SandboxBroker::Policy::AddPrefix@232; dirent@253; strncmp@259; SandboxBroker::Policy::AddDynamic@270; stat@271; SandboxBroker::Policy::AddAncestors@287; class@301; Match@331; SandboxBroker::Policy::FixRecursivePermissions@386; SandboxBroker::Policy::Lookup@418; StringBeginsWith@436; AllowOperation@446; AllowAccess@463; AllowOpen@495; DoStat@523; sockaddr_un@557; SandboxBroker::RealPath@586; SandboxBroker::ReverseSymlinks@605; SandboxBroker::SymlinkPermissions@630; SandboxBroker::ThreadMain@657; iovec@696; stat@934; stat@1082
+Dependencies: SandboxBroker.h@5; dirent.h@7; errno.h@8; fcntl.h@9; sys/socket.h@10; sys/stat.h@11; sys/types.h@12; sys/un.h@13; unistd.h@14; sys/prctl.h@17; utility@20; GeckoProfiler.h@22; SandboxBrokerUtils.h@23; SandboxInfo.h@24; SandboxLogging.h@25; SandboxProfilerParent.h@26; SpecialSystemDirectory.h@27; base/strings/string_util.h@28; mozilla/Assertions.h@29; mozilla/Atomics.h@30; mozilla/Sprintf.h@31; mozilla/ipc/FileDescriptor.h@32; nsAppDirectoryServiceDefs.h@33; nsDirectoryServiceDefs.h@34; nsThreadUtils.h@35; sandbox/linux/system_headers/linux_syscalls.h@36
+
+`security/sandbox/linux/broker/SandboxBroker.h` | `a713406f04893102dc514a2e91a8e46f1bf61519` | 7136 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@15; ipc@17; FileDescriptor@18; SandboxBroker@34; Perms@43; nsTHashMap@65; Policy@67; AddCondition@84; AddPath@114; Lookup@119; IsEmpty@123; nsTHashMap@152
+Dependencies: base/platform_thread.h@8; mozilla/SandboxBrokerCommon.h@9; mozilla/UniquePtr.h@10; nsHashKeys.h@11; nsString.h@12; nsTHashMap.h@13
+
+`security/sandbox/linux/broker/SandboxBrokerCommon.cpp` | `6b58967bcda7e6ef12e3897eec569d49c022b102` | 5289 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@39; SandboxBrokerCommon::OperationToInt@42; msghdr@64; cmsghdr@90; msghdr@139; cmsghdr@148
+Dependencies: SandboxBrokerCommon.h@5; errno.h@7; string.h@8; sys/socket.h@9; sys/types.h@10; unistd.h@11; array@13; mozilla/Assertions.h@15; mozilla/ProfilerThreadSleep.h@20
+
+`security/sandbox/linux/broker/SandboxBrokerCommon.h` | `e67dc0abd827c5f36262f67c90d54c38152f7f5e` | 3361 bytes | source | UTF-8 | mode 100644
+Declarations: iovec@13; mozilla@25; SandboxBrokerCommon@27; class@29; OperationIsValid@52; OperationPaths@57; Request@70; Response@83
+Dependencies: stdint.h@8; sys/types.h@9; mozilla/UsingEnum.h@11
+
+`security/sandbox/linux/broker/SandboxBrokerPolicyFactory.cpp` | `c1fc4604c9fdd0fd85ece704df27985c15a4722b` | 46708 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@71; AddDriPaths@85; stat@93; CachePathsFromFile@262; AddLdconfigPaths@292; AddLdLibraryEnvPaths@311; AddSharedMemoryPaths@327; AddMemoryReporting@334; AddX11Dependencies@356; AddWaylandDependencies@392; AddGLDependencies@415; AddLLVMProfilePathDirectory@464; SandboxBrokerPolicyFactory::InitContentPolicy@481; AddV4l2Dependencies@888; dirent@898; v4l2_capability@916; AddVulkanDependencies@942; SandboxBrokerPolicyFactory::GetRDDPolicy@1004; SandboxBrokerPolicyFactory::GetSocketProcessPolicy@1122; SandboxBrokerPolicyFactory::GetUtilityProcessPolicy@1181; SandboxBrokerPolicyFactory::GetHWInferencePolicy@1245
+Dependencies: SandboxBrokerPolicyFactory.h@5; string@8; dirent.h@11; sys/stat.h@12; sys/sysmacros.h@13; sys/types.h@14; glob.h@16; fcntl.h@19; linux/videodev2.h@20; sys/ioctl.h@21; mozilla/Components.h@24; mozilla/gfx/gfxVars.h@25; glib.h@31; SandboxInfo.h@34; SandboxLogging.h@35; SpecialSystemDirectory.h@36; mozilla/Array.h@37; mozilla/ClearOnShutdown.h@38; mozilla/Omnijar.h@39; mozilla/Preferences.h@40; mozilla/SandboxLaunch.h@41; mozilla/SandboxSettings.h@42; mozilla/StaticMutex.h@43; mozilla/StaticPrefs_security.h@44; mozilla/UniquePtr.h@45; mozilla/UniquePtrExtensions.h@46; mozilla/ipc/SharedMemoryHandle.h@47; nsAppDirectoryServiceDefs.h@48; nsCharSeparatedTokenizer.h@49; nsComponentManagerUtils.h@50; nsDirectoryServiceDefs.h@51; nsIFile.h@52; nsIFileStreams.h@53; nsILineInputStream.h@54; nsNetCID.h@55; nsPrintfCString.h@56; nsReadableUtils.h@57; nsString.h@58; nsThreadUtils.h@59; nsXULAppAPI.h@60; prenv.h@61; mozilla/WidgetUtilsGtk.h@63; cutils/properties.h@66; memory@69
+
+`security/sandbox/linux/broker/SandboxBrokerPolicyFactory.h` | `c55b27da581f745b294f2c67787339ee2cc9d920` | 1136 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; SandboxBrokerPolicyFactory@14
+Dependencies: mutex@8; mozilla/SandboxBroker.h@10
+
+`security/sandbox/linux/broker/SandboxBrokerRealpath.cpp` | `27656540844ede2d03d60fcdca74dcb3502eba7f` | 9680 bytes | source | UTF-8 | mode 100644
+Declarations: my_strlcat@55; mozilla@65; statfs@82; stat@107
+Dependencies: errno.h@38; fcntl.h@39; linux/magic.h@40; stdlib.h@41; string.h@42; sys/param.h@43; sys/stat.h@44; sys/vfs.h@45; unistd.h@46; SandboxBroker.h@48; SandboxLogging.h@49; base/strings/string_util.h@50; mozilla/UniquePtrExtensions.h@51
+
+`security/sandbox/linux/broker/SandboxBrokerUtils.h` | `01d272441d7b53a1fbe4ca39c41514e53b494b1f` | 1036 bytes | source | UTF-8 | mode 100644
+Declarations: struct@18; struct@23
+Dependencies: sys/stat.h@7; sys/types.h@8; unistd.h@9; sandbox/linux/system_headers/linux_syscalls.h@11
+
+`security/sandbox/linux/broker/moz.build` | `68484a573fc6690f2a91ed748c0f537ad712acfb` | 1643 bytes | build-registration | UTF-8 | mode 100644
+Dependencies: /ipc/chromium/chromium-config.mozbuild@39
+
+`security/sandbox/linux/glue/SandboxCrash.cpp` | `ca16b9f7b9c40532d3d1ff7f06d3e3799eb9d394` | 4056 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@23; SandboxLogJSStack@28; SandboxLogCStack@78; __attribute__@109
+Dependencies: sys/syscall.h@10; unistd.h@11; SandboxInternal.h@13; SandboxLogging.h@14; mozilla/StackWalk.h@15; mozilla/dom/Exceptions.h@16; nsContentUtils.h@17; nsExceptionHandler.h@18; nsIException.h@19; nsString.h@20; nsThreadUtils.h@21
+
+`security/sandbox/linux/glue/SandboxPrefBridge.cpp` | `60f7a77b34fd2226664eaac672fb58cdaf97a17d` | 1924 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@11
+Dependencies: Sandbox.h@5; mozilla/Preferences.h@6; mozilla/SandboxSettings.h@7; mozilla/dom/ContentChild.h@8; mozilla/dom/ContentParent.h@9
+
+`security/sandbox/linux/glue/moz.build` | `4b2faf28c217554d5b21a1383bae12576f51e946` | 1209 bytes | build-registration | UTF-8 | mode 100644
+Dependencies: /ipc/chromium/chromium-config.mozbuild@24
+
+`security/sandbox/linux/gtest/SandboxProfiler.cpp` | `e3d27dee15c98f4c351f715e4bffa9e8f7730d4d` | 833 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@7
+Dependencies: SandboxProfiler.h@5
+
+`security/sandbox/linux/gtest/TestBroker.cpp` | `03ae577c4fdaeabd3085b63d22399f5b36bd1eb1` | 22195 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@27; SandboxBrokerTest@29; ThreadMain@42; Open@48; Access@51; Stat@54; LStat@57; Chmod@60; Link@63; Mkdir@66; Rename@69; Rmdir@72; Unlink@73; Readlink@74; StartThread@89; RunOnManyThreads@95; TEST_F@131; TEST_F@148; TEST_F@165; TEST_F@179; TEST_F@189; TEST_F@218; TEST_F@244; PrePostTestCleanup@258; TEST_F@267; TEST_F@288; TEST_F@304; TEST_F@323; TEST_F@340; TEST_F@355; TEST_F@373; TEST_F@390; SandboxBrokerTest::MultiThreadOpenWorker@394; TEST_F@411; SandboxBrokerTest::MultiThreadStatWorker@415; SandboxBrokerSigStress@449; sigaction@452; SigHandler@455; SignalThread@467; SetUp@474; sigaction@482; TearDown@496; TEST_F@513; timespec@517; timespec@533; SandboxBrokerSigStress::MallocWorker@546; SandboxBrokerSigStress::FreeWorker@566; SandboxBrokerSigStress::DoSomething@581; stat@585; TEST@625; rlimit@633; rlimit@644; TEST@677
+Dependencies: errno.h@5; fcntl.h@6; pthread.h@7; sched.h@8; semaphore.h@9; stdlib.h@10; sys/resource.h@11; sys/stat.h@12; sys/types.h@13; time.h@14; unistd.h@15; SandboxBrokerClient.h@17; broker/SandboxBroker.h@18; broker/SandboxBrokerUtils.h@19; gtest/gtest.h@20; mozilla/Atomics.h@21; mozilla/PodOperations.h@22; mozilla/UniquePtr.h@23; mozilla/ipc/FileDescriptor.h@24; nsIThreadManager.h@25
+
+`security/sandbox/linux/gtest/TestBrokerPolicy.cpp` | `330a409499f6f41b5fc6b81bd767336501316ce0` | 3659 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@8; TEST@17; TEST@28; TEST@57
+Dependencies: broker/SandboxBroker.h@5; gtest/gtest.h@6
+
+`security/sandbox/linux/gtest/TestLogging.cpp` | `070618c10f71159dc5a6daf61ab8cb6872a04e9f` | 1170 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@10; TEST@12; TEST@20; TEST@28; TEST@36; TEST@44
+Dependencies: errno.h@5; SandboxLogging.h@7; gtest/gtest.h@8
+
+`security/sandbox/linux/gtest/moz.build` | `13d4371ae62de892ccb05e13529ec414fecdf0ec` | 761 bytes | test-path,build-registration | UTF-8 | mode 100644
+Dependencies: /ipc/chromium/chromium-config.mozbuild@19
+
+`security/sandbox/linux/interfaces/moz.build` | `4bf8808c2c1ea2704138fdff58145228d4aba795` | 278 bytes | build-registration | UTF-8 | mode 100644
+
+`security/sandbox/linux/interfaces/mozISandboxReporter.idl` | `4989b5c286dc8bf90d3189d824d3a3d9eb23a272` | 2538 bytes | source | UTF-8 | mode 100644
+Declarations: mozISandboxReport@10; mozISandboxReportArray@38; mozISandboxReporter@50
+Dependencies: nsISupports.idl@5
+
+`security/sandbox/linux/launch/LinuxCapabilities.cpp` | `7943b945f5ae1666bb7e1d00436fdd408948f795` | 784 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; LinuxCapabilities::GetCurrent@12; LinuxCapabilities::SetCurrentRaw@18
+Dependencies: LinuxCapabilities.h@5; sys/syscall.h@7; unistd.h@8
+
+`security/sandbox/linux/launch/LinuxCapabilities.h` | `68e000b6d23e3666dfc54624f56ebdd4b36c7ec2` | 3673 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@31; LinuxCapabilities@33; BitRef@36; BitRef@40; LinuxCapabilities@56; SetCurrent@72; Normalize@77; AnyEffective@83; Effective@96; Permitted@100; Inheritable@104; GenericBitRef@111
+Dependencies: linux/capability.h@8; stdint.h@9; mozilla/Assertions.h@11; mozilla/Attributes.h@12; mozilla/PodOperations.h@13
+
+`security/sandbox/linux/launch/SandboxLaunch.cpp` | `6a4fbb8039bf9557dfb7251dc28c37928b298b9a` | 24593 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@62; IsGraphicsOkWithoutNetwork@72; sscanf@133; HasAtiDrivers@152; ContentNeedsSysVIPC@178; PreloadSandboxLib@202; AttachSandboxReporter@221; SandboxLaunch::SandboxLaunch@406; SandboxLaunch::~SandboxLaunch@408; SandboxLaunch::Prepare@414; BlockAllSignals@423; RestoreSignals@434; IsSignalIgnored@445; sigaction@446; ResetSignalHandlers@457; CloneCallee@496; ForkWithFlags@533; ConfigureUserNamespace@588; DropAllCaps@614; SandboxLaunch::Fork@620; SandboxLaunch::StartChrootServer@685; base::CloseSuperfluousFds@704
+Dependencies: SandboxLaunch.h@5; fcntl.h@7; sched.h@8; setjmp.h@9; signal.h@10; sys/prctl.h@11; sys/socket.h@12; sys/syscall.h@13; unistd.h@14; utility@16; LinuxCapabilities.h@18; LinuxSched.h@19; SandboxChrootProto.h@20; SandboxInfo.h@21; SandboxLogging.h@22; base/posix/eintr_wrapper.h@23; base/strings/safe_sprintf.h@24; mozilla/Array.h@25; mozilla/Assertions.h@26; mozilla/Attributes.h@27; mozilla/Components.h@28; mozilla/Preferences.h@29; mozilla/SandboxReporter.h@30; mozilla/SandboxSettings.h@31; mozilla/StaticPrefs_media.h@32; mozilla/StaticPrefs_security.h@33; mozilla/ipc/UtilityProcessSandboxing.h@34; mozilla/pthread_atfork.h@35; nsCOMPtr.h@36; nsDebug.h@37; nsIGfxInfo.h@38; nsString.h@39; nsThreadUtils.h@40; prenv.h@41; sandbox/linux/services/syscall_wrappers.h@42; sandbox/linux/system_headers/linux_syscalls.h@43; gdk/gdk.h@49; gdk/gdkx.h@50; X11UndefineNone.h@52; gfxPlatform.h@53; mozilla/WidgetUtilsGtk.h@54; glibc_hack/namespace_sandbox.inc@483
+
+`security/sandbox/linux/launch/SandboxLaunch.h` | `0d4d8f8934bf77989d5a817876042c798d9c3694` | 2390 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; SandboxLaunch@15
+Dependencies: base/process_util.h@8; mozilla/GeckoArgs.h@9; mozilla/ipc/UtilityProcessSandboxing.h@10; nsXULAppAPI.h@11
+
+`security/sandbox/linux/launch/glibc_hack/LICENSE` | `2249a28657f86c645f8978b75babc1bd52aca318` | 1536 bytes | data-or-other | UTF-8 | mode 100644
+
+`security/sandbox/linux/launch/glibc_hack/extract-sandbox.py` | `87210adf6322c4061b4bcbf93b5a9cad257daadd` | 594 bytes | source | UTF-8 | mode 100755
+
+`security/sandbox/linux/launch/glibc_hack/moz.yaml` | `998bf3759a0152cb905998ef72c6dc93d90ff108` | 746 bytes | data-or-other | UTF-8 | mode 100644
+
+`security/sandbox/linux/launch/glibc_hack/namespace_sandbox.inc` | `56983425dba8cac66d6838eb59c605e01539d842` | 1809 bytes | data-or-other | UTF-8 | mode 100644
+
+`security/sandbox/linux/launch/glibc_hack/sandbox/linux/services/namespace_sandbox.cc` | `d16946be9165b5eabc8544dc379a9aa2c748601b` | 9113 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@31; WriteUidGidMapDelegate@39; NamespaceUtils::KernelSupportsDenySetgroups@45; TerminationSignalHandler@76; glibc_pthread@91; GetGlibcCachedTid@106; MaybeUpdateGlibcTidCache@115; fail_on_unsupported_ns_type@138; NamespaceSandbox::Options::~Options@140; NamespaceSandbox::ForkInNewPidNamespace@212; NamespaceSandbox::InstallDefaultTerminationSignalHandlers@235; sigaction@250; sigaction@270; NamespaceSandbox::InNewUserNamespace@277; NamespaceSandbox::InNewPidNamespace@282; NamespaceSandbox::InNewNetNamespace@287
+Dependencies: sandbox/linux/services/namespace_sandbox.h@5; sched.h@7; signal.h@8; stddef.h@9; stdlib.h@10; sys/types.h@11; unistd.h@12; string@14; utility@15; vector@16; base/check_op.h@18; base/command_line.h@19; base/environment.h@20; base/files/scoped_file.h@21; base/posix/eintr_wrapper.h@22; base/process/launch.h@23; base/process/process.h@24; build/build_config.h@25; sandbox/linux/services/credentials.h@26; sandbox/linux/services/namespace_utils.h@27; sandbox/linux/services/syscall_wrappers.h@28; sandbox/linux/system_headers/linux_signal.h@29
+
+`security/sandbox/linux/launch/moz.build` | `3d61064c8116e177377917f4eb445cf52808ccc2` | 2015 bytes | build-registration | UTF-8 | mode 100644
+Dependencies: /ipc/chromium/chromium-config.mozbuild@52
+
+`security/sandbox/linux/moz.build` | `3066ba42c8b6130939d321cf227208fdf748ed14` | 6852 bytes | build-registration | UTF-8 | mode 100644
+
+`security/sandbox/linux/reporter/SandboxReporter.cpp` | `f5dd1caa6439a1003f7485e62c803e223cf7e3c9` | 9460 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@37; mCount@46; SandboxReporter::Init@48; SandboxReporter::~SandboxReporter@69; SandboxReporter::Singleton@80; SandboxReporter::GetClientFileDescriptor@105; SubmitToTelemetry@112; SandboxReporter::AddOne@227; SandboxReporter::ThreadMain@235; iovec@245; msghdr@246; SandboxReporter::GetSnapshot@279
+Dependencies: SandboxReporter.h@5; errno.h@7; sys/socket.h@8; sys/types.h@9; time.h@10; algorithm@12; GeckoProfiler.h@14; SandboxLogging.h@15; mozilla/Assertions.h@16; mozilla/ClearOnShutdown.h@17; mozilla/PodOperations.h@18; mozilla/StaticMutex.h@19; mozilla/glean/SecuritySandboxMetrics.h@20; nsThreadUtils.h@21; sandbox/linux/system_headers/linux_syscalls.h@22
+
+`security/sandbox/linux/reporter/SandboxReporter.h` | `f9508c4171d0a3e633a0dc69d8b2817f83075f1b` | 2785 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@15; SandboxReporter@20; Snapshot@39
+Dependencies: SandboxReporterCommon.h@8; base/platform_thread.h@9; mozilla/Mutex.h@10; mozilla/StaticPtr.h@11; mozilla/UniquePtr.h@12; nsTArray.h@13
+
+`security/sandbox/linux/reporter/SandboxReporterCommon.h` | `56cb3d9f3b11fd1763aa4f4d4f8a60408a83bc3f` | 1883 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@15; SandboxReport@20; class@25; timespec@42; SandboxReport@53; IsValid@54
+Dependencies: sys/types.h@8; mozilla/IntegerTypeTraits.h@10
+
+`security/sandbox/linux/reporter/SandboxReporterWrappers.cpp` | `8f88beb84581d86514a50024583af4857a5b25a8` | 5582 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@18; SandboxReportWrapper@20; mReport@26; SandboxReportWrapper::GetMsecAgo@36; timespec@37; SandboxReportWrapper::GetPid@53; SandboxReportWrapper::GetTid@59; SandboxReportWrapper::GetProcType@65; SandboxReportWrapper::GetSyscall@92; SandboxReportWrapper::GetNumArgs@99; SandboxReportArray@124; mOffset@130; SandboxReportArray::GetBegin@141; SandboxReportArray::GetEnd@147; SandboxReporterWrapper@166; NS_IMPL_COMPONENT_FACTORY@194
+Dependencies: time.h@5; SandboxReporter.h@7; mozISandboxReporter.h@8; mozilla/Assertions.h@9; mozilla/Components.h@10; nsCOMPtr.h@11; nsPrintfCString.h@12; nsTArray.h@13; nsXULAppAPI.h@14
+
+`security/sandbox/linux/reporter/components.conf` | `c8ced20b8e7abe440f8704c79606bfdc46c95874` | 392 bytes | build-registration | UTF-8 | mode 100644
+
+`security/sandbox/linux/reporter/moz.build` | `3f0a69d3a307062e72a8fffe55a60f78562545e7` | 998 bytes | build-registration | UTF-8 | mode 100644
+Dependencies: /ipc/chromium/chromium-config.mozbuild@24
+
+`security/sandbox/mac/Sandbox.h` | `365ccfd284906892488e4b71ae4f562d0549085d` | 3408 bytes | source | UTF-8 | mode 100644
+Declarations: MacSandboxType@16; struct@27; shouldLog@35; mozilla@83; ProcessIsX86_64@101
+Dependencies: sys/sysctl.h@8; cstring@10; string@11; vector@12; mozilla/ipc/UtilityProcessSandboxing.h@14
+
+`security/sandbox/mac/Sandbox.mm` | `54ec5cddaa4b7dcf43375ff9b2d351542f6d0725` | 30433 bytes | source | UTF-8 | mode 100644
+Declarations: OSXVersion@54; OSXVersion::Get@70; GetRealPath@140; ProcessIsRosettaTranslated@159; MacSandboxInfo::AppendAsParams@171; MacSandboxInfo::AppendLevelParam@237; MacSandboxInfo::AppendAudioParam@245; mozilla@288; StartMacSandbox@290; IsMacSandboxStarted@934; AssertMacSandboxEnabled@938
+Dependencies: Sandbox.h@11; CoreFoundation/CoreFoundation.h@13; stdio.h@14; stdlib.h@15; sys/sysctl.h@16; sys/types.h@17; sstream@19; vector@20; SandboxPolicyContent.h@22; SandboxPolicyGMP.h@23; SandboxPolicyGPU.h@24; SandboxPolicyHWInference.h@25; SandboxPolicyRDD.h@26; SandboxPolicySocket.h@27; SandboxPolicyUtility.h@28; SandboxPolicyPGO.h@30; mozilla/Assertions.h@33; mozilla/GeckoArgs.h@35; mozilla/SandboxSettings.h@36; mozilla/ipc/UtilityProcessSandboxing.h@37
+
+`security/sandbox/mac/SandboxPolicyContent.h` | `a256f6a7a37682a07629c3e34b25355eed24c0bc` | 14546 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10
+
+`security/sandbox/mac/SandboxPolicyGMP.h` | `6335c84a7d09fd9073474e0f7011352d58636fc9` | 2621 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10
+
+`security/sandbox/mac/SandboxPolicyGPU.h` | `48394846c6682ad316dffed8fbc4458bb61df67c` | 9746 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@8
+
+`security/sandbox/mac/SandboxPolicyHWInference.h` | `db90e7bbc8553a22e13eec070700b51c64e553bf` | 6515 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@9
+
+`security/sandbox/mac/SandboxPolicyPGO.h` | `29b01ba1351e9c558df5c9fd8af89e077b4517d5` | 581 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@8
+
+`security/sandbox/mac/SandboxPolicyRDD.h` | `99a17344a501e015e92ba956546f0e012918dcc4` | 6499 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@8
+
+`security/sandbox/mac/SandboxPolicySocket.h` | `ea1eb587a0c3e6149ed1ba349e9442210f70f348` | 4234 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@8
+
+`security/sandbox/mac/SandboxPolicyUtility.h` | `bcac56bca5a3d925643afb1f3c7199a942d6fb76` | 2156 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@8
+
+`security/sandbox/mac/moz.build` | `a4077ccd4dbe71f1d7586901c2c0310c773394ae` | 717 bytes | build-registration | UTF-8 | mode 100644
+
+`security/sandbox/metrics.yaml` | `f3b049503dac6f2c17a589945d51e44803b3cb49` | 3193 bytes | data-or-other | UTF-8 | mode 100644
+
+`security/sandbox/moz.build` | `b0c46abc0f93a9eab6b5a6fe0455112b9bf97934` | 11968 bytes | build-registration | UTF-8 | mode 100644
+
+`security/sandbox/test/browser.toml` | `e025c3d3982fa81cb2986abb756a56bccfef08bc` | 987 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`security/sandbox/test/browser_bug1393259.js` | `8fbeb1b9d2c2d5b0afe34f9cfdbd8ad26c6bd297` | 7276 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@39; function@47; runProcess@48; registerFont@64; unregisterFont@81; observe@103; registerCleanupFunction@114; function@129
+
+`security/sandbox/test/browser_bug1717599_XDG-CONFIG-DIRS.toml` | `f0f2f73b061cd078300228c1dbf6250776d42e78` | 442 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`security/sandbox/test/browser_bug1717599_XDG-CONFIG-HOME.toml` | `fada9e47c9f87cd3aeee493ba2bf40b9359d25fb` | 334 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`security/sandbox/test/browser_content_sandbox_bug1717599_XDG-CONFIG-DIRS.js` | `e45c0cb0782003e16f0589aacbfe36aecb1ada47` | 308 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@9
+
+`security/sandbox/test/browser_content_sandbox_bug1717599_XDG-CONFIG-HOME.js` | `e45c0cb0782003e16f0589aacbfe36aecb1ada47` | 308 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@9
+
+`security/sandbox/test/browser_content_sandbox_fs.js` | `cff7a872fe99774bd5ba891918ca5f0f6494aa41` | 1888 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@37
+
+`security/sandbox/test/browser_content_sandbox_fs_snap.js` | `06f04c1d3330cc8a69f69162eb1408a6aa6666e9` | 912 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@18
+
+`security/sandbox/test/browser_content_sandbox_fs_tests.js` | `085abb31a26d63c73e84354597bc37f432597384` | 20392 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: createFileInHome@14; createTempFile@34; testFileAccessAllPlatforms@87; testFileAccessMacOnly@228; testFileAccessLinuxOnly@391; testFileAccessLinuxSnap@657; testFileAccessWindowsOnly@692; cleanupBrowserTabs@721
+
+`security/sandbox/test/browser_content_sandbox_fs_xdg_default.js` | `f828308bf291f30cfe95818ab27bc0479ff910a8` | 1275 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@20; add_task@31
+
+`security/sandbox/test/browser_content_sandbox_fs_xdg_mozLegacyHome.js` | `f76ee5d9238f5faa78cccd07d9dde155ed8476f0` | 1300 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@20; add_task@33
+
+`security/sandbox/test/browser_content_sandbox_fs_xdg_xdgConfigHome.js` | `678101c5abd1400454bdafec6dc64654d07654bf` | 1472 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@20; add_task@36
+
+`security/sandbox/test/browser_content_sandbox_syscalls.js` | `1040ac4738a4692e618b2a97897d046e907c8d05` | 11212 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: callExec@28; callFork@46; callSysctl@59; callPrctl@80; callOpen@105; callFaccessat2@126; getOSLib@150; getKernelVersion@166; computeKernelVersion@179; getGlibcVersion@183; getOSExecCmd@201; areContentSyscallsSandboxed@208; add_task@237
+
+`security/sandbox/test/browser_content_sandbox_utils.js` | `a62532a8a8bdedb4b5689b66190b3b8dcb7f0c36` | 14683 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: sanityChecks@11; isXdgEnabled@47; createFile@65; createSymlink@106; deleteFile@145; unlinkNullPath@164; readDir@210; readFile@237; statPath@269; isContentFileIOSandboxed@286; minProfileReadSandboxLevel@311; minHomeReadSandboxLevel@327; isMac@341; isWin@344; isLinux@347; isNightly@351; uuid@356; fileInHomeDir@361; fileInTempDir@375; GetProfileDir@390; GetHomeDir@396; GetHomeSubdir@402; GetHomeSubdirFile@406; GetSubdir@410; GetSubdirFile@416; GetPerUserExtensionDir@422; GetProfileEntry@428; GetDir@434; GetFile@442; GetBrowserType@448; GetWebBrowser@474; isFileContentProcessEnabled@478; GetFileBrowser@487; GetSandboxLevel@494; runTestsList@499
+
+`security/sandbox/test/browser_profiler.toml` | `b38e83999acbfc5cfaf48756547a99ac594910d5` | 668 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`security/sandbox/test/browser_sandbox_profiler.js` | `c20310b51ee3c09b5a644e903225c8379c67f236` | 4036 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: addTab@10; waitForMaybeSandboxProfilerData@35; async@50; add_task@111; add_task@122; add_task@133; add_task@144
+
+`security/sandbox/test/browser_sandbox_test.js` | `7b98f84dc170951595bcab339bf1a62999354414` | 2649 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: test@7
+
+`security/sandbox/test/browser_snap.toml` | `74de5e2e9c45eb73bbe1e001cd1cb1c8edc99974` | 592 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`security/sandbox/test/browser_xdg_default.toml` | `8ef8f1d814ef8385621f9cd77a7f489d121ed808` | 749 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`security/sandbox/test/browser_xdg_mozLegacyHome.toml` | `dc5248cd428f8697a98556ba0c69ba5e47245d95` | 888 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`security/sandbox/test/browser_xdg_xdgConfigHome.toml` | `ac32ca39836c4b8a7c35cbeb38f0ec0878e6e7ab` | 797 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`security/sandbox/test/bug1393259.html` | `b1e3cca99a17abcddfe9580ecaf50db9090d522b` | 341 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`security/sandbox/test/mac_register_font.py` | `549becf565afe0302dca4a57f78defe963543b23` | 2245 bytes | test-path,source | UTF-8 | mode 100755
+Declarations: main@19; register_or_unregister_font@76
+
+`security/sandbox/win/SandboxInitialization.cpp` | `32b4d048cd575f15ef25bcde05a7d3b1412bfaa9` | 8381 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@14; sandboxing@15; ThreadLocalStorageIsInitialized@17; BOOL@22; BOOL@25; BOOL@61; EnableHandleCloseMonitoring@84; EnableApiQueryInterception@108; ShouldDisableHandleVerifier@120; InitializeHandleVerifier@131; InitializeTargetServices@139; GetInitializedTargetServices@158; LowerSandbox@165; BrokerServicesDelegateImpl@167; InitializeBrokerServices@191; GetInitializedBrokerServices@221; ApplyParentProcessMitigations@228
+Dependencies: SandboxInitialization.h@5; base/memory/ref_counted.h@7; mozilla/DebugOnly.h@8; mozilla/WindowsProcessMitigations.h@9; nsWindowsDllInterceptor.h@10; sandbox/win/src/process_mitigations.h@11; sandbox/win/src/sandbox_factory.h@12
+
+`security/sandbox/win/SandboxInitialization.h` | `55f46a139ea638e54359b17549ed9a2e8bc0c528` | 1548 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@8; BrokerServices@9; TargetServices@10; mozilla@17; sandboxing@20
+
+`security/sandbox/win/gtest/TestConfigHelpers.cpp` | `bb7279a27c9a18df0b8533311b6e345d96cdf7b9` | 18135 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@45; MockConfig@47; UserFontConfigHelperTest@115; mWinUserFontCall@119; SetUpPaths@134; CreateHelperAndCallAddRules@138; TEST_F@153; TEST_F@161; TEST_F@171; TEST_F@180; TEST_F@192; TEST_F@211; TEST_F@231; TEST_F@258; TEST_F@273; TEST_F@287; TEST_F@297; TEST_F@309; TEST_F@317; TEST_F@331; RuleSize@364; MakeLongFontPath@369; TEST_F@395; TEST_F@414
+Dependencies: windows.h@5; string@7; gmock/gmock.h@9; gtest/gtest.h@10; nsLiteralString.h@11; nsWindowsHelpers.h@12; sandbox/win/src/app_container.h@13; sandbox/win/src/policy_engine_opcodes.h@14; sandbox/win/src/sandbox.h@15; ../src/sandboxbroker/ConfigHelpers.h@18
+
+`security/sandbox/win/gtest/moz.build` | `a5c8b958ed7dfdd8875c5c24e9495044914e191b` | 702 bytes | test-path,build-registration | UTF-8 | mode 100644
+
+`security/sandbox/win/src/sandboxbroker/ConfigHelpers.cpp` | `967d7517c795bb4014e52e376454540e7a5ccdff` | 12380 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@18; sandboxing@25; ContainsSandboxWildcard@29; mConfig@42; mRoamingAppData@106; UserFontConfigHelper::~UserFontConfigHelper@116; UserFontConfigHelper::AddRules@239
+Dependencies: ConfigHelpers.h@5; windows.h@7; mozilla/Logging.h@9; mozilla/UniquePtrExtensions.h@10; mozilla/Vector.h@11; nsExceptionHandler.h@12; nsStringFwd.h@13; nsUnicharUtils.h@14; nsWindowsHelpers.h@15; sandbox/win/src/policy_engine_opcodes.h@16
+
+`security/sandbox/win/src/sandboxbroker/ConfigHelpers.h` | `95cf39bfa8119fb0367f6a4bbdc67001a32eba0e` | 1775 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@14; TargetPolicy@15; mozilla@18; SizeTrackingConfig@21
+Dependencies: minwindef.h@8; mozilla/Attributes.h@10; nsStringFwd.h@11; sandbox/win/src/sandbox_policy.h@12
+
+`security/sandbox/win/src/sandboxbroker/moz.build` | `d5d6370aa7418a840b7916c7409cdbb052f5fc9e` | 772 bytes | build-registration | UTF-8 | mode 100644
+
+`security/sandbox/win/src/sandboxbroker/sandboxBroker.cpp` | `74c0e5486b855849ca9298ae08ab0f32d0d61cb6` | 82086 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@60; getter_Transfers@213; NS_FAILED@225; SandboxBroker::GeckoDependentInitialize@284; SandboxBroker::SandboxBroker@309; AddDeveloperRepoDirToConfig@370; EnsureAppLockerAccess@415; XRE_GetChildProcBinPathType@581; DynamicCodeFlagForSystemMediaLibraries@734; GetProcessUserSidString@751; getter_Transfers@755; getter_Transfers@768; HexEncode@777; SandboxBroker::EnsureLpacPermsissionsOnDir@794; sizeof@805; IsLowPrivilegedAppContainerSupported@879; SandboxBroker::SetSecurityLevelForGPUProcess@1335; SandboxBroker::SetSecurityLevelForRDDProcess@1436; SandboxBroker::SetSecurityLevelForSocketProcess@1508; UtilitySandboxProps@1582; GenericUtilitySandboxProps@1622; UtilityAudioDecodingWmfSandboxProps@1624; UtilityAudioDecodingWmfSandboxProps@1625; UtilityMfMediaEngineCdmSandboxProps@1640; UtilityMfMediaEngineCdmSandboxProps@1641; WindowsUtilitySandboxProps@1691; WindowsUtilitySandboxProps@1692; LogUtilitySandboxProps@1722; SandboxBroker::AllowReadFile@2048; SandboxBroker::AddHandleToShare@2063; SandboxBroker::IsWin32kLockedDown@2067; SandboxBroker::ApplyLoggingConfig@2072
+Dependencies: sandboxBroker.h@7; aclapi.h@9; sddl.h@10; shlobj.h@11; string@13; ConfigHelpers.h@15; GfxDriverInfo.h@16; WinUtils.h@17; base/win/sid.h@18; base/win/windows_version.h@19; mozilla/Assertions.h@20; mozilla/ClearOnShutdown.h@21; mozilla/Components.h@22; mozilla/ImportDir.h@23; mozilla/Logging.h@24; mozilla/NSPRLogModulesParser.h@25; mozilla/Omnijar.h@26; mozilla/Preferences.h@27; mozilla/SHA1.h@28; mozilla/SandboxSettings.h@29; mozilla/StaticPrefs_media.h@30; mozilla/StaticPrefs_security.h@31; mozilla/StaticPtr.h@32; mozilla/UniquePtr.h@33; mozilla/WinDllServices.h@34; mozilla/WindowsVersion.h@35; mozilla/glean/SecuritySandboxMetrics.h@36; mozilla/ipc/LaunchError.h@37; mozilla/ipc/UtilityProcessSandboxing.h@38; nsAppDirectoryServiceDefs.h@39; nsCOMPtr.h@40; nsDirectoryServiceDefs.h@41; nsIFile.h@42; nsIGfxInfo.h@43; nsIProperties.h@44; nsIXULRuntime.h@45; nsServiceManagerUtils.h@46; nsString.h@47; nsTArray.h@48; nsTHashtable.h@49; sandbox/win/src/app_container.h@50; sandbox/win/src/sandbox.h@51; sandbox/win/src/security_level.h@52
+
+`security/sandbox/win/src/sandboxbroker/sandboxBroker.h` | `9643dfe01cc78433ef5a54d38f9149b5c7f380aa` | 2552 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@19; BrokerServices@20; TargetPolicy@21; mozilla@24; GMPSandboxKind@26; SandboxBroker@28
+Dependencies: stdint.h@8; windows.h@9; mozilla/Result.h@11; mozilla/ipc/EnvironmentMap.h@12; mozilla/ipc/LaunchError.h@13; mozilla/ipc/UtilityProcessSandboxing.h@14; nsCOMPtr.h@15; nsISupportsImpl.h@16; nsXULAppAPI.h@17
+
+`security/sandbox/win/src/sandboxtarget/TargetGeckoServicesImpl.cpp` | `3402e2ccb2dabc40db3c784f3565028d3bb8a063` | 3157 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; geckoprofiler@16; SandboxSyscall@18; mozilla@35; MarkIntervalStart@37; MarkIntervalEnd@42; InitTargetGeckoServices@75
+Dependencies: TargetGeckoServicesImpl.h@5; mozilla/Logging.h@7; mozilla/ProfilerMarkers.h@8; mozilla/sandboxing/TargetGeckoServices.h@9; nsString.h@10
+
+`security/sandbox/win/src/sandboxtarget/TargetGeckoServicesImpl.h` | `a06436cfc4dfeed9f64c71b16b2b516d8c969268` | 627 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10
+Dependencies: mozilla/sandboxing/TargetGeckoServices.h@8
+
+`security/sandbox/win/src/sandboxtarget/moz.build` | `fe193681c87c7394cf4cf373dae681875a6ff877` | 718 bytes | build-registration | UTF-8 | mode 100644
+
+`security/sandbox/win/src/sandboxtarget/sandboxTarget.cpp` | `2575763624320b2d3023e24cd4a6f596b4941995` | 1533 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; SandboxTarget::Instance@17; SandboxTarget::StartSandbox@22; SandboxTarget::LowerContentSandbox@35; SandboxTarget::NotifyStartObservers@47
+Dependencies: sandboxTarget.h@5; mozilla/CpuInfo.h@7; mozilla/SandboxSettings.h@8; mozilla/WindowsStackWalkInitialization.h@9; sandbox/win/src/sandbox.h@10
+
+`security/sandbox/win/src/sandboxtarget/sandboxTarget.h` | `092c3b5b1355dc10c5fcfed407946bcfe86107ec` | 1918 bytes | source | UTF-8 | mode 100644
+Declarations: sandbox@16; TargetServices@17; mozilla@20; SandboxTarget@22; SetTargetServices@36; IsSandboxed@44; RegisterSandboxStartCallback@47; SandboxTarget@63
+Dependencies: windows.h@8; functional@10; list@11; utility@12; mozilla/Assertions.h@14
+
+## Validation and limits
+
+Every listed blob was read from the pinned Git tree and its Git SHA-1 was recomputed. Extraction is structural only. Read implementations, callers, build conditions, and tests before making a behavior claim. Runtime behavior and historical reasons remain unverified. Reproduce a file with `git show 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b:path` in the corresponding source clone. The full study coverage and navigation note records aggregate results.
+
+## Retrieval correction
+
+This copy preserves the source map in [63c6a950-4b08-4dcc-84c8-2f32081caedc.md](63c6a950-4b08-4dcc-84c8-2f32081caedc.md). The original was imported and committed by concurrent console maintenance during this study. Its full path metadata could exceed the console search budget. This copy uses component scope metadata while keeping every file path in the body. It adds no independent behavior evidence. Original record: `1e08497382f49353cdf53ddd868cedfd8debe38cdc237782bed9271e86cee951`.

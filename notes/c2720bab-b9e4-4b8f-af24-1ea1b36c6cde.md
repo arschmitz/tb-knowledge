@@ -1,0 +1,1094 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["testing"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013","portableCopies":["b1453750b55f3b9893fea7bd334d38aa2c108f3211c9c3acbbaa881090161737"],"sourceAt":"2026-10-13T04:17:22.071Z","correctionOf":"notes/02fd8f20-e481-45d9-8b42-bb6196c5e1b6.md"}} -->
+# firefox/testing JavaScript function map 1001
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dflt-params-arg-val-not-undefined.js
+
+Blob: `1017af05319fcc57d169a0a39afd0014c626c8a0`. Role: imported-path,test-path,source. Parse: module.
+
+- ref @65-73; ArrowFunctionExpression; parameters=6; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dflt-params-arg-val-undefined.js
+
+Blob: `2cbc669e1845b86f8b2c05d4a9add116bf23ee37`. Role: imported-path,test-path,source. Parse: module.
+
+- ref @58-63; ArrowFunctionExpression; parameters=3; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dflt-params-duplicates.js
+
+Blob: `8ac9c4a504536d84aa6a2b84d1c8203d164027ed`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Argument name clash
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dflt-params-ref-later.js
+
+Blob: `36a72a414d45dfe3aff9eaacf85623536bb1df32`. Role: imported-path,test-path,source. Parse: module.
+
+- f @54-57; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @59-61; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dflt-params-ref-prior.js
+
+Blob: `3649b6937afd5843037f7cccb992053430b9f813`. Role: imported-path,test-path,source. Parse: module.
+
+- ref @55-60; ArrowFunctionExpression; parameters=3; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dflt-params-ref-self.js
+
+Blob: `bfe25d1a72ac0b3c93389700ed7dd325a9d09d8f`. Role: imported-path,test-path,source. Parse: module.
+
+- f @54-57; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @59-61; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dflt-params-rest.js
+
+Blob: `8c2ca36d4a4ec945256fa2ad595d165880641383`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token =
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dflt-params-trailing-comma.js
+
+Blob: `7ded24cd5fc831da9a8710e08a98da24024694b7`. Role: imported-path,test-path,source. Parse: module.
+
+- ref @48-52; ArrowFunctionExpression; parameters=2; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-init-iter-close.js
+
+Blob: `2c99175b77725c2036137a1e15c7d0891366e924`. Role: imported-path,test-path,source. Parse: module.
+
+- iter.[computed] @51-61; FunctionExpression; parameters=0; async=false; generator=false
+- next @53-55; FunctionExpression; parameters=0; async=false; generator=false
+- return @56-59; FunctionExpression; parameters=0; async=false; generator=false
+- f @65-68; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-init-iter-get-err-array-prototype.js
+
+Blob: `61a9af272b39b5d174127eddb15bcabfc1164607`. Role: imported-path,test-path,source. Parse: module.
+
+- f @58-58; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @60-62; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-init-iter-get-err.js
+
+Blob: `1bb81572f620b1c7d35687a82c6b59f2901b9fc3`. Role: imported-path,test-path,source. Parse: module.
+
+- iter.[computed] @48-50; FunctionExpression; parameters=0; async=false; generator=false
+- f @52-52; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @54-56; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-init-iter-no-close.js
+
+Blob: `00699cb5f57b1b341f1f78b40ed3fc7b7b28ddf9`. Role: imported-path,test-path,source. Parse: module.
+
+- iter.[computed] @51-61; FunctionExpression; parameters=0; async=false; generator=false
+- next @53-55; FunctionExpression; parameters=0; async=false; generator=false
+- return @56-59; FunctionExpression; parameters=0; async=false; generator=false
+- f @65-68; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-name-iter-val.js
+
+Blob: `40aed5ea41068b2cc14fe92a5b6c6c92ffbfa06b`. Role: imported-path,test-path,source. Parse: module.
+
+- f @62-67; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-ary-elem-init.js
+
+Blob: `0e849f69eeb1eca14e8c16793cac790ca1b7a42a`. Role: imported-path,test-path,source. Parse: module.
+
+- f @54-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-ary-elem-iter.js
+
+Blob: `262c94628dc1d7cfa2544acdbeb131f3905509b5`. Role: imported-path,test-path,source. Parse: module.
+
+- f @55-60; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-ary-elision-init.js
+
+Blob: `3f6c1097b69e0a8e9ef5b24677382d53ab95735b`. Role: imported-path,test-path,source. Parse: module.
+
+- g @54-58; FunctionDeclaration; parameters=0; async=false; generator=true
+- f @62-66; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-ary-elision-iter.js
+
+Blob: `d02361df42e6e7672cf915df932d9f55169c63aa`. Role: imported-path,test-path,source. Parse: module.
+
+- g @54-56; FunctionDeclaration; parameters=0; async=false; generator=true
+- f @60-63; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-ary-empty-init.js
+
+Blob: `824708d5bf8bfc9b22aa5ee523fb0b39f3a3b94b`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @54-54; FunctionExpression; parameters=0; async=false; generator=true
+- f @58-62; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @58-58; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-ary-empty-iter.js
+
+Blob: `b3ec8fa92fe50fff1faefcd1e762f64684dd56af`. Role: imported-path,test-path,source. Parse: module.
+
+- f @56-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @56-56; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-ary-rest-init.js
+
+Blob: `8af5c8ae734c12984159c3c64e25eb562490efe9`. Role: imported-path,test-path,source. Parse: module.
+
+- f @55-63; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-ary-rest-iter.js
+
+Blob: `216665cf2c4244c35c728b4e7994d1a5fb7f3fb5`. Role: imported-path,test-path,source. Parse: module.
+
+- f @57-66; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @57-57; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-ary-val-null.js
+
+Blob: `d3044e2e51f2b60c3a9609215938dc038065cc35`. Role: imported-path,test-path,source. Parse: module.
+
+- f @59-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @61-63; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-id-init-exhausted.js
+
+Blob: `fde06500a284adc824fa3445997257480ce60da3`. Role: imported-path,test-path,source. Parse: module.
+
+- f @55-58; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-id-init-fn-name-arrow.js
+
+Blob: `a1a1092a113b4a8fef4a9fb8d232733d48c54ffe`. Role: imported-path,test-path,source. Parse: module.
+
+- f @56-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @56-56; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-id-init-fn-name-class.js
+
+Blob: `c9867f2a4be31cf676c97d2d27c87485021a1183`. Role: imported-path,test-path,source. Parse: module.
+
+- f @56-61; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- name @56-56; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @56-56
+- Class X @56-56
+- Class (anonymous) @56-56
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-id-init-fn-name-cover.js
+
+Blob: `da05047ffd9b6a82257d838f06f1af77251db4ba`. Role: imported-path,test-path,source. Parse: module.
+
+- f @56-60; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @56-56; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @56-56; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-id-init-fn-name-fn.js
+
+Blob: `b6e9b54e7702ba16964cf143daa05a5e8ce04793`. Role: imported-path,test-path,source. Parse: module.
+
+- f @56-60; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- x @56-56; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @56-56; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-id-init-fn-name-gen.js
+
+Blob: `df77f35c3dda08b29dbaa7156b8766fcdf422f9a`. Role: imported-path,test-path,source. Parse: module.
+
+- f @57-61; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- x @57-57; FunctionExpression; parameters=0; async=false; generator=true
+- (anonymous) @57-57; FunctionExpression; parameters=0; async=false; generator=true
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-id-init-hole.js
+
+Blob: `dc31eada3fa7fceefefea7694954a91d52bc293f`. Role: imported-path,test-path,source. Parse: module.
+
+- f @50-54; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-id-init-skipped.js
+
+Blob: `5a87b51c686add3854d5c9b9fb51f587e7483fa3`. Role: imported-path,test-path,source. Parse: module.
+
+- counter @50-52; FunctionDeclaration; parameters=0; async=false; generator=false
+- f @56-63; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-id-init-throws.js
+
+Blob: `87b0913e1734bce89054c436d2301a1c80e5a2b5`. Role: imported-path,test-path,source. Parse: module.
+
+- f @50-50; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @50-50; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @52-54; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-id-init-undef.js
+
+Blob: `b507856c319f64397c74f1d24adf29877aee8b15`. Role: imported-path,test-path,source. Parse: module.
+
+- f @54-57; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-id-init-unresolvable.js
+
+Blob: `d6304d552e0f36c7ae6a2553c64c7c6489df9637`. Role: imported-path,test-path,source. Parse: module.
+
+- f @57-57; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @59-61; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-id-iter-complete.js
+
+Blob: `6f3ff03f1d2d9110af2e3736ee0f154ed7b27a2d`. Role: imported-path,test-path,source. Parse: module.
+
+- f @58-61; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-id-iter-done.js
+
+Blob: `d711dfd329cdceccab5b5176b3c38c3c69f10ac2`. Role: imported-path,test-path,source. Parse: module.
+
+- f @53-56; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-id-iter-step-err.js
+
+Blob: `174b3f377cd3603206b5907b9e0ee965d22d746e`. Role: imported-path,test-path,source. Parse: module.
+
+- g.[computed] @51-57; FunctionExpression; parameters=0; async=false; generator=false
+- next @53-55; FunctionExpression; parameters=0; async=false; generator=false
+- f @59-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @61-63; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-id-iter-val-array-prototype.js
+
+Blob: `62303c624de3e97c5f6412bdf508e6033fcc9078`. Role: imported-path,test-path,source. Parse: module.
+
+- Array.prototype.[computed] @58-68; FunctionExpression; parameters=0; async=false; generator=true
+- f @72-77; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-id-iter-val-err.js
+
+Blob: `531cf07a5d5c97f9cd18225cb7339405a0325997`. Role: imported-path,test-path,source. Parse: module.
+
+- get @57-59; FunctionExpression; parameters=0; async=false; generator=false
+- g.[computed] @62-68; FunctionExpression; parameters=0; async=false; generator=false
+- next @64-66; FunctionExpression; parameters=0; async=false; generator=false
+- f @70-70; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @72-74; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-id-iter-val.js
+
+Blob: `3a663e9e1d41c21aeb45e06d2c59964888c48f3a`. Role: imported-path,test-path,source. Parse: module.
+
+- f @62-67; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-obj-id-init.js
+
+Blob: `603fecab49f232de0c6156cc8bc5adfa0c3b71c4`. Role: imported-path,test-path,source. Parse: module.
+
+- f @54-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-obj-id.js
+
+Blob: `c569943b112ac833d1f3030122ca1ba8f7033ff0`. Role: imported-path,test-path,source. Parse: module.
+
+- f @54-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-obj-prop-id-init.js
+
+Blob: `545d837141b16a5eb47c0ec3b9ff23e34fccdb2e`. Role: imported-path,test-path,source. Parse: module.
+
+- f @54-69; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @59-61; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @62-64; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @65-67; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-obj-prop-id.js
+
+Blob: `5c3c12c244fa4713cc3ff11d365f5182df3508f9`. Role: imported-path,test-path,source. Parse: module.
+
+- f @54-69; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @59-61; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @62-64; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @65-67; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-obj-val-null.js
+
+Blob: `15dc4e3c85b21bb71da8fe610ed67a28732d15ad`. Role: imported-path,test-path,source. Parse: module.
+
+- f @59-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @61-63; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elem-obj-val-undef.js
+
+Blob: `002974bbfc4a73f2828b64e18604c7fe3adf280f`. Role: imported-path,test-path,source. Parse: module.
+
+- f @59-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @61-63; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elision-exhausted.js
+
+Blob: `8fec5e86ff05a6867d02b02dbb3c09ccf54dc33b`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @56-56; FunctionExpression; parameters=0; async=false; generator=true
+- f @61-64; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elision-step-err.js
+
+Blob: `18f1ae00e79b7e77765ab02c211f3f5242008303`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @58-61; FunctionExpression; parameters=0; async=false; generator=true
+- f @63-63; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @65-67; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-elision.js
+
+Blob: `eb4020c970d3ad8f8081a80ba9f4eb27a8581060`. Role: imported-path,test-path,source. Parse: module.
+
+- g @61-65; FunctionDeclaration; parameters=0; async=false; generator=true
+- f @69-73; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-empty.js
+
+Blob: `61757cda7e6445a2fcb5e1553cacf38a114e2090`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @47-49; FunctionExpression; parameters=0; async=false; generator=true
+- f @53-56; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-rest-ary-elem.js
+
+Blob: `803f6d3f85a3b8b7a01b8524835b1bb30aff82ce`. Role: imported-path,test-path,source. Parse: module.
+
+- f @75-80; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-rest-ary-elision.js
+
+Blob: `e6ed522e97a47d617061c5a66c773efac7035fa9`. Role: imported-path,test-path,source. Parse: module.
+
+- g @74-78; FunctionDeclaration; parameters=0; async=false; generator=true
+- f @82-86; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-rest-ary-empty.js
+
+Blob: `92a19e3afd68bd08346f9f70f731a40877e1213d`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @60-62; FunctionExpression; parameters=0; async=false; generator=true
+- f @66-69; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-rest-ary-rest.js
+
+Blob: `bbac896ee868e7c4940cca7923a090ac2d9e4a83`. Role: imported-path,test-path,source. Parse: module.
+
+- f @56-65; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-rest-id-direct.js
+
+Blob: `ef08e85c19c6e6b5e3e8139f6d652a371b8e57a2`. Role: imported-path,test-path,source. Parse: module.
+
+- f @56-60; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-rest-id-elision-next-err.js
+
+Blob: `0771a795ec889ecd991328f948610907e2198d28`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @50-50; FunctionExpression; parameters=0; async=false; generator=true
+- f @52-52; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @54-56; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-rest-id-elision.js
+
+Blob: `dd73d3b2b45a537ba781523f620003cb5b3e9964`. Role: imported-path,test-path,source. Parse: module.
+
+- f @53-61; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-rest-id-exhausted.js
+
+Blob: `811c65d052b686c699d636375b59c99150487227`. Role: imported-path,test-path,source. Parse: module.
+
+- f @53-57; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-rest-id-iter-step-err.js
+
+Blob: `537b07ddac295f70762469d475a5d9455a518aeb`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @53-57; FunctionExpression; parameters=0; async=false; generator=true
+- f @59-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @61-63; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-rest-id-iter-val-err.js
+
+Blob: `b39903c964d6d56ae0efc65e5d245868f15da7b9`. Role: imported-path,test-path,source. Parse: module.
+
+- get @52-54; FunctionExpression; parameters=0; async=false; generator=false
+- iter.[computed] @57-63; FunctionExpression; parameters=0; async=false; generator=false
+- next @59-61; FunctionExpression; parameters=0; async=false; generator=false
+- f @65-65; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @67-69; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-rest-id.js
+
+Blob: `e4dcbfd7626a07cec2db43d706ba95e28e74a5cb`. Role: imported-path,test-path,source. Parse: module.
+
+- f @50-58; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-rest-init-ary.js
+
+Blob: `3a01921c89a9567515d253ce22cd9dabdee8e89f`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Rest elements cannot have a default value
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-rest-init-id.js
+
+Blob: `e931a2f7cf442c32af5dea13826367fd79023c35`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Rest elements cannot have a default value
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-rest-init-obj.js
+
+Blob: `9295e77064c70d29743106d597a70614fb4427d3`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Rest elements cannot have a default value
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-rest-not-final-ary.js
+
+Blob: `6905fb0bdad1db3249e36dbf820fbdae6251389a`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Comma is not permitted after the rest element
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-rest-not-final-id.js
+
+Blob: `f736c20da05dc80155f19151ce9c62a09bbb7180`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Comma is not permitted after the rest element
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-rest-not-final-obj.js
+
+Blob: `15cd45066a3c6a62cc5b82e73441e2850dc6427b`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Comma is not permitted after the rest element
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-rest-obj-id.js
+
+Blob: `5a59f468c2d8710bea7a063fdb166a46c481daaa`. Role: imported-path,test-path,source. Parse: module.
+
+- f @55-58; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/ary-ptrn-rest-obj-prop-id.js
+
+Blob: `3118f7d9906f4c1b4af0e2c2843e8f9492915dc8`. Role: imported-path,test-path,source. Parse: module.
+
+- f @56-65; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-init-iter-close.js
+
+Blob: `42e4cab003357b355310e1c3fbc1202e0dbecf5a`. Role: imported-path,test-path,source. Parse: module.
+
+- iter.[computed] @51-61; FunctionExpression; parameters=0; async=false; generator=false
+- next @53-55; FunctionExpression; parameters=0; async=false; generator=false
+- return @56-59; FunctionExpression; parameters=0; async=false; generator=false
+- f @65-68; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-init-iter-get-err-array-prototype.js
+
+Blob: `85e5977fa87fca03709851ddaa4a4e2b6e739a35`. Role: imported-path,test-path,source. Parse: module.
+
+- f @58-58; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @60-62; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-init-iter-get-err.js
+
+Blob: `c2679f922ed813e8f7c1676f2a52525208e83c15`. Role: imported-path,test-path,source. Parse: module.
+
+- iter.[computed] @48-50; FunctionExpression; parameters=0; async=false; generator=false
+- f @52-52; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @54-56; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-init-iter-no-close.js
+
+Blob: `6bcdc6cd73e2bdc76675aec1dab16c1f965779b9`. Role: imported-path,test-path,source. Parse: module.
+
+- iter.[computed] @51-61; FunctionExpression; parameters=0; async=false; generator=false
+- next @53-55; FunctionExpression; parameters=0; async=false; generator=false
+- return @56-59; FunctionExpression; parameters=0; async=false; generator=false
+- f @65-68; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-name-iter-val.js
+
+Blob: `f410df38d77271e44fa4463ddefa392e8a91e333`. Role: imported-path,test-path,source. Parse: module.
+
+- f @62-67; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-ary-elem-init.js
+
+Blob: `e671f94d00683c06d6b2807b047d34697ed207dd`. Role: imported-path,test-path,source. Parse: module.
+
+- f @54-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-ary-elem-iter.js
+
+Blob: `e3f950d89264e522ae6165e9ed5826558d8ce7ff`. Role: imported-path,test-path,source. Parse: module.
+
+- f @55-60; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-ary-elision-init.js
+
+Blob: `ea3e6cbd80817a84492e09441e17963eee06a7fa`. Role: imported-path,test-path,source. Parse: module.
+
+- g @54-58; FunctionDeclaration; parameters=0; async=false; generator=true
+- f @62-66; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-ary-elision-iter.js
+
+Blob: `7e52ba04ed416666fddff1c40c2e64bbd684a6b7`. Role: imported-path,test-path,source. Parse: module.
+
+- g @54-56; FunctionDeclaration; parameters=0; async=false; generator=true
+- f @60-63; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-ary-empty-init.js
+
+Blob: `4eb05302e9aac2a013ff64bc69cc619a581c5e50`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @54-54; FunctionExpression; parameters=0; async=false; generator=true
+- f @58-62; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @58-58; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-ary-empty-iter.js
+
+Blob: `4e06828a6cd1512e79464973c1cf14b5f83dd13e`. Role: imported-path,test-path,source. Parse: module.
+
+- f @56-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @56-56; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-ary-rest-init.js
+
+Blob: `66af7794f54161c7fdab92fff347ca007141de9b`. Role: imported-path,test-path,source. Parse: module.
+
+- f @55-63; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-ary-rest-iter.js
+
+Blob: `fe084208e7de8089d72ce32016073aaa9432215c`. Role: imported-path,test-path,source. Parse: module.
+
+- f @57-66; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @57-57; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-ary-val-null.js
+
+Blob: `16e52291d125b36d9db70e482b964891b3491f8d`. Role: imported-path,test-path,source. Parse: module.
+
+- f @59-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @61-63; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-id-init-exhausted.js
+
+Blob: `3ecc724d9fc2d5d3dad555b36a7eed35cec19f22`. Role: imported-path,test-path,source. Parse: module.
+
+- f @55-58; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-id-init-fn-name-arrow.js
+
+Blob: `2223304f20f591f96af806f368c6ab1495fa5a63`. Role: imported-path,test-path,source. Parse: module.
+
+- f @56-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @56-56; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-id-init-fn-name-class.js
+
+Blob: `a2c29a92e297e4db65f8f4e4e150797d0b2fe2eb`. Role: imported-path,test-path,source. Parse: module.
+
+- f @56-61; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- name @56-56; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @56-56
+- Class X @56-56
+- Class (anonymous) @56-56
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-id-init-fn-name-cover.js
+
+Blob: `18a2b789f07f20c0aba3e3897ac949808b187cb3`. Role: imported-path,test-path,source. Parse: module.
+
+- f @56-60; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @56-56; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @56-56; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-id-init-fn-name-fn.js
+
+Blob: `4a00aa797b3b2bfae0b42b7ea73c5afe7b037bc2`. Role: imported-path,test-path,source. Parse: module.
+
+- f @56-60; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- x @56-56; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @56-56; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-id-init-fn-name-gen.js
+
+Blob: `f09ddcb7dce897b290ad72f3e40a5cb37d109706`. Role: imported-path,test-path,source. Parse: module.
+
+- f @57-61; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- x @57-57; FunctionExpression; parameters=0; async=false; generator=true
+- (anonymous) @57-57; FunctionExpression; parameters=0; async=false; generator=true
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-id-init-hole.js
+
+Blob: `c915961d8064e1384c2c9bd6a38463d4836afc3b`. Role: imported-path,test-path,source. Parse: module.
+
+- f @50-54; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-id-init-skipped.js
+
+Blob: `c649308e21c842882e68be1e81a003b4b52c56a9`. Role: imported-path,test-path,source. Parse: module.
+
+- counter @50-52; FunctionDeclaration; parameters=0; async=false; generator=false
+- f @56-63; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-id-init-throws.js
+
+Blob: `7ccf48bde2c103236957dae5b8bd6a2753b51365`. Role: imported-path,test-path,source. Parse: module.
+
+- f @50-50; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @50-50; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @52-54; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-id-init-undef.js
+
+Blob: `01072f82c644be354cdf6e7b58a8f0d200579db2`. Role: imported-path,test-path,source. Parse: module.
+
+- f @54-57; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-id-init-unresolvable.js
+
+Blob: `6eca82c646a510f7eb7f7c896e8dd7e8b0c8da49`. Role: imported-path,test-path,source. Parse: module.
+
+- f @57-57; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @59-61; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-id-iter-complete.js
+
+Blob: `c7c24c303502c94595b2e763e3815fc6165fe4aa`. Role: imported-path,test-path,source. Parse: module.
+
+- f @58-61; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-id-iter-done.js
+
+Blob: `a3f4cc4c8546ca375451cc89b5ee8387c5d1f6c7`. Role: imported-path,test-path,source. Parse: module.
+
+- f @53-56; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-id-iter-step-err.js
+
+Blob: `be205b62eb32926f9a9be4c334f50a9faae7829d`. Role: imported-path,test-path,source. Parse: module.
+
+- g.[computed] @51-57; FunctionExpression; parameters=0; async=false; generator=false
+- next @53-55; FunctionExpression; parameters=0; async=false; generator=false
+- f @59-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @61-63; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-id-iter-val-array-prototype.js
+
+Blob: `9b4f502fbf41a2724bc99e461ce64294e95248f8`. Role: imported-path,test-path,source. Parse: module.
+
+- Array.prototype.[computed] @58-68; FunctionExpression; parameters=0; async=false; generator=true
+- f @72-77; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-id-iter-val-err.js
+
+Blob: `e98fe57ab81a980dd489319c82f8aa019a8c799f`. Role: imported-path,test-path,source. Parse: module.
+
+- get @57-59; FunctionExpression; parameters=0; async=false; generator=false
+- g.[computed] @62-68; FunctionExpression; parameters=0; async=false; generator=false
+- next @64-66; FunctionExpression; parameters=0; async=false; generator=false
+- f @70-70; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @72-74; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-id-iter-val.js
+
+Blob: `199735f954af46965496eb61c80b543a59a87cd3`. Role: imported-path,test-path,source. Parse: module.
+
+- f @62-67; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-obj-id-init.js
+
+Blob: `eccbe98e74b61fd4f6ebb7dff4b53606ca1d5697`. Role: imported-path,test-path,source. Parse: module.
+
+- f @54-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-obj-id.js
+
+Blob: `c81debc5c5ed0992638143494cab32a56c3085ce`. Role: imported-path,test-path,source. Parse: module.
+
+- f @54-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-obj-prop-id-init.js
+
+Blob: `7df009ff022ab77c978537ce7bc1295f60c781ba`. Role: imported-path,test-path,source. Parse: module.
+
+- f @54-69; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @59-61; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @62-64; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @65-67; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-obj-prop-id.js
+
+Blob: `1afeb0f0ea2c4e1e437be1d19a4a08daf19246c1`. Role: imported-path,test-path,source. Parse: module.
+
+- f @54-69; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @59-61; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @62-64; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @65-67; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-obj-val-null.js
+
+Blob: `738856cbed803e89a80c6a3dbbec8a09bb2e7ed2`. Role: imported-path,test-path,source. Parse: module.
+
+- f @59-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @61-63; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elem-obj-val-undef.js
+
+Blob: `8bb636642082db610d1dda60a043326e4e0cca5a`. Role: imported-path,test-path,source. Parse: module.
+
+- f @59-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @61-63; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elision-exhausted.js
+
+Blob: `f375f92d1fb7c2d15d22e385d089ce37b9972e97`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @56-56; FunctionExpression; parameters=0; async=false; generator=true
+- f @61-64; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elision-step-err.js
+
+Blob: `ddcff83a4d0c905814b9b24f597aaae776d91059`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @58-61; FunctionExpression; parameters=0; async=false; generator=true
+- f @63-63; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @65-67; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-elision.js
+
+Blob: `8b1919c4d6bacf5c867e6bf22c3238a611096771`. Role: imported-path,test-path,source. Parse: module.
+
+- g @61-65; FunctionDeclaration; parameters=0; async=false; generator=true
+- f @69-73; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-empty.js
+
+Blob: `c99d1f9c06f5329b81d4be2a3dba006323018e4a`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @47-49; FunctionExpression; parameters=0; async=false; generator=true
+- f @53-56; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-rest-ary-elem.js
+
+Blob: `e1fa48ba8cec687a3521e604bdc3cba41ae41cd6`. Role: imported-path,test-path,source. Parse: module.
+
+- f @75-80; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-rest-ary-elision.js
+
+Blob: `4558a542d548c19ac3b22a076a677f82329c0c80`. Role: imported-path,test-path,source. Parse: module.
+
+- g @74-78; FunctionDeclaration; parameters=0; async=false; generator=true
+- f @82-86; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-rest-ary-empty.js
+
+Blob: `f59c9f7afff904c0abc2f024600af35ecfe08c58`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @60-62; FunctionExpression; parameters=0; async=false; generator=true
+- f @66-69; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-rest-ary-rest.js
+
+Blob: `ae5a9c0e5d95bf2816634519a1bbd8a63c612cb0`. Role: imported-path,test-path,source. Parse: module.
+
+- f @56-65; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-rest-id-direct.js
+
+Blob: `3a6b04deed2d4bab47f12077b5080920d8b16618`. Role: imported-path,test-path,source. Parse: module.
+
+- f @56-60; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-rest-id-elision-next-err.js
+
+Blob: `56f0503ab4bd5c1e4f20f84cfff656e87b0ec4d8`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @50-50; FunctionExpression; parameters=0; async=false; generator=true
+- f @52-52; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @54-56; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-rest-id-elision.js
+
+Blob: `4fb11c99fd4598a2b3b25dd51106e6e916c9bf75`. Role: imported-path,test-path,source. Parse: module.
+
+- f @53-61; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-rest-id-exhausted.js
+
+Blob: `ff39b2005e89d33edbee19b6d63b56b8dd752e43`. Role: imported-path,test-path,source. Parse: module.
+
+- f @53-57; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-rest-id-iter-step-err.js
+
+Blob: `daafd3cf257be7164b75c68098fa1fb79b3b8b40`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @53-57; FunctionExpression; parameters=0; async=false; generator=true
+- f @59-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @61-63; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-rest-id-iter-val-err.js
+
+Blob: `c815b1fc2eadbf615eda6565442d1a78e5beacd9`. Role: imported-path,test-path,source. Parse: module.
+
+- get @52-54; FunctionExpression; parameters=0; async=false; generator=false
+- iter.[computed] @57-63; FunctionExpression; parameters=0; async=false; generator=false
+- next @59-61; FunctionExpression; parameters=0; async=false; generator=false
+- f @65-65; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @67-69; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-rest-id.js
+
+Blob: `71b77017835d2dc7e290b9530a14c402c9f84c98`. Role: imported-path,test-path,source. Parse: module.
+
+- f @50-58; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-rest-init-ary.js
+
+Blob: `54916eb32754ebdd26b221249894cf83c34cb54e`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Rest elements cannot have a default value
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-rest-init-id.js
+
+Blob: `a9584c064923390f96c7976cfdfb117f9ca481c9`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Rest elements cannot have a default value
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-rest-init-obj.js
+
+Blob: `67a8e898accbf6a5624d019ede13ec6177690190`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Rest elements cannot have a default value
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-rest-not-final-ary.js
+
+Blob: `279b479883a8809d1c873d55a73e3febc8a6adba`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Comma is not permitted after the rest element
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-rest-not-final-id.js
+
+Blob: `1d00fb18f0654672e33e7410bffac7014e084836`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Comma is not permitted after the rest element
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-rest-not-final-obj.js
+
+Blob: `eefceba9423a370036892cc2da520b726ed8c60d`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Comma is not permitted after the rest element
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-rest-obj-id.js
+
+Blob: `71f68c2d649c7144aaf0c53a23e1bf80cbb011b8`. Role: imported-path,test-path,source. Parse: module.
+
+- f @55-58; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-ary-ptrn-rest-obj-prop-id.js
+
+Blob: `d847f9dd64533bb4e9dea1db5671724cefa6e228`. Role: imported-path,test-path,source. Parse: module.
+
+- f @56-65; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-init-null.js
+
+Blob: `04bd481fb15861cebf127dd67b8d1d7e9d596359`. Role: imported-path,test-path,source. Parse: module.
+
+- f @46-46; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @48-50; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-init-undefined.js
+
+Blob: `bc7cbc5060c3c867c18aa7ca9ed0d26c81bf5748`. Role: imported-path,test-path,source. Parse: module.
+
+- f @46-46; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @48-50; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-ptrn-empty.js
+
+Blob: `ce333cecd7f734bf8a9ee9044a4c7d62695a7dd3`. Role: imported-path,test-path,source. Parse: module.
+
+- get @47-49; FunctionExpression; parameters=0; async=false; generator=false
+- f @54-57; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-ptrn-id-get-value-err.js
+
+Blob: `02c8ed8c654ab295487b69d00fe1071f9fcfbae9`. Role: imported-path,test-path,source. Parse: module.
+
+- get @48-50; FunctionExpression; parameters=0; async=false; generator=false
+- f @53-53; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @55-57; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-ptrn-id-init-fn-name-arrow.js
+
+Blob: `05f14c2889849106e8ffeb028cce6326fe2990bb`. Role: imported-path,test-path,source. Parse: module.
+
+- f @55-58; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @55-55; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-ptrn-id-init-fn-name-class.js
+
+Blob: `4e09caa649ad45d9b7d7ba6bf7eb31db9d823f02`. Role: imported-path,test-path,source. Parse: module.
+
+- f @55-60; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- name @55-55; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @55-55
+- Class X @55-55
+- Class (anonymous) @55-55
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-ptrn-id-init-fn-name-cover.js
+
+Blob: `42c0fee4dfe687a1f3cd30828fe3d4b3cff13114`. Role: imported-path,test-path,source. Parse: module.
+
+- f @55-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @55-55; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @55-55; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-ptrn-id-init-fn-name-fn.js
+
+Blob: `a57f44054647d963d4c3cc837f808e652e8b19ec`. Role: imported-path,test-path,source. Parse: module.
+
+- f @55-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- x @55-55; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @55-55; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-ptrn-id-init-fn-name-gen.js
+
+Blob: `f814a832672fe3cc26105b296cb8930ddf3a0905`. Role: imported-path,test-path,source. Parse: module.
+
+- f @56-60; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- x @56-56; FunctionExpression; parameters=0; async=false; generator=true
+- (anonymous) @56-56; FunctionExpression; parameters=0; async=false; generator=true
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-ptrn-id-init-skipped.js
+
+Blob: `d91026dc770113d381b3e2b8616fbb2658438ea7`. Role: imported-path,test-path,source. Parse: module.
+
+- counter @49-51; FunctionDeclaration; parameters=0; async=false; generator=false
+- f @55-62; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-ptrn-id-init-throws.js
+
+Blob: `eaa4935c95ab8a5afaeb6b8265b9caad03c66972`. Role: imported-path,test-path,source. Parse: module.
+
+- thrower @49-51; FunctionDeclaration; parameters=0; async=false; generator=false
+- f @53-53; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @55-57; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-ptrn-id-init-unresolvable.js
+
+Blob: `5fb68faf5cab7a56603fe2e3e1b3f949d517af2c`. Role: imported-path,test-path,source. Parse: module.
+
+- f @57-57; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @59-61; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-ptrn-id-trailing-comma.js
+
+Blob: `ac5018029b3cf38b715795abf361f1b5e107216a`. Role: imported-path,test-path,source. Parse: module.
+
+- f @49-52; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-ptrn-list-err.js
+
+Blob: `f526999db8a7a68ade5ca988ac619ee59d10748a`. Role: imported-path,test-path,source. Parse: module.
+
+- thrower @48-50; FunctionDeclaration; parameters=0; async=false; generator=false
+- f @52-52; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @54-56; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-ptrn-prop-ary-init.js
+
+Blob: `ce6d88b67f62806d5d6505ec2d1d9e49589e9e4c`. Role: imported-path,test-path,source. Parse: module.
+
+- f @52-61; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @57-59; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-ptrn-prop-ary-trailing-comma.js
+
+Blob: `c49d25af4d74a9af1b601ec0babef4a6254f0ada`. Role: imported-path,test-path,source. Parse: module.
+
+- f @49-52; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-ptrn-prop-ary-value-null.js
+
+Blob: `0dd7768cfe10922a1de3feaf53e49b657980c5e7`. Role: imported-path,test-path,source. Parse: module.
+
+- f @48-48; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @50-52; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-ptrn-prop-ary.js
+
+Blob: `796b47dda76d39e50ca24547ccf0b1a0211d6a73`. Role: imported-path,test-path,source. Parse: module.
+
+- f @50-59; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @55-57; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-ptrn-prop-eval-err.js
+
+Blob: `bb9409cee4bac0f07d66a82263cd398aea214b11`. Role: imported-path,test-path,source. Parse: module.
+
+- thrower @46-48; FunctionDeclaration; parameters=0; async=false; generator=false
+- f @50-50; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @52-54; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-ptrn-prop-id-get-value-err.js
+
+Blob: `86eff37669df99f09cf604239138c5a10281da19`. Role: imported-path,test-path,source. Parse: module.
+
+- get @48-50; FunctionExpression; parameters=0; async=false; generator=false
+- f @53-53; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @55-57; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-ptrn-prop-id-init-skipped.js
+
+Blob: `cf4ee5e9aa22bce48d77920e583908c24acb757f`. Role: imported-path,test-path,source. Parse: module.
+
+- counter @48-50; FunctionDeclaration; parameters=0; async=false; generator=false
+- f @54-74; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @61-63; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @64-66; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @67-69; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @70-72; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/arrow-function/dstr/dflt-obj-ptrn-prop-id-init-throws.js
+
+Blob: `2777d1ea338ddb68ae9e92ef75fd1e1bd17ac928`. Role: imported-path,test-path,source. Parse: module.
+
+- thrower @49-51; FunctionDeclaration; parameters=0; async=false; generator=false
+- f @53-53; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @55-57; FunctionExpression; parameters=0; async=false; generator=false
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.
+
+## Retrieval correction
+
+This copy preserves the source map in [02fd8f20-e481-45d9-8b42-bb6196c5e1b6.md](02fd8f20-e481-45d9-8b42-bb6196c5e1b6.md). The original was imported and committed by concurrent console maintenance during this study. Its full path metadata could exceed the console search budget. This copy uses component scope metadata while keeping every file path in the body. It adds no independent behavior evidence. Original record: `b1453750b55f3b9893fea7bd334d38aa2c108f3211c9c3acbbaa881090161737`.

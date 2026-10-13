@@ -1,0 +1,4707 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:22:06.018534+00:00","paths":["xpcom"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013","portableCopies":["d1091071a4c7a90e8b656087de1d80195abb66de8115f15a8e51e5bc89aded4b"],"sourceAt":"2026-10-13T04:22:06.018534+00:00","correctionOf":"notes/10898330-328d-46e9-a68c-62aa1b5fa15f.md"}} -->
+# firefox/xpcom native and TypeScript syntax map 495
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser versions: {"tree-sitter": "0.25.2", "tree-sitter-c": "0.24.2", "tree-sitter-cpp": "0.23.4", "tree-sitter-rust": "0.24.2", "tree-sitter-java": "0.23.5", "tree-sitter-typescript": "0.23.2"}.
+
+Tree-sitter parses written syntax without executing it. Entries identify declarations and function bodies with source ranges. Names can be unqualified or inferred from an assignment. They do not resolve overloaded symbols or runtime receivers. C/C++ header files use the C++ grammar. Macros and build flags are not expanded. `contains-errors` means the tree has error or missing nodes; its entries remain partial candidates. A clean syntax tree is not proof that the file compiles. Objective-C, Kotlin, IDL, and embedded code are outside this parser pass and remain in the structural census.
+
+### xpcom/tests/gtest/TestNonBlockingAsyncInputStream.cpp
+
+Blob: `38871343509541073b238596f4bb3be6e2720416`. Grammar: cpp. Status: contains-errors.
+
+- include "Helpers.h" @1
+- include "gtest/gtest.h" @2
+- include "mozilla/NonBlockingAsyncInputStream.h" @3
+- include "mozilla/SpinEventLoopUntil.h" @4
+- include "nsIAsyncInputStream.h" @5
+- include "nsIThread.h" @6
+- include "nsStreamUtils.h" @7
+- include "nsString.h" @8
+- include "nsStringStream.h" @9
+- function_definition TEST @14-56
+- class_specifier ReadSegmentsData @58-65
+- function_definition ReadSegmentsData @60-61
+- function_definition ReadSegmentsFunction @67-75
+- function_definition TEST @77-101
+- function_definition TEST @103-148
+- function_definition TEST @150-176
+- function_definition TEST @178-210
+- function_definition TEST @212-246
+- class_specifier QIInputStream @248-309
+- function_definition Close @263-263
+- function_definition Available @264-264
+- function_definition StreamStatus @265-265
+- function_definition Read @266-268
+- function_definition ReadSegments @269-272
+- function_definition IsNonBlocking @273-276
+- function_definition GetCloneable @279-279
+- function_definition Clone @280-282
+- function_definition SerializedComplexity @285-286
+- function_definition Serialize @287-288
+- function_definition Deserialize @289-291
+- function_definition Seek @294-296
+- function_definition SetEOF @297-297
+- function_definition Tell @300-300
+- function_definition ~QIInputStream @303-303
+- function_definition TEST @322-378
+
+### xpcom/tests/gtest/TestNsDeque.cpp
+
+Blob: `e96d250d07315dabfea61fccb1eb5159e4c7480f`. Grammar: cpp. Status: contains-errors.
+
+- include <functional> @5
+- include <type_traits> @6
+- include <utility> @7
+- include "gtest/gtest.h" @9
+- include "mozilla/RefPtr.h" @10
+- include "nsCRT.h" @11
+- include "nsDeque.h" @12
+- class_specifier _Dealloc @20-22
+- function_definition operator() @21-21
+- function_definition VerifyContents @24-32
+- class_specifier Deallocator @34-41
+- function_definition operator() @35-40
+- class_specifier ForEachAdder @43-55
+- function_definition operator() @44-48
+- function_definition GetSum @54-54
+- class_specifier RefCountedClass @59-87
+- function_definition RefCountedClass @61-61
+- function_definition ~RefCountedClass @63-63
+- function_definition AddRef @65-68
+- function_definition Release @69-76
+- function_definition GetRefCount @78-78
+- function_definition SetVal @80-80
+- function_definition GetVal @82-82
+- class_specifier ForEachRefPtr @89-101
+- function_definition operator() @90-94
+- function_definition ForEachRefPtr @100-100
+- function_definition TEST @107-183
+- function_definition TEST @185-220
+- function_definition TEST @222-243
+- function_definition TEST @245-287
+- function_definition CheckIfQueueEmpty @290-299
+- function_definition TEST @301-322
+- function_definition TEST @324-339
+- function_definition TEST @341-362
+- function_definition TEST @364-383
+- function_definition TEST @385-408
+- function_definition TEST @410-518
+- struct_specifier Test @413-418
+- function_definition TEST @520-558
+- function_definition TEST @560-592
+
+### xpcom/tests/gtest/TestNsRefPtr.cpp
+
+Blob: `821ae74f15867d53f06fda113aed0eae7950256b`. Grammar: cpp. Status: contains-errors.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/RefPtr.h" @6
+- include "nsCOMPtr.h" @7
+- include "nsISupports.h" @8
+- include "nsQueryObject.h" @9
+- class_specifier Foo @16-41
+- function_definition NonconstMethod @32-32
+- function_definition ConstMethod @33-33
+- function_definition Foo @48-48
+- function_definition ~Foo @50-50
+- function_definition AddRef @52-56
+- function_definition Release @58-65
+- function_definition QueryInterface @67-87
+- function_definition MemberFunction @89-89
+- function_definition VirtualMemberFunction @91-91
+- function_definition VirtualConstMemberFunction @93-94
+- function_definition CreateFoo @96-105
+- function_definition set_a_Foo @107-112
+- function_definition return_a_Foo @114-117
+- class_specifier Bar @122-138
+- function_definition Bar @144-144
+- function_definition ~Bar @146-146
+- function_definition QueryInterface @148-170
+- function_definition VirtualMemberFunction @172-172
+- function_definition VirtualConstMemberFunction @173-174
+- function_definition TEST @180-227
+- function_definition TEST @229-239
+- function_definition TEST @241-277
+- function_definition TEST @279-310
+- function_definition TEST @312-342
+- class_specifier ObjectForConstPtr @370-378
+- function_definition ~ObjectForConstPtr @373-373
+- function_definition ConstMemberFunction @377-377
+- function_definition AnFooPtrPtrContext @382-382
+- function_definition AVoidPtrPtrContext @383-383
+- function_definition TEST @386-429
+
+### xpcom/tests/gtest/TestObserverArray.cpp
+
+Blob: `615c280899671ba371904ba39224de0447a24516`. Grammar: cpp. Status: contains-errors.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/UniquePtr.h" @6
+- include "nsTObserverArray.h" @7
+- function_definition TEST @31-155
+- function_definition TEST @157-173
+- function_definition TEST @175-190
+- function_definition TEST @192-208
+- function_definition TEST @210-228
+- function_definition TEST @230-248
+- function_definition TEST @250-261
+- function_definition TEST @263-281
+- function_definition TEST @283-298
+- function_definition TEST @300-315
+- function_definition TEST @317-333
+- function_definition TEST @335-353
+- function_definition TEST @355-373
+- function_definition TEST @375-386
+- function_definition TEST @388-406
+- function_definition TEST @408-423
+- function_definition TEST @425-440
+- function_definition TEST @442-458
+- function_definition TEST @460-478
+- function_definition TEST @480-498
+- function_definition TEST @500-511
+- function_definition TEST @513-531
+- function_definition TEST @533-548
+- function_definition TEST @550-568
+
+### xpcom/tests/gtest/TestObserverService.cpp
+
+Blob: `f1ddea66b5c19e4f3adb7f902050e1c3c964dd69`. Grammar: cpp. Status: contains-errors.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/RefPtr.h" @6
+- include "mozilla/gtest/MozAssertions.h" @7
+- include "nsCOMPtr.h" @8
+- include "nsComponentManagerUtils.h" @9
+- include "nsIObserver.h" @10
+- include "nsIObserverService.h" @11
+- include "nsISimpleEnumerator.h" @12
+- include "nsISupports.h" @13
+- include "nsString.h" @14
+- include "nsWeakReference.h" @15
+- function_definition testResult @17-19
+- class_specifier TestObserver @21-36
+- function_definition TestObserver @23-24
+- function_definition ~TestObserver @35-35
+- function_definition Observe @42-53
+- function_definition ToSupports @55-57
+- function_definition TestExpectedCount @59-90
+- function_definition TEST @92-100
+- function_definition TEST @102-116
+- function_definition TEST @118-143
+- function_definition TEST @145-158
+- function_definition TEST @160-182
+- function_definition TEST @184-221
+- function_definition TEST @223-277
+
+### xpcom/tests/gtest/TestOwningNonNull.cpp
+
+Blob: `d65a28799e6854bcfa2b3ffd87f1db4fed29cfa4`. Grammar: cpp. Status: contains-errors.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/OwningNonNull.h" @6
+- include "mozilla/RefCounted.h" @7
+- include "mozilla/RefPtr.h" @8
+- struct_specifier OwnedRefCounted @12-16
+- function_definition OwnedRefCounted @15-15
+- function_definition TEST @18-23
+
+### xpcom/tests/gtest/TestPLDHash.cpp
+
+Blob: `b8424dc182e505163410cdcd4b30146be4b410aa`. Grammar: cpp. Status: syntax-clean.
+
+- include "PLDHashTable.h" @5
+- include "gtest/gtest.h" @6
+- include "mozilla/gtest/MozHelpers.h" @7
+- include <sys/types.h> @13
+- include <sys/wait.h> @14
+- include <unistd.h> @15
+- function_definition TestCrashyOperation @26-80
+- function_definition InitCapacityOk_InitialLengthTooBig @82-85
+- function_definition InitCapacityOk_InitialEntryStoreTooBig @87-92
+- function_definition InitCapacityOk_EntrySizeTooBig @94-97
+- function_definition TEST @99-129
+- function_definition TEST @131-154
+- function_definition TrivialHash @159-161
+- function_definition TrivialInitEntry @163-166
+- function_definition CountingClearEntry @176-179
+- function_definition TEST @189-225
+- function_definition TEST @227-254
+- function_definition TEST @256-294
+- function_definition TEST @300-339
+- function_definition TEST @346-390
+- function_definition TEST @392-480
+- function_definition TEST @482-525
+- function_definition TEST @534-558
+
+### xpcom/tests/gtest/TestPipes.cpp
+
+Blob: `3f6882b40371a8c8b46aeb89f1f8ab261eeff148`. Grammar: cpp. Status: syntax-clean.
+
+- include <algorithm> @5
+- include "Helpers.h" @7
+- include "gtest/gtest.h" @8
+- include "mozilla/Printf.h" @9
+- include "mozilla/ReentrantMonitor.h" @10
+- include "mozilla/gtest/MozAssertions.h" @11
+- include "nsCOMPtr.h" @12
+- include "nsCRT.h" @13
+- include "nsIAsyncInputStream.h" @14
+- include "nsIAsyncOutputStream.h" @15
+- include "nsIBufferedStreams.h" @16
+- include "nsIClassInfo.h" @17
+- include "nsICloneableInputStream.h" @18
+- include "nsIInputStream.h" @19
+- include "nsIOutputStream.h" @20
+- include "nsIPipe.h" @21
+- include "nsIRunnable.h" @22
+- include "nsITellableStream.h" @23
+- include "nsIThread.h" @24
+- include "nsStreamUtils.h" @25
+- include "nsString.h" @26
+- include "nsThreadUtils.h" @27
+- include "prinrval.h" @28
+- function_definition WriteAll @37-50
+- class_specifier nsReceiver @52-93
+- function_definition Run @54-80
+- function_definition nsReceiver @82-83
+- function_definition GetBytesRead @85-85
+- function_definition ~nsReceiver @88-88
+- function_definition TestPipe @95-132
+- class_specifier nsShortReader @136-202
+- function_definition Run @138-167
+- function_definition nsShortReader @169-172
+- function_definition Received @174-178
+- function_definition WaitForReceipt @180-193
+- function_definition ~nsShortReader @196-196
+- function_definition TestShortWrites @204-242
+- class_specifier nsPump @246-281
+- function_definition Run @248-269
+- function_definition nsPump @271-272
+- function_definition ~nsPump @275-275
+- function_definition TEST @283-335
+- function_definition RunTests @339-359
+- function_definition TEST @361-365
+- function_definition TestPipe2 @375-389
+- function_definition TEST @393-396
+- function_definition TEST @398-401
+- function_definition TEST @403-406
+- function_definition TestPipeClone @429-564
+- function_definition TEST @568-576
+- function_definition TEST @578-590
+- function_definition TEST @592-600
+- function_definition TEST @602-610
+- function_definition TEST @612-624
+- function_definition TEST @626-659
+- function_definition TEST @661-740
+- function_definition TEST @742-863
+- function_definition TEST @865-894
+- function_definition TEST @896-940
+- function_definition CloseDuringReadFunc @944-966
+- function_definition TestCloseDuringRead @968-999
+- function_definition TEST @1003-1006
+- function_definition TEST @1008-1011
+- function_definition TEST @1013-1034
+
+### xpcom/tests/gtest/TestPriorityQueue.cpp
+
+Blob: `2db3c8ab421653ca175a87516d12f5d354cfce14`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @5
+- include "nsTPriorityQueue.h" @6
+- function_definition CheckPopSequence @9-22
+- class_specifier MaxCompare @25-28
+- function_definition LessThan @27-27
+- function_definition TEST @30-69
+
+### xpcom/tests/gtest/TestQueue.cpp
+
+Blob: `4b77f97661dd1e223566d42cd152a7869a45cf78`. Grammar: cpp. Status: syntax-clean.
+
+- include <array> @5
+- include "gtest/gtest.h" @7
+- include "mozilla/Queue.h" @8
+- struct_specifier Movable @14-30
+- function_definition Movable @15-15
+- function_definition Movable @16-17
+- function_definition ~Movable @19-23
+- function_definition Movable @25-27
+- function_definition PushMovables @33-45
+- function_definition ExpectCounts @48-53
+- function_definition TEST @55-65
+- function_definition TEST @67-76
+- function_definition TEST @78-96
+- function_definition TEST @98-128
+- function_definition TEST @130-147
+- function_definition DoPushPopSequence @149-161
+- function_definition PushPopPushPop @163-170
+- function_definition TEST @172-183
+- function_definition TEST @185-197
+- function_definition TEST @199-218
+
+### xpcom/tests/gtest/TestRWLock.cpp
+
+Blob: `b87029a9590cf7e0f711a69e707596abd92d1194`. Grammar: cpp. Status: contains-errors.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/Atomics.h" @6
+- include "mozilla/RWLock.h" @7
+- include "mozilla/SyncRunnable.h" @8
+- include "mozilla/gtest/MozAssertions.h" @9
+- include "nsIThread.h" @10
+- include "nsThreadUtils.h" @11
+- class_specifier RWLockRunnable @27-41
+- function_definition RWLockRunnable @29-32
+- function_definition Run @43-66
+- function_definition TEST @68-86
+- function_definition RunOnBackgroundThread @89-101
+- function_definition TEST @103-153
+- function_definition TEST @155-212
+
+### xpcom/tests/gtest/TestRacingServiceManager.cpp
+
+Blob: `32587a7b75a67fd9b05f7c4fe343991f32188bce`. Grammar: cpp. Status: contains-errors.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/Assertions.h" @6
+- include "mozilla/ReentrantMonitor.h" @7
+- include "mozilla/gtest/MozAssertions.h" @8
+- include "nsComponentManager.h" @9
+- include "nsIFactory.h" @10
+- include "nsIThread.h" @11
+- include "nsServiceManagerUtils.h" @12
+- include "nsThreadUtils.h" @13
+- include "nsXPCOMCIDInternal.h" @14
+- include "nsXULAppAPI.h" @15
+- include "pratom.h" @16
+- include "prmon.h" @17
+- class_specifier AutoCreateAndDestroyReentrantMonitor @42-61
+- function_definition AutoCreateAndDestroyReentrantMonitor @44-50
+- function_definition ~AutoCreateAndDestroyReentrantMonitor @52-57
+- class_specifier Factory @63-74
+- function_definition ~Factory @64-64
+- function_definition Factory @67-69
+- class_specifier Component1 @78-89
+- function_definition ~Component1 @79-79
+- function_definition Component1 @82-88
+- class_specifier Component2 @98-109
+- function_definition ~Component2 @99-99
+- function_definition Component2 @102-108
+- function_definition CreateInstance @118-148
+- class_specifier TestRunnable @150-159
+- function_definition Run @161-182
+- function_definition TEST @186-245
+
+### xpcom/tests/gtest/TestRecursiveMutex.cpp
+
+Blob: `405e467fb099535ebe8ed0bed3c1364814dbd3ae`. Grammar: cpp. Status: contains-errors.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/RecursiveMutex.h" @6
+- include "nsThreadUtils.h" @7
+
+### xpcom/tests/gtest/TestRustRegex.cpp
+
+Blob: `a9d268a2dd53bbf344e35140ab90d98b335f2d53`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/RustRegex.h" @6
+- function_definition TEST @13-18
+- function_definition TEST @20-28
+- function_definition TEST @30-39
+- function_definition TEST @41-55
+- function_definition TEST @57-77
+- function_definition TEST @79-103
+- function_definition TEST @111-123
+- function_definition TEST @125-129
+- function_definition TEST @131-147
+- function_definition TEST @149-170
+- function_definition TEST @172-177
+
+### xpcom/tests/gtest/TestSTLWrappers.cpp
+
+Blob: `f04bab9911ea18fb874368da3096f0ab6551382b`. Grammar: cpp. Status: contains-errors.
+
+- include <stdio.h> @1
+- include <algorithm> @3
+- include <vector> @8
+- include "gtest/gtest.h" @26
+- include "mozilla/gtest/MozHelpers.h" @27
+- function_definition ShouldAbort @32-43
+- function_definition CATCH @44-47
+
+### xpcom/tests/gtest/TestSegmentedBuffer.cpp
+
+Blob: `83fdef0f4a3ce71252977573195b68ced1838324`. Grammar: cpp. Status: syntax-clean.
+
+- include "../../io/nsSegmentedBuffer.h" @5
+- include "gtest/gtest.h" @6
+- include "nsIEventTarget.h" @7
+- function_definition TEST @11-41
+
+### xpcom/tests/gtest/TestSlicedInputStream.cpp
+
+Blob: `03c69473b89ba80e5baad5ad005000a785fec3cc`. Grammar: cpp. Status: contains-errors.
+
+- include "Helpers.h" @1
+- include "gtest/gtest.h" @2
+- include "mozilla/SlicedInputStream.h" @3
+- include "mozilla/SpinEventLoopUntil.h" @4
+- include "mozilla/gtest/MozAssertions.h" @5
+- include "nsCOMPtr.h" @6
+- include "nsIInputStream.h" @7
+- include "nsIPipe.h" @8
+- include "nsStreamUtils.h" @9
+- include "nsString.h" @10
+- include "nsStringStream.h" @11
+- class_specifier InputStreamCallback @17-35
+- function_definition OnInputStreamReady @28-31
+- function_definition ~InputStreamCallback @34-34
+- class_specifier NonSeekableStringStream @44-109
+- function_definition NonSeekableStringStream @48-52
+- function_definition NonSeekableStringStream @54-55
+- function_definition Available @57-58
+- function_definition StreamStatus @60-61
+- function_definition Read @63-66
+- function_definition ReadSegments @68-72
+- function_definition Close @74-75
+- function_definition IsNonBlocking @77-80
+- function_definition CloseWithStatus @82-91
+- function_definition AsyncWait @93-105
+- function_definition ~NonSeekableStringStream @108-108
+- function_definition CreateSeekableStreams @114-126
+- function_definition CreateNonSeekableStreams @130-141
+- function_definition TEST @144-161
+- function_definition TEST @164-180
+- function_definition TEST @183-200
+- function_definition TEST @203-221
+- function_definition TEST @224-242
+- function_definition TEST @245-275
+- function_definition TEST @278-291
+- function_definition TEST @294-307
+- function_definition TEST @310-325
+- function_definition TEST @328-342
+- function_definition TEST @345-358
+- function_definition TEST @361-384
+- function_definition TEST @387-417
+- function_definition TEST @420-456
+- function_definition TEST @459-483
+- function_definition TEST @486-497
+- function_definition TEST @499-543
+- function_definition TEST @545-568
+- function_definition TEST @570-589
+- function_definition TEST @591-611
+- function_definition TEST @613-637
+- function_definition TEST @639-664
+- function_definition TEST @666-695
+
+### xpcom/tests/gtest/TestSmallArrayLRUCache.cpp
+
+Blob: `871017bb18cf0a043c333d7cc31ca33606d6cd3c`. Grammar: cpp. Status: syntax-clean.
+
+- include <algorithm> @5
+- include <cstring> @6
+- include <utility> @7
+- include "gtest/gtest.h" @9
+- include "mozilla/SmallArrayLRUCache.h" @10
+- struct_specifier Value @14-21
+- function_definition Value @15-15
+- function_definition Value @16-16
+- function_definition operator== @18-18
+- struct_specifier Boxed @30-66
+- struct_specifier Guard @35-43
+- function_definition Guard @37-37
+- function_definition Check @38-42
+- function_definition Boxed @50-55
+- function_definition ~Boxed @57-57
+- function_definition (anonymous) @59-59
+- function_definition (anonymous) @60-60
+- function_definition Check @62-65
+- function_definition TEST @68-111
+- function_definition TEST @113-150
+- function_definition TEST @152-199
+- function_definition TEST @201-242
+- function_definition TEST @244-298
+- function_definition TEST @300-364
+
+### xpcom/tests/gtest/TestSnappyStreams.cpp
+
+Blob: `f87ba556b389e266ff1df939226d589551e9359c`. Grammar: cpp. Status: syntax-clean.
+
+- include "Helpers.h" @5
+- include "gtest/gtest.h" @6
+- include "mozilla/SnappyCompressOutputStream.h" @7
+- include "mozilla/SnappyUncompressInputStream.h" @8
+- include "mozilla/gtest/MozAssertions.h" @9
+- include "nsIPipe.h" @10
+- include "nsStreamUtils.h" @11
+- include "nsString.h" @12
+- include "nsStringStream.h" @13
+- include "nsTArray.h" @14
+- include "snappy/snappy.h" @15
+- function_definition CompressPipe @22-30
+- function_definition TestCompress @33-52
+- function_definition TestCompressUncompress @56-77
+- function_definition TestUncompressCorrupt @79-92
+- function_definition TEST @96-99
+- function_definition TEST @101-104
+- function_definition TEST @106-109
+- function_definition TEST @111-114
+- function_definition TEST @116-119
+- function_definition TEST @121-124
+- function_definition TEST @126-129
+- function_definition TEST @131-134
+- function_definition TEST @136-139
+- function_definition TEST @141-144
+- function_definition TEST @149-152
+- function_definition TEST @154-157
+- function_definition TEST @159-162
+- function_definition TEST @164-168
+- function_definition TEST @170-177
+- function_definition TEST @179-186
+- function_definition TEST @188-199
+- function_definition TEST @201-221
+
+### xpcom/tests/gtest/TestStateMirroring.cpp
+
+Blob: `175c7d2cfc94329a1747a274fd241fe29cc94e41`. Grammar: cpp. Status: syntax-clean.
+
+- include "VideoUtils.h" @5
+- include "gtest/gtest.h" @6
+- include "mozilla/SharedThreadPool.h" @7
+- include "mozilla/StateMirroring.h" @8
+- include "mozilla/SynchronizedEventQueue.h" @9
+- include "mozilla/TaskQueue.h" @10
+- include "mozilla/gtest/WaitFor.h" @11
+- include "nsISupportsImpl.h" @12
+- include "nsThreadUtils.h" @13
+- class_specifier StateMirroringTest @19-50
+- function_definition StateMirroringTest @24-29
+- function_definition TearDown @31-38
+- function_definition ReadMirrorAsync @40-44
+- function_definition TEST_F @52-95
+- function_definition TEST_F @97-115
+
+### xpcom/tests/gtest/TestStateWatching.cpp
+
+Blob: `aa82da705aa290b71f1c930b1f6cbca225638530`. Grammar: cpp. Status: contains-errors.
+
+- include "VideoUtils.h" @5
+- include "gtest/gtest.h" @6
+- include "mozilla/SharedThreadPool.h" @7
+- include "mozilla/StateWatching.h" @8
+- include "mozilla/TaskQueue.h" @9
+- include "nsISupportsImpl.h" @10
+- struct_specifier Foo @16-23
+- function_definition Notify @18-18
+- function_definition ~Foo @22-22
+- function_definition TEST @25-45
+
+### xpcom/tests/gtest/TestStaticBackgroundTaskQueue.cpp
+
+Blob: `44681804e9930ee3b3da924f3654320d50370a50`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/StaticBackgroundTaskQueue.h" @6
+- include "mozilla/SyncRunnable.h" @7
+- include "nsThreadUtils.h" @8
+- function_definition GetTestQueue @14-17
+- function_definition TEST @19-39
+
+### xpcom/tests/gtest/TestStopGapEventTarget.cpp
+
+Blob: `16253a861e22441869aa51c9e374514e822e47d5`. Grammar: cpp. Status: syntax-clean.
+
+- include "Helpers.h" @5
+- include "mozilla/RefPtr.h" @6
+- include "mozilla/StopGapEventTarget.h" @7
+- include "mozilla/gtest/MozAssertions.h" @8
+- include "nsIRunnable.h" @9
+- include "nsThreadUtils.h" @10
+- function_definition Enqueue @18-22
+- class_specifier TestCancelable @24-42
+- function_definition TestCancelable @26-26
+- function_definition Run @27-30
+- function_definition Cancel @32-35
+- function_definition ~TestCancelable @41-41
+- function_definition TEST @49-65
+- function_definition TEST @67-77
+- function_definition TEST @79-97
+- function_definition TEST @99-113
+- function_definition TEST @115-140
+- function_definition TEST @142-169
+- function_definition TEST @171-202
+- function_definition TEST @204-220
+
+### xpcom/tests/gtest/TestStorageStream.cpp
+
+Blob: `8699adcf039b4879d9148357d3f3f65c539549b0`. Grammar: cpp. Status: syntax-clean.
+
+- include "Helpers.h" @5
+- include "gtest/gtest.h" @6
+- include "mozilla/gtest/MozAssertions.h" @7
+- include "nsCOMPtr.h" @8
+- include "nsICloneableInputStream.h" @9
+- include "nsIInputStream.h" @10
+- include "nsIOutputStream.h" @11
+- include "nsIStorageStream.h" @12
+- include "nsTArray.h" @13
+- function_definition WriteData @17-23
+- function_definition TEST @27-90
+- function_definition TEST @92-127
+- function_definition TEST @129-171
+
+### xpcom/tests/gtest/TestStringStream.cpp
+
+Blob: `6e9069ff97007d451729e504141401c7e967cdc0`. Grammar: cpp. Status: syntax-clean.
+
+- include "Helpers.h" @5
+- include "gtest/gtest.h" @6
+- include "mozilla/Span.h" @7
+- include "mozilla/gtest/MozAssertions.h" @8
+- include "nsCOMPtr.h" @9
+- include "nsICloneableInputStream.h" @10
+- include "nsIInputStream.h" @11
+- include "nsISeekableStream.h" @12
+- include "nsStreamUtils.h" @13
+- include "nsStringStream.h" @14
+- include "nsTArray.h" @15
+- function_definition TestStringStream @19-29
+- function_definition TestStringStreamClone @31-53
+- function_definition TEST @57-60
+- function_definition TEST @62-65
+- function_definition CloseStreamThenRead @67-83
+- function_definition TEST @85-102
+
+### xpcom/tests/gtest/TestStrings.cpp
+
+Blob: `05ea9909c0da56794db9d4e0d2656c1fa56456a2`. Grammar: cpp. Status: syntax-clean.
+
+- include <stdio.h> @5
+- include <stdlib.h> @6
+- include "gtest/BlackBox.h" @8
+- include "gtest/MozGTestBench.h" @9
+- include "gtest/gtest.h" @10
+- include "js/String.h" @11
+- include "mozilla/RefPtr.h" @12
+- include "mozilla/StringBuffer.h" @13
+- include "mozilla/TextUtils.h" @14
+- include "mozilla/Utf8.h" @15
+- include "nsASCIIMask.h" @16
+- include "nsBidiUtils.h" @17
+- include "nsCRTGlue.h" @18
+- include "nsCharSeparatedTokenizer.h" @19
+- include "nsPrintfCString.h" @20
+- include "nsReadableUtils.h" @21
+- include "nsString.h" @22
+- include "nsTArray.h" @23
+- function_definition ReadFile @137-156
+- class_specifier Strings @158-473
+- function_definition SetUp @160-319
+- function_definition test_assign_helper @475-477
+- struct_specifier EnableTest @482-502
+- function_definition IsChar16 @484-486
+- function_definition IsChar16 @489-491
+- function_definition IsChar @494-496
+- function_definition IsChar @499-501
+- function_definition TEST_F @504-523
+- function_definition TEST_F @525-568
+- function_definition TEST_F @570-574
+- function_definition TEST_F @576-580
+- function_definition TEST_F @582-597
+- function_definition TEST_F @599-607
+- function_definition TEST_F @609-617
+- function_definition TEST_F @619-627
+- function_definition TEST_F @629-642
+- function_definition TEST_F @644-649
+- function_definition TEST_F @651-656
+- function_definition TEST_F @658-662
+- function_definition TEST_F @664-730
+- function_definition TEST_F @732-800
+- function_definition TEST_F @802-810
+- function_definition TEST_F @812-817
+- function_definition TEST_F @819-842
+- function_definition TEST_F @844-862
+- function_definition TEST_F @864-878
+- function_definition TEST_F @880-945
+- function_definition TEST_F @947-956
+- function_definition TEST_F @958-961
+- function_definition TEST_F @963-970
+- function_definition TEST_F @972-980
+- function_definition TEST_F @982-988
+- function_definition TEST_F @990-998
+- function_definition TEST_F @1000-1007
+- function_definition TEST_F @1009-1019
+- function_definition TEST_F @1039-1064
+- function_definition TEST_F @1066-1095
+- function_definition TEST_F @1097-1103
+- function_definition TEST_F @1105-1120
+- function_definition TEST_F @1122-1133
+- function_definition TEST_F @1135-1169
+- function_definition TEST_F @1171-1189
+- function_definition TEST_F @1191-1228
+- function_definition TEST_F @1230-1248
+- function_definition TEST_F @1250-1256
+- function_definition TEST_F @1258-1262
+- struct_specifier ToIntegerTest @1264-1269
+- function_definition TEST_F @1277-1284
+- struct_specifier ToUnsignedIntegerTest @1286-1291
+- function_definition TEST_F @1303-1310
+- struct_specifier ToInteger64Test @1312-1317
+- function_definition TEST_F @1368-1375
+- struct_specifier ToUnsignedInteger64Test @1377-1382
+- function_definition TEST_F @1405-1413
+- function_definition test_parse_string_helper @1415-1425
+- function_definition test_parse_string_helper0 @1427-1429
+- function_definition test_parse_string_helper1 @1431-1434
+- function_definition test_parse_string_helper2 @1436-1439
+- function_definition TEST @1441-1451
+- function_definition test_strip_chars_helper @1453-1458
+- function_definition TEST @1460-1468
+- function_definition TEST_F @1470-1481
+- function_definition TEST_F @1483-1500
+- function_definition TEST_F @1502-1515
+- function_definition TEST_F @1520-1527
+- function_definition TEST_F @1530-1560
+- function_definition TEST_F @1562-1570
+- function_definition TEST_F @1572-1660
+- function_definition test_tofloat_helper @1662-1672
+- function_definition TEST_F @1674-1703
+- function_definition test_tofloat_allow_trailing_chars_helper @1705-1715
+- function_definition TEST_F @1717-1724
+- function_definition test_todouble_helper @1726-1736
+- function_definition TEST_F @1738-1769
+- function_definition test_todouble_allow_trailing_chars_helper @1771-1781
+- function_definition TEST_F @1783-1790
+- function_definition TEST_F @1792-1868
+- function_definition TEST_F @1870-1901
+- function_definition TEST_F @1903-1936
+- function_definition TestSomeChars @1938-1941
+- function_definition TEST_F @1942-1980
+- function_definition CompressWhitespaceHelper @1983-2052
+- function_definition TEST_F @2054-2054
+- function_definition TEST_F @2056-2064
+- function_definition StripCRLFHelper @2067-2108
+- function_definition TEST_F @2110-2110
+- function_definition TEST_F @2112-2120
+- function_definition TEST_F @2122-2134
+- function_definition TEST_F @2136-2148
+- function_definition TEST_F @2150-2157
+- function_definition TEST_F @2159-2166
+- function_definition TEST_F @2168-2212
+- function_definition InsertSpanHelper @2215-2226
+- function_definition TEST_F @2228-2228
+- function_definition TEST_F @2229-2229
+- function_definition TEST_F @2231-2247
+- function_definition TEST_F @2249-2265
+- function_definition TEST_F @2267-2289
+- function_definition TEST_F @2316-2412
+- function_definition TEST @2418-2435
+
+### xpcom/tests/gtest/TestSubstringTuple.cpp
+
+Blob: `4b45dbdde5e1f702b4b2f3506f165d7e03fa5768`. Grammar: cpp. Status: contains-errors.
+
+- include "gtest/gtest.h" @5
+- include "nsLiteralString.h" @6
+- include "nsTSubstringTuple.h" @7
+- function_definition TEST @34-37
+- function_definition TEST @39-42
+- function_definition TEST @44-47
+- function_definition TEST @49-53
+- function_definition TEST @55-58
+- function_definition TEST @60-63
+
+### xpcom/tests/gtest/TestSynchronization.cpp
+
+Blob: `221c637fd549b2b6f5fb07374bfc0f4f54bebf45`. Grammar: cpp. Status: contains-errors.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/CondVar.h" @6
+- include "mozilla/Monitor.h" @7
+- include "mozilla/Mutex.h" @8
+- include "mozilla/ReentrantMonitor.h" @9
+- function_definition spawn_thread @13-16
+- function_definition MutexContention_thread @61-67
+- function_definition TEST @69-83
+- function_definition MonitorContention_thread @90-96
+- function_definition TEST @98-111
+- function_definition MonitorContention2_thread @115-128
+- function_definition TEST @130-143
+- function_definition MonitorSyncSanity_thread @148-164
+- function_definition TEST @166-179
+- function_definition CondVarSanity_thread @188-199
+- function_definition TEST @201-216
+- function_definition TEST @221-237
+- function_definition TEST @272-294
+
+### xpcom/tests/gtest/TestTArray.cpp
+
+Blob: `c4dc2c89007a8d3cb4132783a98e3dda3cf4b267`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/RefPtr.h" @6
+- include "nsTArray.h" @7
+- include "nsTHashMap.h" @8
+- struct_specifier Copyable @14-27
+- function_definition Copyable @15-15
+- function_definition ~Copyable @17-21
+- function_definition Copyable @23-23
+- function_definition (anonymous) @24-24
+- struct_specifier Movable @29-43
+- function_definition Movable @30-30
+- function_definition ~Movable @32-36
+- function_definition Movable @38-40
+- struct_specifier nsTArray_RelocationStrategy<TestTArray::Copyable> @48-50
+- struct_specifier nsTArray_RelocationStrategy<TestTArray::Movable> @53-55
+- function_definition (anonymous) @71-77
+- function_definition DEBUG @82-89
+- function_definition TEST @92-106
+- function_definition TEST @108-124
+- function_definition TEST @126-143
+- function_definition TEST @145-162
+- function_definition TEST @164-182
+- function_definition TEST @184-202
+- function_definition TEST @204-223
+- function_definition TEST @225-244
+- function_definition TEST @246-261
+- function_definition TEST @263-269
+- function_definition TEST @271-277
+- function_definition TEST @279-286
+- function_definition TEST @288-295
+- function_definition TEST @297-304
+- function_definition TEST @306-313
+- function_definition DummyMovableArray @318-325
+- function_definition TEST @327-344
+- function_definition TEST @346-363
+- function_definition TEST @365-382
+- function_definition TEST @384-401
+- function_definition TEST @403-409
+- function_definition TEST @411-417
+- function_definition TEST @419-430
+- function_definition TEST @432-445
+- function_definition TEST @447-461
+- function_definition TEST @463-477
+- function_definition TEST @479-496
+- function_definition TEST @498-507
+- function_definition TEST @509-518
+- function_definition TEST @520-537
+- function_definition TEST @539-563
+- function_definition TEST @567-598
+- class_specifier E @602-633
+- function_definition E @604-604
+- function_definition E @605-605
+- function_definition E @606-610
+- function_definition (anonymous) @612-619
+- function_definition a @621-621
+- function_definition b @622-622
+- function_definition E @624-624
+- function_definition (anonymous) @625-625
+- function_definition TEST @640-677
+- function_definition TEST @679-797
+- function_definition TEST @799-809
+- function_definition TEST @811-817
+- function_definition TEST @819-831
+- function_definition TEST @833-845
+- function_definition TEST @847-854
+- function_definition TEST @856-862
+- function_definition TEST @864-870
+- function_definition TEST @872-878
+- function_definition TEST @887-896
+- function_definition TEST @898-916
+- function_definition TEST @918-935
+- struct_specifier RefCounted @938-938
+- class_specifier Foo @940-946
+- function_definition GetFirst @945-945
+- function_definition TEST @948-962
+- function_definition TEST @964-972
+- function_definition TEST @975-987
+- function_definition TEST @989-999
+- function_definition TEST @1001-1047
+
+### xpcom/tests/gtest/TestTArray2.cpp
+
+Blob: `96604e078b8a29cf8f946e597f5b5e2923060a96`. Grammar: cpp. Status: contains-errors.
+
+- include <stdio.h> @5
+- include <stdlib.h> @6
+- include "gtest/gtest.h" @8
+- include "mozilla/TimeStamp.h" @9
+- include "mozilla/gtest/MozAssertions.h" @10
+- include "nsComponentManagerUtils.h" @11
+- include "nsDirectoryServiceDefs.h" @12
+- include "nsDirectoryServiceUtils.h" @13
+- include "nsIFile.h" @14
+- include "nsString.h" @15
+- include "nsTArray.h" @16
+- include "nsXPCOM.h" @17
+- function_definition operator< @25-27
+- function_definition test_basic_array @32-189
+- function_definition TEST @191-195
+- function_definition TEST @197-201
+- function_definition TEST @203-207
+- function_definition TEST @209-213
+- class_specifier Object @217-241
+- function_definition Object @219-219
+- function_definition Object @220-220
+- function_definition Object @221-221
+- function_definition ~Object @222-222
+- function_definition (anonymous) @224-224
+- function_definition operator== @226-228
+- function_definition operator< @230-233
+- function_definition Str @235-235
+- function_definition Num @236-236
+- function_definition TEST @243-261
+- class_specifier Countable @263-272
+- function_definition Countable @267-267
+- function_definition Countable @269-269
+- function_definition Count @271-271
+- class_specifier Moveable @274-287
+- function_definition Moveable @278-278
+- function_definition Moveable @280-280
+- function_definition Moveable @282-284
+- function_definition Count @286-286
+- class_specifier MoveOnly_RelocateUsingMemutils @289-301
+- function_definition MoveOnly_RelocateUsingMemutils @291-291
+- function_definition MoveOnly_RelocateUsingMemutils @293-294
+- function_definition MoveOnly_RelocateUsingMemutils @295-295
+- function_definition (anonymous) @297-298
+- function_definition (anonymous) @299-300
+- class_specifier MoveOnly_RelocateUsingMoveConstructor @312-325
+- function_definition MoveOnly_RelocateUsingMoveConstructor @314-314
+- function_definition MoveOnly_RelocateUsingMoveConstructor @316-317
+- function_definition MoveOnly_RelocateUsingMoveConstructor @318-319
+- function_definition (anonymous) @321-322
+- function_definition (anonymous) @323-324
+- function_definition returns_by_value @349-352
+- function_definition TEST @354-358
+- function_definition TEST @360-474
+- class_specifier TArray_MoveOnlyTest @477-477
+- function_definition MakeMoveOnlyArray @484-491
+- function_definition TYPED_TEST_P @493-499
+- function_definition TYPED_TEST_P @501-508
+- function_definition TYPED_TEST_P @510-517
+- function_definition TYPED_TEST_P @519-526
+- function_definition TYPED_TEST_P @528-535
+- function_definition TYPED_TEST_P @537-543
+- function_definition TYPED_TEST_P @545-552
+- function_definition TYPED_TEST_P @554-562
+- function_definition TYPED_TEST_P @564-572
+- function_definition TYPED_TEST_P @574-582
+- function_definition TYPED_TEST_P @584-592
+- function_definition TYPED_TEST_P @594-602
+- function_definition TYPED_TEST_P @604-612
+- function_definition TYPED_TEST_P @614-621
+- function_definition TYPED_TEST_P @623-631
+- function_definition TEST @655-698
+- class_specifier nsFileNameComparator @704-711
+- function_definition Equals @706-710
+- function_definition TEST @713-737
+- class_specifier RefcountedObject @741-771
+- function_definition RefcountedObject @743-743
+- function_definition AddRef @744-747
+- function_definition Release @748-751
+- function_definition ~RefcountedObject @752-752
+- function_definition GetVal @754-754
+- function_definition AllowRCChange @756-756
+- function_definition ForbidRCChange @757-757
+- function_definition operator< @759-761
+- function_definition operator== @763-765
+- class_specifier ObjectComparatorRaw @774-783
+- function_definition Equals @776-778
+- function_definition LessThan @780-782
+- class_specifier ObjectComparatorRefPtr @785-796
+- function_definition Equals @787-790
+- function_definition LessThan @792-795
+- function_definition TEST @798-822
+- function_definition TEST @824-878
+- function_definition TEST @882-904
+- function_definition TEST @911-959
+- function_definition TEST @967-979
+- function_definition TEST @1019-1282
+- function_definition TEST @1286-1332
+- function_definition TEST @1335-1365
+- struct_specifier BufAccessor @1368-1370
+- function_definition GetHdr @1369-1369
+- function_definition TEST @1372-1433
+- function_definition TestCompareMethodsImpl @1436-1461
+- function_definition TestCompareMethods @1464-1466
+- struct_specifier IntComparator @1468-1472
+- function_definition Equals @1469-1469
+- function_definition LessThan @1471-1471
+- struct_specifier IntWrapper @1474-1476
+- function_definition TEST @1478-1488
+- struct_specifier Big @1490-1492
+- function_definition TEST @1494-1513
+- function_definition TEST @1515-1527
+- function_definition TEST @1529-1541
+
+### xpcom/tests/gtest/TestTargetShutdownTask.cpp
+
+Blob: `438bbe55fe7ca9d2a96eb0bd652065d74210dd4f`. Grammar: cpp. Status: contains-errors.
+
+- include "gmock/gmock.h" @5
+- include "gtest/gtest-spi.h" @6
+- include "gtest/gtest.h" @7
+- include "mozilla/LazyIdleThread.h" @8
+- include "mozilla/SharedThreadPool.h" @9
+- include "mozilla/TaskQueue.h" @10
+- include "nsITargetShutdownTask.h" @11
+- class_specifier DidRunTask @17-44
+- function_definition DidRunTask @21-21
+- function_definition TargetShutdown @23-31
+- function_definition DidRunOnTarget @33-33
+- function_definition DidDispatchOnTarget @34-34
+- function_definition ~DidRunTask @37-37
+- function_definition TEST @48-73
+- function_definition TEST @75-99
+- function_definition TEST @101-151
+
+### xpcom/tests/gtest/TestTaskController.cpp
+
+Blob: `7e43d8b4661f3498d858c0761436a085a76dda37`. Grammar: cpp. Status: syntax-clean.
+
+- include <stdint.h> @5
+- include "gtest/gtest.h" @7
+- include "mozilla/Atomics.h" @8
+- include "mozilla/EventQueue.h" @9
+- include "mozilla/Mutex.h" @10
+- include "mozilla/RefPtr.h" @11
+- include "mozilla/TaskController.h" @12
+- include "nsString.h" @13
+- include "nsThreadUtils.h" @14
+- include "prthread.h" @15
+- class_specifier Logger @21-36
+- function_definition Logger @23-23
+- function_definition Add @25-29
+- function_definition (anonymous) @31-31
+- class_specifier CountingTaskManager @38-41
+- function_definition IsSuspended @40-40
+- class_specifier ReschedulingTask @43-84
+- function_definition ReschedulingTask @47-54
+- function_definition Run @56-68
+- function_definition GetName @71-74
+- function_definition IsDone @77-77
+- function_definition TEST @88-103
+- function_definition TEST @105-125
+- function_definition TEST @127-151
+- function_definition TEST @153-198
+- function_definition TEST @200-217
+- function_definition TEST @219-249
+- function_definition TEST @251-275
+- function_definition TEST @277-311
+
+### xpcom/tests/gtest/TestTaskQueue.cpp
+
+Blob: `eebd2b00d36c8e1d5faa7ff1f10f5416fef17f27`. Grammar: cpp. Status: contains-errors.
+
+- include <memory> @5
+- include "VideoUtils.h" @7
+- include "gmock/gmock.h" @8
+- include "gtest/gtest-spi.h" @9
+- include "gtest/gtest.h" @10
+- include "mozilla/SharedThreadPool.h" @11
+- include "mozilla/SyncRunnable.h" @12
+- include "mozilla/TaskQueue.h" @13
+- include "mozilla/ThrottledEventQueue.h" @14
+- include "nsITargetShutdownTask.h" @15
+- include "nsThread.h" @16
+- include "nsThreadPool.h" @17
+- function_definition TEST @27-97
+- function_definition TEST @99-112
+- function_definition TEST @114-128
+- class_specifier TestShutdownTask @132-148
+- function_definition TestShutdownTask @136-137
+- function_definition TargetShutdown @139-143
+- function_definition ~TestShutdownTask @146-146
+- function_definition TEST @154-201
+- function_definition TEST @203-221
+- class_specifier Observer @238-260
+- function_definition Observer @242-242
+- function_definition WillProcessEvent @243-246
+- function_definition DidProcessEvent @247-251
+- function_definition ~Observer @254-257
+- function_definition TEST @262-289
+- function_definition TEST @291-327
+- function_definition TEST @329-372
+- function_definition TEST @378-391
+- function_definition TEST @393-414
+- function_definition TestShutdownOnEventTargetShutdown @419-448
+- function_definition TEST @452-463
+- function_definition TEST @465-474
+- function_definition TEST @476-487
+- function_definition TEST @489-505
+- function_definition TEST @507-523
+- function_definition TEST @525-547
+
+### xpcom/tests/gtest/TestTextFormatter.cpp
+
+Blob: `277f56882f864333c0132b272cf7af4eb926c752`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @5
+- include "nsString.h" @6
+- include "nsTextFormatter.h" @7
+- function_definition TEST @9-46
+- function_definition TEST @52-98
+- function_definition TEST @104-120
+- function_definition TEST @122-138
+- function_definition TEST @140-156
+- function_definition TEST @158-176
+- function_definition TEST @178-194
+- function_definition TEST @196-221
+- function_definition TEST @223-236
+
+### xpcom/tests/gtest/TestThreadManager.cpp
+
+Blob: `7f4144f5441777eda7cb67f7abcc18218567d222`. Grammar: cpp. Status: contains-errors.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/Atomics.h" @6
+- include "mozilla/gtest/MozAssertions.h" @7
+- include "nsCOMPtr.h" @8
+- include "nsIThread.h" @9
+- include "nsIThreadManager.h" @10
+- include "nsServiceManagerUtils.h" @11
+- include "nsThreadUtils.h" @12
+- include "nsXPCOM.h" @13
+- class_specifier WaitCondition @18-35
+- function_definition IsDone @25-28
+- function_definition ~WaitCondition @31-31
+- class_specifier SpinRunnable @39-60
+- function_definition SpinRunnable @41-42
+- function_definition Run @44-51
+- function_definition SpinLoopResult @53-53
+- function_definition ~SpinRunnable @56-56
+- class_specifier CountRunnable @62-74
+- function_definition CountRunnable @64-65
+- function_definition Run @67-70
+- function_definition TEST @76-98
+- class_specifier ErrorCondition @100-119
+- function_definition IsDone @107-112
+- function_definition ~ErrorCondition @115-115
+- function_definition TEST @123-145
+
+### xpcom/tests/gtest/TestThreadPool.cpp
+
+Blob: `c5d80640df88f026bb1038d964634c62c54cf9c8`. Grammar: cpp. Status: contains-errors.
+
+- include <stdio.h> @5
+- include <stdlib.h> @6
+- include "gtest/gtest.h" @8
+- include "mozilla/Atomics.h" @9
+- include "mozilla/Monitor.h" @10
+- include "nsCOMPtr.h" @11
+- include "nsComponentManagerUtils.h" @12
+- include "nsIRunnable.h" @13
+- include "nsThreadPool.h" @14
+- include "nsThreadUtils.h" @15
+- include "nsXPCOM.h" @16
+- include "nsXPCOMCIDInternal.h" @17
+- class_specifier TestTask @21-42
+- function_definition TestTask @23-24
+- function_definition Run @26-35
+- function_definition ~TestTask @38-38
+- function_definition TEST @44-59
+- function_definition TEST @61-121
+- class_specifier Runnable1 @71-90
+- function_definition Runnable1 @73-74
+- function_definition Run @76-85
+- class_specifier Runnable2 @92-107
+- function_definition Runnable2 @94-95
+- function_definition Run @97-102
+- function_definition TEST @123-169
+- function_definition TEST @171-210
+
+### xpcom/tests/gtest/TestThreadPoolIdleTimeout.cpp
+
+Blob: `d9f818e73f74d935edc0733a9d7f4cd3ceaa4454`. Grammar: cpp. Status: contains-errors.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/Assertions.h" @6
+- include "mozilla/CondVar.h" @7
+- include "mozilla/Logging.h" @8
+- include "mozilla/Mutex.h" @9
+- include "mozilla/ThreadSafety.h" @10
+- include "mozilla/TimeStamp.h" @11
+- include "mozilla/gtest/MozAssertions.h" @12
+- include "nsIThread.h" @13
+- include "nsThreadPool.h" @14
+- include "nsThreadUtils.h" @15
+- include "pratom.h" @16
+- include "prinrval.h" @17
+- include "prmon.h" @18
+- include "prthread.h" @19
+- class_specifier ScopedTimingChecker @41-83
+- function_definition ScopedTimingChecker @46-76
+- function_definition ~ScopedTimingChecker @78-82
+- class_specifier Listener @85-108
+- function_definition ~Listener @86-86
+- function_definition Listener @99-107
+- function_definition OnThreadCreated @112-122
+- function_definition OnThreadShuttingDown @124-138
+- function_definition TEST @142-230
+
+### xpcom/tests/gtest/TestThreadPoolListener.cpp
+
+Blob: `009f168954bb5a8544c037ea0939a0d4eca89b51`. Grammar: cpp. Status: contains-errors.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/Assertions.h" @6
+- include "mozilla/ReentrantMonitor.h" @7
+- include "mozilla/gtest/MozAssertions.h" @8
+- include "nsComponentManagerUtils.h" @9
+- include "nsIThread.h" @10
+- include "nsThreadPool.h" @11
+- include "nsThreadUtils.h" @12
+- include "nsXPCOMCIDInternal.h" @13
+- include "pratom.h" @14
+- include "prinrval.h" @15
+- include "prmon.h" @16
+- include "prthread.h" @17
+- class_specifier Listener @36-200
+- function_definition ~Listener @37-37
+- function_definition OnThreadCreated @47-73
+- function_definition Listener @75-98
+- class_specifier AutoCreateAndDestroyReentrantMonitor @100-117
+- function_definition AutoCreateAndDestroyReentrantMonitor @102-108
+- function_definition ~AutoCreateAndDestroyReentrantMonitor @110-113
+- function_definition TEST @119-198
+
+### xpcom/tests/gtest/TestThreadShutdownAnnotations.cpp
+
+Blob: `dc336e326a2bf76143402a8c4ebf621d0f6f0e4a`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @5
+- include "nsString.h" @6
+- include "nsTArray.h" @7
+- include "nsThread.h" @8
+- include "mozilla/Monitor.h" @12
+- include "mozilla/SpinEventLoopUntil.h" @13
+- include "nsIThreadShutdown.h" @14
+- include "nsThreadUtils.h" @15
+- function_definition Count @22-32
+- function_definition MakeEntry @34-45
+- function_definition TEST @52-56
+- function_definition TEST @58-63
+- function_definition TEST @65-79
+- function_definition TEST @81-98
+- function_definition TEST @100-118
+- function_definition TEST @123-185
+
+### xpcom/tests/gtest/TestThreadUtils.cpp
+
+Blob: `a2f536df73e86680f916b294c61327d216491ef4`. Grammar: cpp. Status: contains-errors.
+
+- include <type_traits> @5
+- include "gtest/gtest.h" @7
+- include "mozilla/IdleTaskRunner.h" @8
+- include "mozilla/RefCounted.h" @9
+- include "mozilla/SpinEventLoopUntil.h" @10
+- include "mozilla/UniquePtr.h" @11
+- include "nsComponentManagerUtils.h" @12
+- include "nsIThread.h" @13
+- include "nsThreadUtils.h" @14
+- enum_specifier (anonymous) @18-35
+- class_specifier nsFoo @39-48
+- function_definition DoFoo @40-44
+- function_definition ~nsFoo @47-47
+- class_specifier TestSuicide @52-70
+- function_definition TestSuicide @54-54
+- function_definition Run @55-66
+- class_specifier nsBar @72-128
+- function_definition ~nsBar @73-73
+- function_definition DoBar1 @76-79
+- function_definition DoBar1Const @80-82
+- function_definition DoBar2 @83-86
+- function_definition DoBar3 @87-89
+- function_definition DoBar4 @90-93
+- function_definition DoBar5 @94-97
+- function_definition DoBar6 @98-102
+- function_definition DoBar1std @104-106
+- function_definition DoBar2std @107-110
+- function_definition DoBar3std @111-113
+- function_definition DoBar4std @114-117
+- function_definition DoBar5std @118-121
+- function_definition DoBar6std @122-126
+- struct_specifier TestCopyWithNoMove @132-144
+- function_definition TestCopyWithNoMove @133-133
+- function_definition TestCopyWithNoMove @134-137
+- function_definition ~TestCopyWithNoMove @140-140
+- function_definition operator() @142-142
+- struct_specifier TestCopyWithDeletedMove @145-157
+- function_definition TestCopyWithDeletedMove @146-147
+- function_definition TestCopyWithDeletedMove @148-151
+- function_definition TestCopyWithDeletedMove @153-153
+- function_definition ~TestCopyWithDeletedMove @154-154
+- function_definition operator() @155-155
+- struct_specifier TestMoveCounter @158-168
+- function_definition TestMoveCounter @159-159
+- function_definition TestMoveCounter @160-160
+- function_definition TestMoveCounter @161-164
+- function_definition ~TestMoveCounter @165-165
+- function_definition operator() @166-166
+- struct_specifier TestCopyMove @169-191
+- function_definition TestCopyMove @170-171
+- function_definition TestCopyMove @172-175
+- function_definition TestCopyMove @176-180
+- function_definition ~TestCopyMove @181-184
+- function_definition operator() @185-188
+- struct_specifier TestRefCounted @193-195
+- function_definition Expect @197-199
+- function_definition ExpectRunnableName @201-207
+- struct_specifier BasicRunnableFactory @209-216
+- function_definition Create @213-215
+- struct_specifier CancelableRunnableFactory @218-226
+- function_definition Create @222-225
+- function_definition TestRunnableFactory @229-433
+- function_definition TEST @435-438
+- function_definition TEST @440-452
+- function_definition TEST @454-457
+- function_definition TEST @459-501
+- function_definition TestNewRunnableMethod @503-599
+- function_definition TEST @601-604
+- function_definition TEST @606-620
+- class_specifier IdleObjectWithoutSetDeadline @622-631
+- function_definition IdleObjectWithoutSetDeadline @625-625
+- function_definition Method @626-626
+- function_definition ~IdleObjectWithoutSetDeadline @630-630
+- class_specifier IdleObjectParentWithSetDeadline @633-638
+- function_definition IdleObjectParentWithSetDeadline @635-635
+- function_definition SetDeadline @636-636
+- class_specifier IdleObjectInheritedSetDeadline @640-650
+- function_definition IdleObjectInheritedSetDeadline @644-644
+- function_definition Method @645-645
+- function_definition ~IdleObjectInheritedSetDeadline @649-649
+- class_specifier IdleObject @652-749
+- function_definition IdleObject @655-660
+- function_definition SetDeadline @661-661
+- function_definition CheckExecutedMethods @663-674
+- function_definition Method0 @676-680
+- function_definition Method1 @682-687
+- function_definition Method2 @689-696
+- function_definition Method3 @698-715
+- function_definition Method4 @717-722
+- function_definition Method5 @724-729
+- function_definition Method6 @731-735
+- function_definition Method7 @737-742
+- function_definition ~IdleObject @748-748
+- function_definition TEST @754-798
+- function_definition TEST @801-882
+- function_definition TEST @888-973
+- struct_specifier Spy @981-1051
+- function_definition ClearActions @982-985
+- function_definition ClearAll @986-989
+- function_definition Spy @991-998
+- function_definition Spy @999-1006
+- function_definition Spy @1007-1015
+- function_definition ~Spy @1016-1027
+- function_definition (anonymous) @1028-1035
+- function_definition (anonymous) @1036-1047
+- struct_specifier ISpyWithISupports @1053-1057
+- struct_specifier SpyWithISupports @1058-1067
+- function_definition ~SpyWithISupports @1060-1060
+- function_definition SpyWithISupports @1063-1063
+- function_definition RefCnt @1065-1065
+- function_definition ID @1066-1066
+- class_specifier IThreadUtilsObject @1070-1076
+- struct_specifier ThreadUtilsObjectNonRefCountedBase @1078-1080
+- function_definition MethodFromNonRefCountedBase @1079-1079
+- struct_specifier ThreadUtilsObject @1082-1214
+- function_definition RefCnt @1088-1088
+- function_definition ID @1089-1089
+- function_definition ThreadUtilsObject @1095-1096
+- function_definition ~ThreadUtilsObject @1099-1099
+- function_definition Test0 @1102-1102
+- function_definition Test1i @1103-1106
+- function_definition Test2i @1107-1111
+- function_definition Test3i @1112-1117
+- function_definition Test4i @1118-1124
+- function_definition Test1pi @1125-1128
+- function_definition Test1pci @1129-1132
+- function_definition Test1ri @1133-1136
+- function_definition Test1rri @1137-1140
+- function_definition Test1upi @1141-1144
+- function_definition Test1rupi @1145-1148
+- function_definition Test1rrupi @1149-1152
+- function_definition Test1s @1154-1154
+- function_definition Test1ps @1155-1155
+- function_definition Test1rs @1156-1156
+- function_definition Test1rrs @1157-1157
+- function_definition Test1ups @1158-1158
+- function_definition Test1rups @1159-1159
+- function_definition Test1rrups @1160-1160
+- function_definition TestByValue @1163-1168
+- function_definition TestByConstLRef @1169-1174
+- function_definition TestByRRef @1175-1180
+- function_definition TestByLRef @1181-1187
+- function_definition TestByPointer @1188-1200
+- function_definition TestByPointerToConst @1201-1213
+- class_specifier ThreadUtilsRefCountedFinal @1218-1229
+- function_definition ThreadUtilsRefCountedFinal @1220-1220
+- function_definition ~ThreadUtilsRefCountedFinal @1221-1221
+- function_definition AddRef @1224-1224
+- function_definition Release @1225-1225
+- class_specifier ThreadUtilsRefCountedBase @1231-1242
+- function_definition ThreadUtilsRefCountedBase @1233-1233
+- function_definition ~ThreadUtilsRefCountedBase @1234-1234
+- function_definition AddRef @1237-1237
+- function_definition Release @1238-1238
+- class_specifier ThreadUtilsRefCountedDerived @1244-1244
+- class_specifier ThreadUtilsNonRefCounted @1246-1246
+- function_definition TEST @1250-2022
+
+### xpcom/tests/gtest/TestThreads.cpp
+
+Blob: `e0aa9f41f9b03ea3e72708d4bf1b5748cf0e2678`. Grammar: cpp. Status: contains-errors.
+
+- include <stdio.h> @5
+- include <memory> @7
+- include "gtest/gtest.h" @9
+- include "mozilla/Monitor.h" @10
+- include "mozilla/SyncRunnable.h" @11
+- include "mozilla/gtest/MozAssertions.h" @12
+- include "nsCOMPtr.h" @13
+- include "nsITargetShutdownTask.h" @14
+- include "nsIThread.h" @15
+- include "nsThreadUtils.h" @16
+- include "nsXPCOM.h" @17
+- include "nspr.h" @18
+- include <windef.h> @21
+- include <winuser.h> @22
+- class_specifier nsRunner @27-48
+- function_definition ~nsRunner @28-28
+- function_definition Run @31-42
+- function_definition nsRunner @44-44
+- function_definition TEST @50-70
+- class_specifier nsStressRunner @72-98
+- function_definition Run @74-82
+- function_definition nsStressRunner @84-87
+- function_definition GetGlobalCount @89-89
+- function_definition ~nsStressRunner @92-92
+- function_definition TEST @102-134
+- class_specifier AsyncShutdownPreparer @139-159
+- function_definition Run @141-149
+- function_definition AsyncShutdownPreparer @151-152
+- function_definition ~AsyncShutdownPreparer @155-155
+- class_specifier AsyncShutdownWaiter @161-194
+- function_definition Run @163-184
+- function_definition AsyncShutdownWaiter @186-187
+- function_definition ~AsyncShutdownWaiter @190-190
+- class_specifier SameThreadSentinel @196-208
+- function_definition Run @198-202
+- function_definition SameThreadSentinel @204-204
+- function_definition ~SameThreadSentinel @207-207
+- function_definition TEST @210-234
+- function_definition threadProc @236-240
+- function_definition TEST @242-274
+- function_definition TEST @276-289
+- class_specifier TestShutdownTask @293-309
+- function_definition TestShutdownTask @297-298
+- function_definition TargetShutdown @300-304
+- function_definition ~TestShutdownTask @307-307
+- function_definition TEST @315-362
+- function_definition TEST @364-382
+- function_definition TEST @385-412
+
+### xpcom/tests/gtest/TestThrottledEventQueue.cpp
+
+Blob: `5b9275033f2d97bc5a1ea00e924adce515abed54`. Grammar: cpp. Status: contains-errors.
+
+- include <functional> @5
+- include <string> @6
+- include <utility> @7
+- include "Helpers.h" @9
+- include "MainThreadUtils.h" @10
+- include "gtest/gtest.h" @11
+- include "mozilla/Attributes.h" @12
+- include "mozilla/CondVar.h" @13
+- include "mozilla/Mutex.h" @14
+- include "mozilla/RefPtr.h" @15
+- include "mozilla/ThrottledEventQueue.h" @16
+- include "mozilla/gtest/MozAssertions.h" @17
+- include "nsCOMPtr.h" @18
+- include "nsError.h" @19
+- include "nsIRunnable.h" @20
+- include "nsISerialEventTarget.h" @21
+- include "nsIThread.h" @22
+- include "nsThreadUtils.h" @23
+- include "prinrval.h" @24
+- function_definition Enqueue @34-38
+- function_definition TEST @44-56
+- function_definition TEST @58-72
+- function_definition TEST @74-118
+- function_definition TEST @120-144
+- function_definition TEST @146-171
+- function_definition TEST @173-189
+- function_definition TEST @191-247
+- function_definition TEST @249-339
+- function_definition TEST @341-375
+- function_definition TEST @377-416
+- function_definition TEST @418-491
+- function_definition TEST @493-542
+
+### xpcom/tests/gtest/TestTimeStamp.cpp
+
+Blob: `ab598b780791a959d80aeabba89fbbd96edfaf2a`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/RoundedMulDiv.h" @6
+- include "mozilla/TimeStamp.h" @7
+- include "prinrval.h" @8
+- include "prthread.h" @9
+- function_definition TEST @14-77
+- function_definition TEST @79-151
+- function_definition TEST @153-208
+
+### xpcom/tests/gtest/TestTimerThreadMonitor.cpp
+
+Blob: `30ef3bc0391018bf52cae4a5a356cf6ecdfd5427`. Grammar: cpp. Status: syntax-clean.
+
+- include <thread> @5
+- include "TimerThreadMonitor.h" @7
+- include "gtest/gtest.h" @8
+- include "mozilla/TimeStamp.h" @9
+- function_definition TEST @37-47
+- function_definition TEST @50-63
+- function_definition TEST @66-78
+- function_definition SpinUntilWaiting @83-94
+- function_definition TEST @97-122
+- function_definition TEST @125-146
+- function_definition WaitOnceOnNewThread @148-156
+- function_definition TEST @161-168
+- function_definition TEST @172-190
+
+### xpcom/tests/gtest/TestTimers.cpp
+
+Blob: `c13d99e557d319b944f0305f1d4c5758378c554f`. Grammar: cpp. Status: contains-errors.
+
+- include <list> @5
+- include <vector> @6
+- include "gtest/gtest.h" @8
+- include "mozilla/Attributes.h" @9
+- include "mozilla/Monitor.h" @10
+- include "mozilla/ReentrantMonitor.h" @11
+- include "mozilla/Services.h" @12
+- include "mozilla/SpinEventLoopUntil.h" @13
+- include "mozilla/StaticPrefs_timer.h" @14
+- include "mozilla/gtest/MozAssertions.h" @15
+- include "nsCOMPtr.h" @16
+- include "nsComponentManagerUtils.h" @17
+- include "nsIObserverService.h" @18
+- include "nsIThread.h" @19
+- include "nsITimer.h" @20
+- include "nsServiceManagerUtils.h" @21
+- include "nsThreadUtils.h" @22
+- include "prinrval.h" @23
+- include "prmon.h" @24
+- include "prthread.h" @25
+- class_specifier AutoTestThread @31-52
+- function_definition AutoTestThread @33-40
+- function_definition ~AutoTestThread @42-42
+- function_definition (anonymous) @44-44
+- function_definition MOZ_NO_ADDREF_RELEASE_ON_RETURN @46-48
+- class_specifier AutoCreateAndDestroyReentrantMonitor @54-67
+- function_definition AutoCreateAndDestroyReentrantMonitor @56-59
+- function_definition ~AutoCreateAndDestroyReentrantMonitor @61-61
+- function_definition (anonymous) @63-63
+- class_specifier TimerCallback @69-95
+- function_definition Notify @76-88
+- function_definition ~TimerCallback @91-91
+- class_specifier TimerHelper @99-178
+- function_definition TimerHelper @101-105
+- function_definition ~TimerHelper @107-107
+- function_definition ClosureCallback @109-111
+- function_definition Notify @116-126
+- function_definition SetTimer @128-135
+- function_definition Wait @137-139
+- function_definition WaitAndBlockCallback @144-160
+- function_definition Cancel @162-169
+- class_specifier SimpleTimerTest @180-202
+- function_definition MakeTimer @182-186
+- function_definition PauseTimerThread @188-192
+- function_definition ResumeTimerThread @194-198
+- function_definition AddCoalescingSlack @221-223
+- function_definition WaitAssertFired @234-245
+- function_definition TEST_F @247-250
+- function_definition TEST_F @252-257
+- function_definition TEST_F @259-266
+- function_definition TEST_F @268-288
+- class_specifier FindExpirationTimeState @294-388
+- function_definition ~FindExpirationTimeState @310-316
+- function_definition InitTimers @319-323
+- function_definition InitTimers @327-329
+- function_definition InitTimers @331-383
+- function_definition UnusedCallbackFunc @385-387
+- function_definition TEST_F @390-537
+- function_definition TEST_F @544-553
+- function_definition TEST_F @555-579
+- function_definition TEST_F @581-615
+- class_specifier FuzzTestThreadState @618-831
+- function_definition FuzzTestThreadState @622-623
+- class_specifier StartRunnable @625-638
+- function_definition StartRunnable @627-629
+- function_definition Run @631-634
+- function_definition Start @640-644
+- function_definition Stop @646-646
+- function_definition Notify @648-682
+- function_definition HasTimersOutstanding @684-684
+- function_definition ~FuzzTestThreadState @687-692
+- function_definition GetRandomType @694-696
+- function_definition CountOneShotTimers @698-704
+- function_definition ScheduleOrCancelTimers @706-727
+- function_definition RescheduleSomeTimers @729-744
+- function_definition CreateRandomTimer @746-752
+- function_definition CancelRandomTimer @754-758
+- function_definition RemoveRandomTimer @760-795
+- function_definition InitRandomTimer @797-810
+- function_definition CancelRepeatingTimer @812-822
+- function_definition TEST @835-862
+- function_definition TEST @864-894
+- function_definition SetTime @896-898
+- function_definition TEST @900-924
+
+### xpcom/tests/gtest/TestTokenizer.cpp
+
+Blob: `1c53e96cb6b295911c4cbe98b516ab5c81291270`. Grammar: cpp. Status: syntax-clean.
+
+- include "gtest/gtest.h" @5
+- include "mozilla/HelperMacros.h" @6
+- include "mozilla/IncrementalTokenizer.h" @7
+- include "mozilla/Tokenizer.h" @8
+- function_definition IsOperator @13-15
+- function_definition HttpHeaderCharacter @17-20
+- function_definition TEST @22-99
+- function_definition TEST @101-213
+- function_definition TEST @215-327
+- function_definition TEST @329-337
+- function_definition TEST @339-347
+- function_definition TEST @349-360
+- function_definition TEST @362-385
+- function_definition TEST @387-428
+- function_definition TEST @430-479
+- function_definition TEST @481-508
+- function_definition TEST @510-529
+- function_definition ABChar @531-531
+- function_definition TEST @533-547
+- function_definition TEST @549-562
+- function_definition TEST @564-624
+- function_definition TEST @626-645
+- function_definition TEST @647-660
+- function_definition TEST @662-775
+- function_definition TEST @777-803
+- function_definition TEST @805-849
+- function_definition TEST @851-890
+- function_definition TEST @892-942
+- function_definition TEST @944-991
+- function_definition TEST @993-1044
+- function_definition TEST @1046-1103
+- function_definition TEST @1105-1138
+- function_definition TEST @1140-1194
+- function_definition TEST @1196-1227
+- function_definition TEST @1229-1287
+- function_definition TEST @1289-1337
+- function_definition TEST @1339-1358
+- function_definition TEST @1360-1420
+- function_definition TEST @1422-1480
+- function_definition TEST @1482-1505
+
+### xpcom/tests/gtest/TestUTF.cpp
+
+Blob: `297b685ab9569fbd28a0cc913848051a7d8f3b87`. Grammar: cpp. Status: syntax-clean.
+
+- include "UTFStrings.h" @5
+- include "gtest/gtest.h" @6
+- include "mozilla/HashFunctions.h" @7
+- include "mozilla/Utf16.h" @8
+- include "nsHashKeys.h" @9
+- include "nsReadableUtils.h" @10
+- include "nsString.h" @11
+- function_definition TEST @17-37
+- function_definition TEST @39-53
+- function_definition TEST @55-69
+- function_definition TEST @71-85
+- function_definition HashStringUsingUTF16Hasher @87-93
+- function_definition TEST @95-117
+- function_definition NonASCII16_helper @123-172
+- function_definition TEST @174-182
+- function_definition TEST @184-207
+
+### xpcom/tests/gtest/TestVariant.cpp
+
+Blob: `164571db920e16e801c9ca9d9cb44b716877ef00`. Grammar: cpp. Status: syntax-clean.
+
+- include <math.h> @5
+- include "gtest/gtest.h" @7
+- include "nsVariant.h" @8
+- function_definition TEST @10-118
+- function_definition TEST @120-155
+
+### xpcom/tests/gtest/UTFStrings.h
+
+Blob: `fb45c9eca2d5054c1d736c1773bc9d58f77fe1a9`. Grammar: cpp. Status: syntax-clean.
+
+- struct_specifier UTFStringsStringPair @8-11
+
+### xpcom/tests/resources.h
+
+Blob: `ac5036db45f29bf2f10aed9a2c308773cc280726`. Grammar: cpp. Status: syntax-clean.
+
+
+### xpcom/tests/windows/TestCOM.cpp
+
+Blob: `4612168685b328e7c269d35ee35a22ff2cf79225`. Grammar: cpp. Status: contains-errors.
+
+- include <unknwn.h> @5
+- include <windows.h> @6
+- include "mozilla/RefPtr.h" @8
+- include "mozilla/gtest/MozAssertions.h" @9
+- include "nsCOMPtr.h" @10
+- include "nsISupports.h" @11
+- include <unknwn.h> @14
+- include "gtest/gtest.h" @16
+- class_specifier nsITestCom @22-26
+- class_specifier nsTestCom @32-44
+- function_definition public @33-36
+- function_definition Test @38-38
+- function_definition ~nsTestCom @43-43
+- function_definition AddRef @50-54
+- function_definition Release @56-63
+- function_definition TEST @65-90
+
+### xpcom/tests/windows/TestNtPathToDosPath.cpp
+
+Blob: `c32bb978fbaaeb96456ad9c3377cb40f06a901b6`. Grammar: cpp. Status: syntax-clean.
+
+- include <windows.h> @5
+- include <winnetwk.h> @6
+- include "gtest/gtest.h" @8
+- include "mozilla/FileUtilsWin.h" @9
+- include "nsCRTGlue.h" @10
+- class_specifier DriveMapping @12-27
+- function_definition GetDriveLetter @19-19
+- function_definition DriveMapping @29-30
+- function_definition Init @32-37
+- function_definition DoMapping @39-57
+- function_definition ChangeDriveLetter @59-67
+- function_definition Disconnect @69-73
+- function_definition ~DriveMapping @75-79
+- function_definition DriveToNtPath @81-101
+- function_definition TestNtPathToDosPath @103-109
+- function_definition TEST @111-172
+
+### xpcom/tests/windows/TestPoisonIOInterposer.cpp
+
+Blob: `d5e87aab6458c3d4965396554c76ce621f9cd475`. Grammar: cpp. Status: syntax-clean.
+
+- include <windows.h> @5
+- include "gtest/gtest.h" @7
+- include "mozilla/IOInterposer.h" @8
+- include "mozilla/NativeNt.h" @9
+- include "nsWindowsHelpers.h" @10
+- class_specifier TempFile @14-32
+- function_definition TempFile @18-29
+- function_definition (anonymous) @31-31
+- class_specifier Overlapped @34-54
+- function_definition Overlapped @39-42
+- function_definition (anonymous) @44-44
+- function_definition Wait @46-53
+- function_definition FileOpSync @58-77
+- function_definition FileOpAsync @79-124
+- function_definition TEST @126-135
+- function_definition TEST @137-153
+
+### xpcom/threads/AbstractThread.cpp
+
+Blob: `a285ed38bca367563159bdc087c195d2226ec61f`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/AbstractThread.h" @5
+- include <memory> @7
+- include "mozilla/ClearOnShutdown.h" @9
+- include "mozilla/DelayedRunnable.h" @10
+- include "mozilla/MozPromise.h" @11
+- include "mozilla/ProfilerRunnable.h" @12
+- include "mozilla/StateWatching.h" @13
+- include "mozilla/StaticPtr.h" @14
+- include "mozilla/TaskDispatcher.h" @15
+- include "mozilla/TaskQueue.h" @16
+- include "nsContentUtils.h" @17
+- include "nsIDirectTaskDispatcher.h" @18
+- include "nsIThreadInternal.h" @19
+- include "nsServiceManagerUtils.h" @20
+- include "nsThreadManager.h" @21
+- include "nsThreadUtils.h" @22
+- class_specifier XPCOMThreadWrapper @32-236
+- function_definition XPCOMThreadWrapper @36-53
+- enum_specifier TailDispatchPolicy @37-37
+- function_definition Dispatch @55-95
+- function_definition RegisterShutdownTask @100-102
+- function_definition UnregisterShutdownTask @104-106
+- function_definition GetFeatures @108-111
+- function_definition IsCurrentThreadIn @113-115
+- function_definition (anonymous) @117-127
+- function_definition IsTailDispatcherAvailable @129-135
+- function_definition MightHaveTailTasks @137-137
+- function_definition AsEventTarget @139-139
+- function_definition OnDispatchedEvent @144-144
+- function_definition AfterProcessNextEvent @146-151
+- function_definition OnProcessNextEvent @153-161
+- function_definition DispatchDirectTask @169-171
+- function_definition DrainDirectTasks @172-174
+- function_definition HaveDirectTasks @175-177
+- function_definition ~XPCOMThreadWrapper @185-191
+- function_definition MaybeFireTailDispatcher @193-199
+- class_specifier Runner @201-235
+- function_definition Runner @203-207
+- function_definition Run @209-215
+- function_definition GetName @218-229
+- function_definition IsOnCurrentThreadInfallible @242-242
+- function_definition IsOnCurrentThread @244-248
+- function_definition DispatchFromScript @250-253
+- function_definition Dispatch @255-261
+- function_definition DelayedDispatch @263-275
+- function_definition TailDispatchTasksFor @277-283
+- function_definition HasTailTasksFor @285-290
+- function_definition RequiresTailDispatch @292-297
+- function_definition RequiresTailDispatchFromCurrentThread @299-302
+- function_definition MainThread @304-307
+- function_definition InitTLS @309-313
+- function_definition InitMainThread @315-328
+- function_definition ShutdownMainThread @330-333
+- function_definition DispatchStateChange @335-351
+- function_definition DispatchDirectTask @354-364
+
+### xpcom/threads/AbstractThread.h
+
+Blob: `3ca60bcc46eba30970bc52e8657504b8be6f09d1`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/AlreadyAddRefed.h" @8
+- include "mozilla/DefineEnum.h" @9
+- include "mozilla/ThreadLocal.h" @10
+- include "nsISerialEventTarget.h" @11
+- include "nsISupports.h" @12
+- include "nscore.h" @13
+- class_specifier nsIEventTarget @15-15
+- class_specifier nsIRunnable @16-16
+- class_specifier nsIThread @17-17
+- class_specifier TaskDispatcher @21-21
+- class_specifier AbstractThread @69-158
+- function_definition GetCurrent @73-73
+- function_definition AbstractThread @75-76
+- enum_specifier DispatchReason @91-91
+- function_definition MightHaveTailTasks @106-106
+- function_definition IsTailDispatcherAvailable @110-110
+- function_definition SupportsTailDispatch @119-121
+- function_definition TailDispatcherPolicy @124-126
+- function_definition AsEventTarget @133-133
+- function_definition ~AbstractThread @151-151
+
+### xpcom/threads/BlockingResourceBase.cpp
+
+Blob: `aa1646180c225c956c9198bcd63a76f187d78b21`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/BlockingResourceBase.h" @5
+- include "prthread.h" @8
+- include "CodeAddressService.h" @11
+- include "mozilla/StackWalk.h" @12
+- include "nsHashKeys.h" @13
+- include "nsTHashtable.h" @14
+- include "mozilla/Attributes.h" @17
+- include "mozilla/CondVar.h" @18
+- include "mozilla/DeadlockDetector.h" @19
+- include "mozilla/Mutex.h" @20
+- include "mozilla/RWLock.h" @21
+- include "mozilla/RecursiveMutex.h" @22
+- include "mozilla/ReentrantMonitor.h" @23
+- include "mozilla/UniquePtr.h" @24
+- include "mozilla/ProfilerThreadSleep.h" @27
+- function_definition StackWalkCallback @49-55
+- function_definition GetStackTrace @57-69
+- function_definition PrintCycle @85-116
+- function_definition Print @118-153
+- function_definition BlockingResourceBase @155-176
+- function_definition ~BlockingResourceBase @178-187
+- function_definition AssertSafeToProcessEventLoop @189-221
+- function_definition SizeOfDeadlockDetector @223-228
+- function_definition InitStatics @230-237
+- function_definition Shutdown @239-242
+- function_definition CheckAcquire @244-282
+- function_definition Acquire @284-306
+- function_definition Release @308-338
+- function_definition Lock @342-347
+- function_definition TryLock @349-356
+- function_definition Unlock @358-362
+- function_definition AssertCurrentThreadOwns @364-366
+- function_definition TryReadLock @372-376
+- function_definition ReadLock @378-384
+- function_definition ReadUnlock @386-389
+- function_definition TryWriteLock @391-398
+- function_definition WriteLock @400-405
+- function_definition WriteUnlock @407-411
+- function_definition Enter @415-451
+- function_definition Exit @453-459
+- function_definition Wait @461-487
+- function_definition Lock @491-528
+- function_definition Unlock @530-536
+- function_definition AssertCurrentThreadIn @538-540
+- function_definition Wait @544-549
+- function_definition Wait @551-576
+
+### xpcom/threads/BlockingResourceBase.h
+
+Blob: `3842fe16f686e6a03f676c263138f6d73be6b86c`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/MemoryReporting.h" @8
+- include "mozilla/ThreadLocal.h" @9
+- include "nsDebug.h" @10
+- include "nscore.h" @11
+- include "prtypes.h" @12
+- include "prinit.h" @19
+- include "mozilla/Maybe.h" @22
+- include "nsTArray.h" @23
+- class_specifier DeadlockDetector @36-36
+- class_specifier BlockingResourceBase @44-332
+- enum_specifier BlockingResourceType @47-52
+- function_definition SizeOfIncludingThis @85-91
+- function_definition ResourceChainFront @156-158
+- function_definition ResourceChainPrev @165-168
+- function_definition ResourceChainAppend @177-180
+- function_definition ResourceChainRemove @188-191
+- function_definition TakeAcquisitionState @200-208
+- function_definition SetAcquisitionState @216-218
+- function_definition ClearAcquisitionState @226-232
+- function_definition IsAcquired @240-240
+- function_definition BlockingResourceBase @327-327
+- function_definition ~BlockingResourceBase @329-329
+
+### xpcom/threads/CPUUsageWatcher.cpp
+
+Blob: `c39c03e8438d1d72b3133b014821511cc22d6960`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/CPUUsageWatcher.h" @5
+- include "mozilla/Try.h" @7
+- include "prsystem.h" @8
+- include <mach/clock.h> @11
+- include <mach/mach_host.h> @12
+- include <sys/resource.h> @13
+- include "mozilla/BackgroundHangMonitor.h" @17
+- struct_specifier CPUStats @28-36
+- function_definition GetMicroseconds @43-46
+- function_definition GetMicroseconds @48-51
+- function_definition GetProcessCPUStats @53-81
+- function_definition GetGlobalCPUStats @83-99
+- function_definition FiletimeToInteger @106-109
+- function_definition GetProcessCPUStats @111-133
+- function_definition GetGlobalCPUStats @135-151
+- function_definition Init @155-180
+- function_definition Uninit @182-187
+- function_definition CollectCPUUsage @189-221
+- function_definition AnnotateHang @223-231
+- function_definition Init @235-235
+- function_definition Uninit @237-237
+- function_definition CollectCPUUsage @239-241
+- function_definition AnnotateHang @243-243
+
+### xpcom/threads/CPUUsageWatcher.h
+
+Blob: `96efb162d134bef8527c01eadebc0e91cb1df027`. Grammar: cpp. Status: syntax-clean.
+
+- include <stdint.h> @8
+- include "mozilla/HangAnnotations.h" @10
+- include "mozilla/Result.h" @11
+- enum_specifier CPUUsageWatcherError @24-31
+- struct_specifier UnusedZero<CPUUsageWatcherError> @36-37
+- class_specifier CPUUsageHangAnnotator @41-43
+- class_specifier CPUUsageWatcher @45-94
+- function_definition CPUUsageWatcher @48-56
+
+### xpcom/threads/CondVar.h
+
+Blob: `2ffdc0db560038fdd30a6dfa3c8c0cb5fad1b2b2`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/BlockingResourceBase.h" @8
+- include "mozilla/Mutex.h" @9
+- include "mozilla/PlatformConditionVariable.h" @10
+- include "mozilla/TimeStamp.h" @11
+- include "mozilla/ProfilerThreadSleep.h" @14
+- class_specifier OffTheBooksCondVar @25-114
+- function_definition OffTheBooksCondVar @38-39
+- function_definition ~OffTheBooksCondVar @45-45
+- function_definition OffTheBooksCondVar @47-47
+- function_definition (anonymous) @48-48
+- function_definition Wait @55-60
+- function_definition Wait @62-67
+- function_definition Notify @78-78
+- function_definition NotifyAll @84-84
+- function_definition MOZ_ASSERT_CAPABILITY @91-93
+- function_definition DEBUG @99-101
+- function_definition MOZ_ASSERT_CAPABILITY @104-104
+- function_definition (anonymous) @105-105
+- class_specifier CondVar @121-133
+- function_definition CondVar @123-126
+- function_definition CondVar @128-128
+- function_definition CondVar @129-129
+- function_definition (anonymous) @130-130
+
+### xpcom/threads/DataMutex.h
+
+Blob: `7efda61b0b7b1242075908242aec4f9c85680a39`. Grammar: cpp. Status: contains-errors.
+
+- include <utility> @8
+- include "mozilla/Mutex.h" @10
+- include "mozilla/StaticMutex.h" @11
+- class_specifier DataMutexBase @38-85
+- function_definition AutoLockBase @41-43
+- class_specifier MOZ_STACK_CLASS @41-41
+- function_definition operator-> @44-44
+- function_definition (anonymous) @46-46
+- function_definition (anonymous) @47-47
+- function_definition (anonymous) @51-51
+- function_definition (anonymous) @56-59
+- function_definition (anonymous) @60-60
+- function_definition AutoLockBase @62-64
+- function_definition ~AutoLockBase @66-71
+- function_definition AutoLockBase @73-73
+- function_definition AutoLockBase @78-82
+- function_definition DataMutexBase @90-90
+- function_definition DataMutexBase @92-93
+- function_definition Lock @95-95
+- function_definition ConstLock @96-96
+- function_definition (anonymous) @98-98
+- class_specifier StaticMutexNameless @108-120
+- function_definition StaticMutexNameless @110-110
+
+### xpcom/threads/DeadlockDetector.h
+
+Blob: `9c248c9ec8f7b46736c7d5f2a6438ba470c0eaed`. Grammar: cpp. Status: syntax-clean.
+
+- include <stdlib.h> @7
+- include "nsClassHashtable.h" @9
+- include "nsTArray.h" @10
+- include "prlock.h" @11
+- class_specifier DeadlockDetector @60-345
+- struct_specifier OrderingEntry @65-65
+- struct_specifier OrderingEntry @78-96
+- function_definition OrderingEntry @79-83
+- function_definition ~OrderingEntry @84-84
+- function_definition SizeOfIncludingThis @86-91
+- struct_specifier PRAutoLock @99-103
+- function_definition PRAutoLock @100-100
+- function_definition ~PRAutoLock @101-101
+- function_definition DeadlockDetector @115-121
+- function_definition ~DeadlockDetector @128-128
+- function_definition SizeOfIncludingThis @130-143
+- function_definition DeadlockDetector @145-145
+- function_definition (anonymous) @146-146
+- function_definition Add @158-161
+- function_definition Remove @163-182
+- function_definition CheckAcquisition @205-255
+- function_definition InTransitiveClosure @263-280
+- function_definition GetDeductionChain @298-309
+- function_definition GetDeductionChain_Helper @313-331
+
+### xpcom/threads/DelayedRunnable.cpp
+
+Blob: `8cb66186e649325e8c0be0c4b91da4d3366b5228`. Grammar: cpp. Status: contains-errors.
+
+- include "DelayedRunnable.h" @5
+- include "mozilla/ProfilerRunnable.h" @7
+- function_definition DelayedRunnable @11-18
+- function_definition Init @20-42
+- function_definition Run @44-70
+- function_definition Notify @72-91
+- function_definition TargetShutdown @93-106
+
+### xpcom/threads/DelayedRunnable.h
+
+Blob: `d43470564e8168cd0e25b3f2da388992fe4ce8c2`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/TimeStamp.h" @8
+- include "nsCOMPtr.h" @9
+- include "nsIRunnable.h" @10
+- include "nsITargetShutdownTask.h" @11
+- include "nsITimer.h" @12
+- include "nsThreadUtils.h" @13
+- class_specifier DelayedRunnable @17-47
+- function_definition ~DelayedRunnable @37-37
+
+### xpcom/threads/EventQueue.cpp
+
+Blob: `c8c42ccc44afbf531d354185ad920b827a86c8c7`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/EventQueue.h" @5
+- include "GeckoProfiler.h" @7
+- include "InputTaskManager.h" @8
+- include "TaskController.h" @9
+- include "VsyncTaskManager.h" @10
+- include "mozilla/FlowMarkers.h" @11
+- include "nsIRunnable.h" @12
+- function_definition PutEvent @18-72
+- function_definition GetEvent @75-107
+- function_definition IsEmpty @110-113
+- function_definition HasReadyEvent @116-119
+- function_definition Count @122-125
+- class_specifier EventQueueSized<16> @128-128
+- class_specifier EventQueueSized<64> @129-129
+- class_specifier EventQueueInternal<16> @131-131
+- class_specifier EventQueueInternal<64> @132-132
+
+### xpcom/threads/EventQueue.h
+
+Blob: `af4ddf5ab05356eaa0dafbc1306239155a87f6d5`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/Mutex.h" @8
+- include "mozilla/Queue.h" @9
+- include "mozilla/TimeStamp.h" @10
+- include "nsCOMPtr.h" @11
+- include "nsIRunnable.h" @12
+- enum_specifier EventQueuePriority @30-35
+- class_specifier IdlePeriodState @37-37
+- class_specifier EventQueueInternal @48-114
+- function_definition EventQueueInternal @50-50
+- function_definition PeekEvent @82-89
+- function_definition EnableInputEventPrioritization @91-91
+- function_definition FlushInputEventPrioritization @92-92
+- function_definition SuspendInputEventPrioritization @93-93
+- function_definition ResumeInputEventPrioritization @94-94
+- function_definition SizeOfIncludingThis @96-98
+- function_definition SizeOfExcludingThis @100-104
+- class_specifier EventQueue @118-122
+- function_definition EventQueue @120-121
+- class_specifier EventQueueSized @125-130
+- function_definition EventQueueSized @128-129
+
+### xpcom/threads/EventTargetAndLockCapability.h
+
+Blob: `2708fc00669f7c126b3a00c7b309652348636e59`. Grammar: cpp. Status: contains-errors.
+
+- include "MainThreadUtils.h" @8
+- include "mozilla/EventTargetCapability.h" @9
+- include "mozilla/ThreadSafety.h" @10
+- class_specifier MOZ_CAPABILITY @39-39
+- function_definition MOZ_ASSERT_SHARED_CAPABILITY @52-52
+- function_definition MOZ_ASSERT_SHARED_CAPABILITY @58-58
+- function_definition MOZ_ASSERT_CAPABILITY @64-64
+- class_specifier MOZ_CAPABILITY @94-94
+- function_definition MOZ_RETURN_CAPABILITY @102-102
+- function_definition MOZ_RETURN_CAPABILITY @108-110
+- function_definition MOZ_ASSERT_SHARED_CAPABILITY @116-116
+- function_definition MOZ_ASSERT_SHARED_CAPABILITY @122-122
+- function_definition MOZ_ASSERT_CAPABILITY @128-128
+
+### xpcom/threads/EventTargetCapability.h
+
+Blob: `33cb830fc702cd8395c13fc1881436485f3b829f`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/ThreadSafety.h" @8
+- include "nsIEventTarget.h" @9
+- class_specifier MOZ_CAPABILITY @55-55
+- function_definition ~EventTargetCapability @63-63
+- function_definition EventTargetCapability @65-65
+- function_definition EventTargetCapability @66-66
+- function_definition MOZ_ASSERT_CAPABILITY @70-72
+- function_definition IsOnCurrentThread @75-75
+- function_definition GetEventTarget @79-79
+- function_definition Dispatch @82-86
+
+### xpcom/threads/IdlePeriodState.cpp
+
+Blob: `1bb98c288815effa108146d418ffd7d86a0c3910`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/IdlePeriodState.h" @5
+- include "mozilla/AppShutdown.h" @7
+- include "mozilla/StaticPrefs_idle_period.h" @8
+- include "mozilla/dom/ContentChild.h" @9
+- include "mozilla/ipc/IdleSchedulerChild.h" @10
+- include "nsIIdlePeriod.h" @11
+- include "nsThreadManager.h" @12
+- include "nsXPCOM.h" @13
+- include "nsXULAppAPI.h" @14
+- function_definition IdlePeriodState @20-24
+- function_definition ~IdlePeriodState @26-32
+- function_definition SizeOfExcludingThis @34-41
+- function_definition FlagNotIdle @43-51
+- function_definition RanOutOfTasks @53-59
+- function_definition GetIdleDeadlineInternal @61-100
+- function_definition GetLocalIdleDeadline @102-144
+- function_definition GetIdleToken @146-168
+- function_definition RequestIdleToken @170-194
+- function_definition SetIdleToken @196-205
+- function_definition SetActive @207-215
+- function_definition SetPaused @217-231
+- function_definition ClearIdleToken @233-248
+- function_definition ShouldGetIdleToken @250-254
+
+### xpcom/threads/IdlePeriodState.h
+
+Blob: `c65f5782254bcdbe66053e33c757fc5f2725871b`. Grammar: cpp. Status: syntax-clean.
+
+- include <stdint.h> @15
+- include "mozilla/MemoryReporting.h" @17
+- include "mozilla/Mutex.h" @18
+- include "mozilla/RefPtr.h" @19
+- include "mozilla/TimeStamp.h" @20
+- include "nsCOMPtr.h" @21
+- class_specifier nsIIdlePeriod @23-23
+- class_specifier TaskManager @26-26
+- class_specifier IdleSchedulerChild @28-28
+- class_specifier IdlePeriodState @31-190
+- function_definition EnforcePendingTaskGuarantee @55-57
+- function_definition ForgetPendingTaskGuarantee @63-65
+- function_definition UpdateCachedIdleDeadline @69-71
+- function_definition RequestIdleDeadlineIfNeeded @76-78
+- function_definition ClearCachedIdleDeadline @81-81
+- function_definition GetCachedIdleDeadline @84-84
+- function_definition CachePeekedIdleDeadline @94-96
+- function_definition IsActive @100-100
+- function_definition EnsureIsActive @103-107
+- function_definition EnsureIsPaused @109-113
+
+### xpcom/threads/IdleTaskRunner.cpp
+
+Blob: `a5294681bc4644b55b745d9cb6f2397bf4e8aa3a`. Grammar: cpp. Status: syntax-clean.
+
+- include "IdleTaskRunner.h" @5
+- include "mozilla/AppShutdown.h" @7
+- include "mozilla/TaskController.h" @8
+- include "nsRefreshDriver.h" @9
+- function_definition Create @13-28
+- class_specifier IdleTaskRunnerTask @30-79
+- function_definition IdleTaskRunnerTask @32-37
+- function_definition Run @39-48
+- function_definition SetIdleDeadline @50-54
+- function_definition Cancel @56-56
+- function_definition GetName @58-65
+- function_definition RequestInterrupt @67-71
+- function_definition IdleTaskRunner @81-95
+- function_definition Run @97-138
+- function_definition TimedOut @140-144
+- function_definition SetIdleDeadline @146-148
+- function_definition SetMinimumUsefulBudget @150-152
+- function_definition SetTimer @154-161
+- function_definition Cancel @163-168
+- function_definition ScheduleTimedOut @170-173
+- function_definition Schedule @175-255
+- function_definition ~IdleTaskRunner @257-257
+- function_definition CancelTimer @259-272
+- function_definition SetTimerInternal @274-279
+- function_definition ResetTimer @281-307
+
+### xpcom/threads/IdleTaskRunner.h
+
+Blob: `17d84f6e0b35b793ae05987ffe66bdb2f1a992e8`. Grammar: cpp. Status: contains-errors.
+
+- include <functional> @8
+- include "mozilla/TimeStamp.h" @10
+- include "nsIEventTarget.h" @11
+- include "nsISupports.h" @12
+- include "nsITimer.h" @13
+- include "nsString.h" @14
+- class_specifier IdleTaskRunnerTask @18-18
+- class_specifier IdleTaskRunner @24-122
+- function_definition (anonymous) @84-84
+
+### xpcom/threads/InputTaskManager.cpp
+
+Blob: `d063a122c83833d05827a009e35a0fcebaa0ab12`. Grammar: cpp. Status: syntax-clean.
+
+- include "InputTaskManager.h" @5
+- include "VsyncTaskManager.h" @7
+- include "nsRefreshDriver.h" @8
+- function_definition EnableInputEventPrioritization @14-18
+- function_definition FlushInputEventPrioritization @20-26
+- function_definition SuspendInputEventPrioritization @28-33
+- function_definition ResumeInputEventPrioritization @35-39
+- function_definition GetPriorityModifierForEventLoopTurn @41-54
+- function_definition WillRunTask @56-59
+- function_definition GetPriorityModifierForEventLoopTurnForStrictVsyncAlignment @61-79
+- function_definition InputPriorityController::InputPriorityController @81-82
+- function_definition InputPriorityController::ShouldUseHighestPriority @84-101
+- function_definition InputPriorityController::EnterPendingVsyncState @103-110
+- function_definition InputPriorityController::WillRunVsync @112-117
+- function_definition InputPriorityController::LeavePendingVsyncState @119-129
+- function_definition InputPriorityController::WillRunTask @131-150
+- function_definition Init @153-153
+
+### xpcom/threads/InputTaskManager.h
+
+Blob: `cc249f6a7eab6bfa5ae254d3fa38e17345aa5aa2`. Grammar: cpp. Status: syntax-clean.
+
+- include "TaskController.h" @8
+- include "mozilla/StaticPrefs_dom.h" @9
+- include "mozilla/StaticPtr.h" @10
+- include "nsTArray.h" @11
+- include "nsXULAppAPI.h" @12
+- class_specifier InputTaskManager @16-135
+- enum_specifier InputEventQueueState @22-27
+- function_definition State @34-34
+- function_definition SetState @36-36
+- function_definition Get @38-38
+- function_definition Cleanup @39-39
+- function_definition IsSuspended @42-45
+- function_definition IsSuspended @47-50
+- function_definition IncSuspensionLevel @52-55
+- function_definition DecSuspensionLevel @57-60
+- function_definition CanSuspendInputEvent @62-73
+- function_definition NotifyVsync @75-75
+- function_definition InputTaskManager @78-78
+- class_specifier InputPriorityController @80-123
+- enum_specifier InputVsyncState @107-111
+
+### xpcom/threads/LazyIdleThread.cpp
+
+Blob: `4b2d66532ac908a228340568d352c1aef429cf09`. Grammar: cpp. Status: contains-errors.
+
+- include "LazyIdleThread.h" @5
+- include "nsIObserverService.h" @7
+- include "nsServiceManagerUtils.h" @8
+- include "nsThreadUtils.h" @9
+- function_definition LazyIdleThread @22-43
+- function_definition LazyIdleThreadShutdown @45-50
+- function_definition ~LazyIdleThread @52-60
+- function_definition Shutdown @62-69
+- function_definition SetListener @71-73
+- function_definition DispatchFromScript @78-81
+- function_definition Dispatch @83-87
+- function_definition DelayedDispatch @89-92
+- function_definition RegisterShutdownTask @94-97
+- function_definition UnregisterShutdownTask @99-102
+- function_definition GetFeatures @104-106
+- function_definition IsOnCurrentThread @108-111
+- function_definition IsOnCurrentThreadInfallible @114-116
+- function_definition Observe @118-126
+
+### xpcom/threads/LazyIdleThread.h
+
+Blob: `a4ebb303c6c460377a3ed7c9717c808649bafa33`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/TaskQueue.h" @12
+- include "nsIObserver.h" @13
+- include "nsThreadPool.h" @14
+- class_specifier LazyIdleThread @24-87
+
+### xpcom/threads/MainThreadIdlePeriod.cpp
+
+Blob: `d130366f4c3f02ec3c83af9deafef8a2806f9cc8`. Grammar: cpp. Status: syntax-clean.
+
+- include "MainThreadIdlePeriod.h" @5
+- include "VRManagerChild.h" @7
+- include "mozilla/Preferences.h" @8
+- include "mozilla/StaticPrefs_idle_period.h" @9
+- include "mozilla/dom/Document.h" @10
+- include "nsRefreshDriver.h" @11
+- include "nsThreadUtils.h" @12
+- function_definition GetIdlePeriodHint @29-69
+- function_definition GetLongIdlePeriod @72-72
+
+### xpcom/threads/MainThreadIdlePeriod.h
+
+Blob: `6605dc61d8d4625f0321130839e5f600cb728d3f`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/TimeStamp.h" @8
+- include "nsThreadUtils.h" @9
+- class_specifier MainThreadIdlePeriod @13-25
+- function_definition MainThreadIdlePeriod @15-17
+- function_definition ~MainThreadIdlePeriod @22-22
+
+### xpcom/threads/MainThreadUtils.h
+
+Blob: `e7dec4d88cb315b38a40ed75593d8810d42808e3`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/Assertions.h" @8
+- include "mozilla/ThreadSafety.h" @9
+- include "nscore.h" @10
+- class_specifier nsIThread @12-12
+- class_specifier MOZ_CAPABILITY @39-39
+- function_definition MOZ_ASSERT_CAPABILITY @46-46
+- function_definition MOZ_ASSERT_CAPABILITY @50-52
+
+### xpcom/threads/MaybeLeakRefPtr.h
+
+Blob: `1b1d1e532ec1893f803797bd4d9050637aa0bade`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/RefPtr.h" @10
+- class_specifier MaybeLeakRefPtr @22-39
+- function_definition MaybeLeakRefPtr @24-25
+- function_definition MaybeLeakRefPtr @26-26
+- function_definition (anonymous) @27-27
+- function_definition ~MaybeLeakRefPtr @29-35
+
+### xpcom/threads/Monitor.h
+
+Blob: `2dfd6e4298da22a6057156af94a1abac442580e6`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/CondVar.h" @8
+- include "mozilla/Mutex.h" @9
+- class_specifier MOZ_CAPABILITY @22-22
+- function_definition ~Monitor @27-27
+- function_definition Monitor @29-29
+- function_definition Monitor @30-30
+- function_definition MOZ_CAPABILITY_ACQUIRE @33-33
+- function_definition MOZ_TRY_ACQUIRE @34-36
+- function_definition MOZ_CAPABILITY_RELEASE @37-37
+- function_definition MOZ_REQUIRES @39-39
+- function_definition MOZ_REQUIRES @40-42
+- function_definition Notify @44-44
+- function_definition NotifyAll @45-45
+- function_definition MOZ_ASSERT_CAPABILITY @47-49
+- function_definition MonitorAutoLockBase @67-132
+- class_specifier MOZ_SCOPED_CAPABILITY @67-67
+- function_definition MOZ_CAPABILITY_ACQUIRE @70-73
+- function_definition MOZ_CAPABILITY_RELEASE @75-75
+- function_definition MonitorAutoLockBase @77-77
+- function_definition MonitorAutoLockBase @78-78
+- function_definition Wait @84-87
+- function_definition Wait @88-91
+- function_definition Notify @93-93
+- function_definition NotifyAll @94-94
+- function_definition MOZ_ASSERT_CAPABILITY @122-125
+- function_definition MonitorAutoUnlockBase @144-162
+- class_specifier MOZ_STACK_CLASS @144-144
+- function_definition MOZ_SCOPED_UNLOCK_RELEASE @147-150
+- function_definition MOZ_SCOPED_UNLOCK_REACQUIRE @152-152
+- function_definition MonitorAutoUnlockBase @154-154
+- function_definition MonitorAutoUnlockBase @155-155
+- function_definition ReleasableMonitorAutoLockBase @174-242
+- class_specifier MOZ_SCOPED_CAPABILITY @174-174
+- function_definition MOZ_CAPABILITY_ACQUIRE @177-181
+- function_definition MOZ_CAPABILITY_RELEASE @183-187
+- function_definition ReleasableMonitorAutoLockBase @189-189
+- function_definition ReleasableMonitorAutoLockBase @190-190
+- function_definition Wait @195-198
+- function_definition Wait @199-202
+- function_definition Notify @204-207
+- function_definition NotifyAll @208-211
+- function_definition MOZ_CAPABILITY_RELEASE @223-227
+- function_definition MOZ_CAPABILITY_ACQUIRE @228-232
+- function_definition MOZ_ASSERT_CAPABILITY @233-235
+
+### xpcom/threads/MozPromise.h
+
+Blob: `6cd3ae27bd9b3743393600f69bd38c1f1bf8c1f3`. Grammar: cpp. Status: contains-errors.
+
+- include <type_traits> @8
+- include <utility> @9
+- include "mozilla/Attributes.h" @11
+- include "mozilla/ErrorNames.h" @12
+- include "mozilla/Logging.h" @13
+- include "mozilla/Maybe.h" @14
+- include "mozilla/Monitor.h" @15
+- include "mozilla/Mutex.h" @16
+- include "mozilla/RefPtr.h" @17
+- include "mozilla/StaticString.h" @18
+- include "mozilla/UniquePtr.h" @19
+- include "mozilla/Variant.h" @20
+- include "nsIDirectTaskDispatcher.h" @21
+- include "nsISerialEventTarget.h" @22
+- include "nsTArray.h" @23
+- include "nsThreadUtils.h" @24
+- include "mozilla/jni/GeckoResultUtils.h" @27
+- include "nsPrintfCString.h" @43
+- class_specifier Promise @49-49
+- struct_specifier MethodTraitsHelper @59-59
+- struct_specifier MethodTraitsHelper<Ret (ThisType::*)(ArgTypes...)> @61-64
+- struct_specifier MethodTraitsHelper<Ret (ThisType::*)(ArgTypes...) const> @66-69
+- struct_specifier MethodTraitsHelper<Ret (ThisType::*)(ArgTypes...) volatile> @71-74
+- struct_specifier MethodTraitsHelper<Ret (ThisType::*)(ArgTypes...) @76-76
+- struct_specifier MethodTrait @81-81
+- class_specifier MozPromise @93-93
+- class_specifier MozPromiseRefcountable @148-153
+- function_definition ~MozPromiseRefcountable @152-152
+- class_specifier MozPromiseBase @155-158
+- class_specifier MozPromiseHolder @161-161
+- class_specifier MozPromiseHolderBase @163-163
+- class_specifier MozPromiseRequestHolder @165-165
+- class_specifier MozPromise @167-1378
+- function_definition MaybeMove @174-176
+- class_specifier ResolveOrRejectValue @181-230
+- function_definition SetResolve @184-188
+- function_definition SetReject @191-195
+- function_definition MakeResolve @198-202
+- function_definition MakeReject @205-209
+- function_definition IsResolve @211-211
+- function_definition IsReject @212-212
+- function_definition IsNothing @213-213
+- function_definition (anonymous) @215-217
+- function_definition (anonymous) @218-220
+- function_definition (anonymous) @221-223
+- function_definition (anonymous) @224-224
+- enum_specifier (anonymous) @227-227
+- function_definition MozPromise @235-246
+- class_specifier Private @257-257
+- function_definition CreateAndResolve @260-269
+- function_definition CreateAndReject @272-281
+- function_definition CreateAndResolveOrReject @284-289
+- class_specifier AllPromiseHolder @297-346
+- function_definition AllPromiseHolder @299-304
+- function_definition Resolve @307-326
+- function_definition Reject @329-338
+- function_definition Promise @340-340
+- class_specifier AllSettledPromiseHolder @363-398
+- function_definition AllSettledPromiseHolder @365-370
+- function_definition Settle @372-390
+- function_definition Promise @392-392
+- function_definition All @401-422
+- function_definition AllSettled @424-441
+- class_specifier Request @443-453
+- function_definition Request @448-448
+- function_definition ~Request @449-449
+- class_specifier ThenValueBase @462-667
+- class_specifier ResolveOrRejectRunnable @467-515
+- function_definition ResolveOrRejectRunnable @470-477
+- function_definition GetName @481-493
+- function_definition ~ResolveOrRejectRunnable @496-500
+- function_definition Run @502-508
+- function_definition Cancel @510-510
+- function_definition ThenValueBase @517-520
+- function_definition ~ThenValueBase @523-526
+- function_definition AssertIsDead @529-552
+- function_definition Dispatch @554-616
+- function_definition Disconnect @618-628
+- function_definition DoResolveOrReject @634-647
+- function_definition SetDispatchRv @649-653
+- function_definition InvokeMethod @673-681
+- function_definition InvokeCallbackMethod @685-694
+- function_definition MaybeChain @697-710
+- class_specifier ThenCommand @713-713
+- class_specifier ThenValue @716-716
+- class_specifier ThenValue<ThisType*, ResolveMethodType, RejectMethodType> @720-783
+- function_definition ThenValue @734-740
+- function_definition Disconnect @742-750
+- function_definition CompletionPromise @753-755
+- function_definition DoResolveOrRejectInternal @757-775
+- class_specifier ThenValue<ThisType*, ResolveRejectMethodType> @786-839
+- function_definition ThenValue @797-802
+- function_definition Disconnect @804-812
+- function_definition CompletionPromise @815-817
+- function_definition DoResolveOrRejectInternal @819-832
+- class_specifier ThenValue<ResolveFunction, RejectFunction> @844-913
+- function_definition ThenValue @857-863
+- function_definition Disconnect @865-874
+- function_definition CompletionPromise @877-879
+- function_definition DoResolveOrRejectInternal @881-905
+- class_specifier ThenValue<ResolveRejectFunction> @916-975
+- function_definition ThenValue @927-932
+- function_definition Disconnect @934-942
+- function_definition CompletionPromise @945-947
+- function_definition DoResolveOrRejectInternal @949-968
+- class_specifier MapValue @978-1021
+- function_definition MapValue @985-988
+- function_definition Disconnect @991-994
+- function_definition CompletionPromise @996-998
+- function_definition DoResolveOrRejectInternal @1000-1016
+- class_specifier MapErrValue @1024-1067
+- function_definition MapErrValue @1031-1034
+- function_definition Disconnect @1037-1040
+- function_definition CompletionPromise @1042-1044
+- function_definition DoResolveOrRejectInternal @1046-1062
+- function_definition ThenInternal @1070-1087
+- function_definition ThenCommand @1104-1181
+- class_specifier MOZ_TEMPORARY_CLASS @1104-1104
+- function_definition ThenCommand @1113-1116
+- function_definition ThenCommand @1118-1118
+- function_definition (anonymous) @1131-1145
+- function_definition Then @1148-1152
+- function_definition Map @1155-1159
+- function_definition MapErr @1162-1166
+- function_definition Track @1168-1171
+- function_definition operator-> @1175-1175
+- function_definition Then @1187-1192
+- function_definition Then @1197-1202
+- function_definition Map @1207-1212
+- function_definition MapErr @1217-1223
+- function_definition ChainTo @1225-1259
+- function_definition FromGeckoResult @1263-1275
+- function_definition AssertIsDead @1282-1292
+- function_definition IsPending @1302-1302
+- function_definition (anonymous) @1304-1309
+- function_definition DispatchAll @1311-1322
+- function_definition ForwardTo @1324-1331
+- function_definition ~MozPromise @1333-1349
+- class_specifier MozPromise<ResolveValueT, RejectValueT, IsExclusive>::Private @1381-1516
+- function_definition Private @1384-1386
+- function_definition Resolve @1389-1404
+- function_definition Reject @1407-1422
+- function_definition ResolveOrReject @1425-1440
+- function_definition UseSynchronousTaskDispatch @1445-1458
+- function_definition UseDirectTaskDispatch @1465-1477
+- function_definition SetTaskPriority @1482-1496
+- function_definition RequireTailDispatch @1503-1515
+- class_specifier MozPromiseHolderBase @1537-1656
+- function_definition MozPromiseHolderBase @1539-1539
+- function_definition MozPromiseHolderBase @1541-1541
+- function_definition (anonymous) @1542-1543
+- function_definition ~MozPromiseHolderBase @1545-1545
+- function_definition Ensure @1547-1554
+- function_definition IsEmpty @1556-1559
+- function_definition Steal @1561-1564
+- function_definition Resolve @1567-1578
+- function_definition ResolveIfExists @1581-1586
+- function_definition Reject @1589-1599
+- function_definition RejectIfExists @1602-1607
+- function_definition ResolveOrReject @1610-1617
+- function_definition ResolveOrRejectIfExists @1620-1626
+- function_definition UseSynchronousTaskDispatch @1628-1631
+- function_definition UseDirectTaskDispatch @1633-1636
+- function_definition SetTaskPriority @1638-1641
+- function_definition RequireTailDispatch @1649-1652
+- class_specifier MozPromiseHolder @1659-1665
+- class_specifier MozMonitoredPromiseHolder @1668-1686
+- function_definition MozMonitoredPromiseHolder @1673-1676
+- function_definition MozMonitoredPromiseHolder @1678-1678
+- function_definition (anonymous) @1679-1680
+- function_definition Check @1682-1682
+- class_specifier MozPromiseRequestHolder @1693-1726
+- function_definition MozPromiseRequestHolder @1695-1695
+- function_definition ~MozPromiseRequestHolder @1696-1696
+- function_definition Track @1698-1701
+- function_definition Complete @1703-1706
+- function_definition Disconnect @1710-1714
+- function_definition DisconnectIfExists @1716-1720
+- function_definition Exists @1722-1722
+- function_definition InvokeAsync @1742-1849
+- class_specifier MethodCallBase @1742-1830
+- class_specifier MethodCall @1750-1767
+- function_definition MethodCall @1753-1759
+- function_definition Invoke @1761-1761
+- class_specifier ProxyRunnable @1771-1793
+- function_definition ProxyRunnable @1773-1778
+- function_definition Run @1780-1785
+- function_definition Cancel @1787-1787
+- function_definition InvokeAsyncImpl @1797-1816
+- function_definition Any @1818-1818
+- function_definition Any @1821-1823
+- function_definition Any @1826-1828
+- function_definition InvokeAsync @1856-1871
+- class_specifier ProxyFunctionRunnable @1876-1899
+- function_definition ProxyFunctionRunnable @1881-1885
+- function_definition Run @1887-1892
+- function_definition Cancel @1894-1894
+- function_definition InvokeAsync @1911-1928
+
+### xpcom/threads/Mutex.h
+
+Blob: `d81972ec77afd30840c3986c97df3cb13c81200a`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/BlockingResourceBase.h" @8
+- include "mozilla/Maybe.h" @9
+- include "mozilla/PlatformMutex.h" @10
+- include "mozilla/ThreadSafety.h" @11
+- include "nsISupports.h" @12
+- class_specifier MOZ_CAPABILITY @36-36
+- function_definition OffTheBooksMutex @63-63
+- function_definition OffTheBooksMutex @64-64
+- function_definition MOZ_CAPABILITY_ACQUIRE @71-71
+- function_definition MOZ_TRY_ACQUIRE @76-76
+- function_definition MOZ_CAPABILITY_RELEASE @81-81
+- function_definition MOZ_ASSERT_CAPABILITY @88-88
+- class_specifier Mutex @125-136
+- function_definition Mutex @127-129
+- function_definition Mutex @131-133
+- function_definition Mutex @134-134
+- function_definition (anonymous) @135-135
+- class_specifier MOZ_RAII @140-140
+- function_definition BaseAutoLock @150-206
+- class_specifier MOZ_RAII @150-150
+- function_definition MOZ_CAPABILITY_ACQUIRE @160-162
+- function_definition MOZ_CAPABILITY_RELEASE @164-164
+- function_definition BaseAutoLock @166-166
+- function_definition BaseAutoLock @167-167
+- function_definition MOZ_ASSERT_CAPABILITY @195-198
+- class_specifier Maybe<detail::BaseAutoLock<MutexType&>> @218-245
+- function_definition Maybe @220-220
+- function_definition ~Maybe @221-225
+- function_definition isSome @227-227
+- function_definition isNothing @228-228
+- function_definition MOZ_NO_THREAD_SAFETY_ANALYSIS @230-234
+- function_definition MOZ_NO_THREAD_SAFETY_ANALYSIS @236-241
+- function_definition ReleasableBaseAutoLock @256-313
+- class_specifier MOZ_RAII @256-256
+- function_definition MOZ_CAPABILITY_ACQUIRE @266-270
+- function_definition MOZ_CAPABILITY_RELEASE @272-276
+- function_definition ReleasableBaseAutoLock @278-278
+- function_definition ReleasableBaseAutoLock @279-279
+- function_definition MOZ_ASSERT_CAPABILITY @282-285
+- function_definition MOZ_CAPABILITY_RELEASE @297-301
+- function_definition MOZ_CAPABILITY_ACQUIRE @302-306
+- function_definition BaseAutoUnlock @330-354
+- class_specifier MOZ_RAII @330-330
+- function_definition MOZ_SCOPED_UNLOCK_RELEASE @332-335
+- function_definition BaseAutoUnlock @337-342
+- function_definition MOZ_SCOPED_UNLOCK_REACQUIRE @344-344
+- function_definition BaseAutoUnlock @346-346
+- function_definition BaseAutoUnlock @347-347
+- function_definition BaseAutoTryLock @372-392
+- class_specifier MOZ_RAII @372-372
+- function_definition MOZ_CAPABILITY_ACQUIRE @374-375
+- function_definition MOZ_CAPABILITY_RELEASE @377-382
+- function_definition BaseAutoTryLock @384-384
+- function_definition (anonymous) @387-387
+
+### xpcom/threads/Queue.h
+
+Blob: `9f8fc7ad8b2c1c050b84e2a80f817332955b2287`. Grammar: cpp. Status: syntax-clean.
+
+- include <stdint.h> @8
+- include <algorithm> @10
+- include <limits> @11
+- include <utility> @12
+- include "mozilla/Assertions.h" @14
+- include "mozilla/MemoryReporting.h" @15
+- include "mozilla/mozalloc.h" @16
+- class_specifier Queue @50-247
+- function_definition Queue @52-52
+- function_definition Queue @54-59
+- function_definition (anonymous) @61-70
+- function_definition ~Queue @72-72
+- function_definition Clear @75-85
+- function_definition (anonymous) @87-134
+- function_definition IsEmpty @136-136
+- function_definition Pop @138-161
+- function_definition (anonymous) @163-166
+- function_definition (anonymous) @168-171
+- function_definition Count @173-173
+- function_definition ShallowSizeOfExcludingThis @175-181
+- function_definition ShallowSizeOfIncludingThis @183-185
+- function_definition Iterate @188-207
+- struct_specifier Page @220-223
+- struct_specifier Page @221-221
+- function_definition NewPage @225-227
+- function_definition IterateOverPage @230-239
+- function_definition ImplCycleCollectionUnlink @252-255
+- function_definition ImplCycleCollectionIndexedContainer @258-261
+
+### xpcom/threads/RWLock.cpp
+
+Blob: `846477a64207b1d7aff3a64f2fb0d65fefdace08`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/RWLock.h" @5
+- function_definition RWLock @9-16
+- function_definition LockedForWritingByCurrentThread @19-21
+
+### xpcom/threads/RWLock.h
+
+Blob: `183e17f245501449f422be86b609d567e88cd1b3`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/Assertions.h" @10
+- include "mozilla/Atomics.h" @11
+- include "mozilla/Attributes.h" @12
+- include "mozilla/BlockingResourceBase.h" @13
+- include "mozilla/PlatformRWLock.h" @14
+- include "mozilla/ThreadSafety.h" @15
+- class_specifier MOZ_CAPABILITY @41-41
+- function_definition MOZ_SHARED_TRYLOCK_FUNCTION @59-61
+- function_definition MOZ_ACQUIRE_SHARED @62-62
+- function_definition MOZ_RELEASE_SHARED @63-63
+- function_definition MOZ_TRY_ACQUIRE @64-66
+- function_definition MOZ_CAPABILITY_ACQUIRE @67-67
+- function_definition MOZ_EXCLUSIVE_RELEASE @68-70
+- function_definition BaseAutoTryReadLock @82-101
+- class_specifier MOZ_RAII @82-82
+- function_definition ~BaseAutoTryReadLock @87-91
+- function_definition BaseAutoTryReadLock @93-93
+- function_definition BaseAutoTryReadLock @94-94
+- function_definition (anonymous) @97-97
+- function_definition BaseAutoReadLock @104-123
+- class_specifier MOZ_SCOPED_CAPABILITY @104-104
+- function_definition MOZ_ACQUIRE_SHARED @106-110
+- function_definition MOZ_RELEASE_GENERIC @115-115
+- function_definition BaseAutoReadLock @117-117
+- function_definition BaseAutoReadLock @118-118
+- function_definition BaseAutoTryWriteLock @127-146
+- class_specifier MOZ_RAII @127-127
+- function_definition ~BaseAutoTryWriteLock @132-136
+- function_definition BaseAutoTryWriteLock @138-138
+- function_definition BaseAutoTryWriteLock @139-139
+- function_definition (anonymous) @142-142
+- function_definition MOZ_RAII @149-165
+- class_specifier MOZ_SCOPED_CAPABILITY @149-149
+- function_definition MOZ_CAPABILITY_ACQUIRE @151-155
+- function_definition MOZ_CAPABILITY_RELEASE @157-157
+- function_definition BaseAutoWriteLock @159-159
+- function_definition BaseAutoWriteLock @160-160
+- class_specifier MOZ_ONLY_USED_TO_AVOID_STATIC_CONSTRUCTORS @183-183
+- function_definition StaticRWLock @190-190
+- function_definition StaticRWLock @203-203
+- function_definition MOZ_SHARED_TRYLOCK_FUNCTION @206-208
+- function_definition MOZ_ACQUIRE_SHARED @209-209
+- function_definition MOZ_RELEASE_SHARED @210-210
+- function_definition MOZ_TRY_ACQUIRE @211-213
+- function_definition MOZ_CAPABILITY_ACQUIRE @214-214
+- function_definition MOZ_EXCLUSIVE_RELEASE @215-215
+- function_definition mozilla_RWLock_h @218-229
+
+### xpcom/threads/RecursiveMutex.cpp
+
+Blob: `e5a67d6aa9ef81a1cd7588e61f3cc126de8de3d9`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/RecursiveMutex.h" @5
+- include <windows.h> @8
+- function_definition RecursiveMutex @15-54
+- function_definition ~RecursiveMutex @56-63
+- function_definition LockInternal @65-72
+- function_definition UnlockInternal @74-81
+
+### xpcom/threads/RecursiveMutex.h
+
+Blob: `e2b5daa19b8678fbc2e4dbc94f02d0e4c90461c0`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/BlockingResourceBase.h" @10
+- include "mozilla/ThreadSafety.h" @11
+- include <pthread.h> @14
+- class_specifier MOZ_CAPABILITY @19-19
+- function_definition MOZ_CAPABILITY_ACQUIRE @33-33
+- function_definition MOZ_CAPABILITY_RELEASE @34-34
+- function_definition MOZ_EXCLUDES @45-47
+- function_definition MOZ_ASSERT_CAPABILITY @49-49
+- function_definition MOZ_EXCLUDES @50-50
+- function_definition RecursiveMutexAutoLock @72-93
+- class_specifier MOZ_RAII @72-72
+- function_definition MOZ_CAPABILITY_ACQUIRE @75-79
+- function_definition MOZ_CAPABILITY_RELEASE @81-83
+- function_definition RecursiveMutexAutoLock @85-85
+- function_definition RecursiveMutexAutoLock @86-86
+- function_definition RecursiveMutexAutoUnlock @95-116
+- class_specifier MOZ_RAII @95-95
+- function_definition MOZ_SCOPED_UNLOCK_RELEASE @98-102
+- function_definition MOZ_SCOPED_UNLOCK_REACQUIRE @104-106
+- function_definition RecursiveMutexAutoUnlock @108-108
+- function_definition RecursiveMutexAutoUnlock @109-109
+
+### xpcom/threads/ReentrantMonitor.h
+
+Blob: `dd9ea2c0b433d25d66d06a52ccc607cae76010f2`. Grammar: cpp. Status: contains-errors.
+
+- include "prmon.h" @8
+- include "mozilla/ProfilerThreadSleep.h" @11
+- include "mozilla/BlockingResourceBase.h" @14
+- include "mozilla/ThreadSafety.h" @15
+- include "nsISupports.h" @16
+- class_specifier MOZ_CAPABILITY @35-35
+- function_definition MOZ_CAPABILITY_ACQUIRE @72-72
+- function_definition MOZ_CAPABILITY_RELEASE @78-78
+- function_definition Wait @84-92
+- function_definition Notify @105-108
+- function_definition NotifyAll @114-117
+- function_definition MOZ_ASSERT_CAPABILITY @124-126
+- function_definition MOZ_ASSERT_CAPABILITY @137-137
+- function_definition ReentrantMonitorAutoEnter @160-197
+- class_specifier MOZ_SCOPED_CAPABILITY @160-160
+- function_definition MOZ_CAPABILITY_ACQUIRE @171-175
+- function_definition MOZ_CAPABILITY_RELEASE @177-179
+- function_definition Wait @181-183
+- function_definition Notify @185-185
+- function_definition NotifyAll @186-186
+- function_definition ReentrantMonitorAutoExit @206-245
+- class_specifier MOZ_SCOPED_CAPABILITY @206-206
+- function_definition MOZ_EXCLUSIVE_RELEASE @218-223
+- function_definition MOZ_EXCLUSIVE_RELEASE @225-232
+- function_definition MOZ_EXCLUSIVE_RELEASE @234-236
+
+### xpcom/threads/SchedulerGroup.cpp
+
+Blob: `06d70f51b0dc724da05ffd274e71c53fb073739f`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/SchedulerGroup.h" @5
+- include "nsThreadUtils.h" @7
+- function_definition Dispatch @12-21
+
+### xpcom/threads/SchedulerGroup.h
+
+Blob: `369bd64fdee34b753a25ce350bdad2b2d67a7573`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/AlreadyAddRefed.h" @8
+- include "nsIEventTarget.h" @9
+- class_specifier SchedulerGroup @13-18
+
+### xpcom/threads/SharedThreadPool.cpp
+
+Blob: `d340831906e33fc2933afeac57ff44884e833fa1`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/SharedThreadPool.h" @5
+- include "mozilla/AppShutdown.h" @7
+- include "mozilla/Logging.h" @8
+- include "mozilla/Monitor.h" @9
+- include "mozilla/ReentrantMonitor.h" @10
+- include "mozilla/Services.h" @11
+- include "mozilla/SpinEventLoopUntil.h" @12
+- include "mozilla/StaticPtr.h" @13
+- include "nsComponentManagerUtils.h" @14
+- include "nsIObserver.h" @15
+- include "nsIObserverService.h" @16
+- include "nsIThreadManager.h" @17
+- include "nsTHashMap.h" @18
+- include "nsThreadPool.h" @19
+- include "nsXPCOMCIDInternal.h" @20
+- function_definition CreateThreadPool @35-60
+- class_specifier SharedThreadPoolShutdownObserver @62-68
+- function_definition ~SharedThreadPoolShutdownObserver @67-67
+- function_definition Observe @72-102
+- function_definition InitStatics @104-113
+- function_definition Get @115-152
+- function_definition SharedThreadPool @156-156
+- function_definition ~SharedThreadPool @158-158
+- function_definition EnsureThreadLimitIsAtLeast @160-172
+
+### xpcom/threads/SharedThreadPool.h
+
+Blob: `ffdae40b11b7bd3583d929e48ff968e9738ef202`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/AlreadyAddRefed.h" @8
+- include "mozilla/MaybeLeakRefPtr.h" @9
+- include "nsCOMPtr.h" @10
+- include "nsID.h" @11
+- include "nsIThreadPool.h" @12
+- include "nsString.h" @13
+- include "nscore.h" @14
+- class_specifier nsIRunnable @16-16
+- class_specifier SharedThreadPool @37-109
+- function_definition DispatchFromEndOfTaskInThisPool @53-55
+- function_definition DispatchFromScript @57-60
+- function_definition Dispatch @62-69
+- function_definition DelayedDispatch @71-73
+- function_definition RegisterShutdownTask @77-79
+- function_definition UnregisterShutdownTask @81-83
+- function_definition IsOnCurrentThread @85-87
+- function_definition IsOnCurrentThreadInfallible @89-91
+- function_definition GetFeatures @96-98
+
+### xpcom/threads/SpinEventLoopUntil.h
+
+Blob: `25c96682e17cfcf7fdca42ce904316c13ce12cf7`. Grammar: cpp. Status: contains-errors.
+
+- include "MainThreadUtils.h" @8
+- include "mozilla/Maybe.h" @9
+- include "mozilla/ProfilerLabels.h" @10
+- include "mozilla/ProfilerMarkers.h" @11
+- include "mozilla/StaticMutex.h" @12
+- include "nsString.h" @13
+- include "nsThreadUtils.h" @14
+- include "xpcpublic.h" @15
+- class_specifier nsIThread @17-17
+- enum_specifier ProcessFailureBehavior @75-78
+- function_definition AutoNestedEventLoopAnnotation @84-141
+- struct_specifier MOZ_STACK_CLASS @84-84
+- function_definition AutoNestedEventLoopAnnotation @85-98
+- function_definition ~AutoNestedEventLoopAnnotation @100-111
+- function_definition AutoNestedEventLoopAnnotation @113-113
+- function_definition CopyCurrentStack @117-127
+- function_definition SpinEventLoopUntil @154-185
+
+### xpcom/threads/StateMirroring.h
+
+Blob: `72f77a03641ed3503c2b0823bf67464ec95cba5a`. Grammar: cpp. Status: contains-errors.
+
+- include <cstddef> @8
+- include "mozilla/AbstractThread.h" @10
+- include "mozilla/AlreadyAddRefed.h" @11
+- include "mozilla/Assertions.h" @12
+- include "mozilla/Logging.h" @13
+- include "mozilla/Maybe.h" @14
+- include "mozilla/RefPtr.h" @15
+- include "mozilla/StateWatching.h" @16
+- include "nsCOMPtr.h" @17
+- include "nsIRunnable.h" @18
+- include "nsISupports.h" @19
+- include "nsTArray.h" @20
+- include "nsThreadUtils.h" @21
+- class_specifier AbstractMirror @58-58
+- class_specifier AbstractCanonical @67-79
+- function_definition AbstractCanonical @70-70
+- function_definition OwnerThread @74-74
+- function_definition ~AbstractCanonical @77-77
+- class_specifier AbstractMirror @88-101
+- function_definition AbstractMirror @91-91
+- function_definition OwnerThread @96-96
+- function_definition ~AbstractMirror @99-99
+- class_specifier Canonical @117-287
+- function_definition Canonical @119-122
+- function_definition ~Canonical @124-124
+- class_specifier Impl @127-249
+- function_definition Impl @131-138
+- function_definition ConnectMirror @140-148
+- function_definition AddMirror @150-156
+- function_definition RemoveMirror @158-163
+- function_definition DisconnectAll @165-173
+- function_definition (anonymous) @175-178
+- function_definition Set @180-208
+- function_definition (anonymous) @210-213
+- function_definition (anonymous) @214-217
+- function_definition Impl @218-218
+- function_definition ~Impl @221-221
+- function_definition DoNotify @224-239
+- function_definition MakeNotifier @241-244
+- function_definition ConnectMirror @262-264
+- function_definition DisconnectAll @265-265
+- function_definition (anonymous) @268-268
+- function_definition operator& @269-269
+- function_definition (anonymous) @272-272
+- function_definition (anonymous) @273-273
+- function_definition Set @274-274
+- function_definition (anonymous) @275-278
+- function_definition (anonymous) @279-282
+- function_definition Canonical @283-283
+- class_specifier Mirror @301-446
+- function_definition Mirror @303-305
+- function_definition ~Mirror @307-314
+- class_specifier Impl @317-418
+- function_definition Impl @321-328
+- function_definition (anonymous) @330-333
+- function_definition ConnectedOnCanonicalThread @335-344
+- function_definition SetCanonical @346-355
+- function_definition UpdateValue @357-363
+- function_definition NotifyDisconnected @365-370
+- function_definition IsConnected @372-372
+- function_definition Connect @374-387
+- function_definition DisconnectIfConnected @389-403
+- function_definition AssertNoIncomingConnects @405-407
+- function_definition ~Impl @410-410
+- function_definition Connect @433-433
+- function_definition DisconnectIfConnected @434-434
+- function_definition (anonymous) @437-437
+- function_definition operator& @438-438
+- function_definition (anonymous) @441-441
+- function_definition (anonymous) @442-442
+
+### xpcom/threads/StateWatching.h
+
+Blob: `7560bc3b5e6f261ee6a6972ed2b38ed6684c832d`. Grammar: cpp. Status: contains-errors.
+
+- include <cstddef> @8
+- include <new> @9
+- include <utility> @10
+- include "mozilla/AbstractThread.h" @12
+- include "mozilla/Assertions.h" @13
+- include "mozilla/Logging.h" @14
+- include "mozilla/RefPtr.h" @15
+- include "nsCycleCollectionNoteChild.h" @16
+- include "nsISupports.h" @17
+- include "nsTArray.h" @18
+- include "nsThreadUtils.h" @19
+- class_specifier AbstractWatcher @71-81
+- function_definition AbstractWatcher @74-74
+- function_definition IsDestroyed @75-75
+- function_definition ~AbstractWatcher @79-79
+- class_specifier WatchTarget @91-128
+- function_definition WatchTarget @93-93
+- function_definition AddWatcher @95-98
+- function_definition RemoveWatcher @100-103
+- function_definition NotifyWatchers @106-112
+- function_definition PruneWatchers @119-122
+- class_specifier Watchable @134-156
+- function_definition Watchable @136-137
+- function_definition (anonymous) @139-139
+- function_definition (anonymous) @140-140
+- function_definition (anonymous) @142-149
+- function_definition Watchable @151-151
+- function_definition (anonymous) @152-152
+- function_definition ImplCycleCollectionUnlink @159-161
+- function_definition ImplCycleCollectionTraverse @164-168
+- class_specifier WatchManager @188-309
+- function_definition WatchManager @191-192
+- function_definition ~WatchManager @194-198
+- function_definition IsShutdown @200-200
+- function_definition Shutdown @204-211
+- function_definition Watch @213-216
+- function_definition Unwatch @218-223
+- function_definition ManualNotify @225-230
+- class_specifier PerCallbackWatcher @233-281
+- function_definition PerCallbackWatcher @235-239
+- function_definition Destroy @241-245
+- function_definition Notify @247-268
+- function_definition CallbackMethodIs @270-272
+- function_definition ~PerCallbackWatcher @275-275
+- function_definition GetWatcher @283-291
+- function_definition (anonymous) @293-304
+
+### xpcom/threads/StaticBackgroundTaskQueue.cpp
+
+Blob: `ebb26cae9cf86a4930207d2e9151dd2f04db897d`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/StaticBackgroundTaskQueue.h" @5
+- include "nsThreadUtils.h" @7
+- function_definition StaticBackgroundTaskQueue @11-12
+- function_definition Get @14-17
+- function_definition Impl::Impl @21-28
+- function_definition Impl::TargetShutdown @30-33
+
+### xpcom/threads/StaticBackgroundTaskQueue.h
+
+Blob: `4e16b61aff513a75992ff1c59c4116ba3b7d22ef`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/Attributes.h" @8
+- include "mozilla/Mutex.h" @9
+- include "mozilla/NeverDestroyed.h" @10
+- include "mozilla/StaticString.h" @11
+- include "nsCOMPtr.h" @12
+- include "nsITargetShutdownTask.h" @13
+- function_definition StaticBackgroundTaskQueue @35-61
+- class_specifier MOZ_STATIC_LOCAL_CLASS @35-35
+- struct_specifier Impl @45-58
+- function_definition AddRef @50-50
+- function_definition Release @51-51
+
+### xpcom/threads/StaticString.h
+
+Blob: `ae268089279724c88428e545983158892b8984ec`. Grammar: cpp. Status: contains-errors.
+
+- include <cstddef> @8
+- include "mozilla/Attributes.h" @10
+- class_specifier nsTLiteralString @14-14
+- class_specifier StaticString @59-93
+- function_definition mStr @65-65
+- function_definition StaticString @85-85
+- function_definition StaticString @86-86
+- function_definition ~StaticString @87-87
+- function_definition operator const char* @89-89
+- function_definition get @92-92
+
+### xpcom/threads/StopGapEventTarget.cpp
+
+Blob: `f8866736911a9a9e63044ca9de5fabae68237371`. Grammar: cpp. Status: contains-errors.
+
+- include "StopGapEventTarget.h" @5
+- include "nsITargetShutdownTask.h" @7
+- function_definition StopGapEventTarget @12-13
+- function_definition ~StopGapEventTarget @15-24
+- function_definition IsOnCurrentThreadInfallible @26-29
+- function_definition IsOnCurrentThread @31-34
+- function_definition Dispatch @36-46
+- function_definition DispatchFromScript @48-52
+- function_definition DelayedDispatch @54-57
+- function_definition RegisterShutdownTask @59-62
+- function_definition UnregisterShutdownTask @64-67
+- function_definition GetFeatures @69-71
+- function_definition SetRealEventTarget @73-97
+
+### xpcom/threads/StopGapEventTarget.h
+
+Blob: `0e54c57d8a4071f4895603ab5c6aca861d75dfc8`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/Mutex.h" @8
+- include "mozilla/Queue.h" @9
+- include "nsCOMPtr.h" @10
+- include "nsISerialEventTarget.h" @11
+- include "nsISupports.h" @12
+- include "nsTArray.h" @13
+- class_specifier StopGapEventTarget @22-43
+- struct_specifier TaskStruct @35-38
+
+### xpcom/threads/SyncRunnable.h
+
+Blob: `387c5b91c1a42a8a14e1b34d9871165353ba00f9`. Grammar: cpp. Status: contains-errors.
+
+- include <utility> @8
+- include "mozilla/AbstractThread.h" @10
+- include "mozilla/Monitor.h" @11
+- include "mozilla/dom/JSExecutionManager.h" @12
+- include "nsThreadUtils.h" @13
+- class_specifier SyncRunnable @34-151
+- function_definition SyncRunnable @36-40
+- function_definition SyncRunnable @42-46
+- function_definition DispatchToThread @48-74
+- function_definition DispatchToThread @76-95
+- function_definition DispatchToThread @97-102
+- function_definition DispatchToThread @104-109
+- function_definition DispatchToThread @111-116
+- function_definition DispatchToThread @118-123
+- function_definition DispatchToThread @127-129
+- function_definition DispatchToThread @130-132
+- function_definition Run @135-145
+
+### xpcom/threads/SynchronizedEventQueue.cpp
+
+Blob: `b2dfc7f00ed4e6e3cc91360152f6a9b2bf32a412`. Grammar: cpp. Status: syntax-clean.
+
+- include "SynchronizedEventQueue.h" @5
+- include "nsIThreadInternal.h" @7
+- function_definition AddObserver @11-15
+- function_definition RemoveObserver @17-20
+- function_definition (anonymous) @22-25
+
+### xpcom/threads/SynchronizedEventQueue.h
+
+Blob: `5ae7850cf11d7c6e561275161290cf7144d6542a`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/AlreadyAddRefed.h" @8
+- include "mozilla/EventQueue.h" @9
+- include "mozilla/MemoryReporting.h" @10
+- include "mozilla/Mutex.h" @11
+- include "nsCOMPtr.h" @12
+- include "nsIThreadInternal.h" @13
+- include "nsTObserverArray.h" @14
+- class_specifier nsIEventTarget @16-16
+- class_specifier nsISerialEventTarget @17-17
+- class_specifier nsIThreadObserver @18-18
+- class_specifier ThreadTargetSink @36-58
+- function_definition SizeOfIncludingThis @49-51
+- function_definition ~ThreadTargetSink @57-57
+- class_specifier SynchronizedEventQueue @60-125
+- function_definition SizeOfExcludingThis @84-90
+- function_definition ~SynchronizedEventQueue @121-121
+
+### xpcom/threads/TargetShutdownTaskSet.h
+
+Blob: `d0c2ab80505d150999a91b7c3dbb4d82435f767f`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/LinkedList.h" @8
+- include "nsITargetShutdownTask.h" @9
+- class_specifier nsIRunnable @11-11
+- class_specifier TargetShutdownTaskSet @17-84
+- function_definition TargetShutdownTaskSet @22-22
+- function_definition TargetShutdownTaskSet @23-23
+- function_definition TargetShutdownTaskSet @24-24
+- function_definition AddTask @30-41
+- function_definition RemoveTask @47-55
+- function_definition Extract @59-72
+- function_definition IsEmpty @74-74
+- function_definition ~TargetShutdownTaskSet @76-76
+
+### xpcom/threads/TaskController.cpp
+
+Blob: `531c21cdba01c1ef77c4c0db0e6324282db1112f`. Grammar: cpp. Status: contains-errors.
+
+- include "TaskController.h" @5
+- include <algorithm> @7
+- include "GeckoProfiler.h" @9
+- include "mozilla/AppShutdown.h" @10
+- include "mozilla/BackgroundHangMonitor.h" @11
+- include "mozilla/EventQueue.h" @12
+- include "mozilla/FlowMarkers.h" @13
+- include "mozilla/Hal.h" @14
+- include "mozilla/IOInterposer.h" @15
+- include "mozilla/InputTaskManager.h" @16
+- include "mozilla/Perfetto.h" @17
+- include "mozilla/SchedulerGroup.h" @18
+- include "mozilla/ScopeExit.h" @19
+- include "mozilla/StaticPrefs_memory.h" @20
+- include "mozilla/StaticPtr.h" @21
+- include "mozilla/VsyncTaskManager.h" @22
+- include "nsIIdleRunnable.h" @23
+- include "nsIRunnable.h" @24
+- include "nsIThreadInternal.h" @25
+- include "nsThread.h" @26
+- include "nsThreadUtils.h" @27
+- include "prenv.h" @28
+- include "prsystem.h" @29
+- struct_specifier PoolThread @40-53
+- function_definition PoolThread @51-52
+- function_definition GetPoolThreadCount @56-74
+- struct_specifier TaskMarker @84-143
+- function_definition TranslateMarkerInputToSchema @119-124
+- function_definition StreamJSONMarkerData @126-142
+- struct_specifier IncompleteTaskMarker @147-206
+- function_definition TranslateMarkerInputToSchema @182-187
+- function_definition StreamJSONMarkerData @189-205
+- function_definition RunTask @209-241
+- function_definition RunTask @243-243
+- function_definition UpdateCachesForCurrentIterationAndReportPriorityModifierChanged @246-261
+- function_definition AutoSetMainThreadRunnableName @264-279
+- class_specifier MOZ_RAII @264-264
+- function_definition ~AutoSetMainThreadRunnableName @281-283
+- function_definition GetHighestPriorityDependency @290-312
+- class_specifier InterruptiblePurgeTask @321-346
+- function_definition InterruptiblePurgeTask @323-326
+- function_definition RequestInterrupt @330-330
+- function_definition GetName @332-335
+- function_definition KeepPurging @341-343
+- function_definition Initialize @358-361
+- function_definition ThreadFuncPoolThread @363-366
+- function_definition TaskController @368-384
+- function_definition InitializeThreadPool @386-404
+- function_definition GetThreadStackSize @407-409
+- function_definition SetPerformanceCounterState @411-414
+- function_definition Shutdown @417-439
+- function_definition ShutdownThreadPoolInternal @441-455
+- function_definition RunPoolThread @457-526
+- function_definition AddTask @528-598
+- function_definition DispatchThreadableTasks @600-605
+- function_definition MaybeDispatchOneThreadableTask @607-629
+- function_definition TakeThreadableTaskToRun @631-653
+- function_definition SelectThread @655-666
+- function_definition WaitForTaskOrMessage @668-674
+- function_definition ExecuteNextTaskOnlyMainThread @676-680
+- function_definition ProcessPendingMTTask @682-726
+- function_definition ReprioritizeTask @728-745
+- class_specifier RunnableTask @749-786
+- function_definition RunnableTask @751-753
+- function_definition Run @755-759
+- function_definition SetIdleDeadline @761-766
+- function_definition GetName @768-782
+- function_definition DispatchRunnable @788-796
+- function_definition GetRunnableForMTTask @798-811
+- function_definition HasMainThreadPendingTasks @813-892
+- function_definition PendingMainthreadTaskCountIncludingSuspended @894-897
+- function_definition UpdateMemoryCleanupPrefs @900-903
+- function_definition PrefChangeCallback @905-910
+- function_definition SetupMemoryCleanup @913-917
+- function_definition CancelMemoryCleanupTimer @921-927
+- function_definition ScheduleWantsLaterTimer @929-961
+- function_definition ScheduleMemoryCleanup @965-977
+- struct_specifier LazyPurgePeekMarker @981-1001
+- function_definition StreamJSONMarkerData @992-997
+- function_definition CheckMemoryCleanupNeeded @1018-1080
+- struct_specifier LazyPurgeMarker @1084-1107
+- function_definition StreamJSONMarkerData @1098-1103
+- function_definition Run @1119-1170
+- function_definition MayScheduleMemoryCleanup @1172-1190
+- function_definition RequestMemoryCleanup @1192-1202
+- function_definition IsSuspended @1205-1212
+- function_definition MOZ_REQUIRES @1215-1288
+- function_definition MOZ_REQUIRES @1291-1456
+- function_definition GetFinalDependency @1458-1466
+- function_definition MaybeInterruptTask @1468-1546
+- function_definition GetHighestPriorityMTTask @1548-1555
+- function_definition EnsureMainThreadTasksScheduled @1557-1565
+- function_definition ProcessUpdatedPriorityModifier @1567-1590
+
+### xpcom/threads/TaskController.h
+
+Blob: `3f9c2e1b7508db6c87f6002aacef5c679ae1ae1c`. Grammar: cpp. Status: contains-errors.
+
+- include <atomic> @8
+- include <set> @9
+- include <stack> @10
+- include <vector> @11
+- include "MainThreadUtils.h" @13
+- include "mozilla/CondVar.h" @14
+- include "mozilla/EventQueue.h" @15
+- include "mozilla/IdlePeriodState.h" @16
+- include "mozilla/Mutex.h" @17
+- include "mozilla/RefPtr.h" @18
+- include "mozilla/StaticPtr.h" @19
+- include "mozilla/StaticString.h" @20
+- include "mozilla/TimeStamp.h" @21
+- include "mozilla/UniquePtr.h" @22
+- include "nsISupportsImpl.h" @23
+- include "nsThreadUtils.h" @24
+- class_specifier nsIRunnable @26-26
+- class_specifier nsIThreadObserver @27-27
+- class_specifier Task @31-31
+- class_specifier TaskController @32-32
+- class_specifier PerformanceCounter @33-33
+- class_specifier PerformanceCounterState @34-34
+- struct_specifier PoolThread @35-35
+- class_specifier TaskManager @65-110
+- function_definition TaskManager @69-69
+- function_definition IsSuspended @76-76
+- function_definition GetPriorityModifierForEventLoopTurn @81-84
+- function_definition DidQueueTask @86-86
+- function_definition WillRunTask @90-90
+- function_definition DidRunTask @93-93
+- function_definition PendingTaskCount @94-94
+- function_definition ~TaskManager @97-97
+- enum_specifier IterationType @102-102
+- class_specifier Task @121-254
+- enum_specifier Kind @123-133
+- function_definition GetKind @137-137
+- function_definition GetPriority @140-140
+- function_definition GetSeqNo @141-141
+- function_definition RequestInterrupt @149-149
+- function_definition AddDependency @156-160
+- function_definition SetManager @164-168
+- function_definition GetManager @169-169
+- struct_specifier PriorityCompare @171-179
+- function_definition operator() @172-178
+- function_definition SetIdleDeadline @183-183
+- function_definition GetPerformanceCounter @185-185
+- function_definition GetName @191-191
+- function_definition Task @195-197
+- function_definition Task @199-202
+- function_definition ~Task @204-204
+- enum_specifier TaskResult @208-211
+- class_specifier IdleTaskManager @258-282
+- function_definition IdleTaskManager @260-261
+- function_definition (anonymous) @263-263
+- function_definition IsSuspended @265-268
+- function_definition DidRunTask @270-273
+- function_definition ProcessedTaskCount @275-275
+- class_specifier LowestTaskManager @289-292
+- class_specifier TaskController @298-502
+- function_definition Get @302-305
+- function_definition SetThreadObserver @309-312
+- function_definition SetConditionVariable @313-316
+- function_definition SetIdleTaskManager @318-320
+- function_definition GetIdleTaskManager @321-321
+- function_definition GetLowestTaskManager @323-323
+- function_definition RunOutOfMTTasksCount @325-325
+- function_definition MTTaskRunnableProcessedTask @364-367
+- struct_specifier TaskToRun @412-415
+
+### xpcom/threads/TaskDispatcher.h
+
+Blob: `bc0373f8b36a5a56352446ede02af009f24a35d0`. Grammar: cpp. Status: contains-errors.
+
+- include <queue> @8
+- include "mozilla/AbstractThread.h" @10
+- include "mozilla/FlowMarkers.h" @11
+- include "mozilla/Maybe.h" @12
+- include "mozilla/ProfilerRunnable.h" @13
+- include "mozilla/UniquePtr.h" @14
+- include "nsIDirectTaskDispatcher.h" @15
+- include "nsISupportsImpl.h" @16
+- include "nsTArray.h" @17
+- include "nsThreadUtils.h" @18
+- class_specifier SimpleTaskQueue @22-57
+- function_definition SimpleTaskQueue @24-24
+- function_definition ~SimpleTaskQueue @25-25
+- function_definition AddTask @27-35
+- function_definition DrainTasks @37-48
+- function_definition HaveTasks @50-50
+- class_specifier TaskDispatcher @75-99
+- function_definition TaskDispatcher @77-77
+- function_definition ~TaskDispatcher @78-78
+- class_specifier AutoTaskDispatcher @105-359
+- function_definition AutoTaskDispatcher @107-111
+- function_definition ~AutoTaskDispatcher @113-128
+- function_definition HaveDirectTasks @130-132
+- function_definition DrainDirectTasks @134-138
+- function_definition AddDirectTask @140-143
+- function_definition AddStateChangeTask @145-150
+- function_definition AddTask @152-200
+- function_definition HasTasksFor @202-205
+- function_definition DispatchTasksFor @207-227
+- struct_specifier PerThreadTaskGroup @230-241
+- function_definition PerThreadTaskGroup @232-234
+- class_specifier TaskGroupRunnable @243-319
+- function_definition TaskGroupRunnable @245-247
+- function_definition Run @249-271
+- function_definition Cancel @273-298
+- function_definition MaybeDrainDirectTasks @301-306
+- function_definition CancelTask @308-316
+- function_definition (anonymous) @321-329
+- function_definition GetTaskGroup @331-340
+- function_definition DispatchTaskGroup @342-351
+- class_specifier PassByRef @364-371
+- function_definition PassByRef @366-366
+- function_definition (anonymous) @367-367
+
+### xpcom/threads/TaskQueue.cpp
+
+Blob: `3f3961f3a6679d0134d3b824c8f1f1fde8aa9784`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/TaskQueue.h" @5
+- include "mozilla/FlowMarkers.h" @7
+- include "mozilla/ProfilerRunnable.h" @8
+- include "nsIEventTarget.h" @9
+- include "nsITargetShutdownTask.h" @10
+- include "nsQueryObject.h" @11
+- include "nsThreadUtils.h" @12
+- function_definition Create @21-33
+- enum_specifier TailDispatchPolicy @23-23
+- function_definition TaskQueue @35-44
+- enum_specifier TailDispatchPolicy @36-36
+- function_definition ~TaskQueue @46-52
+- function_definition (anonymous) @65-69
+- function_definition TargetShutdown @71-77
+- function_definition MaybeUnregisterTargetShutdownTask @79-87
+- function_definition DispatchLocked @91-134
+- function_definition RegisterShutdownTask @136-155
+- function_definition UnregisterShutdownTask @157-170
+- function_definition GetFeatures @172-189
+- function_definition AwaitIdle @191-194
+- function_definition AwaitIdleLocked @196-208
+- function_definition AwaitShutdownAndIdle @210-222
+- function_definition BeginShutdown @224-253
+- function_definition MaybeResolveShutdown @255-266
+- function_definition IsEmpty @268-274
+- function_definition IsCurrentThreadIn @276-279
+- function_definition SetObserver @281-285
+- function_definition Runner::Run @287-353
+- function_definition DispatchDirectTask @359-366
+- function_definition DrainDirectTasks @368-374
+- function_definition HaveDirectTasks @376-383
+
+### xpcom/threads/TaskQueue.h
+
+Blob: `1f4b30c2312c36374576a70eabe15a55538799d2`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/AbstractThread.h" @8
+- include "mozilla/Maybe.h" @9
+- include "mozilla/Monitor.h" @10
+- include "mozilla/MozPromise.h" @11
+- include "mozilla/RefPtr.h" @12
+- include "mozilla/TargetShutdownTaskSet.h" @13
+- include "mozilla/TaskDispatcher.h" @14
+- include "nsIDirectTaskDispatcher.h" @15
+- include "nsITargetShutdownTask.h" @16
+- include "nsThreadUtils.h" @17
+- class_specifier TaskQueueTargetShutdownTask @26-26
+- class_specifier TaskQueue @61-319
+- class_specifier EventTargetWrapper @64-64
+- enum_specifier TailDispatchPolicy @76-76
+- function_definition DispatchFromScript @81-84
+- function_definition Dispatch @86-100
+- function_definition Dispatch @102-114
+- class_specifier Observer @147-159
+- function_definition ~Observer @158-158
+- enum_specifier TailDispatchPolicy @168-168
+- struct_specifier TaskStruct @191-194
+- class_specifier AutoTaskGuard @218-268
+- function_definition AutoTaskGuard @220-239
+- function_definition ~AutoTaskGuard @241-260
+- class_specifier Runner @291-318
+- function_definition Runner @293-299
+
+### xpcom/threads/ThreadBound.h
+
+Blob: `17b590b78803433f9945ff828e0ce5c69ebfc488`. Grammar: cpp. Status: contains-errors.
+
+- include <type_traits> @10
+- include "mozilla/Atomics.h" @12
+- include "prthread.h" @13
+- class_specifier ThreadBound @18-18
+- struct_specifier AddConstIf @23-25
+- struct_specifier AddConstIf<true, T> @28-30
+- class_specifier ThreadBound @60-139
+- function_definition ThreadBound @63-66
+- function_definition ~ThreadBound @68-68
+- function_definition Transfer @70-74
+- function_definition Accessor @93-121
+- class_specifier MOZ_STACK_CLASS @93-93
+- function_definition Accessor @109-109
+- function_definition Accessor @110-110
+- function_definition ~Accessor @114-114
+- function_definition operator-> @116-116
+- function_definition Access @123-123
+- function_definition Access @125-125
+- function_definition IsCorrectThread @128-128
+- function_definition IsNotCurrentlyAccessed @130-130
+
+### xpcom/threads/ThreadDelay.cpp
+
+Blob: `2c40dc37a083ba276afedff902d0aa3850c95acc`. Grammar: cpp. Status: syntax-clean.
+
+- include "ThreadDelay.h" @5
+- include "mozilla/Assertions.h" @7
+- include "mozilla/ChaosMode.h" @8
+- include <windows.h> @11
+- include <unistd.h> @13
+- function_definition DelayForChaosMode @18-35
+
+### xpcom/threads/ThreadDelay.h
+
+Blob: `7b99dfd0a7dfda5fb5a0558e2dfd6c93bdea8b13`. Grammar: cpp. Status: syntax-clean.
+
+- include "mozilla/ChaosMode.h" @8
+
+### xpcom/threads/ThreadEventQueue.cpp
+
+Blob: `e5d00ed9e530107d463c7e7e9869a551b5a686d6`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/ThreadEventQueue.h" @5
+- include "MaybeLeakRefPtr.h" @7
+- include "ThreadEventTarget.h" @8
+- include "mozilla/EventQueue.h" @9
+- include "mozilla/ProfilerLabels.h" @10
+- include "mozilla/StaticPrefs_threads.h" @11
+- include "mozilla/TaskController.h" @12
+- include "nsComponentManagerUtils.h" @13
+- include "nsITargetShutdownTask.h" @14
+- include "nsIThreadInternal.h" @15
+- include "nsThread.h" @16
+- include "nsThreadUtils.h" @17
+- class_specifier ThreadEventQueue::NestedSink @21-54
+- function_definition NestedSink @23-24
+- function_definition PutEvent @26-29
+- function_definition Disconnect @31-31
+- function_definition RegisterShutdownTask @33-35
+- function_definition UnregisterShutdownTask @36-38
+- function_definition SizeOfExcludingThis @40-45
+- function_definition ThreadEventQueue @56-65
+- function_definition ~ThreadEventQueue @67-67
+- function_definition PutEvent @69-72
+- function_definition PutEventInternal @74-141
+- function_definition GetEvent @143-179
+- function_definition HasPendingEvent @181-190
+- function_definition ShutdownIfNoPendingEvents @192-199
+- function_definition PushEventQueue @201-211
+- function_definition PopEventQueue @213-240
+- function_definition SizeOfExcludingThis @242-256
+- function_definition GetObserver @258-261
+- function_definition GetObserverOnThread @263-267
+- function_definition SetObserver @269-279
+- function_definition RegisterShutdownTask @281-288
+- function_definition UnregisterShutdownTask @290-298
+- function_definition RunShutdownTasks @300-310
+- function_definition NestedQueueItem::NestedQueueItem @312-314
+
+### xpcom/threads/ThreadEventQueue.h
+
+Blob: `a3b0c29a31f812668e5098106258ce6825fa973c`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/CondVar.h" @8
+- include "mozilla/EventQueue.h" @9
+- include "mozilla/SynchronizedEventQueue.h" @10
+- include "mozilla/TargetShutdownTaskSet.h" @11
+- include "nsCOMPtr.h" @12
+- include "nsITargetShutdownTask.h" @13
+- include "nsTArray.h" @14
+- class_specifier nsIEventTarget @16-16
+- class_specifier nsISerialEventTarget @17-17
+- class_specifier nsIThreadObserver @18-18
+- class_specifier EventQueue @22-22
+- class_specifier ThreadEventTarget @23-23
+- class_specifier ThreadEventQueue @30-90
+- function_definition Disconnect @44-44
+- function_definition (anonymous) @57-57
+- class_specifier NestedSink @62-62
+- struct_specifier NestedQueueItem @71-77
+
+### xpcom/threads/ThreadEventTarget.cpp
+
+Blob: `9c3f64be0583e5f9931df7f54cc234f26ca109bb`. Grammar: cpp. Status: contains-errors.
+
+- include "ThreadEventTarget.h" @5
+- include "MaybeLeakRefPtr.h" @7
+- include "ThreadDelay.h" @8
+- include "mozilla/DelayedRunnable.h" @9
+- include "mozilla/SpinEventLoopUntil.h" @10
+- include "mozilla/ThreadEventQueue.h" @11
+- include "mozilla/TimeStamp.h" @12
+- include "nsComponentManagerUtils.h" @13
+- include "nsITimer.h" @14
+- include "nsThreadManager.h" @15
+- include "nsThreadSyncDispatch.h" @16
+- include "nsThreadUtils.h" @17
+- function_definition ThreadEventTarget @31-39
+- function_definition ~ThreadEventTarget @41-41
+- function_definition SetCurrentThread @43-45
+- function_definition ClearCurrentThread @47-47
+- function_definition DispatchFromScript @51-55
+- function_definition XPCOMShutdownThreadsNotificationFinished @59-61
+- function_definition Dispatch @64-96
+- function_definition DelayedDispatch @98-110
+- function_definition RegisterShutdownTask @112-115
+- function_definition UnregisterShutdownTask @117-120
+- function_definition GetFeatures @122-125
+- function_definition IsOnCurrentThread @127-131
+- function_definition IsOnCurrentThreadInfallible @134-139
+
+### xpcom/threads/ThreadEventTarget.h
+
+Blob: `1d3ca128d5fe384877d10f0986a65ae0e5d5690e`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/MemoryReporting.h" @8
+- include "mozilla/Mutex.h" @9
+- include "mozilla/SynchronizedEventQueue.h" @10
+- include "nsISerialEventTarget.h" @11
+- class_specifier DelayedRunnable @14-14
+- class_specifier ThreadEventTarget @18-57
+- function_definition Disconnect @27-29
+- function_definition SizeOfIncludingThis @37-43
+
+### xpcom/threads/ThreadLocalVariables.cpp
+
+Blob: `606c0c6384e80a7a5ab4f2ccf830d5fe9a26bfeb`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/ThreadLocal.h" @5
+- function_definition InitThreadLocalVariables @11-16
+
+### xpcom/threads/ThrottledEventQueue.cpp
+
+Blob: `3eef8785af6f6ba21dc0b52e990c4137ebd54fc3`. Grammar: cpp. Status: contains-errors.
+
+- include "ThrottledEventQueue.h" @5
+- include "mozilla/ClearOnShutdown.h" @7
+- include "mozilla/CondVar.h" @8
+- include "mozilla/EventQueue.h" @9
+- include "mozilla/MaybeLeakRefPtr.h" @10
+- include "mozilla/Mutex.h" @11
+- include "nsThreadUtils.h" @12
+- class_specifier ThrottledEventQueue::Inner @59-465
+- class_specifier Executor @63-92
+- function_definition ~Executor @68-68
+- function_definition Executor @71-72
+- function_definition Run @77-80
+- function_definition GetPriority @82-86
+- function_definition GetName @89-90
+- function_definition Inner @122-131
+- function_definition ~Inner @133-150
+- function_definition MOZ_REQUIRES @154-167
+- function_definition CurrentName @169-197
+- function_definition ExecuteRunnable @199-255
+- function_definition Create @258-267
+- function_definition IsEmpty @269-272
+- function_definition Length @274-278
+- function_definition GetEvent @280-283
+- function_definition AwaitIdle @285-300
+- function_definition IsPaused @302-305
+- function_definition MOZ_REQUIRES @307-309
+- function_definition SetIsPaused @311-326
+- function_definition DispatchFromScript @328-331
+- function_definition Dispatch @333-356
+- function_definition DelayedDispatch @358-363
+- function_definition RegisterShutdownTask @365-367
+- function_definition UnregisterShutdownTask @369-371
+- function_definition GetFeatures @373-375
+- function_definition IsOnCurrentThread @377-377
+- function_definition ThrottledEventQueue @390-393
+- function_definition ThrottledEventQueue @395-403
+- function_definition ThrottledEventQueue @405-405
+- function_definition ThrottledEventQueue @407-407
+- function_definition ThrottledEventQueue @410-412
+- function_definition ThrottledEventQueue @414-414
+- function_definition ThrottledEventQueue @416-418
+- function_definition ThrottledEventQueue @420-420
+- function_definition ThrottledEventQueue @422-426
+- function_definition ThrottledEventQueue @428-432
+- function_definition ThrottledEventQueue @434-438
+- function_definition ThrottledEventQueue @440-443
+- function_definition ThrottledEventQueue @445-448
+- function_definition ThrottledEventQueue @450-452
+- function_definition ThrottledEventQueue @454-458
+- function_definition IsOnCurrentThreadInfallible @461-463
+
+### xpcom/threads/ThrottledEventQueue.h
+
+Blob: `7b7b09f2f4427f3cd7304e19094d08cf20f40037`. Grammar: cpp. Status: contains-errors.
+
+- include "nsISerialEventTarget.h" @10
+- class_specifier ThrottledEventQueue @55-106
+- class_specifier Inner @56-56
+- function_definition ~ThrottledEventQueue @60-60
+
+### xpcom/threads/TimerThread.cpp
+
+Blob: `2a4d4fa37b60883f1adaa4d5e0e5bf461736122e`. Grammar: cpp. Status: contains-errors.
+
+- include "TimerThread.h" @5
+- include "GeckoProfiler.h" @7
+- include "mozilla/ArenaAllocator.h" @8
+- include "mozilla/ChaosMode.h" @9
+- include "mozilla/OperatorNewExtensions.h" @10
+- include "mozilla/Services.h" @11
+- include "mozilla/StaticPrefs_timer.h" @12
+- include "mozilla/glean/XpcomMetrics.h" @13
+- include "nsIObserverService.h" @14
+- include "nsIPropertyBag2.h" @15
+- include "nsThreadUtils.h" @16
+- include "nsTimerImpl.h" @17
+- class_specifier StaticTimersStats @28-84
+- function_definition StaticTimersStats @30-30
+- function_definition ~StaticTimersStats @32-47
+- function_definition AddDurationFrom @49-69
+- function_definition AddCount @71-74
+- function_definition AutoTimersStats @88-93
+- class_specifier MOZ_RAII @88-88
+- function_definition TimerThread @125-133
+- function_definition ~TimerThread @135-146
+- class_specifier TimerObserverRunnable @150-159
+- function_definition TimerObserverRunnable @152-153
+- function_definition Run @161-174
+- class_specifier TimerEventAllocator @194-212
+- struct_specifier FreeEntry @196-198
+- function_definition TimerEventAllocator @205-206
+- function_definition ~TimerEventAllocator @208-208
+- class_specifier nsTimerEvent @219-285
+- function_definition Cancel @223-226
+- function_definition nsTimerEvent @232-247
+- function_definition operator new @252-254
+- function_definition operator delete @255-258
+- function_definition ForgetTimer @260-260
+- function_definition nsTimerEvent @262-262
+- function_definition (anonymous) @263-263
+- function_definition (anonymous) @264-264
+- function_definition ~nsTimerEvent @267-267
+- function_definition AddAllocatorRef @269-269
+- function_definition ReleaseAllocatorRef @270-276
+- function_definition Alloc @292-306
+- function_definition Free @308-315
+- struct_specifier TimerMarker @319-393
+- function_definition TimerTypeString @343-358
+- function_definition StreamJSONMarkerData @359-382
+- function_definition TranslateMarkerInputToSchema @383-392
+- struct_specifier AddRemoveTimerMarker @395-436
+- function_definition TranslateMarkerInputToSchema @414-420
+- function_definition StreamJSONMarkerData @421-435
+- function_definition Init @438-441
+- function_definition Shutdown @443-445
+- function_definition GetName @448-457
+- function_definition Run @460-498
+- function_definition Init @500-532
+- function_definition Shutdown @534-585
+- struct_specifier MicrosecondsToInterval @589-593
+- function_definition operator[] @590-592
+- struct_specifier IntervalComparator @595-599
+- function_definition operator() @596-598
+- function_definition ComputeWakeupTimeFromTimers @603-652
+- function_definition FireDueTimers @654-701
+- class_specifier TelemetryQueue @706-738
+- function_definition TelemetryQueue @708-711
+- function_definition ~TelemetryQueue @713-721
+- function_definition AccumulateAndMaybeSendTelemetry @723-732
+- function_definition MOZ_REQUIRES @741-749
+- function_definition Run @751-852
+- function_definition AddTimer @854-921
+- function_definition RemoveTimer @923-974
+- function_definition FindNextFireTimeForCurrentThread @976-1012
+- function_definition AssertTimersSortedAndUnique @1014-1020
+- function_definition AddTimerInternal @1024-1070
+- function_definition RemoveTimerInternal @1074-1094
+- function_definition RemoveLeadingCanceledTimersInternal @1096-1108
+- function_definition PostTimerEvent @1110-1162
+- function_definition DoBeforeSleep @1164-1168
+- function_definition DoAfterSleep @1171-1182
+- function_definition Observe @1184-1200
+- function_definition AllowedEarlyFiringMicroseconds @1202-1205
+- function_definition CollectTimersFiredStatistics @1208-1227
+- function_definition CollectWakeupStatistics @1229-1241
+- function_definition PrintStatistics @1243-1288
+- class_specifier nsReadOnlyTimer @1299-1376
+- function_definition nsReadOnlyTimer @1301-1303
+- function_definition Init @1304-1309
+- function_definition InitWithCallback @1310-1313
+- function_definition InitHighResolutionWithCallback @1314-1318
+- function_definition Cancel @1319-1319
+- function_definition InitWithNamedFuncCallback @1320-1325
+- function_definition InitHighResolutionWithNamedFuncCallback @1326-1331
+- function_definition GetName @1333-1336
+- function_definition GetDelay @1337-1340
+- function_definition SetDelay @1341-1343
+- function_definition GetType @1344-1347
+- function_definition SetType @1348-1350
+- function_definition GetClosure @1351-1353
+- function_definition GetCallback @1354-1356
+- function_definition GetTarget @1357-1359
+- function_definition SetTarget @1360-1362
+- function_definition GetAllowedEarlyFiringMicroseconds @1363-1366
+- function_definition SizeOfIncludingThis @1367-1369
+- function_definition ~nsReadOnlyTimer @1375-1375
+- function_definition GetTimers @1380-1407
+
+### xpcom/threads/TimerThread.h
+
+Blob: `01f92dc5dc923120321d61b874d3f638f0a7212e`. Grammar: cpp. Status: contains-errors.
+
+- include "TimerThreadMonitor.h" @8
+- include "mozilla/ProfilerUtils.h" @9
+- include "nsIObserver.h" @10
+- include "nsIRunnable.h" @11
+- include "nsIThread.h" @12
+- include "nsTArray.h" @13
+- include "nsThreadUtils.h" @14
+- include "nsTimerImpl.h" @15
+- class_specifier TimerThread @21-220
+- function_definition IsOnTimerThread @49-49
+- struct_specifier EntryKey @79-104
+- function_definition EntryKey @80-81
+- function_definition operator== @91-93
+- function_definition operator< @95-100
+- struct_specifier Entry @106-132
+- function_definition Entry @114-114
+- function_definition (anonymous) @115-115
+- function_definition Entry @116-116
+- function_definition (anonymous) @117-117
+- function_definition IsTimerInThreadAndUnchanged @123-126
+- struct_specifier WakeupTime @138-141
+- function_definition MOZ_GUARDED_BY @195-195
+- function_definition MOZ_GUARDED_BY @196-196
+- function_definition MOZ_GUARDED_BY @197-197
+- function_definition MOZ_GUARDED_BY @198-198
+- function_definition MOZ_GUARDED_BY @200-200
+- function_definition MOZ_GUARDED_BY @201-201
+- function_definition MOZ_GUARDED_BY @202-202
+- function_definition MOZ_GUARDED_BY @211-211
+
+### xpcom/threads/TimerThreadMonitor.h
+
+Blob: `cad753529055d2a4a50b6da2706d00fd876d5a65`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/CondVar.h" @8
+- include "mozilla/Monitor.h" @9
+- include "mozilla/Mutex.h" @10
+- include "mozilla/TimeStamp.h" @11
+- include "mozilla/UniquePtrExtensions.h" @12
+- include "prthread.h" @13
+- class_specifier MOZ_CAPABILITY @35-35
+- function_definition MOZ_CAPABILITY_ACQUIRE @40-40
+- function_definition MOZ_CAPABILITY_RELEASE @41-41
+- function_definition MOZ_ASSERT_CAPABILITY @54-56
+- function_definition IsPreciseTolerance @63-65
+- function_definition TimerThreadMonitor @69-69
+- function_definition TimerThreadMonitor @71-71
+- function_definition MOZ_REQUIRES @74-80
+- function_definition MOZ_REQUIRES @82-87
+- function_definition MOZ_NO_THREAD_SAFETY_ANALYSIS @89-93
+- function_definition ToWaitMicroseconds @100-108
+
+### xpcom/threads/TimerThreadMonitor_darwin.cpp
+
+Blob: `f33af6aedc0d24f4a66a8f4df6894a6f6577b098`. Grammar: cpp. Status: syntax-clean.
+
+- include <errno.h> @5
+- include <sys/event.h> @6
+- include <sys/types.h> @7
+- include "TimerThreadMonitor.h" @9
+- include "mozilla/Assertions.h" @10
+- include "mozilla/ProfilerThreadSleep.h" @11
+- function_definition ApplyChange @21-25
+- struct_specifier kevent64_s @21-21
+- function_definition BlockOnKqueue @30-35
+- struct_specifier kevent64_s @31-31
+- function_definition TimerThreadMonitor @38-47
+- struct_specifier kevent64_s @42-42
+- function_definition ~TimerThreadMonitor @49-49
+- function_definition Wait @51-60
+- function_definition Wait @62-98
+- struct_specifier kevent64_s @78-78
+- struct_specifier kevent64_s @93-93
+- function_definition Notify @100-104
+- struct_specifier kevent64_s @101-101
+
+### xpcom/threads/TimerThreadMonitor_posix.cpp
+
+Blob: `1617916dfe68076c5890271886ee02474dfcccaf`. Grammar: cpp. Status: syntax-clean.
+
+- include "TimerThreadMonitor.h" @5
+- function_definition TimerThreadMonitor @12-13
+- function_definition ~TimerThreadMonitor @15-15
+- function_definition Wait @17-21
+- function_definition Wait @23-27
+- function_definition Notify @29-29
+
+### xpcom/threads/TimerThreadMonitor_windows.cpp
+
+Blob: `649b002524ff64207da8ea387160862432667336`. Grammar: cpp. Status: syntax-clean.
+
+- include <windows.h> @5
+- include <algorithm> @7
+- include <cmath> @8
+- include <limits> @9
+- include "TimerThreadMonitor.h" @11
+- include "mozilla/Assertions.h" @12
+- include "mozilla/ProfilerThreadSleep.h" @13
+- function_definition TimerThreadMonitor @17-28
+- function_definition ~TimerThreadMonitor @30-30
+- function_definition Wait @32-41
+- function_definition Wait @43-80
+- function_definition Notify @82-85
+
+### xpcom/threads/VsyncTaskManager.cpp
+
+Blob: `48bac818ba75b519fcaab4648fa88490996dbb92`. Grammar: cpp. Status: syntax-clean.
+
+- include "VsyncTaskManager.h" @5
+- include "InputTaskManager.h" @7
+- function_definition Init @13-15
+- function_definition WillRunTask @17-20
+
+### xpcom/threads/VsyncTaskManager.h
+
+Blob: `42270c87425737b3685cf1169d968f591191d5d0`. Grammar: cpp. Status: syntax-clean.
+
+- include "TaskController.h" @8
+- include "mozilla/StaticPtr.h" @9
+- class_specifier VsyncTaskManager @12-22
+- function_definition Get @14-14
+- function_definition Cleanup @15-15
+
+### xpcom/threads/WinHandleWatcher.cpp
+
+Blob: `7033785012648ad3cb211020200362b65b054b39`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/WinHandleWatcher.h" @5
+- include <threadpoolapiset.h> @7
+- include <windows.h> @8
+- include "mozilla/AlreadyAddRefed.h" @10
+- include "mozilla/Assertions.h" @11
+- include "mozilla/Logging.h" @12
+- include "mozilla/Mutex.h" @13
+- include "mozilla/RefPtr.h" @14
+- include "mozilla/ThreadSafety.h" @15
+- include "nsCOMPtr.h" @16
+- include "nsIRunnable.h" @17
+- include "nsISerialEventTarget.h" @18
+- include "nsISupportsImpl.h" @19
+- include "nsITargetShutdownTask.h" @20
+- include "nsIWeakReferenceUtils.h" @21
+- include "nsThreadUtils.h" @22
+- struct_specifier WaitHandleDeleter @28-33
+- function_definition operator() @29-32
+- class_specifier HandleWatcher::Impl @50-267
+- function_definition ~Impl @57-57
+- struct_specifier Data @59-74
+- function_definition WaitCallback @80-84
+- function_definition MOZ_EXCLUDES @87-112
+- function_definition Create @115-122
+- function_definition MOZ_EXCLUDES @126-166
+- function_definition MOZ_EXCLUDES @168-188
+- function_definition MOZ_EXCLUDES @191-194
+- function_definition MOZ_EXCLUDES @196-199
+- function_definition MOZ_CAPABILITY_RELEASE @219-257
+- function_definition MOZ_EXCLUDES @261-266
+- function_definition HandleWatcher @274-274
+- function_definition ~HandleWatcher @275-280
+- function_definition HandleWatcher @282-282
+- function_definition Watch @285-294
+- function_definition Stop @296-300
+- function_definition IsStopped @302-302
+
+### xpcom/threads/WinHandleWatcher.h
+
+Blob: `f39304057319a91bc0f2fa893a37b2d34d06d606`. Grammar: cpp. Status: syntax-clean.
+
+- include <minwindef.h> @8
+- include "mozilla/AlreadyAddRefed.h" @10
+- include "mozilla/RefPtr.h" @11
+- include "nsIEventTarget.h" @12
+- include "nsIRunnable.h" @13
+- include "nsIThread.h" @14
+- include "nsThreadUtils.h" @15
+- class_specifier HandleWatcher @66-110
+- class_specifier Impl @68-68
+- function_definition HandleWatcher @73-73
+- function_definition (anonymous) @74-74
+
+### xpcom/threads/nsEnvironment.cpp
+
+Blob: `7f3ed8a37f1740223d9fcf5fb15c301824fe2374`. Grammar: cpp. Status: contains-errors.
+
+- include "nsEnvironment.h" @5
+- include "mozilla/Printf.h" @7
+- include "mozilla/StaticMutex.h" @8
+- include "nsBaseHashtable.h" @9
+- include "nsDependentString.h" @10
+- include "nsHashKeys.h" @11
+- include "nsNativeCharsetUtils.h" @12
+- include "nsPromiseFlatString.h" @13
+- include "prenv.h" @14
+- function_definition Create @20-31
+- function_definition Exists @33-62
+- function_definition Get @64-82
+- function_definition MOZ_REQUIRES @95-100
+- function_definition Set @102-135
+
+### xpcom/threads/nsEnvironment.h
+
+Blob: `fdd6634db6f983ea66961589b97b5a7170b13d8c`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/Mutex.h" @8
+- include "nsIEnvironment.h" @9
+- class_specifier nsEnvironment @18-28
+- function_definition nsEnvironment @26-26
+- function_definition ~nsEnvironment @27-27
+
+### xpcom/threads/nsICancelableRunnable.h
+
+Blob: `ea83a84015132b3ad4250560402a69f6d429ee0e`. Grammar: cpp. Status: contains-errors.
+
+- include "nsISupports.h" @8
+- class_specifier nsICancelableRunnable @13-30
+- function_definition nsICancelableRunnable @28-28
+- function_definition ~nsICancelableRunnable @29-29
+
+### xpcom/threads/nsIDiscardableRunnable.h
+
+Blob: `67bdd7f7727e65671a5b01d5c9dbe4d938b3957c`. Grammar: cpp. Status: contains-errors.
+
+- include "nsISupports.h" @8
+- function_definition nsIDiscardableRunnable @17-30
+- class_specifier NS_NO_VTABLE @17-17
+- function_definition ~nsIDiscardableRunnable @29-29
+
+### xpcom/threads/nsIIdleRunnable.h
+
+Blob: `117f814a988f7fb9f38fd19a3d955dba59d070e7`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/TimeStamp.h" @8
+- include "nsISupports.h" @9
+- class_specifier nsIEventTarget @14-14
+- class_specifier nsIIdleRunnable @20-38
+- function_definition SetTimer @29-33
+- function_definition nsIIdleRunnable @36-36
+- function_definition ~nsIIdleRunnable @37-37
+
+### xpcom/threads/nsITargetShutdownTask.h
+
+Blob: `3dfd1bca4e229eef2ce0bb0beaa97d8699dd4659`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/LinkedList.h" @8
+- include "nsISupports.h" @9
+- include "nsThreadUtils.h" @10
+- class_specifier nsIRunnable @12-12
+- class_specifier TargetShutdownTaskSet @13-13
+- class_specifier NS_NO_VTABLE @22-22
+- function_definition AsRunnable @35-40
+
+### xpcom/threads/nsMemoryPressure.cpp
+
+Blob: `aab884433313f9dd2742dce771bc76de562568e0`. Grammar: cpp. Status: syntax-clean.
+
+- include "nsMemoryPressure.h" @5
+- include "mozilla/Assertions.h" @7
+- include "mozilla/Atomics.h" @8
+- include "mozilla/Services.h" @9
+- include "nsIObserverService.h" @10
+- include "nsThreadUtils.h" @11
+- function_definition NS_NotifyOfEventualMemoryPressure @24-41
+- function_definition NS_NotifyOfMemoryPressure @43-48
+- function_definition NS_DispatchMemoryPressure @50-102
+
+### xpcom/threads/nsMemoryPressure.h
+
+Blob: `c9d18400b3a2cb4ce44c04ef954d3e729f2492d6`. Grammar: cpp. Status: syntax-clean.
+
+- include "nscore.h" @8
+- enum_specifier MemoryPressureState @47-51
+
+### xpcom/threads/nsProcess.h
+
+Blob: `68d391bb48949101a666079f3637d8ed6f84af8d`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/Mutex.h" @12
+- include "nsIObserver.h" @13
+- include "nsIProcess.h" @14
+- include "nsMaybeWeakPtr.h" @15
+- include "nsString.h" @16
+- include "prproces.h" @18
+- include <windows.h> @22
+- include <shellapi.h> @23
+- class_specifier nsIFile @30-30
+- class_specifier nsProcess @32-75
+
+### xpcom/threads/nsProcessCommon.cpp
+
+Blob: `8112a54313902d34412cc1ba11f24a9ed9b8ead3`. Grammar: cpp. Status: contains-errors.
+
+- include <stdlib.h> @13
+- include "mozilla/Services.h" @15
+- include "nsCOMPtr.h" @16
+- include "nsCRT.h" @17
+- include "nsIFile.h" @18
+- include "nsIObserverService.h" @19
+- include "nsProcess.h" @20
+- include "nsThreadUtils.h" @21
+- include "nsXULAppAPI.h" @22
+- include "prenv.h" @23
+- include "prio.h" @24
+- include "mozilla/AssembleCmdLine.h" @27
+- include "mozilla/UniquePtrExtensions.h" @28
+- include "nsLiteralString.h" @29
+- include "nsReadableUtils.h" @30
+- include "nsString.h" @31
+- include <crt_externs.h> @34
+- include <spawn.h> @35
+- include "base/process_util.h" @39
+- include <sys/errno.h> @41
+- include <sys/wait.h> @42
+- include <signal.h> @44
+- include <sys/types.h> @45
+- function_definition nsProcess @56-70
+- function_definition ~nsProcess @73-73
+- function_definition Init @75-105
+- function_definition Monitor @107-193
+- function_definition ProcessComplete @195-222
+- function_definition Run @225-228
+- function_definition RunAsync @231-235
+- function_definition CopyArgsAndRunProcess @237-258
+- function_definition Runw @261-264
+- function_definition RunwAsync @267-271
+- function_definition CopyArgsAndRunProcessw @273-297
+- function_definition RunProcess @299-476
+- struct_specifier MYProcess @445-447
+- function_definition CreateMonitorThread @482-485
+- function_definition GetIsRunning @487-496
+- function_definition GetStartHidden @498-502
+- function_definition SetStartHidden @504-508
+- function_definition GetNoShell @510-514
+- function_definition SetNoShell @516-520
+- function_definition GetPid @522-532
+- function_definition Kill @534-567
+- function_definition GetExitValue @569-576
+- function_definition Observe @578-596
+
+### xpcom/threads/nsProxyRelease.cpp
+
+Blob: `367a3fbfaf2144d32d90025a55be1b3a40f240e9`. Grammar: cpp. Status: syntax-clean.
+
+- include "nsProxyRelease.h" @5
+- include "nsThreadUtils.h" @7
+- function_definition ProxyReleaseISupports @11-16
+- function_definition NS_ProxyReleaseISupports @24-27
+
+### xpcom/threads/nsProxyRelease.h
+
+Blob: `34246585d89849ec24e997c45f41b4196cc22527`. Grammar: cpp. Status: contains-errors.
+
+- include <utility> @8
+- include "MainThreadUtils.h" @10
+- include "mozilla/Likely.h" @11
+- include "nsCOMPtr.h" @12
+- include "nsIEventTarget.h" @13
+- include "nsISerialEventTarget.h" @14
+- include "nsIThread.h" @15
+- include "nsPrintfCString.h" @16
+- include "nsThreadUtils.h" @17
+- class_specifier nsIRunnable @23-23
+- class_specifier ProxyReleaseEvent @28-53
+- function_definition ProxyReleaseEvent @30-31
+- function_definition Run @33-36
+- function_definition Cancel @38-38
+- function_definition GetName @41-48
+- function_definition ProxyRelease @56-86
+- struct_specifier ProxyReleaseChooser @89-96
+- function_definition ProxyRelease @91-95
+- struct_specifier ProxyReleaseChooser<true> @99-113
+- function_definition ProxyRelease @103-107
+- function_definition NS_ProxyRelease @140-147
+- function_definition NS_ReleaseOnMainThread @163-186
+- function_definition nsMainThreadPtrHolder @227-289
+- class_specifier MOZ_IS_SMARTPTR_TO_REFCOUNTED @227-227
+- function_definition nsMainThreadPtrHolder @247-258
+- function_definition nsMainThreadPtrHolder @263-263
+- function_definition operator== @291-293
+- function_definition operator! @294-294
+- function_definition nsMainThreadPtrHandle @311-359
+- class_specifier MOZ_IS_SMARTPTR_TO_REFCOUNTED @311-311
+- function_definition nsMainThreadPtrHandle @315-316
+- function_definition nsMainThreadPtrHandle @317-319
+- function_definition nsMainThreadPtrHandle @320-320
+- function_definition nsMainThreadPtrHandle @321-321
+- function_definition (anonymous) @325-328
+- function_definition get @333-338
+- function_definition (anonymous) @340-340
+- function_definition MOZ_NO_ADDREF_RELEASE_ON_RETURN @341-341
+- function_definition operator== @344-349
+- function_definition operator!= @350-352
+- function_definition operator== @353-353
+- function_definition operator!= @354-354
+- function_definition operator! @355-355
+- class_specifier nsCycleCollectionTraversalCallback @361-361
+- function_definition ImplCycleCollectionTraverse @367-371
+- function_definition ImplCycleCollectionUnlink @374-376
+
+### xpcom/threads/nsThread.cpp
+
+Blob: `8aa38b8190902aa3ab625fa70b3cced0f4844465`. Grammar: cpp. Status: contains-errors.
+
+- include "nsThread.h" @5
+- include "base/message_loop.h" @7
+- include "base/platform_thread.h" @8
+- include "GeckoProfiler.h" @15
+- include "ThreadDelay.h" @16
+- include "ThreadEventQueue.h" @17
+- include "ThreadEventTarget.h" @18
+- include "mozilla/BackgroundHangMonitor.h" @19
+- include "mozilla/ChaosMode.h" @20
+- include "mozilla/CycleCollectedJSContext.h" @21
+- include "mozilla/DebugOnly.h" @22
+- include "mozilla/IOInterposer.h" @23
+- include "mozilla/Logging.h" @24
+- include "mozilla/Preferences.h" @25
+- include "mozilla/ProfilerRunnable.h" @26
+- include "mozilla/ReentrantMonitor.h" @27
+- include "mozilla/SchedulerGroup.h" @28
+- include "mozilla/Services.h" @29
+- include "mozilla/SpinEventLoopUntil.h" @30
+- include "mozilla/StaticLocalPtr.h" @31
+- include "mozilla/StaticPrefs_threads.h" @32
+- include "mozilla/TaskController.h" @33
+- include "mozilla/TimeStamp.h" @34
+- include "mozilla/dom/DocGroup.h" @35
+- include "mozilla/dom/ScriptSettings.h" @36
+- include "mozilla/glean/XpcomMetrics.h" @37
+- include "mozilla/ipc/BackgroundChild.h" @38
+- include "mozilla/ipc/MessageChannel.h" @39
+- include "nsCOMPtr.h" @40
+- include "nsExceptionHandler.h" @41
+- include "nsFmtString.h" @42
+- include "nsIClassInfoImpl.h" @43
+- include "nsIObserverService.h" @44
+- include "nsMemoryPressure.h" @45
+- include "nsQueryObject.h" @46
+- include "nsServiceManagerUtils.h" @47
+- include "nsThreadManager.h" @48
+- include "nsThreadSyncDispatch.h" @49
+- include "nsXPCOMPrivate.h" @50
+- include "pratom.h" @51
+- include "prerror.h" @52
+- include "mozilla/JSONStringWriteFuncs.h" @55
+- include "mozilla/JSONWriter.h" @56
+- include "prtime.h" @57
+- include <gnu/libc-version.h> @62
+- include <sched.h> @64
+- include <stdio.h> @65
+- include <sys/mman.h> @66
+- include <sys/resource.h> @67
+- include <sys/time.h> @68
+- include <winbase.h> @72
+- include "mozilla/DynamicallyLinkedFunctionPtr.h" @74
+- include <mach/mach.h> @90
+- include <mach/thread_policy.h> @91
+- include <sys/qos.h> @92
+- include "nsCocoaFeatures.h" @94
+- include <execinfo.h> @98
+- include <fcntl.h> @99
+- include <signal.h> @100
+- include <unistd.h> @101
+- include "nsXULAppAPI.h" @103
+- function_definition PhaseName @124-137
+- function_definition BuildShutdownAnnotationJson @139-157
+- function_definition BuildContendedAnnotationJson @159-169
+- class_specifier nsThreadClassInfo @177-183
+- function_definition nsThreadClassInfo @182-182
+- function_definition AddRef @186-186
+- function_definition Release @188-188
+- function_definition GetInterfaces @191-194
+- function_definition GetScriptableHelper @196-200
+- function_definition GetContractID @202-206
+- function_definition GetClassDescription @208-212
+- function_definition GetClassID @214-218
+- function_definition GetFlags @220-224
+- function_definition GetClassIDNoAlloc @226-229
+- class_specifier nsThreadShutdownAckEvent @258-273
+- function_definition nsThreadShutdownAckEvent @260-262
+- function_definition Run @263-266
+- function_definition Cancel @267-267
+- function_definition ~nsThreadShutdownAckEvent @270-270
+- class_specifier nsThreadShutdownEvent @276-302
+- function_definition nsThreadShutdownEvent @278-282
+- function_definition Run @283-297
+- function_definition SetThreadAffinity @306-330
+- function_definition SetupCurrentThreadForChaosMode @332-362
+- struct_specifier ThreadInitData @366-369
+- function_definition MaybeRemoveFromThreadList @373-379
+- function_definition InitCommon @519-595
+- function_definition nsThread @603-634
+- function_definition nsThread @636-653
+- function_definition ~nsThread @655-660
+- function_definition Init @662-715
+- function_definition InitCurrentThread @717-735
+- function_definition GetThreadName @737-740
+- function_definition SetThreadNameInternal @742-745
+- function_definition DispatchFromScript @750-753
+- function_definition Dispatch @755-765
+- function_definition DelayedDispatch @767-774
+- function_definition RegisterShutdownTask @776-782
+- function_definition UnregisterShutdownTask @784-790
+- function_definition GetFeatures @792-795
+- function_definition GetRunningEventDelay @797-809
+- function_definition SetRunningEventDelay @811-816
+- function_definition IsOnCurrentThread @818-825
+- function_definition IsOnCurrentThreadInfallible @828-833
+- function_definition GetPRThread @838-843
+- function_definition GetCanInvokeJS @845-849
+- function_definition SetCanInvokeJS @851-855
+- function_definition GetLastLongTaskEnd @857-861
+- function_definition GetLastLongNonIdleTaskEnd @863-867
+- function_definition AsyncShutdown @869-876
+- function_definition BeginShutdown @878-940
+- function_definition ShutdownComplete @942-970
+- function_definition WaitForAllAsynchronousShutdowns @972-978
+- function_definition CollectShutdownHandshakes @981-1024
+- function_definition CollectShutdownHangAnnotation @1026-1044
+- function_definition Shutdown @1047-1067
+- function_definition HasPendingEvents @1069-1081
+- function_definition HasPendingHighPriorityEvents @1083-1092
+- function_definition DispatchToQueue @1094-1111
+- function_definition SetThreadQoS @1113-1138
+- class_specifier Canary @1143-1162
+- function_definition Canary @1146-1151
+- function_definition ~Canary @1153-1157
+- function_definition EventLatencyIsImportant @1159-1161
+- function_definition canary_alarm_handler @1164-1170
+- function_definition ShallowSizeOfIncludingThis @1183-1190
+- function_definition SizeOfEventQueues @1192-1199
+- function_definition SizeOfIncludingThis @1201-1205
+- function_definition ProcessNextEvent @1207-1383
+- function_definition GetPriority @1388-1392
+- function_definition SetPriority @1394-1426
+- function_definition AdjustPriority @1428-1431
+- function_definition GetObserver @1436-1444
+- function_definition SetObserver @1446-1457
+- function_definition RecursionDepth @1459-1462
+- function_definition AddObserver @1464-1479
+- function_definition RemoveObserver @1481-1493
+- function_definition SetScriptObserver @1495-1504
+- function_definition DoMainThreadSpecificProcessing @1508-1517
+- function_definition DispatchDirectTask @1522-1529
+- function_definition DrainDirectTasks @1531-1537
+- function_definition HaveDirectTasks @1539-1546
+- function_definition OnCompletion @1550-1558
+- function_definition GetCompleted @1560-1564
+- function_definition StopWaitingAndLeakThread @1566-1586
+- function_definition ~nsThreadShutdownContext @1588-1588
+- function_definition MarkCompleted @1590-1597
+- function_definition RunnableWillRun @1600-1617
+- function_definition RunnableDidRun @1619-1645
+- struct_specifier LongTaskMarker @1647-1655
+- function_definition MaybeReportAccumulatedTime @1657-1690
+
+### xpcom/threads/nsThread.h
+
+Blob: `81c5a2ac24aa9eb907f67c2b22049bb183332b79`. Grammar: cpp. Status: contains-errors.
+
+- include "MainThreadUtils.h" @8
+- include "mozilla/AlreadyAddRefed.h" @9
+- include "mozilla/Atomics.h" @10
+- include "mozilla/DataMutex.h" @11
+- include "mozilla/EventQueue.h" @12
+- include "mozilla/LinkedList.h" @13
+- include "mozilla/Maybe.h" @14
+- include "mozilla/MemoryReporting.h" @15
+- include "mozilla/Mutex.h" @16
+- include "mozilla/NotNull.h" @17
+- include "mozilla/RefPtr.h" @18
+- include "mozilla/TaskDispatcher.h" @19
+- include "mozilla/TimeStamp.h" @20
+- include "nsIDirectTaskDispatcher.h" @21
+- include "nsIEventTarget.h" @22
+- include "nsISerialEventTarget.h" @23
+- include "nsISupportsPriority.h" @24
+- include "nsIThread.h" @25
+- include "nsIThreadInternal.h" @26
+- include "nsString.h" @27
+- include "nsTArray.h" @28
+- include "mozilla/StaticMutex.h" @32
+- class_specifier CycleCollectedJSContext @36-36
+- class_specifier DelayedRunnable @37-37
+- class_specifier SynchronizedEventQueue @38-38
+- class_specifier ThreadEventQueue @39-39
+- class_specifier ThreadEventTarget @40-40
+- class_specifier Array @43-43
+- class_specifier nsIRunnable @48-48
+- class_specifier nsThreadShutdownContext @49-49
+- class_specifier PerformanceCounterState @59-149
+- function_definition PerformanceCounterState @61-70
+- class_specifier Snapshot @72-86
+- function_definition Snapshot @74-76
+- function_definition Snapshot @78-78
+- function_definition Snapshot @79-79
+- function_definition (anonymous) @102-102
+- function_definition (anonymous) @103-105
+- function_definition IsNestedRunnable @117-119
+- class_specifier nsThread @153-351
+- enum_specifier MainThreadFlag @168-168
+- function_definition GetPRThread @198-198
+- function_definition StackBase @200-200
+- function_definition StackSize @201-201
+- function_definition ThreadId @203-203
+- function_definition ShutdownRequired @207-207
+- function_definition SetPoolThreadFreePtr @211-213
+- enum_specifier ShutdownAnnotationPhase @224-224
+- struct_specifier ShutdownHandshakeInfo @226-233
+- function_definition EventQueue @252-252
+- function_definition ShuttingDown @254-254
+- function_definition SetUseHangMonitor @264-267
+- function_definition GetObserver @280-284
+- function_definition MOZ_GUARDED_BY @322-322
+- function_definition MOZ_GUARDED_BY @323-324
+- class_specifier nsThreadShutdownContext @353-389
+- function_definition nsThreadShutdownContext @363-368
+
+### xpcom/threads/nsThreadManager.cpp
+
+Blob: `9450ee09d863a609030a8a86684b22aff8b7d179`. Grammar: cpp. Status: contains-errors.
+
+- include "nsThreadManager.h" @5
+- include "TaskController.h" @7
+- include "ThreadEventTarget.h" @8
+- include "mozilla/AbstractThread.h" @9
+- include "mozilla/AppShutdown.h" @10
+- include "mozilla/ClearOnShutdown.h" @11
+- include "mozilla/CycleCollectedJSContext.h" @12
+- include "mozilla/EventQueue.h" @13
+- include "mozilla/InputTaskManager.h" @14
+- include "mozilla/Mutex.h" @15
+- include "mozilla/NeverDestroyed.h" @16
+- include "mozilla/Perfetto.h" @17
+- include "mozilla/Preferences.h" @18
+- include "mozilla/ProfilerMarkers.h" @19
+- include "mozilla/SpinEventLoopUntil.h" @20
+- include "mozilla/StaticPtr.h" @21
+- include "mozilla/TaskQueue.h" @22
+- include "mozilla/ThreadEventQueue.h" @23
+- include "mozilla/ThreadLocal.h" @24
+- include "mozilla/ipc/SharedMemoryMapping.h" @25
+- include "nsExceptionHandler.h" @26
+- include "nsIClassInfoImpl.h" @27
+- include "nsTArray.h" @28
+- include "nsThread.h" @29
+- include "nsThreadPool.h" @30
+- include "nsThreadUtils.h" @31
+- include "nsXULAppAPI.h" @32
+- include <fcntl.h> @34
+- include <unistd.h> @35
+- include "MainThreadIdlePeriod.h" @38
+- function_definition NS_IsMainThreadTLSInitialized @44-44
+- class_specifier BackgroundEventTarget @46-64
+- function_definition BackgroundEventTarget @51-51
+- function_definition ~BackgroundEventTarget @60-60
+- function_definition Init @68-132
+- function_definition IsOnCurrentThreadInfallible @135-137
+- function_definition IsOnCurrentThread @139-147
+- function_definition Dispatch @149-180
+- function_definition DispatchFromScript @182-187
+- function_definition DelayedDispatch @189-194
+- function_definition RegisterShutdownTask @196-199
+- function_definition UnregisterShutdownTask @201-204
+- function_definition GetFeatures @206-208
+- function_definition Shutdown @210-216
+- function_definition CreateBackgroundTaskQueue @218-221
+- function_definition NS_IsMainThread @226-226
+- function_definition NS_SetMainThread @229-240
+- function_definition AssertIsOnMainThread @246-246
+- function_definition ReleaseThread @255-257
+- function_definition AddRef @261-261
+- function_definition Release @263-263
+- function_definition LargeStackSize @272-282
+- function_definition (anonymous) @284-287
+- function_definition nsThreadManager @289-292
+- function_definition ~nsThreadManager @294-294
+- function_definition Init @296-371
+- function_definition ShutdownNonMainThreads @373-435
+- function_definition ShutdownMainThread @437-464
+- function_definition ReleaseMainThread @466-481
+- function_definition RegisterCurrentThread @483-496
+- function_definition UnregisterCurrentThread @498-503
+- function_definition CreateCurrentThread @506-525
+- function_definition DispatchToBackgroundThread @527-539
+- function_definition CreateBackgroundTaskQueue @541-553
+- function_definition GetCurrentThread @555-585
+- function_definition IsNSThread @587-598
+- function_definition NewNamedThread @600-633
+- function_definition GetMainThread @635-648
+- function_definition GetCurrentThread @650-662
+- function_definition SpinEventLoopUntil @664-669
+- function_definition SpinEventLoopUntilOrQuit @671-677
+- function_definition AnnotateXPCOMSpinEventLoopStack @685-696
+- function_definition SpinEventLoopUntilInternal @698-730
+- function_definition SpinEventLoopUntilEmpty @732-741
+- function_definition GetMainThreadEventTarget @743-748
+- function_definition DispatchToMainThread @750-769
+- class_specifier AutoMicroTaskWrapperRunnable @771-788
+- function_definition AutoMicroTaskWrapperRunnable @773-776
+- function_definition ~AutoMicroTaskWrapperRunnable @779-779
+- function_definition Run @781-785
+- function_definition DispatchToMainThreadWithMicroTask @790-797
+- function_definition EnableMainThreadEventPrioritization @799-802
+- function_definition FlushInputEventPrioritization @804-807
+- function_definition SuspendInputEventPrioritization @809-812
+- function_definition ResumeInputEventPrioritization @814-817
+- function_definition MainThreadHasPendingHighPriorityEvents @820-827
+- function_definition IdleDispatchToMainThread @829-844
+- function_definition DispatchDirectTaskToCurrentThread @846-851
+- function_definition AllowNewXPCOMThreads @853-856
+
+### xpcom/threads/nsThreadManager.h
+
+Blob: `23a655da171ab23ea96ff00e832bd264d47d9f51`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/ShutdownPhase.h" @8
+- include "mozilla/StaticString.h" @9
+- include "nsIThreadManager.h" @10
+- include "nsThread.h" @11
+- class_specifier nsIRunnable @13-13
+- class_specifier nsIThread @14-14
+- class_specifier IdleTaskManager @17-17
+- class_specifier SynchronizedEventQueue @18-18
+- class_specifier TaskQueue @19-19
+- class_specifier NeverDestroyed @22-22
+- class_specifier BackgroundEventTarget @25-25
+- class_specifier nsThreadManager @27-146
+- function_definition GetMainThreadWeak @88-88
+- function_definition MOZ_RETURN_CAPABILITY @93-95
+- function_definition MOZ_REQUIRES @98-100
+- function_definition MOZ_REQUIRES @102-104
+- enum_specifier State @118-126
+
+### xpcom/threads/nsThreadPool.cpp
+
+Blob: `f7b25ca19837ca71f76e5efec1e5b4ab93a7025c`. Grammar: cpp. Status: contains-errors.
+
+- include "nsThreadPool.h" @5
+- include "ThreadDelay.h" @7
+- include "mozilla/Logging.h" @8
+- include "mozilla/ProfilerLabels.h" @9
+- include "mozilla/ProfilerRunnable.h" @10
+- include "mozilla/SchedulerGroup.h" @11
+- include "mozilla/SpinEventLoopUntil.h" @12
+- include "mozilla/StickyTimeDuration.h" @13
+- include "nsCOMArray.h" @14
+- include "nsIEventTarget.h" @15
+- include "nsIRunnable.h" @16
+- include "nsThread.h" @17
+- include "nsThreadManager.h" @18
+- include "nsThreadSyncDispatch.h" @19
+- include "nsThreadUtils.h" @20
+- include "prinrval.h" @21
+- function_definition InitTLS @33-33
+- function_definition GetCurrentThreadPool @49-51
+- function_definition nsThreadPool @53-67
+- function_definition ~nsThreadPool @69-73
+- struct_specifier nsThreadPool::MRUIdleEntry @77-94
+- function_definition MRUIdleEntry @80-82
+- function_definition DebugLogPoolStatus @98-134
+- function_definition PutEvent @137-226
+- function_definition ShutdownThread @228-243
+- function_definition SetQoSForThreads @245-255
+- function_definition NotifyChangeToAllIdleThreads @257-261
+- function_definition Run @292-465
+- function_definition DispatchFromScript @467-470
+- function_definition Dispatch @472-485
+- function_definition DelayedDispatch @487-490
+- function_definition RegisterShutdownTask @492-500
+- function_definition UnregisterShutdownTask @502-510
+- function_definition GetFeatures @512-514
+- function_definition IsOnCurrentThreadInfallible @517-519
+- function_definition IsOnCurrentThread @521-530
+- function_definition Shutdown @532-533
+- function_definition ShutdownWithTimeout @535-632
+- function_definition GetThreadLimit @634-639
+- function_definition SetThreadLimit @641-651
+- function_definition GetIdleThreadLimit @653-658
+- function_definition SetIdleThreadLimit @660-670
+- function_definition GetIdleThreadGraceTimeout @672-677
+- function_definition SetIdleThreadGraceTimeout @679-697
+- function_definition GetIdleThreadMaximumTimeout @699-704
+- function_definition SetIdleThreadMaximumTimeout @706-725
+- function_definition GetThreadStackSize @727-732
+- function_definition SetThreadStackSize @734-739
+- function_definition GetListener @741-746
+- function_definition SetListener @748-756
+- function_definition SetName @758-766
+
+### xpcom/threads/nsThreadPool.h
+
+Blob: `380a76b036cd9b9d5d82d8776ddff030b70eedba`. Grammar: cpp. Status: contains-errors.
+
+- include "mozilla/AlreadyAddRefed.h" @8
+- include "mozilla/Atomics.h" @9
+- include "mozilla/CondVar.h" @10
+- include "mozilla/EventQueue.h" @11
+- include "mozilla/LinkedList.h" @12
+- include "mozilla/Mutex.h" @13
+- include "mozilla/TargetShutdownTaskSet.h" @14
+- include "nsCOMArray.h" @15
+- include "nsCOMPtr.h" @16
+- include "nsIRunnable.h" @17
+- include "nsITargetShutdownTask.h" @18
+- include "nsIThread.h" @19
+- include "nsIThreadPool.h" @20
+- include "nsThreadUtils.h" @21
+- class_specifier nsIThread @23-23
+- class_specifier nsThreadPool @25-70
+- struct_specifier MRUIdleEntry @40-40
+
+### xpcom/threads/nsThreadSyncDispatch.h
+
+Blob: `4f6c658e8f801c747e9bcc50d8c6524e01f51952`. Grammar: cpp. Status: syntax-clean.
+
+- include "MaybeLeakRefPtr.h" @8
+- include "mozilla/Atomics.h" @9
+- include "mozilla/DebugOnly.h" @10
+- include "mozilla/SpinEventLoopUntil.h" @11
+- include "nsThreadUtils.h" @12
+- class_specifier nsThreadSyncDispatch @14-60
+- function_definition nsThreadSyncDispatch @16-21
+- function_definition IsPending @23-26
+- function_definition SpinEventLoopUntilComplete @28-31
+- function_definition Run @34-53
+
+## Validation and limits
+
+This is a declaration map. Function contracts, callers, memory ownership, thread use, generated bindings, feature selection, cleanup, and reasons need implementation and caller review. No compilation or runtime tests ran. Imports and includes are literal navigation hints only. No complete call graph is claimed.
+
+## Retrieval correction
+
+This copy preserves the source map in [10898330-328d-46e9-a68c-62aa1b5fa15f.md](10898330-328d-46e9-a68c-62aa1b5fa15f.md). The original was imported and committed by concurrent console maintenance during this study. Its full path metadata could exceed the console search budget. This copy uses component scope metadata while keeping every file path in the body. It adds no independent behavior evidence. Original record: `d1091071a4c7a90e8b656087de1d80195abb66de8115f15a8e51e5bc89aded4b`.

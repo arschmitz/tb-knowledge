@@ -1,0 +1,1038 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:14:46.642314+00:00","paths":["js"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013","portableCopies":["ac76bf140d4244d5241809f4be03c4427257195ad6c9f9325f568792c1c7343c"],"sourceAt":"2026-10-13T04:14:46.642314+00:00","correctionOf":"notes/d7a6ea4a-643e-47c6-8cb4-772204c8a448.md"}} -->
+# firefox/js structural source map 198
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. This is an automated navigation map, not a behavior review.
+Each row gives the repository-relative path, Git blob ID, byte size, role inferred from the path, declaration candidates, and literal dependency candidates. `@N` is the source line.
+Candidates come from line-based patterns. They can miss multiline, anonymous, macro-generated, and language-specific declarations or match comments and fixture text. Dependencies are not resolved imports, runtime calls, or a complete graph. No candidates does not mean no functions or dependencies.
+Imported code and tests are included. Binary and non-UTF-8 files have a census entry but no declaration extraction. Symlink contents are scanned as text, not followed. No uncommitted changes, build products, ignored files, or untracked files are studied.
+
+## File map
+
+`js/src/devtools/automation/variants/wasi` | `7d4a090b1f77353c7bd63e4bf025abde5df5ac13` | 539 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/devtools/automation/variants/wasi-intl` | `dcd53992b3e718b5e480461174efce6271a640c3` | 520 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/devtools/automation/variants/wasi-pbl` | `4d55e91d7a64929e92227e09d2315a8e88550cee` | 613 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/devtools/automation/variants/wasm-noexperimental` | `2d1fcb4e58502022505c61ab4ebe166e8ea83b6f` | 138 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/devtools/gc-ubench/argparse.js` | `454b53fb715d255b639917246050ccdb90e3b6bd` | 3676 bytes | source | UTF-8 | mode 100644
+Declarations: constructor@9; add_argument@28; parse_args@44; help@108
+
+`js/src/devtools/gc-ubench/benchmarks/bigTextNodes.js` | `0a66be03d30d9c4be4452f614b9ac27cac8eb5f9` | 1001 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/gc-ubench/benchmarks/deepWeakMap.js` | `bf46d1d97b84b020fcf3cd00a616876f4d414380` | 986 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/gc-ubench/benchmarks/events.js` | `0fe91b7596266acaef36dcf6fe4c63dd510109f6` | 980 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/gc-ubench/benchmarks/expandoEvents.js` | `4c6a53c8fe3d47a739406a5789ee77e8cb828444` | 1017 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/gc-ubench/benchmarks/globalArrayArrayLiteral.js` | `a9003d8be6c97f684597443683ed301ebb5b312c` | 831 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/gc-ubench/benchmarks/globalArrayBuffer.js` | `06bf73eea894fd6e373f4596f4c2264105993f4d` | 894 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/gc-ubench/benchmarks/globalArrayFgFinalized.js` | `d61d56b81c4e070a0b1807cbaace057e214ae424` | 902 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/gc-ubench/benchmarks/globalArrayLargeArray.js` | `38e4f2a85b04c3955d17f056c32aa46d2a182ebc` | 851 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/gc-ubench/benchmarks/globalArrayLargeObject.js` | `ed1c38b2713ed45bc704ed7294f31d6d33b96826` | 868 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/gc-ubench/benchmarks/globalArrayNewObject.js` | `04487aac204a0e9e2e236d60a46b061f94ba4f43` | 825 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/gc-ubench/benchmarks/globalArrayObjectLiteral.js` | `a31e76bdc636a464772962ddd635375168a64d56` | 848 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/gc-ubench/benchmarks/globalArrayReallocArray.js` | `54316736e1212565e266e07952dd07dd5cf54b46` | 843 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/gc-ubench/benchmarks/largeArrayPropertyAndElements.js` | `0202f56e40646e97d15a1e39d30fce20fe985d2f` | 891 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/gc-ubench/benchmarks/noAllocation.js` | `8e6ba5394371f60b5fe7c893588f649e73649e0d` | 346 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/gc-ubench/benchmarks/pairCyclicWeakMap.js` | `ac43325b6f03d9b2ea9c9d015a5855bfee026993` | 1155 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/gc-ubench/benchmarks/propertyTreeSplitting.js` | `9fc62b29e2ee8615f2ae9e69fe1c69c3678d9d0f` | 628 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/gc-ubench/benchmarks/selfCyclicWeakMap.js` | `c7736c72b9fc57912149a3961f95eba38cd2e93c` | 1032 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/gc-ubench/benchmarks/textNodes.js` | `07fd07e7b7e17cf99093acf869da43717ee10b7c` | 916 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/gc-ubench/harness.js` | `124baa17a539294b235abf5343003b4adff8f5b6` | 8041 bytes | source | UTF-8 | mode 100644
+Declarations: constructor@33; start_turn@34; end_turn@37; suspend@40; now@43; minorGCCount@47; majorGCCount@50; GCSliceCount@53; percent@63; parse_units@67; constructor@89; name@101; description@104; garbagePerFrame@107; garbagePerFrame@110; garbagePiles@113; garbagePiles@116; start@120; stop@124; reload@128; tick@133; is_dummy_load@137; constructor@143; getByName@156; activeLoad@164; setActiveLoad@168; deactivateLoad@176; paused@181; paused@184; load_running@188; change_garbagePiles@192; change_garbagePerFrame@199; tick@205; startSequencer@230; stopped@236; currentLoadRemaining@240; format_with_units@256; format@257; format_bytes@272; format_num@276; update_histogram@280; compute_test_score@289; compute_spark_histogram_percents@299
+
+`js/src/devtools/gc-ubench/index.html` | `4efbb75deff61c54e4ec0e6b3dff35117bffa1ac` | 2970 bytes | markup-or-style | UTF-8 | mode 100644
+
+`js/src/devtools/gc-ubench/perf.js` | `dc370ee0da35b3418acb37fbccc20299b4d91626` | 5709 bytes | source | UTF-8 | mode 100644
+Declarations: round_up@7; constructor@13; is_stopped@26; start_recording@30; on_frame_finished@34; pause@40; resume@47; constructor@62; start@80; reset@84; numSamples@96; findMax@100; findMaxDelay@112; on_frame@116; pause@140; resume@144; is_stopped@148; constructor@154; on_load_start@167; on_load_end@176; after_suspend@206; before_mutator@210; after_mutator@214
+
+`js/src/devtools/gc-ubench/scheduler.js` | `8f4a483b33677636ef5601693f77822d71f72b89` | 2146 bytes | source | UTF-8 | mode 100644
+Declarations: constructor@10; start@14; tick@17; wait_for_next_frame@18; tick@24; wait_for_next_frame@33; tick@47; wait_for_next_frame@56
+
+`js/src/devtools/gc-ubench/sequencer.js` | `0271140c04ac6de5c24cae90f4323dba1f48abcd` | 7616 bytes | source | UTF-8 | mode 100644
+Declarations: current@13; start@17; tick@25; do_tick@35; done@40; restart@44; currentLoadElapsed@50; constructor@57; current@69; reset@73; start@77; do_tick@86; done@96; constructor@103; current@110; reset@114; start@119; do_tick@131; done@154; constructor@160; current@169; reset@173; start@178; initSearch@185; done@187; do_tick@191; searchComplete@206; constructor@213; reset@227; clear@232; start@243; searchComplete@250
+
+`js/src/devtools/gc-ubench/shell-bench.js` | `9640cddce9d2a5738e8b32a6b6b92fa4b645d4d9` | 4184 bytes | source | UTF-8 | mode 100644
+Declarations: tick@28; run@37; report_results@103
+
+`js/src/devtools/gc-ubench/spidermonkey.js` | `0ad0aa977150ad4acd344cc7631cc00f001353c1` | 1329 bytes | source | UTF-8 | mode 100644
+Declarations: start_turn@12; end_turn@14; suspend@20; minorGCCount@24; majorGCCount@27; GCSliceCount@30; gcBytes@33; gcAllocTrigger@36
+
+`js/src/devtools/gc-ubench/test_list.js` | `03ed30cf9ec90fd7b44ade071af8ade6f2881813` | 900 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: foreach_test_file@1
+
+`js/src/devtools/gc-ubench/ui.js` | `4ff84481c914a6f8c3c4eb23fe1725d80acc48f4` | 18635 bytes | source | UTF-8 | mode 100644
+Declarations: start_turn@31; end_turn@35; suspend@39; minorGCCount@44; majorGCCount@47; GCSliceCount@50; gcBytes@53; mallocBytes@56; gcAllocTrigger@59; mallocTrigger@62; parse_units@74; constructor@96; xpos@116; clear@120; drawScale@124; draw60fps@128; draw30fps@132; drawAxisLabels@136; drawFrame@150; constructor@169; ypos@173; drawHBar@177; draw@198; constructor@293; ypos@298; drawHBarForBytes@303; drawHBar@307; draw@324; onUpdateDisplayChanged@428; onDoLoadChange@439; handler@447; summarize@480; reset_draw_state@505; onunload@509; onload@515; run_one_test@585; run_all_tests@589; start_test_cycle@593; update_load_state_indicator@604; start_test@618; end_test@624; compute_test_spark_histogram@636; report_test_result@658; update_load_display@672; duration_changed@684; onLoadChange@692; garbage_piles_changed@701; garbage_per_frame_changed@719; trackHeapSizes@736
+
+`js/src/devtools/gc-ubench/v8.js` | `0c46c2b4c4c58bc962d49cb88ae8fc30c141a926` | 954 bytes | source | UTF-8 | mode 100644
+Declarations: constructor@14; start_turn@19; end_turn@21; suspend@23
+
+`js/src/devtools/gc/README.txt` | `f4f37efbaa01cec33b1c872d8ce5696e754221eb` | 99 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/devtools/gc/gc-test.py` | `661171b3ef5fbbbcf354071d29fb454662c7ef24` | 5535 bytes | source | UTF-8 | mode 100644
+Declarations: Test@15; __init__@16; from_file@21; find_tests@25; get_test_cmd@39; avg@43; stddev@47; run_test@52; run_tests@81; compare@105
+Dependencies: operator@11; subprocess@12; optparse@144
+
+`js/src/devtools/gc/tests/clock.js` | `fd2fb985f178a6a07b73691f377161ac19e80d19` | 669 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: alloc@6; cycle@14
+
+`js/src/devtools/gc/tests/dslots.js` | `8fcb6e8aa34b4d2c31dd2f1ac298d5e8bae7cf44` | 704 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: Object0@3; Object1@4; Object2@5; Object3@6; Object4@7; Object5@8; test@10
+
+`js/src/devtools/gc/tests/loops.js` | `a99961a3ef7ed4a7be5032e0ba58239c595a1b15` | 448 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/devtools/gc/tests/objGraph.js` | `607633173b0731fce480ebda6702eb07a8c2a6b6` | 518 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: test@3; generate_big_object_graph@5; f@10; f@20
+
+`js/src/devtools/gnuplot/gcTimer.gnu` | `b8b3ac9d85ea51f450011f8063ed3ba5924629ae` | 710 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/devtools/iongraph/.gitignore` | `7964ec85a65601afb9fcc8d2c54f9b9b4050fb7c` | 17 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/devtools/iongraph/LICENSE` | `c2625f439a25b5d3a2b981ba8e05ed470afc44e4` | 1077 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/devtools/iongraph/README.md` | `df5e2822c2f4b16c47c97dd37d786ec1c15ab5e6` | 1107 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/devtools/iongraph/iongraph` | `9ce57ad69e4a7984e45571d511ccdcc23ee0b1c0` | 20023 bytes | data-or-other | UTF-8 | mode 100755
+
+`js/src/devtools/javascript-trace.d` | `4bd5b64ee168d57b4dee86f62cbd332175f9e6ec` | 1297 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/devtools/octane-csv.sh` | `1049a2b47eae145564b5aa89841eb596e8914066` | 2119 bytes | data-or-other | UTF-8 | mode 100755
+
+`js/src/devtools/plot-octane.R` | `cd7ac7303a238d8b5c36a0237e282fa2f7e0504e` | 1064 bytes | data-or-other | UTF-8 | mode 100755
+
+`js/src/devtools/release/release-notes` | `48cc53ac9ea6d8415f9b7131a4a9a6b278ffc5d5` | 5527 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/devtools/rootAnalysis/CFG.js` | `d03502885d8ba51c64352d16c69c640513444e13` | 51758 bytes | source | UTF-8 | mode 100644
+Declarations: constructor@20; mainBody@39; forEachBody@44; lookupDecl@53; forEachDecl@59; getAttrsForTypeName@63; getBodyByBlockId@71; findAllPoints@85; constructor@106; extend_path@114; next_action@124; merge_info@129; visit@150; BFS_upwards@200; isMatchingDestructor@274; allRAIIGuardedCallPoints@312; isMatchingConstructor@331; findMatchingConstructor@363; pointsInRAIIScope@393; isImmobileValue@418; isReferenceDecl@426; expressionIsVariableAddress@430; edgeTakesVariableAddress@437; getFieldCallInstanceCSU@462; expressionUsesVariable@497; expressionUsesVariableContents@510; isReturningImmobileValue@526; edgeUsesVariable@560; maybeDereference@651; expressionIsVariable@661; referencedCSUName@666; containsGCPointer@674; exprCoversVariable@717; expressionIsDeclaredVariable@785; expressionIsMethodOnVariableDecl@791; edgeStartsValueLiveRange@808; matchEdgeCall@878; edgeMarksVariableGCSafe@898; matchEdgeCall@899; parseTypeName@913; edgeEndsValueLiveRange@943; expressionIsMethodOnVariableDecl@1026; in@1054; edgeMovesVariable@1083; basicBlockEatsVariable@1119; getCalleeProperties@1155; mangle@1168; synthesizeDestructorName@1182; getCallEdgeProperties@1224; next_action@1300; merge_info@1303; extend_path@1306; isSyntheticVirtualDestructor@1345; typedField@1349; fieldKey@1376
+
+`js/src/devtools/rootAnalysis/README.md` | `08a4fcde290563f32419d3a617e30b33cb494ff3` | 79 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/devtools/rootAnalysis/analyze.py` | `36bd1f450b9de8e9aee5fe8f58015c35d10d1750` | 13318 bytes | source | UTF-8 | mode 100755
+Declarations: Output@22; MultiInput@27; env@32; fill@47; print_command@72; out_indexes@206; job_command_with_final_output_names@214; run_job@222; spawn_command@265; max_parallel_jobs@301
+Dependencies: shlex@17; subprocess@18
+
+`js/src/devtools/rootAnalysis/analyzeHeapWrites.js` | `c73127bd897f50ce92bb4f716e84b275e38942a8` | 47513 bytes | source | UTF-8 | mode 100644
+Declarations: checkExternalFunction@21; hasThreadsafeReferenceCounts@61; checkOverridableVirtualCall@80; checkIndirectCall@112; checkVariableAssignment@125; treatAsSafeArgument@134; isSafeAssignment@237; checkFieldWrite@267; checkDereferenceWrite@291; ignoreCallEdge@317; ignoreContents@395; variableName@540; stripFields@545; isLocalVariable@569; isDirectCall@581; isZero@588; WorklistEntry@606; safeArgumentIndex@652; nameMatches@661; nameMatchesArray@674; CallSite@688; elapsedTime@726; add_trailing_slash@749; dumpError@821; variableAssignRhs@848; processAssign@858; isSafeMemberPointer@907; get_location@926; process@931; maybeProcessMissingFunction@1017; processRoot@1063; isEdgeSafeArgument@1118; getEdgeSafeArguments@1134; singleAssignment@1152; expressionValueEdge@1162; isSafeVariable@1182; isSafeLocalVariable@1202; isDirectCall@1218; isEdgeSafeArgument@1230; isEdgeSafeArgument@1240; isEdgeSafeArgument@1249; isEdgeSafeArgument@1260; isEdgeSafeArgument@1267; isSafeMemberPointer@1328; testFailsOffMainThread@1342
+
+`js/src/devtools/rootAnalysis/analyzeRoots.js` | `94d1140f081cbd6e20039dc581cc0a3ed309846c` | 35944 bytes | source | UTF-8 | mode 100644
+Declarations: isGCRef@99; isGCType@106; isUnrootedPointerDeclType@115; edgeCanGC@135; findGCBeforeValueUse@239; Path@249; ProgressProperties@250; constructor@252; toString@264; compare@274; next_action@321; merge_info@351; extend_path@362; variableLiveAcrossGC@519; unsafeVariableAddressTaken@581; loadPrintedLines@602; findLocation@637; locationLine@654; getEntryTrace@661; isRootedDeclType@720; printRecord@728; processBodies@732; process@923
+
+`js/src/devtools/rootAnalysis/annotations.js` | `9fc30adef53bf41ce030a492923db5dd57d798fc` | 22976 bytes | source | UTF-8 | mode 100644
+Declarations: isRefcountedDtor@40; indirectCallCannotGC@44; fieldCallCannotGC@125; ignoreEdgeUse@143; ignoreEdgeAddressTaken@191; extraGCFunctions@333; isProtobuf@337; isHeapSnapshotMockClass@343; isGTest@349; isICU@354; ignoreGCFunction@360; stripUCSAndNamespace@411; extraRootedGCThings@418; extraRootedPointers@423; isRootedGCPointerTypeName@429; isUnsafeStorage@439; assignEdgeIsMaybeConstructor@448; matchConstructorEdge@511; virtualCanRunJS@579; listNonGCPointers@590; isJSNative@597
+
+`js/src/devtools/rootAnalysis/build.js` | `78ef04fea1b948c76447a26748fa846455dd67aa` | 500 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/rootAnalysis/build/sixgill-b2g.manifest` | `1ecb5d0665b41d7610c2932922325edbbce6b941` | 266 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/devtools/rootAnalysis/build/sixgill.manifest` | `49ccdcbd3fdcfae56a169bd302811b3330188494` | 266 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/devtools/rootAnalysis/callgraph.js` | `dad69ed798ae53cfa76aeeed8ffc7899e6a09d2b` | 8955 bytes | source | UTF-8 | mode 100644
+Declarations: addToNamedSet@48; processCSU@58; translateCallees@109; getCallees@175; loadTypes@200; loadTypesWithCache@218
+
+`js/src/devtools/rootAnalysis/computeCallgraph.js` | `c53fabd2fd02f95e6c7d3e7df845379357aaeaca` | 15955 bytes | source | UTF-8 | mode 100644
+Declarations: getId@50; functionId@65; printOnce@81; getAllAttributes@96; getAnnotations@114; processBody@128; assertFunctionExists@286; process@291
+
+`js/src/devtools/rootAnalysis/computeGCFunctions.js` | `32f46f40f947281efd57cefe127dcc6f48c80074` | 2955 bytes | source | UTF-8 | mode 100644
+Declarations: usage@11; info@61
+
+`js/src/devtools/rootAnalysis/computeGCTypes.js` | `a6ec9b0464f33ec292877b4fe819b9863bb8446e` | 27313 bytes | source | UTF-8 | mode 100644
+Declarations: processCSU@84; addNestedStructure@152; addBaseClass@165; addNestedPointer@176; parseTemplateType@225; check_parse@297; check_throws@326; check_throws@336; check_throws@337; check_throws@338; check_throws@339; Ptr@361; markGCType@371; markGCTypeImpl@429; addGCType@488; addGCPointer@493; getGCPointerFieldType@521; populateSinglePointerFieldTable@550; foreachContainingStruct@611; recurse@613; explain@636
+
+`js/src/devtools/rootAnalysis/dumpCFG.js` | `310fdbb6af8e7bcb96146d8455f007c2220c18eb` | 7813 bytes | source | UTF-8 | mode 100644
+Declarations: loadCFG@8; dump_CFG@13; dump_body@18; str_decl@38; badFormat@43; str_Variable@49; str_Type@62; opcode_name@89; str_expr@102; str_thiscall_Exp@152; stripcsu@156; str_call@160; str_assign@201; str_loop@207; str_assume@212; str_edge@233; str@254; jdump@278
+
+`js/src/devtools/rootAnalysis/expect.b2g.json` | `06f2beb36f7717e09bcc417d622367ef0c15e2ab` | 26 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/devtools/rootAnalysis/expect.browser.json` | `06f2beb36f7717e09bcc417d622367ef0c15e2ab` | 26 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/devtools/rootAnalysis/expect.shell.json` | `06f2beb36f7717e09bcc417d622367ef0c15e2ab` | 26 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/devtools/rootAnalysis/explain.py` | `76a541507b20aa1918f467fe124a6f9b6ef80163` | 14831 bytes | source | UTF-8 | mode 100755
+Declarations: splitfunc@65; print_header@72; parse_function@133; brief_function@183; sourcelink@189; quoted_dict@210; func_link@214
+Dependencies: html@11
+
+`js/src/devtools/rootAnalysis/gen-hazards.sh` | `7007969a1416b3c6fffd60ae338f62358219efe4` | 284 bytes | data-or-other | UTF-8 | mode 100755
+
+`js/src/devtools/rootAnalysis/loadCallgraph.js` | `3ee5a148d2bfda0e6abc620f13ffc85686a65484` | 23823 bytes | source | UTF-8 | mode 100644
+Declarations: addGCFunction@39; generate_callgraph@65; loadRawCallgraphFile@109; mergeRawCallgraphs@224; loadCallgraph@280; saveCallgraph@452; gather_simple_roots@487; propagate_attrs@503; gather_recursive_roots@527
+
+`js/src/devtools/rootAnalysis/mach_commands.py` | `544894e0ae416df7ff4f157ddbb841108844b155` | 22742 bytes | source | UTF-8 | mode 100644
+Declarations: inherit_command_args@31; inherited@37; state_dir@53; tools_dir@57; sixgill_dir@69; gcc_dir@73; script_dir@77; get_work_dir@81; get_objdir@87; ensure_dir_exists@97; setup_env_for_tools@103; setup_env_for_shell@112; hazards@124; bootstrap@136; clobber@166; build_shell@211; read_json_file@251; ensure_shell@256; validate_mozconfig@272; gather_hazard_data@323; inner_compile@382; analyze@455; self_test@510; annotated_source@531; view_hazards@586; serve_source_file@596; log@599
+Dependencies: mach.base@21; mach.decorators@22; mach.registrar@23; mozbuild.base@24; mozbuild.mozconfig@25; mozbuild.controller.clobber@167
+
+`js/src/devtools/rootAnalysis/mergeJSON.js` | `9616fa962990ce6312d00ef0f7832c181e3bb9aa` | 773 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/rootAnalysis/mozconfig.browser` | `6c3517865bb6cb7662ffc0f5e24661d2232a1ace` | 749 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/devtools/rootAnalysis/mozconfig.common` | `c68fb6a26cc86e1c986d2ca70ff649bcec069b3d` | 1514 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/devtools/rootAnalysis/mozconfig.haz_shell` | `ab8dab6e730bb3ebe9c5a0cb56e238086480fc47` | 594 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/devtools/rootAnalysis/mozconfig.js` | `07e584c2106720e5bf4a177198554f966e093b9f` | 669 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/rootAnalysis/rawcalls.txt` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/devtools/rootAnalysis/run-analysis.sh` | `157821cc927bf7f803ea62457505c186582b5ab7` | 141 bytes | data-or-other | UTF-8 | mode 100755
+
+`js/src/devtools/rootAnalysis/run-test.py` | `b985aa67a4d36d8f8e7151b0eee68c051dc9cb4a` | 3975 bytes | source | UTF-8 | mode 100755
+Declarations: binpath@94; make_dir@98
+Dependencies: glob@11; testlib@17
+
+`js/src/devtools/rootAnalysis/run_complete` | `c9355267dbdc52414e105dd7ce146be81ede3770` | 11226 bytes | data-or-other | UTF-8 | mode 100755
+
+`js/src/devtools/rootAnalysis/t/exceptions/source.cpp` | `c9f1845e9854452ae71e01cf7857558ae48165ac` | 1512 bytes | source | UTF-8 | mode 100644
+Declarations: Cell@10; GC@16; RAII_GC@22; RAII_GC@24; AutoSomething@32; AutoSomething@36; f@46
+Dependencies: exception@6
+
+`js/src/devtools/rootAnalysis/t/exceptions/test.py` | `a40753d87ae00d2fe88f3ae931e921868177b6df` | 672 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/rootAnalysis/t/graph/source.cpp` | `0adff8d5325b44e5a693b1629a828dd9e4853760` | 1369 bytes | source | UTF-8 | mode 100644
+Declarations: GC@5; f@14; g@22; h@27; leaf@34; nonrecursive_root@36; self_recursive@42; n1@65; n2@67; n4@72; n5@74; n3@79; n6@81; n7@83; n8@85; n9@90
+
+`js/src/devtools/rootAnalysis/t/graph/test.py` | `bc7d84f44f597e1631acb58ef72d93c913aca3eb` | 1237 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/rootAnalysis/t/hazards/source.cpp` | `9359a5e6889fcf0b18d8adc8227f9376536aa1d5` | 18800 bytes | source | UTF-8 | mode 100644
+Declarations: JS@12; detail@13; MarkVariableAsGCSafe@15; Cell@23; UntypedContainer@28; RootedCell@32; RootedCell@33; AutoSuppressGC_Base@36; AutoSuppressGC_Base@38; AutoSuppressGC_Child@42; AutoSuppressGC_Child@44; AutoSuppressGC@47; AutoSuppressGC@51; AutoCheckCannotGC@54; AutoCheckCannotGC@56; GC@63; suppressedFunction@76; halfSuppressedFunction@80; unsuppressedFunction@84; IDL_Interface@88; ANNOTATE@90; cannotScriptThis@91; IDL_Subclass@96; GCInDestructor@103; usecontainer@113; cell@117; f@122; copy_and_gc@169; use@174; CellContainer@179; CellContainer@181; loopy@184; mozilla@258; UniquePtr@260; UniquePtr@264; UniquePtr@265; UniquePtr@266; get@268; reset@269; safevals@275; Subcell@429; method@430; RefPtr@438; forget@443; use@447; assign_with_AddRef@448; refptr_test1@453; refptr_test2@460; refptr_test3@469; refptr_test4@479; refptr_test5@485; refptr_test6@493; refptr_test7@507; refptr_test8@519; refptr_test9@532; refptr_test10@544; aggr_init_unsafe@560; aggr_init_safe@566; stack_array@576; partial_assignments@584; A@585; B@589; C@593; Aw@597; Bw@600; D@603; Cw@606; TwoPointers@610; PairOfPointers@613; TwoPointers@614; As@617; Ases@620; closure@729; do_bad_stuff@758; unsafe_address1@760; unsafe_address2@767; ANNOTATE@774; ANNOTATE@780; ANNOTATE@782
+Dependencies: utility@5
+
+`js/src/devtools/rootAnalysis/t/hazards/test.py` | `14f3da35557c4840e2211fec4dd5557c550bd35e` | 6092 bytes | source | UTF-8 | mode 100644
+Dependencies: collections@3
+
+`js/src/devtools/rootAnalysis/t/sixgill-tree/source.cpp` | `31adce4d8c595a4ed5b0a7202ee8d730371f8d8b` | 1406 bytes | source | UTF-8 | mode 100644
+Declarations: js@7; gc@8; Cell@9; Bogon@15; JustACell@17; iHaveNoDataMembers@18; JSObject@21; SpecialObject@25; ErrorResult@29; trace@32; OkContainer@35; UnrootedPointer@40; Rooted@45; js_GC@51; root_arg@53
+
+`js/src/devtools/rootAnalysis/t/sixgill-tree/test.py` | `5e99fff908ef360f4077b91fef72d515267526c2` | 2152 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/rootAnalysis/t/sixgill.py` | `307f13fae579524e76bb4db19c0405798aebe0cf` | 2503 bytes | source | UTF-8 | mode 100644
+Declarations: Body@11; __init__@12; edges_from_line@42; edge_from_line@45; edges_from_point@50; edge_from_point@53; assignment_point@58; assignment_line@69
+Dependencies: collections@6
+
+`js/src/devtools/rootAnalysis/t/suppression/source.cpp` | `c743e0cecff806a833da190830f9839261b64fdc` | 1587 bytes | source | UTF-8 | mode 100644
+Declarations: Cell@7; AutoSuppressGC_Base@11; AutoSuppressGC_Base@13; AutoSuppressGC_Child@17; AutoSuppressGC_Child@19; AutoSuppressGC@22; AutoSuppressGC@26; GC@31; suppressedFunction@39; halfSuppressedFunction@43; unsuppressedFunction@47; f@51
+
+`js/src/devtools/rootAnalysis/t/suppression/test.py` | `118ae422ab3e8c4fb1cff101c67d10570d809d4e` | 939 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/rootAnalysis/t/testlib.py` | `999a494a07966da12c963b35afe1395cf19982ca` | 8586 bytes | source | UTF-8 | mode 100644
+Declarations: equal@32; extract_unmangled@37; Test@41; __init__@42; infile@48; binpath@51; compile@54; load_db_entry@64; run_analysis_script@85; computeGCTypes@110; computeHazards@113; load_text_file@116; load_json_file@121; load_gcTypes@126; grab_type@127; load_typeInfo@140; load_funcInfo@143; load_gcFunctions@146; load_callgraph@149; lookup@162; add_call@166; process@172; load_hazards@231; grab_hazard@232; process_body@246; process_bodies@249
+Dependencies: collections@6; sixgill@8
+
+`js/src/devtools/rootAnalysis/t/types/source.cpp` | `1a435d918815303cfa905a3e7170f9a100b5e26b` | 3778 bytes | source | UTF-8 | mode 100644
+Declarations: Cell@10; World@14; NS@15; Unsafe@16; GC@26; GCOnDestruction@33; NoGCOnDestruction@37; cell@43; SimpleTemplate@54; ANNOTATE@59; foo@62; InnerClass@63; Entry@68; f@74; mozilla@90; JustAField@93; UniquePtr@101; SimpleUniquePtr@113; Recursive@119; rvalue_ref@125; ref@127; rvalue_ref_ok@140; rvalue_ref_not_ok@146; rvalue_ref_arg_ok@152; rvalue_ref_arg_not_ok@157; shared_ptr_hazard@162; shared_ptr_no_hazard@170
+Dependencies: memory@5; utility@6
+
+`js/src/devtools/rootAnalysis/t/types/test.py` | `004efcac766c753b2220ca693067ba0cba69dd6d` | 508 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/rootAnalysis/t/virtual/source.cpp` | `7275beef179227d2dad992da384b664620ba1c6b` | 6626 bytes | source | UTF-8 | mode 100644
+Declarations: GC@9; js@17; RunScript@18; Cell@21; bar@27; void@29; Base@31; onBase@37; Base::testAnnotations@51; Base::testParamAnnotations@56; Super@61; onSuper@65; nonVirtualFunc@66; Sub1@69; someGC@72; someGC@75; Sub2@86; Sibling@104; noneGC@106; allGC@115; AutoSuppressGC@122; AutoSuppressGC@124; use@128; nsISupports@130; ANNOTATE@132; nsIPrincipal@137; JSPrincipals@142; nsJSPrincipals@148; Release@150; SafePrincipals@153; f@158; Call1@293; Call2@298; function_pointers@302; annotated_function_pointers@334
+
+`js/src/devtools/rootAnalysis/t/virtual/test.py` | `26d2e51ed65251ee4d0b26c5d89a0d2646bb3c76` | 3551 bytes | source | UTF-8 | mode 100644
+
+`js/src/devtools/rootAnalysis/utility.js` | `8652cae2ef4f16ae776cbd91197300b670faced6` | 15405 bytes | source | UTF-8 | mode 100644
+Declarations: makeEnumBits@25; function@89; defined@107; xprint@111; parse_options@154; sameBlockId@263; sameVariable@274; blockIdentifier@283; collectBodyEdges@291; getPredecessors@309; getSuccessors@316; splitFunction@325; mangled@336; readable@342; xdbLibrary@348; openLibrary@367; cLibrary@377; readFileLines_gen@398; addToKeyedList@413; addToMappedList@421; loadTypeInfo@429; batchStart@436; batchLast@442; PropertyTracer@448; matches@450; set@459; traced@471
+
+`js/src/devtools/vprof/manifest.mk` | `e18a17fb5d9be14bbf1c5c436c2632e95d47da42` | 274 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/devtools/vprof/readme.txt` | `f84bfc27e506c2a0d040deee4fec87a320929cb7` | 3608 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/devtools/vprof/testVprofMT.c` | `94737db20734f489725f88873c011b7a9a22a536` | 1923 bytes | source | UTF-8 | mode 100644
+Declarations: cProbe@11; sub@33; run@63; main@79
+Dependencies: windows.h@5; stdio.h@6; time.h@7; vprof.h@9
+
+`js/src/devtools/vprof/vprof.cpp` | `c74b0088181acc3733c9ecdf93e0c67027a97c29` | 8223 bytes | source | UTF-8 | mode 100644
+Declarations: vprof_printf@75; reverse@91; f@104; dumpProfile@118; findEntry@165; initValueProfile@178; profileValue@224; initHistProfile@249; histValue@313; readTimestampCounter@344; readTimestampCounter@349; readTimestampCounter@356
+Dependencies: VMPI.h@5; util/WindowsWrapper.h@11; stdarg.h@14; vprof.h@17
+
+`js/src/devtools/vprof/vprof.h` | `1fca310379677c580aef4a167764947535a91e8b` | 9589 bytes | source | UTF-8 | mode 100644
+Declarations: struct@211; struct@213; struct@219; struct@221
+Dependencies: VMPI.h@58
+
+`js/src/doc/Debugger/Conventions.md` | `5d89eb734330cf1db5a9997486131219c730627f` | 11265 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/Debugger/Debugger-API.md` | `79f36c0e220ebdd02dd332c63d0ff50c60adb169` | 6350 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/Debugger/Debugger.Environment.md` | `eef4d358183e4cf143235a8414d838805fc27ed8` | 8364 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/Debugger/Debugger.Frame.md` | `2eda767d0e65d0232c615cda263d9ef41825195a` | 22352 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/Debugger/Debugger.Memory.md` | `ff32d2de69fef4ebe71fc32611fcdee307935ee0` | 21651 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/Debugger/Debugger.Object.md` | `c4a0069fb38e23445a6e3c9aa3ec6b1051f75d27` | 35530 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/Debugger/Debugger.Script.md` | `3abd53cff1935c7dc9b1fa83ae59c4b5cfb6f90e` | 17361 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/Debugger/Debugger.Source.md` | `1d49d7201e4e71b8491de69c3dbc627b0ff30d3d` | 12982 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/Debugger/Debugger.md` | `678e9757a5d7d99973a0be6fe6998285b5d15964` | 23446 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/Debugger/Tutorial-Alloc-Log-Tree.md` | `76cd85e853ec74c06277f371e6b8ee1282f9bcf1` | 8290 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/Debugger/Tutorial-Breakpoint.md` | `a1f4c8aea1024406a63ab4df8a26ed52121d69fd` | 6033 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/Debugger/Tutorial-Debugger-Statement.md` | `cd9a495a55fa6b6310103e5dfd086306bdb99a78` | 4060 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/Debugger/alloc-plot-console.png` | `5411724724cba34764956d9029b00d6e4e78d08c` | 82359 bytes | data-or-other | binary-NUL | mode 100644
+
+`js/src/doc/Debugger/console.png` | `9e9ce4ae74c14925b40de49aa05f78ab5a3b2cc9` | 41695 bytes | data-or-other | binary-NUL | mode 100644
+
+`js/src/doc/Debugger/debugger-alert.png` | `2bf9362243bf3b274636b42fcd56f900deb837e5` | 27770 bytes | data-or-other | binary-NUL | mode 100644
+
+`js/src/doc/Debugger/enable-chrome-devtools.png` | `033468991fcada403be7e12d8c74a8cae551000d` | 28465 bytes | data-or-other | binary-NUL | mode 100644
+
+`js/src/doc/Debugger/index.md` | `28f51a97ff0ff313e86dd3a3cbf45fd69a6896b5` | 290 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/Debugger/scratchpad-browser-environment.png` | `534d0f95002ccc933a2be3ebf04938b57c9f81ac` | 30443 bytes | data-or-other | binary-NUL | mode 100644
+
+`js/src/doc/Debugger/shadows.svg` | `44bceddb4cf7542afe0c6fd48fad6c7d66ae77d0` | 36152 bytes | markup-or-style | UTF-8 | mode 100644
+
+`js/src/doc/HazardAnalysis/CFG.md` | `1038e9f350eecdc61c356fa9985fda9c303beb12` | 16004 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/HazardAnalysis/index.md` | `953eac592f8e027f5fedd73342f580d9ce947a32` | 8731 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/HazardAnalysis/running.md` | `8147dcf1b8d4b5a2d4df0ecad9b890f1b0e8d9b9` | 5376 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/MIR-optimizations/index.md` | `87f2012e21069e419acdf351b498f80fae3a3b94` | 6392 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/SavedFrame/index.md` | `cdd4643a6444f149b77c2297ef25b2139ec49335` | 3474 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/build.md` | `10e2e3a310f3bde02f3dab9202402cdf192e7f58` | 8141 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/bytecode_checklist.md` | `be3c1011a42d339193ca1285b56a7c5cc0de6f63` | 2380 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/cacheir.md` | `0b294798a079d1f035085a934f2bd857004338b3` | 5954 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/constraints.md` | `5ec9d03147eb31e05bf8795ef1b679fe9a340f77` | 3636 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/feature_checklist.md` | `b615cecbff89c481c767ca72ddcc65f0e7287571` | 5995 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/gc.md` | `41e71c110c02c046b13fa052a5060facca292537` | 5127 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/hacking_tips.md` | `51ad9aecc86c520fdb1ea515abd45b0794dd5737` | 34366 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/how-we-optimize.md` | `b56ade1f69bbcd93e560d833f8d076a7184294d9` | 8006 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/index.md` | `1a6b7feb9c3209d5a00977bbcfe237b96a7e2bcf` | 8418 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/test.md` | `99af417206586b294c7dacb3aff6a80f969d0162` | 4385 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/doc/use_counter.md` | `d58a48651d747be7882a30798a3f4f64d1360806` | 3035 bytes | documentation | UTF-8 | mode 100644
+
+`js/src/ds/AvlTree.h` | `ad0e8b7322588543ef7102c8086233c26b4d83c9` | 36146 bytes | source | UTF-8 | mode 100644
+Declarations: js@44; AvlTreeImpl@86; class@95; Node@109; rightAndTag@129; setRight@138; setTag@142; setRightAndTag@145; root_@189; setAllocator@191; addToFreeList@194; freeNode@201; allocateNode@248; class@262; rotate_left@267; rotate_right@275; leftgrown@341; rightgrown@391; insert_worker@415; leftshrunk@546; rightshrunk@604; findhighest@676; findlowest@707; delete_worker@741; find_worker@803; Iter@852; setupIteratorStack@880; visitLeftChildren@902; Iter@915; Iter@924; hasMore@929; next@930; AvlTree@956; AvlTree@964; setAllocator@968; empty@971; remove@998; contains@1018; maybeLookup@1030
+Dependencies: mozilla/Attributes.h@36; mozilla/Likely.h@37; mozilla/Maybe.h@38; bit@40; ds/LifoAlloc.h@42
+
+`js/src/ds/BitArray.h` | `677cedd3e1db7f1dc6bac7af2e0c51322e2cbed5` | 3391 bytes | source | UTF-8 | mode 100644
+Declarations: js@16; BitArray@26; BitArray@36; get@38; set@43; unset@48; isAllClear@53; getWord@63; getIndexAndMask@68; offsetOfMap@76; ExternalBitArray@83; getIndexAndMask@95; get@113; set@118; unset@123
+Dependencies: mozilla/Assertions.h@8; limits.h@10; stddef.h@11; utility@12; jstypes.h@14
+
+`js/src/ds/Bitmap.cpp` | `2040313f1c63bd04a07c26e686688a3f464b063f` | 3129 bytes | source | UTF-8 | mode 100644
+Declarations: SparseBitmap::~SparseBitmap@13; SparseBitmap::sizeOfExcludingThis@19; SparseBitmap::getBit@38; SparseBitmap::readonlyThreadsafeGetBit@49; SparseBitmap::bitwiseAndWith@60; SparseBitmap::bitwiseOrWith@77; SparseBitmap::bitwiseOrInto@92
+Dependencies: ds/Bitmap.h@5; algorithm@7; js/UniquePtr.h@9
+
+`js/src/ds/Bitmap.h` | `3c1f242677ae5fb15189b789f16d64466c659f5e` | 7273 bytes | source | UTF-8 | mode 100644
+Declarations: js@30; DenseBitmap@32; sizeOfExcludingThis@38; ensureSpace@42; count@47; numWords@49; word@50; word@51; getBit@53; copyBitsFrom@60; bitwiseOrRangeInto@69; forEachWord@83; SparseBitmap@91; wordIntersectCount@114; atomicSetExistingBit@161; bitwiseAndRangeWith@182; bitwiseOrRangeInto@199; forEachWord@215
+Dependencies: mozilla/Array.h@8; mozilla/Assertions.h@9; mozilla/Attributes.h@10; algorithm@12; stddef.h@13; stdint.h@14; js/AllocPolicy.h@16; js/HashTable.h@17; js/HeapAPI.h@18; js/Vector.h@19
+
+`js/src/ds/Fifo.h` | `99389bfa21b205e299828a0f53f1db7b607503b1` | 5573 bytes | source | UTF-8 | mode 100644
+Declarations: js@13; AllocPolicy@30; Fifo@33; fixup@50; front_@59; front_@62; length@74; empty@79; ConstIterator@85; ConstIterator@89; begin@108; end@110; front@141; popFront@151; popCopyFront@158; clear@165; eraseIf@173; sizeOfExcludingThis@186; sizeOfIncludingThis@190
+Dependencies: algorithm@8; utility@9; js/Vector.h@11
+
+`js/src/ds/FixedLengthVector.h` | `03eb8c7c88e9898ab292d9dbde0ce4f233f8b723` | 2605 bytes | source | UTF-8 | mode 100644
+Declarations: js@16; FixedLengthVector@20; length@39; initialized@41; begin@74; end@84
+Dependencies: mozilla/Assertions.h@8; mozilla/OperatorNewExtensions.h@9; stddef.h@11; js/Utility.h@13; vm/JSContext.h@14
+
+`js/src/ds/IdValuePair.h` | `42dceacc48cb5f4df353129ccd50503aceaa9e72` | 891 bytes | source | UTF-8 | mode 100644
+Declarations: js@13; IdValuePair@15; IdValuePair@19; IdValuePair@20; IdValuePair@21; trace@23
+Dependencies: gc/Tracer.h@8; js/GCVector.h@9; js/Id.h@10; js/Value.h@11
+
+`js/src/ds/InlineTable.h` | `961849a958017b3fa802a5f5104ea5643ea9bb16` | 17111 bytes | source | UTF-8 | mode 100644
+Declarations: js@16; detail@18; MOZ_STANDALONE_DEBUG@22; InlineArray@29; inlineArray@47; table@51; inlineStart@54; inlineEnd@64; usingTable@74; bumpMutationCount@76; AllocPolicy@112; Ptr@114; entry_@126; entry_@133; Ptr@141; found@150; bool@154; AddPtr@167; inlPtrFound_@184; isInlinePtr_@193; found@202; bool@206; count@219; empty@223; clear@227; clearAndCompact@229; lookup@235; lookupForAdd@251; remove@313; remove@333; Iterator@339; isInline_@357; isInline_@370; assertInlineRangeInvariants@378; isInlineRange@383; bumpCurPtr@388; done@396; get@401; next@410; iter@421; MOZ_STANDALONE_DEBUG@437; InlineEntry@440; update@445; Entry@455; mapEntry_@465; mapEntry_@468; value@478; InlineMap@501; count@503; empty@505; clear@507; clearAndCompact@508; iter@510; lookup@513; has@516; lookupForAdd@521; remove@540; remove@542; InlineSet@553; InlineEntry@556; update@560; Entry@567; setEntry_@577; setEntry_@580; T@582; InlineSet@605; count@607; empty@609; clear@611; clearAndCompact@612; iter@614; lookup@617; has@620; lookupForAdd@625; remove@638; remove@640
+Dependencies: mozilla/Maybe.h@8; mozilla/Variant.h@9; utility@11; js/AllocPolicy.h@13; js/HashTable.h@14
+
+`js/src/ds/LifoAlloc.cpp` | `e6ad8493b8b4c247735899d3aecc4a1693783c45` | 12953 bytes | source | UTF-8 | mode 100644
+Declarations: js@18; detail@19; BumpChunk::newWithCapacity@22; AlignPtrUp@40; AlignPtrDown@49; BumpChunk::setReadOnly@56; BumpChunk::setReadWrite@72; LifoAlloc::reset@93; LifoAlloc::freeAll@112; MallocGoodSize@137; NextSize@148; LifoAlloc::getOrCreateChunk@195; LifoAlloc::allocImplColdPath@227; LifoAlloc::allocImplOversize@244; LifoAlloc::ensureUnusedApproximateColdPath@259; LifoAlloc::mark@276; LifoAlloc::release@288; LifoAlloc::steal@343; LifoAlloc::transferFrom@367; LifoAlloc::transferUnusedFrom@393; LifoAlloc::setReadOnly@407; LifoAlloc::setReadWrite@419
+Dependencies: ds/LifoAlloc.h@5; mozilla/Likely.h@7; algorithm@9; bit@10; gc/Memory.h@13
+
+`js/src/ds/LifoAlloc.h` | `c95bd8760457a20a79481b0da9b77864e35acd09` | 41791 bytes | source | UTF-8 | mode 100644
+Declarations: js@194; CanLifoAlloc@202; CanLifoAlloc@206; detail@227; SingleLinkedList@230; SingleLinkedListElement@233; next@241; SingleLinkedList@248; assertInvariants@257; SingleLinkedList@263; head_@266; empty@288; Iterator@292; Iterator@296; get@300; begin@310; end@311; last@312; splitAfter@320; pushFront@333; append@342; appendAll@352; steal@366; prependAll@373; AlignPtr@392; BumpChunk@406; assertInvariants@461; base@488; setBump@499; empty@525; used@529; end@536; sizeOfIncludingThis@544; computedSizeOfIncludingThis@549; Mark@553; Mark@560; Mark@563; markedChunk@565; mark@570; contains@573; contains@580; release@587; release@591; nextAllocBase@605; nextAllocEnd@606; canAlloc@612; unused@619; tryAlloc@629; setReadOnly@651; setReadWrite@652; BumpChunk::begin@682; LifoAlloc@690; appendUnused@749; appendUsed@760; incrementCurSize@765; decrementCurSize@771; allocImpl@781; disableOversize@815; setOversizeThreshold@816; defaultChunkSize@832; freeAllIfHugeAndUnused@837; alloc@844; allocEnsureUnused@860; allocInfallible@889; setAsInfallibleByDefault@915; MOZ_NON_TEMPORARY_CLASS@921; AutoFallibleScope@927; AutoFallibleScope@936; newArray@941; newArrayUninitialized@954; Mark@962; cancelMark@974; releaseAll@976; setReadOnly@1002; setReadWrite@1003; used@1007; isEmpty@1016; isHuge@1024; availableInCurrentChunk@1028; sizeOfExcludingThis@1036; sizeOfIncludingThis@1051; computedSizeOfExcludingThis@1057; peakSizeOfExcludingThis@1061; contains@1073; Enum@1089; seekBaseAndAdvanceBy@1101; head_@1121; empty@1129; read@1136; read@1143; MOZ_NON_TEMPORARY_CLASS@1147; fallibleScope@1156; alloc@1169; Fallibility@1172; LifoAllocPolicy@1175; LifoAllocPolicy@1179; maybe_pod_malloc@1181; maybe_pod_calloc@1191; maybe_pod_realloc@1200; pod_malloc@1209; pod_calloc@1213; pod_realloc@1217; free_@1221
+Dependencies: mozilla/Attributes.h@8; mozilla/MemoryChecking.h@9; mozilla/MemoryReporting.h@10; algorithm@12; bit@13; new@14; stddef.h@15; type_traits@16; utility@17; js/UniquePtr.h@190; util/Memory.h@191; util/Poison.h@192
+
+`js/src/ds/Nestable.h` | `4189d6157c9ee8307df5a2061ce88c7d47b3850e` | 2058 bytes | source | UTF-8 | mode 100644
+Declarations: js@10; Nestable@21; Nestable@26; enclosing@32; findNearest@35; findNearest@43; findNearest@51
+Dependencies: mozilla/Assertions.h@8
+
+`js/src/ds/PriorityQueue.h` | `7fae1334aaa5b27ad3eecec96e72c462d542e703` | 3375 bytes | source | UTF-8 | mode 100644
+Declarations: js@10; AllocPolicy@21; PriorityQueue@22; heap@27; length@34; empty@36; highest@42; popHighest@47; infallibleInsert@68; siftDown@87; P::higherPriority@95; siftUp@113; swap@126
+Dependencies: js/Vector.h@8
+
+`js/src/ds/SinglyLinkedList.h` | `bdd76025cf7a722e3a56e695180bac57ffa9e447` | 6314 bytes | source | UTF-8 | mode 100644
+Declarations: js@12; SinglyLinkedList@25; SinglyLinkedList@30; SinglyLinkedList@38; SinglyLinkedList@53; isEmpty@67; getFirst@70; getLast@78; popFront@80; pushFront@96; pushBack@107; moveFrontToBack@111; append@117; prepend@136; removeRange@159; Iterator@200; i@207; i@209; done@210; next@211; get@215; iter@224; iterFrom@226; checkContains@231; release@248
+Dependencies: mozilla/Assertions.h@8; utility@10
+
+`js/src/ds/SlimLinkedList.h` | `f17c6801584fc9a160a6688b05a6294a51cf2cdb` | 13672 bytes | source | UTF-8 | mode 100644
+Declarations: js@27; SlimLinkedListElement@30; SlimLinkedList@33; SlimLinkedListElement@36; UntaggedPtr@50; GetTag@54; GetPtr@55; GetConstPtr@58; LinkElements@62; SlimLinkedListElement@78; isInList@90; isLast@95; isFirst@100; getNext@105; getNext@106; getPrev@110; getPrev@111; removeFromOneOf@120; getNextUnchecked@147; getNextUnchecked@148; getPrevUnchecked@149; getPrevUnchecked@150; thisElement@152; makeSingleton@154; makeListTo@159; insertAfter@163; insertListAfter@171; insertBefore@185; insertListBefore@194; remove@211; removeTo@221; SlimLinkedList@239; Iterator@247; Iterator@257; SlimLinkedList@274; pushFront@291; pushBack@303; append@317; prepend@336; getFirst@355; getFirst@356; getLast@361; getLast@364; popFirst@372; popLast@387; isEmpty@403; contains@408; remove@415; removeRange@427; checkContains@453; clear@475; drain@485; eraseIf@495; length@509; begin@516; begin@517; end@520; end@521
+Dependencies: mozilla/Assertions.h@22; algorithm@24; utility@25
+
+`js/src/ds/Sort.h` | `cc2818a519cf47cacbc626f3d29d50fb8e69c60b` | 3834 bytes | source | UTF-8 | mode 100644
+Declarations: js@10; detail@12
+Dependencies: jstypes.h@8
+
+`js/src/ds/TraceableFifo.h` | `817f157fe41c186e79ddf0d3098acaac9724593e` | 3248 bytes | source | UTF-8 | mode 100644
+Declarations: js@13; TraceableFifo@32; Base@38; TraceableFifo@40; trace@46; WrappedPtrOperations@53; length@58; empty@59; MutableWrappedPtrOperations@64; fifo@69; front@72; pushBack@75; emplaceBack@79; popFront@83; clear@84
+Dependencies: ds/Fifo.h@8; js/GCVector.h@9; js/RootingAPI.h@10; js/TracingAPI.h@11
+
+`js/src/ds/moz.build` | `0a85a9b88070c142332802a53e9b1273ebe4c882` | 865 bytes | build-registration | UTF-8 | mode 100644
+Dependencies: ../js-compileflags.mozbuild@10; ../js-config.mozbuild@11; ../js-cxxflags.mozbuild@12; /tools/fuzzing/libfuzzer-config.mozbuild@20
+
+`js/src/dtoa.c` | `762d1c17124a0bd8cc2a212b501d5b5f216cbf1c` | 24850 bytes | source | UTF-8 | mode 100644
+Declarations: unsigned@163; union@251; Bigint@445; Bigint@447; struct@452; DtoaState@458; struct@477; newdtoa@488
+Dependencies: stdio.h@167; stdlib.h@171; string.h@172; locale.h@175; errno.h@208; float.h@240; math.h@244
+
+`js/src/editline/README` | `232f4d581c912af76b5dcdf74d5c2e4426cec802` | 2757 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/editline/editline.3` | `21a72ca3e0ed8ea1d2a3756f0d7f8515bcc71080` | 5328 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/editline/editline.c` | `eb3a055e34944c87a5bc565e240cec6d8fb87274` | 22550 bytes | source | UTF-8 | mode 100644
+Declarations: enum@54; enum@61; struct@68; struct@76; TTYflush@134; TTYput@146; TTYputs@156; TTYshow@163; TTYstring@183; TTYget@190; TTYbackn@207; TTYinfo@214; winsize@223; reposition@270; left@282; right@298; ring_bell@306; do_macro@314; do_forward@331; do_case@355; case_down_word@383; case_up_word@389; ceol@395; clear_line@419; insert_string@430; redisplay@461; toggle_meta_mode@470; next_hist@478; prev_hist@484; do_insert_hist@490; do_hist@502; h_next@516; h_prev@522; h_first@528; h_last@534; substrcmp@543; search_hist@556; h_search@595; fd_char@630; save_yank@644; delete_string@661; bk_char@703; bk_del_char@718; kill_line@733; insert_char@759; meta@785; emacs@823; TTYspecial@844; editinput@874; hist_add@920; rl_reset_terminal@942; rl_initialize@948; readline@953; add_history@988; beg_line@1002; del_char@1012; end_line@1018; accept_line@1028; transpose@1035; quote@1053; wipe@1061; mk_set@1079; exchange@1086; yank@1102; copy_region@1110; move_to_char@1124; fd_word@1141; fd_kill_word@1147; bk_word@1161; bk_kill_word@1182; argify@1191; last_argument@1235
+Dependencies: editline.h@29; signal.h@30; ctype.h@31; unistd.h@32; stdlib.h@124; curses.h@125; term.h@126
+
+`js/src/editline/editline.h` | `88127b91ce2ea4461448fa39bf622c841a052c5e` | 2832 bytes | source | UTF-8 | mode 100644
+Declarations: unsigned@47
+Dependencies: stdio.h@31; stdlib.h@33; string.h@34; unix.h@37; os9.h@40
+
+`js/src/editline/moz.build` | `f8f2c9e9b418ee056dc6ecaa00f9494a4e255ba8` | 503 bytes | build-registration | UTF-8 | mode 100644
+
+`js/src/editline/sysunix.c` | `6de1ccd0c3206adcf64ba3dc5fdd1bc2716cb8f8` | 3580 bytes | source | UTF-8 | mode 100644
+Declarations: rl_ttyset@35; termios@37; termios@38; rl_ttyset@66; termio@68; termio@69; rl_ttyset@96; sgttyb@98; tchars@99; sgttyb@100; tchars@101; rl_add_slash@135; stat@137
+Dependencies: editline.h@29; termios.h@32; termio.h@63; sgtty.h@93
+
+`js/src/editline/unix.h` | `e4241f7930710b90be6c6bc6403be0b446d744e0` | 1718 bytes | source | UTF-8 | mode 100644
+Declarations: struct@41; struct@44
+Dependencies: sys/types.h@36; sys/stat.h@37; dirent.h@40; sys/dir.h@43
+
+`js/src/frontend/AbstractScopePtr.cpp` | `80944744ac56ee5ae7a31f63788f890f1827fd02` | 1635 bytes | source | UTF-8 | mode 100644
+Declarations: AbstractScopePtr::scopeData@17; AbstractScopePtr::kind@22; AbstractScopePtr::enclosing@29; AbstractScopePtr::hasEnvironment@34; AbstractScopePtr::isArrow@41; AbstractScopePtr::hasNonSyntacticScopeOnChain@50
+Dependencies: frontend/AbstractScopePtr.h@5; mozilla/Assertions.h@7; frontend/CompilationStencil.h@9; frontend/Stencil.h@10; js/Vector.h@11; vm/Scope.h@12
+
+`js/src/frontend/AbstractScopePtr.h` | `517900035ff9dcf9d489d363c58aa60e28bb2533` | 2472 bytes | source | UTF-8 | mode 100644
+Declarations: js@13; Scope@14; GlobalScope@15; EvalScope@16; frontend@18; CompilationState@19; ScopeStencil@20; AbstractScopePtr@30; index_@42; isScopeStencil@50; is@58
+Dependencies: type_traits@8; frontend/ScopeIndex.h@10; vm/ScopeKind.h@11
+
+`js/src/frontend/AsyncEmitter.cpp` | `bd3803a06281987864bf30db48bc860b41749a9b` | 5157 bytes | source | UTF-8 | mode 100644
+Declarations: AsyncEmitter::prepareForParamsWithExpressionOrDestructuring@17; AsyncEmitter::prepareForParamsWithoutExpressionOrDestructuring@28; AsyncEmitter::emitParamsEpilogue@36; AsyncEmitter::prepareForModule@57; AsyncEmitter::prepareForBody@94; AsyncEmitter::emitEndFunction@105; AsyncEmitter::emitEndModule@123; AsyncEmitter::emitFinalYield@142; AsyncEmitter::emitRejectCatch@176
+Dependencies: frontend/AsyncEmitter.h@5; mozilla/Assertions.h@7; frontend/BytecodeEmitter.h@9; frontend/NameOpEmitter.h@10; frontend/ParserAtom.h@11; vm/Opcodes.h@12
+
+`js/src/frontend/AsyncEmitter.h` | `7451a78621c569cc655cc8035d7237fd7a57de72` | 5594 bytes | source | UTF-8 | mode 100644
+Declarations: js@12; frontend@13; BytecodeEmitter@15; MOZ_STACK_CLASS@82; class@136; AsyncEmitter@158
+Dependencies: mozilla/Attributes.h@8; frontend/TryEmitter.h@10
+
+`js/src/frontend/BytecodeCompiler.cpp` | `335fa110582ef5e0626c3c70b816231fa8751685` | 62466 bytes | source | UTF-8 | mode 100644
+Declarations: MOZ_RAII@68; maybeCx_@76; reset@77; AutoAssertReportedException@98; reset@99; MOZ_STACK_CLASS@108; compilationState_@126; assertSourceAndParserCreated@143; assertSourceParserAndScriptCreated@148; compilationState@163; stencil@165; MOZ_STACK_CLASS@169; Base@188; getter_AddRefs@382; getter_AddRefs@415; getSource@452; MOZ_STACK_CLASS@737; Base@749; MOZ_STACK_CLASS@758; Base@777
+Dependencies: frontend/BytecodeCompiler.h@5; mozilla/Attributes.h@7; mozilla/Maybe.h@8; mozilla/Utf8.h@9; mozilla/Variant.h@10; debugger/DebugAPI.h@12; ds/LifoAlloc.h@13; frontend/BytecodeEmitter.h@14; frontend/CompilationStencil.h@15; frontend/EitherParser.h@16; frontend/FrontendContext.h@17; frontend/ModuleSharedContext.h@18; frontend/ParserAtom.h@19; frontend/SharedContext.h@20; frontend/Stencil.h@21; frontend/UsedNameTracker.h@22; js/AllocPolicy.h@23; js/CharacterEncoding.h@24; js/ColumnNumber.h@25; js/EnvironmentChain.h@26; js/ErrorReport.h@27; js/experimental/CompileScript.h@28; js/experimental/JSStencil.h@29; js/GCVector.h@30; js/Id.h@31; js/Modules.h@32; js/RootingAPI.h@33; js/SourceText.h@34; js/UniquePtr.h@35; js/Utility.h@36; js/Value.h@37; vm/EnvironmentObject.h@38; vm/FunctionFlags.h@39; vm/GeneratorAndAsyncKind.h@40; vm/HelperThreads.h@41; vm/JSContext.h@42; vm/JSObject.h@43; vm/JSScript.h@44; vm/ModuleBuilder.h@45; vm/NativeObject.h@46; vm/PlainObject.h@47; vm/Time.h@48; vm/Compartment-inl.h@50; vm/GeckoProfiler-inl.h@51; vm/JSContext-inl.h@52; vm/JSObject-inl.h@53; vm/ObjectOperations-inl.h@54
+
+`js/src/frontend/BytecodeCompiler.h` | `2cb71fd5782d959e2f37168774acb62a5e4aa9fc` | 11847 bytes | source | UTF-8 | mode 100644
+Declarations: JSFunction@103; JSObject@104; JSScript@105; JSContext@106; js@108; ModuleObject@110; FrontendContext@111; Scope@112; frontend@114; CompilationInput@116; CompilationStencil@117; ExtensibleCompilationStencil@118; InitialStencilAndDelazifications@119; CompilationGCOutput@120; ScopeBindingCache@121; class@239; CanLazilyParse@255
+Dependencies: mozilla/AlreadyAddRefed.h@8; mozilla/Maybe.h@9; mozilla/Utf8.h@10; stdint.h@12; ds/LifoAlloc.h@14; frontend/FunctionSyntaxKind.h@15; frontend/ScriptIndex.h@16; js/CompileOptions.h@17; js/GCVector.h@18; js/Id.h@19; js/RootingAPI.h@20; js/SourceText.h@21; js/UniquePtr.h@22; js/Value.h@23; vm/ScopeKind.h@24
+
+`js/src/frontend/BytecodeControlStructures.cpp` | `5fe52492297ff3dca874a469f66f6f1901874fd3` | 15249 bytes | source | UTF-8 | mode 100644
+Declarations: emitterScope_@23; NestableControl@26; BreakableControl::patchBreaks@30; startOffset_@38; BreakableControl@41; LoopControl::emitContinueTarget@48; headOffset@102; selfHostedIter_@111; DestructuringControl::emitJumpToIteratorClose@116; DestructuringControl::emitEnd@121; NestableControl@166; TryFinallyControl::emitContinuations@184; kind_@234; NonLocalExitControl::~NonLocalExitControl@236; NonLocalExitControl::emitReturn@245; NonLocalExitControl::leaveScope@251
+Dependencies: frontend/BytecodeControlStructures.h@5; mozilla/DebugOnly.h@7; frontend/BytecodeEmitter.h@9; frontend/EmitterScope.h@10; frontend/ForOfLoopControl.h@11; frontend/SwitchEmitter.h@12; vm/Opcodes.h@13
+
+`js/src/frontend/BytecodeControlStructures.h` | `3ffc6d64448de23e217f6eac3c9e4f441bbb5309` | 8048 bytes | source | UTF-8 | mode 100644
+Declarations: js@23; frontend@24; BytecodeEmitter@26; EmitterScope@27; NestableControl@32; kind@60; emitterScope@62; nonLocalExitStackDepth@64; setNonLocalExitStackDepth@67; as@76; MOZ_STACK_CLASS@82; MOZ_STACK_CLASS@97; label@107; startOffset@109; LoopControl@116; headOffset@147; MOZ_STACK_CLASS@165; class@182; TryFinallyContinuation@184; target_@187; TryFinallyControl@196; setEmittingSubroutine@207; emittingSubroutine@209; SpecialContinuations@211; NonLocalExitControl@221
+Dependencies: mozilla/Assertions.h@8; mozilla/Attributes.h@9; mozilla/Maybe.h@10; stdint.h@12; ds/Nestable.h@14; frontend/BytecodeOffset.h@15; frontend/JumpList.h@16; frontend/ParserAtom.h@17; frontend/SelfHostedIter.h@18; frontend/SharedContext.h@19; frontend/TDZCheckCache.h@20; vm/StencilEnums.h@21
+
+`js/src/frontend/BytecodeEmitter.cpp` | `c659053f11aa56c07c27b1d1b48a207b97c120a2` | 401684 bytes | source | UTF-8 | mode 100644
+Declarations: ParseNodeRequiresSpecialLineNumberNotes@89; NeedsFieldInitializer@101; NeedsAccessorInitializer@109; emitterMode@150; BytecodeEmitter::initFromBodyPosition@167; BytecodeEmitter::init@172; BytecodeEmitter::init@181; BytecodeEmitter::findInnermostNestableControl@187; BytecodeEmitter::findInnermostNestableControl@192; BytecodeEmitter::lookupName@196; BytecodeEmitter::markStepBreakpoint@221; BytecodeEmitter::markSimpleBreakpoint@238; BytecodeEmitter::checkStrictOrSloppy@283; BytecodeEmitter::emit1@294; BytecodeEmitter::emit2@309; BytecodeEmitter::emit3@325; BytecodeEmitter::emitN@346; BytecodeEmitter::emitJumpTargetOp@373; BytecodeEmitter::emitJumpTarget@390; BytecodeOffsetDiff@396; BytecodeEmitter::emitJumpNoFallthrough@408; BytecodeEmitter::emitJump@423; BytecodeEmitter::patchJumpsToTarget@436; BytecodeEmitter::emitJumpTargetAndPatch@449; BytecodeEmitter::emitCall@471; BytecodeEmitter::emitDupAt@475; BytecodeEmitter::emitPopN@505; BytecodeEmitter::emitPickN@527; BytecodeEmitter::emitUnpickN@537; BytecodeEmitter::emitCheckIsObj@547; BytecodeEmitter::emitBuiltinObject@551; BytecodeEmitter::updateLineNumberNotes@556; SrcNote::SetLine::toOperand@594; BytecodeEmitter::updateSourceCoordNotes@611; SrcNote::ColSpan::toOperand@650; BytecodeEmitter::updateSourceCoordNotesIfNonLiteral@660; BytecodeEmitter::getOffsetForLoop@667; BytecodeEmitter::emitUint16Operand@683; BytecodeEmitter::emitUint32Operand@691; BytecodeEmitter::emitGoto@700; BytecodeEmitter::innermostScope@707; BytecodeEmitter::innermostScopeIndex@711; BytecodeEmitter::emitGCIndexOp@715; BytecodeEmitter::emitAtomOp@733; BytecodeEmitter::emitAtomOp@751; BytecodeEmitter::emitStringOp@760; BytecodeEmitter::emitStringOp@770; BytecodeEmitter::emitInternedScopeOp@775; BytecodeEmitter::emitInternedObjectOp@781; BytecodeEmitter::emitRegExp@787; BytecodeEmitter::emitLocalOp@791; BytecodeEmitter::emitArgOp@804; BytecodeEmitter::emitEnvCoordOp@815; BytecodeEmitter::checkSideEffects@835; BytecodeEmitter::isInLoop@1376; BytecodeEmitter::checkSingletonContext@1380; BytecodeEmitter::needsImplicitThis@1385; BytecodeEmitter::countThisEnvironmentHops@1402; BytecodeEmitter::emitThisEnvironmentCallee@1430; BytecodeEmitter::emitSuperBase@1450; BytecodeEmitter::emitPrepareIteratorResult@1511; BytecodeEmitter::emitFinishIteratorResult@1536; BytecodeEmitter::emitGetName@1559; BytecodeEmitter::emitGetPrivateName@1565; BytecodeEmitter::emitGetPrivateName@1570; BytecodeEmitter::emitPropLHS@1649; BytecodeEmitter::emitArgumentsLength@1701; BytecodeEmitter::emitPropIncDec@1722; BytecodeEmitter::emitNameIncDec@1760; BytecodeEmitter::emitElemOpBase@1822; ConvertIncDecKind@1830; PrivateConvertIncDecKind@1845; BytecodeEmitter::emitElemIncDec@1860; BytecodeEmitter::emitCallIncDec@1883; BytecodeEmitter::emitDouble@1923; BytecodeEmitter::emitNumberOp@1936; BytecodeEmitter::checkResumeIndexLimit@2140; BytecodeEmitter::finishResumeOffsets@2199; BytecodeEmitter::emitYieldOp@2227; BytecodeEmitter::emitPushResumeKind@2271; BytecodeEmitter::emitSetThis@2275; BytecodeEmitter::defineHoistedTopLevelFunctions@2339; BytecodeEmitter::emitDeclarationInstantiation@2363; BytecodeEmitter::emitScript@2431; BytecodeEmitter::createImmutableScriptData@2563; BytecodeEmitter::emitCheckIsCallable@2599; TaggedParserAtomIndex::WellKnown::IsCallable@2604; BytecodeEmitter::getNslots@2620; BytecodeEmitter::emitFunctionScript@2631; js@2681; None@2682; numReferenceSlots@2683; from@2692; emitter@2697; numReferenceSlots@2704; BytecodeEmitter::emitDefault@3209; TaggedParserAtomIndex::WellKnown::length@3462; BytecodeEmitter::emitComputedPropertyName@3894; TaggedParserAtomIndex::WellKnown::proto_@4023; BytecodeEmitter::emitTemplateString@4216; TaggedParserAtomIndex::WellKnown::empty@4227; TaggedParserAtomIndex::WellKnown::empty@4264; BytecodeEmitter::emitDeclarationList@4272; getSelfHostedIterFor@4308; BytecodeEmitter::emitAssignmentRhs@4403; CompoundAssignmentParseNodeKindToJSOp@4411; BytecodeEmitter::emitShortCircuitAssignment@4769; BytecodeEmitter::emitCallSiteObject@5049; BytecodeEmitter::emitCatch@5085; BytecodeEmitter::emitIf@5221; BytecodeEmitter::emitHoistedFunctionsInList@5291; BytecodeEmitter::emitWith@5411; BytecodeEmitter::emitCopyDataProperties@5437; TaggedParserAtomIndex::WellKnown::CopyDataProperties@5447; TaggedParserAtomIndex::WellKnown::CopyDataPropertiesUnfiltered@5458; BytecodeEmitter::emitBigIntOp@5500; BytecodeEmitter::emitIterator@5584; BytecodeEmitter::emitAsyncIterator@5642; BytecodeEmitter::emitSpread@5783; BytecodeEmitter::emitInitializeForInOrOfTarget@5859; BytecodeEmitter::emitDo@6334; BytecodeEmitter::emitWhile@6368; BytecodeEmitter::emitBreak@6403; BytecodeEmitter::emitContinue@6421; BytecodeEmitter::emitGetFunctionThis@6439; BytecodeEmitter::emitGetThisForSuperBase@6461; BytecodeEmitter::emitThisLiteral@6468; BytecodeEmitter::emitCheckDerivedClassConstructorReturn@6493; BytecodeEmitter::emitNewTarget@6508; BytecodeEmitter::emitNewTarget@6518; BytecodeEmitter::emitNewTarget@6525; BytecodeEmitter::emitReturn@6534; BytecodeEmitter::finishReturn@6588; BytecodeEmitter::emitCheckYieldResumeKind@6643; BytecodeEmitter::emitCheckAwaitResumeKind@6709; BytecodeEmitter::emitGetDotGeneratorInScope@6738; BytecodeEmitter::emitInitialYield@6752; BytecodeEmitter::emitYield@6773; BytecodeEmitter::emitAwaitInInnermostScope@6833; BytecodeEmitter::emitAwaitInScope@6843; BytecodeEmitter::emitYieldStar@6903; TaggedParserAtomIndex::WellKnown::throw_@7051; TaggedParserAtomIndex::WellKnown::return_@7160; BytecodeEmitter::emitStatementList@7366; BytecodeEmitter::emitExpressionStatement@7375; bytecodeSection@7408; BytecodeEmitter::emitDeleteName@7434; BytecodeEmitter::emitDeleteProperty@7443; BytecodeEmitter::emitDeleteElement@7482; BytecodeEmitter::emitDeleteExpression@7511; BytecodeEmitter::emitDeleteOptionalChain@7535; BytecodeEmitter::emitDebugCheckSelfHosted@7660; BytecodeEmitter::emitSelfHostedCallFunction@7673; BytecodeEmitter::emitSelfHostedResumeGenerator@7750; BytecodeEmitter::emitSelfHostedAllowContentIter@7787; BytecodeEmitter::emitSelfHostedAllowContentIterWith@7796; BytecodeEmitter::emitSelfHostedDefineDataProperty@7815; BytecodeEmitter::emitSelfHostedHasOwn@7842; BytecodeEmitter::emitSelfHostedGetPropertySuper@7860; BytecodeEmitter::emitSelfHostedToNumeric@7884; BytecodeEmitter::emitSelfHostedToString@7898; BytecodeEmitter::emitSelfHostedIsNullOrUndefined@7912; BytecodeEmitter::emitSelfHostedIteratorClose@7938; BytecodeEmitter::emitSelfHostedGetBuiltinConstructor@7994; BytecodeEmitter::emitSelfHostedGetBuiltinPrototype@7999; ParserAtomToSymbolCode@8004; BytecodeEmitter::emitSelfHostedGetBuiltinSymbol@8017; BytecodeEmitter::emitSelfHostedArgumentsLength@8042; BytecodeEmitter::emitSelfHostedGetArgument@8051; BytecodeEmitter::assertSelfHostedExpectedTopLevel@8067; BytecodeEmitter::emitSelfHostedSetCanonicalName@8103; BytecodeEmitter::emitCallOrNew@8661; TaggedParserAtomIndex::WellKnown::constructContentFunction@8693; TaggedParserAtomIndex::WellKnown::allowContentIterWith@8703; TaggedParserAtomIndex::WellKnown::allowContentIterWithNext@8707; TaggedParserAtomIndex::WellKnown::GetBuiltinConstructor@8727; TaggedParserAtomIndex::WellKnown::SetIsInlinableLargeFunction@8743; TaggedParserAtomIndex::WellKnown::DisposeResourcesAsync@8756; TaggedParserAtomIndex::WellKnown::DisposeResourcesSync@8760; UnsafeGetStringFromReservedSlot@8771; TaggedParserAtomIndex::WellKnown::UnsafeSetReservedSlot@8776; BinaryOpParseNodeKindToJSOp@8851; BytecodeEmitter::emitRightAssociative@8867; BytecodeEmitter::parseNodeToConstantCompareOperand@8889; BytecodeEmitter::emitLeftAssociative@8991; BytecodeEmitter::emitPrivateInExpr@9019; BytecodeEmitter::emitShortCircuit@9364; BytecodeEmitter::emitSequenceExpr@9424; BytecodeEmitter::isArrayObjLiteralCompatible@9602; TaggedParserAtomIndex::WellKnown::NoPrivateGetter@10051; BytecodeEmitter::emitObjLiteralArray@10209; BytecodeEmitter::isRHSObjLiteralCompatible@10237; NeedsPrivateBrand@10290; HasDecorators@10297; HasInitializer@10406; GetInitializer@10412; IsPrivateInstanceAccessor@10419; TaggedParserAtomIndex::WellKnown::NoPrivateGetter@10985; TaggedParserAtomIndex::WellKnown::length@11170; dot_instanceExtraInitializers_@11259; BytecodeEmitter::emitInitializeStaticFields@11268; TaggedParserAtomIndex::WellKnown::dot_staticInitializers_@11281; TaggedParserAtomIndex::WellKnown::dot_staticInitializers_@11338; TaggedParserAtomIndex::WellKnown::dot_staticInitializers_@11464; TaggedParserAtomIndex::WellKnown::dot_staticFieldKeys_@11478; BytecodeEmitter::emitArrayLiteral@11591; BytecodeEmitter::emitArray@11602; BytecodeEmitter::emitSpreadIntoArray@11717; UnaryOpParseNodeKindToJSOp@11756; BytecodeEmitter::emitUnary@11775; BytecodeEmitter::emitTypeof@11789; BytecodeEmitter::tryEmitTypeofEq@11803; Length1StaticParserString@11863; BytecodeEmitter::emitFunctionFormalParameters@11933; BytecodeEmitter::emitInitializeFunctionSpecialNames@12072; BytecodeEmitter::emitLexicalInitialization@12151; BytecodeEmitter::emitLexicalInitialization@12155; TaggedParserAtomIndex::WellKnown::constructor@12189; uint8_t@12363; dot_instanceExtraInitializers_@12405; dot_instanceExtraInitializers_@12414; BytecodeEmitter::emitExportDefault@12587; BytecodeEmitter::newSrcNote@13287; BytecodeEmitter::newSrcNoteOperand@13372; BytecodeEmitter::intoScriptStencil@13391; TaggedParserAtomIndex::WellKnown::allowContentIterWith@13444; TaggedParserAtomIndex::WellKnown::allowContentIterWithNext@13448; BytecodeEmitter::dumpAtom@13457
+Dependencies: frontend/BytecodeEmitter.h@9; mozilla/Casting.h@11; mozilla/DebugOnly.h@12; mozilla/FloatingPoint.h@13; mozilla/HashTable.h@14; mozilla/Maybe.h@15; mozilla/Saturate.h@16; mozilla/Variant.h@17; algorithm@19; iterator@20; string.h@21; jstypes.h@23; frontend/AbstractScopePtr.h@25; frontend/BytecodeControlStructures.h@26; frontend/CallOrNewEmitter.h@27; frontend/CForEmitter.h@28; frontend/DecoratorEmitter.h@29; frontend/DefaultEmitter.h@30; frontend/DoWhileEmitter.h@31; frontend/ElemOpEmitter.h@32; frontend/EmitterScope.h@33; frontend/ExpressionStatementEmitter.h@34; frontend/ForInEmitter.h@35; frontend/ForOfEmitter.h@36; frontend/FrontendContext.h@37; frontend/FunctionEmitter.h@38; frontend/IfEmitter.h@39; frontend/LabelEmitter.h@40; frontend/LexicalScopeEmitter.h@41; frontend/ModuleSharedContext.h@42; frontend/NameAnalysisTypes.h@43; frontend/NameFunctions.h@44; frontend/NameOpEmitter.h@45; frontend/ObjectEmitter.h@46; frontend/OptionalEmitter.h@47; frontend/ParseContext.h@48; frontend/ParseNode.h@49; frontend/Parser.h@50; frontend/ParserAtom.h@51; frontend/PrivateOpEmitter.h@52; frontend/PropOpEmitter.h@53; frontend/SourceNotes.h@54; frontend/SwitchEmitter.h@55; frontend/TaggedParserAtomIndexHasher.h@56; frontend/TDZCheckCache.h@57; frontend/TryEmitter.h@58; frontend/UsingEmitter.h@59; frontend/WhileEmitter.h@60; js/ColumnNumber.h@61; js/friend/ErrorMessages.h@62; js/friend/StackLimits.h@63; util/StringBuilder.h@64; vm/BytecodeUtil.h@65; vm/CompletionKind.h@66; vm/ConstantCompareOperand.h@67; vm/FunctionPrefixKind.h@68; vm/GeneratorObject.h@69; vm/Opcodes.h@70; vm/PropMap.h@71; vm/Scope.h@72; vm/SharedStencil.h@73; vm/ThrowMsgKind.h@74; vm/TypeofEqOperand.h@75
+
+`js/src/frontend/BytecodeEmitter.h` | `6e3a4d21f48298f40f70cce9243b7e049e9bd99b` | 46666 bytes | source | UTF-8 | mode 100644
+Declarations: js@47; FrontendContext@49; ConstantCompareOperand@50; frontend@52; BytecodeOffset@54; CallOrNewEmitter@55; ClassEmitter@56; DestructuringLHSRef@57; ElemOpEmitter@58; EmitterScope@59; ErrorReporter@60; FullParseHandler@61; NestableControl@62; PrivateOpEmitter@63; PropertyEmitter@64; PropOpEmitter@65; OptionalEmitter@66; SharedContext@67; TDZCheckCache@68; TryEmitter@69; TokenPos@71; class@73; MOZ_STACK_CLASS@208; bytecodeSection@224; perScriptData@231; parserAtoms@271; innermostEmitterScope@276; innermostEmitterScopeNoCheck@280; EmitterMode@292; setVarEmitterScope@391; outermostScope@397; mainOffset@439; inPrologue@441; switchToMain@443; setFunctionBodyEndPos@448; setScriptStartOffsetIfUnset@452; skipLocationSrcNotes@487; skipBreakpointSrcNotes@490; EmitLineNumberNote@508; class@616; class@766; class@827; class@984; class@1024; MOZ_RAII@1080
+Dependencies: mozilla/Assertions.h@10; mozilla/Attributes.h@11; mozilla/Maybe.h@12; mozilla/Saturate.h@13; mozilla/Span.h@14; stddef.h@16; stdint.h@17; frontend/AbstractScopePtr.h@19; frontend/BytecodeSection.h@20; frontend/DestructuringFlavor.h@21; frontend/EitherParser.h@22; frontend/IteratorKind.h@23; frontend/JumpList.h@24; frontend/NameAnalysisTypes.h@25; frontend/NameCollections.h@26; frontend/ParseNode.h@27; frontend/Parser.h@28; frontend/ParserAtom.h@29; frontend/ScriptIndex.h@30; frontend/SelfHostedIter.h@31; frontend/SourceNotes.h@32; frontend/ValueUsage.h@33; js/AllocPolicy.h@34; js/ColumnNumber.h@35; js/TypeDecls.h@36; vm/BuiltinObjectKind.h@37; vm/CheckIsObjectKind.h@38; vm/CompletionKind.h@39; vm/FunctionPrefixKind.h@40; vm/GeneratorResumeKind.h@41; vm/Opcodes.h@42; vm/SharedStencil.h@43; vm/StencilEnums.h@44; vm/ThrowMsgKind.h@45
+
+`js/src/frontend/BytecodeOffset.h` | `5cdb281b033d9176fff5c2887d3a9be2e97eabec` | 3458 bytes | source | UTF-8 | mode 100644
+Declarations: js@14; frontend@15; BytecodeOffsetDiff@17; BytecodeOffset@20; Invalid@26; BytecodeOffset@27; BytecodeOffset@32; value@54; toUint32@55; valid@60; BytecodeOffsetDiff@63; BytecodeOffsetDiff@72; value@82; toUint32@83
+Dependencies: mozilla/Assertions.h@8; mozilla/CheckedInt.h@9; compare@11; stddef.h@12
+
+`js/src/frontend/BytecodeSection.cpp` | `f48c3da01128db2478f566287b9ba805429f85e2` | 7594 bytes | source | UTF-8 | mode 100644
+Declarations: GCThingList::append@23; GCThingList::getScope@33; GCThingList::getScopeIndex@43; GCThingList::getAtom@51; CGScopeNoteList::recordEnd@146; CGScopeNoteList::recordEndFunctionBodyVar@150; CGScopeNoteList::recordEndImpl@154; CGTryNoteList::checkTryNotes@162; CGScopeNoteList::checkScopeNotes@171; lastColumn_@205; BytecodeSection::updateDepth@207; atomIndices_@225; PerScriptData::init@227
+Dependencies: frontend/BytecodeSection.h@5; mozilla/Assertions.h@7; frontend/AbstractScopePtr.h@9; frontend/CompilationStencil.h@10; frontend/FrontendContext.h@11; frontend/SharedContext.h@12; js/ColumnNumber.h@13; vm/BytecodeUtil.h@14; vm/GlobalObject.h@15; vm/JSContext.h@16; vm/RegExpObject.h@17; vm/Scope.h@18
+
+`js/src/frontend/BytecodeSection.h` | `13ca534cfc56e2e5316de7faf9abaee44dafee37` | 14006 bytes | source | UTF-8 | mode 100644
+Declarations: js@31; frontend@32; FunctionBox@34; MOZ_STACK_CLASS@36; compilationState@48; length@104; firstScope@116; CGTryNoteList@128; CGTryNoteList@130; length@137; CGScopeNoteList@144; CGScopeNoteList@146; length@155; CGResumeOffsetList@165; CGResumeOffsetList@169; setFrom@175; length@182; CGTableSwitchOffsetList@188; caseOffsets@195; numCaseOffsets@203; BytecodeSection@216; code@223; code@226; offset@229; notes@235; lastNoteOffset@238; setLastNoteOffset@239; lastTargetOffset@243; setLastTargetOffset@244; stackDepth@250; setStackDepth@251; maxStackDepth@253; tryNoteList@259; scopeNoteList@264; resumeOffsetList@269; tableSwitchOffsetList@274; numYields@278; addNumYields@279; currentLine@283; lastColumn@284; setCurrentLine@285; setLastColumn@291; updateSeparatorPosition@296; updateSeparatorPositionIfPresent@303; isDuplicateLocation@311; atSeparator@316; numICEntries@322; incrementNumICEntries@323; setNumICEntries@327; PerScriptData@416; gcThingList@423; atomIndices@426
+Dependencies: mozilla/Attributes.h@8; mozilla/Maybe.h@9; mozilla/Span.h@10; stddef.h@12; stdint.h@13; frontend/AbstractScopePtr.h@15; frontend/BytecodeOffset.h@16; frontend/CompilationStencil.h@17; frontend/FrontendContext.h@18; frontend/JumpList.h@19; frontend/NameCollections.h@20; frontend/ParseNode.h@21; frontend/ParserAtom.h@22; frontend/SourceNotes.h@23; frontend/Stencil.h@24; js/ColumnNumber.h@25; js/TypeDecls.h@26; js/Vector.h@27; vm/SharedStencil.h@28; vm/StencilEnums.h@29
+
+`js/src/frontend/CForEmitter.cpp` | `81ad612792e532fe24fceb82c8dc8d94c842e220` | 4939 bytes | source | UTF-8 | mode 100644
+Declarations: headLexicalEmitterScopeForLet_@21; CForEmitter::emitInit@23; CForEmitter::emitCond@40; CForEmitter::emitBody@79; CForEmitter::emitUpdate@97; CForEmitter::emitEnd@141
+Dependencies: frontend/CForEmitter.h@5; frontend/BytecodeEmitter.h@7; frontend/EmitterScope.h@8; vm/Opcodes.h@9; vm/ScopeKind.h@10; vm/StencilEnums.h@11
+
+`js/src/frontend/CForEmitter.h` | `311e2d219d3896d9f67a99590e44068ac4955401` | 5295 bytes | source | UTF-8 | mode 100644
+Declarations: js@16; frontend@17; BytecodeEmitter@19; EmitterScope@20; MOZ_STACK_CLASS@47; class@73; class@74; class@122
+Dependencies: mozilla/Attributes.h@8; mozilla/Maybe.h@9; stdint.h@11; frontend/BytecodeControlStructures.h@13; frontend/TDZCheckCache.h@14
+
+`js/src/frontend/CallOrNewEmitter.cpp` | `f2c6413ed1fc758f99e3c0ef8891b4f42308eb90` | 9668 bytes | source | UTF-8 | mode 100644
+Declarations: bce_@18; CallOrNewEmitter::emitNameCallee@26; CallOrNewEmitter::prepareForFunctionCallee@93; CallOrNewEmitter::emitSuperCallee@103; CallOrNewEmitter::prepareForOtherCallee@126; CallOrNewEmitter::emitThis@136; CallOrNewEmitter::prepareForNonSpreadArguments@202; CallOrNewEmitter::wantSpreadOperand@213; CallOrNewEmitter::prepareForSpreadArguments@223; CallOrNewEmitter::emitSpreadArgumentsTest@234; CallOrNewEmitter::wantSpreadIteration@289; CallOrNewEmitter::emitSpreadArgumentsTestEnd@297; CallOrNewEmitter::emitEnd@327
+Dependencies: frontend/CallOrNewEmitter.h@5; frontend/BytecodeEmitter.h@7; frontend/NameOpEmitter.h@8; vm/ConstantCompareOperand.h@9; vm/Opcodes.h@10
+
+`js/src/frontend/CallOrNewEmitter.h` | `a971fbdc81a327b8a933fea3170ed206bae782b7` | 12691 bytes | source | UTF-8 | mode 100644
+Declarations: js@21; frontend@22; BytecodeEmitter@24; TaggedParserAtomIndex@25; MOZ_STACK_CLASS@129; class@131; class@239
+Dependencies: mozilla/Attributes.h@8; mozilla/Maybe.h@9; stdint.h@11; frontend/ElemOpEmitter.h@13; frontend/IfEmitter.h@14; frontend/PrivateOpEmitter.h@15; frontend/PropOpEmitter.h@16; frontend/ValueUsage.h@17; vm/BytecodeUtil.h@18; vm/Opcodes.h@19
+
+`js/src/frontend/CompilationStencil.h` | `fdfbea2ed21884989cbc3c5a8da89b7b378fb082` | 94664 bytes | source | UTF-8 | mode 100644
+Declarations: JSAtom@56; JSFunction@57; JSObject@58; JSString@59; JSTracer@60; JS@62; JS_PUBLIC_API@63; js@66; AtomSet@68; JSONPrinter@69; ModuleObject@70; frontend@72; InitialStencilAndDelazifications@74; CompilationInput@75; CompilationStencil@76; CompilationGCOutput@77; PreallocatedCompilationGCOutput@78; ScriptStencilIterable@79; InputName@80; ScopeBindingCache@81; ScriptStencilRef@82; FakeStencilGlobalScope@88; ScopeStencilRef@91; class@109; InputScope@129; InputScope@136; InputScope@139; InputScope@143; scope_@146; variant@151; isNull@178; kind@185; hasEnvironment@191; hasOnChain@201; environmentChainLength@226; isStencil@264; isArrow@276; allowSuperProperty@277; isClassConstructor@280; ScriptStencilRef@286; InputScript@331; InputScript@337; script_@343; raw@346; extent@348; immutableFlags@353; functionFlags@361; hasPrivateScriptData@369; enclosingScope@379; getMemberInitializers@396; isNull@406; isStencil@410; sourceObject@415; MOZ_STACK_CLASS@435; InputScopeIter@439; scope@441; done@451; bool@452; kind@454; hasSyntacticEnvironment@459; trace@463; NameStencilRef@469; InputName@480; InputName@484; variant_@486; InputName@487; variant_@489; variant_@493; isNull@513; ScopeContext@522; class@543; CompilationAtomCache@671; empty@698; size@699; sizeOfExcludingThis@706; ExtraBindingInfo@713; nameChars@724; CompilationInput@731; class@732; options@770; initForGlobal@776; initForSelfHostingGlobal@789; initForStandaloneFunction@794; initForEval@806; initForModule@815; initFromLazy@824; hasNonDefaultEnclosingScope@847; maybeNonDefaultEnclosingScope@855; lazyOuterScript@864; lazyOuterBaseScript@865; function@869; extent@875; immutableFlags@878; functionFlags@882; hasPrivateScriptData@887; isInitialStencil@895; isDelazifying@899; hasExtraBindings@901; extraBindings@902; sizeOfExcludingThis@912; sizeOfIncludingThis@915; CompilationSyntaxParseCache@931; closedOverBindings@968; displayAtom@980; scriptIndex@1006; SharedDataContainer@1038; isEmpty@1091; isSingle@1092; isVector@1093; isMap@1094; isBorrow@1095; setSingle@1097; setBorrow@1104; asSingle@1110; asVector@1116; asMap@1120; asBorrow@1124; sizeOfExcludingThis@1152; ExtensibleCompilationStencil@1170; CompilationStencil@1185; class@1208; alloc@1278; isInitialStencil@1298; setFunctionKey@1347; sizeOfIncludingThis@1352; hasMultipleReference@1360; hasOwnedBorrow@1362; takeOwnedBorrow@1366; FunctionKeyToScriptIndexMap@1386; sizeOfIncludingThis@1407; ScriptIndexes@1446; RelativeIndexes@1459; RelativeIndexes@1469; InitialStencilAndDelazifications@1488; RelativeIndexesGuard@1542; stencils_@1547; RelativeIndexesGuard@1550; stencils_@1553; bool@1561; canLazilyParse@1593; sizeOfIncludingThis@1671; ExtensibleCompilationStencil@1690; moduleMetadata@1749; setFunctionKey@1779; isInitialStencil@1783; sizeOfIncludingThis@1809; MOZ_RAII@1827; CompilationStatePosition@1877; MOZ_STACK_CLASS@1911; PreAllocateableGCArray@1955; Preallocated@1966; empty@1977; length@1979; isInline@1982; sizeOfExcludingThis@1987; PreAllocateableGCArray@1992; empty@1998; length@2000; isInline@2003; sizeOfExcludingThis@2031; CompilationGCOutput@2042; PreallocatedCompilationGCOutput@2045; sizeOfExcludingThis@2068; CompilationGCOutput@2075; getFunction@2114; getFunctionNoBaseIndex@2117; getScope@2123; getScopeNoBaseIndex@2126; getScopeNoBaseIndex@2130; steal@2155; sizeOfExcludingThis@2177; ScriptStencilIterable@2188; ScriptAndFunction@2190; index@2204; Iterator@2207; index_@2214; stencil_@2221; next@2231; assertFunction@2236; skipTopLevelNonFunction@2242; stencil_@2278; begin@2280; end@2282; CompilationStencilMerger@2292; getResult@2335; takeResult@2336; ScopeStencilRef::script@2341; InputScope::enclosing@2366; InputScope::functionFlags@2390; InputScope::immutableFlags@2414; InputScope::getMemberInitializers@2428; ScriptStencilRef::topLevelScript@2443; ScriptStencilRef::enclosingScript@2447; ScriptStencilRef::isEagerlyCompiledInInitial@2457; ScriptStencilRef::gcThingsFromInitial@2472; mozilla@2506; RefPtrTraits@2508; AddRef@2509; Release@2512
+Dependencies: mozilla/AlreadyAddRefed.h@8; mozilla/Assertions.h@9; mozilla/Atomics.h@10; mozilla/Attributes.h@11; mozilla/HashTable.h@12; mozilla/Maybe.h@13; mozilla/MemoryReporting.h@14; mozilla/RefPtr.h@15; mozilla/Result.h@16; mozilla/ResultVariant.h@17; mozilla/Span.h@18; mozilla/Variant.h@19; algorithm@21; stddef.h@22; stdint.h@23; type_traits@24; utility@25; ds/LifoAlloc.h@27; frontend/FrontendContext.h@28; frontend/FunctionSyntaxKind.h@29; frontend/NameAnalysisTypes.h@30; frontend/ParserAtom.h@31; frontend/ScopeIndex.h@32; frontend/ScriptIndex.h@33; frontend/SharedContext.h@34; frontend/Stencil.h@35; frontend/TaggedParserAtomIndexHasher.h@36; frontend/UsedNameTracker.h@37; js/AllocPolicy.h@38; js/GCVector.h@39; js/RefCounted.h@40; js/RootingAPI.h@41; js/Transcoding.h@42; js/UniquePtr.h@43; js/Vector.h@44; js/WasmModule.h@45; vm/FunctionFlags.h@46; vm/GlobalObject.h@47; vm/JSContext.h@48; vm/JSFunction.h@49; vm/JSScript.h@50; vm/Realm.h@51; vm/Scope.h@52; vm/ScopeKind.h@53; vm/SharedStencil.h@54
+
+`js/src/frontend/DecoratorEmitter.cpp` | `20b927b5100447e911f67d56df493260895281c3` | 45884 bytes | source | UTF-8 | mode 100644
+Declarations: DecoratorEmitter::DecoratorEmitter@24; uint8_t@150; uint8_t@289; frontend::TaggedParserAtomIndex::WellKnown::get@374; frontend::TaggedParserAtomIndex::WellKnown::set@390; uint8_t@447; frontend::TaggedParserAtomIndex::WellKnown::get@459; frontend::TaggedParserAtomIndex::WellKnown::set@469; frontend::TaggedParserAtomIndex::WellKnown::init@479; uint8_t@622; DecoratorEmitter::emitInitializeFieldOrAccessor@635; TaggedParserAtomIndex::WellKnown::length@699; TaggedParserAtomIndex::WellKnown::length@833; DecoratorEmitter::emitPropertyKey@916; DecoratorEmitter::emitDecorationState@950; DecoratorEmitter::emitUpdateDecorationState@955; DecoratorEmitter::emitCreateDecoratorAccessObject@1030; DecoratorEmitter::emitCheckIsUndefined@1039; TaggedParserAtomIndex::WellKnown::length@1146; uint8_t@1173; frontend::TaggedParserAtomIndex::WellKnown::kind@1254; frontend::TaggedParserAtomIndex::WellKnown::access@1271; frontend::TaggedParserAtomIndex::WellKnown::static_@1285; frontend::TaggedParserAtomIndex::WellKnown::private_@1303; frontend::TaggedParserAtomIndex::WellKnown::name@1325; frontend::TaggedParserAtomIndex::WellKnown::name@1345; frontend::TaggedParserAtomIndex::WellKnown::addInitializer@1364; uint8_t@1478
+Dependencies: frontend/DecoratorEmitter.h@5; mozilla/Assertions.h@7; frontend/BytecodeEmitter.h@9; frontend/CallOrNewEmitter.h@10; frontend/FunctionEmitter.h@11; frontend/IfEmitter.h@12; frontend/LexicalScopeEmitter.h@13; frontend/NameAnalysisTypes.h@14; frontend/ObjectEmitter.h@15; frontend/ParseNode.h@16; frontend/ParserAtom.h@17; frontend/WhileEmitter.h@18; vm/ThrowMsgKind.h@19
+
+`js/src/frontend/DecoratorEmitter.h` | `a1e7695d733edca39a2c5e87c912c16dc215a03b` | 2747 bytes | source | UTF-8 | mode 100644
+Declarations: js@14; BytecodeEmitter@16; MOZ_STACK_CLASS@18; Kind@23
+Dependencies: mozilla/Attributes.h@8; frontend/ParseNode.h@10; js/AllocPolicy.h@11; js/Vector.h@12
+
+`js/src/frontend/DefaultEmitter.cpp` | `92c607192489f5f67655b47d55d5a1005abf401c` | 1692 bytes | source | UTF-8 | mode 100644
+Declarations: DefaultEmitter::DefaultEmitter@18; DefaultEmitter::prepareForDefault@20; DefaultEmitter::emitEnd@58
+Dependencies: frontend/DefaultEmitter.h@5; mozilla/Assertions.h@7; frontend/BytecodeEmitter.h@9; vm/ConstantCompareOperand.h@10; vm/Opcodes.h@11
+
+`js/src/frontend/DefaultEmitter.h` | `c4d828d02ceb9a5961ea69ad4467be7e75833e7c` | 1563 bytes | source | UTF-8 | mode 100644
+Declarations: js@13; frontend@14; BytecodeEmitter@16; MOZ_STACK_CLASS@29; class@40
+Dependencies: mozilla/Attributes.h@8; mozilla/Maybe.h@9; frontend/IfEmitter.h@11
+
+`js/src/frontend/DestructuringFlavor.h` | `cff0ca03d08b4f270d3432821e8f57396e65323f` | 575 bytes | source | UTF-8 | mode 100644
+Declarations: js@8; frontend@9; class@11
+
+`js/src/frontend/DoWhileEmitter.cpp` | `6d09d11ffda6ac76678fe64bcf874f0d021b8ff7` | 1487 bytes | source | UTF-8 | mode 100644
+Declarations: DoWhileEmitter::DoWhileEmitter@14; DoWhileEmitter::emitBody@16; DoWhileEmitter::emitCond@41; DoWhileEmitter::emitEnd@54
+Dependencies: frontend/DoWhileEmitter.h@5; frontend/BytecodeEmitter.h@7; vm/Opcodes.h@8; vm/StencilEnums.h@9
+
+`js/src/frontend/DoWhileEmitter.h` | `db575e0d3f5f135475cf3fc26567834055f02120` | 1851 bytes | source | UTF-8 | mode 100644
+Declarations: js@15; frontend@16; BytecodeEmitter@18; MOZ_STACK_CLASS@32; class@43
+Dependencies: mozilla/Attributes.h@8; mozilla/Maybe.h@9; stdint.h@11; frontend/BytecodeControlStructures.h@13
+
+`js/src/frontend/EitherParser.h` | `2cc3e6fbc5dec48ebd3a5ea8b7f9bcaa549fc8a5` | 1807 bytes | source | UTF-8 | mode 100644
+Declarations: js@21; EitherParser@23; EitherParser@32; parserAtoms@47
+Dependencies: mozilla/Utf8.h@15; mozilla/Variant.h@16; frontend/Parser.h@18; js/ColumnNumber.h@19
+
+`js/src/frontend/ElemOpEmitter.cpp` | `cc4162ec9ecb94e9a766ee27e26f3e57274b6e3a` | 6405 bytes | source | UTF-8 | mode 100644
+Declarations: bce_@16; ElemOpEmitter::prepareForObj@18; ElemOpEmitter::prepareForKey@27; ElemOpEmitter::emitGet@46; ElemOpEmitter::prepareForRhs@118; ElemOpEmitter::emitDelete@139; ElemOpEmitter::emitAssignment@175; ElemOpEmitter::emitIncDec@197
+Dependencies: frontend/ElemOpEmitter.h@5; frontend/BytecodeEmitter.h@7; frontend/SharedContext.h@8; vm/Opcodes.h@9; vm/ThrowMsgKind.h@10
+
+`js/src/frontend/ElemOpEmitter.h` | `ba252fae8093ef81d5707b7e2ef55602e1d17805` | 6941 bytes | source | UTF-8 | mode 100644
+Declarations: js@12; frontend@13; BytecodeEmitter@15; class@16; MOZ_STACK_CLASS@120; class@122; class@134; class@182; numReferenceSlots@260
+Dependencies: mozilla/Attributes.h@8; stddef.h@10
+
+`js/src/frontend/EmitterScope.cpp` | `5e3cb6754ebe8648bbee4b7411da6cf5fe920d0c` | 38441 bytes | source | UTF-8 | mode 100644
+Declarations: noteIndex_@31; EmitterScope::ensureCache@33; EmitterScope::checkEnvironmentChainLength@47; EmitterScope::enclosing@106; EmitterScope::internEmptyGlobalScopeAsBody@202; EmitterScope::appendScopeNote@231; EmitterScope::dump@275; EmitterScope::prepareForDisposableScopeBody@336; EmitterScope::prepareForModuleDisposableScopeBody@345; EmitterScope::prepareForDisposableAssignment@349; EmitterScope::emitDisposableScopeBodyEnd@354; EmitterScope::emitModuleDisposableScopeBodyEnd@367; enclosingScopeIndex@409; enclosingScopeIndex@482; EmitterScope::enterNamedLambda@507; enclosingScopeIndex@536; EmitterScope::enterFunction@546; enclosingScopeIndex@708; EmitterScope::enterEval@796; enclosingScopeIndex@813; enclosingScopeIndex@923; EmitterScope::enterWith@933; EmitterScope::deadZoneFrameSlots@965; EmitterScope::leave@969; EmitterScope::scope@1043
+Dependencies: frontend/EmitterScope.h@5; frontend/AbstractScopePtr.h@7; frontend/BytecodeControlStructures.h@8; frontend/BytecodeEmitter.h@9; frontend/ModuleSharedContext.h@10; frontend/TDZCheckCache.h@11; frontend/UsingEmitter.h@12; js/friend/ErrorMessages.h@13; vm/EnvironmentObject.h@14
+
+`js/src/frontend/EmitterScope.h` | `9c8e4f16909f12db98af7b0028dd1ef9f2c80810` | 9185 bytes | source | UTF-8 | mode 100644
+Declarations: js@22; frontend@23; BytecodeEmitter@25; EvalSharedContext@26; FunctionBox@27; GlobalSharedContext@28; ModuleSharedContext@29; TaggedParserAtomIndex@30; MOZ_STACK_CLASS@33; setHasDisposables@113; index@144; noteIndex@150; hasEnvironment@155; hasDisposables@172; hasAsyncDisposables@174; blockKind@178; frameSlotStart@181; frameSlotEnd@189; enclosingInFrame@191
+Dependencies: mozilla/Attributes.h@8; mozilla/Maybe.h@9; stdint.h@11; ds/Nestable.h@13; frontend/AbstractScopePtr.h@14; frontend/NameAnalysisTypes.h@15; frontend/NameCollections.h@16; frontend/Stencil.h@17; frontend/UsingEmitter.h@18; vm/Opcodes.h@19; vm/SharedStencil.h@20
+
+`js/src/frontend/ErrorReporter.h` | `f76593676640d457b03de634b7656261484034e9` | 11293 bytes | source | UTF-8 | mode 100644
+Declarations: JS@19; JS_PUBLIC_API@20; js@23; frontend@24; StrictModeGetter@32; ErrorReportMixin@44; Current@54; NoOffset@55; error@84; errorAt@103; errorNoOffset@121; ErrorReporter@322
+Dependencies: mozilla/Variant.h@8; optional@10; stdarg.h@11; stddef.h@12; stdint.h@13; js/ColumnNumber.h@15; js/UniquePtr.h@16; vm/ErrorReporting.h@17
+
+`js/src/frontend/ExpressionStatementEmitter.cpp` | `5e4b56bf4eafe04b643857b4a3fcfc5693408129` | 1373 bytes | source | UTF-8 | mode 100644
+Declarations: bce_@15; ExpressionStatementEmitter::prepareForExpr@17; ExpressionStatementEmitter::emitEnd@31
+Dependencies: frontend/ExpressionStatementEmitter.h@5; frontend/BytecodeEmitter.h@7; vm/Opcodes.h@8
+
+`js/src/frontend/ExpressionStatementEmitter.h` | `3c752341190a1e7bcd2db54e2413399db466eaad` | 1919 bytes | source | UTF-8 | mode 100644
+Declarations: js@14; frontend@15; BytecodeEmitter@17; MOZ_STACK_CLASS@33; class@50
+Dependencies: mozilla/Attributes.h@8; stdint.h@10; frontend/ValueUsage.h@12
+
+`js/src/frontend/FoldConstants.cpp` | `8d1b3bf5dfd2746977113977377aa1a21cddec9c` | 52336 bytes | source | UTF-8 | mode 100644
+Declarations: FoldInfo@28; FoldType@470; IsEffectless@506; Truthiness@518; Boolish@520; SimplifyCondition@567; FoldTypeOfExpr@588; FoldDeleteExpr@621; FoldDeleteElement@639; FoldNot@664; FoldUnaryArithmetic@687; FoldAndOrCoalesce@735; FoldConditional@814; FoldIf@881; ComputeBinary@980; FoldBinaryArithmetic@1012; FoldExponentiation@1072; FoldElement@1110; FoldAdd@1165; FoldVisitor@1324; info@1331; handler@1339; visitElemExpr@1341; visitTypeOfExpr@1345; visitDeleteExpr@1349; visitDeleteElemExpr@1353; visitNotExpr@1357; visitBitNotExpr@1361; visitPosExpr@1365; visitNegExpr@1369; visitPowExpr@1373; visitMulExpr@1377; visitDivExpr@1381; visitModExpr@1385; visitAddExpr@1389; visitSubExpr@1393; visitLshExpr@1397; visitRshExpr@1401; visitUrshExpr@1405; visitAndExpr@1409; visitOrExpr@1415; visitCoalesceExpr@1419; visitConditionalExpr@1423; internalVisitCall@1430; visitCallExpr@1468; visitOptionalCallExpr@1472; visitNewExpr@1476; visitSuperCallExpr@1480; visitTaggedTemplateExpr@1484; visitIfStmt@1488; visitForStmt@1494; visitWhileStmt@1516; visitDoWhileStmt@1522; visitArrayExpr@1528; visitObjectExpr@1547; Fold@1578
+Dependencies: frontend/FoldConstants.h@5; mozilla/Maybe.h@7; mozilla/Try.h@8; builtin/Math.h@10; frontend/FrontendContext.h@11; frontend/FullParseHandler.h@12; frontend/ParseNode.h@13; frontend/ParseNodeVisitor.h@14; frontend/Parser-macros.h@15; frontend/ParserAtom.h@16; js/Conversions.h@17; js/Stack.h@18; util/PortableMath.h@19; util/StringBuilder.h@20
+
+`js/src/frontend/FoldConstants.h` | `b7dbf3ac42fcf164f238d9a1e13af70fb679018a` | 1798 bytes | source | UTF-8 | mode 100644
+Declarations: js@11; FrontendContext@13; frontend@15; FullParseHandler@17; PerHandlerParser@19; ParserAtomsTable@20
+Dependencies: frontend/Stencil.h@8; frontend/SyntaxParseHandler.h@9
+
+`js/src/frontend/ForInEmitter.cpp` | `368056ceefc0318fa91d93ee1571231e39df1865` | 4482 bytes | source | UTF-8 | mode 100644
+Declarations: bce_@19; ForInEmitter::emitIterated@21; ForInEmitter::emitInitialize@31; ForInEmitter::emitBody@104; ForInEmitter::emitEnd@116
+Dependencies: frontend/ForInEmitter.h@5; frontend/BytecodeEmitter.h@7; frontend/EmitterScope.h@8; vm/Opcodes.h@9; vm/StencilEnums.h@10
+
+`js/src/frontend/ForInEmitter.h` | `2ad69aa050ebb3f054393ce94829a770b5be7ace` | 3522 bytes | source | UTF-8 | mode 100644
+Declarations: js@16; frontend@17; BytecodeEmitter@19; EmitterScope@20; MOZ_STACK_CLASS@37; class@77
+Dependencies: mozilla/Attributes.h@8; mozilla/Maybe.h@9; stdint.h@11; frontend/BytecodeControlStructures.h@13; frontend/TDZCheckCache.h@14
+
+`js/src/frontend/ForOfEmitter.cpp` | `a5105ee68dcb9a638eafa50fcb54a8180b1f1ef3` | 8562 bytes | source | UTF-8 | mode 100644
+Declarations: usingDeclarationInHead_@27; ForOfEmitter::emitIterated@41; ForOfEmitter::emitInitialize@55; TaggedParserAtomIndex::WellKnown::done@156; TaggedParserAtomIndex::WellKnown::value@174; ForOfEmitter::emitBody@195; ForOfEmitter::emitEnd@208
+Dependencies: frontend/ForOfEmitter.h@5; frontend/BytecodeEmitter.h@7; frontend/EmitterScope.h@8; frontend/ParserAtom.h@9; frontend/UsingEmitter.h@10; vm/Opcodes.h@11; vm/StencilEnums.h@12
+
+`js/src/frontend/ForOfEmitter.h` | `34f7160425a67f15003f186e962a51f5940111e5` | 3644 bytes | source | UTF-8 | mode 100644
+Declarations: js@18; frontend@19; BytecodeEmitter@21; EmitterScope@22; MOZ_STACK_CLASS@39; class@72; class@92
+Dependencies: mozilla/Attributes.h@8; mozilla/Maybe.h@9; stdint.h@11; frontend/ForOfLoopControl.h@13; frontend/IteratorKind.h@14; frontend/SelfHostedIter.h@15; frontend/TDZCheckCache.h@16
+
+`js/src/frontend/ForOfLoopControl.cpp` | `0d3bdbe6b34254ca801f255a02ef28d3facc748a` | 7982 bytes | source | UTF-8 | mode 100644
+Declarations: continuations_@22; ForOfLoopControl::emitBeginCodeNeedingIteratorClose@24; ForOfLoopControl::emitEndCodeNeedingIteratorClose@46; ForOfLoopControl::emitIteratorCloseForNonLocalExits@139; ForOfLoopControl::emitEnd@203
+Dependencies: frontend/ForOfLoopControl.h@5; frontend/BytecodeEmitter.h@7; frontend/EmitterScope.h@8; vm/CompletionKind.h@9; vm/Opcodes.h@10
+
+`js/src/frontend/ForOfLoopControl.h` | `e62df52133df9cfb9e48c7cd6132b9ed802ebf62` | 4343 bytes | source | UTF-8 | mode 100644
+Declarations: js@22; frontend@23; BytecodeEmitter@25; BytecodeOffset@26; EmitterScope@27; ForOfLoopControl@29; Continuation@76; target@82
+Dependencies: mozilla/Maybe.h@8; stdint.h@10; frontend/BytecodeControlStructures.h@12; frontend/IteratorKind.h@13; frontend/JumpList.h@14; frontend/SelfHostedIter.h@15; frontend/TryEmitter.h@16; frontend/UsingEmitter.h@17; js/AllocPolicy.h@18; js/Vector.h@19; vm/CompletionKind.h@20
+
+`js/src/frontend/FrontendContext.cpp` | `80dcf1142f25c14b530f75e58039ea3017764bad` | 11714 bytes | source | UTF-8 | mode 100644
+Declarations: FrontendErrors::clearErrors@27; FrontendErrors::clearWarnings@36; FrontendAllocator::reportAllocOverflow@38; FrontendContext::~FrontendContext@46; FrontendContext::setStackQuota@53; FrontendContext::allocateOwnedPool@85; FrontendContext::hadErrors@96; FrontendContext::clearErrors@107; FrontendContext::clearWarnings@116; FrontendContext::onAllocationOverflow@124; FrontendContext::onOutOfMemory@128; FrontendContext::onOverRecursed@130; FrontendContext::requestCompilationCancellation@132; FrontendContext::checkCompilationCancellation@139; FrontendContext::recoverFromOutOfMemory@148; FrontendContext::reportError@164; FrontendContext::reportWarning@174; FrontendContext::ReportOutOfMemory@183; FrontendContext::addPendingOutOfMemory@196; FrontendContext::setCurrentJSContext@198; GetTid@264; FrontendContext::setNativeStackLimitThread@274; FrontendContext::assertNativeStackLimitThread@278; FrontendContext::incWasiRecursionDepth@288; FrontendContext::decWasiRecursionDepth@294; FrontendContext::checkWasiRecursionLimit@300; js::NewFrontendContext@320; js::DestroyFrontendContext@353; FrontendContext::checkAndUpdateFrontendContextRecursionLimit@360
+Dependencies: frontend/FrontendContext.h@5; util/WindowsWrapper.h@9; process.h@10; pthread.h@13; gc/GC.h@16; js/AllocPolicy.h@17; js/experimental/CompileScript.h@18; js/friend/StackLimits.h@19; js/Modules.h@20; util/DifferentialTesting.h@21; util/NativeStack.h@22; vm/JSContext.h@23
+
+`js/src/frontend/FrontendContext.h` | `a5d32bb5309a8f1c88b244129ce5d24fbd80bf71` | 9889 bytes | source | UTF-8 | mode 100644
+Declarations: JSContext@23; js@25; FrontendContext@27; frontend@29; NameCollectionPool@30; FrontendErrors@33; hadErrors@53; FrontendAllocator@62; FrontendAllocator@67; FrontendContext@74; scriptDataTableHolder_@127; stackLimit@131; isCompilationCancellationRequested@134; nameCollectionPool@140; scriptDataTableHolder@147; getAllocator@152; maybeCurrentJSContext@168; class@170; maybeError@177; hadOutOfMemory@204; hadOverRecursed@205; hadAllocationOverflow@206; hadCancelled@207; extraBindingsAreNotUsed@208; reportExtraBindingsAreNotUsed@211; clearNoExtraBindingReferencesFound@214; setAllowCancellingCompilation@230; MOZ_STACK_CLASS@246; cx_@255; clearAutoReport@266; convertToRuntimeErrorAndClear@268; ManualReportFrontendContext@282; ManualReportFrontendContext@289; ok@295; failure@301
+Dependencies: mozilla/Assertions.h@8; mozilla/Atomics.h@9; mozilla/Attributes.h@10; mozilla/Maybe.h@11; stddef.h@13; js/AllocPolicy.h@15; js/ErrorReport.h@16; js/Stack.h@17; js/Vector.h@18; vm/ErrorReporting.h@19; vm/MallocProvider.h@20; vm/SharedScriptDataTableHolder.h@21
+
+`js/src/frontend/FullParseHandler.h` | `5393a6548a560e8615a875afbf4b50eea997927d` | 44779 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@27; mozilla@33; js@39; frontend@40; TokenStreamAnyChars@42; FullParseHandler@46; allocParseNode@49; isPropertyOrPrivateMemberAccess@101; isOptionalPropertyOrPrivateMemberAccess@108; isFunctionCall@114; isUnparenthesizedDestructuringPattern@119; isParenthesizedDestructuringPattern@124; reuseGCThings@138; null@140; newName@152; newComputedName@156; newBigInt@185; newBooleanLiteral@189; newCallSiteObject@203; newThisLiteral@230; newNullLiteral@234; newRawUndefinedLiteral@238; newRegExp@242; newDelete@251; newTypeof@286; newUnary@293; newUpdate@298; newSpread@303; newBinary@309; newArrayLiteral@322; addArrayElement@349; newCall@358; newOptionalCall@362; newArguments@367; newSuperCall@371; newTaggedTemplate@377; newObjectLiteral@382; newClassMemberList@400; newClassNames@404; newPosHolder@412; newSuperBase@415; newPropertyDefinition@433; addPropertyDefinition@439; newInitialYieldExpression@586; newYieldExpression@591; newYieldStarExpression@596; newAwaitExpression@601; newOptionalChain@606; newStatementList@613; addStatementToList@624; setListEndPosition@636; addCaseStatementToList@641; newSetThis@676; newEmptyStatement@680; newImportAttribute@684; newImportSpec@701; newImportNamespaceSpec@705; newExportDeclaration@709; newExportSpec@734; newExportNamespaceSpec@738; newExportBatchSpec@742; newCallImportSpec@757; newExprStatement@762; newWhileStatement@781; newCaseOrDefault@811; newReturnStatement@825; newExpressionBody@830; newWithStatement@834; newThrowStatement@844; newDebuggerStatement@855; newPropertyAccess@864; newArgumentsLength@869; newPropertyByValue@874; checkAndSetIsDirectRHSAnonFunction@925; newParamsBody@931; setFunctionBox@951; addFunctionFormalParameter@954; setFunctionBody@957; newModule@961; newAssignment@983; newInitExpr@995; isUnparenthesizedAssignment@1000; isUnparenthesizedUnaryExpression@1008; isReturnStatement@1021; isStatementPermittedAfterReturnStatement@1025; isSuperBase@1032; isUsableAsObjectPropertyName@1034; setBeginPosition@1053; setBeginPosition@1056; setEndPosition@1061; setEndPosition@1064; getFunctionNameOffset@1069; newList@1073; newList@1080; newCommaExpressionList@1092; addList@1096; setListHasNonConstInitializer@1098; isName@1115; isArgumentsName@1117; isLengthName@1123; isEvalName@1129; isAsyncKeyword@1135; isArgumentsLength@1142; isPrivateName@1146; isPrivateMemberAccess@1150; maybeDottedProperty@1157; isStringExprStatement@1161; reuseLazyInnerFunctions@1172; reuseClosedOverBindings@1173; reuseRegexpSyntaxParse@1174; nextLazyInnerFunction@1175; nextLazyClosedOverBinding@1176; setPrivateNameKind@1198
+Dependencies: mozilla/Maybe.h@8; mozilla/Result.h@9; mozilla/Try.h@10; cstddef@12; string.h@13; jstypes.h@15; frontend/CompilationStencil.h@17; frontend/FunctionSyntaxKind.h@18; frontend/NameAnalysisTypes.h@19; frontend/ParseNode.h@20; frontend/Parser-macros.h@21; frontend/ParserAtom.h@22; frontend/SharedContext.h@23; frontend/Stencil.h@24
+
+`js/src/frontend/FunctionEmitter.cpp` | `a9b618b860e0e6b7b2c32270e40d25a36b80604e` | 25036 bytes | source | UTF-8 | mode 100644
+Declarations: isHoisted_@33; FunctionEmitter::prepareForNonLazy@35; FunctionEmitter::emitNonLazyEnd@52; FunctionEmitter::emitLazy@68; FunctionEmitter::emitAgain@94; FunctionEmitter::emitFunction@162; FunctionEmitter::emitNonHoisted@199; FunctionEmitter::emitHoisted@223; FunctionEmitter::emitTopLevelFunction@255; FunctionScriptEmitter::prepareForParameters@277; FunctionScriptEmitter::emitInitializeClosedOverArgumentBindings@371; FunctionScriptEmitter::prepareForBody@442; FunctionScriptEmitter::emitExtraBodyVarScope@470; FunctionScriptEmitter::emitEndBody@535; FunctionScriptEmitter::intoStencil@710; functionEmitterScope_@728; FunctionParamsEmitter::emitSimple@730; FunctionParamsEmitter::prepareForDefault@751; FunctionParamsEmitter::emitDefaultEnd@767; FunctionParamsEmitter::prepareForDestructuring@789; FunctionParamsEmitter::emitDestructuringEnd@805; FunctionParamsEmitter::prepareForDestructuringDefaultInitializer@823; FunctionParamsEmitter::prepareForDestructuringDefault@839; FunctionParamsEmitter::emitDestructuringDefaultEnd@855; FunctionParamsEmitter::emitRest@873; FunctionParamsEmitter::prepareForDestructuringRest@893; FunctionParamsEmitter::emitDestructuringRestEnd@909; FunctionParamsEmitter::prepareForInitializer@925; FunctionParamsEmitter::emitInitializerEnd@943; FunctionParamsEmitter::emitRestArray@954; FunctionParamsEmitter::emitAssignment@964
+Dependencies: frontend/FunctionEmitter.h@5; mozilla/Assertions.h@7; frontend/AsyncEmitter.h@9; frontend/BytecodeEmitter.h@10; frontend/FunctionSyntaxKind.h@11; frontend/ModuleSharedContext.h@12; frontend/NameAnalysisTypes.h@13; frontend/NameOpEmitter.h@14; frontend/SharedContext.h@15; vm/ModuleBuilder.h@16; vm/Opcodes.h@17; vm/Scope.h@18
+
+`js/src/frontend/FunctionEmitter.h` | `1fbbe7078c4ffcd3ca19e98b9565bc0991e37e7f` | 14933 bytes | source | UTF-8 | mode 100644
+Declarations: js@19; GCThingIndex@21; frontend@23; BytecodeEmitter@25; FunctionBox@26; MOZ_STACK_CLASS@57; class@59; class@94; MOZ_STACK_CLASS@153; class@197; bodyEnd_@231; MOZ_STACK_CLASS@277; class@364
+Dependencies: mozilla/Attributes.h@8; stdint.h@10; frontend/AsyncEmitter.h@12; frontend/DefaultEmitter.h@13; frontend/EmitterScope.h@14; frontend/FunctionSyntaxKind.h@15; frontend/ParserAtom.h@16; frontend/TDZCheckCache.h@17
+
+`js/src/frontend/FunctionSyntaxKind.h` | `9e9a29bdceeca68135bcaa901a967978725e7a58` | 940 bytes | source | UTF-8 | mode 100644
+Declarations: js@10; frontend@11; class@13
+Dependencies: stdint.h@8
+
+`js/src/frontend/GenerateReservedWords.py` | `e3d0d48fc53ea180de19da948a6dc6735aed7300` | 5573 bytes | source | UTF-8 | mode 100644
+Declarations: line@10; indent@14; dedent@18; span_and_count_at@22; optimal_switch_column@33; split_list_per_column@65; generate_letter_switch@77; line@99; line@123; line@128; split_list_per_length@147; generate_switch@159; line@178; line@182; main@198
+
+`js/src/frontend/IfEmitter.cpp` | `31ce85e212b2246de4cf5758c4ee3799c67da04f` | 7185 bytes | source | UTF-8 | mode 100644
+Declarations: bce_@17; BranchEmitterBase@20; IfEmitter@23; BranchEmitterBase::emitThenInternal@25; BranchEmitterBase::calculateOrCheckPushed@50; BranchEmitterBase::emitElseInternal@61; BranchEmitterBase::emitEndInternal@96; IfEmitter::emitIf@121; IfEmitter::emitElseIf@176; IfEmitter::emitElse@197; IfEmitter::emitEnd@210; IfEmitter@229; BranchEmitterBase@237; CondEmitter::emitCond@239; CondEmitter::emitElse@260; CondEmitter::emitEnd@273
+Dependencies: frontend/IfEmitter.h@5; frontend/BytecodeEmitter.h@7; vm/Opcodes.h@8
+
+`js/src/frontend/IfEmitter.h` | `bbb51b723f8a33a5967d99c5271a6e55f232537d` | 9586 bytes | source | UTF-8 | mode 100644
+Declarations: js@16; frontend@17; BytecodeEmitter@19; MOZ_STACK_CLASS@21; class@32; class@58; pushed@82; popped@87; MOZ_STACK_CLASS@142; class@171; MOZ_STACK_CLASS@246; MOZ_STACK_CLASS@268; class@281
+Dependencies: mozilla/Attributes.h@8; mozilla/Maybe.h@9; stdint.h@11; frontend/JumpList.h@13; frontend/TDZCheckCache.h@14
+
+`js/src/frontend/IteratorKind.h` | `a76a93b309ea0ea69fc59534caa242e999fe5601` | 408 bytes | source | UTF-8 | mode 100644
+Declarations: js@8; class@10
+
+`js/src/frontend/JumpList.cpp` | `328dc4c4231418b5fd5ea59ca386e66e612d0e12` | 1339 bytes | source | UTF-8 | mode 100644
+Declarations: JumpList::push@14; JumpList::patchAll@23
+Dependencies: frontend/JumpList.h@5; mozilla/Assertions.h@7; vm/BytecodeUtil.h@9
+
+`js/src/frontend/JumpList.h` | `43cd5fc7549d966a69491d19f71f482196b6a95c` | 2641 bytes | source | UTF-8 | mode 100644
+Declarations: js@13; frontend@14; JumpTarget@58; JumpList@62; JumpList@67
+Dependencies: stddef.h@8; frontend/BytecodeOffset.h@10; js/TypeDecls.h@11
+
+`js/src/frontend/LabelEmitter.cpp` | `d3bdf7715506f14e8a9b17c6c2675bbe4a5f3eda` | 882 bytes | source | UTF-8 | mode 100644
+Declarations: LabelEmitter::emitLabel@14; LabelEmitter::emitEnd@24
+Dependencies: frontend/LabelEmitter.h@5; mozilla/Assertions.h@7; frontend/BytecodeEmitter.h@9
+
+`js/src/frontend/LabelEmitter.h` | `176af0d62505ab1e72e82a46730d18861b0090be` | 1500 bytes | source | UTF-8 | mode 100644
+Declarations: js@13; frontend@14; BytecodeEmitter@16; TaggedParserAtomIndex@17; MOZ_STACK_CLASS@29; class@40; LabelEmitter@54
+Dependencies: mozilla/Attributes.h@8; mozilla/Maybe.h@9; frontend/BytecodeControlStructures.h@11
+
+`js/src/frontend/LexicalScopeEmitter.cpp` | `b5513b0ee52dc09d006fc107bf47961b10b8916e` | 1293 bytes | source | UTF-8 | mode 100644
+Declarations: LexicalScopeEmitter::LexicalScopeEmitter@10; LexicalScopeEmitter::emitEmptyScope@30; LexicalScopeEmitter::emitEnd@41
+Dependencies: frontend/LexicalScopeEmitter.h@5
+
+`js/src/frontend/LexicalScopeEmitter.h` | `103d287d4de32ef707d743473c94659ad89b15bf` | 2730 bytes | source | UTF-8 | mode 100644
+Declarations: js@15; frontend@16; BytecodeEmitter@18; MOZ_STACK_CLASS@51; class@63
+Dependencies: mozilla/Attributes.h@8; mozilla/Maybe.h@9; frontend/EmitterScope.h@11; frontend/TDZCheckCache.h@12; vm/Scope.h@13
+
+`js/src/frontend/ModuleSharedContext.h` | `b26f7bb276870127c30283c69d6d3dedd569a7ba` | 1238 bytes | source | UTF-8 | mode 100644
+Declarations: JS@16; JS_PUBLIC_API@17; js@20; ModuleBuilder@22; SourceExtent@23; frontend@25; MOZ_STACK_CLASS@27; SharedContext::asModuleContext@37
+Dependencies: mozilla/Assertions.h@8; mozilla/Attributes.h@9; jstypes.h@11; frontend/SharedContext.h@13; vm/Scope.h@14
+
+`js/src/frontend/NameAnalysisTypes.h` | `83f1b6d8d57adc750ba80e7e5eda9f7b2853dd0d` | 12159 bytes | source | UTF-8 | mode 100644
+Declarations: js@17; EnvironmentCoordinate@24; slot_@37; setHops@44; setSlot@49; hops@54; slot@59; frontend@69; class@71; class@75; class@99; DeclarationKindToBindingKind@101; DeclarationKindIsLexical@143; class@148; class@157; DeclaredNameInfo@160; placement_@184; kind@197; pos@201; alterKind@203; setClosedOver@205; closedOver@207; setPrivateNameKind@209; setFieldPlacement@213; privateNameKind@218; placement@220; NameLocation@224; class@226; kind_@291; Dynamic@297; Global@301; Intrinsic@306; NamedLambdaCallee@310; ArgumentSlot@315; FrameSlot@320; Import@336; DynamicAnnexBVar@340; kind@346; argumentSlot@348; frameSlot@353; addHops@358; EnvironmentCoordinate@364; EnvironmentCoordinate@367; bindingKind@373; isLexical@378; isConst@380; isSynthetic@385; isPrivateMethod@387; hasKnownSlot@391
+Dependencies: mozilla/Assertions.h@8; mozilla/Casting.h@9; stdint.h@11; vm/BindingKind.h@13; vm/BytecodeFormatFlags.h@14; vm/BytecodeUtil.h@15
+
+`js/src/frontend/NameCollections.h` | `bf84093d2b33eaa06a99d448cf6292ec2ed83152` | 13316 bytes | source | UTF-8 | mode 100644
+Declarations: js@24; FunctionBox@26; CollectionPool@33; asRepresentative@39; allocate@43; purgeAll@59; acquire@71; release@89; RecyclableAtomMapValueWrapper@116; assertInvariant@124; RecyclableAtomMapValueWrapper@129; RecyclableAtomMapValueWrapper@131; RecyclableNameMap@152; InlineTablePool@181; IsRecyclableAtomMapValueWrapper@185; IsRecyclableAtomMapValueWrapper@188; assertInvariants@193; VectorPool@230; assertInvariants@234; NameCollectionPool@259; NameCollectionPool@266; hasActiveCompilation@268; addActiveCompilation@270; removeActiveCompilation@272; acquireMap@278; releaseMap@284; purge@298; PooledCollectionPtr@341; collection@348; PooledCollectionPtr@359; acquire@361; bool@367; PooledMapPtr@379; acquireCollection@382; releaseCollection@386; PooledVectorPtr@399; releaseCollection@407
+Dependencies: mozilla/Assertions.h@8; mozilla/Attributes.h@9; stddef.h@11; stdint.h@12; type_traits@13; utility@14; ds/InlineTable.h@16; frontend/NameAnalysisTypes.h@17; frontend/ParserAtom.h@18; frontend/TaggedParserAtomIndexHasher.h@19; js/AllocPolicy.h@20; js/Utility.h@21; js/Vector.h@22
+
+`js/src/frontend/NameFunctions.cpp` | `21bff7198f7a50b4294c718177c3762992a4b189` | 18518 bytes | source | UTF-8 | mode 100644
+Declarations: NameResolver@22; isCall@44; appendPropertyReference@58; appendNumber@74; appendNumericPropertyReference@81; nameExpression@91; gatherNameable@162; isDirectCall@378; buf_@501
+Dependencies: frontend/NameFunctions.h@5; mozilla/ScopeExit.h@7; mozilla/Sprintf.h@8; frontend/ParseNode.h@10; frontend/ParseNodeVisitor.h@11; frontend/ParserAtom.h@12; frontend/SharedContext.h@13; util/Poison.h@14; util/StringBuilder.h@15
+
+`js/src/frontend/NameFunctions.h` | `f160df9fd862277b68ff69238af897ed4e24ba09` | 626 bytes | source | UTF-8 | mode 100644
+Declarations: js@10; FrontendContext@12; frontend@14; ParseNode@16; ParserAtomsTable@17
+Dependencies: js/TypeDecls.h@8
+
+`js/src/frontend/NameOpEmitter.cpp` | `030471bc7b0864715c51b825bacc7888d92b66ac` | 16418 bytes | source | UTF-8 | mode 100644
+Declarations: bce_@21; bce_@25; NameOpEmitter::emitGet@27; NameOpEmitter::prepareForRhs@229; NameOpEmitter::strictifySetNameOp@320; NameOpEmitter::emitAssignment@343; NameOpEmitter::emitIncDec@486
+Dependencies: frontend/NameOpEmitter.h@5; frontend/AbstractScopePtr.h@7; frontend/BytecodeEmitter.h@8; frontend/ParserAtom.h@9; frontend/SharedContext.h@10; frontend/TDZCheckCache.h@11; frontend/ValueUsage.h@12; js/Value.h@13; vm/Opcodes.h@14
+
+`js/src/frontend/NameOpEmitter.h` | `f1b232929f20660abb91d794e772b874b52aef54` | 5049 bytes | source | UTF-8 | mode 100644
+Declarations: js@16; frontend@17; BytecodeEmitter@19; class@20; MOZ_STACK_CLASS@61; class@63; class@115; numReferenceSlots@180
+Dependencies: mozilla/Attributes.h@8; stddef.h@10; frontend/NameAnalysisTypes.h@12; frontend/ParserAtom.h@13; vm/SharedStencil.h@14
+
+`js/src/frontend/ObjLiteral.cpp` | `5a68dd3b06d6b86f0e2b520eab099736c20a1f68` | 17361 bytes | source | UTF-8 | mode 100644
+Declarations: js@32; ObjLiteralWriter::checkForDuplicatedNames@34; class@128; constexpr@190; constexpr@344; ObjLiteralStencil::isContainedIn@425; ObjLiteralWriter::dump@526; ObjLiteralStencil::dump@544
+Dependencies: frontend/ObjLiteral.h@6; mozilla/DebugOnly.h@8; mozilla/HashTable.h@9; NamespaceImports.h@11; builtin/Array.h@13; frontend/CompilationStencil.h@14; frontend/ParserAtom.h@15; frontend/TaggedParserAtomIndexHasher.h@16; gc/AllocKind.h@17; js/Id.h@18; js/Printer.h@19; js/RootingAPI.h@20; js/TypeDecls.h@21; vm/JSObject.h@22; vm/JSONPrinter.h@23; vm/NativeObject.h@24; vm/PlainObject.h@25; gc/ObjectKind-inl.h@27; vm/JSAtomUtils-inl.h@28; vm/JSObject-inl.h@29; vm/NativeObject-inl.h@30
+
+`js/src/frontend/ObjLiteral.h` | `1d2ab35eca31dc2bf6b91a8d96645479f08e3ebc` | 25453 bytes | source | UTF-8 | mode 100644
+Declarations: js@105; FrontendContext@107; JSONPrinter@108; LifoAlloc@109; frontend@111; CompilationAtomCache@112; CompilationStencil@113; StencilXDR@114; class@120; class@135; class@156; ObjLiteralKindAndFlags@168; bits_@181; kind@186; flags@187; toRaw@193; setRaw@194; ObjLiteralOpcodeHasValueArg@197; ObjLiteralOpcodeHasAtomArg@201; ObjLiteralReaderBase@205; ObjLiteralKey@211; ObjLiteralKeyType@215; value_@224; ObjLiteralKey@227; ObjLiteralKey@229; fromPropName@232; fromArrayIndex@235; none@238; isNone@240; isAtomIndex@241; isArrayIndex@242; getAtomIndex@244; getArrayIndex@248; rawIndex@253; ObjLiteralWriterBase@256; curOffset@272; ObjLiteralWriter@330; clear@334; getKind@340; getFlags@341; getPropertyCount@342; beginArray@344; beginCallSiteObj@349; beginObject@354; beginShape@359; setPropIndex@395; beginDenseArrayElements@401; arrayIndexInRange@446; ObjLiteralReaderBase@480; data_@515; cursor@550; ObjLiteralInsn@554; Arg@559; ObjLiteralInsn@567; op_@569; op_@574; op_@581; ObjLiteralInsn@586; isValid@596; getOp@600; hasConstValue@609; hasAtomIndex@613; getConstValue@618; getAtomIndex@623; ObjLiteralReader@632; ObjLiteralReaderBase@635; ObjLiteralModifier@665; ObjLiteralReaderBase@670; mapInsnAtom@686; mapAtom@722; ObjLiteralStencil@728; propertyCount_@745; kind@751; flags@752; propertyCount@753
+Dependencies: mozilla/BloomFilter.h@9; mozilla/Span.h@10; frontend/ParserAtom.h@12; js/AllocPolicy.h@13; js/Value.h@14; js/Vector.h@15; util/EnumFlags.h@16; vm/BytecodeUtil.h@17; vm/Opcodes.h@18
+
+`js/src/frontend/ObjectEmitter.cpp` | `a3db942e175f313ebc1a3c65faadae49cc86a707` | 26092 bytes | source | UTF-8 | mode 100644
+Declarations: PropertyEmitter::PropertyEmitter@19; PropertyEmitter::prepareForProtoValue@21; PropertyEmitter::emitMutateProto@37; PropertyEmitter::prepareForSpreadOperand@53; PropertyEmitter::emitSpread@73; PropertyEmitter::prepareForPrivateMethod@115; PropertyEmitter::prepareForPrivateStaticMethod@129; PropertyEmitter::prepareForPropValue@149; PropertyEmitter::prepareForIndexPropKey@168; PropertyEmitter::prepareForIndexPropValue@187; PropertyEmitter::prepareForComputedPropKey@198; PropertyEmitter::prepareForComputedPropValue@217; PropertyEmitter::emitInitHomeObject@233; PropertyEmitter::emitInitIndexOrComputed@295; PropertyEmitter::emitPrivateStaticMethod@310; PropertyEmitter::emitInit@324; PropertyEmitter::skipInit@349; PropertyEmitter::emitInitIndexOrComputed@358; PropertyEmitter::emitPopClassConstructor@389; ObjectEmitter::ObjectEmitter@402; ObjectEmitter::emitObject@404; ObjectEmitter::emitObjectWithTemplateOnStack@425; ObjectEmitter::emitEnd@435; AutoSaveLocalStrictMode::AutoSaveLocalStrictMode@448; AutoSaveLocalStrictMode::~AutoSaveLocalStrictMode@452; AutoSaveLocalStrictMode::restore@458; PropertyEmitter@464; ClassEmitter::emitScope@468; ClassEmitter::emitBodyScope@486; TaggedParserAtomIndex::WellKnown::prototype@581; ClassEmitter::emitInitConstructor@623; ClassEmitter::initProtoAndCtor@651; TaggedParserAtomIndex::WellKnown::prototype@674; TaggedParserAtomIndex::WellKnown::constructor@679; ClassEmitter::prepareForMemberInitializer@722; ClassEmitter::emitMemberInitializerHomeObject@733; ClassEmitter::emitStoreMemberInitializer@763; ClassEmitter::emitMemberInitializersEnd@781; ClassEmitter::emitBinding@841; ClassEmitter::prepareForDecorators@872; ClassEmitter::leaveBodyAndInnerScope@875; ClassEmitter::emitEnd@901
+Dependencies: frontend/ObjectEmitter.h@5; mozilla/Assertions.h@7; frontend/BytecodeEmitter.h@9; frontend/IfEmitter.h@10; frontend/ParseNode.h@11; frontend/SharedContext.h@12; vm/FunctionPrefixKind.h@13; vm/Opcodes.h@14
+
+`js/src/frontend/ObjectEmitter.h` | `75dd8db234dc791b61568c8d70b43230c2736538` | 30529 bytes | source | UTF-8 | mode 100644
+Declarations: js@22; frontend@24; BytecodeEmitter@26; SharedContext@27; MOZ_STACK_CLASS@31; class@33; class@184; MOZ_STACK_CLASS@415; class@429; MOZ_RAII@454; MOZ_STACK_CLASS@588; class@590; class@727; class@784
+Dependencies: mozilla/Attributes.h@8; mozilla/Maybe.h@9; stddef.h@11; stdint.h@12; frontend/EmitterScope.h@14; frontend/NameOpEmitter.h@15; frontend/ParseNode.h@16; frontend/ParserAtom.h@17; frontend/TDZCheckCache.h@18; vm/Opcodes.h@19; vm/Scope.h@20
+
+`js/src/frontend/OptionalEmitter.cpp` | `1ff4942169385595e7779215a391a2174b37f87d` | 3770 bytes | source | UTF-8 | mode 100644
+Declarations: bce_@15; OptionalEmitter::emitJumpShortCircuit@17; OptionalEmitter::emitJumpShortCircuitForCall@37
+Dependencies: frontend/OptionalEmitter.h@5; frontend/BytecodeEmitter.h@7; frontend/IfEmitter.h@8; vm/Opcodes.h@9
+
+`js/src/frontend/OptionalEmitter.h` | `ebdce38811b8b87999e86dc4a8b7add887119eee` | 7323 bytes | source | UTF-8 | mode 100644
+Declarations: js@13; frontend@14; BytecodeEmitter@16; MOZ_RAII@142; class@180; class@199
+Dependencies: mozilla/Attributes.h@8; frontend/JumpList.h@10; frontend/TDZCheckCache.h@11
+
+`js/src/frontend/ParseContext-inl.h` | `521f4e9865b1f517574d41c9bbb0eb157469b516` | 5962 bytes | source | UTF-8 | mode 100644
+Declarations: js@12; frontend@13; ParseContext::Statement::as@26; id_@44; id_@51; ParseContext::VarScope::VarScope@53; Scope@59; ParseContext::checkBreakStatement@64; ParseContext::checkContinueStatement@92; RedeclareVar@139
+Dependencies: frontend/ParseContext.h@8; frontend/Parser.h@10
+
+`js/src/frontend/ParseContext.cpp` | `64837ee953f72ce8971a819aed1ffcef66ec88a4` | 27158 bytes | source | UTF-8 | mode 100644
+Declarations: js@15; frontend@16; DeclarationKindIsVar@63; DeclarationKindIsParameter@69; UsedNameTracker::rewind@174; UsedNameTracker::dump@184; ParseContext::Scope::dump@227; DeclarationKindIsCatchParameter@308; superScopeNeedsHomeObject_@364; ParseContext::init@373; ParseContext::declareDotGeneratorName@759; ParseContext::declareTopLevelDotGeneratorName@774
+Dependencies: frontend/CompilationStencil.h@5; frontend/Parser.h@6; js/friend/ErrorMessages.h@7; frontend/ParseContext-inl.h@9
+
+`js/src/frontend/ParseContext.h` | `b27ef3d88bd0d593f0de60360125bb8d0fe30041` | 25236 bytes | source | UTF-8 | mode 100644
+Declarations: js@18; frontend@20; ParserBase@22; UsedNameTracker@23; CompilationState@25; MOZ_STACK_CLASS@41; MOZ_STACK_CLASS@48; kind@63; refineForKind@65; LabelStatement@73; Statement@78; label@80; ClassStatement@83; Statement@87; MOZ_STACK_CLASS@93; class@121; innerScopeSlotCount@148; setInnerScopeSlotCount@155; propagateInnerScopeSlotCount@162; setGeneratorOrAsyncScopeIsOptimizable@168; setGeneratorOrAsyncScopeHasTooManyBindings@178; maybeReportOOM@188; id@207; isEmpty@218; declaredCount@220; lookupDeclaredName@226; lookupDeclaredNameForAdd@230; useAsVarScope@256; setOwnStackSlotCount@280; tooBigToOptimize@295; BindingIter@311; isVarScope_@321; isLexicallyDeclared@325; settle@331; done@349; bool@351; name@353; declarationKind@358; kind@363; closedOver@367; setClosedOver@372; VarScope@388; sc@473; isFunctionBox@476; functionBox@478; innermostStatement@480; innermostScope@482; namedLambdaScope@488; functionScope@493; varScope@498; isFunctionExtraBodyVarScopeInnermost@503; findInnermostStatement@509; findInnermostStatement@514; findInnermostStatement@519; positionalFormalParameterNames@523; closedOverBindingsForLazy@527; class@531; class@542; atBodyLevel@556; atGlobalLevel@558; atModuleLevel@561; atTopLevel@567; atModuleTopLevel@569; isOutermostOfCurrentCompile@593; isUsingSyntaxAllowed@598; innermostStatement@600; setSuperScopeNeedsHomeObject@607; superScopeNeedsHomeObject@612; generatorKind@615; isGenerator@620; isAsync@624; isGeneratorOrAsync@629; needsDotGeneratorName@631; asyncKind@633; isArrowFunction@638; isMethod@642; isGetterOrSetter@646; allowReturn@651; scriptId@655; DryRunOption@699
+Dependencies: ds/Nestable.h@8; frontend/ErrorReporter.h@9; frontend/NameAnalysisTypes.h@10; frontend/NameCollections.h@11; frontend/ParserAtom.h@12; frontend/ScriptIndex.h@13; frontend/SharedContext.h@14; js/friend/ErrorMessages.h@15; vm/GeneratorAndAsyncKind.h@16
+
+`js/src/frontend/ParseNode.cpp` | `c04e71b71e4df0f5b77426a23764d7280b0fad24` | 14027 bytes | source | UTF-8 | mode 100644
+Declarations: ListNode::checkConsistency@23; ParseNodeAllocator::allocNode@47; IndentNewLine@124; ParseNode::dump@131; ParseNode::dump@133; ParseNode::dump@138; js::frontend::IsAnonymousFunctionDefinition@438
+Dependencies: frontend/ParseNode.h@5; mozilla/Try.h@7; builtin/Number.h@9; frontend/CompilationStencil.h@10; frontend/FullParseHandler.h@11; frontend/ParseContext.h@12; frontend/Parser.h@13; frontend/ParserAtom.h@14; frontend/SharedContext.h@15; js/Printer.h@16; vm/Scope.h@17
+
+`js/src/frontend/ParseNode.h` | `e722e9ccc147c64f97ad7ac2d6503114627a4f65` | 90970 bytes | source | UTF-8 | mode 100644
+Declarations: JSContext@42; js@44; JS_PUBLIC_API@46; LifoAlloc@47; RegExpObject@48; frontend@50; ParserAtomsTable@52; ParserBase@53; ParseContext@54; ExtensibleCompilationStencil@55; FullParseHandler@56; FunctionBox@58; class@250; IsDeleteKind@264; IsTypeofKind@269; class@682; IsConstructorKind@684; IsMethodDefinitionKind@689; ParseNode@705; ParseNodeError@706; ParseNode@709; pn_next@736; pn_next@749; getKind@754; isKind@759; getKindAsIndex@762; class@769; typeCode@789; isBinaryOperation@791; isInParens@799; isLikelyIIFE@800; setInParens@801; isDirectRHSAnonFunction@803; setDirectRHSAnonFunction@804; isLiteral@820; is@835; as@841; size@861; ReplaceNode@872; NullaryNode@877; NullaryNode@879; test@883; accept@890; NameNode@900; ParseNode@906; test@911; accept@918; atom@927; name@929; setAtom@935; setPrivateNameKind@937; privateNameKind@941; ParseNode::isName@944; UnaryNode@948; ParseNode@953; test@957; accept@964; kid@978; isStringExprStatement@994; unsafeKidReference@1004; setSyntheticComputedName@1006; isSyntheticComputedName@1007; BinaryNode@1013; ParseNode@1020; right_@1027; test@1031; accept@1038; left@1057; right@1059; unsafeLeftReference@1063; unsafeRightReference@1065; AssignmentNode@1068; test@1076; ImportDeclarationNode@1088; phase_@1095; test@1097; phase@1103; CallImportNode@1108; phase_@1114; test@1116; phase@1122; ForNode@1125; iflags_@1132; test@1138; head@1144; body@1146; iflags@1148; TernaryNode@1151; ParseNode@1171; test@1175; accept@1182; kid1@1206; kid2@1208; kid3@1210; unsafeKid1Reference@1213; unsafeKid2Reference@1215; unsafeKid3Reference@1217; ListNode@1220; xflags@1254; xflags@1263; test@1272; accept@1279; head@1301; tail@1303; count@1305; empty@1307; setHasTopLevelFunctionDeclarations@1332; setEmittedTopLevelFunctionDeclarations@1337; setHasNonConstInitializer@1343; unsetHasNonConstInitializer@1349; last@1359; replaceLast@1375; append@1395; prepend@1403; unsafeHeadReference@1414; unsafeReplaceTail@1416; unsafeDecrementCount@1421; iterator@1434; iterator@1439; range@1461; range@1467; begin@1470; end@1472; contents@1496; contentsFrom@1500; contentsTo@1510; DeclarationListNode@1521; ListNode@1524; test@1528; singleBinding@1538; ParamsBodyNode@1544; ListNode@1547; test@1551; parameters@1557; body@1562; FunctionNode@1568; syntaxKind_@1578; test@1584; accept@1591; funbox@1607; body@1609; setFunbox@1613; setBody@1615; syntaxKind@1617; functionIsHoisted@1619; ModuleNode@1624; ParseNode@1629; test@1634; accept@1641; body@1650; setBody@1652; NumericLiteral@1655; decimalPoint_@1663; test@1665; accept@1672; value@1681; decimalPoint@1683; BigIntLiteral@1690; ParseNode@1695; test@1697; accept@1704; index@1713; BaseScopeNode@1717; kind_@1729; test@1731; accept@1736; scopeBindings@1745; scopeBody@1750; setScopeBody@1752; isEmptyScope@1754; kind@1756; LexicalScopeNode@1759; BaseScopeNode@1764; ClassBodyScopeNode@1767; BaseScopeNode@1771; memberList@1775; LabeledStatement@1782; statement_@1789; label@1791; statement@1793; test@1795; accept@1800; CaseClause@1818; caseExpression@1824; isDefault@1826; statementList@1828; test@1830; LoopControlStatement@1837; ParseNode@1843; label@1851; test@1858; accept@1866; BreakStatement@1871; LoopControlStatement@1874; test@1876; ContinueStatement@1883; LoopControlStatement@1886; test@1888; DebuggerStatement@1895; NullaryNode@1898; test@1900; ConditionalExpression@1907; TokenPos@1913; condition@1919; thenExpression@1921; elseExpression@1923; test@1925; TryNode@1932; test@1944; body@1950; catchScope@1952; finallyBlock@1956; ThisLiteral@1959; UnaryNode@1962; test@1964; NullLiteral@1971; NullaryNode@1974; test@1976; RawUndefinedLiteral@1986; NullaryNode@1989; test@1991; BooleanLiteral@1998; test@2004; RegExpLiteral@2012; ParseNode@2017; test@2030; accept@2037; index@2041; PropertyAccessBase@2044; BinaryNode@2052; expression@2057; test@2059; isSuper@2069; key@2074; maybeExpression@2079; setExpression@2081; name@2083; NonOptionalPropertyAccessBase@2088; test@2090; PropertyAccess@2101; test@2112; ArgumentsLength@2121; test@2130; OptionalPropertyAccess@2137; test@2147; PropertyByValueBase@2154; BinaryNode@2158; test@2160; expression@2167; key@2169; PropertyByValue@2172; test@2179; isSuper@2185; OptionalPropertyByValue@2188; test@2195; PrivateMemberAccessBase@2202; BinaryNode@2206; expression@2210; privateName@2212; test@2218; PrivateMemberAccess@2228; test@2235; OptionalPrivateMemberAccess@2240; test@2247; NewTargetNode@2252; test@2259; newHolder@2265; targetHolder@2266; newTargetName@2267; CallSiteNode@2274; ListNode@2277; test@2279; rawNodes@2285; CallNode@2291; BinaryNode@2301; test@2305; callOp@2315; callee@2316; args@2317; ClassMethod@2320; test@2358; name@2365; method@2367; isStatic@2369; accessorType@2371; initializerIfPrivate@2373; decorators@2376; ClassField@2385; test@2429; name@2435; initializer@2437; isStatic@2439; decorators@2442; hasAccessor@2443; accessorGetterNode@2446; accessorSetterNode@2447; StaticClassBlock@2462; UnaryNode@2465; test@2468; function@2473; PropertyDefinition@2476; accessorType_@2485; test@2487; accessorType@2493; SwitchStatement@2496; hasDefault_@2505; test@2521; discriminant@2527; lexicalForCaseList@2529; hasDefault@2533; ClassNames@2536; BinaryNode@2540; test@2547; outerBinding@2561; innerBinding@2568; ClassNode@2571; innerScope@2575; bodyScope@2579; test@2606; names@2612; heritage@2616; memberList@2618; scopeBindings@2620; bodyScopeBindings@2625; decorators@2630; addInitializerFunction@2632; ParseNodeAllocator@2647; fc@2650; ParseNode::isConstant@2659; ParseNode::isUndefinedLiteral@2677
+Dependencies: mozilla/Assertions.h@8; iterator@10; stddef.h@11; stdint.h@12; jstypes.h@14; frontend/FunctionSyntaxKind.h@16; frontend/NameAnalysisTypes.h@17; frontend/ParserAtom.h@18; frontend/Stencil.h@19; frontend/Token.h@20; js/TypeDecls.h@21; vm/Opcodes.h@22; vm/Scope.h@23; vm/ScopeKind.h@24
+
+`js/src/frontend/ParseNodeVerify.cpp` | `f6dadbd7a4d3b3d8723b4461d4a5279eb23a7d92` | 1380 bytes | source | UTF-8 | mode 100644
+Declarations: js@13; frontend@14; ParseNodeVerifier@16; Base@23
+Dependencies: frontend/ParseNodeVerify.h@5; frontend/ParseNodeVisitor.h@7
+
+`js/src/frontend/ParseNodeVerify.h` | `8ff66c1c32cee349ecb24fd7b60f3318d8df70ba` | 1405 bytes | source | UTF-8 | mode 100644
+Declarations: js@10; FrontendContext@12; LifoAlloc@13; frontend@15; ParseNode@17
+Dependencies: frontend/SyntaxParseHandler.h@8
+
+`js/src/frontend/ParseNodeVisitor.h` | `0bd0450d88cf8891d8929aca9e30d68b637c0b4f` | 4332 bytes | source | UTF-8 | mode 100644
+Declarations: js@13; FrontendContext@15; frontend@17; ParseNodeVisitor@52; ParseNodeVisitor@56; RewritingParseNodeVisitor@97; RewritingParseNodeVisitor@101
+Dependencies: mozilla/Assertions.h@8; frontend/ParseNode.h@10; js/friend/StackLimits.h@11
+
+`js/src/frontend/Parser-macros.h` | `55435b7adb6261d64314bdbccbf492afa54d68e9` | 785 bytes | source | UTF-8 | mode 100644
+Dependencies: mozilla/Likely.h@8
+
+`js/src/frontend/Parser.cpp` | `63394b820dfbf81d634854f098992514ffde775f` | 417243 bytes | source | UTF-8 | mode 100644
+Declarations: js@79; StatementKindIsBraced@98; ParserBase::dumpAtom@144; inParametersOfAsyncFunction_@164; ParserBase::checkOptions@168; ParserBase::~ParserBase@176; ParserBase::liftParserAtomToJSAtom@181; internalSyntaxParser_@194; tokenStream@205; ParserBase::setSourceMapInfo@315; ParserBase::isValidStrictBinding@413; ParserBase::hasValidSimpleStrictParameterNames@427; TrivialTaggedParserAtomIndex::from@576; TrivialTaggedParserAtomIndex::null@594; propagateFreeNamesAndMarkClosedOverBindings@893; constexpr@932; TrivialTaggedParserAtomIndex::from@934; constexpr@942; constexpr@948; constexpr@955; TrivialTaggedParserAtomIndex::null@957; detail@1015; FunctionScopeHasClosedOverBindings@1361; VarScopeHasBindings@1429; TaggedParserAtomIndex::WellKnown::dot_privateBrand_@1547; GetYieldHandling@2226; GetAwaitHandling@2233; ParserBase::leaveInnerFunction@2529; ParserBase::setFunctionEndFromCurrentToken@3409; dot_instanceExtraInitializers_@3459; parser_@4020; setPendingDestructuringErrorAt@4068; setPendingExpressionErrorAt@4074; TokenKindIsReservedWord@6550; ToAccessorType@7496; pos@7659; pos@7907; TaggedParserAtomIndex::WellKnown::dot_instanceExtraInitializers_@8408; ParserBase::nextTokenContinuesLetDeclaration@9190; TokenKindIsPossibleIdentifier@9318; BinaryOpTokenKindToParseNodeKind@9822; Precedence@9863; class@9876; TokenKindIsBinaryOp@9917; Precedence@9966; ParserBase::checkAndMarkSuperScope@10754; TaggedParserAtomIndex::WellKnown::dot_initializers_@10891; dot_instanceExtraInitializers_@10896; ReservedWordToCharZ@11273; Some@11426; Some@11469; TokenKindCanStartPropertyName@11837
+Dependencies: frontend/Parser.h@18; mozilla/ArrayUtils.h@20; mozilla/Assertions.h@21; mozilla/Casting.h@22; mozilla/Range.h@23; mozilla/Sprintf.h@24; mozilla/Try.h@25; mozilla/Utf8.h@26; mozilla/Variant.h@27; memory@29; new@30; type_traits@31; jstypes.h@33; builtin/Number.h@35; frontend/FoldConstants.h@36; frontend/FunctionSyntaxKind.h@37; frontend/ModuleSharedContext.h@38; frontend/ParseNode.h@39; frontend/ParseNodeVerify.h@40; frontend/Parser-macros.h@41; frontend/ParserAtom.h@42; frontend/ScriptIndex.h@43; frontend/TokenStream.h@44; irregexp/RegExpAPI.h@45; jit/JitOptions.h@46; js/ColumnNumber.h@47; js/ErrorReport.h@48; js/friend/ErrorMessages.h@49; js/HashTable.h@50; js/RegExpFlags.h@51; js/Stack.h@52; util/DifferentialTesting.h@53; util/StringBuilder.h@54; vm/BytecodeUtil.h@55; vm/FunctionFlags.h@56; vm/GeneratorAndAsyncKind.h@57; vm/JSContext.h@58; vm/JSScript.h@59; vm/ModuleBuilder.h@60; vm/Scope.h@61; frontend/ParseContext-inl.h@63; frontend/SharedContext-inl.h@64
+
+`js/src/frontend/Parser.h` | `38db23f0c564d532d2be87d652551a887315a423` | 75608 bytes | source | UTF-8 | mode 100644
+Declarations: js@181; FrontendContext@183; ErrorMetadata@184; frontend@186; GeneralParser@189; SourceParseContext@191; VarContext@201; PropListType@202; class@203; AwaitHandling@219; AutoAwaitIsKeyword@227; AutoInParametersOfAsyncFunction@230; MOZ_STACK_CLASS@232; getCompilationState@252; parserAtoms@254; bigInts@259; stencilAlloc@264; awaitIsKeyword@288; awaitIsDisallowed@292; inParametersOfAsyncFunction@294; parseGoal@298; getFilename@313; pos@314; yieldExpressionsSupported@317; setLocalStrictMode@319; isUnexpectedEOF@352; Mark@361; mark@366; release@372; InvokedPrediction@394; ForInitLocation@395; MOZ_STACK_CLASS@419; ParserAnyCharsAccess@636; YieldHandling@651; InHandling@652; DefaultHandling@653; TripledotHandling@654; PrivateNameHandling@657; Parser@660; MOZ_STACK_CLASS@663; MOZ_STACK_CLASS@824; class@826; class@828; Error@830; getSyntaxParser@897; mustMatchTokenInternal@955; importedBinding@1075; FunctionBodyType@1223; ClassContext@1252; ClassInitializedMembers@1257; hasPrivateBrand@1284; labelIdentifier@1351; identifierReference@1355; PropertyNameContext@1390; class@1427; newNumber@1441; class@1447; MOZ_STACK_CLASS@1505; bindingIdentifier@1600; MOZ_STACK_CLASS@1640; bindingIdentifier@1744; checkLocalExportName@1814; MOZ_STACK_CLASS@1867; AutoAwaitIsKeyword@1875; MOZ_STACK_CLASS@1890; AutoInParametersOfAsyncFunction@1898
+Dependencies: mozilla/Maybe.h@161; type_traits@163; utility@164; frontend/CompilationStencil.h@166; frontend/ErrorReporter.h@167; frontend/FullParseHandler.h@168; frontend/FunctionSyntaxKind.h@169; frontend/IteratorKind.h@170; frontend/NameAnalysisTypes.h@171; frontend/ParseContext.h@172; frontend/ParserAtom.h@173; frontend/SharedContext.h@174; frontend/SyntaxParseHandler.h@175; frontend/TokenStream.h@176; js/CharacterEncoding.h@177; js/friend/ErrorMessages.h@178; vm/GeneratorAndAsyncKind.h@179
+
+`js/src/frontend/ParserAtom.cpp` | `e80384616bbc74528732989ead64ec66a4154068` | 42819 bytes | source | UTF-8 | mode 100644
+Declarations: js@28; frontend@29; GetWellKnownAtom@31; TaggedParserAtomIndex::validateRaw@60; TaggedParserAtomIndex::staticOrWellKnownHash@78; ParserAtom::isInstantiatedAsJSAtom@126; ParserAtom::dump@203; ParserAtom::dumpCharsNoQuote@210; ParserAtomsTable::dump@218; ParserAtomsTable::ParserAtomsTable@328; IsWide@399; ParserAtomsTable::addPlaceholder@451; IsLatin1@525; ParserAtomsTable::getParserAtom@652; ParserAtomsTable::isIdentifier@674; ParserAtomsTable::isPrivateName@712; HasUnpairedSurrogate@782; ParserAtomsTable::isModuleExportName@796; mozilla::IsAsciiDigit@849; ParserAtomsTable::length@882; ParserAtomsTable::hash@904; ParserAtomsTable::toNumber@912; WellKnownParserAtoms::init@1279; TaggedParserAtomIndex::WellKnown::NAME@1286; TaggedParserAtomIndex::WellKnown::NAME@1293; TaggedParserAtomIndex::WellKnown::NAME@1300; WellKnownParserAtoms::free@1309
+Dependencies: frontend/ParserAtom.h@5; mozilla/TextUtils.h@7; memory@9; builtin/Number.h@11; frontend/CompilationStencil.h@12; js/GCAPI.h@13; js/Printer.h@14; util/Identifier.h@15; util/StringBuilder.h@16; util/Text.h@17; util/Unicode.h@18; vm/JSContext.h@19; vm/Runtime.h@20; vm/SelfHosting.h@21; vm/StaticStrings.h@22; vm/StringType.h@23
+
+`js/src/frontend/ParserAtom.h` | `be93a0191d8b218ba5afeb3bd84d2557e454a2f2` | 30544 bytes | source | UTF-8 | mode 100644
+Declarations: JS_PUBLIC_API@32; JSAtom@34; JSString@35; mozilla@37; js@41; AtomSet@43; JS_PUBLIC_API@44; LifoAlloc@45; StringBuilder@46; frontend@48; CompilationAtomCache@50; CompilationStencil@51; SpecificParserAtomLookup@54; class@57; class@58; class@59; ParserAtom@61; TaggedParserAtomIndex@75; class@86; TaggedParserAtomIndex@123; TaggedParserAtomIndex@126; data_@129; data_@133; data_@142; data_@144; data_@146; WellKnown@148; WellKnownRawData@193; null@238; fromRaw@244; isParserAtomIndex@252; isWellKnownAtomId@255; isLength1StaticParserString@258; isLength2StaticParserString@262; isLength3StaticParserString@266; isNull@270; toParserAtomIndex@277; toWellKnownAtomId@281; toLength1StaticParserString@285; toLength2StaticParserString@289; toLength3StaticParserString@293; rawDataRef@298; rawData@299; bool@303; TrivialTaggedParserAtomIndex@309; from@313; TaggedParserAtomIndex@319; null@323; isNull@329; rawData@334; bool@338; alignas@349; class@367; constexpr@386; flags_@409; hasLatin1Chars@425; hasTwoByteChars@426; isAscii@428; isPrivateName@440; hash@448; length@449; isUsedByStencil@451; isMarkedAtomize@454; markUsedByStencil@476; markAtomize@479; chars@488; charAt@504; ParserAtomLookup@524; ParserAtomLookup@528; hash@531; ParserAtomLookupHasher@537; hash@540; WellKnownAtomInfoHasher@546; hash@549; WellKnownParserAtoms@562; getSingleton@580; lookupTinyIndex@593; StaticStrings::fitsInSmallChar@613; sizeOfExcludingThis@636; ParserAtomsTable@654; fixupAlloc@675; sizeOfExcludingThis@677; sizeOfIncludingThis@681; getLength1Content@794; getLength2Content@798; getLength3Content@803; ParserAtomSpanBuilder@813; ParserAtomSpanBuilder@817; set@821; SpecificParserAtomLookup@827; SpecificParserAtomLookup@833; ParserAtomLookup@837
+Dependencies: mozilla/MemoryReporting.h@8; mozilla/Range.h@9; mozilla/Span.h@10; mozilla/TextUtils.h@11; stddef.h@13; stdint.h@14; jstypes.h@16; NamespaceImports.h@17; frontend/TypedIndex.h@19; js/HashTable.h@20; js/ProtoKey.h@21; js/Symbol.h@22; js/TypeDecls.h@23; js/Utility.h@24; js/Vector.h@25; threading/Mutex.h@26; util/Text.h@27; vm/CommonPropertyNames.h@28; vm/StaticStrings.h@29; vm/WellKnownAtom.h@30
+
+`js/src/frontend/PrivateOpEmitter.cpp` | `3dbedd2c4ee277dc1a97df63f8891eed7735cdbc` | 8693 bytes | source | UTF-8 | mode 100644
+Declarations: bce_@17; PrivateOpEmitter::init@21; PrivateOpEmitter::emitLoadPrivateBrand@35; PrivateOpEmitter::emitBrandCheck@40; PrivateOpEmitter::emitReference@77; PrivateOpEmitter::emitGet@101; PrivateOpEmitter::emitGetForCallOrNew@195; PrivateOpEmitter::emitAssignment@197; uint8_t@206; PrivateOpEmitter::emitIncDec@251; uint8_t@292
+Dependencies: frontend/PrivateOpEmitter.h@5; frontend/BytecodeEmitter.h@7; frontend/NameOpEmitter.h@8; vm/Opcodes.h@9; vm/ThrowMsgKind.h@10
+
+`js/src/frontend/PrivateOpEmitter.h` | `270d278559324e24f1ce62681f4bde48d01cd5d1` | 6857 bytes | source | UTF-8 | mode 100644
+Declarations: js@16; frontend@17; BytecodeEmitter@19; class@20; MOZ_STACK_CLASS@80; class@82; class@140; numReferenceSlots@221
+Dependencies: mozilla/Attributes.h@8; mozilla/Maybe.h@9; stddef.h@11; frontend/NameAnalysisTypes.h@13; frontend/ParserAtom.h@14
+
+`js/src/frontend/PropOpEmitter.cpp` | `c9238e73b96284b2a239c41eba813b2b4ad12a7a` | 6224 bytes | source | UTF-8 | mode 100644
+Declarations: bce_@17; PropOpEmitter::prepareAtomIndex@19; PropOpEmitter::prepareForObj@23; PropOpEmitter::emitGet@32; PropOpEmitter::prepareForRhs@92; PropOpEmitter::emitDelete@113; PropOpEmitter::emitAssignment@152
+Dependencies: frontend/PropOpEmitter.h@5; frontend/BytecodeEmitter.h@7; frontend/ParserAtom.h@8; frontend/SharedContext.h@9; vm/Opcodes.h@10; vm/ThrowMsgKind.h@11
+
+`js/src/frontend/PropOpEmitter.h` | `7ab9fe6de138678e6dd006c157f5434de98e201f` | 6857 bytes | source | UTF-8 | mode 100644
+Declarations: js@14; frontend@15; BytecodeEmitter@17; TaggedParserAtomIndex@18; class@19; MOZ_STACK_CLASS@103; class@105; class@117; class@169; numReferenceSlots@247
+Dependencies: mozilla/Attributes.h@8; stddef.h@10; vm/SharedStencil.h@12
+
+`js/src/frontend/ReservedWordReader.py` | `00bc9acea46648c909c3250ab361c791152423b1` | 996 bytes | source | UTF-8 | mode 100644
+Declarations: read_reserved_word_list@8
+
+`js/src/frontend/ReservedWords.h` | `eda18168eb28269dbe42a170970ea8fbb249e223` | 4756 bytes | source | UTF-8 | mode 100644
+
+`js/src/frontend/ScopeBindingCache.h` | `2000461e77646210324c35d02629931a8e661bdc` | 11884 bytes | source | UTF-8 | mode 100644
+Declarations: js@19; AbstractBaseScopeData@22; frontend@24; CompilationAtomCache@26; CompilationStencil@27; ScopeStencilRef@28; FakeStencilGlobalScope@29; CompilationStencilMerger@30; InitialStencilAndDelazifications@31; GenericAtom@40; EmitterName@45; index@56; StencilName@63; ref@87; GenericAtom@93; GenericAtom@94; BindingHasher@100; BindingHasher@103; Lookup@107; other@117; hash@122; BindingHasher@131; Lookup@133; Lookup@137; hash@140; BindingMap@159; ScopeBindingCache@182; NoScopeBindingCache@216; MOZ_STACK_CLASS@234; RuntimeScopeBindingCache@278; purge@298
+Dependencies: mozilla/Assertions.h@8; mozilla/Attributes.h@9; mozilla/HashTable.h@10; jstypes.h@12; frontend/NameAnalysisTypes.h@14; frontend/ParserAtom.h@15; js/Utility.h@16; vm/StringType.h@17
+
+`js/src/frontend/ScopeIndex.h` | `d3b9d21b07b85708f96cc8dca8dfcc9bbc918056` | 800 bytes | source | UTF-8 | mode 100644
+Declarations: js@12; Scope@14; ScopeIndex@16; isValid@25
+Dependencies: cstdint@8; frontend/TypedIndex.h@10
+
+`js/src/frontend/ScriptIndex.h` | `06da12f12ef3487260d8ea56d0b51a3ad4381b54` | 991 bytes | source | UTF-8 | mode 100644
+Declarations: js@11; frontend@12; ScriptStencil@14; ScriptIndexRange@19; start@24; JS@32; GCPolicy@34
+Dependencies: frontend/TypedIndex.h@8; js/GCPolicyAPI.h@9
+
+`js/src/frontend/SelfHostedIter.h` | `2138ada2fc5209fb6438d97fa9e35e2bd08a2e44` | 963 bytes | source | UTF-8 | mode 100644
+Declarations: js@8; class@15
+
+`js/src/frontend/SharedContext-inl.h` | `4c43f3282912a2343c58faa654182a02a9ea96c1` | 571 bytes | source | UTF-8 | mode 100644
+Declarations: js@12; frontend@13; strict_@16
+Dependencies: frontend/SharedContext.h@8; frontend/ParseContext.h@10
+
+`js/src/frontend/SharedContext.cpp` | `38c5051ce89de1ebfbee7c3cec29a1653fd25d9c` | 13159 bytes | source | UTF-8 | mode 100644
+Declarations: js@25; ModuleBuilder@27; frontend@29; eligibleForArgumentsLength@45; bindings@80; bindings@91; SharedContext@104; isStandalone@133; FunctionBox::initFromScriptStencilExtra@142; FunctionBox::setEnclosingScopeForInnerLazyFunction@251; builder@270; FunctionBox::functionStencil@275; FunctionBox::functionExtraStencil@279; SharedContext::copyScriptExtraFields@283; FunctionBox::finishScriptFlags@292; FunctionBox::copyFunctionFields@299; FunctionBox::copyFunctionExtraFields@319; FunctionBox::copyUpdatedImmutableFlags@327; FunctionBox::copyUpdatedExtent@334; FunctionBox::copyUpdatedMemberInitializers@339; FunctionBox::copyUpdatedEnclosingScopeIndex@350; FunctionBox::copyUpdatedAtomAndFlags@357; FunctionBox::copyUpdatedWasEmitted@367
+Dependencies: frontend/SharedContext.h@5; frontend/CompilationStencil.h@7; frontend/FunctionSyntaxKind.h@8; frontend/ModuleSharedContext.h@9; frontend/ParseContext.h@10; frontend/ParseNode.h@11; frontend/ParserAtom.h@12; frontend/ScopeIndex.h@13; frontend/ScriptIndex.h@14; frontend/Stencil.h@15; js/CompileOptions.h@16; js/Vector.h@17; vm/FunctionFlags.h@18; vm/GeneratorAndAsyncKind.h@19; vm/JSScript.h@20; vm/StencilEnums.h@21; frontend/ParseContext-inl.h@23
+
+`js/src/frontend/SharedContext.h` | `71b1f0d2a22723710bdc0d5b29db38c47c47c2da` | 25275 bytes | source | UTF-8 | mode 100644
+Declarations: JS@29; JS_PUBLIC_API@30; WasmModule@31; js@34; FrontendContext@36; frontend@38; CompilationState@40; FunctionBox@41; FunctionNode@42; ParseContext@43; ScriptStencil@44; ScriptStencilExtra@45; ScopeContext@46; class@48; StatementKindIsLoop@71; StatementKindIsUnlabeledBreakTarget@78; Directives@84; Directives@88; setStrict@91; strict@92; class@105; class@114; GlobalSharedContext@116; EvalSharedContext@117; ModuleSharedContext@118; SuspendableContext@119; SharedContext@132; class@180; setFlag@188; clearFlag@192; isFunctionBox@220; isModuleContext@222; isSuspendableContext@224; isGlobalContext@226; isEvalContext@230; isTopLevelContext@233; thisBinding@235; hasFunctionThisBinding@236; needsThisTDZChecks@240; isSelfHosted@244; allowNewTarget@245; allowSuperProperty@246; allowSuperCall@247; allowArguments@248; inWith@249; inClass@250; hasExplicitUseStrict@252; setExplicitUseStrict@253; immutableFlags@255; allBindingsClosedOver@257; strict@263; setStrictScript@264; setLocalStrictMode@265; isEligibleForArgumentsLength@271; setIneligibleForArgumentsLength@274; MOZ_STACK_CLASS@279; scopeKind@289; SharedContext::asGlobalContext@292; MOZ_STACK_CLASS@297; SharedContext::asEvalContext@305; class@310; SuspendableContext@312; needsFinalYield@322; needsDotGeneratorName@323; needsClearSlotsOnExit@324; needsIteratorResult@325; needsPromiseResult@326; FunctionBox@329; namedLambdaBindings@430; setNamedLambdaBindings@433; functionScopeBindings@437; setFunctionScopeBindings@440; extraVarScopeBindings@444; setExtraVarScopeBindings@447; wasEmittedByEnclosingScript@467; setWasEmittedByEnclosingScript@470; hasEnclosingScopeIndex@477; getEnclosingScopeIndex@478; needsCallObjectRegardlessOfBindings@499; needsExtraBodyVarEnvironmentRegardlessOfBindings@508; generatorKind@513; asyncKind@518; needsFinalYield@523; needsDotGeneratorName@524; needsClearSlotsOnExit@525; needsIteratorResult@526; needsPromiseResult@527; isArrow@529; isLambda@530; hasExprBody@532; setHasExprBody@533; allowReturn@538; isNamedLambda@540; isGetter@541; isSetter@542; isMethod@543; isClassConstructor@544; isInterpreted@546; kind@548; hasInferredName@550; hasGuessedAtom@551; displayAtom@553; explicitName@554; setInferredName@563; setGuessedAtom@570; needsHomeObject@578; setNeedsHomeObject@581; isDerivedClassConstructor@587; setDerivedClassConstructor@590; isSyntheticFunction@595; setSyntheticFunction@598; hasSimpleParameterList@605; hasMappedArgsObj@609; setEnd@621; setCtorToStringEnd@630; setCtorFunctionHasThisBinding@637; setIsInlinableLargeFunction@644; setUsesArgumentsIntrinsics@651; length@658; setLength@659; setArgCount@661; nargs@666; setMemberInitializers@672; index@681; SharedContext::asFunctionBox@719; SharedContext::asSuspendableContext@724
+Dependencies: mozilla/Assertions.h@8; mozilla/Attributes.h@9; mozilla/Maybe.h@10; stddef.h@12; stdint.h@13; jstypes.h@15; frontend/FunctionSyntaxKind.h@17; frontend/ParserAtom.h@18; frontend/ScopeIndex.h@19; frontend/ScriptIndex.h@20; js/ColumnNumber.h@21; vm/FunctionFlags.h@22; vm/GeneratorAndAsyncKind.h@23; vm/Scope.h@24; vm/ScopeKind.h@25; vm/SharedStencil.h@26; vm/StencilEnums.h@27
+
+`js/src/frontend/SourceNotes.cpp` | `6b384d78f54c5e62197b920dc7623cad50ecd370` | 433 bytes | source | UTF-8 | mode 100644
+Dependencies: frontend/SourceNotes.h@5
+
+`js/src/frontend/SourceNotes.h` | `e384c34f534d7fc1d4ea978943974ca117be893b` | 16293 bytes | source | UTF-8 | mode 100644
+Declarations: js@18; class@88; SrcNote@98; Spec@99; noteValue@121; xDeltaValue@131; SrcNote@141; typeBits@152; isXDelta@154; isFourBytesOperand@158; arity@163; type@169; isTerminator@182; delta@186; isRepresentableOperand@207; ColSpan@211; class@213; fromOperand@235; toOperand@249; NewLineColumn@261; class@263; toOperand@272; SetLine@279; class@281; fromOperand@288; lengthFor@293; toOperand@301; SetLineColumn@309; class@311; lineFromOperand@314; SrcNoteWriter@338; writeNote@351; convertNote@370; writeOperand@380; SrcNoteReader@404; getOperandHead@406; getOperand@423; SrcNote::ColSpan::getSpan@438; SrcNote::SetLine::getLine@449; SrcNoteIterator@475; next@479; current_@502; atEnd@504
+Dependencies: mozilla/Assertions.h@8; algorithm@10; stddef.h@11; stdint.h@12; jstypes.h@14; js/ColumnNumber.h@16
+
+`js/src/frontend/Stencil.cpp` | `af89326e598ea4e5d3832283fcb2142bd183a351` | 207623 bytes | source | UTF-8 | mode 100644
+Declarations: ScopeStencilRef::enclosing@81; InputBindingIter@153; InputBindingIter@157; InputBindingIter@161; InputScript::displayAtom@165; ref@232; ref@238; GenericAtom@248; keyStencil@252; AssertBorrowingSpan@331; ScopeBindingCache::canCacheFor@337; ScopeBindingCache::canCacheFor@341; ScopeBindingCache::canCacheFor@345; ScopeBindingCache::createCacheFor@349; NoScopeBindingCache::canCacheFor@378; NoScopeBindingCache::canCacheFor@380; NoScopeBindingCache::canCacheFor@382; RuntimeScopeBindingCache::canCacheFor@386; RuntimeScopeBindingCache::createCacheFor@388; StencilScopeBindingCache::canCacheFor@409; StencilScopeBindingCache::canCacheFor@447; ScopeContext::computeThisEnvironment@516; ScopeContext::computeThisBinding@557; ScopeContext::computeInScope@587; ScopeContext::cacheEnclosingScope@599; DepthOfNearestVarScopeForDirectEval@889; IsPrivateField@1022; IsPrivateField@1033; IsPrivateField@1081; ScopeContext::lookupLexicalBindingInEnclosingScope@1422; CompilationInput::initScriptSource@1450; CompilationInput::functionSyntaxKind@1471; InputScope::trace@1520; InputScript::trace@1528; CompilationInput::trace@1536; CompilationAtomCache::trace@1942; CompilationGCOutput::trace@1944; CompilationState::prepareSharedDataStorage@2070; CompilationStencil::functionScriptStencils@2271; CompilationStencil::functionScriptStencils@2358; CompilationStencil::functionScriptStencils@2472; CompilationStencil::functionScriptStencils@2516; CompilationStencil::functionScriptStencils@2565; alloc@2673; CompilationStencil::functionScriptStencils@2719; ScriptIndex@3081; jit::CanBaselineInterpretScript@3142; parserAtoms@3229; parserAtoms@3236; parserAtoms@3243; input@3252; CompilationStencil@3256; SharedDataContainer::~SharedDataContainer@3262; SharedDataContainer::initVector@3277; SharedDataContainer::initMap@3289; SharedDataContainer::convertFromSingleToMap@3408; CompilationStencil::assertNoExternalDependency@3484; ExtensibleCompilationStencil::assertNoExternalDependency@3521; GetLength@3567; GetLength@3571; CompilationStencil::isModule@3827; ExtensibleCompilationStencil::isModule@3831; InitialStencilAndDelazifications::~InitialStencilAndDelazifications@3835; InitialStencilAndDelazifications::AddRef@3846; InitialStencilAndDelazifications::Release@3848; InitialStencilAndDelazifications::ensureRelativeIndexes@3856; InitialStencilAndDelazifications::decrementRelativeIndexesConsumer@3924; BigIntStencil::createBigInt@4222; BigIntStencil::isZero@4235; BigIntStencil::inplaceNegate@4240; BigIntStencil::inplaceBitNot@4252; BigIntStencil::isContainedIn@4261; RegExpStencil::dump@4421; BigIntStencil::dump@4464; BigIntStencil::dump@4470; BigIntStencil::dumpCharsNoQuote@4476; ScopeStencil::dump@4486; StencilModuleMetadata::dump@4720; ScriptStencil::dump@4990; ScriptStencilExtra::dump@5054; ScriptStencilExtra::dump@5060; ScriptStencilExtra::dumpFields@5066; SharedDataContainer::dump@5085; SharedDataContainer::dump@5091; SharedDataContainer::dumpFields@5097; DumpOptionsFields@5140; operator@5143; operator@5157; operator@5176; operator@5178; operator@5180; operator@5184; operator@5188; operator@5196; DumpOptionsFields@5207; CompilationInput::dump@5264; CompilationInput::dump@5271; CompilationInput::dumpFields@5277; CompilationStencil::dump@5327; CompilationStencil::dump@5334; CompilationStencil::dumpFields@5340; CompilationStencil::dumpAtom@5409; ExtensibleCompilationStencil::dump@5417; ExtensibleCompilationStencil::dump@5422; ExtensibleCompilationStencil::dumpFields@5427; ExtensibleCompilationStencil::dumpAtom@5432; InitialStencilAndDelazifications::dump@5437; InitialStencilAndDelazifications::dump@5444; InitialStencilAndDelazifications::dumpFields@5450; CompilationAtomCache::getStringAt@5510; CompilationAtomCache::getExistingAtomAt@5517; CompilationAtomCache::getAtomAt@5526; CompilationAtomCache::hasAtomAt@5536; CompilationAtomCache::allocate@5559; CompilationAtomCache::stealBuffer@5573; CompilationAtomCache::releaseBuffer@5579; CompilationState::appendScriptStencilAndData@5614; CompilationState::getPosition@5662; CompilationStencil::AddRef@6119; CompilationStencil::Release@6120; JS::StencilAddRef@6127; JS::StencilRelease@6128; JS::InstantiationStorage::~InstantiationStorage@6179; JS::IsStencilCacheable@6186
+Dependencies: frontend/Stencil.h@5; mozilla/Assertions.h@7; mozilla/CheckedInt.h@8; mozilla/glean/JsSrcMetrics.h@9; mozilla/Maybe.h@10; mozilla/OperatorNewExtensions.h@11; mozilla/PodOperations.h@12; mozilla/RefPtr.h@13; mozilla/ScopeExit.h@14; mozilla/Sprintf.h@15; algorithm@17; string.h@18; ds/LifoAlloc.h@20; frontend/AbstractScopePtr.h@21; frontend/BytecodeCompiler.h@22; frontend/BytecodeSection.h@23; frontend/CompilationStencil.h@24; frontend/FrontendContext.h@25; frontend/NameAnalysisTypes.h@26; frontend/ParserAtom.h@27; frontend/ScopeBindingCache.h@28; frontend/SharedContext.h@29; frontend/StencilXdr.h@30; gc/AllocKind.h@31; gc/Tracer.h@32; jit/BaselineCompileTask.h@33; jit/BaselineJIT.h@34; jit/JitContext.h@35; jit/JitRuntime.h@36; jit/JitScript.h@37; js/CallArgs.h@38; js/CompileOptions.h@39; js/DOMEventDispatch.h@40; js/experimental/CompileScript.h@41; js/experimental/JSStencil.h@42; js/GCAPI.h@43; js/Prefs.h@44; js/Printer.h@45; js/RealmOptions.h@46; js/RootingAPI.h@47; js/Transcoding.h@48; js/Utility.h@49; js/Value.h@50; js/WasmModule.h@51; vm/BigIntType.h@52; vm/BindingKind.h@53; vm/EnvironmentObject.h@54; vm/GeneratorAndAsyncKind.h@55; vm/JSAtomUtils.h@56; vm/JSContext.h@57; vm/JSFunction.h@58; vm/JSObject.h@59; vm/JSONPrinter.h@60; vm/JSScript.h@61; vm/Realm.h@62; vm/RegExpObject.h@63; vm/Scope.h@64; vm/ScopeKind.h@65; vm/SelfHosting.h@66; vm/StaticStrings.h@67; vm/StencilEnums.h@68; vm/StringType.h@69; jit/JitHints-inl.h@71; jit/JitScript-inl.h@72; vm/EnvironmentObject-inl.h@73; vm/JSFunction-inl.h@74; vm/JSScript-inl.h@75
+
+`js/src/frontend/Stencil.h` | `2a2cc06861f49bd073bd662c92e0d8b943532110` | 45691 bytes | source | UTF-8 | mode 100644
+Declarations: js@38; LifoAlloc@40; JSONPrinter@41; RegExpObject@42; frontend@44; CompilationInput@46; CompilationStencil@47; CompilationAtomCache@48; CompilationGCOutput@49; CompilationStencilMerger@50; RegExpStencil@51; BigIntStencil@52; StencilXDR@53; CompilationGCThingType@204; RegExpStencil@208; atom_@221; flags@223; BigIntStencil@244; source@254; ScopeStencil@296; hasEnclosing@423; enclosing@425; firstFrameSlot@430; hasEnvironmentShape@432; numEnvironmentSlots@434; isFunction@439; functionIndex@441; kind@444; hasEnvironment@446; isArrow@452; StencilModuleImportAttribute@529; key@537; StencilModuleRequest@548; specifier@563; phase@570; phase@581; StencilModuleRequestHasher@613; hash@617; MaybeModuleRequestIndex@634; MaybeModuleRequestIndex@641; isNothing@649; isSome@650; bool@651; value@653; StencilModuleEntry@669; lineno@710; column@727; StencilModuleMetadata@812; sizeOfIncludingThis@834; EmptyGlobalScopeType@875; TaggedScriptThingIndex@889; class@900; TaggedScriptThingIndex@935; data_@938; data_@940; data_@944; data_@948; data_@952; data_@956; data_@960; isAtom@962; isNull@966; isBigInt@971; isObjLiteral@972; isRegExp@973; isScope@974; isFunction@975; isEmptyGlobalScope@976; toAtom@980; toBigInt@984; toObjLiteral@985; toRegExp@988; toScope@989; toFunction@990; toAtomOrNull@992; rawDataRef@997; rawData@998; tag@1000; ScriptStencil@1006; isFunction@1078; hasGCThings@1084; wasEmittedByEnclosingScript@1089; setWasEmittedByEnclosingScript@1093; allowRelazify@1097; setAllowRelazify@1099; isGhost@1101; setIsGhost@1102; hasSharedData@1104; setHasSharedData@1106; hasLazyFunctionEnclosingScopeIndex@1108; hasSelfHostedCanonicalName@1112; setHasLazyFunctionEnclosingScopeIndex@1117; setHasSelfHostedCanonicalName@1121; setLazyFunctionEnclosingScopeIndex@1124; resetHasLazyFunctionEnclosingScopeIndexAfterStencilMerge@1130; lazyFunctionEnclosingScopeIndex@1135; setSelfHostedCanonicalName@1140; selfHostedCanonicalName@1146; ScriptStencilExtra@1159; setMemberInitializers@1181; memberInitializers@1186
+Dependencies: mozilla/Assertions.h@8; mozilla/Maybe.h@9; mozilla/MemoryReporting.h@10; mozilla/Span.h@11; mozilla/Variant.h@12; stddef.h@14; stdint.h@15; builtin/ModuleObject.h@17; frontend/AbstractScopePtr.h@18; frontend/ObjLiteral.h@19; frontend/ParserAtom.h@20; frontend/ScriptIndex.h@21; frontend/TaggedParserAtomIndexHasher.h@22; frontend/TypedIndex.h@23; js/AllocPolicy.h@24; js/ColumnNumber.h@25; js/RefCounted.h@26; js/RegExpFlags.h@27; js/RootingAPI.h@28; js/TypeDecls.h@29; js/UniquePtr.h@30; js/Utility.h@31; js/Vector.h@32; vm/FunctionFlags.h@33; vm/Scope.h@34; vm/ScopeKind.h@35; vm/SharedStencil.h@36
+
+`js/src/frontend/StencilXdr.cpp` | `232b821798249e6633e25decdab97b9ffe820f78` | 54171 bytes | source | UTF-8 | mode 100644
+Declarations: CanEncodeNameType@36; CanEncodeNameType@41; XDRVectorContent@98; constexpr@144; constexpr@276; constexpr@337; Kind@394; constexpr@513; XDRAtomCount@533; XDRSpanSizeKind@682; class@761; CodeMarker@777; constexpr@784; UnretrievableSourceDecoder@910; xdr_@919; decode@921; UnretrievableSourceEncoder@959; uncompressedLength_@971; encode@973; class@1119; constexpr@1138; XDRDataTag@1152; operator@1186; operator@1189; operator@1192; constexpr@1256; std::move@1344; constexpr@1425; VersionCheck@1435
+Dependencies: frontend/StencilXdr.h@5; mozilla/ArrayUtils.h@7; mozilla/OperatorNewExtensions.h@8; mozilla/RefPtr.h@9; mozilla/ScopeExit.h@10; mozilla/Try.h@11; bit@13; stddef.h@14; stdint.h@15; type_traits@16; utility@17; ds/LifoAlloc.h@19; frontend/CompilationStencil.h@20; frontend/FrontendContext.h@21; frontend/ScriptIndex.h@22; js/CompileOptions.h@23; js/experimental/JSStencil.h@24; js/Transcoding.h@25; vm/JSScript.h@26; vm/Scope.h@27; vm/StencilEnums.h@28
+
+`js/src/frontend/StencilXdr.h` | `220d298e538d8ef164a32a70435156418fcf1807` | 8437 bytes | source | UTF-8 | mode 100644
+Declarations: JS@16; ReadOnlyDecodeOptions@18; js@22; LifoAlloc@24; ObjLiteralStencil@25; ScriptSource@26; SharedImmutableScriptData@27; XDRStencilDecoder@29; XDRStencilEncoder@30; frontend@32; CompilationStencil@34; ExtensibleCompilationStencil@35; SharedDataContainer@36; CanCopyDataToDisk@41; StencilXDR@57; XDRStencilDecoder@181; Base@186; XDRStencilEncoder@202; Base@207
+Dependencies: mozilla/RefPtr.h@8; frontend/ParserAtom.h@10; frontend/Stencil.h@11; js/CompileOptions.h@12; js/Transcoding.h@13; vm/Xdr.h@14
+
+`js/src/frontend/SwitchEmitter.cpp` | `76d9d905d56612087c8d9d0303be61a6d4198595` | 10858 bytes | source | UTF-8 | mode 100644
+Declarations: SwitchEmitter::TableGenerator::addNumber@26; SwitchEmitter::TableGenerator::finish@67; SwitchEmitter::TableGenerator::toCaseIndex@92; SwitchEmitter::TableGenerator::tableLength@100; SwitchEmitter::SwitchEmitter@106; SwitchEmitter::emitDiscriminant@108; SwitchEmitter::emitLexical@121; SwitchEmitter::validateCaseCount@135; SwitchEmitter::emitCond@147; SwitchEmitter::emitTable@169; SwitchEmitter::emitCaseOrDefaultJump@200; SwitchEmitter::prepareForCaseValue@220; SwitchEmitter::emitCaseJump@232; SwitchEmitter::emitImplicitDefault@249; SwitchEmitter::emitCaseBody@262; SwitchEmitter::emitDefaultBody@314; SwitchEmitter::emitEnd@340; SwitchEmitter@412
+Dependencies: frontend/SwitchEmitter.h@5; mozilla/Assertions.h@7; mozilla/Span.h@8; algorithm@10; jstypes.h@12; ds/BitArray.h@14; frontend/BytecodeEmitter.h@15; frontend/SharedContext.h@16; js/friend/ErrorMessages.h@17; js/TypeDecls.h@18; vm/BytecodeUtil.h@19; vm/Opcodes.h@20; vm/Runtime.h@21
+
+`js/src/frontend/SwitchEmitter.h` | `87067ca574fd68412cdb34a6fc29d75b433ffa87` | 14038 bytes | source | UTF-8 | mode 100644
+Declarations: js@24; frontend@25; BytecodeEmitter@27; MOZ_STACK_CLASS@171; class@223; MOZ_STACK_CLASS@226; TableGenerator@250; setInvalid@252; low@271; high@277; class@388; MOZ_STACK_CLASS@465
+Dependencies: mozilla/Assertions.h@8; mozilla/Attributes.h@9; mozilla/Maybe.h@10; stddef.h@12; stdint.h@13; frontend/BytecodeControlStructures.h@15; frontend/EmitterScope.h@16; frontend/JumpList.h@17; frontend/TDZCheckCache.h@18; js/AllocPolicy.h@19; js/Value.h@20; js/Vector.h@21; vm/Scope.h@22
+
+`js/src/frontend/SyntaxParseHandler.h` | `5a0f58e2d7b4b37aab470c7baa9dbcf7e2b6fc48` | 29255 bytes | source | UTF-8 | mode 100644
+Declarations: js@23; frontend@24; SyntaxParseHandlerNode@25; mozilla@126; js@130; frontend@131; SyntaxParseHandler@143; NodeError@149; isNonArrowFunctionExpression@164; isPropertyOrPrivateMemberAccess@168; isOptionalPropertyOrPrivateMemberAccess@173; isFunctionCall@178; isUnparenthesizedDestructuringPattern@183; isParenthesizedDestructuringPattern@188; SyntaxParseHandler@197; null@201; newName@211; newComputedName@226; newBigInt@250; newBooleanLiteral@252; newCallSiteObject@268; newThisLiteral@273; newNullLiteral@276; newRawUndefinedLiteral@277; newRegExp@281; newDelete@290; newTypeof@294; newUnary@298; newUpdate@302; newSpread@306; newArrayLiteral@315; addArrayElement@325; newArguments@327; newCall@328; newOptionalCall@332; newSuperCall@336; newTaggedTemplate@339; newObjectLiteral@343; newClassMemberList@347; newClassNames@348; newLexicalScope@360; newClassBodyScope@364; newPosHolder@373; newSuperBase@374; newPropertyDefinition@382; addPropertyDefinition@385; newYieldExpression@436; newYieldStarExpression@439; newAwaitExpression@442; newOptionalChain@445; newStatementList@457; addStatementToList@458; setListEndPosition@459; addCaseStatementToList@460; newEmptyStatement@464; newImportAttribute@468; newImportSpec@480; newImportNamespaceSpec@483; newExportDeclaration@486; newExportSpec@497; newExportNamespaceSpec@500; newExportBatchSpec@503; newCallImportSpec@514; newSetThis@518; newExprStatement@520; newWhileStatement@533; newCaseOrDefault@541; newReturnStatement@552; newExpressionBody@555; newWithStatement@556; newThrowStatement@565; newDebuggerStatement@573; newPropertyAccess@586; newArgumentsLength@590; newOptionalPropertyAccess@594; newPropertyByValue@598; checkAndSetIsDirectRHSAnonFunction@629; newParamsBody@631; setFunctionBody@652; setFunctionBox@653; addFunctionFormalParameter@654; setBeginPosition@676; setBeginPosition@677; setEndPosition@679; setEndPosition@680; getFunctionNameOffset@682; newList@691; newList@701; newCommaExpressionList@717; addList@719; newAssignment@731; newInitExpr@736; isUnparenthesizedAssignment@738; isUnparenthesizedUnaryExpression@742; isReturnStatement@746; isStatementPermittedAfterReturnStatement@748; isSuperBase@754; setListHasNonConstInitializer@756; isName@794; isArgumentsName@800; isLengthName@801; isEvalName@802; isAsyncKeyword@803; isArgumentsLength@805; isPrivateName@807; isPrivateMemberAccess@808; maybeDottedProperty@813; isStringExprStatement@826; reuseLazyInnerFunctions@834; reuseClosedOverBindings@835; nextLazyClosedOverBinding@836; setPrivateNameKind@841
+Dependencies: mozilla/Assertions.h@8; mozilla/Maybe.h@9; mozilla/Result.h@10; string.h@12; jstypes.h@14; frontend/CompilationStencil.h@16; frontend/FunctionSyntaxKind.h@17; frontend/NameAnalysisTypes.h@18; frontend/ParseNode.h@19; frontend/ParserAtom.h@20; frontend/TokenStream.h@21
+
+`js/src/frontend/TDZCheckCache.cpp` | `231f0c1e68bcf508984eb0699358bf17b70d9e2b` | 1885 bytes | source | UTF-8 | mode 100644
+Declarations: cache_@18; TDZCheckCache::ensureCache@20
+Dependencies: frontend/TDZCheckCache.h@5; frontend/BytecodeEmitter.h@7
+
+`js/src/frontend/TDZCheckCache.h` | `b8dbcc83b625d0b9b56d415eb5c0326bcd43e819` | 2183 bytes | source | UTF-8 | mode 100644
+Declarations: js@13; frontend@14; BytecodeEmitter@16; TaggedParserAtomIndex@17; MaybeCheckTDZ@19; MOZ_STACK_CLASS@39
+Dependencies: mozilla/Maybe.h@8; ds/Nestable.h@10; frontend/NameCollections.h@11
+
+`js/src/frontend/TaggedParserAtomIndexHasher.h` | `49cb2d37b7f6c6c9ed62a43af8792153f3e9bcff` | 1178 bytes | source | UTF-8 | mode 100644
+Declarations: js@11; frontend@12; TaggedParserAtomIndexHasher@14; hash@18; TrivialTaggedParserAtomIndexHasher@26; hash@30
+Dependencies: frontend/ParserAtom.h@8; js/HashTable.h@9
+
+`js/src/frontend/Token.h` | `12c4938ca505a7261bd80542dbce3241747908e3` | 8517 bytes | source | UTF-8 | mode 100644
+Declarations: js@22; frontend@24; TokenPos@26; TokenPos@31; box@34; encloses@47; DecimalPoint@52; class@55; class@57; class@59; TokenStreamShared@75; Token@77; Modifier@115; U@181; setName@191; setAtom@196; setRegExpFlags@209; setNumber@214; name@222; isTemplate@227; atom@231; hasInvalidTemplateEscape@237; invalidTemplateEscapeOffset@242; invalidTemplateEscapeType@247; regExpFlags@252; number@257; decimalPoint@262
+Dependencies: mozilla/Assertions.h@13; compare@15; stdint.h@16; frontend/ParserAtom.h@18; frontend/TokenKind.h@19; js/RegExpFlags.h@20
+
+`js/src/frontend/TokenKind.h` | `04e273304f283e3a50bd620073356274167bf258` | 18448 bytes | source | UTF-8 | mode 100644
+Declarations: js@252; frontend@253; class@257; TokenKindIsBinaryOp@266; TokenKindIsEquality@270; TokenKindIsRelational@274; TokenKindIsShift@278; TokenKindIsAssignment@282
+Dependencies: stdint.h@8; js/TypeDecls.h@10
+
+`js/src/frontend/TokenStream.cpp` | `910bfb858dcf0ad33acdb7d502bed943783e6e55` | 122836 bytes | source | UTF-8 | mode 100644
+Declarations: ReservedWordInfo@64; class@75; js@164; frontend@166; IsKeyword@168; ReservedWordTokenKind@176; lineStartOffsets_@223; SourceCoords::indexFromOffset@296; SourceCoords::lineToken@352; mutedErrors@366; sourceUnits@383; TokenStreamAnyChars::checkOptions@451; TokenStreamAnyChars::reportErrorNoOffset@462; TokenStreamAnyChars::internalUpdateLineInfoForEOL@481; constexpr@599; constexpr@1605; AppendCodePointToCharBuffer@2005; FirstCharKind@2168; unicode::IsIdentifierStart@2910
+Dependencies: frontend/TokenStream.h@7; mozilla/ArrayUtils.h@9; mozilla/Attributes.h@10; mozilla/Likely.h@11; mozilla/Maybe.h@12; mozilla/MemoryChecking.h@13; mozilla/ScopeExit.h@14; mozilla/Span.h@15; mozilla/TextUtils.h@16; mozilla/Utf8.h@17; algorithm@19; iterator@20; limits@21; stdarg.h@22; stdint.h@23; stdio.h@24; type_traits@25; utility@26; builtin/Number.h@28; frontend/FrontendContext.h@29; frontend/Parser.h@30; frontend/ParserAtom.h@31; frontend/ReservedWords.h@32; js/CharacterEncoding.h@33; js/ColumnNumber.h@34; js/ErrorReport.h@35; js/friend/ErrorMessages.h@36; js/Printf.h@37; js/RegExpFlags.h@38; js/UniquePtr.h@39; util/Text.h@40; util/Unicode.h@41; vm/FrameIter.h@42; vm/JSContext.h@43; vm/Realm.h@44; frontend/ReservedWordsGenerated.h@100
+
+`js/src/frontend/TokenStream.h` | `869662a5a232306f440d0120df1c706caae5453d` | 108436 bytes | source | UTF-8 | mode 100644
+Declarations: KeywordInfo@216; js@218; FrontendContext@220; frontend@222; class@239; TokenStreamFlags@250; sawDeprecatedContent@267; TokenStreamPosition@271; TokenStreamShared@278; TokenStreamSpecific@312; MOZ_STACK_CLASS@315; SourceUnits@342; SourceCoords@364; lineNumberFromIndex@417; indexFromLineNumber@421; isOnThisLine@432; LineToken@450; isFirstLine@468; isSameLine@470; assertConsistentOffset@472; lineNumber@490; lineStart@495; class@502; ChunkInfo@507; unitsType_@516; columnOffset@520; unitsType@527; guaranteeSingleUnits@532; TokenStreamAnyChars@540; cursor@701; nextCursor@702; aheadCursor@703; isCurrentTokenType@708; currentName@718; isCurrentTokenType@720; currentNameHasEscapes@728; isCurrentTokenType@730; isCurrentTokenAssignment@739; isEOF@744; hadError@745; sawDeprecatedContent@747; setSawDeprecatedContent@753; clearSawDeprecatedContent@758; setSawDeprecatedOctalLiteral@761; setSawDeprecatedOctalEscape@764; setSawDeprecatedEightOrNineEscape@767; strictMode@774; allowGettingNextTokenWithSlashIsRegExp@800; debugHasNoLookahead@813; hasDisplayURL@816; displayURL@818; hasSourceMapURL@820; sourceMapURL@822; context@824; lineToken@828; lineNumber@832; lineStart@836; hasLookahead@933; advanceCursor@935; retractCursor@937; allocateToken@939; ungetToken@949; adoptState@956; getFilename@982; TokenStreamCharsBase@992; IsLineTerminator@997; IsLineTerminator@1003; SourceUnitTraits@1009; SourceUnitTraits@1012; SourceUnitTraits@1022; PeekedCodePoint@1046; codePoint_@1066; none@1073; isNone@1076; codePoint@1079; lengthInUnits@1085; MOZ_UNLIKELY@1102; IsSingleUnitLineTerminator@1138; SourceUnits@1159; ptr@1178; atStart@1180; atEnd@1185; remaining@1191; startOffset@1197; offset@1199; previousCodeUnit@1215; peekCodeUnit@1225; peekCodePoint@1241; consumeKnownCodePoint@1259; matchHexDigits@1271; matchCodeUnits@1293; skipCodeUnits@1311; unskipCodeUnits@1317; internalMatchCodeUnit@1327; consumeKnownCodeUnit@1337; ungetCodeUnit@1346; setAddressOfNextCodeUnit@1358; poisonInDebug@1364; isPoisoned@1371; TokenStreamCharsShared@1524; fc@1541; drainCharBufferIntoAtom@1556; adoptState@1565; getCharBuffer@1573; TokenStreamCharsBase@1577; ungetCodeUnit@1596; matchCodeUnit@1613; peekCodeUnit@1629; SpecializedTokenStreamCharsBase@1701; SpecializedTokenStreamCharsBase@1704; infallibleGetNonAsciiCodePointDontNormalize@1722; SpecializedTokenStreamCharsBase@1747; SourceUnitsIterator@1765; sourceUnits_@1777; remaining@1826; SourceUnitsEnd@1835; TokenStart@1855; startOffset_@1866; offset@1870; GeneralTokenStreamChars@1874; anyCharsAccess@1919; asSpecific@1930; getCodeUnit@2036; ungetCodeUnit@2045; getRawTemplateStringAtom@2112; TokenStreamChars@2147; TokenStreamChars@2150; TokenStreamChars@2202; toHexChar@2224; byteToString@2229; byteToTerminatedString@2236; MOZ_STACK_CLASS@2391; checkForInvalidTemplateEscapeError@2486; reportInvalidEscapeError@2537; consumeKnownToken@2752; rewind@2782; fastForward@2795; currentToken@2868; TokenStreamAnyCharsAccess@2884; MOZ_STACK_CLASS@2894; MOZ_STACK_CLASS@2908; TokenStream@2912; TokenStreamAnyCharsAccess::anyChars@2924
+Dependencies: mozilla/ArrayUtils.h@182; mozilla/Assertions.h@183; mozilla/Attributes.h@184; mozilla/Casting.h@185; mozilla/Maybe.h@186; mozilla/MemoryChecking.h@187; mozilla/Span.h@188; mozilla/TextUtils.h@189; mozilla/Utf8.h@190; algorithm@192; stdarg.h@193; stddef.h@194; stdint.h@195; stdio.h@196; type_traits@197; jspubtd.h@199; frontend/ErrorReporter.h@201; frontend/ParserAtom.h@202; frontend/Token.h@203; frontend/TokenKind.h@204; js/CharacterEncoding.h@205; js/ColumnNumber.h@206; js/CompileOptions.h@207; js/friend/ErrorMessages.h@208; js/HashTable.h@209; js/RegExpFlags.h@210; js/UniquePtr.h@211; js/Vector.h@212; util/Unicode.h@213; vm/ErrorReporting.h@214
+
+`js/src/frontend/TryEmitter.cpp` | `c2aa6dde3394da38b8e72f37c2e83d9a3a369f72` | 9212 bytes | source | UTF-8 | mode 100644
+Declarations: TryEmitter::hasControlInfo@35; TryEmitter::emitTry@38; TryEmitter::emitJumpToFinallyWithFallthrough@75; TryEmitter::emitTryEnd@89; TryEmitter::emitCatch@111; TryEmitter::emitCatchEnd@148; TryEmitter::emitFinallyEnd@245; TryEmitter::emitEnd@301; TryEmitter::shouldUpdateRval@348
+Dependencies: frontend/TryEmitter.h@5; mozilla/Assertions.h@7; frontend/BytecodeEmitter.h@9; frontend/IfEmitter.h@10; frontend/SharedContext.h@11; vm/Opcodes.h@12
+
+`js/src/frontend/TryEmitter.h` | `610f70aeaaea6e912352ba0a3452395b874c72b6` | 7941 bytes | source | UTF-8 | mode 100644
+Declarations: js@17; frontend@18; BytecodeEmitter@20; TryEmitter@56; class@58; class@111; class@172; hasCatch@191; hasFinally@194; requiresControlInfo@198; offsetAfterTryOp@203; class@224
+Dependencies: mozilla/Maybe.h@8; stdint.h@10; frontend/BytecodeControlStructures.h@12; frontend/BytecodeOffset.h@13; frontend/JumpList.h@14; js/UniquePtr.h@15
+
+`js/src/frontend/TypedIndex.h` | `c244d60b9bbad734e7ace78730ce826cfbd089aa` | 962 bytes | source | UTF-8 | mode 100644
+Declarations: js@12; frontend@13; TypedIndex@18; size_t@25
+Dependencies: compare@8; cstdint@9; stddef.h@10
+
+`js/src/frontend/UsedNameTracker.h` | `f1150a5e591263480c89432669b2b98357b1dbe5` | 11593 bytes | source | UTF-8 | mode 100644
+Declarations: js@20; frontend@21; UnboundPrivateName@122; atom@127; UsedNameTracker@130; Use@132; UsedNameInfo@137; uses_@154; noteUsedInScope@158; isUsedInScript@180; isClosedOver@190; isPublic@200; empty@202; pos@204; maybeUpdatePos@209; hasPrivateNames_@240; nextScriptId@242; nextScopeId@248; lookup@253; RewindToken@273; getRewindToken@280
+Dependencies: mozilla/Assertions.h@8; mozilla/Maybe.h@9; stdint.h@11; frontend/ParserAtom.h@13; frontend/TaggedParserAtomIndexHasher.h@14; frontend/Token.h@15; js/AllocPolicy.h@16; js/HashTable.h@17; js/Vector.h@18
+
+`js/src/frontend/UsingEmitter.cpp` | `a16d4697ad42e5e03bbe1b4c20481e048c377a81` | 34993 bytes | source | UTF-8 | mode 100644
+Declarations: UsingEmitter::UsingEmitter@16; UsingEmitter::emitTakeDisposeCapability@18; TaggedParserAtomIndex::WellKnown::length@52; UsingEmitter::emitThrowIfException@65; DisposalEmitter::prepareForDisposeCapability@128; DisposalEmitter::emitEnd@174; UsingEmitter::emitDisposeResourcesForEnvironment@646; UsingEmitter::prepareForDisposableScopeBody@674; UsingEmitter::emitGetDisposeMethod@702; UsingEmitter::emitCreateDisposableResource@859; UsingEmitter::prepareForAssignment@924; ForOfDisposalEmitter::prepareForForOfLoopIteration@985; ForOfDisposalEmitter::prepareForForOfIteratorClose@1016; UsingEmitter::emitEnd@1062; NonLocalIteratorCloseUsingEmitter::emitEnd@1223
+Dependencies: frontend/UsingEmitter.h@5; frontend/BytecodeEmitter.h@7; frontend/EmitterScope.h@8; frontend/IfEmitter.h@9; frontend/TryEmitter.h@10; frontend/WhileEmitter.h@11
+
+`js/src/frontend/UsingEmitter.h` | `123fac1bc2c36e0f730c326cbad79f58ba874093` | 8167 bytes | source | UTF-8 | mode 100644
+Declarations: js@14; BytecodeEmitter@16; EmitterScope@17; class@22; MOZ_STACK_CLASS@41; class@58; bce_@76; MOZ_STACK_CLASS@100; class@125; hasAwaitUsing@154; setHasAwaitUsing@156; MOZ_STACK_CLASS@180; class@193; UsingEmitter@205; MOZ_STACK_CLASS@225; class@242; UsingEmitter@257
+Dependencies: mozilla/Attributes.h@8; frontend/TryEmitter.h@10; js/UniquePtr.h@11; vm/UsingHint.h@12
+
+`js/src/frontend/ValueUsage.h` | `9c4d04ab20c4983a4f53455dbbfc34ec22ce8073` | 979 bytes | source | UTF-8 | mode 100644
+Declarations: js@8; frontend@9; class@14
+
+`js/src/frontend/WhileEmitter.cpp` | `79cf064009d36809f5d91513ea7fe164dacad454` | 2469 bytes | source | UTF-8 | mode 100644
+Declarations: WhileEmitter::WhileEmitter@14; WhileEmitter::emitBody@49; WhileEmitter::emitEnd@64; InternalWhileEmitter::emitCond@85
+Dependencies: frontend/WhileEmitter.h@5; frontend/BytecodeEmitter.h@7; vm/Opcodes.h@8; vm/StencilEnums.h@9
+
+`js/src/frontend/WhileEmitter.h` | `ad13574047d68b966ec0323e43eb448967f25834` | 2568 bytes | source | UTF-8 | mode 100644
+Declarations: js@16; frontend@17; BytecodeEmitter@19; MOZ_STACK_CLASS@35; class@51; MOZ_STACK_CLASS@88; InternalWhileEmitter@90
+Dependencies: mozilla/Attributes.h@8; mozilla/Maybe.h@9; stdint.h@11; frontend/BytecodeControlStructures.h@13; frontend/TDZCheckCache.h@14
+
+`js/src/frontend/align_stack_comment.py` | `d6c218cc81a96e782831067f2617ae97b9f1e215` | 2980 bytes | source | UTF-8 | mode 100755
+Declarations: align_stack_comment@28
+
+`js/src/frontend/moz.build` | `f00da72c5d1c59d0b8b70edac72466d28fb18c09` | 4128 bytes | build-registration | UTF-8 | mode 100644
+Dependencies: ../js-compileflags.mozbuild@10; ../js-config.mozbuild@11; ../js-cxxflags.mozbuild@12; /tools/fuzzing/libfuzzer-config.mozbuild@95
+
+`js/src/fuzz-tests/README` | `2c98c1ffa2665868e54aa3b6880a949dd41a5216` | 879 bytes | data-or-other | UTF-8 | mode 100644
+
+`js/src/fuzz-tests/gluesmith/Cargo.toml` | `98cf670fa11da10fa09bf8673408f73f3c7391f4` | 224 bytes | build-registration | UTF-8 | mode 100644
+
+`js/src/fuzz-tests/gluesmith/moz.build` | `06d4e6c86dde8207b52540103100fed7c3362ad6` | 446 bytes | build-registration | UTF-8 | mode 100644
+Dependencies: ../../js-compileflags.mozbuild@10; ../../js-config.mozbuild@11; ../../js-cxxflags.mozbuild@12
+
+`js/src/fuzz-tests/gluesmith/src/lib.rs` | `264435027bb243ea7b063243e6ae1614415db845` | 1657 bytes | source | UTF-8 | mode 100644
+Declarations: Ok@47; Err@48
+Dependencies: arbitrary::Unstructured@19; wasm_smith::@20
+
+`js/src/fuzz-tests/moz.build` | `f9b6fe70248d5ec53b7d59980b466078b5dc4a83` | 1016 bytes | build-registration | UTF-8 | mode 100644
+Dependencies: ../js-cxxflags.mozbuild@7; ../js-standalone.mozbuild@8; /tools/fuzzing/libfuzzer-config.mozbuild@31
+
+`js/src/fuzz-tests/parsing-evaluate.js` | `43ed050ab439d4ac78e3418d63752cb5c749dffb` | 2982 bytes | source | UTF-8 | mode 100644
+Declarations: JSFuzzIterate@32; setModuleResolveHook@44; timeout@52
+
+`js/src/fuzz-tests/testExample.cpp` | `4909b393c18f192ae65815aa1e07707349ba1404` | 2202 bytes | source | UTF-8 | mode 100644
+Declarations: testExampleInit@20; testExampleFuzz@28
+Dependencies: mozilla/ScopeExit.h@5; jsapi.h@7; fuzz-tests/tests.h@9; vm/Interpreter.h@10; vm/JSContext-inl.h@12
+
+`js/src/fuzz-tests/testRegExp.cpp` | `b054e8eed7d0e47b5e032daf775ed26b95e3e7ef` | 3225 bytes | source | UTF-8 | mode 100644
+Declarations: testRegExpInit@23; testRegExpFuzz@25
+Dependencies: mozilla/ScopeExit.h@5; jsapi.h@7; fuzz-tests/tests.h@9; irregexp/RegExpAPI.h@10; vm/Interpreter.h@11; vm/JSAtomUtils.h@12; vm/MatchPairs.h@13; vm/JSContext-inl.h@15
+
+`js/src/fuzz-tests/testStructuredCloneReader.cpp` | `c01923f71322d139c19235ef186deefedebe80ed` | 2525 bytes | source | UTF-8 | mode 100644
+Declarations: testStructuredCloneReaderInit@22; testStructuredCloneReaderFuzz@24
+Dependencies: fuzz-tests/tests.h@5; mozilla/ScopeExit.h@7; jsapi.h@9; js/StructuredClone.h@11; vm/Interpreter.h@12; vm/JSContext-inl.h@14
+
+`js/src/fuzz-tests/testWasm.cpp` | `49d7f11b6a3c6947135cb290a52b92416d69ef36` | 19015 bytes | source | UTF-8 | mode 100644
+Declarations: PrefsSetters@41; constexpr@46; testWasmInit@54; testWasmSmithInit@77; emptyNativeFunction@82; FuzzerBuildId@146; testWasmFuzz@151; testWasmSmithFuzz@526
+Dependencies: mozilla/ScopeExit.h@5; jsapi.h@7; jspubtd.h@8; fuzz-tests/tests.h@10; js/CallAndConstruct.h@11; js/Prefs.h@12; js/PropertyAndElement.h@13; vm/GlobalObject.h@14; vm/Interpreter.h@15; vm/TypedArrayObject.h@16; wasm/WasmCompile.h@17; wasm/WasmFeatures.h@18; wasm/WasmIonCompile.h@19; wasm/WasmJS.h@20; wasm/WasmTable.h@21; vm/ArrayBufferObject-inl.h@23; vm/JSContext-inl.h@24
+
+`js/src/fuzz-tests/tests.cpp` | `cc96bb10c28cbe65f0201366a0cb47b127227b5d` | 3017 bytes | source | UTF-8 | mode 100644
+Declarations: jsfuzz_createGlobal@36; jsfuzz_init@44; jsfuzz_uninit@67; main@75
+Dependencies: fuzz-tests/tests.h@5; stdio.h@7; js/AllocPolicy.h@9; js/GlobalObject.h@10; js/Initialization.h@11; js/Prefs.h@12; js/RealmOptions.h@13; js/RootingAPI.h@14; js/Stack.h@15; vm/JSContext.h@16; FuzzerDefs.h@19
+
+`js/src/fuzz-tests/tests.h` | `84aa9c6423f149e894b7f0fb46b4a5a94abe9b3d` | 371 bytes | source | UTF-8 | mode 100644
+Dependencies: errno.h@8; FuzzingInterface.h@10; vm/JSContext.h@12
+
+`js/src/fuzz-tests/util/sanitize.js` | `ac08b822e7c869e9d312a59f2499d0448f1638d4` | 3853 bytes | source | UTF-8 | mode 100644
+Declarations: sanitizeGlobal@8; function@11; function@12; function@13; function@14; function@15; function@16; function@17; function@18; function@19; function@20; function@21; function@22; function@25; function@26; function@27; function@28; function@29; function@30; function@31; function@32; function@33; function@34; function@35; function@36; function@37; function@38; function@39; function@40; function@41; function@42; function@45; function@46; function@47; function@48; function@49; function@52; function@53; function@54; function@57; function@58; function@59; function@60; function@61; function@62; function@63; function@64; function@65; function@66; function@67; function@68; function@69; function@70; function@71; function@72; function@73; function@74; function@75; function@78; function@79; function@80; function@81; function@82; function@83; function@84; function@85; function@86; function@87; function@88; function@89; function@90
+
+`js/src/gc/AllocKind.h` | `5dc44654193fb330d8e950df3cb10680d95f0e12` | 15221 bytes | source | UTF-8 | mode 100644
+Declarations: JSDependentString@19; JSExternalString@20; JSFatInlineString@21; JSLinearString@22; JSRope@23; JSThinInlineString@24; js@26; CompactPropMap@28; FatInlineAtom@29; ThinInlineAtom@30; NormalAtom@31; NormalPropMap@32; DictionaryPropMap@33; DictionaryShape@34; SharedShape@35; ProxyShape@36; WasmGCShape@37; gc@39; class@124; class@160; class@162; MapTypeToAllocKind@238; MapTypeToAllocKind@241; MapTypeToAllocKind@248; MapTypeToAllocKind@252; MapTypeToAllocKind@256; MapTypeToAllocKind@260; MapTypeToAllocKind@264; MapTypeToAllocKind@269; MapTypeToAllocKind@273; MapTypeToAllocKind@277; MapTypeToAllocKind@281
+Dependencies: mozilla/EnumeratedArray.h@12; mozilla/EnumeratedRange.h@13; stdint.h@15; js/TraceKind.h@17
+
+`js/src/gc/Allocator-inl.h` | `762dade59f8f91ae1095a6109970d91a42b64f1e` | 9141 bytes | source | UTF-8 | mode 100644
+Declarations: js@42; gc@43; CellAllocator::NewCell@46; constexpr@50; CellAllocator::NewString@84; CellAllocator::NewBigInt@99; CellAllocator::NewTenuredCell@146; PreAllocGCChecks@169; CheckForSimulatedFailure@183; PreAllocGCChecks@198; CheckForSimulatedFailure@199; constexpr@219
+Dependencies: gc/Allocator.h@16; gc/Barrier.h@18; gc/Cell.h@19; gc/Zone.h@20; js/Class.h@21; js/RootingAPI.h@22; gc/Nursery-inl.h@24
+
+`js/src/gc/Allocator.cpp` | `a53314a26cfca052de77f00fc305efe37e448dc3` | 23617 bytes | source | UTF-8 | mode 100644
+Declarations: MinHeapToTenure@40; constexpr@100; MajorGCIfRequested@131; constexpr@142; IsAtomsZoneKind@154; gc::CellAllocator::AllocTenuredCell@160; constexpr@168; constexpr@176; CellAllocator::AllocTenuredCellUnchecked@188; constexpr@198; GCRuntime::attemptLastDitchGC@238; TimeStamp::Now@244; CellAllocator::CheckIncrementalZoneState@307; js::gc::AllocateTenuredCellInGC@319; GCRuntime::startBackgroundAllocTaskIfIdle@333; GCRuntime::refillFreeList@345; GCRuntime::refillFreeListInGC@357; FreeLists::setArenaAndAllocate@434; Arena::arenaAllocatedDuringGC@456; GCRuntime::wantBackgroundAllocation@470; emptyChunks@475; ArenaChunk::commitOnePage@524; ArenaChunk::fetchNextFreeArena@548; GCRuntime::recycleChunk@600; enabled_@639; BackgroundAllocTask::run@643; ArenaChunk::allocate@662; ArenaChunk::decommitAllArenas@708; ArenaChunkBase::initAsDecommitted@714; ArenaChunkBase::initAsCommitted@724
+Dependencies: gc/Allocator.h@5; mozilla/OperatorNewExtensions.h@7; mozilla/TimeStamp.h@8; gc/GCInternals.h@10; gc/GCLock.h@11; gc/GCProbes.h@12; gc/Nursery.h@13; gc/PublicIterators.h@14; threading/CpuCount.h@15; util/Poison.h@16; vm/BigIntType.h@17; vm/FrameIter.h@18; vm/Runtime.h@19; vm/StringType.h@20; gc/ArenaList-inl.h@22; gc/Heap-inl.h@23; gc/PrivateIterators-inl.h@24; vm/JSContext-inl.h@25; vm/JSScript-inl.h@26
+
+`js/src/gc/Allocator.h` | `d05be8527ed2af08272ef4763c6f57c84e791846` | 7584 bytes | source | UTF-8 | mode 100644
+Declarations: js@15; gc@16; AllocSite@18; Cell@19; BufferAllocator@20; TenuredCell@21; TenuringTracer@22; CellAllocator@41; MutableHandleBuffer@150; BufferHolder@153; BufferHolder@160; get@167; RootedBuffer@174; Base@179; get@180; HandleBuffer@187; HandleBuffer@191; HandleBuffer@192; Base@194; get@196; MutableHandleBuffer@203; MutableHandleBuffer@207; MutableHandleBuffer@208; set@210; get@215
+Dependencies: gc/AllocKind.h@10; gc/GCEnum.h@11; js/HeapAPI.h@12; js/TypeDecls.h@13
+
+`js/src/gc/ArenaList-inl.h` | `64a46701b90dfbfccdfaffd2e26541cabbad7791` | 7929 bytes | source | UTF-8 | mode 100644
+Declarations: js::gc::ArenaList::hasNonFullArenas@13; js::gc::ArenaList::takeInitialNonFullArena@18; thingsPerArena_@30; js::gc::SortedArenaList::index@38; js::gc::SortedArenaList::emptyIndex@65; js::gc::SortedArenaList::bucketsUsed@71; js::gc::SortedArenaList::insertAt@76; js::gc::SortedArenaList::hasEmptyArenas@90; js::gc::SortedArenaList::extractEmptyTo@94; js::gc::SortedArenaList::check@165; js::gc::FreeLists::allEmpty@199; js::gc::FreeLists::isEmpty@208; js::gc::FreeLists::clear@214; js::gc::FreeLists::allocate@226; js::gc::FreeLists::unmarkPreMarkedFreeCells@230; js::gc::ArenaLists::runtime@237; js::gc::ArenaLists::runtimeFromAnyThread@241; js::gc::ArenaLists::getFirstArena@245; js::gc::ArenaLists::arenaListsAreEmpty@254; js::gc::ArenaLists::doneBackgroundFinalize@270; js::gc::ArenaLists::clearFreeLists@274; js::gc::ArenaLists::unmarkPreMarkedFreeCells@281; js::gc::ArenaLists::checkEmptyFreeLists@287; js::gc::ArenaLists::checkEmptyArenaLists@291
+Dependencies: gc/ArenaList.h@8; gc/Heap.h@10; gc/Zone.h@11
+
+`js/src/gc/ArenaList.h` | `1c7978d68badafaa3040d045b4b5913aa00adf12` | 12199 bytes | source | UTF-8 | mode 100644
+Declarations: JS@22; SliceBudget@23; js@26; Nursery@28; gcstats@30; Statistics@31; gc@34; Arena@36; ArenaIter@37; ArenaIterInGC@38; AutoGatherSweptArenas@39; BackgroundUnmarkTask@40; FinalizePhase@41; FreeSpan@42; TenuredCell@43; TenuringTracer@44; class@47; ArenaList@82; SortedArenaList@113; thingsPerArena@145; allocKind@172; MOZ_RAII@184; sweptArenas@197; class@200; FreeLists@212; addressOfFreeList@236; ArenaLists@241; class@242; freeLists@279; addressOfFreeList@282; arenaList@334; collectingArenaList@337; concurrentUse@344; concurrentUse@347
+Dependencies: utility@12; ds/SinglyLinkedList.h@14; gc/AllocKind.h@15; gc/Memory.h@16; js/GCAPI.h@17; js/HeapAPI.h@18; js/TypeDecls.h@19; threading/ProtectedData.h@20
+
+`js/src/gc/AtomMarking-inl.h` | `0a3fc40d359928e265bdae42ceaa6d4cffdeffea` | 6894 bytes | source | UTF-8 | mode 100644
+Declarations: js@21; gc@22; AtomRefRuntime::getAtomBit@25; constexpr@46; constexpr@54; constexpr@79; GCRuntime::maybeMarkWeaklyHeldAtom@92; constexpr@112; constexpr@132; GCRuntime::isAtomReferencedByUncollectedZone@139; constexpr@165; constexpr@185; AtomRefRuntime::recordRef@197
+Dependencies: gc/AtomMarking.h@8; mozilla/Assertions.h@10; type_traits@12; vm/JSContext.h@14; vm/StringType.h@15; vm/SymbolType.h@16; gc/GC-inl.h@18; gc/Heap-inl.h@19
+
+`js/src/gc/AtomMarking.cpp` | `3f2b0d26a21b7fd6d22f2a00b25bd78415e6cf2f` | 15724 bytes | source | UTF-8 | mode 100644
+Declarations: js@15; gc@16; AtomRefRuntime::allocateIndex@71; AtomRefRuntime::freeIndex@90; AtomRefRuntime::mergePendingFreeArenaIndexes@107; MultipleNonAtomZonesAreBeingCollected@129; AtomRefRuntime::refineZoneBitmapsForCollectedZones@143; computeBitmapFromChunkMarkBits@149; uintptr_t@188; ArenaContainsGrayCells@210; BitwiseOrIntoChunkMarkBits@290; AtomRefRuntime::hasRef@340; constexpr@356; AtomRefRuntime::hasRefForIndex@379; AtomRefRuntime::hasRef@395; ZoneHasRef@417; ZoneHasRef@427; ZoneHasRef@440; ZoneHasRef@444
+Dependencies: type_traits@5; gc/GCLock.h@7; gc/PublicIterators.h@8; gc/AtomMarking-inl.h@10; gc/GC-inl.h@11; gc/Heap-inl.h@12; gc/PrivateIterators-inl.h@13
+
+`js/src/gc/AtomMarking.h` | `6b473c47132e03757da03168fa6e58d8872ec4ec` | 4121 bytes | source | UTF-8 | mode 100644
+Declarations: js@16; AutoLockGC@18; DenseBitmap@19; gc@21; Arena@23; GCRuntime@24; AtomRefRuntime@28
+Dependencies: mozilla/Atomics.h@8; NamespaceImports.h@10; gc/Cell.h@12; js/Vector.h@13; threading/ProtectedData.h@14
+
+`js/src/gc/Barrier.cpp` | `35cbd4414780611fc478f50e50e5900889ebb546` | 4417 bytes | source | UTF-8 | mode 100644
+Declarations: js@21; RuntimeFromMainThreadIsHeapMajorCollecting@23; IsMarkedBlack@31; CurrentThreadIsBaselineCompiling@61; CurrentThreadIsIonCompiling@66; CurrentThreadIsOffThreadCompiling@71
+Dependencies: gc/Barrier.h@5; gc/Marking.h@7; jit/JitContext.h@8; js/HashTable.h@9; js/shadow/Zone.h@10; js/Value.h@11; vm/BigIntType.h@12; vm/EnvironmentObject.h@13; vm/GeneratorObject.h@14; vm/JSObject.h@15; vm/PropMap.h@16; wasm/WasmJS.h@17; gc/StableCellHasher-inl.h@19
+
+`js/src/gc/Barrier.h` | `48cd4b59c7e6859efc9a8498d2dceac4045a3c83` | 50714 bytes | source | UTF-8 | mode 100644
+Declarations: js@311; NativeObject@313; gc@315; ValueReadBarrier@317; ValuePreWriteBarrier@322; IdPreWriteBarrier@327; CellPtrPreWriteBarrier@332; WasmAnyRefPreWriteBarrier@337; InternalBarrierMethods@353; InternalBarrierMethods@356; isMarkable@359; preBarrier@361; postBarrier@363; readBarrier@367; assertThingIsNotGray@370; AtomicMethods@375; AtomicMethods@378; atomicGet@379; atomicSet@382; AtomicMethods@389; atomicGet@390; atomicSet@393; gc@398; InternalBarrierMethods@427; isMarkable@428; preBarrier@430; readBarrier@441; assertThingIsNotGray@448; AtomicMethods@455; atomicGet@457; atomicSet@458; InternalBarrierMethods@463; isMarkable@464; preBarrier@465; postBarrier@470; assertThingIsNotGray@473; AtomicMethods@478; atomicGet@479; atomicSet@480; InternalBarrierMethods@485; isMarkable@488; preBarrier@489; postBarrier@492; readBarrier@495; assertThingIsNotGray@497; AssertTargetIsNotGray@507; MOZ_NON_MEMMOVABLE@520; BarrieredBase@529; unbarrieredSet@535; unbarrieredAtomicGet@538; unbarrieredAtomicSet@539; getForTracing@550; getForTracing@552; unbarrieredAddress@559; GCData@566; GCData@571; GCData@573; set@579; atomicSet@590; atomicGet@591; defaultValue@618; gc@621; BarrierOption@624; BarrieredPtrImpl@649; BarrieredPtrImpl@656; BarrieredPtrImpl@658; BarrieredPtrImpl@666; BarrieredPtrImpl@682; constexpr@693; init@709; set@717; uncheckedSet@723; unbarrieredSet@732; constexpr@733; bool@745; release@755; defaultValue@763; checkGCLifetime@766; constexpr@778; constexpr@784; constexpr@791; Name@811; GCStructPtr@885; GCStructPtr@887; GCStructPtr@889; GCStructPtr@891; init@899; set@905; unbarrieredSet@911; get@916; T@917; atomicGet@921; getForTracing@927; getForTracing@929; isTraceable@933; pre@935; GCBuffer@944; GCBuffer@950; GCBuffer@952; GCBuffer@954; init@962; set@968; unbarrieredSet@974; get@979; T@980; atomicGet@984; isTraceable@988; pre@990; HeapSlot@1023; Kind@1028; init@1031; constexpr@1035; unbarrieredInit@1042; initAsUndefined@1044; getForTracing@1058; getForTracing@1060; unbarrieredSet@1066; preWriteBarrier@1074; destroy@1078; setUndefinedUnchecked@1080; constexpr@1099; constexpr@1103; pre@1109; HeapSlotArray@1127; HeapSlotArray@1131; begin@1133; gc@1172; constexpr@1179; constexpr@1185; gc@1205; BarrieredCopyRange@1273; MOZ_HEAP_CLASS@1296; T@1300; toHandle@1309; init@1311; get@1317; RemoveBarrier@1324; RemoveBarrier@1330; StableCellHasher@1358; maybeGetHash@1364; ensureHash@1367; hash@1370; Name@1388; hash@1394; rekey@1398; JS@1418; DefineComparisonOps@1424; DefineComparisonOps@1438; mozilla@1444; DefaultHasher@1448
+Dependencies: type_traits@8; NamespaceImports.h@10; gc/Cell.h@12; gc/GCContext.h@13; gc/StoreBuffer.h@14; js/ComparisonOperators.h@15; js/experimental/TypedData.h@16; js/HeapAPI.h@17; js/Id.h@18; js/RootingAPI.h@19; js/Value.h@20; util/Poison.h@21
+
+`js/src/gc/BufferAllocator-inl.h` | `91b253b60135719b41ded3dfe8ed90d05f83843a` | 3962 bytes | source | UTF-8 | mode 100644
+Declarations: js@17; BufferAllocator::IsSmallAllocSize@20; BufferAllocator::IsLargeAllocSize@25; BufferAllocator::GetGoodAllocSize@30; BufferAllocator::GetGoodPower2AllocSize@45; GetGoodAllocSize@67; GetGoodElementCount@71; GetGoodPower2AllocSize@75; AllocBuffer@84; AllocBufferInGC@92; FreeBuffer@105; IsBufferAlloc@109; IsBufferAllocInZone@114; GetAllocSize@119; IsNurseryOwned@123; IsBufferAllocMarkedBlack@127; MarkTenuredBuffer@131
+Dependencies: gc/BufferAllocator.h@8; mozilla/MathAlgorithms.h@10; ds/SlimLinkedList.h@12; js/HeapAPI.h@13; gc/Allocator-inl.h@15
+
+`js/src/gc/BufferAllocator.cpp` | `a29759e3505a2082ce0eef0878e22a588bc8f47e` | 126536 bytes | source | UTF-8 | mode 100644
+Declarations: js@31; LockGuard@35; CheckHighBitsOfPointer@37; BufferAllocator::FreeLists::FreeLists@44; BufferAllocator::FreeLists::freeListIter@63; BufferAllocator::FreeLists::freeRegionIter@68; BufferAllocator::FreeLists::hasSizeClass@72; BufferAllocator::FreeLists::pushFront@117; BufferAllocator::FreeLists::pushBack@124; BufferAllocator::FreeLists::append@145; BufferAllocator::FreeLists::remove@156; BufferAllocator::FreeLists::clear@162; BufferAllocator::FreeLists::forEachRegion@170; BufferAllocator::FreeLists::assertEmpty@183; BufferAllocator::FreeLists::checkAvailable@200; BufferAllocator::ChunkLists::chunkIter@209; BufferAllocator::ChunkLists::remove@230; BufferAllocator::ChunkLists::addChunk@251; BufferAllocator::ChunkLists::addTenuredChunk@274; BufferAllocator::ChunkLists::extractAllChunks@291; BufferAllocator::ChunkLists::extractMixedChunks@302; BufferAllocator::ChunkLists::isEmpty@332; BufferAllocator::ChunkLists::checkAvailable@337; ChunkBase@521; BufferChunk::~BufferChunk@527; BufferChunk::setSmallBufferRegion@535; BufferChunk::isSmallBufferRegion@541; BufferChunk::sizeClassForAvailableLists@547; SmallBufferRegion::setHasNurseryOwnedAllocs@568; SmallBufferRegion::hasNurseryOwnedAllocs@571; lock@576; BufferAllocatorRuntime::incOffThreadCount@578; BufferAllocatorRuntime::decOffThreadCount@580; BufferAllocatorRuntime::resetRetainedStats@584; BufferAllocatorRuntime::needLockToAccessBufferMap@606; BufferAllocatorRuntime::lookupLargeBuffer@610; BufferAllocatorRuntime::checkGCStateNotInUse@630; allocTenuredInMixedChunks@644; BufferAllocator::~BufferAllocator@646; BufferAllocator::isEmpty@660; BufferAllocator::setMultiThreadedUse@672; BufferAllocator::clearMultiThreadedUse@680; BufferAllocator::checkAccess@688; BufferAllocator::checkMainThread@698; BufferAllocator::isUsedByMainThread@703; BufferAllocator::runtime@705; BufferAllocator::alloc@709; BufferAllocator::allocInGC@724; LargeBuffer::zone@743; LargeBuffer::zoneFromAnyThread@749; VirtualCopyPages@754; BufferAllocator::realloc@767; BufferAllocator::free@844; BufferAllocator::IsBufferAlloc@862; BufferAllocator::hasAlloc@875; BufferAllocator::getAllocSize@892; BufferAllocator::isNurseryOwned@914; BufferAllocator::promoteNurseryOwnedAlloc@929; BufferAllocator::isMarkedBlack@1035; js::gc::detail::GetGCAddressChunkBase@1069; js::gc::detail::GetGCAddressChunkBase@1118; BufferAllocator::LookupLargeBuffer@1156; BufferAllocator::markTenuredAlloc@1161; BufferAllocator::markSmallTenuredAlloc@1177; BufferAllocator::markMediumTenuredAlloc@1189; BufferAllocator::startMinorCollection@1200; BufferAllocator::startMinorSweeping@1222; LargeAllocToFree@1273; LargeAllocToFree@1277; FreeLargeAllocs@1287; BufferAllocator::sweepForMinorCollection@1296; BufferAllocator::startMajorCollection@1347; BufferAllocator::startMajorSweeping@1398; BufferAllocator::sweepForMajorCollection@1421; BufferAllocator::finishMajorCollection@1475; BufferAllocator::abortMajorSweeping@1507; BufferAllocator::clearMarkBitsInStolenChunks@1555; BufferChunk::clearMarkBitsIfStolenChunk@1583; BufferAllocator::ClearAllocatedDuringCollection@1610; BufferAllocator::ClearAllocatedDuringCollection@1616; BufferAllocator::ClearAllocatedDuringCollection@1622; BufferAllocator::maybeMergeSweptData@1628; BufferAllocator::mergeSweptData@1634; BufferAllocator::maybeMergeSweptData@1639; BufferAllocator::mergeSweptData@1648; BufferAllocator::mergeChunkStatsToRuntime@1737; BufferAllocator::clearMarkStateAfterBarrierVerification@1745; BufferAllocator::clearChunkMarkBits@1770; BufferChunk::clearMarkBits@1775; BufferAllocator::isPointerWithinBuffer@1783; BufferChunk::isPointerWithinAllocation@1823; SmallBufferRegion::isPointerWithinAllocation@1846; LargeBuffer::isPointerWithinAllocation@1862; BufferAllocator::checkGCStateNotInUse@1868; BufferAllocator::checkGCStateNotInUse@1874; BufferAllocator::checkGCStateNotInUse@1883; BufferAllocator::allocSmall@2097; BufferAllocator::allocNewSmallRegion@2158; BufferAllocator::IsSmallAlloc@2190; BufferAllocator::allocMedium@2201; IsMediumSizeClass@2360; BufferAllocator::SizeClassKind@2366; GranularityForSizeClass@2416; BufferAllocator::alignedAlloc@2489; BufferAllocator::recommitRegion@2625; ShouldStallAndRetry@2653; BufferAllocator::allocNewChunk@2722; BufferAllocator::rebuildFreeLists@3039; BufferAllocator::freeMedium@3046; BufferAllocator::canModifyAllocations@3142; BufferAllocator::isConcurrentMarking@3153; BufferAllocator::isSweepingChunk@3161; BufferAllocator::growMedium@3263; BufferAllocator::shrinkMedium@3327; BufferAllocator::SizeClassForSmallAlloc@3437; BufferAllocator::SizeClassForMediumAlloc@3454; BufferAllocator::SizeClassForFreeRegion@3470; BufferAllocator::SizeClassBytes@3499; BufferAllocator::IsMediumAlloc@3511; BufferAllocator::needLockToAccessBufferMap@3522; BufferAllocator::lookupLargeBuffer@3527; BufferAllocator::lookupLargeBuffer@3532; BufferAllocator::IsLargeAlloc@3625; BufferAllocator::markLargeTenuredBuffer@3629; BufferAllocator::isLargeTenuredMarked@3642; BufferAllocator::freeLarge@3649; BufferAllocator::shrinkLarge@3681; BufferAllocator::printStatsHeader@3775; BufferAllocator::getSizeOfNurseryBuffers@3836; BufferAllocator::getStats@3883; BufferChunk::getStats@3921; BufferAllocator::FreeLists::getStats@3941
+Dependencies: mozilla/Likely.h@5; mozilla/ScopeExit.h@6; bit@8; gc/BufferAllocator-inl.h@10; mach/mach_init.h@13; mach/vm_map.h@14; gc/BufferAllocatorInternals.h@17; gc/GCInternals.h@18; gc/GCLock.h@19; gc/PublicIterators.h@20; gc/Zone.h@21; js/HeapAPI.h@22; util/Poison.h@23; gc/Heap-inl.h@25; gc/Marking-inl.h@26; js/Printer.h@3748; util/GetPidProvider.h@3749
+
+`js/src/gc/BufferAllocator.h` | `978cc523dc71068327f2935b1a05ec70fb3e8d6e` | 30026 bytes | source | UTF-8 | mode 100644
+Declarations: JS_PUBLIC_API@27; JS@29; JS_PUBLIC_API@30; js@33; GCMarker@35; Nursery@36; gc@38; BufferAllocator@40; BufferAllocatorRuntime@41; BufferChunk@42; Cell@43; GCRuntime@44; LargeBuffer@45; SmallBufferRegion@46; AutoLockBufferAllocator@49; MaybeLockBufferAllocator@57; BufferAllocator@224; Stats@244; FreeRegion@255; class@260; class@262; FreeLists@265; FreeListIter@272; FreeRegionIter@273; isEmpty@283; ChunkLists@320; ChunkListIter@330; ChunkIter@331; hasMixedChunks@340; class@366; class@368; Stats@515; class@582
+Dependencies: mozilla/Array.h@10; mozilla/Atomics.h@11; mozilla/BitSet.h@12; mozilla/Maybe.h@13; mozilla/TimeStamp.h@14; cstdint@16; stddef.h@17; jstypes.h@19; ds/SlimLinkedList.h@21; js/HeapAPI.h@22; threading/LockGuard.h@23; threading/Mutex.h@24; threading/ProtectedData.h@25
+
+`js/src/gc/BufferAllocatorInternals.h` | `35c4a5f58979a8195d89a1bcc752f3304e0a7025` | 18761 bytes | source | UTF-8 | mode 100644
+Declarations: js@18; BitSetIter@50; BitSetIter@56; done@62; next@66; get@73; size_t@77; js@82; Iter@87; done@93; next@98; get@126; BitmapToBlockIter@135; BitmapIter@141; getOffset@142; get@143; LinkedListIter@149; LinkedListIter@153; done@154; next@155; get@159; BufferAllocator@164; BitSetIter@170; get@171; BufferAllocator@178; FreeRegionIter@181; BufferAllocator@184; lists@191; BitSetIter@193; get@194; getSizeClass@195; BufferAllocator@199; ChunkIter@202; getSizeClass@203; AllocSpace@207; allocIter@244; isAllocated@250; isAllocated@255; setNurseryOwned@262; isNurseryOwned@268; setUnmarked@276; isMarked@282; startAddress@288; SweepResult@304; AllocSpace@317; ptrToIndex@324; offsetToIndex@331; endBitIndex@343; findEndBit@352; isValidOffset@362; asDerived@368; BufferChunk@373; smallRegionIter@411; from@416; kind@425; SmallBufferRegion@451; from@455; BufferAllocator@486; startAddr@496; fromEndOffset@501; fromEndAddr@510; check@517; getEnd@519; size@520; LargeBuffer@524; alloc@536; check@540; data@545; allocBytes@546
+Dependencies: bit@10; NamespaceImports.h@12; ds/SlimLinkedList.h@14; gc/BufferAllocator.h@15; gc/IteratorUtils.h@16
+
+`js/src/gc/Cell.h` | `64ee06b85e3949c58b0fe1345bad5a6abc62dbfe` | 33734 bytes | source | UTF-8 | mode 100644
+Declarations: JS@20; class@21; js@24; JS_PUBLIC_API@26; gc@48; class@50; CellAllocator@51; StoreBuffer@52; TenuredCell@53; class@64; IsMarked@68; AsMarkColor@69; AsCellColor@73; HeaderWord@89; setAtomic@97; getAtomic@107; get@112; set@118; setBitAtomic@124; clearBitAtomic@128; toggleBitAtomic@132; flags@138; isForwarded@139; isForwardedNonAtomic@142; setForwardingAddress@143; getForwardingAddress@147; Cell@168; isForwarded@179; isForwardedNonAtomic@180; flags@181; maybeCompartment@201; is@212; as@217; TenuredCell@269; chunk@276; is@302; as@307; fixupAfterMovingGC@323; Cell::runtimeFromMainThread@367; Cell::runtimeFromAnyThread@373; Cell::address@377; Cell::chunk@384; Cell::storeBuffer@393; Cell::zone@395; Cell::zoneFromAnyThread@403; Cell::nurseryZone@411; Cell::nurseryZoneFromAnyThread@417; Cell::getTraceKind@425; TenuredCell::arena@475; TenuredCell::getAllocKind@482; TenuredCell::getTraceKind@484; TenuredCell::zone@488; TenuredCell::zoneFromAnyThread@494; TenuredCell::isInsideZone@496; PreWriteBarrierAllowed@538; PreWriteBarrier@611; Cell::isAligned@658; TenuredCell::isAligned@665; alignas@685; headerLengthField@692; headerLengthFieldAtomic@699; headerFlagsField@707; headerFlagsFieldAtomic@708; headerFlagsFieldForTracing@713; headerFlagsFieldForTracing@717; setHeaderFlagBit@720; clearHeaderFlagBit@723; toggleHeaderFlagBit@726; setHeaderFlagBitAtomic@729; clearHeaderFlagBitAtomic@730; toggleHeaderFlagBitAtomic@731; setHeaderLengthAndFlags@735; constexpr@757; constexpr@768; alignas@782; TenuredCellWithNonGCPointer@792; headerPtr@797; headerPtrForTracing@803; headerPtrForTracing@808; setHeaderPtr@811; alignas@829; TenuredCellWithFlags@831; TenuredCellWithFlags@832; headerFlagsField@834; headerFlagsFieldForTracing@840; headerFlagsFieldForTracing@845; setHeaderFlagBits@848; clearHeaderFlagBits@851; alignas@864; staticAsserts@865; CellWithTenuredGCPointer@881; initHeaderPtr@883; setHeaderPtr@889; headerPtr@897; headerPtrAtomic@902; headerPtrForTracing@909; headerPtrForTracing@911; unbarrieredSetHeaderPtr@914; alignas@936; staticAsserts@937; CellWithGCPointer@951; initHeaderPtr@953; headerPtrAddress@961; headerPtr@967; unbarrieredSetHeaderPtr@972; TenuredThingIsMarkedAny@986; constexpr@989; ShouldTraceEdge@1004; MarkingLock@1019; MarkingLock@1021; AtomRefLock@1024; AtomRefLock@1026; MOZ_RAII@1038; AutoMarkingLock@1046
+Dependencies: bit@8; type_traits@9; gc/GCContext.h@11; gc/Heap.h@12; gc/LightLock.h@13; gc/TraceKind.h@14; js/GCAnnotations.h@15; js/shadow/Zone.h@16; js/TypeDecls.h@17; vm/MutexIDs.h@18
+
+`js/src/gc/ChunkPool.h` | `86c3d1c57dfa4074bc4c70d4e7a42a98fe56a5c3` | 1986 bytes | source | UTF-8 | mode 100644
+Declarations: js@10; gc@11; ChunkPool@13; ChunkPool@18; ChunkPool@20; empty@36; count@37; head@39; maybeHead@43; Iter@66; Iter@68; done@69; get@71; iter@79
+Dependencies: js/HeapAPI.h@8
+
+`js/src/gc/ClearEdgesTracer.h` | `d06946a7924c18711ec9d7ceaa8776cee859a3eb` | 655 bytes | source | UTF-8 | mode 100644
+Declarations: js@10; gc@11; ClearEdgesTracer@13
+Dependencies: js/TracingAPI.h@8
+
+`js/src/gc/Compacting.cpp` | `52d64541d1ac626800ef46155e28af6e1d55d042` | 32354 bytes | source | UTF-8 | mode 100644
+Declarations: GCRuntime::canRelocateZone@39; GCRuntime::beginCompactPhase@43; GCRuntime::endCompactPhase@132; ShouldRelocateAllArenas@134; PtrIsInRange@222; RelocateArena@296; CompactingAllocKinds@359; stats@431; MovingTracer::onEdge@459; GCRuntime::sweepZoneAfterCompacting@468; UpdateCellPointers@497; UpdateArenaPointersTyped@508; CanUpdateKindInBackground@514; UpdateArenaPointers@528; ArenaListSegment@548; ArenasToUpdate@572; kinds@582; done@586; get@591; nextAllocKind@606; ArenasToUpdate::settle@614; ArenasToUpdate::findSegmentEnd@636; ArenasToUpdate::next@655; ForegroundUpdateKinds@669; GCRuntime::updateCellPointers@679; GCRuntime::updateAllCellPointers@768; GCRuntime::updateZonePointersToRelocatedCells@780; GCRuntime::updateRuntimePointersToRelocatedCells@819; GCRuntime::clearRelocatedArenas@860; CanProtectArenas@909; ShouldProtectRelocatedArenas@915; GCRuntime::protectOrReleaseRelocatedArenas@922; GCRuntime::protectAndHoldArenas@931; GCRuntime::unprotectHeldRelocatedArenas@946; GCRuntime::releaseHeldRelocatedArenas@953; GCRuntime::releaseRelocatedArenas@970
+Dependencies: mozilla/Maybe.h@9; debugger/DebugAPI.h@11; gc/ArenaList.h@12; gc/GCInternals.h@13; gc/GCLock.h@14; gc/ParallelWork.h@15; gc/Zone.h@16; jit/JitCode.h@17; jit/JitRuntime.h@18; jit/JitZone.h@19; js/GCAPI.h@20; vm/HelperThreads.h@21; vm/Realm.h@22; wasm/WasmGcObject.h@23; gc/Heap-inl.h@25; gc/Marking-inl.h@26; gc/PrivateIterators-inl.h@27; gc/StableCellHasher-inl.h@28; gc/TraceMethods-inl.h@29; vm/GeckoProfiler-inl.h@30
+
+`js/src/gc/FinalizationObservers.cpp` | `027371b5217db133c71b9571cbe0a7b6ee7d37be` | 24438 bytes | source | UTF-8 | mode 100644
+Declarations: GetWeakTargetZone@25; CheckTargetValue@29; ObserverListPtr::fromValue@36; ObserverListPtr@42; ObserverListPtr@45; value@48; ObserverListPtr::ObserverListPtr@52; ObserverListPtr::map@55; ObserverListPtr::isElement@63; ObserverListPtr::kind@65; ObserverListPtr::ptr@70; ObserverListPtr::asElement@75; ObserverListPtr::asList@80; ObserverListPtr::getNext@85; map@86; ObserverListPtr::getPrev@89; map@90; ObserverListPtr::setNext@93; map@94; ObserverListPtr::setPrev@98; map@99; ObserverList@104; end@112; done@116; get@118; next@123; ObserverList::ObserverList@133; ObserverList::~ObserverList@135; ObserverList::ObserverList@137; ObserverList::makeEmpty@167; ObserverList::isEmpty@173; ObserverList::getFirst@179; ObserverList::iter@184; ObserverList::insertFront@186; LinkElements@201; ObserverList::append@206; ObserverList::setNext@220; ObserverList::setPrev@222; ObserverListObject::isInList@229; ObserverListObject::objectMoved@236; ObserverListObject::objectMovedFrom@242; ObserverListObject::unlink@261; ObserverListObject::getNext@285; ObserverListObject::getPrev@290; ObserverListObject::setNext@295; ObserverListObject::setPrev@299; registries@304; FinalizationObservers::~FinalizationObservers@306; FinalizationObservers::clearRecords@361; GCRuntime::traceWeakFinalizationObserverEdges@376; FinalizationObservers::traceWeakEdges@384; FinalizationObservers::traceWeakWeakRefEdges@573; FinalizationObservers::isTarget@647; GCRuntime::isFinalizationObserverTarget@652; GCRuntime::clearWeakRefTargets@754
+Dependencies: gc/FinalizationObservers.h@9; builtin/FinalizationRegistryObject.h@11; builtin/WeakRefObject.h@12; gc/GCRuntime.h@13; gc/PublicIterators.h@14; gc/Zone.h@15; vm/JSContext.h@16; gc/WeakMap-inl.h@18; vm/JSObject-inl.h@19; vm/NativeObject-inl.h@20
+
+## Validation and limits
+
+Every listed blob was read from the pinned Git tree and its Git SHA-1 was recomputed. Extraction is structural only. Read implementations, callers, build conditions, and tests before making a behavior claim. Runtime behavior and historical reasons remain unverified. Reproduce a file with `git show 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b:path` in the corresponding source clone. The full study coverage and navigation note records aggregate results.
+
+## Retrieval correction
+
+This copy preserves the source map in [d7a6ea4a-643e-47c6-8cb4-772204c8a448.md](d7a6ea4a-643e-47c6-8cb4-772204c8a448.md). The original was imported and committed by concurrent console maintenance during this study. Its full path metadata could exceed the console search budget. This copy uses component scope metadata while keeping every file path in the body. It adds no independent behavior evidence. Original record: `ac76bf140d4244d5241809f4be03c4427257195ad6c9f9325f568792c1c7343c`.

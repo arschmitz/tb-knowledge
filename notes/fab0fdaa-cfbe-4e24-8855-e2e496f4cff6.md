@@ -1,0 +1,2049 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["browser"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013","portableCopies":["e996a5aae8fc6f7b3268f34655dfdeab44bfdfc6b7841f3c329128b9a9d608b6"],"sourceAt":"2026-10-13T04:17:22.071Z","correctionOf":"notes/3bb5e8a8-7fcb-4eba-8103-b942b222bd02.md"}} -->
+# firefox/browser JavaScript function map 56
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tab_splitview_footer.js
+
+Blob: `290cde9178088ec153be4233eca1cadbd6803c66`. Role: test-path,source. Parse: module.
+
+- (anonymous) @11-15; FunctionExpression; parameters=0; async=true; generator=false
+- setupSplitView @17-48; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @24-25; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @36-36; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-43; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- activateCommand @50-65; FunctionDeclaration; parameters=2; async=true; generator=false
+- test_displayed_over_inactive_panel @67-114; FunctionExpression; parameters=0; async=true; generator=false
+- test_security_warning @116-173; FunctionExpression; parameters=0; async=true; generator=false
+- test_menu_separate_tabs @175-192; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @186-186; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_menu_reverse_tabs @194-215; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @197-198; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @206-206; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @211-211; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_menu_close_tabs @217-229; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @225-225; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tab_splitview_keyboard_focus.js
+
+Blob: `b6c4830b0443bc575f64485f47840d91c7faa249`. Role: test-path,source. Parse: module.
+
+- synthesizeKeyToChangeKeyboardFocus @11-17; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @12-14; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- synthesizeKeyForKeyboardMovement @26-35; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @27-32; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_SplitViewKeyboardFocus @37-95; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tab_splitview_resize.js
+
+Blob: `e7cdbb04e0bb1aa066f2a08726a87ac92c56e0f5`. Role: test-path,source. Parse: module.
+
+- (anonymous) @6-8; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- waitForSplitterMoved @10-17; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @15-15; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- dragSplitter @19-27; FunctionDeclaration; parameters=2; async=true; generator=false
+- test_resize_split_view_panels @29-101; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @41-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @46-46; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @86-86; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @95-95; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_resize_split_view_panels_exceeds_max_width @103-123; FunctionExpression; parameters=0; async=true; generator=false
+- test_resize_non_contiguous_tabs @125-223; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @144-144; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @150-150; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @187-187; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tab_splitview_splitter_keyboard.js
+
+Blob: `632f195e07489ee7a8f2461c5139a62f3979dec1`. Role: test-path,source. Parse: module.
+
+- (anonymous) @3-4; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_SplitterKeyboardA11Y @13-155; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @52-52; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @88-88; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @119-121; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @134-134; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @147-150; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tab_splitview_splitter_keyboard_boundary.js
+
+Blob: `6f3da64c68d11498b03df8d99aa26094b11af49d`. Role: test-path,source. Parse: module.
+
+- (anonymous) @7-10; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- moveToBoundary @20-34; FunctionDeclaration; parameters=3; async=true; generator=false
+- setupSplitView @39-59; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @56-56; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- check_SplitterKeyboard_RightBoundary @61-97; FunctionDeclaration; parameters=1; async=true; generator=false
+- check_SplitterKeyboard_LeftBoundary @99-135; FunctionDeclaration; parameters=1; async=true; generator=false
+- test_SplitterKeyboard_RightBoundary_LTR @137-141; FunctionExpression; parameters=0; async=true; generator=false
+- test_SplitterKeyboard_RightBoundary_RTL @143-149; FunctionExpression; parameters=0; async=true; generator=false
+- test_SplitterKeyboard_LeftBoundary_LTR @151-155; FunctionExpression; parameters=0; async=true; generator=false
+- test_SplitterKeyboard_LeftBoundary_RTL @157-163; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tab_splitview_tab_height.js
+
+Blob: `5202aa3a4c7aa0bacda4b2ccac8863c85b1d0d64`. Role: test-path,source. Parse: module.
+
+- getTabstripHeight @17-20; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @18-18; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- setDensity @22-26; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @25-25; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- checkHeightAcrossSplitView @37-79; FunctionDeclaration; parameters=4; async=true; generator=false
+- (anonymous) @62-70; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @65-65; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- setup_createTabs @81-101; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @93-100; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- run_test_with_density @103-134; FunctionDeclaration; parameters=1; async=true; generator=false
+- test_splitview_preserves_tabstrip_height_normal @136-139; FunctionExpression; parameters=0; async=true; generator=false
+- test_splitview_preserves_tabstrip_height_touch @141-144; FunctionExpression; parameters=0; async=true; generator=false
+- test_splitview_preserves_tabstrip_height_compact @146-149; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tab_splitview_tab_order.js
+
+Blob: `b365b210d27ba72efbfc7eb5d345e48ea21fa1b4`. Role: test-path,source. Parse: module.
+
+- (anonymous) @3-6; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- check_SplitViewTabOrder @13-54; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @22-52; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- test_SplitViewTabOrder_LTR @56-58; FunctionExpression; parameters=0; async=true; generator=false
+- test_SplitViewTabOrder_RTL @60-64; FunctionExpression; parameters=0; async=true; generator=false
+- assertContentActiveElement @66-74; FunctionDeclaration; parameters=3; async=true; generator=false
+- (anonymous) @67-73; ArrowFunctionExpression; parameters=2; async=true; generator=false
+- (anonymous) @69-70; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_SplitViewContentFocusableTabOrder @76-169; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @90-90; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @91-91; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @98-166; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @143-145; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tab_splitview_telemetry.js
+
+Blob: `a9706a0c4ec0710fab05f413333f2c6c7e4373dc`. Role: test-path,source. Parse: module.
+
+- resetTelemetry @6-9; FunctionDeclaration; parameters=0; async=true; generator=false
+- tabIsInSplitView @11-19; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @17-17; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- navigateTab @21-24; FunctionDeclaration; parameters=2; async=false; generator=false
+- openSplitViewIconMenu @26-38; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @31-31; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- openSplitViewFooterMenu @40-49; FunctionDeclaration; parameters=1; async=true; generator=false
+- closeSplitViewMenu @51-55; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @57-61; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @63-65; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- test_splitview_uri_count_telemetry @67-190; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @76-82; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- test_splitview_start_event_menu_open @192-257; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @220-220; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_splitview_start_event_menu_add @259-310; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @274-274; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @281-281; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @289-289; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- test_splitview_start_event_tabgroup_main @312-370; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @340-340; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_splitview_start_event_tabgroup_other @372-430; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @400-400; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_splitview_start_event_tabgroup_both_same @432-491; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @461-461; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_splitview_start_event_tabgroup_both_different @493-556; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @523-523; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_splitview_end_event_menu_separate @558-620; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @579-579; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @598-598; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_splitview_end_event_icon_separate @622-680; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @643-643; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @664-664; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_splitview_end_event_footer_separate @682-738; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @703-703; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @722-722; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_splitview_end_event_icon_close @740-795; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @761-761; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_splitview_end_event_footer_close @797-851; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @818-818; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_splitview_end_event_tab_close @853-884; FunctionExpression; parameters=0; async=true; generator=false
+- test_splitview_reverse_event_icon @886-948; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @907-907; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @932-932; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_splitview_reverse_event_footer @950-1011; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @971-971; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @995-995; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_splitview_resize_event @1013-1079; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @1035-1035; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @1040-1040; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @1055-1055; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @1061-1061; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tab_tooltips.js
+
+Blob: `339c6ced6efe03a2df6323a4cd15eed84a428051`. Role: test-path,source. Parse: module.
+
+- openTooltip @7-22; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @12-12; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- closeTooltip @24-35; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @29-29; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @37-44; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @48-103; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @106-122; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @126-162; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tabfocus.js
+
+Blob: `45adcba94edd290b8d778c3651795822ada7751c`. Role: test-path,source. Parse: module.
+
+- EventStore @14-18; FunctionDeclaration; parameters=0; async=false; generator=false
+- push @21-31; FunctionExpression; parameters=1; async=false; generator=false
+- getFocusedElementForBrowser @48-88; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @52-86; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- focusInChild @90-116; FunctionDeclaration; parameters=1; async=false; generator=false
+- getWindowDocId @91-93; FunctionDeclaration; parameters=1; async=false; generator=false
+- focusElementInChild @118-123; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @120-122; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @125-561; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @190-190; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @191-191; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @248-248; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @266-266; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @298-298; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @320-320; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @334-342; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @337-339; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @359-359; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @371-371; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @391-391; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @423-423; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @445-445; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @477-477; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @516-516; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @531-538; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @536-536; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- _browser_tabfocus_test_eventOccured @563-601; FunctionDeclaration; parameters=1; async=false; generator=false
+- getWindowDocId @564-578; FunctionDeclaration; parameters=1; async=false; generator=false
+- getId @603-617; FunctionDeclaration; parameters=1; async=false; generator=false
+- compareFocusResults @619-709; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @629-633; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @636-640; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- expectFocusShiftAfterTabSwitch @711-729; FunctionDeclaration; parameters=5; async=true; generator=false
+- (anonymous) @720-722; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- expectFocusShift @731-823; FunctionDeclaration; parameters=5; async=true; generator=false
+- (anonymous) @819-822; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tabkeynavigation.js
+
+Blob: `24db89ea954349c519b4514b4cfd09c33a8b2f0f`. Role: test-path,source. Parse: module.
+
+- test @4-237; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tabs_close_beforeunload.js
+
+Blob: `0534250970a5b19618704ba9af6118c75322de47`. Role: test-path,source. Parse: module.
+
+- (anonymous) @13-69; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @21-44; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- tabOpenListener @25-40; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @46-48; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tabs_isActive.js
+
+Blob: `4902879fd96c72773be2fd4729bb451d859fbcdf`. Role: test-path,source. Parse: module.
+
+- promiseNewTabSwitched @10-20; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @11-19; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @14-16; FunctionExpression; parameters=0; async=false; generator=false
+- getParentTabState @22-24; FunctionDeclaration; parameters=1; async=false; generator=false
+- getChildTabState @26-32; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @30-30; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- checkState @34-37; FunctionDeclaration; parameters=4; async=false; generator=false
+- waitForMs @39-46; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @40-45; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- done @42-44; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @48-144; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @146-235; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tabs_openURI_after_current.js
+
+Blob: `b12b4e233fe547d241414ac2864b13f555d3dbde`. Role: test-path,source. Parse: module.
+
+- resetTelemetry @20-23; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- openExternalLink @30-40; FunctionDeclaration; parameters=0; async=true; generator=false
+- test_browser_tabs_openURI_after_current @42-156; FunctionExpression; parameters=0; async=true; generator=false
+- test_browser_tabs_nimbus_external_link_handling @158-207; FunctionExpression; parameters=0; async=true; generator=false
+- test_browser_tabs_openURI_external_telemetry @216-248; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @226-226; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_browser_tabs_openURI_external_telemetry_end_of_tab_strip @251-253; FunctionExpression; parameters=0; async=false; generator=false
+- test_browser_tabs_openURI_external_telemetry_next_to_active_tab @257-262; FunctionExpression; parameters=0; async=false; generator=false
+- Module resource://testing-common/FirefoxViewTestUtils.sys.mjs @10; ChromeUtils-import-literal
+- Module resource://testing-common/NimbusTestUtils.sys.mjs @14; ChromeUtils-import-literal
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tabs_owner.js
+
+Blob: `780edbb1b165d844c271c2e0d45989666d844e0e`. Role: test-path,source. Parse: module.
+
+- test @1-40; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tabs_space_consistent.js
+
+Blob: `61be99b9b3f370bef01b923f28494cb7fe070e1f`. Role: test-path,source. Parse: module.
+
+- getTabsTop @4-6; FunctionDeclaration; parameters=1; async=false; generator=false
+- waitForWindowLayout @8-10; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @9-9; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_tabs_space_consistent_normal_vs_private @12-96; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tabswitch_contextmenu.js
+
+Blob: `bd671a86c67ad9fe942a16175758ae06f2dfa542`. Role: test-path,source. Parse: module.
+
+- cant_tabswitch_mid_contextmenu @9-45; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tabswitch_discard.js
+
+Blob: `f0b9f0b7951836decb02dea19b62f15e2b9fcfae`. Role: test-path,source. Parse: module.
+
+- test_discard_during_tab_switch @11-49; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @17-17; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tabswitch_remoteness_change.js
+
+Blob: `abb056e0a4244464e5e421491270ec8dcbe0bfc8`. Role: test-path,source. Parse: module.
+
+- (anonymous) @13-17; FunctionExpression; parameters=0; async=true; generator=false
+- waitForTabSwitchDone @21-25; FunctionDeclaration; parameters=0; async=true; generator=false
+- remotenessChangeWhileWarming @29-84; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @78-78; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- remotenessChangeWhileUnloading @88-134; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @106-106; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- remotenessChangeFromNonRemoteInBackground @138-161; FunctionExpression; parameters=0; async=true; generator=false
+- remotenessChangeFromNonRemoteBeforeLayout @165-186; FunctionExpression; parameters=0; async=true; generator=false
+- remotenessChangeCarriesPriorityHintAndPreservation @191-226; FunctionExpression; parameters=0; async=true; generator=false
+- remotenessChangeOfSelectedTab @232-291; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @237-237; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- log @256-256; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tabswitch_remoteness_change_bfcache.js
+
+Blob: `d7d3442964d95e3521ff65768d2b9a0236da0764`. Role: test-path,source. Parse: module.
+
+- (anonymous) @15-17; FunctionExpression; parameters=0; async=true; generator=false
+- watchLayerEvents @19-25; FunctionDeclaration; parameters=1; async=false; generator=false
+- log @21-21; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- waitForTabSwitchDone @29-33; FunctionDeclaration; parameters=0; async=true; generator=false
+- settle @35-42; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @38-38; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- waitForDark @44-50; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @47-47; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- installPersistedMarker @52-58; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @53-57; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @54-56; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- checkPersisted @60-71; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @62-67; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @66-66; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- restoreFromParent @75-79; FunctionDeclaration; parameters=1; async=false; generator=false
+- openTabWithDarkCachedPage @84-104; FunctionDeclaration; parameters=0; async=true; generator=false
+- bfcacheSwap @106-137; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @107-136; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- bfcacheRestoreWhileLoading @141-186; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @153-155; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @154-154; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @174-174; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- bfcacheRestoreWhileUnloading @191-230; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @205-205; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- bfcacheRestoreIntoLoadedTab @235-257; FunctionExpression; parameters=0; async=true; generator=false
+- bfcacheRestoreInBackground @262-298; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @285-285; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tabswitch_select.js
+
+Blob: `b22a75c79c9b0384559a88f27801bcfa696f7d8f`. Role: test-path,source. Parse: module.
+
+- (anonymous) @7-63; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @36-36; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @55-55; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tabswitch_updatecommands.js
+
+Blob: `34d9a859e80b4ea7d72af2ba33cc9655c3b4818c`. Role: test-path,source. Parse: module.
+
+- (anonymous) @5-9; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @11-34; FunctionExpression; parameters=0; async=true; generator=false
+- countUpdates @17-19; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_tabswitch_window_focus.js
+
+Blob: `669760877881aa28dc11c958ade67aac30e969c6`. Role: test-path,source. Parse: module.
+
+- (anonymous) @8-41; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @31-35; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @32-34; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @43-85; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @72-80; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @76-79; FunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_testOpenNewRemoteTabsFromNonRemoteBrowsers.js
+
+Blob: `e25e9368f7f21265ed0fa4cfc8eea5b90f788ed2`. Role: test-path,source. Parse: module.
+
+- insertAndClickAnchor @10-19; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @11-18; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- prepareNonRemoteBrowser @27-30; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @32-34; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- checkNewTabBecomesRemote @43-66; FunctionDeclaration; parameters=1; async=true; generator=false
+- checkNewWindowBecomesRemote @76-105; FunctionDeclaration; parameters=1; async=true; generator=false
+- test_new_tab @111-118; FunctionExpression; parameters=0; async=true; generator=false
+- test_new_window @125-139; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_undo_close_tabs.js
+
+Blob: `51a7864fd537ff44d87e4be267e7ae43ea4df2b1`. Role: test-path,source. Parse: module.
+
+- setPref @6-10; FunctionExpression; parameters=0; async=true; generator=false
+- withMultiSelectedTabs @12-72; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @33-33; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @44-44; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @58-68; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @60-65; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- withBothGroupsAndTab @74-134; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @91-91; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @113-113; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @127-127; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- withCloseTabsToTheRight @136-177; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @145-145; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @156-156; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @163-173; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @165-170; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_undo_close_tabs_at_start.js
+
+Blob: `04e5541d29f5eccb0da5a007a7415ca9f77184c6`. Role: test-path,source. Parse: module.
+
+- setPref @6-10; FunctionExpression; parameters=0; async=true; generator=false
+- replaceEmptyTabs @12-74; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @39-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @55-55; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_url_prefilled_on_startup.js
+
+Blob: `a67f532410ab89ca8d33a682a6c44b130d31199b`. Role: test-path,source. Parse: module.
+
+- (anonymous) @21-68; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @38-38; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_viewSourceInTabOnViewSource.js
+
+Blob: `77f4c328e4392e1059e40d6f46e230bd73c69b36`. Role: test-path,source. Parse: module.
+
+- wait_while_tab_is_busy @1-13; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @2-12; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- onStateChange @4-9; FunctionExpression; parameters=3; async=false; generator=false
+- with_new_tab_opened @17-27; FunctionExpression; parameters=2; async=true; generator=false
+- test_regular_page @29-44; FunctionExpression; parameters=0; async=true; generator=false
+- test_expect_view_source_enabled @30-34; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_view_source_page @46-60; FunctionExpression; parameters=0; async=true; generator=false
+- test_expect_view_source_disabled @47-51; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_viewsource_of_data_URI_in_file_process.js
+
+Blob: `e1bbd7bdee488a647647af8f0455fa8d4ac30c16`. Role: test-path,source. Parse: module.
+
+- (anonymous) @6-50; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @12-49; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @13-15; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @26-28; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @35-37; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @41-47; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_visibleTabs.js
+
+Blob: `226605ea75853ec5621dd244b73a13d2fb40a9a9`. Role: test-path,source. Parse: module.
+
+- (anonymous) @7-177; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_visibleTabs_bookmarkAllPages.js
+
+Blob: `93d4c19d54ccd290f77b7830d8f4237b9c8bd1b2`. Role: test-path,source. Parse: module.
+
+- test @5-37; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @13-36; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @19-19; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_visibleTabs_bookmarkAllTabs.js
+
+Blob: `83393124e7c8685e55733bff53027c7bb43d0de5`. Role: test-path,source. Parse: module.
+
+- test @5-59; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @21-56; FunctionExpression; parameters=0; async=false; generator=false
+- BookmarkTabHidden @61-64; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_visibleTabs_contextMenu.js
+
+Blob: `b6883c2edfde5eede69e8b2b21d56786578cdf14`. Role: test-path,source. Parse: module.
+
+- test @5-156; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_visibleTabs_tabPreview.js
+
+Blob: `12cfae5474775ddafa6e614066c581eef1d1b160`. Role: test-path,source. Parse: module.
+
+- test @5-44; FunctionExpression; parameters=0; async=true; generator=false
+- pressCtrlTab @46-48; FunctionDeclaration; parameters=1; async=false; generator=false
+- releaseCtrl @50-52; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/browser_window_open_modifiers.js
+
+Blob: `47bd1269ea8ac23b84acf9b6c1eb857a25ac2b43`. Role: test-path,source. Parse: module.
+
+- testMouse @30-56; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @31-55; FunctionExpression; parameters=1; async=true; generator=false
+- testAlt @58-84; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @60-83; FunctionExpression; parameters=1; async=true; generator=false
+- testMiddleMouse @86-112; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @88-111; FunctionExpression; parameters=1; async=true; generator=false
+- testBackgroundPrefTests @114-128; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @119-125; FunctionExpression; parameters=1; async=true; generator=false
+- testSpaceKey @130-149; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @131-148; FunctionExpression; parameters=1; async=true; generator=false
+- testEnterKey @151-168; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @152-167; FunctionExpression; parameters=1; async=true; generator=false
+- testUserDefinedShortcut @170-187; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @171-186; FunctionExpression; parameters=1; async=true; generator=false
+- runWindowOpenTests @189-278; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @210-213; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @215-219; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @217-217; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @223-225; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/common_link_in_tab_title_and_url_prefilled.js
+
+Blob: `fb79a44501c1f0e24db0331dbc2d8604c174123f`. Role: test-path,source. Parse: module.
+
+- doTestInSameWindow @35-89; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @43-88; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @72-72; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @79-80; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @83-83; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- doTestWithNewWindow @91-145; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @94-94; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @100-142; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @116-118; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @120-127; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @130-130; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- doSessionRestoreTest @147-200; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @154-199; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @167-169; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @189-190; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @193-193; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- openLink @202-239; FunctionDeclaration; parameters=4; async=true; generator=false
+- synthesizeMouse @241-251; FunctionDeclaration; parameters=3; async=true; generator=false
+- (anonymous) @245-249; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- waitForNewTabWithLoadRequest @253-264; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @254-262; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- onStateChange @256-261; FunctionExpression; parameters=4; async=false; generator=false
+- Module resource://testing-common/Sinon.sys.mjs @5; ChromeUtils-import-literal
+
+### browser/components/tabbrowser/test/browser/tabs/head.js
+
+Blob: `c6b01118f8899b7567b1f57d39f38177f35b9281`. Role: test-path,source. Parse: module.
+
+- expectFocusAfterKey @5-14; FunctionDeclaration; parameters=3; async=true; generator=false
+- updateTabContextMenu @16-30; FunctionDeclaration; parameters=1; async=false; generator=false
+- openTabContextMenu @34-48; FunctionDeclaration; parameters=1; async=true; generator=false
+- closeTabContextMenu @50-56; FunctionDeclaration; parameters=1; async=true; generator=false
+- triggerClickOn @58-68; FunctionDeclaration; parameters=2; async=false; generator=false
+- triggerMiddleClickOn @70-74; FunctionDeclaration; parameters=1; async=false; generator=false
+- addTab @76-78; FunctionDeclaration; parameters=2; async=true; generator=false
+- addTabTo @80-90; FunctionDeclaration; parameters=3; async=true; generator=false
+- addMediaTab @92-99; FunctionDeclaration; parameters=0; async=true; generator=false
+- muted @101-103; FunctionDeclaration; parameters=1; async=false; generator=false
+- activeMediaBlocked @105-107; FunctionDeclaration; parameters=1; async=false; generator=false
+- toggleMuteAudio @109-113; FunctionDeclaration; parameters=2; async=true; generator=false
+- pressIcon @115-117; FunctionDeclaration; parameters=1; async=true; generator=false
+- wait_for_tab_playing_event @119-140; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @124-139; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- wait_for_tab_media_blocked_event @142-172; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @152-171; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- is_audio_playing @174-181; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @176-179; FunctionExpression; parameters=0; async=true; generator=false
+- play @183-201; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @185-188; FunctionExpression; parameters=0; async=true; generator=false
+- disable_non_test_mouse @203-206; FunctionDeclaration; parameters=1; async=false; generator=false
+- get_wait_for_mute_promise @212-243; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @213-242; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- test_mute_tab @245-276; FunctionDeclaration; parameters=3; async=true; generator=false
+- (anonymous) @256-256; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- dragAndDrop @278-322; FunctionDeclaration; parameters=6; async=true; generator=false
+- (anonymous) @313-315; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @318-318; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- getUrl @324-326; FunctionDeclaration; parameters=1; async=false; generator=false
+- checkBrowserRemoteType @342-362; FunctionDeclaration; parameters=3; async=false; generator=false
+- test_url_for_process_types @364-417; FunctionDeclaration; parameters=1; async=false; generator=false
+- fileURL @422-426; FunctionDeclaration; parameters=1; async=false; generator=false
+- httpURL @431-437; FunctionDeclaration; parameters=2; async=false; generator=false
+- loadTestSubscript @439-441; FunctionDeclaration; parameters=1; async=false; generator=false
+- removeTabGroup @450-452; FunctionDeclaration; parameters=1; async=true; generator=false
+- getContextMenu @459-475; FunctionDeclaration; parameters=2; async=true; generator=false
+- closeContextMenu @481-485; FunctionDeclaration; parameters=1; async=true; generator=false
+- withSplitView @496-510; FunctionDeclaration; parameters=3; async=true; generator=false
+- (anonymous) @505-505; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Module resource://testing-common/TabGroupTestUtils.sys.mjs @1; ChromeUtils-import-literal
+
+### browser/components/tabbrowser/test/browser/tabs/helper_origin_attrs_testing.js
+
+Blob: `dcf77270244a80d20257f7a532a58e7d5497b831`. Role: test-path,source. Parse: module.
+
+- initXulFrameLoaderListenerInfo @11-14; FunctionDeclaration; parameters=0; async=false; generator=false
+- handleEvent @16-24; FunctionDeclaration; parameters=1; async=false; generator=false
+- openURIInRegularTab @26-45; FunctionDeclaration; parameters=2; async=true; generator=false
+- openURIInContainer @47-78; FunctionDeclaration; parameters=3; async=true; generator=false
+- openURIInPrivateTab @80-125; FunctionDeclaration; parameters=1; async=true; generator=false
+- initXulFrameLoaderCreatedCounter @127-129; FunctionDeclaration; parameters=1; async=false; generator=false
+- getExpectedRemoteTypes @134-165; FunctionDeclaration; parameters=2; async=false; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/request-timeout.sjs
+
+Blob: `00e95ca4c06afe22a5d4c7a783a19dac2ef241e6`. Role: test-path,data-or-other. Parse: module.
+
+- handleRequest @6-8; FunctionDeclaration; parameters=2; async=true; generator=false
+
+### browser/components/tabbrowser/test/browser/tabs/startup-delayed-redirect.sjs
+
+Blob: `e2653784d829a48d7f812fee6e6f9e9ebb437533`. Role: test-path,data-or-other. Parse: module.
+
+- handleRequest @7-15; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @9-9; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Module resource://gre/modules/Timer.sys.mjs @4; ChromeUtils-import-literal
+
+### browser/components/tabbrowser/test/browser/tabs/wait-a-bit.sjs
+
+Blob: `80cd891d3c66ede3f2bb49815a830001d127e2a3`. Role: test-path,data-or-other. Parse: module.
+
+- handleRequest @10-22; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @13-13; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Module resource://gre/modules/Timer.sys.mjs @6; ChromeUtils-import-literal
+
+### browser/components/tabbrowser/test/xpcshell/smarttabgrouping/test_average_similarity.js
+
+Blob: `a141798b1b78d77f59a3ffa78dffe8aca1ce9794`. Role: test-path,source. Parse: module.
+
+- test_average_similarity_single_candidate_single_anchor @8-22; FunctionExpression; parameters=0; async=false; generator=false
+- test_average_similarity_single_candidate_multiple_anchor @24-42; FunctionExpression; parameters=0; async=false; generator=false
+- test_average_similarity_multiple_candidate_single_anchor @44-58; FunctionExpression; parameters=0; async=false; generator=false
+- test_average_similarity_multiple_candidates_multiple_anchors @61-87; FunctionExpression; parameters=0; async=false; generator=false
+- test_average_similarity_empty_candidates @90-106; FunctionExpression; parameters=0; async=false; generator=false
+- test_average_similarity_multiple_candidate_empty_anchors @108-125; FunctionExpression; parameters=0; async=false; generator=false
+- Module moz-src:///browser/components/tabbrowser/SmartTabGrouping.sys.mjs @4; ChromeUtils-import-literal
+
+### browser/components/tabbrowser/test/xpcshell/smarttabgrouping/test_calculate_probability.js
+
+Blob: `467387be4d0757f6846b966c5adfca088f334032`. Role: test-path,source. Parse: module.
+
+- test_calculate_probability_zero_inputs @8-31; FunctionExpression; parameters=0; async=false; generator=false
+- test_calculate_probability_both_positive @33-56; FunctionExpression; parameters=0; async=false; generator=false
+- test_calculate_probability_mixed_values @58-81; FunctionExpression; parameters=0; async=false; generator=false
+- test_calculate_probability_zero_weights @83-106; FunctionExpression; parameters=0; async=false; generator=false
+- test_calculate_probability_extreme_positive @108-131; FunctionExpression; parameters=0; async=false; generator=false
+- test_calculate_probability_extreme_negative @133-156; FunctionExpression; parameters=0; async=false; generator=false
+- test_calculate_probability_negative_intercept @158-181; FunctionExpression; parameters=0; async=false; generator=false
+- Module moz-src:///browser/components/tabbrowser/SmartTabGrouping.sys.mjs @4; ChromeUtils-import-literal
+
+### browser/components/tabbrowser/test/xpcshell/smarttabgrouping/test_logistic_regression_utils.js
+
+Blob: `2276aec03d4776de6184edc43c8844d23157efc6`. Role: test-path,source. Parse: module.
+
+- test_logistic_regression_get_base_domain @8-43; FunctionExpression; parameters=0; async=false; generator=false
+- test_logistic_regression_domain_match_fractions @45-91; FunctionExpression; parameters=0; async=false; generator=false
+- test_logistic_regression_get_max_similarity @93-123; FunctionExpression; parameters=0; async=false; generator=false
+- test_logistic_regression_sigmoid_and_calculate_probability @125-164; FunctionExpression; parameters=0; async=false; generator=false
+- test_logistic_regression_calculate_all_probabilities_with_group @167-194; FunctionExpression; parameters=0; async=false; generator=false
+- test_logistic_regression_calculate_all_probabilities_without_group @198-224; FunctionExpression; parameters=0; async=false; generator=false
+- Module moz-src:///browser/components/tabbrowser/SmartTabGrouping.sys.mjs @4; ChromeUtils-import-literal
+
+### browser/components/tabbrowser/test/xpcshell/smarttabgrouping/test_settings_utils.js
+
+Blob: `ce62e6d16971cd5dc3bf8097dd555694b0106d71`. Role: test-path,source. Parse: module.
+
+- clearSTGPrefs @23-29; FunctionDeclaration; parameters=0; async=false; generator=false
+- setUserBoolPrefDifferentFromDefault @32-35; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @37-40; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_id_is_feature_id @42-48; FunctionExpression; parameters=0; async=false; generator=false
+- test_contract_values @50-59; FunctionExpression; parameters=0; async=false; generator=false
+- test_isEnabled_requires_all_prefs @61-97; FunctionExpression; parameters=0; async=false; generator=false
+- test_enable_sets_all_prefs_true @99-129; FunctionExpression; parameters=0; async=true; generator=false
+- test_reset_sets_available_state_and_uninstalls_models @132-198; FunctionExpression; parameters=0; async=true; generator=false
+- test_isBlocked_reflects_enabled_and_userEnabled @201-224; FunctionExpression; parameters=0; async=false; generator=false
+- test_disable_sets_prefs_false_and_uninstalls_models @226-287; FunctionExpression; parameters=0; async=true; generator=false
+- Module moz-src:///browser/components/tabbrowser/SmartTabGrouping.sys.mjs @7; ChromeUtils-import-literal
+- Module resource://testing-common/Sinon.sys.mjs @11; ChromeUtils-import-literal
+- Module chrome://global/content/ml/Utils.sys.mjs @15; ChromeUtils-import-literal
+
+### browser/components/tabbrowser/test/xpcshell/smarttabgrouping/test_tabs_to_process.js
+
+Blob: `f81066f58ef9839c6acac946561ca06ca83681a1`. Role: test-path,source. Parse: module.
+
+- makeTab @9-18; FunctionDeclaration; parameters=2; async=false; generator=false
+- test_tabs_to_process_includes_group_first_and_respects_limit @21-54; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @36-36; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @47-47; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- test_tabs_to_process_limits_anchor_tabs_to_max_nn_grouped_tabs @58-78; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @71-71; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- test_tabs_to_process_deduplicates_group_tabs_in_all_tabs @81-101; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @94-94; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- test_tabs_to_process_more_non_group_tabs_than_limit @103-129; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @122-122; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- test_tabs_to_process_with_no_group_tabs @131-150; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @143-143; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- test_tabs_to_process_uses_default_max_limit @152-178; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @165-165; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- test_tabs_to_process_all_tabs_filtered_out @180-201; FunctionExpression; parameters=0; async=false; generator=false
+- test_tabs_to_process_group_tabs_not_in_allTabs @203-222; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @215-215; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Module moz-src:///browser/components/tabbrowser/SmartTabGrouping.sys.mjs @4; ChromeUtils-import-literal
+
+### browser/components/tabbrowser/test/xpcshell/smarttabgrouping/test_text_preprocessing.js
+
+Blob: `c2b00c95bfc5474d0942deba8e9076c80b2aded1`. Role: test-path,source. Parse: module.
+
+- test_text_processing_basic_cases @8-45; FunctionExpression; parameters=0; async=false; generator=false
+- test_text_processing_edge_cases @47-90; FunctionExpression; parameters=0; async=false; generator=false
+- test_generateClusters_preprocessesTitlesBeforeEmbedding @95-118; FunctionExpression; parameters=0; async=true; generator=false
+- manager._generateEmbeddings @100-103; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @102-102; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- Module moz-src:///browser/components/tabbrowser/SmartTabGrouping.sys.mjs @4; ChromeUtils-import-literal
+
+### browser/components/tabnotes/CanonicalURL.sys.mjs
+
+Blob: `1dea36335c675592fcfab6d41b09dd5897959133`. Role: source. Parse: module.
+
+- findCandidates @13-20; FunctionDeclaration; parameters=1; async=false; generator=false
+- pickCanonicalUrl @29-33; FunctionDeclaration; parameters=1; async=false; generator=false
+- getLinkRelCanonical @44-50; FunctionDeclaration; parameters=1; async=false; generator=false
+- getOpenGraphUrl @58-64; FunctionDeclaration; parameters=1; async=false; generator=false
+- getJSONLDUrl @75-90; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @79-85; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @86-86; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- getFallbackCanonicalUrl @96-98; FunctionDeclaration; parameters=1; async=false; generator=false
+- cleanNoncanonicalUrl @104-110; FunctionDeclaration; parameters=1; async=false; generator=false
+- parseUrl @117-126; FunctionDeclaration; parameters=2; async=false; generator=false
+
+### browser/components/tabnotes/CanonicalURLChild.sys.mjs
+
+Blob: `bbdcd475d3c55e843568460185903425ba2c902f`. Role: source. Parse: module.
+
+- handleEvent @23-40; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @37-37; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- receiveMessage @47-59; FunctionExpression; parameters=1; async=false; generator=false
+- discoverCanonicalUrl @64-74; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @68-68; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Class CanonicalURLChild @19-75
+
+### browser/components/tabnotes/CanonicalURLParent.sys.mjs
+
+Blob: `f890d787581a331b03c1d7e6a1c2ca0f004a46cc`. Role: source. Parse: module.
+
+- (anonymous) @7-14; FunctionExpression; parameters=0; async=false; generator=false
+- receiveMessage @26-69; FunctionExpression; parameters=1; async=false; generator=false
+- Class CanonicalURLParent @20-70
+
+### browser/components/tabnotes/TabNotes.sys.mjs
+
+Blob: `2ec545b3021e697ad46e77f5b6d874fd96769419`. Role: source. Parse: module.
+
+- connection @112-114; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @113-113; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- init @124-167; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @133-164; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- ?.shutdownBlocker @135-135; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @153-162; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- deinit @172-184; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @178-181; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- isEligible @190-195; FunctionExpression; parameters=1; async=false; generator=false
+- get @204-218; FunctionExpression; parameters=1; async=true; generator=false
+- set @235-288; FunctionExpression; parameters=3; async=true; generator=false
+- (anonymous) @251-287; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- delete @301-323; FunctionExpression; parameters=2; async=true; generator=false
+- has @333-336; FunctionExpression; parameters=1; async=true; generator=false
+- count @343-353; FunctionExpression; parameters=0; async=true; generator=false
+- reset @360-364; FunctionExpression; parameters=0; async=true; generator=false
+- sanitizeInput @372-374; FunctionExpression; parameters=1; async=false; generator=false
+- mapDbRowToRecord @382-389; FunctionExpression; parameters=1; async=false; generator=false
+- Class TabNotesStorage @77-390
+- Module resource://gre/modules/Sqlite.sys.mjs @7; ImportDeclaration
+
+### browser/components/tabnotes/TabNotesController.sys.mjs
+
+Blob: `667c767433b36c1e1279440476a4dd9de3b5ea4d`. Role: source. Parse: module.
+
+- (anonymous) @15-22; FunctionExpression; parameters=0; async=false; generator=false
+- browserFirstWindowReady @74-94; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @86-90; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- init @101-108; FunctionExpression; parameters=0; async=true; generator=false
+- browserWindowDelayedStartup @117-129; FunctionExpression; parameters=1; async=false; generator=false
+- initWindow @137-151; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @138-138; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @144-146; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- browserWindowUnload @159-164; FunctionExpression; parameters=1; async=false; generator=false
+- unloadWindow @172-176; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @173-173; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- browserQuitApplicationGranted @184-186; FunctionExpression; parameters=0; async=false; generator=false
+- deinit @194-200; FunctionExpression; parameters=0; async=true; generator=false
+- handleEvent @205-306; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @218-226; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @298-303; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- observe @317-381; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @328-353; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @354-356; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @368-375; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @376-378; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- onLocationChange @395-467; FunctionExpression; parameters=5; async=false; generator=false
+- resetTab @472-475; FunctionExpression; parameters=1; async=false; generator=false
+- Class TabNotesControllerClass @59-476
+- Module resource://gre/modules/XPCOMUtils.sys.mjs @6; ImportDeclaration
+
+### browser/components/tabnotes/test/browser/browser_tab_notes_adopt.js
+
+Blob: `2b364d6aedd9b34354ab9d6d4a4d46faa5b5ef4f`. Role: test-path,source. Parse: module.
+
+- (anonymous) @6-8; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- test_tab_notes_data_preserved_on_adoption @10-54; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/tabnotes/test/browser/browser_tab_notes_enable_disable.js
+
+Blob: `8c0271d446face955206ac84b095b11076e6e637`. Role: test-path,source. Parse: module.
+
+- constructor @27-32; FunctionExpression; parameters=0; async=false; generator=false
+- on @34-47; FunctionExpression; parameters=0; async=false; generator=false
+- off @49-62; FunctionExpression; parameters=0; async=false; generator=false
+- test_enable_disable @65-91; FunctionExpression; parameters=0; async=true; generator=false
+- Class PrefToggler @26-63
+
+### browser/components/tabnotes/test/browser/browser_tab_notes_history_pushstate.js
+
+Blob: `76ff9091e67b5f7cf51628708d2b44ca0a466811`. Role: test-path,source. Parse: module.
+
+- (anonymous) @6-6; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_history_pushstate @8-58; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @25-27; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @31-31; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @32-32; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @44-46; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @49-49; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @50-50; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/tabnotes/test/browser/browser_tab_notes_menu.js
+
+Blob: `5dfbd19a67cda01b8f2fe4ee07c57f45dd4d5b37`. Role: test-path,source. Parse: module.
+
+- (anonymous) @11-13; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- activateTabContextMenuItem @24-74; ArrowFunctionExpression; parameters=3; async=true; generator=false
+- (anonymous) @38-38; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @67-67; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- openTabNoteMenuByAddNote @80-86; FunctionDeclaration; parameters=1; async=true; generator=false
+- openTabNoteMenuByEditNote @92-98; FunctionDeclaration; parameters=1; async=true; generator=false
+- test_tabContextMenu_prefDisabled @100-121; FunctionExpression; parameters=0; async=true; generator=false
+- test_openTabNotePanelFromContextMenu @123-167; FunctionExpression; parameters=0; async=true; generator=false
+- test_dismissTabNotePanel @169-200; FunctionExpression; parameters=0; async=true; generator=false
+- test_saveTabNote @202-234; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @214-216; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_editTabNote @236-297; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @263-265; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @273-273; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_deleteTabNote @299-365; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @339-339; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_tabNoteOverflow @367-409; FunctionExpression; parameters=0; async=true; generator=false
+- test_whitespaceOnlyNoteNotSaved @411-446; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @423-423; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_enterKeyDoesNotSaveOverflowNote @448-477; FunctionExpression; parameters=0; async=true; generator=false
+- test_ineligibleTabsDisableMenus @479-590; FunctionExpression; parameters=0; async=true; generator=false
+- test_keyboardNavigationSaveCancel @592-635; FunctionExpression; parameters=0; async=true; generator=false
+- Module resource://gre/modules/Sqlite.sys.mjs @7; ChromeUtils-import-literal
+
+### browser/components/tabnotes/test/browser/browser_tab_notes_navigation.js
+
+Blob: `0bf351b8c313d085b596c641d7a6ecac031e9c8f`. Role: test-path,source. Parse: module.
+
+- (anonymous) @6-6; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- navigateAndReturn @15-45; FunctionDeclaration; parameters=5; async=true; generator=false
+- test_navigate @47-81; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/tabnotes/test/browser/browser_tab_notes_telemetry.js
+
+Blob: `d47422cf38547cbfec9ae88e2cb41c8cbfaa83ed`. Role: test-path,source. Parse: module.
+
+- (anonymous) @6-9; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @11-13; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @15-17; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- resetTelemetry @19-22; FunctionDeclaration; parameters=0; async=true; generator=false
+- test_tabNoteAddedTabContextMenu @28-71; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @36-36; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @54-54; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/tabnotes/test/browser/head.js
+
+Blob: `2d1a5cce14a7a5110562b96e6d309c1ac62b76ae`. Role: test-path,source. Parse: module.
+
+- addTab @15-19; FunctionDeclaration; parameters=1; async=true; generator=false
+- createNote @25-31; FunctionDeclaration; parameters=1; async=false; generator=false
+- getContextMenu @38-54; FunctionDeclaration; parameters=2; async=true; generator=false
+- closeContextMenu @60-64; FunctionDeclaration; parameters=1; async=true; generator=false
+- openPanel @72-78; FunctionDeclaration; parameters=2; async=true; generator=false
+- openTabNoteMenu @88-95; FunctionDeclaration; parameters=1; async=true; generator=false
+- closeTabNoteMenu @103-108; FunctionDeclaration; parameters=0; async=false; generator=false
+- tabNoteIndicatorAppears @114-120; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @118-118; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- tabNoteIndicatorDisappears @126-132; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @130-130; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- tabNoteDetermined @139-143; FunctionDeclaration; parameters=1; async=true; generator=false
+- tabNoteDeterminedFullPageLoad @153-166; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @160-163; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Module moz-src:///browser/components/tabnotes/TabNotes.sys.mjs @7; ChromeUtils-import-literal
+
+### browser/components/tabnotes/test/unit/head.js
+
+Blob: `9c39079ad7189103e00b66bf03e673f3a8974a38`. Role: test-path,source. Parse: module.
+
+- Module resource://testing-common/TestUtils.sys.mjs @5; ChromeUtils-import-literal
+- Module resource://testing-common/BrowserTestUtils.sys.mjs @8; ChromeUtils-import-literal
+- Module moz-src:///browser/components/tabnotes/TabNotes.sys.mjs @11; ChromeUtils-import-literal
+
+### browser/components/tabnotes/test/unit/test_json_ld.js
+
+Blob: `91852a106644ef8a1951f948fc9ab1084a00d144`. Role: test-path,source. Parse: module.
+
+- getDocument @15-36; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @17-17; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- test_json_ld_missing @38-48; FunctionExpression; parameters=0; async=true; generator=false
+- test_json_ld_basic @50-69; FunctionExpression; parameters=0; async=true; generator=false
+- test_json_ld_selects_first @71-100; FunctionExpression; parameters=0; async=true; generator=false
+- test_json_ld_robust_to_url_array @102-125; FunctionExpression; parameters=0; async=true; generator=false
+- test_json_ld_relative @127-146; FunctionExpression; parameters=0; async=true; generator=false
+- test_json_ld_empty @148-167; FunctionExpression; parameters=0; async=true; generator=false
+- test_json_ld_malformed @169-188; FunctionExpression; parameters=0; async=true; generator=false
+- Module moz-src:///browser/components/tabnotes/CanonicalURL.sys.mjs @6; ChromeUtils-import-literal
+
+### browser/components/tabnotes/test/unit/test_link_rel_canonical.js
+
+Blob: `f98acffe5fcc524ecf9ea0ca415d963207bb1347`. Role: test-path,source. Parse: module.
+
+- getDocument @15-32; FunctionDeclaration; parameters=2; async=false; generator=false
+- test_link_rel_canonical_missing @34-44; FunctionExpression; parameters=0; async=true; generator=false
+- test_link_rel_canonical_present @46-59; FunctionExpression; parameters=0; async=true; generator=false
+- test_link_rel_canonical_relative @61-71; FunctionExpression; parameters=0; async=true; generator=false
+- test_link_rel_canonical_empty @73-83; FunctionExpression; parameters=0; async=true; generator=false
+- tset_link_rel_canonical_malformed @85-95; FunctionExpression; parameters=0; async=true; generator=false
+- Module moz-src:///browser/components/tabnotes/CanonicalURL.sys.mjs @6; ChromeUtils-import-literal
+
+### browser/components/tabnotes/test/unit/test_meta_og_url.js
+
+Blob: `ac62c58dca3c60bfe5e8d362f15a5222d196bed7`. Role: test-path,source. Parse: module.
+
+- getDocument @15-32; FunctionDeclaration; parameters=2; async=false; generator=false
+- test_meta_og_url_missing @34-44; FunctionExpression; parameters=0; async=true; generator=false
+- test_meta_og_url_present @46-59; FunctionExpression; parameters=0; async=true; generator=false
+- test_meta_og_url_relative @61-71; FunctionExpression; parameters=0; async=true; generator=false
+- test_meta_og_url_empty @73-83; FunctionExpression; parameters=0; async=true; generator=false
+- tset_meta_og_url_malformed @85-98; FunctionExpression; parameters=0; async=true; generator=false
+- Module moz-src:///browser/components/tabnotes/CanonicalURL.sys.mjs @6; ChromeUtils-import-literal
+
+### browser/components/tabnotes/test/unit/test_pick_canonical_url.js
+
+Blob: `30dcec6dd51a908df4bfa24b73be939a6d648594`. Role: test-path,source. Parse: module.
+
+- test_canonical_link_only @16-22; FunctionExpression; parameters=0; async=true; generator=false
+- test_canonical_link_and_opengraph @24-34; FunctionExpression; parameters=0; async=true; generator=false
+- test_canonical_link_and_json_ld @36-46; FunctionExpression; parameters=0; async=true; generator=false
+- test_canonical_link_and_opengraph_and_json_ld @48-59; FunctionExpression; parameters=0; async=true; generator=false
+- test_opengraph_only @61-67; FunctionExpression; parameters=0; async=true; generator=false
+- test_opengraph_and_json_ld @69-79; FunctionExpression; parameters=0; async=true; generator=false
+- test_json_ld_only @81-90; FunctionExpression; parameters=0; async=true; generator=false
+- test_fallback @92-100; FunctionExpression; parameters=0; async=true; generator=false
+- test_fallback_contains_no_fragment @102-111; FunctionExpression; parameters=0; async=true; generator=false
+- test_fallback_ignores_trailing_question @113-125; FunctionExpression; parameters=0; async=true; generator=false
+- Module moz-src:///browser/components/tabnotes/CanonicalURL.sys.mjs @7; ChromeUtils-import-literal
+
+### browser/components/tabnotes/test/unit/test_tab_notes.js
+
+Blob: `02e8aa4918d09f087ceb7f9fa9e1e281fdb02daa`. Role: test-path,source. Parse: module.
+
+- (anonymous) @5-7; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @9-18; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- constructor @27-31; FunctionExpression; parameters=1; async=false; generator=false
+- tabNotesBasicStorageTests @34-128; FunctionExpression; parameters=0; async=true; generator=false
+- tabNotesIsEligible @130-143; FunctionExpression; parameters=0; async=false; generator=false
+- tabNotesCount @145-158; FunctionExpression; parameters=0; async=true; generator=false
+- tabNotesSanitizationTests @160-174; FunctionExpression; parameters=0; async=true; generator=false
+- tabNotesErrors @176-194; FunctionExpression; parameters=0; async=true; generator=false
+- Class FakeTab @23-32
+
+### browser/components/tabunloader/content/aboutUnloads.js
+
+Blob: `db4b8531205684f512cec3fa26c292cb5592622e`. Role: source. Parse: module.
+
+- refreshData @10-110; FunctionDeclaration; parameters=0; async=true; generator=false
+- getHost @13-19; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- updateTimestamp @20-26; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- onLoad @112-120; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @115-118; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- Module moz-src:///browser/components/tabbrowser/TabUnloader.sys.mjs @6; ChromeUtils-import-literal
+
+### browser/components/taskbartabs/TaskbarTabs.sys.mjs
+
+Blob: `aa395b25ed92c802f1b16cdca1d5e62a82481965`. Role: source. Parse: module.
+
+- (anonymous) @25-30; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @42-49; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-48; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- updateMetrics @51-53; FunctionExpression; parameters=0; async=false; generator=false
+- waitUntilReady @55-57; FunctionExpression; parameters=0; async=true; generator=false
+- getTaskbarTab @59-62; FunctionExpression; parameters=1; async=true; generator=false
+- findOrCreateTaskbarTab @84-117; FunctionExpression; parameters=3; async=true; generator=false
+- findOrCreateTaskbarTab @120-146; FunctionExpression; parameters=3; async=true; generator=false
+- pinTaskbarTab @148-158; FunctionExpression; parameters=3; async=true; generator=false
+- findTaskbarTab @160-163; FunctionExpression; parameters=1; async=true; generator=false
+- countTaskbarTabs @165-168; FunctionExpression; parameters=0; async=true; generator=false
+- moveTabIntoTaskbarTab @180-221; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @187-190; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- resetForTests @223-226; FunctionExpression; parameters=1; async=true; generator=false
+- removeTaskbarTab @228-236; FunctionExpression; parameters=1; async=true; generator=false
+- openWindow @238-243; FunctionExpression; parameters=1; async=true; generator=false
+- replaceTabWithWindow @245-250; FunctionExpression; parameters=2; async=true; generator=false
+- ejectWindow @252-255; FunctionExpression; parameters=1; async=true; generator=false
+- getCountForId @257-260; FunctionExpression; parameters=1; async=true; generator=false
+- initRegistry @268-275; FunctionDeclaration; parameters=0; async=true; generator=false
+- initWindowManager @282-286; FunctionDeclaration; parameters=0; async=false; generator=false
+- fetchIconForTaskbarTab @288-333; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @291-307; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @308-308; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @309-309; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- loadSavedTaskbarTabIcon @341-359; FunctionDeclaration; parameters=1; async=true; generator=false
+- findBestManifestIcon @373-408; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @379-394; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @387-393; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @396-396; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @401-401; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @37-261
+- Module moz-src:///browser/components/taskbartabs/TaskbarTabsRegistry.sys.mjs @11; ImportDeclaration
+- Module moz-src:///browser/components/taskbartabs/TaskbarTabsWindowManager.sys.mjs @12; ImportDeclaration
+- Module moz-src:///browser/components/taskbartabs/TaskbarTabsPin.sys.mjs @13; ImportDeclaration
+- Module moz-src:///browser/components/taskbartabs/TaskbarTabsUtils.sys.mjs @14; ImportDeclaration
+
+### browser/components/taskbartabs/TaskbarTabsChrome.sys.mjs
+
+Blob: `2f876c6acbc0748fcf0f3ecd148ee4a6649b3122`. Role: source. Parse: module.
+
+- init @20-40; FunctionExpression; parameters=1; async=false; generator=false
+- initCornerIcon @43-87; FunctionDeclaration; parameters=1; async=false; generator=false
+- updateCornerIcon @47-67; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @69-85; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- initAudioButton @89-111; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @93-106; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @108-110; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Module resource://gre/modules/XPCOMUtils.sys.mjs @5; ImportDeclaration
+
+### browser/components/taskbartabs/TaskbarTabsCmd.sys.mjs
+
+Blob: `b44b9d24f1ac670c80603fa7200d6a3f8d189a4b`. Role: source. Parse: module.
+
+- (anonymous) @13-18; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- handle @30-66; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @63-65; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- launchTaskbarTab @74-103; FunctionDeclaration; parameters=1; async=true; generator=false
+- Class CommandLineHandler @24-67
+
+### browser/components/taskbartabs/TaskbarTabsPageAction.sys.mjs
+
+Blob: `f16f1375296d2011bdea868b7b00c7d48630b33c`. Role: source. Parse: module.
+
+- (anonymous) @19-24; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- init @38-61; FunctionExpression; parameters=1; async=false; generator=false
+- handleEvent @71-115; FunctionExpression; parameters=1; async=true; generator=false
+- initVisibilityChanges @124-176; FunctionDeclaration; parameters=2; async=false; generator=false
+- shouldShow @128-155; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- onLocationChange @158-162; FunctionExpression; parameters=3; async=false; generator=false
+- observer @165-168; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @171-173; FunctionExpression; parameters=0; async=false; generator=false
+- Module resource://gre/modules/AppConstants.sys.mjs @7; ImportDeclaration
+
+### browser/components/taskbartabs/TaskbarTabsPin.sys.mjs
+
+Blob: `7f429d2db809455b3102f73acc7e850ec7374291`. Role: source. Parse: module.
+
+- (anonymous) @15-20; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- pinTaskbarTab @35-58; FunctionExpression; parameters=3; async=true; generator=false
+- unpinTaskbarTab @66-118; FunctionExpression; parameters=1; async=true; generator=false
+- message @113-113; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- _getLocalization @125-127; FunctionExpression; parameters=0; async=false; generator=false
+- createTaskbarIcon @138-150; FunctionDeclaration; parameters=2; async=true; generator=false
+- createShortcut @162-229; FunctionDeclaration; parameters=4; async=true; generator=false
+- generateShortcutInfo @239-255; FunctionDeclaration; parameters=1; async=true; generator=false
+- sanitizeFilename @269-283; FunctionDeclaration; parameters=2; async=false; generator=false
+- getIconFile @291-298; FunctionDeclaration; parameters=1; async=false; generator=false
+- Module resource://gre/modules/AppConstants.sys.mjs @5; ImportDeclaration
+
+### browser/components/taskbartabs/TaskbarTabsRegistry.sys.mjs
+
+Blob: `72ad9b6cde0727a81da2e3712045a24aa7be3c73`. Role: source. Parse: module.
+
+- (anonymous) @14-19; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- getJsonSchema @26-32; FunctionDeclaration; parameters=0; async=true; generator=false
+- constructor @59-74; FunctionExpression; parameters=1; async=false; generator=false
+- id @76-78; FunctionExpression; parameters=0; async=false; generator=false
+- scopes @80-82; FunctionExpression; parameters=0; async=false; generator=false
+- userContextId @84-86; FunctionExpression; parameters=0; async=false; generator=false
+- startUrl @88-90; FunctionExpression; parameters=0; async=false; generator=false
+- name @92-94; FunctionExpression; parameters=0; async=false; generator=false
+- shortcutRelativePath @96-98; FunctionExpression; parameters=0; async=false; generator=false
+- isScopeNavigable @107-124; FunctionExpression; parameters=1; async=false; generator=false
+- toJSON @126-136; FunctionExpression; parameters=0; async=false; generator=false
+- maybe @127-127; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- _applyPatch @147-151; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @180-185; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @183-183; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @187-194; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @190-192; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- findOrCreateTaskbarTab @208-264; FunctionExpression; parameters=3; async=false; generator=false
+- removeTaskbarTab @273-290; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @275-277; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- findTaskbarTab @299-348; FunctionExpression; parameters=2; async=false; generator=false
+- getTaskbarTab @357-367; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @358-360; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- patchTaskbarTab @379-384; FunctionExpression; parameters=2; async=false; generator=false
+- countTaskbarTabs @391-393; FunctionExpression; parameters=0; async=false; generator=false
+- resetForTests @398-400; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @421-423; FunctionExpression; parameters=1; async=false; generator=false
+- load @430-465; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @435-445; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- save @478-512; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @480-501; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @502-504; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- migrateStoredTaskbarTab @523-533; FunctionDeclaration; parameters=1; async=false; generator=false
+- generateName @541-568; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @563-563; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Class TaskbarTabsRegistryStorage @412-513
+- Class TaskbarTabsRegistry @157-401
+- Class TaskbarTab @37-152
+
+### browser/components/taskbartabs/TaskbarTabsUtils.sys.mjs
+
+Blob: `dc70912a1d2ce13bb88f62997bb7848827c6bdad`. Role: source. Parse: module.
+
+- isEnabled @25-28; FunctionExpression; parameters=0; async=false; generator=false
+- isMSIX @30-35; FunctionExpression; parameters=0; async=false; generator=false
+- getTaskbarTabsFolder @42-47; FunctionExpression; parameters=0; async=false; generator=false
+- isTaskbarTabWindow @55-57; FunctionExpression; parameters=1; async=false; generator=false
+- getTaskbarTabIdFromWindow @65-67; FunctionExpression; parameters=1; async=false; generator=false
+- _remoteDecodeImageFromFile @84-92; FunctionExpression; parameters=4; async=true; generator=false
+- _remoteDecodeImageFromURI @109-126; FunctionExpression; parameters=3; async=true; generator=false
+- _imageFromLocalURI @144-157; FunctionExpression; parameters=1; async=true; generator=false
+- getFaviconUri @165-168; FunctionExpression; parameters=1; async=true; generator=false
+- getDefaultIcon @176-180; FunctionExpression; parameters=0; async=true; generator=false
+- _determineNewDesktopEntryName @191-193; FunctionExpression; parameters=1; async=false; generator=false
+- unsafeDecodeImageFromAnyURI @205-216; FunctionDeclaration; parameters=1; async=true; generator=false
+- Module resource://gre/modules/AppConstants.sys.mjs @5; ImportDeclaration
+- Module resource://gre/modules/XPCOMUtils.sys.mjs @6; ImportDeclaration
+
+### browser/components/taskbartabs/TaskbarTabsWindowManager.sys.mjs
+
+Blob: `9991e5ba8c49c0fdff28152760266d57e23ec25c`. Role: source. Parse: module.
+
+- (anonymous) @23-28; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- replaceTabWithWindow @48-74; FunctionExpression; parameters=3; async=true; generator=false
+- openWindow @83-117; FunctionExpression; parameters=2; async=true; generator=false
+- openWindow @128-166; FunctionExpression; parameters=3; async=true; generator=false
+- (anonymous) @160-163; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- trackWindow @176-185; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @184-184; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- untrackWindow @194-206; FunctionExpression; parameters=2; async=false; generator=false
+- attachWindowFocusTelemetry @208-232; FunctionExpression; parameters=1; async=false; generator=false
+- focused @211-215; FunctionDeclaration; parameters=0; async=false; generator=false
+- blur @217-223; FunctionDeclaration; parameters=0; async=false; generator=false
+- ejectWindow @242-312; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @266-275; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- getCountForId @320-322; FunctionExpression; parameters=1; async=false; generator=false
+- testOnlyMockUIUtils @329-344; FunctionExpression; parameters=1; async=false; generator=false
+- get @335-342; FunctionExpression; parameters=0; async=false; generator=false
+- getTabId @353-355; FunctionDeclaration; parameters=1; async=false; generator=false
+- getWindowId @363-365; FunctionDeclaration; parameters=1; async=false; generator=false
+- getLinuxWindowClass @367-376; FunctionDeclaration; parameters=1; async=false; generator=false
+- Class TaskbarTabsWindowManager @33-345
+- Module resource://gre/modules/AppConstants.sys.mjs @5; ImportDeclaration
+- Module resource://gre/modules/XPCOMUtils.sys.mjs @6; ImportDeclaration
+
+### browser/components/taskbartabs/test/browser/browser_taskbarTabs_chromeTest.js
+
+Blob: `809dd0f06855013891bff5545f6c352bca63e4ab`. Role: test-path,source. Parse: module.
+
+- checkWindowChrome @14-67; FunctionDeclaration; parameters=2; async=false; generator=false
+- checkHamburgerMenu @72-118; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @78-93; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @79-90; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- testOpenWindowChrome @121-128; FunctionExpression; parameters=0; async=true; generator=false
+- testReplaceTabWithWindowChrome @130-141; FunctionExpression; parameters=0; async=true; generator=false
+- testOpenWindowChromeContainer @143-150; FunctionExpression; parameters=0; async=true; generator=false
+- testReplaceTabWithWindowChromeContainer @152-164; FunctionExpression; parameters=0; async=true; generator=false
+- testFaviconUpdates @166-200; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @186-187; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_muteAttributesMatchState @202-249; FunctionExpression; parameters=0; async=true; generator=false
+- checkAttributesMatch @207-219; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @235-237; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- test_muteTogglesTabMute @251-272; FunctionExpression; parameters=0; async=true; generator=false
+- waitForTabAttributeChange @274-284; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @275-283; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- callback @276-281; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### browser/components/taskbartabs/test/browser/browser_taskbarTabs_cmd.js
+
+Blob: `61845ba6b0a8206e59534735e81ee6f082796afc`. Role: test-path,source. Parse: module.
+
+- (anonymous) @18-21; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @25-32; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- test_commandline_handling @34-128; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/taskbartabs/test/browser/browser_taskbarTabs_content.js
+
+Blob: `eb55440852b1fdb9dee1d0291b84425f705ea7b6`. Role: test-path,source. Parse: module.
+
+- checkMedia @19-22; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @20-22; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- test_display_mode_changes_existing_tab @24-46; FunctionExpression; parameters=0; async=true; generator=false
+- test_display_mode_on_new_window @48-64; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/taskbartabs/test/browser/browser_taskbarTabs_icons.js
+
+Blob: `26e031027660ddf7fc2fe7bdf0cdc3a2fca10bac`. Role: test-path,source. Parse: module.
+
+- setup @47-70; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @60-60; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- encodeImagePNG @80-95; FunctionDeclaration; parameters=2; async=false; generator=false
+- assertBytesEqual @103-124; FunctionDeclaration; parameters=2; async=false; generator=false
+- test_noFavicon @126-133; FunctionExpression; parameters=0; async=true; generator=false
+- test_typicalFavicon @135-145; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @138-140; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- test_faviconOnOtherPage @147-177; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @154-166; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- test_manifestIcon_none @179-184; FunctionExpression; parameters=0; async=true; generator=false
+- test_manifestIcon_lone @186-197; FunctionExpression; parameters=0; async=true; generator=false
+- test_manifestIcon_sized @199-208; FunctionExpression; parameters=0; async=true; generator=false
+- test_manifestIcon_selectsBestSize @210-223; FunctionExpression; parameters=0; async=true; generator=false
+- test_manifestIcon_differentOrigin @225-237; FunctionExpression; parameters=0; async=true; generator=false
+- test_manifestIcon_unwantedPurposesDisqualifies @239-250; FunctionExpression; parameters=0; async=true; generator=false
+- test_manifestIcon_unwantedPurposesFallback @252-267; FunctionExpression; parameters=0; async=true; generator=false
+- test_manifestIcon_extraPurposes @269-278; FunctionExpression; parameters=0; async=true; generator=false
+- test_findOrCreateTaskbarTab_noIcon @280-296; FunctionExpression; parameters=0; async=true; generator=false
+- test_moveTabIntoTaskbarTabLoadsSavedIcon @298-307; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @301-306; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @302-305; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- test_openWindowLoadsSavedIcon @309-313; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @310-312; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- test_replaceTabWithWindowLoadsSavedIcon @315-322; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @316-321; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @317-320; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- checkManifestIcon @337-358; FunctionDeclaration; parameters=3; async=true; generator=false
+- checkTaskbarTabIcon @373-452; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @384-386; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- openAndMoveIntoTaskbarTab @461-473; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @462-472; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @464-468; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- checkLoadsCorrectIcon @485-529; FunctionDeclaration; parameters=3; async=true; generator=false
+
+### browser/components/taskbartabs/test/browser/browser_taskbarTabs_manifest.js
+
+Blob: `efbb280e6a537344b7e192334c8bd89c75e6098f`. Role: test-path,source. Parse: module.
+
+- startServer @22-44; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @25-27; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @26-26; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @31-42; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @46-49; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- httpUrl @51-53; FunctionDeclaration; parameters=1; async=false; generator=false
+- test_noManifest @57-64; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @59-63; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- test_emptyManifest @66-76; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @68-75; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- test_invalidManifest @78-86; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @80-85; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- test_nameAndStartUrl @88-106; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @94-105; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- test_scope @108-119; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @113-118; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- test_startUrlOutOfScope @121-133; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @127-132; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- test_scopeDistinguishesTaskbarTabs @135-183; FunctionExpression; parameters=0; async=true; generator=false
+- find @136-137; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @143-182; ArrowFunctionExpression; parameters=2; async=true; generator=false
+- (anonymous) @148-181; ArrowFunctionExpression; parameters=2; async=true; generator=false
+- usingManifest @185-214; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @193-212; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @194-196; ArrowFunctionExpression; parameters=1; async=true; generator=false
+
+### browser/components/taskbartabs/test/browser/browser_taskbarTabs_nimbus.js
+
+Blob: `1c0cc47aab10468524483b90d3d61641bf07a593`. Role: test-path,source. Parse: module.
+
+- (anonymous) @14-18; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- test_taskbarTabsNimbusPref @20-25; FunctionExpression; parameters=0; async=true; generator=false
+- checkEnrollmentWithValue @27-35; FunctionDeclaration; parameters=1; async=true; generator=false
+
+### browser/components/taskbartabs/test/browser/browser_taskbarTabs_pageAction.js
+
+Blob: `12986c85e37cc790adf60cde18ec270d2f2e174c`. Role: test-path,source. Parse: module.
+
+- (anonymous) @35-51; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @53-57; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- browserPageAction @59-89; FunctionDeclaration; parameters=1; async=true; generator=false
+- taskbarTabsPageAction @91-132; FunctionDeclaration; parameters=2; async=true; generator=false
+- test_taskbar_tabs_page_action @134-190; FunctionExpression; parameters=0; async=true; generator=false
+- testRightClick @192-218; FunctionExpression; parameters=0; async=true; generator=false
+- revertToOriginal @223-242; FunctionExpression; parameters=0; async=true; generator=false
+- revertToMostRecent @246-270; FunctionExpression; parameters=0; async=true; generator=false
+- testVariousVisibilityChanges @272-288; FunctionExpression; parameters=0; async=true; generator=false
+- testVisibilityChange @290-319; FunctionDeclaration; parameters=4; async=true; generator=false
+- testIframeNavigationIsIgnored @321-341; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @326-340; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @329-337; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @332-336; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @335-335; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- getURIScheme @343-345; FunctionDeclaration; parameters=1; async=false; generator=false
+- testPrefIsMonitored @347-364; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @350-363; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- test_moveTabIntoTaskbarTabCreation @366-383; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @374-382; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- test_moveTabIntoTaskbarTabReuse @385-400; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @390-399; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- test_page_action_uses_manifest @402-427; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @405-426; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @406-409; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- test_extension_name_is_used @429-489; FunctionExpression; parameters=0; async=true; generator=false
+- checkExtensionURIWithManifest @430-472; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @453-471; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- test_pageActionRequiresDesktopEntryApi @491-518; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/taskbartabs/test/browser/browser_taskbarTabs_pin.js
+
+Blob: `b47b2505072f8e74c9c99e525c67a9a2810534cd`. Role: test-path,source. Parse: module.
+
+- (anonymous) @21-21; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_moveTabIntoTaskbarTabParentWindow @24-40; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @25-39; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- test_findOrCreateTaskbarTabParentWindow @42-67; FunctionExpression; parameters=0; async=true; generator=false
+- test_findOrCreateTaskbarTabEnsurePin @69-94; FunctionExpression; parameters=0; async=true; generator=false
+- test_shortcutRelativePathIsUpdated @96-139; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @118-136; ArrowFunctionExpression; parameters=1; async=true; generator=false
+
+### browser/components/taskbartabs/test/browser/browser_taskbarTabs_telemetry.js
+
+Blob: `7a4cdf50cb67376c703bab1f89d71341bb2f3600`. Role: test-path,source. Parse: module.
+
+- exposePinResult @24-30; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- exposeDeleteResult @35-41; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @62-64; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- testInstallAndUninstallMetric @74-86; FunctionExpression; parameters=0; async=true; generator=false
+- testPinMetricCustom @88-110; FunctionDeclaration; parameters=2; async=true; generator=false
+- testPinMetricSuccess @112-114; FunctionExpression; parameters=0; async=true; generator=false
+- testPinMetricFail @116-118; FunctionExpression; parameters=0; async=true; generator=false
+- testPinMetricInvalid @120-122; FunctionExpression; parameters=0; async=true; generator=false
+- testUnpinMetricCustom @124-160; FunctionDeclaration; parameters=4; async=true; generator=false
+- testPinAndUnpinMetric_UnpinSuccessDeleteSuccess @162-164; FunctionExpression; parameters=0; async=true; generator=false
+- testPinAndUnpinMetric_UnpinFailDeleteSuccess @166-168; FunctionExpression; parameters=0; async=true; generator=false
+- testPinAndUnpinMetric_UnpinSuccessDeleteFail @170-172; FunctionExpression; parameters=0; async=true; generator=false
+- testPinAndUnpinMetric_UnpinSuccessDeleteFail @174-176; FunctionExpression; parameters=0; async=true; generator=false
+- testPinAndUnpinMetric_UnpinInvalid @177-179; FunctionExpression; parameters=0; async=true; generator=false
+- testPinAndUnpinMetric_DeleteInvalid @181-183; FunctionExpression; parameters=0; async=true; generator=false
+- testActivateWhenWindowOpened @185-201; FunctionExpression; parameters=0; async=true; generator=false
+- testMoveToTaskbarLowLevelMetric @203-225; FunctionExpression; parameters=0; async=true; generator=false
+- testMoveToTaskbarHighLevelMetric @227-261; FunctionExpression; parameters=0; async=true; generator=false
+- testEjectMetric @263-282; FunctionExpression; parameters=0; async=true; generator=false
+- testUsageTimeMetricSingleWindow @284-308; FunctionExpression; parameters=0; async=true; generator=false
+- Module moz-src:///browser/components/taskbartabs/TaskbarTabs.sys.mjs @233; ChromeUtils-import-literal
+
+### browser/components/taskbartabs/test/browser/browser_taskbarTabs_title.js
+
+Blob: `0c913341e462d594fb51c9859fe009e2c5922b5e`. Role: test-path,source. Parse: module.
+
+- setup @22-37; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @25-27; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @30-30; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @33-33; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @34-36; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- cleanup @39-42; FunctionExpression; parameters=0; async=true; generator=false
+- phaseBeforeContentTitle @44-82; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @50-53; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- phaseAfterContentTitle @84-89; FunctionDeclaration; parameters=1; async=true; generator=false
+- assertHasTaskbarTabName @91-97; FunctionDeclaration; parameters=2; async=false; generator=false
+- assertHasContainerName @99-105; FunctionDeclaration; parameters=2; async=false; generator=false
+- test_defaultCase @107-119; FunctionDeclaration; parameters=1; async=true; generator=false
+- test_container @121-133; FunctionDeclaration; parameters=1; async=true; generator=false
+- test_profile @135-153; FunctionDeclaration; parameters=1; async=true; generator=false
+- test_profileAndContainer @155-173; FunctionDeclaration; parameters=1; async=true; generator=false
+- withoutExposingTitle @175-185; FunctionDeclaration; parameters=1; async=true; generator=false
+- test_defaultCase_privacy @192-194; FunctionExpression; parameters=0; async=true; generator=false
+- test_container_privacy @196-198; FunctionExpression; parameters=0; async=true; generator=false
+- test_profile_privacy @200-202; FunctionExpression; parameters=0; async=true; generator=false
+- test_profileAndContainer_privacy @204-206; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/taskbartabs/test/browser/browser_taskbarTabs_uriTest.js
+
+Blob: `9eabff42d6202ba315f60dcb7fe8f2bbfc638041`. Role: test-path,source. Parse: module.
+
+- testUriNewTab @15-35; FunctionExpression; parameters=0; async=true; generator=false
+- testToolbarCustomizer @37-49; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/taskbartabs/test/browser/browser_taskbarTabs_windowManager.js
+
+Blob: `8f9f10cbdbf0802f7f8e8391439829b346eb50fe`. Role: test-path,source. Parse: module.
+
+- test_count_for_id @31-97; FunctionExpression; parameters=0; async=true; generator=false
+- testWindowCount @33-44; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- test_user_context_id @99-135; FunctionExpression; parameters=0; async=true; generator=false
+- checkUserContextId @100-106; FunctionDeclaration; parameters=2; async=false; generator=false
+- testForTaskbarTab @110-131; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- test_eject_window_selected_tab @137-158; FunctionExpression; parameters=0; async=true; generator=false
+- test_window_class @160-181; FunctionExpression; parameters=0; async=true; generator=false
+- checkWindowAssociatedApp @190-217; FunctionDeclaration; parameters=2; async=false; generator=false
+- testLinuxWindowClassRestores @219-265; FunctionExpression; parameters=0; async=true; generator=false
+- captureWindowClass @225-246; FunctionDeclaration; parameters=1; async=true; generator=false
+- testTaskbarTabCount @267-298; FunctionExpression; parameters=0; async=true; generator=false
+- count @268-268; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- testWindowIconSet @300-352; FunctionExpression; parameters=0; async=true; generator=false
+- check @309-336; FunctionDeclaration; parameters=2; async=true; generator=false
+- test_taskbarTab_persistence @354-452; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @381-381; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @419-419; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/taskbartabs/test/browser/browser_taskbarTabs_windowTracker.js
+
+Blob: `015eb508fcd905220f2e297668efc73366672246`. Role: test-path,source. Parse: module.
+
+- testGetTopWindow @10-29; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/taskbartabs/test/browser/head.js
+
+Blob: `634923f69982c32af8938edefb2548f339e7bccf`. Role: test-path,source. Parse: module.
+
+- openTaskbarTabWindow @25-38; FunctionDeclaration; parameters=2; async=true; generator=false
+- createTaskbarTab @53-65; FunctionDeclaration; parameters=2; async=false; generator=false
+- check @55-58; FunctionDeclaration; parameters=1; async=false; generator=false
+- createInMemoryRegistry @75-82; FunctionDeclaration; parameters=0; async=false; generator=false
+- save @78-78; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/taskbartabs/test/xpcshell/head.js
+
+Blob: `8ef32d73a425ee24bcb8f7bae663d1f5a3978a3f`. Role: test-path,source. Parse: module.
+
+- createTaskbarTab @26-38; FunctionDeclaration; parameters=2; async=false; generator=false
+- check @28-31; FunctionDeclaration; parameters=1; async=false; generator=false
+- createInMemoryRegistry @48-55; FunctionDeclaration; parameters=0; async=false; generator=false
+- save @51-51; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/taskbartabs/test/xpcshell/test_TaskbarTabsRegistry.js
+
+Blob: `6b39cdac4eb3fe10be574b1a41f96a941801c2fe`. Role: test-path,source. Parse: module.
+
+- testFile @15-27; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @20-24; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_create_taskbar_tab @29-81; FunctionExpression; parameters=0; async=true; generator=false
+- test_remove_taskbar_tab @83-112; FunctionExpression; parameters=0; async=true; generator=false
+- test_container_mismatch @114-127; FunctionExpression; parameters=0; async=true; generator=false
+- test_scope_navigable @129-156; FunctionExpression; parameters=0; async=true; generator=false
+- test_psl_navigable @158-172; FunctionExpression; parameters=0; async=true; generator=false
+- test_save_and_load_consistency @174-194; FunctionExpression; parameters=0; async=true; generator=false
+- test_load_and_save_consistency @196-224; FunctionExpression; parameters=0; async=true; generator=false
+- test_load_and_save_migrates_name @226-253; FunctionExpression; parameters=0; async=true; generator=false
+- test_guards_against_commandline_strings @255-274; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @265-265; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @270-270; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_guards_against_non_urls @276-288; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @284-284; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_patch_becomes_visible @290-319; FunctionExpression; parameters=0; async=true; generator=false
+- test_shortcutRelativePath_is_saved @321-343; FunctionExpression; parameters=0; async=true; generator=false
+- test_multiple_match_longest_prefix @345-378; FunctionExpression; parameters=0; async=true; generator=false
+- uriWithPrefix @348-349; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- createWithScope @351-356; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- find @357-357; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Module moz-src:///browser/components/taskbartabs/TaskbarTabsRegistry.sys.mjs @8; ChromeUtils-import-literal
+- Module resource://testing-common/Sinon.sys.mjs @11; ChromeUtils-import-literal
+
+### browser/components/taskbartabs/test/xpcshell/test_taskbarTabs_existingInstalledCountMetric.js
+
+Blob: `0cc9259767ad63326a969c71e4196e53ecfcd98f`. Role: test-path,source. Parse: module.
+
+- test_setup @17-23; FunctionExpression; parameters=0; async=false; generator=false
+- test_installedCounterMetric @25-66; FunctionExpression; parameters=0; async=true; generator=false
+- value @26-26; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Module moz-src:///browser/components/taskbartabs/TaskbarTabs.sys.mjs @47; ChromeUtils-import-literal
+
+### browser/components/taskbartabs/test/xpcshell/test_taskbarTabs_iconSaving.js
+
+Blob: `b46907bc8e3a4e2a8b599586c2537840d03cad75`. Role: test-path,source. Parse: module.
+
+- (anonymous) @39-44; ArrowFunctionExpression; parameters=2; async=true; generator=false
+- (anonymous) @46-48; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @55-67; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- testWrittenIconFile @69-85; FunctionDeclaration; parameters=1; async=true; generator=false
+- getTempFile @93-98; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_pin_saves_raster_icon @100-116; FunctionExpression; parameters=0; async=true; generator=false
+- test_pin_saves_vector_icon @118-134; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/taskbartabs/test/xpcshell/test_taskbarTabs_installedCountMetric.js
+
+Blob: `07c41190d05dd3a17f31db3bbed38312760f5636`. Role: test-path,source. Parse: module.
+
+- test_setup @17-23; FunctionExpression; parameters=0; async=false; generator=false
+- test_installedCounterMetric @25-59; FunctionExpression; parameters=0; async=true; generator=false
+- value @26-26; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Module moz-src:///browser/components/taskbartabs/TaskbarTabs.sys.mjs @31; ChromeUtils-import-literal
+
+### browser/components/taskbartabs/test/xpcshell/test_taskbarTabs_pinLinux.js
+
+Blob: `17ccf72c881f4c1204911f8b4dec44fd84b72e8d`. Role: test-path,source. Parse: module.
+
+- getGlibPrgname @27-29; FunctionExpression; parameters=0; async=false; generator=false
+- formatValue @33-36; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @39-41; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- checkCreateLinuxDesktopEntryCall @46-68; FunctionDeclaration; parameters=1; async=false; generator=false
+- test_pinCreatesDesktopEntry @70-83; FunctionExpression; parameters=0; async=true; generator=false
+- test_pinUnusualName @86-103; FunctionExpression; parameters=0; async=true; generator=false
+- test_unpin @105-125; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/taskbartabs/test/xpcshell/test_taskbarTabs_pinMsix.js
+
+Blob: `349edfc63e6989ebc11806f0bfa3a2bd2a5e5ce7`. Role: test-path,source. Parse: module.
+
+- formatValue @32-35; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @38-40; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- checkCreateSecondaryTileCall @45-74; FunctionDeclaration; parameters=1; async=false; generator=false
+- test_pinCreatesDesktopEntry @76-89; FunctionExpression; parameters=0; async=true; generator=false
+- test_pinUnusualName @92-109; FunctionExpression; parameters=0; async=true; generator=false
+- test_unpin @111-131; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/taskbartabs/test/xpcshell/test_taskbarTabs_pinWindows.js
+
+Blob: `5a32e073fbb8a5d9172e020f8134b4db0463b04a`. Role: test-path,source. Parse: module.
+
+- formatValue @38-41; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @44-46; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- attemptPin @53-94; FunctionDeclaration; parameters=3; async=true; generator=false
+- shellUnpinCalled @96-115; FunctionDeclaration; parameters=1; async=false; generator=false
+- test_pin_location @117-129; FunctionExpression; parameters=0; async=true; generator=false
+- test_pin_location_dos_name @131-145; FunctionExpression; parameters=0; async=true; generator=false
+- test_pin_location_bad_characters @147-163; FunctionExpression; parameters=0; async=true; generator=false
+- test_pin_location_lnk_extension @165-181; FunctionExpression; parameters=0; async=true; generator=false
+- test_unpin @183-194; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/taskbartabs/test/xpcshell/test_taskbarTabs_utils.js
+
+Blob: `c5fe5372f8569aecec1e8d23b258cd0784a085a5`. Role: test-path,source. Parse: module.
+
+- getFaviconForPage @25-28; FunctionExpression; parameters=0; async=false; generator=false
+- defaultFavicon @29-31; FunctionExpression; parameters=0; async=false; generator=false
+- encodePNG @49-72; FunctionDeclaration; parameters=1; async=false; generator=false
+- test_imageFromLocalURI_nonuri @74-80; FunctionExpression; parameters=0; async=true; generator=false
+- test_imageFromLocalURI_nonlocal @82-89; FunctionExpression; parameters=0; async=true; generator=false
+- test_imageFromLocalURI_raster @91-98; FunctionExpression; parameters=0; async=true; generator=false
+- test_imageFromLocalURI_vector @100-109; FunctionExpression; parameters=0; async=true; generator=false
+- test_getFaviconUri @111-137; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @115-117; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- test_getDefaultIcon @139-146; FunctionExpression; parameters=0; async=true; generator=false
+- test_determineNewDesktopEntryName @148-174; FunctionExpression; parameters=0; async=true; generator=false
+- getGlibPrgname @154-156; FunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/tests/browser/browser_browserGlue_client_association_ping.js
+
+Blob: `3b5af6f0ad676106b2c3bf2c3ec64766bb8a6f3d`. Role: test-path,source. Parse: module.
+
+- (anonymous) @27-34; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- testMockUIState @47-65; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @59-60; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_client_association_logged_in @71-84; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @72-83; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- test_client_association_not_logged_in @90-109; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @96-107; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- Module resource://gre/modules/ClientID.sys.mjs @14; ChromeUtils-import-literal
+- Module resource://testing-common/Sinon.sys.mjs @17; ChromeUtils-import-literal
+- Module resource://services-sync/UIState.sys.mjs @20; ChromeUtils-import-literal
+
+### browser/components/tests/browser/browser_browserGlue_fxa_client_info_ping.js
+
+Blob: `2ecf95dfb27add4cfaad3102f475118c5726d18d`. Role: test-path,source. Parse: module.
+
+- (anonymous) @21-25; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- test_client_info_ping_signed_in @27-67; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @43-58; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @59-62; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_client_info_ping_signed_out @69-93; FunctionExpression; parameters=0; async=true; generator=false
+- Module resource://testing-common/Sinon.sys.mjs @12; ChromeUtils-import-literal
+- Module resource://services-sync/UIState.sys.mjs @15; ChromeUtils-import-literal
+
+### browser/components/tests/browser/browser_browserGlue_os_auth.js
+
+Blob: `254f8c3572f4f9596db0769210dc3268cffc0ff3`. Role: test-path,source. Parse: module.
+
+- test_creditCards_os_auth_disabled_for_new_profile @11-33; FunctionExpression; parameters=0; async=true; generator=false
+- Module resource://gre/modules/shared/FormAutofillUtils.sys.mjs @6; ChromeUtils-import-literal
+
+### browser/components/tests/browser/browser_browserGlue_rosettaNotification.js
+
+Blob: `4fc58c33437f58f5844e67f77ef1a4b7c0a81368`. Role: test-path,source. Parse: module.
+
+- closeExistingNotification @10-20; FunctionDeclaration; parameters=0; async=false; generator=false
+- setRosettaStatus @22-26; FunctionDeclaration; parameters=1; async=false; generator=false
+- getNotification @28-37; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @29-35; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- setup @43-54; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @49-53; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- doNotShowNotificationWhenNotTranslated @56-62; FunctionExpression; parameters=0; async=true; generator=false
+- showNotificationWhenTranslated @64-86; FunctionExpression; parameters=0; async=true; generator=false
+- onlyOneNotificationPerWindow @88-96; FunctionExpression; parameters=0; async=true; generator=false
+- notificationShownInNewWindows @98-108; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @102-102; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- dismissalSilencesSession @110-144; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @132-132; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Module resource://gre/modules/RosettaUtils.sys.mjs @39; ChromeUtils-import-literal
+
+### browser/components/tests/browser/browser_browserGlue_sandboxDisabledNotification.js
+
+Blob: `3e12d317cd82da18e9130ed7ee604e3490163bf8`. Role: test-path,source. Parse: module.
+
+- closeSandboxNotification @7-17; FunctionDeclaration; parameters=0; async=false; generator=false
+- contentSandboxCanBeDisabledByPref @19-29; FunctionDeclaration; parameters=0; async=false; generator=false
+- getSandboxNotification @31-37; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @32-35; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- setup @43-54; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @50-53; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_notification_whenLevelIsZero @58-77; FunctionExpression; parameters=0; async=true; generator=false
+- test_notification_whenEnvDisablesSandbox @80-88; FunctionExpression; parameters=0; async=true; generator=false
+- test_onlyOneNotificationPerWindow @91-100; FunctionExpression; parameters=0; async=true; generator=false
+- test_noDuplicateNotificationIfAlreadyVisible @103-112; FunctionExpression; parameters=0; async=true; generator=false
+- test_multipleWindowsShowNotification @115-143; FunctionExpression; parameters=0; async=true; generator=false
+- test_prefChangeTriggersWarning @146-161; FunctionExpression; parameters=0; async=true; generator=false
+- test_noWarningOnSafeLevelChange @164-172; FunctionExpression; parameters=0; async=true; generator=false
+- test_ftlResourceIsLoadedBeforeNotification @175-189; FunctionExpression; parameters=0; async=true; generator=false
+- doNotShowNotificationCorrectly @191-202; FunctionExpression; parameters=0; async=true; generator=false
+- Module resource://gre/modules/SandboxUtils.sys.mjs @40; ChromeUtils-import-literal
+
+### browser/components/tests/browser/browser_browserGlue_telemetry.js
+
+Blob: `a2a13a087ac124025b67e831cc499ca7e998707f`. Role: test-path,source. Parse: module.
+
+- check_startup_pinned_telemetry @7-74; FunctionExpression; parameters=0; async=false; generator=false
+- check_is_default_handler_telemetry @82-117; FunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/tests/browser/browser_browserGlue_upgradeDialog_trigger.js
+
+Blob: `d9a96b3f870fa8fc6274728052b12b694a974376`. Role: test-path,source. Parse: module.
+
+- (anonymous) @20-22; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- forceMajorUpgrade @24-36; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @31-35; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- not_major_upgrade @38-46; FunctionExpression; parameters=0; async=true; generator=false
+- remote_disabled @48-73; FunctionExpression; parameters=0; async=true; generator=false
+- enterprise_disabled @75-93; FunctionExpression; parameters=0; async=true; generator=false
+- show_major_upgrade @95-127; FunctionExpression; parameters=0; async=true; generator=false
+- Module resource://testing-common/NimbusTestUtils.sys.mjs @6; ChromeUtils-import-literal
+- Module resource://nimbus/ExperimentAPI.sys.mjs @9; ChromeUtils-import-literal
+- Module resource:///modules/asrouter/OnboardingMessageProvider.sys.mjs @12; ChromeUtils-import-literal
+
+### browser/components/tests/browser/browser_browserGlue_userNamespacesNotification.js
+
+Blob: `981ea06a08254ee83b60c9bf19635943687079d2`. Role: test-path,source. Parse: module.
+
+- closeExistingNotification @10-20; FunctionDeclaration; parameters=0; async=false; generator=false
+- setHasUsernamespaces @22-26; FunctionDeclaration; parameters=1; async=false; generator=false
+- getNotification @28-36; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @29-34; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- setup @43-54; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @49-53; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- doNotShowNotificationCorrectly @56-71; FunctionExpression; parameters=0; async=true; generator=false
+- showNotificationCorrectly @73-89; FunctionExpression; parameters=0; async=true; generator=false
+- prefDisablesNotification @91-109; FunctionExpression; parameters=0; async=true; generator=false
+- dontShowAgainTogglePref @111-143; FunctionExpression; parameters=0; async=true; generator=false
+- doNotShowNotificationCorrectly @145-156; FunctionExpression; parameters=0; async=true; generator=false
+- notLinuxPlatform @159-161; FunctionExpression; parameters=0; async=false; generator=false
+- Module resource://gre/modules/SandboxUtils.sys.mjs @40; ChromeUtils-import-literal
+
+### browser/components/tests/browser/browser_bug538331.js
+
+Blob: `08deda8f2e10cd8f6d908c13956c9c35b96c1e49`. Role: test-path,source. Parse: module.
+
+- test_bug538331 @80-164; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @98-102; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- getActiveUpdateFile @172-185; FunctionDeclaration; parameters=0; async=false; generator=false
+- reloadUpdateManagerData @195-199; FunctionDeclaration; parameters=1; async=true; generator=false
+- writeFile @209-226; FunctionDeclaration; parameters=2; async=false; generator=false
+- writeSuccessUpdateStatusFile @233-239; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### browser/components/tests/browser/browser_contentpermissionprompt.js
+
+Blob: `83f93fbb16f89283cf434356ca004fca9d83c61d`. Role: test-path,source. Parse: module.
+
+- MockContentPermissionType @24-26; FunctionDeclaration; parameters=1; async=false; generator=false
+- MockContentPermissionRequest @44-49; FunctionDeclaration; parameters=1; async=false; generator=false
+- cancel @60-62; FunctionExpression; parameters=0; async=false; generator=false
+- test_empty_types @72-82; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @75-77; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_multiple_types @89-99; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @95-97; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_not_permission_type @106-115; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @111-113; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_unrecognized_type @122-131; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @127-129; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_working_request @139-175; FunctionExpression; parameters=0; async=true; generator=false
+- prompt @149-151; FunctionExpression; parameters=0; async=false; generator=false
+- integration @154-162; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- createPermissionPrompt @155-161; FunctionExpression; parameters=2; async=false; generator=false
+
+### browser/components/tests/browser/browser_csp_baseline.js
+
+Blob: `8e0099f27f30084e05991ff096d5dfc2d361dbab`. Role: test-path,source. Parse: module.
+
+- testViolation @6-41; FunctionDeclaration; parameters=2; async=true; generator=false
+- contentWindow.on_click @8-10; FunctionExpression; parameters=0; async=false; generator=false
+- test_baseline_blocks @43-71; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @53-55; FunctionExpression; parameters=1; async=true; generator=false
+- test_baseline_blocks @73-92; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/tests/browser/browser_csp_blocks.js
+
+Blob: `655484028c904eaf4b4172cd92da44613c63fe21`. Role: test-path,source. Parse: module.
+
+- test_blocks_event_handlers @6-89; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @14-17; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- window.run_me @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- test_pref_disable @91-110; FunctionExpression; parameters=0; async=true; generator=false
+- win.run_me @98-100; FunctionExpression; parameters=0; async=false; generator=false
+- test_blocks_script_src @112-139; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/tests/browser/browser_csp_module.js
+
+Blob: `7ef835e34debe4935e8f9416d9d9d0ac50468787`. Role: test-path,source. Parse: module.
+
+- test_in_module @8-31; FunctionDeclaration; parameters=3; async=true; generator=false
+- test_event_handler @33-35; FunctionExpression; parameters=0; async=true; generator=false
+- test_inline_script @37-39; FunctionExpression; parameters=0; async=true; generator=false
+- test_data_url_script @41-47; FunctionExpression; parameters=0; async=true; generator=false
+- test_eval_in_module @49-66; FunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/tests/browser/browser_csp_violation_telemetry.js
+
+Blob: `d9d7e978c92422656ac5cd65f2d8ef697ba7e0f7`. Role: test-path,source. Parse: module.
+
+- test_internal_page_telemetry @6-59; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @24-30; ArrowFunctionExpression; parameters=1; async=true; generator=false
+
+### browser/components/tests/browser/browser_default_bookmark_toolbar_visibility.js
+
+Blob: `f605f0757bb85b262337eb691aeda3f6d013ce28`. Role: test-path,source. Parse: module.
+
+- (anonymous) @11-15; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @12-14; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_default_bookmark_toolbar_visibility @17-50; FunctionExpression; parameters=0; async=true; generator=false
+- test_bookmark_toolbar_visible_when_populated @56-89; FunctionExpression; parameters=0; async=true; generator=false
+- Module resource://gre/modules/Bookmarks.sys.mjs @57; ChromeUtils-import-literal
+- Module moz-src:///browser/components/places/PlacesUIUtils.sys.mjs @60; ChromeUtils-import-literal
+
+### browser/components/tests/browser/browser_default_browser_prompt.js
+
+Blob: `0a7baf360622c1bd74984b2a8ce9934bf380ebaf`. Role: test-path,source. Parse: module.
+
+- showAndWaitForModal @21-28; FunctionDeclaration; parameters=1; async=true; generator=false
+- AssertSetDefaultResult @56-68; FunctionDeclaration; parameters=2; async=false; generator=false
+- proton_shows_prompt @70-88; FunctionExpression; parameters=0; async=true; generator=false
+- not_now @90-102; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @92-94; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- stop_asking @104-119; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @107-111; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- primary_default @121-145; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @125-127; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- primary_pin @147-175; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @151-153; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- showDefaultPrompt @177-211; FunctionExpression; parameters=0; async=true; generator=false
+- promptStoresImpressionAndDisableTimestamps @213-240; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @214-218; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- showPromptStyleSpotlight @242-288; FunctionExpression; parameters=0; async=true; generator=false
+- spotlightStoresImpressionTimestamp @290-331; FunctionExpression; parameters=0; async=true; generator=false
+- spotlightRecordsTelemetryOnAccept @333-372; FunctionExpression; parameters=0; async=true; generator=false
+- spotlightRecordsTelemetryWhenNotDefault @374-412; FunctionExpression; parameters=0; async=true; generator=false
+- spotlightNotShownDoesNotRecordTelemetry @414-455; FunctionExpression; parameters=0; async=true; generator=false
+- Module moz-src:///browser/components/DefaultBrowserCheck.sys.mjs @6; ChromeUtils-import-literal
+- Module resource://testing-common/NimbusTestUtils.sys.mjs @9; ChromeUtils-import-literal
+- Module resource://nimbus/ExperimentAPI.sys.mjs @12; ChromeUtils-import-literal
+- Module resource:///modules/asrouter/Spotlight.sys.mjs @16; ChromeUtils-import-literal
+
+### browser/components/tests/browser/browser_default_webprotocol_handler_mailto.js
+
+Blob: `92ea7cfbc0e69698fe4e09eb007a96b2828de63d`. Role: test-path,source. Parse: module.
+
+- (anonymous) @16-35; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @18-23; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- check_installHash @44-50; FunctionExpression; parameters=0; async=true; generator=false
+- check_addWebProtocolHandler @52-78; FunctionExpression; parameters=0; async=true; generator=false
+- promptShownForLocalHandler @84-105; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @91-104; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- test_rollout @107-125; FunctionDeclaration; parameters=4; async=false; generator=false
+- check_no_button @127-173; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @137-143; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @145-170; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- check_x_button @175-228; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @180-225; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- check_x_button @230-244; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @234-241; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- check_bar_is_not_shown @246-258; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @249-255; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- Module resource://nimbus/ExperimentAPI.sys.mjs @6; ChromeUtils-import-literal
+- Module resource://testing-common/NimbusTestUtils.sys.mjs @9; ChromeUtils-import-literal
+- Module moz-src:///browser/components/protocolhandler/WebProtocolHandlerRegistrar.sys.mjs @12; ChromeUtils-import-literal
+
+### browser/components/tests/browser/browser_forced_colors.js
+
+Blob: `7b2d7bd4a416b8ef54482c0977ef5a86179d3e8c`. Role: test-path,source. Parse: module.
+
+- test_forced_colors_windows @6-20; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/tests/browser/browser_handle_notification.js
+
+Blob: `a291c92b577b9486e8e52a2bbe5909c36c5ce704`. Role: test-path,source. Parse: module.
+
+- createCmdLine @5-16; FunctionDeclaration; parameters=3; async=false; generator=false
+- runCmdLine @18-23; FunctionDeclaration; parameters=1; async=false; generator=false
+- simulateNotificationClickWithExistingWindow @25-32; FunctionDeclaration; parameters=1; async=false; generator=false
+- simulateNotificationClickWithNewWindow @34-41; FunctionDeclaration; parameters=1; async=false; generator=false
+- test_basic @43-57; FunctionExpression; parameters=0; async=true; generator=false
+- test_legacy_launchUrl @61-75; FunctionExpression; parameters=0; async=true; generator=false
+- test_invalid_origin_with_path @77-91; FunctionExpression; parameters=0; async=true; generator=false
+- test_user_context @93-109; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @105-105; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_basic_initial_load @111-146; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @131-131; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### browser/components/tests/browser/browser_initial_tab_remoteType.js
+
+Blob: `2008c59ce18bcdf4d41abf1f9c1dbd4488df6fe8`. Role: test-path,source. Parse: module.
+
+- assertOneRemoteBrowserShown @48-95; FunctionDeclaration; parameters=5; async=true; generator=false
+- observer @56-58; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructOnePageCmdLine @107-113; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @115-128; FunctionExpression; parameters=0; async=true; generator=false
+- test_default_args_and_homescreen @133-144; FunctionExpression; parameters=0; async=true; generator=false
+- test_abouthome_arg @150-158; FunctionExpression; parameters=0; async=true; generator=false
+- test_examplecom_arg @164-172; FunctionExpression; parameters=0; async=true; generator=false
+- test_data_arg @174-206; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @193-196; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_data_arg_initial_launch @208-240; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @220-238; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @224-227; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_data_arg_new_window @242-281; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @258-276; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @262-265; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_external_data_arg_remains_blocked @283-334; FunctionExpression; parameters=0; async=true; generator=false
+- onConsoleMessage @290-297; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @313-316; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @323-323; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_data_arg_rejects_other_schemes @336-358; FunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/tests/browser/browser_last_window_close_trigger.js
+
+Blob: `95ddd7367028f7e93d6903d1908b365c4707588b`. Role: test-path,source. Parse: module.
+
+- (anonymous) @33-50; FunctionExpression; parameters=0; async=true; generator=false
+- stubAsLastWindow @57-59; FunctionDeclaration; parameters=2; async=false; generator=false
+- stubHasMessageForTrigger @67-69; FunctionDeclaration; parameters=1; async=false; generator=false
+- test_not_last_window_does_not_dispatch @71-88; FunctionExpression; parameters=0; async=true; generator=false
+- test_popup_windows_are_included @90-110; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @95-95; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_web_app_windows_are_excluded @112-130; FunctionExpression; parameters=0; async=true; generator=false
+- test_cancels_dispatches_and_recloses @132-170; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @139-141; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @144-147; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- test_second_close_attempt_does_not_redispatch @172-223; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @182-188; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @186-186; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_skips_trigger_when_tabs_warning_would_show @225-250; FunctionExpression; parameters=0; async=true; generator=false
+- test_pinned_tabs_excluded_from_last_window_nonmac_check @253-298; FunctionExpression; parameters=0; async=true; generator=false
+- Module resource:///modules/asrouter/ASRouter.sys.mjs @23; ChromeUtils-import-literal
+- Module moz-src:///browser/components/taskbartabs/TaskbarTabsUtils.sys.mjs @26; ChromeUtils-import-literal
+
+### browser/components/tests/browser/browser_quit_close_current_tab.js
+
+Blob: `d59173ee5508cb4b7fa29fdb82f6264fe189dd65`. Role: test-path,source. Parse: module.
+
+- test_close_current_tab @10-52; FunctionExpression; parameters=0; async=true; generator=false
+- observer @13-37; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @33-33; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### browser/components/tests/browser/browser_quit_disabled.js
+
+Blob: `a2151e89539e791da6f486969d8ff4a67a536f34`. Role: test-path,source. Parse: module.
+
+- test_appMenu_quit_disabled @4-22; FunctionExpression; parameters=0; async=true; generator=false
+- test_quit_shortcut_disabled @24-62; FunctionExpression; parameters=0; async=true; generator=false
+- testQuitShortcut @25-53; FunctionDeclaration; parameters=1; async=true; generator=false
+- observe @30-39; FunctionExpression; parameters=2; async=false; generator=false
+
+### browser/components/tests/browser/browser_quit_multiple_tabs.js
+
+Blob: `fa0cbc7a4cfce77c930ac3a6382416b1730b8a50`. Role: test-path,source. Parse: module.
+
+- test_check_right_prompt @11-110; FunctionExpression; parameters=0; async=true; generator=false
+- checkDialog @43-63; FunctionDeclaration; parameters=3; async=false; generator=false
+- setDialogOpened @66-68; FunctionDeclaration; parameters=0; async=false; generator=false
+- callback @87-89; FunctionExpression; parameters=1; async=false; generator=false
+
+### browser/components/tests/browser/browser_quit_shortcut_warning.js
+
+Blob: `7bc67d8562e81c167ea13794372af4729b664714`. Role: test-path,source. Parse: module.
+
+- test_quit_shortcut @6-54; FunctionExpression; parameters=0; async=true; generator=false
+- checkDialog @14-19; FunctionDeclaration; parameters=1; async=false; generator=false
+- setDialogOpened @22-24; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### browser/components/tests/browser/browser_startup_homepage.js
+
+Blob: `219b285505ff0d7fb38a6ec4f5c6d75fa3443bfe`. Role: test-path,source. Parse: module.
+
+- checkArgs @6-25; FunctionDeclaration; parameters=3; async=true; generator=false
+- (anonymous) @9-14; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- test_once_expire @27-40; FunctionExpression; parameters=0; async=true; generator=false
+- test_once_invalid @42-84; FunctionExpression; parameters=0; async=true; generator=false
+- test_once @86-121; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/tests/browser/browser_telemetry_activation.js
+
+Blob: `13b7e5a2eea47fa01b4d8669255482b3e491f550`. Role: test-path,source. Parse: module.
+
+- handleCommandLine @6-60; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @34-50; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- onTabOpen @35-45; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @62-66; FunctionExpression; parameters=0; async=true; generator=false
+- getWindowsStartSearchActivationCount @70-76; FunctionDeclaration; parameters=1; async=false; generator=false
+- test_launched_unlike_windows_search_no_osint @78-90; FunctionExpression; parameters=0; async=true; generator=false
+- test_launched_unlike_windows_search_not_bing @92-105; FunctionExpression; parameters=0; async=true; generator=false
+- test_launched_unlike_windows_search_no_search_path @107-119; FunctionExpression; parameters=0; async=true; generator=false
+- test_launched_like_windows_search @121-133; FunctionExpression; parameters=0; async=true; generator=false
+- test_invoked_like_windows_search @135-147; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/tests/browser/browser_to_handle_telemetry.js
+
+Blob: `8f0564e03e813351412a4f4b800231a57bd98744`. Role: test-path,source. Parse: module.
+
+- handleCommandLine @6-43; FunctionDeclaration; parameters=2; async=true; generator=false
+- assertToHandleTelemetry @45-96; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @98-100; FunctionExpression; parameters=0; async=true; generator=false
+- test_invoked_to_handle_registered_file_type @102-116; FunctionExpression; parameters=0; async=true; generator=false
+- test_invoked_to_handle_unregistered_file_type @118-128; FunctionExpression; parameters=0; async=true; generator=false
+- test_invoked_to_handle_registered_protocol @130-140; FunctionExpression; parameters=0; async=true; generator=false
+- test_invoked_to_handle_unregistered_protocol @142-154; FunctionExpression; parameters=0; async=true; generator=false
+- test_launched_to_handle_registered_protocol @156-166; FunctionExpression; parameters=0; async=true; generator=false
+- test_launched_to_handle_registered_file_type @168-182; FunctionExpression; parameters=0; async=true; generator=false
+- test_invoked_no_osint @184-194; FunctionExpression; parameters=0; async=true; generator=false
+- test_launched_no_osint @196-206; FunctionExpression; parameters=0; async=true; generator=false
+
+### browser/components/tests/browser/eval/browser_csp_eval.js
+
+Blob: `a4bc101e9691a81460c650c59c7af81f8316cc19`. Role: test-path,source. Parse: module.
+
+- eval_allowed_with_special_pref @6-18; FunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/tests/browser/file_csp_module.sys.mjs
+
+Blob: `9e81a6e9ddf21522f399e484dd46fe2c03bc9b29`. Role: test-path,source. Parse: module.
+
+- test_event_handler @4-7; FunctionDeclaration; parameters=1; async=false; generator=false
+- test_inline_script @9-14; FunctionDeclaration; parameters=1; async=false; generator=false
+- test_data_url_script @16-21; FunctionDeclaration; parameters=1; async=false; generator=false
+- test_eval @23-26; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### browser/components/tests/browser/head.js
+
+Blob: `989e88608a67f9e1f6cda52c46cd907e173134aa`. Role: test-path,source. Parse: module.
+
+- AssertEvents @16-22; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @19-19; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- mockShell @30-99; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @33-35; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- canPinToTaskbar @47-51; FunctionExpression; parameters=0; async=false; generator=false
+- isAppInDock @52-54; FunctionExpression; parameters=0; async=false; generator=false
+- isCurrentAppPinnedToTaskbar @55-57; FunctionExpression; parameters=0; async=false; generator=false
+- isCurrentAppPinnedToStartMenu @58-60; FunctionExpression; parameters=0; async=false; generator=false
+- isDefaultBrowser @61-63; FunctionExpression; parameters=0; async=false; generator=false
+- isDefaultBrowserAsync @64-66; FunctionExpression; parameters=0; async=true; generator=false
+- macDockSupport @67-69; FunctionExpression; parameters=0; async=false; generator=false
+- QueryInterface @71-73; FunctionExpression; parameters=0; async=false; generator=false
+- shellService @74-76; FunctionExpression; parameters=0; async=false; generator=false
+- get @88-90; FunctionExpression; parameters=2; async=false; generator=false
+- set @91-94; FunctionExpression; parameters=3; async=false; generator=false
+
+### browser/components/tests/browser/whats_new_page/browser_whats_new_page.js
+
+Blob: `78e2d44bbf0b658cfac31ffd1bfa30de07fd907b`. Role: test-path,source. Parse: module.
+
+- whats_new_page @6-108; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @18-21; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @35-35; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @40-43; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @61-61; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @68-68; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/tests/browser/whats_new_page/browser_whats_new_page_nimbus.js
+
+Blob: `5bd0cac598e5769ae1515dc5f7c01e480fa0be6d`. Role: test-path,source. Parse: module.
+
+- nimbus_whats_new_page @6-109; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @18-22; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @36-36; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @41-44; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @62-62; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @69-69; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/tests/browser/whats_new_page/browser_whats_new_page_nimbus_disable.js
+
+Blob: `63aa8fbedac8fc3c2921dd00dc72435fd0928ead`. Role: test-path,source. Parse: module.
+
+- nimbus_whats_new_page_disable @6-99; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @10-13; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @26-26; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @31-34; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @52-52; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @59-59; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### browser/components/tests/unit/head.js
+
+Blob: `ffe114c7c808aa0e2c86bf52c05532ca6405273a`. Role: test-path,source. Parse: module.
+
+- ensureDistributionDir @10-17; FunctionDeclaration; parameters=0; async=false; generator=false
+- Module resource://testing-common/Sinon.sys.mjs @5; ChromeUtils-import-literal
+
+### browser/components/tests/unit/test_browserGlue_migration_ctrltab_recently_used_order.js
+
+Blob: `50fd98c119e985c257965f061dfde89064690d5b`. Role: test-path,source. Parse: module.
+
+- has_not_used_ctrl_tab_and_its_off @13-24; FunctionExpression; parameters=0; async=true; generator=false
+- has_not_used_ctrl_tab_and_its_on @26-37; FunctionExpression; parameters=0; async=true; generator=false
+- has_used_ctrl_tab_and_its_off @39-50; FunctionExpression; parameters=0; async=true; generator=false
+- has_used_ctrl_tab_and_its_on @52-63; FunctionExpression; parameters=0; async=true; generator=false
+- has_used_ctrl_tab_and_its_default @65-77; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @79-84; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Module moz-src:///browser/components/ProfileDataUpgrader.sys.mjs @9; ChromeUtils-import-literal
+
+### browser/components/tests/unit/test_browserGlue_migration_formautofill.js
+
+Blob: `d7d15f61efa8b7d44d57595eeac9b7f8c2735c18`. Role: test-path,source. Parse: module.
+
+- ensureOldPrefsAreCleared @14-25; FunctionDeclaration; parameters=0; async=false; generator=false
+- setup @27-38; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @28-37; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_check_form_autofill_module_detect @40-59; FunctionExpression; parameters=0; async=true; generator=false
+- test_check_old_form_autofill_module_off @61-79; FunctionExpression; parameters=0; async=true; generator=false
+- test_check_old_form_autofill_module_on_cc_on @81-104; FunctionExpression; parameters=0; async=true; generator=false
+- test_check_old_form_autofill_module_on_cc_off @106-125; FunctionExpression; parameters=0; async=true; generator=false
+- Module resource://gre/modules/AppConstants.sys.mjs @6; ChromeUtils-import-literal
+- Module moz-src:///browser/components/ProfileDataUpgrader.sys.mjs @9; ChromeUtils-import-literal
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.
+
+## Retrieval correction
+
+This copy preserves the source map in [3bb5e8a8-7fcb-4eba-8103-b942b222bd02.md](3bb5e8a8-7fcb-4eba-8103-b942b222bd02.md). The original was imported and committed by concurrent console maintenance during this study. Its full path metadata could exceed the console search budget. This copy uses component scope metadata while keeping every file path in the body. It adds no independent behavior evidence. Original record: `e996a5aae8fc6f7b3268f34655dfdeab44bfdfc6b7841f3c329128b9a9d608b6`.

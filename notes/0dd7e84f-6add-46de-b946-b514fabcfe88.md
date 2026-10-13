@@ -1,0 +1,11 @@
+<!-- knowledge: {"repository": "git:314d8065c5ad68c7e5c5f92d", "at": "2026-10-13T04:40:28.281952+00:00", "paths": ["tools"], "source": {"reference": "Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b", "revision": "1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b", "status": "provisional", "study": "architecture-relationships-20261013"}} -->
+# firefox/tools component-registrations resource relationships 537
+
+Rows identify literal source sites and manifest entries at the pinned revision. A matching ID, selector, filename, or constructor name is a possible link, not proof of use. CSS matching depends on the document, selector, state, and style cascade. Fluent use depends on loaded resources and localization context. Conditions, globs, platform settings, generated resources, and dynamic replacements are not resolved here.
+
+- tools/code-coverage/components.conf:6-11; role=build-registration; registration literals {"cid": "{93576af0-a62f-4c88-bc12-f1855d4e0173}", "contract_ids": ["@mozilla.org/tools/code-coverage;1"], "type": "nsCodeCoverage", "headers": ["/tools/code-coverage/nsCodeCoverage.h"]}
+- tools/profiler/gecko/components.conf:6-14; role=build-registration; registration literals {"cid": "{25db9b8e-8123-4de1-b66d-8bbbedf2cdf4}", "contract_ids": ["@mozilla.org/tools/profiler;1"], "type": "nsProfiler", "headers": ["/tools/profiler/gecko/nsProfiler.h"]}
+
+## Validation and limits
+
+Fluent definition names use a line pattern; markup attributes use Python HTMLParser; CSS selector tokens use a line pattern and remain lexical candidates. Test manifests use tomllib; component files use Python AST without executing the build language. A manifest entry proves registration syntax, not assertion coverage or a passing run. Resource scanning covers the app UI scopes recorded in the relationship coverage report. Embedded script bodies, generated selectors, stylesheet reachability, duplicate ID contexts, and imported ownership need further checks. Suite is excluded.

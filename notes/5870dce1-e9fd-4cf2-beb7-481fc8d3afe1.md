@@ -1,0 +1,912 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["testing"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013","portableCopies":["99b45f2501f8559c843c282ba758096e3fc64036f06b48e8e675bb8a6f6aa56e"],"sourceAt":"2026-10-13T04:17:22.071Z","correctionOf":"notes/5bf47af5-a453-48c3-ac65-688a751a45f6.md"}} -->
+# firefox/testing JavaScript function map 884
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-0-1.js
+
+Blob: `74af3456dc788643d3cbf786a0bf336ff84177c9`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-0-2.js
+
+Blob: `c6a5619f7bedd60922e6aaf2b58e4a4dda33aff2`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-1-1.js
+
+Blob: `e52f9af7152a674a4e125f4c84b38b0dc47474fc`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-1-2.js
+
+Blob: `0032e685e54f41965f2408aadad8a68124865e8f`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-1-3.js
+
+Blob: `f656493630296a09cd55bba73c514a2831aeb4dc`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-1-4.js
+
+Blob: `058bfb29dcf24eba3951f3c0a27a644c187ce1ca`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-1.js
+
+Blob: `2781b8facc842190217af67f1900b2e12b676346`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-2-1.js
+
+Blob: `765580072113eaa697a4bbb4c7436563161c4280`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-2.js
+
+Blob: `c793f0f917884df2b88e50fcb4f8136048da3f9d`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-1.js
+
+Blob: `b42f94651a66312970cac93dde6fcae294e7821c`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-10.js
+
+Blob: `f58147ef4524eafe5090558fa33a08edded86fa2`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-11.js
+
+Blob: `ba2145a1ca9e920dbabf05b1de970dfce47cb056`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @13-15; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-12.js
+
+Blob: `09778460e8209f7bebeeb886a661053f7b2e0531`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-13.js
+
+Blob: `67c952a0668950ac92ceed294570bfbb0181ed55`. Role: imported-path,test-path,source. Parse: module.
+
+- obj @12-12; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-14.js
+
+Blob: `a4a107d7f42247a4c9e85c93c7bb185b376621c2`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-15.js
+
+Blob: `46d3dc9a4f26364098f8704d62b7ae511ee7f00f`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-16.js
+
+Blob: `72d145e4a8b0458bebdbc43f201f03be5e2e9e60`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-17.js
+
+Blob: `fcf9c69c3230bddecedd230a30527ec2528b6aff`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-18.js
+
+Blob: `a31a3a3403bc29fafd9a42a0e38ba2cdfcb00d04`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-19.js
+
+Blob: `82e6099118ffdb4c2c9505800d2fc1b62f7d306b`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-2.js
+
+Blob: `94848ccea6c73c1477fae289a77e8d93c1918ce0`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-20.js
+
+Blob: `3cee54bc501ac4520b1c84325620bd0b2fca4465`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-21.js
+
+Blob: `26d198d1ecdd25a157132ca2564eda238e3477ff`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @13-15; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-22.js
+
+Blob: `02de9e3bad884b35dfefc181e9027f9a4a274024`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-23.js
+
+Blob: `b7c93c497230e7c9c0053ae178cef819ef8ffbfb`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-24.js
+
+Blob: `b0f8796a547b983abca3f75f6324a21ebc69fe37`. Role: imported-path,test-path,source. Parse: module.
+
+- ConstructFun @16-16; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-3.js
+
+Blob: `443c2a61eb27a725bb40d7132e5b5070cddcb855`. Role: imported-path,test-path,source. Parse: module.
+
+- obj @12-12; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-4.js
+
+Blob: `ae4d9d8654d5696c8f9530b8d1de22d8740854e5`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-5-1.js
+
+Blob: `2bdc1f6ac2b32f848a3bdff592c0c5efd0fcf7f2`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-5.js
+
+Blob: `f70509ecaf03ae43c7054ca7c650b24cafcd56ac`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @14-18; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-6.js
+
+Blob: `819e5bd68970aa916a2b919214302d4b778d6d78`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-7.js
+
+Blob: `a8f8d6b7230671a8f67516f5d8efcd72b77e6b72`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-8.js
+
+Blob: `d5630585b6fe6b3bad41709a1c61bf1888091787`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/15.2.3.10-3-9.js
+
+Blob: `34a68c5285cdd22d611c2e263284385031295304`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/abrupt-completion.js
+
+Blob: `9f5d5d366d88e5b3fbf3a88e1783e09d33f6ca4b`. Role: imported-path,test-path,source. Parse: module.
+
+- preventExtensions @17-19; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @22-24; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/name.js
+
+Blob: `902b1446fddef93a24dc08fdfa10ecd91aed72eb`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/not-a-constructor.js
+
+Blob: `bc4a0d75d98b7c1483d82f937a5781cf5f27831a`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @30-32; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/symbol-object-contains-symbol-properties-non-strict.js
+
+Blob: `a8625fd1b160e0a0a6d2ceafc75918beb1f88f2e`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/symbol-object-contains-symbol-properties-strict.js
+
+Blob: `9fb953b990e51e9156d5a1a4a83d195a2ed204bb`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @18-20; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @22-26; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/preventExtensions/throws-when-false.js
+
+Blob: `1cc8b6a668d350803bf068750d6f2144e39e422e`. Role: imported-path,test-path,source. Parse: module.
+
+- preventExtensions @16-18; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @21-23; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prop-desc.js
+
+Blob: `3185a89fb84bb3666e2ee30dc6c48e4e0234a2b4`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/property-order.js
+
+Blob: `508f83e433512586175f96b81c37dd0249ec6d25`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/proto-from-ctor-realm.js
+
+Blob: `a5e09638417bf376b191796a06cec382480df79b`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/15.2.3.1.js
+
+Blob: `636b72df5f9e3b1d675f573cd3ed21a8e51654f0`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/S15.2.3.1_A1.js
+
+Blob: `5af364c7ce47be59458e69960a14aec8fe613fdc`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @12-14; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/S15.2.3.1_A2.js
+
+Blob: `d40f6ea021ef8a25ea93af7e4f54580ce6865b41`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/S15.2.3.1_A3.js
+
+Blob: `2b2dee07ac21bcd8f5a4520ffc4582a9c2404dc0`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/S15.2.4_A1_T1.js
+
+Blob: `f359fb888652a99722dd5e7524dd654b4458eddd`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/S15.2.4_A1_T2.js
+
+Blob: `7aaea8999e6123cd11bdfa9ab0f766929a392804`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/S15.2.4_A2.js
+
+Blob: `35e9974e2dc9eed9d3db69fc77fd7af9f9de866c`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/S15.2.4_A3.js
+
+Blob: `9d298c97ca954998fd8cbc399d847f2bd3b1d19a`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @12-14; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/S15.2.4_A4.js
+
+Blob: `25ed3b526e6ecd42c26a043bb8c9ef6c1f0f109e`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @12-14; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineGetter__/define-abrupt.js
+
+Blob: `26f59e42ac4db769a381e64f4bb0d2fa5ddf095c`. Role: imported-path,test-path,source. Parse: module.
+
+- noop @12-12; FunctionExpression; parameters=0; async=false; generator=false
+- thrower @13-15; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @18-20; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineGetter__/define-existing.js
+
+Blob: `239e587bcbc9e35459ebef6a3d6a30daee90a389`. Role: imported-path,test-path,source. Parse: module.
+
+- originalGet @18-18; FunctionExpression; parameters=0; async=false; generator=false
+- originalSet @19-19; FunctionExpression; parameters=0; async=false; generator=false
+- newGet @20-20; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineGetter__/define-new.js
+
+Blob: `3eaf9495927bb52b1fb4091ac372789bdf21f67e`. Role: imported-path,test-path,source. Parse: module.
+
+- get @18-18; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineGetter__/define-non-configurable.js
+
+Blob: `d94f1fefa6dd3a6a8356135df74601839c26da27`. Role: imported-path,test-path,source. Parse: module.
+
+- noop @12-12; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @19-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineGetter__/define-non-extensible.js
+
+Blob: `10217f5457d3da031490a9749bf5b8909300eef1`. Role: imported-path,test-path,source. Parse: module.
+
+- noop @12-12; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @17-19; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineGetter__/getter-non-callable.js
+
+Blob: `6070b56c9047f5a7dc3112399f048064809b7842`. Role: imported-path,test-path,source. Parse: module.
+
+- toString @16-18; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @23-25; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @27-29; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @31-33; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @35-37; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineGetter__/key-invalid.js
+
+Blob: `88054d51c9cbf513968292547ce552da0659a553`. Role: imported-path,test-path,source. Parse: module.
+
+- noop @12-12; FunctionExpression; parameters=0; async=false; generator=false
+- toString @15-17; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @20-22; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineGetter__/length.js
+
+Blob: `4586e4c4c43675b717c0c9ac6d2af6f4029a9477`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineGetter__/name.js
+
+Blob: `09265cbfc2f241c474e4d7923d81693d9329fd15`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineGetter__/prop-desc.js
+
+Blob: `c397a75df0216d94748712c7e27aef324bb83cb0`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineGetter__/this-non-obj.js
+
+Blob: `b6b12a257230b70b9c2dd80c847a2311fb270ed0`. Role: imported-path,test-path,source. Parse: module.
+
+- noop @12-12; FunctionExpression; parameters=0; async=false; generator=false
+- toString @15-17; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @22-24; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineSetter__/define-abrupt.js
+
+Blob: `a5eae5cf29210bd4f01da18a4efe1482300ad22f`. Role: imported-path,test-path,source. Parse: module.
+
+- noop @12-12; FunctionExpression; parameters=0; async=false; generator=false
+- thrower @13-15; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @18-20; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineSetter__/define-existing.js
+
+Blob: `bde4ac168733ddace1db2acb8b87acd0face8a44`. Role: imported-path,test-path,source. Parse: module.
+
+- originalGet @18-18; FunctionExpression; parameters=0; async=false; generator=false
+- originalSet @19-19; FunctionExpression; parameters=0; async=false; generator=false
+- newSet @20-20; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineSetter__/define-new.js
+
+Blob: `b9fd3a64ead6f583e364ae25617cbf276c9d9c7e`. Role: imported-path,test-path,source. Parse: module.
+
+- set @18-18; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineSetter__/define-non-configurable.js
+
+Blob: `b3584800081f91f3e228933a6dc9ecdbda989af3`. Role: imported-path,test-path,source. Parse: module.
+
+- noop @12-12; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @19-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineSetter__/define-non-extensible.js
+
+Blob: `c2194d8cc6e183a35b358ff928463b9c4c5ee3e5`. Role: imported-path,test-path,source. Parse: module.
+
+- noop @12-12; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @17-19; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineSetter__/key-invalid.js
+
+Blob: `c6126c7a93e1e233bda1556a1e4b8e4d829a647e`. Role: imported-path,test-path,source. Parse: module.
+
+- noop @12-12; FunctionExpression; parameters=0; async=false; generator=false
+- toString @15-17; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @20-22; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineSetter__/length.js
+
+Blob: `d56597c89ed13d15c67cbb67d03e3bd72e3dc8f4`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineSetter__/name.js
+
+Blob: `9d6e68b36001c221270468f83147a088ca93a4f0`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineSetter__/prop-desc.js
+
+Blob: `2917449d61a166931d962b86e7598820b42c2f1a`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineSetter__/setter-non-callable.js
+
+Blob: `60d1a287173dd54a7cd14db61d99f311e180c66f`. Role: imported-path,test-path,source. Parse: module.
+
+- toString @16-18; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @23-25; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @27-29; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @31-33; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @35-37; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__defineSetter__/this-non-obj.js
+
+Blob: `b849c858294645aafc5b195d7db83a22674694f8`. Role: imported-path,test-path,source. Parse: module.
+
+- noop @12-12; FunctionExpression; parameters=0; async=false; generator=false
+- toString @15-17; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @22-24; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupGetter__/key-invalid.js
+
+Blob: `2f4c9a7b8dfe40dbf4a2d68622f37c7fdf2f486a`. Role: imported-path,test-path,source. Parse: module.
+
+- toString @14-16; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @19-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupGetter__/length.js
+
+Blob: `80efdd6ac9a766ad4fdca982eeba02a5d849c677`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupGetter__/lookup-not-found.js
+
+Blob: `f5ce98d0894e834fdf6d39698afcd4df9b83c749`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupGetter__/lookup-own-acsr-w-getter.js
+
+Blob: `21ab55eb4f22f5d41cbd67a8d68bc0475b1345b4`. Role: imported-path,test-path,source. Parse: module.
+
+- get @20-20; FunctionExpression; parameters=0; async=false; generator=false
+- get @21-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupGetter__/lookup-own-acsr-wo-getter.js
+
+Blob: `0f83c67cc6eabd6eba4beb8ec2981f71884140f2`. Role: imported-path,test-path,source. Parse: module.
+
+- get @20-20; FunctionExpression; parameters=0; async=false; generator=false
+- set @21-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupGetter__/lookup-own-data.js
+
+Blob: `e3fcb81388bcdbb9ed229e6bf69cdfbb8de58907`. Role: imported-path,test-path,source. Parse: module.
+
+- get @18-18; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupGetter__/lookup-own-get-err.js
+
+Blob: `ce5c25c168d72729b5ecfc645e9a990b9eed1578`. Role: imported-path,test-path,source. Parse: module.
+
+- get @20-20; FunctionExpression; parameters=0; async=false; generator=false
+- thrower @21-21; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @24-26; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupGetter__/lookup-own-proto-err.js
+
+Blob: `c57c13640b28eda9fae8d137e1fd29f2621eac0a`. Role: imported-path,test-path,source. Parse: module.
+
+- get @20-20; FunctionExpression; parameters=0; async=false; generator=false
+- thrower @21-21; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @24-26; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupGetter__/lookup-proto-acsr-w-getter.js
+
+Blob: `a4819a703f4643bc7f43e46861526b161b7dc8dc`. Role: imported-path,test-path,source. Parse: module.
+
+- get @20-20; FunctionExpression; parameters=0; async=false; generator=false
+- get @21-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupGetter__/lookup-proto-acsr-wo-getter.js
+
+Blob: `e5a91e56f6cd683bce2964b962e069393e234500`. Role: imported-path,test-path,source. Parse: module.
+
+- get @20-20; FunctionExpression; parameters=0; async=false; generator=false
+- set @21-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupGetter__/lookup-proto-data.js
+
+Blob: `839a7fc244d2558ab1933ab8911b50260cce7340`. Role: imported-path,test-path,source. Parse: module.
+
+- get @18-18; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupGetter__/lookup-proto-get-err.js
+
+Blob: `bdfe42f1b434f0f009135bd21e82272dc9cdddbe`. Role: imported-path,test-path,source. Parse: module.
+
+- get @19-19; FunctionExpression; parameters=0; async=false; generator=false
+- thrower @20-20; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupGetter__/lookup-proto-proto-err.js
+
+Blob: `6206055650092fb7fd2bd45ccabf873ff97f60b7`. Role: imported-path,test-path,source. Parse: module.
+
+- get @19-19; FunctionExpression; parameters=0; async=false; generator=false
+- thrower @20-20; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @24-26; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupGetter__/name.js
+
+Blob: `053ec0f2acb257c3667b1db0ee23a80a01dded28`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupGetter__/prop-desc.js
+
+Blob: `fe925e868e2fc482d79c4e9e4de8c8566bb49699`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupGetter__/this-non-obj.js
+
+Blob: `fadd13a90d742c0514246ccad4109335c86fd76d`. Role: imported-path,test-path,source. Parse: module.
+
+- toString @14-16; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @21-23; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @25-27; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupSetter__/key-invalid.js
+
+Blob: `1266fb7ab4903e9d274f5bbd9879d986a2cbe41b`. Role: imported-path,test-path,source. Parse: module.
+
+- toString @14-16; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @19-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupSetter__/length.js
+
+Blob: `02eaaa8cb850daab03ab1df907b5af6c5b136a6c`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupSetter__/lookup-not-found.js
+
+Blob: `2567b429814a4fb44e3367dd188d0a42bd592c20`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupSetter__/lookup-own-acsr-w-setter.js
+
+Blob: `637eb8fd4dceb6c8fe2e8292897e79ed3c77e0b1`. Role: imported-path,test-path,source. Parse: module.
+
+- set @20-20; FunctionExpression; parameters=0; async=false; generator=false
+- set @21-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupSetter__/lookup-own-acsr-wo-setter.js
+
+Blob: `2f27007e0438bb7e1b3914f6a61acc8539acc908`. Role: imported-path,test-path,source. Parse: module.
+
+- set @20-20; FunctionExpression; parameters=0; async=false; generator=false
+- get @21-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupSetter__/lookup-own-data.js
+
+Blob: `0a0e11151e70ffb3df89e7661d17d8b233a39846`. Role: imported-path,test-path,source. Parse: module.
+
+- set @18-18; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupSetter__/lookup-own-get-err.js
+
+Blob: `ae286c78e57ec25cf4e380af520ad104faa6ff70`. Role: imported-path,test-path,source. Parse: module.
+
+- set @20-20; FunctionExpression; parameters=0; async=false; generator=false
+- thrower @21-21; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @24-26; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupSetter__/lookup-own-proto-err.js
+
+Blob: `44493902a257bc4325223b3cf0d04c6c9a98bdcf`. Role: imported-path,test-path,source. Parse: module.
+
+- set @20-20; FunctionExpression; parameters=0; async=false; generator=false
+- thrower @21-21; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @24-26; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupSetter__/lookup-proto-acsr-w-setter.js
+
+Blob: `a72cce1d2fb2f22b0005f84473109dd7933eb646`. Role: imported-path,test-path,source. Parse: module.
+
+- set @20-20; FunctionExpression; parameters=0; async=false; generator=false
+- set @21-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupSetter__/lookup-proto-acsr-wo-setter.js
+
+Blob: `11ad80f59f6ca16ca2956e8fc60881c73cf9e39c`. Role: imported-path,test-path,source. Parse: module.
+
+- set @20-20; FunctionExpression; parameters=0; async=false; generator=false
+- get @21-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupSetter__/lookup-proto-data.js
+
+Blob: `6b156eebda001ec2e232a052aeea1c6c01e3f569`. Role: imported-path,test-path,source. Parse: module.
+
+- set @18-18; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupSetter__/lookup-proto-get-err.js
+
+Blob: `7151866d50e2a299552c1779c0f44a3903cebcd2`. Role: imported-path,test-path,source. Parse: module.
+
+- set @19-19; FunctionExpression; parameters=0; async=false; generator=false
+- thrower @20-20; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupSetter__/lookup-proto-proto-err.js
+
+Blob: `32d003264ea3c4054d763c71797f50e8cd106ca0`. Role: imported-path,test-path,source. Parse: module.
+
+- set @19-19; FunctionExpression; parameters=0; async=false; generator=false
+- thrower @20-20; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @24-26; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupSetter__/name.js
+
+Blob: `6a692ab5671dfcfbce0989af3935295d736fb9e1`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupSetter__/prop-desc.js
+
+Blob: `a3c9d4a48da8a98cfd69a88c6064cc6941dc2119`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__lookupSetter__/this-non-obj.js
+
+Blob: `cf509d144f0cac99323ce90535c8a102b3c5025e`. Role: imported-path,test-path,source. Parse: module.
+
+- toString @14-16; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @21-23; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @25-27; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__proto__/get-abrupt.js
+
+Blob: `269d4337d2ceaa9eeec3710ab070f0ddf14d8265`. Role: imported-path,test-path,source. Parse: module.
+
+- thrower @14-16; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @20-22; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__proto__/get-fn-name.js
+
+Blob: `293f06718e4fbefb21b6a8e39f2186c8b1136ab5`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__proto__/get-ordinary-obj.js
+
+Blob: `83f70d03dbcc02cdfd7cec03e7ebaac9af8aab97`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__proto__/get-to-obj-abrupt.js
+
+Blob: `b8df75e0d78844ceb701eccd6d3c5d17aad47e8b`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @16-18; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @20-22; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__proto__/prop-desc.js
+
+Blob: `6f21ea7829166e4f5ea14c9d6ef349e2f7909563`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__proto__/set-abrupt.js
+
+Blob: `0437ef55daddcca1b6f1a7232c71f2930e7281c4`. Role: imported-path,test-path,source. Parse: module.
+
+- thrower @13-15; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @18-20; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__proto__/set-cycle-shadowed.js
+
+Blob: `47c4a57fef2fb937219871a2726cffa761973bd1`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__proto__/set-cycle.js
+
+Blob: `7e76fbdceef331fb378005cc86fc130ef8c0b079`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @31-33; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__proto__/set-fn-name.js
+
+Blob: `3edc0d535bbcdf3d4477330d2d6c1bacc314bfeb`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__proto__/set-immutable.js
+
+Blob: `c3f93a7c79a319e031af98b32c0d97514f222a63`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @15-17; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__proto__/set-invalid-value.js
+
+Blob: `345f2a5c20c49d9c2ce630c01b9279b67a8bf516`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__proto__/set-non-extensible.js
+
+Blob: `c14e27d5c78fc94d128d25becf457d1d679fd4fa`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @29-31; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__proto__/set-non-obj-coercible.js
+
+Blob: `084ae2c30166c529b75f608f453ef28a91cd2566`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @16-18; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @20-22; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__proto__/set-non-object.js
+
+Blob: `dd2d32a647e17c33b055d4ebfba421d07ea0ce8c`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/__proto__/set-ordinary-obj.js
+
+Blob: `f7b1f6301bf4866317063873d430dce54d954957`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/constructor/S15.2.4.1_A1_T1.js
+
+Blob: `bafbc2f7eb9821031438b87879b975d0c1a3bb9f`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/constructor/S15.2.4.1_A1_T2.js
+
+Blob: `50a630395410757a47bf1ed7914fd2d4a791e312`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/extensibility.js
+
+Blob: `be3ad90ba19add306c0025d6640d6aa2ef1ef223`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_1.js
+
+Blob: `a4330a78e6cd7fef158c80b49bfb0453780e0d19`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_10.js
+
+Blob: `ae6b1928abb5fd76bce32c5db8d0984a79cad459`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_11.js
+
+Blob: `2b78847eb45d9819791803685e82886e69b6d88e`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_12.js
+
+Blob: `a462ab1992a4232a62c1a73cb73de927b712c43e`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_13.js
+
+Blob: `33cfbaac2628310c0f3a3607f3a583749ab13b6c`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_14.js
+
+Blob: `f021397a306cc094e838d68ecc0626501c2d3930`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_15.js
+
+Blob: `5086fe3bd7bb673dec05d93afacc555cd131f780`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_16.js
+
+Blob: `397f69ab035aa0f33d62191f4a890ac337190e3d`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_17.js
+
+Blob: `36c5ce1b674d6c0800255a45590bf761aced5968`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_18.js
+
+Blob: `521513632d89370e901ad850c4c0249bcbcb1500`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_19.js
+
+Blob: `bda83b039c96850ebfe97baa7b7950eaa7b46b42`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_2.js
+
+Blob: `a10bb3821b75ff28da55d2879a372e308a168782`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_20.js
+
+Blob: `60febfc144d614aa877d52c144cb7b6105b605fd`. Role: imported-path,test-path,source. Parse: module.
+
+- foo @10-12; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_21.js
+
+Blob: `f8795d0f58c97af9864d962d8db658db0aa8e2a0`. Role: imported-path,test-path,source. Parse: module.
+
+- foo @10-11; FunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_22.js
+
+Blob: `e18229b912f298c76ce42d8aa799b695df9c59ee`. Role: imported-path,test-path,source. Parse: module.
+
+- foo @12-14; FunctionExpression; parameters=0; async=false; generator=false
+- foo @15-16; FunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_23.js
+
+Blob: `7f025a822e94a023c96b35d8f12f1473456a2d00`. Role: imported-path,test-path,source. Parse: module.
+
+- foo @10-12; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_24.js
+
+Blob: `641f96b321bae4512dc8c6b90806db594b05592c`. Role: imported-path,test-path,source. Parse: module.
+
+- foo @10-11; FunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_25.js
+
+Blob: `e2620ce47e2d90ac6339f10968c34ae87e6e3d57`. Role: imported-path,test-path,source. Parse: module.
+
+- foo @12-14; FunctionExpression; parameters=0; async=false; generator=false
+- foo @15-16; FunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_26.js
+
+Blob: `a80a3462349825dc3348eabe36cfde305f2d9ab1`. Role: imported-path,test-path,source. Parse: module.
+
+- get @13-15; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_27.js
+
+Blob: `5940f377eaa904d297fbaa982327669fca838316`. Role: imported-path,test-path,source. Parse: module.
+
+- get @13-15; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_28.js
+
+Blob: `122313417e74dc18166d474300fffae79a60c105`. Role: imported-path,test-path,source. Parse: module.
+
+- get @13-15; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_29.js
+
+Blob: `d048b990fdb9ca5221e4b842bf62967d44d17c08`. Role: imported-path,test-path,source. Parse: module.
+
+- get @13-15; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_3.js
+
+Blob: `5e30010643fc4faefab91176f372b0ab975a4e3f`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_30.js
+
+Blob: `7cc54bf8c1257c37d2aa4ab31cfa60ca08fdb76c`. Role: imported-path,test-path,source. Parse: module.
+
+- set @13-14; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_31.js
+
+Blob: `915cf98a0cb858e01e1781bc7b8f179d06d81e8d`. Role: imported-path,test-path,source. Parse: module.
+
+- set @13-14; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Object/prototype/hasOwnProperty/8.12.1-1_32.js
+
+Blob: `0723ab84b55e180aef791b6d10812481ac9f9d30`. Role: imported-path,test-path,source. Parse: module.
+
+- set @13-14; FunctionExpression; parameters=0; async=false; generator=false
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.
+
+## Retrieval correction
+
+This copy preserves the source map in [5bf47af5-a453-48c3-ac65-688a751a45f6.md](5bf47af5-a453-48c3-ac65-688a751a45f6.md). The original was imported and committed by concurrent console maintenance during this study. Its full path metadata could exceed the console search budget. This copy uses component scope metadata while keeping every file path in the body. It adds no independent behavior evidence. Original record: `99b45f2501f8559c843c282ba758096e3fc64036f06b48e8e675bb8a6f6aa56e`.

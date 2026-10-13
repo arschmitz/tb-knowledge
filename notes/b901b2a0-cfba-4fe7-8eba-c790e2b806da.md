@@ -1,0 +1,1113 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["testing"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013","portableCopies":["72bfde568f82a3ab119172498ba7af15836006e3d98c85920c5e1ab8505fd0c1"],"sourceAt":"2026-10-13T04:17:22.071Z","correctionOf":"notes/1d8d2911-0bd1-4802-b5aa-387749b942a5.md"}} -->
+# firefox/testing JavaScript function map 981
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/inLeapYear/basic-hebrew.js
+
+Blob: `993696a27c25e52a8e0444eb12461d007c49b3c7`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/inLeapYear/basic-indian.js
+
+Blob: `7bf517d4d2b196e0d666baf71a1d7cc841fdfe08`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/inLeapYear/basic-islamic-civil.js
+
+Blob: `0af526238be4b714a11ba432e84e4985ac56c202`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/inLeapYear/basic-islamic-tbla.js
+
+Blob: `a55e1e953c89b9451593fee44d5147f29ce44d42`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/inLeapYear/basic-islamic-umalqura.js
+
+Blob: `fe7292dece9d74b66b4f0448a14224d79d406075`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/inLeapYear/basic-japanese.js
+
+Blob: `cc6b90e6aae3a3d784ed65eda45db0eb9bc6574d`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/inLeapYear/basic-persian.js
+
+Blob: `9a02094fcd7310566b09a5ed2fec721ae7a58026`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/inLeapYear/basic-roc.js
+
+Blob: `6fee6e6e900e88fb10a538593d439e229c02c52f`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/inLeapYear/chinese-calendar-dates.js
+
+Blob: `d7032bf7bd251f32d05f3f902180c4da6424f6cb`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/inLeapYear/dangi-calendar-dates.js
+
+Blob: `8c48b1caecd61c3dc3d1790ad2f3d4f678499d59`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/inLeapYear/persian-calendar-authority.js
+
+Blob: `876c1385c390f90ba6725aeda438f62e64063bcd`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthCode/chinese-calendar-dates.js
+
+Blob: `62c02d0f6552a92b088caea1344eb6c080bfadca`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @60-67; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthCode/dangi-calendar-dates.js
+
+Blob: `c79f70321e416249c57dde94de37a78de360b309`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @60-67; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthCode/leap-months-hebrew.js
+
+Blob: `e534d907329dc3643892bd8e9d41c1b1fdc357c4`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthCode/no-leap-months-non-lunisolar.js
+
+Blob: `4b4d71fec3444b38b31b033cf2aff153e0ee3399`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthCode/no-leap-months-persian.js
+
+Blob: `8108960ee4490eea36169a1cdf1de3fa7b01ec30`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthsInYear/basic-buddhist.js
+
+Blob: `bd1a22f31a202ac63a093d4ac28335857ab6ba5c`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthsInYear/basic-chinese.js
+
+Blob: `82e5b65b2afc89c2abd8b82398b329a9b822b8e6`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthsInYear/basic-coptic.js
+
+Blob: `6186041863bbbfdbf96e11cbf912a4cd84300506`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthsInYear/basic-dangi.js
+
+Blob: `6bf5e1b1e3f223d93f1c442e87cc27391058950d`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthsInYear/basic-ethioaa.js
+
+Blob: `a56da6fb57a99f320670bd59e9af92bdb209cbc2`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthsInYear/basic-ethiopic.js
+
+Blob: `eb8b6365e5535728f29cd9d69b95258433304a08`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthsInYear/basic-gregory.js
+
+Blob: `fc16acc63fb8aac2b3ba1fb7408b6590c65dcea6`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthsInYear/basic-hebrew.js
+
+Blob: `3aebd9f665d02bac2a69a24c586d878848eabfe9`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthsInYear/basic-indian.js
+
+Blob: `b50683325312f1667fe45e58c8ce3506bc2bf5f7`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthsInYear/basic-islamic-civil.js
+
+Blob: `8e0a0b2935e36d6340b74b77c67a74f8bb8177af`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthsInYear/basic-islamic-tbla.js
+
+Blob: `6a20c6729d4669c44091460bb56d3480ebfb495f`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthsInYear/basic-islamic-umalqura.js
+
+Blob: `c8136aa17bb96ead4c0c134681d284cebe902e5f`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthsInYear/basic-japanese.js
+
+Blob: `653d2819df98d17608988ef2328f1fe6d946ee3c`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthsInYear/basic-persian.js
+
+Blob: `1853a8f7d1471d215236650f38f880b0f5636b04`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthsInYear/basic-roc.js
+
+Blob: `7cfc17d18529c6e17b16a92254c595aa4624ffb8`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthsInYear/chinese-calendar-leap-days.js
+
+Blob: `0fd7f3646733a4ef3ef7271856036f82eda0af7c`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/monthsInYear/dangi-calendar-leap-days.js
+
+Blob: `e8c77552ef35d92fd28fc4e9a763982d4dfb97b5`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/basic-buddhist.js
+
+Blob: `35646cc83eb60288e715854e27d2131832765bf5`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/basic-chinese.js
+
+Blob: `4bbc0b498873a257974953efc4b6699d10ad9bda`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/basic-coptic.js
+
+Blob: `138b095cefd71d53766cea9240707c927d71783f`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/basic-dangi.js
+
+Blob: `7390774bab46f87032ec80cf9545ad1eeccb6315`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/basic-ethioaa.js
+
+Blob: `a1ec9f943f54216564726cb045828c6985c3ea5b`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/basic-ethiopic.js
+
+Blob: `c376f4a752d7f4fb9273013e69bd2ce5742c7f0d`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/basic-gregory.js
+
+Blob: `0bdc05102b2e2b523ec7ce31de33023317656ddb`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/basic-hebrew.js
+
+Blob: `d00ed9b49c7ec1ac9e831cd02967279233cb5295`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/basic-indian.js
+
+Blob: `3adabf0881466c1f45db4b8fc9a34ff18d928152`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/basic-islamic-civil.js
+
+Blob: `4d117ae8758d6b2a7fc5b8f096b422ee5a39f094`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/basic-islamic-tbla.js
+
+Blob: `dfbf8cb1989df25f7d82c2306627a744b7915851`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/basic-islamic-umalqura.js
+
+Blob: `d1430ebded12499c324c272fa873ce963227ac2e`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/basic-japanese.js
+
+Blob: `0226e56c3f69a69e65a66307698bd5983f8fc121`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/basic-persian.js
+
+Blob: `5278020ff2c7b241762a41896daf39f4f753b1d2`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/basic-roc.js
+
+Blob: `de97e67088a8abc0383e2eae69cda7fd6a24e37a`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/calendar-mismatch.js
+
+Blob: `f0291e45eadfc3c8040434ffe0c3593ebbbc63e7`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @12-12; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/canonicalize-calendar.js
+
+Blob: `f9964e15c08b8569e105283e88be97278d3d3e7b`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @15-18; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/chinese-calendar-dates.js
+
+Blob: `2c65b8fbe09ac309c15fba3a616d242818e1d4f4`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/dangi-calendar-dates.js
+
+Blob: `1b7644b9f485aa08b7e23010393ca45558ff6f90`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/era-boundary-ethiopic.js
+
+Blob: `042e82ceab8f8b15c42b27a3dda7feb56697cc27`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/era-boundary-gregory.js
+
+Blob: `1a2679d44cf4b7da1ce2e7cc1c0f1ed8d9bfa1a3`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/era-boundary-islamic-civil.js
+
+Blob: `e85f4b3eba8f2138b8684de67b15f5e954e3944f`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/era-boundary-islamic-tbla.js
+
+Blob: `9dd82421ea0fbb72ce17d6d97956c54490393f12`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/era-boundary-islamic-umalqura.js
+
+Blob: `5b5f4b11beb8146559dd0d250eebaf651d70d3d8`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/era-boundary-japanese.js
+
+Blob: `2af828cc1950e4455c3ae822a4a4f343d94c8f41`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/era-boundary-roc.js
+
+Blob: `9a074137a8e3f0d3318685db7da28eeb19e4b193`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/infinity-throws-rangeerror.js
+
+Blob: `ca956787072d6505a3a55144b9ea2da8a01a8a63`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @14-21; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @15-15; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @19-19; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/intercalary-month-coptic.js
+
+Blob: `f65cbec4d02e054489ab0f34855ec65dcadc8153`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/intercalary-month-ethioaa.js
+
+Blob: `79406ba48a4655af5c1093f7b61332eb1013b233`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/intercalary-month-ethiopic.js
+
+Blob: `41ed53626b535b1667a37beaa3e88ef4ac34fce4`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/leap-months-chinese.js
+
+Blob: `f8d2911d788736a5a179e27231eb9cc1bb284d10`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/leap-months-dangi.js
+
+Blob: `1bcd845c8f64e2fa8bf5fd6a94b8d89c89f0192b`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/leap-months-hebrew.js
+
+Blob: `a597c568c29b90041dd941c64c77ac38425924f1`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/leap-year-buddhist.js
+
+Blob: `103b8ae3e6d6353c2319e267b3c937841c8db58f`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/leap-year-gregory.js
+
+Blob: `5b88f7a7dd45082ed707aae700875384ef813b50`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/leap-year-japanese.js
+
+Blob: `31a27bb639c1e581966f0d45dc9dfeeea54d3887`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/leap-year-persian.js
+
+Blob: `9c7615e55e7fea89957a84fb10cae405192a5aeb`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/leap-year-roc.js
+
+Blob: `eb65d19e7517a44740fcbaa8bac3a2bfea4f4bb0`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/leap-year-since.js
+
+Blob: `2e9f07f4a39f7daa6284b6a593b702a14b6609a9`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/proleptic-buddhist.js
+
+Blob: `588d6da968e4a81ddc2909b64ad086f080de0ac2`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/proleptic-gregory.js
+
+Blob: `7c99f4f47a29e0cd3135028737d9663b1a8229a1`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/proleptic-japanese.js
+
+Blob: `5e4af6e5f860e4e1d5ddd28cf5d9a7da50ac75b9`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/proleptic-roc.js
+
+Blob: `aa4317f33d2c5f9a157358b21b257575419a4e89`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/wrapping-at-end-of-month-buddhist.js
+
+Blob: `297f3a9ccdc8a089581288a4abfe8f883aec83dc`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/wrapping-at-end-of-month-chinese.js
+
+Blob: `6de5edb4e1c8be8469c871ceb6e248431566a883`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/wrapping-at-end-of-month-coptic.js
+
+Blob: `c82b434a7150fe21e8ee9bf24c158f6f7589df67`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/wrapping-at-end-of-month-dangi.js
+
+Blob: `796f65e921344e91964b9288de8077794f3c3c0b`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/wrapping-at-end-of-month-ethioaa.js
+
+Blob: `de6fcb17a67211e5abb02509e3466415bbe0042a`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/wrapping-at-end-of-month-ethiopic.js
+
+Blob: `8079bcfcfeb27e644e27ba3e5da3551ea1bc69a7`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/wrapping-at-end-of-month-gregory.js
+
+Blob: `b2d6778bc7bc3d593acd6f1126eeafef68fe60ec`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/wrapping-at-end-of-month-hebrew.js
+
+Blob: `804e74bf606672d46f2783e6ac8b4c05763e72c0`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/wrapping-at-end-of-month-indian.js
+
+Blob: `4f7807bb2628af6ebe9bdd2a8e08a3be2baa79c9`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/wrapping-at-end-of-month-islamic-civil.js
+
+Blob: `74c6cb5265103cf8fdd7d743edeaa48854258ad2`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/wrapping-at-end-of-month-islamic-tbla.js
+
+Blob: `c349f342b0fd46f41eb649eba009b479a2f98430`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/wrapping-at-end-of-month-islamic-umalqura.js
+
+Blob: `64b7ee56b7c1e35d5892003a136ec81bcd6e2f22`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/wrapping-at-end-of-month-japanese.js
+
+Blob: `14c54cddd923625593a4e46fcf37f13e4d868fe3`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/wrapping-at-end-of-month-persian.js
+
+Blob: `996ab0e6c3a190f748e0228600e04c4c5da997b1`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/since/wrapping-at-end-of-month-roc.js
+
+Blob: `0b1dc7d04e6d7034266cb99960ab00a370d563b3`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/basic-buddhist.js
+
+Blob: `2d120e5d4f3b91befd0a4291df7c8a4f01f7d034`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/basic-chinese.js
+
+Blob: `81c4aacb29e51f75147099ff97870415fd9ad299`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/basic-coptic.js
+
+Blob: `4300b52079336b3708a83fcdd02ee50c2c72f0b7`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/basic-dangi.js
+
+Blob: `a1d0497d58697a1e52eb403dae04912622b3b2b8`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/basic-ethioaa.js
+
+Blob: `3b7be64090542e836ccb414531663d82628aadd8`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/basic-ethiopic.js
+
+Blob: `9e57dbe04fef1544377d38c337e393b2239333da`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/basic-gregory.js
+
+Blob: `06d1db545b5dd63df3790d73f1258437a221116d`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/basic-hebrew.js
+
+Blob: `cbebded182bdb72e9c69d0ff3f244f15e0878897`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/basic-indian.js
+
+Blob: `56446644b4c696604777783b764a0232a2303c02`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/basic-islamic-civil.js
+
+Blob: `58e520f1ac2352decf9328dd7fc87456b67893aa`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/basic-islamic-tbla.js
+
+Blob: `ef89621ca9153f8ab8e1bd53882843be80b73add`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/basic-islamic-umalqura.js
+
+Blob: `c86f735e0b4ad87f6e583e1aaea59f9ce3b94fb5`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/basic-japanese.js
+
+Blob: `f00c474fea9f9874f54f4743a9b7f12f614a0cdf`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/basic-persian.js
+
+Blob: `e07f0abb2d37fa6e162d2c78d5a269b69de9b1ac`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/basic-roc.js
+
+Blob: `abd36eb821910aa356040c1aa8310757732e1583`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/chinese-calendar-dates.js
+
+Blob: `836cb8e14f4551322c08a6eb320fb1f0bef7c4d2`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/constrain-day-buddhist.js
+
+Blob: `c8f7670f458dfdca7f321a522a2934f37e5c3dea`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @50-52; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @63-65; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @76-78; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @94-96; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @107-109; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @122-124; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @135-137; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @148-150; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @166-168; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @179-181; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @194-196; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @207-209; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @225-227; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @238-240; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @251-253; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @266-268; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @279-281; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @297-299; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @310-312; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @323-325; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/constrain-day-chinese.js
+
+Blob: `096ade4c494b44e04a2fbaf7900a335b70925ecb`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @55-57; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @62-64; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @71-73; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @78-80; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @85-87; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @92-94; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @99-101; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @106-108; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @113-115; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @120-122; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @127-129; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @134-136; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @141-143; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @148-150; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @169-171; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @180-182; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @191-193; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @198-200; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @209-211; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @216-218; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @245-247; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @256-258; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @267-269; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @282-284; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @293-295; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/constrain-day-coptic.js
+
+Blob: `65d53e397a220d24cb9e829b7a6f435d8331406e`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @31-33; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @47-49; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @55-57; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/constrain-day-dangi.js
+
+Blob: `e4af99eb815826a12521f7aea53c981e3d091250`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @53-55; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @60-62; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @69-71; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @76-78; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @83-85; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @90-92; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @97-99; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @104-106; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @111-113; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @118-120; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @125-127; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @132-134; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @139-141; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @146-148; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @167-169; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @178-180; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @189-191; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @196-198; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @207-209; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @218-220; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @243-245; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @254-256; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @265-267; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @280-282; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @291-293; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/constrain-day-ethioaa.js
+
+Blob: `927ff269db0d07ab9fda59b5cae76fd0e00c1b45`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @31-33; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @47-49; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @55-57; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/constrain-day-ethiopic.js
+
+Blob: `1713fa81be58fcf58c01d0cb18b9fbe1dda7886d`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @31-33; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @47-49; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @55-57; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/constrain-day-gregory.js
+
+Blob: `0be131e90e8a70bece17aa543f4b32dfce747ba6`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @50-52; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @63-65; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @76-78; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @94-96; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @107-109; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @122-124; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @135-137; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @148-150; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @166-168; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @179-181; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @194-196; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @207-209; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @225-227; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @238-240; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @251-253; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @266-268; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @279-281; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @297-299; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @310-312; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @323-325; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/constrain-day-hebrew.js
+
+Blob: `6e16e573f260af1779f65f0eb6a1ce79452c7995`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @48-50; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @56-58; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @64-66; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @72-74; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @80-82; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @88-90; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @96-98; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @104-106; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @156-158; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @174-176; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @182-184; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @195-197; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @208-210; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @221-223; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @234-236; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @244-246; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @262-264; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @270-272; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @288-290; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @301-303; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @314-316; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @327-329; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @342-344; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @360-362; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @368-370; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @381-383; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @394-396; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @407-409; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @420-422; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @435-437; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @453-455; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @461-463; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @479-481; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @492-494; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @505-507; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @518-520; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/constrain-day-indian.js
+
+Blob: `8d311191521f49e1dd22bdfc3a4e17343efcc2ec`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @55-60; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @69-77; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @74-76; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @83-85; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @95-100; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @109-117; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @114-116; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @125-127; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @135-140; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @149-157; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @154-156; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @168-173; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @182-190; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @187-189; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/constrain-day-islamic-civil.js
+
+Blob: `34f39e165120541c2653ca42264de1fff34e69dd`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @53-55; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @66-68; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @79-81; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @92-94; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @105-107; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @118-120; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @128-130; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @141-143; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @154-156; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @167-169; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @180-182; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @205-207; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @218-220; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @231-233; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @244-246; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @257-259; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @270-272; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @285-287; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @298-300; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @311-313; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @324-326; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @337-339; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/constrain-day-islamic-tbla.js
+
+Blob: `7b4e4a722e76fdbe3c6669e1c8041a475ad98da2`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @53-55; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @66-68; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @79-81; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @92-94; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @105-107; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @118-120; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @128-130; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @141-143; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @154-156; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @167-169; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @180-182; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @205-207; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @218-220; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @231-233; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @244-246; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @257-259; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @270-272; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @285-287; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @298-300; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @311-313; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @324-326; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @337-339; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/constrain-day-islamic-umalqura.js
+
+Blob: `67be6d16f4d46b01b2ba09bbd91fb389c87c12d0`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @33-35; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @46-48; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @59-61; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @71-73; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @104-106; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @112-114; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @120-122; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @128-130; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @136-138; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @144-146; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @152-154; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @160-162; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @168-170; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @176-178; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @184-186; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @192-194; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @202-204; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @210-212; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @218-220; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @226-228; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @234-236; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @242-244; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @250-252; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @258-260; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @266-268; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @274-276; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @282-284; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @290-292; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/constrain-day-japanese.js
+
+Blob: `766530b1df262d0ffafad8e1eb6c256c2def8c1f`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @50-52; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @63-65; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @76-78; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @94-96; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @107-109; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @122-124; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @135-137; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @148-150; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @166-168; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @179-181; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @194-196; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @207-209; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @225-227; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @238-240; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @251-253; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @266-268; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @279-281; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @297-299; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @310-312; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @323-325; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/constrain-day-persian.js
+
+Blob: `14b080f20e845eb3dbecfbf7060d66e90790310a`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @53-55; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @66-68; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @79-81; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @92-94; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @105-107; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @118-120; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @128-130; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @141-143; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @154-156; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @167-169; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @180-182; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @193-195; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @233-235; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @241-243; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @249-251; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @257-259; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @265-267; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @273-275; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @313-315; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @321-323; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @329-331; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @337-339; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @345-347; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @353-355; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/constrain-day-roc.js
+
+Blob: `43d8698850cce9e5cf55d94776e4536b97bda0cf`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @50-52; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @63-65; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @76-78; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @94-96; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @107-109; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @122-124; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @135-137; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @148-150; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @166-168; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @179-181; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @194-196; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @207-209; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @225-227; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @238-240; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @251-253; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @266-268; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @279-281; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @297-299; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @310-312; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @323-325; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/dangi-calendar-dates.js
+
+Blob: `f07fc98de38772f1b2555c2c48f19121968e9381`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/era-boundary-ethiopic.js
+
+Blob: `4913c1fb2de2c0afcddb8f0605b5d0969af60c78`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/era-boundary-gregory.js
+
+Blob: `aa2d1c12890123a41f46e105ab1ef050678a1621`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/era-boundary-islamic-civil.js
+
+Blob: `e11ee34c623e346d4eaaada7a24e462bd7a08c86`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/era-boundary-islamic-tbla.js
+
+Blob: `20cb1d184589a61d1bf38f839bb2bc78b160d03e`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/era-boundary-islamic-umalqura.js
+
+Blob: `dcc33fd601c084833e81983b2984306e7c900f00`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/era-boundary-japanese.js
+
+Blob: `301d7d1d1c83629c306c6f982495c282a71461b9`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/era-boundary-roc.js
+
+Blob: `3856ec5d03c0af7a2a5018f375a12b7ae3d5de33`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/leap-month-chinese-numerical-months.js
+
+Blob: `0064655ad46aefc2f337656add88b8a776d4f675`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @19-19; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @26-26; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/leap-month-dangi-numerical-months.js
+
+Blob: `d67cc29bed8b13a31b7dff662c412d075ded6df6`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @19-19; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @26-26; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/leap-month-hebrew-numerical-months.js
+
+Blob: `e5484c5a1a88c220fa624407aec380bc9e1293d7`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @20-20; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @27-27; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/leap-months-chinese.js
+
+Blob: `999504d7735bd40af1d2801e908581ccf80e6b3b`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @40-42; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @49-51; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @88-90; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @97-99; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/leap-months-dangi.js
+
+Blob: `b093a34d967520f951ad23c5b60ee8acca5d4a56`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @40-42; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @49-51; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @88-90; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @97-99; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/leap-months-hebrew.js
+
+Blob: `fa39c3e52df7fbcbdd225be925968bce2cf75100`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @47-49; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @93-95; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/leap-year-buddhist.js
+
+Blob: `81504e0a5bfa62c63b19258758763e63f8da919b`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @27-29; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @63-65; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @89-91; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/leap-year-coptic.js
+
+Blob: `c0d0ac4bcf66ece8f06b7a5b880bded2228af5b1`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @25-27; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @33-35; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/leap-year-ethioaa.js
+
+Blob: `1b2bc92106c25c4cf27d5f49a30af00e3cfcce92`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @25-27; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @33-35; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/leap-year-ethiopic.js
+
+Blob: `6266d7089bb7b0287e1feaf66bc924a290ca7697`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @25-27; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @33-35; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/leap-year-gregory.js
+
+Blob: `e37929290ceeb48919999785954b64c2bc49ac6e`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @27-29; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @63-65; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @89-91; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/leap-year-hebrew.js
+
+Blob: `c988fc04540614631c4481d58ea77e8f9640e366`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @27-29; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @35-37; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/leap-year-indian.js
+
+Blob: `52bdeb1167b6c6ba29c08f7d2c71517be98fcad8`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @25-27; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @33-35; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/leap-year-islamic-civil.js
+
+Blob: `884c980564aabffed495e2ad8d7fc8abfd247d48`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @29-31; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @41-43; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/leap-year-islamic-tbla.js
+
+Blob: `4af9d75b6594faca412551fd5244700187e1c25f`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @29-31; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @41-43; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/leap-year-japanese.js
+
+Blob: `bbc20e689da6127a283f664625f83a1e9184a02a`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @27-29; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @63-65; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @89-91; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/leap-year-persian.js
+
+Blob: `a7351b6baa1701be731e0586a000628cc283865e`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @27-29; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @65-67; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @82-84; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/leap-year-roc.js
+
+Blob: `dd2e706c4ea55a3c00b9e99565719f0f4f96bac2`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @27-29; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @63-65; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @89-91; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/month-boundary-buddhist.js
+
+Blob: `59efb026c6c7e7b23c967a053d8fa6d8369281eb`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/intl402/Temporal/PlainDate/prototype/subtract/month-boundary-chinese.js
+
+Blob: `543abe0a7f2898468fe641eacac92dade0d1e090`. Role: imported-path,test-path,source. Parse: module.
+
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.
+
+## Retrieval correction
+
+This copy preserves the source map in [1d8d2911-0bd1-4802-b5aa-387749b942a5.md](1d8d2911-0bd1-4802-b5aa-387749b942a5.md). The original was imported and committed by concurrent console maintenance during this study. Its full path metadata could exceed the console search budget. This copy uses component scope metadata while keeping every file path in the body. It adds no independent behavior evidence. Original record: `72bfde568f82a3ab119172498ba7af15836006e3d98c85920c5e1ab8505fd0c1`.

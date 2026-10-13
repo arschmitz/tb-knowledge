@@ -1,0 +1,808 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:18:44.114924+00:00","paths":["third_party"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013","portableCopies":["8bca74c6f5b13d38bdaa06aecef5d358d610c28ddb701578dfaed66743ee97d2"],"sourceAt":"2026-10-13T04:18:44.114924+00:00","correctionOf":"notes/0b7fd076-cadf-41cb-9c3d-29ba8f199149.md"}} -->
+# firefox/third_party Python and build syntax map 143
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Python AST parser; no source was executed. Functions and classes have source ranges. Imports are written names, not resolved modules. Build entries list assignments with literal string lists and registration calls. Conditions are not evaluated; listed files are not necessarily built or shipped. Dynamic expressions and included build files need separate analysis. Failed parses remain listed.
+
+### third_party/python/gyp/test/subdirectory/gyptest-subdir2-deep.py
+
+Blob: `48548982f8c5d4d09d04f687627879298038f225`. Parse: parsed.
+
+- import TestGyp @11
+
+### third_party/python/gyp/test/subdirectory/gyptest-top-all.py
+
+Blob: `b3c25b1f8d764b8ccd601d46190cbfd7ca38de68`. Parse: parsed.
+
+- import TestGyp @21
+
+### third_party/python/gyp/test/subdirectory/gyptest-top-default.py
+
+Blob: `2448dd98ea50dc51c2af8a9822a4352aeff174b5`. Parse: parsed.
+
+- import TestGyp @21
+
+### third_party/python/gyp/test/symlinks/gyptest-symlinks.py
+
+Blob: `278818a992eeddb666f55bfae302b0bdb4c56bb7`. Parse: parsed.
+
+- import TestGyp @19
+- import os @20
+- import sys @21
+- import tempfile @22
+
+### third_party/python/gyp/test/target/gyptest-target.py
+
+Blob: `4338db739c2d2624da1bea0b86d96ea7c1daa059`. Parse: parsed.
+
+- import sys @13
+- import TestGyp @14
+
+### third_party/python/gyp/test/toolsets/gyptest-toolsets.py
+
+Blob: `f80fce70a2d0ab673f0d0b2a71067043ae4b592b`. Parse: parsed.
+
+- import os @10
+- import sys @11
+- import TestGyp @12
+
+### third_party/python/gyp/test/toplevel-dir/gyptest-toplevel-dir.py
+
+Blob: `9e69512dd36cc15500a7dcc166e57b65fda0d0ad`. Parse: parsed.
+
+- import TestGyp @13
+- import errno @14
+
+### third_party/python/gyp/test/variables/commands/gyptest-commands-ignore-env.py
+
+Blob: `5470d5ce36455fa33a79205ed664ab4cb0013acd`. Parse: parsed.
+
+- from __future__ import print_function @12
+- import os @13
+- import TestGyp @15
+
+### third_party/python/gyp/test/variables/commands/gyptest-commands-repeated-multidir.py
+
+Blob: `21e0487565d2cedead9ee483852445c6a2c22186`. Parse: parsed.
+
+- import TestGyp @12
+
+### third_party/python/gyp/test/variables/commands/gyptest-commands-repeated.py
+
+Blob: `fcf98ee02ad27a6470bf72128546918028479fa4`. Parse: parsed.
+
+- from __future__ import print_function @12
+- import TestGyp @14
+
+### third_party/python/gyp/test/variables/commands/gyptest-commands.py
+
+Blob: `3251120ff477af2e65af73011942c5401282c79f`. Parse: parsed.
+
+- from __future__ import print_function @11
+- import os @12
+- import TestGyp @14
+
+### third_party/python/gyp/test/variables/commands/repeated_multidir/print_cwd_basename.py
+
+Blob: `9b206bb3d4319383ae2faadcf665774d8e4c8b1d`. Parse: parsed.
+
+- from __future__ import print_function @7
+- import os @8
+- import os.path @9
+
+### third_party/python/gyp/test/variables/commands/test.py
+
+Blob: `eb64f953837f79126565bc0bd1d752ddd87e5d62`. Parse: parsed.
+
+- from __future__ import print_function @5
+
+### third_party/python/gyp/test/variables/empty/gyptest-empty.py
+
+Blob: `4cbe166fdc3624c62c6d8075abd6944a934f4e8f`. Parse: parsed.
+
+- import os @11
+- import TestGyp @13
+
+### third_party/python/gyp/test/variables/filelist/gyptest-filelist-golden.py
+
+Blob: `3ddc6698f8ac79fa8b29c1b3e99bf7b07aaf9eb4`. Parse: parsed.
+
+- from __future__ import print_function @11
+- import os @13
+- import sys @14
+- import TestGyp @16
+
+### third_party/python/gyp/test/variables/filelist/gyptest-filelist.py
+
+Blob: `b12084c21cf1bb7c0638ee8bea52b50ff672087c`. Parse: parsed.
+
+- import os @11
+- import sys @12
+- import TestGyp @14
+
+### third_party/python/gyp/test/variables/filelist/src/dummy.py
+
+Blob: `e41fc9f8e4a3a2122cc2570c147df54eed01113a`. Parse: parsed.
+
+- import sys @3
+
+### third_party/python/gyp/test/variables/latelate/gyptest-latelate.py
+
+Blob: `2d77dfec5e9b8dd91ec70ea348ae1b1d04835b78`. Parse: parsed.
+
+- import TestGyp @11
+
+### third_party/python/gyp/test/variables/variable-in-path/gyptest-variable-in-path.py
+
+Blob: `b73a279da737fc339543d45ec8a31245d64ccf13`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/generator-output-different-drive/gyptest-generator-output-different-drive.py
+
+Blob: `96a30ec5b988618aae79c9f14fd77aa7246d175e`. Parse: parsed.
+
+- import os @11
+- import TestGyp @12
+- import string @13
+- import subprocess @14
+- import sys @15
+- import win32api @19
+- function GetFirstFreeDriveLetter @23-28
+
+### third_party/python/gyp/test/win/gyptest-asm-files.py
+
+Blob: `007b52eb267688b6827356620a8f2a885bf29e20`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-cl-additional-include-dirs.py
+
+Blob: `1fabfa97526e09115e4b0cf78fa9118090b9e915`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-cl-additional-options.py
+
+Blob: `e9aea10dc98fa325e24528fbc817f920e3883761`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-cl-analysis.py
+
+Blob: `7b3b9897f5a7e0bb8e29f75a38acb1ae1b2f71f3`. Parse: parsed.
+
+- import TestGyp @11
+- import os @13
+- import sys @14
+
+### third_party/python/gyp/test/win/gyptest-cl-buffer-security-check.py
+
+Blob: `e22869c3d35e3d67b1b05559e4d51c41c118bf91`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+- function GetDisassemblyOfMain @22-38
+
+### third_party/python/gyp/test/win/gyptest-cl-calling-convention.py
+
+Blob: `b5fdc477440939a5c720f48c687ee041aa5121a6`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-cl-character-set.py
+
+Blob: `7fabb6722a87f176ee87d393891e51a39e070ad2`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-cl-compile-as-managed.py
+
+Blob: `0d7b420485e86659e5188cca6e4ab744119fa19b`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-cl-compile-as-winrt.py
+
+Blob: `3e0168b67876a8750d96e54d350bb8c8e9c04406`. Parse: parsed.
+
+- import TestGyp @5
+- import os @7
+- import sys @8
+
+### third_party/python/gyp/test/win/gyptest-cl-debug-format.py
+
+Blob: `6c68a619bed82bf5fc62d0d998bc47b38fcd51eb`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-cl-default-char-is-unsigned.py
+
+Blob: `d20f6742f5e17e064bb0beb46b0d09b84e5624fe`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-cl-disable-specific-warnings.py
+
+Blob: `cb253aff62151881cda5aebf390a613fb6c51b57`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-cl-enable-enhanced-instruction-set.py
+
+Blob: `f34e67112527a3ebc857ef6431da9a586db97da7`. Parse: parsed.
+
+- from __future__ import print_function @11
+- import TestGyp @13
+- import os @15
+- import sys @16
+
+### third_party/python/gyp/test/win/gyptest-cl-exception-handling.py
+
+Blob: `5738a5407144b45ec70abeeb43aacf99706f682d`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-cl-floating-point-model.py
+
+Blob: `86ff4785a07a7db0888d541993622115ed832ade`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-cl-force-include-files.py
+
+Blob: `b73b8bd50320ef3d7526f32ad0c4c0a86c4c1395`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-cl-function-level-linking.py
+
+Blob: `6ad7b8c48490ad8a1bfa6bcb79d9d98ee55e7abc`. Parse: parsed.
+
+- from __future__ import print_function @11
+- import TestGyp @13
+- import sys @15
+- function CheckForSectionString @24-31
+- function Object @33-35
+
+### third_party/python/gyp/test/win/gyptest-cl-optimizations.py
+
+Blob: `31341f7dd7e52e1062256d38d4f84892dd21dabc`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-cl-pdbname-override.py
+
+Blob: `da9b49af160dd2ba44ca951d3ac1ff87463c5b6c`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-cl-pdbname.py
+
+Blob: `f09ac233cd3fec583da095a65a2eea5eefad114e`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-cl-rtti.py
+
+Blob: `d49a09437959b01cac7174015ad275a597d6046c`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-cl-runtime-checks.py
+
+Blob: `4fd529f8927978dc4e4cbeba9fe5f43d42c81f57`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-cl-runtime-library.py
+
+Blob: `53c149297bd3e1ca0e43fc47e7d25abe3f365111`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-cl-treat-wchar-t-as-built-in-type.py
+
+Blob: `ca35fb55a0ebd69910964a8b1e7b4c3cd8074e1e`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-cl-warning-as-error.py
+
+Blob: `d4ef1b362b50438017fb95c97b33d3b428c68a1f`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-cl-warning-level.py
+
+Blob: `62a5b39b6a28f9f55eee522c63c0bc416e2bfba6`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-command-quote.py
+
+Blob: `656a69da5302d87a2a3fa603af3cd57462fc1fef`. Parse: parsed.
+
+- from __future__ import print_function @15
+- import TestGyp @17
+- import sys @19
+
+### third_party/python/gyp/test/win/gyptest-crosscompile-ar.py
+
+Blob: `dc75d96a843f84730f1a032a0604736695208f45`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+- import os @14
+
+### third_party/python/gyp/test/win/gyptest-lib-ltcg.py
+
+Blob: `d1d7bad8407f24b159ba9955cc28c647fd0ff20c`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-link-additional-deps.py
+
+Blob: `62c57366f9931a15fe933756e98d2a00b99aa4a9`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-link-additional-options.py
+
+Blob: `7e57ae47644defe470a084c03847f6ceafadf4a1`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-link-aslr.py
+
+Blob: `e765017d3b9fc1382dd13a09447bd38b39784ae6`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+- function HasDynamicBase @22-25
+
+### third_party/python/gyp/test/win/gyptest-link-base-address.py
+
+Blob: `d58527ad7e9377222e5b6aeb1c59be5a481975bf`. Parse: parsed.
+
+- import TestGyp @11
+- import re @13
+- import sys @14
+- function GetHeaders @23-25
+
+### third_party/python/gyp/test/win/gyptest-link-debug-info.py
+
+Blob: `33e8ac48bf1acffa53c7e6231043c11367f3ed18`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-link-default-libs.py
+
+Blob: `5edf467913e67911675e9e6b2ee7d41123e0c74e`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-link-deffile.py
+
+Blob: `94df874f857e1f4dee88492f956704b770131e7c`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+- function HasExport @26-29
+
+### third_party/python/gyp/test/win/gyptest-link-defrelink.py
+
+Blob: `cb3f86bb0e5114eed631b0684bf970a56e93c3f0`. Parse: parsed.
+
+- from __future__ import print_function @11
+- import TestGyp @13
+- import sys @15
+- function HasExport @32-35
+
+### third_party/python/gyp/test/win/gyptest-link-delay-load-dlls.py
+
+Blob: `3880247b4ae3a5b8da6abcc3904a42d9555c2756`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-link-embed-manifest.py
+
+Blob: `0e2b628be1b0ffe9de135923fc32a0ffb2156a03`. Parse: parsed.
+
+- import TestGyp @12
+- import sys @14
+- import pywintypes @17
+- import win32api @18
+- import winerror @19
+- class LoadLibrary @23-35
+- function LoadLibrary.__init__ @26-28
+- function LoadLibrary.__enter__ @30-32
+- function LoadLibrary.__exit__ @34-35
+- function extract_manifest @38-49
+
+### third_party/python/gyp/test/win/gyptest-link-enable-uac.py
+
+Blob: `0ddbde5fa5509b6f2999f8c4ef402c195a18f514`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+- from xml.dom.minidom import parseString @14
+- import pywintypes @17
+- import win32api @18
+- import winerror @19
+- class LoadLibrary @23-35
+- function LoadLibrary.__init__ @26-28
+- function LoadLibrary.__enter__ @30-32
+- function LoadLibrary.__exit__ @34-35
+- function extract_manifest @38-48
+- function _has_key @71-77
+
+### third_party/python/gyp/test/win/gyptest-link-enable-winrt-app-revision.py
+
+Blob: `45d86e1c69df59d2726d60837713dbfe924bbb42`. Parse: parsed.
+
+- from __future__ import print_function @11
+- import TestGyp @13
+- import os @15
+- import sys @16
+- import struct @17
+
+### third_party/python/gyp/test/win/gyptest-link-enable-winrt-target-platform-version.py
+
+Blob: `877cb68f8cebebe3bd4df0df9d88957b54b2b081`. Parse: parsed.
+
+- from __future__ import print_function @11
+- import TestGyp @13
+- import os @15
+- import sys @16
+- import struct @17
+
+### third_party/python/gyp/test/win/gyptest-link-enable-winrt.py
+
+Blob: `5e0493aade4268bbbe7b7796883416b6d030e567`. Parse: parsed.
+
+- from __future__ import print_function @11
+- import TestGyp @13
+- import os @15
+- import sys @16
+- import struct @17
+
+### third_party/python/gyp/test/win/gyptest-link-entrypointsymbol.py
+
+Blob: `e88174a0858054f1aac292edfdb67e08a2489f72`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-link-fixed-base.py
+
+Blob: `725a87028a56694acdfc6f4cd862c0148b649d93`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+- function GetHeaders @22-24
+
+### third_party/python/gyp/test/win/gyptest-link-force-symbol-reference.py
+
+Blob: `235e94f71bd3d59cc1beb82f924811eca380dc9e`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-link-generate-manifest.py
+
+Blob: `77c9228ee5d771ca25775c205ff6d6dcf4fae400`. Parse: parsed.
+
+- import TestGyp @12
+- import sys @14
+- import pywintypes @17
+- import win32api @18
+- import winerror @19
+- class LoadLibrary @23-35
+- function LoadLibrary.__init__ @26-28
+- function LoadLibrary.__enter__ @30-32
+- function LoadLibrary.__exit__ @34-35
+- function extract_manifest @37-47
+- function test_manifest @59-81
+
+### third_party/python/gyp/test/win/gyptest-link-incremental.py
+
+Blob: `e7184e162c8c1048ad9b8316d222d6852454f7b1`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+- function HasILTTables @22-25
+
+### third_party/python/gyp/test/win/gyptest-link-large-address-aware.py
+
+Blob: `ea433f20994cfc98ce050c5caf9fc3c90bdf41d7`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+- function GetHeaders @22-23
+
+### third_party/python/gyp/test/win/gyptest-link-large-pdb.py
+
+Blob: `1fb27b0ab716dfb9869bd52a784070c0139fb636`. Parse: parsed.
+
+- from __future__ import print_function @11
+- import TestGyp @13
+- import struct @15
+- import sys @16
+- function CheckImageAndPdb @26-43
+
+### third_party/python/gyp/test/win/gyptest-link-library-adjust.py
+
+Blob: `71d1c0936067fd279001c4b3bb48f34fbb1b108f`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-link-library-directories.py
+
+Blob: `8308e14fcb5683ad3b5b71c038089f2b2134c856`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-link-ltcg.py
+
+Blob: `5271e099d7137ff75f8b773c76bdaf7e0332bda6`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-link-mapfile.py
+
+Blob: `00c1dea9e90a262a614f6d91ca203e1522dc8f5b`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-link-nodefaultlib.py
+
+Blob: `f00760b882c944c8e4846c4aed070a0ed9e5c62d`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-link-noimportlib.py
+
+Blob: `d12e0ad3ed324607bdc2929dc9cfe0bc45f501ee`. Parse: parsed.
+
+- import TestGyp @11
+- import os @13
+- import sys @14
+
+### third_party/python/gyp/test/win/gyptest-link-nxcompat.py
+
+Blob: `660074397c344ee50de673fb66f2339b1e7ec685`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+- function GetHeaders @22-23
+
+### third_party/python/gyp/test/win/gyptest-link-opt-icf.py
+
+Blob: `3c48ef6eb946ecb90b9fe371157da48950758e8d`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-link-opt-ref.py
+
+Blob: `586b7afcd40fd412a91ad89f6b233097d7a40809`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-link-ordering.py
+
+Blob: `ed8ee98c9e67a44de297bb7a8012ad62bb78ac3c`. Parse: parsed.
+
+- from __future__ import print_function @11
+- import TestGyp @13
+- import sys @15
+- function GetDisasm @24-29
+
+### third_party/python/gyp/test/win/gyptest-link-outputfile.py
+
+Blob: `b98cdff0f00f0b84ad7ad6fd0572d547c8f8ea2f`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-link-pdb-no-output.py
+
+Blob: `6da0aeae98675e37eaf9d3baf0efec8638deb230`. Parse: parsed.
+
+- import TestGyp @11
+- import os @13
+- import sys @14
+
+### third_party/python/gyp/test/win/gyptest-link-pdb-output.py
+
+Blob: `27245f7ec85ca5be7ee6c96fbb2ea7621f66916c`. Parse: parsed.
+
+- import TestGyp @11
+- import os @13
+- import sys @14
+- function FindFile @24-26
+
+### third_party/python/gyp/test/win/gyptest-link-pdb.py
+
+Blob: `26d744d0b7151870ae7ddffe1a06b5d8057f6624`. Parse: parsed.
+
+- import TestGyp @12
+- import os @14
+- import sys @15
+- function FindFile @24-26
+
+### third_party/python/gyp/test/win/gyptest-link-pgo.py
+
+Blob: `d742047ac3662f473b8032b166ac9f5b73392c6c`. Parse: parsed.
+
+- import TestGyp @11
+- import os @13
+- import sys @14
+- function IsPGOAvailable @22-26
+
+### third_party/python/gyp/test/win/gyptest-link-profile.py
+
+Blob: `4dbc9ae4ce64e5daaa36b2dce40c7643e07e83a8`. Parse: parsed.
+
+- import TestGyp @11
+- import os @13
+- import sys @14
+- function GetSummary @23-25
+
+### third_party/python/gyp/test/win/gyptest-link-restat-importlib.py
+
+Blob: `d249e0a6bdca7cafa2261bce0d339c9eb07e4d88`. Parse: parsed.
+
+- from __future__ import print_function @12
+- import TestGyp @14
+- import os @16
+- import sys @17
+- import time @18
+
+### third_party/python/gyp/test/win/gyptest-link-safeseh.py
+
+Blob: `31a25673f49f3d9b68a7dda134a614d48347987e`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+- function HasSafeExceptionHandlers @22-25
+
+### third_party/python/gyp/test/win/gyptest-link-shard.py
+
+Blob: `9af93284a7c00251d1afbe6f151cfb128254546d`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-link-stacksize.py
+
+Blob: `2e952d2c73bb07130b9e40fab2829e3ecd3bbc32`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+- function GetHeaders @22-23
+
+### third_party/python/gyp/test/win/gyptest-link-subsystem.py
+
+Blob: `a94ba36856bac82183032c612971670d786cfb02`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+- function GetHeaders @29-30
+
+### third_party/python/gyp/test/win/gyptest-link-target-machine.py
+
+Blob: `5a15f3f4dc9557886e81be625e635a8a96c86db1`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-link-tsaware.py
+
+Blob: `d34b3c24a5631791682521968bb0fb08805f63e8`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+- function GetHeaders @22-23
+
+### third_party/python/gyp/test/win/gyptest-link-uldi-depending-on-module.py
+
+Blob: `75c9503dc41de656d3afa064c77f3ef71a389154`. Parse: parsed.
+
+- import TestGyp @12
+- import sys @14
+
+### third_party/python/gyp/test/win/gyptest-link-uldi.py
+
+Blob: `62c5892c50ead234d34a75d2385e0352ca2c82b6`. Parse: parsed.
+
+- import TestGyp @12
+- import sys @14
+
+### third_party/python/gyp/test/win/gyptest-link-unsupported-manifest.py
+
+Blob: `8f7e12bc8c514e0748086fd4d93e73b1e889b515`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-link-update-manifest.py
+
+Blob: `7bad1eca77f498a6994928e61886d615be0c4508`. Parse: parsed.
+
+- import TestGyp @11
+- import os @13
+- import sys @14
+- import pywintypes @17
+- import win32api @18
+- import winerror @19
+- class LoadLibrary @23-35
+- function LoadLibrary.__init__ @26-28
+- function LoadLibrary.__enter__ @30-32
+- function LoadLibrary.__exit__ @34-35
+- function extract_manifest @37-48
+- function WriteAndUpdate @78-88
+
+### third_party/python/gyp/test/win/gyptest-link-warnings-as-errors.py
+
+Blob: `d6a64736fba2467fa494ae83b7bdb111ba391e89`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+### third_party/python/gyp/test/win/gyptest-long-command-line.py
+
+Blob: `8f8b7a3bbd69513970df3a5b33362b90bc1160c9`. Parse: parsed.
+
+- import TestGyp @11
+- import subprocess @13
+- import sys @14
+
+### third_party/python/gyp/test/win/gyptest-macro-projectname.py
+
+Blob: `e411cc04a441003d2094353108f7f7c59925ae95`. Parse: parsed.
+
+- import TestGyp @11
+- import sys @13
+
+## Validation and limits
+
+The parser checked syntax only. This pass cannot prove runtime contracts, ownership, selected build settings, executed branches, or design reasons. Build files use a Python-based domain-specific language; parsing them as Python does not validate the build system. Byte decoding uses UTF-8; special encoding declarations and intentionally invalid fixtures may fail.
+
+## Retrieval correction
+
+This copy preserves the source map in [0b7fd076-cadf-41cb-9c3d-29ba8f199149.md](0b7fd076-cadf-41cb-9c3d-29ba8f199149.md). The original was imported and committed by concurrent console maintenance during this study. Its full path metadata could exceed the console search budget. This copy uses component scope metadata while keeping every file path in the body. It adds no independent behavior evidence. Original record: `8bca74c6f5b13d38bdaa06aecef5d358d610c28ddb701578dfaed66743ee97d2`.

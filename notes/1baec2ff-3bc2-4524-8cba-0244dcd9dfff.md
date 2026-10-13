@@ -1,0 +1,4360 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:22:06.018534+00:00","paths":["third_party"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013","portableCopies":["9a8651b123e8397fb39b38be1618262f2cb44fbe56fc9b3d33e1021c011fc3b5"],"sourceAt":"2026-10-13T04:22:06.018534+00:00","correctionOf":"notes/1f11d848-48a3-45cf-a52d-385d5d99e678.md"}} -->
+# firefox/third_party native and TypeScript syntax map 394
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser versions: {"tree-sitter": "0.25.2", "tree-sitter-c": "0.24.2", "tree-sitter-cpp": "0.23.4", "tree-sitter-rust": "0.24.2", "tree-sitter-java": "0.23.5", "tree-sitter-typescript": "0.23.2"}.
+
+Tree-sitter parses written syntax without executing it. Entries identify declarations and function bodies with source ranges. Names can be unqualified or inferred from an assignment. They do not resolve overloaded symbols or runtime receivers. C/C++ header files use the C++ grammar. Macros and build flags are not expanded. `contains-errors` means the tree has error or missing nodes; its entries remain partial candidates. A clean syntax tree is not proof that the file compiles. Objective-C, Kotlin, IDL, and embedded code are outside this parser pass and remain in the structural census.
+
+### third_party/rust/naga/src/front/spv/convert.rs
+
+Blob: `f44029320da0c37f405ae6d478aedf6ff8ff196b`. Grammar: rust. Status: syntax-clean.
+
+- function_item map_binary_operator @5-42
+- function_item map_relational_fun @44-57
+- function_item map_vector_size @59-66
+- function_item map_image_dim @68-77
+- function_item map_image_format @79-123
+- function_item map_width @125-129
+- function_item map_builtin @131-168
+- function_item map_storage_class @170-189
+
+### third_party/rust/naga/src/front/spv/error.rs
+
+Blob: `c0c525d363285642db8683638b02ace0a3e7a91b`. Grammar: rust. Status: syntax-clean.
+
+- enum_item Error @16-157
+- function_item emit_to_writer @161-163
+- function_item emit_to_writer_with_path @166-174
+- function_item emit_to_string @176-178
+- function_item emit_to_string_with_path @180-191
+- function_item from @195-197
+
+### third_party/rust/naga/src/front/spv/function.rs
+
+Blob: `df96dc460d9f2493ee06a40d243c174fe16971c9`. Grammar: rust. Status: syntax-clean.
+
+- function_item add_call @15-26
+- function_item parse_function @28-318
+- function_item process_entry_point @320-617
+- function_item gctx @621-628
+- function_item lower @631-723
+- function_item lower_impl @632-720
+
+### third_party/rust/naga/src/front/spv/image.rs
+
+Blob: `591590be024b088f20f1b9320ecc7f33e2c6e5b8`. Grammar: rust. Status: syntax-clean.
+
+- struct_item LookupSampledImage @11-14
+- function_item get_image_expr_ty @28-40
+- struct_item SamplingOptions @45-53
+- enum_item ExtraCoordinate @55-59
+- function_item extract_image_coordinates @66-193
+- function_item patch_comparison_type @195-233
+- function_item parse_image_couple @236-251
+- function_item parse_image_uncouple @253-266
+- function_item parse_image_write @268-364
+- function_item parse_image_load @366-487
+- function_item parse_image_sample @490-830
+- function_item parse_image_query_size @832-886
+- function_item parse_image_query_other @888-931
+
+### third_party/rust/naga/src/front/spv/mod.rs
+
+Blob: `f0f682cad280f28913d8b15544e0ad466aa8344d`. Grammar: rust. Status: syntax-clean.
+
+- mod_item convert @30-30
+- mod_item error @31-31
+- mod_item function @32-32
+- mod_item image @33-33
+- mod_item next_block @34-34
+- mod_item null @35-35
+- struct_item Instruction @104-107
+- function_item expect @110-116
+- function_item expect_at_least @118-122
+- function_item can_comparison_sample @126-142
+- enum_item ModuleState @146-160
+- trait_item LookupHelper @162-165
+- function_signature_item lookup @164-164
+- function_item lookup @169-171
+- function_item required_coordinate_size @175-182
+- function_item to_storage_access @198-207
+- function_item to_memory_decorations @209-218
+- enum_item Majority @222-225
+- struct_item Decoration @228-245
+- function_item debug_name @248-253
+- function_item resource_binding @255-264
+- function_item io_binding @266-301
+- struct_item LookupFunctionType @305-308
+- struct_item LookupFunction @310-313
+- struct_item EntryPoint @316-322
+- struct_item LookupType @325-328
+- enum_item Constant @331-334
+- function_item to_expr @337-342
+- struct_item LookupConstant @346-349
+- enum_item Variable @352-356
+- struct_item LookupVariable @359-363
+- struct_item LookupExpression @367-384
+- struct_item LookupMember @387-391
+- enum_item LookupLoadOverride @394-399
+- enum_item ExtendedClass @402-406
+- struct_item Options @409-417
+- function_item default @420-426
+- enum_item BodyFragment @441-469
+- struct_item Body @478-482
+- function_item with_parent @486-491
+- struct_item PhiExpression @495-500
+- enum_item MergeBlockInformation @503-508
+- struct_item BlockContext @551-604
+- enum_item SignAnchor @606-609
+- struct_item Frontend @612-676
+- function_item new @679-712
+- function_item span_from @714-716
+- function_item span_from_with_op @718-720
+- function_item next @722-729
+- function_item next_inst @731-740
+- function_item next_string @742-759
+- function_item next_decoration @761-861
+- function_item get_expr_handle @933-995
+- function_item parse_expr_unary_op @997-1024
+- function_item parse_expr_binary_op @1026-1056
+- function_item parse_expr_unary_op_sign_adjusted @1060-1109
+- function_item parse_expr_binary_op_sign_adjusted @1115-1187
+- function_item parse_expr_int_comparison @1193-1262
+- function_item parse_expr_shift_op @1264-1305
+- function_item parse_expr_derivative @1307-1338
+- function_item insert_composite @1341-1422
+- function_item get_exp_and_base_ty_handles @1437-1462
+- function_item parse_atomic_expr_with_value @1465-1524
+- function_item make_expression_storage @1526-1571
+- function_item switch @1573-1580
+- function_item patch_statements @1584-1675
+- function_item patch_function @1677-1712
+- function_item parse @1714-1867
+- function_item parse_capability @1869-1883
+- function_item parse_extension @1885-1896
+- function_item parse_ext_inst_import @1898-1918
+- function_item parse_memory_model @1920-1926
+- function_item parse_entry_point @1928-1952
+- function_item parse_execution_mode @1954-2032
+- function_item parse_string @2034-2040
+- function_item parse_source @2042-2048
+- function_item parse_source_extension @2050-2055
+- function_item parse_name @2057-2067
+- function_item parse_member_name @2069-2084
+- function_item parse_module_processed @2086-2095
+- function_item parse_decorate @2097-2105
+- function_item parse_member_decorate @2107-2120
+- function_item parse_type_void @2122-2128
+- function_item parse_type_bool @2130-2154
+- function_item parse_type_int @2156-2189
+- function_item parse_type_float @2191-2216
+- function_item parse_type_vector @2218-2252
+- function_item parse_type_matrix @2254-2291
+- function_item parse_type_function @2293-2307
+- function_item parse_type_pointer @2309-2377
+- function_item parse_type_array @2379-2464
+- function_item parse_type_runtime_array @2466-2515
+- function_item parse_type_struct @2517-2621
+- function_item parse_type_image @2623-2717
+- function_item parse_type_sampled_image @2719-2732
+- function_item parse_type_sampler @2734-2759
+- function_item parse_constant @2761-2835
+- function_item parse_composite_constant @2837-2870
+- function_item parse_null_constant @2872-2892
+- function_item parse_bool_constant @2894-2916
+- function_item insert_parsed_constant @2918-2949
+- function_item parse_global_variable @2951-3167
+- function_item record_atomic_access @3181-3220
+- function_item resolve_constant @3223-3233
+- function_item parse_u8_slice @3235-3244
+- function_item is_parent @3247-3259
+- mod_item test @3262-3278
+- function_item parse @3266-3277
+
+### third_party/rust/naga/src/front/spv/next_block.rs
+
+Blob: `dd949c278e1da11e89ae5f31cd94f0741983012f`. Grammar: rust. Status: syntax-clean.
+
+- function_item next_block @22-3106
+- function_item merger @28-39
+- struct_item AccessExpression @228-232
+- struct_item BranchTarget @1980-1983
+- function_item make_index_literal @3109-3131
+
+### third_party/rust/naga/src/front/spv/null.rs
+
+Blob: `8cd33f142f2501887d34c33e9c272ea69c2e0f03`. Grammar: rust. Status: syntax-clean.
+
+- function_item generate_default_built_in @7-33
+
+### third_party/rust/naga/src/front/type_gen.rs
+
+Blob: `4165f051db04b8d61474d889abfea0f96e1d43c4`. Grammar: rust. Status: syntax-clean.
+
+- function_item generate_ray_desc_type @25-105
+- function_item generate_vertex_return_type @108-135
+- function_item generate_ray_intersection_type @149-277
+- function_item generate_external_texture_types @290-450
+- function_item generate_predeclared_type @455-619
+
+### third_party/rust/naga/src/front/wgsl/error.rs
+
+Blob: `1493671e4fcb9e4265f0d6a214bed7fe693b722b`. Grammar: rust. Status: syntax-clean.
+
+- struct_item ParseError @37-42
+- function_item labels @45-49
+- function_item message @51-53
+- function_item notes @55-57
+- function_item diagnostic @59-78
+- function_item emit_to_stderr @82-84
+- function_item emit_to_stderr_with_path @88-107
+- function_item emit_to_string @110-112
+- function_item emit_to_string_with_path @118-127
+- function_item location @130-132
+- function_item fmt @136-138
+- mod_item parse_error_tests @144-171
+- function_item test_notes @147-170
+- enum_item ExpectedToken @174-203
+- function_item fmt @212-316
+- enum_item Kind @223-227
+- enum_item NumberError @320-325
+- enum_item InvalidAssignmentType @328-332
+- enum_item Error @335-617
+- function_item from @620-622
+- enum_item DiagnosticAttributeNotSupportedPosition @627-630
+- function_item from @633-635
+- struct_item TypeMismatchError @640-647
+- struct_item AutoConversionError @650-655
+- struct_item AutoConversionLeafScalarError @658-663
+- struct_item ConcretizationFailedError @666-670
+- function_item as_parse_error @678-1749
+
+### third_party/rust/naga/src/front/wgsl/index.rs
+
+Blob: `b9e5cf37540992360a972b906b65b87db5e97e7f`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Index @8-10
+- function_item generate @20-50
+- function_item visit_ordered @57-59
+- struct_item ResolvedDependency @67-73
+- struct_item DependencySolver @82-102
+- function_item solve @106-116
+- function_item dfs @120-192
+- function_item decl_ident @195-205
+
+### third_party/rust/naga/src/front/wgsl/lower/construction.rs
+
+Blob: `2819f1fe3bf555ef4bdd09fe2090c2f12d79560b`. Grammar: rust. Status: syntax-clean.
+
+- enum_item Constructor @25-49
+- function_item borrow_inner @57-69
+- enum_item Components @72-83
+- function_item into_components_vec @86-92
+- function_item construct @107-623
+
+### third_party/rust/naga/src/front/wgsl/lower/conversion.rs
+
+Blob: `9fd80428331a77c6d99d562f285f57e4bda8bb51`. Grammar: rust. Status: syntax-clean.
+
+- function_item try_automatic_conversions @28-86
+- function_item try_automatic_conversion_for_leaf_scalar @100-137
+- function_item convert_leaf_scalar @139-160
+- function_item try_automatic_conversions_slice @163-174
+- function_item try_automatic_conversions_for_vector @184-222
+- function_item convert_to_leaf_scalar @225-244
+- function_item convert_slice_to_common_leaf_scalar @256-266
+- function_item concretize @271-322
+- function_item automatic_conversion_consensus @345-380
+- function_item automatically_convertible_scalar @384-405
+- function_item pointer_automatically_convertible_scalar @410-432
+- function_item automatic_conversion_combine @442-487
+- function_item automatically_converts_to @490-492
+- function_item concretize @494-501
+
+### third_party/rust/naga/src/front/wgsl/lower/mod.rs
+
+Blob: `04b7e644c5ca7971e9353a6783e0b06e341c3fff`. Grammar: rust. Status: syntax-clean.
+
+- mod_item construction @28-28
+- mod_item conversion @29-29
+- mod_item template_list @30-30
+- struct_item GlobalContext @90-109
+- function_item as_const @112-123
+- function_item as_override @125-136
+- function_item ensure_type_exists @138-146
+- struct_item StatementContext @150-202
+- function_item as_const @205-230
+- function_item as_expression @232-257
+- function_item as_global @260-270
+- function_item invalid_assignment_type @272-283
+- struct_item LocalExpressionContext @286-303
+- enum_item ExpressionContextType @306-330
+- struct_item ExpressionContext @369-395
+- function_item lookup_type @398-400
+- function_item type_name @402-407
+- function_item write_override @409-418
+- function_item write_unnamed_struct @420-426
+- function_item is_runtime @430-435
+- function_item as_const @438-463
+- function_item as_global @465-475
+- function_item as_const_evaluator @477-514
+- function_item as_diagnostic_display @521-527
+- function_item append_expression @529-537
+- function_item get_const_val @539-562
+- function_item is_const @565-575
+- function_item get_expression_span @577-587
+- function_item typifier @589-597
+- function_item get @599-607
+- function_item local @609-621
+- function_item runtime_expression_ctx @623-633
+- function_item with_nested_runtime_expression_ctx @635-679
+- function_item gather_component @681-718
+- function_item register_type @730-746
+- function_item grow_types @768-795
+- function_item image_data @797-806
+- function_item prepare_args @808-821
+- function_item binary_op_splat @830-864
+- function_item interrupt_emitter @870-892
+- function_item apply_load_rule @898-917
+- function_item ensure_type_exists @919-921
+- function_item enumerant @933-962
+- function_item var_address_space @964-975
+- struct_item ArgumentContext @978-984
+- function_item finish @987-997
+- function_item next @999-1011
+- enum_item Declared @1015-1021
+- function_item runtime @1024-1028
+- function_item const_time @1030-1035
+- enum_item Typed @1060-1066
+- function_item map @1069-1074
+- function_item try_map @1076-1084
+- function_item ref_or @1086-1091
+- enum_item Components @1099-1105
+- function_item letter_component @1108-1117
+- function_item single_component @1119-1125
+- function_item new @1130-1151
+- enum_item LoweredGlobalDecl @1155-1165
+- enum_item Texture @1167-1178
+- function_item map @1181-1195
+- function_item min_argument_count @1197-1210
+- enum_item SubgroupGather @1213-1221
+- function_item map @1224-1235
+- enum_item AbstractRule @1239-1245
+- enum_item MustUse @1249-1252
+- function_item from @1255-1261
+- struct_item Lowerer @1264-1266
+- function_item new @1269-1271
+- function_item lower @1273-1504
+- function_item type_and_init @1507-1558
+- function_item function @1560-1762
+- function_item workgroup_size_override @1764-1777
+- function_item block @1779-1792
+- function_item statement @1794-2354
+- function_item expression @2363-2370
+- function_item expression_for_abstract @2372-2379
+- function_item expression_with_leaf_scalar @2381-2389
+- function_item expression_for_reference @2391-2607
+- function_item logical @2612-2736
+- function_item type_expression @2738-2752
+- function_item type_specifier @2754-2799
+- function_item finalize_type @2818-2955
+- function_item unary @2957-3012
+- function_item binary @3014-3090
+- function_item call_builtin @3094-4000
+- function_item call @4020-4175
+- function_item math_function_helper @4187-4221
+- function_item check_bitfield_range @4236-4263
+- function_item resolve_overloads @4275-4437
+- function_item apply_automatic_conversions_for_call @4444-4465
+- function_item atomic_pointer @4467-4488
+- function_item atomic_helper @4490-4541
+- function_item texture_sample_helper @4543-4701
+- function_item get_image_and_span @4552-4561
+- function_item subgroup_operation_helper @4703-4730
+- function_item subgroup_gather_helper @4732-4774
+- function_item r#struct @4776-4899
+- function_item const_u32 @4901-4919
+- function_item array_size @4921-4960
+- function_item array_size_override @4962-4990
+- function_item resolve_named_ast_type @5001-5008
+- function_item resolve_ast_type @5011-5017
+- function_item binding @5019-5052
+- function_item ray_query_pointer @5054-5075
+- function_item map @5079-5091
+
+### third_party/rust/naga/src/front/wgsl/lower/template_list.rs
+
+Blob: `3ad1eeaf9d8916f30a44c2c184707669815e11bd`. Grammar: rust. Status: syntax-clean.
+
+- struct_item TemplateListIter @18-21
+- function_item new @24-29
+- function_item finish @31-41
+- function_item expect_next @43-55
+- function_item ty @57-64
+- function_item ty_with_span @71-80
+- function_item scalar_ty @82-94
+- function_item maybe_array_size @96-106
+- function_item address_space @108-115
+- function_item maybe_address_space @116-130
+- function_item access_mode @132-139
+- function_item maybe_access_mode @151-167
+- function_item storage_format @169-176
+- function_item maybe_vertex_return @178-189
+- function_item cooperative_role @191-199
+
+### third_party/rust/naga/src/front/wgsl/mod.rs
+
+Blob: `3fe55cd93318c8707b5a776d709a89c5290e193f`. Grammar: rust. Status: syntax-clean.
+
+- mod_item error @7-7
+- mod_item index @8-8
+- mod_item lower @9-9
+- mod_item parse @10-10
+- mod_item tests @12-12
+- struct_item Frontend @38-41
+- function_item new @44-49
+- function_item new_with_options @51-56
+- function_item set_options @58-60
+- function_item parse @62-64
+- function_item inner @66-72
+- function_item parse_str @86-88
+- function_item assert_parse_err @92-106
+
+### third_party/rust/naga/src/front/wgsl/parse/ast.rs
+
+Blob: `32dfc79a590d56da9187ce3850df58605433c083`. Grammar: rust. Status: syntax-clean.
+
+- struct_item TranslationUnit @10-40
+- struct_item Ident @43-46
+- enum_item IdentExpr @56-77
+- struct_item TemplateElaboratedIdent @122-129
+- struct_item CallPhrase @146-149
+- struct_item Dependency @158-164
+- function_item hash @167-169
+- function_item eq @173-175
+- struct_item GlobalDecl @182-188
+- enum_item GlobalDeclKind @191-199
+- struct_item FunctionArgument @202-207
+- struct_item FunctionResult @210-214
+- struct_item EntryPoint @217-224
+- struct_item Function @230-238
+- enum_item Binding @241-250
+- struct_item ResourceBinding @253-256
+- struct_item GlobalVariable @259-275
+- struct_item StructMember @278-285
+- struct_item Struct @288-292
+- struct_item TypeAlias @295-298
+- struct_item Const @301-306
+- struct_item Override @309-314
+- struct_item Block @317-319
+- struct_item Statement @322-325
+- enum_item StatementKind @328-361
+- enum_item SwitchValue @364-367
+- struct_item SwitchCase @370-374
+- enum_item Literal @377-380
+- enum_item Expression @386-410
+- struct_item LocalVariable @413-418
+- struct_item Let @421-426
+- struct_item LocalConst @429-434
+- enum_item LocalDecl @437-441
+- struct_item Local @447-447
+
+### third_party/rust/naga/src/front/wgsl/parse/conv.rs
+
+Blob: `10bf0e62dc095827ac4c61c4d99f573b963a2614`. Grammar: rust. Status: syntax-clean.
+
+- function_item map_address_space @9-49
+- function_item map_access_mode @51-61
+- function_item map_ray_flag @63-80
+- function_item map_cooperative_role @82-89
+- function_item map_built_in @91-174
+- function_item map_interpolation @176-191
+- function_item map_sampling @193-202
+- function_item map_storage_format @204-250
+- function_item map_derivative @252-266
+- function_item map_relational_fun @268-274
+- function_item map_standard_fun @276-367
+- function_item map_conservative_depth @369-377
+- function_item map_subgroup_operation @379-400
+- enum_item TypeGenerator @402-429
+- enum_item PredeclaredType @431-436
+- function_item from @438-440
+- function_item from @443-445
+- function_item map_predeclared_type @448-613
+
+### third_party/rust/naga/src/front/wgsl/parse/directive.rs
+
+Blob: `70c96df442771af52760b4d750fdd88f0e275435`. Grammar: rust. Status: syntax-clean.
+
+- mod_item enable_extension @5-5
+- enum_item DirectiveKind @13-20
+- function_item from_ident @28-35
+- function_item report_wgsl_parse_diag @40-49
+- mod_item test @53-117
+- function_item directive_after_global_decl @62-116
+
+### third_party/rust/naga/src/front/wgsl/parse/directive/enable_extension.rs
+
+Blob: `b3854901e4114518acfb5a80374a932ff36b6db9`. Grammar: rust. Status: syntax-clean.
+
+- struct_item EnableExtensions @12-29
+- function_item empty @32-49
+- function_item add @52-74
+- function_item contains @77-96
+- function_item require @98-111
+- function_item default @115-117
+- enum_item EnableExtension @124-127
+- function_item from @130-132
+- function_item from_ident @153-180
+- function_item to_ident @183-207
+- enum_item ImplementedEnableExtension @213-258
+- function_item all @280-282
+- function_item capability @285-311
+- function_item test_manual_variants_array_is_correct @317-322
+- enum_item UnimplementedEnableExtension @326-333
+- function_item tracking_issue_num @336-340
+
+### third_party/rust/naga/src/front/wgsl/parse/lexer.rs
+
+Blob: `656c3955049945baa1eed256eaec9e9c17971aec`. Grammar: rust. Status: syntax-clean.
+
+- enum_item Token @14-102
+- function_item consume_any @104-107
+- function_item find_string_literal_end @109-121
+- struct_item UnclosedCandidate @123-126
+- function_item discover_template_lists @152-260
+- function_item pop_until @167-175
+- function_item consume_token @279-449
+- enum_item CommentType @348-352
+- function_item is_comment_end @454-459
+- function_item is_blankspace @462-473
+- function_item is_word_start @476-478
+- function_item is_word_part @481-483
+- struct_item Lexer @485-524
+- function_item new @527-536
+- function_item require_enable_extension @539-545
+- function_item capture_span @556-564
+- function_item start_byte_offset @566-576
+- function_item accumulate_module_doc_comments @579-593
+- function_item accumulate_doc_comments @596-610
+- function_item current_byte_offset @612-614
+- function_item span_from @616-618
+- function_item span_with_start @619-621
+- function_item next @628-630
+- function_item next_with_unignored_doc_comments @633-635
+- function_item next_impl @638-659
+- function_item peek @662-670
+- function_item next_if @673-685
+- function_item expect_span @687-697
+- function_item expect @699-702
+- function_item next_ident_with_span @704-716
+- function_item next_ident @718-722
+- function_item word_as_ident @724-730
+- function_item open_arguments @732-734
+- function_item next_argument @736-743
+- function_item sub_test @748-750
+- function_item sub_test_with_and_without_doc_comments @754-766
+- function_item sub_test_with @770-776
+- function_item test_numbers @779-929
+- function_item double_floats @932-945
+- function_item test_tokens @948-1036
+- function_item test_variable_decl @1039-1079
+- function_item test_template_list @1082-1181
+- function_item test_comments @1184-1200
+- function_item test_doc_comments @1203-1233
+- function_item test_doc_comment_nested @1236-1261
+- function_item test_doc_comment_long_character @1264-1283
+- function_item test_doc_comments_module @1286-1311
+- function_item test_block_comment_unclosed @1314-1319
+
+### third_party/rust/naga/src/front/wgsl/parse/mod.rs
+
+Blob: `214b5cd857e4fdbc02fd7a9ed6cb685359ad268d`. Grammar: rust. Status: syntax-clean.
+
+- mod_item ast @18-18
+- mod_item conv @19-19
+- mod_item directive @20-20
+- mod_item lexer @21-21
+- mod_item number @22-22
+- struct_item ExpressionContext @30-83
+- function_item parse_binary_op @86-104
+- function_item declare_local @106-116
+- enum_item Rule @125-139
+- struct_item ParsedAttribute @141-143
+- function_item default @146-148
+- function_item set @152-158
+- struct_item BindingParser @162-170
+- function_item parse @173-242
+- function_item finish @244-278
+- struct_item Options @283-288
+- function_item new @292-297
+- struct_item Parser @301-304
+- function_item new @307-312
+- function_item reset @314-317
+- function_item push_rule_span @319-321
+- function_item pop_rule_span @323-326
+- function_item peek_rule_span @328-331
+- function_item race_rules @333-341
+- function_item track_recursion @343-354
+- function_item switch_value @356-367
+- function_item arguments @370-392
+- function_item enclosed_expression @394-403
+- function_item ident_expr @405-421
+- function_item primary_expression @423-525
+- function_item literal_ray_flag @431-433
+- function_item literal_ray_intersection @434-438
+- function_item component_or_swizzle_specifier @527-559
+- function_item unary_expression @562-627
+- enum_item UnaryOp @569-575
+- function_item lhs_expression @633-683
+- function_item singular_expression @686-699
+- function_item equality_expression @701-792
+- function_item expression @794-861
+- function_item optionally_typed_ident @863-877
+- function_item variable_decl @880-907
+- function_item struct_body @909-982
+- function_item maybe_template_list @984-1002
+- function_item template_elaborated_ident @1004-1019
+- function_item type_specifier @1021-1028
+- function_item variable_updating_statement @1034-1105
+- function_item maybe_func_call_statement @1113-1145
+- function_item func_call_or_variable_updating_statement @1151-1163
+- function_item variable_or_value_or_func_call_or_variable_updating_statement @1172-1253
+- function_item statement @1255-1559
+- function_item r#loop @1561-1637
+- function_item block @1640-1690
+- function_item varying_binding @1692-1707
+- function_item function_decl @1709-1808
+- function_item directive_ident_list @1810-1837
+- function_item global_decl @1839-2240
+- function_item parse @2242-2339
+- function_item increase_brace_nesting @2341-2357
+- function_item diagnostic_filter @2359-2397
+- function_item write_diagnostic_filters @2399-2418
+- function_item is_start_of_compound_statement @2421-2423
+
+### third_party/rust/naga/src/front/wgsl/parse/number.rs
+
+Blob: `50f6705e2f9381d4535b2d20db1ed63e4065e8a1`. Grammar: rust. Status: syntax-clean.
+
+- enum_item Number @10-29
+- function_item requires_enable_extension @32-37
+- function_item consume_number @40-43
+- enum_item Kind @45-48
+- enum_item IntKind @50-55
+- enum_item FloatKind @58-62
+- function_item parse @88-310
+- struct_item ExtractSubStr @153-153
+- function_item start @158-161
+- function_item end @164-167
+- function_item parse_hex_float_missing_exponent @312-319
+- function_item parse_hex_float_missing_period @321-330
+- function_item parse_hex_int @332-338
+- function_item parse_dec @340-350
+- function_item parse_hex_float @377-403
+- struct_item HexFloatFormat @406-413
+- function_item parse_hex_float_parts @436-558
+- function_item convert_hex_float @560-623
+- function_item parse_dec_float @627-654
+- function_item parse_int @656-687
+- function_item map_err @657-664
+
+### third_party/rust/naga/src/front/wgsl/tests.rs
+
+Blob: `d90f4a3597266eb8cbe8f3532543afcc099e9251`. Grammar: rust. Status: syntax-clean.
+
+- function_item parse_comment @6-17
+- function_item parse_types @20-29
+- function_item parse_type_inference @32-48
+- function_item parse_type_cast @51-87
+- function_item parse_type_coercion @90-109
+- function_item parse_struct @112-126
+- function_item parse_standard_fun @129-138
+- function_item parse_statement @141-160
+- function_item parse_if @163-180
+- function_item parse_parentheses_if @183-200
+- function_item parse_loop @203-267
+- function_item parse_switch @270-284
+- function_item parse_switch_optional_colon_in_case @287-301
+- function_item parse_switch_default_in_case @304-318
+- function_item parse_parentheses_switch @321-333
+- function_item parse_texture_load @336-364
+- function_item parse_texture_store @367-377
+- function_item parse_texture_query @380-402
+- function_item parse_postfix @405-421
+- function_item parse_expressions @424-430
+- function_item parse_assignment_statements @433-466
+- function_item parse_local_var_address_space @469-501
+- function_item binary_expression_mixed_scalar_and_vector_operands @504-571
+- function_item parse_pointers @574-584
+- function_item parse_struct_instantiation @587-602
+- function_item parse_array_length @605-625
+- function_item parse_storage_buffers @628-657
+- function_item parse_alias @660-667
+- function_item shadowing_predeclared_types @670-697
+- function_item parse_texture_load_store_expecting_four_args @700-725
+- function_item parse_repeated_attributes @728-765
+- function_item parse_missing_workgroup_size @768-780
+- mod_item diagnostic_filter @782-1021
+- function_item invalid_unary_operand_negative_unsigned_integer @786-803
+- function_item invalid_unary_operand_negative_neither_scalar_nor_vector @806-823
+- function_item invalid_unary_operand_logical_not @826-843
+- function_item invalid_unary_operand_bitwise_not @846-863
+- function_item intended_global_directive @866-882
+- mod_item parse_sites_not_yet_supported @884-928
+- function_item user_rules @888-906
+- function_item unknown_rules @909-927
+- mod_item directive_conflict @930-974
+- function_item user_rules @934-952
+- function_item unknown_rules @955-973
+- mod_item attribute_conflict @976-1020
+- function_item user_rules @980-998
+- function_item unknown_rules @1001-1019
+- mod_item template @1023-1195
+- function_item missing_template_end @1027-1042
+- function_item enumerant_shadowing @1045-1060
+- function_item unexpected_expr_as_enumerant @1063-1077
+- function_item unused_exprs_for_template @1080-1096
+- function_item unused_template_list_for_fn @1099-1116
+- function_item unused_template_list_for_struct @1119-1136
+- function_item unused_template_list_for_alias @1139-1156
+- function_item unexpected_template @1159-1175
+- function_item expected_template_arg @1178-1194
+
+### third_party/rust/naga/src/ir/block.rs
+
+Blob: `d0b73b8d3f216238ec846494096104d2ebbc93c1`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Block @11-15
+- function_item new @18-23
+- function_item from_vec @25-28
+- function_item with_capacity @30-35
+- function_item push @38-41
+- function_item extend @43-47
+- function_item extend_block @49-52
+- function_item append @54-57
+- function_item cull @59-62
+- function_item splice @64-67
+- function_item span_into_iter @69-72
+- function_item span_iter @74-77
+- function_item span_iter_mut @79-82
+- function_item is_empty @84-86
+- function_item len @88-90
+- function_item deref @95-97
+- function_item deref_mut @101-103
+- function_item into_iter @110-112
+- function_item deserialize @117-122
+- function_item from @126-128
+
+### third_party/rust/naga/src/ir/mod.rs
+
+Blob: `91710a1beeb6dd11f3446998aaef903008cf0ed1`. Grammar: rust. Status: syntax-clean.
+
+- mod_item block @235-235
+- enum_item EarlyDepthTest @284-302
+- enum_item ConservativeDepth @321-330
+- enum_item AddressSpace @337-376
+- enum_item BuiltIn @383-509
+- enum_item VectorSize @520-527
+- function_item from @534-536
+- function_item from @540-542
+- enum_item CooperativeSize @551-554
+- enum_item ScalarKind @562-581
+- enum_item CooperativeRole @589-593
+- struct_item Scalar @600-606
+- enum_item ArraySize @614-621
+- enum_item Interpolation @628-641
+- enum_item Sampling @648-667
+- struct_item StructMember @675-683
+- enum_item ImageDimension @690-699
+- enum_item StorageFormat @738-793
+- enum_item ImageClass @800-823
+- struct_item Type @830-835
+- enum_item TypeInner @851-1036
+- enum_item Literal @1042-1058
+- struct_item Override @1065-1076
+- struct_item Constant @1083-1092
+- enum_item Binding @1099-1146
+- struct_item GlobalVariable @1153-1173
+- struct_item LocalVariable @1180-1193
+- enum_item UnaryOperator @1200-1204
+- enum_item BinaryOperator @1250-1271
+- enum_item AtomicFunction @1284-1293
+- enum_item DerivativeControl @1300-1304
+- enum_item DerivativeAxis @1311-1315
+- enum_item RelationalFunction @1322-1327
+- enum_item MathFunction @1334-1423
+- enum_item SampleLevel @1433-1442
+- enum_item ImageQuery @1452-1467
+- enum_item SwizzleComponent @1475-1480
+- enum_item GatherMode @1492-1509
+- enum_item Direction @1515-1519
+- enum_item SubgroupOperation @1525-1535
+- enum_item CollectiveOperation @1541-1545
+- struct_item CooperativeData @1569-1573
+- enum_item Expression @1591-1933
+- enum_item SwitchValue @1940-1944
+- struct_item SwitchCase @1952-1960
+- enum_item RayQueryFunction @1970-2020
+- enum_item Statement @2032-2394
+- struct_item FunctionArgument @2401-2409
+- struct_item FunctionResult @2416-2422
+- struct_item Function @2429-2479
+- struct_item EntryPoint @2525-2551
+- enum_item PredeclaredType @2562-2572
+- struct_item SpecialTypes @2579-2647
+- enum_item RayQueryIntersection @2689-2703
+- struct_item DocComments @2713-2725
+- enum_item MeshOutputTopology @2732-2739
+- struct_item MeshStageInfo @2747-2764
+- enum_item RayPipelineFunction @2771-2794
+- struct_item Module @2837-2883
+
+### third_party/rust/naga/src/keywords/mod.rs
+
+Blob: `2b4cc9ae1e0d5bf53dc2ef0c0125dae59ac662af`. Grammar: rust. Status: syntax-clean.
+
+- mod_item wgsl @6-6
+
+### third_party/rust/naga/src/keywords/wgsl.rs
+
+Blob: `e41fff12258453da2cf21fa02b44066bb6d88d57`. Grammar: rust. Status: syntax-clean.
+
+
+### third_party/rust/naga/src/lib.rs
+
+Blob: `ff486ba8ecf98f28993d998b25f217e1d02adc85`. Grammar: rust. Status: syntax-clean.
+
+- mod_item arena @112-112
+- mod_item back @113-113
+- mod_item common @114-114
+- mod_item compact @115-115
+- mod_item diagnostic_filter @116-116
+- mod_item error @117-117
+- mod_item front @118-118
+- mod_item ir @119-119
+- mod_item keywords @120-120
+- mod_item non_max_u32 @121-121
+- mod_item proc @122-122
+- mod_item racy_lock @123-123
+- mod_item span @124-124
+- mod_item valid @125-125
+
+### third_party/rust/naga/src/non_max_u32.rs
+
+Blob: `dea5d0bfd0f189d9017aafdb7480b87774679c24`. Grammar: rust. Status: syntax-clean.
+
+- struct_item NonMaxU32 @54-54
+- function_item new @58-66
+- function_item get @69-71
+- function_item checked_add @73-79
+- function_item fmt @83-85
+- function_item fmt @89-91
+- function_item serialize @96-101
+- function_item deserialize @106-120
+- function_item size @124-126
+
+### third_party/rust/naga/src/proc/constant_evaluator.rs
+
+Blob: `6fd564d6d86c473b1f369d0e81b14cb22888beab`. Grammar: rust. Status: contains-errors.
+
+- enum_item LiteralVector @284-297
+- function_item len @301-316
+- function_item from_literal @319-339
+- function_item arrayvec_of @320-324
+- function_item from_literal_vec @345-378
+- function_item to_literal_vec @382-406
+- function_item register_as_evaluated_expr @410-443
+- function_item float_length @622-633
+- function_item float_dot @636-646
+- enum_item Behavior @649-652
+- function_item has_runtime_restrictions @656-662
+- struct_item ConstantEvaluator @683-708
+- enum_item WgslRestrictions @711-721
+- enum_item GlslRestrictions @724-731
+- struct_item FunctionLocalData @734-739
+- enum_item ExpressionKind @742-746
+- struct_item ExpressionKindTracker @749-751
+- function_item new @754-758
+- function_item force_non_const @761-763
+- function_item insert @765-767
+- function_item is_const @769-771
+- function_item is_const_or_override @773-778
+- function_item type_of @780-782
+- function_item from_arena @784-794
+- function_item type_of_with_expr @796-848
+- enum_item ConstantEvaluatorError @853-980
+- function_item for_wgsl_module @987-1003
+- function_item for_glsl_module @1009-1020
+- function_item for_module @1022-1037
+- function_item for_wgsl_function @1043-1070
+- function_item for_glsl_function @1076-1097
+- function_item to_ctx @1099-1109
+- function_item check @1111-1117
+- function_item check_and_get @1119-1143
+- function_item try_eval_and_append @1168-1216
+- function_item is_global_arena @1219-1225
+- function_item function_local_data @1227-1238
+- function_item try_eval_and_append_impl @1240-1380
+- function_item splat @1394-1427
+- function_item swizzle @1429-1487
+- function_item math @1489-2093
+- function_item round_ties_even @1670-1683
+- function_item int_dot_checked @1896-1913
+- function_item int_dot_wrapping @1915-1923
+- function_item float_distance @1956-1972
+- function_item float_normalize @1982-2002
+- function_item packed_dot_product @2096-2127
+- function_item cross_product @2130-2197
+- function_item extract_vec_with_size @2206-2228
+- function_item extract_vec @2237-2263
+- function_item bitfield_range @2267-2283
+- function_item array_length @2285-2306
+- function_item access @2308-2355
+- function_item eval_zero_value_and_splat @2363-2389
+- function_item eval_zero_value @2396-2405
+- function_item eval_zero_value_impl @2412-2481
+- function_item cast @2486-2722
+- function_item cast_array @2736-2798
+- function_item unary_op @2800-2856
+- function_item binary_op @2858-3209
+- function_item is_allowed_compose_literal_op @3192-3208
+- function_item binary_op_compose @3211-3302
+- function_item binary_op_vector @3304-3357
+- function_item multiply_vector_matrix @3359-3391
+- function_item multiply_matrix_vector @3393-3421
+- function_item multiply_matrix_matrix @3423-3481
+- function_item flatten_matrix @3483-3492
+- function_item dot_exprs @3494-3509
+- function_item relational @3511-3551
+- function_item copy_from @3560-3586
+- function_item vector_compose_flattened_size @3589-3606
+- function_item register_evaluated_expr @3608-3638
+- function_item append_expr @3640-3669
+- function_item resolve_type @3675-3698
+- function_item select @3700-3815
+- function_item float_face_forward @3819-3834
+- function_item float_reflect @3838-3854
+- function_item float_refract @3858-3889
+- function_item face_forward_smoke @3892-3912
+- function_item ff @3894-3896
+- function_item reflect_smoke @3915-3932
+- function_item rf @3917-3919
+- function_item refract_smoke @3935-3960
+- function_item rr @3937-3939
+- function_item bit_width @3964-3966
+- function_item check_bitfield_range @3974-3989
+- function_item extract_bits @3991-4015
+- function_item insert_bits @4017-4039
+- function_item extract_bits_scalar @4042-4044
+- function_item insert_bits_scalar @4047-4049
+- function_item extract_bits_smoke @4052-4087
+- function_item insert_bits_smoke @4090-4130
+- function_item first_trailing_bit @4132-4149
+- function_item first_trailing_bit_smoke @4152-4210
+- function_item first_leading_bit @4212-4234
+- function_item first_leading_bit_smoke @4237-4298
+- trait_item TryFromAbstract @4301-4324
+- function_signature_item try_from_abstract @4323-4323
+- function_item try_from_abstract @4327-4332
+- function_item try_from_abstract @4336-4341
+- function_item try_from_abstract @4345-4350
+- function_item try_from_abstract @4354-4356
+- function_item try_from_abstract @4360-4366
+- function_item try_from_abstract @4370-4379
+- function_item try_from_abstract @4383-4389
+- function_item try_from_abstract @4393-4395
+- function_item try_from_abstract @4399-4413
+- function_item try_from_abstract @4417-4421
+- function_item try_from_abstract @4425-4430
+- function_item try_from_abstract @4434-4439
+- function_item try_from_abstract @4443-4452
+- function_item try_from_abstract @4456-4465
+- function_item cross_product @4468-4479
+- mod_item tests @4482-5338
+- function_item unary_op @4493-4623
+- function_item matrix_op @4626-4662
+- struct_item MatrixTestHelper @4667-4674
+- function_item new @4677-4766
+- function_item eval_vector_multiply_matrix @4769-4792
+- function_item eval_matrix_multiply_vector @4795-4818
+- function_item eval_matrix_multiply_matrix @4822-4845
+- function_item flatten @4847-4872
+- function_item int_to_vector_size @4874-4881
+- function_item cast @4885-4936
+- function_item access @4939-5090
+- function_item compose_of_constants @5093-5173
+- function_item splat_of_constant @5176-5256
+- function_item splat_of_zero_value @5259-5337
+
+### third_party/rust/naga/src/proc/emitter.rs
+
+Blob: `6778dae8d60c7b97f2496e1d64a767bcde1f449c`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Emitter @5-7
+- function_item start @10-15
+- function_item is_running @16-18
+- function_item finish @20-35
+
+### third_party/rust/naga/src/proc/index.rs
+
+Blob: `b8f2dbfdca08d0cff7faa83f3b296cfa3189af6e`. Grammar: rust. Status: syntax-clean.
+
+- enum_item BoundsCheckPolicy @42-63
+- struct_item BoundsCheckPolicies @70-127
+- function_item default @131-133
+- function_item choose_policy @145-165
+- function_item contains @168-170
+- enum_item GuardedIndex @181-184
+- function_item find_checked_indexes @229-283
+- function_item access_needs_check @319-340
+- struct_item BoundsCheck @344-356
+- function_item bounds_check_iter @369-407
+- function_item oob_local_types @413-462
+- function_item try_resolve_to_constant @468-476
+- function_item from_expression @478-487
+- enum_item IndexableLengthError @491-498
+- function_item indexable_length @512-543
+- function_item indexable_length_pending @566-575
+- function_item indexable_length_resolved @596-609
+- enum_item IndexableLength @617-623
+- function_item to_indexable_length @626-635
+
+### third_party/rust/naga/src/proc/keyword_set.rs
+
+Blob: `c2ad5dd551663f486d5ec98faf08b839ed8e1f40`. Grammar: rust. Status: syntax-clean.
+
+- struct_item KeywordSet @14-14
+- function_item new @18-20
+- function_item empty @23-26
+- function_item contains @30-32
+- function_item default @36-38
+- function_item from_iter @42-44
+- function_item from_iter @49-51
+- function_item extend @59-61
+- function_item extend @66-68
+- struct_item CaseInsensitiveKeywordSet @79-79
+- function_item new @83-85
+- function_item empty @88-91
+- function_item contains @96-98
+- function_item default @102-104
+- function_item from_iter @108-115
+- function_item from_iter @120-122
+- function_item extend @126-132
+- function_item extend @137-139
+- struct_item AsciiUniCase @144-144
+- function_item fmt @147-149
+- function_item eq @154-156
+- function_item hash @163-173
+- function_item debug_assert_ascii @176-178
+
+### third_party/rust/naga/src/proc/layouter.rs
+
+Blob: `b4b32b8bd5e5b2350b7d45b61717056bdad5de03`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Alignment @12-12
+- function_item new @23-30
+- function_item from_width @34-36
+- function_item is_aligned @39-42
+- function_item round_up @45-53
+- function_item fmt @57-59
+- function_item mul @65-67
+- function_item mul @73-76
+- function_item from @80-86
+- function_item from @90-92
+- struct_item TypeLayout @99-102
+- function_item to_stride @106-108
+- struct_item Layouter @121-124
+- function_item index @128-130
+- enum_item LayoutErrorInner @140-149
+- struct_item LayoutError @153-156
+- function_item with @159-161
+- function_item clear @166-168
+- function_item update @185-283
+
+### third_party/rust/naga/src/proc/mod.rs
+
+Blob: `4e4030c3711ed070bb088cb93d51dfae8caed078`. Grammar: rust. Status: syntax-clean.
+
+- mod_item constant_evaluator @5-5
+- mod_item emitter @6-6
+- mod_item index @7-7
+- mod_item keyword_set @8-8
+- mod_item layouter @9-9
+- mod_item namer @10-10
+- mod_item overloads @11-11
+- mod_item terminator @12-12
+- mod_item type_methods @13-13
+- mod_item typifier @14-14
+- function_item any_statement @42-75
+- function_item from @78-128
+- enum_item HashableLiteral @132-145
+- function_item from @148-163
+- function_item new @167-186
+- function_item zero @188-190
+- function_item one @192-194
+- function_item minus_one @196-207
+- function_item width @209-217
+- function_item scalar @218-233
+- function_item scalar_kind @234-236
+- function_item ty_inner @237-239
+- function_item try_from @245-253
+- function_item try_from @259-264
+- function_item access @268-285
+- function_item argument_count @289-380
+- function_item needs_pre_emit @385-396
+- function_item is_dynamic_index @411-416
+- function_item originating_global @428-441
+- function_item implicit_derivatives @445-450
+- function_item to_built_in @454-459
+- function_item index @465-472
+- function_item from_index @473-480
+- function_item is_multisampled @484-490
+- function_item is_mipmapped @492-498
+- function_item is_depth @500-502
+- function_item to_ctx @506-513
+- function_item compare_types @515-517
+- enum_item ConstValueError @521-525
+- function_item from @528-530
+- struct_item GlobalCtx @534-539
+- function_item get_const_val @560-569
+- function_item get_const_val_from @571-604
+- function_item get @580-593
+- function_item compare_types @606-608
+- enum_item ResolveArraySizeError @612-617
+- function_item resolve @629-651
+- function_item flatten_compose @666-730
+- function_item flatten_compose @684-699
+- function_item flatten_splat @702-716
+- function_item test_matrix_size @733-744
+- function_item analyze_mesh_shader_info @757-918
+- struct_item OutError @768-770
+- function_item set @772-776
+- function_item uses_mesh_shaders @920-984
+- function_item uses_debug_printf @990-998
+- function_item uses_ray_tracing @1000-1041
+- struct_item RayTracingUses @1045-1048
+- function_item to_builtin @1051-1057
+- function_item is_workgroup_like @1061-1063
+- function_item try_from @1069-1076
+- function_item from @1080-1086
+- function_item try_from @1092-1097
+- function_item try_from @1102-1122
+
+### third_party/rust/naga/src/proc/namer.rs
+
+Blob: `5baa1c19ddc6d85fd4fe17cbf3cec4fda25f8076`. Grammar: rust. Status: syntax-clean.
+
+- enum_item ExternalTextureNameKey @37-40
+- enum_item NameKey @52-85
+- struct_item Namer @90-97
+- function_item sanitize @110-165
+- function_item call @177-212
+- function_item call_or @214-219
+- function_item namespace @226-233
+- function_item reset @235-404
+- function_item test @408-415
+
+### third_party/rust/naga/src/proc/overloads/any_overload_set.rs
+
+Blob: `f3228bb07f3742757addfeff7dcbca2be8c736c9`. Grammar: rust. Status: syntax-clean.
+
+
+### third_party/rust/naga/src/proc/overloads/constructor_set.rs
+
+Blob: `c5d79990d3fcd46be7e2f6872f7bd0ce831845df`. Grammar: rust. Status: syntax-clean.
+
+- function_item singleton @32-59
+- function_item is_singleton @61-63
+- function_item members @68-70
+- function_item size @77-124
+- enum_item ConstructorSize @129-143
+- function_item to_inner @149-159
+
+### third_party/rust/naga/src/proc/overloads/list.rs
+
+Blob: `8ee3005057e53451f43867e24a1c2738c9c07ffd`. Grammar: rust. Status: syntax-clean.
+
+- struct_item List @22-33
+- function_item from_rules @36-41
+- function_item members @43-48
+- function_item filter @50-65
+- function_item is_empty @69-71
+- function_item min_arguments @73-85
+- function_item max_arguments @87-93
+- function_item arg @95-131
+- function_item concrete_only @133-139
+- function_item most_preferred @141-147
+- function_item overload_list @149-151
+- function_item allowed_args @153-157
+- function_item for_debug @159-161
+- function_item len_to_full_mask @164-176
+- function_item fmt @181-187
+
+### third_party/rust/naga/src/proc/overloads/mathfunction.rs
+
+Blob: `9f3fae6c2d1079e2361d22757fddafbc7780822a`. Grammar: rust. Status: syntax-clean.
+
+- function_item overloads @15-116
+- function_item ldexp @119-143
+- function_item exponent_from_mantissa @121-127
+- function_item outer @145-163
+- function_item refract @165-175
+- function_item transpose @177-193
+- function_item extract_bits @195-204
+- function_item insert_bits @206-216
+- function_item mix @218-228
+
+### third_party/rust/naga/src/proc/overloads/mod.rs
+
+Blob: `1865373ceb01c6e588ea679e54286c4394a7ca52`. Grammar: rust. Status: syntax-clean.
+
+- mod_item constructor_set @15-15
+- mod_item regular @16-16
+- mod_item scalar_set @17-17
+- mod_item any_overload_set @19-19
+- mod_item list @20-20
+- mod_item mathfunction @21-21
+- mod_item one_bits_iter @22-22
+- mod_item rule @23-23
+- mod_item utils @24-24
+- trait_item OverloadSet @127-237
+- function_signature_item is_empty @129-129
+- function_signature_item min_arguments @136-136
+- function_signature_item max_arguments @143-143
+- function_signature_item arg @150-150
+- function_signature_item concrete_only @189-189
+- function_signature_item most_preferred @227-227
+- function_signature_item overload_list @230-230
+- function_signature_item allowed_args @233-233
+- function_signature_item for_debug @236-236
+
+### third_party/rust/naga/src/proc/overloads/one_bits_iter.rs
+
+Blob: `dbceb15e370a5dab687a63fa1669706d7448f728`. Grammar: rust. Status: syntax-clean.
+
+- struct_item OneBitsIter @18-18
+- function_item new @21-23
+- function_item next @29-49
+- function_item empty @53-55
+- function_item all @58-64
+- function_item first @67-71
+- function_item last @74-78
+- function_item in_order @81-89
+
+### third_party/rust/naga/src/proc/overloads/regular.rs
+
+Blob: `0b180aa0e797332bb103416772c515c8fd1e2d2c`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Regular @50-63
+- function_item members @83-94
+- function_item rules @96-101
+- function_item is_empty @105-107
+- function_item min_arguments @109-112
+- function_item max_arguments @114-117
+- function_item arg @119-143
+- function_item concrete_only @145-150
+- function_item most_preferred @152-163
+- function_item overload_list @165-167
+- function_item allowed_args @169-176
+- function_item for_debug @178-180
+- function_item make_rule @189-201
+- enum_item ConclusionRule @206-217
+- function_item conclude @220-245
+- function_item fmt @249-256
+- function_item fmt @262-267
+- mod_item test @329-543
+- function_item scalar @333-335
+- function_item vec2 @337-342
+- function_item vec3 @344-349
+- function_item check_return_type @354-372
+- function_item unary_vec_or_scalar_numeric_scalar @375-385
+- function_item unary_vec_or_scalar_numeric_vector @388-398
+- function_item unary_vec_or_scalar_numeric_matrix @401-416
+- function_item binary_vec_or_scalar_numeric_scalar @420-478
+- function_item binary_vec_or_scalar_numeric_vector @482-509
+- function_item binary_vec_or_scalar_numeric_vector_abstract @513-542
+
+### third_party/rust/naga/src/proc/overloads/rule.rs
+
+Blob: `98ae83d31858581aac792c8a5bc7ab4bb677a4ff`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Rule @27-30
+- enum_item Conclusion @44-59
+- function_item for_frexp_modf @62-87
+- function_item into_resolution @89-103
+- struct_item MissingSpecialType @108-108
+- function_item fmt @113-123
+- function_item fmt @129-145
+
+### third_party/rust/naga/src/proc/overloads/scalar_set.rs
+
+Blob: `ab338ce285029b01fb6f7c8cacbaeec27912386b`. Grammar: rust. Status: syntax-clean.
+
+- function_item convertible_from @70-87
+- function_item most_general_scalar @94-100
+- function_item members @105-107
+
+### third_party/rust/naga/src/proc/overloads/utils.rs
+
+Blob: `8adfca2c5ea167baf81c9d4a0991a7e2bb1bfb05`. Grammar: rust. Status: syntax-clean.
+
+- function_item float_scalars @16-24
+- function_item float_scalars_unimplemented_abstract @28-30
+- function_item scalar_or_vecn @34-51
+- function_item rule @55-60
+- function_item list @63-65
+- function_item pairs @68-73
+- function_item triples @76-88
+
+### third_party/rust/naga/src/proc/terminator.rs
+
+Blob: `358dea5f498343deb83a1ca39fce143248c707ee`. Grammar: rust. Status: syntax-clean.
+
+- function_item ensure_block_returns @7-53
+
+### third_party/rust/naga/src/proc/type_methods.rs
+
+Blob: `6052869a732c0db57c34c0c83590028c3da4b39d`. Grammar: rust. Status: syntax-clean.
+
+- function_item is_numeric @13-22
+- function_item is_abstract @75-83
+- function_item float @89-94
+- function_item to_inner_scalar @96-98
+- function_item to_inner_vector @100-102
+- function_item to_inner_atomic @104-106
+- function_item concrete_int_scalars @113-123
+- function_item vector_sizes @126-134
+- function_item scalar @149-157
+- function_item scalar_kind @159-161
+- function_item scalar_width @164-166
+- function_item scalar_for_conversions @179-191
+- function_item pointer_space @193-199
+- function_item pointer_base_type @202-218
+- function_item is_atomic_pointer @220-228
+- function_item try_size @232-279
+- function_item size @287-289
+- function_item canonical_form @299-320
+- function_item non_struct_equivalent @341-355
+- function_item is_dynamically_sized @358-375
+- function_item needs_host_buffer_byte_size @386-405
+- function_item is_constructible @408-434
+- function_item components @436-447
+- function_item component_type @449-463
+- function_item vector_size_and_scalar @467-486
+- function_item is_abstract @492-509
+- function_item automatically_converts_to @539-614
+- trait_item IntFloatLimits @619-629
+- function_signature_item min_float @625-625
+- function_signature_item max_float @628-628
+- function_item min_max_float_representable_by @680-759
+- function_item vector_size_str @762-768
+
+### third_party/rust/naga/src/proc/typifier.rs
+
+Blob: `eae37acac6227bf3d9cfd44ca02aa855926702e0`. Grammar: rust. Status: syntax-clean.
+
+- enum_item TypeResolution @93-110
+- function_item handle @113-118
+- function_item inner_with @120-125
+- function_item clone @130-171
+- enum_item ResolveError @175-211
+- function_item from @214-216
+- struct_item ResolveContext @220-229
+- function_item with_locals @233-248
+- function_item resolve @265-825
+- function_item compare_types @841-864
+- function_item test_error_size @867-869
+
+### third_party/rust/naga/src/racy_lock.rs
+
+Blob: `2672ce11b6b48e6838b7625876346089f6f4ec18`. Grammar: rust. Status: syntax-clean.
+
+- struct_item RacyLock @18-22
+- function_item new @27-31
+- function_item new @35-40
+- function_item deref @48-50
+- function_item deref @58-60
+
+### third_party/rust/naga/src/span.rs
+
+Blob: `7a4d4737add725d66f2f0451a98403b856feab9c`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Span @14-17
+- function_item new @25-27
+- function_item until @30-35
+- function_item subsume @39-53
+- function_item total_span @57-63
+- function_item to_range @66-72
+- function_item is_defined @75-77
+- function_item location @80-92
+- function_item from @96-101
+- function_item index @108-110
+- struct_item SourceLocation @122-131
+- struct_item WithSpan @138-141
+- function_item fmt @147-149
+- function_item eq @157-159
+- function_item source @166-168
+- function_item new @173-178
+- function_item into_inner @181-183
+- function_item as_inner @185-187
+- function_item spans @190-192
+- function_item with_span @195-203
+- function_item with_context @206-209
+- function_item with_handle @213-215
+- function_item into_other @218-226
+- function_item and_then @230-237
+- function_item location @240-246
+- function_item diagnostic @248-272
+- function_item emit_to_stderr @276-281
+- function_item emit_to_stderr_with_path @285-305
+- function_item emit_to_string @308-313
+- function_item emit_to_string_with_path @316-330
+- trait_item AddSpan @334-346
+- function_signature_item with_span @339-339
+- function_signature_item with_span_static @341-341
+- function_signature_item with_span_context @343-343
+- function_signature_item with_span_handle @345-345
+- function_item with_span @351-353
+- function_item with_span_static @355-357
+- function_item with_span_context @359-361
+- function_item with_span_handle @363-369
+- trait_item SpanProvider @373-384
+- function_signature_item get_span @374-374
+- function_item get_span_context @375-383
+- function_item get_span @387-389
+- function_item get_span @393-395
+- trait_item MapErrWithSpan @400-408
+- function_signature_item map_err_inner @404-407
+- function_item map_err_inner @413-419
+- function_item span_location @423-524
+
+### third_party/rust/naga/src/valid/analyzer.rs
+
+Blob: `8f75266686a2e00ab99ec15102cab100efb957d1`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Uniformity @41-56
+- function_item new @59-64
+- struct_item FunctionUniformity @84-87
+- function_item bitor @91-102
+- function_item new @106-111
+- function_item exit_disruptor @114-122
+- struct_item SamplingKey @145-148
+- struct_item ExpressionInfo @154-186
+- function_item new @189-200
+- enum_item GlobalOrArgument @206-209
+- function_item from_expression @212-226
+- struct_item Sampling @232-235
+- struct_item FunctionInfo @240-305
+- function_item global_variable_count @308-310
+- function_item expression_count @311-313
+- function_item dominates_global_use @314-323
+- function_item index @328-330
+- function_item index @335-337
+- enum_item UniformityDisruptor @343-350
+- function_item add_ref_impl @361-373
+- function_item insert_global_use @383-389
+- function_item add_ref @398-400
+- function_item add_assignable_ref @421-436
+- function_item process_call @439-509
+- function_item process_expression @531-867
+- function_item process_block @879-1234
+- function_item process_const_expression @1239-1248
+- function_item process_function @1252-1317
+- function_item get_entry_point @1319-1321
+- function_item uniform_control_flow @1325-1591
+
+### third_party/rust/naga/src/valid/compose.rs
+
+Blob: `802ddb6395630ba9e68c8685f72af73a6a6fc457`. Grammar: rust. Status: syntax-clean.
+
+- enum_item ComposeError @6-13
+- function_item validate_compose @15-116
+
+### third_party/rust/naga/src/valid/expression.rs
+
+Blob: `9e3cf6ba9066003e0b81c9cd35f36330abc6d65d`. Grammar: rust. Status: syntax-clean.
+
+- enum_item ExpressionError @14-164
+- enum_item ConstExpressionError @168-183
+- enum_item LiteralError @187-194
+- struct_item ExpressionTypeResolver @196-200
+- function_item index @206-216
+- function_item validate_const_expression @220-257
+- function_item validate_constant_shift_amounts @267-325
+- function_item is_overflowing_shift @273-315
+- function_item validate_constant_divisor @336-379
+- function_item contains_zero @342-362
+- function_item validate_expression @382-1432
+- function_item resolve_index_limit @458-485
+- function_item global_var_ty @1434-1459
+- function_item validate_literal @1461-1466
+- function_item check_literal_value @1469-1489
+- function_item validate_with_expression @1493-1512
+- function_item validate_with_const_expression @1516-1528
+- function_item f64_runtime_literals @1532-1559
+- function_item f64_const_literals @1563-1587
+
+### third_party/rust/naga/src/valid/function.rs
+
+Blob: `fccbef9521567d33f036b3f0583cef78001b4cd5`. Grammar: rust. Status: syntax-clean.
+
+- enum_item CallError @15-35
+- enum_item AtomicError @39-62
+- enum_item SubgroupError @66-77
+- enum_item LocalVariableError @81-90
+- enum_item FunctionError @94-245
+- struct_item BlockInfo @260-262
+- struct_item BlockContext @264-276
+- function_item new @279-299
+- function_item with_abilities @301-303
+- function_item get_expression @305-307
+- function_item resolve_type_impl @309-319
+- function_item resolve_type @321-328
+- function_item resolve_type_inner @330-337
+- function_item resolve_pointer_type @339-341
+- function_item compare_types @343-345
+- function_item validate_call @349-408
+- function_item emit_expression @410-422
+- function_item validate_atomic @424-652
+- function_item validate_subgroup_operation @653-723
+- function_item validate_subgroup_gather @724-786
+- function_item validate_block_impl @789-1827
+- function_item validate_block @1829-1840
+- function_item validate_local_var @1842-1873
+- function_item validate_function @1875-1997
+
+### third_party/rust/naga/src/valid/handles.rs
+
+Blob: `4e4395a0f49b2c17feaefcea3d5dfcb3751cf66d`. Grammar: rust. Status: syntax-clean.
+
+- function_item validate_module_handles @34-344
+- function_item validate_type_handle @346-351
+- function_item validate_constant_handle @353-358
+- function_item validate_global_variable_handle @360-365
+- function_item validate_override_handle @367-372
+- function_item validate_expression_handle @374-379
+- function_item validate_function_handle @381-386
+- function_item validate_type_handles @393-435
+- function_item validate_entry_point_index @437-451
+- function_item validate_const_expression_handles @458-488
+- function_item validate_expression_handles @491-678
+- function_item validate_block_handles @680-898
+- function_item from @902-904
+- function_item from @908-910
+- function_item from @914-916
+- function_item from @920-922
+- enum_item InvalidHandleError @927-934
+- struct_item FwdDepError @942-949
+- function_item check_valid_for @953-956
+- function_item check_valid_for_uniq @959-968
+- function_item check_dep @981-995
+- function_item check_dep_opt @998-1000
+- function_item check_dep_iter @1003-1011
+- function_item check_valid_for @1015-1017
+- function_item constant_deps @1021-1062
+- function_item array_size_deps @1065-1111
+- function_item array_size_override @1114-1144
+- function_item override_init_deps @1147-1195
+
+### third_party/rust/naga/src/valid/immediates.rs
+
+Blob: `7ae4c7b997edc4d7f4b3085741c4b0a55ffe8af9`. Grammar: rust. Status: syntax-clean.
+
+- struct_item ImmediateSlotsOverflowError @8-8
+- struct_item ImmediateSlots @13-13
+- enum_item ImmediateUsage @16-21
+- function_item default @24-29
+- function_item size @33-38
+- function_item from_type @40-49
+- function_item merge @51-65
+- function_item from_raw @69-71
+- function_item from_range @74-92
+- function_item from_type @96-137
+- function_item from_type_recursive @101-135
+- function_item contains @140-142
+- function_item difference @145-147
+- function_item bitor_assign @151-153
+- function_item bitor @158-160
+- function_item fmt @164-187
+- function_item fmt @191-193
+- mod_item tests @197-328
+- function_item range_single @203-216
+- function_item range_vec4 @219-228
+- function_item range_full_256 @231-236
+- function_item range_overflow @239-244
+- function_item from_type_overflow @247-263
+- function_item from_type_excludes_struct_padding @266-274
+- function_item from_type_excludes_matrix_padding @277-294
+- function_item range_unaligned @297-306
+- function_item contains @309-317
+- function_item difference @320-327
+
+### third_party/rust/naga/src/valid/interface.rs
+
+Blob: `7f2bf60718c6549fdacf1e2ce8f6d35a4034c4e5`. Grammar: rust. Status: syntax-clean.
+
+- enum_item GlobalVariableError @16-56
+- enum_item VaryingError @60-126
+- enum_item EntryPointError @130-196
+- function_item storage_usage @198-210
+- enum_item MeshOutputType @213-217
+- struct_item VaryingContext @219-231
+- function_item validate_impl @234-844
+- function_item validate @846-916
+- function_item validate_global_var @920-1202
+- function_item validate_mesh_output_type @1205-1255
+- function_item validate_entry_point @1257-1666
+
+### third_party/rust/naga/src/valid/mod.rs
+
+Blob: `3b1bf6ed50d1eddce5de9bb0b52a9855dfd232d1`. Grammar: rust. Status: syntax-clean.
+
+- mod_item analyzer @5-5
+- mod_item compose @6-6
+- mod_item expression @7-7
+- mod_item function @8-8
+- mod_item handles @9-9
+- mod_item immediates @10-10
+- mod_item interface @11-11
+- mod_item r#type @12-12
+- function_item default @77-79
+- function_item extension @238-265
+- function_item default @269-271
+- function_item required_operations @307-315
+- function_item required_operations @319-327
+- struct_item ModuleInfo @352-357
+- function_item index @361-363
+- function_item index @368-370
+- function_item index @375-377
+- struct_item Validator @381-427
+- enum_item TraceRayVertexReturnState @430-445
+- enum_item ConstantError @449-456
+- enum_item OverrideError @460-482
+- enum_item ValidationError @486-536
+- function_item is_sized @539-560
+- function_item image_storage_coordinates @563-587
+- function_item new @604-646
+- function_item subgroup_stages @649-652
+- function_item subgroup_operations @655-658
+- function_item reset @661-670
+- function_item validate_constant @672-695
+- function_item validate_override @697-739
+- function_item validate @742-748
+- function_item validate_resolved_overrides @757-763
+- function_item validate_impl @765-925
+- function_item validate_atomic_compare_exchange_struct @928-938
+
+### third_party/rust/naga/src/valid/type.rs
+
+Blob: `3b5abcbf97695362440cf97de44974461d805a6c`. Grammar: rust. Status: syntax-clean.
+
+- enum_item Disalignment @84-105
+- enum_item TypeError @109-166
+- enum_item WidthError @170-181
+- enum_item ImmediateError @185-190
+- function_item check_member_layout @196-220
+- function_item ptr_space_argument_flag @230-241
+- struct_item TypeInfo @244-249
+- function_item dummy @252-259
+- function_item new @261-268
+- function_item require_type_capability @272-278
+- function_item check_width @289-375
+- function_item reset_types @377-381
+- function_item validate_type @383-993
+
+### third_party/rust/neqo-bin/benches/main.rs
+
+Blob: `68dfbdd454eb8d2e273ab08604fa319ff9acae3f`. Grammar: rust. Status: syntax-clean.
+
+- function_item criterion_config @20-24
+- struct_item Benchmark @26-31
+- function_item transfer @33-101
+- function_item spawn_server @103-129
+
+### third_party/rust/neqo-bin/build.rs
+
+Blob: `c0ad7df7b3e40af21358257c51c30db7984b69bb`. Grammar: rust. Status: syntax-clean.
+
+- function_item main @3-16
+
+### third_party/rust/neqo-bin/src/bin/client.rs
+
+Blob: `8f39335c78959b6c0283290ff8ba594870a2e228`. Grammar: rust. Status: syntax-clean.
+
+- function_item main @15-19
+
+### third_party/rust/neqo-bin/src/bin/server.rs
+
+Blob: `2e2766b6b19394b245af3cb575fe800ecf95f370`. Grammar: rust. Status: syntax-clean.
+
+- function_item main @16-20
+
+### third_party/rust/neqo-bin/src/client/http09.rs
+
+Blob: `9c6110ff273244855f6102d4aec85ad49934dbd5`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Handler @34-43
+- function_item reinit @46-52
+- function_item handle @58-121
+- function_item take_token @123-125
+- function_item create_client @128-172
+- function_item try_from @177-189
+- function_item process_multiple_output @193-199
+- function_item process_multiple_input @201-207
+- function_item close @209-216
+- function_item is_closed @218-220
+- function_item stats @222-224
+- function_item has_events @226-228
+- function_item new @232-243
+- function_item download_urls @245-257
+- function_item download_next @259-298
+- function_item read_from_stream @302-330
+- function_item read @332-361
+
+### third_party/rust/neqo-bin/src/client/http3.rs
+
+Blob: `c198add7bfaba407843de2973aa728dd0262fb3c`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Handler @38-43
+- function_item new @46-60
+- function_item create_client @63-109
+- function_item try_from @114-126
+- function_item is_closed @130-132
+- function_item process_multiple_output @134-140
+- function_item process_multiple_input @142-148
+- function_item close @150-155
+- function_item stats @157-159
+- function_item has_events @161-163
+- function_item handle @169-256
+- function_item take_token @258-260
+- trait_item StreamHandler @263-271
+- function_signature_item process_data_readable @264-264
+- function_signature_item process_data_writable @265-270
+- struct_item DownloadStreamHandler @273-276
+- function_item process_data_readable @279-303
+- function_item process_data_writable @305-311
+- struct_item UploadStreamHandler @314-317
+- function_item process_data_readable @320-335
+- function_item process_data_writable @337-352
+- struct_item UrlHandler @355-361
+- function_item stream_handler @364-366
+- function_item process_urls @368-380
+- function_item next_url @382-430
+- function_item done @432-434
+- function_item on_stream_fin @436-439
+- function_item reinit @441-447
+- mod_item tests @452-480
+- function_item download_stream_handler_flushes_on_fin @460-479
+
+### third_party/rust/neqo-bin/src/client/mod.rs
+
+Blob: `0a503775a2026f071526b4dfb54e9acc3a830da4`. Grammar: rust. Status: syntax-clean.
+
+- struct_item EchConfig @23-23
+- function_item from_str @27-29
+- mod_item http09 @51-51
+- mod_item http3 @52-52
+- enum_item Error @57-72
+- function_item from @75-80
+- struct_item Args @91-162
+- function_item new @172-210
+- function_item get_ciphers @212-223
+- function_item update_for_tests @225-300
+- function_item set_qlog_dir @303-305
+- function_item get_output_file @308-348
+- enum_item Ready @350-353
+- function_item ready @356-366
+- trait_item Handler @369-374
+- function_signature_item handle @372-372
+- function_signature_item take_token @373-373
+- enum_item CloseState @376-380
+- trait_item Client @383-397
+- function_signature_item process_multiple_output @384-385
+- function_signature_item process_multiple_input @386-390
+- function_signature_item has_events @391-391
+- function_signature_item close @392-394
+- function_signature_item is_closed @395-395
+- function_signature_item stats @396-396
+- struct_item Runner @399-406
+- function_item new @409-423
+- function_item run @425-432
+- function_item transfer @434-465
+- function_item process_output @467-512
+- function_item process_multiple_input @514-521
+- function_item qlog_new @524-546
+- function_item local_addr_for @548-553
+- function_item urls_by_origin @555-568
+- function_item client @576-665
+
+### third_party/rust/neqo-bin/src/lib.rs
+
+Blob: `72df8fd3069db0cd6ff416fa7e7880f2b55df203`. Grammar: rust. Status: syntax-clean.
+
+- mod_item client @26-26
+- mod_item send_data @27-27
+- mod_item server @28-28
+- mod_item udp @29-29
+- struct_item SharedArgs @37-79
+- function_item default @83-97
+- function_item get_alpn @102-104
+- function_item stats_enabled @107-109
+- struct_item QuicParameters @113-175
+- function_item default @179-195
+- function_item get_sock_addr @199-215
+- function_item preferred_address_v4 @218-224
+- function_item preferred_address_v6 @227-233
+- function_item preferred_address @236-256
+- function_item get @259-291
+- function_item from_str @294-298
+- enum_item Error @301-304
+- function_item now @307-310
+- function_item report_stats @313-339
+- mod_item temp_dir @343-384
+- struct_item TempDir @351-353
+- function_item new @356-370
+- function_item path @372-374
+- function_item drop @378-382
+- mod_item tests @388-449
+- function_item write_qlog_file @395-424
+- function_item report_stats_appends_json_lines @427-442
+- function_item report_stats_to_unwritable_path_is_not_fatal @445-448
+
+### third_party/rust/neqo-bin/src/send_data.rs
+
+Blob: `f8c383a06fbe51574265b47db8d5deb34cbf8721`. Grammar: rust. Status: syntax-clean.
+
+- struct_item SendData @12-17
+- function_item from @20-22
+- function_item from @26-34
+- function_item from @38-40
+- function_item zeroes @44-52
+- function_item slice @54-57
+- function_item send @63-78
+- function_item len @80-82
+- enum_item SendResult @87-94
+
+### third_party/rust/neqo-bin/src/server/http09.rs
+
+Blob: `11c5ec07267befb8c573dfb105d07bc8dfdaa117`. Grammar: rust. Status: syntax-clean.
+
+- struct_item HttpStreamState @33-36
+- struct_item HttpServer @38-45
+- function_item new @48-73
+- function_item save_partial @75-86
+- function_item parse_path @92-103
+- function_item stream_readable @105-162
+- function_item stream_writable @164-192
+- function_item process_multiple @196-203
+- function_item process_events @205-250
+- function_item has_events @252-254
+- function_item fmt @258-260
+- mod_item tests @264-321
+- function_item make_server @273-281
+- function_item transport @284-286
+- function_item reports_stats_once_on_close @290-292
+- function_item parse_path_valid @299-306
+- function_item parse_path_invalid @309-320
+
+### third_party/rust/neqo-bin/src/server/http3.rs
+
+Blob: `6dab17ed47986445c6b4b6e2ac4002fb7f4eeaa3`. Grammar: rust. Status: syntax-clean.
+
+- struct_item HttpServer @31-39
+- function_item send_response @44-64
+- function_item send_response_body @68-85
+- function_item new @87-115
+- function_item fmt @119-121
+- function_item process_multiple @125-132
+- function_item process_events @134-222
+- function_item has_events @224-226
+- mod_item tests @230-258
+- function_item make_server @239-246
+- function_item transport @249-251
+- function_item reports_stats_once_on_close @255-257
+
+### third_party/rust/neqo-bin/src/server/mod.rs
+
+Blob: `cf09dcdd6a56e3cc850cb8862e6c5c32e038e7c6`. Grammar: rust. Status: syntax-clean.
+
+- mod_item http09 @54-54
+- mod_item http3 @55-55
+- enum_item Error @58-71
+- struct_item Args @77-102
+- function_item default @106-115
+- function_item get_shared @120-122
+- function_item get_ciphers @124-135
+- function_item listen_addresses @137-145
+- function_item now @147-164
+- function_item set_qlog_dir @167-169
+- function_item set_hosts @171-173
+- function_item update_for_tests @175-213
+- struct_item StatsReporter @217-221
+- function_item new @224-226
+- function_item report @229-233
+- trait_item ServerConfig @238-244
+- function_signature_item set_ciphers @239-239
+- function_signature_item set_qlog_dir @240-240
+- function_signature_item set_validation @241-241
+- function_signature_item enable_ech @242-242
+- function_signature_item ech_config @243-243
+- function_item set_ciphers @247-249
+- function_item set_qlog_dir @250-252
+- function_item set_validation @253-255
+- function_item enable_ech @256-259
+- function_item ech_config @260-262
+- function_item set_ciphers @266-268
+- function_item set_qlog_dir @269-271
+- function_item set_validation @272-274
+- function_item enable_ech @275-278
+- function_item ech_config @279-281
+- function_item configure_server @285-296
+- function_item response_for_path @306-322
+- trait_item HttpServer @325-343
+- function_signature_item process_multiple @326-331
+- function_signature_item process_events @332-332
+- function_signature_item has_events @333-333
+- function_item poll @340-342
+- struct_item Runner @345-351
+- function_item new @355-363
+- function_item local_addresses @366-371
+- function_item find_socket @374-383
+- function_item process_inner @388-463
+- function_item read_and_process @465-494
+- function_item process @496-505
+- function_item ready @508-534
+- function_item run @536-558
+- enum_item Ready @561-565
+- function_item run @568-621
+- mod_item test_support @625-661
+- trait_item StatsServer @634-636
+- function_signature_item transport @635-635
+- function_item reported_on_close @639-660
+- mod_item tests @664-785
+- struct_item MockServer @674-677
+- function_item fmt @680-682
+- function_item process_multiple @686-698
+- function_item process_events @700-700
+- function_item has_events @702-704
+- function_item ignore_connection_reset @712-746
+- function_item reports_nothing_without_the_stats_flag @749-755
+- function_item response_for_path_qns_not_found @758-762
+- function_item response_for_path_non_qns_count @765-768
+- function_item response_for_path_non_qns_non_numeric_sends_path_bytes @771-775
+- function_item response_for_path_qns_dotdot_rejected @778-784
+
+### third_party/rust/neqo-bin/src/udp.rs
+
+Blob: `f1e0d0e8e3e8dfe2e3fb2e94954db91af0a42e73`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Socket @21-26
+- function_item bind @30-79
+- function_item local_addr @83-85
+- function_item writable @88-90
+- function_item readable @93-95
+- function_item send @98-102
+- function_item recv @106-122
+- function_item max_gso_segments @124-126
+- function_item may_fragment @131-133
+
+### third_party/rust/neqo-common/benches/decoder.rs
+
+Blob: `b8fba8e81353f623acfc3bd82c0f6c68e0701c2a`. Grammar: rust. Status: syntax-clean.
+
+- function_item fill_buffer @18-25
+- function_item decoder @27-40
+- function_item benchmark_decoder @42-48
+
+### third_party/rust/neqo-common/build.rs
+
+Blob: `456abb2f90a6094ad2c3db56b93d52879f179db7`. Grammar: rust. Status: syntax-clean.
+
+- function_item main @11-23
+
+### third_party/rust/neqo-common/src/bytes.rs
+
+Blob: `ac718d878233f4849af0c44a1854d9d66cccfbb8`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Bytes @11-14
+- function_item new @23-30
+- function_item len @33-35
+- function_item is_empty @38-40
+- function_item skip @48-56
+- function_item as_ref @60-62
+- function_item as_mut @66-68
+- function_item eq @72-74
+- function_item from @80-82
+- function_item eq @86-88
+- function_item eq @92-94
+- mod_item tests @99-155
+- function_item illegal_offset @104-106
+- function_item len @109-112
+- function_item is_empty @115-118
+- function_item skip @121-124
+- function_item illegal_skip @128-130
+- function_item is_equal @133-138
+- function_item as_mut @141-145
+- function_item partial_eq_array_and_slice @148-154
+
+### third_party/rust/neqo-common/src/codec.rs
+
+Blob: `88e13cdbebb9fbbdbb921188c1c084260d5c00d8`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Decoder @17-20
+- function_item new @25-27
+- function_item remaining @31-33
+- function_item offset @37-39
+- function_item skip @46-49
+- function_item skip_inner @54-56
+- function_item skip_vec @61-64
+- function_item skip_vvec @69-72
+- function_item skip_while @76-84
+- function_item peek_byte @88-94
+- function_item decode @97-104
+- function_item decode_n @106-121
+- function_item decode_uint @129-132
+- function_item decode_varint @135-161
+- function_item decode_remainder @164-168
+- function_item decode_checked @170-179
+- function_item decode_vec @182-185
+- function_item decode_vvec @188-191
+- function_item as_ref @197-199
+- function_item fmt @203-205
+- function_item from @209-211
+- function_item from @218-220
+- function_item eq @224-226
+- struct_item Encoder @230-236
+- function_item clone @239-244
+- function_item eq @248-250
+- function_item len @260-262
+- function_item is_empty @266-268
+- function_item as_decoder @273-275
+- function_item encode @282-287
+- function_item encode_byte @294-299
+- function_item encode_uint @306-313
+- function_item encode_varint @320-332
+- function_item encode_len @335-337
+- function_item encode_vec @344-346
+- function_item encode_vec_with @357-368
+- function_item encode_vvec @375-377
+- function_item encode_vvec_with @384-421
+- function_item truncate @424-426
+- function_item pad_to @429-434
+- function_item skip @444-447
+- function_item varint_len @455-463
+- function_item vvec_len @471-473
+- function_item with_capacity @477-482
+- function_item from_hex @491-504
+- function_item default @508-513
+- function_item fmt @517-519
+- function_item as_ref @523-525
+- function_item as_mut @529-531
+- function_item from @535-540
+- function_item from @544-549
+- function_item write_str @557-562
+- function_item new_borrowed_slice @573-578
+- function_item new_borrowed_vec @583-588
+- trait_item Buffer @597-617
+- function_signature_item position @598-598
+- function_item is_empty @600-602
+- function_signature_item as_slice @604-604
+- function_signature_item as_mut @606-606
+- function_signature_item truncate @608-608
+- function_signature_item pad_to @610-610
+- function_signature_item write_at @614-614
+- function_signature_item rotate_right @616-616
+- function_item position @620-622
+- function_item as_slice @624-626
+- function_item as_mut @628-630
+- function_item truncate @632-634
+- function_item pad_to @636-638
+- function_item write_at @640-642
+- function_item rotate_right @644-646
+- function_item position @650-652
+- function_item as_slice @654-656
+- function_item as_mut @658-660
+- function_item truncate @662-664
+- function_item pad_to @666-668
+- function_item write_at @670-672
+- function_item rotate_right @674-676
+- function_item position @680-682
+- function_item as_slice @684-686
+- function_item as_mut @688-691
+- function_item truncate @693-699
+- function_item pad_to @701-706
+- function_item write_at @708-710
+- function_item rotate_right @712-715
+- mod_item tests @720-1474
+- function_item decode @729-734
+- function_item decode_byte @737-744
+- function_item peek_byte @747-756
+- function_item decode_byte_short @759-763
+- function_item decode_remainder @766-774
+- function_item decode_vec @777-787
+- function_item decode_vec_short @790-800
+- function_item decode_vvec @803-813
+- function_item decode_vvec_short @816-825
+- function_item skip @828-833
+- function_item skip_too_much @837-841
+- function_item skip_vec @844-849
+- function_item skip_vec_too_much @853-857
+- function_item skip_vec_short_length @861-865
+- function_item skip_vvec @867-872
+- function_item skip_vvec_too_much @876-880
+- function_item skip_vvec_short_length @884-888
+- function_item skip_while @891-922
+- function_item encoded_lengths @925-935
+- function_item encoded_length_oob @939-941
+- function_item encoded_vvec_lengths @944-952
+- function_item encoded_vvec_length_oob @957-959
+- function_item encode_byte @962-970
+- function_item encode @973-977
+- function_item encode_uint @980-987
+- function_item builder_from_slice @990-994
+- function_item builder_inas_decoder @997-1002
+- struct_item UintTestCase @1004-1007
+- function_item varint_encode_decode @1016-1042
+- function_item varint_decode_long_zero @1045-1053
+- function_item varint_decode_short @1056-1062
+- function_item encode_vec @1065-1069
+- function_item encode_vec_with @1072-1078
+- function_item encode_vec_with_overflow @1082-1087
+- function_item encode_vvec @1090-1094
+- function_item encode_vvec_with @1097-1103
+- function_item encode_vvec_with_longer @1106-1113
+- function_item encode_vvec_with_30bit @1116-1124
+- function_item encode_builder @1128-1133
+- function_item encode_view @1137-1143
+- function_item encode_mutate @1146-1150
+- function_item pad @1153-1161
+- function_item truncate @1164-1168
+- function_item with_capacity @1171-1175
+- function_item buffer_write_zeroes @1178-1198
+- function_item check_write_zeroes @1179-1189
+- function_item buffer_truncate @1201-1217
+- function_item check_truncate @1202-1208
+- function_item buffer_rotate_right @1220-1241
+- function_item check_rotate_right @1221-1232
+- function_item encoder_as_mut @1244-1258
+- function_item check_as_mut @1245-1249
+- function_item buffer_vs_encoder_len @1263-1275
+- function_item buffer_position @1283-1287
+- function_item encoder_skip @1290-1300
+- function_item encoder_skip_too_much @1304-1307
+- function_item as_decoder_exposes_encoded_bytes_only_not_whole_buffer @1312-1321
+- function_item into_vec_respects_skip @1325-1330
+- function_item into_vec_without_skip @1334-1338
+- function_item partial_eq_respects_skip @1341-1347
+- function_item clone_respects_skip @1351-1359
+- function_item encoder_debug @1362-1365
+- function_item decoder_debug @1368-1372
+- function_item encode_vec_with_large_length @1376-1384
+- function_item encode_vvec_n_bytes @1386-1392
+- function_item encode_vvec_with_64_bytes @1396-1400
+- function_item encode_vvec_with_16383_bytes @1404-1408
+- function_item truncate_with_skip @1412-1417
+- function_item pad_to_no_op @1421-1425
+- function_item with_capacity_has_capacity @1429-1435
+- function_item into_vec_no_skip @1439-1443
+- function_item write_str_coverage @1447-1451
+- function_item cursor_truncate_no_op @1455-1463
+- function_item cursor_write_at @1467-1473
+
+### third_party/rust/neqo-common/src/datagram.rs
+
+Blob: `c915d447c883d60f9184366af07b608e308453e7`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Datagram @20-25
+- function_item try_from @30-40
+- function_item source @45-47
+- function_item destination @50-52
+- function_item tos @55-57
+- function_item set_tos @59-61
+- function_item len @67-69
+- function_item to_owned @72-79
+- function_item as_mut @83-85
+- function_item new @93-97
+- function_item deref_mut @101-103
+- function_item deref @108-110
+- function_item fmt @114-123
+- function_item from_slice @131-134
+- function_item from_bytes @142-145
+- function_item as_ref @149-151
+- struct_item Batch @159-165
+- function_item fmt @168-178
+- function_item from @182-191
+- function_item new @196-210
+- function_item source @213-215
+- function_item destination @218-220
+- function_item tos @223-225
+- function_item set_tos @227-229
+- function_item datagram_size @232-234
+- function_item data @237-239
+- function_item num_datagrams @242-244
+- function_item iter @246-253
+- function_item iter_mut @255-264
+- mod_item tests @269-431
+- function_item fmt_datagram @280-286
+- function_item new_empty @290-292
+- function_item from_slice_empty @296-298
+- function_item from_bytes_empty @302-304
+- function_item batch_num_datagrams @307-331
+- function_item batch_tos @334-344
+- function_item batch_iter @347-369
+- function_item batch_iter_mut @372-396
+- function_item datagram_len_and_accessors @399-408
+- function_item batch_data_and_try_from @411-417
+- function_item batch_try_from_multiple_fails @420-430
+
+### third_party/rust/neqo-common/src/event.rs
+
+Blob: `dac33a6e2cd7024111187b1dcda810dfea04292a`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Queue @11-13
+- function_item default @16-20
+- function_item clone @24-28
+- function_item push @33-35
+- function_item push_unique @39-47
+- function_item push_unique_by @51-59
+- function_item remove_matching @62-67
+- function_item clear @70-72
+- function_item is_empty @76-78
+- function_item next_event @82-84
+- function_item take_all @88-90
+- trait_item Provider @94-109
+- function_signature_item next_event @99-99
+- function_signature_item has_events @103-103
+- function_item events @106-108
+- struct_item Iter @111-113
+- function_item next @117-119
+- mod_item tests @124-206
+- struct_item MockProvider @127-127
+- function_item next_event @131-133
+- function_item has_events @134-136
+- function_item iter_yields_events @140-146
+- function_item iter_empty @149-153
+- function_item queue_push_allows_duplicates @156-161
+- function_item queue_push_unique_keeps_first @164-170
+- function_item queue_push_unique_by_matches_key @173-179
+- function_item queue_remove_clear_next @182-195
+- function_item queue_clones_share @198-205
+
+### third_party/rust/neqo-common/src/fuzz.rs
+
+Blob: `039b29074c8900760fd4e31e44e460275961fe01`. Grammar: rust. Status: syntax-clean.
+
+- function_item write_item_to_fuzzing_corpus @20-44
+
+### third_party/rust/neqo-common/src/header.rs
+
+Blob: `20138c8ad6ce02a62e4ae53267f9728ad3d2e2e2`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Header @17-27
+- function_item new @30-39
+- function_item is_allowed_for_response @42-53
+- function_item name @56-58
+- function_item value @61-63
+- function_item value_utf8 @70-72
+- function_item fmt @76-88
+- function_item eq @92-94
+- trait_item HeadersExt @97-100
+- function_signature_item contains_header @98-98
+- function_signature_item find_header @99-99
+- function_item contains_header @106-109
+- function_item find_header @111-114
+- enum_item FromStrError @118-123
+- function_item from_str @128-143
+- mod_item tests @148-275
+- function_item from_str_valid @154-162
+- function_item from_str_pseudo_header @165-169
+- function_item from_str_pseudo_header_with_value_with_colon @172-176
+- function_item from_str_errors @179-185
+- function_item non_utf8_header_value @188-200
+- function_item non_ascii_header_value @203-216
+- function_item value_utf8_method @219-227
+- function_item header_comparison_with_bytes @230-235
+- function_item is_allowed_for_response @238-243
+- function_item headers_ext @246-259
+- function_item debug_format @262-274
+
+### third_party/rust/neqo-common/src/hex.rs
+
+Blob: `c996d186ee15d83fd7493724a1bd3f0022dca3dd`. Grammar: rust. Status: syntax-clean.
+
+- function_item chunk_hex @79-92
+- mod_item tests @143-178
+- function_item hex_output @147-156
+- function_item hex_snip_middle_boundary @159-177
+
+### third_party/rust/neqo-common/src/hrtime.rs
+
+Blob: `e7bcba78ff0ed960df133cb7f92d6330da060562`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Period @20-20
+- function_item as_u32 @27-29
+- function_item scaled @32-34
+- function_item from @38-41
+- struct_item PeriodSet @46-48
+- function_item idx @51-54
+- function_item add @56-60
+- function_item remove @62-68
+- function_item min @70-77
+- mod_item mac @81-150
+- function_item set_thread_policy @93-102
+- function_item get_scale @104-111
+- function_item set_realtime @114-127
+- function_item get_default_policy @130-149
+- struct_item Handle @153-158
+- function_item new @163-170
+- function_item update @175-198
+- function_item drop @202-204
+- struct_item Time @208-216
+- function_item new @218-228
+- function_item start @231-237
+- function_item start @240-244
+- function_item start @251-251
+- function_item stop @254-258
+- function_item stop @265-265
+- function_item update @267-274
+- function_item add @276-279
+- function_item remove @281-284
+- function_item get @290-305
+- function_item drop @309-318
+- mod_item unit_tests @324-386
+- function_item period_from_duration @330-336
+- function_item period_set_add_remove_min @339-358
+- function_item period_set_max_ignored @361-371
+- function_item period_scaled @375-378
+- function_item period_as_u32 @382-385
+- mod_item test @393-536
+- function_item validate_delays @413-430
+- function_item check_delays @437-459
+- function_item baseline @464-466
+- function_item one_ms @470-473
+- function_item multithread_baseline @476-482
+- function_item one_ms_multi @486-492
+- function_item mixed_multi @496-503
+- function_item update @507-512
+- function_item update_multi @516-522
+- function_item max @525-528
+- function_item slip @532-535
+
+### third_party/rust/neqo-common/src/incrdecoder.rs
+
+Blob: `5f80f5e572b15ca3cd8637e4942371ccd43339ab`. Grammar: rust. Status: syntax-clean.
+
+- struct_item IncrementalDecoderUint @12-15
+- function_item min_remaining @19-21
+- function_item consume @28-57
+- function_item decoding_in_progress @60-62
+- struct_item IncrementalDecoderBuffer @66-69
+- function_item new @73-78
+- function_item min_remaining @81-83
+- function_item consume @90-96
+- struct_item IncrementalDecoderIgnore @100-102
+- function_item new @111-114
+- function_item min_remaining @117-119
+- function_item consume @121-126
+- mod_item tests @131-281
+- function_item buffer_incremental @138-157
+- struct_item UintTestCase @159-162
+- function_item run @165-201
+- function_item varint @211-225
+- function_item zero_len @228-234
+- function_item ignore @237-265
+- function_item decoding_in_progress @268-274
+- function_item buffer_min_remaining @277-280
+
+### third_party/rust/neqo-common/src/lib.rs
+
+Blob: `a440b8a3ca69c4cf0898bc87bb0024ffb60809b9`. Grammar: rust. Status: syntax-clean.
+
+- mod_item bytes @9-9
+- mod_item codec @10-10
+- mod_item datagram @11-11
+- mod_item event @12-12
+- mod_item fuzz @14-14
+- mod_item header @15-15
+- mod_item hex @16-16
+- mod_item hrtime @17-17
+- mod_item incrdecoder @18-18
+- mod_item log @19-19
+- mod_item qlog @20-20
+- mod_item tos @21-21
+- function_item const_max @39-41
+- function_item const_min @43-45
+- function_item const_min_u64 @47-49
+- trait_item Length @56-58
+- function_signature_item as_u64 @57-57
+- function_item as_u64 @61-63
+- function_item as_u64 @67-69
+- function_item to_u64 @80-83
+- function_item expect_usize @92-98
+- enum_item Role @102-105
+- function_item remote @109-114
+- enum_item MessageType @118-121
+- mod_item tests @150-160
+- function_item const_minmax @154-159
+
+### third_party/rust/neqo-common/src/log.rs
+
+Blob: `125cff5490a05a49cbcce3e88070cb0e4fcc0450`. Grammar: rust. Status: syntax-clean.
+
+- function_item since_start @15-19
+- function_item init @25-54
+
+### third_party/rust/neqo-common/src/qlog.rs
+
+Blob: `b22030ac52f6f2e8016dfcbe793ffdc31b2e5012`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Qlog @24-31
+- struct_item SharedStreamer @33-36
+- function_item enabled_with_file @44-72
+- function_item enabled @82-91
+- function_item disabled @95-97
+- function_item is_enabled @101-103
+- function_item add_event_at @106-116
+- function_item add_event_with_stream @120-150
+- function_item fmt @154-156
+- function_item drop @160-164
+- function_item new_trace @168-194
+- mod_item test @198-267
+- function_item new_neqo_qlog @215-218
+- function_item add_event_at @221-235
+- function_item shared_streamer_debug @238-241
+- function_item add_event_with_stream_error_disables_logging @244-252
+- function_item is_enabled @255-266
+
+### third_party/rust/neqo-common/src/tos.rs
+
+Blob: `72f1624e4fc11ff0bcf5de2e2fff17c851efc47a`. Grammar: rust. Status: syntax-clean.
+
+- enum_item Ecn @18-28
+- function_item from @31-33
+- function_item from @37-39
+- function_item from @43-45
+- function_item is_marked @51-53
+- function_item is_ect @57-59
+- enum_item Dscp @66-155
+- function_item from @158-160
+- function_item from @164-166
+- function_item from @170-172
+- struct_item Tos @177-177
+- function_item from @180-182
+- function_item from @186-188
+- function_item from @192-194
+- function_item from @198-200
+- function_item from @204-206
+- function_item from @210-212
+- function_item fmt @216-221
+- function_item set_ecn @225-227
+- function_item set_dscp @229-231
+- function_item is_ecn_marked @234-236
+- mod_item tests @241-396
+- function_item ecn_into_u8 @245-250
+- function_item u8_into_ecn @253-258
+- function_item u8_into_ecn_all @261-265
+- function_item dscp_into_u8 @268-292
+- function_item u8_into_dscp_all @295-299
+- function_item u8_into_dscp @302-326
+- function_item ecn_into_tos @329-333
+- function_item dscp_into_tos @336-340
+- function_item u8_to_tos @343-348
+- function_item tos_to_dscp @351-355
+- function_item tos_modify_ecn @358-362
+- function_item tos_modify_dscp @365-369
+- function_item tos_is_ecn_marked @372-375
+- function_item ecn_is_ecn_marked @378-381
+- function_item ecn_is_ect @384-389
+- function_item dscp_into_tos_non_default @392-395
+
+### third_party/rust/neqo-common/tests/log.rs
+
+Blob: `f0619b8d83606924994d0aba8c8e739fb00a17e2`. Grammar: rust. Status: syntax-clean.
+
+- function_item basic @10-16
+- function_item args @19-27
+
+### third_party/rust/neqo-http3/benches/common.rs
+
+Blob: `6ed166b70a74bf55ea6eb2d6fb4d495d624619de`. Grammar: rust. Status: syntax-clean.
+
+- function_item setup_with_link @38-52
+- function_item setup @58-60
+- function_item setup_flow_controlled @67-73
+- function_item bench @92-112
+
+### third_party/rust/neqo-http3/benches/streams_simulated.rs
+
+Blob: `b73aabda7618cbef794985308cbaae8d61e26fc8`. Grammar: rust. Status: syntax-clean.
+
+- mod_item common @17-17
+- function_item benchmark @19-21
+
+### third_party/rust/neqo-http3/benches/streams_walltime.rs
+
+Blob: `e946fa5636521a32083d54f88921619d868a856f`. Grammar: rust. Status: syntax-clean.
+
+- mod_item common @17-17
+- function_item benchmark @19-21
+
+### third_party/rust/neqo-http3/src/buffered_send_stream.rs
+
+Blob: `70c17104858eca33a9ab3f3593263266aa429b79`. Grammar: rust. Status: syntax-clean.
+
+- enum_item BufferedStream @15-22
+- function_item new @26-31
+- function_item init @36-42
+- function_item encode_with @44-50
+- function_item buffer @55-61
+- function_item send_buffer @66-84
+- function_item prepare_atomic_send @87-100
+- function_item send_atomic @105-119
+- function_item send_atomic_with @129-147
+- function_item has_buffered_data @150-156
+- function_item from @160-166
+
+### third_party/rust/neqo-http3/src/client_events.rs
+
+Blob: `d56c2ba9710e3465d78d61f4481d3142f240e714`. Grammar: rust. Status: syntax-clean.
+
+- enum_item WebTransportEvent @24-50
+- enum_item ConnectUdpEvent @53-72
+- enum_item Http3ClientEvent @75-120
+- struct_item Http3ClientEvents @123-125
+- function_item data_readable @129-133
+- function_item recv_closed @136-160
+- function_item header_ready @165-178
+- function_item data_writable @183-187
+- function_item send_closed @189-196
+- function_item session_start @200-226
+- function_item session_end @228-252
+- function_item extended_connect_new_stream @254-271
+- function_item new_datagram @273-294
+- function_item capsule_space_available @296-298
+- function_item new_requests_creatable @303-307
+- function_item datagram_space_available @313-316
+- function_item authentication_needed @319-321
+- function_item ech_fallback_authentication_needed @324-327
+- function_item resumption_token @330-332
+- function_item zero_rtt_rejected @335-337
+- function_item goaway_received @340-344
+- function_item push @347-349
+- function_item connection_state_change @352-364
+- function_item remove_recv_stream_events @375-388
+- function_item remove_send_stream_events @390-396
+- function_item negotiation_done @398-413
+- function_item has_events @420-422
+- function_item next_event @425-427
+- mod_item tests @432-444
+- function_item has_events @438-443
+
+### third_party/rust/neqo-http3/src/conn_params.rs
+
+Blob: `6511edce976a31ba1533651b481ce5b23f9c6574`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Http3Parameters @17-24
+- function_item default @27-35
+- function_item get_connection_parameters @40-42
+- function_item connection_parameters @45-48
+- function_item qpack @51-54
+- function_item max_table_size_encoder @60-63
+- function_item max_table_size_decoder @69-72
+- function_item get_max_table_size_decoder @75-77
+- function_item max_blocked_streams @80-83
+- function_item get_max_blocked_streams @86-88
+- function_item get_qpack_settings @91-93
+- function_item webtransport @104-108
+- function_item webtransport_enabled @118-140
+- function_item connect @147-151
+- function_item connect_enabled @155-157
+- function_item http3_datagram @160-163
+- function_item get_http3_datagram @166-173
+- mod_item tests @178-285
+- function_item http3_datagram_with_capsules_only @184-189
+- function_item max_table_size_accepts_limit @192-206
+- function_item max_table_size_encoder_rejects_above_limit @210-212
+- function_item max_table_size_decoder_rejects_above_limit @216-218
+- function_item webtransport_requires_datagrams_and_reliable_reset @221-252
+- function_item webtransport_and_connect_are_coupled @255-276
+- function_item http3_datagram_setting @279-284
+
+### third_party/rust/neqo-http3/src/connect_udp.rs
+
+Blob: `2bfce4cbb5bed1e7bdcc3846e86e2ee55f260102`. Grammar: rust. Status: syntax-clean.
+
+- trait_item ClientSession @27-84
+- function_signature_item connect_udp_enabled @30-30
+- function_signature_item connect_udp_create_session @38-43
+- function_signature_item connect_udp_close_session @55-61
+- function_signature_item connect_udp_send_datagram @77-83
+- function_item connect_udp_enabled @87-89
+- function_item connect_udp_create_session @91-109
+- function_item connect_udp_close_session @111-120
+- function_item connect_udp_send_datagram @122-132
+- trait_item Handler @136-172
+- function_signature_item connect_udp_create_session @137-143
+- function_signature_item connect_udp_session_accept @145-152
+- function_signature_item connect_udp_close_session @154-161
+- function_signature_item connect_udp_send_datagram @164-171
+- function_item connect_udp_create_session @175-193
+- function_item connect_udp_session_accept @195-215
+- function_item connect_udp_close_session @217-234
+- function_item connect_udp_send_datagram @236-245
+- trait_item ServerHandler @249-276
+- function_signature_item connect_udp_session_accept @250-256
+- function_signature_item connect_udp_close_session @258-265
+- function_signature_item connect_udp_send_datagram @268-275
+- function_item connect_udp_session_accept @279-290
+- function_item connect_udp_close_session @292-303
+- function_item connect_udp_send_datagram @305-316
+- struct_item ServerSession @320-322
+- function_item fmt @325-327
+- function_item new @331-343
+- function_item state @346-348
+- function_item response @355-366
+- function_item close_session @373-384
+- function_item stream_id @387-389
+- function_item send_datagram @398-415
+- function_item remote_datagram_size @418-420
+- function_item reset_send @427-433
+- enum_item ServerEvent @437-451
+- trait_item ServerEvents @453-462
+- function_signature_item connect_udp_new_session @454-454
+- function_signature_item connect_udp_session_closed @455-460
+- function_signature_item connect_udp_datagram @461-461
+- function_item connect_udp_new_session @465-470
+- function_item connect_udp_session_closed @472-483
+- function_item connect_udp_datagram @485-490
+
+### third_party/rust/neqo-http3/src/connection.rs
+
+Blob: `39d45000ad083ebeac1700fbb0797707499f1438`. Grammar: rust. Status: syntax-clean.
+
+- struct_item RequestDescription @52-58
+- enum_item SessionAcceptAction @62-67
+- enum_item Http3RemoteSettingsState @70-74
+- enum_item Http3State @90-97
+- function_item active @101-103
+- struct_item Http3Connection @289-303
+- function_item fmt @306-308
+- function_item new @313-342
+- function_item set_features_listener @350-353
+- function_item initialize_http3_connection @357-364
+- function_item send_settings @366-372
+- function_item save_settings @375-377
+- function_item create_qpack_streams @379-388
+- function_item stream_has_pending_data @392-394
+- function_item has_data_to_send @397-399
+- function_item send_non_control_streams @405-426
+- function_item process_sending @430-445
+- function_item set_0rtt_settings @448-458
+- function_item get_settings @461-467
+- function_item add_new_stream @472-478
+- function_item stream_receive @483-498
+- function_item handle_unblocked_streams @500-518
+- function_item handle_stream_readable @527-561
+- function_item handle_stream_reset @564-573
+- function_item handle_stream_stop_sending @575-589
+- function_item handle_state_change @593-640
+- function_item handle_zero_rtt_rejected @644-665
+- function_item handle_datagram @667-685
+- function_item check_stream_exists @687-697
+- function_item handle_new_stream @704-774
+- function_item close @777-785
+- function_item handle_stream_manipulation_output @803-826
+- function_item create_request_headers @828-883
+- function_item request @885-904
+- function_item create_bidi_transport_stream @906-920
+- function_item request_with_stream @922-979
+- function_item read_data @988-1002
+- function_item stream_reset_send @1006-1021
+- function_item stream_commit @1030-1043
+- function_item stream_stop_sending @1045-1061
+- function_item stream_set_sendorder @1068-1075
+- function_item stream_set_sendgroup @1084-1090
+- function_item stream_clear_sendgroup @1098-1104
+- function_item stream_set_fairness @1113-1120
+- function_item cancel_fetch @1122-1169
+- function_item stream_close_send @1172-1193
+- function_item extended_connect_create_session @1195-1234
+- function_item extended_connect_session_accept @1236-1287
+- function_item do_accept_extended_connect @1289-1337
+- function_item drain_webtransport_sessions @1342-1349
+- function_item webtransport_session_protocol @1355-1365
+- function_item webtransport_create_send_group @1371-1382
+- function_item webtransport_validate_send_group @1388-1398
+- function_item webtransport_session @1406-1417
+- function_item webtransport_session_stats @1423-1432
+- function_item extended_connect_close_session @1434-1464
+- function_item get_extended_connect_session @1466-1475
+- function_item validate_extended_connect_session @1477-1486
+- function_item webtransport_create_stream_local @1488-1504
+- function_item webtransport_create_stream_local_with_send_group @1506-1544
+- function_item webtransport_create_stream_remote @1546-1565
+- function_item webtransport_create_stream_internal @1567-1620
+- function_item extended_connect_send_datagram @1623-1634
+- function_item handle_control_frame @1639-1661
+- function_item set_qpack_settings @1663-1668
+- function_item handle_settings @1670-1737
+- function_item add_streams @1740-1751
+- function_item queue_control_frame @1753-1755
+- function_item queue_update_priority @1757-1775
+- function_item recv_stream_is_critical @1777-1784
+- function_item send_stream_is_critical @1786-1794
+- function_item close_send @1796-1800
+- function_item close_recv @1802-1812
+- function_item remove_extended_connect @1814-1845
+- function_item remove_recv_stream @1847-1862
+- function_item remove_send_stream @1864-1880
+- function_item webtransport_enabled @1882-1884
+- function_item connect_udp_enabled @1886-1888
+- function_item state @1891-1893
+- function_item set_state @1895-1897
+- function_item state_mut @1900-1902
+- function_item qpack_encoder @1905-1907
+- function_item qpack_decoder @1910-1912
+- function_item send_streams @1915-1917
+- function_item send_streams_mut @1920-1922
+- function_item recv_streams @1925-1927
+- function_item recv_streams_mut @1930-1932
+- mod_item tests @1937-1975
+- function_item create_request_headers_connect_without_connect_type @1947-1959
+- function_item create_request_headers_connect_type_without_connect @1962-1974
+
+### third_party/rust/neqo-http3/src/connection_client.rs
+
+Blob: `65eb5c1f686a7cb4dd3be2eb7e063a48dced67d7`. Grammar: rust. Status: syntax-clean.
+
+- function_item id_gte @44-49
+- function_item alpn_from_quic_version @51-57
+- struct_item Http3Client @275-279
+- function_item fmt @282-284
+- function_item new @292-317
+- function_item new_with_conn @324-333
+- function_item connection @335-337
+- function_item connection_mut @339-341
+- function_item handler @343-345
+- function_item connection_and_handler @347-351
+- function_item client_events @353-355
+- function_item state @359-361
+- function_item tls_info @364-366
+- function_item peer_certificate @370-372
+- function_item authenticated @379-381
+- function_item set_qlog @383-385
+- function_item enable_ech @392-395
+- function_item connection_id @404-406
+- function_item encode_resumption_token @408-415
+- function_item enable_resumption @430-463
+- function_item take_resumption_token @468-471
+- function_item close @474-488
+- function_item fetch @503-537
+- function_item connect @548-578
+- function_item priority_update @588-590
+- function_item cancel_fetch @598-602
+- function_item stream_close_send @609-612
+- function_item stream_reset_send @617-620
+- function_item stream_commit @630-633
+- function_item stream_stop_sending @638-641
+- function_item send_data @655-665
+- function_item read_data @674-690
+- function_item process @693-703
+- function_item process_input @715-721
+- function_item process_multiple_input @723-738
+- function_item process_http3 @745-762
+- function_item process_output @767-771
+- function_item process_multiple_output @800-816
+- function_item check_result @820-838
+- function_item check_connection_events @854-928
+- function_item handle_stream_readable @945-986
+- function_item handle_goaway @988-1064
+- function_item qpack_encoder_stats @1067-1069
+- function_item transport_stats @1072-1074
+- function_item webtransport_create_send_group @1083-1085
+- function_item webtransport_validate_send_group @1092-1099
+- function_item webtransport_session_stats @1109-1114
+- function_item webtransport_create_stream_with_send_group @1121-1136
+- function_item has_events @1143-1145
+- function_item next_event @1150-1152
+- mod_item tests @1157-5800
+- function_item assert_closed @1184-1191
+- function_item default_http3_client @1194-1196
+- function_item default_http3_client_param @1198-1217
+- struct_item TestServer @1244-1252
+- function_item new @1255-1261
+- function_item new_with_settings @1263-1295
+- function_item new_with_conn @1297-1317
+- function_item create_qpack_streams @1319-1339
+- function_item create_control_stream @1341-1363
+- function_item check_client_control_qpack_streams_no_resumption @1365-1372
+- function_item check_control_qpack_request_streams_resumption @1374-1386
+- function_item check_client_control_qpack_streams @1389-1446
+- function_item check_control_stream @1453-1475
+- function_item read_and_check_stream_data @1477-1488
+- function_item encode_headers @1490-1504
+- function_item handshake_only @1507-1528
+- function_item connect_only_transport_with @1531-1541
+- function_item connect_only_transport @1544-1549
+- function_item send_and_receive_client_settings @1551-1556
+- function_item connect_with @1559-1573
+- function_item connect_with_connection_parameters @1576-1591
+- function_item connect @1594-1599
+- function_item make_request @1602-1620
+- function_item check_response_header_0 @1640-1646
+- function_item check_response_header_1 @1657-1663
+- function_item check_response_header_2 @1685-1691
+- function_item make_request_and_exchange_pkts @1696-1737
+- function_item connect_and_send_request @1739-1746
+- function_item server_send_response_and_exchange_packet @1748-1765
+- function_item client_connect_and_exchange_qpack_and_control_streams @1769-1771
+- function_item client_close_control_stream @1776-1785
+- function_item client_reset_control_stream @1790-1799
+- function_item client_reset_server_side_encoder_stream @1804-1813
+- function_item client_reset_server_side_decoder_stream @1818-1827
+- function_item client_stop_sending_control_stream @1832-1841
+- function_item client_stop_sending_encoder_stream @1846-1855
+- function_item client_stop_sending_decoder_stream @1860-1869
+- function_item client_missing_settings @1874-1886
+- function_item client_receive_settings_twice @1891-1902
+- function_item test_wrong_frame_on_control_stream @1904-1917
+- function_item data_frame_on_control_stream @1921-1923
+- function_item headers_frame_on_control_stream @1927-1929
+- function_item priority_update_request_on_control_stream @1933-1935
+- function_item client_received_unknown_stream @1940-1968
+- function_item test_wrong_frame_on_request_stream @1971-1982
+- function_item settings_frame_on_request_stream @1985-1987
+- function_item goaway_frame_on_request_stream @1990-1992
+- function_item priority_update_request_on_request_stream @1995-1997
+- function_item max_push_id_frame_on_control_stream @2005-2007
+- function_item max_push_id_frame_on_request_stream @2010-2012
+- function_item control_stream_closes_with @2016-2025
+- function_item cancel_push_frame_on_control_stream @2030-2032
+- function_item push_promise_frame_on_request_stream @2037-2049
+- function_item client_received_push_stream @2054-2061
+- function_item frame_reading @2065-2109
+- function_item fetch_basic @2112-2162
+- function_item force_idle @2170-2190
+- function_item dgram @2174-2178
+- function_item fetch_keep_alive @2194-2202
+- function_item read_response @2205-2246
+- function_item fetch_with_data @2255-2299
+- function_item fetch_commit_then_reset_is_reliable @2304-2319
+- function_item fetch_commit_blocked_when_flow_control_exhausted @2325-2341
+- function_item fetch_with_data_length_xbytes @2345-2398
+- function_item fetch_with_data_length_63bytes @2402-2404
+- function_item fetch_with_data_length_64bytes @2408-2410
+- function_item fetch_with_data_length_16383bytes @2414-2416
+- function_item fetch_with_data_length_16384bytes @2420-2422
+- function_item fetch_with_two_data_frames @2426-2507
+- function_item alloc_buffer @2509-2515
+- function_item fetch_two_data_frame_second_63bytes @2520-2523
+- function_item fetch_two_data_frame_second_63bytes_place_for_66 @2529-2532
+- function_item fetch_two_data_frame_second_64bytes_place_for_67 @2538-2541
+- function_item fetch_two_data_frame_second_16383bytes @2546-2549
+- function_item fetch_two_data_frame_second_16383bytes_place_for_16387 @2555-2558
+- function_item fetch_two_data_frame_second_16383bytes_place_for_16388 @2564-2567
+- function_item fetch_two_data_frame_second_16384bytes_place_for_16389 @2573-2576
+- function_item stop_sending_early_response @2580-2654
+- function_item stop_sending_other_error_with_reset @2658-2718
+- function_item stop_sending_other_error_wo_reset @2722-2765
+- function_item stop_sending_and_reset_other_error_with_events @2770-2844
+- function_item stop_sending_other_error_with_events @2850-2910
+- function_item reset_wo_stop_sending @2914-2964
+- function_item test_incomplet_frame @2966-2987
+- function_item incomplet_data_frame @2991-2993
+- function_item incomplet_headers_frame @2997-2999
+- function_item incomplet_unknown_frame @3002-3004
+- function_item goaway @3008-3089
+- function_item multiple_goaways @3092-3178
+- function_item multiple_goaways_stream_id_increased @3181-3211
+- function_item goaway_wrong_stream_id @3214-3226
+- function_item stream_fin_wo_headers @3230-3255
+- function_item stream_fin_after_headers @3259-3293
+- function_item stream_fin_after_headers_are_read_wo_data_frame @3298-3360
+- function_item stream_fin_after_headers_and_a_empty_data_frame @3364-3412
+- function_item stream_fin_after_headers_an_empty_data_frame_are_read @3417-3485
+- function_item stream_fin_after_a_data_frame @3488-3550
+- function_item multiple_data_frames @3553-3586
+- function_item receive_grease_before_response @3589-3631
+- function_item read_frames_header_blocked @3634-3700
+- function_item read_frames_header_blocked_with_fin_after_headers @3703-3763
+- function_item exchange_token @3765-3783
+- function_item start_with_0rtt @3785-3803
+- function_item zero_rtt_negotiated @3806-3838
+- function_item zero_rtt_send_request @3841-3885
+- function_item zero_rtt_before_resumption_token @3888-3901
+- function_item zero_rtt_send_reject @3904-3970
+- function_item zero_rtt_change_settings @3973-4035
+- function_item zero_rtt_new_server_setting_are_the_same @4038-4054
+- function_item zero_rtt_new_server_setting_omit_max_table @4057-4072
+- function_item zero_rtt_new_server_setting_omit_blocked_streams @4075-4090
+- function_item zero_rtt_new_server_setting_omit_header_list_size @4093-4108
+- function_item zero_rtt_new_server_setting_max_table_size_bigger @4111-4127
+- function_item zero_rtt_new_server_setting_max_table_size_smaller @4130-4146
+- function_item zero_rtt_new_server_setting_blocked_streams_bigger @4149-4165
+- function_item zero_rtt_new_server_setting_blocked_streams_smaller @4168-4184
+- function_item zero_rtt_new_server_setting_max_header_size_bigger @4187-4203
+- function_item zero_rtt_new_server_setting_max_headers_size_smaller @4206-4222
+- function_item zero_rtt_new_server_setting_h3_datagram_smaller @4225-4242
+- function_item zero_rtt_new_server_setting_h3_datagram_bigger @4245-4262
+- function_item zero_rtt_new_server_setting_webtransport_smaller @4265-4283
+- function_item zero_rtt_extended_connect_disabled @4286-4303
+- function_item zero_rtt_max_table_size_first_omitted @4306-4322
+- function_item zero_rtt_blocked_streams_first_omitted @4325-4341
+- function_item zero_rtt_max_header_size_first_omitted @4344-4360
+- function_item trailers_with_fin_after_headers @4363-4421
+- function_item trailers_with_later_fin_after_headers @4424-4491
+- function_item data_after_trailers_after_headers @4494-4549
+- function_item transport_stream_readable_event_after_all_data @4552-4580
+- function_item no_data_ready_events_after_fin @4583-4611
+- function_item reading_small_chunks_of_data @4614-4668
+- function_item zero_length_data_at_end @4671-4701
+- function_item stream_blocked_no_remote_encoder_stream @4704-4764
+- function_item setup_server_side_encoder_param @4766-4788
+- function_item setup_server_side_encoder @4790-4792
+- function_item data_readable_in_decoder_blocked_state @4795-4847
+- function_item qpack_stream_reset @4850-4860
+- function_item send_headers_using_encoder @4862-4891
+- function_item qpack_stream_reset_recv @4894-4909
+- function_item qpack_stream_reset_during_header_qpack_blocked @4912-4950
+- function_item setup_for_recv_after_reset @4957-5009
+- function_item recv_after_stream_removed @5026-5039
+- function_item recv_after_stream_removed_reordered @5050-5063
+- function_item recv_after_stream_removed_events_handled @5068-5081
+- function_item recv_after_stream_removed_events_handled_reordered @5085-5098
+- function_item qpack_no_stream_cancelled_after_fin @5101-5140
+- function_item qpack_stream_reset_dynamic_table_zero @5143-5159
+- function_item multiple_streams_in_decoder_blocked_state @5162-5220
+- function_item reserved_frames @5223-5230
+- function_item send_reserved_settings @5233-5255
+- function_item response_w_1xx @5258-5317
+- function_item response_wo_status @5320-5370
+- function_item handshake_client_error @5372-5376
+- function_item client_control_stream_create_failed @5380-5388
+- function_item client_qpack_stream_create_failed @5392-5400
+- function_item do_malformed_response_test @5402-5429
+- function_item malformed_response_pseudo_header_after_regular_header @5432-5437
+- function_item malformed_response_undefined_pseudo_header @5440-5442
+- function_item malformed_response_duplicate_pseudo_header @5445-5451
+- function_item malformed_response_uppercase_header @5454-5459
+- function_item malformed_response_connection_specific_header @5462-5468
+- function_item malformed_response_excluded_byte_in_header @5471-5476
+- function_item malformed_response_request_header_in_response @5479-5485
+- function_item maybe_authenticate @5487-5492
+- function_item get_resumption_token @5497-5523
+- function_item zerortt_request_use_dynamic_table @5530-5577
+- function_item manipulate_conrol_stream @5579-5599
+- function_item manipulate_conrol_streams @5602-5613
+- function_item priority_update_during_full_buffer @5616-5669
+- function_item error_request_stream @5672-5715
+- function_item response_w_101 @5718-5746
+- function_item client_stop_sending_and_stream_test @5749-5790
+- function_item client_stop_sending_and_stream_combinations @5793-5799
+
+### third_party/rust/neqo-http3/src/connection_server.rs
+
+Blob: `878081d468e3230efdef20540fd503c60b55b088`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Http3ServerHandler @27-31
+- function_item fmt @34-36
+- function_item new @40-46
+- function_item state @49-51
+- function_item base_handler_mut @53-55
+- function_item server_events @57-59
+- function_item mark_needs_processing @61-63
+- function_item send_data @75-93
+- function_item send_headers @96-112
+- function_item stream_close_send @119-129
+- function_item cancel_fetch @137-146
+- function_item stream_stop_sending @148-158
+- function_item stream_reset_send @160-169
+- function_item stream_commit @176-183
+- function_item validate_extended_connect_session @185-189
+- function_item process_http3 @192-203
+- function_item next_event @206-208
+- function_item queue_goaway @211-215
+- function_item should_be_processed @218-224
+- function_item check_result @228-236
+- function_item close @238-244
+- function_item check_connection_events @247-302
+- function_item handle_stream_readable @304-392
+- function_item read_data @401-416
+
+### third_party/rust/neqo-http3/src/control_stream_local.rs
+
+Blob: `a9d2d1f201746a89d0ed889a7fd24336321254f0`. Grammar: rust. Status: syntax-clean.
+
+- struct_item ControlStreamLocal @23-27
+- function_item fmt @30-32
+- function_item queue_frame @37-39
+- function_item queue_update_priority @41-43
+- function_item send @46-54
+- function_item send_priority_update @56-87
+- function_item create @90-96
+- function_item stream_id @99-101
+- function_item control_stream_local_display @105-108
+
+### third_party/rust/neqo-http3/src/control_stream_remote.rs
+
+Blob: `8c3f3979d4905a7cd9d156d1649efffae07671fb`. Grammar: rust. Status: syntax-clean.
+
+- struct_item ControlStreamRemote @23-26
+- function_item fmt @29-31
+- function_item new @35-40
+- function_item receive_single @43-55
+- function_item stream_type @59-61
+- function_item reset @65-67
+- function_item receive @69-79
+- function_item control_stream_remote_display @83-89
+
+### third_party/rust/neqo-http3/src/features/extended_connect/connect_udp_session.rs
+
+Blob: `928961f0e798ebed9524b56c26c0cc01edcd842b`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Session @27-30
+- function_item new @34-39
+- function_item fmt @43-45
+- function_item connect_type @49-51
+- function_item read_control_stream @53-100
+- function_item write_datagram_prefix @102-104
+- function_item dgram_context_id @106-121
+- function_item datagram_capsule_support @123-125
+- function_item write_datagram_capsule @127-164
+- mod_item tests @169-194
+- function_item varint_0_context_id @177-193
+
+### third_party/rust/neqo-http3/src/features/extended_connect/mod.rs
+
+Blob: `ba8595fb49cf402d0c9fa99a6df8a5dfa71fcedc`. Grammar: rust. Status: syntax-clean.
+
+- mod_item connect_udp_session @7-7
+- mod_item send_group @8-8
+- mod_item session @9-9
+- mod_item stats @10-10
+- mod_item webtransport_session @11-11
+- mod_item webtransport_streams @12-12
+- mod_item tests @16-16
+- trait_item ExtendedConnectEvents @33-66
+- function_signature_item session_start @34-40
+- function_signature_item session_end @41-47
+- function_signature_item extended_connect_new_stream @48-52
+- function_signature_item new_datagram @53-58
+- function_signature_item capsule_space_available @65-65
+- enum_item ExtendedConnectType @69-74
+- function_item new_protocol @77-82
+- function_item from @86-91
+- struct_item TransportPrerequisites @94-97
+- function_item new @101-106
+- struct_item ExtendedConnectFeature @110-114
+- function_item new @118-124
+- function_item set_listener @126-128
+- function_item handle_settings @131-159
+- function_item enabled @162-164
+- struct_item Headers @172-176
+- struct_item HeaderListener @184-186
+- function_item set_headers @189-195
+- function_item get_headers @197-199
+- function_item header_ready @205-215
+
+### third_party/rust/neqo-http3/src/features/extended_connect/send_group.rs
+
+Blob: `4f0d0b0801d7e9618c6373b87f7dc44819ef6a25`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Generator @12-12
+- function_item next_id @20-24
+
+### third_party/rust/neqo-http3/src/features/extended_connect/session.rs
+
+Blob: `8715404de31ee7ad7edd404201ef9b785828a944`. Grammar: rust. Status: syntax-clean.
+
+- enum_item CloseReason @32-36
+- function_item from @39-49
+- struct_item Session @53-67
+- enum_item State @70-75
+- function_item closing_state @78-80
+- function_item fmt @84-86
+- function_item new @91-128
+- function_item new_with_http_streams @130-159
+- function_item connect_type @162-164
+- function_item id @167-169
+- function_item set_draining @173-175
+- function_item send_request @180-186
+- function_item receive @188-195
+- function_item header_unblocked @197-211
+- function_item maybe_update_priority @213-218
+- function_item priority_update_frame @220-224
+- function_item priority_update_sent @226-231
+- function_item send @233-239
+- function_item stream_writable @241-248
+- function_item close @250-264
+- function_item maybe_check_headers @266-340
+- function_item add_stream @342-345
+- function_item remove_recv_stream @347-349
+- function_item remove_send_stream @351-353
+- function_item is_active @356-358
+- function_item take_sub_streams @360-362
+- function_item read_control_stream @367-378
+- function_item close_session @384-406
+- function_item send_data @408-410
+- function_item send_datagram @420-457
+- function_item datagram @459-475
+- function_item validate_send_group @477-479
+- function_item stats @483-485
+- function_item has_data_to_send @487-489
+- function_item done @491-493
+- function_item stream_type @497-499
+- function_item session_protocol @501-503
+- function_item register_send_group @505-507
+- function_item validate_send_group @509-511
+- function_item receive @515-517
+- function_item reset @519-522
+- function_item http_stream @524-526
+- function_item extended_connect_session @528-530
+- function_item header_unblocked @534-540
+- function_item maybe_update_priority @542-544
+- function_item priority_update_frame @546-548
+- function_item priority_update_sent @550-552
+- function_item send @556-558
+- function_item send_data @560-562
+- function_item has_data_to_send @564-566
+- function_item stream_writable @568-570
+- function_item done @572-574
+- function_item close @576-578
+- function_item close_with_message @580-588
+- function_item handle_stop_sending @590-592
+- trait_item Protocol @599-700
+- function_signature_item connect_type @600-600
+- function_item session_start @602-604
+- function_item close_frame @606-608
+- function_signature_item read_control_stream @610-616
+- function_item add_stream @618-628
+- function_item remove_recv_stream @630-634
+- function_item remove_send_stream @636-640
+- function_item take_sub_streams @642-644
+- function_item process_response_headers @646-646
+- function_item stats @655-661
+- function_item protocol @663-665
+- function_item register_send_group @667-669
+- function_item validate_send_group @671-673
+- function_signature_item write_datagram_prefix @675-675
+- function_signature_item dgram_context_id @677-677
+- function_signature_item datagram_capsule_support @681-681
+- function_signature_item write_datagram_capsule @693-699
+- enum_item DgramContextIdError @703-708
+
+### third_party/rust/neqo-http3/src/features/extended_connect/stats.rs
+
+Blob: `b84019621056c052c95acd861687cd136c2f0025`. Grammar: rust. Status: syntax-clean.
+
+- struct_item SessionStats @26-31
+
+### third_party/rust/neqo-http3/src/features/extended_connect/tests/mod.rs
+
+Blob: `a21f63dbf8d3261dd7f54777ce17145ece7a64d6`. Grammar: rust. Status: syntax-clean.
+
+- mod_item webtransport @7-7
+
+### third_party/rust/neqo-http3/src/features/extended_connect/tests/webtransport/datagrams.rs
+
+Blob: `9d27b9250e110db510bd02c115328f2084f6f5d3`. Grammar: rust. Status: syntax-clean.
+
+- function_item do_datagram_test @21-37
+- function_item datagrams @40-44
+- function_item datagrams_multiple_session @47-55
+- function_item max_datagram_size_smaller_than_session_prefix @63-78
+- function_item outgoing_datagram_space_available_forwarded @85-124
+
+### third_party/rust/neqo-http3/src/features/extended_connect/tests/webtransport/mod.rs
+
+Blob: `d9cb616a4ea29c6abecd4b5f22cd9f4b703c68a0`. Grammar: rust. Status: syntax-clean.
+
+- mod_item datagrams @7-7
+- mod_item negotiation @8-8
+- mod_item sessions @9-9
+- mod_item streams @10-10
+- function_item wt_default_parameters @31-35
+- function_item default_http3_client @37-48
+- function_item default_http3_server @50-61
+- function_item assert_wt @63-68
+- function_item exchange_packets @70-79
+- function_item connect_with @82-113
+- function_item connect @115-123
+- struct_item WtTest @125-128
+- function_item new @131-134
+- function_item new_with_params @136-139
+- function_item new_with @141-144
+- function_item negotiate_wt_session @146-173
+- function_item create_wt_session @175-197
+- function_item create_second_wt_session @199-214
+- function_item exchange_packets @216-230
+- function_item cancel_session_client @232-237
+- function_item session_closed_client @239-255
+- function_item check_session_closed_event_client @257-277
+- function_item cancel_session_server @279-282
+- function_item session_closed_server @284-299
+- function_item check_session_closed_event_server @301-312
+- function_item create_wt_stream_client @314-322
+- function_item send_data_client @324-330
+- function_item send_stream_stats @332-334
+- function_item recv_stream_stats @336-338
+- function_item receive_data_client @340-371
+- function_item close_stream_sending_client @373-376
+- function_item reset_stream_client @378-383
+- function_item commit_stream_client @385-387
+- function_item receive_reset_client @389-401
+- function_item stream_stop_sending_client @403-408
+- function_item receive_stop_sending_client @410-421
+- function_item check_events_after_closing_session_client @423-468
+- function_item create_wt_stream_server @470-475
+- function_item send_data_server @477-480
+- function_item receive_data_server @482-519
+- function_item close_stream_sending_server @521-524
+- function_item reset_stream_server @526-529
+- function_item stream_stop_sending_server @531-536
+- function_item receive_reset_server @538-549
+- function_item receive_stop_sending_server @551-562
+- function_item check_events_after_closing_session_server @564-606
+- function_item session_close_frame_client @608-612
+- function_item session_close_frame_server @614-616
+- function_item max_datagram_size @618-620
+- function_item send_datagram @622-625
+- function_item check_datagram_received_client @627-642
+- function_item check_datagram_received_server @644-659
+
+### third_party/rust/neqo-http3/src/features/extended_connect/tests/webtransport/negotiation.rs
+
+Blob: `c865d6b1e4f68a1f35d4d992bab0eaf2f877d951`. Grammar: rust. Status: syntax-clean.
+
+- function_item check_wt_event @25-38
+- function_item connect_wt @40-45
+- function_item negotiate_wt @48-64
+- function_item webtransport_prerequisites @70-109
+- function_item either_disabled @71-95
+- enum_item ClientState @112-115
+- enum_item ServerState @118-121
+- function_item zero_rtt @123-177
+- function_item zero_rtt_wt_settings @180-280
+- function_item exchange_packets2 @282-291
+- function_item wrong_setting_value @294-323
+
+### third_party/rust/neqo-http3/src/features/extended_connect/tests/webtransport/sessions.rs
+
+Blob: `d4dcc326c6b63c4663dedae8fcc865a360d0b0f3`. Grammar: rust. Status: syntax-clean.
+
+- function_item wt_with_session @28-32
+- function_item register_group @34-38
+- function_item data_stream_ids @40-48
+- function_item create_stream @50-54
+- function_item set_sendorder @56-60
+- function_item send_all @62-67
+- function_item wt_session @70-73
+- function_item wt_session_reject @76-83
+- function_item wt_session_close_client @86-92
+- function_item wt_session_close_server @95-105
+- function_item wt_session_close_server_close_send @108-122
+- function_item wt_session_close_server_stop_sending @125-138
+- function_item wt_session_close_server_reset @141-154
+- function_item wt_session_response_with_1xx @157-204
+- function_item wt_session_response_with_redirect @207-216
+- function_item wt_session_respone_200_with_fin @219-262
+- function_item wt_session_close_frame_client @265-281
+- function_item wt_session_close_frame_server @284-301
+- function_item wt_unknown_session_frame_client @304-353
+- function_item wt_close_session_frame_broken_client @356-389
+- function_item receive_request @391-398
+- function_item wt_close_session_cannot_be_sent_at_once @402-470
+- function_item wt_goaway_draining_active_session @479-509
+- function_item wt_goaway_repeated_no_duplicate_draining @514-544
+- function_item wt_goaway_draining_rejected_session @553-591
+- function_item wt_session_protocol_none_when_no_header @594-602
+- function_item wt_session_protocol_quoted_value @605-616
+- function_item wt_session_protocol_parameters_stripped @619-630
+- function_item wt_session_protocol_malformed_unquoted_rejected @633-644
+- function_item wt_create_send_group @647-653
+- function_item wt_validate_send_group @656-668
+- function_item wt_cross_session_send_group_rejected @671-687
+- function_item wt_session_protocol_invalid_stream_id @690-698
+- function_item wt_session_protocol_non_webtransport_session @701-719
+- function_item wt_create_stream_with_send_group @722-736
+- function_item wt_create_stream_without_send_group @739-748
+- function_item wt_create_stream_with_invalid_send_group @751-767
+- function_item wt_set_sendgroup_on_existing_stream @770-786
+- function_item wt_clear_sendgroup_keeps_stream_served @789-805
+- function_item wt_move_stream_between_send_groups @808-827
+- function_item wt_set_invalid_sendgroup_on_existing_stream @830-846
+- function_item wt_multiple_streams_same_send_group @849-868
+- function_item wt_send_group_with_sendorder @871-897
+- function_item wt_send_groups_fair_bandwidth_allocation @900-973
+- function_item wt_sendorder_within_send_group @976-1028
+- function_item wt_ungrouped_streams_independent_namespace @1031-1066
+- function_item wt_multiple_groups_separate_sendorder_namespaces @1069-1105
+- function_item wt_session_stats_initial @1108-1115
+
+### third_party/rust/neqo-http3/src/features/extended_connect/tests/webtransport/streams.rs
+
+Blob: `9794da60b32bcd2e6cc63941e3802cffb0588e0e`. Grammar: rust. Status: syntax-clean.
+
+- function_item wt_client_stream_uni @21-49
+- function_item wt_client_stream_bidi @52-71
+- function_item wt_server_stream_uni @74-88
+- function_item wt_server_stream_bidi @91-110
+- function_item wt_client_stream_uni_close @113-122
+- function_item wt_client_stream_bidi_close @125-141
+- function_item wt_server_stream_uni_closed @144-153
+- function_item wt_server_stream_bidi_close @156-169
+- function_item wt_client_stream_uni_reset @172-182
+- function_item wt_client_stream_uni_reset_is_reliable @185-203
+- function_item wt_client_stream_uni_commit_reset @206-224
+- function_item wt_client_stream_commit_blocked_preface_is_safe @230-263
+- function_item wt_server_stream_uni_reset @266-276
+- function_item wt_client_stream_bidi_reset @279-294
+- function_item wt_server_stream_bidi_reset @297-311
+- function_item wt_client_stream_uni_stop_sending @314-324
+- function_item wt_server_stream_uni_stop_sending @327-337
+- function_item wt_client_stream_bidi_stop_sending @340-357
+- function_item wt_server_stream_bidi_stop_sending @360-373
+- function_item wt_client_session_close_1 @395-426
+- function_item wt_client_session_close_2 @429-461
+- function_item wt_client_session_close_3 @464-490
+- function_item wt_client_session_close_4 @493-526
+- function_item wt_client_session_close_5 @529-555
+- function_item wt_client_session_close_6 @558-589
+- function_item wt_client_session_close_7 @592-623
+- function_item wt_client_session_close_8 @626-651
+- function_item wt_client_session_close_9 @654-678
+- function_item wt_client_session_close_10 @681-712
+- function_item wt_client_session_close_11 @715-742
+- function_item wt_client_session_close_12 @745-777
+- function_item wt_client_session_close_13 @780-814
+- function_item wt_client_session_server_close_1 @830-861
+- function_item wt_client_session_server_close_2 @864-895
+- function_item wt_client_session_server_close_3 @898-925
+- function_item wt_client_session_server_close_4 @928-954
+- function_item wt_client_session_server_close_5 @957-988
+- function_item wt_client_session_server_close_6 @991-1021
+- function_item wt_client_session_server_close_7 @1024-1051
+- function_item wt_client_session_server_close_8 @1054-1080
+- function_item wt_client_session_server_close_9 @1083-1112
+- function_item wt_client_session_server_close_10 @1115-1141
+- function_item wt_client_session_server_close_11 @1144-1178
+- function_item wt_session_close_frame_and_streams_client @1181-1216
+- function_item wt_set_sendorder @1219-1229
+
+### third_party/rust/neqo-http3/src/features/extended_connect/webtransport_session.rs
+
+Blob: `3801bf70fbb0ee224bf226256e1ff8e40ab43fac`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Session @29-44
+- function_item fmt @47-49
+- function_item new @54-66
+- function_item register_send_group @70-75
+- function_item validate_send_group @78-80
+- function_item connect_type @84-86
+- function_item session_start @88-106
+- function_item close_frame @108-116
+- function_item read_control_stream @118-159
+- function_item add_stream @161-211
+- function_item remove_recv_stream @213-215
+- function_item remove_send_stream @217-219
+- function_item take_sub_streams @221-226
+- function_item process_response_headers @228-240
+- function_item protocol @242-244
+- function_item stats @246-248
+- function_item register_send_group @250-252
+- function_item validate_send_group @254-256
+- function_item write_datagram_prefix @258-260
+- function_item dgram_context_id @262-265
+- function_item datagram_capsule_support @267-278
+- function_item write_datagram_capsule @280-292
+
+### third_party/rust/neqo-http3/src/features/extended_connect/webtransport_streams.rs
+
+Blob: `e90b803ecbc71b4eb977fe56dfb0e7635009d341`. Grammar: rust. Status: syntax-clean.
+
+- function_item preface_len @24-37
+- struct_item WebTransportRecvStream @40-44
+- function_item new @47-58
+- function_item stream_type @62-64
+- function_item receive @68-73
+- function_item reset @75-83
+- function_item read_data @85-97
+- function_item stats @99-119
+- enum_item WebTransportSenderStreamState @123-127
+- struct_item WebTransportSendStream @130-136
+- function_item new @139-168
+- function_item send_group @171-173
+- function_item update_send_group @175-183
+- function_item set_done @185-191
+- function_item stream_type @195-197
+- function_item send @201-233
+- function_item commit @235-244
+- function_item has_data_to_send @246-251
+- function_item stream_writable @253-255
+- function_item done @257-259
+- function_item send_data @261-269
+- function_item handle_stop_sending @271-273
+- function_item close @275-284
+- function_item stats @286-310
+- function_item set_send_group @312-314
+- function_item clear_send_group @315-317
+
+### third_party/rust/neqo-http3/src/features/mod.rs
+
+Blob: `329f2449a5197028386156836825a082eb3cb671`. Grammar: rust. Status: syntax-clean.
+
+- mod_item extended_connect @16-16
+- enum_item NegotiationState @26-34
+- function_item new @38-47
+- function_item set_listener @49-53
+- function_item negotiate @57-77
+- function_item enabled @80-82
+- function_item locally_enabled @85-87
+- enum_item ConnectType @92-98
+- mod_item tests @102-272
+- function_item negotiation_state_locally_enabled @116-125
+- function_item negotiate @127-137
+- function_item webtransport_feature_checks @143-217
+- function_item webtransport_ignores_peer_reliable_reset @224-239
+- function_item connect_udp_feature_checks @243-271
+
+### third_party/rust/neqo-http3/src/frames/capsule.rs
+
+Blob: `ec12897c600e110cac75660d23390b42e75efd63`. Grammar: rust. Status: syntax-clean.
+
+- enum_item Capsule @21-23
+- function_item capsule_type @26-30
+- function_item encode @32-39
+- function_item encoded_len @43-48
+- function_item decode @52-62
+- function_item is_known_type @64-66
+- function_item max_frame_data @68-74
+- mod_item tests @79-182
+- function_item encode_datagram_capsule_empty_payload @85-96
+- function_item encode_datagram_capsule_with_payload @99-112
+- function_item encoded_len_matches_encode @115-124
+- function_item decode_datagram_capsule_empty_payload @127-135
+- function_item decode_datagram_capsule_with_payload @138-147
+- function_item decode_unknown_capsule_type @150-153
+- function_item max_frame_data_unknown_type_is_unbounded @156-158
+- function_item encode_decode_roundtrip @161-181
+
+### third_party/rust/neqo-http3/src/frames/connect_udp_frame.rs
+
+Blob: `85da3cbffede5eb65396abd7a407cb8f2a8a8800`. Grammar: rust. Status: syntax-clean.
+
+- enum_item Frame @11-13
+- function_item decode @16-18
+- function_item is_known_type @20-22
+- function_item max_frame_data @24-26
+- mod_item tests @31-48
+- function_item datagram_frame @37-42
+- function_item is_known_type @45-47
+
+### third_party/rust/neqo-http3/src/frames/hframe.rs
+
+Blob: `70e3087b9fce12082d146e1b16f554b094dfb41e`. Grammar: rust. Status: syntax-clean.
+
+- struct_item HFrameType @16-16
+- function_item from @51-53
+- enum_item HFrame @58-83
+- function_item get_type @86-103
+- function_item encode @105-142
+- function_item frame_type_allowed @149-154
+- function_item max_frame_data @156-167
+- function_item decode @169-230
+- function_item is_known_type @232-245
+- function_item fmt @249-273
+
+### third_party/rust/neqo-http3/src/frames/mod.rs
+
+Blob: `ab3c52ce679cca4501564bc228464feaf8fc7731`. Grammar: rust. Status: syntax-clean.
+
+- mod_item capsule @7-7
+- mod_item hframe @8-8
+- mod_item reader @9-9
+- mod_item wtframe @10-10
+- mod_item tests @23-23
+
+### third_party/rust/neqo-http3/src/frames/reader.rs
+
+Blob: `7d9e64bd071fc534aeac2425370b52b0604f6cbe`. Grammar: rust. Status: syntax-clean.
+
+- trait_item FrameDecoder @21-43
+- function_signature_item is_known_type @27-27
+- function_item frame_type_allowed @32-34
+- function_signature_item max_frame_data @37-37
+- function_signature_item decode @42-42
+- trait_item StreamReader @46-53
+- function_signature_item read_data @52-52
+- struct_item StreamReaderConnectionWrapper @55-58
+- function_item new @61-63
+- function_item read_data @70-73
+- struct_item StreamReaderRecvStreamWrapper @76-79
+- function_item new @83-85
+- function_item read_data @92-94
+- enum_item FrameReaderState @98-103
+- struct_item FrameReader @106-111
+- function_item fmt @114-125
+- function_item new @130-139
+- function_item new_with_type @142-151
+- function_item reset @153-157
+- function_item min_remaining @159-167
+- function_item decoding_in_progress @169-175
+- function_item receive @185-227
+- function_item consume @232-267
+- function_item frame_type_decoded @268-275
+- function_item frame_length_decoded @277-315
+- function_item frame_data_decoded @317-326
+- function_item write_item_to_fuzzing_corpus @333-343
+
+### third_party/rust/neqo-http3/src/frames/tests/hframe.rs
+
+Blob: `550598220cd7bba2897fc752d9240f6284ce3ed5`. Grammar: rust. Status: syntax-clean.
+
+- function_item max_frame_data_unknown_type_is_unbounded @19-21
+- function_item data_frame @24-27
+- function_item headers_frame @30-35
+- function_item settings_frame4 @38-43
+- function_item goaway_frame4 @46-51
+- function_item grease @54-70
+- function_item make_grease @55-64
+- function_item priority_update_request_default @73-79
+- function_item priority_update_request_incremental_default @82-88
+- function_item priority_update_request_urgency_default @91-97
+
+### third_party/rust/neqo-http3/src/frames/tests/mod.rs
+
+Blob: `3a0738276f68342d9e574e3ba8788f45a004ed2c`. Grammar: rust. Status: syntax-clean.
+
+- function_item add_extra_byte @21-35
+- function_item enc_dec @41-109
+- function_item enc_dec_hframe @111-116
+- function_item enc_dec_wtframe @118-123
+- mod_item hframe @125-125
+- mod_item reader @126-126
+- mod_item wtframe @127-127
+
+### third_party/rust/neqo-http3/src/frames/tests/reader.rs
+
+Blob: `5e50667864eb383a8e3e12e6b0c9c79e17fa18f0`. Grammar: rust. Status: syntax-clean.
+
+- struct_item FrameReaderTest @30-35
+- function_item new @38-47
+- function_item process @49-62
+- function_item try_process @64-72
+- function_item encode_frame_header @76-81
+- function_item frame_reading_with_stream_settings1 @85-107
+- function_item frame_reading_with_stream_settings2 @111-131
+- function_item assert_cap_boundary @135-143
+- function_item hframe_length_cap_boundary @171-177
+- function_item wt_close_session_length_cap_boundary @180-185
+- function_item capsule_datagram_length_cap_boundary @188-193
+- function_item frame_reading_with_stream_data @197-209
+- function_item unknown_frame @213-234
+- function_item server_push_frames_are_recognized @239-263
+- function_item frame_reading_with_stream_wt_close_session @267-282
+- function_item unknown_wt_frame @286-307
+- enum_item FrameReadingTestSend @309-313
+- enum_item FrameReadingTestExpect @315-321
+- function_item test_reading_frame @323-370
+- function_item complete_and_incomplete_unknown_frame @373-415
+- function_item test_complete_and_incomplete_frame @418-479
+- function_item complete_and_incomplete_frames @482-538
+- function_item complete_and_incomplete_wt_frames @541-551
+- function_item frame_reading_when_stream_is_closed_before_sending_data @555-572
+- function_item wt_frame_reading_when_stream_is_closed_before_sending_data @577-594
+
+### third_party/rust/neqo-http3/src/frames/tests/wtframe.rs
+
+Blob: `f8e37cd631890fae50c9f0bc1bcb2c3649a8aab2`. Grammar: rust. Status: syntax-clean.
+
+- function_item wt_close_session @11-17
+
+### third_party/rust/neqo-http3/src/frames/wtframe.rs
+
+Blob: `efac78e817bf3c39176e5b4631a9a10cfbb60398`. Grammar: rust. Status: syntax-clean.
+
+- enum_item WebTransportFrame @16-18
+- function_item encode @37-49
+- function_item decode @56-74
+- function_item is_known_type @76-78
+- function_item max_frame_data @80-86
+- mod_item tests @91-149
+- function_item is_known_type_close_session @98-102
+- function_item max_frame_data_unknown_type_is_unbounded @105-110
+- function_item is_known_type_unknown @113-116
+- function_item decode_close_session_too_large @119-132
+- function_item decode_close_session_at_limit @135-148
+
+### third_party/rust/neqo-http3/src/headers_checks.rs
+
+Blob: `b7b6a9276f098270d925d90ce9eba82f802931f5`. Grammar: rust. Status: syntax-clean.
+
+- enum_item PseudoHeaderState @13-21
+- function_item is_pseudo @24-26
+- function_item try_from @32-42
+- function_item is_interim @51-66
+- function_item track_pseudo @68-89
+- function_item headers_valid @97-175
+- function_item trailers_valid @183-190
+- mod_item tests @194-422
+- function_item create_connect_headers @200-208
+- function_item create_connect_headers_without_field @210-215
+- function_item connect_with_missing_header @218-228
+- function_item invalid_scheme_webtransport_connect @231-235
+- function_item valid_webtransport_connect @238-240
+- function_item invalid_webtransport_connect_with_status @243-256
+- function_item is_interim_invalid_utf8 @259-265
+- function_item is_interim_not_a_number @268-271
+- function_item protocol_requires_connect_method @274-279
+- function_item classic_connect_valid @282-289
+- function_item response_requires_status @292-295
+- function_item response_missing_status @298-301
+- function_item regular_request_valid @304-311
+- function_item reject_cr_lf_in_field_name @314-336
+- function_item reject_cr_lf_nul_in_field_value @339-360
+- function_item reject_connection_specific_header @363-394
+- function_item regular_request_missing_method @397-403
+- function_item regular_request_missing_scheme @406-412
+- function_item regular_request_missing_path @415-421
+
+### third_party/rust/neqo-http3/src/lib.rs
+
+Blob: `55b0085bdb47524b001a0413be73a39c6f89e31e`. Grammar: rust. Status: syntax-clean.
+
+- mod_item buffered_send_stream @136-136
+- mod_item client_events @137-137
+- mod_item conn_params @138-138
+- mod_item connect_udp @139-139
+- mod_item connection @140-140
+- mod_item connection_client @141-141
+- mod_item connection_server @142-142
+- mod_item control_stream_local @143-143
+- mod_item control_stream_remote @144-144
+- mod_item features @145-145
+- mod_item frames @147-147
+- mod_item frames @149-149
+- mod_item headers_checks @150-150
+- mod_item priority @151-151
+- mod_item qlog @152-152
+- mod_item qpack_decoder_receiver @153-153
+- mod_item qpack_encoder_receiver @154-154
+- mod_item recv_message @155-155
+- mod_item request_target @156-156
+- mod_item send_message @157-157
+- mod_item server @158-158
+- mod_item server_connection_events @159-159
+- mod_item server_events @160-160
+- mod_item settings @161-161
+- mod_item stream_type_reader @162-162
+- mod_item webtransport @163-163
+- enum_item Error @194-275
+- function_item code @279-304
+- function_item connection_error @307-322
+- function_item stream_reset_error @325-327
+- function_item map_error @336-342
+- function_item from @346-351
+- function_item from @355-365
+- enum_item Http3StreamType @369-378
+- enum_item ReceiveOutput @382-388
+- trait_item Stream @390-416
+- function_signature_item stream_type @391-391
+- function_item session_protocol @395-397
+- function_item register_send_group @400-406
+- function_item validate_send_group @409-415
+- trait_item RecvStream @418-461
+- function_signature_item receive @426-426
+- function_signature_item reset @431-431
+- function_item read_data @440-447
+- function_item http_stream @449-451
+- function_item extended_connect_session @453-455
+- function_item stats @458-460
+- trait_item HttpRecvStream @463-485
+- function_signature_item header_unblocked @471-475
+- function_signature_item maybe_update_priority @477-477
+- function_signature_item priority_update_frame @478-478
+- function_signature_item priority_update_sent @479-479
+- function_item set_new_listener @481-481
+- function_item extended_connect_wait_for_response @482-484
+- struct_item Http3StreamInfo @488-491
+- function_item new @495-500
+- function_item stream_id @503-505
+- function_item session_id @508-514
+- function_item stream_type @516-518
+- function_item is_http @521-523
+- trait_item RecvStreamEvents @526-529
+- function_item data_readable @527-527
+- function_item recv_closed @528-528
+- trait_item HttpRecvStreamEvents @531-540
+- function_signature_item header_ready @532-538
+- function_item extended_connect_new_session @539-539
+- trait_item SendStream @542-619
+- function_signature_item send @546-546
+- function_signature_item has_data_to_send @547-547
+- function_signature_item stream_writable @548-548
+- function_signature_item done @549-549
+- function_item commit @560-562
+- function_signature_item send_data @567-567
+- function_signature_item close @572-572
+- function_item close_with_message @577-585
+- function_signature_item handle_stop_sending @589-589
+- function_item http_stream @590-592
+- function_item send_data_atomic @597-599
+- function_item stats @603-605
+- function_item set_send_group @610-612
+- function_item clear_send_group @616-618
+- trait_item HttpSendStream @621-631
+- function_signature_item send_headers @629-629
+- function_item set_new_listener @630-630
+- trait_item SendStreamEvents @633-636
+- function_item send_closed @634-634
+- function_item data_writable @635-635
+- enum_item CloseType @645-650
+- function_item error @654-661
+- function_item locally_initiated @664-666
+- mod_item tests @671-733
+- function_item stream_info_is_http @677-689
+- function_item error_codes @692-716
+- function_item error_mapping @719-732
+
+### third_party/rust/neqo-http3/src/priority.rs
+
+Blob: `66ebe1fe01fa373086d2e2a05c687c9efd91ba80`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Priority @15-18
+- function_item default @21-26
+- function_item new @34-43
+- function_item from_bytes @50-75
+- function_item fmt @79-98
+- struct_item PriorityHandler @102-105
+- function_item new @108-113
+- function_item maybe_update_priority @120-127
+- function_item priority_update_sent @129-131
+- function_item maybe_encode_frame @134-143
+- mod_item test @148-228
+- function_item priority_updates_ignore_same @154-159
+- function_item priority_updates_send_update @162-167
+- function_item multiple_priority_updates_ignore_same @170-176
+- function_item multiple_priority_updates_send_update @179-190
+- function_item priority_updates_incremental @193-202
+- function_item priority_update_sent_clears_pending @205-212
+- function_item from_bytes_invalid_urgency_defaults @215-222
+- function_item priority_display_urgency_and_incremental @225-227
+
+### third_party/rust/neqo-http3/src/qlog.rs
+
+Blob: `61f8de27a7fce8bc2b8750d058b2d5c5de35264d`. Grammar: rust. Status: syntax-clean.
+
+- function_item h3_data_moved_up @15-31
+- function_item h3_data_moved_down @33-49
+
+### third_party/rust/neqo-http3/src/qpack_decoder_receiver.rs
+
+Blob: `f455a2d1021e93342f22ec78c77099410fbede7f`. Grammar: rust. Status: syntax-clean.
+
+- struct_item DecoderRecvStream @15-17
+- function_item new @20-23
+- function_item stream_type @27-29
+- function_item reset @33-35
+- function_item receive @37-42
+
+### third_party/rust/neqo-http3/src/qpack_encoder_receiver.rs
+
+Blob: `63bb58c58fe7e0293f6198cf311681f498ccae7d`. Grammar: rust. Status: syntax-clean.
+
+- struct_item EncoderRecvStream @15-17
+- function_item new @20-23
+- function_item stream_type @27-29
+- function_item reset @33-35
+- function_item receive @37-40
+
+### third_party/rust/neqo-http3/src/recv_message.rs
+
+Blob: `e67f9dcc64b4cf7ac88f1e07f28240cc8e497dc5`. Grammar: rust. Status: syntax-clean.
+
+- struct_item RecvMessageInfo @28-33
+- enum_item RecvMessageState @55-64
+- struct_item RecvMessage @67-75
+- function_item fmt @78-80
+- function_item new @84-105
+- function_item handle_headers_frame @107-129
+- function_item handle_data_frame @131-152
+- function_item add_headers @154-197
+- function_item set_state_to_close_pending @199-224
+- function_item receive_internal @226-317
+- function_item set_closed @319-323
+- function_item closing @325-330
+- function_item stream_type @334-336
+- function_item receive @340-346
+- function_item reset @348-357
+- function_item read_data @359-403
+- function_item http_stream @405-407
+- function_item header_unblocked @411-417
+- function_item maybe_update_priority @419-421
+- function_item priority_update_frame @423-426
+- function_item priority_update_sent @428-431
+- function_item set_new_listener @433-438
+- function_item extended_connect_wait_for_response @440-442
+
+### third_party/rust/neqo-http3/src/request_target.rs
+
+Blob: `b3f6422caefc5b09f46d18d9fe5b244c4717c0f8`. Grammar: rust. Status: syntax-clean.
+
+- trait_item RequestTarget @11-15
+- function_signature_item scheme @12-12
+- function_signature_item authority @13-13
+- function_signature_item path @14-14
+- function_item scheme @18-20
+- function_item authority @22-24
+- function_item path @26-28
+- function_item scheme @32-34
+- function_item authority @36-38
+- function_item path @40-42
+
+### third_party/rust/neqo-http3/src/send_message.rs
+
+Blob: `40b36cfdb67b4753f2350681d1e1270a35bcd0db`. Grammar: rust. Status: syntax-clean.
+
+- enum_item MessageState @53-58
+- function_item new_headers @61-86
+- function_item new_data @88-94
+- function_item fin @96-104
+- function_item done @106-108
+- struct_item SendMessage @112-120
+- function_item new @123-140
+- function_item data_frame_len @146-150
+- function_item encode @156-169
+- function_item stream_id @171-173
+- function_item stream_type @177-179
+- function_item send_data @182-228
+- function_item done @230-232
+- function_item stream_writable @234-241
+- function_item send @249-265
+- function_item commit @267-277
+- function_item has_data_to_send @282-284
+- function_item close @286-295
+- function_item handle_stop_sending @297-301
+- function_item http_stream @303-305
+- function_item send_data_atomic @307-315
+- function_item send_headers @319-326
+- function_item set_new_listener @328-331
+- function_item fmt @335-337
+- mod_item tests @342-388
+- struct_item NoopEvents @349-349
+- function_item send_after_transport_reset_is_an_error_not_a_panic @354-387
+
+### third_party/rust/neqo-http3/src/server.rs
+
+Blob: `b16c79b20e9cb30a90d947d531c87a02e4cc438b`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Http3Server @42-49
+- function_item fmt @52-54
+- function_item new @62-87
+- function_item set_qlog_dir @89-91
+- function_item set_validation @93-95
+- function_item set_ciphers @97-99
+- function_item enable_ech @106-115
+- function_item ech_config @118-120
+- function_item process_output @123-125
+- function_item process @130-138
+- function_item process_multiple @140-170
+- function_item process_http3 @173-195
+- function_item process_events @201-358
+- function_item events @362-364
+- function_item has_events @368-370
+- function_item next_event @376-378
+- function_item send_goaway @387-399
+- function_item prepare_data @401-430
+- mod_item tests @434-1491
+- function_item qpack_defaults @455-460
+- function_item http3params @462-464
+- function_item create_server @466-478
+- function_item default_server @481-483
+- function_item assert_closed @485-489
+- function_item assert_connected @491-502
+- function_item assert_not_closed @504-515
+- function_item connect_transport @524-553
+- function_item connect_and_receive_settings_with_server @556-620
+- function_item closed_event_fires_once_alongside_other_traffic @624-659
+- function_item handlers_do_not_accumulate @663-692
+- function_item connect_and_receive_settings @694-704
+- function_item server_connect @709-711
+- struct_item PeerConnection @713-716
+- function_item control_send @720-723
+- function_item deref @728-730
+- function_item deref_mut @734-736
+- function_item connect_to @740-777
+- function_item connect @779-782
+- function_item connect_with_token @784-788
+- function_item server_receive_control_frame @792-794
+- function_item server_close_control_stream @799-806
+- function_item server_missing_settings @811-821
+- function_item server_receive_settings_twice @826-833
+- function_item priority_update_check_id @835-853
+- function_item priority_update_valid_id_0 @856-859
+- function_item priority_update_invalid_id_1 @861-864
+- function_item priority_update_invalid_id_2 @866-869
+- function_item priority_update_invalid_id_3 @871-874
+- function_item priority_update_invalid_large_id @877-880
+- function_item test_wrong_frame_on_control_stream @882-891
+- function_item server_data_frame_on_control_stream @895-897
+- function_item server_headers_frame_on_control_stream @901-903
+- function_item server_cancel_push_frame_on_control_stream @908-910
+- function_item server_max_push_id_frame_ignored @915-921
+- function_item server_received_unknown_stream @926-955
+- function_item server_received_push_stream @960-967
+- function_item server_frame_reading @971-1015
+- function_item test_incomplete_frame @1018-1030
+- function_item check_request_header @1043-1051
+- function_item server_incomplete_data_frame @1055-1057
+- function_item server_incomplete_headers_frame @1061-1063
+- function_item server_incomplete_unknown_frame @1066-1068
+- function_item server_request_with_body @1071-1115
+- function_item server_request_with_body_send_stop_sending @1118-1194
+- function_item server_request_with_body_server_reset @1197-1263
+- function_item server_reset_control_stream @1268-1276
+- function_item server_reset_client_side_encoder_stream @1281-1289
+- function_item server_reset_client_side_decoder_stream @1294-1302
+- function_item client_stop_sending_control_stream @1307-1316
+- function_item server_stop_sending_encoder_stream @1321-1329
+- function_item server_stop_sending_decoder_stream @1334-1342
+- function_item zero_rtt_with_settings @1346-1356
+- function_item zero_rtt @1359-1361
+- function_item zero_rtt_larger_decoder_table @1365-1373
+- function_item zero_rtt_smaller_decoder_table @1377-1385
+- function_item zero_rtt_more_blocked_streams @1389-1395
+- function_item zero_rtt_fewer_blocked_streams @1399-1405
+- function_item zero_rtt_smaller_encoder_table @1409-1417
+- function_item client_request_hash @1420-1459
+- struct_item RejectZeroRtt @1462-1462
+- function_item check @1464-1466
+- function_item reject_zero_server @1470-1490
+
+### third_party/rust/neqo-http3/src/server_connection_events.rs
+
+Blob: `db366024ce2014a6d0017658757d2977942a6fee`. Grammar: rust. Status: syntax-clean.
+
+- enum_item Http3ServerConnEvent @19-51
+- enum_item WebTransportEvent @54-69
+- enum_item ConnectUdpEvent @72-86
+- struct_item Http3ServerConnEvents @89-91
+- function_item send_closed @94-103
+- function_item data_writable @105-109
+- function_item data_readable @114-118
+- function_item recv_closed @120-130
+- function_item header_ready @135-147
+- function_item extended_connect_new_session @149-170
+- function_item session_start @174-181
+- function_item session_end @183-207
+- function_item extended_connect_new_stream @209-219
+- function_item new_datagram @221-242
+- function_item capsule_space_available @244-246
+- function_item has_events @250-252
+- function_item next_event @254-256
+- function_item datagram_space_available @262-265
+- function_item connection_state_change @267-269
+- function_item priority_update @271-276
+- function_item remove_events_for_stream_id @278-283
+- mod_item tests @288-299
+- function_item has_events @293-298
+
+### third_party/rust/neqo-http3/src/server_events.rs
+
+Blob: `3e32c19aca65fba2ee1952d2f90cd58bbd8d03c4`. Grammar: rust. Status: syntax-clean.
+
+- struct_item StreamHandler @23-27
+- function_item fmt @30-33
+- function_item hash @37-40
+- function_item eq @44-46
+- function_item stream_id @50-52
+- function_item send_headers @59-65
+- function_item send_data @72-76
+- function_item available @85-89
+- function_item stream_close_send @96-102
+- function_item stream_stop_sending @109-119
+- function_item stream_reset_send @126-136
+- function_item stream_commit @145-151
+- function_item cancel_fetch @158-165
+- struct_item Http3OrWebTransportStream @169-171
+- function_item fmt @174-176
+- function_item new @180-192
+- function_item send_headers @199-201
+- function_item send_data @208-211
+- function_item stream_close_send @218-221
+- function_item deref @226-228
+- function_item hash @232-234
+- function_item eq @238-240
+- enum_item Http3ServerEvent @247-286
+- struct_item Http3ServerEvents @289-291
+- function_item push @295-297
+- function_item events @300-302
+- function_item has_events @305-307
+- function_item next_event @310-312
+- function_item headers @315-326
+- function_item connection_state_change @329-332
+- function_item datagram_space_available @335-338
+- function_item data @341-354
+- function_item data_writable @356-365
+- function_item stream_reset @367-378
+- function_item stream_stop_sending @380-391
+- function_item priority_update @393-398
+
+### third_party/rust/neqo-http3/src/settings.rs
+
+Blob: `f28e6a92a1b17ec532dacb64500ed32acfaeeb59`. Grammar: rust. Status: syntax-clean.
+
+- enum_item HSettingType @39-46
+- function_item hsetting_default @48-57
+- struct_item HSetting @60-63
+- function_item new @67-72
+- struct_item HSettings @76-78
+- function_item new @82-86
+- function_item get @89-94
+- function_item encode_frame_contents @96-139
+- function_item decode_frame_contents @144-214
+- function_item deref @219-221
+- function_item from @225-250
+- struct_item HttpZeroRttChecker @254-256
+- function_item new @261-263
+- function_item save @267-282
+- function_item check @286-337
+- mod_item tests @342-478
+- function_item unknown_setting_type_ignored @346-373
+- function_item not_enough_data_error @376-393
+- function_item datagram_settings @396-427
+- function_item make_0rtt_token @429-436
+- function_item zero_rtt_checker @439-477
+
+### third_party/rust/neqo-http3/src/stream_type_reader.rs
+
+Blob: `d99b381d32f720b60b1692f0c3c0a4dc31474a87`. Grammar: rust. Status: syntax-clean.
+
+- enum_item NewStreamType @26-33
+- function_item final_stream_type @43-81
+- enum_item NewStreamHeadReader @93-104
+- function_item new @107-113
+- function_item read @115-140
+- function_item get_type @142-203
+- function_item map_stream_fin @205-217
+- function_item done @219-221
+- function_item stream_type @225-227
+- function_item reset @231-234
+- function_item receive @236-242
+- mod_item tests @247-682
+- struct_item Test @264-269
+- function_item new @272-285
+- function_item decode_buffer @287-317
+- function_item decode @319-331
+- function_item decode_stream_decoder @335-343
+- function_item decode_stream_encoder @346-354
+- function_item decode_stream_control @357-365
+- function_item decode_stream_unknown @368-376
+- function_item decode_stream_push @382-398
+- function_item decode_stream_http @401-428
+- function_item decode_stream_reserved_frame_type @431-444
+- function_item decode_stream_wt_bidi @447-485
+- function_item decode_stream_wt_unidi @488-527
+- function_item done_decoding @530-545
+- function_item decoding_truncate @548-551
+- function_item reset @554-564
+- function_item stream_fin_decoder @567-575
+- function_item stream_fin_encoder @578-586
+- function_item stream_fin_control @589-597
+- function_item stream_fin_wt @600-664
+- function_item stream_fin_uknown @667-681
+
+### third_party/rust/neqo-http3/src/webtransport.rs
+
+Blob: `8933d3ec84b5bde9c581fc0eeb1a7d247b88115a`. Grammar: rust. Status: syntax-clean.
+
+- trait_item ClientSession @31-206
+- function_signature_item webtransport_enabled @34-34
+- function_signature_item webtransport_session_protocol @50-50
+- function_signature_item webtransport_max_datagram_size @63-63
+- function_signature_item webtransport_set_sendorder @70-74
+- function_signature_item webtransport_set_sendgroup @82-86
+- function_signature_item webtransport_clear_sendgroup @94-94
+- function_signature_item webtransport_set_fairness @103-103
+- function_signature_item webtransport_send_stream_stats @110-110
+- function_signature_item webtransport_recv_stream_stats @117-117
+- function_signature_item webtransport_export_keying_material @133-139
+- function_signature_item webtransport_create_session @147-152
+- function_signature_item webtransport_close_session @165-171
+- function_signature_item webtransport_create_stream @179-183
+- function_signature_item webtransport_send_datagram @199-205
+- function_item webtransport_enabled @209-211
+- function_item webtransport_session_protocol @213-215
+- function_item webtransport_max_datagram_size @217-223
+- function_item webtransport_set_sendorder @225-231
+- function_item webtransport_set_sendgroup @233-248
+- function_item webtransport_clear_sendgroup @250-256
+- function_item webtransport_set_fairness @258-260
+- function_item webtransport_send_stream_stats @262-269
+- function_item webtransport_recv_stream_stats @271-278
+- function_item webtransport_export_keying_material @280-291
+- function_item webtransport_create_session @293-311
+- function_item webtransport_close_session @313-322
+- function_item webtransport_create_stream @324-339
+- function_item webtransport_send_datagram @341-351
+- trait_item ExportKeyingMaterial @354-366
+- function_signature_item webtransport_export_keying_material @359-365
+- function_item webtransport_export_keying_material @369-389
+- trait_item Handler @393-429
+- function_signature_item webtransport_create_session @394-400
+- function_signature_item webtransport_session_accept @402-409
+- function_signature_item webtransport_close_session @411-418
+- function_signature_item webtransport_send_datagram @421-428
+- function_item webtransport_create_session @432-450
+- function_item webtransport_session_accept @452-472
+- function_item webtransport_close_session @474-500
+- function_item webtransport_send_datagram @502-511
+- trait_item ServerHandler @515-549
+- function_signature_item webtransport_session_accept @516-522
+- function_signature_item webtransport_close_session @524-531
+- function_signature_item webtransport_create_stream @533-538
+- function_signature_item webtransport_send_datagram @541-548
+- function_item webtransport_session_accept @552-563
+- function_item webtransport_close_session @565-576
+- function_item webtransport_create_stream @578-594
+- function_item webtransport_send_datagram @596-607
+- struct_item ServerSession @611-613
+- function_item fmt @616-618
+- function_item new @622-634
+- function_item state @637-639
+- function_item response @646-657
+- function_item close_session @666-682
+- function_item stream_id @685-687
+- function_item create_stream @694-711
+- function_item send_datagram @727-744
+- function_item remote_datagram_size @748-750
+- function_item max_datagram_size @763-771
+- function_item export_keying_material @782-792
+- function_item deref @797-799
+- enum_item ServerEvent @803-818
+- trait_item ServerEvents @820-830
+- function_signature_item webtransport_new_session @821-821
+- function_signature_item webtransport_session_closed @822-827
+- function_signature_item webtransport_new_stream @828-828
+- function_signature_item webtransport_datagram @829-829
+- function_item webtransport_new_session @833-838
+- function_item webtransport_session_closed @840-851
+- function_item webtransport_new_stream @853-857
+- function_item webtransport_datagram @859-864
+
+### third_party/rust/neqo-http3/tests/classic_connect.rs
+
+Blob: `75921c6535304ca8df6bc2b869c9ae92f9aeea7f`. Grammar: rust. Status: syntax-clean.
+
+- function_item classic_connect @14-96
+- function_item classic_connect_via_fetch_panics_in_debug @99-113
+
+### third_party/rust/neqo-http3/tests/common/mod.rs
+
+Blob: `4adfae8659e9dc3b8f3d96e4a8c0a73c5b7fea39`. Grammar: rust. Status: syntax-clean.
+
+- function_item connect_and_send_request @12-36
+
+### third_party/rust/neqo-http3/tests/connect_udp.rs
+
+Blob: `105872c111ec2e5b24d7f05d969361d298f241f4`. Grammar: rust. Status: syntax-clean.
+
+- function_item disabled_by_default @28-34
+- function_item initiate_new_session @36-42
+- function_item initiate_new_session_with_client_params @44-80
+- function_item establish_new_session @82-88
+- function_item establish_new_session_with_client_params @90-128
+- function_item exchange_packets_through_proxy @130-220
+- function_item session_lifecycle @222-308
+- function_item session_lifecycle_client_closes @311-313
+- function_item session_lifecycle_server_closes @316-318
+- function_item connect_via_proxy @321-378
+- function_item send_dgram_on_non_active_session @381-388
+- function_item server_datagram_before_accept @392-447
+- function_item create_session_without_connect_setting @450-456
+- function_item server_stream_reset_results_in_client_session_close @459-485
+- function_item connect_udp_operation_on_fetch_stream @488-509
+- function_item session_lifecycle_with_http_datagram_capsule @512-608
+- function_item connect_udp_session_protocol_is_not_webtransport @611-624
+- function_item connect_udp_session_has_no_webtransport_stats @630-638
+- function_item connect_udp_session_rejected_by_webtransport_close_session @644-652
+- function_item connect_udp_session_rejected_by_webtransport_create_stream @658-666
+- function_item outgoing_datagram_space_available_forwarded @676-708
+- function_item establish_capsule_session @712-793
+- function_item datagram_capsule_flow_control_error_and_resume @799-836
+- function_item datagram_capsule_at_flow_control_boundary_is_refused_not_lost @841-885
+
+### third_party/rust/neqo-http3/tests/httpconn.rs
+
+Blob: `acee2ce5392e9f8fd8d8d19af8bafce24fe2e544`. Grammar: rust. Status: syntax-clean.
+
+- mod_item common @9-9
+- function_item receive_request @24-47
+- function_item set_response @49-58
+- function_item process_server_events @60-63
+- function_item process_client_events @65-94
+- function_item connect_peers_with_network_propagation_delay @96-133
+- function_item connect @136-142
+- function_item simple_connect @145-147
+- function_item fetch @150-177
+- function_item response_103 @180-220
+- function_item data_writable_events_low_watermark @225-296
+- function_item data_writable_events @299-386
+- function_item get_token @388-400
+- function_item zerortt @403-472
+- function_item fetch_noresponse_will_idletimeout @477-515
+- function_item server_stop_sending_and_stream_test @518-556
+- function_item server_stop_sending_and_stream_combinations @559-565
+- function_item server_reliable_reset @570-635
+- function_item server_reliable_reset_with_body @640-706
+
+### third_party/rust/neqo-http3/tests/non_ascii_headers.rs
+
+Blob: `ca0b27db33af9f1eefa171cefa10c5c1c16aebb7`. Grammar: rust. Status: syntax-clean.
+
+- function_item echo_header @13-88
+- function_item extended_ascii_non_utf8_header_echo @91-95
+- function_item non_ascii_emoji_header_echo @98-102
+
+### third_party/rust/neqo-http3/tests/priority.rs
+
+Blob: `4b93baea026774ca427192c9c559b3622cf2a4bb`. Grammar: rust. Status: syntax-clean.
+
+- function_item connect_with @15-44
+- function_item connect @46-51
+- function_item priority_update @54-108
+- function_item priority_update_dont_send_for_cancelled_stream @111-134
+
+### third_party/rust/neqo-http3/tests/send_message.rs
+
+Blob: `2a325a667e7a1e5771b093d39badc882047eb4ec`. Grammar: rust. Status: syntax-clean.
+
+- function_item response_header_no_data @21-24
+- function_item response_header_103 @26-29
+- function_item receive_request @31-53
+- function_item send_trailers @55-60
+- function_item send_informational_headers @62-64
+- function_item send_headers @66-71
+- function_item process_client_events @73-103
+- function_item process_client_events_no_data @105-127
+- function_item connect @129-140
+- function_item send_and_receive_request @142-159
+- function_item connect_send_and_receive_request @161-165
+- function_item response_trailers1 @168-176
+- function_item response_trailers2 @179-188
+- function_item response_trailers3 @191-201
+- function_item response_trailers_no_data @204-213
+- function_item multiple_response_trailers @216-229
+- function_item data_after_trailer @232-248
+- function_item trailers_after_close @251-261
+- function_item multiple_response_headers @264-276
+- function_item informational_after_response_headers @279-291
+- function_item data_after_informational @294-308
+- function_item non_trailers_headers_after_data @311-325
+- function_item data_before_headers @328-340
+- function_item server_send_single_udp_datagram @343-360
+
+### third_party/rust/neqo-http3/tests/webtransport.rs
+
+Blob: `de2bf1841d0d2d4336d5a73aac2108a663c91846`. Grammar: rust. Status: syntax-clean.
+
+- function_item connect @24-78
+- function_item setup_wt @80-84
+- function_item create_wt_session @86-133
+- function_item send_data_client @135-146
+- function_item send_data_server @148-156
+- function_item receive_data_client @158-188
+- function_item receive_data_server @190-228
+- function_item wt_keepalive @231-244
+- function_item wt_client_stream_uni @247-258
+- function_item wt_client_stream_bidi @261-281
+- function_item wt_server_stream_uni @284-298
+- function_item wt_server_stream_bidi @301-334
+- function_item wt_race_condition_server_stream_before_confirmation @337-435
+- function_item wt_session_ok_and_wt_datagram_in_same_udp_datagram @438-496
+- function_item wt_export_keying_material @499-572
+- function_item wt_export_keying_material_client_server_agree @575-598
+- function_item wt_export_keying_material_label_too_long @601-629
+- function_item wt_export_keying_material_zero_length @632-640
+- function_item wt_export_keying_material_invalid_session @643-656
+- function_item wt_export_keying_material_closed_session @659-676
+- function_item wt_export_keying_material_server_closed_session @679-688
+- function_item wt_export_keying_material_transport_error @691-707
+- function_item wt_stats_at_session_close @717-742
+- function_item wt_send_goaway @745-771
+- function_item wt_goaway_no_sessions_no_draining_events @774-794
+
+### third_party/rust/neqo-qpack/src/decoder.rs
+
+Blob: `b6eba281d7a8c6cb96e7e261f2ae50150a1fd533`. Grammar: rust. Status: syntax-clean.
+
+- struct_item Decoder @25-37
+- function_item new @44-62
+- function_item capacity @65-67
+- function_item receive @75-88
+- function_item read_instructions @90-97
+- function_item process_instructions @99-107
+- function_item execute_instruction @109-142
+- function_item set_capacity @144-150
+- function_item header_ack @152-157
+- function_item cancel_stream @159-164
+- function_item send @174-192
+- function_item refers_dynamic_table @197-199
+- function_item decode_header_block @211-246
+- function_item add_send_stream @251-257
+- function_item local_stream_id @260-262
+- function_item add_recv_stream @269-275
+- function_item stats @278-280
+- function_item fmt @284-286
+- function_item map_error @289-294
+- mod_item tests @298-907
+- struct_item TestDecoder @308-314
+- function_item connect @316-340
+- function_item recv_instruction @342-350
+- function_item send_instructions_and_check @352-363
+- function_item decode_headers @365-377
+- function_item test_instruction @379-401
+- function_item recv_insert_with_name_ref_1 @405-413
+- function_item recv_insert_with_name_ref_2 @417-425
+- function_item dynamic_table_inserts_stat_increments @429-439
+- function_item recv_insert_with_name_litarel_2 @443-454
+- function_item recv_change_capacity @457-459
+- function_item recv_change_capacity_too_big @462-470
+- function_item duplicate @475-494
+- struct_item TestElement @496-500
+- function_item encode_incr_encode_header_ack_some @503-537
+- function_item encode_incr_encode_header_ack_all @540-573
+- function_item header_ack_all @576-599
+- function_item header_ack_and_incr_instruction @602-623
+- function_item header_block_decoder @626-704
+- function_item header_block_decoder_huffman @707-783
+- function_item subtract_overflow_in_header_ack @786-815
+- function_item base_larger_than_entry_count @818-842
+- function_item blocked_stream_limit_enforced @845-885
+- function_item duplicate_recv_stream @888-895
+- function_item map_error_covers_all_arms @899-906
+
+### third_party/rust/neqo-qpack/src/decoder_instructions.rs
+
+Blob: `5a2a0094d8adc8166c5d83f710b188726b7b7f37`. Grammar: rust. Status: syntax-clean.
+
+- enum_item DecoderInstruction @23-35
+- function_item get_instruction @38-52
+- function_item marshal @54-67
+- enum_item DecoderInstructionReaderState @71-77
+- struct_item DecoderInstructionReader @80-83
+- function_item fmt @86-88
+- function_item read_instructions @97-143
+- mod_item test @148-255
+- function_item test_encoding_decoding @156-166
+- function_item encoding_decoding_instructions @169-186
+- function_item test_encoding_decoding_slow_reader @188-205
+- function_item encoding_decoding_instructions_slow_reader @208-218
+- function_item decoding_error @221-254
+
+## Validation and limits
+
+This is a declaration map. Function contracts, callers, memory ownership, thread use, generated bindings, feature selection, cleanup, and reasons need implementation and caller review. No compilation or runtime tests ran. Imports and includes are literal navigation hints only. No complete call graph is claimed.
+
+## Retrieval correction
+
+This copy preserves the source map in [1f11d848-48a3-45cf-a52d-385d5d99e678.md](1f11d848-48a3-45cf-a52d-385d5d99e678.md). The original was imported and committed by concurrent console maintenance during this study. Its full path metadata could exceed the console search budget. This copy uses component scope metadata while keeping every file path in the body. It adds no independent behavior evidence. Original record: `9a8651b123e8397fb39b38be1618262f2cb44fbe56fc9b3d33e1021c011fc3b5`.

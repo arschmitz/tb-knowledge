@@ -1,0 +1,1102 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:14:46.642314+00:00","paths":["ipc"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013","portableCopies":["3c81ad658bc3d86696862d307afdc9670580a5611cf9732e7d863eccb92d7faa"],"sourceAt":"2026-10-13T04:14:46.642314+00:00","correctionOf":"notes/1aaf6bfa-424a-4746-93ca-94848c4007d1.md"}} -->
+# firefox/ipc structural source map 194
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. This is an automated navigation map, not a behavior review.
+Each row gives the repository-relative path, Git blob ID, byte size, role inferred from the path, declaration candidates, and literal dependency candidates. `@N` is the source line.
+Candidates come from line-based patterns. They can miss multiline, anonymous, macro-generated, and language-specific declarations or match comments and fixture text. Dependencies are not resolved imports, runtime calls, or a complete graph. No candidates does not mean no functions or dependencies.
+Imported code and tests are included. Binary and non-UTF-8 files have a census entry but no declaration extraction. Symlink contents are scanned as text, not followed. No uncommitted changes, build products, ignored files, or untracked files are studied.
+
+## File map
+
+`ipc/chromium/src/third_party/libevent/patches/prevent-use-of-evsig.patch` | `5ede2b2919fbc9b3bec2ce4e11e680667fd61d40` | 540 bytes | imported-path,data-or-other | UTF-8 | mode 100644
+
+`ipc/chromium/src/third_party/libevent/poll.c` | `c3c9aac52a85bd99ac6da38b6709b817c4810858` | 8651 bytes | imported-path,source | UTF-8 | mode 100644
+Declarations: pollidx@67; pollop@71; pollfd@76; pollfd@77; poll_init@99; pollop@101; poll_check_ok@115; event@118; pollfd@127; poll_dispatch@136; pollop@140; pollfd@141; pollfd@155; poll_add@230; pollop@232; pollfd@233; pollidx@234; pollfd@243; poll_del@293; pollop@295; pollfd@296; pollidx@297; poll_dealloc@344; pollop@346
+Dependencies: event2/event-config.h@29; evconfig-private.h@30; sys/types.h@34; sys/time.h@36; sys/queue.h@38; poll.h@39; signal.h@40; limits.h@41; stdio.h@42; stdlib.h@43; string.h@44; unistd.h@45; errno.h@46; event-internal.h@48; evsignal-internal.h@49; log-internal.h@50; evmap-internal.h@51; event2/thread.h@52; evthread-internal.h@53; time-internal.h@54
+
+`ipc/chromium/src/third_party/libevent/ratelim-internal.h` | `6cc1cdde2c87ff5f05a67ef02ef364b30c9e9f21` | 4092 bytes | imported-path,source | UTF-8 | mode 100644
+Declarations: ev_token_bucket@38; ev_token_bucket_cfg@48; timeval@60
+Dependencies: event2/util.h@33
+
+`ipc/chromium/src/third_party/libevent/sample/dns-example.c` | `2d07c3874bcaada1b376e74bc10ad5f4f10857a9` | 6759 bytes | imported-path,source | UTF-8 | mode 100644
+Declarations: debug_ntoa@46; gai_callback@77; evutil_addrinfo@81; sockaddr_in@91; sockaddr_in6@97; evdns_server_callback@110; logfn@146; main@153; options@154; options@161; event_base@163; evdns_base@164; sockaddr_in@199; in_addr@237; evutil_addrinfo@245
+Dependencies: event2/event-config.h@8; ../ipv6-internal.h@11; sys/types.h@13; unistd.h@16; winsock2.h@20; ws2tcpip.h@21; getopt.h@22; sys/socket.h@24; netinet/in.h@25; arpa/inet.h@26; event2/event.h@29; event2/dns.h@30; event2/dns_struct.h@31; event2/util.h@32; netinet/in6.h@35; stdio.h@38; stdlib.h@39; string.h@40
+
+`ipc/chromium/src/third_party/libevent/sample/event-read-fifo.c` | `a17b9bd9ae45639fa59989136b98393cb44b6dfe` | 3421 bytes | imported-path,source | UTF-8 | mode 100644
+Declarations: fifo_read@34; event@38; signal_cb@77; event_base@79; main@85; event@87; event_base@88; event@104; stat@105
+Dependencies: event2/event-config.h@12; sys/types.h@14; sys/stat.h@15; sys/queue.h@17; unistd.h@18; sys/time.h@19; signal.h@20; winsock2.h@22; windows.h@23; fcntl.h@25; stdlib.h@26; stdio.h@27; string.h@28; errno.h@29; event2/event.h@31
+
+`ipc/chromium/src/third_party/libevent/sample/hello-world.c` | `a13e06af612dd0cf949c621339495548b2a4a869` | 3471 bytes | imported-path,source | UTF-8 | mode 100644
+Declarations: sockaddr@33; main@39; event_base@41; evconnlistener@42; event@43; sockaddr_in@45; sockaddr@89; event_base@91; bufferevent@92; conn_writecb@108; evbuffer@110; conn_eventcb@118; signal_cb@132; event_base@134; timeval@135
+Dependencies: string.h@10; errno.h@11; stdio.h@12; signal.h@13; netinet/in.h@15; arpa/inet.h@17; sys/socket.h@19; event2/bufferevent.h@22; event2/buffer.h@23; event2/listener.h@24; event2/util.h@25; event2/event.h@26
+
+`ipc/chromium/src/third_party/libevent/sample/hostcheck.c` | `50709369c07efc63d8095318090b030ddbfb85d0` | 6623 bytes | imported-path,source | UTF-8 | mode 100644
+Declarations: Curl_raw_toupper@54; Curl_raw_equal@123; Curl_raw_nequal@138; hostmatch@163; Curl_raw_nequal@179; Curl_cert_hostcheck@205
+Dependencies: hostcheck.h@49; string.h@50
+
+`ipc/chromium/src/third_party/libevent/sample/hostcheck.h` | `f40bc43435010d9cea9e2aa3780ba18c874458bc` | 1259 bytes | imported-path,source | UTF-8 | mode 100644
+
+`ipc/chromium/src/third_party/libevent/sample/http-connect.c` | `53f816d3ae59507ef5f2af93ebfa73f16231faa3` | 3479 bytes | imported-path,source | UTF-8 | mode 100644
+Declarations: connect_base@20; evhttp_connection@22; evhttp_uri@23; evhttp_uri@26; evhttp_uri@28; uri_path@34; evhttp_uri@36; uri_hostport@48; get_cb@58; evbuffer@61; connect_cb@71; connect_base@73; evhttp_connection@74; evhttp_uri@75; evhttp_request@76; main@89; evhttp_uri@93; evhttp_uri@94; event_base@96; evhttp_connection@97; evhttp_request@98; connect_base@100
+Dependencies: event2/event-config.h@1; event2/event.h@3; event2/http.h@4; event2/http_struct.h@5; event2/buffer.h@6; stdlib.h@7; stdio.h@8; limits.h@9
+
+`ipc/chromium/src/third_party/libevent/sample/http-server.c` | `84267af22ba51364bdede76b32325cc5a77d93d7` | 13942 bytes | imported-path,source | UTF-8 | mode 100644
+Declarations: options@102; guess_content_type@114; dump_request_cb@134; evkeyvalq@137; evkeyval@138; evbuffer@139; send_document_cb@182; evbuffer@184; options@185; evhttp_uri@187; stat@193; dirent@249; print_usage@347; options@358; parse_opts@359; options@361; do_term@387; event_base@389; display_listen_sock@395; sockaddr_storage@397; main@446; event_config@448; event_base@449; evhttp@450; evhttp_bound_socket@451; evconnlistener@452; event@453; options@454; sockaddr_un@513
+Dependencies: ../util-internal.h@10; stdio.h@12; stdlib.h@13; string.h@14; sys/types.h@16; sys/stat.h@17; winsock2.h@20; ws2tcpip.h@21; windows.h@22; getopt.h@23; io.h@24; fcntl.h@25; sys/stat.h@30; sys/socket.h@31; fcntl.h@32; unistd.h@33; dirent.h@34; signal.h@36; sys/un.h@39; afunix.h@42; event2/event.h@45; event2/http.h@46; event2/listener.h@47; event2/buffer.h@48; event2/util.h@49; event2/keyvalq_struct.h@50; event2/thread.h@53; netinet/in.h@57; arpa/inet.h@59
+
+`ipc/chromium/src/third_party/libevent/sample/https-client.c` | `5136acebd79ad57c00ffdfce60c1a972b49a63ed` | 13591 bytes | imported-path,source | UTF-8 | mode 100644
+Declarations: http_request_done@51; bufferevent@60; syntax@95; err@104; err_openssl@110; cert_verify_callback@122; add_cert_for_store@186; main@215; event_base@218; evhttp_uri@219; bufferevent@230; evhttp_connection@231; evhttp_request@232; evkeyvalq@233; evbuffer@234; strcasecmp@313; add_cert_for_store@373
+Dependencies: stdio.h@18; assert.h@19; stdlib.h@20; string.h@21; errno.h@22; winsock2.h@25; ws2tcpip.h@26; sys/socket.h@31; netinet/in.h@32; event2/bufferevent_ssl.h@35; event2/bufferevent.h@36; event2/buffer.h@37; event2/listener.h@38; event2/util.h@39; event2/http.h@40; openssl/ssl.h@42; openssl/err.h@43; openssl/rand.h@44; openssl_hostname_validation.h@46
+
+`ipc/chromium/src/third_party/libevent/sample/include.am` | `b6894d46e5fe12bf4654018e50c6be2ce34baa7e` | 1911 bytes | imported-path,data-or-other | UTF-8 | mode 100644
+
+`ipc/chromium/src/third_party/libevent/sample/le-proxy.c` | `b38b06b4813ea5f29ef8a22e2e7d55a93a92bedb` | 7644 bytes | imported-path,source | UTF-8 | mode 100644
+Declarations: event_base@42; sockaddr_storage@43; sockaddr_storage@44; readcb@56; bufferevent@58; evbuffer@59; drained_writecb@83; bufferevent@85; close_on_finished_writecb@96; evbuffer@98; eventcb@106; bufferevent@108; bufferevent_get_output@132; syntax@151; sockaddr@163; bufferevent@165; bufferevent@192; main@214; evconnlistener@220; sockaddr_in@251
+Dependencies: stdio.h@16; assert.h@17; stdlib.h@18; string.h@19; errno.h@20; winsock2.h@23; ws2tcpip.h@24; sys/socket.h@26; netinet/in.h@27; event2/bufferevent_ssl.h@30; event2/bufferevent.h@31; event2/buffer.h@32; event2/listener.h@33; event2/util.h@34; util-internal.h@36; openssl/ssl.h@37; openssl/err.h@38; openssl/rand.h@39; openssl-compat.h@40
+
+`ipc/chromium/src/third_party/libevent/sample/openssl_hostname_validation.c` | `4036ccbaabc9356cae62f408a1175accfd8f6e94` | 7101 bytes | imported-path,source | UTF-8 | mode 100644
+Declarations: matches_common_name@64; matches_subject_alternative_name@112; validate_hostname@164
+Dependencies: openssl/x509v3.h@42; openssl/ssl.h@43; string.h@44; openssl_hostname_validation.h@46; hostcheck.h@47
+
+`ipc/chromium/src/third_party/libevent/sample/openssl_hostname_validation.h` | `54aa1c436d74db0d44e792e2d8680f988fc2c4ab` | 2251 bytes | imported-path,source | UTF-8 | mode 100644
+Declarations: enum@37
+
+`ipc/chromium/src/third_party/libevent/sample/signal-test.c` | `4aef42051574a775b3c3831767a1fddb63cbac20` | 1380 bytes | imported-path,source | UTF-8 | mode 100644
+Declarations: signal_cb@32; event@34; main@45; event@47; event_base@48
+Dependencies: sys/types.h@7; event2/event-config.h@9; sys/stat.h@11; sys/queue.h@13; unistd.h@14; sys/time.h@15; winsock2.h@17; windows.h@18; signal.h@20; fcntl.h@21; stdlib.h@22; stdio.h@23; string.h@24; errno.h@25; event2/event.h@27
+
+`ipc/chromium/src/third_party/libevent/sample/time-test.c` | `671a1d2108e2e911c7f513b5340828658c65d693` | 2217 bytes | imported-path,source | UTF-8 | mode 100644
+Declarations: timeval@38; timeout_cb@43; timeval@45; event@46; timeval@59; main@67; event@69; timeval@70; event_base@71
+Dependencies: sys/types.h@11; event2/event-config.h@13; sys/stat.h@15; sys/queue.h@17; unistd.h@18; time.h@20; sys/time.h@22; fcntl.h@24; stdlib.h@25; stdio.h@26; string.h@27; errno.h@28; event2/event.h@30; event2/event_struct.h@31; event2/util.h@32; winsock2.h@35
+
+`ipc/chromium/src/third_party/libevent/select.c` | `b1db0e44b605147119d45b34530ffc77461ab21e` | 8699 bytes | imported-path,source | UTF-8 | mode 100644
+Declarations: unsigned@64; selectop@78; select_init@110; selectop@112; check_selectop@131; select_dispatch@140; selectop@143; select_resize@212; select_add@252; selectop@254; select_del@299; selectop@301; select_free_selectop@323; select_dealloc@339
+Dependencies: event2/event-config.h@29; evconfig-private.h@30; sys/types.h@40; sys/time.h@42; sys/select.h@45; sys/queue.h@47; signal.h@48; stdio.h@49; stdlib.h@50; string.h@51; unistd.h@52; errno.h@53; event-internal.h@55; evsignal-internal.h@56; event2/thread.h@57; evthread-internal.h@58; log-internal.h@59; evmap-internal.h@60
+
+`ipc/chromium/src/third_party/libevent/signal.c` | `2077f7fb60672582b92df14d6d841279220391b6` | 12616 bytes | imported-path,source | UTF-8 | mode 100644
+Declarations: event_base@113; evsig_set_base_@124; evsig_cb@135; event_base@141; evsig_init_@178; sigaction@220; evsig_info@224; evsig_add@282; evsig_info@284; evsig_restore_handler_@330; evsig_info@333; sigaction@335; evsig_del@367; evsig_handler@383; evsig_dealloc_@419; evsig_free_globals_locks@460; evsig_free_globals_@472; evsig_global_setup_locks_@479
+Dependencies: event2/event-config.h@29; evconfig-private.h@30; winsock2.h@34; windows.h@35; sys/types.h@38; sys/time.h@40; sys/queue.h@42; sys/socket.h@44; signal.h@46; stdio.h@47; stdlib.h@48; string.h@49; unistd.h@51; errno.h@53; fcntl.h@55; event2/event.h@58; event2/event_struct.h@59; event-internal.h@60; event2/util.h@61; evsignal-internal.h@62; log-internal.h@63; evmap-internal.h@64; evthread-internal.h@65; mozilla/Assertions.h@67
+
+`ipc/chromium/src/third_party/libevent/solaris/event2/event-config.h` | `0e8b17e70bc64f6face589bd99309fe9a3e21955` | 18323 bytes | imported-path,source | UTF-8 | mode 100644
+
+`ipc/chromium/src/third_party/libevent/strlcpy-internal.h` | `4151d601d0b1ffb8e5cd4660ca4788aafc1ce8d4` | 418 bytes | imported-path,source | UTF-8 | mode 100644
+Dependencies: event2/event-config.h@8; event2/visibility.h@9; evconfig-private.h@10; string.h@13
+
+`ipc/chromium/src/third_party/libevent/strlcpy.c` | `545bf1fcdc3f45b3dffe85b47531b09e68c91ea9` | 2564 bytes | imported-path,source | UTF-8 | mode 100644
+Declarations: event_strlcpy_@48
+Dependencies: event2/event-config.h@34; evconfig-private.h@35; sys/types.h@37; strlcpy-internal.h@40
+
+`ipc/chromium/src/third_party/libevent/test-export/CMakeLists.txt` | `53a1cf527bfced080eab5d7a6998b312d649ac1f` | 554 bytes | imported-path,data-or-other | UTF-8 | mode 100644
+
+`ipc/chromium/src/third_party/libevent/test-export/test-export.c` | `9091777554750f2c54bf25b88100201f5bf642e3` | 2170 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: test@16; event_base@18; evhttp@19; evdns_base@20; evrpc_base@21; test@45; test@51; event_base@53; bufferevent@56; test@95; event_base@97; main@108
+Dependencies: event2/event.h@1; event2/http.h@3; event2/rpc.h@4; event2/dns.h@5; event2/thread.h@7; openssl/ssl.h@9; openssl/err.h@10; event2/bufferevent_ssl.h@11
+
+`ipc/chromium/src/third_party/libevent/test-export/test-export.py` | `d71e5dbaa194c0ceb4abf1ec9f0eefeb5f238114` | 6165 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: exec_cmd@28; link_and_run@37; testcase@68; test_group@87; config_restore@108; config_backup@113; run_test_group@123; export_dll@138; unexport_dll@143
+
+`ipc/chromium/src/third_party/libevent/test/Makefile.nmake` | `30c3eb792bcea62ffbf7479bc8af5a26b1b1a25d` | 2529 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`ipc/chromium/src/third_party/libevent/test/bench.c` | `f2af4d3f30d1ff3703fd574b8014f7cef1f344a6` | 5844 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: event@72; event_base@73; read_cb@77; timeval@99; run_once@100; timeval@104; main@143; rlimit@146; timeval@149; event_config@153
+Dependencies: event2/event-config.h@36; ../util-internal.h@37; sys/types.h@39; sys/stat.h@40; sys/time.h@42; windows.h@46; sys/socket.h@48; signal.h@49; sys/resource.h@50; fcntl.h@52; stdlib.h@53; stdio.h@54; string.h@55; unistd.h@57; errno.h@59; getopt.h@62; event.h@65; evutil.h@66
+
+`ipc/chromium/src/third_party/libevent/test/bench_cascade.c` | `29a3203ecdd693c3d9756d16e1cb03ef19b3bfea` | 4694 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: event@64; read_cb@67; timeval@80; run_once@81; timeval@85; main@140; rlimit@143; timeval@146
+Dependencies: event2/event-config.h@28; sys/types.h@30; sys/stat.h@31; sys/time.h@33; windows.h@37; getopt.h@38; sys/socket.h@40; sys/resource.h@41; signal.h@43; fcntl.h@44; stdlib.h@45; stdio.h@46; string.h@47; unistd.h@49; errno.h@51; event.h@52; evutil.h@53
+
+`ipc/chromium/src/third_party/libevent/test/bench_http.c` | `80377ee60583bbd5de31e38b39cf85e281d94317` | 5062 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: http_basic_cb@57; evbuffer@59; http_ref_cb@71; evbuffer@73; main@85; event_config@87; event_base@88; evhttp@89; timeval@188
+Dependencies: sys/types.h@28; sys/stat.h@29; winsock2.h@31; sys/socket.h@33; sys/resource.h@34; sys/time.h@35; unistd.h@36; fcntl.h@38; signal.h@39; stdlib.h@40; stdio.h@41; string.h@42; errno.h@43; event2/event.h@45; event2/buffer.h@46; event2/util.h@47; event2/http.h@48; event2/thread.h@49
+
+`ipc/chromium/src/third_party/libevent/test/bench_httpclient.c` | `7c7ee470a307e154426ba3419d6c892ac3ca85d8` | 6036 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: event_base@51; timeval@57; request_info@63; timeval@65; readcb@73; request_info@75; evbuffer@76; errorcb@84; request_info@86; timeval@87; frob_socket@114; linger@117; launch_request@131; sockaddr_in@134; bufferevent@135; request_info@137; main@178; timeval@181
+Dependencies: util-internal.h@29; sys/types.h@31; winsock2.h@33; sys/socket.h@35; netinet/in.h@36; arpa/inet.h@38; stdlib.h@41; string.h@42; errno.h@43; event2/event.h@45; event2/bufferevent.h@46; event2/buffer.h@47; event2/util.h@48
+
+`ipc/chromium/src/third_party/libevent/test/check-dumpevents.py` | `3e1df30c4f406775f7da6f2ec989549a0fc9c1f8` | 1547 bytes | imported-path,test-path,source | UTF-8 | mode 100755
+Declarations: replace_time@35
+
+`ipc/chromium/src/third_party/libevent/test/include.am` | `043752471aed7793319b22829a2af9c12bf8108c` | 5216 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`ipc/chromium/src/third_party/libevent/test/print-winsock-errors.c` | `64d6b0e70e4de0f59b611092aa31815aa9d1ff7d` | 1913 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@13
+Dependencies: winsock2.h@1; windows.h@2; stdlib.h@4; stdio.h@5; event2/event.h@7; event2/util.h@8; event2/thread.h@9
+
+`ipc/chromium/src/third_party/libevent/test/regress.c` | `08c30fab9b9b48ea6690b6d3d980e17750dba2dd` | 88933 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: event_base@81; timeval@88; timeval@89; basic_cb_args@99; event_base@101; event@102; simple_read_cb@107; basic_read_cb@126; basic_cb_args@130; dummy_read_cb@160; simple_write_cb@165; multiple_write_cb@177; event@179; multiple_read_cb@210; event@212; timeout_cb@232; both@237; event@238; combined_read_cb@243; both@245; combined_write_cb@261; both@263; test_simpleread@296; event@298; test_simplewrite@318; event@320; simpleread_multiple_cb@334; test_simpleread_multiple@341; event@343; simpleclose_close_fd_cb@368; record_event_cb@380; test_simpleclose_rw@390; event_base@393; event@396; timeval@397; test_simpleclose@473; basic_test_data@475; event_base@476; event@482; timeval@509; test_multiple@524; event@526; test_persistent@553; event@555; test_combined@582; both@584; test_simpletimeout@613; timeval@615; event@616; periodic_timeout_cb@636; test_persistent_timeout@650; timeval@652; event@653; test_persistent_timeout_jump@669; basic_test_data@671; event@672; timeval@674; timeval@675; timeval@676; persist_active_timeout_called@690; timeval@693; activate_cb@697; event@699; persist_active_timeout_cb@704; persist_active_timeout_called@706; test_persistent_active_timeout@715; timeval@717; event@718; persist_active_timeout_called@719; basic_test_data@721; event_base@722; common_timeout_info@757; event@758; timeval@759; common_timeout_cb@765; common_timeout_info@767; test_common_timeout@775; basic_test_data@777; event_base@779; common_timeout_info@781; timeval@783; timeval@784; timeval@785; timeval@786; timeval@787; event_base@870; fork_signal_cb@873; simple_child_read_cb@880; fork_wait_check@901; waitpid@912; test_fork@924; event@927; del_wait_thread@1030; timeval@1032; del_wait_cb@1045; timeval@1047; test_del_wait@1054; event@1056; timeval@1071; timeval@1076; null_cb@1091; test_del_notify_thread@1092; test_del_notify@1098; event@1100; timeval@1111; signal_cb_sa@1121; signal_cb@1127; event@1129; test_simplesignal_impl@1136; event@1138; itimerval@1139; test_simplestsignal@1164; test_simplesignal@1171; test_multiplesignal@1178; event@1180; itimerval@1181; test_immediatesignal@1209; event@1211; test_signal_dealloc@1223; event@1226; event_base@1227; test_signal_pipeloss@1238; event_base@1241; test_signal_switchbase@1265; event@1267; event_base@1268; event_add@1279; test_signal_assert@1317; event@1319; event_base@1320; test_signal_restore@1352; event@1354; event_base@1355; sigaction@1357; signal_cb_swp@1386; timeout_cb_swp@1395; timeval@1398; test_signal_while_processing@1410; event_base@1412; event@1413; timeval@1414; test_free_active_base@1433; basic_test_data@1435; event_base@1436; event@1437; test_manipulate_active_events@1455; basic_test_data@1457; event_base@1458; event@1459; event_selfarg_cb@1478; event@1480; event_base@1481; test_event_new_selfarg@1488; basic_test_data@1490; event_base@1491; event@1492; test_event_assign_selfarg@1502; basic_test_data@1504; event_base@1505; event@1506; test_event_base_get_num_events@1515; basic_test_data@1517; event_base@1518; event@1519; timeval@1528; test_event_base_get_max_events@1639; basic_test_data@1641; event_base@1642; event@1643; event@1644; timeval@1653; test_bad_assign@1783; event@1785; bad_reentrant_run_loop_cb@1798; event_base@1800; test_bad_reentrant@1812; basic_test_data@1814; event_base@1815; event@1816; write_a_byte_cb@1833; read_and_drain_cb@1840; activate_other_event_cb@1850; event@1852; test_active_later@1858; basic_test_data@1860; event@1861; event@1862; timeval@1863; incr_arg_cb@1908; remove_timers_cb@1914; event@1916; send_a_byte_cb@1921; read_not_timeout_param@1928; event@1930; read_not_timeout_cb@1934; read_not_timeout_param@1936; test_event_remove_timeout@1950; basic_test_data@1952; event_base@1953; event@1954; timeval@1956; read_not_timeout_param@1960; test_event_base_new@1993; basic_test_data@1995; event_base@1996; event@1997; basic_cb_args@1998; test_loopexit@2034; timeval@2036; event@2037; test_loopexit_multiple@2067; timeval@2069; event_base@2070; break_cb@2102; fail_cb@2109; test_loopbreak@2115; event@2117; timeval@2118; event@2141; re_add_read_cb@2143; event@2146; test_nonpersist_readd@2162; event@2164; basic_test_data@2165; test_pri_event@2200; event@2201; test_priorities_cb@2206; test_pri_event@2208; timeval@2209; test_priorities_impl@2223; test_pri_event@2225; timeval@2226; test_priorities@2273; event@2285; prio_active_inversion_cb@2288; test_priority_active_inversion@2303; basic_test_data@2305; event_base@2306; test_multiple_cb@2336; test_multiple_events_for_same_fd@2345; event@2347; read_once_cb@2377; test_want_only_once@2400; event@2402; timeval@2403; evtag_int_test@2428; evbuffer@2430; evtag_fuzz@2465; evbuffer@2468; timeval@2469; evtag_tag_encoding@2506; evbuffer@2508; evtag_test_peek@2538; evbuffer@2540; test_methods@2565; event_config@2568; event_base@2569; test_version@2604; test_base_features@2627; event_base@2629; event_config@2630; setenv@2655; unsetenv@2667; methodname_to_envvar@2678; test_base_environ@2689; event_base@2691; event_config@2692; read_called_once_cb@2769; timeout_called_once_cb@2778; immediate_called_twice_cb@2787; test_event_once@2796; basic_test_data@2798; timeval@2799; test_event_once_never@2836; basic_test_data@2838; timeval@2839; test_event_pending@2861; basic_test_data@2863; event@2864; timeval@2865; dfd_cb@2911; test_event_closed_fd_poll@2917; timeval@2919; event@2920; basic_test_data@2921; test_dup_fd@2955; basic_test_data@2957; event_base@2958; event@2959; test_mm_functions@3015; check_dummy_mem_ok@3021; dummy_malloc@3029; dummy_realloc@3037; dummy_free@3049; test_mm_functions@3058; event_base@3060; event_config@3061; many_event_cb@3077; test_many_events@3084; basic_test_data@3092; event_base@3093; event@3096; test_struct_event_size@3144; test_get_assignment@3152; basic_test_data@3154; event_base@3155; event@3156; event_base@3159; foreach_helper@3182; foreach_count_cb@3188; foreach_helper@3190; timeval@3191; foreach_find_cb@3204; foreach_helper@3207; test_event_foreach@3218; basic_test_data@3220; event_base@3221; event@3222; foreach_helper@3223; timeval@3225; event_base@3266; cache_time_cb@3270; timeval@3272; timeval@3275; test_gettimeofday_cached@3286; basic_test_data@3288; event_config@3289; event_base@3290; timeval@3291; event@3292; tabf_cb@3347; test_evmap_invalid_slots@3355; basic_test_data@3357; event_base@3358; event@3359; event@3362; test_active_by_fd@3395; basic_test_data@3397; event_base@3398; event@3399; event@3402; timeval@3405; testcase_t@3478; testcase_t@3591; testcase_t@3600
+Dependencies: util-internal.h@27; winsock2.h@30; windows.h@31; event2/event-config.h@34; sys/types.h@36; sys/stat.h@37; sys/time.h@39; sys/queue.h@41; sys/socket.h@43; sys/wait.h@44; limits.h@45; signal.h@46; unistd.h@47; netdb.h@48; fcntl.h@50; signal.h@51; stdlib.h@52; stdio.h@53; string.h@54; errno.h@55; assert.h@56; ctype.h@57; event2/event.h@59; event2/event_struct.h@60; event2/event_compat.h@61; event2/tag.h@62; event2/buffer.h@63; event2/buffer_compat.h@64; event2/util.h@65; event-internal.h@66; evthread-internal.h@67; log-internal.h@68; time-internal.h@69; regress.h@71; regress_thread.h@72; regress.gen.h@75
+
+`ipc/chromium/src/third_party/libevent/test/regress.h` | `43cb4eaf1e690a42b34a7ec9d4031a4e902ba407` | 5316 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: testcase_t@37; testcase_t@38; testcase_t@39; testcase_t@40; testcase_t@41; testcase_t@42; testcase_t@43; testcase_t@44; testcase_t@45; testcase_t@46; testcase_t@47; testcase_t@48; testcase_t@49; testcase_t@50; testcase_t@51; testcase_t@52; testcase_t@53; testcase_t@54; testcase_t@55; evutil_weakrand_state@57; event_base@68; basic_test_data@73; event_base@74; evutil_addrinfo@111; evutil_addrinfo@112; evutil_addrinfo@113
+Dependencies: tinytest.h@34; tinytest_macros.h@35; openssl/ssl.h@135
+
+`ipc/chromium/src/third_party/libevent/test/regress.rpc` | `0ee904e9139f361648961b838ea93deb54efa93d` | 465 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100644
+
+`ipc/chromium/src/third_party/libevent/test/regress_buffer.c` | `d4e1190af9d10c21f2c8465440dab717bf0c19c7` | 82838 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: evbuffer_validate_@71; evbuffer_chain@73; evbuffer_get_waste@126; evbuffer_chain@128; test_evbuffer@175; evbuffer@178; evbuffer@179; evbuffer_iovec@261; no_cleanup@294; test_evbuffer_remove_buffer_with_empty@299; evbuffer@301; evbuffer@302; test_evbuffer_remove_buffer_with_empty2@337; evbuffer@339; evbuffer@340; evbuffer@341; test_evbuffer_remove_buffer_with_empty3@384; evbuffer@386; evbuffer@387; evbuffer@388; test_evbuffer_pullup_with_empty@431; evbuffer@433; test_evbuffer_remove_buffer_with_empty_front@461; evbuffer@463; test_evbuffer_remove_buffer_adjust_last_with_datap_with_empty@488; evbuffer@490; evbuffer_iovec@503; test_evbuffer_add_buffer_with_empty@544; evbuffer@546; evbuffer@547; evbuffer@548; test_evbuffer_add_buffer_with_empty2@575; evbuffer@577; evbuffer@578; evbuffer@579; test_evbuffer_reserve2@604; evbuffer@607; evbuffer_iovec@609; test_evbuffer_reserve_many@700; evbuffer@704; evbuffer_iovec@705; test_evbuffer_reserve_with_empty@773; evbuffer@775; evbuffer_iovec@776; test_evbuffer_reserve_invalid_last_with_datap@797; evbuffer@799; evbuffer_iovec@800; test_evbuffer_expand@830; evbuffer@833; test_evbuffer_expand_overflow@904; evbuffer@906; test_evbuffer_add1@921; evbuffer@923; test_evbuffer_add2@946; evbuffer@948; reference_cb@977; test_evbuffer_reference@988; evbuffer@990; evbuffer@991; evbuffer_iovec@992; test_evbuffer_reference2@1031; evbuffer@1033; event_base@1060; addfile_test_writecb@1066; evbuffer@1068; addfile_test_readcb@1092; evbuffer@1094; test_evbuffer_add_file@1117; basic_test_data@1119; evbuffer@1121; evbuffer_file_segment@1132; event@1135; event_base@1136; evutil_weakrand_state@1138; evbuffer_file_segment@1316; file_segment_cleanup_cp@1320; test_evbuffer_file_segment_add_cleanup_cb@1329; evbuffer@1333; evbuffer_file_segment@1334; failing_malloc@1381; test_evbuffer_readln@1389; evbuffer@1391; evbuffer@1392; test_evbuffer_search_eol@1631; evbuffer@1633; evbuffer_ptr@1634; test_evbuffer_iterative@1688; evbuffer@1690; test_evbuffer_find@1732; evbuffer@1740; test_evbuffer_ptr_set@1779; evbuffer@1781; evbuffer_ptr@1782; evbuffer_iovec@1783; test_evbuffer_search@1839; evbuffer@1841; evbuffer@1842; evbuffer_ptr@1843; evbuffer@1933; test_evbuffer_callbacks@1946; evbuffer@1948; evbuffer@1949; evbuffer@1950; evbuffer_cb_entry@1951; ref_done_cb@2043; test_evbuffer_add_reference@2052; evbuffer@2060; test_evbuffer_multicast@2128; evbuffer@2136; test_evbuffer_multicast_drain@2197; evbuffer@2204; test_evbuffer_multicast_empty_chain@2233; evbuffer@2238; test_evbuffer_prepend@2279; evbuffer@2281; test_evbuffer_empty_reference_prepend@2355; evbuffer@2357; test_evbuffer_empty_reference_prepend_buffer@2376; evbuffer@2378; test_evbuffer_peek_first_gt@2407; evbuffer@2409; evbuffer_ptr@2410; evbuffer_iovec@2411; test_evbuffer_peek@2443; evbuffer@2445; evbuffer_iovec@2447; evbuffer_ptr@2448; test_evbuffer_freeze@2561; basic_test_data@2563; evbuffer@2565; evbuffer_iovec@2579; test_evbuffer_add_iovec@2694; evbuffer@2696; evbuffer_iovec@2697; test_evbuffer_copyout@2740; evbuffer_ptr@2749; evbuffer@2750; setup_passthrough@2821; cleanup_passthrough@2826; testcase_t@2837
+Dependencies: util-internal.h@27; winsock2.h@30; windows.h@31; event2/event-config.h@34; sys/types.h@36; sys/stat.h@37; sys/time.h@39; sys/queue.h@41; sys/socket.h@43; sys/wait.h@44; signal.h@45; unistd.h@46; netdb.h@47; stdlib.h@49; stdio.h@50; string.h@51; errno.h@52; assert.h@53; event2/event.h@55; event2/buffer.h@56; event2/buffer_compat.h@57; event2/util.h@58; defer-internal.h@60; evbuffer-internal.h@61; log-internal.h@62; regress.h@64
+
+`ipc/chromium/src/third_party/libevent/test/regress_bufferevent.c` | `c276a0e5d1c32ea5affea576fb3785e913d9ab67` | 40760 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: readcb@105; evbuffer@108; writecb@125; errorcb@133; test_bufferevent_impl@139; bufferevent@141; bufferevent@147; test_bufferevent@208; test_bufferevent_pair@209; test_bufferevent_flush_normal@211; test_bufferevent_flush_flush@212; test_bufferevent_flush_finished@213; test_bufferevent_pair_flush_normal@215; test_bufferevent_pair_flush_flush@216; test_bufferevent_pair_flush_finished@217; struct@224; lock_unlock_base@232; evthread_lock_callbacks@235; trace_lock_free@264; trace_lock_lock@274; trace_lock_unlock@285; lock_unlock_free_thread_cbs@296; use_lock_unlock_profiler@311; evthread_lock_callbacks@313; free_lock_unlock_profiler@334; test_bufferevent_pair_release_lock@344; basic_test_data@346; bufferevent@349; wm_readcb@367; evbuffer@369; wm_writecb@390; wm_errorcb@400; test_bufferevent_watermarks_impl@406; bufferevent@408; bufferevent@415; test_bufferevent_watermarks@477; test_bufferevent_pair_watermarks@483; bufferevent_filter_result@494; bufferevent_filter_result@516; bufferevent@522; test_bufferevent_filters_impl@550; bufferevent@552; bufferevent@553; bufferevent@560; test_bufferevent_filters@606; test_bufferevent_pair_filters@608; test_bufferevent_filters_disable@610; test_bufferevent_pair_filters_disable@612; sender_writecb@617; sender_errorcb@627; sockaddr@642; event_base@644; bufferevent@645; fake_listener_create@657; sockaddr@659; reader_eventcb@682; event_base@684; reader_eventcb_simple@711; reader_readcb@719; test_bufferevent_connect@726; basic_test_data@728; evconnlistener@729; bufferevent@730; sockaddr_in@731; sockaddr_storage@732; sockaddr@733; win32_extension_fns@750; close_socket_cb@804; test_bufferevent_connect_fail_eventcb@814; basic_test_data@816; event@818; bufferevent@819; evconnlistener@820; sockaddr_in@821; timeval@822; want_fail_eventcb@868; event_base@870; test_bufferevent_connect_fail@888; basic_test_data@890; bufferevent@891; event@892; timeval@894; sockaddr_in@895; timeout_cb_result@935; timeval@936; timeval@937; timeval@938; timeval@939; bev_timeout_read_cb@946; timeout_cb_result@948; bev_timeout_write_cb@952; timeout_cb_result@954; bev_timeout_event_cb@958; timeout_cb_result@960; test_bufferevent_timeouts@976; bufferevent@979; basic_test_data@980; timeval@982; timeout_cb_result@983; bufferevent@994; bufferevent@1006; trigger_failure_cb@1077; trigger_eventcb@1083; event_base@1085; trigger_readcb_triggered@1095; trigger_readcb@1103; timeval@1105; event_base@1106; test_bufferevent_trigger@1142; basic_test_data@1144; evconnlistener@1145; bufferevent@1146; sockaddr_in@1147; sockaddr_storage@1148; sockaddr@1149; test_bufferevent_socket_filter_inactive@1203; basic_test_data@1205; bufferevent@1206; pair_flush_eventcb@1221; test_bufferevent_pair_flush@1228; basic_test_data@1230; bufferevent@1231; bufferevent@1232; bufferevent@1233; bufferevent_filter_data_stuck@1257; bufferevent_filter_data_stuck_readcb@1263; bufferevent_filter_data_stuck@1265; evbuffer@1266; bufferevent_filter_result@1275; evbuffer@1277; bufferevent_flush_mode@1278; bufferevent_filter_data_stuck@1280; test_bufferevent_filter_data_stuck@1305; bufferevent_filter_data_stuck@1308; basic_test_data@1309; bufferevent@1310; bufferevent@1311; testcase_t@1357; testcase_t@1438
+Dependencies: util-internal.h@27; winsock2.h@46; windows.h@47; event2/event-config.h@50; sys/types.h@52; sys/stat.h@53; sys/time.h@55; sys/queue.h@57; sys/socket.h@59; sys/wait.h@60; signal.h@61; unistd.h@62; netdb.h@63; netinet/in.h@64; fcntl.h@66; signal.h@67; stdlib.h@68; stdio.h@69; string.h@70; errno.h@71; assert.h@72; arpa/inet.h@75; event2/event-config.h@78; event2/event.h@79; event2/event_struct.h@80; event2/event_compat.h@81; event2/tag.h@82; event2/buffer.h@83; event2/bufferevent.h@84; event2/bufferevent_compat.h@85; event2/bufferevent_struct.h@86; event2/listener.h@87; event2/util.h@88; bufferevent-internal.h@90; evthread-internal.h@91; util-internal.h@92; iocp-internal.h@94; regress.h@97; regress_testutils.h@98
+
+`ipc/chromium/src/third_party/libevent/test/regress_dns.c` | `9a8bff4f15269efc3191b9a68332adadd14e4f76` | 72128 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: in6_addr@111; in_addr@128; dns_gethostbyname@158; dns_gethostbyname6@171; dns_gethostbyaddr@188; in_addr@190; dns_resolve_reverse@203; in_addr@205; event_base@206; evdns_base@207; evdns_request@208; dns_server_request_cb@233; in_addr@246; in_addr@321; in6_addr@332; dns_server@376; sockaddr_in@379; sockaddr_storage@380; evdns_server_port@382; in_addr@383; in6_addr@384; evdns_base@385; evdns_request@386; sockaddr_storage@419; event_base@470; evdns_server_port@471; generic_dns_callback_result@473; generic_dns_callback_result@488; regress_dns_server_table@522; dns_search_test_impl@539; regress_dns_server_table@541; basic_test_data@542; event_base@543; evdns_base@544; generic_dns_callback_result@548; dns_search_empty_test@603; basic_test_data@605; event_base@606; evdns_base@607; dns_search_test@622; dns_search_lower_test@623; evdns_request@626; search_cancel_server_cb@629; dns_search_cancel_test@652; basic_test_data@654; event_base@655; evdns_base@656; evdns_server_port@657; generic_dns_callback_result@659; fail_server_cb@693; in_addr@697; dns_retry_test_impl@727; basic_test_data@729; event_base@730; evdns_server_port@731; evdns_base@732; generic_dns_callback_result@737; dns_retry_test@800; dns_retry_disable_when_inactive_test@805; regress_dns_server_table@810; regress_dns_server_table@820; dns_reissue_test_impl@826; basic_test_data@828; event_base@829; evdns_server_port@830; evdns_base@831; generic_dns_callback_result@832; dns_reissue_test@879; dns_reissue_disable_when_inactive_test@884; dumb_bytes_fn@891; dns_inflight_test_impl@902; basic_test_data@904; event_base@905; evdns_base@906; evdns_server_port@907; generic_dns_callback_result@912; dns_inflight_test@955; dns_disable_when_inactive_test@961; dns_disable_when_inactive_no_ns_test@967; basic_test_data@969; event_base@970; evdns_base@971; generic_dns_callback_result@974; dns_initialize_nameservers_test@1008; basic_test_data@1010; event_base@1011; evdns_base@1012; dns_nameservers_no_default_test@1030; basic_test_data@1032; event_base@1033; evdns_base@1034; event_base@1064; be_getaddrinfo_server_cb@1069; in_addr@1080; in6_addr@1081; be_conn_hostname_result@1209; be_connect_hostname_event_cb@1217; be_conn_hostname_result@1219; test_bufferevent_connect_hostname@1253; basic_test_data@1255; evconnlistener@1256; bufferevent@1257; be_conn_hostname_result@1258; evdns_base@1260; evdns_server_port@1261; sockaddr_in@1262; rlimit@1299; evutil_addrinfo@1329; gai_outcome@1397; evutil_addrinfo@1399; event_base@1403; gai_cb@1406; gai_outcome@1408; cancel_gai_cb@1419; evdns_getaddrinfo_request@1421; test_getaddrinfo_async@1426; basic_test_data@1428; evutil_addrinfo@1429; gai_outcome@1430; gai_outcome@1431; evdns_getaddrinfo_request@1433; evdns_server_port@1435; evdns_base@1438; timeval@1687; gaic_request_status@1800; event_base@1802; evdns_base@1803; evdns_getaddrinfo_request@1804; event@1805; gaic_cancel_request_cb@1815; gaic_request_status@1817; gaic_server_cb@1828; gaic_getaddrinfo_cb@1842; gaic_request_status@1844; event_base@1845; gaic_launch@1868; gaic_request_status@1870; timeval@1871; cnt_malloc@1892; cnt_realloc@1899; cnt_free@1909; testleak_env_t@1915; event_base@1916; evdns_base@1917; evdns_request@1918; generic_dns_callback_result@1919; testleak_setup@1923; testleak_env_t@1925; testleak_cleanup@1949; testleak_env_t@1952; testcase_setup_t@1972; test_dbg_leak_cancel@1977; testleak_env_t@1980; dbg_leak_resume@1997; testleak_env_t@2000; test_dbg_leak_shutdown@2041; testleak_env_t@2044; test_getaddrinfo_async_cancel_stress@2062; event_base@2064; evdns_base@2065; evdns_server_port@2066; sockaddr_in@2068; sockaddr_storage@2069; dns_client_fail_requests_test@2119; basic_test_data@2121; event_base@2122; evdns_base@2124; evdns_server_port@2125; generic_dns_callback_result@2129; getaddrinfo_cb@2163; dns_client_fail_requests_getaddrinfo_test@2168; basic_test_data@2170; event_base@2171; evdns_base@2172; evdns_server_port@2173; generic_dns_callback_result@2177; race_param@2208; race_base_run@2221; race_param@2223; race_busywait_run@2228; race_param@2230; sockaddr_storage@2231; race_gai_cb@2241; race_param@2243; getaddrinfo_race_gotresolve_test@2255; race_param@2257; evdns_server_port@2258; timeval@2271; test_set_so_rcvbuf_so_sndbuf@2356; basic_test_data@2358; evdns_base@2359; test_set_option@2376; basic_test_data@2380; evdns_base@2381; testcase_t@2444
+Dependencies: ../util-internal.h@27; winsock2.h@30; windows.h@31; ws2tcpip.h@32; event2/event-config.h@35; sys/types.h@37; sys/stat.h@38; sys/time.h@40; sys/queue.h@42; sys/socket.h@44; signal.h@45; netinet/in.h@46; arpa/inet.h@47; unistd.h@48; netinet/in6.h@51; netdb.h@54; fcntl.h@56; stdlib.h@57; stdio.h@58; string.h@59; errno.h@60; sys/resource.h@63; event2/dns.h@66; event2/dns_compat.h@67; event2/dns_struct.h@68; event2/event.h@69; event2/event_compat.h@70; event2/event_struct.h@71; event2/util.h@72; event2/listener.h@73; event2/bufferevent.h@74; event2/thread.h@75; log-internal.h@76; evthread-internal.h@77; regress.h@78; regress_testutils.h@79; regress_thread.h@80
+
+`ipc/chromium/src/third_party/libevent/test/regress_et.c` | `1b1f819eda19800206a0de2b27912fdfdf5681bb` | 8217 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: base_supports_et@54; read_cb@63; test_edgetriggered@79; basic_test_data@81; event_base@82; event@84; test_edgetriggered_mix_error@136; basic_test_data@138; event_base@139; event@140; read_notification_cb@183; write_notification_cb@192; test_edge_triggered_multiple_events@205; basic_test_data@207; event@208; event@209; event_base@211; testcase_t@262
+Dependencies: ../util-internal.h@26; event2/event-config.h@27; winsock2.h@30; sys/types.h@32; sys/stat.h@33; sys/socket.h@35; fcntl.h@37; stdlib.h@38; stdio.h@39; string.h@40; sys/time.h@42; unistd.h@43; errno.h@45; event2/event.h@47; event2/util.h@48; regress.h@50
+
+`ipc/chromium/src/third_party/libevent/test/regress_finalize.c` | `9e57188121d1174d51a5b9be52c71e9b696ac43e` | 10039 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: timer_callback@42; simple_callback@50; event_finalize_callback_1@57; callback_finalize_callback_1@64; test_fin_cb_invoked@73; basic_test_data@75; event_base@76; event@78; event@79; event_callback@80; tfff_malloc@164; tfff_free@171; tfff_realloc@182; test_fin_free_finalize@189; event_base@194; event@195; event_and_count@231; event@232; event@233; event_finalize_callback_2@237; event_and_count@239; timer_callback_2@244; event_and_count@246; test_fin_within_cb@255; basic_test_data@257; event_base@258; event_and_count@260; event_finalize_callback_free@294; event_base@296; test_fin_debug_use_after_free@311; basic_test_data@313; event_base@314; event@315; timer_callback_3@342; test_fin_many@349; basic_test_data@351; event_base@352; event@354; event_callback@355; event_callback@358; testcase_t@384
+Dependencies: event2/event-config.h@27; evconfig-private.h@28; tinytest.h@29; tinytest_macros.h@30; stdlib.h@31; event2/event.h@33; event2/util.h@34; event-internal.h@35; defer-internal.h@36; regress.h@38; regress_thread.h@39
+
+`ipc/chromium/src/third_party/libevent/test/regress_http.c` | `6056e39670a27d31ac0ad00cc991c63c653a5a37` | 133594 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: event_base@72; http_bind@93; evhttp_bound_socket@96; bufferevent@120; https_bev@121; evhttp@133; void@135; evhttp@137; evhttp@170; http_setup@171; http_connect@179; evutil_addrinfo@182; sockaddr@185; evbuffer_datacmp@224; evbuffer_contains@248; evbuffer_ptr@250; http_readcb@256; event_base@259; evhttp_request@262; message_read_status@263; http_writecb@294; http_errorcb@304; http_basic_cb@317; evbuffer@319; evhttp_connection@320; http_timeout_reply_cb@381; evhttp_request@383; http_timeout_cb@388; timeval@390; http_large_cb@396; evbuffer@398; chunk_req_state@414; event_base@415; evhttp_request@416; http_chunked_trickle_cb@421; evbuffer@423; chunk_req_state@424; timeval@425; http_chunked_cb@441; timeval@443; chunk_req_state@444; bufferevent@463; create_bev@464; bufferevent@467; bufferevent@475; http_half_writecb@491; http_basic_test_impl@507; basic_test_data@509; bufferevent@510; evhttp@515; evbuffer@516; http_basic_trailing_space_test@593; http_delay_reply@598; evhttp_request@600; http_delay_cb@608; timeval@610; http_badreq_cb@619; evbuffer@621; http_badreq_errorcb@631; http_badreq_readcb@638; evhttp_request@651; message_read_status@652; http_badreq_successcb@677; http_bad_request_test@684; basic_test_data@686; timeval@687; bufferevent@688; evhttp@692; evhttp_connection@767; http_large_delay_cb@770; timeval@772; http_delete_cb@785; evbuffer@787; http_delete_test@807; basic_test_data@809; bufferevent@810; evhttp@814; http_sent_cb@851; evbuffer@854; http_on_complete_cb@873; evbuffer@875; http_on_complete_test@891; basic_test_data@893; bufferevent@894; evhttp@898; http_allowed_methods_eventcb@932; http_allowed_methods_test@951; basic_test_data@953; bufferevent@954; evhttp@959; evhttp_connection@1065; evhttp_request@1066; evhttp@1067; bufferevent@1086; http_connection_test@1171; http_persist_connection_test@1176; regress_dns_server_table@1181; http_connection_async_test@1187; basic_test_data@1189; evhttp_connection@1191; evhttp_request@1192; evdns_base@1193; evhttp@1196; http_autofree_connection_test@1281; basic_test_data@1283; evhttp_connection@1285; evhttp_request@1286; evhttp@1287; http_request_never_call@1335; http_failed_request_done@1341; http_timed_out_request_done@1349; http_request_error_cb_with_cancel@1359; timeval@1368; http_do_cancel@1376; evhttp_request@1378; http_no_write@1383; http_free_evcons@1389; evhttp_connection@1391; evhttp_connection@1402; http_fill_backlog@1403; evhttp_connection@1406; evhttp_request@1410; http_cancel_test_type@1428; evhttp_request@1436; event_base@1438; http_cancel_test@1451; basic_test_data@1453; evhttp_connection@1455; evhttp_request@1456; bufferevent@1457; timeval@1458; evdns_base@1459; evhttp@1462; event_base@1463; evhttp_connection@1464; event_base@1465; http_cancel_test_type@1467; evhttp@1469; http_request_no_action_done@1606; http_request_done@1613; http_request_expect_error@1648; http_virtual_host_test@1662; basic_test_data@1664; evhttp_connection@1666; evhttp_request@1667; evhttp@1668; bufferevent@1670; evhttp@1672; http_request_empty_done@1824; http_dispatcher_cb@1868; evbuffer@1871; http_dispatcher_test_done@1881; event_base@1883; http_dispatcher_test@1917; basic_test_data@1919; evhttp_connection@1921; evhttp_request@1922; evhttp@1923; http_post_test@1966; basic_test_data@1968; evhttp_connection@1970; evhttp_request@1971; evhttp@1972; http_post_cb@2027; evbuffer@2029; http_postrequest_done@2060; event_base@2063; http_put_test@2105; basic_test_data@2107; evhttp_connection@2109; evhttp_request@2110; evhttp@2111; http_put_cb@2144; evbuffer@2146; http_putrequest_done@2177; event_base@2179; http_failure_readcb@2215; http_failure_test@2229; basic_test_data@2231; bufferevent@2232; evhttp@2236; close_detect_done@2265; timeval@2267; close_detect_launch@2280; evhttp_connection@2282; event_base@2283; evhttp_request@2284; close_detect_cb@2298; evhttp_connection@2300; event_base@2301; timeval@2302; http_close_detection_@2320; evhttp_connection@2323; evhttp_request@2324; evhttp@2326; http_close_detection_test@2370; http_close_detection_delay_test@2375; http_highport_test@2381; basic_test_data@2383; evhttp@2385; http_bad_header_test@2402; evkeyvalq@2404; http_parse_query_test@2431; evkeyvalq@2433; http_parse_query_str_test@2502; evkeyvalq@2504; http_parse_uri_test@2524; evhttp_uri@2529; http_uriencode_test@2907; http_base_test@3017; event_base@3019; bufferevent@3020; evhttp@3024; http_incomplete_readcb@3068; http_incomplete_errorcb@3075; http_incomplete_writecb@3089; http_incomplete_test_@3104; bufferevent@3106; timeval@3110; evhttp@3111; http_incomplete_test@3160; http_incomplete_timeout_test@3162; http_chunked_readcb@3171; http_chunked_errorcb@3177; evhttp_request@3179; message_read_status@3192; http_chunked_writecb@3279; http_chunked_request_done@3289; http_chunk_out_test_impl@3319; basic_test_data@3321; bufferevent@3322; timeval@3326; evhttp_connection@3327; evhttp_request@3328; evhttp@3330; http_chunk_out_test@3396; http_stream_out_test_impl@3400; basic_test_data@3402; evhttp_connection@3404; evhttp_request@3405; bufferevent@3406; evhttp@3407; http_stream_out_test@3442; http_stream_in_chunk@3446; evbuffer@3448; http_stream_in_done@3459; evhttp_connection@3476; evbuffer@3477; evhttp_request@3478; evhttp@3480; http_stream_in_test@3519; http_stream_in_cancel_chunk@3529; http_stream_in_cancel_done@3539; http_stream_in_cancel_test@3546; basic_test_data@3548; evhttp_connection@3549; evhttp_request@3550; evhttp@3552; http_connection_fail_done@3575; evhttp_connection@3577; event_base@3578; http_connection_fail_test_impl@3597; basic_test_data@3599; evhttp_connection@3601; evhttp_request@3602; bufferevent@3603; evhttp@3604; http_connection_fail_test@3638; http_connection_retry_done@3642; http_server@3657; evhttp@3661; event_base@3663; http_make_web_server@3665; http_server@3667; http_simple_test_impl@3672; basic_test_data@3674; evhttp_connection@3675; evhttp_request@3676; bufferevent@3677; http_server@3678; evhttp@3679; http_simple_test@3709; http_simple_nonconformant_test@3711; http_connection_retry_test_basic@3715; basic_test_data@3717; evhttp_connection@3718; evhttp_request@3719; timeval@3720; bufferevent@3721; http_server@3722; evhttp@3723; http_connection_retry_conn_address_test_impl@3845; basic_test_data@3847; evdns_base@3849; http_connection_retry_conn_address_test@3868; http_connection_retry_test_impl@3872; http_connection_retry_test@3877; http_primitives@3881; evhttp@3884; http_multi_line_header_test@3911; basic_test_data@3913; bufferevent@3914; evhttp@3918; http_is_chunked_test@3964; http_check_transfer_encoding_test@3983; evhttp_transfer_encoding_header_status@3985; http_request_bad@4002; http_negative_content_length_test@4014; basic_test_data@4016; evhttp_connection@4018; evhttp_request@4019; evhttp@4020; http_data_length_constraints_test_done@4053; http_large_entity_test_done@4061; http_expectation_failed_done@4069; http_data_length_constraints_test_impl@4078; basic_test_data@4080; evhttp_connection@4082; evhttp_request@4083; evhttp@4088; http_data_length_constraints_test@4190; http_read_on_write_error_test@4192; http_lingering_close_test_impl@4196; basic_test_data@4198; evhttp_connection@4200; evhttp_request@4201; evhttp@4205; http_non_lingering_close_test@4248; http_lingering_close_test@4250; terminate_state@4257; event_base@4258; evhttp_request@4259; bufferevent@4260; terminate_chunked_trickle_cb@4267; terminate_state@4269; evbuffer@4270; timeval@4289; terminate_chunked_close_cb@4299; terminate_state@4301; terminate_chunked_cb@4313; terminate_state@4315; timeval@4316; terminate_chunked_client@4333; terminate_state@4335; terminate_readcb@4341; http_terminate_chunked_test_impl@4349; basic_test_data@4351; bufferevent@4352; timeval@4353; terminate_state@4357; evhttp@4358; http_terminate_chunked_test@4404; http_terminate_chunked_oneshot_test@4409; regress_dns_server_table@4414; http_ipv6_for_domain_test_impl@4420; basic_test_data@4422; evdns_base@4423; http_ipv6_for_domain_test@4446; http_request_get_addr_on_close@4452; http_get_addr_test@4475; basic_test_data@4477; evhttp_connection@4479; evhttp_request@4480; evhttp@4481; http_set_family_test@4514; http_set_family_ipv4_test@4519; http_set_family_ipv6_test@4524; http_write_during_read@4530; bufferevent@4532; timeval@4533; http_write_during_read_test_impl@4542; basic_test_data@4544; bufferevent@4546; timeval@4547; evhttp@4550; http_write_during_read_test@4579; http_request_own_test@4583; basic_test_data@4585; evhttp_connection@4587; evhttp_request@4588; evhttp@4589; bufferevent@4620; evbuffer@4623; http_request_extra_body_test@4645; basic_test_data@4647; bufferevent@4648; evhttp@4651; evbuffer@4653; https_basic_test@4708; https_filter_basic_test@4710; https_incomplete_test@4712; https_incomplete_timeout_test@4714; https_simple_test@4716; https_simple_dirty_test@4718; https_connection_retry_conn_address_test@4720; https_connection_retry_test@4722; https_chunk_out_test@4724; https_filter_chunk_out_test@4726; https_stream_out_test@4728; https_connection_fail_test@4730; https_write_during_read_test@4732; https_connection_test@4734; https_persist_connection_test@4736; testcase_t@4740; testcase_t@4842
+Dependencies: util-internal.h@27; winsock2.h@30; ws2tcpip.h@31; windows.h@32; event2/event-config.h@35; sys/types.h@37; sys/stat.h@38; sys/time.h@40; sys/queue.h@42; sys/socket.h@44; signal.h@45; unistd.h@46; netdb.h@47; fcntl.h@49; stdlib.h@50; stdio.h@51; string.h@52; errno.h@53; event2/dns.h@55; event2/event.h@57; event2/http.h@58; event2/buffer.h@59; event2/bufferevent.h@60; event2/bufferevent_ssl.h@61; event2/util.h@62; event2/listener.h@63; log-internal.h@64; http-internal.h@65; regress.h@66; regress_testutils.h@67
+
+`ipc/chromium/src/third_party/libevent/test/regress_iocp.c` | `17b385241fa1fac04f3b48d5dce968c03f4ea274` | 8993 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: count_init@62; count_free@75; count_incr@82; count_wait_for@91; timeval@93; dummy_overlapped@113; event_overlapped@114; dummy_cb@122; dummy_overlapped@124; pair_is_in@139; test_iocp_port@155; event_iocp_port@157; dummy_overlapped@158; evbuffer@211; test_iocp_evbuffer@236; event_overlapped@238; basic_test_data@239; event_iocp_port@240; evbuffer@241; evbuffer_chain@242; async_readcb@297; test_iocp_bufferevent_async@305; basic_test_data@307; event_iocp_port@308; bufferevent@309; testcase_t@343
+Dependencies: stdlib.h@27; string.h@28; event2/event.h@29; event2/thread.h@30; event2/buffer.h@31; event2/buffer_compat.h@32; event2/bufferevent.h@33; winsock2.h@35; ws2tcpip.h@36; regress.h@38; tinytest.h@39; tinytest_macros.h@40; windows.h@43; winsock2.h@44; iocp-internal.h@47; evbuffer-internal.h@48; evthread-internal.h@49; sys/queue.h@52; event2/event_struct.h@53; event-internal.h@54
+
+`ipc/chromium/src/third_party/libevent/test/regress_listener.c` | `871da4c62ce927e50bbef92e487ca47f2ef3c5dc` | 9920 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: sockaddr@59; regress_pick_a_port@71; basic_test_data@73; event_base@74; evconnlistener@75; sockaddr_in@76; sockaddr_storage@78; sockaddr_in@79; errorcb@148; regress_listener_error@156; basic_test_data@158; event_base@159; evconnlistener@160; sockaddr@191; regress_listener_close_accepted_fd@202; basic_test_data@204; event_base@205; evconnlistener@206; sockaddr_in@207; sockaddr_storage@208; regress_listener_immediate_close@235; basic_test_data@237; event_base@238; evconnlistener@239; sockaddr_in@240; sockaddr_storage@241; regress_listener_error_unlock@274; basic_test_data@276; event_base@277; evconnlistener@278; rlimit@290; testcase_t@307; testcase_t@338
+Dependencies: util-internal.h@26; winsock2.h@29; windows.h@30; sys/types.h@33; sys/socket.h@36; netinet/in.h@37; arpa/inet.h@39; unistd.h@41; sys/resource.h@44; string.h@47; event2/listener.h@49; event2/event.h@50; event2/util.h@51; regress.h@53; tinytest.h@54; tinytest_macros.h@55
+
+`ipc/chromium/src/third_party/libevent/test/regress_main.c` | `2be1c80a98ca9ed67e6feecdfabee9036e176fdb` | 13680 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: evutil_weakrand_state@99; timeval_msec_diff@102; dnslogcb@124; regress_make_tmpfile@132; regress_fork@184; ignore_log_cb@195; move_pthread_to_realtime_scheduling_class@204; thread_setup@229; thread_setup@234; basic_test_setup@239; event_base@241; basic_test_data@243; basic_test_cleanup@331; basic_test_data@333; implementing@369; legacy_test_setup@374; basic_test_data@376; run_legacy_test_fn@391; basic_test_data@393; legacy_test_cleanup@412; testcase_t@427; testgroup_t@433; testlist_alias_t@475; main@485
+Dependencies: util-internal.h@27; winsock2.h@30; windows.h@31; io.h@32; fcntl.h@33; mach/mach.h@38; mach/mach_time.h@41; vproc.h@48; event2/event-config.h@52; sys/types.h@55; sys/stat.h@56; sys/time.h@58; sys/queue.h@60; signal.h@61; errno.h@62; sys/types.h@65; sys/stat.h@67; sys/socket.h@71; sys/wait.h@72; signal.h@73; unistd.h@74; netdb.h@75; stdlib.h@78; stdio.h@79; string.h@80; assert.h@81; event2/util.h@83; event2/event.h@84; event2/event_compat.h@85; event2/dns.h@86; event2/dns_compat.h@87; event2/thread.h@88; event2/event-config.h@90; regress.h@91; regress_thread.h@92; tinytest.h@93; tinytest_macros.h@94; ../iocp-internal.h@95; ../event-internal.h@96; ../evthread-internal.h@97
+
+`ipc/chromium/src/third_party/libevent/test/regress_minheap.c` | `05db32e26f4de7420ea8d9dd60392e2acc224279` | 2988 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: set_random_timeout@36; check_heap@44; test_heap_randomized@55; min_heap@57; event@58; event@59; testcase_t@96
+Dependencies: ../minheap-internal.h@26; stdlib.h@28; event2/event_struct.h@29; tinytest.h@31; tinytest_macros.h@32; regress.h@33
+
+`ipc/chromium/src/third_party/libevent/test/regress_rpc.c` | `87a7efa12fc3b25e1f99b92f96ae8efc57870bf6` | 20957 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: evhttp@75; http_setup@76; evhttp@78; evhttp_bound_socket@80; MessageCb@107; kill@109; evhttp_request@112; NeverReplyCb@130; rpc_setup@137; evhttp@140; evrpc_base@141; rpc_teardown@158; rpc_postrequest_failure@167; rpc_basic_test@184; evhttp@187; evrpc_base@188; evhttp_connection@189; evhttp_request@190; rpc_postrequest_done@230; kill@232; rpc_basic_message@253; evhttp@256; evrpc_base@257; evhttp_connection@258; evhttp_request@259; msg@260; evrpc_pool@307; rpc_pool_with_connection@308; evhttp_connection@310; evrpc_pool@311; msg@326; evhttp_request@332; msg@365; evbuffer@397; evbuffer@412; evbuffer@423; rpc_basic_client@445; evhttp@448; evrpc_base@449; evrpc_pool@450; msg@451; kill@452; evrpc_request_wrapper@499; rpc_basic_queued_client@531; evhttp@534; evrpc_base@535; evrpc_pool@536; msg@537; kill@538; msg@581; rpc_hook_ctx_@598; rpc_hook_pause_cb@606; rpc_hook_ctx_@608; rpc_hook_ctx_@618; timeval@619; rpc_basic_client_with_pause@631; evhttp@634; evrpc_base@635; evrpc_pool@636; msg@637; kill@638; rpc_client_timeout@683; evhttp@686; evrpc_base@687; evrpc_pool@688; msg@689; kill@690; rpc_test@734; msg@736; kill@737; run@738; evbuffer@739; timeval@740; EVTAG_ARRAY_GET@835; strcmp@840; rpc_invalid_type@883; evhttp@886; evrpc_base@887; evhttp_connection@888; evhttp_request@889; testcase_t@941
+Dependencies: winsock2.h@32; windows.h@33; event2/event-config.h@36; sys/types.h@38; sys/stat.h@39; sys/time.h@41; sys/queue.h@43; sys/socket.h@45; signal.h@46; unistd.h@47; netdb.h@48; fcntl.h@50; stdlib.h@51; stdio.h@52; string.h@53; errno.h@54; assert.h@55; event2/buffer.h@57; event2/event.h@58; event2/event_compat.h@59; event2/http.h@60; event2/http_compat.h@61; event2/http_struct.h@62; event2/rpc.h@63; event2/rpc_struct.h@64; event2/tag.h@65; log-internal.h@66; regress.gen.h@68; regress.h@70; regress_testutils.h@71
+
+`ipc/chromium/src/third_party/libevent/test/regress_ssl.c` | `e7c4023e0b95244c4b572a98969c80a8e7337a8c` | 31212 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: ssl_getkey@102; ssl_getcert@121; get_ssl_ctx@168; event_base@194; init_ssl@199; ssl_test_setup@216; ssl_test_cleanup@231; regress_openssl_type@266; bufferevent_openssl_check_fd@288; bufferevent_openssl_check_freed@302; free_on_cb@312; respond_to_number@319; evbuffer@321; regress_openssl_type@325; done_writing_cb@353; evbuffer@355; eventcb@364; regress_openssl_type@367; event_base@429; regress_openssl_type@431; regress_bufferevent_openssl@458; basic_test_data@460; bufferevent@462; bufferevent@465; regress_openssl_type@468; timeval@545; acceptcb_deferred@572; bufferevent@574; sockaddr@579; basic_test_data@581; bufferevent@582; regress_openssl_type@583; timeval@600; rwcount@615; bio_rwcount_new@622; bio_rwcount_free@629; bio_rwcount_read@641; rwcount@643; bio_rwcount_write@652; rwcount@654; bio_rwcount_ctrl@663; rwcount@665; bio_rwcount_puts@691; BIO_s_rwcount@699; BIO_new_rwcount@715; regress_bufferevent_openssl_connect@727; basic_test_data@729; event_base@731; evconnlistener@733; bufferevent@734; sockaddr_in@735; sockaddr_storage@736; rwcount@739; regress_openssl_type@740; wm_context@799; evbuffer@803; bufferevent@808; wm_context@809; wm_transfer@812; wm_context@814; evbuffer@815; evbuffer@816; wm_eventcb@845; wm_context@847; sockaddr@857; wm_context@859; bufferevent@860; event_base@861; regress_bufferevent_openssl_wm@882; basic_test_data@884; event_base@885; evconnlistener@887; bufferevent@888; sockaddr_in@889; sockaddr_storage@890; regress_openssl_type@891; wm_context@896; testcase_t@991
+Dependencies: winsock2.h@33; windows.h@34; util-internal.h@37; sys/types.h@40; sys/socket.h@41; netinet/in.h@42; event2/util.h@45; event2/event.h@46; event2/bufferevent_ssl.h@47; event2/bufferevent_struct.h@48; event2/buffer.h@49; event2/listener.h@50; regress.h@52; tinytest.h@53; tinytest_macros.h@54; openssl/err.h@56; openssl/pem.h@57; openssl-compat.h@58; string.h@60; io.h@62; unistd.h@66
+
+`ipc/chromium/src/third_party/libevent/test/regress_testutils.c` | `b0ce7dbba2a6369a6a6062857ed7bbd5a282f8cd` | 6526 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: evdns_server_port@73; regress_get_socket_port@78; sockaddr_storage@80; evdns_server_port@92; evdns_server_port@99; sockaddr_in@101; regress_clean_dnsserver@130; strtolower@142; regress_dns_server_cb@150; regress_dns_server_table@152; in_addr@194; in6_addr@201; regress_dns_server_table@218; sockaddr@227
+Dependencies: ../util-internal.h@26; winsock2.h@29; windows.h@30; ws2tcpip.h@31; event2/event-config.h@34; sys/types.h@36; sys/stat.h@37; sys/time.h@39; sys/queue.h@41; sys/socket.h@43; signal.h@44; netinet/in.h@45; arpa/inet.h@46; unistd.h@47; netinet/in6.h@50; netdb.h@53; fcntl.h@55; stdlib.h@56; stdio.h@57; string.h@58; errno.h@59; event2/dns.h@61; event2/dns_struct.h@62; event2/event.h@63; event2/event_compat.h@64; event2/util.h@65; event2/listener.h@66; event2/bufferevent.h@67; log-internal.h@68; regress.h@69; regress_testutils.h@70
+
+`ipc/chromium/src/third_party/libevent/test/regress_testutils.h` | `040516a5858ef2bef29f6d34e3bcd217041f4ce7` | 2596 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: regress_dns_server_table@32; evdns_server_port@40; evdns_server_request@52; regress_dns_server_table@56; evconnlistener@61; sockaddr@62; sockaddr@64
+Dependencies: event2/dns.h@30
+
+`ipc/chromium/src/third_party/libevent/test/regress_thread.c` | `1e0ce41ff95e3afc40fb99eb1a2732816caa2cf1` | 15033 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: cond_wait@69; wake_all_timeout@75; cond_wait@77; wake_one_timeout@85; cond_wait@87; basic_thread@99; cond_wait@101; event_base@102; event@103; timeval@113; sigchld_cb@147; timeval@149; event_base@150; notify_fd_cb@160; thread_basic@167; event@170; timeval@171; basic_test_data@173; event_base@174; event@176; event@177; alerted_record@260; cond_wait@261; timeval@262; timeval@263; wait_for_condition@268; alerted_record@270; thread_conditions_simple@290; timeval@292; alerted_record@293; cond_wait@295; timeval@297; event@298; event@299; basic_test_data@300; event_base@301; timeval@351; SLEEP_MS@393; timeval@395; deferred_test_data@401; event_callback@402; event_base@403; timeval@406; timeval@407; deferred_test_data@410; deferred_callback@413; load_deferred_queue@420; deferred_test_data@422; timer_callback@436; start_threads_callback@442; thread_deferred_cb_skew@453; timeval@455; event_base@456; event_config@457; timeval@458; event@498; timeval@499; event_base@500; note_time_cb@502; register_events_subthread@510; timeval@512; thread_no_events@529; basic_test_data@532; timeval@533; timeval@550; testcase_t@571
+Dependencies: util-internal.h@26; event2/event-config.h@31; sys/types.h@33; stdio.h@34; stdlib.h@35; string.h@36; unistd.h@38; sys/wait.h@41; pthread.h@45; process.h@47; assert.h@49; unistd.h@51; time.h@53; sys/queue.h@55; event2/event.h@57; event2/event_struct.h@58; event2/thread.h@59; event2/util.h@60; evthread-internal.h@61; event-internal.h@62; defer-internal.h@63; regress.h@64; tinytest_macros.h@65; time-internal.h@66; regress_thread.h@67
+
+`ipc/chromium/src/third_party/libevent/test/regress_thread.h` | `a954fefa5611a87a90b0899f2a72f6be9f33528a` | 2532 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Dependencies: pthread.h@42
+
+`ipc/chromium/src/third_party/libevent/test/regress_util.c` | `fd149b3022f374b48bd421409e6568b9388993db` | 43587 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: entry_status@69; ipv4_entry@72; entry_status@75; ipv6_entry@86; entry_status@89; regress_ipv4_parse@117; ipv4_entry@122; in_addr@123; regress_ipv6_parse@162; ipv6_entry@169; in6_addr@170; ipv6_entry_scope@214; entry_status@218; regress_ipv6_parse_scope@228; ipv6_entry_scope@235; in6_addr@236; sa_port_ent@273; regress_sockaddr_port_parse@293; sockaddr_storage@295; sa_port_ent@299; sockaddr_in@312; sockaddr_in6@328; regress_sockaddr_port_format@349; sockaddr_storage@351; sa_pred_ent@384; test_evutil_sockaddr_predicates@404; sockaddr_storage@406; sa_pred_ent@410; test_evutil_strtoll@429; test_evutil_snprintf@445; test_evutil_casecmp@480; test_evutil_rtrim@501; logfn@541; fatalfn@555; errx_fn@589; err_fn@595; sock_err_fn@602; test_evutil_log@615; test_evutil_strlcpy@706; example_struct@725; test_evutil_upcast@732; example_struct@734; test_evutil_integers@750; evutil_addrinfo@849; ai_find_by_family@850; evutil_addrinfo@860; ai_find_by_protocol@861; sockaddr_storage@876; sockaddr_in@898; sockaddr_in6@906; test_evutil_rand@929; evutil_weakrand_state@935; test_EVUTIL_IS_@990; test_evutil_getaddrinfo@1000; evutil_addrinfo@1002; evutil_addrinfo@1003; test_evutil_getaddrinfo_live@1136; evutil_addrinfo@1138; evutil_addrinfo@1139; sockaddr_in6@1141; sockaddr_in@1142; test_evutil_getaddrinfo_AI_ADDRCONFIG@1196; evutil_addrinfo@1198; evutil_addrinfo@1199; test_evutil_loadsyslib@1232; test_event_malloc@1248; test_event_calloc@1274; test_event_strdup@1320; test_evutil_usleep@1359; timeval@1361; test_evutil_monotonic_res@1387; basic_test_data@1394; evutil_monotonic_timer@1395; timeval@1398; timeval@1435; test_evutil_monotonic_prc@1449; basic_test_data@1451; evutil_monotonic_timer@1452; timeval@1455; timeval@1477; create_tm_from_unix_epoch@1492; tm@1495; date_rfc1123_case@1506; test_evutil_date_rfc1123@1539; tm@1541; date_rfc1123_case@1554; test_evutil_v4addr_is_local@1569; sockaddr_in@1571; test_evutil_v6addr_is_local@1605; sockaddr_in6@1607; in6_addr@1608; in6_addr@1609; testcase_t@1645
+Dependencies: ../util-internal.h@30; winsock2.h@33; windows.h@34; ws2tcpip.h@35; event2/event-config.h@38; sys/types.h@40; sys/socket.h@43; netinet/in.h@44; arpa/inet.h@45; unistd.h@46; netinet/in6.h@49; sys/wait.h@52; signal.h@54; stdio.h@55; stdlib.h@56; string.h@57; event2/event.h@59; event2/util.h@60; ../ipv6-internal.h@61; ../log-internal.h@62; ../strlcpy-internal.h@63; ../mm-internal.h@64; ../time-internal.h@65; regress.h@67
+
+`ipc/chromium/src/third_party/libevent/test/regress_zlib.c` | `5fe774913e26159cb06201c27c82fcd66681f87c` | 8801 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: zlib_deflate_free@94; zlib_inflate_free@103; getstate@112; bufferevent_filter_result@130; evbuffer_iovec@134; evbuffer_iovec@135; bufferevent_filter_result@184; evbuffer_iovec@188; evbuffer_iovec@189; readcb@243; evbuffer@246; writecb@263; errorcb@271; test_bufferevent_zlib@277; bufferevent@279
+Dependencies: winsock2.h@31; windows.h@32; event2/event-config.h@35; sys/types.h@37; sys/socket.h@39; sys/wait.h@40; unistd.h@41; netdb.h@42; signal.h@44; stdio.h@45; stdlib.h@46; string.h@47; assert.h@49; errno.h@50; event2/util.h@52; event2/event.h@53; event2/event_compat.h@54; event2/buffer.h@55; event2/bufferevent.h@56; regress.h@58; mm-internal.h@59; zlib.h@81
+
+`ipc/chromium/src/third_party/libevent/test/rpcgen_wrapper.sh` | `fe582d57bd33ef1ae8431409882a4422d35830fc` | 1331 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`ipc/chromium/src/third_party/libevent/test/test-changelist.c` | `fd1a17f5bd592feaf0b5d68bd42fc9fbe0b62889` | 5907 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: cpu_usage_timer@54; timeval@62; start_cpu_usage_timer@65; filetime_to_100nsec@82; filetime_diff@91; timeval@114; write_cb@138; timeout_cb@154; main@162; event@164; event@165; event_base@166; timeval@169; cpu_usage_timer@170
+Dependencies: event2/event-config.h@27; winsock2.h@30; windows.h@31; unistd.h@33; sys/types.h@35; sys/stat.h@36; sys/time.h@38; sys/socket.h@42; fcntl.h@44; stdlib.h@45; stdio.h@46; string.h@47; errno.h@48; event2/event.h@50; event2/util.h@51; time.h@52
+
+`ipc/chromium/src/third_party/libevent/test/test-closed.c` | `9e6050408d6411b4bde563f28ed7dd6d4935732e` | 3335 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: timeval@52; closed_cb@55; main@72; event_base@74; event_config@75; event@76
+Dependencies: ../util-internal.h@27; event2/event-config.h@28; winsock2.h@31; unistd.h@33; sys/types.h@35; sys/stat.h@36; sys/time.h@38; sys/socket.h@41; fcntl.h@43; stdlib.h@44; stdio.h@45; string.h@46; errno.h@47; event.h@49; evutil.h@50
+
+`ipc/chromium/src/third_party/libevent/test/test-dumpevents.c` | `1c272d4c01602ff67378ef8a910f16a5f05dc409` | 5698 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: sock_perror@41; callback1@52; callback2@56; main@67; event@71; timeval@74; timeval@75; event_base@78; timeval@79; evutil_make_internal_pipe_@97
+Dependencies: util-internal.h@26; event2/event-config.h@27; winsock2.h@30; windows.h@31; unistd.h@33; stdio.h@36; event2/event.h@37; signal.h@38
+
+`ipc/chromium/src/third_party/libevent/test/test-eof.c` | `de2fd88b991eed7f05305f44104440568355e366` | 3105 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: timeval@54; read_cb@57; main@82; event@84
+Dependencies: ../util-internal.h@27; event2/event-config.h@28; winsock2.h@31; unistd.h@33; sys/types.h@35; sys/stat.h@36; sys/time.h@38; sys/socket.h@41; fcntl.h@43; stdlib.h@44; stdio.h@45; string.h@46; errno.h@47; event.h@49; evutil.h@50
+
+`ipc/chromium/src/third_party/libevent/test/test-fdleak.c` | `a1fb4ed13bd28e34cf3fb3703f01febc194a6813` | 7012 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: sockaddr_in@60; my_perror@68; server_read_cb@82; server_event_cb@93; sockaddr@109; event_base@111; bufferevent@112; start_loop@120; event_base@122; evconnlistener@123; sockaddr_storage@124; client_read_cb@173; event_base@176; client_event_cb@193; start_client@208; bufferevent@210; sizeof@215; main@223; rlimit@228
+Dependencies: event2/event-config.h@27; windows.h@31; string.h@33; stdlib.h@34; errno.h@35; sys/time.h@37; sys/resource.h@40; netinet/in.h@43; event2/event.h@46; event2/bufferevent.h@47; event2/buffer.h@48; event2/listener.h@49
+
+`ipc/chromium/src/third_party/libevent/test/test-init.c` | `aea49ee9428843a8ca28004c83d08a36a99b8c2c` | 2148 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: main@49
+Dependencies: event2/event-config.h@27; sys/types.h@29; sys/stat.h@30; sys/time.h@32; sys/socket.h@35; fcntl.h@37; stdlib.h@38; stdio.h@39; string.h@40; unistd.h@42; errno.h@44; event.h@46
+
+`ipc/chromium/src/third_party/libevent/test/test-ratelim.c` | `34112e39e14d16b3d08e62e07baea754e3bb7099` | 19267 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: evutil_weakrand_state@57; timeval@78; ev_token_bucket_cfg@80; ev_token_bucket_cfg@81; bufferevent_rate_limit_group@82; client_state@85; timeval@98; bufferevent@121; client_state@122; bufferevent_rate_limit_group@123; loud_writecb@128; client_state@130; evbuffer@131; discard_readcb@142; client_state@144; evbuffer@145; write_on_connectedcb@152; echo_readcb@162; evbuffer@164; evbuffer@165; echo_writecb@173; evbuffer@175; echo_eventcb@181; sockaddr@191; event_base@193; bufferevent@195; event@200; check_bucket_levels_cb@215; bufferevent@217; check_group_bucket_levels_cb@245; group_drain_cb@257; timer_bias_cb@264; event@266; timeval@267; timeval@268; timer_bias_calculate@280; event_config@282; event_base@283; event@284; timeval@285; test_ratelimiting@322; event_base@324; sockaddr_in@325; evconnlistener@326; sockaddr_storage@328; timeval@333; event_config@340; event@341; event@342; fabs@525; fabs@537; sqrt@547; option@559; handle_option@581; usage@610; main@628; timeval@674
+Dependencies: ../util-internal.h@26; stdio.h@28; stdlib.h@29; string.h@30; assert.h@31; math.h@32; winsock2.h@35; ws2tcpip.h@36; sys/socket.h@38; netinet/in.h@39; arpa/inet.h@41; signal.h@44; event2/bufferevent.h@46; event2/buffer.h@47; event2/event.h@48; event2/util.h@49; event2/listener.h@50; event2/thread.h@51
+
+`ipc/chromium/src/third_party/libevent/test/test-ratelim.sh` | `b5e0ca62a920df77b67f343814bede071c5a0229` | 1671 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`ipc/chromium/src/third_party/libevent/test/test-time.c` | `a8b384626385444f7c8bafa31c9fc723028b0eb3` | 3224 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: event@50; evutil_weakrand_state@52; rand_int@55; time_cb@61; timeval@63; main@82; event_base@84; timeval@85
+Dependencies: event2/event-config.h@27; util-internal.h@28; sys/types.h@30; sys/stat.h@31; fcntl.h@32; stdlib.h@33; stdio.h@34; string.h@35; unistd.h@37; sys/time.h@38; errno.h@40; event2/event.h@42; event2/event_compat.h@43; event2/event_struct.h@44
+
+`ipc/chromium/src/third_party/libevent/test/test-weof.c` | `68e7cd45792dcc87a83f9a6a0f3769ae58e23212` | 3074 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: write_cb@60; main@81; event@83
+Dependencies: ../util-internal.h@27; event2/event-config.h@28; winsock2.h@31; unistd.h@33; sys/types.h@35; sys/stat.h@36; sys/time.h@38; sys/socket.h@41; fcntl.h@43; stdlib.h@44; stdio.h@45; string.h@46; signal.h@47; errno.h@48; event2/event.h@50; event2/event_struct.h@51; event2/event_compat.h@52; event2/util.h@53
+
+`ipc/chromium/src/third_party/libevent/test/test.sh` | `f91a8b0445985f461315aa14a74605ccf835207f` | 3784 bytes | imported-path,test-path,data-or-other | UTF-8 | mode 100755
+
+`ipc/chromium/src/third_party/libevent/test/tinytest.c` | `85dfe74a720e676c80b590cb75d7aa5aced81d97` | 15194 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: outcome@79; outcome@80; timeout_thread_args@93; timeout_thread_proc_@99; timeout_thread_args@101; outcome@106; testcase_run_in_thread_@107; timeout_thread_args@114; outcome@153; testcase_run_bare_@154; outcome@193; outcome@315; tinytest_set_flag_@364; testcase_t@374; usage@399; process_test_alias@414; process_test_option@434; tinytest_set_aliases@461; tinytest_main@467; testgroup_t@525; testcase_t@527; tinytest_get_verbosity_@569; tinytest_set_test_failed_@575; tinytest_set_test_skipped_@586; tinytest_format_hex_@593
+Dependencies: tinytest_local.h@26; stdio.h@29; stdlib.h@30; string.h@31; assert.h@32; windows.h@37; sys/types.h@39; sys/wait.h@40; unistd.h@41; vproc.h@49; tinytest.h@59; tinytest_macros.h@60
+
+`ipc/chromium/src/third_party/libevent/test/tinytest.h` | `d321dd4675423a778f2e3d836f95dd70bd8d9804` | 4450 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: void@43; testcase_t@45; testcase_setup_t@48; testcase_t@56; testgroup_t@66; testcase_t@68; testlist_alias_t@72
+
+`ipc/chromium/src/third_party/libevent/test/tinytest_demo.c` | `123855fff7fe8233c314d19df37e31ef876794e1` | 8480 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: test_strcmp@50; data_buffer@99; setup_data_buffer@111; data_buffer@113; clean_data_buffer@126; data_buffer@128; testcase_setup_t@137; test_memcpy@144; data_buffer@147; test_timeout@175; test_timeout_retry@196; testcase_t@227; testgroup_t@251; testlist_alias_t@263; main@273
+Dependencies: tinytest.h@31; tinytest_macros.h@32; stdio.h@34; stdlib.h@35; string.h@36; errno.h@37; time.h@38; windows.h@40; unistd.h@42
+
+`ipc/chromium/src/third_party/libevent/test/tinytest_local.h` | `87ec2fa67e76980406a383b81659fb109b5bf506` | 170 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Dependencies: util-internal.h@2; winsock2.h@4; event2/util.h@7
+
+`ipc/chromium/src/third_party/libevent/test/tinytest_macros.h` | `e01f5d56cb3370e6c9616983eb477edd18e121e9` | 7862 bytes | imported-path,test-path,source | UTF-8 | mode 100644
+Declarations: val1_@116; val2_@117; value_@123
+
+`ipc/chromium/src/third_party/libevent/time-internal.h` | `e79e6a528dee950accdf71ed432175a59fdc72d9` | 3134 bytes | imported-path,source | UTF-8 | mode 100644
+Declarations: ULONGLONG@61; evutil_monotonic_timer@64; mach_timebase_info@67; timeval@86; timeval@87
+Dependencies: event2/event-config.h@30; evconfig-private.h@31; mach/mach_time.h@35; time.h@38; event2/util.h@40
+
+`ipc/chromium/src/third_party/libevent/util-internal.h` | `fb87a18ea9444868ec89760ea027dd2d8d307f6c` | 17829 bytes | imported-path,source | UTF-8 | mode 100644
+Declarations: type@180; type@216; subtype@277; supertype@279; fn@283; subtype@284; evutil_weakrand_state@315; sockaddr_storage@390; sockaddr@392; sockaddr_in@393; sockaddr_in6@394; evdns_base@406; evdns_getaddrinfo_request@407; struct@408; evdns_base@409; void@415; evdns_getaddrinfo_request@416; evutil_addrinfo@421; evutil_addrinfo@424; evutil_addrinfo@425; evutil_addrinfo@430; evdns_getaddrinfo_request@432; evdns_base@433; in_addr@542; in6_addr@543
+Dependencies: event2/event-config.h@29; evconfig-private.h@30; errno.h@32; log-internal.h@35; stdio.h@36; stdlib.h@37; sys/socket.h@39; sys/eventfd.h@42; event2/util.h@44; time-internal.h@46; ipv6-internal.h@47
+
+`ipc/chromium/src/third_party/libevent/whatsnew-2.0.txt` | `3561fcb94c6f6bd2e7ab93ebd87c7b81ae0cec26` | 26344 bytes | imported-path,data-or-other | UTF-8 | mode 100644
+
+`ipc/chromium/src/third_party/libevent/whatsnew-2.1.txt` | `c1f4df8f7878052812f457a9492310302e691ac5` | 33387 bytes | imported-path,data-or-other | UTF-8 | mode 100644
+
+`ipc/chromium/src/third_party/libevent/win32select.c` | `d005b587d4512bae351cc0f05c58826d360c89b0` | 10626 bytes | imported-path,source | UTF-8 | mode 100644
+Declarations: event_list@56; event_list@57; win_fd_set@59; idx_info@67; win32op@72; win_fd_set@75; win_fd_set@76; win_fd_set@77; win_fd_set@78; win_fd_set@79; eventop@89; grow_fd_sets@104; do_fd_set@123; win_fd_set@125; win32op@149; win_fd_set@152; idx_info@163; win32_init@181; win32op@183; win32op@223; idx_info@224; win32op@248; idx_info@249; fd_set_copy@262; dump_fd_set@269; win32_dispatch@280; win32op@282; win32_dealloc@368; win32op@370
+Dependencies: event2/event-config.h@28; evconfig-private.h@29; winsock2.h@33; windows.h@34; sys/types.h@35; sys/queue.h@36; limits.h@37; signal.h@38; stdio.h@39; stdlib.h@40; string.h@41; errno.h@42; event2/util.h@44; util-internal.h@45; log-internal.h@46; event2/event.h@47; event-internal.h@48; evmap-internal.h@49; event2/thread.h@50; evthread-internal.h@51; time-internal.h@52
+
+`ipc/chromium/src/third_party/libeventcommon.mozbuild` | `9b0b9373ac65febfe9e19a6710d98c6c8ba15b65` | 869 bytes | imported-path,build-registration | UTF-8 | mode 100644
+
+`ipc/chromium/src/third_party/moz.build` | `fdeb0b2e689e1070b3058fe24a3c19f5abbeae21` | 1736 bytes | imported-path,build-registration | UTF-8 | mode 100644
+
+`ipc/docs/index.md` | `1af7f5b0bf7c035fa422e8591c99f58e10ec0f1a` | 617 bytes | documentation | UTF-8 | mode 100644
+
+`ipc/docs/ipdl.md` | `0ae0b5aa92058adf40250b7efa7d6045ec94d2fd` | 86442 bytes | documentation | UTF-8 | mode 100644
+
+`ipc/docs/proc_shutdown.md` | `6654495888a335c44f871d00b9a875b2af0e85d1` | 18751 bytes | documentation | UTF-8 | mode 100644
+
+`ipc/docs/processes.md` | `294cdfd81a3fbbb593a14fe56e817be2dfa22c13` | 61512 bytes | documentation | UTF-8 | mode 100644
+
+`ipc/docs/utility_process.md` | `40dce2696909863fe919517aa9e82e0b6a7c3592` | 3566 bytes | documentation | UTF-8 | mode 100644
+
+`ipc/glue/AsyncBlockers.h` | `636dccbf79c0c70fec15c32d9f1be22a5327994f` | 2747 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@14; AsyncBlockers@23; mPromise@27; Register@28; Deregister@32; WaitUntilClear@38; MaybeResolve@66
+Dependencies: mozilla/MozPromise.h@8; mozilla/ThreadSafety.h@9; nsTArray.h@10
+
+`ipc/glue/BackgroundChild.h` | `8cf72b401194c8d06f971e9d6d04654d7933484f` | 2860 bytes | source | UTF-8 | mode 100644
+Declarations: nsIEventTarget@10; mozilla@12; dom@13; BlobImpl@15; ContentChild@16; ContentParent@17; ContentProcess@18; ipc@22; PBackgroundChild@24; PBackgroundStarterChild@25; BackgroundChild@49
+Dependencies: mozilla/dom/ProcessIsolation.h@8
+
+`ipc/glue/BackgroundChildImpl.cpp` | `ba56312b3249897d6aac009f170fed53e143c3b8` | 12615 bytes | source | UTF-8 | mode 100644
+Declarations: TestChild@44; TestChild@49; mozilla@62; BackgroundChildImpl::ThreadLocal::ThreadLocal@81; BackgroundChildImpl::ThreadLocal::~ThreadLocal@86; BackgroundChildImpl::BackgroundChildImpl@95; BackgroundChildImpl::~BackgroundChildImpl@100; BackgroundChildImpl::ProcessingError@105; BackgroundChildImpl::ActorDestroy@137; BackgroundChildImpl::AllocPBackgroundIndexedDBUtilsChild@155; BackgroundChildImpl::AllocPTemporaryIPCBlobChild@260; BackgroundChildImpl::DeallocPFileCreatorChild@279; BackgroundChildImpl::AllocPCookieStoreChild@307; BackgroundChildImpl::DeallocPCookieStoreChild@312; BackgroundChildImpl::AllocPCamerasChild@323; BackgroundChildImpl::DeallocPCamerasChild@332; BackgroundChildImpl::AllocPServiceWorkerManagerChild@347; BackgroundChildImpl::AllocPCacheChild@365; BackgroundChildImpl::AllocPCacheStreamControlChild@370; BackgroundChildImpl::AllocPServiceWorkerContainerChild@382; TestChild::Recv__delete__@395
+Dependencies: BackgroundChildImpl.h@5; BroadcastChannelChild.h@7; CamerasChild.h@9; mozilla/Assertions.h@11; mozilla/SchedulerGroup.h@12; mozilla/dom/ClientManagerActors.h@13; mozilla/dom/FileCreatorChild.h@14; mozilla/dom/PBackgroundLSDatabaseChild.h@15; mozilla/dom/PBackgroundLSObserverChild.h@16; mozilla/dom/PBackgroundLSRequestChild.h@17; mozilla/dom/PBackgroundLSSimpleRequestChild.h@18; mozilla/dom/PBackgroundSDBConnectionChild.h@19; mozilla/dom/CookieStoreChild.h@20; mozilla/dom/PFileSystemRequestChild.h@21; mozilla/dom/PVsync.h@22; mozilla/dom/TemporaryIPCBlobChild.h@23; mozilla/dom/cache/ActorUtils.h@24; mozilla/dom/indexedDB/PBackgroundIndexedDBUtilsChild.h@25; mozilla/dom/indexedDB/ThreadLocal.h@26; mozilla/dom/quota/PQuotaChild.h@27; mozilla/dom/RemoteWorkerControllerChild.h@28; mozilla/dom/RemoteWorkerServiceChild.h@29; mozilla/dom/ServiceWorkerChild.h@30; mozilla/dom/SharedWorkerChild.h@31; mozilla/dom/StorageIPC.h@32; mozilla/dom/ServiceWorkerContainerChild.h@33; mozilla/dom/ServiceWorkerManagerChild.h@34; mozilla/ipc/PBackgroundTestChild.h@35; mozilla/net/PUDPSocketChild.h@36; mozilla/dom/network/UDPSocketChild.h@37; mozilla/dom/MIDIPortChild.h@38; mozilla/dom/MIDIManagerChild.h@39; nsID.h@40
+
+`ipc/glue/BackgroundChildImpl.h` | `42497d62eaa65db1a9d3b0ca4934ebf57b091098` | 5560 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@11; dom@12; IDBFileHandle@14; indexedDB@16; ThreadLocal@18; ipc@23; BackgroundChildImpl@27; ThreadLocal@29; BackgroundChildImpl@147
+Dependencies: mozilla/ipc/PBackgroundChild.h@8; mozilla/UniquePtr.h@9
+
+`ipc/glue/BackgroundImpl.cpp` | `73bd05c4c9372caaec649e2de60be0069c8a7feb` | 41780 bytes | source | UTF-8 | mode 100644
+Declarations: ChildImpl@77; AssertIsOnMainThread@83; ParentImpl@89; ShutdownObserver@95; MOZ_STACK_CLASS@97; mThread@103; GetBackgroundThread@157; IsOnBackgroundThread@163; AssertIsOnBackgroundThread@168; mActorDestroyed@215; SetLiveActorArray@227; ChildImpl@247; base@252; ShutdownObserver@254; ThreadLocalInfo@257; ThreadInfoWrapper@274; Startup@283; Shutdown@295; InitStarter@335; InitStarter@349; CloseForCurrentThread@381; GetOrCreateForCurrentThread@406; CloseStarter@485; AssertIsOnOwningThread@525; AssertActorDestroyed@538; SetActorAlive@555; ParentImpl@603; ShutdownObserver@605; ChildImpl@618; ShutdownObserver@620; mozilla@631; ipc@632; IsOnBackgroundThread@634; AssertIsOnBackgroundThread@638; BackgroundParent::GetBackgroundThread@650; BackgroundParent::GetChildID@675; BackgroundChild::Startup@726; BackgroundChild::GetForCurrentThread@729; BackgroundChild::GetOrCreateForCurrentThread@734; BackgroundChild::CloseForCurrentThread@739; BackgroundChild::InitContentStarter@744; BackgroundChildImpl::GetThreadLocalForCurrentThread@775; ParentImpl::IsOtherProcessActor@809; ParentImpl::GetChildID@826; ParentImpl::CreateBackgroundThread@908; ParentImpl::ShutdownBackgroundThread@972; ParentImpl::ShutdownTimerCallback@1015; ParentImpl::Destroy@1049; ParentImpl::MainThreadActorDestroy@1059; ParentImpl::ActorDestroy@1071; mCrossProcess@1121; BackgroundStarterParent::ActorDestroy@1169; ChildImpl::Startup@1188; ChildImpl::Shutdown@1221; ChildImpl::GetForCurrentThread@1230; ChildImpl::GetOrCreateForCurrentThread@1248; ChildImpl::CloseForCurrentThread@1257; ChildImpl::GetThreadLocalForCurrentThread@1266; ChildImpl::InitContentStarter@1290; ChildImpl::ThreadLocalDestructor@1295; ChildImpl::ActorDestroy@1310
+Dependencies: BackgroundChild.h@5; BackgroundParent.h@6; BackgroundChildImpl.h@8; BackgroundParentImpl.h@9; MainThreadUtils.h@10; base/process_util.h@11; base/task.h@12; FileDescriptor.h@13; GeckoProfiler.h@14; InputStreamUtils.h@15; mozilla/Assertions.h@16; mozilla/Atomics.h@17; mozilla/ClearOnShutdown.h@18; mozilla/DebugOnly.h@19; mozilla/MozPromise.h@20; mozilla/Services.h@21; mozilla/SpinEventLoopUntil.h@22; mozilla/StaticPtr.h@23; mozilla/dom/ContentChild.h@24; mozilla/dom/ContentParent.h@25; mozilla/dom/File.h@26; mozilla/dom/ProcessIsolation.h@27; mozilla/dom/WorkerPrivate.h@28; mozilla/dom/WorkerRef.h@29; mozilla/ipc/BackgroundStarterChild.h@30; mozilla/ipc/BackgroundStarterParent.h@31; mozilla/ipc/Endpoint.h@32; mozilla/ipc/PBackgroundStarter.h@33; mozilla/ipc/ProtocolTypes.h@34; nsCOMPtr.h@35; nsIEventTarget.h@36; nsIObserver.h@37; nsIObserverService.h@38; nsIRunnable.h@39; nsISupportsImpl.h@40; nsIThread.h@41; nsITimer.h@42; nsTArray.h@43; nsThreadUtils.h@44; nsTraceRefcnt.h@45; nsXULAppAPI.h@46; nsXPCOMPrivate.h@47; prthread.h@48
+
+`ipc/glue/BackgroundParent.h` | `278dbd9c0f9f6456c96e24eb40ce8ae863a55f02` | 4429 bytes | source | UTF-8 | mode 100644
+Declarations: already_AddRefed@18; mozilla@20; net@22; SocketProcessBridgeParent@24; SocketProcessParent@25; dom@29; BlobImpl@31; ContentParent@32; ipc@36; BackgroundStarterParent@38; PBackgroundParent@39; PBackgroundStarterParent@40; Endpoint@43; BackgroundParent@47; AssertIsOnBackgroundThread@126; AssertIsInMainProcess@130
+Dependencies: base/process.h@8; mozilla/dom/ContentParent.h@9; nsStringFwd.h@10; nsTArrayForwardDeclare.h@11; nsXULAppAPI.h@14
+
+`ipc/glue/BackgroundParentImpl.cpp` | `a56b4e4475e13f4b305a8c6d85b40f241a692fbb` | 52111 bytes | source | UTF-8 | mode 100644
+Declarations: TestParent@99; mozilla@113; BackgroundParentImpl::BackgroundParentImpl@119; BackgroundParentImpl::~BackgroundParentImpl@125; BackgroundParentImpl::ProcessingError@132; BackgroundParentImpl::ActorDestroy@161; BackgroundParentImpl::AllocPBackgroundTestParent@167; BackgroundParentImpl::RecvFlushPendingFileDeletions@242; BackgroundParentImpl::AllocPBackgroundSessionStorageServiceParent@458; BackgroundParent::GetLoadedOrigins@519; BackgroundParentImpl::AllocPIdleSchedulerParent@580; BackgroundParentImpl::AllocPTemporaryIPCBlobParent@689; BackgroundParentImpl::AllocPVsyncParent@707; BackgroundParentImpl::AllocPCamerasParent@719; BackgroundParentImpl::AllocPCookieStoreParent@855; BackgroundParentImpl::AllocPServiceWorkerManagerParent@876; BackgroundParentImpl::RecvShutdownServiceWorkerRegistrar@898; BackgroundParentImpl::AllocPQuotaParent@962; BackgroundParentImpl::RecvShutdownQuotaManager@969; BackgroundParentImpl::RecvShutdownBackgroundSessionStorageManagers@984; std::move@1043; std::move@1061; BackgroundParentImpl::AllocPGamepadEventChannelParent@1091; BackgroundParentImpl::AllocPGamepadTestChannelParent@1096; MLSTaskQueueShutdownTask@1218; BackgroundParentImpl::AllocPClientManagerParent@1300; BackgroundParentImpl::AllocPServiceWorkerContainerParent@1348; BackgroundParent::GetLoadedOrigins@1377; BackgroundParent::IsOtherProcessActor@1508; BackgroundParentImpl::AllocPFetchParent@1525; TestParent::ActorDestroy@1531
+Dependencies: BackgroundParentImpl.h@5; BroadcastChannelParent.h@7; CamerasParent.h@9; mozilla/Assertions.h@11; mozilla/RDDProcessManager.h@12; mozilla/ipc/UtilityProcessManager.h@13; mozilla/RemoteDecodeUtils.h@14; mozilla/RefPtr.h@15; mozilla/dom/BackgroundSessionStorageServiceParent.h@16; mozilla/dom/ClientManagerActors.h@17; mozilla/dom/ClientValidation.h@18; mozilla/dom/ContentParent.h@19; mozilla/dom/CookieStoreParent.h@20; mozilla/dom/DOMTypes.h@21; mozilla/dom/FetchParent.h@22; mozilla/dom/FileCreatorParent.h@23; mozilla/dom/FileSystemManagerParentFactory.h@24; mozilla/dom/FileSystemRequestParent.h@25; mozilla/dom/GamepadEventChannelParent.h@26; mozilla/dom/GamepadTestChannelParent.h@27; mozilla/dom/MIDIManagerParent.h@28; mozilla/dom/MIDIPlatformService.h@29; mozilla/dom/MIDIPortParent.h@30; mozilla/dom/MLSTransactionParent.h@31; mozilla/dom/ProcessIsolation.h@32; mozilla/dom/MessagePortParent.h@33; mozilla/dom/PGamepadEventChannelParent.h@34; mozilla/dom/PGamepadTestChannelParent.h@35; mozilla/dom/RemoteWorkerControllerParent.h@36; mozilla/dom/RemoteWorkerServiceParent.h@37; mozilla/dom/ReportingHeader.h@38; mozilla/dom/ServiceWorkerActors.h@39; mozilla/dom/ServiceWorkerContainerParent.h@40; mozilla/dom/ServiceWorkerManagerParent.h@41; mozilla/dom/ServiceWorkerParent.h@42; mozilla/dom/ServiceWorkerRegistrar.h@43; mozilla/dom/ServiceWorkerRegistrationParent.h@44; mozilla/dom/ServiceWorkerUtils.h@45; mozilla/dom/SessionStorageManager.h@46; mozilla/dom/SharedWorkerParent.h@47; mozilla/dom/StorageActivityService.h@48; mozilla/dom/StorageIPC.h@49; mozilla/dom/TemporaryIPCBlobParent.h@50; mozilla/dom/WebTransportParent.h@51; mozilla/dom/cache/ActorUtils.h@52; mozilla/dom/indexedDB/ActorsParent.h@53; mozilla/dom/locks/LockManagerParent.h@54; mozilla/dom/localstorage/ActorsParent.h@55; mozilla/dom/network/UDPSocketParent.h@56; mozilla/dom/notification/NotificationParent.h@57; mozilla/dom/quota/ActorsParent.h@58; mozilla/dom/quota/QuotaParent.h@59; mozilla/dom/simpledb/ActorsParent.h@60; mozilla/dom/cache/BoundStorageKeyParent.h@61; mozilla/dom/VsyncParent.h@62; mozilla/ipc/BackgroundParent.h@63; mozilla/ipc/BackgroundUtils.h@64; mozilla/ipc/Endpoint.h@65; mozilla/ipc/IdleSchedulerParent.h@66; mozilla/ipc/PBackgroundSharedTypes.h@67; mozilla/ipc/PBackgroundTestParent.h@68; mozilla/net/BackgroundDataBridgeParent.h@69; mozilla/net/HttpBackgroundChannelParent.h@70; nsIHttpChannelInternal.h@71; nsIPrincipal.h@72; nsProxyRelease.h@73; nsThreadUtils.h@74; nsXULAppAPI.h@75
+
+`ipc/glue/BackgroundParentImpl.h` | `c8587b5b5917b83d90a1660524de4f9fd1c62ede` | 14431 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; BackgroundParentImpl@14
+Dependencies: mozilla/ipc/PBackgroundParent.h@8
+
+`ipc/glue/BackgroundStarterChild.h` | `e62a53c8258ced20ba7ea1ae587b3807e2b9d556` | 1141 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@11; BackgroundStarterChild@13; mOtherProcInfo@19
+Dependencies: mozilla/ipc/PBackgroundStarterChild.h@8; mozilla/dom/ContentChild.h@9
+
+`ipc/glue/BackgroundStarterParent.h` | `9d7f18cb55e90d459d07c9b4d78ce6f448672d00` | 1548 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; BackgroundStarterParent@14
+Dependencies: mozilla/ipc/PBackgroundStarterParent.h@8; mozilla/dom/ContentParent.h@9; nsISupportsImpl.h@10
+
+`ipc/glue/BackgroundUtils.cpp` | `f81e68544e0f02fd7dfff835527528abc8722325` | 44289 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@40; ipc@42; StorageKeysEqual@159; CSPToCSPInfo@228; IsPrincipalInfoPrivate@360; BrowsingContext::Get@683
+Dependencies: BackgroundUtils.h@5; MainThreadUtils.h@7; mozilla/Assertions.h@8; mozilla/BasePrincipal.h@9; mozilla/ContentPrincipal.h@10; mozilla/NullPrincipal.h@11; mozilla/SystemPrincipal.h@12; mozilla/ipc/PBackgroundSharedTypes.h@13; mozilla/ipc/URIUtils.h@14; mozilla/net/CookieJarSettings.h@15; mozilla/net/InterceptionInfo.h@16; mozilla/net/NeckoChannelParams.h@17; ExpandedPrincipal.h@18; nsIContentPolicy.h@19; nsIScriptSecurityManager.h@20; nsIURI.h@21; nsNetUtil.h@22; mozilla/LoadInfo.h@23; nsContentUtils.h@24; nsString.h@25; nsTArray.h@26; mozilla/nsRedirectHistoryEntry.h@27; mozilla/dom/nsCSPUtils.h@28; mozilla/dom/nsCSPContext.h@29; mozilla/dom/BrowsingContext.h@30; mozilla/dom/CanonicalBrowsingContext.h@31; mozilla/dom/Document.h@32; mozilla/dom/PolicyContainer.h@33; mozilla/dom/WindowGlobalParent.h@34; mozilla/LoadInfo.h@35
+
+`ipc/glue/BackgroundUtils.h` | `50559ba1d10fe4136183ca410337c6d3c8303ee2` | 5779 bytes | source | UTF-8 | mode 100644
+Declarations: nsIContentSecurityPolicy@13; nsILoadInfo@14; nsINode@15; nsIPrincipal@16; nsIRedirectHistoryEntry@17; IPC@19; detail@21; OriginAttributesParamTraits@23; ParamType@24; Write@26; Read@32; ParamTraits@40; mozilla@45; dom@47; Document@48; net@51; ChildLoadInfoForwarderArgs@52; LoadInfoArgs@53; LoadInfo@54; ParentLoadInfoForwarderArgs@55; RedirectHistoryEntryInfo@56; ipc@59; ContentSecurityPolicy@61; CSPInfo@62; PrincipalInfo@63
+Dependencies: ipc/IPCMessageUtils.h@8; mozilla/OriginAttributes.h@9; nsCOMPtr.h@10; nscore.h@11
+
+`ipc/glue/BigBuffer.cpp` | `573ed683648a6d3bcff78557254b6fe27448e1ed` | 3590 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; mSize@14; mSize@21; BigBuffer::Data@23
+Dependencies: mozilla/ipc/BigBuffer.h@5; chrome/common/ipc_message_utils.h@7; nsDebug.h@8
+
+`ipc/glue/BigBuffer.h` | `09fd56a7cbb9235e0bf624f641ed99dbbaf33be6` | 4203 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@15; BigBuffer@17; TryAlloc@21; BigBuffer@32; mData@39; BigBuffer@51; BigBuffer@54; Adopt@60; Size@81; AsSpan@84; NoData@101; AllocBuffer@107; IPC@121; ParamTraits@124
+Dependencies: stdlib.h@8; nsDebug.h@9; mozilla/Maybe.h@10; mozilla/Span.h@11; mozilla/Variant.h@12; mozilla/ipc/SharedMemoryMapping.h@13
+
+`ipc/glue/ByteBuf.h` | `ae94e278b27a33513254d5fb220e184a8fd81342` | 1999 bytes | source | UTF-8 | mode 100644
+Declarations: IPC@16; ParamTraits@18; mozilla@21; ipc@23; ByteBuf@25; Allocate@29; ByteBuf@40; mData@43; mData@48; ByteBufFrom@70
+Dependencies: mozilla/Assertions.h@12; mozilla/Span.h@13; string.h@14
+
+`ipc/glue/ByteBufUtils.h` | `9d50db90e03a42af44ed65e51e8df210d903fbee` | 1985 bytes | source | UTF-8 | mode 100644
+Declarations: IPC@17; ParamTraits@20; mozilla@21; Write@25; Read@40
+Dependencies: mozilla/ipc/ByteBuf.h@12; mozilla/CheckedInt.h@13; mozilla/mozalloc_oom.h@14; ipc/IPCMessageUtils.h@15
+
+`ipc/glue/CrashReporterClient.cpp` | `17e655e460d52f69af76e62e81a5a80fa36374e3` | 2378 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@14; CrashReporterClient::CrashReporterClient@19; CrashReporterClient::~CrashReporterClient@23; CrashReporterClient::InitSingleton@28; CurrentNativeThreadId@37; CrashReporterClient::CreateInitArgs@46; CrashReporterClient::DestroySingleton@65; CrashReporterClient::GetSingleton@71
+Dependencies: CrashReporterClient.h@5; nsISupportsImpl.h@6; mozilla/toolkit/crashreporter/rust_minidump_writer_linux_ffi_generated.h@10
+
+`ipc/glue/CrashReporterClient.h` | `bde305696f1af96f5d24217f5cc14d5d580dbf7e` | 1310 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; CrashReporterClient@15; InitSingleton@23
+Dependencies: CrashReporter/CrashReporterInitArgs.h@8; mozilla/StaticMutex.h@9; mozilla/StaticPtr.h@10; nsExceptionHandler.h@11
+
+`ipc/glue/CrashReporterHelper.h` | `13f96643471962c1aba0a91ffd5a9e8d5bd1b5c9` | 4271 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@16; CrashReporterHelper@42; CrashReporterHelper@44; GenerateCrashReport@54; MaybeTerminateProcess@79; HandleOrphanedMinidump@97
+Dependencies: CrashReporterHost.h@8; mozilla/UniquePtr.h@9; nsIAppStartup.h@10; nsExceptionHandler.h@11; nsICrashService.h@12; nsPrintfCString.h@13; nsServiceManagerUtils.h@14
+
+`ipc/glue/CrashReporterHost.cpp` | `85ac4d824a2b332bdc387e66bfed42e38b41078f` | 8291 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@23; mFinalized@41; CrashReporterHost::~CrashReporterHost@55; CrashReporterHost::GenerateCrashReport@63; CrashReporterHost::TakeCrashedChildMinidump@73; CrashReporterHost::FinalizeCrashReport@98; CrashReporterHost::DeleteCrashReport@121
+Dependencies: CrashReporterHost.h@5; CrashReporter/CrashReporterInitArgs.h@6; mozilla/dom/Promise.h@7; mozilla/Sprintf.h@8; mozilla/SyncRunnable.h@9; mozilla/glean/IpcMetrics.h@10; nsServiceManagerUtils.h@11; nsICrashService.h@12; nsIDUtils.h@13; nsXULAppAPI.h@14; nsIFile.h@15; mozilla/toolkit/crashreporter/rust_minidump_writer_linux_ffi_generated.h@19; mozilla/GeckoProcessTypes.inc@175
+
+`ipc/glue/CrashReporterHost.h` | `57df84a80cf096165b4c2a1d4dca6657f0d78eab` | 4187 bytes | source | UTF-8 | mode 100644
+Declarations: CrashReporter@12; CrashReporterInitArgs@13; mozilla@16; mozilla@19; CrashReporter@21; CrashReporterHost@28; CrashReporter@29; HasMinidump@67; GetRawThreadId@86
+Dependencies: nsExceptionHandler.h@8; nsIFile.h@9; mozilla/ipc/GeckoChildProcessHost.h@10
+
+`ipc/glue/CrossProcessMutex.h` | `134398b0a6a1430c12b9d6eecd72526614fcbd68` | 3577 bytes | source | UTF-8 | mode 100644
+Declarations: IPC@20; ParamTraits@22; mozilla@36; mozilla@38; mozilla@40; uintptr_t@44; CrossProcessMutex@47; detail@115; detail@116
+Dependencies: base/process.h@8; mozilla/Mutex.h@9; mozilla/UniquePtrExtensions.h@12; pthread.h@15; mozilla/ipc/SharedMemoryMapping.h@16; mozilla/Atomics.h@17
+
+`ipc/glue/CrossProcessMutex_posix.cpp` | `2f1a8d5f12f004758ca0e9179125702f614efaab` | 2960 bytes | source | UTF-8 | mode 100644
+Declarations: MutexData@12; mozilla@19; InitMutex@21; mMutex@38; mMutex@65; CrossProcessMutex::~CrossProcessMutex@90; CrossProcessMutex::Lock@101; CrossProcessMutex::Unlock@106; CrossProcessMutex::CloneHandle@111
+Dependencies: CrossProcessMutex.h@5; mozilla/ipc/SharedMemoryHandle.h@6; nsDebug.h@7; nsISupportsImpl.h@8
+
+`ipc/glue/CrossProcessMutex_unimplemented.cpp` | `06ab24a9f75ed3775797bb5afade0d24ead699dc` | 1236 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@9; CrossProcessMutex::CrossProcessMutex@11; CrossProcessMutex::CrossProcessMutex@15; CrossProcessMutex::~CrossProcessMutex@19; CrossProcessMutex::Lock@25; CrossProcessMutex::Unlock@31; CrossProcessMutex::CloneHandle@37
+Dependencies: CrossProcessMutex.h@5; nsDebug.h@7
+
+`ipc/glue/CrossProcessMutex_windows.cpp` | `3a22519a944ee8a8edf66e6bb317edfcc3702993` | 1909 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@16; CrossProcessMutex::CrossProcessMutex@18; CrossProcessMutex::CrossProcessMutex@29; CrossProcessMutex::~CrossProcessMutex@38; CrossProcessMutex::Lock@44; CrossProcessMutex::Unlock@49; CrossProcessMutex::CloneHandle@54
+Dependencies: windows.h@5; base/process_util.h@7; CrossProcessMutex.h@8; nsDebug.h@9; nsISupportsImpl.h@10; ProtocolUtils.h@11
+
+`ipc/glue/CrossProcessSemaphore.h` | `f1eb9f6e8c1bc417ec32f2cd5a8c74598746909f` | 3257 bytes | source | UTF-8 | mode 100644
+Declarations: IPC@21; ParamTraits@23; mozilla@30; IsHandleValid@33; mozilla@38; mozilla@40; mozilla@42; CrossProcessSemaphore@45
+Dependencies: base/process.h@8; mozilla/TimeStamp.h@9; mozilla/Maybe.h@10; mozilla/UniquePtrExtensions.h@13; pthread.h@15; semaphore.h@16; mozilla/ipc/SharedMemoryMapping.h@17; mozilla/Atomics.h@18
+
+`ipc/glue/CrossProcessSemaphore_mach.cpp` | `a2bd2ee5130d77d2661fb323ccd97f6c1110b315` | 2890 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; mSemaphore@38; CrossProcessSemaphore::~CrossProcessSemaphore@42; CrossProcessSemaphore::Wait@47; CrossProcessSemaphore::Signal@78; CrossProcessSemaphore::CloneHandle@83; CrossProcessSemaphore::CloseHandle@88
+Dependencies: CrossProcessSemaphore.h@5; nsDebug.h@6; nsISupportsImpl.h@7; mach/mach_time.h@8
+
+`ipc/glue/CrossProcessSemaphore_posix.cpp` | `944d966ce87b198123060def82d630ea8516d350` | 3726 bytes | source | UTF-8 | mode 100644
+Declarations: SemaphoreData@15; mozilla@23; mSemaphore@94; CrossProcessSemaphore::~CrossProcessSemaphore@98; CrossProcessSemaphore::Wait@109; timespec@114; CrossProcessSemaphore::Signal@132; CrossProcessSemaphore::CloneHandle@138; CrossProcessSemaphore::CloseHandle@149
+Dependencies: CrossProcessSemaphore.h@5; nsDebug.h@6; nsISupportsImpl.h@7; errno.h@8
+
+`ipc/glue/CrossProcessSemaphore_unimplemented.cpp` | `1130e4fa9344588951365e880ce51325994feaf0` | 1792 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@9; CrossProcessSemaphore::Create@12; CrossProcessSemaphore::CrossProcessSemaphore@24; CrossProcessSemaphore::~CrossProcessSemaphore@30; CrossProcessSemaphore::Wait@36; CrossProcessSemaphore::Signal@43; CrossProcessSemaphore::CloneHandle@49; CrossProcessSemaphore::CloseHandle@56
+Dependencies: CrossProcessSemaphore.h@5; nsDebug.h@7
+
+`ipc/glue/CrossProcessSemaphore_windows.cpp` | `c6a0065e3a34e4bdbecc4d6f7588b038cabe8af2` | 2430 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@16; mSemaphore@44; CrossProcessSemaphore::~CrossProcessSemaphore@48; CrossProcessSemaphore::Wait@54; CrossProcessSemaphore::Signal@61; CrossProcessSemaphore::CloneHandle@66; CrossProcessSemaphore::CloseHandle@79
+Dependencies: windows.h@5; base/process_util.h@7; CrossProcessSemaphore.h@8; nsDebug.h@9; nsISupportsImpl.h@10; ProtocolUtils.h@11
+
+`ipc/glue/DataPipe.cpp` | `4509c4edd6a8ac562295461d1032a3d63e690c45` | 27904 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@17; ipc@18; data_pipe_detail@22; MOZ_SCOPED_CAPABILITY@26; mMutex@29; AddUnlockAction@36; DataPipeLink@69; mAvailable@84; Init@86; NotifyOnUnlock@104; MOZ_REQUIRES@109; Describe@154; DataPipeLink::OnPortStatusChanged@183; mStatus@244; DataPipeBase::~DataPipeBase@260; DataPipeBase::CloseInternal@265; DataPipeBase::CheckStatus@407; DataPipeBase::Describe@427; DataPipeWrite@436; DataPipeRead@464; DataPipeSender::Close@534; DataPipeSender::Flush@538; DataPipeSender::StreamStatus@540; DataPipeSender::IsNonBlocking@569; DataPipeSender::CloseWithStatus@576; DataPipeReceiver::Close@609; DataPipeReceiver::Available@613; DataPipeReceiver::StreamStatus@624; DataPipeReceiver::IsNonBlocking@645; DataPipeReceiver::CloseWithStatus@652; DataPipeReceiver::Deserialize@694
+Dependencies: DataPipe.h@5; mozilla/AlreadyAddRefed.h@6; mozilla/Assertions.h@7; mozilla/CheckedInt.h@8; mozilla/ErrorNames.h@9; mozilla/Logging.h@10; mozilla/MoveOnlyFunction.h@11; mozilla/ipc/InputStreamParams.h@12; nsIAsyncInputStream.h@13; nsStreamUtils.h@14; nsThreadUtils.h@15
+
+`ipc/glue/DataPipe.h` | `06cbcf5fae81aadebeb18a6345412577dcc7c25a` | 6754 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@17; ipc@18; data_pipe_detail@20; DataPipeAutoLock@22; DataPipeLink@23; DataPipeBase@25; MOZ_REQUIRES@60; DataPipeSender@79; DataPipeReceiver@80; DataPipeSender@86; data_pipe_detail::DataPipeBase@102; DataPipeReceiver@119; data_pipe_detail::DataPipeBase@137; IPC@163; ParamTraits@166; ParamTraits@174
+Dependencies: mozilla/ipc/SharedMemoryHandle.h@8; mozilla/ipc/SharedMemoryMapping.h@9; mozilla/ipc/NodeController.h@10; nsIAsyncInputStream.h@11; nsIAsyncOutputStream.h@12; nsIIPCSerializableInputStream.h@13; nsISupports.h@14; memory@15
+
+`ipc/glue/EagerIPCStream.h` | `5e7f25223a6c37f17961d546862b4bd3a274cabf` | 627 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; EagerIPCStream@16
+Dependencies: mozilla/NotNull.h@8; nsCOMPtr.h@9; nsIInputStream.h@10
+
+`ipc/glue/Endpoint.cpp` | `a746ed5f74715b4623fe655f81e08e4446f62b2b` | 8838 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@11; UntypedManagedEndpoint::~UntypedManagedEndpoint@23; IPC@128
+Dependencies: mozilla/ipc/Endpoint.h@5; chrome/common/ipc_message.h@6; ipc/IPCMessageUtilsSpecializations.h@7; nsThreadUtils.h@8; mozilla/ipc/ProtocolMessageUtils.h@9
+
+`ipc/glue/Endpoint.h` | `511f97699d5310e9f449d31fbc6080d3c25de0ae` | 10582 bytes | source | UTF-8 | mode 100644
+Declarations: IPC@21; ParamTraits@23; mozilla@26; ipc@27; endpoint_detail@29; PrivateIPDLInterface@43; UntypedEndpoint@45; mOtherProcInfo@56; IsValid@80; Endpoint@116; OtherEndpointProcInfo@121; OtherPid@130; OtherChildID@132; Bind@140; UntypedManagedEndpoint@194; IsValid@196; IsForProtocol@201; mInner@213; Inner@229; ManagedEndpoint@268; UntypedManagedEndpoint@275
+Dependencies: utility@8; CrashAnnotations.h@9; base/process.h@10; base/process_util.h@11; mozilla/Assertions.h@12; mozilla/Maybe.h@13; mozilla/ipc/MessageLink.h@14; mozilla/ipc/ProtocolUtils.h@15; mozilla/ipc/NodeController.h@16; mozilla/ipc/ScopedPort.h@17; nsXULAppAPI.h@18; nscore.h@19
+
+`ipc/glue/EnumSerializer.h` | `98ead35bb406649f2b14953b0e4640041ecef2f0` | 6025 bytes | source | UTF-8 | mode 100644
+Declarations: PickleIterator@17; IPC@19; Message@20; MessageReader@21; MessageWriter@22; IPC@29; EnumSerializer@45; E@46; typename@51; Write@54; Read@63; ContiguousEnumValidator@81; IsLessThanOrEqual@86; IsLegalValue@96; ContiguousEnumValidatorInclusive@102; IsLessThanOrEqual@107; IsLegalValue@116; BitFlagsEnumValidator@122; IsLegalValue@123; ContiguousEnumSerializer@145; ContiguousEnumSerializerInclusive@155; BitFlagsEnumSerializer@181
+Dependencies: CrashAnnotations.h@8; chrome/common/ipc_message_utils.h@9; mozilla/Assertions.h@10; mozilla/IntegerTypeTraits.h@11; nsExceptionHandler.h@12; nsLiteralString.h@13; nsString.h@14; nsTLiteralString.h@15
+
+`ipc/glue/EnvironmentMap.h` | `fa3d9ed8f8e66b7b6c6f827c1bfce1bb3eb6268f` | 2207 bytes | source | UTF-8 | mode 100644
+Declarations: base@12; std@16; std@17; std@39; std@40
+Dependencies: map@8; memory@9; string@10
+
+`ipc/glue/ExtensionKitUtils.h` | `fbc21a6bbb2536fabb529f77c34ddcfa06ed8d23` | 2618 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@16; BEProcessCapabilityGrantDeleter@18; ExtensionKitProcess@26; class@28; GetKind@42; mKind@66; class@76
+Dependencies: functional@8; xpc/xpc.h@9; mozilla/DarwinObjectPtr.h@10; mozilla/Result.h@11; mozilla/ResultVariant.h@12; mozilla/UniquePtr.h@13; mozilla/ipc/LaunchError.h@14
+
+`ipc/glue/ExtensionKitUtils.mm` | `31058126f6fc775214e81b45ada21399324c54e3` | 4758 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@14; BEProcessCapabilityGrantDeleter::operator@16; ExtensionKitProcess::MakeLibXPCConnection@84; SwitchObject@87; ExtensionKitProcess::Invalidate@93; ExtensionKitProcess::GrantForegroundCapability@99; SwitchObject@103; mKind@110; ExtensionKitProcess::~ExtensionKitProcess@126; LockdownExtensionKitProcess@131
+Dependencies: ExtensionKitUtils.h@5; LaunchError.h@6
+
+`ipc/glue/FileDescriptor.cpp` | `ffaafade1b63190e907b9aa27e80c1ad53aed606` | 2363 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@17; ipc@18; mHandle@23; mHandle@26; mHandle@29; mHandle@36; FileDescriptor::IsValid@52; FileDescriptor::ClonePlatformHandle@54; FileDescriptor::TakePlatformHandle@59; IPC@70
+Dependencies: FileDescriptor.h@5; mozilla/ipc/ProtocolMessageUtils.h@7; nsDebug.h@8; windows.h@11; ProtocolUtils.h@12; unistd.h@14
+
+`ipc/glue/FileDescriptor.h` | `bb2e8615ab335390004253126a52cd05529f4847` | 2373 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; ipc@13; FileDescriptor@23; base@25; IPDLPrivate@31
+Dependencies: base/basictypes.h@8; base/process.h@9; mozilla/UniquePtrExtensions.h@10
+
+`ipc/glue/FileDescriptorShuffle.cpp` | `ba21e4c29c0d742b05b01518d8ff4c70fedd7e6c` | 3649 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@19; ipc@20; FileDescriptorShuffle::Init@48; FileDescriptorShuffle::MapsTo@93; FileDescriptorShuffle::~FileDescriptorShuffle@107
+Dependencies: FileDescriptorShuffle.h@5; base/eintr_wrapper.h@7; mozilla/Assertions.h@8; mozilla/DebugOnly.h@9; algorithm@11; unistd.h@12; fcntl.h@13; numeric@16
+
+`ipc/glue/FileDescriptorShuffle.h` | `05ddd55a89cfcab3281bb88b2b7101c3ba3213cc` | 2210 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@27; ipc@28; FileDescriptorShuffle@30; Dup2Sequence@46; Forget@54
+Dependencies: mozilla/Span.h@8; nsTArray.h@9; utility@11
+
+`ipc/glue/FileDescriptorUtils.cpp` | `32cb47ec078b6b9a936b70dc506b8e516ce8ff30` | 2581 bytes | source | UTF-8 | mode 100644
+Declarations: Runnable@26; CloseFileRunnable::~CloseFileRunnable@30; CloseFileRunnable::Dispatch@40; CloseFileRunnable::CloseFile@49; CloseFileRunnable::Run@56; mozilla@63; ipc@64; FileDescriptorToFILE@66; FILEToFileDescriptor@90
+Dependencies: FileDescriptorUtils.h@5; nsIEventTarget.h@7; nsCOMPtr.h@9; nsDebug.h@10; nsNetCID.h@11; nsServiceManagerUtils.h@12; prio.h@13; private/pprio.h@14; errno.h@16; io.h@18; unistd.h@20
+
+`ipc/glue/FileDescriptorUtils.h` | `e89eecb69520d49ba60fb4577298452711bebb74` | 1490 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; ipc@13; CloseFileRunnable@18; mozilla@19
+Dependencies: mozilla/ipc/FileDescriptor.h@8; nsThreadUtils.h@9; stdio.h@10
+
+`ipc/glue/ForkServer.cpp` | `d18fab02d686e29c6ef4935444895a5b475efd38` | 13185 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@37; ipc@38; HandleSigChld@43; ForkServer::ForkServer@49; ForkServerPreload@77; ForkServer::HandleMessages@91; ForkedChildProcessInit@176; ForkServer::HandleForkNewSubprocess@232; Fork@259; ForkServer::HandleWaitPid@292; ForkServer::RunForkServer@333
+Dependencies: mozilla/ipc/ForkServer.h@5; base/eintr_wrapper.h@7; chrome/common/chrome_switches.h@8; ipc/IPCMessageUtilsSpecializations.h@9; mozilla/BlockingResourceBase.h@10; mozilla/GeckoArgs.h@11; mozilla/Logging.h@12; mozilla/Omnijar.h@13; mozilla/ProcessType.h@14; mozilla/ipc/FileDescriptor.h@15; mozilla/ipc/ProcessUtils.h@16; mozilla/ipc/ProtocolMessageUtils.h@17; mozilla/ipc/SetProcessTitle.h@18; nsTraceRefcnt.h@19; fcntl.h@21; string.h@22; sys/wait.h@23; unistd.h@24; mozilla/SandboxLaunch.h@27; BinaryPath.h@31; err.h@32; algorithm@35
+
+`ipc/glue/ForkServer.h` | `65d8a45baf1b3474e218e5df8956b257211b60d2` | 1138 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; ipc@13; ForkServer@15
+Dependencies: mozilla/UniquePtr.h@7; mozilla/UniquePtrExtensions.h@8; base/process_util.h@9; mozilla/ipc/MiniTransceiver.h@10
+
+`ipc/glue/ForkServiceChild.cpp` | `639e1050bd273fd62893f40a159bc987e363529e` | 9469 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@20; ipc@21; ConfigurePipeFd@30; ForkServiceChild::StartForkServer@62; ForkServiceChild::StopForkServer@90; ForkServiceChild::Get@100; mProcess@112; ForkServiceChild::~ForkServiceChild@116; ForkServiceChild::OnError@249; ForkServerLauncher::Create@261; ForkServerLauncher::RestartForkServer@300
+Dependencies: ForkServiceChild.h@5; ForkServer.h@6; chrome/common/process_watcher.h@7; mozilla/Atomics.h@8; mozilla/Logging.h@9; mozilla/ipc/GeckoChildProcessHost.h@10; mozilla/ipc/ProtocolMessageUtils.h@11; mozilla/StaticPrefs_dom.h@12; mozilla/Services.h@13; ipc/IPCMessageUtilsSpecializations.h@14; nsIObserverService.h@15; unistd.h@17; fcntl.h@18
+
+`ipc/glue/ForkServiceChild.h` | `dc90fb1a5aa91fc651c8219a53bedccf2f21b5d0` | 3962 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@23; ipc@24; GeckoChildProcessHost@26; ForkServiceChild@35; ProcStatus@55; WasUsed@90; ForkServerLauncher@112
+Dependencies: base/process_util.h@7; mozilla/GeckoArgs.h@8; nsIObserver.h@9; nsString.h@10; mozilla/ipc/MiniTransceiver.h@11; mozilla/ipc/LaunchError.h@12; mozilla/Mutex.h@13; mozilla/RefPtr.h@14; mozilla/Result.h@15; mozilla/StaticMutex.h@16; mozilla/StaticPtr.h@17; mozilla/ThreadSafety.h@18; sys/types.h@20; poll.h@21
+
+`ipc/glue/GeckoChildProcessHost.cpp` | `46012e95e53ed63e82eb4315c63c1002f35ec1ee` | 75911 bytes | source | UTF-8 | mode 100644
+Declarations: ShouldHaveDirectoryService@120; mozilla@129; ipc@130; LaunchResults@134; mozilla@148; BaseProcessLauncher@156; SetLaunchArchitecture@197; WindowsProcessLauncher@257; mCachedNtdllThunk@262; WindowsProcessLauncher@275; PosixProcessLauncher@279; mProfileDir@284; MacProcessLauncher@294; base::RandInt@304; MacProcessLauncher@318; AndroidProcessLauncher@320; PosixProcessLauncher@324; AndroidProcessLauncher@332; LinuxProcessLauncher@338; PosixProcessLauncher@342; LinuxProcessLauncher@347; IosProcessLauncher@349; PosixProcessLauncher@353; IosProcessLauncher@361; mDestroying@400; GeckoChildProcessHost::~GeckoChildProcessHost@423; GeckoChildProcessHost::GetChildProcessHandle@461; GeckoChildProcessHost::GetChildProcessId@466; GeckoChildProcessHost::GetChildTask@475; GeckoChildProcessHost::RemoveFromProcessList@481; GeckoChildProcessHost::Destroy@490; mozilla::StaticPrefs::media_plugin_helper_process_enabled@534; mozilla::StaticPrefs::layers_gpu_process_executable_enabled@538; getter_AddRefs@611; nsDependentCString@613; getter_AddRefs@640; NS_CopyUnicodeToNative@754; AutoCFTypeObject@771; AutoCFTypeObject@773; GeckoChildProcessHost::GetUniqueID@786; GeckoChildProcessHost::SetEnv@789; GeckoChildProcessHost::InitWindowsGroupID@860; GeckoChildProcessHost::OnProcessLaunchError@1027; GeckoChildProcessHost::WaitUntilConnected@1033; GeckoChildProcessHost::WaitForProcessHandle@1069; getter_AddRefs@1091; GeckoChildProcessHost::SetAlreadyDead@1104; IPCLaunchThreadObserver@1162; GetIPCLauncher@1188; BaseProcessLauncher::PerformAsyncLaunch@1260; GetProfilerEnvVarsForChildProcess@1289; BaseProcessLauncher::MapChildLogging@1320; Omnijar::IsInitialized@1439; AndroidProcessLauncher::DoLaunch@1505; PosixProcessLauncher::DoLaunch@1521; IosProcessLauncher::DoLaunch@1574; MacProcessLauncher::DoLaunch@1711; WindowsProcessLauncher::DoLaunch@1906; GeckoChildProcessHost::OpenPrivilegedHandle@1956; GeckoChildProcessHost::OnChannelConnected@1965; GeckoChildProcessHost::WhenProcessHandleReady@1977; GeckoChildProcessHost::AppendMacSandboxParams@2011; GeckoChildProcessHost::FillMacSandboxInfo@2021; GeckoChildProcessHost::DisableOSActivityMode@2034; GeckoChildProcessHost::GetAll@2083
+Dependencies: GeckoChildProcessHost.h@5; base/command_line.h@7; base/process.h@8; base/process_util.h@9; base/string_util.h@10; base/task.h@11; chrome/common/chrome_switches.h@12; chrome/common/process_watcher.h@13; mach/mach_traps.h@15; base/rand_util.h@16; chrome/common/mach_ipc_mac.h@17; mozilla/StaticPrefs_dom.h@18; mozilla/StaticPrefs_layers.h@19; mozilla/StaticPrefs_media.h@20; bsm/libbsm.h@23; servers/bootstrap.h@24; mozilla/EnumeratedArray.h@25; nsILocalFileMac.h@26; GeckoProfiler.h@29; MainThreadUtils.h@30; mozilla/Preferences.h@31; mozilla/Sprintf.h@32; nsXPCOMPrivate.h@33; prenv.h@34; prerror.h@35; mozilla/SandboxSettings.h@38; nsAppDirectoryServiceDefs.h@39; ProtocolUtils.h@42; mozilla/LinkedList.h@43; mozilla/Logging.h@44; mozilla/Maybe.h@45; mozilla/GeckoArgs.h@46; mozilla/Omnijar.h@47; mozilla/RDDProcessHost.h@48; mozilla/Services.h@49; mozilla/SharedThreadPool.h@50; mozilla/StaticMutex.h@51; mozilla/TaskQueue.h@52; mozilla/glean/DomMetrics.h@53; mozilla/glean/IpcMetrics.h@54; mozilla/UniquePtrExtensions.h@55; mozilla/ipc/IOThread.h@56; mozilla/ipc/EnvironmentMap.h@57; mozilla/ipc/NodeController.h@58; mozilla/net/SocketProcessHost.h@59; nsCharSeparatedTokenizer.h@60; nsDirectoryService.h@61; nsDirectoryServiceDefs.h@62; nsExceptionHandler.h@63; nsIFile.h@64; nsIObserverService.h@65; nsPrintfCString.h@66; stdlib.h@69; nsIWinTaskbar.h@71; WinUtils.h@75; mozilla/Preferences.h@76; mozilla/NativeNt.h@79; mozilla/CacheNtDllThunk.h@80; mozilla/SandboxLaunch.h@84; GMPProcessParent.h@88; nsMacUtilsImpl.h@89; mozilla/gfx/GPUProcessHost.h@90; mozilla/ipc/UtilityProcessHost.h@93; mozilla/ipc/UtilityProcessSandboxing.h@94; nsClassHashtable.h@96; nsHashKeys.h@97; nsNativeCharsetUtils.h@98; nsTArray.h@99; nscore.h@100; nsIThread.h@101; AndroidBridge.h@108; mozilla/java/GeckoProcessManagerWrappers.h@109; mozilla/java/GeckoProcessTypeWrappers.h@110; mozilla/java/GeckoResultWrappers.h@111; mozilla/jni/Refs.h@112; mozilla/jni/Utils.h@113; mozilla/ipc/ForkServiceChild.h@117
+
+`ipc/glue/GeckoChildProcessHost.h` | `fa485ce76d3688878c2a67fccffbe8ec036a074c` | 14174 bytes | source | UTF-8 | mode 100644
+Declarations: _MacSandboxInfo@53; _MacSandboxInfo@54; mozilla@56; ipc@57; mozilla@59; GeckoChildProcessHost@100; mozilla@103; std@104; CanShutdown@168; TakeInitialEndpoint@170; GetChildID@197; GetProcessType@199; SetLaunchArchitecture@206; GetDefaultMacSandboxType@220; std@232; IsMacSandboxLaunchEnabled@327; class@360
+Dependencies: base/file_path.h@8; base/process_util.h@9; base/waitable_event.h@10; chrome/common/ipc_message.h@11; mojo/core/ports/port_ref.h@12; mozilla/GeckoArgs.h@14; mozilla/ipc/Endpoint.h@15; mozilla/ipc/FileDescriptor.h@16; mozilla/ipc/NodeChannel.h@17; mozilla/ipc/LaunchError.h@18; mozilla/ipc/ScopedPort.h@19; mozilla/ipc/UtilityProcessSandboxing.h@20; mozilla/Atomics.h@21; mozilla/LinkedList.h@22; mozilla/Logging.h@23; mozilla/Monitor.h@24; mozilla/MozPromise.h@25; mozilla/RWLock.h@26; mozilla/StaticMutex.h@27; mozilla/StaticPtr.h@28; mozilla/UniquePtr.h@29; nsCOMPtr.h@31; nsExceptionHandler.h@32; nsXULAppAPI.h@33; nsString.h@34; mozilla/ipc/ExtensionKitUtils.h@37; sandboxBroker.h@41; mozilla/Sandbox.h@45
+
+`ipc/glue/IOThread.cpp` | `f206791e02c3c50b2de8f03edc7e7a613a750bbc` | 3311 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@22; ipc@23; IOThread::IOThread@32; IOThread::~IOThread@36; IOThread::Startup@41; IOThread::Shutdown@50; IOThread::StartThread@57; IOThread::StopThread@67; IOThreadParent::IOThreadParent@77; IOThreadParent::~IOThreadParent@97; IOThreadParent::Init@99; IOThreadParent::CleanUp@109; mParentPid@127; IOThreadChild::~IOThreadChild@131; IOThreadChild::Init@133; IOThreadChild::CleanUp@138
+Dependencies: mozilla/ipc/IOThread.h@5; mozilla/ipc/NodeController.h@6; mozilla/Preferences.h@7; objbase.h@10; chrome/common/ipc_channel_win.h@14; chrome/common/ipc_channel_mach.h@17; chrome/common/ipc_channel_posix.h@19
+
+`ipc/glue/IOThread.h` | `e4585423541f940ea6ccebb559229800a9255e6b` | 2776 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; IOThread@15; Get@22; GetEventTarget@30; IOThreadParent@54; IOThreadChild@69; TakeInitialPort@75; AssertIOThread@87
+Dependencies: base/thread.h@8; chrome/common/ipc_channel.h@9; mozilla/ipc/ScopedPort.h@10
+
+`ipc/glue/IPCCore.h` | `a0146e0b11132d481d3a1f5c166a9f22b9e6134f` | 512 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@8; void_t@10; null_t@14
+
+`ipc/glue/IPCForwards.h` | `2c8760cca17aa001ccd296ea8dd3a0f46fca6bad` | 1091 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; Maybe@12; ipc@14; EndpointProcInfo@15; IProtocol@16; IPC@20; Message@21; MessageReader@22; MessageWriter@23; ReadResult@25
+
+`ipc/glue/IPCMessageUtils.h` | `692e4a1a457d71122b610a5075f832955b80f932` | 9790 bytes | source | UTF-8 | mode 100644
+Declarations: PickleIterator@16; mozilla@25; Variant@27; detail@29; VariantTag@31; IPC@35; EmptyStructSerializer@42; T@43; Write@45; Read@47; ParamTraits@54; int8_t@55; Write@57; Read@61; ParamTraits@67; uint8_t@68; Write@70; Read@74; ParamTraits@80; mozilla@81; Write@82; Read@83; ParamTraits@90; mozilla@91; Write@92; Read@93; BitfieldHelper@102; void@107; WriteParams@122; ReadParams@127; ParamTraits_TiedFields@134; Write@137; std::apply@139; Read@143; ParamTraits@151; ParamTraits@162; Type@163; Write@164; Read@169; ParamTraits@180; Type@181; ParamTraits@202; ParamTraits@208; Type@209; Write@210; Read@214; ParamTraits@221; Type@222; Write@223; Read@229
+Dependencies: cstdint@8; tuple@9; chrome/common/ipc_message.h@10; chrome/common/ipc_message_utils.h@11; mozilla/ipc/IPCCore.h@12; mozilla/MacroForEach.h@13; mozilla/TiedFields.h@14; base/string_util.h@19
+
+`ipc/glue/IPCMessageUtilsSpecializations.cpp` | `a61780cc7bd24e1b2c4c815b9f36c9f2e81a77e8` | 1657 bytes | source | UTF-8 | mode 100644
+Declarations: IPC@8
+Dependencies: IPCMessageUtilsSpecializations.h@5; nsGkAtoms.h@6
+
+`ipc/glue/IPCMessageUtilsSpecializations.h` | `30079decb3f5cb5c6c1cafd1e638cecf00e1bd8d` | 19014 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@48; Variant@50; detail@52; VariantTag@54; mozilla@58; Optional@60; nsAtom@63; IPC@65; ParamTraits@68; nsTSubstring@69; Write@71; Read@84; ParamTraits@104; ParamTraits@107; ParamTraits@110; ParamTraits@113; ParamTraitsforHashSet@120; nsTBaseHashSet@121; Write@124; Read@132; ParamTraits@151; ParamTraits@154; ParamTraits@158; nsTArray@159; Write@161; Write@165; Read@169; constexpr@171; ParamTraits@182; ParamTraits@185; FallibleTArray@186; Write@188; Write@192; Read@196; constexpr@198; BackInserter@210; Proxy@217; ParamTraits@236; AutoTArray@237; ParamTraits@241; ParamTraits@244; ParamTraits@248; mozilla@249; Write@251; Write@255; Read@259; ParamTraits@271; float@272; Write@274; Read@278; ParamTraits@284; ParamTraits@289; nsID@290; Write@292; Read@301; nsContentPolicyTypeValidator@314; IsLegalValue@317; ParamTraits@334; ParamTraits@338; mozilla@339; Write@340; Read@343; ParamTraits@349; mozilla@350; Write@351; Read@354; ParamTraits@360; mozilla@361; Write@363; Write@372; Read@381; ParamTraits@400; mozilla@401; U@402; Write@404; Read@409; constexpr@423; ParamTraits@447; mozilla@448; Write@451; VariantReader@460; Read@470; VariantReader@489; Read@490; Read@495; ParamTraits@505; mozilla@506; Write@508; Read@518; ParamTraits@538; nsAtom@539; CrossOriginOpenerPolicyValidator@545; IsLegalValue@549; ParamTraits@568; CrossOriginEmbedderPolicyValidator@572; IsLegalValue@576; ParamTraits@593; ParamTraits@598; ParamTraits@604; mozilla@605; Write@607; Read@613; ParamTraits@626; ParamTraits@633; ParamTraits@639
+Dependencies: cstdint@8; limits@9; type_traits@10; utility@11; chrome/common/ipc_message.h@12; chrome/common/ipc_message_utils.h@13; ipc/EnumSerializer.h@14; ipc/IPCMessageUtils.h@15; mozilla/Assertions.h@16; mozilla/BitSet.h@17; mozilla/EnumSet.h@18; mozilla/EnumTypeTraits.h@19; mozilla/Maybe.h@20; mozilla/TimeStamp.h@21; mozilla/Vector.h@23; mozilla/dom/ipc/StructuredCloneData.h@24; mozilla/dom/UserActivation.h@25; gfxPlatform.h@26; NonCustomCSSPropertyId.h@27; nsContentPolicyType.h@28; nsDebug.h@29; nsIContentPolicy.h@30; nsID.h@31; nsILoadInfo.h@32; nsIThread.h@33; nsLiteralString.h@34; nsNetUtil.h@35; nsString.h@36; nsTArray.h@37; nsTHashSet.h@38; base/string_util.h@42
+
+`ipc/glue/IPCStream.ipdlh` | `abf7ef7714468109777ce032771f2c9e614702ff` | 679 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@8; ipc@9; IPCStream@16
+
+`ipc/glue/IPCStreamUtils.cpp` | `343d1fe60aaa2d80116db16da49dbcda9a8b3aae` | 6437 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@24; MIMEStreamHeaderVisitor@28; mHeaders@32; do_QueryInterface@113; DeserializeIPCStream@153
+Dependencies: IPCStreamUtils.h@5; ipc/IPCMessageUtilsSpecializations.h@7; nsIHttpHeaderVisitor.h@9; nsIIPCSerializableInputStream.h@10; mozIRemoteLazyInputStream.h@11; mozilla/Assertions.h@13; mozilla/dom/File.h@14; mozilla/ipc/IPCStream.h@15; mozilla/ipc/InputStreamUtils.h@16; mozilla/InputStreamLengthHelper.h@17; mozilla/RemoteLazyInputStreamParent.h@18; nsIMIMEInputStream.h@19; nsNetCID.h@20
+
+`ipc/glue/IPCStreamUtils.h` | `cad76c9d4b7786fbc2caeb31926b23ee021dfab1` | 1937 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; IPC@40; ParamTraits@43; ParamTraits@49
+Dependencies: mozilla/ipc/EagerIPCStream.h@8; mozilla/ipc/IPCStream.h@9; nsCOMPtr.h@10; nsIInputStream.h@11
+
+`ipc/glue/IPCTypes.h` | `e79a546187f5e81d302f457023c67710efbc0953` | 510 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; uintptr_t@14
+Dependencies: cstdint@8
+
+`ipc/glue/IPDLStructMember.h` | `cf4685ac121047d19d6eb3fe3eb813047ead4da0` | 1181 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; IPDLStructMemberWrapper@19; mVal@22
+Dependencies: type_traits@8; utility@9; mozilla/Attributes.h@10
+
+`ipc/glue/IdleSchedulerChild.cpp` | `580a22f559de6ea174827e12ebdb4c7d105981ed` | 4433 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; IdleSchedulerChild::~IdleSchedulerChild@17; IdleSchedulerChild::Init@25; IdleSchedulerChild::RecvIdleTime@44; IdleSchedulerChild::SetActive@51; IdleSchedulerChild::SetPaused@59; IdleSchedulerChild::MayGCNow@72; IdleSchedulerChild::StartedGC@98; IdleSchedulerChild::DoneGC@114; IdleSchedulerChild::GetMainThreadIdleScheduler@123
+Dependencies: mozilla/ipc/IdleSchedulerChild.h@5; mozilla/ipc/IdleSchedulerParent.h@6; mozilla/ipc/PBackgroundChild.h@7; mozilla/Atomics.h@8; mozilla/IdlePeriodState.h@9; BackgroundChild.h@10
+
+`ipc/glue/IdleSchedulerChild.h` | `55ec3a52829283a98d0d77bb1b2b5ce7fbae9811` | 2058 bytes | source | UTF-8 | mode 100644
+Declarations: nsIIdlePeriod@12; mozilla@14; IdlePeriodState@15; ipc@17; BackgroundChildImpl@19; IdleSchedulerChild@21; Disconnect@31; MozPromise@38
+Dependencies: mozilla/RefPtr.h@8; mozilla/ipc/PIdleSchedulerChild.h@9; mozilla/ipc/SharedMemoryMapping.h@10
+
+`ipc/glue/IdleSchedulerParent.cpp` | `ea779e642cd216329dec6363c6bea65f79c04e20` | 15395 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@17; sActiveChildCounter@26; IdleSchedulerParent::IdleSchedulerParent@46; NS_NewRunnableFunction@70; IdleSchedulerParent::CalculateNumIdleTasks@110; IdleSchedulerParent::~IdleSchedulerParent@129; IdleSchedulerParent::RecvIdleTimeUsed@239; IdleSchedulerParent::RecvSchedule@258; IdleSchedulerParent::RecvRunningPrioritizedOperation@263; IdleSchedulerParent::RecvPrioritizedOperationDone@271; IdleSchedulerParent::RecvRequestGC@282; IdleSchedulerParent::RecvStartedGC@295; IdleSchedulerParent::RecvDoneGC@316; IdleSchedulerParent::ActiveCount@324; IdleSchedulerParent::HasSpareCycles@332; IdleSchedulerParent::HasSpareGCCycles@345; IdleSchedulerParent::SendIdleTime@349; IdleSchedulerParent::SendMayGC@357; IdleSchedulerParent::Schedule@365; IdleSchedulerParent::EnsureStarvationTimer@421; IdleSchedulerParent::StarvationCallback@435
+Dependencies: mozilla/StaticPrefs_page_load.h@5; mozilla/StaticPrefs_javascript.h@6; mozilla/ipc/IdleSchedulerParent.h@7; mozilla/AppShutdown.h@8; mozilla/NeverDestroyed.h@9; mozilla/ipc/SharedMemoryHandle.h@10; mozilla/ipc/SharedMemoryMapping.h@11; nsSystemInfo.h@12; nsThreadUtils.h@13; nsITimer.h@14; nsIThread.h@15
+
+`ipc/glue/IdleSchedulerParent.h` | `8031a0922f9c7ca0b8b90b6839e1a435a00af40b` | 4100 bytes | source | UTF-8 | mode 100644
+Declarations: nsITimer@17; mozilla@19; ipc@21; BackgroundParentImpl@23; IdleSchedulerParent@25; IsWaitingForIdle@75; IsDoingIdleTask@76; IsNotDoingIdleTask@77
+Dependencies: mozilla/LinkedList.h@8; mozilla/ipc/PIdleSchedulerParent.h@9; mozilla/ipc/SharedMemoryMapping.h@10; bitset@11
+
+`ipc/glue/InputStreamParams.ipdlh` | `b1e7b07204e6b678acc726811dcc97c7cebfbc9a` | 1963 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@11; ipc@12; HeaderEntry@14; StringInputStreamParams@20; FileInputStreamParams@25; MultiplexInputStreamParams@32; SlicedInputStreamParams@40; RemoteLazyInputStreamParams@49; DataPipeReceiverStreamParams@54; EncryptedFileInputStreamParams@73; BufferedInputStreamParams@80; MIMEInputStreamParams@86; InputStreamLengthWrapperParams@93
+
+`ipc/glue/InputStreamUtils.cpp` | `66dba1f7665c68f0a959e22b15cf4fa7e9e7b112` | 7053 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@40; ipc@41
+Dependencies: InputStreamUtils.h@5; nsIIPCSerializableInputStream.h@7; mozilla/Assertions.h@9; mozilla/dom/File.h@10; mozilla/dom/quota/DecryptingInputStream_impl.h@11; mozilla/dom/quota/IPCStreamCipherStrategy.h@12; mozilla/ipc/DataPipe.h@13; mozilla/InputStreamLengthHelper.h@14; mozilla/RemoteLazyInputStream.h@15; mozilla/RemoteLazyInputStreamChild.h@16; mozilla/RemoteLazyInputStreamStorage.h@17; mozilla/SlicedInputStream.h@18; mozilla/InputStreamLengthWrapper.h@19; nsBufferedStreams.h@20; nsComponentManagerUtils.h@21; nsDebug.h@22; nsFileStreams.h@23; nsIAsyncInputStream.h@24; nsIAsyncOutputStream.h@25; nsID.h@26; nsIMIMEInputStream.h@27; nsIMultiplexInputStream.h@28; nsIPipe.h@29; nsMIMEInputStream.h@30; nsMultiplexInputStream.h@31; nsNetCID.h@32; nsStreamUtils.h@33; nsStringStream.h@34; nsXULAppAPI.h@35
+
+`ipc/glue/InputStreamUtils.h` | `1b4dbebb4ccd6fea20d9dc6d9c4c223aca880ac7` | 1925 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; ipc@14; FileDescriptor@16; InputStreamHelper@20
+Dependencies: mozilla/ipc/InputStreamParams.h@8; nsCOMPtr.h@9; nsIInputStream.h@10; nsTArray.h@11
+
+`ipc/glue/LaunchError.h` | `20e7679a8379ac0060225552734905b9bb6c1f69` | 2589 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@16; LaunchError@18; mFunction@39; FromWin32Error@49; mFunction@56; FunctionName@58; ErrorCode@59
+Dependencies: mozilla/StaticString.h@8; nsError.h@9; windows.h@12; winerror.h@13
+
+`ipc/glue/MessageChannel.cpp` | `56e1af04b542d1d5f170b3929eddba972e1d1007` | 84941 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@121; ipc@122; AutoEnterTransaction@127; mNext@139; mNext@153; Cancel@171; AwaitingSyncReply@194; AwaitingSyncReplyNestedLevel@202; DispatchingSyncMessage@210; DispatchingSyncMessageNestedLevel@218; NestedLevel@226; SequenceNumber@231; TransactionID@236; ReceivedReply@241; HandleReply@250; IsComplete@265; IsOutgoing@267; IsCanceled@269; IsBottom@271; IsError@273; GetReply@278; ChannelCountReporter@304; ChannelCounts@307; ChannelCounts@311; Inc@313; Dec@320; Increment@369; Decrement@377; TryRegisterStrongMemoryReporter@394; mName@404; MessageChannel::~MessageChannel@415; MessageChannel::AssertMaybeDeferredCountCorrect@472; MessageChannel::TestOnlyIsTransactionComplete@503; MessageChannel::AwaitingSyncReply@509; MessageChannel::AwaitingSyncReplyNestedLevel@514; MessageChannel::DispatchingSyncMessage@520; MessageChannel::DispatchingSyncMessageNestedLevel@526; MessageChannel::Connected@539; MessageChannel::ConnectedOrClosing@544; MessageChannel::CanSend@549; MessageChannel::Clear@557; GetOppSide@650; MessageChannel::Send@706; MessageChannel::SendMessageToLink@733; do_QueryInterface@745; MessageChannel::FlushLazySendMessages@763; BuildIDsMatchMessage@777; IPC::Message@780; Log@781; MessageChannel::SendBuildIDsMatchMessage@790; CancelMessage@837; IPC::Message@840; Read@843; Log@844; MessageChannel::MaybeInterceptSpecialIOMessage@849; MessageChannel::IsAlwaysDeferred@894; MessageChannel::ShouldDeferMessage@901; IPCFlowMarker@943; LossyNarrowChannelId@982; MessageChannel::OnMessageReceivedFromLink@992; FlowMarkerDispatch@1070; FlowMarkerDispatch@1071; MessageChannel::Send@1213; MessageChannel::HasPendingEvents@1417; MessageChannel::ShouldRunMessage@1443; ToRunnablePriority@1518; MessageChannel::MessageTask::~MessageTask@1560; MessageChannel::MessageTask::Run@1573; Channel@1597; MessageChannel::MessageTask::Cancel@1626; MessageChannel::MessageTask::Post@1653; MessageChannel::MessageTask::GetPriority@1665; MessageChannel::MessageTask::GetType@1671; MessageChannel::EnqueuePendingMessages@1802; MessageChannel::WaitResponse@1812; MessageChannel::WaitForSyncNotify@1828; MessageChannel::NotifyWorkerThread@1852; MessageChannel::ShouldContinueFromTimeout@1855; MessageChannel::SetReplyTimeoutMs@1885; MessageChannel::OnChannelErrorFromLink@1984; MessageChannel::NotifyMaybeChannelError@2012; MessageChannel::OnNotifyMaybeChannelError@2045; MessageChannel@2071; mEventTarget@2076; MessageChannel::ErrorNotifyBatcher::ErrorNotifyBatcher@2105; MessageChannel::ErrorNotifyBatcher::~ErrorNotifyBatcher@2112; MessageChannel::PostErrorNotifyTask@2162; GoodbyeMessage@2182; GoodbyeMessage@2184; Read@2185; Log@2186; MessageChannel::InduceConnectionError@2191; MessageChannel::NotifyImpendingShutdown@2222; MessageChannel::Close@2231; MessageChannel::NotifyChannelClosed@2266; MessageChannel::EndTimeout@2367; MessageChannel::RepostAllMessages@2377; MessageChannel::CancelTransaction@2410; MessageChannel::CancelCurrentTransaction@2476; CancelCPOWs@2496; MessageChannel::IsCrossProcess@2507; MessageChannel::SetIsCrossProcess@2512; mTarget@2530; MessageChannel::WorkerTargetShutdownTask::TargetShutdown@2532; MessageChannel::WorkerTargetShutdownTask::Clear@2540; mChannel@2551; MessageChannel::FlushLazySendMessagesRunnable::Run@2553; MessageChannel::FlushLazySendMessagesRunnable::Cancel@2562; MessageChannel::FlushLazySendMessagesRunnable::TakeMessages@2575
+Dependencies: mozilla/ipc/MessageChannel.h@5; math.h@7; utility@9; CrashAnnotations.h@11; base/waitable_event.h@12; mozilla/Assertions.h@13; mozilla/CycleCollectedJSContext.h@14; mozilla/FlowMarkers.h@15; mozilla/IntentionalCrash.h@16; mozilla/Logging.h@17; mozilla/Monitor.h@18; mozilla/Mutex.h@19; mozilla/ProfilerMarkers.h@20; mozilla/Sprintf.h@21; mozilla/StaticMutex.h@22; mozilla/glean/IpcMetrics.h@23; mozilla/TimeStamp.h@24; mozilla/dom/ScriptSettings.h@25; mozilla/ipc/NodeController.h@26; mozilla/ipc/ProcessChild.h@27; mozilla/ipc/ProtocolUtils.h@28; nsAppRunner.h@29; nsContentUtils.h@30; nsIDirectTaskDispatcher.h@31; nsTHashMap.h@32; nsDebug.h@33; nsExceptionHandler.h@34; nsIMemoryReporter.h@35; nsISupportsImpl.h@36; nsPrintfCString.h@37; nsThreadUtils.h@38; mozilla/gfx/Logging.h@41; mozilla/fuzzing/IPCFuzzController.h@45
+
+`ipc/glue/MessageChannel.h` | `6ef4fed5fcfd5ea6fad19fb00f398a3a3b04179b` | 31384 bytes | source | UTF-8 | mode 100644
+Declarations: MessageLoop@28; IPC@30; ParamTraits@32; mozilla@35; ipc@36; IToplevelProtocol@38; ActorLifecycleProxy@39; RefCountedMonitor@41; RefCountedMonitor@43; MOZ_REQUIRES@46; class@56; class@61; class@67; class@80; ChannelState@94; AutoEnterTransaction@101; MessageChannel@103; mozilla@106; Listener@119; GetWorkerEventTarget@124; SetAbortOnError@176; ChannelFlags@188; SetChannelFlags@197; GetChannelFlags@198; DoBuildIDsMatch@207; LastSendError@220; IsOnCxxStack@227; IsClosed@238; IsClosedLocked@242; IsPumpingMessages@247; SetIsPumpingMessages@248; GetMessageChannelId@258; MOZ_RAII@273; BatchTask@289; GetPortName@294; MOZ_STACK_CLASS@301; IsSpinLoopActive@317; NextSeqno@392; DispatchingAsyncMessage@406; DispatchingAsyncMessageNestedLevel@411; AssertWorkerThread@467; MessageTask@474; IsScheduled@491; Msg@496; MOZ_REQUIRES@506; Channel@513; WorkerTargetShutdownTask@538; FlushLazySendMessagesRunnable@556; LinkedList@579; IPC@580; AutoSetValue@641; mVar@644; AssertMaybeDeferredCountCorrect@697; IPC@763; ParamTraits@765; geckoprofiler@772; IPCMarker@774
+Dependencies: ETWTools.h@8; ipc/EnumSerializer.h@9; mozilla/BaseProfilerMarkers.h@10; mozilla/LinkedList.h@11; mozilla/Monitor.h@12; mozilla/MoveOnlyFunction.h@13; mozilla/ipc/Neutering.h@15; functional@18; MessageLink.h@20; mozilla/ipc/ScopedPort.h@21; nsITargetShutdownTask.h@22; mozilla/fuzzing/IPCFuzzController.h@25
+
+`ipc/glue/MessageLink.cpp` | `697449a7710a8cc2536daf566a8036254bfda812` | 6205 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@23; ipc@24; MessageLink::MessageLink@37; MessageLink::~MessageLink@39; PortLink@45; mMonitor@48; MessageLink@68; PortLink::~PortLink@88; PortLink::SendMessage@92; PortLink::Close@140; PortLink::Clear@151; PortLink::OnPortStatusChanged@169; PortLink::IsClosed@194
+Dependencies: mozilla/ipc/MessageLink.h@5; mojo/core/ports/event.h@6; mojo/core/ports/node.h@7; mozilla/ipc/MessageChannel.h@8; mozilla/ipc/ProtocolUtils.h@9; mozilla/ipc/NodeController.h@10; chrome/common/ipc_channel.h@11; base/task.h@12; mozilla/Assertions.h@14; nsDebug.h@15; nsExceptionHandler.h@16; nsISupportsImpl.h@17; nsPrintfCString.h@18; nsXULAppAPI.h@19
+
+`ipc/glue/MessageLink.h` | `5dec7f9a8bb6b21440557996e02f5b8c2ef5e73a` | 2649 bytes | source | UTF-8 | mode 100644
+Declarations: IPC@15; Message@16; MessageReader@17; MessageWriter@18; mozilla@21; ipc@22; MessageChannel@24; NodeController@25; HasResultCodes@27; Result@28; Side@39; MessageLink@43; IPC@45; GetPortName@62; PortLink@69; PortObserverThunk@91
+Dependencies: cstdint@8; base/message_loop.h@9; mojo/core/ports/node.h@10; mojo/core/ports/port_ref.h@11; mozilla/UniquePtr.h@12; mozilla/ipc/ScopedPort.h@13
+
+`ipc/glue/MessagePump.cpp` | `0c90c04cd30c759516b395f67efd0c63fb47673e` | 9814 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@32; ipc@33; DoWorkRunnable@35; CancelableRunnable@39; mEventTarget@60; MessagePump::Run@66; MessagePump::ScheduleWork@113; MessagePump::ScheduleWorkForNestedLoop@125; MessagePump::ScheduleDelayedWork@132; MessagePump::GetXPCOMThread@164; MessagePump::DoDelayedWork@173; DoWorkRunnable::Run@184; DoWorkRunnable::Notify@201; DoWorkRunnable::Cancel@213; MessagePumpForChildProcess::Run@225; MessagePumpForNonMainThreads::Run@268
+Dependencies: MessagePump.h@5; nsIThread.h@7; nsITimer.h@8; nsICancelableRunnable.h@9; base/basictypes.h@11; base/logging.h@12; base/scoped_nsautorelease_pool.h@13; mozilla/Assertions.h@14; mozilla/DebugOnly.h@15; nsComponentManagerUtils.h@16; nsDebug.h@17; nsServiceManagerUtils.h@18; nsString.h@19; nsThreadUtils.h@20; nsTimerImpl.h@21; nsXULAppAPI.h@22; prthread.h@23
+
+`ipc/glue/MessagePump.h` | `4c03b4dd87993fc7ec5f0cf6f8ed75c46ab4b4f2` | 5661 bytes | source | UTF-8 | mode 100644
+Declarations: nsIEventTarget@20; nsITimer@21; mozilla@23; ipc@24; DoWorkRunnable@26; MessagePump@28; MessagePumpForChildProcess@68; MessagePumpForChildProcess@70; MessagePumpForNonMainThreads@80; MessagePump@83; MessagePumpForNonMainUIThreads@93; mInWait@101; SetInWait@111; ClearInWait@116; GetInWait@121; MessagePumpForNonMainUIThreads@135; MessagePumpForAndroidUI@178; mEventTarget@181; GetXPCOMThread@187; MessagePumpForAndroidUI@191
+Dependencies: base/message_pump_default.h@8; base/message_pump_win.h@10; base/message_pump_mac.h@12; base/time.h@15; mozilla/Mutex.h@16; nsCOMPtr.h@17; nsIThreadInternal.h@18
+
+`ipc/glue/MessagePump_android.cpp` | `e7d4d1c3170360b386db711543207072a4fa33cb` | 800 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@7; MessagePumpForAndroidUI::Run@8; MessagePumpForAndroidUI::Quit@12; MessagePumpForAndroidUI::ScheduleWork@16
+Dependencies: MessagePump.h@5
+
+`ipc/glue/MessagePump_mac.mm` | `44ede6eddf1e81c84261cbf5bbecd873e8095981` | 3155 bytes | source | UTF-8 | mode 100644
+Declarations: NoOp@15; mEventTarget@23; MessagePumpForNonMainUIThreads::~MessagePumpForNonMainUIThreads@33; MessagePumpForNonMainUIThreads::Quit@75; MessagePumpForNonMainUIThreads::OnDispatchedEvent@81
+Dependencies: MessagePump.h@5; Foundation/Foundation.h@7; base/scoped_nsautorelease_pool.h@9; mozilla/ProfilerMarkers.h@10; nsISupportsImpl.h@11
+
+`ipc/glue/MessagePump_windows.cpp` | `aefb01d4cfbcfec1c05b9fee657619e0daa11c61` | 2728 bytes | source | UTF-8 | mode 100644
+Declarations: MessagePumpForNonMainUIThreads::DoRunLoop@20; MessagePumpForNonMainUIThreads::OnDispatchedEvent@74
+Dependencies: MessagePump.h@5
+
+`ipc/glue/MiniTransceiver.cpp` | `40c17106f2eb48f7298a00fd73d648fa8f8bcb13` | 7657 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@19; mDataBufClear@30; InitMsgHdr@39; DeinitMsgHdr@62; MiniTransceiver::PrepareFDs@69; MiniTransceiver::PrepareBuffers@87; MiniTransceiver::Send@108; MiniTransceiver::Recv@211
+Dependencies: mozilla/ipc/MiniTransceiver.h@4; chrome/common/ipc_message.h@5; chrome/common/ipc_message_utils.h@6; base/eintr_wrapper.h@7; mozilla/UniquePtr.h@8; mozilla/DebugOnly.h@9; mozilla/Sprintf.h@10; mozilla/ScopeExit.h@11; nsDebug.h@12; sys/types.h@14; sys/socket.h@15; string.h@16; errno.h@17
+
+`ipc/glue/MiniTransceiver.h` | `c50784ad74f9e5d60e1ce92b9d1e27ba6ff5ba50` | 3520 bytes | source | UTF-8 | mode 100644
+Declarations: msghdr@9; mozilla@11; ipc@12; class@14; MiniTransceiver@27; SendInfallible@38; GetFD@60; State@100
+Dependencies: chrome/common/ipc_message.h@7
+
+`ipc/glue/Neutering.h` | `471fa48fd0f0efa98932f4d6f5afc2c8f0a791b1` | 1761 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@15; ipc@16; MOZ_RAII@24; MOZ_RAII@45; MOZ_RAII@54; IsNeuteringSuppressed@59
+Dependencies: mozilla/Attributes.h@8
+
+`ipc/glue/NodeChannel.cpp` | `4a5d974f6f784f70bb1207004d963a7a6b4db653` | 9732 bytes | source | UTF-8 | mode 100644
+Declarations: IPC@21; Write@23; Read@29; mozilla@37; mChildProcessHost@46; NodeChannel::~NodeChannel@48; NodeChannel::Destroy@51; NodeChannel::FinalDestroy@71; NodeChannel::Start@76; NodeChannel::Close@84; NodeChannel::SetOtherPid@92; NodeChannel::SetMachTaskPort@107; NodeChannel::SendEventMessage@116; NodeChannel::RequestIntroduction@127; NodeChannel::Introduce@136; NodeChannel::Broadcast@144; NodeChannel::SendMessage@162; NodeChannel::OnMessageReceived@203; IPC::ReadParam@238; NodeChannel::OnChannelConnected@270; NodeChannel::OnChannelError@282
+Dependencies: mozilla/ipc/NodeChannel.h@5; chrome/common/ipc_message.h@6; chrome/common/ipc_message_utils.h@7; mojo/core/ports/name.h@8; mozilla/ipc/IOThread.h@9; mozilla/ipc/GeckoChildProcessHost.h@10; mozilla/ipc/ProtocolMessageUtils.h@11; mozilla/ipc/ProtocolUtils.h@12; nsThreadUtils.h@13; nsXULAppAPI.h@14; mozilla/fuzzing/IPCFuzzController.h@17
+
+`ipc/glue/NodeChannel.h` | `079da457bd6b3d3887fbd36f21a9e0418ae01e85` | 6332 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@25; GeckoChildProcessHost@27; NodeController@28; NodeChannel@34; Introduction@46; Listener@53; OtherPid@96; SetName@108; class@163
+Dependencies: mojo/core/ports/node.h@8; mojo/core/ports/node_delegate.h@9; base/process.h@10; chrome/common/ipc_message.h@11; chrome/common/ipc_channel.h@12; mozilla/ipc/ProtocolUtils.h@13; nsISupports.h@14; nsTHashMap.h@15; mozilla/Queue.h@16; mozilla/DataMutex.h@17; mozilla/UniquePtr.h@18; mozilla/WeakPtr.h@19; mozilla/fuzzing/IPCFuzzController.h@22
+
+`ipc/glue/NodeController.cpp` | `43299497c323389f34999c5c6e820c2caba47320` | 32880 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@27; mChannelKind@58; NodeController::~NodeController@60; NodeController::ClosePort@106; NodeController::DropPeer@272; MessageLoop::current@320; NodeController::BroadcastEvent@418; NodeController::PortStatusChanged@432; NodeController::ObserveRemoteNode@448; NodeController::OnChannelError@782; RandomNodeName@787; NodeController::CleanUp@878
+Dependencies: mozilla/ipc/NodeController.h@5; MainThreadUtils.h@6; base/process_util.h@7; chrome/common/ipc_message.h@8; mojo/core/ports/name.h@9; mojo/core/ports/node.h@10; mojo/core/ports/port_locker.h@11; mozilla/AlreadyAddRefed.h@12; mozilla/RandomNum.h@13; mozilla/StaticPtr.h@14; mozilla/Assertions.h@15; mozilla/ToString.h@16; mozilla/ipc/IOThread.h@17; mozilla/ipc/ProtocolUtils.h@18; mozilla/mozalloc.h@19; nsISerialEventTarget.h@20; nsTArray.h@21; nsXULAppAPI.h@22; nsPrintfCString.h@23
+
+`ipc/glue/NodeController.h` | `7a7a77553a13b7d8978986ac7764fd576a5e488d` | 7370 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@20; GeckoChildProcessHost@22; NodeController@24; PortObserver@43; IsBroker@59; Invite@156; State@165
+Dependencies: mojo/core/ports/event.h@8; mojo/core/ports/name.h@9; mojo/core/ports/node.h@10; mojo/core/ports/node_delegate.h@11; chrome/common/ipc_message.h@12; mozilla/ipc/ProtocolUtils.h@13; nsTHashMap.h@14; mozilla/Queue.h@15; mozilla/DataMutex.h@16; mozilla/UniquePtr.h@17; mozilla/ipc/NodeChannel.h@18
+
+`ipc/glue/PBackground.ipdl` | `176dc60ee2d3996b788b7a5120911cc191e8fba0` | 10224 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@80; ipc@81
+
+`ipc/glue/PBackgroundSharedTypes.ipdlh` | `0bb8df1e11fbddb0abf85bddc7d2f9a41d87822f` | 3376 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@14; ipc@15
+
+`ipc/glue/PBackgroundStarter.ipdl` | `60fd6a3423c53eda55b1b43997e66eacd19b6c42` | 461 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@7; ipc@8
+
+`ipc/glue/PBackgroundTest.ipdl` | `5027010994046368693dced925d13f6850f9f686` | 551 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@7; ipc@8
+
+`ipc/glue/PIdleScheduler.ipdl` | `8eb87cc1a1b74fb7db9354bc18a4422af0c2b4b2` | 2852 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@8; ipc@9
+
+`ipc/glue/PUtilityMediaService.ipdl` | `4f6eb3e671413d7fda51ab5e1bb91e5871331392` | 1597 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@17; ipc@19
+
+`ipc/glue/PUtilityProcess.ipdl` | `d25df58445527ae59b8f7f709311828b9ee89424` | 5756 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@49; ipc@51
+
+`ipc/glue/ProcessChild.cpp` | `7f3449ea8183e3d966f8c6e47773ce8b3a208b4b` | 4444 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@27; ipc@28; ProcessChild::AddPlatformBuildID@50; ProcessChild::InitPrefs@56; ReallySleep@75; ReallySleep@80; SleepIfEnv@82; SleepIfEnv@92; ProcessChild::~ProcessChild@95; ProcessChild::NotifiedImpendingShutdown@107; ProcessChild::QuickExit@114; ProcessChild::TakeInitialEndpoint@124
+Dependencies: mozilla/ipc/ProcessChild.h@5; Endpoint.h@7; nsDebug.h@8; stdlib.h@11; synchapi.h@12; unistd.h@14; time.h@15; base/eintr_wrapper.h@16; prenv.h@17; nsAppRunner.h@20; nsExceptionHandler.h@21; mozilla/AppShutdown.h@22; mozilla/ipc/IOThread.h@23; mozilla/ipc/ProcessUtils.h@24; mozilla/GeckoArgs.h@25
+
+`ipc/glue/ProcessChild.h` | `aeb9c7cca760b0e4cbfd1a96ca3d3ec2d5482641` | 2264 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@19; ipc@20; ProcessChild@22; base@24; CleanUp@41; message_loop@43; AppendToIPCShutdownStateAnnotation@49; current@62; ParentPid@64
+Dependencies: Endpoint.h@8; base/message_loop.h@9; base/process.h@10; mozilla/GeckoArgs.h@12; mozilla/ipc/IOThread.h@13
+
+`ipc/glue/ProcessUtils.h` | `fe2a0854711452c6b3857a792f847cace5eef1e1` | 2522 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@16; ipc@17; GeckoChildProcessHost@19; SharedPreferenceSerializer@25; SharedPreferenceDeserializer@52
+Dependencies: mozilla/GeckoArgs.h@8; mozilla/dom/RemoteType.h@9; mozilla/ipc/FileDescriptor.h@10; mozilla/ipc/SharedMemoryHandle.h@11; mozilla/ipc/SharedMemoryMapping.h@12; mozilla/Preferences.h@13; nsXULAppAPI.h@14
+
+`ipc/glue/ProcessUtils_bsd.cpp` | `1a373473fba92f85086fe224f8700bf91d14a160` | 582 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; ipc@14; SetThisProcessName@16
+Dependencies: ProcessUtils.h@5; pthread.h@7; pthread_np.h@10
+
+`ipc/glue/ProcessUtils_common.cpp` | `1a87ab12dbf248b19b6f4ad66b5e4fb0ce6da67b` | 4686 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@15; ipc@16; SharedPreferenceSerializer::SharedPreferenceSerializer@18; SharedPreferenceSerializer::~SharedPreferenceSerializer@22; mPrefsHandle@29; SharedPreferenceDeserializer::SharedPreferenceDeserializer@79; SharedPreferenceDeserializer::~SharedPreferenceDeserializer@83; ImportSharedJSInit@127
+Dependencies: ProcessUtils.h@5; mozilla/Preferences.h@7; mozilla/GeckoArgs.h@8; mozilla/dom/RemoteType.h@9; mozilla/ipc/GeckoChildProcessHost.h@10; nsPrintfCString.h@11; XPCSelfHostedShmem.h@13
+
+`ipc/glue/ProcessUtils_linux.cpp` | `9baf543452d96ec348d165982baa3c9c5765056a` | 469 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@11; ipc@13; SetThisProcessName@15
+Dependencies: ProcessUtils.h@5; nsString.h@7; sys/prctl.h@9
+
+`ipc/glue/ProcessUtils_mac.mm` | `bd0ec7650c8be3a8970f329dbebe2b311e323094` | 3953 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@14; ipc@15; SetThisProcessName@25; CFTypeRef@48; OSStatus@49
+Dependencies: ProcessUtils.h@5; nsObjCExceptions.h@7; nsCocoaUtils.h@8; nsString.h@9; mozilla/Sprintf.h@10
+
+`ipc/glue/ProcessUtils_none.cpp` | `06ae36a0e5dee744e75c9015a7be01f4525f8ad9` | 379 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@7; ipc@8; SetThisProcessName@10
+Dependencies: ProcessUtils.h@5
+
+`ipc/glue/ProtocolMessageUtils.h` | `7cb1f4d3e7e35a94b2f3eebe765c28c57802f0ef` | 3586 bytes | source | UTF-8 | mode 100644
+Declarations: PickleIterator@16; mozilla@18; FileDescriptor@19; Endpoint@21; ManagedEndpoint@23; IPC@26; Message@28; MessageReader@29; MessageWriter@30; ParamTraits@33; ParamTraits@38; ParamTraits@47; Write@50; Read@54; ParamTraits@70; ParamTraits@79; ParamTraits@86; ParamTraits@94; Write@97; Read@102; ParamTraits@110
+Dependencies: base/string_util.h@8; chrome/common/ipc_channel.h@9; chrome/common/ipc_message_utils.h@10; ipc/EnumSerializer.h@11; ipc/IPCMessageUtils.h@12; mozilla/ipc/Endpoint.h@13; mozilla/ipc/ProtocolUtils.h@14
+
+`ipc/glue/ProtocolTypes.ipdlh` | `6050bff67559451825da4c23b6f33a16ffb23619` | 363 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@8; ipc@9; ProtocolFdMapping@11
+
+`ipc/glue/ProtocolUtils.cpp` | `85d961ee601df4402fe5383045ed81d20192ed5b` | 31070 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@45; ipc@46; EndpointProcInfo::Current@49; AnnotateSystemError@84; AnnotateCrashReportWithErrno@98; Substring@141; Substring@147; ProtocolErrorBreakpoint@173; PickleFatalError@180; FatalError@188; LogicError@215; ActorIdReadError@217; BadActorIdError@223; ActorLookupError@228; MismatchedActorTypeError@233; UnionTypeReadError@239; ArrayLengthReadError@243; SentinelReadError@247; _mOwningThread@253; mActor@255; ActorLifecycleProxy::GetWeakProxy@265; ActorLifecycleProxy::~ActorLifecycleProxy@272; mProxy@299; WeakActorLifecycleProxy::~WeakActorLifecycleProxy@303; WeakActorLifecycleProxy::Get@307; IProtocol::GetWeakLifecycleProxy@312; IProtocol::~IProtocol@316; IProtocol::Lookup@342; IProtocol::CreateSharedMemory@344; IProtocol::LookupSharedMemory@347; IProtocol::IsTrackingSharedMemory@350; IProtocol::DestroySharedMemory@353; IProtocol::GetIPCChannel@357; IProtocol::GetActorEventTarget@364; IProtocol::FatalError@368; IProtocol::HandleFatalError@372; IProtocol::AllocShmem@384; IProtocol::AllocUnsafeShmem@395; IProtocol::DeallocShmem@406; IProtocol::SetManager@422; IProtocol::UnlinkManager@483; IProtocol::WarnMessageDiscarded@513; IProtocol::AllManagedActorsCount@520; IProtocol::ActorConnected@528; IProtocol::ActorDisconnected@545; IProtocol::DoomSubtree@618; IProtocol::PeekManagedActor@631; mChannel@648; IToplevelProtocol::NotifyImpendingShutdown@681; IToplevelProtocol::Close@687; IToplevelProtocol::SetReplyTimeoutMs@689; IToplevelProtocol::IsOnCxxStack@693; IToplevelProtocol::NextId@697; IToplevelProtocol::Lookup@705; IToplevelProtocol::TryReserve@712; IToplevelProtocol::ClearReservation@731; IToplevelProtocol::CreateSharedMemory@739; IToplevelProtocol::LookupSharedMemory@757; IToplevelProtocol::IsTrackingSharedMemory@762; IToplevelProtocol::DestroySharedMemory@771; IToplevelProtocol::DeallocShmems@791; IToplevelProtocol::ShmemCreated@793; IToplevelProtocol::ShmemDestroyed@804; mWeakProxy@819; IPDLResolverInner::Destroy@844; IPDLResolverInner::~IPDLResolverInner@855; ResolveOrReject@862; IPC@942
+Dependencies: base/process_util.h@5; base/task.h@6; errno.h@9; mozilla/IntegerPrintfMacros.h@12; mozilla/ipc/ProtocolMessageUtils.h@14; mozilla/ipc/ProtocolUtils.h@15; mozilla/ipc/MessageChannel.h@17; mozilla/StaticMutex.h@18; mozilla/Tokenizer.h@20; nsPrintfCString.h@22; nsReadableUtils.h@23; prtime.h@24; mozilla/sandboxTarget.h@27; aclapi.h@31; sddl.h@32; mozilla/fuzzing/IPCFuzzController.h@36
+
+`ipc/glue/ProtocolUtils.h` | `45e41b5acceb21686bf5e8bbaf50664b5bb822b4` | 32826 bytes | source | UTF-8 | mode 100644
+Declarations: nsPtrHashKey@44; MessageLoop@84; PickleIterator@85; nsISerialEventTarget@86; mozilla@88; SchedulerGroup@89; UntypedManagedContainer@90; dom@92; ContentParent@93; net@96; NeckoParent@97; ipc@100; ProtocolFdMapping@102; ProtocolCloneContext@103; EndpointProcInfo@107; Invalid@113; class@122; IPCMessageStart@146; ActorTraits@153; IRefCountedProtocol@164; IToplevelProtocol@165; ActorLifecycleProxy@166; WeakActorLifecycleProxy@167; IPDLResolverInner@168; UntypedManagedEndpoint@169; IProtocol@171; ActorDestroyReason@173; mToplevel@192; ToplevelProtocol@194; GetProtocolId@214; Id@217; Manager@218; GetLifecycleProxy@222; GetSide@225; CanSend@226; RejectPendingResponses@294; ActorDestroy@298; WarnMessageDiscarded@316; IPCResult@364; Ok@366; char@373; Fail@377; IPCResult@400; UntypedEndpoint@404; Endpoint@407; ManagedEndpoint@410; IRefCountedProtocol@415; IToplevelProtocol@428; GetIPCChannel@454; ProcessingError@459; ShouldContinueFromReplyTimeout@490; IntentionalCrash@493; ArtificialTimeout@502; NeedArtificialSleep@506; ArtificialSleep@511; ArtificialTimeout@513; NeedArtificialSleep@514; ArtificialSleep@515; ProcessRemoteNativeEventsInInterruptCall@520; OnChannelReceivedMessage@522; OnIPCChannelOpened@525; OnChannelClose@530; OnChannelError@537; OtherPidMaybeInvalid@545; OtherChildIDMaybeInvalid@546; IShmemAllocator@566; LoggingEnabled@586; ActorLifecycleProxy@701; Get@708; WeakActorLifecycleProxy@732; ActorEventTarget@742; IPDLResolverInner@762; Resolve@770; IPDLAsyncReturnsCallbacks@789; EntryKey@804; Entry@811; UntypedManagedContainer@827; begin@831; end@832; IsEmpty@834; Count@835; EnsureRemoved@848; Insert@852; ManagedContainer@870; ManagedContainer@872; iterator@876; mIter@887; begin@907; end@908; ToArray@910; SingleManagedOrNull@929
+Dependencies: concepts@8; cstddef@9; cstdint@10; utility@11; IPCMessageStart.h@12; base/basictypes.h@13; base/process.h@14; chrome/common/ipc_message.h@15; mojo/core/ports/port_ref.h@16; mozilla/AlreadyAddRefed.h@17; mozilla/Assertions.h@18; mozilla/Attributes.h@19; mozilla/FunctionRef.h@20; mozilla/MoveOnlyFunction.h@21; mozilla/Mutex.h@22; mozilla/RefPtr.h@23; mozilla/UniquePtr.h@24; mozilla/ipc/MessageChannel.h@25; mozilla/ipc/MessageLink.h@26; mozilla/ipc/Shmem.h@27; nsPrintfCString.h@28; nsTHashMap.h@29; nsDebug.h@30; nsISupports.h@31; nsTArrayForwardDeclare.h@32; nsTHashSet.h@33; base/process_util.h@36; prenv.h@37; android/log.h@40
+
+`ipc/glue/RandomAccessStreamParams.ipdlh` | `462bcd38dc1703f3bcdde85e1dd1e80f516cd021` | 1015 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@7; ipc@8; FileRandomAccessStreamParams@13; LimitingFileRandomAccessStreamParams@19; NSSEncryptedRandomAccessStreamParams@25
+
+`ipc/glue/RandomAccessStreamUtils.cpp` | `9e206f3f4a2b66b1c81ad21f579a28b5180f435a` | 3125 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@18; DeserializeRandomAccessStream@44
+Dependencies: RandomAccessStreamUtils.h@5; mozilla/NotNull.h@7; mozilla/Result.h@8; mozilla/ResultVariant.h@9; mozilla/dom/quota/EncryptedRandomAccessStream_impl.h@10; mozilla/dom/quota/FileStreams.h@11; mozilla/dom/quota/NSSRandomAccessCipherStrategy.h@12; mozilla/ipc/RandomAccessStreamParams.h@13; nsFileStreams.h@14; nsIInterfaceRequestor.h@15; nsIRandomAccessStream.h@16
+
+`ipc/glue/RandomAccessStreamUtils.h` | `63d1eb476afb78899203f3868546c574dea07849` | 1440 bytes | source | UTF-8 | mode 100644
+Declarations: nsCOMPtr@9; nsIInterfaceRequestor@11; nsIRandomAccessStream@12; mozilla@14; Maybe@17; MovingNotNull@20; Result@23; ipc@25; RandomAccessStreamParams@27
+
+`ipc/glue/RustMessageUtils.h` | `6540963a781a7eac3f6766fadc70a7bde4b9c949` | 2646 bytes | source | UTF-8 | mode 100644
+Declarations: IPC@16; Write@18; Read@24
+Dependencies: chrome/common/ipc_message_utils.h@8
+
+`ipc/glue/ScopedPort.cpp` | `ac5580cd548f3a98ef5140d7bec9696d8e691894` | 2017 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@9; ScopedPort::Reset@11; ScopedPort::~ScopedPort@31; mValid@34; mController@41
+Dependencies: mozilla/ipc/ScopedPort.h@5; mozilla/ipc/NodeController.h@6; chrome/common/ipc_message_utils.h@7
+
+`ipc/glue/ScopedPort.h` | `64051e133007889c88a1bce30a051d5abc00e897` | 2194 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; NodeController@12; ScopedPort@19; IsValid@36; bool@37; Controller@42; IPC@62; ParamTraits@65; ParamTraits@68
+Dependencies: mojo/core/ports/port_ref.h@8
+
+`ipc/glue/SerializeToBytesUtil.h` | `81bab3211a7fcaad2babd9df2c94fca6bc9fd940` | 2139 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@11; SerializeToBytesUtil@22; DeserializeFromBytesUtil@44
+Dependencies: chrome/common/ipc_message_utils.h@8; chrome/common/ipc_message.h@9
+
+`ipc/glue/SerializedStructuredCloneBuffer.cpp` | `c8d4274b53d7ce8a456b3927265380f6fc78df92` | 3002 bytes | source | UTF-8 | mode 100644
+Declarations: IPC@8
+Dependencies: mozilla/ipc/SerializedStructuredCloneBuffer.h@5; js/StructuredClone.h@6
+
+`ipc/glue/SerializedStructuredCloneBuffer.h` | `fb97e22fc0667bf27149a7dcd18dd547c07ad9a7` | 2046 bytes | source | UTF-8 | mode 100644
+Declarations: PickleIterator@14; mozilla@16; Variant@18; detail@20; VariantTag@22; mozilla@26; SerializedStructuredCloneBuffer@28; IPC@53; ParamTraits@55; JSStructuredCloneData@56
+Dependencies: chrome/common/ipc_message.h@8; chrome/common/ipc_message_utils.h@9; ipc/IPCMessageUtils.h@10; js/AllocPolicy.h@11; js/StructuredClone.h@12; mozilla/mozalloc.h@13
+
+`ipc/glue/SetProcessTitle.cpp` | `9329ee6b2a43f891b319567c421e514b64c20bff` | 1098 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@24; SetProcessTitle@26; SetProcessTitleInit@44
+Dependencies: mozilla/ipc/SetProcessTitle.h@5; nsString.h@7; base/set_process_title_linux.h@11; sys/types.h@18; unistd.h@19
+
+`ipc/glue/SetProcessTitle.h` | `e5436dfe4177f36e2b735e8b944f87d0a722d8f1` | 516 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@11
+Dependencies: string@8; vector@9
+
+`ipc/glue/SharedMemoryCursor.cpp` | `83fe2b9880ef8591f354f976db413c941ae3c7ba` | 3419 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@11; Cursor::Read@13; Cursor::Write@17; Cursor::Seek@21; Cursor::TakeHandle@32; Cursor::SetChunkSize@37; Cursor::Consume@47; Cursor::EnsureMapping@83
+Dependencies: bit@5; mozilla/MathAlgorithms.h@7; nsDebug.h@8; SharedMemoryCursor.h@9
+
+`ipc/glue/SharedMemoryCursor.h` | `27decd7702b289ded278d4e2273cbd6e1bc130c8` | 3638 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@11; Cursor@24; Cursor@31; IsValid@33; Size@34; Offset@35; Remaining@36; ChunkSize@67; ChunkOffsetMask@68; ChunkStartMask@69; ChunkOffset@70; ChunkStart@71
+Dependencies: mozilla/ipc/SharedMemoryHandle.h@8; mozilla/ipc/SharedMemoryMapping.h@9
+
+`ipc/glue/SharedMemoryHandle.cpp` | `3bbb9046fc4c8562e9c6b4400b31c1310e7009ee` | 6878 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@17; AllocationReporter@22; RegisterAllocationMemoryReporter@46; HandleBase::~HandleBase@55; HandleBase::Clone@70; HandleBase::FromMessageReader@87; HandleBase::SetSize@112; MutableHandle::Map@119; ReadOnlyHandle::Map@141; FreezableHandle::~Handle@155; Create@181; CreateFreezable@191; IPC@203
+Dependencies: mozilla/ipc/SharedMemoryHandle.h@8; mozilla/ipc/SharedMemoryMapping.h@9; SharedMemoryPlatform.h@10; chrome/common/ipc_message_utils.h@12; mozilla/Atomics.h@13; nsDebug.h@14; nsIMemoryReporter.h@15
+
+`ipc/glue/SharedMemoryHandle.h` | `e7668af038dcb030d29328bfca31e4b694d6fb97` | 8465 bytes | source | UTF-8 | mode 100644
+Declarations: IPC@12; ParamTraits@14; MessageWriter@15; MessageReader@16; mozilla@19; CommandLineArg@21; mozilla@24; SharedMemoryInternalTest@26; shared_memory@28; class@30; Handle@44; Mapping@47; HandleBase@61; Size@66; IsValid@71; bool@76; HandleBase@97; mSize@102; CloneAs@109; Handle@142; Handle@147; Clone@152; Handle@191; Handle@196; Clone@201; Handle@227; Handle@232; IPC@302; ParamTraits@305; ParamTraits@313
+Dependencies: utility@8; mozilla/UniquePtrExtensions.h@10
+
+`ipc/glue/SharedMemoryMapping.cpp` | `88fe20767af874b9feb9b27111bb6fc4422d491e` | 6133 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@20; MappingReporter@22; RegisterMappingMemoryReporter@46; MappingBase::Address@63; Platform::Map@105; MappingBase::Unmap@114; mReadOnly@135; mReadOnly@141; MappingData@146; MappingData@149; mHandle@155; mHandle@161; LocalProtect@182; FindFreeAddressSpace@186; SystemPageSize@190; SystemAllocationGranularity@192; PageAlignedSize@196
+Dependencies: mozilla/ipc/SharedMemoryHandle.h@8; mozilla/ipc/SharedMemoryMapping.h@9; SharedMemoryPlatform.h@10; mozilla/Atomics.h@12; mozilla/CheckedInt.h@13; nsIMemoryReporter.h@14; mozilla/ipc/SharedMemoryFuzzer.h@17
+
+`ipc/glue/SharedMemoryMapping.h` | `fafd6189e1b9f1212b075529a299a73e3afdceb1` | 9140 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@15; shared_memory@17; LeakedMapping@25; LeakedMapping@30; MappingBase@37; Size@42; IsValid@52; bool@57; MappingBase@67; mSize@75; ConvertMappingTo@85; MappingData@99; MappingData@108; DataAs@121; DataAsSpan@137; Mapping@146; Mapping@151; Mapping@153; Mapping@178; Mapping@183; IsReadOnly@194; Mapping@204; Mapping@209; Mapping@247; Mapping@249; Mapping@270; Access@273
+Dependencies: tuple@8; type_traits@9; utility@10; mozilla/Assertions.h@11; mozilla/Span.h@12; SharedMemoryHandle.h@13
+
+`ipc/glue/SharedMemoryPlatform.h` | `2f1d54e0f38c46809bfcbbabbdbc74f20af9d6ae` | 4150 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; Platform@25
+Dependencies: mozilla/ipc/SharedMemoryHandle.h@8; mozilla/ipc/SharedMemoryMapping.h@9; mozilla/Logging.h@10; mozilla/Maybe.h@11
+
+`ipc/glue/SharedMemoryPlatform_android.cpp` | `7a0cd79db9f6f8f2468e44aae1d6136588275bff` | 4201 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@27; CreateImpl@30; AppendPosixShmPrefix@43; UsingPosixShm@44; Platform::Create@46; Platform::CreateFreezable@55; Platform::CloneHandle@64; Platform::Freeze@73; Platform::Unmap@105; Platform::Protect@107; Platform::FindFreeAddressSpace@115; Platform::PageSize@125; Platform::AllocationGranularity@127; Platform::IsSafeToMap@129
+Dependencies: SharedMemoryPlatform.h@8; errno.h@10; fcntl.h@11; sys/mman.h@12; sys/stat.h@13; unistd.h@14; android/sharedmem.h@16; valgrind/valgrind.h@19; mozilla/DebugOnly.h@22; mozilla/Maybe.h@23; mozilla/UniquePtrExtensions.h@24; prenv.h@25
+
+`ipc/glue/SharedMemoryPlatform_mach.cpp` | `3ff2a543b0e0f719bfded11af339e719d2113d34` | 7359 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@46; toPointer@48; toVMAddress@52; CreateImpl@56; Platform::Create@72; Platform::CreateFreezable@81; Platform::CloneHandle@90; Platform::Freeze@135; Platform::Unmap@177; Platform::Protect@187; Platform::FindFreeAddressSpace@195; vm_deallocate@201; Platform::PageSize@207; Platform::AllocationGranularity@224; Platform::IsSafeToMap@226
+Dependencies: SharedMemoryPlatform.h@5; utility@7; mach/vm_map.h@9; mach/mach_port.h@10; mach/vm_map.h@12; mach/mach_vm.h@19; pthread.h@21; sys/mman.h@22; unistd.h@23; prenv.h@26; prtypes.h@28; mozilla/IntegerPrintfMacros.h@30; mozilla/Printf.h@31; nsDebug.h@32
+
+`ipc/glue/SharedMemoryPlatform_posix.cpp` | `7f45627db9314f04d38c12a4b9666cc9e75c4d0e` | 18155 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@41; memfd_create@54; DupReadOnly@82; DupReadOnly@95; HaveMemfd@121; MemfdCanSeal@192; AppendPosixShmPrefix@200; fcntl@351; UsingPosixShm@360; Platform::Create@362; Platform::CreateFreezable@371; Platform::CloneHandle@380; Platform::Freeze@389; Platform::Unmap@468; Platform::Protect@470; Platform::FindFreeAddressSpace@478; Platform::PageSize@492; Platform::AllocationGranularity@494; Platform::IsSafeToMap@496; stat@519
+Dependencies: SharedMemoryPlatform.h@8; errno.h@10; fcntl.h@11; sys/mman.h@12; sys/stat.h@13; unistd.h@14; base/linux_memfd_defs.h@17; mozilla/WidgetUtilsGtk.h@20; sys/capsicum.h@24; valgrind/valgrind.h@28; base/eintr_wrapper.h@31; base/string_util.h@32; mozilla/Atomics.h@33; mozilla/CheckedInt.h@34; mozilla/Maybe.h@35; mozilla/ProfilerThreadSleep.h@36; mozilla/UniquePtrExtensions.h@37; prenv.h@38; nsXULAppAPI.h@39
+
+`ipc/glue/SharedMemoryPlatform_windows.cpp` | `f485592a97767ee89546aecba7ab57b474d8fdee` | 8431 bytes | source | UTF-8 | mode 100644
+Declarations: enum@21; struct@25; ULONG@31; IsSectionSafeToMap@38; mozilla@124; CreateImpl@126; NS_WARN_IF@144; Platform::Create@158; Platform::CreateFreezable@167; Platform::CloneHandle@176; Platform::Freeze@184; Platform::Unmap@212; Platform::Protect@216; Platform::FindFreeAddressSpace@229; Platform::PageSize@237; Platform::AllocationGranularity@243; Platform::IsSafeToMap@249
+Dependencies: SharedMemoryPlatform.h@8; windows.h@10; nsDebug.h@12; mozmemory_stall.h@14
+
+`ipc/glue/Shmem.cpp` | `af064a83f33c21635b1f579160db790a4b784fac` | 6184 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; ipc@14; ShmemCreated@16; Shmem@18; Log@37; ShmemDestroyed@42; Shmem@44; Protect@59; Unprotect@65; Shmem::AssertInvariants@71; Shmem::RevokeRights@85; mId@101; Shmem::Builder::Builder@111; IPC@170
+Dependencies: Shmem.h@5; mozilla/CheckedInt.h@7; ProtocolUtils.h@8; ShmemMessageUtils.h@9; chrome/common/ipc_message_utils.h@10; mozilla/ipc/SharedMemoryHandle.h@11
+
+`ipc/glue/Shmem.h` | `19f3d0dc5eccfdc53399a5b372bf5dd4361dba79` | 6091 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@53; IProtocol@55; IToplevelProtocol@56; Shmem@58; Segment@66; SharedMemoryMapping@70; Builder@76; bool@80; Shmem@94; IsWritable@104; IsReadable@108; get@112; Size@124; Range@132; Id@141; GetSegment@143; RevokeRights@146; forget@151; AssertAligned@176; AssertInvariants@181
+Dependencies: base/basictypes.h@8; base/process.h@9; chrome/common/ipc_message_utils.h@10; nsISupports.h@12; nscore.h@13; nsDebug.h@14; mozilla/ipc/SharedMemoryMapping.h@16; mozilla/Range.h@17; mozilla/UniquePtr.h@18
+
+`ipc/glue/ShmemMessageUtils.h` | `31e058bea924907d93c285e962ca5bd85fe0fb34` | 679 bytes | source | UTF-8 | mode 100644
+Declarations: IPC@11; ParamTraits@14
+Dependencies: ipc/IPCMessageUtils.h@8; mozilla/ipc/Shmem.h@9
+
+`ipc/glue/SideVariant.h` | `ef2febab99e2a2cae1bebe9de650280fac6fac03` | 5928 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; ipc@14; SideVariant@24; SideVariant@29; SideVariant@32; SideVariant@33; IsNull@53; IsParent@54; IsChild@55; AsParent@57; AsChild@61; NotNull@79; mBasePtr@103; mBasePtr@113; IsParent@125; IsChild@126; AsParent@128; AsChild@129; IPC@134; ParamTraits@137; mozilla@138; Write@140; Read@161
+Dependencies: mozilla/Assertions.h@8; mozilla/Attributes.h@9; mozilla/ipc/ProtocolUtils.h@10; ipc/IPCMessageUtils.h@11
+
+`ipc/glue/StringUtil.cpp` | `e35b8b6ee1e1d1df82001f29acb1c64ed22a112c` | 2489 bytes | source | UTF-8 | mode 100644
+Declarations: base@28; HackyStringConvert@32; WideToUTF8@46; UTF8ToWide@50; base@54; SysWideToUTF8@61; SysUTF8ToWide@68; SysWideToNativeMB@73; SysNativeMBToWide@78
+Dependencies: base/string_util.h@5; base/sys_string_conversions.h@11; base/string_piece.h@13; base/string_util.h@14
+
+`ipc/glue/TaintingIPCUtils.h` | `12efbb31cf1f15c26fd83a65ce923900cd4c81f7` | 881 bytes | source | UTF-8 | mode 100644
+Declarations: IPC@12; ParamTraits@15; Write@16; Write@20; Read@24
+Dependencies: mozilla/Tainting.h@8; chrome/common/ipc_message_utils.h@10
+
+`ipc/glue/TaskFactory.h` | `66d121cdb820e63b0bb9d429b7dd3bf9510e9c2a` | 2742 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@21; ipc@22; TaskFactory@25; TaskWrapper@28; TaskType@32; TaskFactory@44; NewTask@47; TaskWrapper@48; decltype@56; RunnableMethod@57; TaskWrapper@58; RunnableMethod@68; params_@74
+Dependencies: base/task.h@8; utility@10
+
+`ipc/glue/TransportSecurityInfoUtils.cpp` | `48cbdd567dddfd86fe4fcf33b09e21de5d201959` | 1810 bytes | source | UTF-8 | mode 100644
+Declarations: IPC@11
+Dependencies: TransportSecurityInfoUtils.h@5; ipc/IPCMessageUtils.h@7; mozilla/psm/TransportSecurityInfo.h@8; nsNSSCertificate.h@9
+
+`ipc/glue/TransportSecurityInfoUtils.h` | `0228f9bae9eb7b13340cf573d4bf129cf08af603` | 1699 bytes | source | UTF-8 | mode 100644
+Declarations: MessageReader@14; MessageWriter@15; IPC@17; ParamTraits@20; ParamTraits@23; ParamTraits@30; ParamTraits@36; ParamTraits@43
+Dependencies: CertVerifier.h@8; ipc/EnumSerializer.h@9; mozilla/RefPtr.h@10; nsITransportSecurityInfo.h@11; nsIX509Cert.h@12
+
+`ipc/glue/URIParams.ipdlh` | `5e1f777a865e22fea88ffc6c1e723def0fa8bae6` | 2123 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; ipc@13; SimpleURIParams@15; DefaultURIParams@20; StandardURLSegment@25; StandardURLParams@31; JARURIParams@53; IconURIParams@60; HostObjectURIParams@71; JSURIParams@92; SimpleNestedURIParams@98; NestedAboutURIParams@104; SubstitutingJARURIParams@110
+
+`ipc/glue/URIUtils.cpp` | `51c161b9299749e50e87dabb8670a7f40e33d6e8` | 3654 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@36; ipc@37; SerializeURI@39; SerializeURI@52; DeserializeURI@62; DeserializeURI@130
+Dependencies: URIUtils.h@5; mozilla/Assertions.h@7; mozilla/dom/BlobURL.h@8; mozilla/net/DefaultURI.h@9; mozilla/net/SubstitutingJARURI.h@10; mozilla/net/SubstitutingURL.h@11; nsAboutProtocolHandler.h@12; nsComponentManagerUtils.h@13; nsDebug.h@14; nsID.h@15; nsIIPCSerializableURI.h@16; nsJARURI.h@17; nsIIconURI.h@18; nsJSProtocolHandler.h@19; nsNetCID.h@20; nsSimpleNestedURI.h@21; nsThreadUtils.h@22; nsIURIMutator.h@23
+
+`ipc/glue/URIUtils.h` | `b3c8328e11aa0d48b9d92cda3bf0a71fed51ffc8` | 1325 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; ipc@14; IPC@27; ParamTraits@30; Write@31; Read@37
+Dependencies: ipc/IPCMessageUtilsSpecializations.h@8; mozilla/ipc/URIParams.h@9; nsCOMPtr.h@10; nsIURI.h@11
+
+`ipc/glue/UtilityMediaService.cpp` | `048a9964be550ab1996ec641102fa24933e0c099` | 1236 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; GetAudioActorName@12; GetChildAudioActorName@33
+Dependencies: mozilla/ProcInfo.h@5; mozilla/ipc/UtilityMediaService.h@6; mozilla/dom/BindingUtils.h@7; mozilla/ipc/UtilityProcessChild.h@8
+
+`ipc/glue/UtilityMediaService.h` | `2b97a56a4d3920f8da58bc72fc15b31e8748bde5` | 675 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10
+Dependencies: mozilla/dom/ChromeUtilsBinding.h@7; mozilla/ipc/UtilityProcessSandboxing.h@8
+
+`ipc/glue/UtilityMediaServiceChild.cpp` | `8adc825646f91d160e4e32cdbf165d4ba8ffb423` | 8893 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@27; mSandbox@49; std::move@73; UtilityMediaServiceChild::ActorDestroy@86; UtilityMediaServiceChild::Shutdown@110; UtilityMediaServiceChild::RecvCompleteCreatedVideoBridge@141; UtilityMediaServiceChild::OnCompositorUnexpectedShutdown@152; NS_FAILED@186; UtilityMediaServiceChild::RecvDisableHardwareDRM@245
+Dependencies: UtilityMediaServiceChild.h@5; base/basictypes.h@7; mozilla/AppShutdown.h@8; mozilla/dom/ContentParent.h@9; mozilla/gfx/gfxVars.h@10; mozilla/StaticPrefs_media.h@13; mozilla/gfx/GPUProcessManager.h@14; mozilla/ipc/UtilityProcessManager.h@15; mozilla/layers/PVideoBridge.h@16; mozilla/layers/VideoBridgeParent.h@17; mozilla/layers/VideoBridgeUtils.h@18; mozilla/dom/Promise.h@22; mozilla/EMEUtils.h@23; mozilla/PMFCDM.h@24
+
+`ipc/glue/UtilityMediaServiceChild.h` | `62897ac77802f2d006bcd058393917c7c08666e6` | 3331 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@24; UtilityMediaServiceChildShutdownObserver@26; mSandbox@29; UtilityMediaServiceChild@44; GetActorName@57; class@96
+Dependencies: mozilla/ProcInfo.h@7; mozilla/ProfilerMarkers.h@8; mozilla/RefPtr.h@9; mozilla/ipc/Endpoint.h@11; mozilla/ipc/UtilityProcessParent.h@12; mozilla/ipc/UtilityProcessSandboxing.h@13; mozilla/ipc/UtilityMediaService.h@14; mozilla/ipc/PUtilityMediaServiceChild.h@15; mozilla/gfx/gfxVarReceiver.h@16; mozilla/gfx/GPUProcessListener.h@19; PDMFactory.h@22
+
+`ipc/glue/UtilityMediaServiceParent.cpp` | `40f2cda2e4a0c32ad8e7226217c9b0afe0f492be` | 6699 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@37; mUtilityMediaServiceParentStart@42; UtilityMediaServiceParent::~UtilityMediaServiceParent@67; UtilityMediaServiceParent::GenericPreloadForSandbox@83; UtilityMediaServiceParent::WMFPreloadForSandbox@93; std::move@144
+Dependencies: UtilityMediaServiceParent.h@5; GeckoProfiler.h@7; nsDebugImpl.h@8; MediaCodecsSupport.h@10; mozilla/RemoteMediaManagerParent.h@11; mozilla/gfx/gfxVars.h@13; WMF.h@16; WMFDecoderModule.h@17; WMFUtils.h@18; mozilla/sandboxTarget.h@20; mozilla/ipc/UtilityProcessImpl.h@21; mozilla/ipc/UtilityProcessChild.h@24; mozilla/RemoteDecodeUtils.h@25; gfxConfig.h@28; mozilla/gfx/DeviceManagerDx.h@29; mozilla/MFCDMParent.h@33; mozilla/PMFCDM.h@34
+
+`ipc/glue/UtilityMediaServiceParent.h` | `8466325efcf846ba065161c9aa50531ef8a50a8d` | 1907 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@17; UtilityMediaServiceParent@21
+Dependencies: mozilla/PRemoteMediaManagerParent.h@7; mozilla/ProfilerMarkers.h@8; mozilla/ipc/Endpoint.h@10; mozilla/ipc/PUtilityMediaServiceParent.h@11; mozilla/ipc/UtilityProcessSandboxing.h@13; nsThreadManager.h@15
+
+`ipc/glue/UtilityProcessChild.cpp` | `25a5501384c0e197dd287377513d77ba5bd7e7b7` | 16313 bytes | source | UTF-8 | mode 100644
+Declarations: TelemetryScalar@50; mozilla@54; UtilityProcessChild::UtilityProcessChild@62; UtilityProcessChild::GetSingleton@69; UtilityProcessChild::Get@82; NS_FAILED@239; UtilityProcessChild::RecvTestTelemetryProbes@273; UtilityProcessChild::AllocPHWInferenceChild@312; UtilityProcessChild::RecvUnblockUntrustedModulesThread@370; mozilla::services::GetObserverService@372; UtilityProcessChild::RecvShutdown@379; UtilityProcessChild::ActorDestroy@416; GetCurrentSerialEventTarget@467
+Dependencies: UtilityProcessChild.h@4; mozilla/AppShutdown.h@6; mozilla/Logging.h@7; mozilla/dom/ContentParent.h@8; mozilla/dom/JSOracleChild.h@9; mozilla/dom/MemoryReportRequest.h@10; mozilla/ipc/CrashReporterClient.h@11; mozilla/ipc/Endpoint.h@12; mozilla/ipc/UtilityProcessManager.h@13; mozilla/ipc/UtilityProcessSandboxing.h@14; mozilla/Preferences.h@15; mozilla/RemoteMediaManagerParent.h@16; mozilla/Sandbox.h@19; mozilla/SandboxProfilerObserver.h@20; mozilla/SandboxSettings.h@24; mozilla/SandboxTestingChild.h@28; mozilla/Telemetry.h@31; mozilla/WinDllServices.h@34; mozilla/dom/WindowsUtilsChild.h@35; mozilla/widget/filedialog/WinFileDialogChild.h@36; nsDebugImpl.h@39; nsIXULRuntime.h@40; nsThreadManager.h@41; GeckoProfiler.h@42; mozilla/ipc/ProcessChild.h@44; mozilla/FOGIPC.h@45; mozilla/glean/GleanTestsTestMetrics.h@46; mozilla/Services.h@48
+
+`ipc/glue/UtilityProcessChild.h` | `8291afc55cd1ee5ab93e06c41d1369f1107beb93` | 4826 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@26; PJSOracleChild@27; mozilla@30; UtilityProcessHost@32; UtilityProcessChild@34; AsyncShutdownService@90; GetMediaService@108; GetHWInferenceChild@113
+Dependencies: mozilla/ipc/PUtilityProcessChild.h@6; mozilla/ipc/UtilityProcessSandboxing.h@7; mozilla/ipc/UtilityMediaServiceParent.h@8; mozilla/hwinference/HWInferenceChild.h@10; ChildProfilerController.h@12; mozilla/psm/PKCS11ModuleChild.h@15; mozilla/PSandboxTestingChild.h@19; mozilla/PRemoteMediaManagerParent.h@21; mozilla/ipc/AsyncBlockers.h@22; mozilla/dom/JSOracleChild.h@23; mozilla/ProfilerMarkers.h@24
+
+`ipc/glue/UtilityProcessHost.cpp` | `d8b2987052b7880ab9894aa9dd09318a6f35a0d3` | 15303 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@48; mLaunchPromise@64; UtilityProcessHost::~UtilityProcessHost@77; UtilityProcessHost::Launch@92; UtilityProcessHost::LaunchPromise@124; UtilityProcessHost::OnChannelConnected@156; UtilityProcessHost::InitAfterConnect@171; UtilityProcessHost::Shutdown@245; UtilityProcessHost::StartForceKillTimer@284; UtilityProcessHost::KillHard@334; UtilityProcessHost::DestroyProcess@371; UtilityProcessHost::ResolvePromise@392; UtilityProcessHost::RejectPromise@404; UtilityProcessHost::FillMacSandboxInfo@418; UtilityProcessHost::GetMacSandboxType@427; getter_AddRefs@457
+Dependencies: UtilityProcessHost.h@5; mozilla/dom/ContentParent.h@7; mozilla/ipc/Endpoint.h@8; mozilla/ipc/UtilityProcessManager.h@9; mozilla/ipc/UtilityProcessSandboxing.h@10; mozilla/Telemetry.h@11; chrome/common/process_watcher.h@13; mozilla/Preferences.h@14; mozilla/StaticPrefs_dom.h@15; mozilla/StaticPrefs_general.h@16; nsXULAppAPI.h@17; mozilla/Sandbox.h@20; mozilla/SandboxBrokerPolicyFactory.h@24; mozilla/WinDllServices.h@28; GMPServiceParent.h@36; mozilla/dom/KeySystemNames.h@37; mozilla/GeckoArgs.h@38; mozilla/MFMediaEngineUtils.h@39; mozilla/StaticPrefs_media.h@40; nsIFile.h@41; sandboxBroker.h@42; ProfilerParent.h@45; mozilla/PProfilerChild.h@46
+
+`ipc/glue/UtilityProcessHost.h` | `c4dff053211fbb3f8c732bd25dc0961b83f3743d` | 6421 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@22; UtilityProcessParent@24; UtilityProcessHost@31; Listener@35; OnProcessUnexpectedShutdown@45; GetActor@82; IsConnected@87; class@133
+Dependencies: mozilla/MozPromise.h@8; mozilla/UniquePtr.h@9; nsITimer.h@10; mozilla/ipc/UtilityProcessParent.h@11; mozilla/ipc/UtilityProcessSandboxing.h@12; mozilla/ipc/GeckoChildProcessHost.h@13; mozilla/ipc/ProtocolUtils.h@14; mozilla/media/MediaUtils.h@15; mozilla/ipc/ProcessUtils.h@16; mozilla/SandboxBroker.h@19
+
+`ipc/glue/UtilityProcessImpl.cpp` | `254ce4e17bf65c4f332341715348c2f69bdf1fbe` | 4571 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@28; UtilityProcessImpl::LoadLibraryOrCrash@34; UtilityProcessImpl::Init@76; UtilityProcessImpl::CleanUp@154
+Dependencies: UtilityProcessImpl.h@4; mozilla/GeckoArgs.h@6; nsExceptionHandler.h@9; mozilla/CpuInfo.h@13; mozilla/llama/LlamaRuntimeLinker.h@14; mozilla/sandboxTarget.h@15; WMF.h@16; WMFDecoderModule.h@17; mozilla/SandboxSettings.h@21; mozilla/MFCDMParent.h@25
+
+`ipc/glue/UtilityProcessImpl.h` | `ab8acd530e25c0b9a2c60201cd05ed62635b688d` | 1217 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@14; UtilityProcessImpl@19
+Dependencies: mozilla/ipc/ProcessChild.h@6; mozilla/mscom/ProcessRuntime.h@9; mozilla/ipc/UtilityProcessChild.h@12
+
+`ipc/glue/UtilityProcessManager.cpp` | `fbf844fd43ef4ea3c87074ba302a1128d152747b` | 31308 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@40; IsPastLaunchDeadline@49; UtilityProcessManager::IsShutdown@53; UtilityProcessManager::GetSingleton@58; UtilityProcessManager::GetIfExists@69; UtilityProcessManager::UtilityProcessManager@74; UtilityProcessManager::Init@78; UtilityProcessManager::RegisterShutdownBlocker@88; UtilityProcessManager::RemoveShutdownBlocker@115; UtilityProcessManager::~UtilityProcessManager@152; mManager@162; UtilityProcessManager::OnXPCOMWillShutdown@176; UtilityProcessManager::OnXPCOMShutdown@192; UtilityProcessManager::OnProcessShutdownComplete@205; UtilityProcessManager::OnPreferenceChange@223; UtilityProcessManager::LaunchProcess@267; UtilityProcessManager::LaunchIndependentProcess@296; NS_FAILED@554; UtilityProcessManager::StartJSOracle@599; UtilityProcessManager::GetWindowsUtilsPromise@616; UtilityProcessManager::ReleaseWindowsUtils@654; UtilityProcessManager::CreateWinFileDialogActor@657; UtilityProcessManager::StartPKCS11Module@701; UtilityProcessManager::CleanShutdownAllProcesses@740; UtilityProcessManager::CleanShutdown@748; UtilityProcessManager::AliveProcesses@760; UtilityProcessManager::DestroyProcess@762; UtilityMemoryReporter@816; UtilityMemoryReporter@820; GetParent@847; mProcess@862; UtilityProcessKeepAlive::~UtilityProcessKeepAlive@866; UtilityProcessKeepAlive::GetLaunchPromise@881; UtilityProcessKeepAlive::GetProcessParent@886
+Dependencies: UtilityProcessManager.h@4; JSOracleParent.h@6; mozilla/AppShutdown.h@7; mozilla/Components.h@8; mozilla/ipc/UtilityProcessHost.h@9; mozilla/MemoryReportingProcess.h@10; mozilla/Preferences.h@11; mozilla/ProfilerMarkers.h@12; mozilla/StaticPrefs_media.h@13; mozilla/SyncRunnable.h@14; mozilla/hwinference/HWInferenceParent.h@16; mozilla/ipc/UtilityProcessParent.h@18; mozilla/ipc/UtilityMediaServiceChild.h@19; mozilla/ipc/UtilityMediaServiceParent.h@20; mozilla/dom/BindingUtils.h@21; mozilla/dom/ContentParent.h@22; mozilla/ipc/Endpoint.h@23; mozilla/ipc/UtilityProcessSandboxing.h@24; mozilla/ipc/ProcessChild.h@25; nsAppRunner.h@26; nsContentUtils.h@27; mozilla/dom/WindowsUtilsParent.h@30; mozilla/widget/filedialog/WinFileDialogParent.h@31; mozilla/GeckoArgs.h@34; mozilla/psm/PPKCS11ModuleChild.h@37
+
+`ipc/glue/UtilityProcessManager.h` | `dc2ff678138fef62dbe30d3419b7daa53ff972ed` | 10592 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@22; MemoryReportingProcess@24; hwinference@27; HWInferenceParent@28; dom@32; JSOracleParent@33; WindowsUtilsParent@34; widget@37; ProcessProxy@38; ipc@41; UtilityProcessParent@43; UtilityProcessKeepAlive@44; UtilityProcessManager@49; GetAllProcessesProcessParent@131; Observer@195; ShutdownBlocker@213; mManager@219; ProcessFields@237; ProcessFields@241; UtilityProcessKeepAlive@288; IsAlive@302
+Dependencies: mozilla/MozPromise.h@6; mozilla/dom/ipc/IdType.h@7; mozilla/ipc/UtilityProcessHost.h@8; mozilla/EnumeratedArray.h@9; mozilla/ProcInfo.h@10; mozilla/WeakPtr.h@11; nsIAsyncShutdown.h@12; nsIObserver.h@13; nsTArray.h@14; mozilla/PRemoteMediaManagerChild.h@16; mozilla/psm/PKCS11ModuleParent.h@19
+
+`ipc/glue/UtilityProcessParent.cpp` | `e0d4c9886d38c7cebd9dfbf019c16128692e78cb` | 7312 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@24; mHost@27; UtilityProcessParent::RecvFOGData@65; UtilityProcessParent::RecvInitCompleted@134; UtilityProcessParent::RecvFinishShutdown@147; UtilityProcessParent::ActorDestroy@152; DeferredDeleteUtilityProcessParent@203; mParent@208; UtilityProcessParent::Destroy@217
+Dependencies: mozilla/ipc/UtilityProcessParent.h@4; mozilla/GeckoTrace.h@5; mozilla/ipc/UtilityProcessManager.h@6; dwrite.h@9; process.h@10; mozilla/WinDllServices.h@11; mozilla/ipc/ProcessChild.h@14; mozilla/FOGIPC.h@15; mozilla/Telemetry.h@17; mozilla/TelemetryIPC.h@18; nsHashPropertyBag.h@20; mozilla/Services.h@21; nsIObserverService.h@22
+
+`ipc/glue/UtilityProcessParent.h` | `dbd3e195d70f5b5e7799e9845dcffcae4a55f301` | 2921 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; ipc@15; UtilityProcessHost@17; UtilityProcessParent@19; mozilla@22
+Dependencies: mozilla/ipc/PUtilityProcessParent.h@6; mozilla/ipc/CrashReporterHelper.h@7; mozilla/ipc/UtilityProcessHost.h@8; mozilla/dom/MemoryReportRequest.h@9; mozilla/RefPtr.h@11
+
+`ipc/glue/UtilityProcessSandboxing.cpp` | `1523899f2282fc0fa9e5cb47f5d5552a46face62` | 2401 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@11; split@13; IsUtilitySandboxEnabled@27; IsUtilitySandboxEnabled@72
+Dependencies: UtilityProcessSandboxing.h@4; vector@6; string@7; prenv.h@9
+
+`ipc/glue/UtilityProcessSandboxing.h` | `619afebc8d5f9bdb9e660d26201a607b99c8839d` | 1351 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@9; ipc@11; SandboxingKind@15
+Dependencies: stdint.h@7
+
+`ipc/glue/WindowsMessageLoop.cpp` | `355a101e0927b5946a552fe4b805c7cca2ea5314` | 36996 bytes | source | UTF-8 | mode 100644
+Declarations: nsTArray@91; FindCOMWindow@107; wcsncmp@135; ScheduleDeferredMessageRun@193; DumpNeuteredMessage@206; ProcessOrDeferMessage@245; WindowIsDeferredWindow@428; NeuterWindowProcedure@461; RestoreWindowProcedure@498; NeuterWindowProcedure@523; AssertWindowIsNotNeutered@532; UnhookNeuteredWindows@540; TimeoutData@553; InitTimeoutData@558; TimeoutHasExpired@567; mozilla@583; ipc@584; windows@585; InitUIThread@587; mStaticPrev@622; MessageChannel::SyncStackFrame::~SyncStackFrame@638; MessageChannel::NotifyGeckoEventDispatch@664; MessageChannel::ProcessNativeEventsInInterruptCall@676; StartNeutering@689; StopNeutering@703; XRE_UseNativeEventProcessing@718; NeuteredWindowRegion::~NeuteredWindowRegion@724; NeuteredWindowRegion::PumpOnce@730; mReneuter@747; DeneuteredWindowRegion::~DeneuteredWindowRegion@753; mReenable@760; SuppressedNeuteringRegion::~SuppressedNeuteringRegion@767; MessageChannel::WaitForSyncNotify@776; MessageChannel::NotifyWorkerThread@912; DeferredSendMessage::Run@929; DeferredRedrawMessage::Run@946; DeferredUpdateMessage::DeferredUpdateMessage@960; DeferredUpdateMessage::Run@969; DeferredSendMessage@988; DeferredSettingChangeMessage::~DeferredSettingChangeMessage@999; DeferredWindowPosMessage::Run@1044; DeferredSendMessage@1067; DeferredCopyDataMessage::~DeferredCopyDataMessage@1091; hWnd@1096; DeferredStyleChangeMessage::Run@1101; DeferredSendMessage@1105; DeferredSetIconMessage::Run@1109
+Dependencies: mozilla/DebugOnly.h@5; WindowsMessageLoop.h@7; Neutering.h@8; MessageChannel.h@9; nsServiceManagerUtils.h@11; nsString.h@12; WinUtils.h@13; mozilla/dom/JSExecutionManager.h@15; mozilla/gfx/Logging.h@16; mozilla/ipc/ProtocolUtils.h@17; mozilla/mscom/Utils.h@18; mozilla/StaticPtr.h@19; mozilla/UniquePtr.h@20; mozilla/WindowsProcessMitigations.h@21
+
+`ipc/glue/WindowsMessageLoop.h` | `24c771efd62cf19dd2e544eff4afa12fe7bc2d38` | 3367 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; ipc@14; windows@15; DeferredMessage@19; DeferredSendMessage@31; hWnd@34; DeferredRedrawMessage@47; DeferredRedrawMessage@49; DeferredUpdateMessage@59; DeferredSettingChangeMessage@72; DeferredWindowPosMessage@85; DeferredCopyDataMessage@97; DeferredStyleChangeMessage@108; DeferredSetIconMessage@120
+Dependencies: windows.h@9; nsISupportsImpl.h@11
+
+`ipc/glue/components.conf` | `ef29e3a7ccf4582e67afe2be680c2b424e2abcdb` | 718 bytes | build-registration | UTF-8 | mode 100644
+
+`ipc/glue/moz.build` | `72c6bb55fb5fd351f51d3e6438c2db7ae4272695` | 8470 bytes | build-registration | UTF-8 | mode 100644
+Dependencies: /dom/media/webrtc/third_party_build/webrtc.mozbuild@4; /ipc/chromium/chromium-config.mozbuild@288; /tools/fuzzing/libfuzzer-config.mozbuild@332
+
+`ipc/glue/nsIIPCSerializableInputStream.h` | `2709f19c412c2c7e51016ac6ad60576721b40c86` | 4804 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@11; ipc@12; FileDescriptor@14; InputStreamParams@15; NS_NO_VTABLE@24
+Dependencies: nsISupports.h@8; nsTArrayForwardDeclare.h@9
+
+`ipc/glue/nsIIPCSerializableURI.h` | `419ae87c9687076701624da9f7f1a33affba1105` | 1114 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; ipc@11; URIParams@12; NS_NO_VTABLE@19
+Dependencies: nsISupports.h@8
+
+`ipc/glue/test/browser/browser.toml` | `be0e844c88c90a860f54e5f4360d7010d691b384` | 1340 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`ipc/glue/test/browser/browser_audio_fallback.toml` | `35e47848e690ef06ca6a723b5ea2c5611b5400d8` | 485 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`ipc/glue/test/browser/browser_audio_shutdown.toml` | `6dbb8cdf49f30cd911c5044c2888b298da66c38e` | 259 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`ipc/glue/test/browser/browser_child_hang.js` | `e74517fbdd380e6ebf5577c74ab16fe57bba58e7` | 1300 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@20; function@27
+
+`ipc/glue/test/browser/browser_child_hang.toml` | `ddc8b95670d4beee3a121da8bb48457fa94efb3e` | 196 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`ipc/glue/test/browser/browser_mac_plist_process_launch.js` | `7e184631ee5fdb6647267d39227cf2a436d44047` | 2690 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@18; add_task@34; add_task@48
+
+`ipc/glue/test/browser/browser_mac_plist_process_launch.toml` | `ff6e0e75e89209df0ba14058b28733e198b91230` | 325 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`ipc/glue/test/browser/browser_utility_audioDecodeCrash.js` | `986ade5c3fc6b59024bd7f214e42fb1a7b7b0e90` | 2324 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getAudioDecoderPid@6; crashDecoder@23; runTest@35; testAudioCrash@66; add_task@83; add_task@87
+
+`ipc/glue/test/browser/browser_utility_audio_shutdown.js` | `27abb9246c8f9b14c0edfc57791b5930096b2c0e` | 2170 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: runTest@11; findGenericAudioDecoder@25; add_task@38; add_task@55
+
+`ipc/glue/test/browser/browser_utility_crashReporter.js` | `73e6c6355a594ff36e7bc5c380f627031932e525` | 1044 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: startAndCrashUtility@6; add_setup@14; add_task@18; add_task@24; add_task@30
+
+`ipc/glue/test/browser/browser_utility_filepicker_crashed.js` | `6d087d5ff5c1fd9b81a47856a6823db1b96c8694` | 6062 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: untilChildProcessDead@15; fileDialogProcessExists@19; untilFileDialogProcessExists@24; openFileDialog@38; add_setup@81; makeTask@90; testCleanup@161
+
+`ipc/glue/test/browser/browser_utility_geolocation_crashed.js` | `d467d265491ca377fdf937ece16c3974465d09e7` | 1769 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getGeolocation@6; add_setup@15; add_task@31; add_task@54
+
+`ipc/glue/test/browser/browser_utility_hard_kill.js` | `516ef64045c43a05af29bf3cf29c999449a7108b` | 343 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@6
+
+`ipc/glue/test/browser/browser_utility_hard_kill_delayed.js` | `ffda4d39889386171308cb9d74107149ae86ca92` | 2296 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@6; setTimeout@38
+
+`ipc/glue/test/browser/browser_utility_memoryReport.js` | `55bc8fbffe9aa493f65a60da95b28f3848015fa0` | 2116 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@8; add_task@12
+
+`ipc/glue/test/browser/browser_utility_multipleAudio.js` | `9c3a00ca889ebd6c3582af72478fb8c96ff14196` | 706 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@13; add_task@23
+
+`ipc/glue/test/browser/browser_utility_profiler.js` | `897e20181dca12c3ad075afe41b806c503d2348f` | 3402 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@12; add_task@16; add_task@75
+
+`ipc/glue/test/browser/browser_utility_start_clean_shutdown.js` | `62a9e4065b2b309e53d8e37dc19a84c04ad15a78` | 221 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@6
+
+`ipc/glue/test/browser/browser_zombies.js` | `26c0a7c87104fc13c184750bf537f0df305ea2bd` | 3148 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: millisleep@36; getProcStatus@43; add_task@67; function@78
+
+`ipc/glue/test/browser/head-multiple.js` | `233ee337582a220c6e1e3ab53fd5951992e13ad6` | 1640 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: runTest@8
+
+`ipc/glue/test/browser/head.js` | `5f58a3f2de0c6a11e8ae6374a8624a69d63674c0` | 16444 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: startUtilityProcess@17; getUtilityProcesses@24; tryGetUtilityPid@39; checkUtilityExists@51; cleanUtilityProcessShutdown@63; killUtilityProcesses@108; audioTestData@118; audioTestDataEME@198; addMediaTab@224; addMediaTabWithEME@234; play@252; stop@276; createAudioElement@284; createAudioElementEME@294; cloneIntoContent@296; checkAudioDecoder@332; once@417; runMochitestUtilityAudio@437; crashSomeUtility@468; crashSomeUtilityActor@550; isNightlyOnly@567
+
+`ipc/glue/test/browser/mochitest_audio.toml` | `8e1c158106a432dc1e8e8a15bf16070cb47a4e2f` | 500 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`ipc/glue/test/browser/moz.build` | `e89527a9db5bc63d1f395d42a4940dd55b6acabc` | 411 bytes | test-path,build-registration | UTF-8 | mode 100644
+
+`ipc/glue/test/browser/test_android_audio.html` | `0cf0b24126549cd767de2ac05f24f8997ad1c258` | 1152 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`ipc/glue/test/browser/test_utility_audio.html` | `9c097215b21f7502489813325ae4f3755f047d85` | 909 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`ipc/glue/test/gtest/TestAsyncBlockers.cpp` | `8c979028ba73fbe85e7d0335e15fbd1676e6db2b` | 4764 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: SpinEventLoopUntil@19; TestAsyncBlockers@21; Blocker@36; TEST_F@38; TEST_F@45; TEST_F@53; AsyncBlockerTimerCallback@73; AsyncBlockerTimerCallback@78; AsyncBlockerTimerCallback::Notify@90; AsyncBlockerTimerCallback::GetName@100; TEST_F@105; TEST_F@129; DeregisterEmpty_Test@151; TEST_F@159
+Dependencies: gtest/gtest.h@5; mozilla/SpinEventLoopUntil.h@7; mozilla/ipc/AsyncBlockers.h@8; mozilla/gtest/MozHelpers.h@9; nsCOMPtr.h@11; nsITimer.h@12; nsINamed.h@13
+
+`ipc/glue/test/gtest/TestMacChildProcessPaths.cpp` | `4b43f3fbf7983eae66774cee91e9f764b013919f` | 6583 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: IsNonChildProcessBundle@32; GetGREBinDir@41; NS_GetSpecialDirectory@44; GetExecutablesInBundle@52; NS_FAILED@58; TEST@81; NS_NewNativeLocalFile@97; TEST@115; NS_FAILED@133; TEST@155; IsNonChildProcessBundle@178
+Dependencies: gtest/gtest.h@5; mozilla/ipc/GeckoChildProcessHost.h@7; nsCOMPtr.h@8; nsDirectoryServiceDefs.h@9; nsDirectoryServiceUtils.h@10; nsIDirectoryEnumerator.h@11; nsIFile.h@12; nsReadableUtils.h@13; nsString.h@14; nsTArray.h@15; nsXPCOM.h@16
+
+`ipc/glue/test/gtest/TestUtilityProcess.cpp` | `7aaa119482ea99dc0aad07755dd7ab7b0da44559` | 8315 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: TEST_F@58; TEST_F@124; TEST_F@165; LoadLibraryCrash_Test@222; TEST_F@229
+Dependencies: algorithm@5; type_traits@6; gtest/gtest.h@8; mozilla/gtest/ipc/TestUtilityProcess.h@9; mozilla/gtest/WaitFor.h@10; mozilla/SpinEventLoopUntil.h@11; nsThreadUtils.h@12; mozilla/ipc/UtilityProcessManager.h@14; nsIProcessToolsService.h@15; nsServiceManagerUtils.h@16; nsIAppShellService.h@19; mozilla/gtest/MozHelpers.h@23; mozilla/ipc/UtilityProcessImpl.h@24
+
+`ipc/glue/test/gtest/TestUtilityProcess.h` | `14eb21004d12232160a996f15e6201acd43cd517` | 547 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@10; TestUtilityProcess@12
+Dependencies: gtest/gtest.h@8
+
+`ipc/glue/test/gtest/TestUtilityProcessSandboxing.cpp` | `4e8b9e915b7640869f2189f69d85ea5de4598720` | 2529 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: TEST@15; TEST@20; TEST@25; TEST@30; TEST@38; TEST@50; TEST@59
+Dependencies: gtest/gtest.h@5; mozilla/gtest/MozHelpers.h@7; mozilla/ipc/UtilityProcessSandboxing.h@8; sstream@10
+
+`ipc/glue/test/gtest/moz.build` | `c2cd54b2c9d82e7a8c125e29b24b2e8865506d8a` | 664 bytes | test-path,build-registration | UTF-8 | mode 100644
+Dependencies: /ipc/chromium/chromium-config.mozbuild@27
+
+`ipc/glue/test/marionette/manifest.toml` | `7a2727efaf17d4a1d7816b5ad017fe6b885c4437` | 229 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`ipc/glue/test/marionette/test_child_shutdown_hang_crash.py` | `8026eed2d8a49a71747c1cd8ef313b0430c3b73c` | 3872 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: TestShutdownHangCrash@19; setUp@33; tearDown@45; test_child_shutdown_hang_reported_uniformly@55
+Dependencies: marionette_driver@9; marionette_driver.errors@10; marionette_harness@11
+
+`ipc/glue/test/utility_process_xpcom/UtilityProcessTest.cpp` | `34e18659cba422e97fc46dc3e0765b996270aa5a` | 8457 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@23; WinHandlePromiseImpl@69; handle@94; Resolve@98; UtilityProcessTest::NoteIntentionalCrash@163; GeckoChildProcessHost::GetAll@194; UtilityProcessTest::StopProcess@230; UtilityProcessTest::TestTelemetryProbes@262
+Dependencies: mozilla/ipc/UtilityProcessManager.h@6; mozilla/ipc/UtilityProcessTest.h@7; mozilla/dom/ChromeUtilsBinding.h@8; mozilla/dom/Promise.h@9; mozilla/ProcInfo.h@10; mozilla/IntentionalCrash.h@11; handleapi.h@14; processthreadsapi.h@15; tlhelp32.h@16; mozilla/WinHandleWatcher.h@18; nsISupports.h@19; nsWindowsHelpers.h@20
+
+`ipc/glue/test/utility_process_xpcom/UtilityProcessTest.h` | `f0af52007b295598223c2e568d94b8ec526c2fca` | 764 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@11; UtilityProcessTest@13
+Dependencies: nsServiceManagerUtils.h@8; nsIUtilityProcessTest.h@9
+
+`ipc/glue/test/utility_process_xpcom/components.conf` | `3b7018d58f108f4931dc072e3273335119e75275` | 514 bytes | test-path,build-registration | UTF-8 | mode 100644
+
+`ipc/glue/test/utility_process_xpcom/moz.build` | `5fa608d9464a50ac8eaf2b98fb28aaeac69b5589` | 509 bytes | test-path,build-registration | UTF-8 | mode 100644
+Dependencies: /ipc/chromium/chromium-config.mozbuild@17
+
+`ipc/glue/test/utility_process_xpcom/nsIUtilityProcessTest.idl` | `c5fd716fb4f16cf51643f3c45be342d9cedcabab` | 1590 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: nsIUtilityProcessTest@8
+Dependencies: nsISupports.idl@5
+
+`ipc/gtest/IPCTestUtils.h` | `92a92e9d21e98c2bf1338b732c4e0b469efc9c12` | 1777 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@15; MockActor@17; MockActor@22; SerializeAndDeserialize@42
+Dependencies: mozilla/ipc/ProtocolUtils.h@8; chrome/common/ipc_message.h@10; chrome/common/ipc_message_utils.h@11; stdio.h@13
+
+`ipc/gtest/TestBigBuffer.cpp` | `2949fcaa5205979e3b39d70d0d050c8e4447e27c` | 2191 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@14; TEST@16; TEST@31; TEST@49
+Dependencies: IPCTestUtils.h@5; chrome/common/ipc_message.h@7; chrome/common/ipc_message_utils.h@8; gtest/gtest.h@9; mozilla/RandomNum.h@11; mozilla/ipc/BigBuffer.h@12
+
+`ipc/gtest/TestDataPipe.cpp` | `07967e11a2b3690dbb328a8472c72d95af4d9b50` | 10691 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@15; InputStreamCallback@19; mFunc@25; Called@32; OutputStreamCallback@43; mFunc@49; Called@56; CreateData@69; TEST@103; TEST@139; TEST@189; TEST@229; TEST@265; TEST@302; TEST@338
+Dependencies: chrome/common/ipc_message.h@5; gtest/gtest.h@6; mozilla/gtest/MozAssertions.h@8; mozilla/ipc/DataPipe.h@9; nsIAsyncInputStream.h@10; nsIAsyncOutputStream.h@11; nsNetUtil.h@12; nsStreamUtils.h@13
+
+`ipc/gtest/TestLogging.cpp` | `adc85963aa5d49bf83390b2eb5b06ea1c9d95d09` | 2531 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@9; TEST@12; TEST@19; TEST@26; TEST@35; TEST@44; TEST@53
+Dependencies: gtest/gtest.h@5; mozilla/ipc/ProtocolUtils.h@7
+
+`ipc/gtest/TestRandomAccessStreamUtils.cpp` | `c6beceb0a88aeb9aac61ac5fa2ac58eb4b333803` | 8778 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@28; CreateEncryptedRandomAccessStream@69; CreateData@84; TEST@124; TEST@140; TEST@188; TEST@237
+Dependencies: chrome/common/ipc_message.h@5; gtest/gtest.h@6; mozilla/NotNull.h@7; mozilla/Result.h@8; mozilla/ResultVariant.h@9; mozilla/dom/quota/EncryptedRandomAccessBlockView.h@10; mozilla/dom/quota/EncryptedRandomAccessStream.h@11; mozilla/dom/quota/EncryptedRandomAccessStream_impl.h@12; mozilla/dom/quota/NSSRandomAccessCipherStrategy.h@13; mozilla/dom/quota/QuotaCommon.h@14; mozilla/dom/quota/ResultExtensions.h@15; mozilla/ipc/RandomAccessStreamParams.h@16; mozilla/ipc/RandomAccessStreamUtils.h@17; mozilla/gtest/MozAssertions.h@18; nsAppDirectoryServiceDefs.h@19; nsCOMPtr.h@20; nsDirectoryServiceUtils.h@21; nsIFile.h@22; nsIFileStreams.h@23; nsIRandomAccessStream.h@24; nsNetUtil.h@25; nsStreamUtils.h@26
+
+`ipc/gtest/TestSharedMemory.cpp` | `be33ed2dcc35eadcb7b3d156f959be37b3a6e8e2` | 19445 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@30; SharedMemoryInternalTest@32; UnsafeSetSize@35; IPCSharedMemoryFixture@64; TYPED_TEST@73; TEST@85; TEST@91; TEST@105; TEST@113; TEST@121; TEST@129; TEST@135; TEST@145; TEST@155; TEST@164; TEST@173; TEST@182; TEST@198; TEST@214; TEST@230; TEST@245; TEST@255; TEST@266; TEST_F@278; TEST@315; TEST@352; TEST@387; TEST@418; TEST@444; TEST@472; IPCSharedMemoryLinuxTest@485; utsname@494; HaveKernelVersion@500; ShouldHaveMemfd@504; ShouldHaveMemfdNoExec@506; TEST_F@513; statfs@518; TEST_F@532; stat@539; TEST@548; TEST_F@621; TEST_F@631; TEST_F@656
+Dependencies: IPCTestUtils.h@5; chrome/common/ipc_message.h@7; chrome/common/ipc_message_utils.h@8; gtest/gtest.h@9; mozilla/ipc/SharedMemoryCursor.h@11; mozilla/ipc/SharedMemoryHandle.h@12; mozilla/ipc/SharedMemoryMapping.h@13; bit@15; errno.h@18; linux/magic.h@19; stdio.h@20; string.h@21; sys/statfs.h@22; sys/utsname.h@23; windows.h@27
+
+`ipc/gtest/TestWindowsHandleValidation.cpp` | `38b38d10b0556fc0a81f626e5b5bc6af7eb3490e` | 3367 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@17; DuplicatePseudoHandle@22; TEST@31; TEST@41; TEST@51; TEST@62; TEST@71; TEST@83
+Dependencies: gtest/gtest.h@5; windows.h@7; chrome/common/ipc_channel.h@9; chrome/common/ipc_channel_win.h@10; mozilla/Preferences.h@11; mozilla/UniquePtrExtensions.h@12; mozilla/ipc/CrossProcessMutex.h@13; mozilla/ipc/CrossProcessSemaphore.h@14; mozilla/ipc/SharedMemoryHandle.h@15
+
+`ipc/gtest/moz.build` | `68d5e650b5ce31138e97acdbff1e3346dd9b0b72` | 599 bytes | test-path,build-registration | UTF-8 | mode 100644
+Dependencies: /ipc/chromium/chromium-config.mozbuild@20
+
+`ipc/ipdl/Makefile.in` | `4847569a565875506eb9ca3063064ca753c84724` | 1154 bytes | data-or-other | UTF-8 | mode 100644
+
+`ipc/ipdl/ipdl.py` | `fd9d17eefcdff155b1fd1def19430f3aca8e322a` | 13145 bytes | source | UTF-8 | mode 100644
+Declarations: WorkerPool@18; __init__@21; run@59; _init_worker@63; _run_worker@67; main@108; log@109; normalizedFilename@207; IPCMessageStart@327; IPCMessages@360; IPC@378; IPCMessageTypeIsSync@380; mozilla@455; ipc@456
+Dependencies: configparser@9; io@10; multiprocessing@11; ipdl.ast@14; ipdl.exporter@15; cstdint@351; mozilla/ipc/ProtocolUtils.h@353; IPCMessageStart.h@354
+
+`ipc/ipdl/ipdl/__init__.py` | `2f7bbed5eef5e2ccd4e461b1d35a63f79e187f76` | 2677 bytes | source | UTF-8 | mode 100644
+Declarations: parse@27; typecheck@48; gencxx@54; resolveHeader@57; resolveCpp@65; genipdl@76; genmsgenum@80; writeifmodified@84
+Dependencies: io@17; ipdl.cgen@19; ipdl.checker@20; ipdl.cxx.cgen@21; ipdl.lower@22; ipdl.parser@23; ipdl.type@24
+
+`ipc/ipdl/ipdl/ast.py` | `2acb244bf0341d4281d4fe3ddf39709029b110e5` | 12454 bytes | source | UTF-8 | mode 100644
+Declarations: Visitor@25; defaultVisit@26; visitTranslationUnit@31; visitCxxInclude@45; visitInclude@48; visitStructDecl@53; visitStructField@59; visitUnionDecl@62; visitUsingStmt@68; visitProtocol@72; visitNamespace@84; visitManager@87; visitManagesStmt@90; visitMessageDecl@93; visitParam@101; visitTypeSpec@105; visitAttribute@108; visitStringLiteral@112; visitDecl@115; Loc@120; __init__@121; __repr__@126; __str__@129; _struct@136; Node@140; __init__@141; accept@144; addAttrs@150; NamespacedNode@155; __init__@156; addOuterNamespace@161; qname@164; TranslationUnit@168; __init__@169; addCxxInclude@180; addInclude@183; addStructDecl@186; addUnionDecl@189; addUsingStmt@192; setProtocol@195; CxxInclude@199; __init__@200; Include@205; __init__@206; UsingStmt@214; __init__@215; canBeForwardDeclared@232; isClass@235; isStruct@238; isRefcounted@241; isSendMoveOnly@244; isDataMoveOnly@248; PrettyPrinted@256; __hash__@257; __str__@260; ASYNC@264; SYNC@268; INOUT@272; IN@276; OUT@280; Namespace@284; __init__@285; Protocol@290; __init__@291; nestedUpTo@299; implAttribute@305; procAttribute@312; StructField@322; __init__@323; StructDecl@329; __init__@330; UnionDecl@341; __init__@342; Manager@348; __init__@349; ManagesStmt@354; __init__@355; MessageDecl@360; __init__@361; addInParams@370; addOutParams@373; nested@376; priority@382; replyPriority@389; Param@397; __init__@398; TypeSpec@405; __init__@406; withModifier@413; basename@416; Attribute@420; __init__@421; StringLiteral@427; __init__@428; __str__@432; QualifiedId@436; __init__@437; qualify@446; __str__@450; Decl@459; __init__@460
+Dependencies: .util@5
+
+`ipc/ipdl/ipdl/builtin.py` | `b1bab64af859ba12abbde604f6e029dfc03e503b` | 2030 bytes | source | UTF-8 | mode 100644
+
+`ipc/ipdl/ipdl/cgen.py` | `fbf0448f3380e350f1562279ef7009d13e63c419` | 3254 bytes | source | UTF-8 | mode 100644
+Declarations: CodePrinter@10; __init__@11; write@16; printdent@19; println@22; printdentln@25; indent@28; dedent@31; IPDLCodeGen@36; __init__@40; visitTranslationUnit@44; visitCxxInclude@49; visitProtocolInclude@52; visitProtocol@62; visitManagerStmt@83; visitManagesStmt@86; visitMessageDecl@89
+Dependencies: ipdl.ast@7
+
+## Validation and limits
+
+Every listed blob was read from the pinned Git tree and its Git SHA-1 was recomputed. Extraction is structural only. Read implementations, callers, build conditions, and tests before making a behavior claim. Runtime behavior and historical reasons remain unverified. Reproduce a file with `git show 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b:path` in the corresponding source clone. The full study coverage and navigation note records aggregate results.
+
+## Retrieval correction
+
+This copy preserves the source map in [1aaf6bfa-424a-4746-93ca-94848c4007d1.md](1aaf6bfa-424a-4746-93ca-94848c4007d1.md). The original was imported and committed by concurrent console maintenance during this study. Its full path metadata could exceed the console search budget. This copy uses component scope metadata while keeping every file path in the body. It adds no independent behavior evidence. Original record: `3c81ad658bc3d86696862d307afdc9670580a5611cf9732e7d863eccb92d7faa`.

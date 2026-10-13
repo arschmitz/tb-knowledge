@@ -1,0 +1,1024 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["js"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013","portableCopies":["4b819b8d46cbd7b5449bdb5461f7d1122a70261b39a3178792bdebde679a7d41"],"sourceAt":"2026-10-13T04:17:22.071Z","correctionOf":"notes/ebf951b7-cca0-42d7-9da2-5811af999b05.md"}} -->
+# firefox/js JavaScript function map 324
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-2-17.js
+
+Blob: `9250b9fbd90e8daf5bcf1de252d4fc298a4a4b20`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+- func @15-18; FunctionExpression; parameters=2; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-2-18.js
+
+Blob: `3660e392ade7be87c2d0cf8d18e632abd400f6e8`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-2-19.js
+
+Blob: `876e104660e588f53bf16b3a5207c1dd4b934095`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+- fun @15-17; FunctionExpression; parameters=2; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-2-2.js
+
+Blob: `b67bb19b26cd23b85fa9cf068a004372bbd65e40`. Role: test-path,source. Parse: module.
+
+- callbackfn @9-11; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-2-3.js
+
+Blob: `674169313a62933b03b79365ed15aff4231a90c5`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+- Con @19-19; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-2-4.js
+
+Blob: `33c1bf0fc50731bf27e44dfcd47b5887afd898b4`. Role: test-path,source. Parse: module.
+
+- callbackfn @13-15; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-2-5.js
+
+Blob: `0e3692f636e1d1d272d0d4da08d126a535c62fe4`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @18-20; FunctionExpression; parameters=0; async=false; generator=false
+- Con @24-24; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-2-6.js
+
+Blob: `e6c242e0346731abb09eda3dd170e47deebcd39f`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+- Con @19-19; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-2-7.js
+
+Blob: `1cc47a52e7b257a601633defd4d8e39b1f3e1c66`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @18-20; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-2-8.js
+
+Blob: `739aed6976866c57903b2c2db37afdf3a2e49243`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+- Con @19-19; FunctionExpression; parameters=0; async=false; generator=false
+- get @25-27; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-2-9.js
+
+Blob: `5f0a0f513b0e6db42b98f065b0821c545714da54`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @19-21; FunctionExpression; parameters=0; async=false; generator=false
+- Con @25-25; FunctionExpression; parameters=0; async=false; generator=false
+- get @31-33; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-1.js
+
+Blob: `68cb7c9124b0d490eb2d1685e12be59c02864890`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-14; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-10.js
+
+Blob: `4d2bb32d414d19b4fac30c2c09bdb9bbc3539067`. Role: test-path,source. Parse: module.
+
+- callbackfn @13-16; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-11.js
+
+Blob: `90943c53085d0b2d83759e30ff7c26635740c28c`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-12.js
+
+Blob: `8188fddfd7919a42069bb0a57d1b1dc3084a2cb5`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-13.js
+
+Blob: `802c761bc1f6138a5c65308d3031aed81eeeb495`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-14.js
+
+Blob: `5be62103ba8fa826f0addbeb130fbba3d7d5ecae`. Role: test-path,source. Parse: module.
+
+- callbackfn2 @11-14; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-15.js
+
+Blob: `cca36b39c4ea4bca354043afeb753974cfe92649`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-16.js
+
+Blob: `29cf064b6bf74f20976d81392de3190271d29b81`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-17.js
+
+Blob: `30b986ef1d45d6c21b6741a9adb1d401637f7428`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-18.js
+
+Blob: `0215e2694ba3c435289e40236d29f9a9665494ae`. Role: test-path,source. Parse: module.
+
+- callbackfn @13-16; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-19.js
+
+Blob: `3ab158f71090c02f2fddf78c6110996e778ee476`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+- toString @19-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-2.js
+
+Blob: `22e01265b73d32f08ebb929d7141e9d06aeff596`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-20.js
+
+Blob: `f90742ca90b6c01204b148abd23482731c619f38`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+- valueOf @19-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-21.js
+
+Blob: `9ff6c26339f3d9cb5f82a10bb9cd9e0da6081267`. Role: test-path,source. Parse: module.
+
+- callbackfn @15-17; FunctionDeclaration; parameters=3; async=false; generator=false
+- valueOf @23-26; FunctionExpression; parameters=0; async=false; generator=false
+- toString @27-30; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-22.js
+
+Blob: `154689a2fb4ff8b99ece8f98f7754b7678c82b2c`. Role: test-path,source. Parse: module.
+
+- callbackfn @16-19; FunctionDeclaration; parameters=3; async=false; generator=false
+- valueOf @26-29; FunctionExpression; parameters=0; async=false; generator=false
+- toString @30-33; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @36-38; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-23.js
+
+Blob: `b8c1c53bf7463830f6e42a9738f0060c0056ed2f`. Role: test-path,source. Parse: module.
+
+- callbackfn @14-16; FunctionDeclaration; parameters=3; async=false; generator=false
+- valueOf @19-22; FunctionExpression; parameters=0; async=false; generator=false
+- Con @25-25; FunctionExpression; parameters=0; async=false; generator=false
+- child.toString @30-33; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-24.js
+
+Blob: `3e36d93bded90d874746926e7924ab0d919fa144`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-25.js
+
+Blob: `7c49e457ba0104a46316a2ef2cbc173f2a384f4a`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-3.js
+
+Blob: `1c736e81fcfce2cf92483240b63ada0ca537a1d3`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-14; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-4.js
+
+Blob: `b2c07a36e10185cf953fa22464046e6d657570ab`. Role: test-path,source. Parse: module.
+
+- callbackfn @13-16; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-5.js
+
+Blob: `1f42a8adb7221ebf1ca12d641b81592a20c89afe`. Role: test-path,source. Parse: module.
+
+- callbackfn @13-16; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-6.js
+
+Blob: `b1c1ce75a4163db846437275aba5f260eea60930`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-7.js
+
+Blob: `d1271b8e269e35beaecd05bd04f540b8da38963e`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-3-9.js
+
+Blob: `04964b5017b5807b1e9ffcf0dab2f116100584b3`. Role: test-path,source. Parse: module.
+
+- callbackfn @13-16; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-4-1.js
+
+Blob: `195ff47c06e8cd7cb09ee1add2a5bc665df3ca4e`. Role: test-path,source. Parse: module.
+
+- (anonymous) @10-12; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-4-10.js
+
+Blob: `d96861317da17bd1d282fd77daeaa69ac4a0d1cd`. Role: test-path,source. Parse: module.
+
+- get @17-19; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @23-25; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-4-11.js
+
+Blob: `a9ece8bd6e91e5fb7b3c0d0f181180dc9146aacd`. Role: test-path,source. Parse: module.
+
+- get @17-23; FunctionExpression; parameters=0; async=false; generator=false
+- toString @19-21; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @27-29; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-4-12.js
+
+Blob: `4b7a09be3aecfd406db173e48423ceec48a8cc04`. Role: test-path,source. Parse: module.
+
+- callbackfn @9-14; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-4-15.js
+
+Blob: `5da546cf1be0b30d61afde1241115411d4572637`. Role: test-path,source. Parse: module.
+
+- get @17-20; FunctionExpression; parameters=0; async=false; generator=false
+- get @24-27; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @30-32; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-4-2.js
+
+Blob: `2cbeba24f74e58e2dab6cd2f52aca3998279033d`. Role: test-path,source. Parse: module.
+
+- (anonymous) @12-14; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-4-3.js
+
+Blob: `00e84f9daaaff92d97dc8a1b143ef62a53ffe8e4`. Role: test-path,source. Parse: module.
+
+- (anonymous) @10-12; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-4-4.js
+
+Blob: `c3903d90df32592d29a75d668812797615e90ef1`. Role: test-path,source. Parse: module.
+
+- (anonymous) @10-12; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-4-5.js
+
+Blob: `20df59f01512ffd115a75c2f7873644bad884d78`. Role: test-path,source. Parse: module.
+
+- (anonymous) @10-12; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-4-6.js
+
+Blob: `ea86a8756908e002aa8de21b8e0a17487bc79902`. Role: test-path,source. Parse: module.
+
+- (anonymous) @10-12; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-4-7.js
+
+Blob: `b5438a1094e9dcb8f9fa48668c22b7f8b81bb4f5`. Role: test-path,source. Parse: module.
+
+- (anonymous) @12-14; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-4-8.js
+
+Blob: `ee4539946c77e88d965ca45cb78084933c4365a2`. Role: test-path,source. Parse: module.
+
+- get @19-22; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @25-27; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-4-9.js
+
+Blob: `172734d3d1a46498982c784282d27e3f697a953f`. Role: test-path,source. Parse: module.
+
+- get @19-26; FunctionExpression; parameters=0; async=false; generator=false
+- toString @21-24; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @29-31; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-1-s.js
+
+Blob: `c9a8b2fdf7e01b7cce82e1b42737b4d94a4c52f4`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-16; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-1.js
+
+Blob: `b1aa2e4d2625b78fe354eb395ce0deb8bc770c05`. Role: test-path,source. Parse: module.
+
+- (anonymous) @10-21; FunctionExpression; parameters=0; async=false; generator=false
+- callbackfn @14-16; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-10.js
+
+Blob: `57f34c44134f60a65c87d4332005f3c560e174ff`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-15; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-11.js
+
+Blob: `80462627338528044842cde0820b7c6c8f76ca0b`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-15; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-12.js
+
+Blob: `38088bbfa607d04a9ca7618aa624632979a7b827`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-15; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-13.js
+
+Blob: `7015603bab7b2ca940707409c1ddf96c894352ac`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-15; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-14.js
+
+Blob: `d920aeb1761045bdd8bea6d6a69134260178bd40`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-14; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-15.js
+
+Blob: `801ae9a7ad4016466a1b15cf567f2e0bfe5a36f7`. Role: test-path,source. Parse: module.
+
+- callbackfn @13-16; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-16.js
+
+Blob: `cc8b0c651da98d30c12115b4567e07dc0305cc73`. Role: test-path,source. Parse: module.
+
+- callbackfn @13-16; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-17.js
+
+Blob: `162cec62bbd3defed34d4f1fc9b7a9f4a18eecaa`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-14; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-18.js
+
+Blob: `4803e432edd90280f18c05c7c7c865c68cb531db`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-15; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-19.js
+
+Blob: `fdf60d65579f080fce974a1d344e623f75598ce8`. Role: test-path,source. Parse: module.
+
+- callbackfn @14-17; FunctionDeclaration; parameters=3; async=false; generator=false
+- fun @19-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-2.js
+
+Blob: `3049d8b4d3737557bd100b647718e52ce2abec53`. Role: test-path,source. Parse: module.
+
+- callbackfn @13-16; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-21.js
+
+Blob: `fcee8ec25cbdb1d7dca75b12319e1341b1c0b990`. Role: test-path,source. Parse: module.
+
+- callbackfn @13-16; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-22.js
+
+Blob: `5b66d3c755e4fcfe575b4ffed7b8ebec3edcbd1d`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-14; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-23.js
+
+Blob: `cc9a5e62e162191f7afb0963eae5703959aa412a`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-14; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-24.js
+
+Blob: `4b8f2b9eb05c335dc2e917bdfd99109a2e9bebd6`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-14; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-27.js
+
+Blob: `f53147f35e8da5b3d275bb55022ebc362b63793c`. Role: test-path,source. Parse: module.
+
+- (anonymous) @11-11; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-28.js
+
+Blob: `e1aad658de06cca7a3e6f0748b0918850ac813f2`. Role: test-path,source. Parse: module.
+
+- (anonymous) @9-9; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-29.js
+
+Blob: `2c8a19cbac3a1b7220575f45a74904747cbe2ce9`. Role: test-path,source. Parse: module.
+
+- (anonymous) @9-9; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-3.js
+
+Blob: `591e1e0c88bfd2490be74d627182bebe578f01cd`. Role: test-path,source. Parse: module.
+
+- callbackfn @13-16; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-30.js
+
+Blob: `135964229e64a2aedfc74d5ce2aafd55e44b1800`. Role: test-path,source. Parse: module.
+
+- innerObj @10-20; FunctionDeclaration; parameters=0; async=false; generator=false
+- callbackfn @14-16; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-4.js
+
+Blob: `e46344834a7b80ca5f46279938f0a7ab705489be`. Role: test-path,source. Parse: module.
+
+- callbackfn @14-17; FunctionDeclaration; parameters=3; async=false; generator=false
+- foo @19-19; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-5.js
+
+Blob: `1e18d25e06f1f1b4b6a9c6326e9eecf051f6dacc`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-15; FunctionDeclaration; parameters=3; async=false; generator=false
+- foo @17-17; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-6.js
+
+Blob: `2784f5425257ddff7ea6fa79b1d378326def3a24`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-15; FunctionDeclaration; parameters=3; async=false; generator=false
+- foo @17-17; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-7.js
+
+Blob: `76f7b0161a102d97ff3f1d1303e4f55d4e25a292`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-15; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-5-9.js
+
+Blob: `f2be4d947accd694afd92be0255c70224e2cdfac`. Role: test-path,source. Parse: module.
+
+- objFunction @11-11; FunctionExpression; parameters=0; async=false; generator=false
+- callbackfn @13-16; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-6-1.js
+
+Blob: `b37bd42001c023bac8e13fae223ed8b3a7f90adb`. Role: test-path,source. Parse: module.
+
+- cb @12-12; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-6-2.js
+
+Blob: `babc443f62ca4f707862b1a0ce6b548cf6a22cd4`. Role: test-path,source. Parse: module.
+
+- foo @14-14; FunctionDeclaration; parameters=0; async=false; generator=false
+- cb @18-18; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-6-3.js
+
+Blob: `fa85fb3e6dd79443ab7e134dfc564f5d9dcfb87f`. Role: test-path,source. Parse: module.
+
+- foo @14-14; FunctionDeclaration; parameters=0; async=false; generator=false
+- cb @18-18; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-6-4.js
+
+Blob: `da5b339473c9c891bff189d0a37944eb004c8adb`. Role: test-path,source. Parse: module.
+
+- foo @14-14; FunctionDeclaration; parameters=0; async=false; generator=false
+- cb @18-18; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-6-5.js
+
+Blob: `2c163c61c8344a4cf81834775299f8cb7b8780aa`. Role: test-path,source. Parse: module.
+
+- foo @14-14; FunctionDeclaration; parameters=0; async=false; generator=false
+- cb @18-18; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-6-6.js
+
+Blob: `9284917cb5fc8218587b2185a31090bcfc01d69d`. Role: test-path,source. Parse: module.
+
+- foo @14-14; FunctionDeclaration; parameters=0; async=false; generator=false
+- valueOf @18-20; FunctionExpression; parameters=0; async=false; generator=false
+- cb @24-24; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-6-7.js
+
+Blob: `3197dd19e9a23026dd91a1aa2b35cbe7f8bf4a6a`. Role: test-path,source. Parse: module.
+
+- foo @15-15; FunctionDeclaration; parameters=0; async=false; generator=false
+- toString @19-21; FunctionExpression; parameters=0; async=false; generator=false
+- cb @31-31; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-6-8.js
+
+Blob: `08cd6176e9e1059c1e31f7dfd34ecbe45caffe55`. Role: test-path,source. Parse: module.
+
+- foo @14-14; FunctionDeclaration; parameters=0; async=false; generator=false
+- cb @33-33; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-1.js
+
+Blob: `005f390cc46ed26c62dc4ba68e25167fa881d973`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-16; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-2.js
+
+Blob: `3814a7614f4e3cb8ff1cb11319a8d46ced21a34a`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-20; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-3.js
+
+Blob: `a793631f506011ca8eb376c7beb13f5c5c50a4f8`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-20; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-4.js
+
+Blob: `84f7a666c47f2db55d77b6c5e5e615cca273d11d`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-16; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-5.js
+
+Blob: `4b29c8d7264748ce30daa0304afd0f9e982f6bf4`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-16; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-6.js
+
+Blob: `4086e87b1a76c0bb942532bb384420204eba7020`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-20; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-7.js
+
+Blob: `911b7bf0a08da3fd702a4d8d0af0f649c5dfe5cd`. Role: test-path,source. Parse: module.
+
+- callbackfn @15-21; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-8.js
+
+Blob: `36cd0cd21863989eb215f04ecd43226223b5e45e`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-15; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-9.js
+
+Blob: `199c15d30e0520db9b62a45eed4eec379cfb40e3`. Role: test-path,source. Parse: module.
+
+- callbackfn @14-17; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @26-29; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-b-1.js
+
+Blob: `dce5fdae23c24f753b6958f6fcb05c13e7bcb3a2`. Role: test-path,source. Parse: module.
+
+- callbackfn @14-18; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-b-10.js
+
+Blob: `bbd0c854614a2f20ff8d648065b6e39b46592955`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @21-24; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-b-11.js
+
+Blob: `5b16c7f308c23b930ecd6cf8f35937a9a0e0ea50`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @18-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-b-12.js
+
+Blob: `5474b0e6f82a877f72b13dc7eb4f27697adc4b00`. Role: test-path,source. Parse: module.
+
+- callbackfn @13-15; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @24-27; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-b-13.js
+
+Blob: `bd91c8bf5085463ce67864fd930efb0aa98e5e1b`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @18-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-b-14.js
+
+Blob: `3d1136e563d1c2569a61e9da669bef40c56ccd17`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @18-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-b-15.js
+
+Blob: `9869b600ea667aa4aec755f0bf177c3f082ee4a7`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @18-20; FunctionExpression; parameters=0; async=false; generator=false
+- get @25-28; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-b-16.js
+
+Blob: `8c47a71c1febb78c4b09e1a0957b2b4f10cafec9`. Role: test-path,source. Parse: module.
+
+- callbackfn @13-15; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @20-22; FunctionExpression; parameters=0; async=false; generator=false
+- get @27-30; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-b-2.js
+
+Blob: `051659aa815b45ae5f9a4fd6a5be8e6dd92e1917`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @19-22; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-b-3.js
+
+Blob: `b9261879dd2ad4cdcf0a4dc3cb7ceb0d3570822e`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @21-24; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-b-4.js
+
+Blob: `e2af2fac147a1ac0a44cce66db0e877e788a0ea1`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @21-29; FunctionExpression; parameters=0; async=false; generator=false
+- get @23-25; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-b-5.js
+
+Blob: `0095c888a041035a5b291bf18822a238cd85f4b3`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @19-27; FunctionExpression; parameters=0; async=false; generator=false
+- get @21-23; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-b-6.js
+
+Blob: `acc9dfcb04f61e28cae5568c447fdf993dfe2056`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @20-28; FunctionExpression; parameters=0; async=false; generator=false
+- get @22-24; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-b-7.js
+
+Blob: `60f19c3b63a192eb33316d15f9bc795957032616`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @18-26; FunctionExpression; parameters=0; async=false; generator=false
+- get @20-22; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-b-8.js
+
+Blob: `08b65a302d7ea86ec44930fd294d9dd167b4173a`. Role: test-path,source. Parse: module.
+
+- callbackfn @17-20; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @23-25; FunctionExpression; parameters=0; async=false; generator=false
+- get @30-33; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-b-9.js
+
+Blob: `2e88dde503ea723ca70c6ce9883d444edddf7aba`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @18-20; FunctionExpression; parameters=0; async=false; generator=false
+- get @25-28; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-1.js
+
+Blob: `8fae59879c7029d723408db74d9269a01efe0ae4`. Role: test-path,source. Parse: module.
+
+- callbackfn @14-16; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-10.js
+
+Blob: `2407566e84e68e7e5c7a4ec56eb4ac4a7cf7e0b2`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @19-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-11.js
+
+Blob: `2d36debda2214ae68b99c071365d6c37d6ef26b8`. Role: test-path,source. Parse: module.
+
+- callbackfn @13-15; FunctionDeclaration; parameters=3; async=false; generator=false
+- Con @22-22; FunctionExpression; parameters=0; async=false; generator=false
+- get @29-31; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-12.js
+
+Blob: `b6fcffc65aee0d4c53887214af7ecf5917282c40`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @21-23; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-13.js
+
+Blob: `ce0d6d9343b0395157b665766650ae7614e76819`. Role: test-path,source. Parse: module.
+
+- callbackfn @13-15; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @20-22; FunctionExpression; parameters=0; async=false; generator=false
+- Con @26-26; FunctionExpression; parameters=0; async=false; generator=false
+- get @33-35; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-14.js
+
+Blob: `47fd5d8a2daf37c9c175ca3b27bc994575511cb3`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @19-21; FunctionExpression; parameters=0; async=false; generator=false
+- get @26-28; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-15.js
+
+Blob: `7f0b850f1268483932069d65c678cb4aebdbd681`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @18-20; FunctionExpression; parameters=0; async=false; generator=false
+- Con @24-24; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-16.js
+
+Blob: `81290ab570bd6db94d0e4a25b6b60063d7b630d8`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @16-18; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-17.js
+
+Blob: `2245f7fffb9689611bb6e081d44cb9a88eb9d07b`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+- set @19-19; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-18.js
+
+Blob: `d874ccc003ec7c6e8804ec9e33a8befb2af055a8`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+- set @18-18; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-19.js
+
+Blob: `3c72bb47304b3f06d7b522fd9ad72188a0f74126`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- set @20-20; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-2.js
+
+Blob: `d1653a9ee598e524a5151defd4b6a3d2d3b683c4`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-15; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-20.js
+
+Blob: `ed21997766cba3b73603f4a3e3c1e6fd30cb4035`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- set @19-19; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-21.js
+
+Blob: `b666378c9247a411a3101066895999cf2c1ff03d`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+- set @17-17; FunctionExpression; parameters=0; async=false; generator=false
+- Con @21-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-22.js
+
+Blob: `e18f313a426e4228d57b2aed9c7eaad3e10d858c`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+- set @16-16; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-25.js
+
+Blob: `718dfda7fd07aaa3926065fea6266a844cafe02e`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- func @16-18; FunctionExpression; parameters=2; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-26.js
+
+Blob: `e76d51b46dfa13fa8910097df04b6963f1109b40`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-20; FunctionDeclaration; parameters=3; async=false; generator=false
+- func @22-24; FunctionExpression; parameters=2; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-27.js
+
+Blob: `5da6560806fe06177abb6bfaef563b14582c4f66`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-22; FunctionDeclaration; parameters=3; async=false; generator=false
+- func @24-26; FunctionExpression; parameters=2; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-28.js
+
+Blob: `03f0b1b1b1036b52e98fc11f51b65d2309ab2b28`. Role: test-path,source. Parse: module.
+
+- callbackfn @14-16; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @19-22; FunctionExpression; parameters=0; async=false; generator=false
+- get @27-33; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-29.js
+
+Blob: `9acdb8dae0ec218b05359f9aafc2d5ca9d5b61a9`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @21-24; FunctionExpression; parameters=0; async=false; generator=false
+- get @29-35; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-3.js
+
+Blob: `ce8a21e6c7df3ff91a4c7ef1dff8fd354afeb2da`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- Con @21-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-30.js
+
+Blob: `6e85b19ef78c2984786217f5c0a48560e31b156a`. Role: test-path,source. Parse: module.
+
+- callbackfn @13-18; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @27-29; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @32-34; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-31.js
+
+Blob: `d4ca7989db579b8291db2e6a9c2b4d7f4d114e80`. Role: test-path,source. Parse: module.
+
+- callbackfn @13-18; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @25-27; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @30-32; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-4.js
+
+Blob: `5cf957322c50f47fc411126b73099c097c6aa798`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-5.js
+
+Blob: `3bc9704ed21e5d0788be9cb05d046087f86fac1a`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @19-21; FunctionExpression; parameters=0; async=false; generator=false
+- Con @25-25; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-6.js
+
+Blob: `b71fded79db26a2884264595aabde89954f65b47`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @16-18; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-7.js
+
+Blob: `b0bcff3e149fa88554352504bfb424fa1dab39ce`. Role: test-path,source. Parse: module.
+
+- callbackfn @13-15; FunctionDeclaration; parameters=3; async=false; generator=false
+- Con @21-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-8.js
+
+Blob: `26edd8cf3f41a14affc3e673456541c981bb563b`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-i-9.js
+
+Blob: `33563fe84bd91b9cb1e0064e6689ec8ea18faee5`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @21-23; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-ii-1.js
+
+Blob: `fe654e10552ada3fc51f836dff8fc6c036a67c84`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-17; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-ii-10.js
+
+Blob: `b1256bd8f818e4ada128b36d9f08bf62ffb17a48`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-ii-11.js
+
+Blob: `c698738aa1872e070610372bc2a487acc9b0396b`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=2; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-ii-12.js
+
+Blob: `6eab263f204fa67c1a707df95cf66c17ce9b87ff`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-ii-13.js
+
+Blob: `c1c273a5f059eeaa985f18403b84106ca628ac5f`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-ii-16.js
+
+Blob: `a5037a7db3ba40b14b3fa2f5020c4196d724a61e`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-ii-17.js
+
+Blob: `a31e0c995d68cd66f68c1250319e0e56cb1b8426`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-ii-18.js
+
+Blob: `c3d0237bf262ffc2f4dd04081caa15e9548a4e9a`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-13; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-ii-19.js
+
+Blob: `caf9d7c13e4783f7973ca7b64d4f13ac29fb6050`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-14; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-ii-2.js
+
+Blob: `4165794019939a3c1d0c29059008cd057c107ed5`. Role: test-path,source. Parse: module.
+
+- callbackfn @12-17; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-ii-20.js
+
+Blob: `922371250cb28d23c2fb7505b5db15df861c81fd`. Role: test-path,source. Parse: module.
+
+- callbackfn @15-17; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-ii-21.js
+
+Blob: `866144fbd2a051b8f74dfa38696b8d96b64a9e97`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-21; FunctionDeclaration; parameters=3; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/prototype/filter/15.4.4.20-9-c-ii-22.js
+
+Blob: `38c78e20af826739ea7234b87f8d72fe3a4e90bd`. Role: test-path,source. Parse: module.
+
+- callbackfn @11-21; FunctionDeclaration; parameters=3; async=false; generator=false
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.
+
+## Retrieval correction
+
+This copy preserves the source map in [ebf951b7-cca0-42d7-9da2-5811af999b05.md](ebf951b7-cca0-42d7-9da2-5811af999b05.md). The original was imported and committed by concurrent console maintenance during this study. Its full path metadata could exceed the console search budget. This copy uses component scope metadata while keeping every file path in the body. It adds no independent behavior evidence. Original record: `4b819b8d46cbd7b5449bdb5461f7d1122a70261b39a3178792bdebde679a7d41`.

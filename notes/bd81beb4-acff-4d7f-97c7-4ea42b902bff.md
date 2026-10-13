@@ -1,0 +1,915 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["testing"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013","portableCopies":["af36dc74f016444620374a5faf9e563e92f52b037cdfd8a9c2571c9cb41c3971"],"sourceAt":"2026-10-13T04:17:22.071Z","correctionOf":"notes/13c8f1c5-6408-46ce-bae1-af42f45447ea.md"}} -->
+# firefox/testing JavaScript function map 1080
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### testing/web-platform/tests/third_party/test262/test/language/keywords/ident-ref-if.js
+
+Blob: `151db6602e70a5c5b9cf06c5c5573946db885b41`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token =
+
+
+### testing/web-platform/tests/third_party/test262/test/language/keywords/ident-ref-in.js
+
+Blob: `1ac8f2f20ec005b706eb7ee067de3a5506f6f986`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token in
+
+
+### testing/web-platform/tests/third_party/test262/test/language/keywords/ident-ref-instanceof.js
+
+Blob: `0aecb056d3f5930426e7de0816c7aade4f9773c1`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token instanceof
+
+
+### testing/web-platform/tests/third_party/test262/test/language/keywords/ident-ref-new.js
+
+Blob: `66a29247710706f22e5c1c11de6dd7e158b262b1`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token =
+
+
+### testing/web-platform/tests/third_party/test262/test/language/keywords/ident-ref-return.js
+
+Blob: `59bd45de96699bb4185e7324a9780db9ddda8f20`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token =
+
+
+### testing/web-platform/tests/third_party/test262/test/language/keywords/ident-ref-switch.js
+
+Blob: `e31f58b6553edb600abd1348b8b0e95034883f28`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token =
+
+
+### testing/web-platform/tests/third_party/test262/test/language/keywords/ident-ref-this.js
+
+Blob: `b4ccdd0772a689686f5979e9f8c0d39f7679c45c`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected keyword 'this'
+
+
+### testing/web-platform/tests/third_party/test262/test/language/keywords/ident-ref-throw.js
+
+Blob: `aea07ab1d31db3192460aff4ffa040004902218f`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token =
+
+
+### testing/web-platform/tests/third_party/test262/test/language/keywords/ident-ref-try.js
+
+Blob: `0a37439c2ec5d8d532109ef9bc9ef09a0846e69d`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token =
+
+
+### testing/web-platform/tests/third_party/test262/test/language/keywords/ident-ref-typeof.js
+
+Blob: `791f089b1d9d6eded1211f8448a9fbecbb833768`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token =
+
+
+### testing/web-platform/tests/third_party/test262/test/language/keywords/ident-ref-var.js
+
+Blob: `e9e2e83363e955a68617988836b688e38ec27ba8`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token =
+
+
+### testing/web-platform/tests/third_party/test262/test/language/keywords/ident-ref-void.js
+
+Blob: `14b8c368b73bf9fae76158e69ad39ada5b953602`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token =
+
+
+### testing/web-platform/tests/third_party/test262/test/language/keywords/ident-ref-while.js
+
+Blob: `8a5908bc5fb4c6572a3dadb470533563f8698741`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token =
+
+
+### testing/web-platform/tests/third_party/test262/test/language/keywords/ident-ref-with.js
+
+Blob: `b4ae98fb7a2c3c248e7828900685dfe4659062aa`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token =
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/7.3-15.js
+
+Blob: `2dfc66d2645dfc54170eed82db30f8a2d52b1a7f`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/7.3-5.js
+
+Blob: `6304cc3c2018d84df15221ebc88c8d71df21c027`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/7.3-6.js
+
+Blob: `45c834ee836904497a7d53178693d5e392b2ad5a`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/S7.3_A2.1_T2.js
+
+Blob: `d6a147c4f8979000f8acaad6e9332fe820a6296c`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unterminated string constant
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/S7.3_A2.2_T2.js
+
+Blob: `d1224d1b1f196e67206338b6bae1ca5a837ba9bd`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unterminated string constant
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/S7.3_A3.2_T1.js
+
+Blob: `4d6e18b584dae4a7d1f30dc93d79766fa42a6856`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token ??
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/S7.3_A5.4.js
+
+Blob: `5e30f817f75e024f23351630351461550a19942f`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/S7.3_A6_T1.js
+
+Blob: `0e7be8984a7f478d2f0307617a7dc7e17e3521a2`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid Unicode escape
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/S7.3_A6_T2.js
+
+Blob: `b02afee0dafcbc97608593470422a8beb769b50e`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid Unicode escape
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/S7.3_A6_T3.js
+
+Blob: `f75f3800db2009c9904cac13f0fb28e007b8fcb3`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid Unicode escape
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/S7.3_A6_T4.js
+
+Blob: `48968bb12fe38bb1a013c7a20960bce2dc028308`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid Unicode escape
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/S7.3_A7_T1.js
+
+Blob: `75956b8ec2a989719f403fb8a7c0eb8a62a42077`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/S7.3_A7_T2.js
+
+Blob: `5c7e3ae7620181eacd7dfdc4efcee09567671a93`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/S7.3_A7_T3.js
+
+Blob: `4599fd0ca1da21d1ca37d613da812c6fe02d5d25`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/S7.3_A7_T4.js
+
+Blob: `1c65635991d6197674cbbe8da0af2973e0fe5115`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/S7.3_A7_T5.js
+
+Blob: `fc0fcf5ec1b150ffb470d4129d3dcde2b756c302`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/S7.3_A7_T6.js
+
+Blob: `5e04b609f8dc8abdc9f57843e50f5312b29b50ab`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/S7.3_A7_T7.js
+
+Blob: `cbf60cd6420f00380de114fe1954beea0142b871`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/S7.3_A7_T8.js
+
+Blob: `b3d8da44610eabdbd9dc1e97c58e0eeb26479ab1`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/between-tokens-cr.js
+
+Blob: `1e8a9f7eef9d4316cea51ac53d2ed95ded1860b5`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/between-tokens-lf.js
+
+Blob: `e3081d0f761245cf6beb75638b99cb2bdb8889d5`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/between-tokens-ls.js
+
+Blob: `1d338eb1ba3500305a740048fa10c425654a92e9`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/between-tokens-ps.js
+
+Blob: `0451419cedc32e37abd56c378093fb3f6b2c7c5d`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/comment-multi-cr.js
+
+Blob: `db8e0a0803f7cbe92417952586cae42c6c21651c`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/comment-multi-lf.js
+
+Blob: `99a36a9aac30717cba0ed1b6ad686b454cc40029`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/comment-multi-ls.js
+
+Blob: `64d9873a07d6d562a4b3b3754b82bde90949aa73`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/comment-multi-ps.js
+
+Blob: `3f984ec6f414603f7f71171fe4afb5d0e4c26248`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/comment-single-cr.js
+
+Blob: `932ab27b4b74be38cc1db5b3c5e68aa92ddaa347`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/comment-single-lf.js
+
+Blob: `0467a5992087c4532268528592771228abd18c24`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/comment-single-ls.js
+
+Blob: `e47731a09b9c91878c3bdbeb72c9b0155e717a7d`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/comment-single-ps.js
+
+Blob: `95e6ec02e39bd624fff15c02314cd127ee0b28e2`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/invalid-comment-single-cr.js
+
+Blob: `09568f1a648cbf76473a4e8c973a49f7dbbaca5f`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token text
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/invalid-comment-single-lf.js
+
+Blob: `196f00203ed84b52a2d669b7d238a915d02839b0`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token comment
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/invalid-comment-single-ls.js
+
+Blob: `4405e0e73c964e493d6c8e21da6197ebac3458f4`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token ??
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/invalid-comment-single-ps.js
+
+Blob: `54ba2571c8fc92f042b9100fb912dee4b61901d0`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token ??
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/invalid-regexp-cr.js
+
+Blob: `449ee384ccc7bb11891dc93f1bba52e6e101ac6b`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unterminated regular expression
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/invalid-regexp-lf.js
+
+Blob: `82fc50eb2d920040a0543fcdf22c610c57c4cd0b`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unterminated regular expression
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/invalid-regexp-ls.js
+
+Blob: `9c0bab7c5e6542ab5ab36f2218a0f0779f9efcb3`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unterminated regular expression
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/invalid-regexp-ps.js
+
+Blob: `edf3496af26eb09ebeaf3beeed6c03e971821bdc`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unterminated regular expression
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/invalid-string-cr.js
+
+Blob: `5d7c50e9cc7f950bc6bd7f75c5d918c2d7c9217a`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unterminated string constant
+
+
+### testing/web-platform/tests/third_party/test262/test/language/line-terminators/invalid-string-lf.js
+
+Blob: `bd8b43310ab7950b02876f778cb6455b3a2029d6`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unterminated string constant
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/binary-invalid-digit.js
+
+Blob: `46396daba29f240b49a67b2059ac097fb319bb96`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Expected number in radix 2
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/exponent-part.js
+
+Blob: `aa2c095d1d1d48d973acd4a9c901c6a5fa942aab`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Identifier directly after number
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/hexadecimal-invalid-digit.js
+
+Blob: `e0e19f6cd3b79ceeb347d19045a100ec498bdc1c`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Expected number in radix 16
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/legacy-octal-like-invalid-00n.js
+
+Blob: `5c4c9bbd3de6cd0e307d95c4fc2f4f1dff5a2ae5`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Identifier directly after number
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/legacy-octal-like-invalid-01n.js
+
+Blob: `1f406259e5dac1508c8369e8e5f9b3578f518f80`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Identifier directly after number
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/legacy-octal-like-invalid-07n.js
+
+Blob: `b9b962cc2ce5696cc271de4ed32ba490bf8c812b`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Identifier directly after number
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/mv-is-not-integer-dil-dot-dds.js
+
+Blob: `683e8c1b60a9395636b5e18e71675e90e0b273d9`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Identifier directly after number
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/mv-is-not-integer-dot-dds.js
+
+Blob: `756c5d719eb6685adeb7c2ba99ad697b0b4c6216`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Identifier directly after number
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/non-octal-like-invalid-0008n.js
+
+Blob: `239a45dfc5c2dd2a17d75579b7f8d58b8859af74`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Identifier directly after number
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/non-octal-like-invalid-012348n.js
+
+Blob: `fbbc05312fd76239ca139fa551becb6d78d7b83d`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Identifier directly after number
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/non-octal-like-invalid-08n.js
+
+Blob: `9c7b06921e6719381f7d3b9243f41c0569c9d6b5`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Identifier directly after number
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/non-octal-like-invalid-09n.js
+
+Blob: `f8ef4935f428e6a0865230e08429542af1da33b9`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Identifier directly after number
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-bil-bd-nsl-bd-err.js
+
+Blob: `0a076f5d32a56cf2467d7f4d6b9d60e1da64edba`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator is not allowed at the first of digits
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-bil-bd-nsl-bd.js
+
+Blob: `f284d276adadbde46616624eede5b6d5468a218f`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-bil-bd-nsl-bds.js
+
+Blob: `cad1feec0fc3c02922322c0d5d9b87a074ecb581`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-bil-bds-nsl-bd.js
+
+Blob: `4949452f6516a89752325ed10c170c882ae14021`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-bil-bds-nsl-bds.js
+
+Blob: `8f8bc77f23cfeaf40fbf20b5422f6e08ef6dc1a8`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-bil-nsl-bd-dunder-err.js
+
+Blob: `352019f6e5c18e669de2d1e8a882cfaeac6e428a`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator must be exactly one underscore
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-bil-nsl-bd-err.js
+
+Blob: `8e6113be0307fdfd2cf4600a42056166d2253b79`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator is not allowed at the last of digits
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-dd-nsl-dd-one-of.js
+
+Blob: `46fda9a052a3cf48f0375b16d8ed4e105142eef7`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-dd-nsl-dds-dunder-err.js
+
+Blob: `4faf06f03a26cc50cac06917ab1f1fc7a8a8c8a1`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator must be exactly one underscore
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-dd-nsl-err.js
+
+Blob: `f3a0b2af42fd3c7f8c78097b1c816672cfb1513e`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator is not allowed at the last of digits
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-dds-nsl-dd.js
+
+Blob: `2ecb7a4a4fc79d187fde53c5c0272fed1d869422`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-dds-nsl-dds-dunder-err.js
+
+Blob: `7436225b64a28aa35da51c0030c6135799339677`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator must be exactly one underscore
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-dds-nsl-err.js
+
+Blob: `be6b56e9c3f87d9308cfd7d7f1411b3f0afa58cd`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator is not allowed at the last of digits
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-hil-hd-nsl-hd-err.js
+
+Blob: `4caf506d7a70d4dcee3da662b9bcb4b19bb7df79`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator is not allowed at the first of digits
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-hil-hd-nsl-hd.js
+
+Blob: `d12a37d2fe4f88c289a5751f3ef0dd5626ee7b51`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-hil-hd-nsl-hds.js
+
+Blob: `bfd203a8a1186633f6921b933cc3f80810757b42`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-hil-hds-nsl-hd.js
+
+Blob: `a4fcc57a4de2ea701bbc4f96035231408ee59246`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-hil-hds-nsl-hds.js
+
+Blob: `43846d8801d4ff422757f61be407e77619590ae6`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-hil-nsl-hd-dunder-err.js
+
+Blob: `72b1c7ee9dbe2974aefca4051648905600c5650c`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator must be exactly one underscore
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-hil-nsl-hd-err.js
+
+Blob: `f2c87cb83751ec2d3c465deb6ac97864fe2643de`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator is not allowed at the last of digits
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-hil-od-nsl-od-one-of.js
+
+Blob: `2e4b27ca33247efd6c383dde30efd4c58ed5d2b4`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-lol-00-err.js
+
+Blob: `33c7116ca08e17a4f58cbfaa26a5df6d1502bce1`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator is not allowed in legacy octal numeric literals
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-lol-01-err.js
+
+Blob: `58d16fe1d6d5d4e77f638d79254ba01d85a1cf29`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator is not allowed in legacy octal numeric literals
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-lol-07-err.js
+
+Blob: `85e65fd90cd7f455a59adaba338ff52b5065b043`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator is not allowed in legacy octal numeric literals
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-lol-0_0-err.js
+
+Blob: `899d939afbdebb2204737e61d8103dbc3d15f828`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator is not allowed in legacy octal numeric literals
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-lol-0_1-err.js
+
+Blob: `4e03c7cea0f69f1e846c3a3c8829dcbd0f22b592`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator is not allowed in legacy octal numeric literals
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-lol-0_7-err.js
+
+Blob: `8abc8c282ccfa721160f9c56e256ac5b7ba5bfc1`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator is not allowed in legacy octal numeric literals
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-nonoctal-08-err.js
+
+Blob: `73dc7407995a0702392239def8e859c2349a615b`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator is not allowed in legacy octal numeric literals
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-nonoctal-09-err.js
+
+Blob: `3b15ee9f070abc7ba51564b5531f918f3cc0d896`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator is not allowed in legacy octal numeric literals
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-nonoctal-0_8-err.js
+
+Blob: `d338c2406129f431fc37647db4eb0d7466ef79dd`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator is not allowed in legacy octal numeric literals
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-nonoctal-0_9-err.js
+
+Blob: `6f35f3a3f8fc9ade4ac24d579358ac98e5643d2a`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator is not allowed in legacy octal numeric literals
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-nzd-nsl-dd-one-of.js
+
+Blob: `a60c20281e8054dcdefc1b7e2b95624d3c754669`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-nzd-nsl-dd.js
+
+Blob: `15161947775c218c9a61ede8b74f21cb01d1d409`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-nzd-nsl-dds-dunder-err.js
+
+Blob: `be881a01127f83242e1a8a23ae16492e8047ce8e`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator is not allowed in legacy octal numeric literals
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-nzd-nsl-dds-leading-zero-err.js
+
+Blob: `c04c929a46f67a578810ae806cd17243038583b4`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator is not allowed in legacy octal numeric literals
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-nzd-nsl-dds.js
+
+Blob: `a732cefc38e7ce97d5717c6f35bd13495cc6282d`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-oil-nsl-od-dunder-err.js
+
+Blob: `3718509af7fbda1ab76b7ea535b31ab764437074`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator must be exactly one underscore
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-oil-nsl-od-err.js
+
+Blob: `58c7cefa84c8c4a40cf51ccb4b7cb1b8e5ba0b80`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator is not allowed at the last of digits
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-oil-od-nsl-od-err.js
+
+Blob: `0a9e2bcc6bd873560478e1a63b8da8a9e26e2dbc`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Numeric separator is not allowed at the first of digits
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-oil-od-nsl-od-one-of.js
+
+Blob: `f7972983a00ce90c69b9cc2ab8cc4a920742884d`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-oil-od-nsl-od.js
+
+Blob: `5e123933555661352423f4228da8c1ed91ce2b59`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-oil-od-nsl-ods.js
+
+Blob: `9478005ab9dc8a24a40356920c06ca34eff1749d`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-oil-ods-nsl-od.js
+
+Blob: `70b433e66b0e12146afb9d19fe3c5f0d88068eb3`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-oil-ods-nsl-ods.js
+
+Blob: `2b2ce48486a1069993ee1bb6c510c32727d10b40`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-sign-minus-dds-nsl-dd.js
+
+Blob: `3453f115ae3bf5391ae17af6463dc2e1ec10fd55`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/numeric-separators/numeric-separator-literal-unicode-err.js
+
+Blob: `3ae1602e8aa2440e53848e7ad0279b5c3f58d13a`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token \u005F0123456789n
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/bigint/octal-invalid-digit.js
+
+Blob: `13a345c159bd7e866d3b88dd1b551fc4d9454d09`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Expected number in radix 8
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/boolean/S7.8.2_A1_T1.js
+
+Blob: `889f9150d1d5eda4dffea2de4dbd08274f61660d`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/boolean/S7.8.2_A1_T2.js
+
+Blob: `05a80fc507adbbbfe08462324172a9005e513350`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/boolean/false-with-unicode.js
+
+Blob: `8f0c7085bb970c28582d2273fcbff84bf8914279`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Escape sequence in keyword false
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/boolean/true-with-unicode.js
+
+Blob: `7e76c80810e9a9154de6ff0fbc3fa9bfd4ef2eec`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Escape sequence in keyword true
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/null/S7.8.1_A1_T1.js
+
+Blob: `8313a22bc5637f07a08a097dbdafe04ea6d27287`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/null/S7.8.1_A1_T2.js
+
+Blob: `9f21a775f8a87ec9a93ad1193d4fcc8175750183`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/null/null-with-unicode.js
+
+Blob: `e517220a146cf17070b997b82186da0aa6038cc1`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Escape sequence in keyword null
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/7.8.3-1gs.js
+
+Blob: `9e509faa0921a25a6d700f08fbceb69b002e9649`. Role: imported-path,test-path,source. Parse: script.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/7.8.3-2gs.js
+
+Blob: `32cc0b7f4a5348772fa845fe02e9627d90944dcf`. Role: imported-path,test-path,source. Parse: script.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/7.8.3-3gs.js
+
+Blob: `e82e6cffe79a20021cc3f2cfdead44127d36c860`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @13-15; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A1.1_T1.js
+
+Blob: `462b597cd19f96ab88ad227490ba8c73a1f98a56`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A1.1_T2.js
+
+Blob: `c52e17cecfd39efb9f96aefe1c66136504c2d69e`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A1.2_T1.js
+
+Blob: `b2889b4035784eea5ce36079abab52b2084001c9`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A1.2_T2.js
+
+Blob: `2f73ec9a9648a3701d8d75a7b7efdcbed222a996`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A1.2_T3.js
+
+Blob: `05777aecd906286f54f6328aedf85b3d78bc93de`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A1.2_T4.js
+
+Blob: `7be554686eeb26e12a46b0d8d9e27ac88c53bdc4`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A1.2_T5.js
+
+Blob: `c1e1b2ff8d900ce88359598075f014003682b8e1`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A1.2_T6.js
+
+Blob: `c6f5688d2510d7c71f9babd91ff8a3d8aca0c908`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A1.2_T7.js
+
+Blob: `8db338071a714b48b8455894696a1326e3e02228`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A1.2_T8.js
+
+Blob: `be6181387727e543ba91bd5fe16d4b03d6ba2873`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A2.1_T1.js
+
+Blob: `e935e67feef25bea220b086503b9165a1caf0f72`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A2.1_T2.js
+
+Blob: `f0dd605f2614e15578a154710d2332763142e1c0`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A2.1_T3.js
+
+Blob: `f0999a50d18448b5be3366603d0f7676e2f59908`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A2.2_T1.js
+
+Blob: `ee314c88d6e3617087b509b4222877e116cc5519`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A2.2_T2.js
+
+Blob: `6acc3b2260a6371f2dbb40a9be3e9430a121c9d8`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A2.2_T3.js
+
+Blob: `48fa8b7ed444ab2a545b5edd64d5af8b01afec2e`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A2.2_T4.js
+
+Blob: `90e0c5681f72d9bd7e728d3b1a97f8acd899e4c4`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A2.2_T5.js
+
+Blob: `cb372d26f89f6529b6a41ddacf7c83d4c3e1000c`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A2.2_T6.js
+
+Blob: `0e1143108ac0a4d4ba04abe803ebe34fc5a729cc`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A2.2_T7.js
+
+Blob: `5db5062e8a0864bfc944270f38faec3b8f0a210d`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A2.2_T8.js
+
+Blob: `8e599d0f36fbf41b5e16282d921c8a609287e00e`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A3.1_T1.js
+
+Blob: `a908f70bcdb318ee308a96c0fff366119921059b`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A3.1_T2.js
+
+Blob: `53625ee2f8c21bf056bdc5b722fae78c8469b6ef`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A3.2_T1.js
+
+Blob: `646a36668e55b4962694c3ba6e89901b99ec5fef`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A3.2_T2.js
+
+Blob: `4798f35f864f0a8f91b0414e3612dcdcdadc8aae`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/literals/numeric/S7.8.3_A3.2_T3.js
+
+Blob: `904a5c5b823e464a478aab007169eed27a55b6d4`. Role: imported-path,test-path,source. Parse: module.
+
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.
+
+## Retrieval correction
+
+This copy preserves the source map in [13c8f1c5-6408-46ce-bae1-af42f45447ea.md](13c8f1c5-6408-46ce-bae1-af42f45447ea.md). The original was imported and committed by concurrent console maintenance during this study. Its full path metadata could exceed the console search budget. This copy uses component scope metadata while keeping every file path in the body. It adds no independent behavior evidence. Original record: `af36dc74f016444620374a5faf9e563e92f52b037cdfd8a9c2571c9cb41c3971`.

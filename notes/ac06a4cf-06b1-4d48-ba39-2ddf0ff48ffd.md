@@ -1,0 +1,1971 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["dom"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013","portableCopies":["9eb520a9224322ad57b11e855fd05d81cfd628f0ccba4a841e80feacb887b64a"],"sourceAt":"2026-10-13T04:17:22.071Z","correctionOf":"notes/23c0e7dd-a40c-4f94-97a6-1920ec3eb145.md"}} -->
+# firefox/dom JavaScript function map 171
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### dom/push/PushServiceWebSocket.sys.mjs
+
+Blob: `9010576b004eee1c623d411033f78ec151a8343c`. Role: source. Parse: module.
+
+- (anonymous) @54-59; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- PushWebSocketListener @69-71; FunctionExpression; parameters=1; async=false; generator=false
+- onStart @74-79; FunctionExpression; parameters=1; async=false; generator=false
+- onStop @81-86; FunctionExpression; parameters=2; async=false; generator=false
+- onAcknowledge @88-90; FunctionExpression; parameters=0; async=false; generator=false
+- onBinaryMessageAvailable @92-94; FunctionExpression; parameters=0; async=false; generator=false
+- onMessageAvailable @96-101; FunctionExpression; parameters=2; async=false; generator=false
+- onServerClose @103-108; FunctionExpression; parameters=3; async=false; generator=false
+- newPushDB @130-138; FunctionExpression; parameters=0; async=false; generator=false
+- disconnect @140-142; FunctionExpression; parameters=0; async=false; generator=false
+- observe @144-150; FunctionExpression; parameters=3; async=false; generator=false
+- _onUAIDChanged @157-162; FunctionExpression; parameters=0; async=false; generator=false
+- _onTimerFired @165-182; FunctionExpression; parameters=1; async=false; generator=false
+- _sendPing @189-200; FunctionExpression; parameters=0; async=false; generator=false
+- _timeOutRequests @203-244; FunctionExpression; parameters=0; async=false; generator=false
+- _UAID @246-248; FunctionExpression; parameters=0; async=false; generator=false
+- _UAID @250-261; FunctionExpression; parameters=1; async=false; generator=false
+- _wsSendMessage @305-316; FunctionExpression; parameters=1; async=false; generator=false
+- init @318-336; FunctionExpression; parameters=3; async=false; generator=false
+- _reconnect @338-342; FunctionExpression; parameters=0; async=false; generator=false
+- _shutdownWS @344-376; FunctionExpression; parameters=1; async=false; generator=false
+- uninit @378-394; FunctionExpression; parameters=0; async=false; generator=false
+- _startBackoffTimer @408-431; FunctionExpression; parameters=0; async=false; generator=false
+- _hasPendingRequests @434-436; FunctionExpression; parameters=0; async=false; generator=false
+- _startRequestTimeoutTimer @442-456; FunctionExpression; parameters=0; async=false; generator=false
+- _startPingTimer @459-468; FunctionExpression; parameters=0; async=false; generator=false
+- _makeWebSocket @470-501; FunctionExpression; parameters=1; async=false; generator=false
+- _beginWSSetup @503-545; FunctionExpression; parameters=0; async=false; generator=false
+- connect @547-551; FunctionExpression; parameters=1; async=false; generator=false
+- isConnected @553-555; FunctionExpression; parameters=0; async=false; generator=false
+- _handleHelloReply @560-656; FunctionExpression; parameters=1; async=false; generator=false
+- sendRequests @594-600; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- finishHandshake @602-636; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @619-630; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @621-628; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @622-628; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- _handleRegisterReply @661-697; FunctionExpression; parameters=1; async=false; generator=false
+- _handleUnregisterReply @699-709; FunctionExpression; parameters=1; async=false; generator=false
+- _handleDataUpdate @711-782; FunctionExpression; parameters=1; async=false; generator=false
+- updateRecord @720-735; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @759-761; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @762-773; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @775-781; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- _handleNotificationReply @787-837; FunctionExpression; parameters=1; async=false; generator=false
+- _handleBroadcastReply @839-854; FunctionExpression; parameters=1; async=false; generator=false
+- reportDeliveryError @856-865; FunctionExpression; parameters=2; async=false; generator=false
+- _sendAck @867-878; FunctionExpression; parameters=3; async=false; generator=false
+- _generateID @880-883; FunctionExpression; parameters=0; async=false; generator=false
+- register @885-909; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @897-908; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @901-907; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- unregister @911-927; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @914-926; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- _enqueue @932-938; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @937-937; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- _send @941-960; FunctionExpression; parameters=1; async=false; generator=false
+- _requestHasReply @963-965; FunctionExpression; parameters=1; async=false; generator=false
+- _sendPendingRequests @971-977; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @972-976; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- _queueRequest @980-1016; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @992-994; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @995-995; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1003-1003; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- _receivedUpdate @1018-1055; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @1027-1043; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1044-1046; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1047-1054; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- _wsOnStart @1058-1088; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @1074-1074; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1075-1081; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1083-1087; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- _sendHello @1096-1116; FunctionExpression; parameters=1; async=false; generator=false
+- _wsOnStop @1125-1138; FunctionExpression; parameters=2; async=false; generator=false
+- _wsOnMessageAvailable @1140-1219; FunctionExpression; parameters=2; async=false; generator=false
+- _wsOnServerClose @1231-1238; FunctionExpression; parameters=3; async=false; generator=false
+- _cancelPendingRequests @1243-1248; FunctionExpression; parameters=0; async=false; generator=false
+- _makePendingRequestKey @1251-1253; FunctionExpression; parameters=1; async=false; generator=false
+- _sendRequestForReply @1256-1278; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @1257-1277; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1268-1271; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- _takeRequestForReply @1281-1295; FunctionExpression; parameters=1; async=false; generator=false
+- sendSubscribeBroadcast @1297-1307; FunctionExpression; parameters=2; async=false; generator=false
+- PushRecordWebSocket @1310-1314; FunctionDeclaration; parameters=1; async=false; generator=false
+- get @1318-1320; FunctionExpression; parameters=0; async=false; generator=false
+- PushRecordWebSocket.prototype.toSubscription @1324-1328; FunctionExpression; parameters=0; async=false; generator=false
+- Module resource://gre/modules/PushDB.sys.mjs @5; ImportDeclaration
+- Module resource://gre/modules/PushRecord.sys.mjs @6; ImportDeclaration
+- Module resource://gre/modules/PushCrypto.sys.mjs @7; ImportDeclaration
+
+### dom/push/test/browser/browser_push_message_handled.js
+
+Blob: `8257413cd85073e89e9ed4fb7607460fdad3e392`. Role: test-path,source. Parse: module.
+
+- test_push_message_handled_after_push_event_settles @22-89; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @29-31; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @42-42; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @46-50; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- observer @53-53; ArrowFunctionExpression; parameters=3; async=false; generator=false
+- (anonymous) @55-56; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @64-64; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @69-69; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @76-77; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @81-81; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_push_message_handled_without_service_worker @91-108; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @97-97; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- test_push_message_handled_when_worker_shuts_down @110-165; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @121-121; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @127-142; ArrowFunctionExpression; parameters=2; async=true; generator=false
+- (anonymous) @132-141; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- check @133-138; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @149-149; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @156-156; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_push_message_handled_with_unresponsive_worker @167-210; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @190-190; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @198-198; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### dom/push/test/browser/push_message_handled_worker.js
+
+Blob: `2e1d3ac50724ae1a00abf3ddab25cf39c5d5fd53`. Role: test-path,source. Parse: module.
+
+- (anonymous) @6-8; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @7-7; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @12-14; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- channel.onmessage @16-21; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @23-26; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/error_worker.js
+
+Blob: `f421118d799d932a51395bf03bed115610ab5ecf`. Role: test-path,source. Parse: module.
+
+- ?.onpush @1-9; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/lifetime_worker.js
+
+Blob: `251a4a2beed570362f5601fa01f239f1b11bd301`. Role: test-path,source. Parse: module.
+
+- self.onfetch @4-37; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @12-16; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @13-15; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @23-30; FunctionExpression; parameters=1; async=false; generator=false
+- resolvePromiseCallback @27-29; FunctionExpression; parameters=0; async=false; generator=false
+- resolvePromise @39-46; FunctionDeclaration; parameters=0; async=false; generator=false
+- self.onmessage @48-64; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @53-58; FunctionExpression; parameters=1; async=false; generator=false
+- self.onpush @66-90; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @69-71; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @76-89; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/mockpushserviceparent.js
+
+Blob: `f630792245a06e2e22b59a5c7e320bb53ae40039`. Role: test-path,source. Parse: module.
+
+- waterfall @10-20; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @13-16; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @14-16; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- MockWebSocketParent @27-29; FunctionDeclaration; parameters=1; async=false; generator=false
+- originalURI @39-41; FunctionExpression; parameters=0; async=false; generator=false
+- asyncOpen @43-47; FunctionExpression; parameters=6; async=false; generator=false
+- (anonymous) @46-46; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- sendMsg @49-51; FunctionExpression; parameters=1; async=false; generator=false
+- close @53-55; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @54-54; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- serverSendMsg @57-62; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @59-59; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @60-60; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @72-84; FunctionExpression; parameters=0; async=false; generator=false
+- makeWebSocket @75-82; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @86-100; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @89-96; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @97-99; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @102-108; FunctionExpression; parameters=1; async=false; generator=false
+- sendRequest @114-129; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @115-128; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- handleResponse @131-143; FunctionExpression; parameters=1; async=false; generator=false
+- init @145-145; FunctionExpression; parameters=0; async=false; generator=false
+- register @147-149; FunctionExpression; parameters=1; async=false; generator=false
+- registration @151-153; FunctionExpression; parameters=1; async=false; generator=false
+- unregister @155-157; FunctionExpression; parameters=1; async=false; generator=false
+- reportDeliveryError @159-164; FunctionExpression; parameters=2; async=false; generator=false
+- uninit @166-168; FunctionExpression; parameters=0; async=false; generator=false
+- replaceService @171-181; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @183-191; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @185-187; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @188-190; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @193-201; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @195-197; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @198-200; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @203-205; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/test_utils.js
+
+Blob: `eb89cd1b72aec57a78fe8a7c169c21d7b80a6950`. Role: test-path,source. Parse: module.
+
+- replacePushService @11-45; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @12-14; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @15-37; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @24-29; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @30-35; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @38-44; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- onReplaced @39-42; FunctionExpression; parameters=0; async=false; generator=false
+- restorePushService @47-55; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @48-54; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- onRestored @49-52; FunctionExpression; parameters=0; async=false; generator=false
+- setupMockPushSocket @65-72; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @69-71; FunctionExpression; parameters=1; async=false; generator=false
+- teardownMockPushSocket @74-83; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @76-80; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @93-99; FunctionExpression; parameters=0; async=false; generator=false
+- onHello @101-110; FunctionExpression; parameters=0; async=false; generator=false
+- onRegister @112-122; FunctionExpression; parameters=1; async=false; generator=false
+- onUnregister @124-132; FunctionExpression; parameters=1; async=false; generator=false
+- onAck @134-136; FunctionExpression; parameters=0; async=false; generator=false
+- handleMessage @138-157; FunctionExpression; parameters=1; async=false; generator=false
+- serverSendMsg @159-163; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @167-172; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @168-168; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- setPushPermission @174-199; FunctionDeclaration; parameters=1; async=false; generator=false
+- setupPrefs @201-212; FunctionDeclaration; parameters=0; async=false; generator=false
+- setupPrefsAndReplaceService @214-217; FunctionDeclaration; parameters=1; async=true; generator=false
+- setupPrefsAndMockSocket @219-222; FunctionDeclaration; parameters=1; async=false; generator=false
+- injectControlledFrame @224-248; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @225-247; FunctionExpression; parameters=1; async=false; generator=false
+- remove @230-233; FunctionExpression; parameters=0; async=false; generator=false
+- waitOnWorkerMessage @234-238; FunctionExpression; parameters=1; async=false; generator=false
+- innerWindowId @239-242; FunctionExpression; parameters=0; async=false; generator=false
+- iframe.onload @245-245; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- sendRequestToWorker @250-260; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @251-259; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @252-258; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- channel.port1.onmessage @254-256; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- waitForActive @262-276; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @264-275; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- onStateChange @269-274; FunctionExpression; parameters=0; async=false; generator=false
+- base64UrlDecode @278-304; FunctionDeclaration; parameters=1; async=false; generator=false
+- Class MockWebSocket @90-164
+
+### dom/push/test/worker.js
+
+Blob: `31e40a5e41605e8688f6138e3687f780d1087d27`. Role: test-path,source. Parse: module.
+
+- getJSON @17-28; FunctionDeclaration; parameters=1; async=false; generator=false
+- assert @30-34; FunctionDeclaration; parameters=2; async=false; generator=false
+- broadcast @36-44; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @38-42; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @39-41; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @40-40; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- reply @46-58; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @49-51; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @52-56; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- handlePush @60-83; FunctionDeclaration; parameters=1; async=false; generator=false
+- publicKey @86-93; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @89-92; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- resubscribe @95-118; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @98-104; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @105-108; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @109-112; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @113-117; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- denySubscribe @120-140; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @123-139; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @129-131; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @132-137; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- subscribeWithKey @142-161; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @148-153; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @154-159; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- handleMessage @164-171; FunctionDeclaration; parameters=1; async=false; generator=false
+- handlePushSubscriptionChange @173-175; FunctionDeclaration; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/broadcast_handler.sys.mjs
+
+Blob: `f1f5a0fa89e91d4cc58c05232cb9edb46f5011ec`. Role: test-path,source. Parse: module.
+
+- reset @2-11; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @5-10; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- ?.receivedBroadcastMessage @6-9; FunctionExpression; parameters=0; async=false; generator=false
+
+### dom/push/test/xpcshell/head.js
+
+Blob: `051a100adaae92f25544d62e56edc8db138c507e`. Role: test-path,source. Parse: module.
+
+- observe @48-65; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @56-56; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- after @75-81; FunctionDeclaration; parameters=2; async=false; generator=false
+- afterFunc @76-80; FunctionExpression; parameters=0; async=false; generator=false
+- waterfall @90-100; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @93-96; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @94-96; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- promiseObserverNotification @108-119; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @109-118; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- observe @110-117; FunctionExpression; parameters=3; async=false; generator=false
+- makeStub @131-150; FunctionDeclaration; parameters=2; async=false; generator=false
+- get @133-148; FunctionExpression; parameters=2; async=false; generator=false
+- callStub @145-147; FunctionExpression; parameters=1; async=false; generator=false
+- setPrefs @158-180; FunctionDeclaration; parameters=1; async=false; generator=false
+- compareAscending @182-187; FunctionDeclaration; parameters=2; async=false; generator=false
+- MockWebSocket @208-216; FunctionDeclaration; parameters=2; async=false; generator=false
+- originalURI @231-233; FunctionExpression; parameters=0; async=false; generator=false
+- asyncOpen @235-239; FunctionExpression; parameters=6; async=false; generator=false
+- (anonymous) @238-238; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- _handleMessage @241-298; FunctionExpression; parameters=1; async=false; generator=false
+- sendMsg @300-302; FunctionExpression; parameters=1; async=false; generator=false
+- close @304-306; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @305-305; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- serverSendMsg @315-323; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @320-320; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @321-321; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- serverClose @332-340; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @337-337; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @338-338; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- serverInterrupt @342-344; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @343-343; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- setUpServiceInParent @347-453; FunctionExpression; parameters=2; async=true; generator=false
+- put @391-396; FunctionExpression; parameters=2; async=false; generator=false
+- delete @397-402; FunctionExpression; parameters=2; async=false; generator=false
+- getByIdentifiers @403-408; FunctionExpression; parameters=2; async=false; generator=false
+- makeWebSocket @410-451; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @412-420; FunctionExpression; parameters=0; async=false; generator=false
+- onRegister @421-440; FunctionExpression; parameters=1; async=false; generator=false
+- onUnregister @441-449; FunctionExpression; parameters=1; async=false; generator=false
+- tearDownServiceInParent @455-471; FunctionExpression; parameters=1; async=true; generator=false
+- putTestRecord @473-485; FunctionDeclaration; parameters=4; async=false; generator=false
+- getAllKeyIDs @487-493; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @490-491; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @491-491; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Module resource://gre/modules/XPCOMUtils.sys.mjs @6; ChromeUtils-import-literal
+- Module resource://gre/modules/Timer.sys.mjs @29; ChromeUtils-import-literal
+
+### dom/push/test/xpcshell/test_broadcast_success.js
+
+Blob: `82a648f17df5cea53dc837ef2fbfb7f0c64876cc`. Role: test-path,source. Parse: module.
+
+- run_test @28-36; FunctionDeclaration; parameters=0; async=false; generator=false
+- getPushServiceMock @38-45; FunctionDeclaration; parameters=0; async=false; generator=false
+- subscribeBroadcast @41-43; FunctionExpression; parameters=2; async=false; generator=false
+- test_register_success @47-146; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @53-55; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @54-54; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- PushServiceWebSocket._generateID @62-62; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @67-67; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- makeWebSocket @71-99; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @73-93; FunctionExpression; parameters=1; async=false; generator=false
+- onBroadcastSubscribe @95-97; FunctionExpression; parameters=1; async=false; generator=false
+- test_handle_hello_broadcasts @148-219; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @154-156; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @155-155; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- PushServiceWebSocket._generateID @163-163; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- makeWebSocket @168-195; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @170-191; FunctionExpression; parameters=1; async=false; generator=false
+- onBroadcastSubscribe @193-193; FunctionExpression; parameters=0; async=false; generator=false
+- test_broadcast_context @221-277; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @225-227; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @226-226; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- makeWebSocket @241-245; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @243-243; FunctionExpression; parameters=0; async=false; generator=false
+- test_broadcast_unit @279-348; FunctionExpression; parameters=0; async=true; generator=false
+- test_broadcast_initialize_sane @350-395; FunctionExpression; parameters=0; async=true; generator=false
+- test_broadcast_reject_invalid_sourceinfo @397-410; FunctionExpression; parameters=0; async=true; generator=false
+- test_broadcast_reject_version_not_string @412-426; FunctionExpression; parameters=0; async=true; generator=false
+- test_broadcast_reject_version_empty_string @428-438; FunctionExpression; parameters=0; async=true; generator=false
+- Module resource://gre/modules/PushBroadcastService.sys.mjs @9; ChromeUtils-import-literal
+- Module resource://gre/modules/JSONFile.sys.mjs @12; ChromeUtils-import-literal
+- Module resource://testing-common/FileTestUtils.sys.mjs @16; ChromeUtils-import-literal
+- Module resource://test/broadcast_handler.sys.mjs @19; ChromeUtils-import-literal
+
+### dom/push/test/xpcshell/test_clearAll_successful.js
+
+Blob: `7a919c3b23835fb3aceacc80afcf953b89485895`. Role: test-path,source. Parse: module.
+
+- promiseUnregister @10-12; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @11-11; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- run_test @14-20; FunctionDeclaration; parameters=0; async=false; generator=false
+- setup @22-77; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @24-24; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @24-24; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @38-38; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- makeWebSocket @42-74; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @44-54; FunctionExpression; parameters=0; async=false; generator=false
+- onUnregister @55-72; FunctionExpression; parameters=1; async=false; generator=false
+- test_sanitize @79-130; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @89-92; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @99-102; ArrowFunctionExpression; parameters=2; async=false; generator=false
+
+### dom/push/test/xpcshell/test_clear_forgetAboutSite.js
+
+Blob: `3b8d6d389040f6de8feb1231f3e24bd451e4d27f`. Role: test-path,source. Parse: module.
+
+- promiseUnregister @11-13; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @12-12; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- run_test @15-21; FunctionDeclaration; parameters=0; async=false; generator=false
+- setup @23-117; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @25-25; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @25-25; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @76-76; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- makeWebSocket @80-112; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @82-92; FunctionExpression; parameters=0; async=false; generator=false
+- onUnregister @93-110; FunctionExpression; parameters=1; async=false; generator=false
+- test_forgetAboutRootDomain @119-152; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @127-130; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- Module moz-src:///toolkit/components/forgetaboutsite/ForgetAboutSite.sys.mjs @3; ChromeUtils-import-literal
+
+### dom/push/test/xpcshell/test_clear_origin_data.js
+
+Blob: `fe42031df3f80504c125161c05c8484376377aaa`. Role: test-path,source. Parse: module.
+
+- clearForPattern @8-38; FunctionExpression; parameters=2; async=true; generator=false
+- run_test @40-48; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_webapps_cleardata @50-127; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @52-54; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @53-53; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @66-66; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- makeWebSocket @72-105; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @74-87; FunctionExpression; parameters=1; async=false; generator=false
+- onRegister @88-99; FunctionExpression; parameters=1; async=false; generator=false
+- onUnregister @100-103; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @109-115; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/test_crypto.js
+
+Blob: `dd443a8ad322adb01ee537b8ed4f6f86dd420aaf`. Role: test-path,source. Parse: module.
+
+- assertDecrypts @23-40; FunctionDeclaration; parameters=2; async=true; generator=false
+- assertNotDecrypts @42-57; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @59-63; FunctionExpression; parameters=0; async=true; generator=false
+- test_crypto_getCryptoParamsFromHeaders @65-234; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @229-229; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_aes128gcm_ok @236-333; FunctionExpression; parameters=0; async=true; generator=false
+- test_aes128gcm_err @335-411; FunctionExpression; parameters=0; async=true; generator=false
+- test_aesgcm_ok @413-489; FunctionExpression; parameters=0; async=true; generator=false
+- test_aesgcm_err @491-631; FunctionExpression; parameters=0; async=true; generator=false
+- test_aesgcm128_err @633-709; FunctionExpression; parameters=0; async=true; generator=false
+- Module resource://gre/modules/PushCrypto.sys.mjs @3; ChromeUtils-import-literal
+
+### dom/push/test/xpcshell/test_crypto_encrypt.js
+
+Blob: `b18c527b234c2d3f44d4826af42faa984d70569d`. Role: test-path,source. Parse: module.
+
+- from64 @8-14; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- to64 @16-16; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- importKeyPair @21-45; FunctionDeclaration; parameters=2; async=true; generator=false
+- static_aes128gcm @48-103; FunctionExpression; parameters=0; async=true; generator=false
+- aes128gcm_simple @106-126; FunctionExpression; parameters=0; async=true; generator=false
+- aes128gcm_rs @129-188; FunctionExpression; parameters=0; async=true; generator=false
+- aes128gcm_edgecases @191-223; FunctionExpression; parameters=0; async=true; generator=false
+- Module resource://gre/modules/PushCrypto.sys.mjs @4; ChromeUtils-import-literal
+
+### dom/push/test/xpcshell/test_drop_expired.js
+
+Blob: `b9339195166edbb292ce52b5e014cd5ccef8c406`. Role: test-path,source. Parse: module.
+
+- visitURI @12-19; FunctionDeclaration; parameters=2; async=false; generator=false
+- putRecord @21-47; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @29-31; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- run_test @49-61; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @56-58; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @57-57; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- setUp @63-137; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @106-106; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- makeWebSocket @112-133; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @114-122; FunctionExpression; parameters=0; async=false; generator=false
+- onUnregister @123-131; FunctionExpression; parameters=1; async=false; generator=false
+- test_site_visited @139-149; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @142-142; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- test_perm_restored @151-164; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @154-154; ArrowFunctionExpression; parameters=2; async=false; generator=false
+
+### dom/push/test/xpcshell/test_handler_service.js
+
+Blob: `164d383dfd9f7c181ba210abb54558b438d5c1a4`. Role: test-path,source. Parse: module.
+
+- PushServiceHandler @18-24; FunctionDeclaration; parameters=0; async=false; generator=false
+- observe @30-32; FunctionExpression; parameters=3; async=false; generator=false
+- test_service_instantiation @37-91; FunctionExpression; parameters=0; async=false; generator=false
+- Module resource://testing-common/MockRegistrar.sys.mjs @7; ChromeUtils-import-literal
+- Module resource://gre/modules/ChromePushSubscription.sys.mjs @10; ChromeUtils-import-literal
+
+### dom/push/test/xpcshell/test_notification_ack.js
+
+Blob: `87c29f417af60b90173871bea2b16f35ef7e7161`. Role: test-path,source. Parse: module.
+
+- run_test @8-12; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_notification_ack @14-163; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @16-18; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @17-17; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @55-55; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @60-60; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- makeWebSocket @64-158; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @66-90; FunctionExpression; parameters=1; async=false; generator=false
+- onACK @91-156; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/test_notification_data.js
+
+Blob: `9bd2e64fc05238d5b089557d095cdffce2b4791d`. Role: test-path,source. Parse: module.
+
+- run_test @9-15; FunctionDeclaration; parameters=0; async=false; generator=false
+- putRecord @17-35; FunctionDeclaration; parameters=5; async=false; generator=false
+- test_notification_ack_data_setup @39-125; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @41-43; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @42-42; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @92-92; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- makeWebSocket @97-122; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @99-115; FunctionExpression; parameters=1; async=false; generator=false
+- onACK @116-120; FunctionExpression; parameters=1; async=false; generator=false
+- test_notification_ack_data @127-301; FunctionExpression; parameters=0; async=true; generator=false
+- sendAndReceive @249-296; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @253-266; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @270-270; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @271-286; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @298-300; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @299-299; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/test_notification_duplicate.js
+
+Blob: `6d3d25d07a81db2f680cd8a29547c7628775d0f3`. Role: test-path,source. Parse: module.
+
+- run_test @8-16; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_notification_duplicate @19-182; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @22-24; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @23-23; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @101-101; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @105-108; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @111-111; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @114-114; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- makeWebSocket @119-163; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @121-141; FunctionExpression; parameters=0; async=false; generator=false
+- onACK @142-161; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @145-145; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @149-149; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/test_notification_error.js
+
+Blob: `f50b58e1effff4ba21ce728041a666d80f269040`. Role: test-path,source. Parse: module.
+
+- run_test @8-14; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_notification_error @16-151; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @18-20; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @19-19; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @59-59; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @64-64; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- getByKeyID @69-74; FunctionExpression; parameters=2; async=false; generator=false
+- makeWebSocket @76-100; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @78-95; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @89-92; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/test_notification_ignore.js
+
+Blob: `caf0c9fbe49a201f6e55c2e14ffa137b54caea60`. Role: test-path,source. Parse: module.
+
+- run_test @9-13; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_notification_ignore @15-100; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @17-19; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @18-18; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- observer @31-31; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @33-35; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- makeWebSocket @42-76; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @44-60; FunctionExpression; parameters=0; async=false; generator=false
+- onACK @61-74; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @82-82; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/test_notification_incomplete.js
+
+Blob: `ee94b44316de3769a01407ce6da730671b87d89f`. Role: test-path,source. Parse: module.
+
+- run_test @8-14; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_notification_incomplete @16-137; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @18-20; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @19-19; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- observeMessage @59-61; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @62-63; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @69-69; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- _handleNotificationReply @73-76; FunctionExpression; parameters=0; async=false; generator=false
+- makeWebSocket @80-127; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @82-122; FunctionExpression; parameters=0; async=false; generator=false
+- onACK @123-125; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @133-134; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- recordIsEqual @139-144; FunctionDeclaration; parameters=2; async=false; generator=false
+- recordsAreEqual @146-151; FunctionDeclaration; parameters=2; async=false; generator=false
+
+### dom/push/test/xpcshell/test_notification_version_string.js
+
+Blob: `f0c10c8fc9930c96907198b3548f48b002fa603a`. Role: test-path,source. Parse: module.
+
+- run_test @8-14; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_notification_version_string @16-79; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @18-20; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @19-19; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @36-36; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- makeWebSocket @40-64; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @42-61; FunctionExpression; parameters=0; async=false; generator=false
+
+### dom/push/test/xpcshell/test_observer_data.js
+
+Blob: `01c331237c1c1bfb7e30e8cc5c97fc2737ca2e85`. Role: test-path,source. Parse: module.
+
+- test_notifyWithData @8-38; FunctionExpression; parameters=0; async=true; generator=false
+- test_empty_notifyWithData @40-61; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @55-55; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/test_observer_remoting.js
+
+Blob: `086fdeab808db964aeeb7b37d233ac7c8fd94d75`. Role: test-path,source. Parse: module.
+
+- test_observer_remoting @7-14; FunctionExpression; parameters=0; async=true; generator=false
+- testInParent @30-55; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @35-36; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @36-36; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @48-49; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @49-49; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- testInChild @57-75; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @61-62; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @62-62; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @69-70; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @70-70; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- waitForNotifierObservers @77-139; FunctionExpression; parameters=2; async=true; generator=false
+
+### dom/push/test/xpcshell/test_permissions.js
+
+Blob: `c9e027e3d80ff1f9c9204c0a0bce6e5125f6eb05`. Role: test-path,source. Parse: module.
+
+- run_test @10-22; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @17-19; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @18-18; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- promiseUnregister @26-28; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @27-27; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- makePushPermission @30-42; FunctionDeclaration; parameters=2; async=false; generator=false
+- promiseObserverNotifications @44-51; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @46-49; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @50-50; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- promiseSubscriptionChanges @53-58; FunctionDeclaration; parameters=1; async=false; generator=false
+- promiseSubscriptionModifications @60-65; FunctionDeclaration; parameters=1; async=false; generator=false
+- allExpired @67-71; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @68-69; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @68-68; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @69-69; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- setUp @73-157; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @114-114; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- makeWebSocket @118-154; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @120-129; FunctionExpression; parameters=0; async=false; generator=false
+- onUnregister @130-151; FunctionExpression; parameters=1; async=false; generator=false
+- onACK @152-152; FunctionExpression; parameters=0; async=false; generator=false
+- test_permissions_allow_added @159-183; FunctionExpression; parameters=0; async=true; generator=false
+- test_permissions_allow_deleted @185-206; FunctionExpression; parameters=0; async=true; generator=false
+- test_permissions_deny_added @208-231; FunctionExpression; parameters=0; async=true; generator=false
+- test_permissions_deny_deleted @233-241; FunctionExpression; parameters=0; async=true; generator=false
+- test_permissions_allow_changed @243-272; FunctionExpression; parameters=0; async=true; generator=false
+- test_permissions_deny_changed @274-295; FunctionExpression; parameters=0; async=true; generator=false
+- test_permissions_clear @297-332; FunctionExpression; parameters=0; async=true; generator=false
+
+### dom/push/test/xpcshell/test_quota_exceeded.js
+
+Blob: `d8028715506a79f54a940fb48f4a93cf98c3862a`. Role: test-path,source. Parse: module.
+
+- run_test @8-15; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_expiration_origin_threshold @17-156; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @19-19; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @19-19; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @80-83; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @87-87; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- makeWebSocket @92-145; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @94-131; FunctionExpression; parameters=0; async=false; generator=false
+- onUnregister @132-140; FunctionExpression; parameters=1; async=false; generator=false
+- onACK @143-143; FunctionExpression; parameters=0; async=false; generator=false
+
+### dom/push/test/xpcshell/test_quota_observer.js
+
+Blob: `aafc5fa17ebbe8c6bc308cf91c3d8c1c7abf4bd2`. Role: test-path,source. Parse: module.
+
+- run_test @10-16; FunctionDeclaration; parameters=0; async=false; generator=false
+- putRecord @18-31; FunctionExpression; parameters=2; async=true; generator=false
+- (anonymous) @26-28; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_expiration_history_observer @33-210; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @35-35; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @35-35; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @69-69; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @72-72; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- makeWebSocket @78-111; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @80-99; FunctionExpression; parameters=0; async=false; generator=false
+- onUnregister @100-108; FunctionExpression; parameters=1; async=false; generator=false
+- onACK @109-109; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @125-128; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @189-198; ArrowFunctionExpression; parameters=2; async=false; generator=false
+
+### dom/push/test/xpcshell/test_quota_with_notification.js
+
+Blob: `015033c505574af6b177bd5bf2da3053fa99e2ed`. Role: test-path,source. Parse: module.
+
+- run_test @8-15; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_expiration_origin_threshold @17-129; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @19-22; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @21-21; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @53-56; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @62-67; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @70-78; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- PushService._updateQuotaTestCallback @72-77; FunctionExpression; parameters=0; async=false; generator=false
+- makeWebSocket @83-117; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @85-109; FunctionExpression; parameters=0; async=false; generator=false
+- onUnregister @110-112; FunctionExpression; parameters=0; async=false; generator=false
+- onACK @115-115; FunctionExpression; parameters=0; async=false; generator=false
+
+### dom/push/test/xpcshell/test_reconnect_retry.js
+
+Blob: `9350781e8ec49f3248e1e36a19f279e15a809afc`. Role: test-path,source. Parse: module.
+
+- run_test @6-13; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_reconnect_retry @15-90; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @17-19; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @18-18; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- makeWebSocket @26-61; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @28-36; FunctionExpression; parameters=0; async=false; generator=false
+- onRegister @37-59; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/test_record.js
+
+Blob: `144c0ee346d1bf0fdea4aa38fde4b9bb366c6c4e`. Role: test-path,source. Parse: module.
+
+- test_updateQuota @7-44; FunctionExpression; parameters=0; async=true; generator=false
+- test_systemRecord_updateQuota @46-69; FunctionExpression; parameters=0; async=true; generator=false
+- testPermissionCheck @71-110; FunctionDeclaration; parameters=1; async=false; generator=false
+- test_principal_permissions @112-132; FunctionExpression; parameters=0; async=true; generator=false
+- Module resource://gre/modules/PushRecord.sys.mjs @3; ChromeUtils-import-literal
+
+### dom/push/test/xpcshell/test_register_case.js
+
+Blob: `f70d2f3f841c8964d2965208311b551703f022e1`. Role: test-path,source. Parse: module.
+
+- run_test @8-12; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_register_case @14-67; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @16-18; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @17-17; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- makeWebSocket @23-46; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @25-33; FunctionExpression; parameters=0; async=false; generator=false
+- onRegister @34-44; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/test_register_flush.js
+
+Blob: `132f2d029d50b1ff061d774ee4790e2b077db34b`. Role: test-path,source. Parse: module.
+
+- run_test @8-16; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_register_flush @18-116; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @20-22; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @21-21; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @39-39; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- makeWebSocket @43-82; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @45-53; FunctionExpression; parameters=0; async=false; generator=false
+- onRegister @54-79; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/test_register_invalid_channel.js
+
+Blob: `93b91ab29ab7f7a46194561d35ac7d04f26b7701`. Role: test-path,source. Parse: module.
+
+- run_test @9-13; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_register_invalid_channel @15-63; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @17-19; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @18-18; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- PushServiceWebSocket._generateID @21-21; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- makeWebSocket @25-47; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @27-35; FunctionExpression; parameters=0; async=false; generator=false
+- onRegister @36-45; FunctionExpression; parameters=0; async=false; generator=false
+
+### dom/push/test/xpcshell/test_register_invalid_endpoint.js
+
+Blob: `1f4f6e002389e9a0c4de7375919ded766cc47717`. Role: test-path,source. Parse: module.
+
+- run_test @9-13; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_register_invalid_endpoint @15-64; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @17-19; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @18-18; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- PushServiceWebSocket._generateID @21-21; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- makeWebSocket @25-48; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @27-35; FunctionExpression; parameters=0; async=false; generator=false
+- onRegister @36-46; FunctionExpression; parameters=0; async=false; generator=false
+
+### dom/push/test/xpcshell/test_register_invalid_json.js
+
+Blob: `38030f19a68d69d7fd813a9290f2e31c7bcbe0e1`. Role: test-path,source. Parse: module.
+
+- run_test @9-16; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_register_invalid_json @18-60; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @20-20; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- PushServiceWebSocket._generateID @23-23; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- makeWebSocket @26-44; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @28-37; FunctionExpression; parameters=0; async=false; generator=false
+- onRegister @38-42; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/test_register_no_id.js
+
+Blob: `e58b29b60e7dfe307381b5a0cb4e55fa1b1943ee`. Role: test-path,source. Parse: module.
+
+- run_test @9-17; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_register_no_id @19-66; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @22-22; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- PushServiceWebSocket._generateID @24-24; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- makeWebSocket @27-50; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @29-38; FunctionExpression; parameters=0; async=false; generator=false
+- onRegister @39-48; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/test_register_request_queue.js
+
+Blob: `fbe44cb7ce65c6cd5081c74e89bc29ffa9e14c49`. Role: test-path,source. Parse: module.
+
+- run_test @6-13; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_register_request_queue @15-78; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @17-19; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @18-18; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @23-33; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- onHelloReceived @24-33; FunctionExpression; parameters=0; async=false; generator=false
+- makeWebSocket @39-46; FunctionExpression; parameters=1; async=false; generator=false
+- onRegister @42-44; FunctionExpression; parameters=0; async=false; generator=false
+
+### dom/push/test/xpcshell/test_register_rollback.js
+
+Blob: `6ace051a9eb8e73640666b2c0d5b77b7addac183`. Role: test-path,source. Parse: module.
+
+- run_test @9-17; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_register_rollback @19-102; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @21-23; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @22-22; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @28-28; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- PushServiceWebSocket._generateID @29-29; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- put @33-35; FunctionExpression; parameters=0; async=false; generator=false
+- makeWebSocket @37-83; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @39-56; FunctionExpression; parameters=1; async=false; generator=false
+- onRegister @57-69; FunctionExpression; parameters=1; async=false; generator=false
+- onUnregister @70-81; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/test_register_success.js
+
+Blob: `9b6692ca255f84c879145f57232b6acd4dfb88d2`. Role: test-path,source. Parse: module.
+
+- run_test @9-17; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_register_success @19-93; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @21-23; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @22-22; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- PushServiceWebSocket._generateID @25-25; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- makeWebSocket @29-59; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @31-44; FunctionExpression; parameters=1; async=false; generator=false
+- onRegister @45-57; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/test_register_timeout.js
+
+Blob: `27a5994e7cb7935a4e804a29fd58ab3c967c6601`. Role: test-path,source. Parse: module.
+
+- run_test @9-16; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_register_timeout @18-102; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @21-21; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @25-27; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @26-26; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- PushServiceWebSocket._generateID @29-29; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- makeWebSocket @33-83; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @35-59; FunctionExpression; parameters=1; async=false; generator=false
+- onRegister @60-81; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @67-80; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### dom/push/test/xpcshell/test_register_wrong_id.js
+
+Blob: `06dc73ee4f4059e39900d3607beed415e0742d5d`. Role: test-path,source. Parse: module.
+
+- run_test @10-18; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_register_wrong_id @20-75; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @24-24; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- PushServiceWebSocket._generateID @26-26; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- makeWebSocket @29-59; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @31-40; FunctionExpression; parameters=0; async=false; generator=false
+- onRegister @41-57; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/test_register_wrong_type.js
+
+Blob: `f1fcf582bcdbdaedb1dce6790a114b80cf06d463`. Role: test-path,source. Parse: module.
+
+- run_test @8-15; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_register_wrong_type @17-66; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @20-20; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- PushService._generateID @22-22; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- makeWebSocket @25-50; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @27-36; FunctionExpression; parameters=0; async=false; generator=false
+- onRegister @37-48; FunctionExpression; parameters=0; async=false; generator=false
+
+### dom/push/test/xpcshell/test_registration_error.js
+
+Blob: `6e826181fe127d23ea4626ff3560f87531e05362`. Role: test-path,source. Parse: module.
+
+- run_test @6-12; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_registrations_error @14-44; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @16-18; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @17-17; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- getByIdentifiers @23-25; FunctionExpression; parameters=0; async=false; generator=false
+- makeWebSocket @27-29; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/test_registration_missing_scope.js
+
+Blob: `dd0dab842c0888f5f869a355e3ebdb17abd9008a`. Role: test-path,source. Parse: module.
+
+- run_test @6-10; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_registration_missing_scope @12-24; FunctionExpression; parameters=0; async=true; generator=false
+- makeWebSocket @15-17; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/test_registration_none.js
+
+Blob: `3e9235b0ad654a3eecc87113d0db135a276fc4b5`. Role: test-path,source. Parse: module.
+
+- run_test @8-12; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_registration_none @15-30; FunctionExpression; parameters=0; async=true; generator=false
+- makeWebSocket @18-20; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/test_registration_success.js
+
+Blob: `e3113e2007c39729396b015aa070bc69cc15dc63`. Role: test-path,source. Parse: module.
+
+- run_test @8-12; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_registration_success @14-66; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @16-18; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @17-17; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @34-34; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- makeWebSocket @37-51; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @39-49; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/test_retry_ws.js
+
+Blob: `87f9e7dba8e2bf24d47e32da689497c1b8fd0cdb`. Role: test-path,source. Parse: module.
+
+- run_test @8-16; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_ws_retry @18-73; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @20-22; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @21-21; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- init @36-43; FunctionExpression; parameters=2; async=false; generator=false
+- cancel @45-45; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @49-49; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- makeWebSocket @52-69; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @54-67; FunctionExpression; parameters=0; async=false; generator=false
+
+### dom/push/test/xpcshell/test_service.js
+
+Blob: `fc9b9d2ab9a247e35cb7990efb7db5b448c94bdb`. Role: test-path,source. Parse: module.
+
+- done @8-11; FunctionDeclaration; parameters=0; async=false; generator=false
+- generateKey @13-25; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @23-23; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @24-24; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- run_test @27-30; FunctionDeclaration; parameters=0; async=false; generator=false
+- setUp @32-38; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @34-36; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @35-35; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- test_subscribe_success @40-60; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @45-58; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- test_subscribeWithKey_error @62-86; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @70-84; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- test_subscribeWithKey_success @88-112; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @92-106; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @97-104; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @107-110; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_subscribeWithKey_conflict @114-143; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @118-137; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @123-135; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @138-141; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_subscribe_error @145-161; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @150-159; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- test_getSubscription_exists @163-184; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @168-182; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- test_getSubscription_missing @186-206; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @191-204; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- test_getSubscription_error @208-224; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @213-222; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- test_unsubscribe_success @226-239; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @231-237; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- test_unsubscribe_nonexistent @241-261; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @246-259; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- test_unsubscribe_error @263-276; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @268-274; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- test_subscribe_origin_principal @278-298; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @284-297; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- test_subscribe_null_principal @300-320; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @305-318; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- test_subscribe_missing_principal @322-342; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @327-340; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- tearDown @344-346; FunctionExpression; parameters=0; async=false; generator=false
+
+### dom/push/test/xpcshell/test_unregister_empty_scope.js
+
+Blob: `6663f7c6adf9bded2a8ddd9b93ecbbab294cd9b3`. Role: test-path,source. Parse: module.
+
+- run_test @6-10; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_unregister_empty_scope @12-44; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @14-14; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- makeWebSocket @17-30; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @19-28; FunctionExpression; parameters=0; async=false; generator=false
+
+### dom/push/test/xpcshell/test_unregister_error.js
+
+Blob: `4273379eda82d3596f7b91f0e44b63578000d26a`. Role: test-path,source. Parse: module.
+
+- run_test @8-12; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_unregister_error @14-72; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @16-18; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @17-17; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @29-29; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- makeWebSocket @33-59; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @35-43; FunctionExpression; parameters=0; async=false; generator=false
+- onUnregister @44-57; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/test_unregister_invalid_json.js
+
+Blob: `15e4b8ad7d6987221c9d901a4bb460a2930884b9`. Role: test-path,source. Parse: module.
+
+- run_test @8-16; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_unregister_invalid_json @18-102; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @20-22; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @21-21; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @47-47; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- makeWebSocket @52-69; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @54-63; FunctionExpression; parameters=0; async=false; generator=false
+- onUnregister @64-67; FunctionExpression; parameters=0; async=false; generator=false
+
+### dom/push/test/xpcshell/test_unregister_not_found.js
+
+Blob: `8694add39391cdace76b134840b127b4ab0f0cf6`. Role: test-path,source. Parse: module.
+
+- run_test @6-10; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_unregister_not_found @12-41; FunctionExpression; parameters=0; async=true; generator=false
+- makeWebSocket @15-27; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @17-25; FunctionExpression; parameters=0; async=false; generator=false
+
+### dom/push/test/xpcshell/test_unregister_success.js
+
+Blob: `7064acd7d8129a65391306f139006e8df919153d`. Role: test-path,source. Parse: module.
+
+- run_test @9-15; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_unregister_success @17-84; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @19-21; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @20-20; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @32-32; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- makeWebSocket @36-61; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @38-47; FunctionExpression; parameters=0; async=false; generator=false
+- onUnregister @48-59; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/push/test/xpcshell/test_updateRecordNoEncryptionKeys_ws.js
+
+Blob: `b54735c0423896e9ff5f32faddad840246283873`. Role: test-path,source. Parse: module.
+
+- run_test @8-14; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_with_data_enabled @16-102; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @18-20; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @19-19; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- makeWebSocket @48-76; FunctionExpression; parameters=1; async=false; generator=false
+- onHello @50-63; FunctionExpression; parameters=1; async=false; generator=false
+- onRegister @64-74; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/quota/QuotaUtilsService.sys.mjs
+
+Blob: `5d661e0dda2142ba755162cde740154d4859c835`. Role: source. Parse: module.
+
+- QuotaUtilsService @7-7; FunctionDeclaration; parameters=0; async=false; generator=false
+- getPrivateIdentityId @10-16; FunctionExpression; parameters=1; async=false; generator=false
+- Module moz-src:///toolkit/components/contextualidentity/ContextualIdentityService.sys.mjs @5; ImportDeclaration
+
+### dom/quota/test/browser/browser_permissionsCrossOrigin.js
+
+Blob: `df96e02c9795714f0a4fc840bcf35b8dd4ddd8ff`. Role: test-path,source. Parse: module.
+
+- testNoPermissionPrompt @9-55; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @10-12; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @13-15; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @16-18; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @22-52; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @23-33; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @35-51; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @42-49; FunctionExpression; parameters=0; async=true; generator=false
+
+### dom/quota/test/browser/browser_permissionsPromptAllow.js
+
+Blob: `06e928c40f742d1540e459f85d956cbda83a07be`. Role: test-path,source. Parse: module.
+
+- testPermissionAllow @9-38; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @12-14; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @15-18; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @19-21; FunctionExpression; parameters=0; async=false; generator=false
+- testNoPermissionPrompt @40-66; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @41-43; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @44-46; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @47-49; FunctionExpression; parameters=0; async=false; generator=false
+
+### dom/quota/test/browser/browser_permissionsPromptDeny.js
+
+Blob: `927cbdd07418fc86b05c3d899c56ce00cd1fa0c7`. Role: test-path,source. Parse: module.
+
+- testPermissionTemporaryDenied @9-47; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @10-12; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @13-16; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @17-19; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @37-40; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- testPermissionDenied @49-78; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @52-54; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @55-58; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @59-61; FunctionExpression; parameters=0; async=false; generator=false
+- testNoPermissionPrompt @80-106; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @81-83; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @84-86; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @87-89; FunctionExpression; parameters=0; async=false; generator=false
+- testPermissionDeniedDismiss @108-150; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @109-111; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @112-116; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @117-119; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @140-143; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### dom/quota/test/browser/browser_permissionsPromptUnknown.js
+
+Blob: `8b1be6d65d5740334aeafad53169fe660405bcdb`. Role: test-path,source. Parse: module.
+
+- testPermissionUnknownInPrivateWindow @9-56; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @16-18; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @23-25; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @30-32; FunctionExpression; parameters=0; async=false; generator=false
+
+### dom/quota/test/browser/browser_simpledb.js
+
+Blob: `9cf426133209e7c4127361c2b58fad2865e0f84e`. Role: test-path,source. Parse: module.
+
+- testSimpleDB @9-55; FunctionExpression; parameters=0; async=true; generator=false
+
+### dom/quota/test/browser/head.js
+
+Blob: `2aaa3faed5d750f820e109c0d4e0b03f89197bc4`. Role: test-path,source. Parse: module.
+
+- loadScript @10-15; FunctionDeclaration; parameters=1; async=false; generator=false
+- registerPopupEventHandler @20-40; FunctionDeclaration; parameters=3; async=false; generator=false
+- gActiveListeners.eventName @24-35; FunctionExpression; parameters=1; async=false; generator=false
+- unregisterAllPopupEventHandlers @42-53; FunctionDeclaration; parameters=1; async=false; generator=false
+- triggerMainCommand @55-66; FunctionDeclaration; parameters=2; async=false; generator=false
+- triggerSecondaryCommand @68-79; FunctionDeclaration; parameters=3; async=true; generator=false
+- dismissNotification @81-86; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @83-85; FunctionExpression; parameters=0; async=false; generator=false
+- waitForMessage @88-116; FunctionDeclaration; parameters=2; async=false; generator=false
+- checkFn @91-91; FunctionExpression; parameters=0; async=false; generator=false
+- checkFn.toSource @92-102; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @110-115; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- removePermission @118-130; FunctionDeclaration; parameters=2; async=false; generator=false
+- getPermission @132-144; FunctionDeclaration; parameters=2; async=false; generator=false
+
+### dom/quota/test/browser/helpers.js
+
+Blob: `34493532f87d86312b918471d30e6a7741f89376`. Role: test-path,source. Parse: module.
+
+- loadScript @11-14; FunctionDeclaration; parameters=1; async=false; generator=false
+- runTest @16-21; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @17-20; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- finishTestNow @23-28; FunctionDeclaration; parameters=0; async=false; generator=false
+- finishTest @30-37; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @31-36; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @33-35; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- continueToNextStep @39-43; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @40-42; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### dom/quota/test/common/browser.js
+
+Blob: `5d9abd79e3fc3b79d09df41217c31210d7be2ad2`. Role: test-path,source. Parse: module.
+
+- addTest @8-21; FunctionDeclaration; parameters=1; async=false; generator=false
+- taskFunction @9-13; FunctionExpression; parameters=0; async=true; generator=false
+- enableStorageTesting @23-33; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/common/content.js
+
+Blob: `ffe58c556dc78c9db484735eee86637fc4fcf6dc`. Role: test-path,source. Parse: module.
+
+- clearAllDatabases @11-18; FunctionDeclaration; parameters=1; async=false; generator=false
+- getSimpleDatabase @39-49; FunctionDeclaration; parameters=0; async=false; generator=false
+- requestFinished @51-63; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @52-56; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @53-55; FunctionExpression; parameters=0; async=false; generator=false
+
+### dom/quota/test/common/file.js
+
+Blob: `55e2e189fbe41243183edfe3c16b33599224e93f`. Role: test-path,source. Parse: module.
+
+- getBuffer @6-10; FunctionDeclaration; parameters=1; async=false; generator=false
+- getRandomBuffer @15-22; FunctionDeclaration; parameters=1; async=false; generator=false
+- compareBuffers @24-37; FunctionDeclaration; parameters=2; async=false; generator=false
+- getBlob @39-41; FunctionDeclaration; parameters=2; async=false; generator=false
+- getNullBlob @43-45; FunctionDeclaration; parameters=1; async=false; generator=false
+
+### dom/quota/test/common/global.js
+
+Blob: `cc7d9d97a278dc9c362158ac5fb307cc928065ed`. Role: test-path,source. Parse: module.
+
+- constructor @9-14; FunctionExpression; parameters=2; async=false; generator=false
+- openDBRequestUpgradeNeeded @17-31; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @18-30; FunctionExpression; parameters=2; async=false; generator=false
+- request.onerror @19-22; FunctionExpression; parameters=1; async=false; generator=false
+- request.onupgradeneeded @23-25; FunctionExpression; parameters=1; async=false; generator=false
+- request.onsuccess @26-29; FunctionExpression; parameters=1; async=false; generator=false
+- openDBRequestSucceeded @33-47; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @34-46; FunctionExpression; parameters=2; async=false; generator=false
+- request.onerror @35-38; FunctionExpression; parameters=1; async=false; generator=false
+- request.onupgradeneeded @39-42; FunctionExpression; parameters=1; async=false; generator=false
+- request.onsuccess @43-45; FunctionExpression; parameters=1; async=false; generator=false
+- Class RequestError @8-15
+
+### dom/quota/test/common/mochitest.js
+
+Blob: `4bcfcf1138022f09cb50cf874518993a0e01093e`. Role: test-path,source. Parse: module.
+
+- enableStorageTesting @8-18; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/common/nestedtest.js
+
+Blob: `5c2011bfe905b0c9df59999d31e67401546409ff`. Role: test-path,source. Parse: module.
+
+
+### dom/quota/test/common/system.js
+
+Blob: `b01bb8d1fa47979c3a37d6dcdcf34afa8db877fe`. Role: test-path,source. Parse: module.
+
+- getProfileDir @12-14; FunctionDeclaration; parameters=0; async=false; generator=false
+- getRelativeFile @21-42; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @33-39; FunctionExpression; parameters=1; async=false; generator=false
+- getCurrentPrincipal @44-46; FunctionDeclaration; parameters=0; async=false; generator=false
+- getSimpleDatabase @48-60; FunctionDeclaration; parameters=2; async=false; generator=false
+- requestFinished @62-74; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @63-67; FunctionExpression; parameters=1; async=false; generator=false
+- request.callback @64-66; FunctionExpression; parameters=0; async=false; generator=false
+
+### dom/quota/test/common/test_simpledb.js
+
+Blob: `dee70190977439cb70b72a398604a9590de8672d`. Role: test-path,source. Parse: module.
+
+- testSteps @8-50; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/common/test_storage_manager_persist_allow.js
+
+Blob: `0a6e59843d5b67137c827319580003441034f693`. Role: test-path,source. Parse: module.
+
+- testSteps @6-30; FunctionDeclaration; parameters=0; async=false; generator=true
+
+### dom/quota/test/common/test_storage_manager_persist_deny.js
+
+Blob: `855d739ca3123bad5cdaa542691901b4354274d1`. Role: test-path,source. Parse: module.
+
+- testSteps @6-34; FunctionDeclaration; parameters=0; async=false; generator=true
+
+### dom/quota/test/common/test_storage_manager_persisted.js
+
+Blob: `ebda93649a8419945bd74c452b6cfe93e665e41d`. Role: test-path,source. Parse: module.
+
+- testSteps @6-13; FunctionDeclaration; parameters=0; async=false; generator=true
+
+### dom/quota/test/common/xpcshell.js
+
+Blob: `d0c5d784919bf97f56a20aac3a0d206609cb7d3f`. Role: test-path,source. Parse: module.
+
+- enableStorageTesting @8-14; FunctionDeclaration; parameters=0; async=false; generator=false
+- resetStorageTesting @16-22; FunctionDeclaration; parameters=0; async=false; generator=false
+- clear @24-29; FunctionDeclaration; parameters=1; async=false; generator=false
+- reset @31-36; FunctionDeclaration; parameters=1; async=false; generator=false
+- installPackage @38-89; FunctionDeclaration; parameters=2; async=false; generator=false
+
+### dom/quota/test/mochitest/helpers.js
+
+Blob: `e610a5438a474357915facb2c459addc1a0aa861`. Role: test-path,source. Parse: module.
+
+- loadScript @15-22; FunctionDeclaration; parameters=1; async=false; generator=false
+- loadWorkerScript @24-27; FunctionDeclaration; parameters=1; async=false; generator=false
+- testHarnessSteps @29-141; FunctionDeclaration; parameters=0; async=false; generator=true
+- nextTestHarnessStep @30-32; FunctionDeclaration; parameters=1; async=false; generator=false
+- worker.onerror @66-70; FunctionExpression; parameters=1; async=false; generator=false
+- worker.onmessage @72-113; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @101-103; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @130-132; FunctionExpression; parameters=0; async=true; generator=false
+- window.runTest @144-148; FunctionExpression; parameters=0; async=false; generator=false
+- finishTest @151-157; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @152-156; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @153-155; FunctionExpression; parameters=0; async=false; generator=false
+- grabArgAndContinueHandler @159-161; FunctionDeclaration; parameters=1; async=false; generator=false
+- continueToNextStep @163-167; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @164-166; FunctionExpression; parameters=0; async=false; generator=false
+- continueToNextStepSync @169-171; FunctionDeclaration; parameters=0; async=false; generator=false
+- workerScript @173-316; FunctionDeclaration; parameters=0; async=false; generator=false
+- self.repr @178-200; FunctionExpression; parameters=1; async=false; generator=false
+- self.ok @202-209; FunctionExpression; parameters=3; async=false; generator=false
+- self.is @211-215; FunctionExpression; parameters=3; async=false; generator=false
+- self.isnot @217-221; FunctionExpression; parameters=3; async=false; generator=false
+- self.todo @223-230; FunctionExpression; parameters=3; async=false; generator=false
+- self.info @232-234; FunctionExpression; parameters=1; async=false; generator=false
+- self.executeSoon @236-242; FunctionExpression; parameters=1; async=false; generator=false
+- channel.port2.onmessage @239-241; FunctionExpression; parameters=1; async=false; generator=false
+- self.finishTest @244-246; FunctionExpression; parameters=0; async=false; generator=false
+- self.grabArgAndContinueHandler @248-250; FunctionExpression; parameters=1; async=false; generator=false
+- self.continueToNextStep @252-256; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @253-255; FunctionExpression; parameters=0; async=false; generator=false
+- self.continueToNextStepSync @258-260; FunctionExpression; parameters=0; async=false; generator=false
+- self.clearAllDatabases @263-266; FunctionExpression; parameters=1; async=false; generator=false
+- self.onerror @268-282; FunctionExpression; parameters=3; async=false; generator=false
+- self.onmessage @284-313; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @294-298; FunctionExpression; parameters=0; async=false; generator=false
+
+### dom/quota/test/modules/content/Assert.mjs
+
+Blob: `63ac9000cc29726883171eb975d78875176393dd`. Role: test-path,source. Parse: module.
+
+
+### dom/quota/test/modules/content/ModuleLoader.mjs
+
+Blob: `68260bbee6e42d0187531a2bca1f22ce5053c41b`. Role: test-path,source. Parse: module.
+
+- ModuleLoader @10-75; FunctionDeclaration; parameters=3; async=false; generator=false
+- require @24-65; FunctionExpression; parameters=1; async=true; generator=false
+
+### dom/quota/test/modules/content/StorageUtils.mjs
+
+Blob: `a78d4d42eb3a62df7f230236080737f149332731`. Role: test-path,source. Parse: module.
+
+- constructor @11-16; FunctionExpression; parameters=2; async=false; generator=false
+- setStoragePrefs @19-34; FunctionDeclaration; parameters=1; async=true; generator=false
+- getCachedUsageForOrigin @36-53; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @39-39; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @42-46; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @43-45; FunctionExpression; parameters=0; async=false; generator=false
+- clearStoragesForOrigin @55-70; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @59-63; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @60-62; FunctionExpression; parameters=0; async=false; generator=false
+- Class RequestError @10-17
+
+### dom/quota/test/modules/content/Utils.mjs
+
+Blob: `acc8d5ea5ce67ada412ab6d6962412e0cf511713`. Role: test-path,source. Parse: module.
+
+- getCachedOriginUsage @13-17; FunctionExpression; parameters=0; async=true; generator=false
+- Module ./StorageUtils.mjs @10; ImportDeclaration
+
+### dom/quota/test/modules/content/UtilsParent.mjs
+
+Blob: `f7ebde3c34354fcd699e5bc5bd2c765659d587dd`. Role: test-path,source. Parse: module.
+
+- OnMessageReceived @9-20; FunctionExpression; parameters=2; async=true; generator=false
+- Module ./Utils.mjs @6; ImportDeclaration
+
+### dom/quota/test/modules/content/WorkerDriver.mjs
+
+Blob: `0ba74b65f7af0b73c866b73673451404b45cc0ee`. Role: test-path,source. Parse: module.
+
+- runTestInWorker @6-68; FunctionDeclaration; parameters=3; async=true; generator=false
+- (anonymous) @7-67; FunctionExpression; parameters=1; async=false; generator=false
+- worker.onmessage @17-55; FunctionExpression; parameters=1; async=true; generator=false
+- worker.onerror @57-60; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/quota/test/modules/content/worker/Assert.js
+
+Blob: `7c7e2683eaac367a15071954a4f5d68290532dc1`. Role: test-path,source. Parse: module.
+
+- ok @7-13; FunctionExpression; parameters=2; async=false; generator=false
+- equal @14-21; FunctionExpression; parameters=3; async=false; generator=false
+
+### dom/quota/test/modules/content/worker/ModuleLoader.js
+
+Blob: `5354c26e3421112c9d5be901af97109987ef6005`. Role: test-path,source. Parse: module.
+
+- ModuleLoader @6-52; FunctionDeclaration; parameters=2; async=false; generator=false
+- require @9-42; FunctionExpression; parameters=1; async=true; generator=false
+
+### dom/quota/test/modules/content/worker/Utils.js
+
+Blob: `965a20dc71061ffebb9062b4de869579bf134488`. Role: test-path,source. Parse: module.
+
+- ensureUtilsChild @8-17; FunctionDeclaration; parameters=0; async=true; generator=false
+- getCachedOriginUsage @20-25; FunctionExpression; parameters=0; async=true; generator=false
+- Module /tests/dom/quota/test/modules/worker/UtilsChild.mjs @14; dynamic-import-literal
+
+### dom/quota/test/modules/content/worker/UtilsChild.mjs
+
+Blob: `db5757bff0946e9c802acabae83cbc0033d8ab53`. Role: test-path,source. Parse: module.
+
+- getCachedOriginUsage @7-21; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @14-20; FunctionExpression; parameters=1; async=false; generator=false
+- onMessage @15-19; FunctionExpression; parameters=1; async=true; generator=false
+
+### dom/quota/test/modules/content/worker/head.js
+
+Blob: `ab7a916d22e2f6a15fa89a6dad2d90952d04bc3f`. Role: test-path,source. Parse: module.
+
+- add_task @10-17; FunctionDeclaration; parameters=1; async=false; generator=false
+- onMessage @19-55; FunctionExpression; parameters=1; async=true; generator=false
+- info @20-22; FunctionDeclaration; parameters=1; async=false; generator=false
+- executeSoon @24-30; FunctionDeclaration; parameters=1; async=false; generator=false
+- channel.port2.onmessage @27-29; FunctionExpression; parameters=0; async=false; generator=false
+- runNextTest @32-47; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @37-40; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @41-43; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/quota/test/modules/system/FileUtils.sys.mjs
+
+Blob: `d548a3772fcfe464d428f1fa67690b87c67e1fec`. Role: test-path,source. Parse: module.
+
+- getProfileDirectory @7-9; FunctionExpression; parameters=0; async=false; generator=false
+- getFile @11-32; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @23-29; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/quota/test/modules/system/ModuleLoader.sys.mjs
+
+Blob: `64b7b419dd3dff7a20074e3404850da53843c39c`. Role: test-path,source. Parse: module.
+
+- ModuleLoader @6-66; FunctionDeclaration; parameters=3; async=false; generator=false
+- require @22-56; FunctionExpression; parameters=1; async=true; generator=false
+
+### dom/quota/test/modules/system/PrefUtils.sys.mjs
+
+Blob: `8625bbc3ea3a57e251e8fe8ead90c86da8b4a6d5`. Role: test-path,source. Parse: module.
+
+- getPrefs @23-39; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @24-38; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- setPrefs @55-76; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/quota/test/modules/system/PrincipalUtils.sys.mjs
+
+Blob: `ed02be54c41774dc5c4c28d0a122a8c2867e5b7f`. Role: test-path,source. Parse: module.
+
+- createPrincipal @7-10; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/quota/test/modules/system/ProcessUtils.sys.mjs
+
+Blob: `97194d005cb71f7f2bb4dc4353beb8879b6f6ca5`. Role: test-path,source. Parse: module.
+
+- isInParentProcess @7-11; FunctionExpression; parameters=0; async=false; generator=false
+
+### dom/quota/test/modules/system/QuotaUtils.sys.mjs
+
+Blob: `75c7638b7b3e330a2cd5806da59ef1bc1e2ebe8f`. Role: test-path,source. Parse: module.
+
+- requestFinished @29-41; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @30-34; FunctionExpression; parameters=1; async=false; generator=false
+- request.callback @31-33; FunctionExpression; parameters=0; async=false; generator=false
+- withArtificialFailures @59-79; FunctionExpression; parameters=4; async=true; generator=false
+- startShutdown @90-101; FunctionExpression; parameters=0; async=false; generator=false
+- Module resource://testing-common/dom/quota/test/modules/PrefUtils.sys.mjs @6; ImportDeclaration
+- Module resource://testing-common/dom/quota/test/modules/RequestError.sys.mjs @7; ImportDeclaration
+
+### dom/quota/test/modules/system/RequestError.sys.mjs
+
+Blob: `fd7cdd3b0c4ce196a97c640c2aff72da0d3cb4e8`. Role: test-path,source. Parse: module.
+
+- constructor @7-12; FunctionExpression; parameters=2; async=false; generator=false
+- Class RequestError @6-13
+
+### dom/quota/test/modules/system/StorageUtils.sys.mjs
+
+Blob: `9389150d7f29bf623db1645c711d4aed9e8baf7d`. Role: test-path,source. Parse: module.
+
+- constructor @7-12; FunctionExpression; parameters=2; async=false; generator=false
+- setStoragePrefs @15-29; FunctionDeclaration; parameters=1; async=false; generator=false
+- clearStoragePrefs @31-45; FunctionDeclaration; parameters=1; async=false; generator=false
+- getCachedUsageForOrigin @47-64; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @50-50; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @53-57; FunctionExpression; parameters=1; async=false; generator=false
+- request.callback @54-56; FunctionExpression; parameters=0; async=false; generator=false
+- clearStoragesForOrigin @66-80; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @69-73; FunctionExpression; parameters=1; async=false; generator=false
+- request.callback @70-72; FunctionExpression; parameters=0; async=false; generator=false
+- resetStorage @82-96; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @85-89; FunctionExpression; parameters=1; async=false; generator=false
+- request.callback @86-88; FunctionExpression; parameters=0; async=false; generator=false
+- Class RequestError @6-13
+
+### dom/quota/test/modules/system/Utils.sys.mjs
+
+Blob: `6011837a2b809ea9317ef9bf23eae2acce7b7562`. Role: test-path,source. Parse: module.
+
+- ensureNSSInitialized @17-22; FunctionDeclaration; parameters=0; async=false; generator=false
+- getCachedOriginUsage @25-31; FunctionExpression; parameters=0; async=true; generator=false
+- shrinkStorageSize @33-41; FunctionExpression; parameters=1; async=true; generator=false
+- restoreStorageSize @43-50; FunctionExpression; parameters=0; async=true; generator=false
+- Module resource://testing-common/dom/quota/test/modules/StorageUtils.sys.mjs @6; ImportDeclaration
+
+### dom/quota/test/modules/system/UtilsParent.sys.mjs
+
+Blob: `41ca7e2940ef01a7e4e8bb1117e1f3dd5ac8d9e3`. Role: test-path,source. Parse: module.
+
+- OnMessageReceived @9-31; FunctionExpression; parameters=2; async=true; generator=false
+- Module resource://testing-common/dom/quota/test/modules/Utils.sys.mjs @6; ImportDeclaration
+
+### dom/quota/test/modules/system/WorkerDriver.sys.mjs
+
+Blob: `60e67907608d59896b0595608aaedc8a659fa6ae`. Role: test-path,source. Parse: module.
+
+- runTestInWorker @6-68; FunctionDeclaration; parameters=3; async=true; generator=false
+- (anonymous) @7-67; FunctionExpression; parameters=1; async=false; generator=false
+- worker.onmessage @16-55; FunctionExpression; parameters=1; async=true; generator=false
+- worker.onerror @57-60; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/quota/test/modules/system/worker/.eslintrc.mjs
+
+Blob: `8efc103c05a438ae4f8266b68e1831c5e503e637`. Role: test-path,source. Parse: module.
+
+- Module globals @6; ImportDeclaration
+
+### dom/quota/test/modules/system/worker/Assert.js
+
+Blob: `7c7e2683eaac367a15071954a4f5d68290532dc1`. Role: test-path,source. Parse: module.
+
+- ok @7-13; FunctionExpression; parameters=2; async=false; generator=false
+- equal @14-21; FunctionExpression; parameters=3; async=false; generator=false
+
+### dom/quota/test/modules/system/worker/ModuleLoader.js
+
+Blob: `5354c26e3421112c9d5be901af97109987ef6005`. Role: test-path,source. Parse: module.
+
+- ModuleLoader @6-52; FunctionDeclaration; parameters=2; async=false; generator=false
+- require @9-42; FunctionExpression; parameters=1; async=true; generator=false
+
+### dom/quota/test/modules/system/worker/Utils.js
+
+Blob: `de935e4f586f8d899bfc3ddf9087f685d00bc36d`. Role: test-path,source. Parse: module.
+
+- ensureUtilsChild @8-17; FunctionDeclaration; parameters=0; async=true; generator=false
+- getCachedOriginUsage @20-25; FunctionExpression; parameters=0; async=true; generator=false
+- shrinkStorageSize @27-32; FunctionExpression; parameters=1; async=true; generator=false
+- restoreStorageSize @34-39; FunctionExpression; parameters=0; async=true; generator=false
+- Module /dom/quota/test/modules/worker/UtilsChild.mjs @14; dynamic-import-literal
+
+### dom/quota/test/modules/system/worker/UtilsChild.mjs
+
+Blob: `d3b5455a59dff3258c218c5add60bf9ddd2e97dc`. Role: test-path,source. Parse: module.
+
+- _sendMessage @6-15; FunctionDeclaration; parameters=1; async=false; generator=false
+- _recvMessage @17-25; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @18-24; FunctionExpression; parameters=1; async=false; generator=false
+- onMessage @19-23; FunctionExpression; parameters=1; async=true; generator=false
+- getCachedOriginUsage @28-34; FunctionExpression; parameters=0; async=true; generator=false
+- shrinkStorageSize @36-43; FunctionExpression; parameters=1; async=true; generator=false
+- restoreStorageSize @45-51; FunctionExpression; parameters=0; async=true; generator=false
+
+### dom/quota/test/modules/system/worker/head.js
+
+Blob: `c415e0c56b8b3fce9172eadf20cf04cfeeec7569`. Role: test-path,source. Parse: module.
+
+- add_task @11-18; FunctionDeclaration; parameters=1; async=false; generator=false
+- onMessage @20-56; FunctionExpression; parameters=1; async=true; generator=false
+- info @21-23; FunctionDeclaration; parameters=1; async=false; generator=false
+- executeSoon @25-31; FunctionDeclaration; parameters=1; async=false; generator=false
+- channel.port2.onmessage @28-30; FunctionExpression; parameters=0; async=false; generator=false
+- runNextTest @33-48; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @38-41; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @42-44; FunctionExpression; parameters=1; async=false; generator=false
+
+### dom/quota/test/xpcshell/caching/head.js
+
+Blob: `fe3cc5b10f8e8c2ead0b1bcd738440b5539cf183`. Role: test-path,source. Parse: module.
+
+- loadScript @11-16; FunctionDeclaration; parameters=1; async=false; generator=false
+
+### dom/quota/test/xpcshell/caching/make_unsetLastAccessTime.js
+
+Blob: `9be377e4f3fb67000de1b5a7ab153a321261347a`. Role: test-path,source. Parse: module.
+
+- testSteps @6-25; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/xpcshell/caching/test_groupMismatch.js
+
+Blob: `399193bcc36055626853500981eb57cb22cee875`. Role: test-path,source. Parse: module.
+
+- testSteps @11-57; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/xpcshell/caching/test_removedOrigin.js
+
+Blob: `01573f5234f762e5d7d9b13b3bf20570120f1ac1`. Role: test-path,source. Parse: module.
+
+- testSteps @13-61; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/xpcshell/caching/test_unsetLastAccessTime.js
+
+Blob: `69d94ccad525221cd4f7a8cc970cd1fd325940e7`. Role: test-path,source. Parse: module.
+
+- testSteps @6-47; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/xpcshell/common/head.js
+
+Blob: `0b8bd515e3b609473df1cda34db162f893e766b6`. Role: test-path,source. Parse: script.
+
+- log @17-21; FunctionDeclaration; parameters=1; async=false; generator=false
+- is @23-25; FunctionDeclaration; parameters=3; async=false; generator=false
+- ok @27-29; FunctionDeclaration; parameters=2; async=false; generator=false
+- todo @31-33; FunctionDeclaration; parameters=2; async=false; generator=false
+- run_test @35-37; FunctionDeclaration; parameters=0; async=false; generator=false
+- ?.runTest @40-79; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @57-60; FunctionExpression; parameters=0; async=false; generator=false
+- finishTest @82-89; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @86-88; FunctionExpression; parameters=0; async=false; generator=false
+- grabArgAndContinueHandler @91-93; FunctionDeclaration; parameters=1; async=false; generator=false
+- continueToNextStep @95-99; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @96-98; FunctionExpression; parameters=0; async=false; generator=false
+- continueToNextStepSync @101-103; FunctionDeclaration; parameters=0; async=false; generator=false
+- enableTesting @105-110; FunctionDeclaration; parameters=0; async=false; generator=false
+- resetTesting @112-116; FunctionDeclaration; parameters=0; async=false; generator=false
+- setGlobalLimit @118-123; FunctionDeclaration; parameters=1; async=false; generator=false
+- resetGlobalLimit @125-127; FunctionDeclaration; parameters=0; async=false; generator=false
+- storageInitialized @129-134; FunctionDeclaration; parameters=1; async=false; generator=false
+- persistentStorageInitialized @136-141; FunctionDeclaration; parameters=1; async=false; generator=false
+- temporaryStorageInitialized @143-148; FunctionDeclaration; parameters=1; async=false; generator=false
+- persistentOriginInitialized @150-156; FunctionDeclaration; parameters=2; async=false; generator=false
+- temporaryOriginInitialized @158-166; FunctionDeclaration; parameters=3; async=false; generator=false
+- init @168-173; FunctionDeclaration; parameters=1; async=false; generator=false
+- initializePersistentStorage @175-180; FunctionDeclaration; parameters=1; async=false; generator=false
+- initTemporaryStorage @182-187; FunctionDeclaration; parameters=1; async=false; generator=false
+- initPersistentOrigin @189-195; FunctionDeclaration; parameters=2; async=false; generator=false
+- initTemporaryOrigin @197-211; FunctionDeclaration; parameters=4; async=false; generator=false
+- initPersistentClient @213-221; FunctionDeclaration; parameters=3; async=false; generator=false
+- initTemporaryClient @223-239; FunctionDeclaration; parameters=5; async=false; generator=false
+- getFullOriginMetadata @241-249; FunctionDeclaration; parameters=3; async=false; generator=false
+- clearClient @251-260; FunctionDeclaration; parameters=4; async=false; generator=false
+- clearOrigin @262-270; FunctionDeclaration; parameters=3; async=false; generator=false
+- clearOriginsByPrefix @272-280; FunctionDeclaration; parameters=3; async=false; generator=false
+- clearPrivateBrowsing @282-288; FunctionDeclaration; parameters=1; async=false; generator=false
+- resetClient @290-298; FunctionDeclaration; parameters=2; async=false; generator=false
+- persist @300-305; FunctionDeclaration; parameters=2; async=false; generator=false
+- persisted @307-312; FunctionDeclaration; parameters=2; async=false; generator=false
+- estimateOrigin @314-319; FunctionDeclaration; parameters=2; async=false; generator=false
+- estimateGroupUsage @321-326; FunctionDeclaration; parameters=2; async=false; generator=false
+- listOrigins @328-333; FunctionDeclaration; parameters=1; async=false; generator=false
+- getPersistedFromMetadata @335-341; FunctionDeclaration; parameters=1; async=false; generator=false
+- grabResultAndContinueHandler @343-345; FunctionDeclaration; parameters=1; async=false; generator=false
+- grabUsageAndContinueHandler @347-349; FunctionDeclaration; parameters=1; async=false; generator=false
+- getUsage @351-355; FunctionDeclaration; parameters=2; async=false; generator=false
+- getOriginUsage @357-361; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @358-358; FunctionExpression; parameters=0; async=false; generator=false
+- getCachedOriginUsage @363-370; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @366-366; FunctionExpression; parameters=0; async=false; generator=false
+- getCachedOriginUsage @372-376; FunctionDeclaration; parameters=1; async=false; generator=false
+- getCurrentUsage @378-388; FunctionDeclaration; parameters=1; async=false; generator=false
+- getPrincipal @390-398; FunctionDeclaration; parameters=2; async=false; generator=false
+- getBoolPref @401-403; FunctionExpression; parameters=1; async=false; generator=false
+- setBoolPref @405-407; FunctionExpression; parameters=2; async=false; generator=false
+- setIntPref @409-411; FunctionExpression; parameters=2; async=false; generator=false
+- clearUserPref @413-415; FunctionExpression; parameters=1; async=false; generator=false
+- _getPrefs @417-422; FunctionExpression; parameters=0; async=false; generator=false
+- _getQuotaManager @424-428; FunctionExpression; parameters=0; async=false; generator=false
+- installPackages @431-439; FunctionDeclaration; parameters=1; async=false; generator=false
+- verifyStorage @446-694; FunctionDeclaration; parameters=3; async=false; generator=false
+- verifyEntries @451-504; FunctionDeclaration; parameters=3; async=false; generator=false
+- getCurrentEntries @506-549; FunctionDeclaration; parameters=0; async=false; generator=false
+- getEntryForFile @509-527; FunctionDeclaration; parameters=1; async=false; generator=false
+- getEntriesFromPackageDefinition @551-592; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @579-579; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- addSharedEntries @594-632; FunctionDeclaration; parameters=4; async=false; generator=false
+- (anonymous) @601-601; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- compareEntries @634-674; FunctionDeclaration; parameters=4; async=false; generator=false
+- (anonymous) @647-647; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- verifyInitializationStatus @696-754; FunctionDeclaration; parameters=3; async=true; generator=false
+
+### dom/quota/test/xpcshell/common/utils.js
+
+Blob: `17f4077b972822f1092e693fb987418602365c56`. Role: test-path,source. Parse: module.
+
+- getOriginDir @8-10; FunctionDeclaration; parameters=2; async=false; generator=false
+- getMetadataFile @12-16; FunctionDeclaration; parameters=2; async=false; generator=false
+- populateRepository @18-21; FunctionDeclaration; parameters=1; async=false; generator=false
+- makeRepositoryUnusable @23-29; FunctionDeclaration; parameters=1; async=false; generator=false
+- fillOrigin @31-47; FunctionDeclaration; parameters=3; async=true; generator=false
+
+### dom/quota/test/xpcshell/head.js
+
+Blob: `a104ec88e0924f2affad107a31ee4fd8e6519e30`. Role: test-path,source. Parse: module.
+
+- loadScript @11-16; FunctionDeclaration; parameters=1; async=false; generator=false
+
+### dom/quota/test/xpcshell/make_getCachedUsageForPrincipal.js
+
+Blob: `db009cd3aeb928f816a3c9682b0b269e45088af0`. Role: test-path,source. Parse: module.
+
+- testSteps @6-15; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/xpcshell/make_getUsageForPrincipal.js
+
+Blob: `21a6ac108daf908f0f86f9cd4ed1377511c9aa09`. Role: test-path,source. Parse: module.
+
+- testSteps @6-15; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/xpcshell/make_secondaryCacheValidity.js
+
+Blob: `8713689ad571e8534e31069adc1d5edbf059f89a`. Role: test-path,source. Parse: module.
+
+- makeSecondaryCacheValidity @25-161; FunctionDeclaration; parameters=0; async=true; generator=false
+- sandboxScript @47-52; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @58-61; FunctionExpression; parameters=2; async=false; generator=false
+- sandboxScript @95-119; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @126-129; FunctionExpression; parameters=2; async=false; generator=false
+- testSteps @163-174; FunctionDeclaration; parameters=0; async=true; generator=false
+- Module resource://testing-common/dom/indexedDB/test/modules/IndexedDBUtils.sys.mjs @9; ChromeUtils-import-literal
+- Module resource://testing-common/dom/localstorage/test/modules/LocalStorageUtils.sys.mjs @12; ChromeUtils-import-literal
+- Module resource://testing-common/dom/quota/test/modules/PrincipalUtils.sys.mjs @15; ChromeUtils-import-literal
+- Module resource://testing-common/dom/quota/test/modules/QuotaUtils.sys.mjs @18; ChromeUtils-import-literal
+- Module resource://testing-common/dom/simpledb/test/modules/SimpleDBUtils.sys.mjs @21; ChromeUtils-import-literal
+
+### dom/quota/test/xpcshell/make_unknownFiles.js
+
+Blob: `b48cbd8acede194228f581e785dc7f825d85f768`. Role: test-path,source. Parse: module.
+
+- testSteps @8-176; FunctionDeclaration; parameters=0; async=true; generator=false
+- createUnknownFileIn @17-43; FunctionDeclaration; parameters=2; async=false; generator=false
+- createUnknownDirectoryIn @45-47; FunctionDeclaration; parameters=1; async=false; generator=false
+- sandboxScript @111-116; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @122-125; FunctionExpression; parameters=2; async=false; generator=false
+
+### dom/quota/test/xpcshell/make_unsetLastAccessTime.js
+
+Blob: `9be377e4f3fb67000de1b5a7ab153a321261347a`. Role: test-path,source. Parse: module.
+
+- testSteps @6-25; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/xpcshell/telemetry/head.js
+
+Blob: `fe3cc5b10f8e8c2ead0b1bcd738440b5539cf183`. Role: test-path,source. Parse: module.
+
+- loadScript @11-16; FunctionDeclaration; parameters=1; async=false; generator=false
+
+### dom/quota/test/xpcshell/telemetry/test_dom_quota_try.js
+
+Blob: `4bc417e8dee9461ca78b8c7da36b0106dd9ac3d9`. Role: test-path,source. Parse: module.
+
+- setup @41-78; FunctionExpression; parameters=1; async=true; generator=false
+- getExpectedNumberOfEvents @80-99; FunctionExpression; parameters=0; async=false; generator=false
+- cleanup @100-105; FunctionExpression; parameters=0; async=true; generator=false
+- verifyEvents @109-139; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @132-132; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- testSteps @141-179; FunctionDeclaration; parameters=0; async=true; generator=false
+- Module resource://gre/modules/AppConstants.sys.mjs @6; ChromeUtils-import-literal
+
+### dom/quota/test/xpcshell/telemetry/test_qm_first_initialization_attempt.js
+
+Blob: `46fc61b364285b142796aa3f1ab40052f0c80d77`. Role: test-path,source. Parse: module.
+
+- setup @42-49; FunctionExpression; parameters=1; async=true; generator=false
+- setup @70-84; FunctionExpression; parameters=1; async=true; generator=false
+- getExpectedSnapshots @86-168; FunctionExpression; parameters=0; async=false; generator=false
+- setup @172-182; FunctionExpression; parameters=1; async=true; generator=false
+- setup @227-237; FunctionExpression; parameters=1; async=true; generator=false
+- getExpectedSnapshots @239-321; FunctionExpression; parameters=0; async=false; generator=false
+- setup @325-332; FunctionExpression; parameters=1; async=true; generator=false
+- setup @381-388; FunctionExpression; parameters=1; async=true; generator=false
+- setup @433-440; FunctionExpression; parameters=1; async=true; generator=false
+- setup @481-488; FunctionExpression; parameters=1; async=true; generator=false
+- setup @525-535; FunctionExpression; parameters=1; async=true; generator=false
+- setup @568-579; FunctionExpression; parameters=1; async=true; generator=false
+- setup @636-648; FunctionExpression; parameters=1; async=true; generator=false
+- setup @701-722; FunctionExpression; parameters=1; async=true; generator=false
+- setup @800-820; FunctionExpression; parameters=1; async=true; generator=false
+- verifyMetric @915-936; FunctionDeclaration; parameters=2; async=false; generator=false
+- testSteps @938-1024; FunctionDeclaration; parameters=0; async=true; generator=false
+- Module resource://gre/modules/AppConstants.sys.mjs @6; ChromeUtils-import-literal
+
+### dom/quota/test/xpcshell/test_allowListFiles.js
+
+Blob: `04c64c2ef5682621d96b2198d0adea46064d235e`. Role: test-path,source. Parse: module.
+
+- testSteps @13-61; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/xpcshell/test_artificialFailure.js
+
+Blob: `db8a3a58d45bec48cfc0c658683c12557e923ae7`. Role: test-path,source. Parse: module.
+
+- testArtificialFailure @16-82; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @50-59; FunctionExpression; parameters=0; async=true; generator=false
+- testSteps @84-91; FunctionDeclaration; parameters=0; async=true; generator=false
+- Module resource://testing-common/dom/quota/test/modules/PrincipalUtils.sys.mjs @6; ChromeUtils-import-literal
+- Module resource://testing-common/dom/quota/test/modules/QuotaUtils.sys.mjs @9; ChromeUtils-import-literal
+- Module resource://testing-common/dom/simpledb/test/modules/SimpleDBUtils.sys.mjs @12; ChromeUtils-import-literal
+
+### dom/quota/test/xpcshell/test_bad_origin_directory.js
+
+Blob: `303fd82bd8463b9ed2e3fa80ae4a6396203e3755`. Role: test-path,source. Parse: module.
+
+- testSteps @6-37; FunctionDeclaration; parameters=0; async=false; generator=true
+
+### dom/quota/test/xpcshell/test_basics.js
+
+Blob: `98ac0d53ad293a747476bcf4e2c291967895e877`. Role: test-path,source. Parse: module.
+
+- testSteps @6-143; FunctionDeclaration; parameters=0; async=false; generator=true
+
+### dom/quota/test/xpcshell/test_cacheSchemaMismatch.js
+
+Blob: `af8ea05ea4effbbc7ca370cdcde910d5a1e5786b`. Role: test-path,source. Parse: module.
+
+- testSteps @13-113; FunctionDeclaration; parameters=0; async=true; generator=false
+- runScenario @25-94; FunctionDeclaration; parameters=3; async=true; generator=false
+
+### dom/quota/test/xpcshell/test_clearStoragesForClient.js
+
+Blob: `1c4c4cb33f116fe4c5a4349d73a3c06ee2d422b6`. Role: test-path,source. Parse: module.
+
+- testSteps @10-80; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/xpcshell/test_clearStoragesForOriginAttributesPattern.js
+
+Blob: `096cf2be7050c43f86a439fc1e64de04b02597b0`. Role: test-path,source. Parse: module.
+
+- testSteps @6-58; FunctionDeclaration; parameters=0; async=true; generator=false
+- getOriginDirectory @30-35; FunctionDeclaration; parameters=1; async=false; generator=false
+
+### dom/quota/test/xpcshell/test_clearStoragesForOriginPrefix.js
+
+Blob: `f36750b0ec3ff6495090b10a1a3e1089e0c8d5ab`. Role: test-path,source. Parse: module.
+
+- testSteps @10-72; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/xpcshell/test_clearStoragesForPrincipal.js
+
+Blob: `0a7c4ecfa6f3b66af2b5e4c6ce921c36bb44366b`. Role: test-path,source. Parse: module.
+
+- testSteps @12-55; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/xpcshell/test_clearStoragesForPrivateBrowsing.js
+
+Blob: `6a94e5c98edffd40146813758d6fa387eb1ea3db`. Role: test-path,source. Parse: module.
+
+- testSteps @10-41; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/xpcshell/test_clearStoragesForPrivateBrowsing_callback.js
+
+Blob: `2101a9606db3b4cf40c5384ea440c2cd39735e43`. Role: test-path,source. Parse: module.
+
+- clearPrivateBrowsingViaService @14-26; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @15-25; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- onDataDeleted @18-20; FunctionExpression; parameters=1; async=false; generator=false
+- testSteps @28-79; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/xpcshell/test_clientDirectoryOpeningStarted.js
+
+Blob: `0c543e705e0648045264d7613d69617080882a8a`. Role: test-path,source. Parse: module.
+
+- testSteps @17-37; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @23-28; FunctionExpression; parameters=0; async=true; generator=false
+- Module resource://testing-common/dom/quota/test/modules/PrincipalUtils.sys.mjs @6; ChromeUtils-import-literal
+- Module resource://testing-common/dom/simpledb/test/modules/SimpleDBUtils.sys.mjs @9; ChromeUtils-import-literal
+- Module resource://testing-common/TestUtils.sys.mjs @12; ChromeUtils-import-literal
+
+### dom/quota/test/xpcshell/test_corruptStorageSqlite.js
+
+Blob: `3897fdac588ecabdfb2c8f9730485ec3a5a96731`. Role: test-path,source. Parse: module.
+
+- runQuickCheck @21-31; FunctionDeclaration; parameters=1; async=false; generator=false
+- testSteps @33-175; FunctionDeclaration; parameters=0; async=true; generator=false
+- test_corruptFreelistRecovery @41-173; FunctionExpression; parameters=0; async=true; generator=false
+- Module resource://testing-common/dom/localstorage/test/modules/LocalStorageUtils.sys.mjs @15; ChromeUtils-import-literal
+
+### dom/quota/test/xpcshell/test_createLocalStorage.js
+
+Blob: `8394a7d2356350420308efbd1db8e7746cd35013`. Role: test-path,source. Parse: module.
+
+- testSteps @6-155; FunctionDeclaration; parameters=0; async=true; generator=false
+- checkArchiveFileNotExists @11-25; FunctionDeclaration; parameters=0; async=false; generator=false
+- checkArchiveFileExists @27-46; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### dom/quota/test/xpcshell/test_estimateGroupUsage.js
+
+Blob: `c5a5c7b3300fa39bb4ea57af5c3b31d1c9d5db35`. Role: test-path,source. Parse: module.
+
+- verifyGroupEstimation @8-16; FunctionDeclaration; parameters=3; async=true; generator=false
+- testSteps @18-104; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/xpcshell/test_estimateOrigin.js
+
+Blob: `ab987cf57f2bdaba8c5c60923d763f13c3805614`. Role: test-path,source. Parse: module.
+
+- verifyOriginEstimation @8-16; FunctionDeclaration; parameters=3; async=true; generator=false
+- testSteps @18-129; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/xpcshell/test_getCachedUsageForPrincipal.js
+
+Blob: `8340300fea341186a8b5ccc8c993ba72b4c4ceb5`. Role: test-path,source. Parse: module.
+
+- testSteps @6-81; FunctionDeclaration; parameters=0; async=true; generator=false
+- verifyResult @14-16; FunctionDeclaration; parameters=2; async=false; generator=false
+
+### dom/quota/test/xpcshell/test_getUsage.js
+
+Blob: `dc8f6df03e671ec8bbe9d84d254b40997259cfa7`. Role: test-path,source. Parse: module.
+
+- testSteps @6-162; FunctionDeclaration; parameters=0; async=true; generator=false
+- verifyResult @53-85; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @63-74; FunctionExpression; parameters=2; async=false; generator=false
+- dummy @87-87; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### dom/quota/test/xpcshell/test_getUsageForPrincipal.js
+
+Blob: `23f969f757e892b18cdab90013e8388b3516e14e`. Role: test-path,source. Parse: module.
+
+- testSteps @6-108; FunctionDeclaration; parameters=0; async=true; generator=false
+- verifyResult @21-42; FunctionDeclaration; parameters=2; async=false; generator=false
+
+### dom/quota/test/xpcshell/test_groupInitializationStarted.js
+
+Blob: `e0c4c588cbf5815a47ad4e52b21e53b87bd120a7`. Role: test-path,source. Parse: module.
+
+- testSteps @17-49; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @36-40; FunctionExpression; parameters=0; async=true; generator=false
+- Module resource://testing-common/dom/quota/test/modules/PrincipalUtils.sys.mjs @6; ChromeUtils-import-literal
+- Module resource://testing-common/dom/quota/test/modules/QuotaUtils.sys.mjs @9; ChromeUtils-import-literal
+- Module resource://testing-common/TestUtils.sys.mjs @12; ChromeUtils-import-literal
+
+### dom/quota/test/xpcshell/test_groupMismatch.js
+
+Blob: `4bc5be7b97b18735a9e556b8d0d5e9e7a111e6d2`. Role: test-path,source. Parse: module.
+
+- testSteps @13-74; FunctionDeclaration; parameters=0; async=true; generator=false
+- readMetadataFile @18-28; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @21-25; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- reader.onloadend @23-23; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### dom/quota/test/xpcshell/test_idle_maintenance.js
+
+Blob: `09d89c8d2ffc8eb0ef177f6d26505d00c737e23a`. Role: test-path,source. Parse: module.
+
+- testSteps @11-21; FunctionDeclaration; parameters=0; async=true; generator=false
+- Module resource://testing-common/TestUtils.sys.mjs @6; ChromeUtils-import-literal
+
+### dom/quota/test/xpcshell/test_initTemporaryStorage.js
+
+Blob: `c3e3d1cf9c709986ad5227c87621408c70e4188b`. Role: test-path,source. Parse: module.
+
+- testSteps @13-53; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/xpcshell/test_initializeAllTemporaryOrigins.js
+
+Blob: `8956a5291270b93285d9e23bdc4f962c341566e6`. Role: test-path,source. Parse: module.
+
+- testInitializeAllTemporaryOrigins @13-101; FunctionDeclaration; parameters=0; async=true; generator=false
+- testSteps @104-115; FunctionDeclaration; parameters=0; async=true; generator=false
+- Module resource://testing-common/dom/quota/test/modules/PrincipalUtils.sys.mjs @6; ChromeUtils-import-literal
+- Module resource://testing-common/dom/quota/test/modules/QuotaUtils.sys.mjs @9; ChromeUtils-import-literal
+
+### dom/quota/test/xpcshell/test_initializePersistentClient.js
+
+Blob: `d359ff40bd24564d71046bfd60833ba5e305be4a`. Role: test-path,source. Parse: module.
+
+- testSteps @12-45; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/xpcshell/test_initializePersistentOrigin.js
+
+Blob: `60ea5408c9c1d7658c84a59f7b77acb72f1dde5f`. Role: test-path,source. Parse: module.
+
+- testSteps @12-43; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/xpcshell/test_initializePersistentStorage.js
+
+Blob: `db27a12273f0ff5445a337bb2d1ec86fa1eb0bff`. Role: test-path,source. Parse: module.
+
+- testSteps @13-49; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### dom/quota/test/xpcshell/test_initializeTemporaryClient.js
+
+Blob: `d2b1273f105a3229a9ca297ad3fb6f809254c2c6`. Role: test-path,source. Parse: module.
+
+- testSteps @12-79; FunctionDeclaration; parameters=0; async=true; generator=false
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.
+
+## Retrieval correction
+
+This copy preserves the source map in [23c0e7dd-a40c-4f94-97a6-1920ec3eb145.md](23c0e7dd-a40c-4f94-97a6-1920ec3eb145.md). The original was imported and committed by concurrent console maintenance during this study. Its full path metadata could exceed the console search budget. This copy uses component scope metadata while keeping every file path in the body. It adds no independent behavior evidence. Original record: `9eb520a9224322ad57b11e855fd05d81cfd628f0ccba4a841e80feacb887b64a`.

@@ -1,0 +1,866 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["js"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013","portableCopies":["339a820a0d4b67623c83a1c7465049106a855b069fd336d105a50247af175784"],"sourceAt":"2026-10-13T04:17:22.071Z","correctionOf":"notes/1758f4f5-3ce3-4450-a9bc-51a4e93631a2.md"}} -->
+# firefox/js JavaScript function map 499
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### js/src/tests/test262/intl402/Locale/prototype/region/name.js
+
+Blob: `5aabb93ddaf09d45d003e8d7cc017fdba5143243`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Locale/prototype/region/prop-desc.js
+
+Blob: `7f16e64e8e43945b7d43ba25133774b7285ddb61`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Locale/prototype/region/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Locale/prototype/script/branding.js
+
+Blob: `ffa1e8f66d8f3b8507ecfcbd6235c26215ce46d5`. Role: test-path,source. Parse: module.
+
+- (anonymous) @29-29; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/Locale/prototype/script/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Locale/prototype/script/name.js
+
+Blob: `a36f0fbbea43f828a42fb58f105678986f5148b9`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Locale/prototype/script/prop-desc.js
+
+Blob: `3a510e34c996bce240c09ab1a6914860d8504357`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Locale/prototype/script/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Locale/prototype/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Locale/prototype/toString/branding.js
+
+Blob: `8b14ec4fb2567e8d6a10e594020833758ffe950e`. Role: test-path,source. Parse: module.
+
+- (anonymous) @32-32; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/Locale/prototype/toString/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Locale/prototype/toString/prop-desc.js
+
+Blob: `5ab7eaeac4649e0568727a8f3a17f064f6ddbaff`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Locale/prototype/toString/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Locale/prototype/toStringTag/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Locale/prototype/toStringTag/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Locale/prototype/toStringTag/toString-removed-tag.js
+
+Blob: `116caedeb7ce7f43d5b37384b55d3e78f45a7f83`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Locale/prototype/toStringTag/toString.js
+
+Blob: `42896406e308eb398f68a48af54e1d32b2d16686`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Locale/prototype/toStringTag/toStringTag.js
+
+Blob: `d58a240de7da3dc24b02134ce904ba99d5502f36`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Locale/prototype/variants/branding.js
+
+Blob: `985f730b88d9c4edf1609e812ce6561fdc66fa16`. Role: test-path,source. Parse: module.
+
+- (anonymous) @27-27; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/Locale/prototype/variants/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Locale/prototype/variants/name.js
+
+Blob: `e36adccbd982df86daa994b3fa4afc5f3c97fa3b`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Locale/prototype/variants/prop-desc.js
+
+Blob: `14b5a567bdf3f2012cbf1e999aab24e6559ec476`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Locale/prototype/variants/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Locale/reject-duplicate-variants-in-tlang.js
+
+Blob: `c2d01bc0b9d892b3869c06bf8e8d845730a19485`. Role: test-path,source. Parse: module.
+
+- mustReject @21-26; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @22-25; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/Locale/reject-duplicate-variants.js
+
+Blob: `cb6025388f980af11b922ddc48b53acf556536a6`. Role: test-path,source. Parse: module.
+
+- mustReject @17-22; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @18-21; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/Locale/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Locale/subclassing.js
+
+Blob: `4afc3a5a836cc6c91e14afa318d3a7ce34d0d2bf`. Role: test-path,source. Parse: module.
+
+- constructor @16-19; FunctionExpression; parameters=2; async=false; generator=false
+- Class CustomLocale @15-20
+
+### js/src/tests/test262/intl402/Number/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Number/prototype/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Number/prototype/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Number/prototype/toLocaleString/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Number/prototype/toLocaleString/builtin.js
+
+Blob: `cc3639f01891ca36660cd33c0dd3ed2f46f38202`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Number/prototype/toLocaleString/default-options-object-prototype.js
+
+Blob: `f0a9765ecb6eae05e1e34048aa26452849511a75`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Number/prototype/toLocaleString/length.js
+
+Blob: `53286f8b64b58aa38fff998a1540c2997e4751f0`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Number/prototype/toLocaleString/returns-same-results-as-NumberFormat.js
+
+Blob: `10c54d530bf7a74020bbf68538b2446509d98c21`. Role: test-path,source. Parse: module.
+
+- (anonymous) @28-38; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @29-37; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @33-33; FunctionExpression; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/intl402/Number/prototype/toLocaleString/shell.js
+
+Blob: `eda1477282520548ae28183583fd14cd1502d6cd`. Role: test-path,source. Parse: module.
+
+- isConstructor @13-24; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @19-19; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/Number/prototype/toLocaleString/taint-Intl-NumberFormat.js
+
+Blob: `ba9a755568057ca8ab2a10a0219786703ca67c9a`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/Number/prototype/toLocaleString/this-number-value.js
+
+Blob: `86e68ef2ce832621099130f8d5651097201e6f07`. Role: test-path,source. Parse: module.
+
+- valueOf @10-10; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @13-17; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @14-16; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @21-26; FunctionExpression; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/intl402/Number/prototype/toLocaleString/throws-same-exceptions-as-NumberFormat.js
+
+Blob: `8dbb5b72a35122a2879e406cf002e7cd0678aac6`. Role: test-path,source. Parse: module.
+
+- (anonymous) @21-33; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @30-32; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @35-47; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @44-46; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/Number/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/builtin.js
+
+Blob: `6848ae39e94abf1ab2f5469976f9a4a5e513e8ba`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/casing-numbering-system-options.js
+
+Blob: `e925a98201aa50f6375f753536848059003821cd`. Role: test-path,source. Parse: module.
+
+- (anonymous) @14-16; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-compactDisplay-compact.js
+
+Blob: `466ec35c79dcd2d7a5b5ac8fa8278b8e4bbc25d9`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-compactDisplay-no-compact.js
+
+Blob: `c8de4c81de9d653690d86ed98a9496809b5a37e9`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-default-value.js
+
+Blob: `827fb8125fea90221626d963ca1c6655b5fb1a91`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-locales-arraylike.js
+
+Blob: `e06d6799982b3937c79274c9e0db411a4d8bd404`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-locales-get-tostring.js
+
+Blob: `b30f38342fde3e0b296f7561da8bf33efc511205`. Role: test-path,source. Parse: module.
+
+- get @31-34; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @41-41; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-locales-hasproperty.js
+
+Blob: `0a4436482fda2c44e40c1634418aefac7156935c`. Role: test-path,source. Parse: module.
+
+- has @26-29; FunctionExpression; parameters=2; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-locales-string.js
+
+Blob: `b22fd0aab96bef395a8b5ffd35ce4adaba597b33`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-locales-toobject.js
+
+Blob: `0f4fc1c640dcd863508f65d821417607c964e4ce`. Role: test-path,source. Parse: module.
+
+- (anonymous) @23-35; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @39-39; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-no-instanceof.js
+
+Blob: `fe9f1ac72001cdc819b8e0c23ac1a10265fbe824`. Role: test-path,source. Parse: module.
+
+- get @20-20; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-notation.js
+
+Blob: `6383626b3d395f7bc403f012ed42373db93f53c3`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-option-read-order.js
+
+Blob: `53a6133cf4a6f0d5acf03bbc9d20c9851740f6a7`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-options-numberingSystem-invalid.js
+
+Blob: `7735882361d5e179f259c81c0a58232314e6cdf9`. Role: test-path,source. Parse: module.
+
+- (anonymous) @38-40; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-options-roundingMode-invalid.js
+
+Blob: `3171533c46e9a567719b22922a48ba1b1a95da2d`. Role: test-path,source. Parse: module.
+
+- (anonymous) @9-11; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @13-15; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @17-19; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @21-23; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- toString @30-30; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @31-33; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-options-throwing-getters.js
+
+Blob: `34ea18887b86be29f637b8ae661679f265ca96f6`. Role: test-path,source. Parse: module.
+
+- CustomError @10-10; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @37-43; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- option @39-41; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-options-toobject.js
+
+Blob: `b7899e68a793b2066c464204bcde3e1b8f429d60`. Role: test-path,source. Parse: module.
+
+- (anonymous) @20-32; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @36-36; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-order.js
+
+Blob: `3256b4bdf233177535209360efa1134aed57d8b6`. Role: test-path,source. Parse: module.
+
+- (anonymous) @22-24; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @26-28; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-roundingIncrement-invalid.js
+
+Blob: `c68b56a766827d28f707aba9b236108791cbb5f8`. Role: test-path,source. Parse: module.
+
+- (anonymous) @10-12; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @14-16; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @18-20; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @22-24; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @30-32; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @34-36; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @38-40; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @42-44; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-roundingIncrement.js
+
+Blob: `56190e33f4fc1dbbd8d61bddf9fc49233dd287de`. Role: test-path,source. Parse: module.
+
+- valueOf @29-29; FunctionExpression; parameters=0; async=false; generator=false
+- notation @35-38; FunctionExpression; parameters=0; async=false; generator=false
+- roundingIncrement @39-42; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-signDisplay-negative.js
+
+Blob: `d89d90b6f81867d36c3dcf04f5b252ee0366b0ad`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-signDisplay.js
+
+Blob: `843f102ae59db28fdc7e792d04a6106e2d5baa0b`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-trailingZeroDisplay-invalid.js
+
+Blob: `969df52d8a5d9f3d82596c4dec11f334b6ca5d22`. Role: test-path,source. Parse: module.
+
+- (anonymous) @9-11; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @13-15; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @17-19; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @21-23; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @25-27; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @29-31; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-trailingZeroDisplay.js
+
+Blob: `050c16316415d241995e1e61585a4e0096cec9a9`. Role: test-path,source. Parse: module.
+
+- toString @14-14; FunctionExpression; parameters=0; async=false; generator=false
+- roundingIncrement @20-23; FunctionExpression; parameters=0; async=false; generator=false
+- trailingZeroDisplay @24-27; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-unit.js
+
+Blob: `e2ea7b55985de01b0c173e674196384f3bad000d`. Role: test-path,source. Parse: module.
+
+- (anonymous) @11-15; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @20-22; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @28-30; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @33-35; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- check @45-53; FunctionDeclaration; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/constructor-unitDisplay.js
+
+Blob: `9a97a5e15aa0b3ac12253de669bb16d531884b89`. Role: test-path,source. Parse: module.
+
+- (anonymous) @58-60; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/currency-code-invalid.js
+
+Blob: `22c43ffb18248440063ed10897b13aa983d4bbdf`. Role: test-path,source. Parse: module.
+
+- (anonymous) @22-27; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @24-26; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/currency-code-well-formed.js
+
+Blob: `0b76772b1e519fb6007d8b63a33d115a16ef6f70`. Role: test-path,source. Parse: module.
+
+- (anonymous) @18-22; FunctionExpression; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/currency-digits-nonstandard-notation.js
+
+Blob: `a3224f761f23184d29b542119258010774def089`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/currency-digits.js
+
+Blob: `a85f5f027d03ef71a6ecf26fea805b673be137e9`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/currencyDisplay-unit.js
+
+Blob: `bc760e490c2704314b4a8090b7832ed359b8da6d`. Role: test-path,source. Parse: module.
+
+- toString @20-20; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/default-minimum-singificant-digits.js
+
+Blob: `a9cab8c64123bf172674b82658b7d8af0b8d45eb`. Role: test-path,source. Parse: module.
+
+- (anonymous) @12-14; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/default-options-object-prototype.js
+
+Blob: `8ac0967e0ea4810e9c26eaceb3aa05dbb691c545`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/dft-currency-mnfd-range-check-mxfd.js
+
+Blob: `3db668634998846305291da18b7fc3792663a055`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/fraction-digit-options-read-once.js
+
+Blob: `faf89e8f9debc1c3e1f6a035150289128e703a76`. Role: test-path,source. Parse: module.
+
+- minimumFractionDigits @14-14; FunctionExpression; parameters=0; async=false; generator=false
+- maximumFractionDigits @15-15; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/ignore-invalid-unicode-ext-values.js
+
+Blob: `01ac841152938773a0581b27b6b0f79832bfab1c`. Role: test-path,source. Parse: module.
+
+- (anonymous) @15-36; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @27-35; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @28-34; FunctionExpression; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/instance-proto-and-extensible.js
+
+Blob: `0a2b3e89994228f96689127b0e52e8419f0155d8`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/intl-legacy-constructed-symbol-on-unwrap.js
+
+Blob: `a1ab66268c6498c7a0357b081362c751842c4622`. Role: test-path,source. Parse: module.
+
+- get @17-20; FunctionExpression; parameters=2; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/intl-legacy-constructed-symbol-property.js
+
+Blob: `5d2e5c7933a20ccf71b324107db7ada52908b896`. Role: test-path,source. Parse: module.
+
+- (anonymous) @22-22; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/intl-legacy-constructed-symbol.js
+
+Blob: `55dfd33594af4a42dd73d9638babba2c249c355a`. Role: test-path,source. Parse: module.
+
+- (anonymous) @16-16; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/legacy-regexp-statics-not-modified.js
+
+Blob: `ba010300c2af2de9aa1c491dc3400bb601898c5a`. Role: test-path,source. Parse: module.
+
+- (anonymous) @13-15; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @17-19; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/length.js
+
+Blob: `027ddb17830aeb9e36907e9f5a330ad8a81c1711`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/name.js
+
+Blob: `aa918694fc98232184171163dd30490683374d3d`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/numbering-system-options.js
+
+Blob: `ad48c5f2a9d00d3f43e6cb5df6fc78eca78053c9`. Role: test-path,source. Parse: module.
+
+- (anonymous) @14-16; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @23-61; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @28-36; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @39-43; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @46-60; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @48-52; FunctionExpression; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/prop-desc.js
+
+Blob: `589dbe8e32d575ba847c14151b4ecb1a8a364dc6`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/proto-from-ctor-realm.js
+
+Blob: `a8e2be5373c035c0a0ab120f73f7f426e4272c0c`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/builtin.js
+
+Blob: `95eef9d6b36a1f628a232e8543448db359b8ad2c`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/constructor/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/constructor/prop-desc.js
+
+Blob: `ba521fdc55f43b2ad0d124fa63c80a6926de491a`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/constructor/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/constructor/value.js
+
+Blob: `28cb427436711a3f04a3fe259f2a6084ac2bfb03`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/bound-to-numberformat-instance.js
+
+Blob: `f1817ba06f9ed6bd77c6cf7b52ee815421ba2832`. Role: test-path,source. Parse: module.
+
+- (anonymous) @25-35; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @26-34; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @29-33; FunctionExpression; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/builtin.js
+
+Blob: `6e264f8d26a47ffce5203476c069fc470b4168fc`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/default-value.js
+
+Blob: `b4ee1e8fdeebfc026651f48353e7b42909ef540d`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/engineering-scientific-de-DE.js
+
+Blob: `8c70c5e94ac3aed3b0f0f1701c83425dfaf04625`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/engineering-scientific-en-US.js
+
+Blob: `5d8c94ce9ae6d88ab67c1eb7124c47b4e6b73d8f`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/engineering-scientific-ja-JP.js
+
+Blob: `85dd68d7364d336e3ed5eb1a1059849bbbfdd1e6`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/engineering-scientific-ko-KR.js
+
+Blob: `23b5632f0b803238bd032a127f0ff2822208452b`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/engineering-scientific-zh-TW.js
+
+Blob: `5f4cacbb0bf813b7c5aac74dd3cd5e32016552ec`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-fraction-digits-precision.js
+
+Blob: `8b7870f019d4e38510b116730a5daf5ad0eee2cb`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-fraction-digits.js
+
+Blob: `cb9c20ad6ecfb77f40eff3671185bc897d70630d`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-function-builtin.js
+
+Blob: `55f0ce7dd5811cd33b13e089000ff2bfce5140cf`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-function-length.js
+
+Blob: `b2884e9e0d807315248492d67f520422fa2191c9`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-function-name.js
+
+Blob: `4e4805928ef862aeac15a792d4659c79e7d2052b`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-function-property-order.js
+
+Blob: `91b4884286358d8b52c87c8f7ac6a4ef6ee6e9de`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-max-min-fraction-significant-digits.js
+
+Blob: `f1b296385250a467ff8dd2b2ab2debac41eefa90`. Role: test-path,source. Parse: module.
+
+- (anonymous) @25-27; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-negative-numbers.js
+
+Blob: `f572d319974e3d520737b9ce842a60bfa38d88fb`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-non-finite-numbers.js
+
+Blob: `d6dcae7b65150381e4a3cbf4a350d65cd614a512`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-increment-1.js
+
+Blob: `6b0b209be03e8518bfa4ee7fd37c4678e090b43d`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-increment-10.js
+
+Blob: `efb5a543177907cfb226d78b3b89c1d2beac9337`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-increment-100.js
+
+Blob: `5bd2902968dfd3d5169061800b49055b1652a0fc`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-increment-1000.js
+
+Blob: `d3bdff64b5fb74248f23a8de7a7114d1de4bcdc2`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-increment-2.js
+
+Blob: `97cc2832c901a63d14603ab8536c1b9921780d8c`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-increment-20.js
+
+Blob: `68d2725e74eb6c72b27511cb5d3aaaad92b0331a`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-increment-200.js
+
+Blob: `428fc583b3bd1061ce42d6d8b7be1da48410893c`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-increment-2000.js
+
+Blob: `987c6b30fc73136c788caaf0d13274702ae49527`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-increment-25.js
+
+Blob: `a54f963c3effff66c885631ff5719485be1e5dd5`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-increment-250.js
+
+Blob: `6e13faef71eb60420a943d81309e90d66be9d6c7`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-increment-2500.js
+
+Blob: `b7468787c69449fed3693317ae0d5f17628121d4`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-increment-5.js
+
+Blob: `09db9be9a6f6a467efb9a2e49c34e7e15f331c93`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-increment-50.js
+
+Blob: `ef51cfc60702df0ecc8e90a7ce1d8ea1e38e2502`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-increment-500.js
+
+Blob: `45c1e67dfe7edba5d9ea13e6727bc0d6c62657da`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-increment-5000.js
+
+Blob: `78eac2c2c24b3c782c0b4a1a2b03c250375eecf8`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-mode-ceil.js
+
+Blob: `3583f38ece738ca852b2034a369db92a6e6668bd`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-mode-expand.js
+
+Blob: `1387f1cd77c48246a4f77ff000d7500b3ce888fa`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-mode-floor.js
+
+Blob: `3e2107e38881a6439f2f85c662cf4a736c5a444a`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-mode-half-ceil.js
+
+Blob: `c3da65ab0e9be5283ca9ba66df182ff68c6e73e9`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-mode-half-even.js
+
+Blob: `0dd7af1626e352dd53356fd15a85c9d80e87c6b9`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-mode-half-expand.js
+
+Blob: `d08b6bac84e301857e91d5795c8afff93fdb5d33`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-mode-half-floor.js
+
+Blob: `42a5ce98d2dcbd25ffb5cc50310b754e880783e1`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-mode-half-trunc.js
+
+Blob: `b6babdb903e61c82258e3fb5b7514f0f4b8b2db9`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-mode-trunc.js
+
+Blob: `8c8444ef9cee7a7d99dcf3542bb410213e558415`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-priority-auto.js
+
+Blob: `2199dd6b532ab136c4aabef121e5226e34df1345`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-priority-less-precision.js
+
+Blob: `2a50ef5cc0c5c5094a408ce4a7b0b42401f4d62d`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-rounding-priority-more-precision.js
+
+Blob: `dbe4b3a8a56b937508897d40de59282168357fbd`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-significant-digits-precision.js
+
+Blob: `dfb0aa7f597236f395bf3da1597cbac8bc392c86`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/format-significant-digits.js
+
+Blob: `d9cc063af596a1a69b259c53096f62403913d275`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/length.js
+
+Blob: `c49e212b7f46cf15edb904ce0db88ceb150c4999`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/name.js
+
+Blob: `48416d7aa6572ec17161f5a8e714565dd0c1b5e7`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/no-instanceof.js
+
+Blob: `03a4f7eac240cb4eff4908873837b8a361d14ee0`. Role: test-path,source. Parse: module.
+
+- get @21-21; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @24-24; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/notation-compact-de-DE.js
+
+Blob: `bd33e60f6aa005b6f0ffdb4c32cc20ddea0ea87f`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/notation-compact-en-US.js
+
+Blob: `09856d66c3dc346878df892ae801c55d2f38890c`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/notation-compact-ja-JP.js
+
+Blob: `24e6dbfd4ffeac9e9142dbd412c9f0d06f441967`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/notation-compact-ko-KR.js
+
+Blob: `d24f3a6e20e751207e6b7341344266ba008fde21`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/notation-compact-zh-TW.js
+
+Blob: `92e33a79221c5812f04f96b42ae250c4644a2682`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/numbering-systems.js
+
+Blob: `112657283c1d6b8ca78f0b5bde450496aae5f61a`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/intl402/NumberFormat/prototype/format/percent-formatter.js
+
+Blob: `5dc7f70e9ee1575c33a3a0ca48636f5c68049a36`. Role: test-path,source. Parse: module.
+
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.
+
+## Retrieval correction
+
+This copy preserves the source map in [1758f4f5-3ce3-4450-a9bc-51a4e93631a2.md](1758f4f5-3ce3-4450-a9bc-51a4e93631a2.md). The original was imported and committed by concurrent console maintenance during this study. Its full path metadata could exceed the console search budget. This copy uses component scope metadata while keeping every file path in the body. It adds no independent behavior evidence. Original record: `339a820a0d4b67623c83a1c7465049106a855b069fd336d105a50247af175784`.
