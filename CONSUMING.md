@@ -76,6 +76,12 @@ for the exact source, full file census, JavaScript syntax/configuration checks,
 parser failures, and remaining limits. This is a deliberate instruction update;
 automatic learning must not edit it.
 
+Read the [test-cleanup rule](notes/8f5d298f-8df3-4eaf-84d3-59a844728679.md) with the practical guide.
+Do not add `try/finally` blocks to tests. Use harness setup and cleanup hooks,
+register cleanup before setup can fail, and separate cleanup actions when a
+failure must not prevent the remaining actions. This is deliberate user-directed
+guidance. Automatic learning must not change it.
+
 Choose rules for the exact language, component, runtime, file role, and section.
 Separate required configuration, accepted local practice, and suggested defaults.
 For new JavaScript that visits values and performs actions, prefer for...of over

@@ -164,6 +164,9 @@ rejection, cancellation, and cleanup explicitly when the caller needs them.
 
 In tests, follow the actual harness and section: named tasks, assertion APIs,
 shared helpers, fixtures, setup, cleanup, and browser preference handling.
+Do not add try/finally blocks to tests. Use the test harness setup and cleanup
+hooks. Register cleanup before setup can fail. Use separate cleanup callbacks
+when one failed action must not prevent another cleanup action.
 Use SpecialPowers.pushPrefEnv where the browser-test rules require it. Check
 Calendar test rules for UTC dates. Check resolved rules when overrides overlap.
 Wait for an event or state condition instead of an arbitrary delay. Keep test
