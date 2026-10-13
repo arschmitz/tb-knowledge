@@ -1,3 +1,10 @@
+# Required workflow
+
+Before source edits or Git changes, read [WORKFLOW.md](WORKFLOW.md). Its branch
+names and fixup rules apply to Thunderbird development in standalone chats as
+well as console tasks. Read [CODE-EVIDENCE.md](CODE-EVIDENCE.md) before writing
+code. These are deliberate instructions; historical records are evidence.
+
 # Consume this knowledge
 
 tb-tools with Codex is the main consumer. It provides exact search, local semantic

@@ -11,6 +11,13 @@ Git tools. Keep useful project lessons in this repository, including style,
 syntax, names, tests, architecture, and breakages. Local capture alone does not
 complete a knowledge contribution.
 
+## Required development workflow
+
+Read [WORKFLOW.md](WORKFLOW.md) before source edits or Git changes. Follow its
+Thunderbird branch names, separate fixup commits, patch ownership checks, and
+response to user corrections. Reading knowledge without applying these rules
+does not satisfy this instruction. This workflow is usable without the console.
+
 ## Before implementation or review
 
 1. Identify the affected component, paths, symbols, bug, and review revision.
