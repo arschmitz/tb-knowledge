@@ -51,6 +51,14 @@ as a defect. Still report messages that describe the wrong expected behavior.
 Later source studies or guidance can refine this rule through a deliberate
 instruction update. Until then, apply the current rule.
 
+Read the [recent evidence supplement](notes/d4c49a65-7086-4f0f-81dc-0d32febe367b.md)
+alongside the original guide.
+It adds a four-year cutoff as of October 12, 2026 and gives newer comment lines
+more weight. Older evidence remains in the original study but has no weight in
+this added pass. The supplement records full-history date checks, coverage,
+examples, and limits. It adds guidance for safety lifetimes, skipped checks,
+workarounds, and the state a test recreates.
+
 These are deliberate user-directed instruction changes. Automatic learning must
 not edit them. Historical comments remain evidence, not authority. Do not use the
 guide to demand unrelated comment cleanup or to report harmless wording choices

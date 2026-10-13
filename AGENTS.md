@@ -91,6 +91,10 @@ real requirement and "can" for a capability; do not turn a suggestion into a rul
 Keep exact identifiers, conditions, exceptions, links, and necessary details.
 Explain a technical term when the intended reader may not know it. Preserve the
 local human voice; do not add invented purpose, generic praise, or rigid templates.
+When explaining safety, name the value and how long it remains valid. If a check
+is skipped, name the condition that makes the check unnecessary. For a workaround,
+name the result that would change without it.
+For test setup, name the state the test recreates and any simulated action.
 For JSDoc, keep the summary, parameters, types, returns, defaults, errors, and
 side effects accurate. State what an async promise resolves to and what completion
 means when callers need it. Use small checked examples when usage is unclear.
