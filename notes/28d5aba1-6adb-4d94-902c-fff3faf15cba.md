@@ -1,0 +1,32 @@
+<!-- knowledge: {"repository":"thunderbird","at":"2026-10-13T15:06:50.627Z","paths":["mail/extensions/openpgp/content/ui/enigmailMessengerOverlay.js"],"source":{"reference":"Git commit 87d0159c7149a43253964c2cb6917939557dc799","revision":"87d0159c7149a43253964c2cb6917939557dc799","status":"provisional","study":"ingestion-pilot-20261013T145636Z","parser":"espree 10.3.0","language":"JavaScript","fileRole":"source","bodyFactRulesVersion":1,"verification":"Pinned blob digest checked; narrow whole-body rules and lexical binding resolution; no contextual behavior certification","component":"mail","runtime":"unresolved","classificationBasis":"Saved path heuristic plus pinned imported/generated-list matches; pilot matcher is not an authoritative lint-rule interpreter.","imported":false,"generated":false}} -->
+# thunderbird mail/extensions/openpgp/content/ui/enigmailMessengerOverlay.js direct local body contracts
+
+These are deterministic explanations of complete simple local bodies at `87d0159c7149a43253964c2cb6917939557dc799`. They are added body facts, not a complete behavior analysis. Parameter binding must succeed before each body runs. Caller contracts, method receivers, cross-file consumers, tests, and runtime branches remain unverified. Names inferred from properties or assignments are navigation labels. No product test pass is claimed.
+
+## onEndHeaders at 130 to 130
+
+Evidence: `mail/extensions/openpgp/content/ui/enigmailMessengerOverlay.js:130-130`; body SHA-256 `44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a`; rule `empty-or-bare-return`.
+
+After parameter binding succeeds, the local body completes with undefined. This is the body return value; constructor invocation can ignore it.
+
+## onEndAttachments at 131 to 131
+
+Evidence: `mail/extensions/openpgp/content/ui/enigmailMessengerOverlay.js:131-131`; body SHA-256 `44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a`; rule `empty-or-bare-return`.
+
+After parameter binding succeeds, the local body completes with undefined. This is the body return value; constructor invocation can ignore it.
+
+## has at 307 to 309
+
+Evidence: `mail/extensions/openpgp/content/ui/enigmailMessengerOverlay.js:307-309`; body SHA-256 `00370e3b6bd76165bf46baf643382ff97e628ecfbd654a3b408a1578904c89ac`; rule `return-primitive`.
+
+After parameter binding succeeds, the local body returns false. This is the body return value; constructor invocation can ignore it.
+
+## anonymous@1396:12 at 1396 to 1401
+
+Evidence: `mail/extensions/openpgp/content/ui/enigmailMessengerOverlay.js:1396-1401`; body SHA-256 `2ea83f60144f55f24d8ed9f56ee03be748eae806017f011cef199f0e63df5083`; rule `empty-or-bare-return`.
+
+After parameter binding succeeds, the local body completes with undefined. This is the body return value; constructor invocation can ignore it.
+
+## Validation and limits
+
+All listed bodies passed the narrow syntax rules; preceding actions, generators, class constructors, parameter defaults/destructuring, and async parameter returns are not accepted by these rules. Complex bodies remain in the private work queue. A whole-file parse does not mean all functions were analyzed. Literal return facts cannot establish API ownership, cross-file callers, test coverage, or passing runtime results. Imported/generated/test role flags retain their original scope.

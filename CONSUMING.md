@@ -76,10 +76,9 @@ for the exact source, full file census, JavaScript syntax/configuration checks,
 parser failures, and remaining limits. This is a deliberate instruction update;
 automatic learning must not edit it.
 
-Read the [test-cleanup writing rule](notes/58165b80-803d-40c2-8d71-fd3e20468789.md) with the practical guide.
+Read the [test-cleanup writing rule](notes/f706938f-ead2-4a9c-ad82-59db1d738286.md) with the practical guide.
 When writing tests, do not add `try/finally` blocks. Use harness setup and
-cleanup hooks, register cleanup before setup can fail, and separate cleanup
-actions when a failure must not prevent the remaining actions.
+cleanup hooks and register cleanup before setup can fail.
 This is writing guidance, not a patch-review criterion. It is deliberate
 user-directed guidance. Automatic learning must not change it.
 
@@ -170,3 +169,9 @@ in the console's `learning.mjs`; it validates evidence IDs and exact quotes.
 `tb knowledge publish` publishes eligible project lessons and syncs the shared
 checkout. Normal console maintenance does this automatically within its budget.
 No hand editing of content-addressed records is needed.
+
+## Evidence before edits
+
+Follow [CODE-EVIDENCE.md](CODE-EVIDENCE.md) before writing code. It defines the
+standalone evidence record, independent checks, instruction authority, and limits.
+Use ordinary files and Git; console tools are optional.

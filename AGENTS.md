@@ -165,8 +165,7 @@ rejection, cancellation, and cleanup explicitly when the caller needs them.
 In tests, follow the actual harness and section: named tasks, assertion APIs,
 shared helpers, fixtures, setup, cleanup, and browser preference handling.
 When writing tests, do not add try/finally blocks. Use the test harness setup
-and cleanup hooks. Register cleanup before setup can fail. Use separate cleanup
-callbacks when one failed action must not prevent another cleanup action.
+and cleanup hooks. Register cleanup before setup can fail.
 This is writing guidance, not a patch-review criterion.
 Use SpecialPowers.pushPrefEnv where the browser-test rules require it. Check
 Calendar test rules for UTC dates. Check resolved rules when overrides overlap.
@@ -187,3 +186,12 @@ Do not rewrite unrelated code or report a harmless alternative as a defect.
 For a style finding, state its scope, source or rule, concrete change, and reason.
 Read the code-style guide and coverage limits in the shared CONSUMING.md when
 more detail is needed. Automatic learning must not edit this deliberate guidance.
+
+# Evidence before edits
+
+Follow [CODE-EVIDENCE.md](CODE-EVIDENCE.md) before writing code. Save scoped
+evidence and an accepted local example before edits. Resolve missing support
+or conflicts first. Check the actual changes independently afterward. Only a
+direct human request authorizes a new deliberate rule; automatic lessons and
+assistant choices are evidence, not instruction authority. This workflow works
+with ordinary files and Git. No console application is required.
