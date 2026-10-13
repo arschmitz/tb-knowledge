@@ -1,0 +1,1013 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:14:46.642314+00:00","paths":["testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvf.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvm.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvm.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvm.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvm.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvm.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvm.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvs.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvs.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvs.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvs.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvs.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvs.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/afrc.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/afrc.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/afrc.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/afrc.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/afrc.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/afrc.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/akhn.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/akhn.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/akhn.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/akhn.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/akhn.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/akhn.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwf.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwf.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwf.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwf.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwf.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwf.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwm.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwm.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwm.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwm.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwm.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwm.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blws.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blws.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blws.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blws.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blws.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blws.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2pc.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2pc.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2pc.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2pc.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2pc.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2pc.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2sc.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2sc.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2sc.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2sc.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2sc.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2sc.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/calt.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/calt.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/calt.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/calt.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/calt.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/calt.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/case.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/case.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/case.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/case.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/case.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/case.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/ccmp.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/ccmp.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/ccmp.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/ccmp.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/ccmp.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/ccmp.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cfar.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cfar.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cfar.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cfar.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cfar.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cfar.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cjct.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cjct.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cjct.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cjct.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cjct.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cjct.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/clig.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/clig.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/clig.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/clig.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/clig.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/clig.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/contents.plist","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpct.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpct.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpct.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpct.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpct.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpct.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpsp.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpsp.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpsp.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpsp.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpsp.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpsp.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cswh.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cswh.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cswh.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cswh.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cswh.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cswh.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/curs.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/curs.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/curs.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/curs.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/curs.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/curs.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv00.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv00.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv00.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv00.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv00.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv00.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv01.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv01.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv01.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv01.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv01.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv01.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv02.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv02.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv02.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv02.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv02.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv02.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv03.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv03.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv03.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv03.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv03.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv03.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv04.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv04.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv04.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv04.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv04.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv04.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv05.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv05.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv05.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv05.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv05.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv05.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv06.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv06.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv06.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv06.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv06.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv06.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv07.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv07.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv07.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv07.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv07.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv07.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv08.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv08.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv08.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv08.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv08.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv08.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv09.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv09.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv09.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv09.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv09.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv09.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv10.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv10.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv10.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv10.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv10.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv10.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv11.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv11.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv11.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv11.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv11.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv11.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv12.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv12.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv12.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv12.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv12.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv12.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv13.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv13.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv13.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv13.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv13.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv13.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv14.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv14.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv14.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv14.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv14.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv14.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv15.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv15.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv15.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv15.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv15.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv15.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv16.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv16.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv16.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv16.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv16.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv16.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv17.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv17.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv17.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv17.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv17.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv17.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv18.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv18.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv18.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv18.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv18.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv18.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv19.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv19.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv19.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv19.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv19.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv19.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv20.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv20.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv20.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv20.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv20.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv20.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv21.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv21.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv21.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv21.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv21.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv21.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv22.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv22.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv22.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv22.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv22.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv22.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv23.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv23.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv23.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv23.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv23.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv23.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv24.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv24.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv24.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv24.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv24.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv24.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv25.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv25.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv25.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv25.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv25.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv25.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv26.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv26.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv26.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv26.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv26.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv26.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv27.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv27.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv27.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv27.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv27.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv27.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv28.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv28.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv28.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv28.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv28.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv28.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv29.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv29.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv29.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv29.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv29.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv29.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv30.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv30.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv30.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv30.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv30.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv30.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv31.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv31.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv31.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv31.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv31.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv31.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv32.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv32.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv32.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv32.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv32.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv32.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv33.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv33.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv33.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv33.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv33.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv33.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv34.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv34.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv34.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv34.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv34.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv34.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv35.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv35.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv35.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv35.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv35.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv35.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv36.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv36.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv36.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv36.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv36.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv36.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv37.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv37.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv37.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv37.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv37.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv37.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv38.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv38.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv38.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv38.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv38.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv38.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv39.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv39.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv39.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv39.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv39.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv39.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv40.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv40.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv40.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv40.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv40.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv40.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv41.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv41.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv41.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv41.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv41.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv41.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv42.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv42.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv42.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv42.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv42.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv42.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv43.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv43.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv43.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv43.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv43.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv43.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv44.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv44.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv44.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv44.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv44.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv44.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv45.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv45.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv45.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv45.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv45.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv45.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv46.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv46.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv46.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv46.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv46.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv46.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv47.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv47.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv47.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv47.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv47.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv47.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv48.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv48.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv48.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv48.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv48.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv48.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv49.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv49.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv49.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv49.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv49.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv49.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv50.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv50.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv50.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv50.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv50.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv50.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv51.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv51.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv51.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv51.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv51.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv51.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv52.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv52.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv52.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv52.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv52.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv52.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv53.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv53.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv53.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv53.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv53.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv53.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv54.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv54.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv54.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv54.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv54.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv54.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv55.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv55.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv55.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv55.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv55.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv55.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv56.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv56.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv56.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv56.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv56.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv56.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv57.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv57.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv57.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv57.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv57.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv57.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv58.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv58.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv58.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv58.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv58.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv58.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv59.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv59.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv59.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv59.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv59.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv59.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv60.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv60.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv60.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv60.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv60.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv60.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv61.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv61.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv61.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv61.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv61.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv61.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv62.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv62.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv62.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv62.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv62.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv62.pass.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv63.alt1.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv63.alt2.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv63.alt3.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv63.default.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv63.fail.glif","testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv63.pass.glif"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013"}} -->
+# firefox/testing structural source map 644
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. This is an automated navigation map, not a behavior review.
+Each row gives the repository-relative path, Git blob ID, byte size, role inferred from the path, declaration candidates, and literal dependency candidates. `@N` is the source line.
+Candidates come from line-based patterns. They can miss multiline, anonymous, macro-generated, and language-specific declarations or match comments and fixture text. Dependencies are not resolved imports, runtime calls, or a complete graph. No candidates does not mean no functions or dependencies.
+Imported code and tests are included. Binary and non-UTF-8 files have a census entry but no declaration extraction. Symlink contents are scanned as text, not followed. No uncommitted changes, build products, ignored files, or untracked files are studied.
+
+## File map
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvf.pass.glif` | `eed41fd60aca2ed51b25bedfe648705f46dfa6a7` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvm.alt1.glif` | `6418399af75d9caad91e22a53dca2bdec6b53d9e` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvm.alt2.glif` | `894fa0d938070e38050b6375780bab97849ba002` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvm.alt3.glif` | `245b2146dff7b7d3692a8590ff25587438d5ee61` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvm.default.glif` | `539859a2fa76ae5456b202d6c4c2a4f3269057ab` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvm.fail.glif` | `d8e2042135ef5d978d9b617737b7ac726d216238` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvm.pass.glif` | `c4d4998e087760faf9e7034331f1217037f3ac1a` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvs.alt1.glif` | `9d370e5d8b5bed8fa31ddc32ab25558deb1f8c9d` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvs.alt2.glif` | `32f0fda6f8fce2a2112bd209a4ca03f83ca0c56a` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvs.alt3.glif` | `ed47c708a14c4a1dbc5492b44cb8efce7ec18937` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvs.default.glif` | `1593126ee4f9fdf28f7f11e0504712db6d50c2af` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvs.fail.glif` | `ee94b7ff6ac75a4bb2d9f179afc10bf54e3251de` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/abvs.pass.glif` | `5db7499ae65dc89e7b05823adc10ad7580623c15` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/afrc.alt1.glif` | `380da5ac69cc418bc15774888bde9b6fee814d88` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/afrc.alt2.glif` | `afa680deac98f0dec4c836ba74cdd70319a9bd8e` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/afrc.alt3.glif` | `a671b265b12d88dd6c22f0991b5f7608d60e0fe9` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/afrc.default.glif` | `ab6df94383d3088eceb4efcca594eb43a2986cda` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/afrc.fail.glif` | `44dc9bb3164d64b886b798fbc726ac76ef714d82` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/afrc.pass.glif` | `0094fe3bf0b82edd688c56000724ba50ce217536` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/akhn.alt1.glif` | `b92438b7949b2ddc30797ac55d192130f1d41831` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/akhn.alt2.glif` | `bbb4b1b43487c715d82e4a124a78e4454ccad01c` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/akhn.alt3.glif` | `111e0d97e312990d77136c4f853fd384ec183147` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/akhn.default.glif` | `1eded88af3c4499262b1132772c17ebebef1b508` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/akhn.fail.glif` | `8752d480c922ed9e0ab4f31782a658a5d4e0d678` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/akhn.pass.glif` | `7273d53c446323570d5fad8b2ee7e2fe1bdc060e` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwf.alt1.glif` | `7e3a785590dd64bbde1b37e28c6b08b913de9b67` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwf.alt2.glif` | `4af2294ccd223c02b66a1cfe76ec86035d9428f3` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwf.alt3.glif` | `3b929378b396b0c072dcf801a0fe238969cd506e` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwf.default.glif` | `d83009a62d70f238cc0ccdf96a90aa7ea3798874` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwf.fail.glif` | `553fb174b7dcd3ff10ad1bd34afaab27880d59a7` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwf.pass.glif` | `cd6b8852b6b89af886e40dbc6be0c5840b1a92f8` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwm.alt1.glif` | `1ea553e1898dbbcae3cfe4093f85d3b71408c3f5` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwm.alt2.glif` | `aa96ebfe95e77eca6f98a7a0b2b4eb5ff64c2134` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwm.alt3.glif` | `f165a4839e7debec36950a3d30d2bf4345e57c26` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwm.default.glif` | `40082a0d61c955b5d5f4a2a774112e8798f219ad` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwm.fail.glif` | `526eb9e31167718637b467e7fb7564c4a72037bd` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blwm.pass.glif` | `c6e71760cb7875e23d64366f091c9091cc23be86` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blws.alt1.glif` | `747f23641bf018c75cf6f1fb0a239e4d8939a316` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blws.alt2.glif` | `c9ad618d4e4defbaf8f3be36d229c02390797763` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blws.alt3.glif` | `cbf4bb125dec6f657b40a44178aab5b9c8d9d246` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blws.default.glif` | `c5de1ecf57038d258f22ded1e0aef4cad2892454` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blws.fail.glif` | `8ee1745d37eed96f2a8217492b083108e731281d` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/blws.pass.glif` | `95fb81f0972ef24c24405a00b3ad426f50a1e018` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2pc.alt1.glif` | `29f66c0819f45cedff1c0afc7beb1e8d637eeb8b` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2pc.alt2.glif` | `3f4c5657f54bf036b9ade90037b1ec0236215b67` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2pc.alt3.glif` | `6aa262050ae263e853b84abaabe20518840ac6f1` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2pc.default.glif` | `cfcbc4259067a68652af410c086f1066705749ce` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2pc.fail.glif` | `31750cbf215bec40d45f6ccf7f03857d939ab5d8` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2pc.pass.glif` | `bf946e9cb6ab4e1066301abdb63c38f99e949ea9` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2sc.alt1.glif` | `df0c72f9afa725c7a0c37a959b4a3b737b5f086d` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2sc.alt2.glif` | `6510b60ed8357fe1cd80cff08176c624387b0ccb` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2sc.alt3.glif` | `18bce0b2d97d7c55380224090e0b3d6bc27266ac` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2sc.default.glif` | `d6c72c32d3892f4590894dd812e4fcbc9cc2ae9f` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2sc.fail.glif` | `52cd3dd2708e646792777d779fce69309735bbec` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/c2sc.pass.glif` | `528e0f6e649221f65838dfda2c90b86e4edcad75` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/calt.alt1.glif` | `a8d2f0f2cb1a13232a2338f95e874d7ec94160b1` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/calt.alt2.glif` | `c1e367e6a9d1704c04564c04c9a1c356fc3987fb` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/calt.alt3.glif` | `6ff6958e93ff0539e2d9d956f93394597aaa38a3` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/calt.default.glif` | `951ff5dba9d48c020d8cbc7d653c0b5eb948f6c7` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/calt.fail.glif` | `61755c6deb6d967d193c586730d1337b364b4f7d` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/calt.pass.glif` | `658fd487958b8b2c078180afd7d57312c8d717dc` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/case.alt1.glif` | `907148d265c89fb4d4ca9e352b9816b3ae550255` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/case.alt2.glif` | `8f15bbb68b2f786be10438cdea627318b700a7f4` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/case.alt3.glif` | `21cbe34af47f06a6e7da9c90e1164679cbe2abc8` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/case.default.glif` | `c1ff383fd8ac0fe6729649d69a307c9b433fb5ee` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/case.fail.glif` | `0b6501a5c66cd9b42b24ea4ddde6832dbc2ba4cf` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/case.pass.glif` | `dd17525e6d549b77a447baa97ca2539d0a2aec6f` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/ccmp.alt1.glif` | `7d22ceb4aa1cc47570eed3d2310f5f4e8425d76b` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/ccmp.alt2.glif` | `f413acb45bd43fc082e9d18c0d5622d3e07e000c` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/ccmp.alt3.glif` | `f7a5c7242f6175e0456a30eaf71039cdd476a868` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/ccmp.default.glif` | `649ef67a78dede99dc128bad14e8f5b65d02adb2` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/ccmp.fail.glif` | `77f4003b66340068a0308bee0cde30d263cd6945` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/ccmp.pass.glif` | `3c5c5f45e0d1421408cb04900572b5d2f771bdcd` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cfar.alt1.glif` | `924ef4a78077880e3fa50d1adcbff7044735b506` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cfar.alt2.glif` | `aeb56f58f0fc4a23871718c5f9b9e78d8ddb7993` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cfar.alt3.glif` | `a6eb8d6fbd057529233f9bf623e5904d48eed99d` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cfar.default.glif` | `f2f071d6be6913df997ead3d89708789cf46a47b` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cfar.fail.glif` | `2193bc689b345c95dc05917fb7223f63e14952fd` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cfar.pass.glif` | `cfd4cd4656191a44a9fc7b5561c4512985c1d39c` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cjct.alt1.glif` | `d1ff9feb8930ca4ce16234d31c22372c4ce3a67f` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cjct.alt2.glif` | `62cfe7c9ca599602d12f4995b0f510d3ac5c80e5` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cjct.alt3.glif` | `03c87f9498faf26953cb951d1d346c3b771b9faa` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cjct.default.glif` | `bdfdc84dbfb5e2036495b18963bb47c053cc63be` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cjct.fail.glif` | `b9cc80ff5b9ab780dfcc02d6a8296ef654366842` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cjct.pass.glif` | `5bb5be883dfb559a047923dd3961ffcec363b45d` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/clig.alt1.glif` | `9a56fd81b7228cee3e722fcef94853437be3569b` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/clig.alt2.glif` | `c06770e8cef69e162f39b5c01096bb0ff56d7a6c` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/clig.alt3.glif` | `13bda229c7b48b387959066b405d08d255a747b7` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/clig.default.glif` | `7c5beee4f16903901ab8ff64235fac7243963120` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/clig.fail.glif` | `09569ba16f4c33a80aba73d15c79acf5ff32d690` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/clig.pass.glif` | `52b24b2691260a05bf6554e1a4dd2af4beda68f7` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/contents.plist` | `042e08cc9b817b1c9a86f6119ee62710619dde90` | 89413 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpct.alt1.glif` | `44360504240f7d9faeeb764429f4013f4aee88f0` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpct.alt2.glif` | `e1a4f3817da9f6552ff09fff8a857fa84a9cf6b9` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpct.alt3.glif` | `f3ced4b55631fd7224e228b4ec852f8bb2cd46a0` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpct.default.glif` | `0e26c25caba73e8fd0f8e5419e0e1915991b965f` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpct.fail.glif` | `acf6b5a34c24ee79bc70e4ba8513fa12b76c7bbf` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpct.pass.glif` | `befbff1459740ad7f9633b420e963f12e36576e4` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpsp.alt1.glif` | `59f052978d541166749a7bf61e10051f45862eba` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpsp.alt2.glif` | `1fb93e2738b1d4e569f76aa6c385ef6dc7415dcf` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpsp.alt3.glif` | `4bc2c10e8b50eac1a3f3604c6c691bbb7832c185` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpsp.default.glif` | `1041f2960ff9fe14ba0218e5a91beb9686d7e3af` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpsp.fail.glif` | `9d252175fb6ad3aca1255d42073bae97b89bd98d` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cpsp.pass.glif` | `845874a148163a221c949b2beeb4972013f2fc2c` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cswh.alt1.glif` | `2800e20dd803c05a1f53920d7f0cc19f3b78ee0f` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cswh.alt2.glif` | `3b31be09dd41c27db5bd57cae08c96d6d749f013` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cswh.alt3.glif` | `2a837c45fc0aa92128e1734dcd3d87dd4ac318f0` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cswh.default.glif` | `ea6df5ea36ca249d67e663be1c3c8af6637c5152` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cswh.fail.glif` | `04321b2b3ad165dad76a153b4c173108a9ddb405` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cswh.pass.glif` | `62b9d2fc63a4a2192036c09c39f23454af27130f` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/curs.alt1.glif` | `1af193e04cb3a6bfbb3f7084d06870911b5209d4` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/curs.alt2.glif` | `af8a7141d8a99265b3132d5cd02e0f2a793e742d` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/curs.alt3.glif` | `965008d4010385dcb323a6b9579a36398811e6eb` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/curs.default.glif` | `6834af1b9b8d2a62199b817f83d1692ddbbeb58e` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/curs.fail.glif` | `a933248196bc643941114e58aa3438f48b5a3ff9` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/curs.pass.glif` | `af80e56a16f6845831b6bc45d5a0575740ab1043` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv00.alt1.glif` | `d7bbca4e2b7deb93c8adc47828a7ec4431d11ae1` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv00.alt2.glif` | `84e1a3b2f612a4b368869ba695cc35efbaa32162` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv00.alt3.glif` | `acc29b16ccaae861f6b4229851d38a5e376741e5` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv00.default.glif` | `80fc5a0af6fc30ea18c74a13c5fc9d288d9a6144` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv00.fail.glif` | `8fa2b7bafdc0a629837fa350097f97064df0d9c0` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv00.pass.glif` | `f224cd9ae8f1c4c41876a1ab36f027e867013d49` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv01.alt1.glif` | `4956fd3d9cdc8539a5f4bc8e92c90342e6b495ad` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv01.alt2.glif` | `ae1c3eca2a7a221f0346832000d471cc2cc0703e` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv01.alt3.glif` | `300900211252b7512ea33e4dbb74d44a978b6324` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv01.default.glif` | `f79b0a6ad4cd3a9d7b6011a2a8cc6b24b41ff1ab` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv01.fail.glif` | `7364079dc925afdb536f09242e11624f1e9031ab` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv01.pass.glif` | `71dcddb55738fedbe3be5791adc4e1b1b9455f97` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv02.alt1.glif` | `5bad7bf3894c832642d0e31a47ac592d8045e004` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv02.alt2.glif` | `2e34fd851ab882c79441377f497dd03b1e9fe445` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv02.alt3.glif` | `49876f208c2b1cc3acfcdaff6221505e5c186bef` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv02.default.glif` | `244cb07eb45d3f4127f3345dd76307965cde8153` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv02.fail.glif` | `3a63fd209dbb0c1e5d7dec18fe0a5cb7d9adb241` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv02.pass.glif` | `a3032e56282f0094b11ed2989f09e04d6ed70822` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv03.alt1.glif` | `44fb4787750f6c7acabd72b4bf0b9ee8634bc223` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv03.alt2.glif` | `22e66a358e9c8a19360899500bcdfdd984dd5f61` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv03.alt3.glif` | `af97485754278e77da3d1add17234c0dc70e2283` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv03.default.glif` | `5d52000c9abaaad308bf55dfa9c3c0c323ee11e4` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv03.fail.glif` | `3fc897ee7c79e02706c9f46468fa2c89af30727e` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv03.pass.glif` | `e4a7b2eeee69a11da1f4e441991c04c20509c77e` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv04.alt1.glif` | `71586f053e0f288b1f1f374ae3d312580e4be969` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv04.alt2.glif` | `8e2802b9fb4170f14f38b5fd9aec987e0ed38566` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv04.alt3.glif` | `47b7a13fb6afcf04e7057eb08cb4b07a94c469e3` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv04.default.glif` | `dd673146c063da0dbae9edab1e15657f8a18c88a` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv04.fail.glif` | `fd70b52f086e2fa10d536816d0e861d0bb9c7978` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv04.pass.glif` | `a14a7534fa3f0bcd3b9f9a627b143f769ea76341` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv05.alt1.glif` | `1f11fb7ffda00508bf1d082d73e6d0bff6c495bc` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv05.alt2.glif` | `cf919bb818c68ba5f9a406d3f122a61b8e717b68` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv05.alt3.glif` | `1585d96887592dbc3a9453b0e30ac14149c05908` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv05.default.glif` | `0d6e567c11582fd7a04ebf79cbe84f87bf879ab9` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv05.fail.glif` | `6770430b399d6e2878effcfbcc71dd538563930a` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv05.pass.glif` | `b269f05bac8f258e01125a6921fb75e0b364612f` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv06.alt1.glif` | `938466d659027318159cadc22492b89214e23f24` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv06.alt2.glif` | `a426732e007a2abe534a0846363de1e59cce0b42` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv06.alt3.glif` | `132bfa767694725e9a0211411bcf60eb12936cc4` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv06.default.glif` | `cd26a7ec18c7b508f9685aed4b306f0f59ec29e7` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv06.fail.glif` | `c8b97d52f64167bf8efdef8df3fedfe4bf90763a` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv06.pass.glif` | `fb3276bfae31b78e01f5ed185af3f9244f0e8306` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv07.alt1.glif` | `4e96453a279563f9c730304fa8fe119a278db6f7` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv07.alt2.glif` | `91d57789988b9495271e8419618988ff433ab12c` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv07.alt3.glif` | `baeb6239d5d244932f0f004b17c4839e54daad17` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv07.default.glif` | `fe57830f645e5f1a3e1b747ab0e5c36396bdec1b` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv07.fail.glif` | `2c9074b880f96fa4821f68672243921eaff55f84` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv07.pass.glif` | `e9e384154c65d780ec91840169d48625b5e21ab4` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv08.alt1.glif` | `ca5c6a47b4bebb44e20be7f02617d319cf26ec95` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv08.alt2.glif` | `074a1a199670077f95a623c019eee80a0b7f5680` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv08.alt3.glif` | `840edb8726dd49483ba7b97b526145bf0655985a` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv08.default.glif` | `350e9cc497ba9697269ce7c73e423d5a5cd24e68` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv08.fail.glif` | `49eb44694e04620dc43252e7968df65eec56b229` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv08.pass.glif` | `ad988326382728b8e9290001a683509e4bec22f3` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv09.alt1.glif` | `486aefc02ff7563eb5653582ebaa6a008ee5f7e1` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv09.alt2.glif` | `90e881758aa8ae586d1a3d3a504db60b11450fa4` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv09.alt3.glif` | `98d75b15f074385d70fc4cc8d4c4e4b85f7b7fed` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv09.default.glif` | `0de50b1555ac3ec4904906e26a6e24c799a8c63e` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv09.fail.glif` | `76eff775b1dffb73633963df29eb5fc99c08ead6` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv09.pass.glif` | `d07ffd994c0558752a9e0127096abfeac79e17c7` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv10.alt1.glif` | `c9098077b94036bb583b717e4f99aea191ceb94b` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv10.alt2.glif` | `57be5c048f429cfa87b21b37a014de1b614217bb` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv10.alt3.glif` | `326d289954b9d49cf037c7d0367f5698feb8a841` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv10.default.glif` | `5ff0334b05c258d0ed3538c1caa6c4461f63c570` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv10.fail.glif` | `ebdf59051bb8acf02bdfdfd585464866b627973d` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv10.pass.glif` | `5e9df76375cc9409b7a157c1d90219e5ef811dc7` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv11.alt1.glif` | `d295b0b150f9a36d7cf0b51efe6636d90ab86d9c` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv11.alt2.glif` | `871b28fdcba285d140fd90cfa7d6e922e99d5d6f` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv11.alt3.glif` | `8b57cc87ad5cfefc1136dcf8204b94c30c79068b` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv11.default.glif` | `95481cc225227f2c5735702436eb73506c70574d` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv11.fail.glif` | `359be5b99557f9544f284e5431eb5cf6a67a1f63` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv11.pass.glif` | `4fa4cfef1ffd8e710b87bc4ba19df9251f5aada0` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv12.alt1.glif` | `51005b6c9c4a210c71914c33bcbdad712cc0ee36` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv12.alt2.glif` | `ed92836079c4fb95c4dbbb978c34f450aec9a728` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv12.alt3.glif` | `bcc9e7097da5ab937c51ed17d72fcc2e00547042` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv12.default.glif` | `741a191a10bfc6e24da474f1ad04609633ab235e` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv12.fail.glif` | `b5c8316b934c38620b7fa6e9df99e6772e819b0d` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv12.pass.glif` | `0b308d5edc59b01a6b87cee63a606f20a2e698a6` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv13.alt1.glif` | `f0988965fcd938152583a6ebe4b1b8b7977c841a` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv13.alt2.glif` | `29e23b10d1fc38d1e47e560633e6f87131b704ee` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv13.alt3.glif` | `77ad51cfd1cf006396b65769a9f26718dcb66e6c` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv13.default.glif` | `bd4e63e3460c9e6e5887b8709fd2ddd9c6a5f9c7` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv13.fail.glif` | `d69a0e6e412da093b82f18a3958f02d0bdd1f2a7` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv13.pass.glif` | `5a2f7ae7e231bb42eeb7c20079e15a2d7b525f51` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv14.alt1.glif` | `800281d0ff6cd70179520d5fd4323f5613e11c1b` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv14.alt2.glif` | `4ec3bf095cecbefb571061fa99bd4498144dc0ed` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv14.alt3.glif` | `2d140ed598e57d871f31ce31170dab19b77779f2` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv14.default.glif` | `62614d67d3152c265723affe077a80f1748a39af` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv14.fail.glif` | `31c76a3ce59f6a8ac584723c042f28e2fc0540bf` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv14.pass.glif` | `8e0ef5a9ae1b9e543c9b5705da7ba168635952f5` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv15.alt1.glif` | `4ca3481626be645af6cf86ee80ac7e3943ed7047` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv15.alt2.glif` | `706566027312a4cad709f3e5a81d88a3e6ac23ea` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv15.alt3.glif` | `c154a4b7968e37d2545534366303a31f8f2ee85c` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv15.default.glif` | `2292c5fb62c3a4bbce69118192a5411258a5f193` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv15.fail.glif` | `d1a0d88f9950fff5846a89c31bd96f4b5fa7ce79` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv15.pass.glif` | `9ebdad59a48efef6ea43fd1f21e82a0f333ab9b7` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv16.alt1.glif` | `90c058ce232baaddda77d77966436a41591c3341` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv16.alt2.glif` | `491b22037ce0c738179649c52ab75fa005103af1` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv16.alt3.glif` | `a2fdefdf9e17dda7a71b3a45c68d35d20964393d` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv16.default.glif` | `e2ea1a9ed86b38a69e71096ef39c4390eb6041f7` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv16.fail.glif` | `e29ef6c72148962f799db61faa87757daa86d172` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv16.pass.glif` | `5efd4ab611e74ab39dca6a019bc9874e53626cd6` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv17.alt1.glif` | `a3008d8b6e046708599cda8e1973c626f0d4e135` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv17.alt2.glif` | `5ebf625eea62669c10f46dbb659cf3f70f1bbca5` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv17.alt3.glif` | `f5a40a551e67b6f9afcbafc54901ecba02692a63` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv17.default.glif` | `7add0f5b83c61c361a789d83352f4461c3c1c8cf` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv17.fail.glif` | `ef4583acc6e662b3d0be2492d380e99034740ef3` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv17.pass.glif` | `2c8e1c871c027cb8e464b2191b3c5f152bc1d479` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv18.alt1.glif` | `f8af3cb5bf336e9ab80001ccc07564ecf23c9ff5` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv18.alt2.glif` | `499c200d86382930880f90227a0d7d7d8d985b61` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv18.alt3.glif` | `eba542f95da8f4abf2cb6090aba54138680614c6` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv18.default.glif` | `ab20bcb6ac86d37a84fb15d3158c918ff5b5afc4` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv18.fail.glif` | `dfa7613fe9b9f0a156b35f328e792fff405d9978` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv18.pass.glif` | `69ceda5496f58e6e20097ddf7454bb2d7366fb88` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv19.alt1.glif` | `96428d5703b1ef13d808d7d49f8667c7aeba2ae1` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv19.alt2.glif` | `9eafe46a078b04b87ea429f03421c6c121d5ed5e` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv19.alt3.glif` | `2c604e5f53e0c8ec412377d34d9e39e817c02ebe` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv19.default.glif` | `5e0103a85202f336da4c6e58ac25e51b3a56e29f` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv19.fail.glif` | `845192bd8e99ebfa8c2de1ff10bb1e0f5afc7a8b` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv19.pass.glif` | `0c8f47271ec4355b933e67ec3f10c3e5b512faf4` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv20.alt1.glif` | `a4c8095cfc62169799250352339af8be8f750f28` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv20.alt2.glif` | `5486cc901c28e0e58ce468f9ba7f2a2355004bd1` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv20.alt3.glif` | `43ab6c6e2e76cddcdf55ea73e362215a1474ba29` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv20.default.glif` | `bab0635106f5d1d30fc92e2da8172432330d2418` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv20.fail.glif` | `a1e8338e2b7fe760c6fa0eac91252e40e6e3b30b` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv20.pass.glif` | `05b93df1bedda5596c1a3143daae8cd34865c810` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv21.alt1.glif` | `c3ec741a06bac2fcf97cbe8394df1fddfb48a324` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv21.alt2.glif` | `3c6d29c46f060b0915eb960d5081b2ddb59b392e` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv21.alt3.glif` | `0ab1fef0738861ae6256c7470d88df6ba0c96754` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv21.default.glif` | `9c23e840cf4ecdd49d92bd93e74ff76612be4e39` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv21.fail.glif` | `acea67aead95938b0f1315340e728f9839eb9df5` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv21.pass.glif` | `99a51529ce009a9b577a63be67204d58b3349b64` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv22.alt1.glif` | `2b0f21f13b73fadb8ac4a534b46c6d67a9f5ffcb` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv22.alt2.glif` | `3cb9565d0ddd78f8b3969e107b82ba2f2a9895c7` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv22.alt3.glif` | `212288a48073c70dc7e4e71457805bf3f0afa59d` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv22.default.glif` | `478f5528a5be658634ba25e78bd8db2b9fdf1fa2` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv22.fail.glif` | `d8d40e5c88a0e6d0df61c74797a8d805bfda8067` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv22.pass.glif` | `62e71e33889210a9605f7c33741b46e52f8b720e` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv23.alt1.glif` | `6d39b16467bfafb4efae283b97b6dc155d829e5f` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv23.alt2.glif` | `d40502b27784776c6cbb33ce585e4c920afc7e03` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv23.alt3.glif` | `ef98a1311e3a552c422c8ccf50619ba3a5ec5549` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv23.default.glif` | `4f97c17d22329a780f90f26a1db5e9494de33166` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv23.fail.glif` | `1e89ce40e6ac4d3037377957de37c45da918cac0` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv23.pass.glif` | `7ee7861ce7fccc28ec6048d5fabfd41ccfcc6710` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv24.alt1.glif` | `73e48085f6ec3b0b2f7728f01edb723fcc18cdc0` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv24.alt2.glif` | `c2da6d3654f9f29746bcab267a48e4d4c81bf212` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv24.alt3.glif` | `0a3c76653383df54e9bed1b6ed8fe6df2b46b021` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv24.default.glif` | `fa75fee96c5d561dfb3cb3a44092dd689fc8cb2b` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv24.fail.glif` | `77b18ed861d305c6982c51ac30fd2bb3c78109c2` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv24.pass.glif` | `70e4f9d952686e1a8a5bcac5041861adb0fc9005` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv25.alt1.glif` | `23f8fb40f12bc5bae3ee1f5caf8bd80e75c2a6a5` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv25.alt2.glif` | `4f9ea6d2f92a9f638266b3badac17cfe59c2d50d` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv25.alt3.glif` | `58f9e850a12572dd708eb0d45ec84d0fcb8e0698` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv25.default.glif` | `16aff42e727941776c1650bb6f0a7b578640794c` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv25.fail.glif` | `b0692310a8a3401a39d67ded1b090a03213859b9` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv25.pass.glif` | `71d2662092a79cbc9ba9c0d63af77174077b9885` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv26.alt1.glif` | `b2c96361b5fdd6ff9ca2859d4cbe614f0e3e0e3f` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv26.alt2.glif` | `16da5170321239e48f46ff1d2f1b5e2eb9c07101` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv26.alt3.glif` | `e2c754c542a44f756d687b90ab2bd27c8acee249` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv26.default.glif` | `1b7eae87d04bba51e381178fa50189fb80fab0e6` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv26.fail.glif` | `13164870cfb0a249ec4f3760e756aecb29df4c48` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv26.pass.glif` | `d7e2037af0826128689c4c703e69681bced8517f` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv27.alt1.glif` | `faa9dad0e89c6ef7597926b5aafbb5c9561422f7` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv27.alt2.glif` | `84ddfd2bd13a913dbed62430ca980a7b35be6e75` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv27.alt3.glif` | `6054576209e4f5f40d3bf458a8058c8e47b730e5` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv27.default.glif` | `e09d7a9695011c5b0d4f4534969e7d60c3efb7ee` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv27.fail.glif` | `10524eeb1cfe79572f98a031f00b8943a8cb2e17` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv27.pass.glif` | `754fc4ba293adc3334ed427ee6ed9e27773817d4` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv28.alt1.glif` | `d13711c63a1aa6473bcaa5d70e870fc07e3a774c` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv28.alt2.glif` | `05b69972a4af538bd06fdd5f5ad1f3660852e379` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv28.alt3.glif` | `52edd02f17f252250cef31e5b0858b4458ad2c95` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv28.default.glif` | `06d631be01de2d5d825346b7f04eddf8c91369a4` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv28.fail.glif` | `3e863dc42e2e8e2d67257fe141fb370b1ffe0dfe` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv28.pass.glif` | `d52773427232fe77ee19e14fa8beaa3bc180f2d3` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv29.alt1.glif` | `86bc4932bcf75bd66b8f693bafe583ee8aaf1c6f` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv29.alt2.glif` | `b82f9e0620348badfac01c5f8381e95a1d1ce322` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv29.alt3.glif` | `a6a11ee389d916b60e2fc6d8540ddae303fa804b` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv29.default.glif` | `340e5fca272f1db8540ffb33fad023cb80d3ce2f` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv29.fail.glif` | `65fc39c3a21eb80ef1436634dbce8290fbcd146e` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv29.pass.glif` | `9b1109ac4388163a384af8f978a3be6f649175e3` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv30.alt1.glif` | `3c487092b4c6c9fcb5d852c64a72e5a33d338c35` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv30.alt2.glif` | `b3fe8afb49ab770ec9b9d0765a3a0273d8a6dac8` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv30.alt3.glif` | `37998f02fa3a12a29715245770e03ce3af341bb6` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv30.default.glif` | `48f9e5cbcb8e6ae45ed1bcb45403fa8fef616ebf` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv30.fail.glif` | `dc7ab695f62326f8afbfe9a9f5bed5500129a056` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv30.pass.glif` | `48eff7845a4f54e46346800ef77647396a81b49a` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv31.alt1.glif` | `908ccf3a49e2776086862ca45b27769a8cb8ced0` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv31.alt2.glif` | `3b733fcedb1562650d6deedf9acfa40dba6a1d27` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv31.alt3.glif` | `7c612ff84d0598b39d84d31d4d88fe50af85bd36` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv31.default.glif` | `27014521ecb25599927bf4971df3ab40444e3fbb` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv31.fail.glif` | `30daf53f441577ee8224ee57ac7f758d49fa5987` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv31.pass.glif` | `6226f299e39c1fa260c875bb6562bfbcd05d1d0a` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv32.alt1.glif` | `6cb66bf8fc9b416b544287848a147b3c2c415078` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv32.alt2.glif` | `4f311113fdebcbdaa3bc4c931fd95c146cb7e3c6` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv32.alt3.glif` | `6945c6b92f9a785a27c17577571716ca3cc5195c` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv32.default.glif` | `a61356fb28883f0aed152d391b7b660e713a1715` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv32.fail.glif` | `ef778c577f3602d98cbf283bb06499ed30164ec5` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv32.pass.glif` | `3d9a218ad1f98aa7fd487973e3365c3675b03be3` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv33.alt1.glif` | `44914524f53e0dbb71fe7484a14f248082026d91` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv33.alt2.glif` | `05a2d3e89c5bb2da9c240e69bc006f5e49472768` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv33.alt3.glif` | `570f6e9bd000ee3542e894616fc4daccbc6c7cd9` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv33.default.glif` | `984c174a25b2783a8360ea59056352235f1aaed9` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv33.fail.glif` | `1d7886dd27c813f69fb11741b6e26bd99cef3187` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv33.pass.glif` | `4b837565c7d763210c88f8c5bd55489eddf508d8` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv34.alt1.glif` | `5003e623ac69767208fc9b3e6c2bc26cb2bb6bd1` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv34.alt2.glif` | `40c602ebce6aef8f7ef5ae4acf3522c7782550dd` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv34.alt3.glif` | `2f4ab5a45ee7cdeb3bd5b98b6cc240c52b367968` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv34.default.glif` | `0589c99975ec6f106e7750441ad7b40cdb421d95` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv34.fail.glif` | `3991a3ccb612141917e12fbe059f995bd51d26e9` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv34.pass.glif` | `08b42b805a0b6faeb81291270ab1689e0c90ac7b` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv35.alt1.glif` | `0b74eb1dc0e8d9031cc287f59b1a99e72ee884dc` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv35.alt2.glif` | `a168426eb9d996e1a17257b012267eedf02ac177` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv35.alt3.glif` | `5a439ccbd9b9beda03cab2671c899395a4299a8e` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv35.default.glif` | `1bdd5305eb32f8734667c4dcc7164e06298ff6fe` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv35.fail.glif` | `21f8ebf63fb175038891cd3b0239511c48a7f207` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv35.pass.glif` | `fb5ebe36f77190d4b1397f282a4b38d75af763ff` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv36.alt1.glif` | `e24dd24373ad279b4a758355088b34bba1f9e0e1` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv36.alt2.glif` | `748608e7f04520719b10f42b8587474967cee7c5` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv36.alt3.glif` | `ef6c8400cd6876ee2607a5ffa51f6da0a0d56788` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv36.default.glif` | `94c4766450f782e3df52c3a2782e69a39ed71f43` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv36.fail.glif` | `2c8ef2f87fcbded19c0878883d43a20618074829` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv36.pass.glif` | `ba3f4ebb4f706931050ee962bcddb7e24e5880c1` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv37.alt1.glif` | `48a0fd03ccb0058555ef62c08dcbdc13645aed8b` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv37.alt2.glif` | `dd688e9325b99e6fbd4924600c79f29ce51ff2c8` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv37.alt3.glif` | `5af3ebfdf2958a03997175ec643065360797dc79` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv37.default.glif` | `629dc60962affa4d393d51d45d86331bdd5912c2` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv37.fail.glif` | `7040dd5936af927153fda6428d8d3d5bb942b289` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv37.pass.glif` | `fb27a4f7c2a0d0d06d70d7fbe842adfd3fa3e2ef` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv38.alt1.glif` | `d4eea10a2a0241532458675032349c474ee4a32f` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv38.alt2.glif` | `b0c8a69e442b993769b82b775989cb3e36b2dcd6` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv38.alt3.glif` | `509d19e7a8b977e87830ebc13b13720297d94d11` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv38.default.glif` | `3b6927fe5044f3c3d1490ec92a0a2e12a4f87d9d` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv38.fail.glif` | `2166c464e7dfe153258d0255fda49316da32fd41` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv38.pass.glif` | `c441c620205b5171b9a324adc037adeeba933553` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv39.alt1.glif` | `81ae972e9c532d4208c7ee51767ade416bbce5c4` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv39.alt2.glif` | `0773b2991de06b720f918705cefbcdff5bcc871c` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv39.alt3.glif` | `3555a38eff17484f0524af0f1e3fcd735f86faa9` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv39.default.glif` | `128a94c21cff409ba14cb6d893a03e2bafb86b1e` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv39.fail.glif` | `e4ed01f79c6f5590abb8d5754944cef41ced39e5` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv39.pass.glif` | `c9c764c64c291cb04bb358e5d24d93562306f20e` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv40.alt1.glif` | `8c3ec022f8151bd22bd857ae84d51473cda01a38` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv40.alt2.glif` | `aadb4a824e0393ba82385ada538ba0c9426690c6` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv40.alt3.glif` | `81ed9f2dcff7c54732ddb9ca636f791f38e131db` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv40.default.glif` | `4c0c91f3c37ad30bf541b3d7e0a1f6d882153358` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv40.fail.glif` | `7fe9d271062ffd4d76a8a544a77b61c17ed5ae33` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv40.pass.glif` | `805bdea010ee071dbf80f8dce599797c7bd44016` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv41.alt1.glif` | `7b2c2a31474f184d96f6d754bd7bbb6b1195b17c` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv41.alt2.glif` | `6747198beac27e870d66c37d554b4dacef1b7b26` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv41.alt3.glif` | `a3b83a26c4ce6acef32c636403e1dba7c3c94a23` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv41.default.glif` | `b8c8d15c5a3a0b0693087c6e3dd574b5cfe4e3eb` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv41.fail.glif` | `cfa06cdc4d95e009c3e88f43f94f82becdcf552d` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv41.pass.glif` | `a829ccb70dd493910d28ad420eb18241fe27d8a9` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv42.alt1.glif` | `4beccdeab28a9cc92cecca5018b871c738c7b892` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv42.alt2.glif` | `e452b558e1cfd812eb13bec61005a237aeb9ec65` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv42.alt3.glif` | `a177be3a7c7eaed39a3da9418969b2d33af9b3c6` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv42.default.glif` | `38cdc5112d105a1eb28eba2d14b0f0d7e1569bf1` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv42.fail.glif` | `91d118b4d5560e9d796baad47d50608e150a7378` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv42.pass.glif` | `0d39f29a41c40810476e41cddcb15ef272d28e74` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv43.alt1.glif` | `8a7b158b7aa707c0711b4278bff37ac0a900599a` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv43.alt2.glif` | `151f15c54b443af2e292b29e492ab5431fb7972e` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv43.alt3.glif` | `7ce815a36c54615d6dadded10b14cc4ff59bc6b1` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv43.default.glif` | `2628ba1c6252b52f472bd01ea17ff2b30d2f87c5` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv43.fail.glif` | `5a0f78eecabb9c6ea42bf065ac36dfb73ee19e53` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv43.pass.glif` | `7a3be575cd11e21ea17ba28124641f56ef8e819f` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv44.alt1.glif` | `6ef13aa094c5681503c2c790b17fb9b6efbd7eb5` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv44.alt2.glif` | `10dd3fd5d6a3e67bc48cd8af24b4a87d3744d336` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv44.alt3.glif` | `fcc0bfa756723a4f85f671f2a652cafb2863c376` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv44.default.glif` | `b014807486318a0211a4237814604d2cced92c07` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv44.fail.glif` | `c77aeb423afdd46345841bf0400ffeb54e87d443` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv44.pass.glif` | `09880727112ee0f4db58fbd84dc8d63ef565c4c0` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv45.alt1.glif` | `4d7a1e41934c87b047d3e802b0ea754e37c7e866` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv45.alt2.glif` | `2523a501882cfbd400ae1ab632781189d17c62ac` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv45.alt3.glif` | `a37c2cc84e2b7e0c833900cd22187adcd9ddf342` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv45.default.glif` | `36c4896a217083322b4949969d0cfa6ec8855a96` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv45.fail.glif` | `96b7b2708f24456272c635a49522cdd9d754825f` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv45.pass.glif` | `4a732d62b87bdd50a573164da7f9450bd64742aa` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv46.alt1.glif` | `ae07848b39881371144e576033e6c4dbd54cb6e2` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv46.alt2.glif` | `3aeec19ef2e6531011a8795702bab735927b7eef` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv46.alt3.glif` | `5b1ac3ef2609ad8a7a2362b774d0058447e23b52` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv46.default.glif` | `34b1dbcf040723773f6d309d9afcb0c55d5035db` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv46.fail.glif` | `f0394f31c2befb7ebe80867876600ad5434f8452` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv46.pass.glif` | `a29e865fb5f139c29e2b81dee334502badfb14f1` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv47.alt1.glif` | `fc0fa47cd8ff1dc58ade2f94515812438fb1d874` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv47.alt2.glif` | `a9b014a3bb6204a5b47dddc0b5e8adbf699c6bdb` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv47.alt3.glif` | `a96581cff6cc14eb7e2e22527bf5b9d700de9a93` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv47.default.glif` | `532bcf44f31f7f739d3af49802447e9e72faafce` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv47.fail.glif` | `a62703905d99d79da180f8c27772eb10eeaf779a` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv47.pass.glif` | `ee1f0dab29d07e2eb44318af3842895e7cd06c32` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv48.alt1.glif` | `a44b7ed9937941a754281acf3b7d9d0b66dad47b` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv48.alt2.glif` | `55a028e8a7f8a01c140d1de1ce02ea638ef01920` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv48.alt3.glif` | `8edd7a133851fb4cbea4e66bff3c3a0f01416a17` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv48.default.glif` | `2f5fe9cab04d80a95b91963b94a4571fe52d2d6d` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv48.fail.glif` | `390de4c4bb87b4d3119702d841fa796a74809bcb` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv48.pass.glif` | `7fac8d0e9c3db909072430eed93cc60ff246efd8` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv49.alt1.glif` | `a7b44d452f27181851684b8ff52b23380171544a` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv49.alt2.glif` | `4ee3424168b22e5296fb8ba31285acbeb297ff87` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv49.alt3.glif` | `6d59af4bd5e02678a85ac03005ff00f8d73e3600` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv49.default.glif` | `5a875941fb0b5b3e825a7450735ca59884f926b3` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv49.fail.glif` | `b737bc7fc26c055632e7bf5a38624cc3b4948908` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv49.pass.glif` | `4a0b02215f665f614eb3c66d619442b37e322442` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv50.alt1.glif` | `23ed1af7d78b0251f1eb5ed14e54bd1258babfc7` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv50.alt2.glif` | `9f0067b5dc1e03387c852ed60b5683a821b53d25` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv50.alt3.glif` | `55ba4fe86cfc210e49edb7f3c634528e428405d1` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv50.default.glif` | `3690b67d0bcf39699672b4c837936631f9900853` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv50.fail.glif` | `f7c618568f4afb78af54e5187497c30bd79176af` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv50.pass.glif` | `20c4527659210f0e83d187664a22592fa2aef647` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv51.alt1.glif` | `1d2b9e42c16b62ee03126035222a461c527df4ea` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv51.alt2.glif` | `10550b47bcccf42c2ffa4444736b166825727eac` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv51.alt3.glif` | `3894ca675639e4859c75693262fa8e3da36ee4f2` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv51.default.glif` | `7f2c8f9a79968552b6aca415760a1c22820dcc72` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv51.fail.glif` | `02b6e7e2971679bd4d471f5eb3fa603dc6faf885` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv51.pass.glif` | `d67322c52dae5040987d8a1444c01a5f0615717f` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv52.alt1.glif` | `343a41a3a6f0162c723fec0704e69862c2453c64` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv52.alt2.glif` | `87d4a50707dd968c12409c8b8664432689f8b1ae` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv52.alt3.glif` | `1f37685a2c76b87316fd662b6fd6b66256e88e78` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv52.default.glif` | `dcb4c3dc6e88baa7494f62faaabe1c5d1f973469` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv52.fail.glif` | `371747f2babea203620fa0d89373b9c4be5117a2` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv52.pass.glif` | `e2aa6568aeceb03892e7231707ee648722039d14` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv53.alt1.glif` | `57a13dbe04f5264f49de3dfcf057003364b257b8` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv53.alt2.glif` | `caa83510f651d0fa84a70d2af9a5d7dcecc30053` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv53.alt3.glif` | `46530769e73a21da3372a0842e1b26e67ef716c4` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv53.default.glif` | `b56172998e1328c1a4cb2048d13ebf46980cbc77` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv53.fail.glif` | `f64d405c09e4666b626b6dc0f30249a2c2a39c91` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv53.pass.glif` | `be23d7be11bc70126aa288ea384b38209e179fdf` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv54.alt1.glif` | `50462e8478ec19a3ce6fd713ca26a637eddd6779` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv54.alt2.glif` | `c2b366c95768ac0d90cb4d2bba35bc8e3839cea3` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv54.alt3.glif` | `bc660eecb05a0654adbe6e37023997fd69ad6140` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv54.default.glif` | `47441f100279b554f60519c156cf0b49baa42001` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv54.fail.glif` | `9f57d2fd8021fc6b4f17247bf852804d2440205b` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv54.pass.glif` | `923c8199fba51409cfcd75be055b5bee1681a6e7` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv55.alt1.glif` | `63ad08b00ab6bee5412c4c1ffa3013842de78a69` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv55.alt2.glif` | `814cb4eae90abecb284569e12dcc1c03c2cba69c` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv55.alt3.glif` | `68b4ab024a0e3ccf6aafd6951fb01f613b076a2c` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv55.default.glif` | `18a48f85f04b0c3caee46496bcc283d62fdad845` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv55.fail.glif` | `1a19f28ad8046f7b8e958439ac298fde9f8cf068` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv55.pass.glif` | `15c7478cf9c8c988e1dfeb224530f6c6041a27df` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv56.alt1.glif` | `c5c7449d05c4bf1530298ed4e1426b22183be69e` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv56.alt2.glif` | `54aae314976e219766b1822938fdd69bee815db2` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv56.alt3.glif` | `c35bfc986872db236b30cfa192a01629ff292407` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv56.default.glif` | `e368039143fcb1ed90ffdee9419c466ba1adc1a9` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv56.fail.glif` | `3e980af3b53eea7386778dc0baa06c504668413a` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv56.pass.glif` | `dd99613b1e96b8aa5addb10ea62d0f7103d0dc8a` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv57.alt1.glif` | `44e0b8cf49545f6063882c2fb8b053e3bba2c038` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv57.alt2.glif` | `9719be0f3e62d61999bb89558ff0b9015f7de66b` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv57.alt3.glif` | `65af1c5a8f4de6fc1437b4387a093f22df8b439f` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv57.default.glif` | `c3ce4199c2c4572b5c276b110639a7bb61be4abd` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv57.fail.glif` | `cb55e522805a6dcb29a523de76d805d44b90ff25` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv57.pass.glif` | `86477792735feaf5823f0a41c6195e7e7909cc13` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv58.alt1.glif` | `5a7ad30c1e53f071e9e2a692e40d95fc670f15e3` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv58.alt2.glif` | `e0bdf0de5364f556daa04af34ee5ec1bd37c3067` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv58.alt3.glif` | `78f83cac8aa2d188d4c053d61dcab61842e54d8f` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv58.default.glif` | `30c409b9745c48fb4687e2766243d57361cd13f5` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv58.fail.glif` | `200a20ffe524027779f024ec53910b11f4017c1b` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv58.pass.glif` | `61c626f75e4a3215c622ee085713eb4a82609b25` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv59.alt1.glif` | `94269d24ab3da2acd62fb81cc5301b398aa7eec4` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv59.alt2.glif` | `efc68c683f433777dcf95b1a6fb3f260df91a264` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv59.alt3.glif` | `d7fc707894e3686e38a06f8053884bc437dc71ce` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv59.default.glif` | `0df50470c0b863564ec4c79c7a4fded8522a7973` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv59.fail.glif` | `2d8736e8d619346c8a209390bf75ef745648592f` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv59.pass.glif` | `28293fa0c45800c666d8ff2966e810f46bc5b79d` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv60.alt1.glif` | `ba8d4384017a25ed339c16821d712ab6c61d5545` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv60.alt2.glif` | `9b567955f6b1d19731c962f331056a85c4bb841f` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv60.alt3.glif` | `08cc737caee12a6cb8c1eba942441be1ab664f73` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv60.default.glif` | `455bf2cb0eb1b8c67add4a33a9b1e14305cb05e0` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv60.fail.glif` | `0fc16e8eabd9a9f53e9ebc98ecbb1c5f6c4f188b` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv60.pass.glif` | `bd8ecfaf8b6e1ad361a575bcaab70c63823b806b` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv61.alt1.glif` | `97f973ada46353a9fefb96ae7c0d25670f313c1c` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv61.alt2.glif` | `4a70ec9236ce8b44c1a43afe505ffad8cb2e2547` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv61.alt3.glif` | `003e0603f1ff9a36576893cb602900470ca06f53` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv61.default.glif` | `10522e379a54bf0949a0860046cb56dac6dfc6ef` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv61.fail.glif` | `7793ded463c27e6dae0e4d757920eddf6837d59d` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv61.pass.glif` | `cf014e39d2d204cb9eff589b5353e570aaddb2bd` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv62.alt1.glif` | `f81e419d7b58bdf5727805e246d92810016503a3` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv62.alt2.glif` | `33cfc32ae8758c0f3f811cc0b4e814dcb76fa318` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv62.alt3.glif` | `ddf3027b4aac426e2f049cae2569c7253d24da77` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv62.default.glif` | `f394c3ccfca2567de6f38f3a3236a593d30430f8` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv62.fail.glif` | `30ddd847f66a94e2ddfde08b4895060929709f41` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv62.pass.glif` | `1539f9c37d1d4df5ac90ba61e9b0b4a2ad6e8e79` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv63.alt1.glif` | `d1221c8b73a705ed3091ac9e320dba1cdcfb0c8e` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv63.alt2.glif` | `6b0c357195a476ee99ef4cd0b8c1c4b1ae72f102` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv63.alt3.glif` | `63c692ebd78dbeeefd7f003c79d3358cd98f2a90` | 1631 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv63.default.glif` | `161a664d8a6cc698613aa16f14e41aff08482044` | 6363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv63.fail.glif` | `776e032ed69172212ae0494cdabe1b22ad1b1a3e` | 1607 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`testing/web-platform/tests/css/css-fonts/support/fonts/gsubtest-lookup3.ufo/glyphs/cv63.pass.glif` | `c195bd3e554e19ccb5dad5851bc3b3e8769bd143` | 6336 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+## Validation and limits
+
+Every listed blob was read from the pinned Git tree and its Git SHA-1 was recomputed. Extraction is structural only. Read implementations, callers, build conditions, and tests before making a behavior claim. Runtime behavior and historical reasons remain unverified. Reproduce a file with `git show 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b:path` in the corresponding source clone. The full study coverage and navigation note records aggregate results.

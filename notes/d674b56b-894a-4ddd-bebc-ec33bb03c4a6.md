@@ -1,0 +1,1013 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:14:46.642314+00:00","paths":["dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__gl-fragcoord-multisampling-bug.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__global-invariant-does-not-leak-across-shaders.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__if-return-and-elseif.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__in-parameter-passed-as-inout-argument-and-global.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__init-array-with-loop.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__invariant-does-not-leak-across-shaders.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__logic-inside-block-without-braces.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__long-expressions-should-not-crash.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__loop-if-loop-gradient.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__modulo-arithmetic-accuracy.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__multiplication-assignment.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__nested-functions-should-not-crash.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__nested-loops-with-break-and-continue.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__nested-sequence-operator.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__pow-of-small-constant-in-user-defined-function.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__pow-with-constant-exponent-should-not-crash.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__qualcomm-crash.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__qualcomm-loop-with-continue-crash.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__sampler-array-struct-function-arg.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__sampler-array-using-loop-index.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__sampler-struct-function-arg.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__sequence-operator-evaluation-order.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__sketchfab-lighting-shader-crash.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__struct-constructor-highp-bug.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__struct-with-single-member-constructor.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__temp-expressions-should-not-crash.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__unary-minus-operator-float-bug.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__undefined-index-should-not-crash.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__uniforms-should-not-lose-values.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__varying-arrays-should-not-be-reversed.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__vector-matrix-constructor-scalarization.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__vector-scalar-arithmetic-inside-loop-complex.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__vector-scalar-arithmetic-inside-loop.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-bvec2.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-bvec3.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-bvec4.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-ivec2.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-ivec3.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-ivec4.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-mat2.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-mat3.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-mat4.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-vec-mat-corner-cases.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-vec-mat-index.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-vec2.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-vec3.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-vec4.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-abs.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-acos.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-asin.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-atan-xy.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-atan.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-ceil.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-clamp-float.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-clamp-gentype.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-cos.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-cross.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-distance.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-dot.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-faceforward.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-floor.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-fract.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-length.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-max-float.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-max-gentype.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-min-float.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-min-gentype.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-mix-float.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-mix-gentype.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-mod-float.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-mod-gentype.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-normalize.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-reflect.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-sign.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-sin.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-smoothstep-float.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-smoothstep-gentype.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-step-float.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-step-gentype.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__add_int_float.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__add_int_mat2.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__add_int_mat3.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__add_int_mat4.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__add_int_vec2.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__add_int_vec3.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__add_int_vec4.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__add_ivec2_vec2.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__add_ivec3_vec3.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__add_ivec4_vec4.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__assign_int_to_float.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__assign_ivec2_to_vec2.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__assign_ivec3_to_vec3.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__assign_ivec4_to_vec4.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__construct_struct.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__divide_int_float.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__divide_int_mat2.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__divide_int_mat3.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__divide_int_mat4.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__divide_int_vec2.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__divide_int_vec3.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__divide_int_vec4.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__divide_ivec2_vec2.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__divide_ivec3_vec3.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__divide_ivec4_vec4.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__equal_int_float.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__equal_ivec2_vec2.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__equal_ivec3_vec3.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__equal_ivec4_vec4.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__function_int_float.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__function_ivec2_vec2.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__function_ivec3_vec3.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__function_ivec4_vec4.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__greater_than.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__greater_than_equal.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__less_than.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__less_than_equal.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__multiply_int_float.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__multiply_int_mat2.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__multiply_int_mat3.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__multiply_int_mat4.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__multiply_int_vec2.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__multiply_int_vec3.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__multiply_int_vec4.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__multiply_ivec2_vec2.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__multiply_ivec3_vec3.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__multiply_ivec4_vec4.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__not_equal_int_float.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__not_equal_ivec2_vec2.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__not_equal_ivec3_vec3.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__not_equal_ivec4_vec4.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__subtract_int_float.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__subtract_int_mat2.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__subtract_int_mat3.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__subtract_int_mat4.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__subtract_int_vec2.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__subtract_int_vec3.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__subtract_int_vec4.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__subtract_ivec2_vec2.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__subtract_ivec3_vec3.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__subtract_ivec4_vec4.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__ternary_int_float.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__ternary_ivec2_vec2.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__ternary_ivec3_vec3.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__ternary_ivec4_vec4.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__literals__float_literal.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__literals__literal_precision.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__literals__overflow_leak.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__matrices__glsl-mat3-construction.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__matrices__glsl-mat4-to-mat3.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__matrices__matrix-compound-multiply.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__attrib-location-length-limits.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__boolean_precision.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__const-variable-initialization.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__embedded-struct-definitions-forbidden.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__empty-declaration.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__empty_main.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__expression-list-in-declarator-initializer.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__fragcolor-fragdata-invariant.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__gl_position_unset.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__global-variable-init.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__glsl-function-nodes.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__glsl-long-variable-names.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__glsl-vertex-branch.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__large-loop-compile.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__local-variable-shadowing-outer-function.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__non-ascii-comments.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__non-ascii.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__re-compile-re-link.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__sampler-operand.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__sequence-operator-returns-constant.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-precision-format-obeyed.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-struct-scope.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-uniform-packing-restrictions.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-varying-packing-restrictions.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-256-character-define.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-256-character-identifier.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-257-character-define.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-257-character-identifier.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-_webgl-identifier.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-arbitrary-indexing.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-arbitrary-indexing.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-array-of-structs-containing-arrays.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-array-of-structs-uniform.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-attrib-array.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-attrib-struct.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-clipvertex.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-comma-assignment.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-comma-conditional-assignment.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-comma-separated-variable-declarations.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-conditional-scoping-negative.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-conditional-scoping.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-default-precision.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-default-precision.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-dfdx-no-ext.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-dfdx.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-do-loop.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-error-directive.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-explicit-int-cast.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-float-return-value.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-for-loop.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-for-scoping.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-frag-depth.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-function-recursion.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-function-scoped-struct.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-functional-scoping.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-glcolor.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-gles-1.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-gles-symbol.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-global-variable-precision-mismatch.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-glprojectionmatrix.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-hex-int-constant-macro.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-implicit-vec3-to-vec4-cast.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-include.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-int-return-value.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-invalid-identifier.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-ivec2-return-value.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-ivec3-return-value.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-ivec4-return-value.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-limited-indexing.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-long-line.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-non-ascii-error.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-non-reserved-words-1-of-8.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-non-reserved-words-2-of-8.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-non-reserved-words-3-of-8.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-non-reserved-words-4-of-8.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-non-reserved-words-5-of-8.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-non-reserved-words-6-of-8.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-non-reserved-words-7-of-8.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-non-reserved-words-8-of-8.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-precision.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-preprocessor-whitespace.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-quoted-error.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-reserved-words.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-short-circuiting-operators.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-similar-uniform-array-names.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-too-many-uniforms.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-two-initializer-types.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-undefined-preprocessor-symbol.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-uniform-in-loop-condition.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-vec2-return-value.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-vec3-return-value.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-vec4-return-value.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-vec4-vec3-vec4-conditional.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-version-100.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-version-100.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-version-120.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-version-130.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-webgl-identifier.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-while-loop.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-without-precision.frag.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shaders-with-constant-expression-loop-conditions.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shaders-with-invariance.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shaders-with-mis-matching-uniforms.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shaders-with-mis-matching-varyings.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shaders-with-missing-varyings.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shaders-with-name-conflicts.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shaders-with-uniform-structs.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shaders-with-varyings.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shared.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__struct-as-inout-parameter.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__struct-as-out-parameter.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__struct-assign.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__struct-equals.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__struct-mixed-array-declarators.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__struct-nesting-exceeds-maximum.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__struct-nesting-of-variable-names.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__struct-nesting-under-maximum.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__struct-specifiers-in-uniforms.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__struct-unary-operators.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__ternary-operator-on-arrays.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__ternary-operators-in-global-initializers.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__ternary-operators-in-initializers.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__uniform-location-length-limits.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__uninitialized-local-global-variables.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__preprocessor__comments.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__preprocessor__macro-expansion-tricky.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__reserved___webgl_field.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__reserved___webgl_function.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__reserved___webgl_struct.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__reserved___webgl_variable.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__reserved__webgl_field.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__reserved__webgl_function.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__reserved__webgl_struct.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__reserved__webgl_variable.vert.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__samplers__glsl-function-texture2d-bias.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__samplers__glsl-function-texture2dlod.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__samplers__glsl-function-texture2dproj.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__samplers__glsl-function-texture2dprojlod.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__variables__gl-fragcoord-xy-values.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__variables__gl-fragcoord.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__variables__gl-fragdata-and-fragcolor.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__variables__gl-frontfacing.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__variables__gl-pointcoord.html","dom/canvas/test/webgl-conf/generated/test_conformance__glsl__variables__glsl-built-ins.html","dom/canvas/test/webgl-conf/generated/test_conformance__limits__gl-line-width.html","dom/canvas/test/webgl-conf/generated/test_conformance__limits__gl-max-texture-dimensions.html","dom/canvas/test/webgl-conf/generated/test_conformance__limits__gl-min-attribs.html","dom/canvas/test/webgl-conf/generated/test_conformance__limits__gl-min-textures.html","dom/canvas/test/webgl-conf/generated/test_conformance__limits__gl-min-uniforms.html","dom/canvas/test/webgl-conf/generated/test_conformance__misc__bad-arguments-test.html","dom/canvas/test/webgl-conf/generated/test_conformance__misc__boolean-argument-conversion.html","dom/canvas/test/webgl-conf/generated/test_conformance__misc__delayed-drawing.html","dom/canvas/test/webgl-conf/generated/test_conformance__misc__error-reporting.html","dom/canvas/test/webgl-conf/generated/test_conformance__misc__expando-loss.html","dom/canvas/test/webgl-conf/generated/test_conformance__misc__functions-returning-strings.html","dom/canvas/test/webgl-conf/generated/test_conformance__misc__hint.html","dom/canvas/test/webgl-conf/generated/test_conformance__misc__instanceof-test.html","dom/canvas/test/webgl-conf/generated/test_conformance__misc__invalid-passed-params.html","dom/canvas/test/webgl-conf/generated/test_conformance__misc__is-object.html","dom/canvas/test/webgl-conf/generated/test_conformance__misc__null-object-behaviour.html","dom/canvas/test/webgl-conf/generated/test_conformance__misc__object-deletion-behaviour.html","dom/canvas/test/webgl-conf/generated/test_conformance__misc__shader-precision-format.html","dom/canvas/test/webgl-conf/generated/test_conformance__misc__type-conversion-test.html","dom/canvas/test/webgl-conf/generated/test_conformance__misc__uninitialized-test.html","dom/canvas/test/webgl-conf/generated/test_conformance__misc__webgl-specific-stencil-settings.html","dom/canvas/test/webgl-conf/generated/test_conformance__misc__webgl-specific.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__constants.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__getContext.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__methods.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__quickCheckAPI-A.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__quickCheckAPI-B1.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__quickCheckAPI-B2.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__quickCheckAPI-B3.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__quickCheckAPI-B4.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__quickCheckAPI-C.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__quickCheckAPI-D_G.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__quickCheckAPI-G_I.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__quickCheckAPI-L_S.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__quickCheckAPI-S_V.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__webGLArrays.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__bindBuffer.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__bindBufferBadArgs.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__bindFramebufferLeaveNonZero.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__bufferData.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__bufferDataBadArgs.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__bufferSubData.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__bufferSubDataBadArgs.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__copyTexImage2D.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__copyTexImage2DBadArgs.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__copyTexSubImage2D.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__copyTexSubImage2DBadArgs.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__deleteBufferBadArgs.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__drawArrays.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__drawElements.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__isTests.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__isTestsBadArgs.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__readPixels.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__readPixelsBadArgs.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__texImage2D.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__texImage2DBadArgs.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__texImage2DHTML.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__texImage2DHTMLBadArgs.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__texSubImage2D.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__texSubImage2DBadArgs.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__texSubImage2DHTML.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__texSubImage2DHTMLBadArgs.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__uniformMatrix.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__uniformMatrixBadArgs.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__uniformf.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__uniformfArrayLen1.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__uniformfBadArgs.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__uniformi.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__uniformiBadArgs.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__vertexAttrib.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__vertexAttribBadArgs.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__vertexAttribPointer.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__vertexAttribPointerBadArgs.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__glsl__arrayOutOfBounds.html","dom/canvas/test/webgl-conf/generated/test_conformance__more__glsl__uniformOutOfBounds.html","dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__context-attribute-preserve-drawing-buffer.html","dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__context-creation-worker.html","dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__context-creation.html","dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__context-lost-restored-worker.html","dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__context-lost-restored.html","dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__context-lost-worker.html","dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__context-lost.html","dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__methods-worker.html","dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__methods.html","dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__offscreencanvas-resize.html","dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__offscreencanvas-timer-query.html","dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__offscreencanvas-transfer-image-bitmap.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__abs__abs_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__acos__acos_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__all__all_001_to_004.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__any__any_001_to_004.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__array__array_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__asin__asin_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__atan__atan_001_to_008.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__atan__atan_009_to_012.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__biConstants__biConstants_001_to_008.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__biConstants__biConstants_009_to_016.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__biuDepthRange__biuDepthRange_001_to_002.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_001_to_008.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_009_to_016.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_017_to_024.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_025_to_032.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_033_to_040.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_041_to_048.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_049_to_056.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_057_to_064.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_065_to_072.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_073_to_080.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_081_to_088.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_089_to_096.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_097_to_104.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_105_to_112.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_113_to_120.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_121_to_128.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_129_to_136.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_137_to_144.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_145_to_152.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_153_to_160.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_161_to_168.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_169_to_176.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_177_to_178.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__built_in_varying_array_out_of_bounds__built_in_varying_array_out_of_bounds_001_to_001.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__ceil__ceil_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__clamp__clamp_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__control_flow__control_flow_001_to_008.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__control_flow__control_flow_009_to_010.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__cos__cos_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__cross__cross_001_to_002.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__default__default_001_to_001.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__degrees__degrees_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__discard__discard_001_to_002.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__distance__distance_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__dot__dot_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__equal__equal_001_to_008.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__equal__equal_009_to_012.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__exp2__exp2_001_to_008.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__exp2__exp2_009_to_012.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__exp__exp_001_to_008.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__exp__exp_009_to_012.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__faceforward__faceforward_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__floor__floor_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__fract__fract_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_001_to_008.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_009_to_016.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_017_to_024.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_025_to_032.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_033_to_040.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_041_to_048.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_049_to_056.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_057_to_064.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_065_to_072.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_073_to_080.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_081_to_088.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_089_to_096.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_097_to_104.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_105_to_112.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_113_to_120.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_121_to_126.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__gl_FragCoord__gl_FragCoord_001_to_003.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__gl_FrontFacing__gl_FrontFacing_001_to_001.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__greaterThanEqual__greaterThanEqual_001_to_008.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__greaterThan__greaterThan_001_to_008.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__inversesqrt__inversesqrt_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__length__length_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__lessThanEqual__lessThanEqual_001_to_008.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__lessThan__lessThan_001_to_008.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__log2__log2_001_to_008.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__log2__log2_009_to_012.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__log__log_001_to_008.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__log__log_009_to_012.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__mat3__mat3_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__mat__mat_001_to_008.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__mat__mat_009_to_016.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__mat__mat_017_to_024.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__mat__mat_025_to_032.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__mat__mat_033_to_040.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__mat__mat_041_to_046.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__matrixCompMult__matrixCompMult_001_to_004.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__max__max_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__min__min_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__mix__mix_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__mod__mod_001_to_008.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__normalize__normalize_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__notEqual__notEqual_001_to_008.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__notEqual__notEqual_009_to_012.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__not__not_001_to_004.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__operators__operators_001_to_008.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__operators__operators_009_to_016.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__operators__operators_017_to_024.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__operators__operators_025_to_026.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__pow__pow_001_to_008.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__pow__pow_009_to_016.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__pow__pow_017_to_024.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__radians__radians_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__reflect__reflect_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__refract__refract_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__sign__sign_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__sin__sin_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__smoothstep__smoothstep_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__sqrt__sqrt_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__step__step_001_to_006.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__struct__struct_001_to_008.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__struct__struct_009_to_016.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__struct__struct_017_to_024.html","dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__struct__struct_025_to_032.html"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013"}} -->
+# firefox/dom structural source map 101
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. This is an automated navigation map, not a behavior review.
+Each row gives the repository-relative path, Git blob ID, byte size, role inferred from the path, declaration candidates, and literal dependency candidates. `@N` is the source line.
+Candidates come from line-based patterns. They can miss multiline, anonymous, macro-generated, and language-specific declarations or match comments and fixture text. Dependencies are not resolved imports, runtime calls, or a complete graph. No candidates does not mean no functions or dependencies.
+Imported code and tests are included. Binary and non-UTF-8 files have a census entry but no declaration extraction. Symlink contents are scanned as text, not followed. No uncommitted changes, build products, ignored files, or untracked files are studied.
+
+## File map
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__gl-fragcoord-multisampling-bug.html` | `366d7ff96546758797c77faca1cd2b01279e0275` | 556 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__global-invariant-does-not-leak-across-shaders.html` | `8a0f8e95795bf8360bc8e55f6a6808ea7c116bf7` | 571 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__if-return-and-elseif.html` | `8e40d58045ae0f1d7ad1b817211caf4cc354aaff` | 546 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__in-parameter-passed-as-inout-argument-and-global.html` | `4b04cf53d0824886e57e1b602cb7345376eadd34` | 574 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__init-array-with-loop.html` | `e249098d4190131472d3745a8baedf481705ab58` | 546 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__invariant-does-not-leak-across-shaders.html` | `30cb896dcf182c34545a521c06a7f3f0a69b349d` | 564 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__logic-inside-block-without-braces.html` | `39200dfc1e94a070e62ca8ef8132f21242db7e4f` | 559 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__long-expressions-should-not-crash.html` | `72decedf8d37519666ba77083ea69a6d7bc5e92a` | 559 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__loop-if-loop-gradient.html` | `a37c9df87bc3777451cf6ef3951d9654706b0b11` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__modulo-arithmetic-accuracy.html` | `dfbe4c85ae302ebe6df4f19558c65d1e299a4adc` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__multiplication-assignment.html` | `da4ad29a39575bcb777e19c8cc7fe0799c507d50` | 551 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__nested-functions-should-not-crash.html` | `735e2dfc9a6ab1b9c37eeb39b7ecef53a2eb1f4d` | 559 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__nested-loops-with-break-and-continue.html` | `5f405d64815bafb5173cfcee486da345d82ed609` | 562 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__nested-sequence-operator.html` | `2ba8dcb4728df81d56b91b88937d3846429c5aec` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__pow-of-small-constant-in-user-defined-function.html` | `45888f12659cdae258b6f65029af267f1cf49929` | 572 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__pow-with-constant-exponent-should-not-crash.html` | `da1646f1ba51ddaa0d5724f9a59cdacb199cd931` | 569 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__qualcomm-crash.html` | `a066c4bf82435c3edef3fe53307acff19c8532fe` | 540 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__qualcomm-loop-with-continue-crash.html` | `3283e09a6750bd98f97eb946ac034fbbb0ffa287` | 559 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__sampler-array-struct-function-arg.html` | `3c7a05ed1017800a3652e8aaef2ab0b9bb50f7cb` | 559 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__sampler-array-using-loop-index.html` | `1be5126290bbf0c03fbbd9138ed3f4c0a9ff891c` | 556 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__sampler-struct-function-arg.html` | `75a03cd7f743c4ab143e71f575f8bdf4b6cea27b` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__sequence-operator-evaluation-order.html` | `8de50c5fe4dbdfbdd983a5a605b311984a34a276` | 560 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__sketchfab-lighting-shader-crash.html` | `e9284ba4a58ac902333e78c8368beafa4076cc95` | 557 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__struct-constructor-highp-bug.html` | `3aaa44283a3d6194d420d71f152b919a7239bdf0` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__struct-with-single-member-constructor.html` | `89dc047c1d97babcb8e224e35812e1b2f7ccaea8` | 563 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__temp-expressions-should-not-crash.html` | `43de19a72983a12fe192848bf0347f3513338702` | 559 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__unary-minus-operator-float-bug.html` | `df250ffe098dca96587aca5115437e2f3ee75720` | 556 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__undefined-index-should-not-crash.html` | `15867d19110f66e03c0c989ba5d188cb6bf191d0` | 558 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__uniforms-should-not-lose-values.html` | `4390e32a347b8b12465048fe2f5ce1c3804f134a` | 557 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__varying-arrays-should-not-be-reversed.html` | `422f5f372e7d0a341a8c95a8cbf3638c8b0320cb` | 563 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__vector-matrix-constructor-scalarization.html` | `1b198f7e6c89a9d2b91f81a742afaac6c032836f` | 565 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__vector-scalar-arithmetic-inside-loop-complex.html` | `93f3c3d1c0e200970c281e37bf2507bfd4d5a7a9` | 570 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__bugs__vector-scalar-arithmetic-inside-loop.html` | `c4eb199e34d8b160b38f1919de7807737b452456` | 562 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-bvec2.html` | `1f08fd4fd47318c14ef98b62ab3d20d87e2dc649` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-bvec3.html` | `e729f89f523abf0cbda48e5ec604563d2259a3de` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-bvec4.html` | `f52926f7e954793cd6456831991c069b837fb3b6` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-ivec2.html` | `4751e019d89b7b59d94e3ce20bbc403ea492199e` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-ivec3.html` | `cd1076173952949b5a198f80de9a5e102c1531ed` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-ivec4.html` | `55eba7344b1dd087937993997c7a44829316c99f` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-mat2.html` | `ed92f9538337dad42114b151b2cb7d2483c736ca` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-mat3.html` | `94ea44c0b2ab46c35d215f73caa0ba01ac5a9784` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-mat4.html` | `5a008cd698e6971926f69ae610bb675bb1cc5167` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-vec-mat-corner-cases.html` | `acfb6cb3a2797bd899937f0b161a54b041efb8d3` | 569 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-vec-mat-index.html` | `deaf099432a8a9fc9513097d16d352ea464457a7` | 562 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-vec2.html` | `4748b346970dab0add5ad5f355e2c3adcbb06df2` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-vec3.html` | `5576e99582b2e3cfb0a9ad86bafbc04afb32fc80` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__constructors__glsl-construct-vec4.html` | `9b97de6a4ac281013394081de456949661f7083d` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-abs.html` | `1e090f9be8ab529cd8d2de61fa7deb9c27d06927` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-acos.html` | `cb6523e97ba274d996ef40a40daf89648bec0743` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-asin.html` | `89d48965c683141d261f52bc19b73d73f0028aa4` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-atan-xy.html` | `083fd7e3b8bcde2289d348cdf8f1cfa4c28f47ef` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-atan.html` | `65b36f5b67b983af6eda721414cda6ac7d3654d6` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-ceil.html` | `5eccd8be6ce67ecda05ed8ad27b2cbfc93978890` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-clamp-float.html` | `57f7cf720fba1d731cdb69e7c265c30acfaafd0c` | 556 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-clamp-gentype.html` | `eca71c919cc24fd71f18abbaf5ab2b9ae45188bb` | 558 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-cos.html` | `5e99d52c2c7a977eccdfae2d7783f43cbdbc0765` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-cross.html` | `a0d61fbda01880e84f759ffbfea9c12fd5a380b6` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-distance.html` | `eb59483296b9d68b6cc39f5a1974b5212fc72f1d` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-dot.html` | `0b194e60b905876bf62983c7ef62dbc94c561864` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-faceforward.html` | `ba03abd87ab8a60326927afd435135039c937811` | 556 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-floor.html` | `47dee7b99c9f8d215cf59043257ffcaf2dc6d27d` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-fract.html` | `3129ca58fe6aa4f2b588b6925e63d6199585d93a` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-length.html` | `a38e84159a72e5080eaf4af5e45e95dc603f3eab` | 551 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-max-float.html` | `9cec6186cc274365d0d48179adeb20ef47c26bae` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-max-gentype.html` | `6229f1c012f9a7e7df906eb92cd22f060ba56dd9` | 556 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-min-float.html` | `c68850ac79c114c3220fac025aac8bd3582e5992` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-min-gentype.html` | `a81eb63c3cfc6ff5479176460c4ad15c8608463b` | 556 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-mix-float.html` | `3fba4326015a56b626ac64d1e2d450e4dba109f8` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-mix-gentype.html` | `9f92ea3c58f3e98d5d3395092429e0e78b824319` | 556 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-mod-float.html` | `21e87455fe06a5edd469a20b07573bb3a4e623a0` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-mod-gentype.html` | `9f5d03a75754a002d3c47bc30f385feff1aab636` | 556 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-normalize.html` | `eb4a0c78d512b003a967cc63900b38a30d04ff49` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-reflect.html` | `83a598f74f025444c3ffe05e8796bb4a8d99de20` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-sign.html` | `75ead8e4864ca933e97f4f866117e4d86507d596` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-sin.html` | `860c59d81fa94110884f934ada26ac3ba3ada7e5` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-smoothstep-float.html` | `c40411dc11977cd1a90a745584923c732a764be7` | 561 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-smoothstep-gentype.html` | `37ea6e0ba4f7bbe6b3c5bafe95cb85973b8db95d` | 563 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-step-float.html` | `c9af1f113150e21eded904b5eafc6d6abf3d6aa5` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function-step-gentype.html` | `bb9f8d8e7aca5b57c93dfe9bf8a404aaed6e4618` | 557 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__functions__glsl-function.html` | `565ea0b2be1f86d4571c7b3bdf7f86a149452ecd` | 544 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__add_int_float.vert.html` | `4086512b08e5bb3c730dfa6e297996aa11d7927b` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__add_int_mat2.vert.html` | `64356fa4bbfece6558846e547fa50022e55c8f88` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__add_int_mat3.vert.html` | `2d317e40dbf28d32c06595eb29f578d330cc9a1f` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__add_int_mat4.vert.html` | `d2453f5bfd142ad07a002d2cdd61b9069b751472` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__add_int_vec2.vert.html` | `32ab2b9ad247b676d73ab0e2c5fc7fe1fba8b56f` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__add_int_vec3.vert.html` | `24d01cb39243c8cbf00bde1bc2724f5de64cd5ca` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__add_int_vec4.vert.html` | `2f323bd71965d3be6e6309b06c13cca51101b8f4` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__add_ivec2_vec2.vert.html` | `80baeca4903f6f9dc946f8a89a7636416d4699b3` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__add_ivec3_vec3.vert.html` | `ad4d91663fe31b7ac68d0f9c66efd4cf7481f92e` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__add_ivec4_vec4.vert.html` | `a52ae5100065c600678e38986bb81d4afce0a976` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__assign_int_to_float.vert.html` | `e14d06a167d92bbc13e0d7f7d091b7ba28000d00` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__assign_ivec2_to_vec2.vert.html` | `e5b3006aea7297d16f1e24c89d0fe73aaa7e1111` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__assign_ivec3_to_vec3.vert.html` | `874884fa98ed3eb612802d490ac556448622eb7d` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__assign_ivec4_to_vec4.vert.html` | `d38d42c4a1b50702cf439930142baf27bd092fd6` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__construct_struct.vert.html` | `fda782d527a2383daedb4d638b5a5f6ba2841073` | 551 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__divide_int_float.vert.html` | `b9d0beec2a08d84b12865a00e5ccbae8cebb8e6b` | 551 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__divide_int_mat2.vert.html` | `6429ef1b9bd5d829a6b01290fa559448bc8499f3` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__divide_int_mat3.vert.html` | `d26e0baaec95b47af24b763734d43e7875c8fc92` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__divide_int_mat4.vert.html` | `60e0ea463831793261618b3ebbd036af05bc5199` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__divide_int_vec2.vert.html` | `4150ca57be78b49a75663561e782cd9a4f7f978a` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__divide_int_vec3.vert.html` | `5b405df9b36e6ee8b66d01468133f4b8e88e0002` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__divide_int_vec4.vert.html` | `5bad7394f10a14894b8f293c15aea5b9e99cca6d` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__divide_ivec2_vec2.vert.html` | `ca8e1a9665075f134121693d8d676dca69f5ac81` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__divide_ivec3_vec3.vert.html` | `a636fa551a859347969c8051063752ec8e586d7b` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__divide_ivec4_vec4.vert.html` | `bdcd14a827fcc6f3d721dc71b5c8807f0a420dcc` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__equal_int_float.vert.html` | `a0c914f3304729c5ceb9a7481021199f32be99fd` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__equal_ivec2_vec2.vert.html` | `2729b3f2096be5da6f85d17f5747ac853cd3c0ff` | 551 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__equal_ivec3_vec3.vert.html` | `e66dbd6082534c579fed971ec802e76cfe0b42af` | 551 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__equal_ivec4_vec4.vert.html` | `9791f389a158e7723318adb29670b0935a73000b` | 551 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__function_int_float.vert.html` | `b935ad05cbb9b92fc953092a77fcbb4714763079` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__function_ivec2_vec2.vert.html` | `c2f86e57f893b50828b59833083dcff8ebaeb7c9` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__function_ivec3_vec3.vert.html` | `cb91420c25fd8ac73ca9736d49d5b62a233b9e9c` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__function_ivec4_vec4.vert.html` | `3f2bb380171257a0a1396e53d52170e456769fba` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__greater_than.vert.html` | `14ce644de50f4dda31ae41c9b5d23422bad00902` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__greater_than_equal.vert.html` | `61ad0f418bef45fd35bcec74328a5684a504508a` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__less_than.vert.html` | `191f39e37020274765dfcd6fb4edf755f8b8aa2e` | 544 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__less_than_equal.vert.html` | `c6af0b74c40d385c0b1e0dc1125c303d4e9a97d3` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__multiply_int_float.vert.html` | `dc128b268dd40f9ab588d8adc076768536ed94fa` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__multiply_int_mat2.vert.html` | `9dc7b4d4a1674c4826980c465eb6b977b7240cf6` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__multiply_int_mat3.vert.html` | `332a119743860ec3038d51a9571921fbd9233b59` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__multiply_int_mat4.vert.html` | `80f1b04e8805d18450515a81c84e73575a0f0e88` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__multiply_int_vec2.vert.html` | `5b81f9aa9e2e9cc945e915e23641dc2165be39c1` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__multiply_int_vec3.vert.html` | `4efd200cee7a87e7c0afd922693e889926da71f8` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__multiply_int_vec4.vert.html` | `78ab46226b2d235e2c2f1d61865b886cbfd0331a` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__multiply_ivec2_vec2.vert.html` | `94214f08b6ca19ac6b214f0b2cb67dd7b84949b7` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__multiply_ivec3_vec3.vert.html` | `02ee6b4340324f5c8df70fb4021525290163486e` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__multiply_ivec4_vec4.vert.html` | `97017c072453c31e5a9e76cd0fb82996034c8f15` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__not_equal_int_float.vert.html` | `465767644b22d20871f63fed3943d19a77c22415` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__not_equal_ivec2_vec2.vert.html` | `c9ddb1acbae066e00812b13a9110d8f80c8120d0` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__not_equal_ivec3_vec3.vert.html` | `42e132a092fbaacc43be991a77565a31e787a56c` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__not_equal_ivec4_vec4.vert.html` | `2ea9dd8ffeb2ef5e4e04be70a6a7873cb3c254e0` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__subtract_int_float.vert.html` | `80ff8e97b8a2b1869b0af4de3346850df5971cc1` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__subtract_int_mat2.vert.html` | `de743e90406d9e665ca7ffd45f3d8074ed94def1` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__subtract_int_mat3.vert.html` | `b2fc158e2aee3c63a17dede3bab80a934ec1c5c6` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__subtract_int_mat4.vert.html` | `07ace683b99edfcd6ec19bbee12ff48daea6e06c` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__subtract_int_vec2.vert.html` | `857c130668a7817ed3c4abaead47580571117645` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__subtract_int_vec3.vert.html` | `a58d7d555f7bb1a582db3ffe06a9ca6609d0c9a6` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__subtract_int_vec4.vert.html` | `1fc56a2fb4b4fc2442aa0fef19dfefc42cf80274` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__subtract_ivec2_vec2.vert.html` | `5e1431556d11b2aac0d3f9b44a301825976efa3f` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__subtract_ivec3_vec3.vert.html` | `94bc219d306a5b90c7f5c253e51b81c51cb5918f` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__subtract_ivec4_vec4.vert.html` | `e5e990196c1e1ce15568badd03e506312ab38226` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__ternary_int_float.vert.html` | `f8735e8f40900f180a2ce45e0fd62158f78e1c45` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__ternary_ivec2_vec2.vert.html` | `c1f1e13c74821f94439b7f7209b452b4cf779e31` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__ternary_ivec3_vec3.vert.html` | `0b7c4d44e45d4f0497b0381f1c1254c4ec1c443c` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__implicit__ternary_ivec4_vec4.vert.html` | `d41fc71c1cc550dc7a40a1c748bd87a1de4598c5` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__literals__float_literal.vert.html` | `dd3d0010683f0812c283cbdaa2e67a04b6edf278` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__literals__literal_precision.html` | `91afc2382adb25e0e27a73aa986d4e537d3e3d03` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__literals__overflow_leak.vert.html` | `2d8b5a557b8357c48c468461a5b3f420348ce776` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__matrices__glsl-mat3-construction.html` | `38b278e276919c71e032a1d8c796ef9e8a8a559e` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__matrices__glsl-mat4-to-mat3.html` | `7c4076b24846c126fac3b25309c285e6edac9729` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__matrices__matrix-compound-multiply.html` | `b62dd12361c2426d9b5adc4b467570779dae2657` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__attrib-location-length-limits.html` | `ff5ed5af0ae63a894ff3127479ab2fb94aa1c798` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__boolean_precision.html` | `fe59014df482944aecd88560d2148f31d1bc2015` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__const-variable-initialization.html` | `483ae1a17d2bf7400b0a71fc5450474c436366fc` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__embedded-struct-definitions-forbidden.html` | `42f789113df6cd4f64c772bbeecfe6f84b2cb709` | 563 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__empty-declaration.html` | `9e40964dde5988746862932b39db253426d08e8f` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__empty_main.vert.html` | `6260a799b82acd73cbe0ad0fdaf0cf2ea3db07e0` | 541 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__expression-list-in-declarator-initializer.html` | `66a6cc9a49bf16e82c3d1774b2f6913adc9821bb` | 567 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__fragcolor-fragdata-invariant.html` | `fa7dd2be313dcc60b1b66d9dac87c454a35ff852` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__gl_position_unset.vert.html` | `3b6cede41c2126c381da508b277d716a27222306` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__global-variable-init.html` | `5d95f7dad5a0f9693b9892e513b76154ce7b5b5d` | 546 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__glsl-function-nodes.html` | `3997338fea74d1e221893ade22c5faaefc98ecce` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__glsl-long-variable-names.html` | `911e3ebcafceea673b4ec47cd61f9e52e4ea0f6d` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__glsl-vertex-branch.html` | `1a3277cef79f2adc6a71327449e23156d0424833` | 544 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__large-loop-compile.html` | `ac72cf7045fb2cef72d448b2ec2508d1d06956bc` | 544 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__local-variable-shadowing-outer-function.html` | `d19d2d861dc0196f196fbdc9da54a8001da9757a` | 565 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__non-ascii-comments.vert.html` | `4a018a03b89f391365f573f6fd9baf18abea957b` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__non-ascii.vert.html` | `15367e5597e50d33924d15015659dba6469270b4` | 540 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__re-compile-re-link.html` | `dd6d5781cfe93d897965affe244d1ce1dd87d1f8` | 544 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__sampler-operand.html` | `8f400b6ed8288a6fa02459cb6b705a60539265aa` | 541 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__sequence-operator-returns-constant.html` | `56896acccbf7544efcff94f22eb94fb683b951bc` | 560 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-precision-format-obeyed.html` | `5247fbeb930c2856b1d6b904cfe12afe21fbe8a1` | 556 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-struct-scope.html` | `fe4b2e636ac46b2fa209fcb78c613cebc0389c7c` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-uniform-packing-restrictions.html` | `fb4563f36d693db1f94987dcabab1169cd5c7d4f` | 561 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-varying-packing-restrictions.html` | `920f3ace3ef5e4ba297b8f3d1afb07e6f373f3e5` | 561 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-256-character-define.html` | `968c8449c03b531e8627ccdd59f09dffc8303a8f` | 558 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-256-character-identifier.frag.html` | `cdae429f0b4d1cfb6b894fce22c65a9d9e097a61` | 567 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-257-character-define.html` | `b721f2df636a9255c72f087e0bf9d98e7c47b13f` | 558 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-257-character-identifier.frag.html` | `efb79d1d95334f6a2bcf732159e242a17227437c` | 567 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-_webgl-identifier.vert.html` | `e17b06732c8b4de6749138a4769da022738a12be` | 560 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-arbitrary-indexing.frag.html` | `43cdd5ca723cfb674a1fa14df2a8a7d5f0fb41cd` | 561 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-arbitrary-indexing.vert.html` | `63377464781ba710982839ad06e9de0a5d21764d` | 561 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-array-of-structs-containing-arrays.html` | `dd0f00535e14121b6a1676cb87a75f9127ea575c` | 572 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-array-of-structs-uniform.html` | `f97ce58238448a380dc2c67e84864ef3fbb9c760` | 562 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-attrib-array.vert.html` | `9749cd79804b83bbddebbcc4715ca5ad524eb0f0` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-attrib-struct.vert.html` | `7f989683c8e1bb0cca553a7e8e3083bead311ba7` | 556 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-clipvertex.vert.html` | `6484bf93a43854f9ddadbe91f01c21bbe7b7f21e` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-comma-assignment.html` | `19fd24f15fdfa06146d5788c86f2108c3e981b0f` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-comma-conditional-assignment.html` | `101982f90fb63c5df12fbc49278384c78d877f48` | 566 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-comma-separated-variable-declarations.html` | `c893a67be0c83b42f293b07510db4a073788fe5b` | 575 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-conditional-scoping-negative.html` | `fc67ba85df1c32fbe2f78a3c6849779d8e30c103` | 566 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-conditional-scoping.html` | `fb65efcb97789fbf539571dde71301e7348f357c` | 557 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-default-precision.frag.html` | `c01d39cefec719b84ddbe3cdd7e49b834eb5035d` | 560 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-default-precision.vert.html` | `70ef1144fe5079737a40e4bfba003a05988292ba` | 560 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-dfdx-no-ext.frag.html` | `2f18225d996d6becc2ff892c132d3c09f01682ec` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-dfdx.frag.html` | `1c5ff80821825e0c0b6a4b95984f23419f8e9fe8` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-do-loop.html` | `eaeb0d8f3f82f4f36c6601ef77f138b55400ed28` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-error-directive.html` | `e33e0ddd211855b6a5cf5014874bb42b289c3a73` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-explicit-int-cast.vert.html` | `45a0cc06dc3cbf3f447711f91ec03065b29c71fd` | 560 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-float-return-value.frag.html` | `eb4ee4de6c66d2018532e57f4926ef07eda508a3` | 561 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-for-loop.html` | `ed1790b3495829b768b32597eba889769b989a41` | 546 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-for-scoping.html` | `f2f9fd68b3acb225149d2d572171c2c329ac79a7` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-frag-depth.frag.html` | `ec74ce4f5bd8a057412ede439697bd9ae5632d37` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-function-recursion.frag.html` | `a5b9553b0b69c1d478d6d99e714d931b19d5bc4b` | 561 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-function-scoped-struct.html` | `35ca0156da5bad233be224f94c557a23fa1df81c` | 560 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-functional-scoping.html` | `40dce70ae53874be75158d1251460465291fada1` | 556 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-glcolor.vert.html` | `86eb0bd85c12616d7552a7cdf909bbbad475b234` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-gles-1.frag.html` | `a2ea68a729f469112f79b9cfd9b847d99c437f65` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-gles-symbol.frag.html` | `ca402b9ac8ed3d8795d007c550bb0f4dbd80f541` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-global-variable-precision-mismatch.html` | `b86645c8369afa8778248ac3edce409931c38eb4` | 572 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-glprojectionmatrix.vert.html` | `792d776252336b90a3f6e183dee6ce07ad88c1fe` | 561 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-hex-int-constant-macro.html` | `22f2c8ab70849b0c9e92f1bd9ba0a36b8ead1609` | 560 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-implicit-vec3-to-vec4-cast.vert.html` | `b15a75d1cc18301021d21e7678bf1a3eca0f037f` | 569 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-include.vert.html` | `e95ff7478ca0ad1e289bd8e9081a1d1eaccc9dc5` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-int-return-value.frag.html` | `66337cbe2e0168d091e6bc65e6e3226bb106c4de` | 559 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-invalid-identifier.frag.html` | `62cac85faa55988da00241bf6139878b6fe4006c` | 561 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-ivec2-return-value.frag.html` | `9c28bc77df24b03b9902678f98bbc7715a697113` | 561 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-ivec3-return-value.frag.html` | `28513a730b12c5d04be9100fcb57f6d4c1d48ca0` | 561 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-ivec4-return-value.frag.html` | `b0d051f1daf139fa61b9c1f955b0533cd029c89c` | 561 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-limited-indexing.frag.html` | `daa6dbefc5bf54caf1fec72df2c4b08150749c98` | 559 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-long-line.html` | `25edef1bea0b76ad08e09fb4714c1e1a756a6065` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-non-ascii-error.frag.html` | `2fe77dd4856aceb08782bea76269b47af95b36b1` | 558 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-non-reserved-words-1-of-8.html` | `5eb2151deada0dcdeef7f1614cb501bc42c08240` | 563 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-non-reserved-words-2-of-8.html` | `7dbccda60d8f5c2c57371c99bdb55e811d839a94` | 563 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-non-reserved-words-3-of-8.html` | `baabc11a45bc6012e940b405f16684e8ce0f0da0` | 563 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-non-reserved-words-4-of-8.html` | `4db7c86e9ce2109f507599822258cdaebfa064d8` | 563 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-non-reserved-words-5-of-8.html` | `5ef10258d4eab8a7af3be7004227255ed91b04cf` | 563 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-non-reserved-words-6-of-8.html` | `f42ea9963e04f9ee4270adec1cec6f2f0985c406` | 563 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-non-reserved-words-7-of-8.html` | `29931b96f8f2a273881a1c48b03082c37533cd82` | 563 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-non-reserved-words-8-of-8.html` | `0a8397e61d190842ccc7e2782aa6e99a89a7b3b6` | 563 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-precision.frag.html` | `ece605131b1ca7474b61a9ab4947efd794212b82` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-preprocessor-whitespace.html` | `e71401344e5de5e3d7478a2c2d4dd136ea58439b` | 561 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-quoted-error.frag.html` | `2395271a4c709e17fd83125829d9e9981a628fcb` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-reserved-words.html` | `a2b4dba0b63ee8cc486875f08e7beb3e014f8b91` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-short-circuiting-operators.html` | `4a2dcc15a93b1f940cea84591f2252d32cea756f` | 564 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-similar-uniform-array-names.html` | `b7408fc0c2626bc419f96d1641cb94ab66951f61` | 565 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-too-many-uniforms.html` | `27983560c33239d634d9105e35443539c7e79d98` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-two-initializer-types.html` | `5758cdd6df0bffebc5980d24b17ac763bdfab979` | 559 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-undefined-preprocessor-symbol.frag.html` | `790d9a069d581bf04882c70910c982333c72ef87` | 572 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-uniform-in-loop-condition.vert.html` | `627d4eed304706c7755055ac357dcdb313d49b2a` | 568 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-vec2-return-value.frag.html` | `0f83622e676750adc85b489a9dd090d8777066a8` | 560 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-vec3-return-value.frag.html` | `4b8ab75939c5451302e209b39cc8578d2f3bc3f3` | 560 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-vec4-return-value.frag.html` | `3dbab3944cf1a00914872deebbf6f6aace5b5177` | 560 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-vec4-vec3-vec4-conditional.html` | `820e3d0f0b64445017cb4ae966e66e9f24785911` | 564 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-version-100.frag.html` | `ac9a8f4904b67f9480081ede00b7d00d3108031f` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-version-100.vert.html` | `3614dfbb1c70e7e3b60967e4f37ab7d5d460edfd` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-version-120.vert.html` | `b85a28014e9a7a8d12ac9c9c143fc5a08581c593` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-version-130.vert.html` | `35d022738801488142e4c57a25f1a2c335612f95` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-webgl-identifier.vert.html` | `63ecfd690a700f7cfcd50b59786d09cd44f641ec` | 559 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-with-while-loop.html` | `8e78783179adfdd3932f66e3a718036a909c921a` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shader-without-precision.frag.html` | `02e5ea3c03c31f2ce96fe7b36220e0559ad0b0cb` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shaders-with-constant-expression-loop-conditions.html` | `5d5cac30f1662ac983c2c84cb0b61e6e9a84b03d` | 574 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shaders-with-invariance.html` | `213b9118845cb8403e6e3446a97887c76a368dc4` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shaders-with-mis-matching-uniforms.html` | `3f40462e6987bfc6079e47b7cdcef0ddcaaaf8cd` | 560 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shaders-with-mis-matching-varyings.html` | `9645dd336c5130b5006035ed41bd8d13d9e6f8d7` | 560 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shaders-with-missing-varyings.html` | `bee9b7fb8017b12db59d45011807b474cc141e4f` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shaders-with-name-conflicts.html` | `15118f407f094862074e35fdd7825683660c795e` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shaders-with-uniform-structs.html` | `1755bb5b46723307b9115529510e46c55438b97e` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shaders-with-varyings.html` | `392a8864bc9c4569b2644e410cfa7f77a6a925f4` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__shared.html` | `9ba2d28bdf0b035de221c33060d340cb5b9e8686` | 532 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__struct-as-inout-parameter.html` | `03aafed7383ed24d169eb69fe67c0398d4f9e385` | 551 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__struct-as-out-parameter.html` | `f2ccbc02cd245c4872899d0aa2542c45845d0945` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__struct-assign.html` | `65a6ce51a08026532ada085bca7451f289b9d2f1` | 539 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__struct-equals.html` | `3ef036c60b1c2eaab2bb3cbd515721438855a10e` | 539 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__struct-mixed-array-declarators.html` | `f1498da7c07e0f0c7e6b1e33c13e2f630b6dbb24` | 556 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__struct-nesting-exceeds-maximum.html` | `47cfa96428416c3ec97351b2a8817abdc088c055` | 556 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__struct-nesting-of-variable-names.html` | `49eb69693b8f86c2763843e92d69b2cad89fcb8b` | 558 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__struct-nesting-under-maximum.html` | `3c51df99152cbb0de09a93336438f29a575bfdc2` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__struct-specifiers-in-uniforms.html` | `2ab839263a9a496069a0f11f238ce48e0144ef2b` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__struct-unary-operators.html` | `5da6239a1d4abc51d2adc0d00b4f877d77bf5bc2` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__ternary-operator-on-arrays.html` | `a5d3dd3be9f8fd0b5f504c227b136c426dad7ae9` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__ternary-operators-in-global-initializers.html` | `c01660a35b1d43bc162bdefab98accd3e89d12b1` | 566 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__ternary-operators-in-initializers.html` | `e97e28241d5ef95047495902bb78d4ef15d38bb7` | 559 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__uniform-location-length-limits.html` | `0ffb8c1df2c848d4860e3340e2813bb99500b5ac` | 556 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__misc__uninitialized-local-global-variables.html` | `2d986172be082994cbcf6d0c6611cfc1a9fe7dc6` | 562 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__preprocessor__comments.html` | `5277ff73a2b99eb1e35a46cf87991917aa0c73ad` | 542 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__preprocessor__macro-expansion-tricky.html` | `f6484ddc3a991b25e842792b58115368a583244b` | 556 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__reserved___webgl_field.vert.html` | `7f65662b70d136dcbd635c198c00f081712f3022` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__reserved___webgl_function.vert.html` | `fb7f3c00ac4ff919805863f55087fde6eadba798` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__reserved___webgl_struct.vert.html` | `e2be8d5f5a755080405456e88f4e49fbf82b59ef` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__reserved___webgl_variable.vert.html` | `517ad88d16ee3678b94d262607bcefad50bf51af` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__reserved__webgl_field.vert.html` | `982a9c9a62ae78da076903babbab67972d81bb1b` | 546 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__reserved__webgl_function.vert.html` | `634e51b88401591d04d01578d6f005a08b57729c` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__reserved__webgl_struct.vert.html` | `502e106ca7f09e5320f88f1731cd7e8d11e36b29` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__reserved__webgl_variable.vert.html` | `9ceb03025c8d9bb842ac604234592b21338323c3` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__samplers__glsl-function-texture2d-bias.html` | `8ce0a8296cf4c1762ad0a4d184c6a36ed9b899c9` | 558 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__samplers__glsl-function-texture2dlod.html` | `882401e72fc9c8802d35abee7b4a6a49aea73f7b` | 556 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__samplers__glsl-function-texture2dproj.html` | `e6e6c93af2a69190db36b766717ce5a085d1273a` | 557 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__samplers__glsl-function-texture2dprojlod.html` | `ee9d93f0e0d7f5e5313f1859b9b681fa784550f0` | 560 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__variables__gl-fragcoord-xy-values.html` | `0512ba85021a9674c57c64c31bccbd6816a8a9a5` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__variables__gl-fragcoord.html` | `180c84c313784de5b910c85c17490e45382c3a66` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__variables__gl-fragdata-and-fragcolor.html` | `80c68445de065a16bcf12619adf305d1df7274e8` | 556 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__variables__gl-frontfacing.html` | `39d4c32369aa7ba13d2cbc87ea7a84c63571adb7` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__variables__gl-pointcoord.html` | `3c693170382f85fcd21e6cc1b6eb8a0fa91ee16e` | 544 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__glsl__variables__glsl-built-ins.html` | `c37e9a7cc9c3adcaa609f395881f3b1bce97dee8` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__limits__gl-line-width.html` | `61f8e72a42959543e44e2deac2eb1d23bf791d6d` | 536 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__limits__gl-max-texture-dimensions.html` | `a529dcab12af24dae8911ef78eab1efdfd05557a` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__limits__gl-min-attribs.html` | `101cfdb919b35c0d8763d93cb577ec18a33d2796` | 537 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__limits__gl-min-textures.html` | `8ff1eac8ecdd6d1336af79fe03428207756a575d` | 538 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__limits__gl-min-uniforms.html` | `a913d8819edb8cc26e228b67737c7f81b2ed7424` | 538 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__misc__bad-arguments-test.html` | `9e89c2993216fd5e85f7676c2fcd464e2e01cbeb` | 539 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__misc__boolean-argument-conversion.html` | `28d3da59e1feb9f83fd124eef0c4d3f44440fe4b` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__misc__delayed-drawing.html` | `920a2f4592db22c5a930a3818e2d773c99987d3b` | 536 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__misc__error-reporting.html` | `4d54fcf077ef01ae2b7a5c3a0e9b1c4448bb94a9` | 536 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__misc__expando-loss.html` | `d67fe63f781df7438838e72152fe2f6350acc7ae` | 533 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__misc__functions-returning-strings.html` | `07e8c553f1ff21e6bad489ae95dc8b534e7b8a3b` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__misc__hint.html` | `d3a5600c92ceb3af66758094ad2a42ecf67af579` | 525 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__misc__instanceof-test.html` | `e326717125a281bc2b16d781f17fafa41c9a485f` | 536 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__misc__invalid-passed-params.html` | `f559f90116d80ed89d1c171909881b43fcd3d120` | 542 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__misc__is-object.html` | `fb64bef48ab8caf060175636a42cdea3265c97e1` | 530 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__misc__null-object-behaviour.html` | `856a26aa1b1b003f03040059f814638144c2391d` | 542 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__misc__object-deletion-behaviour.html` | `1852e12e4a400402cea1433144298a4574b81e40` | 546 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__misc__shader-precision-format.html` | `fd8246316b5246c4cad9a5c41e8caa35765f8657` | 544 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__misc__type-conversion-test.html` | `662c20d1cc5e73b93cef3987d88dade2e69c3532` | 541 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__misc__uninitialized-test.html` | `82d535e41c981669aac94b80ecb25938a9b225fe` | 539 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__misc__webgl-specific-stencil-settings.html` | `34cee860c0b37a30d4c96732a298081a92540345` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__misc__webgl-specific.html` | `87f554293d8847d5979e9ee30d82f880e3208d81` | 535 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__constants.html` | `b53023ab85b328eb3ac79c52f88d1a42c6961763` | 542 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__getContext.html` | `ebe38ac8f93d06394eff6d447fe6ecb6af749bd8` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__methods.html` | `14ae05e81796041ba8380db92858e18ebc6436ed` | 540 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__quickCheckAPI-A.html` | `5f01c85e8f4b953f1c044b56e73b84e5c45f12c4` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__quickCheckAPI-B1.html` | `1d2808ee7676389dc715e14d10f4756546e3d31c` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__quickCheckAPI-B2.html` | `cd2df15c7c033d6d942679b51dd3852a0bee0cb2` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__quickCheckAPI-B3.html` | `d6e8bf70bb3e61a6f30b48f333667d87d4d50bd1` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__quickCheckAPI-B4.html` | `8573bea761dd2e7dbc99b2fcfdd1d695fce2c4ac` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__quickCheckAPI-C.html` | `5547c37592c88ffa6825ecaa653e7ac804362d6a` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__quickCheckAPI-D_G.html` | `f053569f900f94622e9745dad95a8987802ec31a` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__quickCheckAPI-G_I.html` | `f0a5f5ac7f8ce9e8e9b735fdf0648cc6a857ac42` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__quickCheckAPI-L_S.html` | `429a92a23e95a79e98ab8ef4f6e5b1b2101546fe` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__quickCheckAPI-S_V.html` | `3849a13dd97afca02df6f8fce69a83b8038a08fe` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__conformance__webGLArrays.html` | `a800bd766fe9607ebb6291f7af0e725cd3376f22` | 544 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__bindBuffer.html` | `546012a53cd988da6251405fe6f4777f74a87c97` | 541 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__bindBufferBadArgs.html` | `0c728dc9f4388512470a0286ecc43652e8e7d7ee` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__bindFramebufferLeaveNonZero.html` | `81e3c49e0444acb582b3cbc743637c1696b3d3ef` | 558 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__bufferData.html` | `a51bf09413e24efaef0760c4946eb3102792f412` | 541 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__bufferDataBadArgs.html` | `42b061059f178fe33c861c6853a05457e0cc72fd` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__bufferSubData.html` | `c76d889d48322a9dda8c63c33096b3534c83c7ca` | 544 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__bufferSubDataBadArgs.html` | `be19652cab4d78b07627c936d138545a1f9a0651` | 551 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__copyTexImage2D.html` | `d6ddfc2087d6f874960633aa43286db58b5b79fb` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__copyTexImage2DBadArgs.html` | `77cbd79ccc06162bad736a0add54d7e05ad5415b` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__copyTexSubImage2D.html` | `928b83b890d3b5fabe7628297dc3b2b5520d5259` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__copyTexSubImage2DBadArgs.html` | `7d5afab46cd8f3956c09f37fdc379e99895db781` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__deleteBufferBadArgs.html` | `a264dcefeb2ca6311d542e067411972bd332bc55` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__drawArrays.html` | `3c8bb5685c3692906431df3e3cbe6bd0f472d5d6` | 541 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__drawElements.html` | `65941b61d629ab7b32d1724b9beef62566e452b0` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__isTests.html` | `bb9ca0bfad6ea8a3ca328f3b678185c6dd417e80` | 538 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__isTestsBadArgs.html` | `e70c489070fd1e3604373c208f43393dd6639401` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__readPixels.html` | `5d23818ac675232d1ff66bd0cee30302776d2af8` | 541 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__readPixelsBadArgs.html` | `3ba7ce2c606945eef697de3a0b9ca8d470f9fd56` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__texImage2D.html` | `b70efc09d6b29989eb399d4c1bddd5d2fd225bcd` | 541 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__texImage2DBadArgs.html` | `d8b4ab47cb6939449e9378d49010959ce061fb53` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__texImage2DHTML.html` | `a8d7ba9bc59df2c15b95e149ec8032abb7f8a881` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__texImage2DHTMLBadArgs.html` | `eef174553d78e9cba76365227e7541db87a20a54` | 552 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__texSubImage2D.html` | `e53db88ba0fc567aa89050f18251eb75f1f66224` | 544 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__texSubImage2DBadArgs.html` | `5fead1ecd5e141fe9d3fe1a359151248a3432ce3` | 551 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__texSubImage2DHTML.html` | `65c3caf103078194fe280681b44a3761a0e7debd` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__texSubImage2DHTMLBadArgs.html` | `e0f92eef5e64bc4076fc9838692d7a751a4bb198` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__uniformMatrix.html` | `5075edc1f64268c72d2623097b7f1cf1be4c3ff0` | 544 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__uniformMatrixBadArgs.html` | `ea302ea80f611216b0df9c20dae20e39dd88e5ff` | 551 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__uniformf.html` | `f5b8d0b1784809b1fb683b957719a4b5185762a2` | 539 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__uniformfArrayLen1.html` | `c91ad19a044d4324e3266c1be5e9a1c0588afccb` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__uniformfBadArgs.html` | `29afd04fe06e7b2c826e814a146a7e877d40a04e` | 546 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__uniformi.html` | `7644a49e8109b744fcf87d1289244aeeb2857f85` | 539 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__uniformiBadArgs.html` | `ab88a5e40a0f0ad3a746677c49b1b6052e3fa033` | 546 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__vertexAttrib.html` | `8b1860f35c4f84f7685e92d87c75050d6171e50c` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__vertexAttribBadArgs.html` | `44d5285b231a39cf7261752b4146e69b266ae45d` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__vertexAttribPointer.html` | `974988409bf6bbeee8f47c0c80ce8016a2d82411` | 550 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__functions__vertexAttribPointerBadArgs.html` | `717ceb2fd8e6e7bd468ca3748270d752b30b2f78` | 557 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__glsl__arrayOutOfBounds.html` | `3564e78ef4a269ef4b2828fbb5bc9db006951c38` | 542 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__more__glsl__uniformOutOfBounds.html` | `2553658b16251d15a4f9d331c09fdd7286bf2381` | 544 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__context-attribute-preserve-drawing-buffer.html` | `586e63986181ad0a90167fb38d3229fb56f77e9a` | 573 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__context-creation-worker.html` | `d4c0f698a0711f1f700984f2a9d3e8dbec40fc7f` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__context-creation.html` | `c123246fb6cf1b5d826ec22dde9b2772a71e78b1` | 548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__context-lost-restored-worker.html` | `a289046caae04385bcb1a7a3e0e59ec0635f200f` | 560 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__context-lost-restored.html` | `48e4b91e3dd40b38c22ae7d87a3e2a9a80e02f7d` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__context-lost-worker.html` | `d711eee2bdd510246a46e07f3a013e5c7a597a0b` | 551 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__context-lost.html` | `67a517c3e043b2c08489306519f771aca705ec8a` | 544 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__methods-worker.html` | `5ddaa28909cad5845c580403c0bd4db9cc4de3b1` | 546 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__methods.html` | `55b9d84a7fcfb0dff749dd6c0d7bae47981107db` | 539 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__offscreencanvas-resize.html` | `0d9d48c98bc8068455acc307fc8e8e633f26136f` | 554 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__offscreencanvas-timer-query.html` | `7659aef8303b8315e167c8e7b1648546575d784a` | 559 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__offscreencanvas__offscreencanvas-transfer-image-bitmap.html` | `73ff76964b8308b4e29b96080666292a7fd137b4` | 569 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__abs__abs_001_to_006.html` | `b08be2b3b3b10644e85af7db73467a1e3e8148aa` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__acos__acos_001_to_006.html` | `bf0689cc37eeb1d035a3aa9bb5087dff169de000` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__all__all_001_to_004.html` | `c8382587b7b78d9baeb240a3dde97e4c98ab7a6b` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__any__any_001_to_004.html` | `0f284e422884c7b9e9b470e9644d0e94b31061f3` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__array__array_001_to_006.html` | `121fe9727fe5a100dc768dc031201197c2ba5245` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__asin__asin_001_to_006.html` | `f696ef64f23c9272be6305c9607115db22b1ef93` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__atan__atan_001_to_008.html` | `43fd03a13bd7eaa0c19b8ba01d18e2550589d919` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__atan__atan_009_to_012.html` | `0f552514e05b1e319a1ae55fcaf64ab60e9b95d3` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__biConstants__biConstants_001_to_008.html` | `188d25f08c4b5052af39015735da694b5d411bd2` | 559 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__biConstants__biConstants_009_to_016.html` | `6e9c75dc07fb9fe656747eef23d7a2ee7f610cff` | 559 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__biuDepthRange__biuDepthRange_001_to_002.html` | `da32306b10a38517f3e9d87330edf2eaa9f0e07f` | 563 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_001_to_008.html` | `623254d5f42216fc4383775796fbe752ff7b294b` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_009_to_016.html` | `531eea9a6944a3744d00f707e7f26e5b032f96fe` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_017_to_024.html` | `2c37f2f00c964cd8309e0b36eb2d9b5f9abb1b00` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_025_to_032.html` | `20e638ecfc0839faeae9288f3c7084a30843f29b` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_033_to_040.html` | `937f3722b7e204e2f4f78f6cccc86fbc15f2b00c` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_041_to_048.html` | `851d8fe3dc2d8958778d2ce861da7e59de5e81db` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_049_to_056.html` | `6f899a1743d345c6b9904f673db12e22c2545b29` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_057_to_064.html` | `dfec51d937c521386aa79ddb1f86f39d2492e89d` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_065_to_072.html` | `b6bfa2d6dd0b80daf1065a6a8183992756f20c9e` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_073_to_080.html` | `770b8620340d1b8af0fded74a5cc6928797d2d2b` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_081_to_088.html` | `6bbe6b5bbb3c83d12b52756f461b30fa8b9c24ec` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_089_to_096.html` | `12ef043931eb8d8ba6eb43ece396c790d1c421ad` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_097_to_104.html` | `aa0fc344ec5d3c93b01d461a202b76d5513b06ae` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_105_to_112.html` | `603e6ef802148d4ce30317a98f6afb2c8915678d` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_113_to_120.html` | `a3826973972423c0a62a4178c91d7f6e4825f223` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_121_to_128.html` | `0df064e3b76c05e4bddb13060b55f607bcc7ff6c` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_129_to_136.html` | `6dfb3819ab770fa0a7891df55c3002dd411e8f8e` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_137_to_144.html` | `f40ebcf2818c18acd8c8571243af8eab706d69ca` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_145_to_152.html` | `7de072f41718544a037f2d93f5e914687f173028` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_153_to_160.html` | `d842c25b63b45bb453d95a3c437adb13390dfc3c` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_161_to_168.html` | `ee1bb12fd1efc3aae46c945f8becd501208d3704` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_169_to_176.html` | `62140837c90754f4e9ef066f08ce147ef4ca6b1f` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__build__build_177_to_178.html` | `58a53dbaee42acc95de7178a4fb3be72fbc1258c` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__built_in_varying_array_out_of_bounds__built_in_varying_array_out_of_bounds_001_to_001.html` | `94b830f37c29ebb427caf81a89cb11934c6289ea` | 609 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__ceil__ceil_001_to_006.html` | `67f38a5889f3b6d5a3586b5a17b74578c8cb6e84` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__clamp__clamp_001_to_006.html` | `cf2f0881ac43d951ccd8d6ac874ad47c052b9985` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__control_flow__control_flow_001_to_008.html` | `2955aa974af00f3e1396256682ce759d5c8415a2` | 561 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__control_flow__control_flow_009_to_010.html` | `60e6f7e4ba329f82f8dbefd92b99470d20622bd1` | 561 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__cos__cos_001_to_006.html` | `b8fd4a85c99e780d0443ea411223d1272c5bf3b0` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__cross__cross_001_to_002.html` | `6bbcd19a33f892e202fbe640222c0ee9d64f82dc` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__default__default_001_to_001.html` | `231cfcbd3739daa786545b235f9f3e9da54daf0a` | 551 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__degrees__degrees_001_to_006.html` | `51d3b4a829e528df79d202208650f9d3c3717d3f` | 551 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__discard__discard_001_to_002.html` | `00998945008118e1a1ac3144a51d23380a0fb4f0` | 551 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__distance__distance_001_to_006.html` | `ce6a8c3c827048bd017d56c1625ce181cb0a46be` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__dot__dot_001_to_006.html` | `ab0bb867aec9e6f38a9a88978ef6918dda50c803` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__equal__equal_001_to_008.html` | `faa9858de0e884fc19e7f99baa3aaa73047fb0b6` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__equal__equal_009_to_012.html` | `a515ae48852feb145bed3daa5c43245d221dea9b` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__exp2__exp2_001_to_008.html` | `bf4b04b17d7736d1862415b449d710612a8bf1fc` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__exp2__exp2_009_to_012.html` | `bab48cc394a29d16416373d518e4b66e8f605e1f` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__exp__exp_001_to_008.html` | `ebf648f7fb32894c5ce64e4b2ea16a960052553c` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__exp__exp_009_to_012.html` | `ea6eed56c8ed498c56013617e517b53f9d3db0a8` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__faceforward__faceforward_001_to_006.html` | `fc59e6140e5735a15a5c64dc6711b3dfcf0d0c74` | 559 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__floor__floor_001_to_006.html` | `08bc5f66a875483830c7f15718f22dfb942ddf8e` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__fract__fract_001_to_006.html` | `c9c466b4c124590580323a49ae1ec5517e698241` | 547 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_001_to_008.html` | `221261fd41bcb91a755f9cd93075d615828d4fb5` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_009_to_016.html` | `8b00a8a0a203ea52a88aec80617117c3177a6684` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_017_to_024.html` | `671b0ddf7f2661623ce4ce548bf8ae75ccfb4b96` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_025_to_032.html` | `dd419bac93bcd99bf3b65a4be5409a077f8bdfd1` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_033_to_040.html` | `8af941d636ff0e0736b17b2f1083b5c7ed764adf` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_041_to_048.html` | `aa2159431294e0bae34a923dc8061536040e3f54` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_049_to_056.html` | `d66e5dfc97ff1852612dcae480235e7de9bbc90b` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_057_to_064.html` | `194b383c60622d0483b392fee07b9b6121610fba` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_065_to_072.html` | `bcf06f966acdf01480b23e60970519284c3c0c68` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_073_to_080.html` | `762f18d52cf5fb861cc1f38accc923450fbe996a` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_081_to_088.html` | `0016e725c86d048bf295a07746cf4f74769fbb8a` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_089_to_096.html` | `b059b20f20f298b04de0af15ec96b5e6964ccd7c` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_097_to_104.html` | `ed3f79a5db74c925c5052fe970d75a8eafeb7949` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_105_to_112.html` | `f47f414d4d697c097a8aa5238ffa23db7d3fbade` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_113_to_120.html` | `3db4e4730dbb28d6c68dd98df4884f05a35293a7` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__functions__functions_121_to_126.html` | `9392605345833bd19941b6838b1d1b809d872bec` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__gl_FragCoord__gl_FragCoord_001_to_003.html` | `a9192acaa77d18b9e420d12b7179502bf066550c` | 561 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__gl_FrontFacing__gl_FrontFacing_001_to_001.html` | `e92bf65c4685bd52688b4f611e3db166d186b732` | 565 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__greaterThanEqual__greaterThanEqual_001_to_008.html` | `d7f2ff0997d7672a4ca55f5ee709d538397f40f8` | 569 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__greaterThan__greaterThan_001_to_008.html` | `a648496fc1fd95da29c67a75fe83949c9e63fbc8` | 559 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__inversesqrt__inversesqrt_001_to_006.html` | `4a1a23ce8d52a7439110a6a75bcf329eb0fd47aa` | 559 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__length__length_001_to_006.html` | `b6ed6ced201d836a80f4ae99dddace1ac3095ae2` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__lessThanEqual__lessThanEqual_001_to_008.html` | `8da0d00885fcb6092a65343aefb26007c1e963c1` | 563 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__lessThan__lessThan_001_to_008.html` | `0b611f9387da01319be3c6b7e4e65c0361fdd667` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__log2__log2_001_to_008.html` | `53448285940137f373e05635f9c0d0dde3af8aab` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__log2__log2_009_to_012.html` | `53052b6d6326378c3c3ef741b460fa7cf0d2acd6` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__log__log_001_to_008.html` | `f5ae21f9f15822d56df06c828b3a68b7a7d3dbae` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__log__log_009_to_012.html` | `ce4e95ab681b1c97b648d8d19b58e6a244884ebe` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__mat3__mat3_001_to_006.html` | `3a5089e09692c6d15b58577ab3175f965b35079d` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__mat__mat_001_to_008.html` | `b7603c118fee76a1ce74836562a567ebab17acef` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__mat__mat_009_to_016.html` | `75e19e4cef0270369c3e4ce1e4eaf565f145d40c` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__mat__mat_017_to_024.html` | `1751c1c3470612c1d26126830b97989ddbfcdab1` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__mat__mat_025_to_032.html` | `a467af228babf95a79c9d25e9cd41b558036f2cf` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__mat__mat_033_to_040.html` | `9303225a2f09802cb7549edacabe1731cfd63c09` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__mat__mat_041_to_046.html` | `a51307545d375a160c8502e36b95d657c4235ace` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__matrixCompMult__matrixCompMult_001_to_004.html` | `4312b6be289d991e0e85e71934fe5abe43b448fb` | 565 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__max__max_001_to_006.html` | `1bdf2faf2e3f1883153ff518e3e679687bf60fc1` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__min__min_001_to_006.html` | `5fb5d211debbe8e3ece421804aea973728c42010` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__mix__mix_001_to_006.html` | `3a7fb768486921345564f55c816f0e83e70a5f50` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__mod__mod_001_to_008.html` | `3af4a2e97b4d35925ef76ac4569cf8b950379d0f` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__normalize__normalize_001_to_006.html` | `bbe7cdbfad08841b79de3cd64ffbfeccf7fe78d3` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__notEqual__notEqual_001_to_008.html` | `2dea69ed83850675e86e6026645a4e13e74fd825` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__notEqual__notEqual_009_to_012.html` | `5dcbdeb758e9881040e747c33682ff21ab4703aa` | 553 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__not__not_001_to_004.html` | `d9b77a715e8a6b8e9e40c312970cfd1b2267acdc` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__operators__operators_001_to_008.html` | `80f1fb00d28835750ff0d46a889a6fa415c8340e` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__operators__operators_009_to_016.html` | `51958c64c187cc2fc89c1a1417d1c01dd95cad95` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__operators__operators_017_to_024.html` | `87c3826be1010d18f5c43946bd1d99ef32d4efb5` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__operators__operators_025_to_026.html` | `81c3a4eb19c77c862713a4e95cde07cd3330edcc` | 555 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__pow__pow_001_to_008.html` | `8fbd80b9ebad3d6d2311714a3da7c2d60235e020` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__pow__pow_009_to_016.html` | `c5a5343f2300a8d49e33c3e498f5703eed44d7a2` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__pow__pow_017_to_024.html` | `33699d5a6352d07b17e4137bc4c16a8c7ed1479a` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__radians__radians_001_to_006.html` | `2b7afbc369777586f18aa4504e4467812a3fa492` | 551 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__reflect__reflect_001_to_006.html` | `b069481b0687ece4a0d025d052ede72476d5c0df` | 551 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__refract__refract_001_to_006.html` | `9c7ece4e0936f9657aa31e127dd30ecc57f5e228` | 551 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__sign__sign_001_to_006.html` | `1317b2769bdab17c2bcabb5df15171b0f2d5520d` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__sin__sin_001_to_006.html` | `2b415894ee2490b1d467b3273b36fb3a1ce74004` | 543 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__smoothstep__smoothstep_001_to_006.html` | `19670034ce6823d2c935e0e398a1bbcf72ba7cfe` | 557 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__sqrt__sqrt_001_to_006.html` | `4553458096af730ab791ea75820103f7cc990dd7` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__step__step_001_to_006.html` | `19cfef91048b3709dc8d93cc0211cfd4f8825c38` | 545 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__struct__struct_001_to_008.html` | `30fd482c2ceb18d0bde8a2f987e628ec2ffe5cef` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__struct__struct_009_to_016.html` | `9f8e906fe682fe7eafe8b553cfd1eeb3629e4ca2` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__struct__struct_017_to_024.html` | `43ca8516a0c0f4a79200b05d7d0fa4c2c38a96b6` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/canvas/test/webgl-conf/generated/test_conformance__ogles__GL__struct__struct_025_to_032.html` | `9777afaadbbcc781a8e10c34fc56b2161e80fe75` | 549 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+## Validation and limits
+
+Every listed blob was read from the pinned Git tree and its Git SHA-1 was recomputed. Extraction is structural only. Read implementations, callers, build conditions, and tests before making a behavior claim. Runtime behavior and historical reasons remain unverified. Reproduce a file with `git show 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b:path` in the corresponding source clone. The full study coverage and navigation note records aggregate results.

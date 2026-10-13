@@ -1,0 +1,236 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:14:46.642314+00:00","paths":["caps/.clang-format","caps/BasePrincipal.cpp","caps/BasePrincipal.h","caps/ContentPrincipal.cpp","caps/ContentPrincipal.h","caps/ContentPrincipalJSONHandler.h","caps/DomainPolicy.cpp","caps/DomainPolicy.h","caps/ExpandedPrincipal.cpp","caps/ExpandedPrincipal.h","caps/ExpandedPrincipalJSONHandler.h","caps/NullPrincipal.cpp","caps/NullPrincipal.h","caps/NullPrincipalJSONHandler.h","caps/OriginAttributes.cpp","caps/OriginAttributes.h","caps/OriginAttributesHashKey.h","caps/PrincipalHashKey.h","caps/PrincipalJSONHandler.h","caps/SharedJSONHandler.h","caps/SubsumedPrincipalJSONHandler.h","caps/SystemPrincipal.cpp","caps/SystemPrincipal.h","caps/moz.build","caps/nsIAddonPolicyService.idl","caps/nsIDomainPolicy.idl","caps/nsIPrincipal.idl","caps/nsIScriptSecurityManager.idl","caps/nsJSPrincipals.cpp","caps/nsJSPrincipals.h","caps/nsScriptSecurityManager.cpp","caps/nsScriptSecurityManager.h","caps/tests/gtest/TestBackgroundThreadPrincipal.cpp","caps/tests/gtest/TestNullPrincipalPrecursor.cpp","caps/tests/gtest/TestOriginAttributes.cpp","caps/tests/gtest/TestPrincipalAttributes.cpp","caps/tests/gtest/TestPrincipalHash.cpp","caps/tests/gtest/TestPrincipalSerialization.cpp","caps/tests/gtest/TestRedirectChainURITruncation.cpp","caps/tests/gtest/TestScriptSecurityManager.cpp","caps/tests/gtest/moz.build","caps/tests/mochitest/browser.toml","caps/tests/mochitest/browser_aboutOrigin.js","caps/tests/mochitest/browser_checkloaduri.js","caps/tests/mochitest/chrome.toml","caps/tests/mochitest/file_bug1367586-followon.html","caps/tests/mochitest/file_bug1367586-redirect.sjs","caps/tests/mochitest/file_bug1367586-target.html","caps/tests/mochitest/file_data.txt","caps/tests/mochitest/file_disableScript.html","caps/tests/mochitest/mochitest.toml","caps/tests/mochitest/resource_test_file.html","caps/tests/mochitest/test_addonMayLoad.html","caps/tests/mochitest/test_bug1367586.html","caps/tests/mochitest/test_bug246699.html","caps/tests/mochitest/test_bug292789.html","caps/tests/mochitest/test_bug423375.html","caps/tests/mochitest/test_bug470804.html","caps/tests/mochitest/test_bug995943.xhtml","caps/tests/mochitest/test_disableScript.xhtml","caps/tests/mochitest/test_disallowInheritPrincipal.html","caps/tests/mochitest/test_loadLocalFont.html","caps/tests/unit/test_ipv6_host_literal.js","caps/tests/unit/test_oa_partitionKey_pattern.js","caps/tests/unit/test_origin.js","caps/tests/unit/test_precursor_principal.js","caps/tests/unit/test_site_origin.js","caps/tests/unit/test_uri_escaping.js","caps/tests/unit/xpcshell.toml"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013"}} -->
+# firefox/caps structural source map 46
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. This is an automated navigation map, not a behavior review.
+Each row gives the repository-relative path, Git blob ID, byte size, role inferred from the path, declaration candidates, and literal dependency candidates. `@N` is the source line.
+Candidates come from line-based patterns. They can miss multiline, anonymous, macro-generated, and language-specific declarations or match comments and fixture text. Dependencies are not resolved imports, runtime calls, or a complete graph. No candidates does not mean no functions or dependencies.
+Imported code and tests are included. Binary and non-UTF-8 files have a census entry but no declaration extraction. Symlink contents are scanned as text, not followed. No uncommitted changes, build products, ignored files, or untracked files are studied.
+
+## File map
+
+`caps/.clang-format` | `9a2fff9ee2c68f41cf92db8334f8b83bc810c453` | 53 bytes | data-or-other | UTF-8 | mode 100644
+
+`caps/BasePrincipal.cpp` | `dde6854a48d1b7ff690e13bf9966e9f5d8c9f581` | 46711 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@47; mHasExplicitDomain@56; mHasExplicitDomain@64; BasePrincipal::GetOrigin@69; BasePrincipal::GetWebExposedOriginSerialization@81; BasePrincipal::GetHostPort@92; BasePrincipal::GetHost@103; BasePrincipal::GetOriginNoSuffix@114; BasePrincipal::GetSiteOrigin@120; BasePrincipal::GetSiteOriginNoSuffix@132; CallOnInner@150; constexpr@201; CallOnInner@228; constexpr@257; constexpr@273; CallOnInner@275; constexpr@286; CallOnInner@288; BasePrincipal::ToJSON@352; BasePrincipal::ToJSON@366; BasePrincipal::WriteJSONProperties@379; BasePrincipal::WriteJSONInnerProperties@391; BasePrincipal::Equals@426; BasePrincipal::EqualsConsideringDomain@556; BasePrincipal::EqualsURI@565; BasePrincipal::Subsumes@576; BasePrincipal::SubsumesConsideringDomain@585; BasePrincipal::CheckMayLoad@604; ExtensionPolicyService::GetCoreByURL@662; BasePrincipal::IsThirdPartyURI@682; BasePrincipal::IsThirdPartyPrincipal@700; BasePrincipal::IsThirdPartyChannel@711; BasePrincipal::IsSameOrigin@726; BasePrincipal::IsL10nAllowed@740; BasePrincipal::GetIsNullPrincipal@856; BasePrincipal::GetIsContentPrincipal@862; BasePrincipal::GetIsExpandedPrincipal@868; BasePrincipal::GetAsciiSpec@874; BasePrincipal::GetSpec@885; BasePrincipal::GetAsciiHost@896; BasePrincipal::GetExposablePrePath@907; BasePrincipal::GetExposableSpec@920; BasePrincipal::GetPrePath@938; BasePrincipal::GetFilePath@949; BasePrincipal::GetIsSystemPrincipal@960; BasePrincipal::GetIsAddonPrincipal@966; BasePrincipal::GetIsAddonOrExpandedAddonPrincipal@972; BasePrincipal::GetIsOnion@977; BasePrincipal::GetIsIpAddress@994; BasePrincipal::GetIsLocalIpAddress@1019; BasePrincipal::GetScheme@1040; BasePrincipal::SchemeIs@1053; BasePrincipal::IsURIInPrefList@1065; BasePrincipal::IsURIInList@1084; BasePrincipal::IsContentAccessibleAboutURI@1098; BasePrincipal::GetIsOriginPotentiallyTrustworthy@1116; BasePrincipal::GetIsLoopbackHost@1131; BasePrincipal::GetIsSecureContextAllowlistedHost@1146; BasePrincipal::GetAboutModuleFlags@1170; BasePrincipal::GetOriginSuffix@1200; BasePrincipal::GetUserContextId@1207; BasePrincipal::GetPrivateBrowsingId@1213; BasePrincipal::GetIsInPrivateBrowsing@1219; BasePrincipal::AddonPolicy@1239; BasePrincipal::AddonPolicyCore@1245; BasePrincipal::AddonHasPermission@1252; BasePrincipal::PrincipalToInherit@1259; BasePrincipal::OverridesCSP@1266; BasePrincipal::ContentScriptAddonPolicy@1394; BasePrincipal::ContentScriptAddonPolicyCore@1402; BasePrincipal::Cast@1410; BasePrincipal::GetLocalStorageQuotaKey@1430; BasePrincipal::GetStorageOriginKey@1529; BasePrincipal::GetIsScriptAllowedByPolicy@1579; SiteIdentifier::Equals@1594; BasePrincipal::GetPrecursorPrincipal@1617; BasePrincipal::Deserializer::Write@1634; nsIPrincipal::GetHashValue@1649
+Dependencies: mozilla/BasePrincipal.h@5; ContentPrincipalJSONHandler.h@7; ExpandedPrincipal.h@8; ExpandedPrincipalJSONHandler.h@9; NullPrincipalJSONHandler.h@10; PrincipalJSONHandler.h@11; SubsumedPrincipalJSONHandler.h@12; ThirdPartyUtil.h@13; js/JSON.h@14; mozilla/Components.h@15; mozilla/ContentPrincipal.h@16; mozilla/ExtensionPolicyService.h@17; mozilla/JSONStringWriteFuncs.h@18; mozilla/JSONWriter.h@19; mozilla/NullPrincipal.h@20; mozilla/PermissionManager.h@21; mozilla/StaticPrefs_permissions.h@22; mozilla/StorageAccess.h@23; mozilla/dom/BlobURLProtocolHandler.h@24; mozilla/dom/ChromeUtils.h@25; mozilla/dom/ReferrerInfo.h@26; mozilla/dom/StorageUtils.h@27; mozilla/dom/ToJSValue.h@28; mozilla/dom/nsMixedContentBlocker.h@29; nsAboutProtocolUtils.h@30; nsContentUtils.h@31; nsDocShell.h@32; nsIEffectiveTLDService.h@33; nsIOService.h@34; nsIURIFixup.h@35; nsIURIMutator.h@36; nsIURIWithSpecialOrigin.h@37; nsIURL.h@38; nsMixedContentBlocker.h@39; nsNetUtil.h@40; nsPIDOMWindow.h@41; nsScriptSecurityManager.h@42; nsSerializationHelper.h@43; nsServiceManagerUtils.h@44; prnetdb.h@45
+
+`caps/BasePrincipal.h` | `2d9e54ef3296d15b7ce814d90ff89750b508157b` | 18333 bytes | source | UTF-8 | mode 100644
+Declarations: ExpandedPrincipal@23; mozIDOMWindow@24; nsIChannel@25; nsIReferrerInfo@26; nsISupports@27; nsIURI@28; mozilla@30; JSONWriter@32; dom@34; class@35; extensions@38; WebExtensionPolicy@39; WebExtensionPolicyCore@40; BasePrincipal@43; SiteIdentifier@51; Init@53; IsInitialized@58; GetPrincipal@65; BasePrincipal@80; PrincipalKind@84; Is@102; As@107; DocumentDomainConsideration@112; IsContentPrincipal@209; Cast@211; Cast@215; UserContextId@247; PrivateBrowsingId@248; Kind@252; GetOriginNoSuffixHash@293; GetOriginSuffixHash@294; SetHasExplicitDomain@323; GetHasExplicitDomain@324; KeyValT@329; Deserializer@340; WriteJSONProperty@369; BasePrincipal::FastEquals@389; BasePrincipal::FastEqualsConsideringDomain@414; BasePrincipal::FastSubsumes@438; BasePrincipal::FastSubsumesConsideringDomain@450; BasePrincipal::FastSubsumesIgnoringFPD@463; BasePrincipal::IsSystemPrincipal@472; nsIPrincipal::IsSystemPrincipal@478
+Dependencies: stdint.h@8; ErrorList.h@10; js/TypeDecls.h@11; mozilla/AlreadyAddRefed.h@12; mozilla/Assertions.h@13; mozilla/OriginAttributes.h@14; mozilla/RefPtr.h@15; nsAtom.h@16; nsIObjectOutputStream.h@17; nsIPrincipal.h@18; nsJSPrincipals.h@19; nsStringFwd.h@20; nscore.h@21
+
+`caps/ContentPrincipal.cpp` | `40e20360e7a6dd7c8379ab5f041fff4a281ddc02` | 23446 bytes | source | UTF-8 | mode 100644
+Declarations: mDomain@52; mAddon@77; ContentPrincipal::GetScriptLocation@81; NS_URIIsLocalFile@102; ContentPrincipal::GetURI@250; ContentPrincipal::MayLoadInternal@255; ContentPrincipal::GetDomain@296; ContentPrincipal::SetDomain@308; ContentPrincipal::GetBaseDomain@391; ContentPrincipal::GetSiteOriginNoSuffix@412; ContentPrincipal::GetSiteIdentifier@474; ContentPrincipal::AddonPolicyCore@489; ContentPrincipal::GetAddonId@507; ContentPrincipal::Deserializer::Read@517; ContentPrincipal::WriteJSONInnerProperties@575; ContentPrincipalJSONHandler::startObject@614; ContentPrincipalJSONHandler::endObject@669
+Dependencies: ContentPrincipal.h@5; ContentPrincipalJSONHandler.h@7; js/JSON.h@8; js/RealmIterators.h@9; js/Wrapper.h@10; mozIThirdPartyUtil.h@11; mozilla/ClearOnShutdown.h@12; mozilla/ExtensionPolicyService.h@13; mozilla/Preferences.h@14; mozilla/dom/BlobURLProtocolHandler.h@15; mozilla/dom/ScriptSettings.h@16; nsAboutProtocolUtils.h@17; nsContentUtils.h@18; nsError.h@19; nsIClassInfoImpl.h@20; nsIContentSecurityPolicy.h@21; nsIEffectiveTLDService.h@22; nsIObjectInputStream.h@23; nsIObjectOutputStream.h@24; nsIProtocolHandler.h@25; nsIStandardURL.h@26; nsIURI.h@27; nsIURIMutator.h@28; nsIURIWithSpecialOrigin.h@29; nsIURL.h@30; nsJSPrincipals.h@31; nsNetCID.h@32; nsReadableUtils.h@33; nsScriptSecurityManager.h@34; nsSerializationHelper.h@35; nsString.h@36; nscore.h@37; pratom.h@38
+
+`caps/ContentPrincipal.h` | `3ad1e95a4d73e24062f2e700cf9026d87b8c0f20` | 2974 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@17; JSONWriter@19; ContentPrincipal@21; Kind@37; SerializableKeys@51; Deserializer@65
+Dependencies: mozilla/BasePrincipal.h@8; mozilla/Mutex.h@9; mozilla/extensions/WebExtensionPolicy.h@10; nsCOMPtr.h@11; nsJSPrincipals.h@12; nsNetUtil.h@13; nsScriptSecurityManager.h@14; nsTArray.h@15
+
+`caps/ContentPrincipalJSONHandler.h` | `bd769c2a1e72f418b8684d763e3612261ec3faa2` | 2361 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@20; ContentPrincipalJSONHandler@24; class@25; HasAccepted@74
+Dependencies: stddef.h@8; stdint.h@9; ContentPrincipal.h@11; OriginAttributes.h@12; SharedJSONHandler.h@13; js/TypeDecls.h@14; mozilla/RefPtr.h@15; nsCOMPtr.h@16; nsDebug.h@17; nsIURI.h@18
+
+`caps/DomainPolicy.cpp` | `b2de4baa69364958b7a66682eb82265a581f2362` | 6028 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; mSuperAllowlist@41; DomainPolicy::~DomainPolicy@47; DomainPolicy::GetBlocklist@55; DomainPolicy::GetSuperBlocklist@62; DomainPolicy::GetAllowlist@69; DomainPolicy::GetSuperAllowlist@76; DomainPolicy::Deactivate@83; DomainPolicy::CloneDomainPolicy@109; DomainPolicy::ApplyClone@127; GetCanonicalClone@134; DomainSet::Add@146; DomainSet::Remove@158; DomainSet::Clear@170; DomainSet::Contains@180; DomainSet::ContainsSuperDomain@189; DomainSet::CloneSet@216
+Dependencies: DomainPolicy.h@5; mozilla/dom/ContentParent.h@7; mozilla/ipc/URIUtils.h@8; nsIURIMutator.h@9; nsScriptSecurityManager.h@10
+
+`caps/DomainPolicy.h` | `9a79c15903f7c1a063d662aee53c891272625b1a` | 1261 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; DomainSetChangeType@14; DomainSetType@22; DomainSet@30; DomainSet@35; DomainPolicy@45
+Dependencies: nsIDomainPolicy.h@8; nsTHashSet.h@9; nsURIHashKey.h@10
+
+`caps/ExpandedPrincipal.cpp` | `b8c211f6dbfac60578d99226a0cd13eefd1b15ae` | 13861 bytes | source | UTF-8 | mode 100644
+Declarations: mPrincipals@30; ExpandedPrincipal::GetDomain@60; ExpandedPrincipal::SetDomain@66; ExpandedPrincipal::MayLoadInternal@98; ExpandedPrincipal::GetURI@109; ExpandedPrincipal::GetBaseDomain@119; ExpandedPrincipal::GetAddonId@124; ExpandedPrincipal::AddonHasPermission@129; ExpandedPrincipal::SetCsp@148; ExpandedPrincipal::GetCsp@155; ExpandedPrincipal::PrincipalToInherit@161; ExpandedPrincipal::GetScriptLocation@178; ExpandedPrincipal::Deserializer::Read@205; ExpandedPrincipal::GetSiteIdentifier@244; ExpandedPrincipal::WriteJSONInnerProperties@264; ExpandedPrincipalJSONHandler::ProcessSubsumedResult@288; ExpandedPrincipalJSONHandler::startObject@297; ExpandedPrincipalJSONHandler::endObject@364; ExpandedPrincipalJSONHandler::startArray@393; ExpandedPrincipalJSONHandler::endArray@407; ExpandedPrincipal::IsThirdPartyURI@472
+Dependencies: ExpandedPrincipal.h@5; ExpandedPrincipalJSONHandler.h@7; SubsumedPrincipalJSONHandler.h@8; js/JSON.h@9; mozilla/Base64.h@10; mozilla/JSONWriter.h@11; mozilla/extensions/WebExtensionPolicy.h@12; nsCharSeparatedTokenizer.h@13; nsIClassInfoImpl.h@14; nsIObjectInputStream.h@15; nsReadableUtils.h@16
+
+`caps/ExpandedPrincipal.h` | `82fbd20a9864d78e7c901da59cbe48b4e7c9e316` | 3290 bytes | source | UTF-8 | mode 100644
+Declarations: nsIContentSecurityPolicy@15; mozilla@17; JSONWriter@18; ExpandedPrincipal@21; Kind@28; SerializableKeys@62; Deserializer@69
+Dependencies: mozilla/BasePrincipal.h@8; nsCOMPtr.h@9; nsJSPrincipals.h@10; nsNetUtil.h@11; nsProxyRelease.h@12; nsTArray.h@13
+
+`caps/ExpandedPrincipalJSONHandler.h` | `745231216427957b2472a121ef391c13feb55522` | 3673 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@23; ExpandedPrincipalJSONHandler@60; class@61; HasAccepted@107
+Dependencies: stddef.h@8; stdint.h@9; ExpandedPrincipal.h@11; OriginAttributes.h@12; SharedJSONHandler.h@13; SubsumedPrincipalJSONHandler.h@14; js/TypeDecls.h@15; mozilla/Maybe.h@16; mozilla/RefPtr.h@17; nsCOMPtr.h@18; nsDebug.h@19; nsIPrincipal.h@20; nsTArray.h@21
+
+`caps/NullPrincipal.cpp` | `a9a429e463e75f19cc8cc25a24e0a033993018e1` | 11529 bytes | source | UTF-8 | mode 100644
+Declarations: mURI@38; NullPrincipal::CreateWithoutOriginAttributes@68; NullPrincipal::EscapePrecursorQuery@72; NullPrincipal::UnescapePrecursorQuery@82; NullPrincipal::GetScriptLocation@148; NullPrincipal::GetURI@157; NullPrincipal::GetIsOriginPotentiallyTrustworthy@163; NullPrincipal::GetDomain@169; NullPrincipal::SetDomain@176; NullPrincipal::MayLoadInternal@182; NullPrincipal::GetBaseDomain@196; NullPrincipal::GetAddonId@202; NullPrincipal::Deserializer::Read@211; NullPrincipal::WriteJSONInnerProperties@234; NullPrincipal::GetPrecursorPrincipal@250; NullPrincipalJSONHandler::startObject@293; NullPrincipalJSONHandler::endObject@345
+Dependencies: NullPrincipal.h@11; ContentPrincipal.h@13; DefaultURI.h@14; NullPrincipalJSONHandler.h@15; js/JSON.h@16; mozilla/StaticPrefs_network.h@17; mozilla/dom/BlobURLProtocolHandler.h@18; nsDocShell.h@19; nsError.h@20; nsEscape.h@21; nsIClassInfoImpl.h@22; nsIObjectInputStream.h@23; nsNetCID.h@24; nsScriptSecurityManager.h@25; nsSimpleURI.h@26; pratom.h@27
+
+`caps/NullPrincipal.h` | `bf0e6a5c4cb7dfc43801ca9628029a0a034d5313` | 4203 bytes | source | UTF-8 | mode 100644
+Declarations: nsIDocShell@20; nsIURI@21; mozilla@28; JSONWriter@30; NullPrincipal@32; Kind@34; SerializableKeys@83; Deserializer@90
+Dependencies: gtest/MozGtestFriend.h@14; mozilla/BasePrincipal.h@15; nsCOMPtr.h@16; nsIPrincipal.h@17; nsJSPrincipals.h@18
+
+`caps/NullPrincipalJSONHandler.h` | `b69b6db1b2fd42787092265de70e4716b455d137` | 2313 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@21; NullPrincipalJSONHandler@25; class@26; HasAccepted@72
+Dependencies: stddef.h@8; stdint.h@9; NullPrincipal.h@11; OriginAttributes.h@12; SharedJSONHandler.h@13; js/TypeDecls.h@14; mozilla/Assertions.h@15; mozilla/RefPtr.h@16; nsCOMPtr.h@17; nsDebug.h@18; nsIURI.h@19
+
+`caps/OriginAttributes.cpp` | `3209b352548ee42171050f78498e5bd93093c42b` | 17714 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@22; OriginAttributes::SetPartitionKey@212; OriginAttributes::SetPartitionKey@216; OriginAttributes::CreateSuffix@221; OriginAttributes::CreateSuffixAtom@291; OriginAttributes::CreateAnonymizedSuffix@297; OriginAttributes::PopulateFromSuffix@311; OriginAttributes::IsPrivateBrowsing@420
+Dependencies: mozilla/OriginAttributes.h@5; mozilla/Assertions.h@7; mozilla/Preferences.h@8; mozilla/dom/BlobURLProtocolHandler.h@9; mozilla/dom/quota/QuotaManager.h@10; nsCharSeparatedTokenizer.h@11; nsIEffectiveTLDService.h@12; nsIURI.h@13; nsNetCID.h@14; nsNetUtil.h@15; nsString.h@16; nsURLHelper.h@17
+
+`caps/OriginAttributes.h` | `36905c9dfd20f893649d70838a75c79a7c8177a4` | 11644 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; OriginAttributes@15; OriginAttributesDictionary@20; StripAttributes@44; IsFirstPartyEnabled@150; IsRestrictOpenerAccessForFPI@157; OriginAttributesPattern@189; OriginAttributesPatternDictionary@201; Matches@204; Overlaps@272
+Dependencies: mozilla/HashFunctions.h@8; mozilla/StaticPrefs_privacy.h@9; mozilla/dom/OriginAttributesBinding.h@10; nsIScriptSecurityManager.h@11
+
+`caps/OriginAttributesHashKey.h` | `9dcd0c3872ee5797c17b634f31c2da4a5429df67` | 1331 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@11; OriginAttributesHashKey@13; OriginAttributesHashKey@19; GetKey@30; KeyEquals@32; KeyToPointer@36; HashKey@38
+Dependencies: OriginAttributes.h@8; PLDHashTable.h@9
+
+`caps/PrincipalHashKey.h` | `aeae701d26703dc3e60b9d3880411acc190e76bb` | 1408 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; PrincipalHashKey@15; mPrincipal@21; mPrincipal@26; GetKey@32; KeyEquals@34; HashKey@42
+Dependencies: BasePrincipal.h@8; PLDHashTable.h@9; nsCOMPtr.h@10; nsHashKeys.h@11
+
+`caps/PrincipalJSONHandler.h` | `302e76662450f8a96b6de8d86801fa49a8d6db09` | 3557 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@24; PrincipalJSONHandlerTypes@26; class@28; PrincipalJSONHandler@88; Get@104
+Dependencies: stddef.h@8; stdint.h@9; BasePrincipal.h@11; ContentPrincipalJSONHandler.h@12; ExpandedPrincipalJSONHandler.h@13; NullPrincipalJSONHandler.h@14; SharedJSONHandler.h@15; js/JSON.h@16; js/TypeDecls.h@17; mozilla/AlreadyAddRefed.h@18; mozilla/RefPtr.h@19; mozilla/Variant.h@20; nsDebug.h@21; nsPrintfCString.h@22
+
+`caps/SharedJSONHandler.h` | `febdcee1d5d1b0dd4a6f703b3d8c89fa447cb6bf` | 3220 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; PrincipalJSONHandlerShared@15; ContainerPrincipalJSONHandler@70; CallOnInner@96
+Dependencies: BasePrincipal.h@8; js/JSON.h@9; mozilla/RefPtr.h@10
+
+`caps/SubsumedPrincipalJSONHandler.h` | `dd7f59caff12021ed809b774fb9a182c4129ad2f` | 2972 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@20; SubsumedPrincipalJSONHandlerTypes@22; class@24; SubsumedPrincipalJSONHandler@74; HasAccepted@83
+Dependencies: stddef.h@8; stdint.h@9; BasePrincipal.h@11; ContentPrincipalJSONHandler.h@12; NullPrincipalJSONHandler.h@13; SharedJSONHandler.h@14; js/TypeDecls.h@15; mozilla/RefPtr.h@16; mozilla/Variant.h@17; nsDebug.h@18
+
+`caps/SystemPrincipal.cpp` | `f4a54b806d7f3b1b66f46b893ef9b07cc1792daf` | 3174 bytes | source | UTF-8 | mode 100644
+Declarations: OriginAttributes@30; SystemPrincipal::Get@36; SystemPrincipal::Init@41; SystemPrincipal::Shutdown@52; SystemPrincipal::GetScriptLocation@59; SystemPrincipal::GetURI@69; SystemPrincipal::GetIsOriginPotentiallyTrustworthy@75; SystemPrincipal::GetDomain@81; SystemPrincipal::SetDomain@87; SystemPrincipal::GetBaseDomain@90; SystemPrincipal::GetAddonId@96; SystemPrincipal::Read@106; SystemPrincipal::Write@112
+Dependencies: SystemPrincipal.h@7; mozilla/ClearOnShutdown.h@9; nsCOMPtr.h@10; nsCRT.h@11; nsIClassInfoImpl.h@12; nsReadableUtils.h@13; nsString.h@14; nscore.h@15; pratom.h@16
+
+`caps/SystemPrincipal.h` | `2e243bbf82329bfbe603b5c41dfb75ff667c2e29` | 2127 bytes | source | UTF-8 | mode 100644
+Declarations: nsScriptSecurityManager@18; mozilla@20; SystemPrincipal@22; Kind@28
+Dependencies: mozilla/BasePrincipal.h@10; nsIPrincipal.h@11; nsJSPrincipals.h@12
+
+`caps/moz.build` | `35ed5c9df580c376a40d042b280eec991d6a23a7` | 2063 bytes | build-registration | UTF-8 | mode 100644
+Dependencies: /ipc/chromium/chromium-config.mozbuild@72
+
+`caps/nsIAddonPolicyService.idl` | `f95603800a5d4bd519cbfbedbb99b81168020420` | 3832 bytes | source | UTF-8 | mode 100644
+Declarations: nsIAddonPolicyService@14; nsIAddonContentPolicy@83
+Dependencies: nsISupports.idl@6; nsIURI.idl@7
+
+`caps/nsIDomainPolicy.idl` | `abe6cb7855749983a13c56fd37e2becd7c1047ef` | 2346 bytes | source | UTF-8 | mode 100644
+Declarations: nsIURI@7; nsIDomainSet@8; mozilla@11; dom@12; DomainPolicyClone@13; nsIDomainPolicy@34; nsIDomainSet@48
+Dependencies: nsISupports.idl@5
+
+`caps/nsIPrincipal.idl` | `441e6f5ac19e17c1af3a17683a415deeef498815` | 25707 bytes | source | UTF-8 | mode 100644
+Declarations: nsIChannel@11; JSPrincipals@15; mozilla@20; OriginAttributes@21; nsIURI@44; nsIPrincipal@55; nsIExpandedPrincipal@747; GetCsp@777
+Dependencies: nsIContentSecurityPolicy.idl@7; nsISerializable.idl@8; nsIAboutModule.idl@9; nsIReferrerInfo.idl@10; mozIDOMWindow.idl@12; nsCOMPtr.h@16; nsTArray.h@17; nsString.h@18; mozilla/DebugOnly.h@19
+
+`caps/nsIScriptSecurityManager.idl` | `585f6ecb418a17f86cd9701fdee76132a4f76f82` | 14152 bytes | source | UTF-8 | mode 100644
+Declarations: nsIURI@7; nsIChannel@8; nsIClassInfo@9; nsIDocShell@10; nsIDomainPolicy@11; nsILoadContext@12; mozilla@17; dom@18; DomainPolicyClone@19; nsIScriptSecurityManager@29
+Dependencies: nsISupports.idl@5; nsIPrincipal.idl@6; jspubtd.h@15
+
+`caps/nsJSPrincipals.cpp` | `946b436702506efd042fef404440cc29eec87de2` | 11143 bytes | source | UTF-8 | mode 100644
+Declarations: nsJSPrincipals::AddRef@22; nsJSPrincipals::Release@30; nsJSPrincipals::Subsume@42; nsJSPrincipals::Destroy@50; nsJSPrincipals::write@354; nsJSPrincipals::isSystemPrincipal@364; nsJSPrincipals::isAddonPrincipal@369
+Dependencies: nsJSPrincipals.h@5; mozilla/BasePrincipal.h@7; mozilla/StaticPtr.h@8; mozilla/dom/StructuredCloneTags.h@9; mozilla/ipc/BackgroundUtils.h@10; mozilla/ipc/PBackgroundSharedTypes.h@11; nsCOMPtr.h@12; nsIPrincipal.h@13; nsString.h@14; xpcpublic.h@15
+
+`caps/nsJSPrincipals.h` | `d4069f0ac3cd716ebd2491a2c95fe8dc3a6c8876` | 2721 bytes | source | UTF-8 | mode 100644
+Declarations: JSContext@12; JSStructuredCloneReader@13; JSStructuredCloneWriter@14; mozilla@16; ipc@17; PrincipalInfo@18; nsJSPrincipals@22; get@53; get@58; nsJSPrincipals@67
+Dependencies: js/Principals.h@9; nsIPrincipal.h@10
+
+`caps/nsScriptSecurityManager.cpp` | `ddeb7ec7d138394043d3516502143fae7bbf16c2` | 64890 bytes | source | UTF-8 | mode 100644
+Declarations: BundleHelper@89; GetOrCreate@93; Shutdown@109; GetOrCreateInternal@117; nsAutoInPrincipalDomainOriginSetter@151; nsAutoInPrincipalDomainOriginSetter@153; GetOriginFromURI@159; SetPendingExceptionASCII@207; SetPendingException@211; NS_WARN_IF@490; NS_WARN_IF@561; nsScriptSecurityManager::CheckLoadURIFromScript@602; DenyAccessIfURIHasFlags@631; EqualOrSubdomain@645; BasePrincipal::Cast@728; BasePrincipal::Cast@740; BasePrincipal::Cast@836; nsScriptSecurityManager::InFileURIAllowlist@1296; nsScriptSecurityManager::GetSystemPrincipal@1314; nsLiteralCString@1342; nsScriptSecurityManager::CanCreateInstance@1503; nsScriptSecurityManager::CanGetService@1518; mPrefInitialized@1544; nsScriptSecurityManager::Init@1551; nsScriptSecurityManager::InitJSCallbacks@1566; nsScriptSecurityManager::ClearJSCallbacks@1584; nsScriptSecurityManager::~nsScriptSecurityManager@1591; nsScriptSecurityManager::Shutdown@1603; nsScriptSecurityManager::GetScriptSecurityManager@1609; nsScriptSecurityManager::InitStatics@1614; nsScriptSecurityManager::SystemPrincipalSingletonConstructor@1629; IsWhitespace@1636; Test@1637; IsWhitespaceOrComma@1639; Test@1640; SkipPast@1646; SkipUntil@1654; nsScriptSecurityManager::InitPrefs@1713; nsScriptSecurityManager::GetDomainPolicyActive@1730; nsScriptSecurityManager::ActivateDomainPolicy@1736; nsScriptSecurityManager::ActivateDomainPolicyInternal@1745; nsScriptSecurityManager::DeactivateDomainPolicy@1760; nsScriptSecurityManager::CloneDomainPolicy@1764; nsScriptSecurityManager::PolicyAllowsScript@1774; nsScriptSecurityManager::EnsureFileURIAllowlist@1814
+Dependencies: nsScriptSecurityManager.h@5; stdint.h@7; DomainPolicy.h@9; ExpandedPrincipal.h@10; SystemPrincipal.h@11; XPCWrapper.h@12; js/ColumnNumber.h@13; js/GCVector.h@14; js/Value.h@15; mozilla/BasePrincipal.h@16; mozilla/ClearOnShutdown.h@17; mozilla/Components.h@18; mozilla/ContentPrincipal.h@19; mozilla/ExtensionPolicyService.h@20; mozilla/NullPrincipal.h@21; mozilla/Preferences.h@22; mozilla/SourceLocation.h@23; mozilla/StaticPrefs_extensions.h@24; mozilla/StaticPrefs_security.h@25; mozilla/StaticPtr.h@26; mozilla/StoragePrincipalHelper.h@27; mozilla/dom/BindingUtils.h@28; mozilla/dom/ContentChild.h@29; mozilla/dom/ContentParent.h@30; mozilla/dom/Exceptions.h@31; mozilla/dom/PolicyContainer.h@32; mozilla/dom/ScriptSettings.h@33; mozilla/dom/TrustedTypeUtils.h@34; mozilla/dom/WorkerCommon.h@35; mozilla/dom/WorkerPrivate.h@36; mozilla/dom/nsCSPContext.h@37; nsAboutProtocolUtils.h@38; nsCRT.h@39; nsCRTGlue.h@40; nsContentSecurityUtils.h@41; nsContentUtils.h@42; nsDOMCID.h@43; nsDOMJSUtils.h@44; nsDirectoryServiceDefs.h@45; nsDocShell.h@46; nsError.h@47; nsGlobalWindowInner.h@48; nsIChromeRegistry.h@49; nsIClassInfo.h@50; nsIConsoleService.h@51; nsIContent.h@52; nsIContentSecurityPolicy.h@53; nsIDocShell.h@54; nsIEffectiveTLDService.h@55; nsILoadContext.h@56; nsILoadInfo.h@57; nsINestedURI.h@58; nsIOService.h@59; nsIResProtocolHandler.h@60; nsIScriptContext.h@61; nsIScriptError.h@62; nsIScriptGlobalObject.h@63; nsIScriptObjectPrincipal.h@64; nsIStringBundle.h@65; nsIURIFixup.h@66; nsIURIMutator.h@67; nsJSPrincipals.h@68; nsJSUtils.h@69; nsNetUtil.h@70; nsPIDOMWindow.h@71; nsPIDOMWindowInlines.h@72; nsString.h@73; nsTextFormatter.h@74; nspr.h@75; xpcpublic.h@76
+
+`caps/nsScriptSecurityManager.h` | `025938b4843356a83a05dc6557a2a45fd3817f33` | 4852 bytes | source | UTF-8 | mode 100644
+Declarations: nsIIOService@18; nsIStringBundle@19; mozilla@21; OriginAttributes@22; SystemPrincipal@23; JS@26; class@27; class@28; nsScriptSecurityManager@37; GetStrictFileOriginPolicy@77
+Dependencies: stdint.h@8; js/TypeDecls.h@10; mozilla/Maybe.h@11; nsCOMPtr.h@12; nsIPrincipal.h@13; nsIScriptSecurityManager.h@14; nsServiceManagerUtils.h@15; nsStringFwd.h@16
+
+`caps/tests/gtest/TestBackgroundThreadPrincipal.cpp` | `fbafb2897e5d05eb6c241144e486fed5badf050e` | 3531 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@18; RunOnBackgroundThread@21; TEST@31; TEST@51; TEST@67
+Dependencies: gtest/gtest.h@4; mozilla/BasePrincipal.h@5; mozilla/ContentPrincipal.h@6; mozilla/NullPrincipal.h@7; mozilla/gtest/MozAssertions.h@8; mozilla/ipc/BackgroundUtils.h@9; mozilla/ipc/PBackgroundSharedTypes.h@10; nsIEventTarget.h@11; nsISerialEventTarget.h@12; nsIURIMutator.h@13; nsNetUtil.h@14; nsPrintfCString.h@15; nsThreadUtils.h@16
+
+`caps/tests/gtest/TestNullPrincipalPrecursor.cpp` | `f3103c1a9d9083a0b5d32ba8c8746a1c2fb12d9d` | 1920 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@11; TEST@13
+Dependencies: gtest/gtest.h@4; mozilla/NullPrincipal.h@5; mozilla/gtest/MozAssertions.h@6; nsIURI.h@7; nsIURIMutator.h@8; nsPrintfCString.h@9
+
+`caps/tests/gtest/TestOriginAttributes.cpp` | `bf2b619902592b968099cba25d72d4b3ac21762e` | 7123 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@19; TestSuffix@21; TestFPD@32; TEST@42; TEST@48; TEST@62; TEST@85; TEST@119; TEST@156
+Dependencies: gtest/gtest.h@4; mozilla/BasePrincipal.h@5; mozilla/NullPrincipal.h@6; mozilla/Preferences.h@7; nsNetUtil.h@8
+
+`caps/tests/gtest/TestPrincipalAttributes.cpp` | `9ed1f3199b674deb310ea7a68623aaaee687d8f3` | 1303 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: PrincipalAttributesParam@10; PrincipalAttributesTest@16; TEST_P@19
+Dependencies: gtest/gtest.h@4; mozilla/BasePrincipal.h@5; nsScriptSecurityManager.h@6
+
+`caps/tests/gtest/TestPrincipalHash.cpp` | `1e57453367cbc4c03a82526d161c1475df3ad9f1` | 975 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: TEST@10
+Dependencies: gtest/gtest.h@4; mozilla/gtest/MozAssertions.h@5; nsIPrincipal.h@6; nsNetUtil.h@7; nsScriptSecurityManager.h@8
+
+`caps/tests/gtest/TestPrincipalSerialization.cpp` | `48cda59107404065f05606769a72869229ad58a5` | 7235 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: TEST@22; TEST@51; TEST@73; TEST@131
+Dependencies: gtest/gtest.h@4; mozilla/Base64.h@5; mozilla/BasePrincipal.h@6; mozilla/ContentPrincipal.h@7; mozilla/ExpandedPrincipal.h@8; mozilla/NullPrincipal.h@9; mozilla/SystemPrincipal.h@10
+
+`caps/tests/gtest/TestRedirectChainURITruncation.cpp` | `ccad5ee9243e64c17ca827dbe561be80bc76ba79` | 8129 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@13; TEST@86; TEST@159; TEST@185; TEST@193
+Dependencies: gtest/gtest.h@4; mozilla/BasePrincipal.h@5; mozilla/ContentPrincipal.h@6; mozilla/ExpandedPrincipal.h@7; mozilla/LoadInfo.h@8; mozilla/NullPrincipal.h@9; mozilla/SystemPrincipal.h@10; nsContentUtils.h@11
+
+`caps/tests/gtest/TestScriptSecurityManager.cpp` | `b3ac29da4b7d4b26de8a58d4681295066bada108` | 1928 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@10; TEST@12
+Dependencies: gtest/gtest.h@4; nsCOMPtr.h@5; nsIURI.h@6; nsNetUtil.h@7; nsScriptSecurityManager.h@8
+
+`caps/tests/gtest/moz.build` | `88d4dad14178675a14221275a39a144d0b414dcf` | 595 bytes | test-path,build-registration | UTF-8 | mode 100644
+Dependencies: /ipc/chromium/chromium-config.mozbuild@16
+
+`caps/tests/mochitest/browser.toml` | `559f766dc23e86450d0faea5344c305deb5da66f` | 67 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`caps/tests/mochitest/browser_aboutOrigin.js` | `fc2e2d8f53666faa67116a4f20ec65354501ea6f` | 359 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@5
+
+`caps/tests/mochitest/browser_checkloaduri.js` | `7c07e263a846df237b1eedacd2094387302b6f90` | 12759 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testURL@234; getPrincipalDesc@242; add_task@296; function@344; function@348
+
+`caps/tests/mochitest/chrome.toml` | `4b79ed0292157e75639b9f3ebb30bb6e0c995c1a` | 256 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`caps/tests/mochitest/file_bug1367586-followon.html` | `3b648ce746de873ef6e3f16eaddfa6236e8aab69` | 42 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`caps/tests/mochitest/file_bug1367586-redirect.sjs` | `12a980155f9b5265bb6b75bed61e2526009560b9` | 288 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`caps/tests/mochitest/file_bug1367586-target.html` | `e2a2fde20db6b997b308ecb91e7c6df2d5d56d03` | 192 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`caps/tests/mochitest/file_data.txt` | `26d7bd84885bac10b9d05bfbb68cd389103ffa8e` | 29 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`caps/tests/mochitest/file_disableScript.html` | `f4888cd586bdb8c231bb35d2cfdfab3cffb58041` | 195 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`caps/tests/mochitest/mochitest.toml` | `d904422cb779f86695188d34a092da036e71254f` | 611 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`caps/tests/mochitest/resource_test_file.html` | `8201bd70e00ad409a779c7f23573cb714833625f` | 89 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`caps/tests/mochitest/test_addonMayLoad.html` | `74dc8134b485abb328e97e0c6e1128d85502ee62` | 3533 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`caps/tests/mochitest/test_bug1367586.html` | `d95693c94d5da16500b52412f1b18786400661ad` | 1694 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`caps/tests/mochitest/test_bug246699.html` | `9ff25c110a5b86cbf5b6b9457d9824c4e949d4ef` | 1512 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`caps/tests/mochitest/test_bug292789.html` | `fa56d94adb603a3f6064ef4189da6e597b769fb7` | 3721 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`caps/tests/mochitest/test_bug423375.html` | `2ae1dfb9235be1f72e7a05d7af3d0de45cb6688a` | 1175 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`caps/tests/mochitest/test_bug470804.html` | `c9fd31d944a29485412ca6c0d18edaa304078800` | 1294 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`caps/tests/mochitest/test_bug995943.xhtml` | `fc7c0b022fac91263de6c3831665419630bc63f9` | 5019 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`caps/tests/mochitest/test_disableScript.xhtml` | `8c16c13bc39069c2c6950e874a1b213433ea4023` | 13369 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`caps/tests/mochitest/test_disallowInheritPrincipal.html` | `0aeb82345524c5ba42df5e765214b47b6637edde` | 1905 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`caps/tests/mochitest/test_loadLocalFont.html` | `3b0071a028579c3be7e965e3799b78a9eacf370e` | 602 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`caps/tests/unit/test_ipv6_host_literal.js` | `cde7d82d7ebb4f561dcaef79d40bb5a929c5c695` | 941 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: makeURI@2; testIPV6Host@6; run_test@11
+
+`caps/tests/unit/test_oa_partitionKey_pattern.js` | `5d0625018f2a6a3cfd24ba6740179c12e53fcd81` | 4003 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testMatch@10; getPartitionKey@22; getOAWithPartitionKey@29; add_task@38; add_task@55; add_task@81; add_task@109
+
+`caps/tests/unit/test_origin.js` | `f4b7e8312e951fb33b8edd3f1e599aedcc98c3e1` | 9664 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: makeURI@2; checkThrows@6; checkCrossOrigin@16; checkOriginAttributes@25; checkThrows@35; checkSandboxOriginAttributes@39; printAttrs@51; checkValues@67; run_test@76; checkKind@182
+
+`caps/tests/unit/test_precursor_principal.js` | `37c1ae13bcdeab4ceab45de8685f9d5085e6bb0a` | 11125 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@96; background@104; registerCleanupFunction@130; principal_is@181; precursor_is@186
+
+`caps/tests/unit/test_site_origin.js` | `5e25e24e4cd77a7fe2220658ae777f722e04cfcd` | 7241 bytes | test-path,source | UTF-8 | mode 100644
+
+`caps/tests/unit/test_uri_escaping.js` | `7feb58129557e0cc72a6cce3897b2fb1e3408852` | 633 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: makeURI@3; createPrincipal@7; run_test@17
+
+`caps/tests/unit/xpcshell.toml` | `20265348b709ff26145bda08ee335679bde9ee6f` | 219 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+## Validation and limits
+
+Every listed blob was read from the pinned Git tree and its Git SHA-1 was recomputed. Extraction is structural only. Read implementations, callers, build conditions, and tests before making a behavior claim. Runtime behavior and historical reasons remain unverified. Reproduce a file with `git show 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b:path` in the corresponding source clone. The full study coverage and navigation note records aggregate results.

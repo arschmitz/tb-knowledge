@@ -1,0 +1,1416 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:14:46.642314+00:00","paths":["js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-rs-static-generator-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-rs-static-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-rs-static-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-rs-static-privatename-identifier-alt-by-classname.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-rs-static-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-rs-static-privatename-identifier-by-classname.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-rs-static-privatename-identifier-initializer-alt-by-classname.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-rs-static-privatename-identifier-initializer-alt.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-rs-static-privatename-identifier-initializer.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-rs-static-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-static-private-fields.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-static-private-methods-with-fields.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-static-private-methods.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-string-literal-names.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-computed-names.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-computed-symbol-names.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-grammar-privatename-identifier-semantics-stringvalue.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-literal-names-asi.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-literal-names.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-private-field-usage.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-private-method-getter-usage.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-private-method-usage.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-private-names.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-field-identifier-initializer.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-field-identifier.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-private-getter-alt.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-private-getter.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-private-method-alt.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-private-method.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-private-setter-alt.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-private-setter.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-privatename-identifier-initializer-alt.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-privatename-identifier-initializer.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-async-generator-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-async-generator-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-async-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-async-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-generator-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-generator-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-privatename-identifier-alt-by-classname.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-privatename-identifier-by-classname.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-privatename-identifier-initializer-alt-by-classname.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-privatename-identifier-initializer-alt.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-privatename-identifier-initializer.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-static-private-fields.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-static-private-methods-with-fields.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-static-private-methods.js","js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-string-literal-names.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/browser.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/inst-private-escape-sequence-ZWJ.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/inst-private-escape-sequence-ZWNJ.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/inst-private-escape-sequence-u2118.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/inst-private-escape-sequence-u6F.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/inst-private-name-ZWJ.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/inst-private-name-ZWNJ.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/inst-private-name-common.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/inst-private-name-dollar.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/inst-private-name-u2118.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/inst-private-name-underscore.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/shell.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/static-private-escape-sequence-ZWJ.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/static-private-escape-sequence-ZWNJ.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/static-private-escape-sequence-u2118.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/static-private-escape-sequence-u6F.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/static-private-name-ZWJ.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/static-private-name-ZWNJ.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/static-private-name-common.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/static-private-name-dollar.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/static-private-name-u2118.js","js/src/tests/test262/language/expressions/class/elements/private-accessor-name/static-private-name-underscore.js","js/src/tests/test262/language/expressions/class/elements/private-arrow-fnc-init-err-contains-arguments.js","js/src/tests/test262/language/expressions/class/elements/private-arrow-fnc-init-err-contains-super.js","js/src/tests/test262/language/expressions/class/elements/private-async-generator-method-name.js","js/src/tests/test262/language/expressions/class/elements/private-async-method-name.js","js/src/tests/test262/language/expressions/class/elements/private-derived-cls-direct-eval-contains-superproperty-1.js","js/src/tests/test262/language/expressions/class/elements/private-derived-cls-direct-eval-contains-superproperty-2.js","js/src/tests/test262/language/expressions/class/elements/private-derived-cls-direct-eval-err-contains-supercall-1.js","js/src/tests/test262/language/expressions/class/elements/private-derived-cls-direct-eval-err-contains-supercall-2.js","js/src/tests/test262/language/expressions/class/elements/private-derived-cls-direct-eval-err-contains-supercall.js","js/src/tests/test262/language/expressions/class/elements/private-derived-cls-indirect-eval-contains-superproperty-1.js","js/src/tests/test262/language/expressions/class/elements/private-derived-cls-indirect-eval-contains-superproperty-2.js","js/src/tests/test262/language/expressions/class/elements/private-derived-cls-indirect-eval-err-contains-supercall-1.js","js/src/tests/test262/language/expressions/class/elements/private-derived-cls-indirect-eval-err-contains-supercall-2.js","js/src/tests/test262/language/expressions/class/elements/private-derived-cls-indirect-eval-err-contains-supercall.js","js/src/tests/test262/language/expressions/class/elements/private-direct-eval-err-contains-arguments.js","js/src/tests/test262/language/expressions/class/elements/private-direct-eval-err-contains-newtarget.js","js/src/tests/test262/language/expressions/class/elements/private-field-access-on-inner-arrow-function.js","js/src/tests/test262/language/expressions/class/elements/private-field-access-on-inner-function.js","js/src/tests/test262/language/expressions/class/elements/private-field-after-optional-chain.js","js/src/tests/test262/language/expressions/class/elements/private-field-as-arrow-function.js","js/src/tests/test262/language/expressions/class/elements/private-field-as-async-arrow-function.js","js/src/tests/test262/language/expressions/class/elements/private-field-as-async-function.js","js/src/tests/test262/language/expressions/class/elements/private-field-as-function.js","js/src/tests/test262/language/expressions/class/elements/private-field-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-fields-proxy-default-handler-throws.js","js/src/tests/test262/language/expressions/class/elements/private-generator-method-name.js","js/src/tests/test262/language/expressions/class/elements/private-getter-access-on-inner-arrow-function.js","js/src/tests/test262/language/expressions/class/elements/private-getter-access-on-inner-function.js","js/src/tests/test262/language/expressions/class/elements/private-getter-is-not-a-own-property.js","js/src/tests/test262/language/expressions/class/elements/private-getter-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-getter-shadowed-by-field-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-getter-shadowed-by-getter-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-getter-shadowed-by-method-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-getter-shadowed-by-setter-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-indirect-eval-contains-arguments.js","js/src/tests/test262/language/expressions/class/elements/private-indirect-eval-err-contains-newtarget.js","js/src/tests/test262/language/expressions/class/elements/private-literal-name-init-err-contains-arguments.js","js/src/tests/test262/language/expressions/class/elements/private-literal-name-init-err-contains-super.js","js/src/tests/test262/language/expressions/class/elements/private-method-access-on-inner-arrow-function.js","js/src/tests/test262/language/expressions/class/elements/private-method-access-on-inner-function.js","js/src/tests/test262/language/expressions/class/elements/private-method-comparison.js","js/src/tests/test262/language/expressions/class/elements/private-method-get-and-call.js","js/src/tests/test262/language/expressions/class/elements/private-method-is-not-a-own-property.js","js/src/tests/test262/language/expressions/class/elements/private-method-length.js","js/src/tests/test262/language/expressions/class/elements/private-method-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-method-referenced-from-static-method.js","js/src/tests/test262/language/expressions/class/elements/private-method-shadowed-by-field-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-method-shadowed-by-getter-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-method-shadowed-by-setter-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-method-shadowed-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-methods/browser.js","js/src/tests/test262/language/expressions/class/elements/private-methods/prod-private-async-generator.js","js/src/tests/test262/language/expressions/class/elements/private-methods/prod-private-async-method.js","js/src/tests/test262/language/expressions/class/elements/private-methods/prod-private-generator.js","js/src/tests/test262/language/expressions/class/elements/private-methods/prod-private-method-initialize-order.js","js/src/tests/test262/language/expressions/class/elements/private-methods/prod-private-method.js","js/src/tests/test262/language/expressions/class/elements/private-methods/shell.js","js/src/tests/test262/language/expressions/class/elements/private-setter-access-on-inner-arrow-function.js","js/src/tests/test262/language/expressions/class/elements/private-setter-access-on-inner-function.js","js/src/tests/test262/language/expressions/class/elements/private-setter-is-not-a-own-property.js","js/src/tests/test262/language/expressions/class/elements/private-setter-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-setter-shadowed-by-field-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-setter-shadowed-by-getter-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-setter-shadowed-by-method-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-setter-shadowed-by-setter-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-static-async-generator-method-name.js","js/src/tests/test262/language/expressions/class/elements/private-static-async-method-name.js","js/src/tests/test262/language/expressions/class/elements/private-static-field-shadowed-by-field-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-static-field-shadowed-by-getter-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-static-field-shadowed-by-method-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-static-field-shadowed-by-setter-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-static-field-usage-inside-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-static-generator-method-name.js","js/src/tests/test262/language/expressions/class/elements/private-static-method-length.js","js/src/tests/test262/language/expressions/class/elements/private-static-method-name.js","js/src/tests/test262/language/expressions/class/elements/private-static-method-shadowed-by-field-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-static-method-shadowed-by-getter-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-static-method-shadowed-by-method-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-static-method-shadowed-by-setter-on-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-static-method-usage-inside-nested-class.js","js/src/tests/test262/language/expressions/class/elements/private-ternary-init-err-contains-arguments.js","js/src/tests/test262/language/expressions/class/elements/private-ternary-init-err-contains-super.js","js/src/tests/test262/language/expressions/class/elements/private-typeof-init-err-contains-arguments.js","js/src/tests/test262/language/expressions/class/elements/private-typeof-init-err-contains-super.js","js/src/tests/test262/language/expressions/class/elements/prod-private-getter-before-super-return-in-constructor.js","js/src/tests/test262/language/expressions/class/elements/prod-private-getter-before-super-return-in-field-initializer.js","js/src/tests/test262/language/expressions/class/elements/prod-private-method-before-super-return-in-constructor.js","js/src/tests/test262/language/expressions/class/elements/prod-private-method-before-super-return-in-field-initializer.js","js/src/tests/test262/language/expressions/class/elements/prod-private-setter-before-super-return-in-constructor.js","js/src/tests/test262/language/expressions/class/elements/prod-private-setter-before-super-return-in-field-initializer.js","js/src/tests/test262/language/expressions/class/elements/redeclaration-symbol.js","js/src/tests/test262/language/expressions/class/elements/redeclaration.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-computed-names.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-computed-symbol-names.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-grammar-privatename-identifier-semantics-stringvalue.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-literal-names-asi.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-literal-names.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-private-field-usage.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-private-method-getter-usage.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-private-method-usage.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-private-names.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-field-identifier-initializer.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-field-identifier.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-private-getter-alt.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-private-getter.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-private-method-alt.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-private-method.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-private-setter-alt.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-private-setter.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-privatename-identifier-initializer-alt.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-privatename-identifier-initializer.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-async-generator-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-async-generator-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-async-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-async-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-generator-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-generator-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-privatename-identifier-alt-by-classname.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-privatename-identifier-by-classname.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-privatename-identifier-initializer-alt-by-classname.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-privatename-identifier-initializer-alt.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-privatename-identifier-initializer.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-static-private-fields.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-static-private-methods-with-fields.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-static-private-methods.js","js/src/tests/test262/language/expressions/class/elements/regular-definitions-string-literal-names.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-computed-names.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-computed-symbol-names.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-grammar-privatename-identifier-semantics-stringvalue.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-literal-names-asi.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-literal-names.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-private-field-usage.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-private-method-getter-usage.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-private-method-usage.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-private-names.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-field-identifier-initializer.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-field-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-private-getter-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-private-getter.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-private-method-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-private-method.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-private-setter-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-private-setter.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-privatename-identifier-initializer-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-privatename-identifier-initializer.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-async-generator-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-async-generator-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-async-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-async-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-generator-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-generator-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-privatename-identifier-alt-by-classname.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-privatename-identifier-by-classname.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-privatename-identifier-initializer-alt-by-classname.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-privatename-identifier-initializer-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-privatename-identifier-initializer.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-static-private-fields.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-static-private-methods-with-fields.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-static-private-methods.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-string-literal-names.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-computed-names.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-computed-symbol-names.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-grammar-privatename-identifier-semantics-stringvalue.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-literal-names-asi.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-literal-names.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-private-field-usage.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-private-method-getter-usage.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-private-method-usage.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-private-names.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-field-identifier-initializer.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-field-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-private-getter-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-private-getter.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-private-method-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-private-method.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-private-setter-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-private-setter.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-privatename-identifier-initializer-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-privatename-identifier-initializer.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-async-generator-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-async-generator-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-async-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-async-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-generator-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-generator-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-privatename-identifier-alt-by-classname.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-privatename-identifier-by-classname.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-privatename-identifier-initializer-alt-by-classname.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-privatename-identifier-initializer-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-privatename-identifier-initializer.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-static-private-fields.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-static-private-methods-with-fields.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-static-private-methods.js","js/src/tests/test262/language/expressions/class/elements/same-line-async-method-string-literal-names.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-computed-names.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-computed-symbol-names.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-grammar-privatename-identifier-semantics-stringvalue.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-literal-names-asi.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-literal-names.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-private-field-usage.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-private-method-getter-usage.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-private-method-usage.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-private-names.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-field-identifier-initializer.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-field-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-private-getter-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-private-getter.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-private-method-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-private-method.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-private-setter-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-private-setter.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-privatename-identifier-initializer-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-privatename-identifier-initializer.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-async-generator-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-async-generator-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-async-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-async-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-generator-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-generator-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-privatename-identifier-alt-by-classname.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-privatename-identifier-by-classname.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-privatename-identifier-initializer-alt-by-classname.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-privatename-identifier-initializer-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-privatename-identifier-initializer.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-static-private-fields.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-static-private-methods-with-fields.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-static-private-methods.js","js/src/tests/test262/language/expressions/class/elements/same-line-gen-string-literal-names.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-computed-names.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-computed-symbol-names.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-grammar-privatename-identifier-semantics-stringvalue.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-literal-names-asi.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-literal-names.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-private-field-usage.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-private-method-getter-usage.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-private-method-usage.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-private-names.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-field-identifier-initializer.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-field-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-private-getter-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-private-getter.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-private-method-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-private-method.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-private-setter-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-private-setter.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-privatename-identifier-initializer-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-privatename-identifier-initializer.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-async-generator-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-async-generator-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-async-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-async-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-generator-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-generator-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-method-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-method-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-privatename-identifier-alt-by-classname.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-privatename-identifier-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-privatename-identifier-by-classname.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-privatename-identifier-initializer-alt-by-classname.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-privatename-identifier-initializer-alt.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-privatename-identifier-initializer.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-privatename-identifier.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-static-private-fields.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-static-private-methods-with-fields.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-static-private-methods.js","js/src/tests/test262/language/expressions/class/elements/same-line-method-string-literal-names.js","js/src/tests/test262/language/expressions/class/elements/shell.js","js/src/tests/test262/language/expressions/class/elements/static-as-valid-instance-field-assigned.js","js/src/tests/test262/language/expressions/class/elements/static-as-valid-instance-field.js","js/src/tests/test262/language/expressions/class/elements/static-as-valid-static-field-assigned.js","js/src/tests/test262/language/expressions/class/elements/static-as-valid-static-field.js","js/src/tests/test262/language/expressions/class/elements/static-comp-name-init-err-contains-arguments.js","js/src/tests/test262/language/expressions/class/elements/static-comp-name-init-err-contains-super.js","js/src/tests/test262/language/expressions/class/elements/static-field-anonymous-function-length.js","js/src/tests/test262/language/expressions/class/elements/static-field-anonymous-function-name.js","js/src/tests/test262/language/expressions/class/elements/static-field-declaration.js","js/src/tests/test262/language/expressions/class/elements/static-field-init-this-inside-arrow-function.js","js/src/tests/test262/language/expressions/class/elements/static-field-init-with-this.js","js/src/tests/test262/language/expressions/class/elements/static-field-redeclaration.js","js/src/tests/test262/language/expressions/class/elements/static-literal-init-err-contains-arguments.js","js/src/tests/test262/language/expressions/class/elements/static-literal-init-err-contains-super.js","js/src/tests/test262/language/expressions/class/elements/static-private-fields-proxy-default-handler-throws.js","js/src/tests/test262/language/expressions/class/elements/static-private-getter-access-on-inner-arrow-function.js","js/src/tests/test262/language/expressions/class/elements/static-private-getter-access-on-inner-class.js","js/src/tests/test262/language/expressions/class/elements/static-private-getter-access-on-inner-function.js","js/src/tests/test262/language/expressions/class/elements/static-private-getter.js","js/src/tests/test262/language/expressions/class/elements/static-private-init-err-contains-arguments.js","js/src/tests/test262/language/expressions/class/elements/static-private-init-err-contains-super.js","js/src/tests/test262/language/expressions/class/elements/static-private-method-access-on-inner-arrow-function.js","js/src/tests/test262/language/expressions/class/elements/static-private-method-access-on-inner-function.js","js/src/tests/test262/language/expressions/class/elements/static-private-method-and-instance-method-brand-check.js","js/src/tests/test262/language/expressions/class/elements/static-private-method-referenced-from-instance-method.js","js/src/tests/test262/language/expressions/class/elements/static-private-method-subclass-receiver.js","js/src/tests/test262/language/expressions/class/elements/static-private-methods-proxy-default-handler-throws.js","js/src/tests/test262/language/expressions/class/elements/static-private-setter-access-on-inner-arrow-function.js","js/src/tests/test262/language/expressions/class/elements/static-private-setter-access-on-inner-class.js","js/src/tests/test262/language/expressions/class/elements/static-private-setter-access-on-inner-function.js","js/src/tests/test262/language/expressions/class/elements/static-private-setter.js","js/src/tests/test262/language/expressions/class/elements/static-string-literal-name-init-err-contains-arguments.js","js/src/tests/test262/language/expressions/class/elements/static-string-literal-name-init-err-contains-super.js","js/src/tests/test262/language/expressions/class/elements/string-literal-name-init-err-contains-arguments.js","js/src/tests/test262/language/expressions/class/elements/string-literal-name-init-err-contains-super.js","js/src/tests/test262/language/expressions/class/elements/super-access-from-arrow-func-on-field.js","js/src/tests/test262/language/expressions/class/elements/syntax/browser.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/browser.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/class-heritage-array-literal-arrow-heritage.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/class-heritage-array-literal-async-arrow-heritage.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/browser.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-call-expression-private-method-accessor-get.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-call-expression-private-method-accessor-set.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-call-expression-private-method-async-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-call-expression-private-method-async.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-call-expression-private-method-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-call-expression-private-method.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-call-expression-private-no-reference.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-call-expression-privatename.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-member-expression-private-method-accessor-get.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-member-expression-private-method-accessor-set.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-member-expression-private-method-async-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-member-expression-private-method-async.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-member-expression-private-method-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-member-expression-private-method.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-member-expression-private-no-reference.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-member-expression-privatename.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-call-expression-private-method-accessor-get.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-call-expression-private-method-accessor-set.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-call-expression-private-method-async-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-call-expression-private-method-async.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-call-expression-private-method-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-call-expression-private-method.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-call-expression-private-no-reference.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-call-expression-privatename.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-member-expression-private-method-accessor-get.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-member-expression-private-method-accessor-set.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-member-expression-private-method-async-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-member-expression-private-method-async.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-member-expression-private-method-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-member-expression-private-method.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-member-expression-private-no-reference.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-member-expression-privatename.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-call-expression-private-method-accessor-get.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-call-expression-private-method-accessor-set.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-call-expression-private-method-async-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-call-expression-private-method-async.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-call-expression-private-method-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-call-expression-private-method.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-call-expression-private-no-reference.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-call-expression-privatename.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-member-expression-private-method-accessor-get.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-member-expression-private-method-accessor-set.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-member-expression-private-method-async-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-member-expression-private-method-async.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-member-expression-private-method-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-member-expression-private-method.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-member-expression-private-no-reference.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-member-expression-privatename.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-call-expression-private-method-accessor-get.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-call-expression-private-method-accessor-set.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-call-expression-private-method-async-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-call-expression-private-method-async.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-call-expression-private-method-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-call-expression-private-method.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-call-expression-private-no-reference.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-call-expression-privatename.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-member-expression-private-method-accessor-get.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-member-expression-private-method-accessor-set.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-member-expression-private-method-async-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-member-expression-private-method-async.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-member-expression-private-method-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-member-expression-private-method.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-member-expression-private-no-reference.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-member-expression-privatename.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-call-expression-private-method-accessor-get.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-call-expression-private-method-accessor-set.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-call-expression-private-method-async-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-call-expression-private-method-async.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-call-expression-private-method-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-call-expression-private-method.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-call-expression-private-no-reference.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-call-expression-privatename.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-member-expression-private-method-accessor-get.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-member-expression-private-method-accessor-set.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-member-expression-private-method-async-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-member-expression-private-method-async.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-member-expression-private-method-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-member-expression-private-method.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-member-expression-private-no-reference.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-member-expression-privatename.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-twice-covered-err-delete-call-expression-private-method-accessor-get.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-twice-covered-err-delete-call-expression-private-method-accessor-set.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-twice-covered-err-delete-call-expression-private-method-async-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-twice-covered-err-delete-call-expression-private-method-async.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-twice-covered-err-delete-call-expression-private-method-gen.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-twice-covered-err-delete-call-expression-private-method.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-twice-covered-err-delete-call-expression-private-no-reference.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-twice-covered-err-delete-call-expression-privatename.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-twice-covered-err-delete-member-expression-private-method-accessor-get.js","js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-twice-covered-err-delete-member-expression-private-method-accessor-set.js"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013"}} -->
+# firefox/js structural source map 306
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. This is an automated navigation map, not a behavior review.
+Each row gives the repository-relative path, Git blob ID, byte size, role inferred from the path, declaration candidates, and literal dependency candidates. `@N` is the source line.
+Candidates come from line-based patterns. They can miss multiline, anonymous, macro-generated, and language-specific declarations or match comments and fixture text. Dependencies are not resolved imports, runtime calls, or a complete graph. No candidates does not mean no functions or dependencies.
+Imported code and tests are included. Binary and non-UTF-8 files have a census entry but no declaration extraction. Symlink contents are scanned as text, not followed. No uncommitted changes, build products, ignored files, or untracked files are studied.
+
+## File map
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-rs-static-generator-method-privatename-identifier.js` | `58b378b3e19ddb16a3ef11184f0e190e062d4fbd` | 2876 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@22; $@82; _@85
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-rs-static-method-privatename-identifier-alt.js` | `bfbba3ef274b52b277758dc6f706dcbdabcf5940` | 2937 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@19; $@79; _@82; o@85
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-rs-static-method-privatename-identifier.js` | `053272a2023ad7563153891f9ce2dade0f086bfd` | 2749 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@19; $@79; _@82
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-rs-static-privatename-identifier-alt-by-classname.js` | `4f67988589230cef48fd6b6b31708a1956f7343d` | 2802 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@62; _@66; o@70
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-rs-static-privatename-identifier-alt.js` | `db3298043c99660cdab1df913ec09e9227e1751d` | 2825 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@62; _@66; o@70
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-rs-static-privatename-identifier-by-classname.js` | `aa4728609688eb0471dbceadfb72d43325260ed5` | 2607 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@62; _@66
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-rs-static-privatename-identifier-initializer-alt-by-classname.js` | `07ee0beb1122438ef962bb897256e6b89e19d331` | 2436 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@62; _@65
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-rs-static-privatename-identifier-initializer-alt.js` | `31cd27ebc8707138364e8a5330796e842ad8d76e` | 2441 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@62; _@65
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-rs-static-privatename-identifier-initializer.js` | `87bf02d5ed2a635d774bed8c3fe6ff352097f28f` | 2473 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@62; _@65
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-rs-static-privatename-identifier.js` | `4bf1312656d6e4fcb8f9a577372f489a217564e8` | 2630 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@62; _@66
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-static-private-fields.js` | `53dc66f246923714000730a7926136c30c8231bc` | 2063 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@30; y@34
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-static-private-methods-with-fields.js` | `3c34cdb12124adc4c075a747657ce637bd14e879` | 2825 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@38; y@41
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-static-private-methods.js` | `dad981732c564e9d6ee0f193462c409022b78141` | 2113 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@36; y@39
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-gen-string-literal-names.js` | `7eb02935e05d3bfadcec680b4c77131637e7357a` | 2424 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-computed-names.js` | `5d0542ad1f9bcfe185d07b03620339a3a4aa27c3` | 2525 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@28
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-computed-symbol-names.js` | `bd803f7d6b3138b09a9228e7b9456f09443ea5d6` | 2484 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@29
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-grammar-privatename-identifier-semantics-stringvalue.js` | `e9689afbe75c03c41028388de9b40aa6ed184ff7` | 2773 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@71; o@72
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-literal-names-asi.js` | `d129d5b54d7010a64a2abf248a4dc5c01179b865` | 1679 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@27
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-literal-names.js` | `b398718e0c8687853cecc30735dce4c26e763ec5` | 2046 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@29
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-private-field-usage.js` | `2f434e6efc41228809db44fb317cdf92ddf486f8` | 1399 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@27; method@28
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-private-method-getter-usage.js` | `7e77888543959fc9274587bcbea9296e4f332833` | 1428 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@27; method@28
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-private-method-usage.js` | `1080b726ffa455d2bcef21907f6e77f956509c7a` | 1415 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@27; method@28
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-private-names.js` | `528d48315c33e2ffdd305eca510afdefa2f41155` | 1976 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@29; x@30; y@34
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-field-identifier-initializer.js` | `3be1c3b0d350f809e9c92b7ce13ff160e60dd2fd` | 2031 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@62
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-field-identifier.js` | `18c75266339dfb3c6afb98bea59d6e88c0ebde7c` | 2081 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@62
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-private-getter-alt.js` | `08ae8e2531a582eb3e1b95ae8aac7969272432a3` | 2726 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@18; m@79; $@80; _@84
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-private-getter.js` | `cf1efe33f640f6f0e12ca7125860f6f7f1949dd9` | 2785 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@18; m@79; $@80; _@84
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-private-method-alt.js` | `879e0826daaf0071816395f37e9e2b706c1514ef` | 2724 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@17; m@78; $@79; _@83
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-private-method.js` | `77833ee522fa084f0501f3b0ff2bd6841710f623` | 2783 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@17; m@78; $@79; _@83
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-private-setter-alt.js` | `4e70395d0c386e05bba479ac0af28be99f43670d` | 2778 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@18; m@78; $@79; _@83
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-private-setter.js` | `f31be2bbfcf106b0048f364f921f7a1d3b74f7cd` | 2837 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@18; m@78; $@79; _@83
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-privatename-identifier-alt.js` | `ecd76038cab2c84fae77909d37e15c3a915d4397` | 2424 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@60; $@61; _@65
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-privatename-identifier-initializer-alt.js` | `8b886724f7c31058a14175a304af0de175292e89` | 2276 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@60; $@61; _@64
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-privatename-identifier-initializer.js` | `21a0d1d4d40ae8721c1d8cb761cf51c71915db2b` | 2308 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@60; $@61; _@64
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-privatename-identifier.js` | `399f11022ad9cadf1910d00755e9234468b454e8` | 2465 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@60; $@61; _@65
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-async-generator-method-privatename-identifier-alt.js` | `7c9f977ba5701c5ac2cc10f0f664abdc0cef0afe` | 3316 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@82; $@83; _@86; o@89
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-async-generator-method-privatename-identifier.js` | `00456077c78185d70d520d62cb91d790f51f367e` | 3135 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@82; $@83; _@86
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-async-method-privatename-identifier-alt.js` | `e582704b822b6f2c51a6277a24550446bb2fe7b6` | 3295 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@82; $@83; _@86; o@89
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-async-method-privatename-identifier.js` | `8a125575fed6fb735d4fde1547cced12e50c674c` | 3108 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@82; $@83; _@86
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-generator-method-privatename-identifier-alt.js` | `0ae6b51ddc60b014702111632e8a79eea49ccc42` | 2914 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@22; m@81; $@82; _@85; o@88
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-generator-method-privatename-identifier.js` | `1e744a920a4555555942571eea4ba34756753b22` | 2847 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@22; m@81; $@82; _@85
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-method-privatename-identifier-alt.js` | `62711a2759be84876965922e69c5442f29400962` | 2908 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@19; m@78; $@79; _@82; o@85
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-method-privatename-identifier.js` | `e485228effac1a8ae5225743415e9272aebbdc06` | 2720 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@19; m@78; $@79; _@82
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-privatename-identifier-alt-by-classname.js` | `44e310fef312a911da765ca2a211a801c1725b32` | 2773 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@61; $@62; _@66; o@70
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-privatename-identifier-alt.js` | `f8a867cf81071ec41cee9984dbe665bea6ffd07d` | 2796 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@61; $@62; _@66; o@70
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-privatename-identifier-by-classname.js` | `8d0405da422ccab090a134de833b18ec51271770` | 2578 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@61; $@62; _@66
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-privatename-identifier-initializer-alt-by-classname.js` | `3c32655b045962b0a82a5e75db2527a32493f8dc` | 2407 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@61; $@62; _@65
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-privatename-identifier-initializer-alt.js` | `42067f88a3db0c924401a035151c76a7a404b5a6` | 2412 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@61; $@62; _@65
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-privatename-identifier-initializer.js` | `b61e99539f18621e3bbcb32f111f2be53def6a32` | 2444 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@61; $@62; _@65
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-rs-static-privatename-identifier.js` | `7f16bf3771d6dc2ec828e7213c73c3dcca1bafc5` | 2601 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@61; $@62; _@66
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-static-private-fields.js` | `5d525ecd2bcdb651d873e1c4e8144709d2744e81` | 2034 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@29; x@30; y@34
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-static-private-methods-with-fields.js` | `311761f4c3730671ac1abcf392702c0ac663aa48` | 2796 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@29; x@38; y@41
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-static-private-methods.js` | `b86d241afff8b2f8953710abb888253743592dba` | 2084 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@29; x@36; y@39
+
+`js/src/tests/test262/language/expressions/class/elements/new-sc-line-method-string-literal-names.js` | `3a780c2b719dc84f516396c374152f106c280f50` | 2395 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@27
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/browser.js` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/inst-private-escape-sequence-ZWJ.js` | `ea00382e50061336deded631c8b4c996a1c661d3` | 1779 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrivateReference@64; setPrivateReference@68
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/inst-private-escape-sequence-ZWNJ.js` | `da63e492b7dc3878c8babb82a99709d8aa7c3890` | 1785 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrivateReference@64; setPrivateReference@68
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/inst-private-escape-sequence-u2118.js` | `ce9184572982774da017e5d185cc5f0673a3897c` | 1769 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrivateReference@64; setPrivateReference@68
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/inst-private-escape-sequence-u6F.js` | `e34cde95448bc46f0f63c1a2d33c6843b1a6c395` | 1759 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrivateReference@64; setPrivateReference@68
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/inst-private-name-ZWJ.js` | `984890f6474fa235c07f19adacd9c839c1acb4df` | 1762 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrivateReference@64; setPrivateReference@68
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/inst-private-name-ZWNJ.js` | `b8ffae141bf5c19006f598e3681e46151a698417` | 1768 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrivateReference@64; setPrivateReference@68
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/inst-private-name-common.js` | `77aa15dba2cc7c22b17f35ee1da0e1f1a1a95b8c` | 1764 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrivateReference@64; setPrivateReference@68
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/inst-private-name-dollar.js` | `addde8144d136a671f9ecc35c4c15df73191ff44` | 1735 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrivateReference@64; setPrivateReference@68
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/inst-private-name-u2118.js` | `dee6e5e31e227aa0391f2b9323008428c17a1408` | 1744 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrivateReference@64; setPrivateReference@68
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/inst-private-name-underscore.js` | `435a4c1dc55c911b9fc9b69139e5b887bf57fd86` | 1739 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrivateReference@64; setPrivateReference@68
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/shell.js` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/static-private-escape-sequence-ZWJ.js` | `4c9b23a9074eafe0d87faed4264b984a6f857ac6` | 1868 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@16; ClassElementName@17; getPrivateReference@65; setPrivateReference@69
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/static-private-escape-sequence-ZWNJ.js` | `39ae6e35e041a69477ae797cb8a44a9870f43ef6` | 1874 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@16; ClassElementName@17; getPrivateReference@65; setPrivateReference@69
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/static-private-escape-sequence-u2118.js` | `718768b6088feeeb0e6c24a69619d5b9c7dd3863` | 1858 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@16; ClassElementName@17; getPrivateReference@65; setPrivateReference@69
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/static-private-escape-sequence-u6F.js` | `5d476bbab2b88bc862d58a311d9a3cc6729c55b4` | 1848 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@16; ClassElementName@17; getPrivateReference@65; setPrivateReference@69
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/static-private-name-ZWJ.js` | `c929640f293627c7bfafba10469ec77719d9f6c7` | 1851 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@16; ClassElementName@17; getPrivateReference@65; setPrivateReference@69
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/static-private-name-ZWNJ.js` | `b6f07d5aa459486325760a97181823905562c19d` | 1857 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@16; ClassElementName@17; getPrivateReference@65; setPrivateReference@69
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/static-private-name-common.js` | `8aa5a2c55e19914bdc29ee22c1e0f1eff6701f5c` | 1853 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@16; ClassElementName@17; getPrivateReference@65; setPrivateReference@69
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/static-private-name-dollar.js` | `a80a10dd2fe202425c339d0e9e4c80db105433c3` | 1824 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@16; ClassElementName@17; getPrivateReference@65; setPrivateReference@69
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/static-private-name-u2118.js` | `dc1b2b10d04a6570a9c74ab92f52267ab83ff15b` | 1833 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@16; ClassElementName@17; getPrivateReference@65; setPrivateReference@69
+
+`js/src/tests/test262/language/expressions/class/elements/private-accessor-name/static-private-name-underscore.js` | `245671042bb504b9bffa3f45fd37a541c83e4f8f` | 1828 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@16; ClassElementName@17; getPrivateReference@65; setPrivateReference@69
+
+`js/src/tests/test262/language/expressions/class/elements/private-arrow-fnc-init-err-contains-arguments.js` | `d1d82b58aef18759932b9db705ac117c4f55a168` | 1102 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-arrow-fnc-init-err-contains-super.js` | `5e8b677e341605f2a4a0dfcfa9a19f3f199ca10c` | 814 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-async-generator-method-name.js` | `3267d2066e8ec7e75996e2cb69eb2179b646aa95` | 2289 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrivateMethod@53
+
+`js/src/tests/test262/language/expressions/class/elements/private-async-method-name.js` | `e01522834555e46756f223e80102d42072463a67` | 2264 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrivateMethod@53
+
+`js/src/tests/test262/language/expressions/class/elements/private-derived-cls-direct-eval-contains-superproperty-1.js` | `8edf52fa00199f5d42f7fb078dccf15ee0bfdd17` | 1204 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-derived-cls-direct-eval-contains-superproperty-2.js` | `6f53a8d88ad7147316cc1fb0c84758a7430ddde9` | 992 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-derived-cls-direct-eval-err-contains-supercall-1.js` | `68aeabe77a1086594bd10a47297fbf9af9b21dec` | 1320 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-derived-cls-direct-eval-err-contains-supercall-2.js` | `401d9f416caf2baac7bc48c9c3c565f91f06fe01` | 988 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-derived-cls-direct-eval-err-contains-supercall.js` | `56218b200a14a52ffd3e0f5a1f471368a45eb281` | 1308 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-derived-cls-indirect-eval-contains-superproperty-1.js` | `f7dcbc7327b6cc92031105514a68722c037872da` | 1267 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-derived-cls-indirect-eval-contains-superproperty-2.js` | `f9677cbf049b9af791c0962bbc256754806b6079` | 1055 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-derived-cls-indirect-eval-err-contains-supercall-1.js` | `16b1906d5f5f96a2e8f069e0d0ada1ce89b016f1` | 1336 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-derived-cls-indirect-eval-err-contains-supercall-2.js` | `935635c223101bff358295572000da2c00121983` | 1004 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-derived-cls-indirect-eval-err-contains-supercall.js` | `30686fd95ba1a4fbaaecbef6ff1d4cf7605971ac` | 1324 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-direct-eval-err-contains-arguments.js` | `672a337d8f01739e99ea6d5624805aba98cb02da` | 1239 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-direct-eval-err-contains-newtarget.js` | `29c854c4da69cf69aefa1a647987978842f19d81` | 1211 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-field-access-on-inner-arrow-function.js` | `90eda76aeca01c0bf249f6beee50cec58d939da0` | 1234 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27
+
+`js/src/tests/test262/language/expressions/class/elements/private-field-access-on-inner-function.js` | `97b6081f82b1b83bcec1d05c6711770ba20b5d97` | 1242 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27; innerFunction@29
+
+`js/src/tests/test262/language/expressions/class/elements/private-field-after-optional-chain.js` | `a30f23fb67b052c907c0d124c083aff74eeaef5d` | 1369 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@29
+
+`js/src/tests/test262/language/expressions/class/elements/private-field-as-arrow-function.js` | `395263e4ae29d4200a985f355f9cc4ff85a185e2` | 1031 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27
+
+`js/src/tests/test262/language/expressions/class/elements/private-field-as-async-arrow-function.js` | `f91ed215bccec424cbcdd44e051ca45ff5181630` | 1117 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@28
+
+`js/src/tests/test262/language/expressions/class/elements/private-field-as-async-function.js` | `37529243de6a75ea7d893ef4cf302c7d2161a754` | 1106 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@28
+
+`js/src/tests/test262/language/expressions/class/elements/private-field-as-function.js` | `65c8e3da4101e896b50efd34e8eb686113e45716` | 1019 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27
+
+`js/src/tests/test262/language/expressions/class/elements/private-field-on-nested-class.js` | `d307e8b74d8288f0fe6df80fc45ad47ea10f5d76` | 1307 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@28; method@35
+
+`js/src/tests/test262/language/expressions/class/elements/private-fields-proxy-default-handler-throws.js` | `0d5c5b62d61f120dae5bec8567819426a9200ac7` | 685 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@19
+
+`js/src/tests/test262/language/expressions/class/elements/private-generator-method-name.js` | `a9d0fcc4344f537952ebe743c90cf283f45971d7` | 2232 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrivateMethod@53
+
+`js/src/tests/test262/language/expressions/class/elements/private-getter-access-on-inner-arrow-function.js` | `3c3047296136db3a7b6ec74c927a921612bb7928` | 1255 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27
+
+`js/src/tests/test262/language/expressions/class/elements/private-getter-access-on-inner-function.js` | `222384f70de89ff22fa7e363452489f13a1a896d` | 1263 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27; innerFunction@29
+
+`js/src/tests/test262/language/expressions/class/elements/private-getter-is-not-a-own-property.js` | `07c93e8a6818852898aa88c09e2cbc796fe6c061` | 1429 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: checkPrivateGetter@32
+
+`js/src/tests/test262/language/expressions/class/elements/private-getter-on-nested-class.js` | `2422e474969ab2ce8a710df4fbd9b19a4de4f95f` | 1097 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@28
+
+`js/src/tests/test262/language/expressions/class/elements/private-getter-shadowed-by-field-on-nested-class.js` | `c8cd3ffdd749cf07e2c775eb17e6f22702c84f62` | 1388 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27; method@30
+
+`js/src/tests/test262/language/expressions/class/elements/private-getter-shadowed-by-getter-on-nested-class.js` | `4c1da590633b7813f22451e006fa9c9778860673` | 1384 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27; method@30
+
+`js/src/tests/test262/language/expressions/class/elements/private-getter-shadowed-by-method-on-nested-class.js` | `6d0dd6b8123b91649470cddd233896a0d0fce585` | 1307 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@28
+
+`js/src/tests/test262/language/expressions/class/elements/private-getter-shadowed-by-setter-on-nested-class.js` | `285821fb58cbf19ff1e278379e0f439e93023eea` | 1452 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27; method@30
+
+`js/src/tests/test262/language/expressions/class/elements/private-indirect-eval-contains-arguments.js` | `22965b2b41bea46e63e951a98f0ebbd2f8242bdd` | 781 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@19
+
+`js/src/tests/test262/language/expressions/class/elements/private-indirect-eval-err-contains-newtarget.js` | `f835776d84612dbd37e8cb1ac5c6aaa6522a6e39` | 1232 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-literal-name-init-err-contains-arguments.js` | `1bf29fd4ad655910888df8bae346b2d683a675d1` | 1063 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-literal-name-init-err-contains-super.js` | `44f61930daee7bcb7edc1b4f063adfa45c781a6e` | 775 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-method-access-on-inner-arrow-function.js` | `e327187300474b916af9bfec5a0486c45e6abc23` | 1251 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27
+
+`js/src/tests/test262/language/expressions/class/elements/private-method-access-on-inner-function.js` | `47257c491b4bf55c2f422b6e44e1ccccbc0b9948` | 1259 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27; innerFunction@29
+
+`js/src/tests/test262/language/expressions/class/elements/private-method-comparison.js` | `f941693cadcafdb2cf169c7db6b8cf5b278db990` | 1478 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrivateMethod@36
+
+`js/src/tests/test262/language/expressions/class/elements/private-method-get-and-call.js` | `d7c2079be7df9cb591734f3f9f4876260543d62a` | 1535 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrivateMethod@36
+
+`js/src/tests/test262/language/expressions/class/elements/private-method-is-not-a-own-property.js` | `24305b2efa05bb92fbe8af83b6f173d567c9bf7e` | 1368 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: checkPrivateMethod@32
+
+`js/src/tests/test262/language/expressions/class/elements/private-method-length.js` | `7e433b2756f191bb3fc0879e714049d697e9aa88` | 1755 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrivateMethod@40
+
+`js/src/tests/test262/language/expressions/class/elements/private-method-on-nested-class.js` | `5b22a3f4fbf8ef95d7f9d6fc8ada86f8bad6b9fc` | 1095 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@28
+
+`js/src/tests/test262/language/expressions/class/elements/private-method-referenced-from-static-method.js` | `cb9a0aa261d77119bc49de118c988d37249f8888` | 1138 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: g@29
+
+`js/src/tests/test262/language/expressions/class/elements/private-method-shadowed-by-field-on-nested-class.js` | `0ae9963eef593197bc73b93efd2404a501514997` | 1386 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27; method@30
+
+`js/src/tests/test262/language/expressions/class/elements/private-method-shadowed-by-getter-on-nested-class.js` | `e35c3d056d5534e3efe19676ea780397bd77b444` | 1459 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27; method@30
+
+`js/src/tests/test262/language/expressions/class/elements/private-method-shadowed-by-setter-on-nested-class.js` | `9590c7152412503d0e03f3a4b9c6c7cfcb31689a` | 1450 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27; method@30
+
+`js/src/tests/test262/language/expressions/class/elements/private-method-shadowed-on-nested-class.js` | `c503eeaa3e0bc7a90160e9149256c5b9cacf6954` | 1161 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@28
+
+`js/src/tests/test262/language/expressions/class/elements/private-methods/browser.js` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-methods/prod-private-async-generator.js` | `588640dcdaaa6c3eb261f4e0c971c2f4b19a5145` | 4454 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@24; ClassElementName@28; ClassElementName@29; ClassElementName@32; hasProp@81; ref@93; constructor@95
+
+`js/src/tests/test262/language/expressions/class/elements/private-methods/prod-private-async-method.js` | `e375ca59b2b9bc840e6225618b2d6dfded76ef9b` | 4180 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@24; ClassElementName@28; ClassElementName@29; ClassElementName@32; hasProp@81; ref@93; constructor@95
+
+`js/src/tests/test262/language/expressions/class/elements/private-methods/prod-private-generator.js` | `8c82e345feadf12f0f7ce3c06e94874af69f1aae` | 4196 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@23; ClassElementName@27; ClassElementName@28; ClassElementName@31; hasProp@78; ref@90; constructor@92
+
+`js/src/tests/test262/language/expressions/class/elements/private-methods/prod-private-method-initialize-order.js` | `63011ab04d4a3e1abfd78b6cf82fb667825c6f78` | 4678 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@23; ClassElementName@27; ClassElementName@28; ClassElementName@31; hasProp@93; bGetter@105; ref@110; constructor@112
+
+`js/src/tests/test262/language/expressions/class/elements/private-methods/prod-private-method.js` | `4ae58352129d37664e8afe79fd878f411bd2a26f` | 3961 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@23; ClassElementName@27; ClassElementName@28; ClassElementName@31; hasProp@78; ref@90; constructor@92
+
+`js/src/tests/test262/language/expressions/class/elements/private-methods/shell.js` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-setter-access-on-inner-arrow-function.js` | `fd5bab9db11cd4d28f5006aec3946f6fc64e087b` | 1253 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27
+
+`js/src/tests/test262/language/expressions/class/elements/private-setter-access-on-inner-function.js` | `b62c896a4b6ccb271159666f473f2d28fae3d15c` | 1261 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27; innerFunction@29
+
+`js/src/tests/test262/language/expressions/class/elements/private-setter-is-not-a-own-property.js` | `3ec0eab9a0cfd616b924a91be85e51a7f0e6d9b4` | 1450 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: checkPrivateSetter@32
+
+`js/src/tests/test262/language/expressions/class/elements/private-setter-on-nested-class.js` | `08111943fe5240e5ba6c738f15c0ca15322967aa` | 1110 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@28
+
+`js/src/tests/test262/language/expressions/class/elements/private-setter-shadowed-by-field-on-nested-class.js` | `187b009b9d7cd3701592788c21738ca1bd3b8624` | 1449 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27; method@30; m@34
+
+`js/src/tests/test262/language/expressions/class/elements/private-setter-shadowed-by-getter-on-nested-class.js` | `7105e2d77cb3ea805b65e35cde80a64fa2dff123` | 1468 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27; method@30
+
+`js/src/tests/test262/language/expressions/class/elements/private-setter-shadowed-by-method-on-nested-class.js` | `d261d4c4923aeacc08d2c526c9c507e9ba395020` | 1470 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27; method@30
+
+`js/src/tests/test262/language/expressions/class/elements/private-setter-shadowed-by-setter-on-nested-class.js` | `9e9bad52eb359c0f040a5f4ddcdcc5c3ed4b9f95` | 1424 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27; method@30
+
+`js/src/tests/test262/language/expressions/class/elements/private-static-async-generator-method-name.js` | `29ac94d6146b49a3d89db6b337ab165fecde5364` | 2395 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrivateMethod@55
+
+`js/src/tests/test262/language/expressions/class/elements/private-static-async-method-name.js` | `8e147e49334158e23979faf5e27e32a8849214d5` | 2371 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrivateMethod@55
+
+`js/src/tests/test262/language/expressions/class/elements/private-static-field-shadowed-by-field-on-nested-class.js` | `70ca8ba444af4d8c2fc179f697d80d2e5d772fb9` | 3977 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: fieldAccess@69; fieldAccess@75
+
+`js/src/tests/test262/language/expressions/class/elements/private-static-field-shadowed-by-getter-on-nested-class.js` | `dd418effc71d550d57f474e7a80c2283488b46fd` | 3982 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: fieldAccess@69; access@76
+
+`js/src/tests/test262/language/expressions/class/elements/private-static-field-shadowed-by-method-on-nested-class.js` | `45d1507a0405d3d3a710f8f807bcf47efb606988` | 3988 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: fieldAccess@69; access@76
+
+`js/src/tests/test262/language/expressions/class/elements/private-static-field-shadowed-by-setter-on-nested-class.js` | `e6741b5096b18c81baf63d1da3139ec765e5bd32` | 3989 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: fieldAccess@69; access@76
+
+`js/src/tests/test262/language/expressions/class/elements/private-static-field-usage-inside-nested-class.js` | `74c749b20526b6a6b02b8896d840bf0e343845c8` | 3793 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: fieldAccess@70
+
+`js/src/tests/test262/language/expressions/class/elements/private-static-generator-method-name.js` | `f87da5ed61aee2e1a25388345c9bd2ad002b64e9` | 2346 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrivateMethod@55
+
+`js/src/tests/test262/language/expressions/class/elements/private-static-method-length.js` | `fee1b446bdf2c7cd3b68f1357d2b16bb588be5d6` | 1779 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrivateMethod@40
+
+`js/src/tests/test262/language/expressions/class/elements/private-static-method-name.js` | `992817e19b43b26f29c643a71fb662e183552cb9` | 2886 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrivateMethod@65
+
+`js/src/tests/test262/language/expressions/class/elements/private-static-method-shadowed-by-field-on-nested-class.js` | `e4ee3b42e8aacc61e1e6e5780ebbc9d5ba468fee` | 3995 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: methodAccess@69; fieldAccess@75
+
+`js/src/tests/test262/language/expressions/class/elements/private-static-method-shadowed-by-getter-on-nested-class.js` | `e685307c0bde819a84c816eb50f4d4db99504437` | 4000 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: methodAccess@69; access@76
+
+`js/src/tests/test262/language/expressions/class/elements/private-static-method-shadowed-by-method-on-nested-class.js` | `19def12e06054e7cf92f33a53a8d0acd462a229f` | 3998 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: methodAccess@69; access@76
+
+`js/src/tests/test262/language/expressions/class/elements/private-static-method-shadowed-by-setter-on-nested-class.js` | `a38ea9ec0d868924b5dc59855a54642743783027` | 4007 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: methodAccess@69; access@76
+
+`js/src/tests/test262/language/expressions/class/elements/private-static-method-usage-inside-nested-class.js` | `7176cf165a573417f4d1d0b0515117c914fc8e1a` | 3818 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: methodAccess@72
+
+`js/src/tests/test262/language/expressions/class/elements/private-ternary-init-err-contains-arguments.js` | `b915d5d642ea9de536f2a197fdd4499b3ee54b7e` | 1083 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-ternary-init-err-contains-super.js` | `c870886354268614e1bbd006f8c2d0415fd31ab8` | 795 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-typeof-init-err-contains-arguments.js` | `02e78979485c3c30a1f76b65577ae81e3aa450a6` | 1076 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/private-typeof-init-err-contains-super.js` | `fe334548e085bb7e3827d94a0f60377b8460d719` | 788 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/prod-private-getter-before-super-return-in-constructor.js` | `5be8ca5c807b4645e41f499a5f669ef17f9778a8` | 1591 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: constructor@32; D@38; f@39
+
+`js/src/tests/test262/language/expressions/class/elements/prod-private-getter-before-super-return-in-field-initializer.js` | `1aee1f702750bff3f075349767f2177bd387d36b` | 1602 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: D@36; g@37
+
+`js/src/tests/test262/language/expressions/class/elements/prod-private-method-before-super-return-in-constructor.js` | `f5cdc12f0ce4f9d7531045fcc67d1019ef4c698e` | 1589 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: constructor@32; D@38; f@39
+
+`js/src/tests/test262/language/expressions/class/elements/prod-private-method-before-super-return-in-field-initializer.js` | `cc9b9f1d68abd497cb0de63985ca65ad01645739` | 1600 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: D@36; g@37
+
+`js/src/tests/test262/language/expressions/class/elements/prod-private-setter-before-super-return-in-constructor.js` | `33d3f07f9d66cc8ddc3a89d0769df38b99e9a3cb` | 1587 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: constructor@32; D@38; f@39
+
+`js/src/tests/test262/language/expressions/class/elements/prod-private-setter-before-super-return-in-field-initializer.js` | `3c22cd3b9a544cc123841a1a0cd85bcfc2c7fc56` | 1599 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: D@36; g@37
+
+`js/src/tests/test262/language/expressions/class/elements/redeclaration-symbol.js` | `944f4f516b1c89e7f5ae2f385284bd518749b880` | 1634 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/redeclaration.js` | `16252ed8b0b2bf9fbf5c51719b3f1d658ca5da3b` | 1683 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-computed-names.js` | `d3f11136b93d68d1d79a8c996f60e2c1364cd5b0` | 2172 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-computed-symbol-names.js` | `ce73456fa568590dd6b320738954a682483613d3` | 2131 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-grammar-privatename-identifier-semantics-stringvalue.js` | `a23a92fc920d3abb6fcebf681024b82cf2adad54` | 2390 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: o@70
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-literal-names-asi.js` | `9d23581ccb9a2958abf48437f6303ce7bd0621ae` | 1326 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-literal-names.js` | `f6ac2b95be9ace2f6362a47e768068ff8b0ac5e7` | 1693 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-private-field-usage.js` | `dc7a64eec8e13db01bb8be173d9b2f3322348420` | 1016 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@26
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-private-method-getter-usage.js` | `9f8ef72f4458bb6a5afc4ac45b9786533c3f50a8` | 1045 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@26
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-private-method-usage.js` | `39be1bb56f38b4f85344330816c1a52154ca4db6` | 1032 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@26
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-private-names.js` | `f46d867736271fc3ccdb942c9f624a396867a1d7` | 1593 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@28; y@32
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-field-identifier-initializer.js` | `8a8084864b604fefc5ce16214c90b1203e89049f` | 1648 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-field-identifier.js` | `67360b17c4ab80ddfa047657fef0b50db1cc1355` | 1698 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-private-getter-alt.js` | `8ad7abfbfe02ce7e5122ae8eb91c12004023e600` | 2343 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@17; $@78; _@82
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-private-getter.js` | `45d4a9f34806c1a5b5ad089a7e83b514355e4149` | 2402 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@17; $@78; _@82
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-private-method-alt.js` | `f33a2ac1fc8dc271ee077312a561ee371440f82f` | 2341 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@16; $@77; _@81
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-private-method.js` | `7241b1b01d365447c37a679b73bf0746f5400b83` | 2400 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@16; $@77; _@81
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-private-setter-alt.js` | `1bbc3c4d7803499abf3d84ae8d026a5ead2a987f` | 2395 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@17; $@77; _@81
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-private-setter.js` | `882dc1bb16b73cdac2440d7cde3117ec55695117` | 2454 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@17; $@77; _@81
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-privatename-identifier-alt.js` | `ae719bc4c9dfaf28792ffaf23ad53636e48d3172` | 2041 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@59; _@63
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-privatename-identifier-initializer-alt.js` | `13758efa110d7334b4fa3173a6da78f8f569c00c` | 1893 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@59; _@62
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-privatename-identifier-initializer.js` | `6724280fec6f0a8bab79e05dc3996d9af030eb20` | 1925 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@59; _@62
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-privatename-identifier.js` | `7975f64952967e3afaae21601346b990e71228de` | 2082 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@59; _@63
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-async-generator-method-privatename-identifier-alt.js` | `2421a7d2dbb4d19e15d9a13f2f4f4be3ba5f75f9` | 2933 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@81; _@84; o@87
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-async-generator-method-privatename-identifier.js` | `081039674a963ce20ddcd49e35b2a60199b50823` | 2752 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@81; _@84
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-async-method-privatename-identifier-alt.js` | `4135385ecee8c34960110686fafa07cb62f952af` | 2912 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@81; _@84; o@87
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-async-method-privatename-identifier.js` | `498212b2535e53ff3c72925fbd55075cdd372987` | 2725 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@81; _@84
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-generator-method-privatename-identifier-alt.js` | `04fe5601dfa90d16078db513abb2629698433829` | 2531 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@21; $@80; _@83; o@86
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-generator-method-privatename-identifier.js` | `0d9aa43ccdd2016ccf15d6037a645ad09ba36cdf` | 2464 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@21; $@80; _@83
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-method-privatename-identifier-alt.js` | `9e438610563e5e32cde4d0251ea3cbc7d50060bf` | 2525 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@18; $@77; _@80; o@83
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-method-privatename-identifier.js` | `67b0c513fd5c3acbff20a123dd3af780735760c4` | 2337 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@18; $@77; _@80
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-privatename-identifier-alt-by-classname.js` | `b1ed8b0e26c580421ca1b1316934b7d68cad651f` | 2390 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@60; _@64; o@68
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-privatename-identifier-alt.js` | `b371efc656791069cbaee267776d51d40b38b155` | 2413 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@60; _@64; o@68
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-privatename-identifier-by-classname.js` | `eca6cccce057aacaee0d9c34353a049788e548c6` | 2195 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@60; _@64
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-privatename-identifier-initializer-alt-by-classname.js` | `01539a33dd150d8976a64e52e34c4bed700bb3ba` | 2024 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@60; _@63
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-privatename-identifier-initializer-alt.js` | `254d4889014471f049cd169700d8005c49a88258` | 2029 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@60; _@63
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-privatename-identifier-initializer.js` | `c75c9daeea311cdfc735ab72d58c3201588efb4e` | 2061 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@60; _@63
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-rs-static-privatename-identifier.js` | `047f372bd93a4176480fa575f74ce02478782bb3` | 2218 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@60; _@64
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-static-private-fields.js` | `54705d929dd8a017bbc12097e5846e32e397cfc9` | 1651 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@28; y@32
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-static-private-methods-with-fields.js` | `088cf25cd6125d1793bc625f798eb2baebdef6d4` | 2413 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@36; y@39
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-static-private-methods.js` | `013a37475f3fffaae597493b566b695cf980d137` | 1701 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@34; y@37
+
+`js/src/tests/test262/language/expressions/class/elements/regular-definitions-string-literal-names.js` | `b31912d2e6523c855a7b9b006d2d0cf001df1aa1` | 2042 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-computed-names.js` | `4906c6e0dfbb105e276f95fb8d2bf154ba43faf5` | 3110 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertions@50; $DONE@52
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-computed-symbol-names.js` | `2ac0e1423185d052467416f9cc29988d03109fb6` | 3061 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertions@51; $DONE@53
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-grammar-privatename-identifier-semantics-stringvalue.js` | `2d100c9cc01ca6c25ec457d25c375bd3753d9575` | 3158 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: o@72; assertions@108; $DONE@110
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-literal-names-asi.js` | `aa944b870885da221dd282fc886fa14eeae342af` | 2160 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertions@49; $DONE@51
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-literal-names.js` | `4e881c4ec414e2d8b426ba5133e3f9d522ed3547` | 2583 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertions@51; $DONE@53
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-private-field-usage.js` | `f57927115b3d7451fe4557b4e88a5e4c3c245690` | 1772 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@28; assertions@51; $DONE@53
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-private-method-getter-usage.js` | `4f47a7cad115414dfa8e6f546e5f5abb88f8caee` | 1801 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@28; assertions@51; $DONE@53
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-private-method-usage.js` | `a62f5195b0cee13f00062399aecc638dd8349856` | 1788 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@28; assertions@51; $DONE@53
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-private-names.js` | `46ed1e59569710c2445ffefc5d135e121ac6280c` | 2397 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@30; y@34; assertions@58; $DONE@60
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-field-identifier-initializer.js` | `0c79f9abebb1a26afb1ef8e791b8f9140604c767` | 2424 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertions@84; $DONE@86
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-field-identifier.js` | `5b69a3868ba3024314deaf81d83c7bb8e3660560` | 2498 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertions@84; $DONE@86
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-private-getter-alt.js` | `534e834ab6ce57cbf301286cb89ea2fd6638e59a` | 3119 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@19; $@80; _@84; assertions@125; $DONE@127
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-private-getter.js` | `d5823bb40b640b64a714cfbca07ad013df76848c` | 3178 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@19; $@80; _@84; assertions@125; $DONE@127
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-private-method-alt.js` | `998edfbb0a7d1ceecd22d2bc5757cb9fe2a1ded2` | 3117 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@18; $@79; _@83; assertions@124; $DONE@126
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-private-method.js` | `6e62cd002901bc3f6c5abe13ac98686c735ececa` | 3176 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@18; $@79; _@83; assertions@124; $DONE@126
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-private-setter-alt.js` | `7133ed9249799908ea03d4c13cecc49c5762f97e` | 3171 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@19; $@79; _@83; assertions@124; $DONE@126
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-private-setter.js` | `cc197bef58ca7c20a6585fa9399b15240913ecb5` | 3230 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@19; $@79; _@83; assertions@124; $DONE@126
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-privatename-identifier-alt.js` | `e27507ea1bec21b29c352ee70a8b0c89ea508623` | 2817 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@61; _@65; assertions@105; $DONE@107
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-privatename-identifier-initializer-alt.js` | `f20dc121dadd9d3b65997d48814100e385eca0ea` | 2669 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@61; _@64; assertions@99; $DONE@101
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-privatename-identifier-initializer.js` | `12366fa7187b864816310c6d49e26c0dda6617e0` | 2701 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@61; _@64; assertions@99; $DONE@101
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-privatename-identifier.js` | `ce54c9e41bf6ce826a916485cb46795db1b842dc` | 2858 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@61; _@65; assertions@105; $DONE@107
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-async-generator-method-privatename-identifier-alt.js` | `3d14a130728d1f70052656b138c21723e2713a5a` | 3741 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@82; _@85; o@88; assertions@121; $DONE@123
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-async-generator-method-privatename-identifier.js` | `974462cf3f72e4bfef2aa10bbae71a2461d9c1ba` | 3560 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@82; _@85; assertions@121; $DONE@123
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-async-method-privatename-identifier-alt.js` | `a8991eecd26525700672b5a5176d8217c132f3ae` | 3720 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@82; _@85; o@88; assertions@121; $DONE@123
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-async-method-privatename-identifier.js` | `475a3480ab57f3cd0b7b5e229d0af69ee164fa02` | 3533 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@82; _@85; assertions@121; $DONE@123
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-generator-method-privatename-identifier-alt.js` | `c0a724a5fa02d6374fc08808084480ce158ce0e5` | 3307 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@23; $@82; _@85; o@88; assertions@121; $DONE@123
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-generator-method-privatename-identifier.js` | `ce286f3c9f568b78f77433ee075d28f76fa42a70` | 3240 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@23; $@82; _@85; assertions@121; $DONE@123
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-method-privatename-identifier-alt.js` | `21f6de75434463a564b8ec0cdf35d6e4919e49a0` | 3301 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@20; $@79; _@82; o@85; assertions@118; $DONE@120
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-method-privatename-identifier.js` | `bf3332a78d7075af094da717c9817fb4263b0c6f` | 3113 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@20; $@79; _@82; assertions@118; $DONE@120
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-privatename-identifier-alt-by-classname.js` | `51975be248f2a77cbe6516302db0b45324b86ef5` | 3166 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@62; _@66; o@70; assertions@106; $DONE@108
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-privatename-identifier-alt.js` | `945b821a9cf3b50b6a8611113108fa792956a48d` | 3189 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@62; _@66; o@70; assertions@106; $DONE@108
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-privatename-identifier-by-classname.js` | `764f5bd1d700c2fddd5cb13849e29657e875b20f` | 2971 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@62; _@66; assertions@106; $DONE@108
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-privatename-identifier-initializer-alt-by-classname.js` | `f646ab6484ae8516b66bceee90701592f77ec8b7` | 2800 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@62; _@65; assertions@100; $DONE@102
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-privatename-identifier-initializer-alt.js` | `0a80aed713aada08ed0edf514b6da87c8cfe6159` | 2805 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@62; _@65; assertions@100; $DONE@102
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-privatename-identifier-initializer.js` | `2bc10ad56f43d1bc6f07efc74301214f9f7455a5` | 2837 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@62; _@65; assertions@100; $DONE@102
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-rs-static-privatename-identifier.js` | `d0d6c71146f2d9557702d7f6b6f392421feae814` | 2994 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@62; _@66; assertions@106; $DONE@108
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-static-private-fields.js` | `5666f183814f1f4504b460f44ac8263c891abec6` | 2455 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@30; y@34; assertions@58; $DONE@60
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-static-private-methods-with-fields.js` | `3c528312ffee5a6591d861c19defe4fbd8dd5d87` | 3249 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@38; y@41; assertions@64; $DONE@66
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-static-private-methods.js` | `412933c6a19d1ae8234376d8e0e4f6f68fe91998` | 2505 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@36; y@39; assertions@62; $DONE@64
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-gen-string-literal-names.js` | `67ba82343c890f8676ca78c8975b42e4097ef9da` | 2988 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertions@49; $DONE@51
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-computed-names.js` | `ec033fb4e3e78b0d9c77f28a23d5c2a59f65421b` | 3062 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@28; assertions@49; $DONE@51
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-computed-symbol-names.js` | `277d374c923a9c07b26091bfee389be67e69e07f` | 3013 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@29; assertions@50; $DONE@52
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-grammar-privatename-identifier-semantics-stringvalue.js` | `d50aefe3f395182f7e464a61f551f462babbbe10` | 3110 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@68; o@72; assertions@107; $DONE@109
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-literal-names-asi.js` | `1fc9e01de7710e7401e696c729a3df51765bd429` | 2112 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@26; assertions@48; $DONE@50
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-literal-names.js` | `a385c592a3075953846f3f9a816e8fbf04e91fda` | 2535 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@28; assertions@50; $DONE@52
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-private-field-usage.js` | `55a175566299bfd69ec4da8b86ab553c7104134b` | 1724 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@27; method@28; assertions@50; $DONE@52
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-private-method-getter-usage.js` | `b97667936f9158c12a270f93e0b755e2aa762521` | 1753 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@27; method@28; assertions@50; $DONE@52
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-private-method-usage.js` | `82264063a52fec23d287836f6781f584b24ab45a` | 1740 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@27; method@28; assertions@50; $DONE@52
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-private-names.js` | `763444c560341957382470289eaa31e513b14098` | 2349 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@29; x@30; y@34; assertions@57; $DONE@59
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-field-identifier-initializer.js` | `be62bd1433b9378fbf1057dc59c6946e8ad2165b` | 2376 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@62; assertions@83; $DONE@85
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-field-identifier.js` | `bbe230964efc94d35f1eaa0e0b24eb0cdf536f4b` | 2450 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@62; assertions@83; $DONE@85
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-private-getter-alt.js` | `67979cb64eaa9b3c0c0f824e39d15852c9469555` | 3071 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@19; m@60; $@80; _@84; assertions@124; $DONE@126
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-private-getter.js` | `5d50b39e54d13d347294f51c02d49b2f6b368d43` | 3130 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@19; m@60; $@80; _@84; assertions@124; $DONE@126
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-private-method-alt.js` | `2dd36a8b7f89a065889599b32395abda004de86b` | 3069 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@18; m@59; $@79; _@83; assertions@123; $DONE@125
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-private-method.js` | `da4af1f15240fbea7948a51fa5fa51b28dd91225` | 3128 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@18; m@59; $@79; _@83; assertions@123; $DONE@125
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-private-setter-alt.js` | `108fa4757395bb927c235e458d4d9aced936177f` | 3123 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@19; m@59; $@79; _@83; assertions@123; $DONE@125
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-private-setter.js` | `7cdc52b139c9307cb8288597cde854b071cee426` | 3182 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@19; m@59; $@79; _@83; assertions@123; $DONE@125
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-privatename-identifier-alt.js` | `1e7081b352968bdd1398eca9ac454faf3f18750d` | 2769 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@60; $@61; _@65; assertions@104; $DONE@106
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-privatename-identifier-initializer-alt.js` | `561da54683f421f062a4272a18aa4f61962fb89e` | 2621 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@60; $@61; _@64; assertions@98; $DONE@100
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-privatename-identifier-initializer.js` | `3d69ae4be92c9d4a85a3b56c0a6b00aa41fb4801` | 2653 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@60; $@61; _@64; assertions@98; $DONE@100
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-privatename-identifier.js` | `a08dfc69491d817db5eaf4f687748ff240eab1f8` | 2810 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@60; $@61; _@65; assertions@104; $DONE@106
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-async-generator-method-privatename-identifier-alt.js` | `aae6fa75a2ba80fc758c44a4f4b1e8f749240d07` | 3693 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@64; $@82; _@85; o@88; assertions@120; $DONE@122
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-async-generator-method-privatename-identifier.js` | `7e36569bf94557c0e7d636d902dc1ab7a71d3846` | 3512 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@64; $@82; _@85; assertions@120; $DONE@122
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-async-method-privatename-identifier-alt.js` | `021435f83932c40e39261b4c2031cad39dda1e3a` | 3672 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@64; $@82; _@85; o@88; assertions@120; $DONE@122
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-async-method-privatename-identifier.js` | `5e2785b2fe3f56e5f088ce63ebe2de0a53104e4c` | 3485 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@64; $@82; _@85; assertions@120; $DONE@122
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-generator-method-privatename-identifier-alt.js` | `994eb5a4d8ac483f87556ba7d4bd62203e630beb` | 3259 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@23; m@64; $@82; _@85; o@88; assertions@120; $DONE@122
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-generator-method-privatename-identifier.js` | `86a9fcba39ca5c2eb840d7be5ff6f41e4e6346d0` | 3192 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@23; m@64; $@82; _@85; assertions@120; $DONE@122
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-method-privatename-identifier-alt.js` | `2b2a322abf2dc990de8071127860dbce44cf603a` | 3253 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@20; m@61; $@79; _@82; o@85; assertions@117; $DONE@119
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-method-privatename-identifier.js` | `19a38a4723eff00ada525c5753bfdb84efb31b89` | 3065 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@20; m@61; $@79; _@82; assertions@117; $DONE@119
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-privatename-identifier-alt-by-classname.js` | `b17a1f1fa045e1359d9a8432fdbc5f023c4048fb` | 3118 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@61; $@62; _@66; o@70; assertions@105; $DONE@107
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-privatename-identifier-alt.js` | `572825c0eb87bae5feed6ff99e293f00f9de9d2a` | 3141 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@61; $@62; _@66; o@70; assertions@105; $DONE@107
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-privatename-identifier-by-classname.js` | `75e1003a4611a7ba0ccfdbf444937832aa800a3d` | 2923 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@61; $@62; _@66; assertions@105; $DONE@107
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-privatename-identifier-initializer-alt-by-classname.js` | `770fc00d758d9c399fdb1e9cb7d1a0f512ecb84f` | 2752 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@61; $@62; _@65; assertions@99; $DONE@101
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-privatename-identifier-initializer-alt.js` | `ed6152e631840e9ac22286698f2df8b072604936` | 2757 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@61; $@62; _@65; assertions@99; $DONE@101
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-privatename-identifier-initializer.js` | `ca15b7216d4322307eb948d1b349ea245b6af651` | 2789 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@61; $@62; _@65; assertions@99; $DONE@101
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-rs-static-privatename-identifier.js` | `327a92ac36babc98ff141fc7fd25d3e307eacdb4` | 2946 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@61; $@62; _@66; assertions@105; $DONE@107
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-static-private-fields.js` | `270bcfdfd6e71e4a0d42e4398092d663adf9e1c9` | 2407 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@29; x@30; y@34; assertions@57; $DONE@59
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-static-private-methods-with-fields.js` | `0ece7a2e7b128f38874f21644afc0367b7f8a5d5` | 3201 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@29; x@38; y@41; assertions@63; $DONE@65
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-static-private-methods.js` | `0c40f448f3e7340bdb2699e29b42e9457daad96b` | 2457 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@29; x@36; y@39; assertions@61; $DONE@63
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-async-method-string-literal-names.js` | `dbc9ddd2873ceb819f9281e5eab44e06edc952e5` | 2940 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: m@26; assertions@48; $DONE@50
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-computed-names.js` | `505ee57ef137529cba4a3f4b72fee6d52d9844f2` | 2546 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-computed-symbol-names.js` | `c0514b435e2904287cf1d435c3f23b20190d7093` | 2505 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-grammar-privatename-identifier-semantics-stringvalue.js` | `4eec1dc002ed2d81db6b0cb3918bc07b032f1abe` | 2794 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: o@71
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-literal-names-asi.js` | `2ced1f2a3a68a5db963f7547a2e4b517684ef8cb` | 1700 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-literal-names.js` | `5c188a34244ad051e250d204e9920822e4b49590` | 2067 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-private-field-usage.js` | `c48979d2704fe23599a6aec912cbb4dd5e04895b` | 1420 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-private-method-getter-usage.js` | `97229e27ef96b25672b057d972b022ba6e53ff6c` | 1449 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-private-method-usage.js` | `1fb15718ef0fa2beddeae8ddc6984dde5b2fbaa3` | 1436 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-private-names.js` | `2adf1a4259f7679f962eeec1c0240e73f345445a` | 1997 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@29; y@33
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-field-identifier-initializer.js` | `b8a658610bcaf74b6e441c97e58cff49eb3a2f73` | 2052 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-field-identifier.js` | `3e4b04d54fe776608d373f48912baa987411eb19` | 2102 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-private-getter-alt.js` | `0ae00bfa2fad6ae1d2dac65e2a4f1941ad9033f3` | 2747 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@18; $@79; _@83
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-private-getter.js` | `c6d6193d0408f4df8342885d97da6edaf4af430b` | 2806 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@18; $@79; _@83
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-private-method-alt.js` | `7531e5514503e636e0fbcc6d6cfe7bf83364aaa9` | 2745 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@17; $@78; _@82
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-private-method.js` | `8dd575ec65101059987de1bb4918f5042a1346e1` | 2804 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@17; $@78; _@82
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-private-setter-alt.js` | `822abac7155f05f57fa66a89a75937bf5a144885` | 2799 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@18; $@78; _@82
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-private-setter.js` | `baa31196f590a74e77270a8421b80460f268e116` | 2858 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@18; $@78; _@82
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-privatename-identifier-alt.js` | `435d468b2bec85092945d69e9fd0013728c53974` | 2445 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@60; _@64
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-privatename-identifier-initializer-alt.js` | `6456b3a6fc13100f4ed0a989432196ccd8b8ed96` | 2297 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@60; _@63
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-privatename-identifier-initializer.js` | `139d4b0db37fce60eba44684a3b06e0fcecb4d3c` | 2329 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@60; _@63
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-privatename-identifier.js` | `2c2da12ca3bbab82ca7dc97e0f589587ffd67892` | 2486 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@60; _@64
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-async-generator-method-privatename-identifier-alt.js` | `2fca316f72b26b727cdafb68abb2a9425216c280` | 3337 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@82; _@85; o@88
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-async-generator-method-privatename-identifier.js` | `fa488d35ff82b7a5fbb63a24215eede5a5ee2958` | 3156 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@82; _@85
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-async-method-privatename-identifier-alt.js` | `771b31a0ca609238fee2f0c94fbeaae397d3a481` | 3316 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@82; _@85; o@88
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-async-method-privatename-identifier.js` | `133f94a76e00fd16a863a94bfcc57b8e1f03d87b` | 3129 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@82; _@85
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-generator-method-privatename-identifier-alt.js` | `bc62f6125ae6a307db55a454198692a64da63fe7` | 2935 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@22; $@81; _@84; o@87
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-generator-method-privatename-identifier.js` | `966d59cc7046d666a66866a7335ac4e9542c560b` | 2868 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@22; $@81; _@84
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-method-privatename-identifier-alt.js` | `da401f652f73e8bb29d0a35940251a548db6ce9f` | 2929 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@19; $@78; _@81; o@84
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-method-privatename-identifier.js` | `39fddc3ca848b88ecff844902341a13b12819a9b` | 2741 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@19; $@78; _@81
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-privatename-identifier-alt-by-classname.js` | `f2096525d7d5f0037e776c2c91f27bbc2be11fbb` | 2794 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@61; _@65; o@69
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-privatename-identifier-alt.js` | `b2e1b3cb788ad51049bc8b58827bd954ee1a188e` | 2817 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@61; _@65; o@69
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-privatename-identifier-by-classname.js` | `ee8dff4164418c3a6660ea169065f82b45ad245c` | 2599 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@61; _@65
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-privatename-identifier-initializer-alt-by-classname.js` | `d2198dc3728ad0b9c220ec887943fe6b5145f509` | 2428 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@61; _@64
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-privatename-identifier-initializer-alt.js` | `bbe8f2eb4d48ac6fcf160ea7bbfd8ddda8a05efc` | 2433 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@61; _@64
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-privatename-identifier-initializer.js` | `6f9fc046a3dafcbd189a8ceef8dbf01eb3f1df2b` | 2465 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@61; _@64
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-rs-static-privatename-identifier.js` | `ca74e9bdb10f8dc10fdd71786bb6f82af0caf7e8` | 2622 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@61; _@65
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-static-private-fields.js` | `1edff1e4dba1fe5f35d465156f6a15578ed7d43b` | 2055 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@29; y@33
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-static-private-methods-with-fields.js` | `ec5226b721704cbbe71f87f0f947eece60dd1cb2` | 2817 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@37; y@40
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-static-private-methods.js` | `90882d6c68134cf20e48f23c6bb0cddfd161073f` | 2105 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@35; y@38
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-gen-string-literal-names.js` | `f88424698009670f5d10b52acb866f3823af6a96` | 2416 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-computed-names.js` | `693ec20545db29686c589d737ea45820e4bd6dab` | 2507 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-computed-symbol-names.js` | `b1fc5657bed43d3e2607c4e82d4731f3957fb56b` | 2466 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-grammar-privatename-identifier-semantics-stringvalue.js` | `c1198f645d52cb1412b72a17c24cb5d919abe206` | 2755 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: o@71
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-literal-names-asi.js` | `c102852792a25f116970704852de8a3a2327f0e2` | 1661 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-literal-names.js` | `ec0fbadf3a7e3fa0569b66abcd4d1e13b1627d21` | 2028 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-private-field-usage.js` | `db8a8fa945046031713d1555b009af3e4ecd6b55` | 1381 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-private-method-getter-usage.js` | `7cbb6bdfbbb358f284db1fcb81d646310a1d65f0` | 1410 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-private-method-usage.js` | `df1c02e666059d0de7b344fb5171652aec7f01b7` | 1397 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: method@27
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-private-names.js` | `5bb37c52f466cd161028b08a4a08bd19aa13feeb` | 1958 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@29; y@33
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-field-identifier-initializer.js` | `776294213713646313bbd87b74889c29eb00ddf5` | 2013 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-field-identifier.js` | `25157c800b28a741c8fab17a180a346fdc7eb51e` | 2063 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-private-getter-alt.js` | `b0b0cebcf18e46dc1be75a0077093ff8124c9594` | 2708 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@18; $@79; _@83
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-private-getter.js` | `f1327c5cd5c5e71883dad8ef05d22b67e8a91fda` | 2767 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@18; $@79; _@83
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-private-method-alt.js` | `5b4f76a664134bf61c4657c68b63ef1864dae53a` | 2706 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@17; $@78; _@82
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-private-method.js` | `6889fa9064ac4aa7786fc8bafc7d457db492fdf8` | 2765 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@17; $@78; _@82
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-private-setter-alt.js` | `fe71360305ab5ef28ebee6c422a2e898e9cc5373` | 2760 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@18; $@78; _@82
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-private-setter.js` | `b270bcaec36719f35c36b3ddebc2ff3603028d78` | 2819 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@18; $@78; _@82
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-privatename-identifier-alt.js` | `1d5bbb7f564bd72868c0eff2aac3110bc2038eda` | 2406 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@60; _@64
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-privatename-identifier-initializer-alt.js` | `0e1295cd59eddedf55756700903bae468a66c4ac` | 2258 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@60; _@63
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-privatename-identifier-initializer.js` | `512657752c94b5c05892210450ae81472fd20e95` | 2290 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@60; _@63
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-privatename-identifier.js` | `9494d5d32eff0777c8cc223ef3c3b94f5263a318` | 2447 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@60; _@64
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-async-generator-method-privatename-identifier-alt.js` | `891a512deec087d3b62ff77ea91cbefd36902cb3` | 3298 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@82; _@85; o@88
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-async-generator-method-privatename-identifier.js` | `3104f35c04ce89eaa519756fa2e2bcbbe04fe42c` | 3117 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@82; _@85
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-async-method-privatename-identifier-alt.js` | `cb1f01745421648816c5a480238bcba8419da1a4` | 3277 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@82; _@85; o@88
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-async-method-privatename-identifier.js` | `bce016a35a103455d49d9dc6638edb0dab4f4c11` | 3090 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@82; _@85
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-generator-method-privatename-identifier-alt.js` | `19a5836aea01e17f0e27ee80743f3833b57fdf2a` | 2896 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@22; $@81; _@84; o@87
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-generator-method-privatename-identifier.js` | `bc49c840ae9f8973827c4684689bedeebe8d1efc` | 2829 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@22; $@81; _@84
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-method-privatename-identifier-alt.js` | `4bc5d2304ece49bf50d51bf5efb691b6a443c94c` | 2890 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@19; $@78; _@81; o@84
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-method-privatename-identifier.js` | `cff93deb37228fbea7115836d93f487db718b173` | 2702 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@19; $@78; _@81
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-privatename-identifier-alt-by-classname.js` | `c0500f56df41fc1bbdd6a39dbb6b6d34831b817c` | 2755 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@61; _@65; o@69
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-privatename-identifier-alt.js` | `3f9e70065feea27105ed16bd54281abc64225396` | 2778 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@61; _@65; o@69
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-privatename-identifier-by-classname.js` | `956e45f90ca9b88b4e42a940c7d53b1e404b583b` | 2560 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@61; _@65
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-privatename-identifier-initializer-alt-by-classname.js` | `27e889205899c542d18675a7eb8c123716ff901e` | 2389 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@61; _@64
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-privatename-identifier-initializer-alt.js` | `5cb8e9016cf68f484234fe53672afba746fb9fac` | 2394 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@61; _@64
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-privatename-identifier-initializer.js` | `d10387e6a9666c3e56b5db73f8ae6848ab004262` | 2426 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@61; _@64
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-rs-static-privatename-identifier.js` | `af9366ea267eb5ac76c34aca43741ef5e9659f7c` | 2583 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: $@61; _@65
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-static-private-fields.js` | `123913e246babb26c0ff5e7372358c23e08b1d83` | 2016 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@29; y@33
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-static-private-methods-with-fields.js` | `d321144db3d5df72fb3c2ece7e1b69a4200db8e4` | 2778 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@37; y@40
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-static-private-methods.js` | `adce1e3c6ccb310af21c7e76c1da8b1b897f4e75` | 2066 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@35; y@38
+
+`js/src/tests/test262/language/expressions/class/elements/same-line-method-string-literal-names.js` | `51f6b018637a15a403bd08b46992195a752b6303` | 2377 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/shell.js` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/static-as-valid-instance-field-assigned.js` | `208b48a8dbbf7635692a6f5fa0e17c0c48e439d5` | 766 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/static-as-valid-instance-field.js` | `8a548867c2a09e07c8a8bb771e1afd9d7f7a2459` | 753 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/static-as-valid-static-field-assigned.js` | `808acee9c995efd9f6c25384f316375bbaa63969` | 669 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/static-as-valid-static-field.js` | `a275a57f5ab609962683cef301f24c0606c6d69c` | 648 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/static-comp-name-init-err-contains-arguments.js` | `bec57855494e1f43c83ea7f8b7dd5a1643192bba` | 1128 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/static-comp-name-init-err-contains-super.js` | `0e4f6b1a2946e077d53636313050bdeaf827cb3a` | 840 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/static-field-anonymous-function-length.js` | `aad0b7fb88fc12651267aa27a3068bbfae511f7f` | 1949 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: accessPrivateField@54
+
+`js/src/tests/test262/language/expressions/class/elements/static-field-anonymous-function-name.js` | `03c41ea274cb4911794f805f494df3f6af34458c` | 2494 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: accessPrivateField@63
+
+`js/src/tests/test262/language/expressions/class/elements/static-field-declaration.js` | `66d4e14e6f93817f9fa9de1de54fc99b117da7aa` | 3597 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/static-field-init-this-inside-arrow-function.js` | `d3cf3824e71227594da9a0812af6e25ae57afa72` | 2295 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/static-field-init-with-this.js` | `114006ab5478d9d85ebf1821c81b3965ce20e429` | 2398 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/static-field-redeclaration.js` | `2318f50f20dd4ee9721c18fbeb35976e51033db0` | 2363 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: g@62
+
+`js/src/tests/test262/language/expressions/class/elements/static-literal-init-err-contains-arguments.js` | `2b32142f7c5f6e82662e8b55ca87234f12b353fa` | 1085 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/static-literal-init-err-contains-super.js` | `2d0ac810c8e3f012c617c46f51598ce5d43b2b28` | 797 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/static-private-fields-proxy-default-handler-throws.js` | `98804c511231a0e36c84dc1e2965a37f7d31ed02` | 695 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@18
+
+`js/src/tests/test262/language/expressions/class/elements/static-private-getter-access-on-inner-arrow-function.js` | `48163c85a2653ee9825ac3432f7f057b74a1ae6b` | 1277 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: access@32
+
+`js/src/tests/test262/language/expressions/class/elements/static-private-getter-access-on-inner-class.js` | `a7e255707c494b17ee88ae459343c506e14e1725` | 1267 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: access@33
+
+`js/src/tests/test262/language/expressions/class/elements/static-private-getter-access-on-inner-function.js` | `1b1777cfe9275fa4a68e73016bf9427a6ace2025` | 1276 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: access@32; innerFunction@35
+
+`js/src/tests/test262/language/expressions/class/elements/static-private-getter.js` | `25978821f79e4cb59eff8484182dc25af2d67346` | 1827 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@11; ClassElementName@12; access@47
+
+`js/src/tests/test262/language/expressions/class/elements/static-private-init-err-contains-arguments.js` | `17c826b7591d31858d07561cabe09c4ce5a24052` | 1074 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/static-private-init-err-contains-super.js` | `496b781e99d9039826ae15ff0c04b4ec697504db` | 786 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/static-private-method-access-on-inner-arrow-function.js` | `5bdd4b00b7f98f3ef6f987b090efbf2350965540` | 1244 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: g@29
+
+`js/src/tests/test262/language/expressions/class/elements/static-private-method-access-on-inner-function.js` | `6d7294d36da048341c9171f5fa27fd49e6ca66a6` | 1258 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: g@29; innerFunction@32
+
+`js/src/tests/test262/language/expressions/class/elements/static-private-method-and-instance-method-brand-check.js` | `b43b02a11bae5902918caff3edfb2cd47d96b60c` | 1989 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: access@40; instanceAccess@48
+
+`js/src/tests/test262/language/expressions/class/elements/static-private-method-referenced-from-instance-method.js` | `8a67cd8e0ad1a39841329457cd737ad5ce3f73bd` | 1177 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: g@29
+
+`js/src/tests/test262/language/expressions/class/elements/static-private-method-subclass-receiver.js` | `59709c19fb9a87fac837e53b19efc500a9607726` | 1175 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@28; D@33
+
+`js/src/tests/test262/language/expressions/class/elements/static-private-methods-proxy-default-handler-throws.js` | `b1add84534bb5af9a170b7b8c2adee30cd1d059e` | 722 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@21
+
+`js/src/tests/test262/language/expressions/class/elements/static-private-setter-access-on-inner-arrow-function.js` | `99ff6c1a225c900a9ad9b80866e7a332b158d315` | 1277 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: access@32
+
+`js/src/tests/test262/language/expressions/class/elements/static-private-setter-access-on-inner-class.js` | `902991199d2ba85a2efcdc4df6235623739b4a91` | 1281 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: access@33
+
+`js/src/tests/test262/language/expressions/class/elements/static-private-setter-access-on-inner-function.js` | `c9fae6a871a356a98056c4f5eec21e9efe22f3d4` | 1276 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: access@32; innerFunction@35
+
+`js/src/tests/test262/language/expressions/class/elements/static-private-setter.js` | `a53347934e920035077df0da2e71e716a8f36dcd` | 1834 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ClassElementName@11; ClassElementName@12; access@47
+
+`js/src/tests/test262/language/expressions/class/elements/static-string-literal-name-init-err-contains-arguments.js` | `c2e0110350b81144992b7c8a637c62b54f4aeea4` | 1101 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/static-string-literal-name-init-err-contains-super.js` | `daa30b0d656a2560c313125010742d11e68ae2a1` | 813 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/string-literal-name-init-err-contains-arguments.js` | `2256c69edab18931d3e098748b01c251b0abaefb` | 1052 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/string-literal-name-init-err-contains-super.js` | `c4e66fee60a64c1dcd3bc18ad9a69848319a706e` | 764 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/super-access-from-arrow-func-on-field.js` | `df472c3c646a892217f06b8ab451778d600c859f` | 884 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/browser.js` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/browser.js` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/class-heritage-array-literal-arrow-heritage.js` | `82db7c4134877f274b9decf2894a6debe5f4c7d5` | 663 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/class-heritage-array-literal-async-arrow-heritage.js` | `bc9e9e4f0cf98f655dd44a7a38f235fea9d7a367` | 675 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/browser.js` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-call-expression-private-method-accessor-get.js` | `b2512ecd2a2a36e4c090d5d8a84f35fed05e4870` | 1585 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@43
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-call-expression-private-method-accessor-set.js` | `798847cd9edc92e1f70d6af3aa654a5f3d3158f1` | 1585 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@43
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-call-expression-private-method-async-gen.js` | `c9b511f5b4eef7728d5a868be0fb0d0472fa8f65` | 1595 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@43
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-call-expression-private-method-async.js` | `85088514704c0c90bb22edac734650f5c89de99e` | 1588 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@43
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-call-expression-private-method-gen.js` | `e368898235069bb8cea7f85e63ae986b7449f30f` | 1578 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@43
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-call-expression-private-method.js` | `07d490312d88c766dbd092bd1c68fea909262ac5` | 1576 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@43
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-call-expression-private-no-reference.js` | `7935befd0596b93ce974b988b9e8fb7d8ec25679` | 1564 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@43
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-call-expression-privatename.js` | `7a9f632c7c49ada475d2f5b51758d611ca5f898f` | 1540 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@43
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-member-expression-private-method-accessor-get.js` | `a334ebe864bf422807edd4376421a9160da92d10` | 1556 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-member-expression-private-method-accessor-set.js` | `a356406272694619068d3c0e6df66c2d3d89a20b` | 1556 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-member-expression-private-method-async-gen.js` | `ece01c07408619c3292f82e1f3869743baadd17f` | 1580 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-member-expression-private-method-async.js` | `02e4fb26d1699c2216c7987fbe8788ab3dd5aefa` | 1572 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-member-expression-private-method-gen.js` | `fd998f6ac145daf2fbff057c2f3189f2293d3809` | 1557 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-member-expression-private-method.js` | `4f40fe2fb6990372765a2261f6bb44ac035768a3` | 1547 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-member-expression-private-no-reference.js` | `fad6f3fceab01b4f7124a43ff5d4a362869e58cb` | 1534 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-covered-err-delete-member-expression-privatename.js` | `e51d679f5e9fdc66547109b6cf52b4122f2f34b3` | 1510 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-call-expression-private-method-accessor-get.js` | `13d3c2a7408eeacbf8841d6b8c219923fb456979` | 1196 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@37
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-call-expression-private-method-accessor-set.js` | `dc8cc53146a5ea215231e35eb7e7bb245c7f723f` | 1196 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@37
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-call-expression-private-method-async-gen.js` | `cfd56428527558801a07aea9b3850ae85bc228a8` | 1206 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@37
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-call-expression-private-method-async.js` | `8d0017cd7af9e6e2ab37a945647dd0538027916c` | 1199 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@37
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-call-expression-private-method-gen.js` | `aeee3770423a1249dbd81f934561276405883d03` | 1189 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@37
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-call-expression-private-method.js` | `15b226efaafaf2fd26f6d9d7506b169172db2d1b` | 1187 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@37
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-call-expression-private-no-reference.js` | `94d9388a283035e66d8fa846230316dd7908fae7` | 1175 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@37
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-call-expression-privatename.js` | `1279184624d81624b78608b022152f2306795d60` | 1151 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@37
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-member-expression-private-method-accessor-get.js` | `af609549aceb728093c0e84f7090a54948732b50` | 1167 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-member-expression-private-method-accessor-set.js` | `c3788377ddf4d5dabfdbb1a055cce6d2bcd6897f` | 1167 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-member-expression-private-method-async-gen.js` | `9fb99b093c09d829dcd3290449d07ed8222f12bc` | 1191 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-member-expression-private-method-async.js` | `07027cffdf76063f4006a16884b9ac0de6563cfb` | 1183 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-member-expression-private-method-gen.js` | `1fc96dc94dca3ab46dec95b1cffed8cc71dda6f5` | 1168 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-member-expression-private-method.js` | `f343d70e52ea4e38ebe676c63b2fbc18791376c1` | 1158 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-member-expression-private-no-reference.js` | `f44b5e2eba8e8c9b9b34d41cf3f09ba04ca48fcb` | 1145 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-err-delete-member-expression-privatename.js` | `3684a03b1ca4e224f657d5002b5a7f5cfa779919` | 1121 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-call-expression-private-method-accessor-get.js` | `521df0882ecc5f98f89f7ee41878e2d8e536aec9` | 1605 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@43
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-call-expression-private-method-accessor-set.js` | `676ddedde5796c942e63bee270191949fd15b635` | 1605 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@43
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-call-expression-private-method-async-gen.js` | `b22a41d94e8a00a0e41f35faeeb50c98c5fdd530` | 1615 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@43
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-call-expression-private-method-async.js` | `78aa29f4efbfe681410c827bc23a56243d347127` | 1608 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@43
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-call-expression-private-method-gen.js` | `6fde3047fba12e3fff0f97d7d58f091f525301b0` | 1598 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@43
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-call-expression-private-method.js` | `ae9e2773c2ea9df633144e8e5f450b5c49efd67d` | 1596 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@43
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-call-expression-private-no-reference.js` | `a805848fb4d30fc9204af01738bd71150e49252b` | 1584 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@43
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-call-expression-privatename.js` | `79757d74aaaf23fd709d59641839c367e19418bf` | 1560 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@43
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-member-expression-private-method-accessor-get.js` | `84eed95eb59643c9043af97b1c0049df7fffcb5f` | 1576 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-member-expression-private-method-accessor-set.js` | `1406396b520c7d289de8d0dab95cf10146536b35` | 1576 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-member-expression-private-method-async-gen.js` | `7a47defea3eff881fc9226d21700181171f189a7` | 1600 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-member-expression-private-method-async.js` | `e56fa55529196c622207b821b30dfdd1c646b16e` | 1592 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-member-expression-private-method-gen.js` | `97a9234bbeb41b9ddf5b932eb775102fe46daa23` | 1577 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-member-expression-private-method.js` | `3a05b6575a6231559009b164a2cc95aede58bcaa` | 1567 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-member-expression-private-no-reference.js` | `eb6130794f37dcfbaa43015eb36b39ce3e5fb67b` | 1554 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/field-delete-twice-covered-err-delete-member-expression-privatename.js` | `354e0c8746e77782776abb6f35015e8eebb6a3e2` | 1530 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-call-expression-private-method-accessor-get.js` | `1d59d48077a9b04a63540eb0a21d4cbd603b0467` | 1604 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41; f@46
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-call-expression-private-method-accessor-set.js` | `088f8034c809e12c073dd89bfe7e29a5220cd7b2` | 1604 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41; f@46
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-call-expression-private-method-async-gen.js` | `f2537ac404f8aa7363ec80e965512bb7a57d5e32` | 1593 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41; f@46
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-call-expression-private-method-async.js` | `ece3271eac48a038d721f17bb493c5debb19e9b5` | 1586 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41; f@46
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-call-expression-private-method-gen.js` | `45748d64532e21d6496a6fc768d09d78004038a8` | 1576 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41; f@46
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-call-expression-private-method.js` | `3268a64c8b76d9a5c22400b72a537b20f2bdf983` | 1574 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41; f@46
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-call-expression-private-no-reference.js` | `b2bf807f9168b9d101c212e398a7c977d5e35c85` | 1562 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41; f@46
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-call-expression-privatename.js` | `ce67c089811677e41eeba8e841eb691c089a06e5` | 1538 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41; f@46
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-member-expression-private-method-accessor-get.js` | `6a33ec513a2ed32bc316cfa0cee0b79f79df97cb` | 1550 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-member-expression-private-method-accessor-set.js` | `8599c6db4b43caa152c760b5218eb4741f553665` | 1550 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-member-expression-private-method-async-gen.js` | `b51764253f56872d3c53659c6b091d8283331e27` | 1574 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-member-expression-private-method-async.js` | `ba8f5379aa96fc0bbc35164f4539805e8154c603` | 1566 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-member-expression-private-method-gen.js` | `6ab21db9ff3d90adeda9cc0876edbae32082e384` | 1551 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-member-expression-private-method.js` | `4d5ed5fafdf6e07a2951585b04cefc19bd228f2c` | 1541 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-member-expression-private-no-reference.js` | `7dd3a6f614361ebdb798706f9c8ea5ad6d37f7b0` | 1528 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-covered-err-delete-member-expression-privatename.js` | `e37573bb18041a6411a5d3392162586518659f79` | 1504 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-call-expression-private-method-accessor-get.js` | `64782fb080a2554e55231f83f35232f233082344` | 1215 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@35; f@40
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-call-expression-private-method-accessor-set.js` | `269fb608db0e2569a772114ce7005efc714c7175` | 1215 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@35; f@40
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-call-expression-private-method-async-gen.js` | `664f37776367af8ed542abdd99f44d8f868dbe21` | 1204 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@35; f@40
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-call-expression-private-method-async.js` | `a98ceca0cd5c3fef9c9792cfa8d6918bd53b62f2` | 1197 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@35; f@40
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-call-expression-private-method-gen.js` | `84833780fb0fd41d2d240eaa5c824684f6df7de8` | 1187 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@35; f@40
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-call-expression-private-method.js` | `835ed1fd447c789405b29c12a7bff15e272fab9e` | 1185 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@35; f@40
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-call-expression-private-no-reference.js` | `a7376b91822315838b71dc69d28fc495405a071e` | 1173 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@35; f@40
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-call-expression-privatename.js` | `2c99382921a0d4f57516eb1ebcd39f02da91c28e` | 1149 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@35; f@40
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-member-expression-private-method-accessor-get.js` | `673f8a91503d2954f093d935495f6b1a6b1652cb` | 1161 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@35
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-member-expression-private-method-accessor-set.js` | `bb0c6fe2a0e3e459701daac2593609712ff5e5a2` | 1161 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@35
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-member-expression-private-method-async-gen.js` | `beace328f723e8387c7dbb5e52825a9f929dd16b` | 1185 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@35
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-member-expression-private-method-async.js` | `2c1bb28812931d07e2bc682122effb05d6114393` | 1177 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@35
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-member-expression-private-method-gen.js` | `309a9618501c26259f7c4d402bc54b884b8e79b9` | 1162 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@35
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-member-expression-private-method.js` | `ad7e8213a0656e5937d403e5c901a7f7aad1b1cc` | 1152 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@35
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-member-expression-private-no-reference.js` | `aac0c28dbf9f93fdc0f5cabaf16eda98e4f98cc6` | 1139 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@35
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-err-delete-member-expression-privatename.js` | `2bce7badb7fc13a423d2bdcfe7696136d05c1746` | 1115 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@35
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-twice-covered-err-delete-call-expression-private-method-accessor-get.js` | `c7751817946b8c1102dbf512d9ec083b7efdc2a5` | 1624 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41; f@46
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-twice-covered-err-delete-call-expression-private-method-accessor-set.js` | `1b5d682217951c135d0ef34c2cc47bd87c4ff811` | 1624 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41; f@46
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-twice-covered-err-delete-call-expression-private-method-async-gen.js` | `73e6d1371704988d69854682023e8170bb3fab33` | 1613 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41; f@46
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-twice-covered-err-delete-call-expression-private-method-async.js` | `ff22910b9ff1589bd347bef709f67382649a3aa0` | 1606 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41; f@46
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-twice-covered-err-delete-call-expression-private-method-gen.js` | `178c58cc1712f058f9951e3f9107f218d770a2af` | 1596 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41; f@46
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-twice-covered-err-delete-call-expression-private-method.js` | `804878eeae423fcf4495c11083ecc9f36c4598c0` | 1594 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41; f@46
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-twice-covered-err-delete-call-expression-private-no-reference.js` | `9879a568433cba3ce6316307c6ed0ad2fe9c729a` | 1582 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41; f@46
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-twice-covered-err-delete-call-expression-privatename.js` | `d5aaaf5cc9e94f0da51ffd59dd4fdc20bab0bafc` | 1558 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41; f@46
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-twice-covered-err-delete-member-expression-private-method-accessor-get.js` | `13e12853075d57607536b362b483e96575b5ae51` | 1570 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41
+
+`js/src/tests/test262/language/expressions/class/elements/syntax/early-errors/delete/method-delete-twice-covered-err-delete-member-expression-private-method-accessor-set.js` | `05b109751a8ff44cd4abbeae21d6ac34f650e635` | 1570 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: x@41
+
+## Validation and limits
+
+Every listed blob was read from the pinned Git tree and its Git SHA-1 was recomputed. Extraction is structural only. Read implementations, callers, build conditions, and tests before making a behavior claim. Runtime behavior and historical reasons remain unverified. Reproduce a file with `git show 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b:path` in the corresponding source clone. The full study coverage and navigation note records aggregate results.

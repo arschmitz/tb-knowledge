@@ -1,0 +1,1622 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:14:46.642314+00:00","paths":["media/libopus/silk/pitch_est_tables.c","media/libopus/silk/process_NLSFs.c","media/libopus/silk/quant_LTP_gains.c","media/libopus/silk/resampler.c","media/libopus/silk/resampler_down2.c","media/libopus/silk/resampler_down2_3.c","media/libopus/silk/resampler_private.h","media/libopus/silk/resampler_private_AR2.c","media/libopus/silk/resampler_private_IIR_FIR.c","media/libopus/silk/resampler_private_down_FIR.c","media/libopus/silk/resampler_private_up2_HQ.c","media/libopus/silk/resampler_rom.c","media/libopus/silk/resampler_rom.h","media/libopus/silk/resampler_structs.h","media/libopus/silk/shell_coder.c","media/libopus/silk/sigm_Q15.c","media/libopus/silk/sort.c","media/libopus/silk/stereo_LR_to_MS.c","media/libopus/silk/stereo_MS_to_LR.c","media/libopus/silk/stereo_decode_pred.c","media/libopus/silk/stereo_encode_pred.c","media/libopus/silk/stereo_find_predictor.c","media/libopus/silk/stereo_quant_pred.c","media/libopus/silk/structs.h","media/libopus/silk/sum_sqr_shift.c","media/libopus/silk/table_LSF_cos.c","media/libopus/silk/tables.h","media/libopus/silk/tables_LTP.c","media/libopus/silk/tables_NLSF_CB_NB_MB.c","media/libopus/silk/tables_NLSF_CB_WB.c","media/libopus/silk/tables_gain.c","media/libopus/silk/tables_other.c","media/libopus/silk/tables_pitch_lag.c","media/libopus/silk/tables_pulses_per_block.c","media/libopus/silk/tuning_parameters.h","media/libopus/silk/typedef.h","media/libopus/silk/x86/NSQ_del_dec_avx2.c","media/libopus/silk/x86/NSQ_del_dec_sse4_1.c","media/libopus/silk/x86/NSQ_sse4_1.c","media/libopus/silk/x86/SigProc_FIX_sse.h","media/libopus/silk/x86/VAD_sse4_1.c","media/libopus/silk/x86/VQ_WMat_EC_sse4_1.c","media/libopus/silk/x86/main_sse.h","media/libopus/silk/x86/x86_silk_map.c","media/libopus/sources.mozbuild","media/libopus/src/analysis.c","media/libopus/src/analysis.h","media/libopus/src/extensions.c","media/libopus/src/mapping_matrix.c","media/libopus/src/mapping_matrix.h","media/libopus/src/mlp.c","media/libopus/src/mlp.h","media/libopus/src/mlp_data.c","media/libopus/src/opus.c","media/libopus/src/opus_decoder.c","media/libopus/src/opus_encoder.c","media/libopus/src/opus_multistream.c","media/libopus/src/opus_multistream_decoder.c","media/libopus/src/opus_multistream_encoder.c","media/libopus/src/opus_private.h","media/libopus/src/opus_projection_decoder.c","media/libopus/src/opus_projection_encoder.c","media/libopus/src/repacketizer.c","media/libopus/update.sh","media/libpng/1737038.patch","media/libpng/ANNOUNCE","media/libpng/AUTHORS","media/libpng/CHANGES","media/libpng/LICENSE","media/libpng/MOZCHANGES","media/libpng/README","media/libpng/TRADEMARK","media/libpng/apng.patch","media/libpng/arm.patch","media/libpng/arm/arm_init.c","media/libpng/arm/filter_neon.S","media/libpng/arm/filter_neon_intrinsics.c","media/libpng/arm/linux.c","media/libpng/arm/palette_neon_intrinsics.c","media/libpng/crashtests/374810-1.html","media/libpng/crashtests/945912-1.html","media/libpng/crashtests/974825-1.html","media/libpng/crashtests/crashtests.list","media/libpng/intel/filter_sse2_intrinsics.c","media/libpng/intel/intel_init.c","media/libpng/libpng-manual.txt","media/libpng/loongarch/filter_lsx_intrinsics.c","media/libpng/loongarch/loongarch_lsx_init.c","media/libpng/mips/filter_mmi_inline_assembly.c","media/libpng/mips/filter_msa_intrinsics.c","media/libpng/mips/mips_init.c","media/libpng/moz.build","media/libpng/moz.yaml","media/libpng/png.c","media/libpng/png.h","media/libpng/pngconf.h","media/libpng/pngdebug.h","media/libpng/pngerror.c","media/libpng/pngget.c","media/libpng/pnginfo.h","media/libpng/pnglibconf.h","media/libpng/pngmem.c","media/libpng/pngpread.c","media/libpng/pngpriv.h","media/libpng/pngread.c","media/libpng/pngrio.c","media/libpng/pngrtran.c","media/libpng/pngrutil.c","media/libpng/pngset.c","media/libpng/pngstruct.h","media/libpng/pngtrans.c","media/libpng/pngwio.c","media/libpng/pngwrite.c","media/libpng/pngwtran.c","media/libpng/pngwutil.c","media/libpng/powerpc/filter_vsx_intrinsics.c","media/libpng/powerpc/powerpc_init.c","media/libpng/riscv/filter_rvv_intrinsics.c","media/libpng/riscv/riscv_init.c","media/libsoundtouch/AUTHORS","media/libsoundtouch/LICENSE","media/libsoundtouch/clear-lf.sh","media/libsoundtouch/moz-libsoundtouch.patch","media/libsoundtouch/moz.build","media/libsoundtouch/moz.yaml","media/libsoundtouch/ratetransposer.patch","media/libsoundtouch/src/AAFilter.cpp","media/libsoundtouch/src/AAFilter.h","media/libsoundtouch/src/FIFOSampleBuffer.cpp","media/libsoundtouch/src/FIFOSampleBuffer.h","media/libsoundtouch/src/FIFOSamplePipe.h","media/libsoundtouch/src/FIRFilter.cpp","media/libsoundtouch/src/FIRFilter.h","media/libsoundtouch/src/InterpolateCubic.cpp","media/libsoundtouch/src/InterpolateCubic.h","media/libsoundtouch/src/InterpolateLinear.cpp","media/libsoundtouch/src/InterpolateLinear.h","media/libsoundtouch/src/InterpolateShannon.cpp","media/libsoundtouch/src/InterpolateShannon.h","media/libsoundtouch/src/LICENSE-NOTICE.txt","media/libsoundtouch/src/RLBoxSoundTouch.cpp","media/libsoundtouch/src/RLBoxSoundTouch.h","media/libsoundtouch/src/RLBoxSoundTouchFactory.cpp","media/libsoundtouch/src/RLBoxSoundTouchFactory.h","media/libsoundtouch/src/RLBoxSoundTouchTypes.h","media/libsoundtouch/src/RateTransposer.cpp","media/libsoundtouch/src/RateTransposer.h","media/libsoundtouch/src/STTypes.h","media/libsoundtouch/src/SoundTouch.cpp","media/libsoundtouch/src/SoundTouch.h","media/libsoundtouch/src/SoundTouchFactory.cpp","media/libsoundtouch/src/SoundTouchFactory.h","media/libsoundtouch/src/TDStretch.cpp","media/libsoundtouch/src/TDStretch.h","media/libsoundtouch/src/cpu_detect.h","media/libsoundtouch/src/cpu_detect_x86.cpp","media/libsoundtouch/src/mmx_optimized.cpp","media/libsoundtouch/src/moz.build","media/libsoundtouch/src/soundtouch_config.h","media/libsoundtouch/src/soundtouch_perms.h","media/libsoundtouch/src/sse_optimized.cpp","media/libspeex_resampler/01_outside-speex.patch","media/libspeex_resampler/02_simd-detect-runtime.patch","media/libspeex_resampler/03_set-skip-frac.patch","media/libspeex_resampler/04_hugemem.patch","media/libspeex_resampler/05_set-rate-overflow-no-return.patch","media/libspeex_resampler/AUTHORS","media/libspeex_resampler/COPYING","media/libspeex_resampler/moz.build","media/libspeex_resampler/moz.yaml","media/libspeex_resampler/src/arch.h","media/libspeex_resampler/src/fixed_generic.h","media/libspeex_resampler/src/moz.build","media/libspeex_resampler/src/resample.c","media/libspeex_resampler/src/resample_neon.c","media/libspeex_resampler/src/resample_sse.c","media/libspeex_resampler/src/simd_detect.cpp","media/libspeex_resampler/src/simd_detect.h","media/libspeex_resampler/src/speex_resampler.h","media/libvorbis/AUTHORS","media/libvorbis/COPYING","media/libvorbis/include/vorbis/codec.h","media/libvorbis/include/vorbis/vorbisenc.h","media/libvorbis/lib/backends.h","media/libvorbis/lib/bitrate.h","media/libvorbis/lib/books/coupled/res_books_51.h","media/libvorbis/lib/books/coupled/res_books_stereo.h","media/libvorbis/lib/books/floor/floor_books.h","media/libvorbis/lib/books/uncoupled/res_books_uncoupled.h","media/libvorbis/lib/codebook.h","media/libvorbis/lib/codec_internal.h","media/libvorbis/lib/envelope.h","media/libvorbis/lib/highlevel.h","media/libvorbis/lib/lookup.h","media/libvorbis/lib/lookup_data.h","media/libvorbis/lib/lpc.h","media/libvorbis/lib/lsp.h","media/libvorbis/lib/masking.h","media/libvorbis/lib/mdct.h","media/libvorbis/lib/misc.h","media/libvorbis/lib/modes/floor_all.h","media/libvorbis/lib/modes/psych_11.h","media/libvorbis/lib/modes/psych_16.h","media/libvorbis/lib/modes/psych_44.h","media/libvorbis/lib/modes/psych_8.h","media/libvorbis/lib/modes/residue_16.h","media/libvorbis/lib/modes/residue_44.h","media/libvorbis/lib/modes/residue_44p51.h","media/libvorbis/lib/modes/residue_44u.h","media/libvorbis/lib/modes/residue_8.h","media/libvorbis/lib/modes/setup_11.h","media/libvorbis/lib/modes/setup_16.h","media/libvorbis/lib/modes/setup_22.h","media/libvorbis/lib/modes/setup_32.h","media/libvorbis/lib/modes/setup_44.h","media/libvorbis/lib/modes/setup_44p51.h","media/libvorbis/lib/modes/setup_44u.h","media/libvorbis/lib/modes/setup_8.h","media/libvorbis/lib/modes/setup_X.h","media/libvorbis/lib/os.h","media/libvorbis/lib/psy.h","media/libvorbis/lib/registry.h","media/libvorbis/lib/scales.h","media/libvorbis/lib/smallft.h","media/libvorbis/lib/vorbis_analysis.c","media/libvorbis/lib/vorbis_bitrate.c","media/libvorbis/lib/vorbis_block.c","media/libvorbis/lib/vorbis_codebook.c","media/libvorbis/lib/vorbis_envelope.c","media/libvorbis/lib/vorbis_floor0.c","media/libvorbis/lib/vorbis_floor1.c","media/libvorbis/lib/vorbis_info.c","media/libvorbis/lib/vorbis_lookup.c","media/libvorbis/lib/vorbis_lpc.c","media/libvorbis/lib/vorbis_lsp.c","media/libvorbis/lib/vorbis_mapping0.c","media/libvorbis/lib/vorbis_mdct.c","media/libvorbis/lib/vorbis_psy.c","media/libvorbis/lib/vorbis_registry.c","media/libvorbis/lib/vorbis_res0.c","media/libvorbis/lib/vorbis_sharedbook.c","media/libvorbis/lib/vorbis_smallft.c","media/libvorbis/lib/vorbis_synthesis.c","media/libvorbis/lib/vorbis_window.c","media/libvorbis/lib/vorbisenc.c","media/libvorbis/lib/window.h","media/libvorbis/moz.build","media/libvorbis/moz.yaml","media/libvpx/LICENSE","media/libvpx/LICENSE-NOTICE.txt","media/libvpx/Makefile.in","media/libvpx/README_MOZILLA","media/libvpx/ads2gas.py","media/libvpx/arm_cpu_runtime_detection_code_on_openbsd.patch","media/libvpx/config/generic/vp8_rtcd.h","media/libvpx/config/generic/vp9_rtcd.h","media/libvpx/config/generic/vpx_config.asm","media/libvpx/config/generic/vpx_config.c","media/libvpx/config/generic/vpx_config.h","media/libvpx/config/generic/vpx_dsp_rtcd.h","media/libvpx/config/generic/vpx_scale_rtcd.h","media/libvpx/config/linux/arm/vp8_rtcd.h","media/libvpx/config/linux/arm/vp9_rtcd.h","media/libvpx/config/linux/arm/vpx_config.asm","media/libvpx/config/linux/arm/vpx_config.c","media/libvpx/config/linux/arm/vpx_config.h","media/libvpx/config/linux/arm/vpx_dsp_rtcd.h","media/libvpx/config/linux/arm/vpx_scale_rtcd.h","media/libvpx/config/linux/arm64/vp8_rtcd.h","media/libvpx/config/linux/arm64/vp9_rtcd.h","media/libvpx/config/linux/arm64/vpx_config.asm","media/libvpx/config/linux/arm64/vpx_config.c","media/libvpx/config/linux/arm64/vpx_config.h","media/libvpx/config/linux/arm64/vpx_dsp_rtcd.h","media/libvpx/config/linux/arm64/vpx_scale_rtcd.h","media/libvpx/config/linux/ia32/vp8_rtcd.h","media/libvpx/config/linux/ia32/vp9_rtcd.h","media/libvpx/config/linux/ia32/vpx_config.asm","media/libvpx/config/linux/ia32/vpx_config.c","media/libvpx/config/linux/ia32/vpx_config.h","media/libvpx/config/linux/ia32/vpx_dsp_rtcd.h","media/libvpx/config/linux/ia32/vpx_scale_rtcd.h","media/libvpx/config/linux/loongarch64/vp8_rtcd.h","media/libvpx/config/linux/loongarch64/vp9_rtcd.h","media/libvpx/config/linux/loongarch64/vpx_config.asm","media/libvpx/config/linux/loongarch64/vpx_config.c","media/libvpx/config/linux/loongarch64/vpx_config.h","media/libvpx/config/linux/loongarch64/vpx_dsp_rtcd.h","media/libvpx/config/linux/loongarch64/vpx_scale_rtcd.h","media/libvpx/config/linux/x64/vp8_rtcd.h","media/libvpx/config/linux/x64/vp9_rtcd.h","media/libvpx/config/linux/x64/vpx_config.asm","media/libvpx/config/linux/x64/vpx_config.c","media/libvpx/config/linux/x64/vpx_config.h","media/libvpx/config/linux/x64/vpx_dsp_rtcd.h","media/libvpx/config/linux/x64/vpx_scale_rtcd.h","media/libvpx/config/mac/arm64/vp8_rtcd.h","media/libvpx/config/mac/arm64/vp9_rtcd.h","media/libvpx/config/mac/arm64/vpx_config.asm","media/libvpx/config/mac/arm64/vpx_config.c","media/libvpx/config/mac/arm64/vpx_config.h","media/libvpx/config/mac/arm64/vpx_dsp_rtcd.h","media/libvpx/config/mac/arm64/vpx_scale_rtcd.h","media/libvpx/config/mac/ia32/vp8_rtcd.h","media/libvpx/config/mac/ia32/vp9_rtcd.h","media/libvpx/config/mac/ia32/vpx_config.asm","media/libvpx/config/mac/ia32/vpx_config.c","media/libvpx/config/mac/ia32/vpx_config.h","media/libvpx/config/mac/ia32/vpx_dsp_rtcd.h","media/libvpx/config/mac/ia32/vpx_scale_rtcd.h","media/libvpx/config/mac/x64/vp8_rtcd.h","media/libvpx/config/mac/x64/vp9_rtcd.h","media/libvpx/config/mac/x64/vpx_config.asm","media/libvpx/config/mac/x64/vpx_config.c","media/libvpx/config/mac/x64/vpx_config.h","media/libvpx/config/mac/x64/vpx_dsp_rtcd.h","media/libvpx/config/mac/x64/vpx_scale_rtcd.h","media/libvpx/config/vpx_version.h","media/libvpx/config/win/aarch64/vp8_rtcd.h","media/libvpx/config/win/aarch64/vp9_rtcd.h","media/libvpx/config/win/aarch64/vpx_config.asm","media/libvpx/config/win/aarch64/vpx_config.c","media/libvpx/config/win/aarch64/vpx_config.h","media/libvpx/config/win/aarch64/vpx_dsp_rtcd.h","media/libvpx/config/win/aarch64/vpx_scale_rtcd.h","media/libvpx/config/win/ia32/vp8_rtcd.h","media/libvpx/config/win/ia32/vp9_rtcd.h","media/libvpx/config/win/ia32/vpx_config.asm","media/libvpx/config/win/ia32/vpx_config.c","media/libvpx/config/win/ia32/vpx_config.h","media/libvpx/config/win/ia32/vpx_dsp_rtcd.h","media/libvpx/config/win/ia32/vpx_scale_rtcd.h","media/libvpx/config/win/x64/vp8_rtcd.h","media/libvpx/config/win/x64/vp9_rtcd.h","media/libvpx/config/win/x64/vpx_config.asm","media/libvpx/config/win/x64/vpx_config.c","media/libvpx/config/win/x64/vpx_config.h","media/libvpx/config/win/x64/vpx_dsp_rtcd.h","media/libvpx/config/win/x64/vpx_scale_rtcd.h","media/libvpx/generate_sources_mozbuild.sh","media/libvpx/input_frame_validation.patch","media/libvpx/input_frame_validation_vp9.patch","media/libvpx/libvpx/.clang-format","media/libvpx/libvpx/.mailmap","media/libvpx/libvpx/AUTHORS","media/libvpx/libvpx/CHANGELOG","media/libvpx/libvpx/CONTRIBUTING.md","media/libvpx/libvpx/LICENSE","media/libvpx/libvpx/PATENTS","media/libvpx/libvpx/README","media/libvpx/libvpx/args.c","media/libvpx/libvpx/args.h","media/libvpx/libvpx/build/make/Android.mk","media/libvpx/libvpx/build/make/Makefile","media/libvpx/libvpx/build/make/ads2armasm_ms.pl","media/libvpx/libvpx/build/make/ads2gas.pl","media/libvpx/libvpx/build/make/ads2gas_apple.pl","media/libvpx/libvpx/build/make/armlink_adapter.sh","media/libvpx/libvpx/build/make/configure.sh","media/libvpx/libvpx/build/make/gen_asm_deps.sh","media/libvpx/libvpx/build/make/gen_msvs_def.sh","media/libvpx/libvpx/build/make/gen_msvs_sln.sh","media/libvpx/libvpx/build/make/gen_msvs_vcxproj.sh","media/libvpx/libvpx/build/make/ios-Info.plist","media/libvpx/libvpx/build/make/iosbuild.sh","media/libvpx/libvpx/build/make/msvs_common.sh","media/libvpx/libvpx/build/make/rtcd.pl","media/libvpx/libvpx/build/make/thumb.pm","media/libvpx/libvpx/build/make/version.sh","media/libvpx/libvpx/build_debug/non_greedy_mv_test_files/cur_frame_16x16.txt","media/libvpx/libvpx/build_debug/non_greedy_mv_test_files/estimation_16x16.txt","media/libvpx/libvpx/build_debug/non_greedy_mv_test_files/exhaust_16x16.txt","media/libvpx/libvpx/build_debug/non_greedy_mv_test_files/ground_truth_16x16.txt","media/libvpx/libvpx/build_debug/non_greedy_mv_test_files/localVar_16x16.txt","media/libvpx/libvpx/build_debug/non_greedy_mv_test_files/raw_1.png","media/libvpx/libvpx/build_debug/non_greedy_mv_test_files/raw_1_12_12.png","media/libvpx/libvpx/build_debug/non_greedy_mv_test_files/ref_frame_16x16.txt","media/libvpx/libvpx/codereview.settings","media/libvpx/libvpx/configure","media/libvpx/libvpx/docs.mk","media/libvpx/libvpx/examples.mk","media/libvpx/libvpx/examples/decode_to_md5.c","media/libvpx/libvpx/examples/decode_with_drops.c","media/libvpx/libvpx/examples/postproc.c","media/libvpx/libvpx/examples/set_maps.c","media/libvpx/libvpx/examples/simple_decoder.c","media/libvpx/libvpx/examples/simple_encoder.c","media/libvpx/libvpx/examples/svc_context.h","media/libvpx/libvpx/examples/svc_encodeframe.c","media/libvpx/libvpx/examples/twopass_encoder.c","media/libvpx/libvpx/examples/vp8_multi_resolution_encoder.c","media/libvpx/libvpx/examples/vp8cx_set_ref.c","media/libvpx/libvpx/examples/vp9_lossless_encoder.c","media/libvpx/libvpx/examples/vp9_spatial_svc_encoder.c","media/libvpx/libvpx/examples/vp9cx_set_ref.c","media/libvpx/libvpx/examples/vpx_dec_fuzzer.cc","media/libvpx/libvpx/examples/vpx_enc_fuzzer.cc","media/libvpx/libvpx/examples/vpx_temporal_svc_encoder.c","media/libvpx/libvpx/ivfdec.c","media/libvpx/libvpx/ivfdec.h","media/libvpx/libvpx/ivfenc.c","media/libvpx/libvpx/ivfenc.h","media/libvpx/libvpx/keywords.dox","media/libvpx/libvpx/libs.doxy_template","media/libvpx/libvpx/libs.mk","media/libvpx/libvpx/mainpage.dox","media/libvpx/libvpx/md5_utils.c","media/libvpx/libvpx/md5_utils.h","media/libvpx/libvpx/rate_hist.c","media/libvpx/libvpx/rate_hist.h","media/libvpx/libvpx/solution.mk","media/libvpx/libvpx/test/acm_random.h","media/libvpx/libvpx/test/active_map_refresh_test.cc","media/libvpx/libvpx/test/active_map_test.cc","media/libvpx/libvpx/test/add_noise_test.cc","media/libvpx/libvpx/test/alt_ref_aq_segment_test.cc","media/libvpx/libvpx/test/altref_test.cc","media/libvpx/libvpx/test/android/Android.mk","media/libvpx/libvpx/test/android/README","media/libvpx/libvpx/test/android/get_files.py","media/libvpx/libvpx/test/android/scrape_gtest_log.py","media/libvpx/libvpx/test/aq_segment_test.cc","media/libvpx/libvpx/test/avg_test.cc","media/libvpx/libvpx/test/bench.cc","media/libvpx/libvpx/test/bench.h","media/libvpx/libvpx/test/blockiness_test.cc","media/libvpx/libvpx/test/borders_test.cc","media/libvpx/libvpx/test/buffer.h","media/libvpx/libvpx/test/byte_alignment_test.cc","media/libvpx/libvpx/test/clear_system_state.h","media/libvpx/libvpx/test/codec_factory.h","media/libvpx/libvpx/test/comp_avg_pred_test.cc","media/libvpx/libvpx/test/config_test.cc","media/libvpx/libvpx/test/consistency_test.cc","media/libvpx/libvpx/test/convolve_test.cc","media/libvpx/libvpx/test/cpu_speed_test.cc","media/libvpx/libvpx/test/cq_test.cc","media/libvpx/libvpx/test/cx_set_ref.sh","media/libvpx/libvpx/test/dct16x16_test.cc","media/libvpx/libvpx/test/dct32x32_test.cc","media/libvpx/libvpx/test/dct_partial_test.cc","media/libvpx/libvpx/test/dct_test.cc","media/libvpx/libvpx/test/decode_api_test.cc","media/libvpx/libvpx/test/decode_corrupted.cc","media/libvpx/libvpx/test/decode_perf_test.cc","media/libvpx/libvpx/test/decode_svc_test.cc","media/libvpx/libvpx/test/decode_test_driver.cc","media/libvpx/libvpx/test/decode_test_driver.h","media/libvpx/libvpx/test/decode_to_md5.sh","media/libvpx/libvpx/test/decode_with_drops.sh","media/libvpx/libvpx/test/encode_api_test.cc","media/libvpx/libvpx/test/encode_perf_test.cc","media/libvpx/libvpx/test/encode_test_driver.cc","media/libvpx/libvpx/test/encode_test_driver.h","media/libvpx/libvpx/test/error_resilience_test.cc","media/libvpx/libvpx/test/examples.sh","media/libvpx/libvpx/test/external_frame_buffer_test.cc","media/libvpx/libvpx/test/fdct8x8_test.cc","media/libvpx/libvpx/test/frame_size_tests.cc","media/libvpx/libvpx/test/hadamard_test.cc","media/libvpx/libvpx/test/i420_video_source.h","media/libvpx/libvpx/test/idct8x8_test.cc","media/libvpx/libvpx/test/idct_test.cc","media/libvpx/libvpx/test/init_vpx_test.cc","media/libvpx/libvpx/test/init_vpx_test.h","media/libvpx/libvpx/test/invalid_file_test.cc","media/libvpx/libvpx/test/ivf_video_source.h","media/libvpx/libvpx/test/keyframe_test.cc","media/libvpx/libvpx/test/level_test.cc","media/libvpx/libvpx/test/lpf_test.cc","media/libvpx/libvpx/test/md5_helper.h","media/libvpx/libvpx/test/minmax_test.cc","media/libvpx/libvpx/test/non_greedy_mv_test.cc","media/libvpx/libvpx/test/partial_idct_test.cc","media/libvpx/libvpx/test/postproc.sh","media/libvpx/libvpx/test/postproc_test.cc","media/libvpx/libvpx/test/pp_filter_test.cc","media/libvpx/libvpx/test/predict_test.cc","media/libvpx/libvpx/test/quantize_test.cc","media/libvpx/libvpx/test/realtime_test.cc","media/libvpx/libvpx/test/register_state_check.h","media/libvpx/libvpx/test/resize_test.cc","media/libvpx/libvpx/test/sad_test.cc","media/libvpx/libvpx/test/set_maps.sh","media/libvpx/libvpx/test/set_roi.cc","media/libvpx/libvpx/test/simple_decoder.sh","media/libvpx/libvpx/test/simple_encoder.sh","media/libvpx/libvpx/test/stress.sh","media/libvpx/libvpx/test/sum_squares_test.cc","media/libvpx/libvpx/test/superframe_test.cc","media/libvpx/libvpx/test/svc_datarate_test.cc","media/libvpx/libvpx/test/svc_end_to_end_test.cc","media/libvpx/libvpx/test/svc_test.cc","media/libvpx/libvpx/test/svc_test.h","media/libvpx/libvpx/test/test-data.mk","media/libvpx/libvpx/test/test-data.sha1","media/libvpx/libvpx/test/test.mk","media/libvpx/libvpx/test/test_intra_pred_speed.cc","media/libvpx/libvpx/test/test_libvpx.cc","media/libvpx/libvpx/test/test_rc_interface.cc"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013"}} -->
+# firefox/media structural source map 404
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. This is an automated navigation map, not a behavior review.
+Each row gives the repository-relative path, Git blob ID, byte size, role inferred from the path, declaration candidates, and literal dependency candidates. `@N` is the source line.
+Candidates come from line-based patterns. They can miss multiline, anonymous, macro-generated, and language-specific declarations or match comments and fixture text. Dependencies are not resolved imports, runtime calls, or a complete graph. No candidates does not mean no functions or dependencies.
+Imported code and tests are included. Binary and non-UTF-8 files have a census entry but no declaration extraction. Symlink contents are scanned as text, not followed. No uncommitted changes, build products, ignored files, or untracked files are studied.
+
+## File map
+
+`media/libopus/silk/pitch_est_tables.c` | `81a8bacaca2b4824480f50256d8d215b6ccaba61` | 3589 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; typedef.h@32; pitch_est_defines.h@33
+
+`media/libopus/silk/process_NLSFs.c` | `d1308095413e28e814b3903551e1f32d71a06d73` | 5447 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; main.h@32
+
+`media/libopus/silk/quant_LTP_gains.c` | `d6b8eff8d1864ccfa21a26a6bc597ebc2dbcedb3` | 7346 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; main.h@32; tuning_parameters.h@33
+
+`media/libopus/silk/resampler.c` | `2fe6eaac1a2b6410b38d49e53bfbe445448f4f96` | 10146 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; resampler_private.h@50
+
+`media/libopus/silk/resampler_down2.c` | `febe4956d828be2dd9909c4c488f12868e364642` | 3474 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; SigProc_FIX.h@32; resampler_rom.h@33
+
+`media/libopus/silk/resampler_down2_3.c` | `4342614dcccc11348bf9e45c4e20691e19f69982` | 4765 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; SigProc_FIX.h@32; resampler_private.h@33; stack_alloc.h@34
+
+`media/libopus/silk/resampler_private.h` | `1b7d35389b5e7505586bc57b5cfaeedd077e05b8` | 4485 bytes | source | UTF-8 | mode 100644
+Dependencies: SigProc_FIX.h@31; resampler_structs.h@32; resampler_rom.h@33
+
+`media/libopus/silk/resampler_private_AR2.c` | `73523d94ade51dfb541967a98ec29177d3a18c5e` | 2664 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; SigProc_FIX.h@32; resampler_private.h@33
+
+`media/libopus/silk/resampler_private_IIR_FIR.c` | `6b2b3a2e1832e43db373b6c9994eef423ccc9a93` | 5231 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; SigProc_FIX.h@32; resampler_private.h@33; stack_alloc.h@34
+
+`media/libopus/silk/resampler_private_down_FIR.c` | `3e8735a35a2ed30c3aeb4024b0e3005b30b23508` | 10897 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; SigProc_FIX.h@32; resampler_private.h@33; stack_alloc.h@34
+
+`media/libopus/silk/resampler_private_up2_HQ.c` | `c7ec8de3651dad354901166c665c6dd7d5bc9e39` | 5367 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; SigProc_FIX.h@32; resampler_private.h@33
+
+`media/libopus/silk/resampler_rom.c` | `5e6b04476aae74a7e1219d3b118a1e75834a7979` | 4747 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; resampler_private.h@35
+
+`media/libopus/silk/resampler_rom.h` | `b0579e0e85fcd187731b7e7e7bd7058f40976acf` | 3224 bytes | source | UTF-8 | mode 100644
+Dependencies: typedef.h@32; resampler_structs.h@33
+
+`media/libopus/silk/resampler_structs.h` | `80b426a67644706c7683a8f506f0fe8bb74f8fd8` | 2546 bytes | source | UTF-8 | mode 100644
+Declarations: struct@34
+
+`media/libopus/silk/shell_coder.c` | `4af341474bc7b2e6188585fa984d7cfc8521319a` | 7718 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; main.h@32
+
+`media/libopus/silk/sigm_Q15.c` | `39a52dba20e4610b917764311589cf05aaf7c70b` | 3163 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; SigProc_FIX.h@34
+
+`media/libopus/silk/sort.c` | `4fba16f831be592f46a59f458177de1019938a5b` | 6265 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; SigProc_FIX.h@38
+
+`media/libopus/silk/stereo_LR_to_MS.c` | `751452cb1913d150d17c0a35c5fc29108a7d17b3` | 12481 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; main.h@32; stack_alloc.h@33
+
+`media/libopus/silk/stereo_MS_to_LR.c` | `1e01bb6eb3742b95c39bc80625eb14f95647a183` | 4899 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; main.h@32
+
+`media/libopus/silk/stereo_decode_pred.c` | `56ba3925e8717d54e08fc26dec50cf033f3ed88e` | 3417 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; main.h@32
+
+`media/libopus/silk/stereo_encode_pred.c` | `03becb673612a07f17aea87e48c07e9f0001b29f` | 2885 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; main.h@32
+
+`media/libopus/silk/stereo_find_predictor.c` | `e30e90bddc28aefc83ae3dfa5a58a2860c047092` | 4374 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; main.h@32
+
+`media/libopus/silk/stereo_quant_pred.c` | `d4ced6c3e82ffb40b74c42c34e35298635183702` | 3404 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; main.h@32
+
+`media/libopus/silk/structs.h` | `f3ea0b331882535fa9a96985f0c2e197cc38cc57` | 21801 bytes | source | UTF-8 | mode 100644
+Declarations: struct@56; struct@74; struct@88; struct@96; struct@111; struct@123; struct@129; struct@146; struct@243; struct@249; struct@256; struct@274; struct@286; struct@346
+Dependencies: typedef.h@31; SigProc_FIX.h@32; define.h@33; entenc.h@34; entdec.h@35; lpcnet.h@38; lpcnet_private.h@39; dred_encoder.h@43; dred_decoder.h@44; osce_config.h@48; osce_structs.h@49
+
+`media/libopus/silk/sum_sqr_shift.c` | `90ceb7684d2443dafe3c928e78e9e6ee132ac3a6` | 3789 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; SigProc_FIX.h@32
+
+`media/libopus/silk/table_LSF_cos.c` | `ec9dc6392791fec793b8670beba579bd7e2f1947` | 4191 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; tables.h@32
+
+`media/libopus/silk/tables.h` | `da12b66f64241f45eda46e5f76ad2d7e49a86d3b` | 7110 bytes | source | UTF-8 | mode 100644
+Dependencies: define.h@31; structs.h@32
+
+`media/libopus/silk/tables_LTP.c` | `5e12c8643e5b0f15c1c9486a8845c833f1ddf341` | 7432 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; tables.h@32
+
+`media/libopus/silk/tables_NLSF_CB_NB_MB.c` | `195d5b95bd154cc4a94f2ee63b7688a5ec0671f7` | 10785 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; tables.h@32
+
+`media/libopus/silk/tables_NLSF_CB_WB.c` | `4212791258d17f66e118d954993e09ca652d6cc7` | 14498 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; tables.h@32
+
+`media/libopus/silk/tables_gain.c` | `fb2a3eeb5a67f1b970f88afb37736186f5d447a7` | 2451 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; tables.h@32
+
+`media/libopus/silk/tables_other.c` | `b558bf7224f54667e022ae30c86e1d27fbdaf4cb` | 4714 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; structs.h@32; define.h@33; tables.h@34
+
+`media/libopus/silk/tables_pitch_lag.c` | `72490df064c77d827a5b609955bd702a99c11ab4` | 3066 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; tables.h@32
+
+`media/libopus/silk/tables_pulses_per_block.c` | `c7c01c8893fa857cd5dba35f90eeb4cac5512817` | 11423 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; tables.h@32
+
+`media/libopus/silk/tuning_parameters.h` | `e2a23eb8b2c1869be72d3dff5c99dc22f5b6e561` | 6122 bytes | source | UTF-8 | mode 100644
+
+`media/libopus/silk/typedef.h` | `1c712df096fa1081106db1bcf7980f43a0b559fe` | 3522 bytes | source | UTF-8 | mode 100644
+Dependencies: opus_types.h@31; opus_defines.h@32; float.h@35; crtdbg.h@56; stdio.h@61; stdlib.h@62
+
+`media/libopus/silk/x86/NSQ_del_dec_avx2.c` | `8d1d0f9e1ea279b9bb99fab1cd6aaf071de3121b` | 52491 bytes | source | UTF-8 | mode 100644
+Declarations: __builtin_sadd_overflow@76; __builtin_ctz@81; silk_index_to_selector@258; silk_select_winner@269; struct@274; struct@283
+Dependencies: config.h@29; string.h@33; opus_defines.h@36; immintrin.h@37; main.h@39; stack_alloc.h@40; NSQ.h@41; celt/x86/x86cpu.h@42; intsafe.h@75
+
+`media/libopus/silk/x86/NSQ_del_dec_sse4_1.c` | `5937682d2aef65af6ffa60b8f79e515e01845f44` | 48765 bytes | source | UTF-8 | mode 100644
+Declarations: struct@40; struct@55; NSQ_sample_struct@65
+Dependencies: config.h@29; xmmintrin.h@32; emmintrin.h@33; smmintrin.h@34; main.h@35; celt/x86/x86cpu.h@36; stack_alloc.h@38
+
+`media/libopus/silk/x86/NSQ_sse4_1.c` | `3c9aca7ba1a9b0963845d925e9d9b5f7657fa30a` | 36013 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; xmmintrin.h@32; emmintrin.h@33; smmintrin.h@34; main.h@35; celt/x86/x86cpu.h@36; stack_alloc.h@37
+
+`media/libopus/silk/x86/SigProc_FIX_sse.h` | `89a5ec888a1158ebb7b551190218c76400b4ac91` | 5274 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@32
+
+`media/libopus/silk/x86/VAD_sse4_1.c` | `9e06bc79d050c3e64c2a2c1bb4abc6956ed118f1` | 12012 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; xmmintrin.h@32; emmintrin.h@33; smmintrin.h@34; main.h@36; stack_alloc.h@37
+
+`media/libopus/silk/x86/VQ_WMat_EC_sse4_1.c` | `df4626b60a973f4530155511daa68aad808a6f2a` | 8236 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; xmmintrin.h@32; emmintrin.h@33; smmintrin.h@34; main.h@35; celt/x86/x86cpu.h@36
+
+`media/libopus/silk/x86/main_sse.h` | `b254d53e7a46fe058fc7336f2e8f4276865883d7` | 20671 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@32
+
+`media/libopus/silk/x86/x86_silk_map.c` | `39ad75276cc2fdaebb83656ea60981ff17dc2514` | 10081 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@29; celt/x86/x86cpu.h@32; structs.h@33; SigProc_FIX.h@34; SigProc_FLP.h@36; pitch.h@38; main.h@39; fixed/main_FIX.h@45
+
+`media/libopus/sources.mozbuild` | `559be4bfad119f161de85785bf3592ac63d24201` | 6777 bytes | build-registration | UTF-8 | mode 100644
+
+`media/libopus/src/analysis.c` | `c353230ad4810cdc237394aa4f2ac7d16facb94d` | 36284 bytes | source | UTF-8 | mode 100644
+Declarations: downmix_and_resample@165; tonality_analysis_init@216; tonality_analysis_reset@225; tonality_get_info@232; is_digital_silence32@428; tonality_analysis@445
+Dependencies: config.h@29; stdio.h@35; mathops.h@38; kiss_fft.h@39; celt.h@40; modes.h@41; arch.h@42; quant_bands.h@43; analysis.h@44; mlp.h@45; stack_alloc.h@46; float_cast.h@47
+
+`media/libopus/src/analysis.h` | `cb19cc0dfa1fbd97feb515b846ca87168f63cea2` | 3583 bytes | source | UTF-8 | mode 100644
+Declarations: struct@47
+Dependencies: celt.h@31; opus_private.h@32; mlp.h@33
+
+`media/libopus/src/extensions.c` | `d505978fce73a55d09b25af7d0574580a39c9271` | 23462 bytes | source | UTF-8 | mode 100644
+Declarations: opus_extension_iterator_reset@137; main@643
+Dependencies: config.h@28; opus_types.h@32; opus_defines.h@33; arch.h@34; os_support.h@35; opus_private.h@36; stdio.h@642
+
+`media/libopus/src/mapping_matrix.c` | `6a68100f792c7ee08382a4fcec617c38a44c533a` | 54289 bytes | source | UTF-8 | mode 100644
+Declarations: mapping_matrix_get_size@40
+Dependencies: config.h@29; arch.h@32; float_cast.h@33; opus_private.h@34; opus_defines.h@35; mapping_matrix.h@36
+
+`media/libopus/src/mapping_matrix.h` | `eedf23260a81b6669effa134ce22bb4c6ae22cc9` | 4882 bytes | source | UTF-8 | mode 100644
+Declarations: struct@39
+Dependencies: opus_types.h@36; opus_projection.h@37
+
+`media/libopus/src/mlp.c` | `b1dbab5aef38a01eaf154faabe91fd9fdd7d46ba` | 4181 bytes | source | UTF-8 | mode 100644
+Declarations: gemm_accum@60; analysis_compute_dense@70; analysis_compute_gru@92
+Dependencies: config.h@29; math.h@32; opus_types.h@33; opus_defines.h@34; arch.h@35; mlp.h@36
+
+`media/libopus/src/mlp.h` | `e6b1a8f76cb9dc8e46dac32b1c8c6b1a4ec32402` | 2096 bytes | source | UTF-8 | mode 100644
+Declarations: struct@36; struct@44
+Dependencies: opus_types.h@30
+
+`media/libopus/src/mlp_data.c` | `30477cb47718a198b77e03e5d2373cfbde7991f8` | 24120 bytes | source | UTF-8 | mode 100644
+Dependencies: config.h@4; mlp.h@7
+
+`media/libopus/src/opus.c` | `01be6895e90ced9115620313c83f0c26f43c7958` | 11274 bytes | source | UTF-8 | mode 100644
+Declarations: opus_pcm_soft_clip_impl@39; encode_size@170; parse_size@183
+Dependencies: config.h@30; opus.h@33; mathops.h@34; opus_private.h@35
+
+`media/libopus/src/opus_decoder.c` | `cf454b9ad2c0321077408cd65e1f78aa32571273` | 50136 bytes | source | UTF-8 | mode 100644
+Declarations: OpusDecoder@65; validate_opus_decoder@97; opus_decoder_get_size@121; opus_decoder_init@135; opus_packet_get_mode@256; ec_tell@510; opus_decoder_ctl@1042; opus_decoder_destroy@1255; opus_packet_get_bandwidth@1261; opus_packet_get_nb_channels@1279; opus_packet_get_nb_frames@1284; opus_packet_has_lbrr@1317; OpusDREDDecoder@1350; validate_dred_decoder@1360; opus_dred_decoder_get_size@1374; dred_decoder_load_model@1380; opus_dred_decoder_init@1392; opus_dred_decoder_destroy@1428; opus_dred_decoder_ctl@1434; dred_find_payload@1477; opus_dred_get_size@1522; opus_dred_free@1551; opus_dred_parse@1560; opus_dred_process@1597; opus_decoder_dred_decode@1620; opus_decoder_dred_decode24@1653; opus_decoder_dred_decode_float@1687
+Dependencies: config.h@30; stdarg.h@41; celt.h@42; opus.h@43; entdec.h@44; modes.h@45; API.h@46; stack_alloc.h@47; float_cast.h@48; opus_private.h@49; os_support.h@50; structs.h@51; define.h@52; mathops.h@53; cpu_support.h@54; dred_rdovae_dec_data.h@57; dred_rdovae_dec.h@58; osce.h@62; CELT@657
+
+`media/libopus/src/opus_encoder.c` | `a74631fc24deb8bc47757509dd23bfef8a511961` | 119683 bytes | source | UTF-8 | mode 100644
+Declarations: struct@70; OpusEncoder@76; opus_encoder_get_size@194; opus_encoder_init@204; hp_cutoff@441; dc_reject@479; dc_reject@507; estimate_dred_bitrate@669; compute_dred_bitrate@687; user_bitrate_to_bitrate@733; downmix_float@748; downmix_int@781; downmix_int24@804; frame_size_select@827; compute_stereo_width@854; decide_fec@940; compute_silk_rate_for_hybrid@973; is_digital_silence@1060; compute_frame_energy@1080; compute_frame_energy@1107; compute_redundancy_bytes@1142; opus_encoder_ctl@2772; opus_encoder_destroy@3362
+Dependencies: config.h@29; stdarg.h@32; celt.h@33; entenc.h@34; modes.h@35; API.h@36; stack_alloc.h@37; float_cast.h@38; opus.h@39; arch.h@40; pitch.h@41; opus_private.h@42; os_support.h@43; cpu_support.h@44; analysis.h@45; mathops.h@46; tuning_parameters.h@47; dred_coding.h@50; fixed/structs_FIX.h@54; float/structs_FLP.h@56; stdio.h@59; SILK@1520
+
+`media/libopus/src/opus_multistream.c` | `895fc1685239240e8bbeb3d87d56761db54d8388` | 2683 bytes | source | UTF-8 | mode 100644
+Declarations: validate_layout@41; get_left_channel@57; get_right_channel@69; get_mono_channel@81
+Dependencies: config.h@29; opus_multistream.h@32; opus.h@33; opus_private.h@34; stack_alloc.h@35; stdarg.h@36; float_cast.h@37; os_support.h@38
+
+`media/libopus/src/opus_multistream_decoder.c` | `121b33ad51533c0ce89c7bf18d4c5b1a9624aecf` | 15178 bytes | source | UTF-8 | mode 100644
+Declarations: validate_ms_decoder@43; opus_multistream_decoder_get_size@53; opus_multistream_decoder_ctl@552; opus_multistream_decoder_destroy@562
+Dependencies: config.h@29; opus_multistream.h@32; opus.h@33; opus_private.h@34; stack_alloc.h@35; stdarg.h@36; float_cast.h@37; os_support.h@38
+
+`media/libopus/src/opus_multistream_encoder.c` | `79c0d3b7d65b81c44e4c2bcdd3bcdacc15b9ebe2` | 39935 bytes | source | UTF-8 | mode 100644
+Declarations: struct@46; validate_ambisonics@110; validate_encoder_layout@133; channel_pos@152; logSum@193; logSum@224; opus_multistream_encoder_get_size@383; opus_multistream_surround_encoder_get_size@396; opus_multistream_encoder_ctl@1350; opus_multistream_encoder_destroy@1360
+Dependencies: config.h@29; opus_multistream.h@32; opus.h@33; opus_private.h@34; stack_alloc.h@35; stdarg.h@36; float_cast.h@37; os_support.h@38; mathops.h@39; mdct.h@40; modes.h@41; bands.h@42; quant_bands.h@43; pitch.h@44
+
+`media/libopus/src/opus_private.h` | `289f97ffab8662cf2cffdc0d0b8d95a7fd1d912b` | 9225 bytes | source | UTF-8 | mode 100644
+Declarations: OpusRepacketizer@39; struct@50; struct@68; struct@86; enum@93; OpusMSEncoder@99; OpusMSDecoder@113; void@128; void@138; void@175; foo@199; OpusMSEncoder@222; OpusMSDecoder@235
+Dependencies: arch.h@32; opus.h@33; celt.h@34; stdarg.h@36; stddef.h@37
+
+`media/libopus/src/opus_projection_decoder.c` | `f4905750599a9a1ea90c6c48877dc0c6992124ce` | 8481 bytes | source | UTF-8 | mode 100644
+Declarations: OpusProjectionDecoder@41; opus_projection_decoder_ctl@267; opus_projection_decoder_destroy@279
+Dependencies: config.h@29; mathops.h@32; os_support.h@33; opus_private.h@34; opus_defines.h@35; opus_projection.h@36; opus_multistream.h@37; mapping_matrix.h@38; stack_alloc.h@39
+
+`media/libopus/src/opus_projection_encoder.c` | `9b03900aef21f3231c813aa74a0710ec61eba988` | 16886 bytes | source | UTF-8 | mode 100644
+Declarations: OpusProjectionEncoder@41; get_order_plus_one_from_channels@92; opus_projection_encoder_destroy@429; opus_projection_encoder_ctl@434
+Dependencies: config.h@29; mathops.h@32; os_support.h@33; opus_private.h@34; opus_defines.h@35; opus_projection.h@36; opus_multistream.h@37; stack_alloc.h@38; mapping_matrix.h@39
+
+`media/libopus/src/repacketizer.c` | `14a3b13494479e517c60f0f1d51cbf9f7678b122` | 13843 bytes | source | UTF-8 | mode 100644
+Declarations: opus_repacketizer_get_size@38; opus_repacketizer_destroy@57; opus_repacketizer_cat_impl@62; opus_repacketizer_cat@104; opus_repacketizer_get_nb_frames@109; opus_repacketizer_out_range@329; opus_repacketizer_out@334; opus_packet_pad_impl@339; opus_packet_pad@366; opus_packet_unpad@378; opus_multistream_packet_pad@399; opus_multistream_packet_unpad@430
+Dependencies: config.h@29; opus.h@32; opus_private.h@33; os_support.h@34; stack_alloc.h@35
+
+`media/libopus/update.sh` | `a311a3fd86b61b149c0ba26234c2b19355048faf` | 2017 bytes | data-or-other | UTF-8 | mode 100755
+
+`media/libpng/1737038.patch` | `a1137118721ef7429bdbbe3d06855cd32318d07f` | 962 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libpng/ANNOUNCE` | `0c6f83939b5e2b7b32b01f527727fd0d61ea6e8d` | 1386 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libpng/AUTHORS` | `f892145db88232e6e5d3875c93e8f34b10c43460` | 1810 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libpng/CHANGES` | `cd637fb98803dfddcd160a9595802e800ebce4f1` | 318635 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libpng/LICENSE` | `1b765ae9f96abea77d3d9a88c543e3b5f4725813` | 5345 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libpng/MOZCHANGES` | `5de4fbb4292057aada61dfd7c171de31a79a8c9e` | 5864 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libpng/README` | `9fd4e425c4f1f4c579ae7b62ed391c8c029ac273` | 9485 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libpng/TRADEMARK` | `ac667187d67ffb97110e0b0df339859c0bd0f752` | 343 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libpng/apng.patch` | `a06964f0d37fe215eeb955dec1e91c0725932cab` | 49339 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libpng/arm.patch` | `87718680d74c91972f126501a3ce92ad90fce684` | 984 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libpng/arm/arm_init.c` | `4102ec4b7673869b07494a8da71164a3c77729a3` | 4992 bytes | source | UTF-8 | mode 100644
+Declarations: png_init_filter_functions_neon@60
+Dependencies: ../pngpriv.h@15; signal.h@33
+
+`media/libpng/arm/filter_neon.S` | `c17e56084428e3811d8b26989724e937abaf934b` | 2369 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libpng/arm/filter_neon_intrinsics.c` | `6c3f1184a8e34fff99591991f101b6ef1782f818` | 11843 bytes | source | UTF-8 | mode 100644
+Declarations: paeth@260
+Dependencies: ../pngpriv.h@13; arm64_neon.h@21; arm_neon.h@23
+
+`media/libpng/arm/linux.c` | `b5429d0c34f16c0f38bd617c79a4e7f64fef0987` | 4446 bytes | source | UTF-8 | mode 100644
+Declarations: png_have_neon@25
+Dependencies: stdio.h@22
+
+`media/libpng/arm/palette_neon_intrinsics.c` | `0967ea1aebd718907fda1e767957deeddbe676b3` | 4665 bytes | source | UTF-8 | mode 100644
+Declarations: png_riffle_palette_neon@24
+Dependencies: ../pngpriv.h@12; arm64_neon.h@17; arm_neon.h@19
+
+`media/libpng/crashtests/374810-1.html` | `40fe1cd746642ea865743c4614ef2f2ab8291fd1` | 65548 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`media/libpng/crashtests/945912-1.html` | `ada73a82ba1238663858483c7a85b802aa6b5527` | 234 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`media/libpng/crashtests/974825-1.html` | `ef19df54da89569c024b65e19975e7d79b6868db` | 258 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`media/libpng/crashtests/crashtests.list` | `3a9a2cba3bdd30b93bb1a579609b489385a5f448` | 57 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`media/libpng/intel/filter_sse2_intrinsics.c` | `0f3c97a52c9a87d91b925904a5173000db062c44` | 11322 bytes | source | UTF-8 | mode 100644
+Declarations: load4@30; store4@38; load3@45; store3@53; abs_i16@214; if_then_else@235
+Dependencies: ../pngpriv.h@13; immintrin.h@19
+
+`media/libpng/intel/intel_init.c` | `9e4610d25b44af6b3119db6ea314aae7cf47934e` | 1792 bytes | source | UTF-8 | mode 100644
+Declarations: png_init_filter_functions_sse2@19
+Dependencies: ../pngpriv.h@13
+
+`media/libpng/libpng-manual.txt` | `bebc7e06a71ecfea2a21da2755532aa88b6e802a` | 227757 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libpng/loongarch/filter_lsx_intrinsics.c` | `8dc5319d56b64eed6260a7c51113d8032c88d507` | 11220 bytes | source | UTF-8 | mode 100644
+Dependencies: ../pngpriv.h@14; lsxintrin.h@20
+
+`media/libpng/loongarch/loongarch_lsx_init.c` | `7dde245519906ca1bcdb536b920b6ae6a717437c` | 2005 bytes | source | UTF-8 | mode 100644
+Declarations: png_has_lsx@21; png_init_filter_functions_lsx@33
+Dependencies: ../pngpriv.h@12; sys/auxv.h@17
+
+`media/libpng/mips/filter_mmi_inline_assembly.c` | `48768eec82c3a3aead0e6d90ff41179536efa56f` | 26477 bytes | source | UTF-8 | mode 100644
+Dependencies: ../pngpriv.h@11
+
+`media/libpng/mips/filter_msa_intrinsics.c` | `074e9899cdce80a568da64eae8aa917768247efe` | 29209 bytes | source | UTF-8 | mode 100644
+Dependencies: stdio.h@12; ../pngpriv.h@13; msa.h@20; stdint.h@21
+
+`media/libpng/mips/mips_init.c` | `5f9346f9e3ce3fc6bbe3ae88059883fa7a26fce2` | 6599 bytes | source | UTF-8 | mode 100644
+Declarations: png_init_filter_functions_mips@81
+Dependencies: stdio.h@18; ../pngpriv.h@19; signal.h@46; signal.h@64
+
+`media/libpng/moz.build` | `1d55f58b9fd82990ba4f3adeaa89db507b546215` | 3185 bytes | build-registration | UTF-8 | mode 100644
+
+`media/libpng/moz.yaml` | `0191d12c34aba6d3dcbb18a72d3ba605169f8c62` | 1376 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libpng/png.c` | `68cfc42e8961ebe3334fc1a416d44758afba8c67` | 135428 bytes | source | UTF-8 | mode 100644
+Declarations: png_libpng_version_1_6_59@16; png_set_sig_bytes@53; png_sig_cmp@80; png_zfree@131; png_reset_crc@140; png_calculate_crc@152; png_user_version_check@206; png_destroy_info_struct@399; png_get_io_ptr@691; png_init_io@708; png_save_int_32@731; png_convert_to_rfc1123_buffer@742; png_convert_to_rfc1123@796; png_get_copyright@816; png_get_libpng_ver@842; png_get_header_ver@849; png_get_header_version@857; png_build_grayscale_palette@880; png_handle_as_unknown@931; png_chunk_unknown_handling@966; png_reset_zstream@979; png_access_version_number@991; png_zstream_error@1003; png_fp_add@1070; png_fp_sub@1096; png_xy_from_XYZ@1137; png_XYZ_from_xy@1203; png_icc_tag_char@1502; png_icc_tag_name@1512; is_ICC_signature_char@1523; is_ICC_signature@1530; have_chromaticities@1846; png_set_rgb_coefficients@1886; png_XYZ_from_xy@1898; png_check_fp_string@2261; png_pow10@2280; png_fixed@2726; png_fixed_ITU@2745; png_reciprocal@2886; png_gamma_significant@2909; png_product2@2930; png_reciprocal2@2952; png_log8bit@3048; png_log16bit@3105; png_exp@3197; png_exp8bit@3245; png_exp16bit@3260; png_gamma_8bit_correct@3273; png_gamma_16bit_correct@3321; png_destroy_gamma_table@3545; png_build_gamma_table@3616; png_set_option@3769; png_image_free_function@3959; png_image_free@4019; png_image_error@4034
+Dependencies: pngpriv.h@13
+
+`media/libpng/png.h` | `4b3a0564d7f67eb14ec2e4546208d3b186ce911b` | 152118 bytes | source | UTF-8 | mode 100644
+Declarations: char@444; struct@452; const@453; png_struct@454; png_struct@455; struct@466; png_info@467; const@468; png_info@469; png_struct@482; const@483; png_info@484; const@485; struct@491; png_color@497; const@498; png_color@499; struct@501; png_color_16@509; const@510; png_color_16@511; struct@513; png_color_8@521; const@522; png_color_8@523; struct@529; png_sPLT_entry@537; const@538; png_sPLT_entry@539; struct@546; png_sPLT_t@553; const@554; png_sPLT_t@555; struct@575; png_text@592; const@593; png_text@594; struct@613; png_time@622; const@623; png_time@624; struct@635; png_unknown_chunk@651; const@652; png_unknown_chunk@653; struct@782; png_row_info@792; png_row_info@793; PNG_CALLBACK@803; PNG_CALLBACK@805; PNG_CALLBACK@807; PNG_CALLBACK@809; PNG_CALLBACK@811; PNG_CALLBACK@815; PNG_CALLBACK@817; PNG_CALLBACK@820; PNG_CALLBACK@834; PNG_CALLBACK@840; PNG_CALLBACK@845; PNG_CALLBACK@904; PNG_CALLBACK@906; struct@2937; struct@2938
+Dependencies: pnglibconf.h@328; pngconf.h@337
+
+`media/libpng/pngconf.h` | `3f4aaa5094853365fd1332341d68c5c4838ec527` | 22673 bytes | source | UTF-8 | mode 100644
+Declarations: unsigned@468; int@474; short@476; unsigned@482; unsigned@484; int@490; long@492; unsigned@498; unsigned@500; size_t@510; ptrdiff_t@511; png_uint_32@542; size_t@544; png_int_32@561; void@564; const@565; png_byte@566; const@567; png_uint_32@568; const@569; png_int_32@570; const@571; png_uint_16@572; const@573; png_int_16@574; const@575; char@576; const@577; png_fixed_point@578; const@579; size_t@580; const@581; double@584; const@585; png_byte@589; png_uint_32@590; png_int_32@591; png_uint_16@592; png_int_16@593; const@594; char@595; png_fixed_point@596; double@598; char@602; FILE@610
+Dependencies: limits.h@30; stddef.h@31; stdio.h@45; setjmp.h@50; time.h@55
+
+`media/libpng/pngdebug.h` | `0337918aec379f81ef2d7f7fa652abc8513818cc` | 5342 bytes | source | UTF-8 | mode 100644
+Dependencies: crtdbg.h@54; stdio.h@72
+
+`media/libpng/pngerror.c` | `72dc20ea874d232d373021b7d4af06de311b47f4` | 26366 bytes | source | UTF-8 | mode 100644
+Declarations: png_warning@177; png_benign_error@308; png_app_warning@338; png_app_error@351; png_chunk_warning@443; png_chunk_report@477; png_free_jmpbuf@613; png_default_warning@700; png_get_error_ptr@739; png_set_strip_error_numbers@750; png_safe_warning@800; png_safe_execute@815
+Dependencies: pngpriv.h@18; the@47; the@64
+
+`media/libpng/pngget.c` | `9288f94b05a002903d932ea5fd7cb9cf33612a7f` | 41983 bytes | source | UTF-8 | mode 100644
+Declarations: png_get_rowbytes@40; png_get_rows@50; png_get_image_width@62; png_get_image_height@71; png_get_bit_depth@80; png_get_color_type@89; png_get_filter_type@98; png_get_interlace_type@107; png_get_compression_type@116; png_get_pixels_per_meter@167; png_get_x_offset_microns@244; png_get_y_offset_microns@264; png_get_x_offset_pixels@284; png_get_y_offset_pixels@304; ppi_from_ppm@325; png_get_pixels_per_inch@357; png_get_x_pixels_per_inch@363; png_get_y_pixels_per_inch@369; png_fixed_inches_from_microns@376; png_get_x_offset_inches@413; png_get_y_offset_inches@424; png_get_channels@481; png_get_signature@491; png_XYZ_from_xy@569; png_XYZ_from_xy@610; png_get_rgb_to_gray_status@1274; png_get_user_chunk_ptr@1282; png_get_compression_buffer_size@1289; png_get_user_width_max@1315; png_get_user_height_max@1321; png_get_chunk_cache_max@1328; png_get_chunk_malloc_max@1335; png_get_io_state@1344; png_get_io_chunk_type@1350; png_get_palette_max@1359; png_get_num_frames@1389; png_get_num_plays@1399; png_get_next_frame_width@1439; png_get_next_frame_height@1449; png_get_next_frame_x_offset@1459; png_get_next_frame_y_offset@1469; png_get_next_frame_delay_num@1479; png_get_next_frame_delay_den@1489; png_get_next_frame_dispose_op@1499; png_get_next_frame_blend_op@1509; png_get_first_frame_is_hidden@1519
+Dependencies: pngpriv.h@14
+
+`media/libpng/pnginfo.h` | `f2e705417b4a480b3f6c1ec5707f0ac0f50f74d7` | 11362 bytes | source | UTF-8 | mode 100644
+Declarations: png_info_def@31
+
+`media/libpng/pnglibconf.h` | `0984eb2327fc6623db27483d5169cd1a365b4fe9` | 39923 bytes | source | UTF-8 | mode 100644
+
+`media/libpng/pngmem.c` | `b7adff82f520716008f9c185df02497d027089e9` | 8574 bytes | source | UTF-8 | mode 100644
+Declarations: png_destroy_png_struct@24; png_free@234; png_get_mem_ptr@279
+Dependencies: pngpriv.h@19
+
+`media/libpng/pngpread.c` | `5cbf0c296a429ccc82f5b85191885e4d10c72a9b` | 33322 bytes | source | UTF-8 | mode 100644
+Declarations: png_process_data_pause@65; png_process_data_skip@92; png_process_some_data@108; png_push_read_sig@148; png_push_read_chunk@181; png_push_fill_buffer@392; png_push_save_buffer@435; png_push_read_IDAT@505; png_push_process_row@767; png_read_push_finish_row@997; png_push_have_info@1042; png_push_have_end@1049; png_push_have_row@1056; png_get_progressive_ptr@1108
+Dependencies: pngpriv.h@13
+
+`media/libpng/pngpriv.h` | `0c3ece1e9eec2369ca6b99bcf412b3c980f03825` | 96516 bytes | source | UTF-8 | mode 100644
+Declarations: struct@413; png_double@414; const@415; png_double@416; const@1056; enum@1793; char@2036; struct@2340
+Dependencies: stdlib.h@55; string.h@56; config.h@71; pnglibconf.h@81; pngprefix.h@85; pngusr.h@89; png.h@427; float.h@550; math.h@552; m68881.h@558; mem.h@564; alloc.h@565; windows.h@569; pngstruct.h@1034; pnginfo.h@1035; pngdebug.h@2479
+
+`media/libpng/pngread.c` | `12ee85c79f8c06e874a6b34bb6440b8a4170a2cc` | 145923 bytes | source | UTF-8 | mode 100644
+Declarations: png_read_info@93; png_read_frame_head@186; png_read_update_info@252; png_start_read_image@283; png_do_read_intrapixel@306; png_read_row@368; png_read_image@688; png_read_end@754; png_read_destroy@842; png_set_read_status_fn@938; struct@1186; png_image_read_init@1210; png_image_format@1259; chromaticities_match_sRGB@1287; png_gamma_not_sRGB@1317; png_image_is_not_sRGB@1331; png_image_read_header@1358; png_image_begin_read_from_stdio@1419; png_image_begin_read_from_file@1449; png_image_memory_read@1488; png_image_skip_unused_chunks@1556; set_file_encoding@1610; decode_gamma@1638; make_gray_file_colormap@1935; make_gray_colormap@1946; make_ga_colormap@1958; make_rgb_colormap@2013; png_image_read_colormap@2042; png_gamma_not_sRGB@2519; png_image_read_and_map@2895; png_image_read_colormapped@3084; png_image_read_direct_scaled@3216; png_image_read_composite@3271; png_image_read_background@3423; png_image_read_direct@3700
+Dependencies: pngpriv.h@16; errno.h@18
+
+`media/libpng/pngrio.c` | `b4a216161be0abee2d61739143a346de52085021` | 3898 bytes | source | UTF-8 | mode 100644
+Declarations: png_read_data@31; png_default_read_data@49
+Dependencies: pngpriv.h@20
+
+`media/libpng/pngrtran.c` | `28e6127c37085435f9bf0a7e560b0e4efd558774` | 172621 bytes | source | UTF-8 | mode 100644
+Declarations: png_set_crc_action@41; png_rtran_ok@115; png_set_scale_16@188; png_set_strip_16@202; png_set_strip_alpha@215; translate_gamma_flags@279; convert_gamma_value@309; unsupported_gamma@332; png_set_alpha_mode@461; struct@479; png_dsort_struct@481; png_dsort@485; png_dsort@486; png_set_gamma@935; png_set_expand@949; png_set_palette_to_rgb@979; png_set_expand_gray_1_2_4_to_8@991; png_set_tRNS_to_alpha@1003; png_set_expand_16@1019; png_set_gray_to_rgb@1032; png_gamma_threshold@1152; png_init_palette_transformations@1177; png_init_rgb_transformations@1266; png_resolve_file_gamma@1352; png_init_gamma_values@1388; png_init_read_transformations@1425; png_gamma_significant@1683; png_read_transform_info@2070; png_do_unpack@2293; png_do_scale_16_to_8@2530; png_do_chop@2591; png_do_read_swap_alpha@2616; png_do_read_invert_alpha@2712; png_do_gray_to_rgb@3001; png_do_rgb_to_gray@3140; png_do_compose@3341; png_do_gamma@4085; png_do_encode_alpha@4286; png_do_expand_16@4754; png_do_read_transformations@4881
+Dependencies: pngpriv.h@18; arm64_neon.h@24; arm_neon.h@26
+
+`media/libpng/pngrutil.c` | `c8808e66176e47f7cbcb6364813de47313a13bfa` | 161667 bytes | source | UTF-8 | mode 100644
+Declarations: png_get_uint_31@41; png_read_sig@116; check_chunk_name@153; png_read_chunk_header@183; png_crc_read@226; png_crc_error@239; png_crc_finish@360; png_read_buffer@376; png_inflate_detach_buffers@412; png_inflate_claim@426; png_zlib_inflate@531; png_handle_IHDR@908; png_handle_PLTE@993; png_handle_IEND@1097; png_handle_gAMA@1114; png_handle_sBIT@1153; png_get_int_32_checked@1221; png_handle_cHRM@1239; png_handle_sRGB@1294; png_handle_tRNS@1701; png_handle_bKGD@1786; png_handle_cICP@1897; png_handle_cLLI@1936; png_handle_mDCV@1959; png_handle_eXIf@2013; png_handle_hIST@2057; png_handle_pHYs@2101; png_handle_oFFs@2127; png_handle_pCAL@2154; png_handle_sCAL@2278; png_handle_tIME@2352; png_handle_tEXt@2389; png_handle_zTXt@2461; png_handle_iTXt@2577; png_handle_acTL@2725; png_handle_fcTL@2770; png_have_info@2852; png_handle_fdAT@2863; png_ensure_sequence_number@2878; png_cache_unknown_chunk@2900; PNG_CHUNK_ANCILLARY@3059; PNG_CHUNK_ANCILLARY@3093; png_chunk_index_from_name@3275; png_handle_chunk@3295; png_file_has_chunk@3337; png_combine_row@3415; png_read_finish_IDAT@4533; png_read_finish_row@4577; png_read_start_row@4628; png_read_reset@4910; png_read_reinit@4919; png_progressive_read_reset@4933
+Dependencies: pngpriv.h@16
+
+`media/libpng/pngset.c` | `2eeb19f4d7f0e014d92b6fe7cb06ed35b8862a38` | 64998 bytes | source | UTF-8 | mode 100644
+Declarations: png_ITU_fixed_16@206; png_set_gAMA@375; png_set_sRGB@855; png_get_valid@1453; check_location@1530; png_permit_mng_features@1702; add_one_chunk@1717; png_set_compression_buffer_size@1942; png_set_invalid@2004; png_set_chunk_cache_max@2032; png_set_benign_errors@2071; png_set_check_for_invalid_index@2101; png_check_keyword@2126
+Dependencies: pngpriv.h@18
+
+`media/libpng/pngstruct.h` | `c4b1419d54e690238dff135460e236afb7f2f057` | 19894 bytes | source | UTF-8 | mode 100644
+Declarations: struct@58; png_compression_buffer@60; struct@74; struct@85; enum@96; png_struct_def@122
+Dependencies: zlib.h@27
+
+`media/libpng/pngtrans.c` | `32a5fd3c0f4b094389c8d6e374430da39165de47` | 26220 bytes | source | UTF-8 | mode 100644
+Declarations: png_set_bgr@20; png_set_swap@34; png_set_packing@49; png_set_packswap@69; png_set_shift@83; png_set_interlace_handling@127; png_set_filler@148; png_set_add_alpha@233; png_set_swap_alpha@251; png_set_invert_alpha@265; png_set_invert_mono@278; png_do_invert@290; png_do_swap@347; png_do_packswap@483; png_do_strip_channel@522; png_do_bgr@648; png_do_check_palette_indexes@728; png_get_user_transform_ptr@864; png_get_current_row_number@875; png_get_current_pass_number@887
+Dependencies: pngpriv.h@13
+
+`media/libpng/pngwio.c` | `96a3187ff0139172f7274e2db630f4f47314fce6` | 5588 bytes | source | UTF-8 | mode 100644
+Declarations: png_write_data@32; png_default_write_data@50; png_flush@70; png_default_flush@78
+Dependencies: pngpriv.h@20
+
+`media/libpng/pngwrite.c` | `47367aa298d89d503a44b93753597bb68ba192ac` | 80342 bytes | source | UTF-8 | mode 100644
+Declarations: png_write_info_before_PLTE@83; png_write_info@227; png_write_end@396; png_convert_from_struct_tm@517; png_convert_from_time_t@530; tm@532; png_write_image@658; png_do_write_intrapixel@691; png_write_row@755; png_set_flush@965; png_write_flush@977; png_write_destroy@996; png_destroy_write_struct@1046; png_set_filter@1067; png_set_compression_level@1225; png_set_compression_mem_level@1236; png_set_compression_strategy@1247; png_set_compression_window_bits@1264; png_set_compression_method@1293; png_set_text_compression_level@1313; png_set_text_compression_mem_level@1324; png_set_text_compression_strategy@1335; png_set_text_compression_window_bits@1349; png_set_text_compression_method@1372; png_set_write_status_fn@1388; png_image_write_init@1543; struct@1580; png_write_image_16bit@1605; png_write_image_8bit@1764; png_image_set_PLTE@1861; png_image_write_main@2007; png_image_write_memory@2272; png_write_frame_tail@2500
+Dependencies: pngpriv.h@13; errno.h@15
+
+`media/libpng/pngwtran.c` | `a20847023fbe15431a36421d08907fc7939c1089` | 15336 bytes | source | UTF-8 | mode 100644
+Declarations: png_do_pack@24; png_do_write_swap_alpha@309; png_do_write_invert_alpha@403; png_do_write_transformations@500
+Dependencies: pngpriv.h@13
+
+`media/libpng/pngwutil.c` | `7a8df89b56685679de7d27e074ac73396f2368ed` | 84497 bytes | source | UTF-8 | mode 100644
+Declarations: png_save_uint_32@41; png_save_uint_16@54; png_write_sig@68; png_write_chunk_data@144; png_write_chunk_end@163; png_image_size@221; optimize_cmf@267; png_free_buffer_list@458; struct@488; png_write_compressed_data_out@656; png_write_IEND@1105; png_write_gAMA_fixed@1116; png_write_sRGB@1131; png_write_sPLT@1211; png_write_sBIT@1266; png_write_cHRM_fixed@1325; png_write_bKGD@1417; png_write_eXIf@1547; png_write_hIST@1569; png_write_tIME@1933; png_write_start_row@2036; png_write_finish_row@2135; png_do_write_interlace@2210; png_setup_up_row@2446; png_setup_up_row_only@2473; png_write_find_filter@2656; png_write_reset@2890
+Dependencies: pngpriv.h@16
+
+`media/libpng/powerpc/filter_vsx_intrinsics.c` | `5acc17c9493f521fea7be629ad0f2d356cd907bc` | 25406 bytes | source | UTF-8 | mode 100644
+Dependencies: stdio.h@12; stdint.h@13; ../pngpriv.h@14; altivec.h@21
+
+`media/libpng/powerpc/powerpc_init.c` | `70782eda1bdeb4b615501e02f414bc562976a0f0` | 4302 bytes | source | UTF-8 | mode 100644
+Declarations: png_init_filter_functions_vsx@54
+Dependencies: stdio.h@17; ../pngpriv.h@18; signal.h@44
+
+`media/libpng/riscv/filter_rvv_intrinsics.c` | `944456b4937f72e674853849bb26bb66b98c84cd` | 6674 bytes | source | UTF-8 | mode 100644
+Declarations: png_read_filter_row_sub_rvv@44
+Dependencies: ../pngpriv.h@16; riscv_vector.h@22
+
+`media/libpng/riscv/riscv_init.c` | `36a41b54f7ef276f0d52c16a7d9db12daa6f9417` | 1420 bytes | source | UTF-8 | mode 100644
+Declarations: png_init_filter_functions_rvv@24
+Dependencies: ../pngpriv.h@11; riscv_vector.h@17
+
+`media/libsoundtouch/AUTHORS` | `666081e1952cf69d4e47620510fcb004f52fdd7a` | 97 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libsoundtouch/LICENSE` | `c04d4d8040849107ca14c5a00a235a014c63cf29` | 24389 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libsoundtouch/clear-lf.sh` | `bd6295ba878cb87bb12a5007f1db745260f1a4a8` | 341 bytes | data-or-other | UTF-8 | mode 100755
+
+`media/libsoundtouch/moz-libsoundtouch.patch` | `bb0d88ccd71538ff5ad53810f97c35638f2004a4` | 5076 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libsoundtouch/moz.build` | `4b54cc50b2108932359927807f0327aa94aed728` | 290 bytes | build-registration | UTF-8 | mode 100644
+
+`media/libsoundtouch/moz.yaml` | `61ddb909ae0e3d7d8752627458231001f38ab3e7` | 2212 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libsoundtouch/ratetransposer.patch` | `64ba7fe83df6397eba7d8fc931bc388aed2f52c0` | 306 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libsoundtouch/src/AAFilter.cpp` | `7873f2591e1077c4c9a39b08e7e229169d442608` | 6133 bytes | source | UTF-8 | mode 100644
+Declarations: _DEBUG_SAVE_AAFIR_COEFFS@54; AAFilter::AAFilter@77; AAFilter::~AAFilter@85; AAFilter::setCutoffFreq@94; AAFilter::setLength@102; AAFilter::calculateCoeffs@110; AAFilter::evaluate@188; AAFilter::evaluate@198; AAFilter::getLength@219
+Dependencies: memory.h@36; assert.h@37; math.h@38; stdlib.h@39; AAFilter.h@40; FIRFilter.h@41; stdio.h@52
+
+`media/libsoundtouch/src/AAFilter.h` | `5b63ed6e5510c26437bde77cd6f6a8981ed9dfb2` | 3141 bytes | source | UTF-8 | mode 100644
+Declarations: soundtouch@43; AAFilter@46; FIRFilter@49
+Dependencies: STTypes.h@40; FIFOSampleBuffer.h@41
+
+`media/libsoundtouch/src/FIFOSampleBuffer.cpp` | `d65ae88d7a72d40adcc5c14f606d5011e73b5121` | 8465 bytes | source | UTF-8 | mode 100644
+Declarations: FIFOSampleBuffer::FIFOSampleBuffer@49; FIFOSampleBuffer::~FIFOSampleBuffer@63; FIFOSampleBuffer::setChannels@72; FIFOSampleBuffer::rewind@84; FIFOSampleBuffer::putSamples@96; FIFOSampleBuffer::putSamples@109; FIFOSampleBuffer::ensureCapacity@156; FIFOSampleBuffer::getCapacity@190; FIFOSampleBuffer::numSamples@197; FIFOSampleBuffer::receiveSamples@208; FIFOSampleBuffer::receiveSamples@222; FIFOSampleBuffer::isEmpty@241; FIFOSampleBuffer::clear@248; FIFOSampleBuffer::adjustAmountOfSamples@257; FIFOSampleBuffer::addSilent@268
+Dependencies: stdlib.h@39; memory.h@40; string.h@41; assert.h@42; FIFOSampleBuffer.h@44
+
+`media/libsoundtouch/src/FIFOSampleBuffer.h` | `e7cdbed9e6c5ecaff352c3c428bc9f26587ea1f6` | 7194 bytes | source | UTF-8 | mode 100644
+Declarations: soundtouch@44; FIFOSampleBuffer@52; getChannels@159
+Dependencies: FIFOSamplePipe.h@42
+
+`media/libsoundtouch/src/FIFOSamplePipe.h` | `93b6bf47ab20c83beca2077a28de2b723ea44a1f` | 8493 bytes | source | UTF-8 | mode 100644
+Declarations: soundtouch@48; FIFOSamplePipe@52; verifyNumberOfChannels@56; FIFOProcessor@138; setOutPipe@145; FIFOProcessor@154
+Dependencies: assert.h@44; stdlib.h@45; STTypes.h@46
+
+`media/libsoundtouch/src/FIRFilter.cpp` | `299ad0aaf08403007bc0586f3a4a722da96ba832` | 9128 bytes | source | UTF-8 | mode 100644
+Declarations: FIRFilter::FIRFilter@56; FIRFilter::~FIRFilter@66; FIRFilter::evaluateFilterStereo@74; FIRFilter::evaluateFilterMono@116; FIRFilter::evaluateFilterMulti@149; FIRFilter::setCoefficients@204; FIRFilter::getLength@238; FIRFilter::evaluate@248
+Dependencies: memory.h@41; assert.h@42; math.h@43; stdlib.h@44; FIRFilter.h@45; cpu_detect.h@46
+
+`media/libsoundtouch/src/FIRFilter.h` | `0ae508310014385b6ff53fc83d59bfe0af1d8963` | 4455 bytes | source | UTF-8 | mode 100644
+Declarations: soundtouch@41; FIRFilter@44; FIRFilterMMX@100; FIRFilterSSE@119
+Dependencies: stddef.h@38; STTypes.h@39
+
+`media/libsoundtouch/src/InterpolateCubic.cpp` | `fe4c98a8ddfc11b51669be0ab450788a62b65c1a` | 6155 bytes | source | UTF-8 | mode 100644
+Declarations: InterpolateCubic::InterpolateCubic@47; InterpolateCubic::resetRegisters@53
+Dependencies: stddef.h@32; math.h@33; InterpolateCubic.h@34; STTypes.h@35
+
+`media/libsoundtouch/src/InterpolateCubic.h` | `4eae60a685d8e2bf6d590713ce5c72c21bb488db` | 2099 bytes | source | UTF-8 | mode 100644
+Declarations: soundtouch@38; InterpolateCubic@41
+Dependencies: RateTransposer.h@35; STTypes.h@36
+
+`media/libsoundtouch/src/InterpolateLinear.cpp` | `b4571d68af40f18d70a57a80f221c84b47e0a348` | 7783 bytes | source | UTF-8 | mode 100644
+Declarations: InterpolateLinearInteger::InterpolateLinearInteger@48; InterpolateLinearInteger::resetRegisters@57; InterpolateLinearInteger::transposeMono@66; InterpolateLinearInteger::transposeStereo@99; InterpolateLinearInteger::transposeMulti@133; InterpolateLinearInteger::setRate@169; InterpolateLinearFloat::InterpolateLinearFloat@184; InterpolateLinearFloat::resetRegisters@193; InterpolateLinearFloat::transposeMono@202; InterpolateLinearFloat::transposeStereo@234; InterpolateLinearFloat::transposeMulti@265
+Dependencies: assert.h@32; stdlib.h@33; InterpolateLinear.h@34
+
+`media/libsoundtouch/src/InterpolateLinear.h` | `d0e5c908bb038f139ddb4c2280b7facabc74ec1b` | 2960 bytes | source | UTF-8 | mode 100644
+Declarations: soundtouch@38; InterpolateLinearInteger@42; InterpolateLinearFloat@72; getLatency@90
+Dependencies: RateTransposer.h@35; STTypes.h@36
+
+`media/libsoundtouch/src/InterpolateShannon.cpp` | `ac0b81ab8c1c5671c8ed8d6457db3f8c15a63a78` | 5430 bytes | source | UTF-8 | mode 100644
+Declarations: InterpolateShannon::InterpolateShannon@59; InterpolateShannon::resetRegisters@65
+Dependencies: math.h@37; InterpolateShannon.h@38; STTypes.h@39
+
+`media/libsoundtouch/src/InterpolateShannon.h` | `99bd7a622fa9ca5e7167d5b598932d3d74c3c406` | 2334 bytes | source | UTF-8 | mode 100644
+Declarations: soundtouch@43; InterpolateShannon@46
+Dependencies: RateTransposer.h@40; STTypes.h@41
+
+`media/libsoundtouch/src/LICENSE-NOTICE.txt` | `1f42b413e9f9d18027849de7b75b4f2c36ce2d07` | 767 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libsoundtouch/src/RLBoxSoundTouch.cpp` | `7a7ccfecc2ab61de92be9e6a4f7971fb65eac90d` | 5791 bytes | source | UTF-8 | mode 100644
+Declarations: RLBoxSoundTouch::RLBoxSoundTouch@13; RLBoxSoundTouch::Init@15; RLBoxSoundTouch::~RLBoxSoundTouch@39; RLBoxSoundTouch::setSampleRate@48; RLBoxSoundTouch::setChannels@52; RLBoxSoundTouch::setPitch@57; RLBoxSoundTouch::setSetting@61; RLBoxSoundTouch::setTempo@66; RLBoxSoundTouch::setRate@70; RLBoxSoundTouch::numChannels@74; RLBoxSoundTouch::numSamples@83; RLBoxSoundTouch::numUnprocessedSamples@87; RLBoxSoundTouch::clear@154; RLBoxSoundTouch::flush@158; RLBoxSoundTouch::redirectRLBoxSbxGrowFail@162; RLBoxSoundTouch::resizeSampleBuffer@168
+Dependencies: mozilla/Assertions.h@5; RLBoxSoundTouch.h@6; rlbox_wasm2c_thread_locals.h@7
+
+`media/libsoundtouch/src/RLBoxSoundTouch.h` | `ec9152a25bbd2fc54aa1926116b5f7b35316eba0` | 2810 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@43; RLBoxSoundTouch@45
+Dependencies: RLBoxSoundTouchTypes.h@8; mozilla/rlbox/rlbox_config.h@11; rlboxsoundtouch.wasm.h@18; mozilla/rlbox/rlbox_wasm2c_sandbox.hpp@20; mozilla/rlbox/rlbox_noop_sandbox.hpp@24; mozilla/rlbox/rlbox.hpp@27; AudioStream.h@28; soundtouch/SoundTouchFactory.h@31
+
+`media/libsoundtouch/src/RLBoxSoundTouchFactory.cpp` | `3ebaff9c281a5f2e979dfce9469c068405561d1d` | 1732 bytes | source | UTF-8 | mode 100644
+Declarations: SetSampleRate@13; SetChannels@17; SetPitch@21; SetSetting@25; SetTempo@29; SetRate@33; NumChannels@37; NumSamples@41; NumUnprocessedSamples@45; Clear@59; Flush@61
+Dependencies: RLBoxSoundTouchFactory.h@5
+
+`media/libsoundtouch/src/RLBoxSoundTouchFactory.h` | `a98c45197153ff68a03130e9ac29a44232ed5b03` | 1294 bytes | source | UTF-8 | mode 100644
+Dependencies: SoundTouch.h@5
+
+`media/libsoundtouch/src/RLBoxSoundTouchTypes.h` | `372fc1151930ee81c2bd77fa7046d58ba26cb617` | 1136 bytes | source | UTF-8 | mode 100644
+Declarations: rlbox@11; rlbox_wasm2c_sandbox@12
+Dependencies: mozilla/rlbox/rlbox_types.hpp@8
+
+`media/libsoundtouch/src/RateTransposer.cpp` | `56362230916174d33283887dcadf3cdee074409e` | 9043 bytes | source | UTF-8 | mode 100644
+Declarations: RateTransposer::RateTransposer@52; RateTransposer::~RateTransposer@69; RateTransposer::enableAAFilter@77; RateTransposer::isAAFilterEnabled@88; RateTransposer::setRate@102; RateTransposer::putSamples@123; RateTransposer::processSamples@133; RateTransposer::setChannels@178; RateTransposer::clear@191; RateTransposer::isEmpty@205; RateTransposer::getLatency@216; TransposerBase::setAlgorithm@229; TransposerBase::transpose@237; TransposerBase::TransposerBase@276; TransposerBase::~TransposerBase@283; TransposerBase::setChannels@288; TransposerBase::setRate@295
+Dependencies: memory.h@34; assert.h@35; stdlib.h@36; stdio.h@37; algorithm@38; RateTransposer.h@39; InterpolateLinear.h@40; InterpolateCubic.h@41; InterpolateShannon.h@42; AAFilter.h@43
+
+`media/libsoundtouch/src/RateTransposer.h` | `32bbadc18e706f93f9e709a6cf36b2b65cb4f994` | 5126 bytes | source | UTF-8 | mode 100644
+Declarations: soundtouch@48; TransposerBase@52; ALGORITHM@55; RateTransposer@98
+Dependencies: stddef.h@41; AAFilter.h@42; FIFOSamplePipe.h@43; FIFOSampleBuffer.h@44; STTypes.h@46
+
+`media/libsoundtouch/src/STTypes.h` | `8772f3a5f4cb7f3dd3a9a2d66bff7ed294bab917` | 7320 bytes | source | UTF-8 | mode 100644
+Declarations: unsigned@35; unsigned@36; unsigned@40; ulong@42; soundtouch@53; short@129; long@131; float@148; float@151
+Dependencies: soundtouch_config.h@50; assert.h@172; stdexcept@176; string@177
+
+`media/libsoundtouch/src/SoundTouch.cpp` | `0eda80ae92014df4b2ae03f59a6207c4d4bb0172` | 16337 bytes | source | UTF-8 | mode 100644
+Declarations: SoundTouch::SoundTouch@89; SoundTouch::~SoundTouch@114; SoundTouch::getVersionId@131; SoundTouch::setChannels@138; SoundTouch::setRate@150; SoundTouch::setRateChange@159; SoundTouch::setTempo@168; SoundTouch::setTempoChange@177; SoundTouch::setPitch@186; SoundTouch::setPitchOctaves@195; SoundTouch::setPitchSemiTones@204; SoundTouch::setPitchSemiTones@210; SoundTouch::calcEffectiveRateAndTempo@218; SoundTouch::setSampleRate@267; SoundTouch::putSamples@277; SoundTouch::flush@318; SoundTouch::setSetting@351; SoundTouch::getSetting@400; SoundTouch::clear@481; SoundTouch::numUnprocessedSamples@491; SoundTouch::receiveSamples@511; SoundTouch::receiveSamples@524; SoundTouch::getInputOutputSampleRatio@535
+Dependencies: assert.h@65; stdlib.h@66; memory.h@67; math.h@68; stdio.h@69; SoundTouch.h@71; TDStretch.h@72; RateTransposer.h@73; cpu_detect.h@74
+
+`media/libsoundtouch/src/SoundTouch.h` | `3b197a1cc51cde7ff4685329a95e98cd3604c8bd` | 15009 bytes | source | UTF-8 | mode 100644
+Declarations: soundtouch@71; SoundTouch@168; RateTransposer@172; TDStretch@175; numChannels@332
+Dependencies: FIFOSamplePipe.h@68; STTypes.h@69
+
+`media/libsoundtouch/src/SoundTouchFactory.cpp` | `1d70d74a78982958a754f6da9ccd7a801f893fdf` | 640 bytes | source | UTF-8 | mode 100644
+Declarations: createSoundTouchObj@11; destroySoundTouchObj@17
+Dependencies: soundtouch/SoundTouch.h@5
+
+`media/libsoundtouch/src/SoundTouchFactory.h` | `42408c9777ed3d75a37cf313e026db6ece6f1849` | 551 bytes | source | UTF-8 | mode 100644
+Dependencies: soundtouch/STTypes.h@8; soundtouch/SoundTouch.h@9; soundtouch/RLBoxSoundTouchFactory.h@10
+
+`media/libsoundtouch/src/TDStretch.cpp` | `bd0028c2d7c25d0351781e5e2e711cdf9fd8949e` | 33359 bytes | source | UTF-8 | mode 100644
+Declarations: TDStretch::TDStretch@64; TDStretch::~TDStretch@85; TDStretch::getParameters@148; TDStretch::overlapMono@173; TDStretch::clearMidBuffer@191; TDStretch::clearInput@197; TDStretch::clear@209; TDStretch::enableQuickSeek@219; TDStretch::isQuickSeekEnabled@226; TDStretch::seekBestOverlapPosition@233; TDStretch::overlap@248; TDStretch::seekBestOverlapPositionFull@276; TDStretch::seekBestOverlapPositionQuick@346; TDStretch::adaptNormalizer@462; TDStretch::clearCrossCorrState@489; TDStretch::calcSeqParameters@496; TDStretch::setTempo@546; TDStretch::setChannels@568; TDStretch::processNominalTempo@586; TDStretch::processSamples@618; TDStretch::putSamples@709; TDStretch::acceptNewOverlapLength@720; TDStretch::overlapStereo@797; TDStretch::overlapMulti@815; _getClosest2Power@832; TDStretch::calculateOverlapLength@841; TDStretch::calcCrossCorr@866; TDStretch::calcCrossCorrAccumulate@908; TDStretch::overlapStereo@960; TDStretch::overlapMulti@984; TDStretch::calculateOverlapLength@1012; TDStretch::calcCrossCorr@1028; TDStretch::calcCrossCorrAccumulate@1056
+Dependencies: string.h@43; limits.h@44; assert.h@45; math.h@46; float.h@47; STTypes.h@49; cpu_detect.h@50; TDStretch.h@51
+
+`media/libsoundtouch/src/TDStretch.h` | `483dd536e26176e4d21b451604e30b063e232245` | 10809 bytes | source | UTF-8 | mode 100644
+Declarations: soundtouch@45; TDStretch@103; getInputSampleReq@233; getOutputBatchSize@239; getLatency@245; TDStretchMMX@256; TDStretchSSE@269
+Dependencies: stddef.h@40; STTypes.h@41; RateTransposer.h@42; FIFOSamplePipe.h@43
+
+`media/libsoundtouch/src/cpu_detect.h` | `0794c4483bd4ddbba00e9b1583f5374495a67e54` | 2069 bytes | source | UTF-8 | mode 100644
+Dependencies: STTypes.h@39
+
+`media/libsoundtouch/src/cpu_detect_x86.cpp` | `dc86759681c5f1fc9b4d258bc369c1dc9b1b4d04` | 4791 bytes | source | UTF-8 | mode 100644
+Declarations: disableExtensions@64; detectCPUextensions@71
+Dependencies: cpu_detect.h@35; STTypes.h@36; cpuid.h@42; intrin.h@45
+
+`media/libsoundtouch/src/mmx_optimized.cpp` | `2fdeeac946d64804ea1c28d8aae3ad9a2a025c5c` | 13420 bytes | source | UTF-8 | mode 100644
+Declarations: TDStretchMMX::calcCrossCorr@64; TDStretchMMX::calcCrossCorrAccumulate@140; TDStretchMMX::clearCrossCorrState@212; TDStretchMMX::overlapStereo@221; FIRFilterMMX::FIRFilterMMX@295; FIRFilterMMX::~FIRFilterMMX@302; FIRFilterMMX::setCoefficients@309; FIRFilterMMX::evaluateFilterStereo@336
+Dependencies: STTypes.h@44; TDStretch.h@57; mmintrin.h@58; limits.h@59; math.h@60; FIRFilter.h@292
+
+`media/libsoundtouch/src/moz.build` | `e25ab0089b17726d9931bffd7f5950ef93e3c42c` | 4499 bytes | build-registration | UTF-8 | mode 100644
+Dependencies: /security/rlbox/rlbox.mozbuild@34
+
+`media/libsoundtouch/src/soundtouch_config.h` | `469bb822af0b43796da187416db7933f9ee13bbe` | 142 bytes | source | UTF-8 | mode 100644
+Dependencies: mozilla/SSE.h@1
+
+`media/libsoundtouch/src/soundtouch_perms.h` | `87e5b0e77da8333ecd0baa21409a90d239fac277` | 574 bytes | source | UTF-8 | mode 100644
+Dependencies: SoundTouch.h@12; SoundTouchFactory.h@13
+
+`media/libsoundtouch/src/sse_optimized.cpp` | `13f93f46ded2e1f2d12e32c61d58b965f493b994` | 12894 bytes | source | UTF-8 | mode 100644
+Declarations: TDStretchSSE::calcCrossCorr@73; TDStretchSSE::calcCrossCorrAccumulate@185; FIRFilterSSE::FIRFilterSSE@202; FIRFilterSSE::~FIRFilterSSE@209; FIRFilterSSE::setCoefficients@218; FIRFilterSSE::evaluateFilterStereo@242
+Dependencies: cpu_detect.h@47; STTypes.h@48; TDStretch.h@62; simde/x86/avx2.h@65; xmmintrin.h@67; math.h@70; FIRFilter.h@200
+
+`media/libspeex_resampler/01_outside-speex.patch` | `21cbd2749d065f5bb6ba961e8eb3d9ffacb02f0b` | 947 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libspeex_resampler/02_simd-detect-runtime.patch` | `bf23c8ac8e5263e8acbdc7bdaa90cffe3a4d5f67` | 12856 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libspeex_resampler/03_set-skip-frac.patch` | `3885c97680f5eb866f48cc44e233263a24cdf086` | 4149 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libspeex_resampler/04_hugemem.patch` | `f8bbac8c9f8fdffdcb3253f9f7024a508f3475f3` | 1969 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libspeex_resampler/05_set-rate-overflow-no-return.patch` | `01505ed9ae0f6711ca4bd7094fe3c6507954bef5` | 909 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libspeex_resampler/AUTHORS` | `395c3fec238a9916f046c249e21fa1962f760bde` | 502 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libspeex_resampler/COPYING` | `7d6dc4aabd38f6e184028ff871744ac6b71b63ae` | 1773 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libspeex_resampler/moz.build` | `59c0cb0b53ef35b8f20a637e7d560e92cd2c4a42` | 481 bytes | build-registration | UTF-8 | mode 100644
+
+`media/libspeex_resampler/moz.yaml` | `3e045d10db1cf5c8f2bdbc33a435073423cbc9d2` | 1675 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libspeex_resampler/src/arch.h` | `1cac3d9c89f3c6321e2c7fd26a659023eea65572` | 6682 bytes | source | UTF-8 | mode 100644
+Declarations: spx_int16_t@83; spx_int32_t@84; spx_word32_t@85; spx_word16_t@86; spx_word16_t@87; spx_word32_t@88; float@131; float@132; float@133; float@134; float@135; float@136
+Dependencies: speex/speexdsp_types.h@70; fixed_debug.h@113; fixed_generic.h@116; fixed_arm5e.h@119; fixed_arm4.h@121; fixed_bfin.h@123
+
+`media/libspeex_resampler/src/fixed_generic.h` | `09366c36ced20c420deb1d1655cf9b14031f21a9` | 4920 bytes | source | UTF-8 | mode 100644
+
+`media/libspeex_resampler/src/moz.build` | `a9e65c36dbd7b04e0e2ec311d4359c61789841d1` | 1262 bytes | build-registration | UTF-8 | mode 100644
+
+`media/libspeex_resampler/src/resample.c` | `b2efcca3a1f695d5e1ff39aef73888bf6b2fbb5a` | 45045 bytes | source | UTF-8 | mode 100644
+Declarations: speex_free@70; int@110; SpeexResamplerState_@112; FuncDef@190; QualityMapping@204; compute_func@236; main@258; sinc@271; sinc@284; cubic_coef@298; cubic_coef@314; resampler_basic_direct_single@327; resampler_basic_direct_double@389; resampler_basic_interpolate_single@442; resampler_basic_interpolate_double@509; resampler_basic_zero@577; multiply_frac@605; update_filter@617; speex_resampler_process_native@894; speex_resampler_magic@920; compute_gcd@1111
+Dependencies: config.h@61; stdlib.h@67; speex_resampler.h@74; arch.h@75; speex/speex_resampler.h@78; arch.h@79; os_support.h@80; math.h@83; limits.h@84; simd_detect.h@101; stdio.h@257
+
+`media/libspeex_resampler/src/resample_neon.c` | `ba97637af333fd2ed9638da1d65eb477be3c47d9` | 10413 bytes | source | UTF-8 | mode 100644
+Declarations: saturate_32bit_to_16bit@44; saturate_32bit_to_16bit@56; saturate_32bit_to_16bit@65; inner_product_single@82; inner_product_single@137; saturate_float_to_16bit@196; saturate_float_to_16bit@208; inner_product_single@227; inner_product_single@282
+Dependencies: stdint.h@39; simd_detect.h@40
+
+`media/libspeex_resampler/src/resample_sse.c` | `c3a864ccff6827a37083cb22a58229ee2a8f04b6` | 4600 bytes | source | UTF-8 | mode 100644
+Declarations: inner_product_single@42; interpolate_product_single@59; inner_product_double@80; interpolate_product_double@102
+Dependencies: simd_detect.h@37; xmmintrin.h@39; emmintrin.h@77
+
+`media/libspeex_resampler/src/simd_detect.cpp` | `1c8295c3a9ac3fa7c7d227ac12c62b68564a7c3e` | 592 bytes | source | UTF-8 | mode 100644
+Declarations: moz_speex_have_double_simd@11; moz_speex_have_single_simd@17; moz_speex_have_single_simd@23
+Dependencies: simd_detect.h@5; mozilla/SSE.h@7; mozilla/arm.h@8
+
+`media/libspeex_resampler/src/simd_detect.h` | `9a18edd2097118094304f1ad7539275740e2ed2f` | 1521 bytes | source | UTF-8 | mode 100644
+Dependencies: speex_resampler.h@8; arch.h@9
+
+`media/libspeex_resampler/src/speex_resampler.h` | `65fb0782763b557617c73d96209e8a518d5dffca` | 15769 bytes | source | UTF-8 | mode 100644
+Declarations: SpeexResamplerState_@116; struct@117
+Dependencies: speexdsp_types.h@91
+
+`media/libvorbis/AUTHORS` | `0da10363c0cbaa09350bda3f3a6a6bf762cf536e` | 65 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvorbis/COPYING` | `fb456a87bdfafe2cab7de982e8ce11204933ec5c` | 1470 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvorbis/include/vorbis/codec.h` | `f8a912bc26cd1a8c31c446a6a37ff80345ed4179` | 8387 bytes | source | UTF-8 | mode 100644
+Declarations: struct@27; struct@58; struct@87; alloc_chain@109; alloc_chain@126; alloc_chain@128; struct@139
+Dependencies: ogg/ogg.h@25
+
+`media/libvorbis/include/vorbis/vorbisenc.h` | `be1ae65e3774900d5ef99356457c8e8ea6ed62c2` | 16992 bytes | source | UTF-8 | mode 100644
+Declarations: ovectl_ratemanage_arg@232; replaces@255; is@256; ovectl_ratemanage2_arg@269
+Dependencies: codec.h@31
+
+`media/libvorbis/lib/backends.h` | `670b0b902ebda71b6800fba725032e8f57077b2c` | 5151 bytes | source | UTF-8 | mode 100644
+Declarations: struct@29; struct@40; struct@60; struct@87; struct@103; struct@121; struct@130
+Dependencies: codec_internal.h@25
+
+`media/libvorbis/lib/bitrate.h` | `48fa150596feb1988185bab8cfceaff1572da9bc` | 1963 bytes | source | UTF-8 | mode 100644
+Declarations: struct@25; struct@41
+Dependencies: vorbis/codec.h@20; codec_internal.h@21; os.h@22
+
+`media/libvorbis/lib/books/coupled/res_books_51.h` | `eb569c6f046bdaf324c0a6d48bcf79a0979fb7b0` | 459592 bytes | source | UTF-8 | mode 100644
+
+`media/libvorbis/lib/books/coupled/res_books_stereo.h` | `7b53cb972baf956661408bb6dbf83693a99d7401` | 629535 bytes | source | UTF-8 | mode 100644
+Dependencies: codebook.h@17
+
+`media/libvorbis/lib/books/floor/floor_books.h` | `d26664f766c330de5974d700e8f74b34e8bc4838` | 49552 bytes | source | UTF-8 | mode 100644
+Dependencies: codebook.h@17
+
+`media/libvorbis/lib/books/uncoupled/res_books_uncoupled.h` | `107e22f9e35fff3341ff17fd59d57fd4658d3480` | 241228 bytes | source | UTF-8 | mode 100644
+Dependencies: codebook.h@17
+
+`media/libvorbis/lib/codebook.h` | `3ebc21dd2a33a0bd2780720f6baceb5fc719c5b3` | 6868 bytes | source | UTF-8 | mode 100644
+Declarations: struct@35; struct@57; struct@73
+Dependencies: ogg/ogg.h@20
+
+`media/libvorbis/lib/codec_internal.h` | `1e0f000d094a8ff257c66aa8d8b9a115ef41f4b8` | 5428 bytes | source | UTF-8 | mode 100644
+Declarations: struct@30; void@41; void@42; void@43; struct@46; void@53; void@54; void@55; struct@60; struct@93; struct@138
+Dependencies: envelope.h@20; codebook.h@21; psy.h@57; bitrate.h@58; highlevel.h@92
+
+`media/libvorbis/lib/envelope.h` | `2ef60a82ca24e3848c64b5d8a9dae2bb3e553a97` | 2116 bytes | source | UTF-8 | mode 100644
+Declarations: struct@33; struct@44; struct@51
+Dependencies: mdct.h@20
+
+`media/libvorbis/lib/highlevel.h` | `7690e3ebfb92b03aa1a6c80a1e4ced3ab94e7402` | 1840 bytes | source | UTF-8 | mode 100644
+Declarations: struct@17; struct@24
+
+`media/libvorbis/lib/lookup.h` | `ec05014f44b13192ea000ed076fdedca56d3623e` | 1249 bytes | source | UTF-8 | mode 100644
+
+`media/libvorbis/lib/lookup_data.h` | `7935715a70c0550477f04b4520ef3c9bf28344ee` | 10036 bytes | source | UTF-8 | mode 100644
+
+`media/libvorbis/lib/lpc.h` | `4f59e6d32de2ff11fd4d3b51c0449a97a6ed6fc8` | 1174 bytes | source | UTF-8 | mode 100644
+Dependencies: vorbis/codec.h@20
+
+`media/libvorbis/lib/lsp.h` | `68b38daf1690530fc2eef81bf1940deccf8bcf09` | 1182 bytes | source | UTF-8 | mode 100644
+
+`media/libvorbis/lib/masking.h` | `7a196a37eb1fe6a1236dcef02a6d24cc81ce412d` | 39455 bytes | source | UTF-8 | mode 100644
+
+`media/libvorbis/lib/mdct.h` | `ceaea617a3476a343fceb24c79a346d63818b954` | 1955 bytes | source | UTF-8 | mode 100644
+Declarations: struct@55
+Dependencies: vorbis/codec.h@20
+
+`media/libvorbis/lib/misc.h` | `eac5160e88aab0a77c226f8b25c044837b3b49c8` | 1988 bytes | source | UTF-8 | mode 100644
+Dependencies: vorbis/codec.h@19
+
+`media/libvorbis/lib/modes/floor_all.h` | `2e3d4a50123479337c23adda81e38875eebcc9b7` | 7395 bytes | source | UTF-8 | mode 100644
+Dependencies: vorbis/codec.h@17; backends.h@18; books/floor/floor_books.h@19
+
+`media/libvorbis/lib/modes/psych_11.h` | `9d8ed357eea8fae0443475029ff4e98af16f72c2` | 2321 bytes | source | UTF-8 | mode 100644
+
+`media/libvorbis/lib/modes/psych_16.h` | `49cbf7c4b2789ae949d63fa18e2c3b957e5d3c46` | 6324 bytes | source | UTF-8 | mode 100644
+
+`media/libvorbis/lib/modes/psych_44.h` | `d15509b71dcbb23bdfbcb0a40f9318df735ae5e7` | 32424 bytes | source | UTF-8 | mode 100644
+
+`media/libvorbis/lib/modes/psych_8.h` | `a19817f7602c29f69054464a9a4881f4781c4403` | 4044 bytes | source | UTF-8 | mode 100644
+
+`media/libvorbis/lib/modes/residue_16.h` | `15e161c8629ad900219e29007215beee494bed0c` | 4834 bytes | source | UTF-8 | mode 100644
+
+`media/libvorbis/lib/modes/residue_44.h` | `3f982695a736473c3914a541ec04c5b1b97cc146` | 9913 bytes | source | UTF-8 | mode 100644
+Dependencies: vorbis/codec.h@17; backends.h@18; books/coupled/res_books_stereo.h@19
+
+`media/libvorbis/lib/modes/residue_44p51.h` | `8ac5f65e625597c9ae3fd3aa03405f222ee0659d` | 12081 bytes | source | UTF-8 | mode 100644
+Dependencies: vorbis/codec.h@17; backends.h@18; books/coupled/res_books_51.h@20
+
+`media/libvorbis/lib/modes/residue_44u.h` | `2f3595e49fa47c048fcd2bac7d0d56182b6dc1e0` | 9088 bytes | source | UTF-8 | mode 100644
+Dependencies: vorbis/codec.h@17; backends.h@18; books/uncoupled/res_books_uncoupled.h@19
+
+`media/libvorbis/lib/modes/residue_8.h` | `b836f79c84cab53099a21d090f1b26d6774e8fdb` | 3201 bytes | source | UTF-8 | mode 100644
+Dependencies: vorbis/codec.h@17; backends.h@18
+
+`media/libvorbis/lib/modes/setup_11.h` | `5ade5dd169943ff1f24555a8a9ce650d1ea73b7d` | 2749 bytes | source | UTF-8 | mode 100644
+Dependencies: psych_11.h@17
+
+`media/libvorbis/lib/modes/setup_16.h` | `8b2daafa3fcc946302cb5253f6584deb1290658e` | 3275 bytes | source | UTF-8 | mode 100644
+Dependencies: psych_16.h@17; residue_16.h@18
+
+`media/libvorbis/lib/modes/setup_22.h` | `eef5a4e7da1ae6f62c92d74994c88e4b9b2b4f66` | 2785 bytes | source | UTF-8 | mode 100644
+
+`media/libvorbis/lib/modes/setup_32.h` | `f87cb767d079403b8800d457227aa7006b09fad8` | 3014 bytes | source | UTF-8 | mode 100644
+
+`media/libvorbis/lib/modes/setup_44.h` | `12d592808e91ead557079da75eadb56b2849561a` | 2994 bytes | source | UTF-8 | mode 100644
+Dependencies: modes/floor_all.h@17; modes/residue_44.h@18; modes/psych_44.h@19
+
+`media/libvorbis/lib/modes/setup_44p51.h` | `4d49173ffb833a918da0a3dc29c878c0b1c59960` | 1956 bytes | source | UTF-8 | mode 100644
+Dependencies: modes/residue_44p51.h@17
+
+`media/libvorbis/lib/modes/setup_44u.h` | `2dd8bf701f35f8571baba1ec3fd87c136c791aec` | 1967 bytes | source | UTF-8 | mode 100644
+Dependencies: modes/residue_44u.h@17
+
+`media/libvorbis/lib/modes/setup_8.h` | `16b02e01b70648324c1fc7715243cc4f1315f74b` | 2862 bytes | source | UTF-8 | mode 100644
+Dependencies: psych_8.h@17; residue_8.h@18
+
+`media/libvorbis/lib/modes/setup_X.h` | `27807c10b4246dad5604843d4efe51fce9edd5fa` | 4197 bytes | source | UTF-8 | mode 100644
+
+`media/libvorbis/lib/os.h` | `ae1e6f7831310e5de9aa482d8f522a5b196fce0c` | 5202 bytes | source | UTF-8 | mode 100644
+Declarations: ogg_int16_t@92; vorbis_fpu_setround@94; vorbis_fpu_restore@105; vorbis_ftoi@110; ogg_int16_t@125; ogg_int16_t@152; int@174
+Dependencies: config.h@20; math.h@23; ogg/os_types.h@24; misc.h@26; malloc.h@48; alloca.h@66; memory.h@70; emmintrin.h@154; the@171
+
+`media/libvorbis/lib/psy.h` | `d9a04e8b74db10b3110fb9efb72e64ceb2524d7d` | 4628 bytes | source | UTF-8 | mode 100644
+Declarations: struct@35; struct@65; struct@85; struct@94; vorbis_info_psy@96
+Dependencies: smallft.h@19; backends.h@21; envelope.h@22
+
+`media/libvorbis/lib/registry.h` | `b823aa60911ee0b8f426518ad96c5bb346539327` | 1247 bytes | source | UTF-8 | mode 100644
+
+`media/libvorbis/lib/scales.h` | `3c2ae48d9e9cc9f77a8aa9fdaed64d6add31a22a` | 2761 bytes | source | UTF-8 | mode 100644
+Declarations: unitnorm@32; todB@43; unitnorm@57
+Dependencies: math.h@20; os.h@21
+
+`media/libvorbis/lib/smallft.h` | `02fe8f9cd415e07294d4eab25d89b0db1401dbc3` | 1218 bytes | source | UTF-8 | mode 100644
+Declarations: struct@22
+Dependencies: vorbis/codec.h@20
+
+`media/libvorbis/lib/vorbis_analysis.c` | `14919737eb5779ba8ba2da301e0db3bda8eaac71` | 3088 bytes | source | UTF-8 | mode 100644
+Declarations: vorbis_analysis@29; _analysis_output_always@69
+Dependencies: stdio.h@17; string.h@18; math.h@19; ogg/ogg.h@20; vorbis/codec.h@21; codec_internal.h@22; registry.h@23; scales.h@24; os.h@25; misc.h@26
+
+`media/libvorbis/lib/vorbis_bitrate.c` | `132553cbee7e2b077758fb069cfbe1c2d4137168` | 8478 bytes | source | UTF-8 | mode 100644
+Declarations: vorbis_bitrate_init@28; vorbis_bitrate_clear@58; vorbis_bitrate_managed@63; vorbis_bitrate_addblock@73; vorbis_bitrate_flushpacket@229
+Dependencies: stdlib.h@17; string.h@18; math.h@19; ogg/ogg.h@20; vorbis/codec.h@21; codec_internal.h@22; os.h@23; misc.h@24; bitrate.h@25
+
+`media/libvorbis/lib/vorbis_block.c` | `fb758cdd7c3247a6c7a57ec34488720480572718` | 30516 bytes | source | UTF-8 | mode 100644
+Declarations: vorbis_block_init@77; alloc_chain@107; _vorbis_block_ripcord@126; alloc_chain@128; alloc_chain@130; vorbis_block_clear@148; _vds_shared_init@170; vorbis_analysis_init@296; vorbis_dsp_clear@316; _preextrapolate_helper@426; vorbis_analysis_wrote@470; vorbis_analysis_blockout@534; vorbis_synthesis_restart@695; vorbis_synthesis_init@718; vorbis_synthesis_blockin@731; vorbis_synthesis_pcmout@947; vorbis_synthesis_read@962; vorbis_synthesis_lapout@973
+Dependencies: stdio.h@20; stdlib.h@21; string.h@22; ogg/ogg.h@23; vorbis/codec.h@24; codec_internal.h@25; window.h@27; mdct.h@28; lpc.h@29; registry.h@30; misc.h@31
+
+`media/libvorbis/lib/vorbis_codebook.c` | `2945af80e022e91e0f93a56b3664b356e675b0b8` | 14962 bytes | source | UTF-8 | mode 100644
+Declarations: vorbis_staticbook_pack@29; vorbis_decbook_unpack@147; vorbis_book_encode@288; bitreverse@302; vorbis_book_decode@389
+Dependencies: stdlib.h@17; string.h@18; math.h@19; ogg/ogg.h@20; vorbis/codec.h@21; codebook.h@22; scales.h@23; misc.h@24; os.h@25
+
+`media/libvorbis/lib/vorbis_envelope.c` | `22d39aa6e0bb57572bffeebf606beeb0a6d79dab` | 10672 bytes | source | UTF-8 | mode 100644
+Declarations: _ve_envelope_init@31; _ve_envelope_clear@75; _ve_envelope_search@215; _ve_envelope_mark@329; _ve_envelope_shift@355
+Dependencies: stdlib.h@17; string.h@18; stdio.h@19; math.h@20; ogg/ogg.h@21; vorbis/codec.h@22; codec_internal.h@23; os.h@25; scales.h@26; envelope.h@27; mdct.h@28; misc.h@29
+
+`media/libvorbis/lib/vorbis_floor0.c` | `0d23269a5623b6e954976b4ebe3c197da9bb91a4` | 6886 bytes | source | UTF-8 | mode 100644
+Declarations: struct@34; floor0_free_info@49; floor0_free_look@57
+Dependencies: stdlib.h@17; string.h@18; math.h@19; ogg/ogg.h@20; vorbis/codec.h@21; codec_internal.h@22; registry.h@23; lpc.h@24; lsp.h@25; codebook.h@26; scales.h@27; misc.h@28; os.h@29; misc.h@31; stdio.h@32
+
+`media/libvorbis/lib/vorbis_floor1.c` | `00a5a97b8ce2937d19e4bef260cda1e84f98b996` | 30924 bytes | source | UTF-8 | mode 100644
+Declarations: struct@32; floor1_free_info@53; floor1_free_look@61; floor1_pack@74; icomp@112; render_point@257; vorbis_dBquant@273; render_line@347; render_line0@376; post_Y@567
+Dependencies: stdlib.h@17; string.h@18; math.h@19; ogg/ogg.h@20; vorbis/codec.h@21; codec_internal.h@22; registry.h@23; codebook.h@24; misc.h@25; scales.h@26; stdio.h@28
+
+`media/libvorbis/lib/vorbis_info.c` | `16608104f1f7ca2ec91f590b021183f439b585c8` | 20058 bytes | source | UTF-8 | mode 100644
+Declarations: _v_writestring@36; _v_readstring@43; _v_toupper@49; vorbis_comment_init@53; vorbis_comment_add@57; vorbis_comment_add_tag@69; tagcompare@81; vorbis_comment_query_count@115; vorbis_comment_clear@131; vorbis_info_blocksize@147; vorbis_info_init@153; vorbis_info_clear@158; _vorbis_unpack_info@211; _vorbis_unpack_comment@247; _vorbis_unpack_books@279; vorbis_synthesis_idheader@357; vorbis_synthesis_headerin@386; _vorbis_pack_info@456; _vorbis_pack_comment@484; _vorbis_pack_books@514; vorbis_granule_time@675
+Dependencies: stdlib.h@20; string.h@21; ogg/ogg.h@22; vorbis/codec.h@23; codec_internal.h@24; codebook.h@25; registry.h@26; window.h@27; psy.h@28; misc.h@29; os.h@30
+
+`media/libvorbis/lib/vorbis_lookup.c` | `7cd01a44d38dfdc048bae7ebf1d91e2d8928841a` | 3246 bytes | source | UTF-8 | mode 100644
+Declarations: vorbis_coslook@26; vorbis_invsqlook@34; vorbis_invsq2explook@41; vorbis_fromdBlook@47; vorbis_invsqlook_i@61; vorbis_fromdBlook_i@77; vorbis_coslook_i@86
+Dependencies: math.h@17; lookup.h@18; lookup_data.h@19; os.h@20; misc.h@21; stdio.h@45
+
+`media/libvorbis/lib/vorbis_lpc.c` | `877da47f8efeb9ee138479f4a152d793e0fdc878` | 4486 bytes | source | UTF-8 | mode 100644
+Declarations: vorbis_lpc_from_data@60
+Dependencies: stdlib.h@45; string.h@46; math.h@47; os.h@48; smallft.h@49; lpc.h@50; scales.h@51; misc.h@52
+
+`media/libvorbis/lib/vorbis_lsp.c` | `a92882a1313e9fee6a19854e9645d322aeefd1d0` | 12599 bytes | source | UTF-8 | mode 100644
+Declarations: cheby@286; comp@298; Laguerre_With_Deflation@310; Newton_Raphson@364; vorbis_lpc_to_lsp@403
+Dependencies: math.h@35; string.h@36; stdlib.h@37; lsp.h@38; os.h@39; misc.h@40; lookup.h@41; scales.h@42; vorbis_lookup.c@60; vorbis_lookup.c@118
+
+`media/libvorbis/lib/vorbis_mapping0.c` | `efa0fbcd93bb26e931aaa2a105b018f44d73974f` | 28765 bytes | source | UTF-8 | mode 100644
+Declarations: mapping0_free_info@39; mapping0_forward@230; mapping0_inverse@698
+Dependencies: stdlib.h@17; stdio.h@18; string.h@19; math.h@20; ogg/ogg.h@21; vorbis/codec.h@22; codec_internal.h@23; codebook.h@24; window.h@25; registry.h@26; psy.h@27; misc.h@28; os.h@149; lpc.h@150; lsp.h@151; envelope.h@152; mdct.h@153; psy.h@154; scales.h@155
+
+`media/libvorbis/lib/vorbis_mdct.c` | `2a0ff8d01ba232634d259829eb2c0c25a5f2426d` | 15493 bytes | source | UTF-8 | mode 100644
+Declarations: mdct_init@51; mdct_clear@338; mdct_backward@396; mdct_forward@492
+Dependencies: stdio.h@39; stdlib.h@40; string.h@41; math.h@42; vorbis/codec.h@43; mdct.h@44; os.h@45; misc.h@46
+
+`media/libvorbis/lib/vorbis_psy.c` | `d0901bf2738b63ff185e728e77ebc20056836253` | 36164 bytes | source | UTF-8 | mode 100644
+Declarations: _vp_global_free@47; _vi_gpsy_free@54; _vi_psy_free@61; attenuate_curve@79; _vp_psy_clear@364; seed_chase@454; _vp_ampmax_decay@837; apsort@918; noise_normalize@941
+Dependencies: stdlib.h@17; math.h@18; string.h@19; vorbis/codec.h@20; codec_internal.h@21; masking.h@23; psy.h@24; os.h@25; lpc.h@26; smallft.h@27; scales.h@28; misc.h@29; stdio.h@511
+
+`media/libvorbis/lib/vorbis_registry.c` | `db0f67b2e28d3549f4077274c9d61d6cf4d0c34b` | 1772 bytes | source | UTF-8 | mode 100644
+Dependencies: vorbis/codec.h@17; codec_internal.h@18; registry.h@19; misc.h@20
+
+`media/libvorbis/lib/vorbis_res0.c` | `6e008f318f95f75295fb9fd2ffbc49b6fefea565` | 25487 bytes | source | UTF-8 | mode 100644
+Declarations: struct@37; res0_free_info@66; res0_free_look@74; icount@152; res0_pack@162; local_book_besterror@322
+Dependencies: stdlib.h@22; string.h@23; math.h@24; ogg/ogg.h@25; vorbis/codec.h@26; codec_internal.h@27; registry.h@28; codebook.h@29; misc.h@30; os.h@31; stdio.h@34
+
+`media/libvorbis/lib/vorbis_sharedbook.c` | `1e5d4b38f31b403e1dbbdbb51678ce6406b9935b` | 26484 bytes | source | UTF-8 | mode 100644
+Declarations: ov_ilog@30; _float32_pack@45; _float32_unpack@60; _book_maptype1_quantvals@243; vorbis_staticbook_destroy@336; vorbis_book_clear@345; vorbis_decbook_clear@354; vorbis_book_init_encode@364; bitreverse@379; sort64a@387; vorbis_book_init_decode@393; vorbis_book_codeword@669; vorbis_book_codelen@676; run_test@765; main@781
+Dependencies: stdlib.h@17; limits.h@18; math.h@19; string.h@20; ogg/ogg.h@21; os.h@22; misc.h@23; vorbis/codec.h@24; codebook.h@25; scales.h@26; the@559; stdio.h@689
+
+`media/libvorbis/lib/vorbis_smallft.c` | `f93d7bf270cc6ee618b9b3a044c6e5d5c92e36d2` | 22233 bytes | source | UTF-8 | mode 100644
+Declarations: drfti1@37; fdrffti@107; dradf2@113; drftf1@572; dradb2@633; drftb1@1153; drft_forward@1231; drft_backward@1236; drft_init@1241; drft_clear@1248
+Dependencies: stdlib.h@30; string.h@31; math.h@32; smallft.h@33; os.h@34; misc.h@35
+
+`media/libvorbis/lib/vorbis_synthesis.c` | `3e2d6812704308eccf1d27a907d3ef14fd7c4b57` | 5180 bytes | source | UTF-8 | mode 100644
+Declarations: vorbis_synthesis@25; vorbis_synthesis_trackonly@93; vorbis_packet_blocksize@142; vorbis_synthesis_halfrate@166; vorbis_synthesis_halfrate_p@176
+Dependencies: stdio.h@17; ogg/ogg.h@18; vorbis/codec.h@19; codec_internal.h@20; registry.h@21; misc.h@22; os.h@23
+
+`media/libvorbis/lib/vorbis_window.c` | `2151b278d14f17ee0ab1e35336048eadf4193e86` | 128646 bytes | source | UTF-8 | mode 100644
+Dependencies: stdlib.h@17; math.h@18; os.h@19; misc.h@20; window.h@21
+
+`media/libvorbis/lib/vorbisenc.c` | `c453e3a3e2319251235e57aabb8ecfd337014289` | 39388 bytes | source | UTF-8 | mode 100644
+Declarations: struct@34; struct@38; struct@49; struct@54; struct@58; struct@69; struct@74; struct@76; struct@83; struct@88; struct@92; vorbis_encode_ath_setup@425; book_dup_or_new@435; setting_to_approx_bitrate@618; vorbis_encode_setup_init@682; vorbis_encode_ctl@1024; ovectl_ratemanage_arg@1038; ovectl_ratemanage_arg@1056; ovectl_ratemanage_arg@1071; ovectl_ratemanage_arg@1083; ovectl_ratemanage2_arg@1102; ovectl_ratemanage2_arg@1117
+Dependencies: stdlib.h@17; string.h@18; math.h@19; float.h@20; vorbis/codec.h@22; vorbis/vorbisenc.h@23; codec_internal.h@25; os.h@27; misc.h@28; modes/setup_44.h@155; modes/setup_44u.h@156; modes/setup_44p51.h@157; modes/setup_32.h@158; modes/setup_8.h@159; modes/setup_11.h@160; modes/setup_16.h@161; modes/setup_22.h@162; modes/setup_X.h@163
+
+`media/libvorbis/lib/window.h` | `33d83f85f9a047c3ab6ed2c015b59804e21af6e4` | 1086 bytes | source | UTF-8 | mode 100644
+
+`media/libvorbis/moz.build` | `b241fe7080b9234d4ba10c3f1e2715da3d06440f` | 1731 bytes | build-registration | UTF-8 | mode 100644
+
+`media/libvorbis/moz.yaml` | `c36f8a1c787b261ae74c7a13a0c86891889fccc7` | 4577 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/LICENSE` | `1ce44343c4a325e9e1189fd98bb44a9f2f096da9` | 1537 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/LICENSE-NOTICE.txt` | `6b0e8676858243c78b866e5dde48e270217f0f7e` | 2512 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/Makefile.in` | `658921de59927bcd12bf84fd2bb2bbc036788b08` | 457 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/README_MOZILLA` | `e006cfb47851232db28c4629c760fb2de7667a5b` | 561 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/ads2gas.py` | `93b5dcc75159c44b199448ac2ff280bfe35c4699` | 267 bytes | source | UTF-8 | mode 100644
+Declarations: generate@6
+
+`media/libvpx/arm_cpu_runtime_detection_code_on_openbsd.patch` | `6dc899e8badc793c8ec9c573ce96e23d3d64b065` | 1422 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/config/generic/vp8_rtcd.h` | `b02a669b2d7eaf68ce9ae0b23d2f54b9fdebe577` | 8153 bytes | source | UTF-8 | mode 100644
+Declarations: blockd@25; macroblockd@26; loop_filter_info@27; block@30; macroblock@31; variance_vtable@32; yv12_buffer_config@34; setup_rtcd_internal@168
+Dependencies: vpx_config.h@165
+
+`media/libvpx/config/generic/vp9_rtcd.h` | `1f5f911a459f210e2511bf818052d9451f70d1cf` | 4920 bytes | source | UTF-8 | mode 100644
+Declarations: macroblockd@33; macroblock@36; macroblock_plane@37; vp9_sad_table@38; ScanOrder@39; search_site_config@40; mv@41; yv12_buffer_config@43; setup_rtcd_internal@105
+Dependencies: vpx/vpx_integer.h@25; vp9/common/vp9_common.h@26; vp9/common/vp9_enums.h@27; vp9/common/vp9_filter.h@28; vp9/encoder/vp9_temporal_filter.h@30; vpx_config.h@102
+
+`media/libvpx/config/generic/vpx_config.asm` | `0520d658b89380809b10403edde477910cc732ac` | 2718 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/config/generic/vpx_config.c` | `6494e70be7e277817c60f596acac4e0f6053f757` | 742 bytes | source | UTF-8 | mode 100644
+Dependencies: vpx/vpx_codec.h@8
+
+`media/libvpx/config/generic/vpx_config.h` | `842cb90b1a41dd6eca2e00835d6a6de3b2f0a8b1` | 3255 bytes | source | UTF-8 | mode 100644
+
+`media/libvpx/config/generic/vpx_dsp_rtcd.h` | `c9dd3bf5c533372ae546020f478e7a8ca89ca4a5` | 42781 bytes | source | UTF-8 | mode 100644
+Declarations: macroblock_plane@29; ScanOrder@30; setup_rtcd_internal@745
+Dependencies: vpx/vpx_integer.h@25; vpx_dsp/vpx_dsp_common.h@26; vpx_dsp/vpx_filter.h@27; vpx_config.h@742
+
+`media/libvpx/config/generic/vpx_scale_rtcd.h` | `a551ca2adbf2f5c4c7d17abfc0f884edf872d385` | 3231 bytes | source | UTF-8 | mode 100644
+Declarations: yv12_buffer_config@21; setup_rtcd_internal@71
+Dependencies: vpx_config.h@68
+
+`media/libvpx/config/linux/arm/vp8_rtcd.h` | `ecc40ebafea0caea202d82cba0f2b06d506b670c` | 18567 bytes | source | UTF-8 | mode 100644
+Declarations: blockd@25; macroblockd@26; loop_filter_info@27; block@30; macroblock@31; variance_vtable@32; yv12_buffer_config@34; setup_rtcd_internal@198
+Dependencies: vpx_config.h@194; vpx_ports/arm.h@197
+
+`media/libvpx/config/linux/arm/vp9_rtcd.h` | `d8c8f2857bb4916620566068c9e9a58c85d31603` | 8091 bytes | source | UTF-8 | mode 100644
+Declarations: macroblockd@33; macroblock@36; macroblock_plane@37; vp9_sad_table@38; ScanOrder@39; search_site_config@40; mv@41; yv12_buffer_config@43; setup_rtcd_internal@106
+Dependencies: vpx/vpx_integer.h@25; vp9/common/vp9_common.h@26; vp9/common/vp9_enums.h@27; vp9/common/vp9_filter.h@28; vp9/encoder/vp9_temporal_filter.h@30; vpx_config.h@102; vpx_ports/arm.h@105
+
+`media/libvpx/config/linux/arm/vpx_config.asm` | `2660036960b0c4f8e4705fe0bb008c9ff7d6534e` | 2718 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/config/linux/arm/vpx_config.c` | `12bf1f983e2a0731e26a60d92bdc3512a72c96b5` | 797 bytes | source | UTF-8 | mode 100644
+Dependencies: vpx/vpx_codec.h@8
+
+`media/libvpx/config/linux/arm/vpx_config.h` | `f2157254d5a21cf87bc01cc847af2e08a7b70844` | 3255 bytes | source | UTF-8 | mode 100644
+
+`media/libvpx/config/linux/arm/vpx_dsp_rtcd.h` | `f0f9ce158eb8e68ab6afa8c5a3df80776eb07236` | 119063 bytes | source | UTF-8 | mode 100644
+Declarations: macroblock_plane@29; ScanOrder@30; setup_rtcd_internal@968
+Dependencies: vpx/vpx_integer.h@25; vpx_dsp/vpx_dsp_common.h@26; vpx_dsp/vpx_filter.h@27; vpx_config.h@964; vpx_ports/arm.h@967
+
+`media/libvpx/config/linux/arm/vpx_scale_rtcd.h` | `9678750545fd2481f8870c26afd26a54744cc2eb` | 3309 bytes | source | UTF-8 | mode 100644
+Declarations: yv12_buffer_config@21; setup_rtcd_internal@72
+Dependencies: vpx_config.h@68; vpx_ports/arm.h@71
+
+`media/libvpx/config/linux/arm64/vp8_rtcd.h` | `84cddbcda915f26b3c254b5b3311d7a707bdcda7` | 11935 bytes | source | UTF-8 | mode 100644
+Declarations: blockd@25; macroblockd@26; loop_filter_info@27; block@30; macroblock@31; variance_vtable@32; yv12_buffer_config@34; setup_rtcd_internal@198
+Dependencies: vpx_config.h@194; vpx_ports/arm.h@197
+
+`media/libvpx/config/linux/arm64/vp9_rtcd.h` | `fa8c44f45fc9f2dea53148ced52d5de4ad867c7a` | 5453 bytes | source | UTF-8 | mode 100644
+Declarations: macroblockd@33; macroblock@36; macroblock_plane@37; vp9_sad_table@38; ScanOrder@39; search_site_config@40; mv@41; yv12_buffer_config@43; setup_rtcd_internal@106
+Dependencies: vpx/vpx_integer.h@25; vp9/common/vp9_common.h@26; vp9/common/vp9_enums.h@27; vp9/common/vp9_filter.h@28; vp9/encoder/vp9_temporal_filter.h@30; vpx_config.h@102; vpx_ports/arm.h@105
+
+`media/libvpx/config/linux/arm64/vpx_config.asm` | `042179d48113d253e47d4246c224ad1ca26d5a87` | 2718 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/config/linux/arm64/vpx_config.c` | `2dce1f8245e32e77daa47ca1d59e9da4bf64a964` | 783 bytes | source | UTF-8 | mode 100644
+Dependencies: vpx/vpx_codec.h@8
+
+`media/libvpx/config/linux/arm64/vpx_config.h` | `c75879de4c4c3acb200fcbf3f89bea0e0c8682bd` | 3255 bytes | source | UTF-8 | mode 100644
+
+`media/libvpx/config/linux/arm64/vpx_dsp_rtcd.h` | `775ae4f98451ff5280620a02e554362ae8b5cb66` | 104547 bytes | source | UTF-8 | mode 100644
+Declarations: macroblock_plane@29; ScanOrder@30; setup_rtcd_internal@1052
+Dependencies: vpx/vpx_integer.h@25; vpx_dsp/vpx_dsp_common.h@26; vpx_dsp/vpx_filter.h@27; vpx_config.h@1048; vpx_ports/arm.h@1051
+
+`media/libvpx/config/linux/arm64/vpx_scale_rtcd.h` | `9678750545fd2481f8870c26afd26a54744cc2eb` | 3309 bytes | source | UTF-8 | mode 100644
+Declarations: yv12_buffer_config@21; setup_rtcd_internal@72
+Dependencies: vpx_config.h@68; vpx_ports/arm.h@71
+
+`media/libvpx/config/linux/ia32/vp8_rtcd.h` | `57334ac719850777117fe3cc96766508abdebe93` | 24683 bytes | source | UTF-8 | mode 100644
+Declarations: blockd@25; macroblockd@26; loop_filter_info@27; block@30; macroblock@31; variance_vtable@32; yv12_buffer_config@34; setup_rtcd_internal@227
+Dependencies: vpx_ports/x86.h@226
+
+`media/libvpx/config/linux/ia32/vp9_rtcd.h` | `71be54b24dad807f50349a9efe0baf1ffd0d7411` | 14727 bytes | source | UTF-8 | mode 100644
+Declarations: macroblockd@33; macroblock@36; macroblock_plane@37; vp9_sad_table@38; ScanOrder@39; search_site_config@40; mv@41; yv12_buffer_config@43; setup_rtcd_internal@136
+Dependencies: vpx/vpx_integer.h@25; vp9/common/vp9_common.h@26; vp9/common/vp9_enums.h@27; vp9/common/vp9_filter.h@28; vp9/encoder/vp9_temporal_filter.h@30; vpx_ports/x86.h@135
+
+`media/libvpx/config/linux/ia32/vpx_config.asm` | `97442032816a7039ac9ad6c531830c2344a33cfc` | 2587 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/config/linux/ia32/vpx_config.c` | `33c9588e85a64ddea5cdeba82bf1a7e1aff2081b` | 794 bytes | source | UTF-8 | mode 100644
+Dependencies: vpx/vpx_codec.h@8
+
+`media/libvpx/config/linux/ia32/vpx_config.h` | `1691bc8bd66733e119044cd8136211d27a18f9b9` | 3255 bytes | source | UTF-8 | mode 100644
+
+`media/libvpx/config/linux/ia32/vpx_dsp_rtcd.h` | `df02fdb19ab7f58d9930a3ee3160a6a121dc56c9` | 140772 bytes | source | UTF-8 | mode 100644
+Declarations: macroblock_plane@29; ScanOrder@30; setup_rtcd_internal@1071
+Dependencies: vpx/vpx_integer.h@25; vpx_dsp/vpx_dsp_common.h@26; vpx_dsp/vpx_filter.h@27; vpx_ports/x86.h@1070
+
+`media/libvpx/config/linux/ia32/vpx_scale_rtcd.h` | `4244dd70e262644bcd989375beb445721d6fcadc` | 3285 bytes | source | UTF-8 | mode 100644
+Declarations: yv12_buffer_config@21; setup_rtcd_internal@70
+Dependencies: vpx_ports/x86.h@69
+
+`media/libvpx/config/linux/loongarch64/vp8_rtcd.h` | `fca3fa3cc028586e3070e94d5f095197b4bd31f1` | 13300 bytes | source | UTF-8 | mode 100644
+Declarations: blockd@25; macroblockd@26; loop_filter_info@27; block@30; macroblock@31; variance_vtable@32; yv12_buffer_config@34; setup_rtcd_internal@182
+Dependencies: vpx_config.h@178; vpx_ports/loongarch.h@181
+
+`media/libvpx/config/linux/loongarch64/vp9_rtcd.h` | `c61cf275fca12472bc1370d2ffd1ed1311a6cf8b` | 3700 bytes | source | UTF-8 | mode 100644
+Declarations: macroblockd@33; macroblock@36; macroblock_plane@37; vp9_sad_table@38; ScanOrder@39; search_site_config@40; mv@41; yv12_buffer_config@43; setup_rtcd_internal@94
+Dependencies: vpx/vpx_integer.h@25; vp9/common/vp9_common.h@26; vp9/common/vp9_enums.h@27; vp9/common/vp9_filter.h@28; vp9/encoder/vp9_temporal_filter.h@30; vpx_config.h@90; vpx_ports/loongarch.h@93
+
+`media/libvpx/config/linux/loongarch64/vpx_config.asm` | `395f55381ddde89a2928e3e2dcf4bca8c302f3b0` | 2718 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/config/linux/loongarch64/vpx_config.c` | `fbacdb22010ccf73da8597681ea97c7034df95d7` | 803 bytes | source | UTF-8 | mode 100644
+Dependencies: vpx/vpx_codec.h@8
+
+`media/libvpx/config/linux/loongarch64/vpx_config.h` | `5678604d6c7a3cabf9a96a96822afaa6ba65f265` | 3255 bytes | source | UTF-8 | mode 100644
+
+`media/libvpx/config/linux/loongarch64/vpx_dsp_rtcd.h` | `866f0a94094460040bddd42c605e59933adc8431` | 63716 bytes | source | UTF-8 | mode 100644
+Declarations: macroblock_plane@29; ScanOrder@30; setup_rtcd_internal@803
+Dependencies: vpx/vpx_integer.h@25; vpx_dsp/vpx_dsp_common.h@26; vpx_dsp/vpx_filter.h@27; vpx_config.h@799; vpx_ports/loongarch.h@802
+
+`media/libvpx/config/linux/loongarch64/vpx_scale_rtcd.h` | `5f3a497c8ee3de4f50d125c055eb8053d31e2ae4` | 3320 bytes | source | UTF-8 | mode 100644
+Declarations: yv12_buffer_config@21; setup_rtcd_internal@72
+Dependencies: vpx_config.h@68; vpx_ports/loongarch.h@71
+
+`media/libvpx/config/linux/x64/vp8_rtcd.h` | `c2dcf5e3ef1ec9eb1d35bffb8172091a919ae043` | 17179 bytes | source | UTF-8 | mode 100644
+Declarations: blockd@25; macroblockd@26; loop_filter_info@27; block@30; macroblock@31; variance_vtable@32; yv12_buffer_config@34; setup_rtcd_internal@227
+Dependencies: vpx_ports/x86.h@226
+
+`media/libvpx/config/linux/x64/vp9_rtcd.h` | `d1830443706ec7f8340a601ac7f6b10da476f252` | 12997 bytes | source | UTF-8 | mode 100644
+Declarations: macroblockd@33; macroblock@36; macroblock_plane@37; vp9_sad_table@38; ScanOrder@39; search_site_config@40; mv@41; yv12_buffer_config@43; setup_rtcd_internal@136
+Dependencies: vpx/vpx_integer.h@25; vp9/common/vp9_common.h@26; vp9/common/vp9_enums.h@27; vp9/common/vp9_filter.h@28; vp9/encoder/vp9_temporal_filter.h@30; vpx_ports/x86.h@135
+
+`media/libvpx/config/linux/x64/vpx_config.asm` | `efe87229a4c984589bd0b64ccaf57e1d4128b8e4` | 2587 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/config/linux/x64/vpx_config.c` | `9a2a2ab2867bb8457424f28c2e64bd70e7cba456` | 797 bytes | source | UTF-8 | mode 100644
+Dependencies: vpx/vpx_codec.h@8
+
+`media/libvpx/config/linux/x64/vpx_config.h` | `10bb977e7da4500f705249d1342e015e352f55f4` | 3255 bytes | source | UTF-8 | mode 100644
+
+`media/libvpx/config/linux/x64/vpx_dsp_rtcd.h` | `bac8edb57fe30cfb1c33c08c3629737d1347e0cb` | 112572 bytes | source | UTF-8 | mode 100644
+Declarations: macroblock_plane@29; ScanOrder@30; setup_rtcd_internal@1073
+Dependencies: vpx/vpx_integer.h@25; vpx_dsp/vpx_dsp_common.h@26; vpx_dsp/vpx_filter.h@27; vpx_ports/x86.h@1072
+
+`media/libvpx/config/linux/x64/vpx_scale_rtcd.h` | `4244dd70e262644bcd989375beb445721d6fcadc` | 3285 bytes | source | UTF-8 | mode 100644
+Declarations: yv12_buffer_config@21; setup_rtcd_internal@70
+Dependencies: vpx_ports/x86.h@69
+
+`media/libvpx/config/mac/arm64/vp8_rtcd.h` | `3d2755b8b52fa01cd4d955c94dfc5d4b82f7dfde` | 12207 bytes | source | UTF-8 | mode 100644
+Declarations: blockd@25; macroblockd@26; loop_filter_info@27; block@30; macroblock@31; variance_vtable@32; yv12_buffer_config@34; setup_rtcd_internal@201
+Dependencies: vpx_config.h@197; vpx_ports/arm.h@200
+
+`media/libvpx/config/mac/arm64/vp9_rtcd.h` | `174b6033f7693d0cabce28cf9864375793215bc4` | 10878 bytes | source | UTF-8 | mode 100644
+Declarations: macroblockd@33; macroblock@36; macroblock_plane@37; vp9_sad_table@38; ScanOrder@39; search_site_config@40; mv@41; yv12_buffer_config@43; setup_rtcd_internal@130
+Dependencies: vpx/vpx_integer.h@25; vp9/common/vp9_common.h@26; vp9/common/vp9_enums.h@27; vp9/common/vp9_filter.h@28; vp9/encoder/vp9_temporal_filter.h@30; vpx_config.h@126; vpx_ports/arm.h@129
+
+`media/libvpx/config/mac/arm64/vpx_config.asm` | `559f672ce319b30a6d846303e2f3e63ac078ae75` | 2718 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/config/mac/arm64/vpx_config.c` | `f918e11af888eaabb6f1191c11fb3a5740c019c1` | 747 bytes | source | UTF-8 | mode 100644
+Dependencies: vpx/vpx_codec.h@8
+
+`media/libvpx/config/mac/arm64/vpx_config.h` | `2beec8ed0f42d78f15cc33bd8afdc66698a37b3e` | 3255 bytes | source | UTF-8 | mode 100644
+
+`media/libvpx/config/mac/arm64/vpx_dsp_rtcd.h` | `58474e7391825a6ac3735f70c39316917f1f7ac9` | 104793 bytes | source | UTF-8 | mode 100644
+Declarations: macroblock_plane@29; ScanOrder@30; setup_rtcd_internal@1053
+Dependencies: vpx/vpx_integer.h@25; vpx_dsp/vpx_dsp_common.h@26; vpx_dsp/vpx_filter.h@27; vpx_config.h@1049; vpx_ports/arm.h@1052
+
+`media/libvpx/config/mac/arm64/vpx_scale_rtcd.h` | `9678750545fd2481f8870c26afd26a54744cc2eb` | 3309 bytes | source | UTF-8 | mode 100644
+Declarations: yv12_buffer_config@21; setup_rtcd_internal@72
+Dependencies: vpx_config.h@68; vpx_ports/arm.h@71
+
+`media/libvpx/config/mac/ia32/vp8_rtcd.h` | `57334ac719850777117fe3cc96766508abdebe93` | 24683 bytes | source | UTF-8 | mode 100644
+Declarations: blockd@25; macroblockd@26; loop_filter_info@27; block@30; macroblock@31; variance_vtable@32; yv12_buffer_config@34; setup_rtcd_internal@227
+Dependencies: vpx_ports/x86.h@226
+
+`media/libvpx/config/mac/ia32/vp9_rtcd.h` | `71be54b24dad807f50349a9efe0baf1ffd0d7411` | 14727 bytes | source | UTF-8 | mode 100644
+Declarations: macroblockd@33; macroblock@36; macroblock_plane@37; vp9_sad_table@38; ScanOrder@39; search_site_config@40; mv@41; yv12_buffer_config@43; setup_rtcd_internal@136
+Dependencies: vpx/vpx_integer.h@25; vp9/common/vp9_common.h@26; vp9/common/vp9_enums.h@27; vp9/common/vp9_filter.h@28; vp9/encoder/vp9_temporal_filter.h@30; vpx_ports/x86.h@135
+
+`media/libvpx/config/mac/ia32/vpx_config.asm` | `97442032816a7039ac9ad6c531830c2344a33cfc` | 2587 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/config/mac/ia32/vpx_config.c` | `ff9465fbd5b664c4276054786512506f675c181d` | 796 bytes | source | UTF-8 | mode 100644
+Dependencies: vpx/vpx_codec.h@8
+
+`media/libvpx/config/mac/ia32/vpx_config.h` | `1691bc8bd66733e119044cd8136211d27a18f9b9` | 3255 bytes | source | UTF-8 | mode 100644
+
+`media/libvpx/config/mac/ia32/vpx_dsp_rtcd.h` | `df02fdb19ab7f58d9930a3ee3160a6a121dc56c9` | 140772 bytes | source | UTF-8 | mode 100644
+Declarations: macroblock_plane@29; ScanOrder@30; setup_rtcd_internal@1071
+Dependencies: vpx/vpx_integer.h@25; vpx_dsp/vpx_dsp_common.h@26; vpx_dsp/vpx_filter.h@27; vpx_ports/x86.h@1070
+
+`media/libvpx/config/mac/ia32/vpx_scale_rtcd.h` | `4244dd70e262644bcd989375beb445721d6fcadc` | 3285 bytes | source | UTF-8 | mode 100644
+Declarations: yv12_buffer_config@21; setup_rtcd_internal@70
+Dependencies: vpx_ports/x86.h@69
+
+`media/libvpx/config/mac/x64/vp8_rtcd.h` | `c2dcf5e3ef1ec9eb1d35bffb8172091a919ae043` | 17179 bytes | source | UTF-8 | mode 100644
+Declarations: blockd@25; macroblockd@26; loop_filter_info@27; block@30; macroblock@31; variance_vtable@32; yv12_buffer_config@34; setup_rtcd_internal@227
+Dependencies: vpx_ports/x86.h@226
+
+`media/libvpx/config/mac/x64/vp9_rtcd.h` | `d1830443706ec7f8340a601ac7f6b10da476f252` | 12997 bytes | source | UTF-8 | mode 100644
+Declarations: macroblockd@33; macroblock@36; macroblock_plane@37; vp9_sad_table@38; ScanOrder@39; search_site_config@40; mv@41; yv12_buffer_config@43; setup_rtcd_internal@136
+Dependencies: vpx/vpx_integer.h@25; vp9/common/vp9_common.h@26; vp9/common/vp9_enums.h@27; vp9/common/vp9_filter.h@28; vp9/encoder/vp9_temporal_filter.h@30; vpx_ports/x86.h@135
+
+`media/libvpx/config/mac/x64/vpx_config.asm` | `efe87229a4c984589bd0b64ccaf57e1d4128b8e4` | 2587 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/config/mac/x64/vpx_config.c` | `4590f90f0ebd83225be1171103b178e8ddd2b81f` | 799 bytes | source | UTF-8 | mode 100644
+Dependencies: vpx/vpx_codec.h@8
+
+`media/libvpx/config/mac/x64/vpx_config.h` | `10bb977e7da4500f705249d1342e015e352f55f4` | 3255 bytes | source | UTF-8 | mode 100644
+
+`media/libvpx/config/mac/x64/vpx_dsp_rtcd.h` | `bac8edb57fe30cfb1c33c08c3629737d1347e0cb` | 112572 bytes | source | UTF-8 | mode 100644
+Declarations: macroblock_plane@29; ScanOrder@30; setup_rtcd_internal@1073
+Dependencies: vpx/vpx_integer.h@25; vpx_dsp/vpx_dsp_common.h@26; vpx_dsp/vpx_filter.h@27; vpx_ports/x86.h@1072
+
+`media/libvpx/config/mac/x64/vpx_scale_rtcd.h` | `4244dd70e262644bcd989375beb445721d6fcadc` | 3285 bytes | source | UTF-8 | mode 100644
+Declarations: yv12_buffer_config@21; setup_rtcd_internal@70
+Dependencies: vpx_ports/x86.h@69
+
+`media/libvpx/config/vpx_version.h` | `9b49754b1c59cdf0310702db37f6d2706e75c0b1` | 371 bytes | source | UTF-8 | mode 100644
+
+`media/libvpx/config/win/aarch64/vp8_rtcd.h` | `84cddbcda915f26b3c254b5b3311d7a707bdcda7` | 11935 bytes | source | UTF-8 | mode 100644
+Declarations: blockd@25; macroblockd@26; loop_filter_info@27; block@30; macroblock@31; variance_vtable@32; yv12_buffer_config@34; setup_rtcd_internal@198
+Dependencies: vpx_config.h@194; vpx_ports/arm.h@197
+
+`media/libvpx/config/win/aarch64/vp9_rtcd.h` | `fa8c44f45fc9f2dea53148ced52d5de4ad867c7a` | 5453 bytes | source | UTF-8 | mode 100644
+Declarations: macroblockd@33; macroblock@36; macroblock_plane@37; vp9_sad_table@38; ScanOrder@39; search_site_config@40; mv@41; yv12_buffer_config@43; setup_rtcd_internal@106
+Dependencies: vpx/vpx_integer.h@25; vp9/common/vp9_common.h@26; vp9/common/vp9_enums.h@27; vp9/common/vp9_filter.h@28; vp9/encoder/vp9_temporal_filter.h@30; vpx_config.h@102; vpx_ports/arm.h@105
+
+`media/libvpx/config/win/aarch64/vpx_config.asm` | `591bd202a7a060857b8c6712c179668e94428711` | 2718 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/config/win/aarch64/vpx_config.c` | `809e36cf16f0b01c2f329acdb117a73bbe700f88` | 784 bytes | source | UTF-8 | mode 100644
+Dependencies: vpx/vpx_codec.h@8
+
+`media/libvpx/config/win/aarch64/vpx_config.h` | `b0ef200aff10e82fc2efb74d895525fb8689cefe` | 3257 bytes | source | UTF-8 | mode 100644
+
+`media/libvpx/config/win/aarch64/vpx_dsp_rtcd.h` | `775ae4f98451ff5280620a02e554362ae8b5cb66` | 104547 bytes | source | UTF-8 | mode 100644
+Declarations: macroblock_plane@29; ScanOrder@30; setup_rtcd_internal@1052
+Dependencies: vpx/vpx_integer.h@25; vpx_dsp/vpx_dsp_common.h@26; vpx_dsp/vpx_filter.h@27; vpx_config.h@1048; vpx_ports/arm.h@1051
+
+`media/libvpx/config/win/aarch64/vpx_scale_rtcd.h` | `9678750545fd2481f8870c26afd26a54744cc2eb` | 3309 bytes | source | UTF-8 | mode 100644
+Declarations: yv12_buffer_config@21; setup_rtcd_internal@72
+Dependencies: vpx_config.h@68; vpx_ports/arm.h@71
+
+`media/libvpx/config/win/ia32/vp8_rtcd.h` | `57334ac719850777117fe3cc96766508abdebe93` | 24683 bytes | source | UTF-8 | mode 100644
+Declarations: blockd@25; macroblockd@26; loop_filter_info@27; block@30; macroblock@31; variance_vtable@32; yv12_buffer_config@34; setup_rtcd_internal@227
+Dependencies: vpx_ports/x86.h@226
+
+`media/libvpx/config/win/ia32/vp9_rtcd.h` | `71be54b24dad807f50349a9efe0baf1ffd0d7411` | 14727 bytes | source | UTF-8 | mode 100644
+Declarations: macroblockd@33; macroblock@36; macroblock_plane@37; vp9_sad_table@38; ScanOrder@39; search_site_config@40; mv@41; yv12_buffer_config@43; setup_rtcd_internal@136
+Dependencies: vpx/vpx_integer.h@25; vp9/common/vp9_common.h@26; vp9/common/vp9_enums.h@27; vp9/common/vp9_filter.h@28; vp9/encoder/vp9_temporal_filter.h@30; vpx_ports/x86.h@135
+
+`media/libvpx/config/win/ia32/vpx_config.asm` | `29a06247d989afc1d637dd7219da49bca95f6b0c` | 2587 bytes | data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/config/win/ia32/vpx_config.c` | `babdbee58f0c9c809b2c18419463bd9eb91e5e4f` | 794 bytes | source | UTF-8 | mode 100644
+Dependencies: vpx/vpx_codec.h@8
+
+`media/libvpx/config/win/ia32/vpx_config.h` | `5d1698b87d9bef0b000cfbb4ed1deaf31a5f1541` | 3255 bytes | source | UTF-8 | mode 100644
+
+`media/libvpx/config/win/ia32/vpx_dsp_rtcd.h` | `df02fdb19ab7f58d9930a3ee3160a6a121dc56c9` | 140772 bytes | source | UTF-8 | mode 100644
+Declarations: macroblock_plane@29; ScanOrder@30; setup_rtcd_internal@1071
+Dependencies: vpx/vpx_integer.h@25; vpx_dsp/vpx_dsp_common.h@26; vpx_dsp/vpx_filter.h@27; vpx_ports/x86.h@1070
+
+`media/libvpx/config/win/ia32/vpx_scale_rtcd.h` | `4244dd70e262644bcd989375beb445721d6fcadc` | 3285 bytes | source | UTF-8 | mode 100644
+Declarations: yv12_buffer_config@21; setup_rtcd_internal@70
+Dependencies: vpx_ports/x86.h@69
+
+`media/libvpx/config/win/x64/vp8_rtcd.h` | `c2dcf5e3ef1ec9eb1d35bffb8172091a919ae043` | 17179 bytes | source | UTF-8 | mode 100644
+Declarations: blockd@25; macroblockd@26; loop_filter_info@27; block@30; macroblock@31; variance_vtable@32; yv12_buffer_config@34; setup_rtcd_internal@227
+Dependencies: vpx_ports/x86.h@226
+
+`media/libvpx/config/win/x64/vp9_rtcd.h` | `d1830443706ec7f8340a601ac7f6b10da476f252` | 12997 bytes | source | UTF-8 | mode 100644
+Declarations: macroblockd@33; macroblock@36; macroblock_plane@37; vp9_sad_table@38; ScanOrder@39; search_site_config@40; mv@41; yv12_buffer_config@43; setup_rtcd_internal@136
+Dependencies: vpx/vpx_integer.h@25; vp9/common/vp9_common.h@26; vp9/common/vp9_enums.h@27; vp9/common/vp9_filter.h@28; vp9/encoder/vp9_temporal_filter.h@30; vpx_ports/x86.h@135
+
+`media/libvpx/config/win/x64/vpx_config.asm` | `d8ea648cc6ef31ea371c3dd16298f951c7a084fa` | 2587 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/config/win/x64/vpx_config.c` | `c2cd8b19d6780963130d39a0f1e316dc47f7fecb` | 798 bytes | source | UTF-8 | mode 100644
+Dependencies: vpx/vpx_codec.h@8
+
+`media/libvpx/config/win/x64/vpx_config.h` | `ef467a359643fae26b14c98c5cdee182e1d0c844` | 3257 bytes | source | UTF-8 | mode 100644
+
+`media/libvpx/config/win/x64/vpx_dsp_rtcd.h` | `bac8edb57fe30cfb1c33c08c3629737d1347e0cb` | 112572 bytes | source | UTF-8 | mode 100644
+Declarations: macroblock_plane@29; ScanOrder@30; setup_rtcd_internal@1073
+Dependencies: vpx/vpx_integer.h@25; vpx_dsp/vpx_dsp_common.h@26; vpx_dsp/vpx_filter.h@27; vpx_ports/x86.h@1072
+
+`media/libvpx/config/win/x64/vpx_scale_rtcd.h` | `4244dd70e262644bcd989375beb445721d6fcadc` | 3285 bytes | source | UTF-8 | mode 100644
+Declarations: yv12_buffer_config@21; setup_rtcd_internal@70
+Dependencies: vpx_ports/x86.h@69
+
+`media/libvpx/generate_sources_mozbuild.sh` | `2ced47ef554453a9db67be7d3ef44ab0c6ecd5a6` | 12624 bytes | data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/input_frame_validation.patch` | `37f755e0223bbe7072c18bc2064f4ac13335218a` | 1755 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/input_frame_validation_vp9.patch` | `a7922f13d6f7f0027ec3fb922d4dc093d8bfae36` | 1580 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/.clang-format` | `a8bc4967c398b31a6e166d761c9e12870ca6941f` | 246 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/.mailmap` | `2fc6c7d39d13944400715b5c5f407110a68d93b6` | 2836 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/AUTHORS` | `f01bca461dab3151394bb3d2e1a668c9b0b8836d` | 9579 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/CHANGELOG` | `8abd912f2154f8728db7081195bc8d4e517eaca7` | 51539 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/CONTRIBUTING.md` | `7a73a30317af5526a0015c3084da40886590537f` | 1180 bytes | documentation | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/LICENSE` | `1ce44343c4a325e9e1189fd98bb44a9f2f096da9` | 1537 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/PATENTS` | `caedf607e95ae4c3dc84d057fddcc301cd0e4863` | 1436 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/README` | `7bcce8f0e8a3c26418b990e07dd5a3220c9e1a3d` | 8368 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/args.c` | `f7dfacf8a45eba07708d34078a176eaea5ca3edf` | 6433 bytes | source | UTF-8 | mode 100644
+Declarations: arg@27; arg@28; arg_match@38; arg@39; arg_show_usage@93; arg_parse_int@147; vpx_rational@163; vpx_rational@167; vpx_rational@170; arg_parse_enum@199; arg_parse_enum_or_int@219
+Dependencies: stdio.h@11; stdlib.h@12; string.h@13; limits.h@14; args.h@15; vpx/vpx_integer.h@17
+
+`media/libvpx/libvpx/args.h` | `6b3cc1c28b94559bc75d3016a5f5b69d31c7ea68` | 1635 bytes | source | UTF-8 | mode 100644
+Declarations: arg@19; arg_enum_list@27; struct@33; vpx_rational@52
+Dependencies: stdio.h@13
+
+`media/libvpx/libvpx/build/make/Android.mk` | `a06f6f47c7f3fdcf631f54dfe359745806551ffa` | 7874 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/build/make/Makefile` | `39dff825b6198e183dc3833fe9e9243062cf7d9b` | 15930 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/build/make/ads2armasm_ms.pl` | `dd4e0318c4645419d332e57fee76690d95043a0a` | 914 bytes | data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/libvpx/build/make/ads2gas.pl` | `c301b7f82993e5c2382bfc457f5784234e14f73d` | 4031 bytes | data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/libvpx/build/make/ads2gas_apple.pl` | `62491c1918f564a95ae4d35c79776eb12134a0d3` | 2859 bytes | data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/libvpx/build/make/armlink_adapter.sh` | `75c342e97ce3923eff0eec8647a90823b16c4d4f` | 1575 bytes | data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/libvpx/build/make/configure.sh` | `b37b9986fa3e2f04e14391135d884809d46093b7` | 49849 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/build/make/gen_asm_deps.sh` | `3bd4d125f1ed83d487db2f90ce610efb6755eaf5` | 1952 bytes | data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/libvpx/build/make/gen_msvs_def.sh` | `4defcc2e7c7e5f25339c5a23ac9a57b4c7aec36f` | 1920 bytes | data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/libvpx/build/make/gen_msvs_sln.sh` | `29eab755bf5d41103c613961230644f37ceab0bd` | 7073 bytes | data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/libvpx/build/make/gen_msvs_vcxproj.sh` | `59281d365c0a2f9000bece144b692301ee9ea60f` | 18409 bytes | data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/libvpx/build/make/ios-Info.plist` | `d157b11a0d503bce9286f0452e66c567560ee73c` | 1017 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/build/make/iosbuild.sh` | `d9594b98164b05a1057119746f194ccaee6a2356` | 10635 bytes | data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/libvpx/build/make/msvs_common.sh` | `3989fec0d5185137b1a03665b6a41dcfaeda9462` | 2875 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/build/make/rtcd.pl` | `7c876fc9d5860de276c7b36bd7ff5c5e3f31568e` | 11714 bytes | data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/libvpx/build/make/thumb.pm` | `ef4b316771087d3e908b87b2a943f8031a8e9770` | 2917 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/build/make/version.sh` | `8f717cc96f4b28c48564f91a52a05d8823e78046` | 2395 bytes | data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/libvpx/build_debug/non_greedy_mv_test_files/cur_frame_16x16.txt` | `c26463937a5a8ec7bcd332679ad88b3517104ef9` | 1234025 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/build_debug/non_greedy_mv_test_files/estimation_16x16.txt` | `7216dbcb1758b1e8eddc680a8388124e3ae6c008` | 7787 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/build_debug/non_greedy_mv_test_files/exhaust_16x16.txt` | `719c3f04b3c3a1b62de57e5de90a45978731dfe4` | 8022 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/build_debug/non_greedy_mv_test_files/ground_truth_16x16.txt` | `850b7eda8ff14455e8a88efeef10797a08e29e76` | 8106 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/build_debug/non_greedy_mv_test_files/localVar_16x16.txt` | `5e4ea8eed98424c110f3ecd5f7b82b1e97a9429b` | 20220 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/build_debug/non_greedy_mv_test_files/raw_1.png` | `ebf23e3c66a3f09479dcf1d0ba6dfa80f90f877f` | 661279 bytes | data-or-other | binary-NUL | mode 100644
+
+`media/libvpx/libvpx/build_debug/non_greedy_mv_test_files/raw_1_12_12.png` | `92941218c83e84926a939e55bc8cef249488b381` | 919025 bytes | data-or-other | binary-NUL | mode 100644
+
+`media/libvpx/libvpx/build_debug/non_greedy_mv_test_files/ref_frame_16x16.txt` | `b1a877a2fc869d8bd9406de976b199ec1454bd46` | 1252383 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/codereview.settings` | `ccba2eeed2467cde06dbdb8aea39f499bdc105cb` | 170 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/configure` | `9e9d80bba53bbe3dcd24978d492c349fa957292f` | 27433 bytes | data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/libvpx/docs.mk` | `889d18251ffcbb4929554db21e2e453e1e2ab4c3` | 1607 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/examples.mk` | `a58679942d3288bd7a1f849c6718f3bc230976e3` | 19942 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/examples/decode_to_md5.c` | `51959f37df764adbcd01c5180e1445a9e1dbb594` | 3999 bytes | source | UTF-8 | mode 100644
+Declarations: get_image_md5@44; print_md5@65; usage_exit@73; main@78
+Dependencies: stdio.h@32; stdlib.h@33; string.h@34; vpx/vp8dx.h@36; vpx/vpx_decoder.h@37; ../md5_utils.h@39; ../tools_common.h@40; ../video_reader.h@41; ./vpx_config.h@42
+
+`media/libvpx/libvpx/examples/decode_with_drops.c` | `03c79a456161858fa7affbe0203add51cda2f8ae` | 4394 bytes | source | UTF-8 | mode 100644
+Declarations: usage_exit@68; main@73
+Dependencies: stdio.h@55; stdlib.h@56; string.h@57; vpx/vp8dx.h@59; vpx/vpx_decoder.h@60; ../tools_common.h@62; ../video_reader.h@63; ./vpx_config.h@64
+
+`media/libvpx/libvpx/examples/postproc.c` | `b53c15ea15104dd7103de5e6b2c9567e98e9c401` | 4567 bytes | source | UTF-8 | mode 100644
+Declarations: usage_exit@55; main@60
+Dependencies: stdio.h@42; stdlib.h@43; string.h@44; vpx/vp8dx.h@46; vpx/vpx_decoder.h@47; ../tools_common.h@49; ../video_reader.h@50; ./vpx_config.h@51
+
+`media/libvpx/libvpx/examples/set_maps.c` | `05c7f54b3327ff5f2dd742034c4a3fa18baed0ab` | 7445 bytes | source | UTF-8 | mode 100644
+Declarations: usage_exit@57; main@153
+Dependencies: assert.h@44; stdio.h@45; stdlib.h@46; string.h@47; vpx/vp8cx.h@49; vpx/vpx_encoder.h@50; ../tools_common.h@52; ../video_writer.h@53
+
+`media/libvpx/libvpx/examples/simple_decoder.c` | `d089e826d5b8ea4cd243460d3a0adab4de4f2f56` | 5507 bytes | source | UTF-8 | mode 100644
+Declarations: usage_exit@90; main@95
+Dependencies: stdio.h@78; stdlib.h@79; string.h@80; vpx/vpx_decoder.h@82; ../tools_common.h@84; ../video_reader.h@85; ./vpx_config.h@86
+
+`media/libvpx/libvpx/examples/simple_encoder.c` | `4b09a817105c3b1b35bfafc2f0110bf480a267fd` | 9169 bytes | source | UTF-8 | mode 100644
+Declarations: usage_exit@109; main@146
+Dependencies: stdio.h@98; stdlib.h@99; string.h@100; vpx/vpx_encoder.h@102; ../tools_common.h@104; ../video_writer.h@105
+
+`media/libvpx/libvpx/examples/svc_context.h` | `7ca987dc831dc72fdb25b8d99d16b6e74309df1f` | 3337 bytes | source | UTF-8 | mode 100644
+Declarations: enum@26; struct@32; struct@50; vpx_image@96
+Dependencies: vpx/vp8cx.h@19; vpx/vpx_encoder.h@20
+
+`media/libvpx/libvpx/examples/svc_encodeframe.c` | `54843f0f0f2bd26be4a7fb0db473ee0e990d3736` | 22567 bytes | source | UTF-8 | mode 100644
+Declarations: enum@61; struct@75; FrameData@79; parse_options@189; vpx_svc_set_options@277; vpx_image@540; calc_psnr@557; vpx_svc_dump_statistics@563; vpx_svc_release@616
+Dependencies: assert.h@16; math.h@17; limits.h@18; stdarg.h@19; stdio.h@20; stdlib.h@21; string.h@22; ../tools_common.h@24; ./vpx_config.h@25; ./svc_context.h@26; vpx/vp8cx.h@27; vpx/vpx_encoder.h@28; vpx_mem/vpx_mem.h@29; vp9/common/vp9_onyxc_int.h@30
+
+`media/libvpx/libvpx/examples/twopass_encoder.c` | `d7bdccc2564a1e21a9f3d683e21cdcb39da27781` | 8386 bytes | source | UTF-8 | mode 100644
+Declarations: usage_exit@61; main@191
+Dependencies: stdio.h@50; stdlib.h@51; string.h@52; vpx/vpx_encoder.h@54; ../tools_common.h@56; ../video_writer.h@57
+
+`media/libvpx/libvpx/examples/vp8_multi_resolution_encoder.c` | `60161da90a70de4a650ff90734d3441b20be352a` | 23104 bytes | source | UTF-8 | mode 100644
+Declarations: usage_exit@39; mulres_read_frame@63; mulres_read_frame_by_row@77; main@285; vpx_usec_timer@539
+Dependencies: ./vpx_config.h@23; stdio.h@25; stdlib.h@26; stdarg.h@27; math.h@28; assert.h@29; sys/time.h@30; vpx_ports/vpx_timer.h@31; vpx/vpx_encoder.h@32; vpx/vp8cx.h@33; vpx_ports/mem_ops.h@34; ../tools_common.h@35; third_party/libyuv/include/libyuv/basic_types.h@57; third_party/libyuv/include/libyuv/scale.h@58; third_party/libyuv/include/libyuv/cpu_id.h@59
+
+`media/libvpx/libvpx/examples/vp8cx_set_ref.c` | `104e8ebbc79b5d41b43ec2b9c56174534f24f4a8` | 5961 bytes | source | UTF-8 | mode 100644
+Declarations: usage_exit@61; main@95
+Dependencies: stdio.h@48; stdlib.h@49; string.h@50; vpx/vp8cx.h@52; vpx/vpx_encoder.h@53; vp8/common/common.h@54; ../tools_common.h@56; ../video_writer.h@57
+
+`media/libvpx/libvpx/examples/vp9_lossless_encoder.c` | `01504d40c9ff32f351b360bf41c30893480ede0c` | 4248 bytes | source | UTF-8 | mode 100644
+Declarations: usage_exit@24; main@59
+Dependencies: stdio.h@11; stdlib.h@12; string.h@13; vpx/vpx_encoder.h@15; vpx/vp8cx.h@16; vp9/common/vp9_common.h@17; ../tools_common.h@19; ../video_writer.h@20
+
+`media/libvpx/libvpx/examples/vp9_spatial_svc_encoder.c` | `16e6aba6cdc11f42545f3271fa2de2279133b3f7` | 48668 bytes | source | UTF-8 | mode 100644
+Declarations: struct@169; VpxInputContext@173; usage_exit@181; arg@192; RateControlStats@396; vp9_ref_frame@724; RateControlStats@780; main@878; RateControlStats@898; vpx_usec_timer@904
+Dependencies: assert.h@17; limits.h@18; math.h@19; stdarg.h@20; stdio.h@21; stdlib.h@22; string.h@23; time.h@24; ../args.h@26; ../tools_common.h@27; ../video_writer.h@28; ../vpx_ports/bitops.h@30; ../vpx_ports/vpx_timer.h@31; ./svc_context.h@32; vpx/vp8cx.h@33; vpx/vpx_decoder.h@34; vpx/vpx_encoder.h@35; ../vpxstats.h@36; ./y4minput.h@37
+
+`media/libvpx/libvpx/examples/vp9cx_set_ref.c` | `6e12d668b0a4aa8fb177f7302d44aed100828c11` | 9906 bytes | source | UTF-8 | mode 100644
+Declarations: usage_exit@63; vp9_ref_frame@74; main@156
+Dependencies: stdio.h@49; stdlib.h@50; string.h@51; vpx/vp8cx.h@53; vpx/vpx_decoder.h@54; vpx/vpx_encoder.h@55; vp9/common/vp9_common.h@56; ./tools_common.h@58; ./video_writer.h@59
+
+`media/libvpx/libvpx/examples/vpx_dec_fuzzer.cc` | `86d2d3539276fd73c00be245f2b02d1afaf5136b` | 5014 bytes | source | UTF-8 | mode 100644
+Dependencies: stddef.h@65; stdint.h@66; stdio.h@67; stdlib.h@68; algorithm@69; memory@70; third_party/nalloc/nalloc.h@72; vpx/vp8dx.h@73; vpx/vpx_decoder.h@74; vpx_ports/mem_ops.h@75
+
+`media/libvpx/libvpx/examples/vpx_enc_fuzzer.cc` | `d71994b60e3ca7f563a474d84e3711a6edbaa619` | 7363 bytes | source | UTF-8 | mode 100644
+Declarations: vpx_img_plane_width@85; vpx_img_plane_height@92
+Dependencies: assert.h@65; stddef.h@66; stdint.h@67; stdio.h@68; stdlib.h@69; string.h@70; vpx/vp8cx.h@72; vpx/vpx_encoder.h@73; vpx_ports/mem_ops.h@74; third_party/nalloc/nalloc.h@75
+
+`media/libvpx/libvpx/examples/vpx_temporal_svc_encoder.c` | `3848b245a2d84daa9e0bb326ea83620473bb8052` | 41400 bytes | source | UTF-8 | mode 100644
+Declarations: usage_exit@35; denoiserStateVp8@38; denoiserStateVp9@47; RateControlMetrics@57; main@629; VpxInputContext@654; RateControlMetrics@655; vpx_usec_timer@946
+Dependencies: assert.h@15; math.h@16; stdio.h@17; stdlib.h@18; string.h@19; ./vpx_config.h@21; ./y4minput.h@22; ../vpx_ports/vpx_timer.h@23; vpx/vp8cx.h@24; vpx/vpx_encoder.h@25; vpx_ports/bitops.h@26; ../tools_common.h@28; ../video_writer.h@29
+
+`media/libvpx/libvpx/ivfdec.c` | `3e179bc6ed2bd168357a883d441b505e28145e01` | 3190 bytes | source | UTF-8 | mode 100644
+Declarations: fix_framerate@21; file_is_ivf@40
+Dependencies: stdio.h@11; stdlib.h@12; string.h@13; vpx_ports/mem_ops.h@15; ./ivfdec.h@17
+
+`media/libvpx/libvpx/ivfdec.h` | `847cd79f3fef64dfa0072152c9f54aaa0fc06889` | 758 bytes | source | UTF-8 | mode 100644
+Dependencies: ./tools_common.h@13
+
+`media/libvpx/libvpx/ivfenc.c` | `2e8e04283ab773a25efa0b1830c404a54e08f788` | 2127 bytes | source | UTF-8 | mode 100644
+Declarations: ivf_write_frame_header@45; ivf_write_frame_size@54
+Dependencies: ./ivfenc.h@11; vpx/vpx_encoder.h@13; vpx_ports/mem_ops.h@14
+
+`media/libvpx/libvpx/ivfenc.h` | `27b6910805722844e58191cf2e2603bb23363cb5` | 1242 bytes | source | UTF-8 | mode 100644
+Declarations: vpx_codec_enc_cfg@17; vpx_codec_cx_pkt@18
+Dependencies: ./tools_common.h@13; vpx/vpx_encoder.h@15
+
+`media/libvpx/libvpx/keywords.dox` | `56f53689007ea4f83b7719d8f10466425d7d8b92` | 2132 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/libs.doxy_template` | `6d05162d0007fa52fb55c2da4579abd0dfbf5e02` | 52132 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/libs.mk` | `c33b8bbf44e4cf9150edfc079de581241eca0ed0` | 29067 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/mainpage.dox` | `4b0dff08710dbfc0f06f13c1014313ebcfc859dc` | 1549 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/md5_utils.c` | `abd8d43c3953011626b854a75f8fd8db8e68dadb` | 7694 bytes | source | UTF-8 | mode 100644
+Declarations: byteSwap@28; MD5Init@49; MD5Update@63; MD5Final@104
+Dependencies: string.h@23; md5_utils.h@25; vpx_ports/compiler_attributes.h@26
+
+`media/libvpx/libvpx/md5_utils.h` | `e0d5a2d1fbd4f6f40b5ebcbad9f46ae1427c5076` | 1468 bytes | source | UTF-8 | mode 100644
+Declarations: struct@33; MD5Context@34
+
+`media/libvpx/libvpx/rate_hist.c` | `6a056cac10e971c1491d7eeb9b8fe59d8a4a73ac` | 7896 bytes | source | UTF-8 | mode 100644
+Declarations: hist_bucket@23; rate_hist@29; hist_bucket@34; rate_hist@38; rate_hist@41; destroy_rate_histogram@72; show_q_histogram@258; hist_bucket@259
+Dependencies: assert.h@11; limits.h@12; math.h@13; stdint.h@14; stdio.h@15; stdlib.h@16; ./rate_hist.h@18
+
+`media/libvpx/libvpx/rate_hist.h` | `d6a4c685195d6265a18ef8c5bab4d8beaa2bf81b` | 1173 bytes | source | UTF-8 | mode 100644
+Declarations: rate_hist@20; rate_hist@22
+Dependencies: vpx/vpx_encoder.h@14
+
+`media/libvpx/libvpx/solution.mk` | `145adc0ddad33217570108eb71df69203ea11abc` | 1150 bytes | data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/test/acm_random.h` | `7500cb8266c1cc6c76a3924660894fa9b1801a8a` | 2713 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: libvpx_test@22; ACMRandom@24; ACMRandom@26; ACMRandom@28; Reset@30; Rand16@31; Rand20Signed@37; Rand16Signed@43; Rand12@48; Rand10@55; Rand8@62; Rand8Extremes@69; RandRange@76; PseudoUniform@83; operator@85; DeterministicSeed@87
+Dependencies: assert.h@14; limits@16; gtest/gtest.h@18; vpx/vpx_integer.h@20
+
+`media/libvpx/libvpx/test/active_map_refresh_test.cc` | `a0b46059a7464a4b493d9b4729e41c15c82af6a2` | 4256 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ActiveMapRefreshTest@60; ActiveMapRefreshTest@64; TEST_P@106
+Dependencies: algorithm@10; gtest/gtest.h@11; test/codec_factory.h@12; test/encode_test_driver.h@13; test/util.h@14; test/y4m_video_source.h@15
+
+`media/libvpx/libvpx/test/active_map_test.cc` | `e8976b416a991ca77b7eb5bb64b4b2f33d0999f9` | 3132 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ActiveMapTest@20; ActiveMapTest@28; TEST_P@75
+Dependencies: climits@10; vector@11; gtest/gtest.h@12; test/codec_factory.h@13; test/encode_test_driver.h@14; test/i420_video_source.h@15; test/util.h@16
+
+`media/libvpx/libvpx/test/add_noise_test.cc` | `f6f30bb5946e57e6f64569e09c8e40767a1cd35f` | 5157 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: AddNoiseTest@35; stddev6@42; TEST_P@50; TEST_P@102
+Dependencies: math.h@10; memory@12; tuple@13; gtest/gtest.h@15; test/clear_system_state.h@16; test/register_state_check.h@17; test/util.h@18; ./vpx_dsp_rtcd.h@19; vpx/vpx_integer.h@20; vpx_config.h@21; vpx_dsp/postproc.h@22; vpx_mem/vpx_mem.h@23
+
+`media/libvpx/libvpx/test/alt_ref_aq_segment_test.cc` | `ade82d7ed2111e1507e9a1a25c7d2f3b9b247009` | 4856 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: AltRefAqSegmentTest@18; AltRefAqSegmentTest@22; TEST_P@51; TEST_P@72; TEST_P@93; TEST_P@114; TEST_P@135
+Dependencies: gtest/gtest.h@10; test/codec_factory.h@11; test/encode_test_driver.h@12; test/i420_video_source.h@13; test/util.h@14
+
+`media/libvpx/libvpx/test/altref_test.cc` | `e98edcba4aea693b88e0229b4cf786c14cfc8227` | 5072 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: AltRefTest@24; AltRefTest@27; altref_count@49; TEST_P@55; AltRefForcedKeyTestLarge@72; cpu_used_@78; TEST_P@118; TEST_P@132
+Dependencies: gtest/gtest.h@10; test/codec_factory.h@11; test/encode_test_driver.h@12; test/i420_video_source.h@13; test/util.h@14; vpx_config.h@15
+
+`media/libvpx/libvpx/test/android/Android.mk` | `4114b642bdaf75786a2993401aca9e3cf8ccfdca` | 2406 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/test/android/README` | `0cd30779d41ef982380fa59367701b728e50c0d6` | 1249 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/test/android/get_files.py` | `98ce7b1947a26945aed3ca3022d81556b573b4ca` | 3264 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: get_file_sha@31; download_and_check_sha@45
+
+`media/libvpx/libvpx/test/android/scrape_gtest_log.py` | `487845c270c3e6c66444486bb8586bcef39a3b54` | 1563 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: main@23
+
+`media/libvpx/libvpx/test/aq_segment_test.cc` | `f7e9a118fc9f5c66a93d346580850a464b5d8dc5` | 3368 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: AqSegmentTest@18; AqSegmentTest@22; TEST_P@47; TEST_P@67; TEST_P@87
+Dependencies: gtest/gtest.h@10; test/codec_factory.h@11; test/encode_test_driver.h@12; test/i420_video_source.h@13; test/util.h@14
+
+`media/libvpx/libvpx/test/avg_test.cc` | `bbc8ba0a0315c10f716208a517ec707f448f7351` | 24219 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: AverageTestBase@35; source_stride_@39; FillConstant@78; FillRandom@84; AverageTest@101; AverageTest@104; CheckAverages@107; AverageTestHBD@128; AverageTestHBD@131; CheckAverages@134; IntProRowTest@161; hbuf_c_@166; RunComparison@192; IntProColTest@212; IntProColTest@215; RunComparison@221; SatdTest@239; FillConstant@256; Check@262; SatdLowbdTest@278; BlockErrorTestFP@292; FillConstant@314; FillRandom@319; Check@327; TEST_P@347; TEST_P@352; TEST_P@357; TEST_P@366; TEST_P@371; TEST_P@376; TEST_P@388; TEST_P@393; TEST_P@398; TEST_P@403; TEST_P@408; TEST_P@413; TEST_P@419; TEST_P@426; TEST_P@433; TEST_P@448; SatdHighbdTest@465; TEST_P@474; TEST_P@481; TEST_P@488; TEST_P@503; TEST_P@520; TEST_P@527; TEST_P@534; TEST_P@549
+Dependencies: limits.h@11; stdio.h@12; string.h@13; tuple@14; gtest/gtest.h@16; ./vp9_rtcd.h@18; ./vpx_config.h@19; ./vpx_dsp_rtcd.h@20; test/acm_random.h@22; test/clear_system_state.h@23; test/register_state_check.h@24; test/util.h@25; vpx/vpx_codec.h@26; vpx_mem/vpx_mem.h@27; vpx_ports/vpx_timer.h@28
+
+`media/libvpx/libvpx/test/bench.cc` | `0783f2a734bf8a8ca4e85d0195495c806b382b2f` | 1233 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: AbstractBench::RunNTimes@18; AbstractBench::PrintMedian@30
+Dependencies: stdio.h@11; algorithm@12; cstdlib@13; test/bench.h@15; vpx_ports/vpx_timer.h@16
+
+`media/libvpx/libvpx/test/bench.h` | `203e4d247ef69b187f18822ed40edecfb20851eb` | 874 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: AbstractBench@17
+
+`media/libvpx/libvpx/test/blockiness_test.cc` | `6e8301bb52ef0155b7bb04041ad18c34a9d972b3` | 6632 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: BlockinessTestBase@34; BlockinessTestBase@36; SetUpTestSuite@38; TearDownTestSuite@45; FillConstant@74; FillRandom@78; FillRandom@86; FillRandomBlocky@90; FillCheckerboard@98; Blur@110; BlockinessVP9Test@143; BlockinessVP9Test@147; GetBlockiness@150; TEST_P@161; TEST_P@171; TEST_P@181; TEST_P@194
+Dependencies: limits.h@11; stdio.h@12; string.h@13; tuple@14; gtest/gtest.h@16; ./vpx_config.h@18; ./vp9_rtcd.h@20; test/acm_random.h@23; test/clear_system_state.h@24; test/register_state_check.h@25; test/util.h@26; vpx_mem/vpx_mem.h@28; vp9/encoder/vp9_blockiness.h@29
+
+`media/libvpx/libvpx/test/borders_test.cc` | `57ee179aafc5c81b0aa1fa57a09c1fae37b625b5` | 3047 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: BordersTest@21; BordersTest@25; TEST_P@50; TEST_P@66
+Dependencies: climits@10; vector@11; gtest/gtest.h@12; test/codec_factory.h@13; test/encode_test_driver.h@14; test/i420_video_source.h@15; test/util.h@16; vpx_config.h@17
+
+`media/libvpx/libvpx/test/buffer.h` | `f2846323b35c47d882141f4b1e43700df6c00391` | 11210 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: libvpx_test@24; Buffer@27; stride_@34; raw_buffer_@42; raw_size_@48; stride_@54; stride@66; Init@105
+Dependencies: stdio.h@14; limits@16; gtest/gtest.h@18; test/acm_random.h@20; vpx/vpx_integer.h@21; vpx_mem/vpx_mem.h@22
+
+`media/libvpx/libvpx/test/byte_alignment_test.cc` | `ba6fffc524b7a77da526a5568e0d9c41f1bc9605` | 5893 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ByteAlignmentTestParam@32; ByteAlignmentTest@55; video_@59; SetByteAlignment@81; DecodeOneFrame@85; DecodeRemainingFrames@93; CheckByteAlignment@106; CheckDecodedFrames@112; OpenMd5File@130; CheckMd5@136; TEST_F@159; TEST_P@172
+Dependencies: string@11; ./vpx_config.h@13; test/codec_factory.h@14; test/decode_test_driver.h@15; test/md5_helper.h@16; test/util.h@17; test/webm_video_source.h@19
+
+`media/libvpx/libvpx/test/clear_system_state.h` | `ba3c0b386a1b9cd9dead3f6d063ee4ffd688b6bb` | 804 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: libvpx_test@16; ClearSystemState@20
+Dependencies: ./vpx_config.h@13; vpx_ports/system_state.h@14
+
+`media/libvpx/libvpx/test/codec_factory.h` | `179ccdf011e27802690f64bca5b98180cd454ead` | 7952 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: libvpx_test@27; CodecFactory@31; CodecFactory@33; CodecTestWithParam@56; CodecTestWith2Params@61; CodecTestWith3Params@66; CodecTestWith4Params@71; VP8Decoder@79; VP8Decoder@81; Decoder@84; VP8Encoder@96; Encoder@100; VP8CodecFactory@112; VP8CodecFactory@114; VP9Decoder@176; VP9Decoder@178; Decoder@181; VP9Encoder@193; Encoder@197; VP9CodecFactory@209; VP9CodecFactory@211
+Dependencies: tuple@13; ./vpx_config.h@15; vpx/vpx_decoder.h@16; vpx/vpx_encoder.h@17; vpx/vp8cx.h@19; vpx/vp8dx.h@22; test/decode_test_driver.h@25; test/encode_test_driver.h@26
+
+`media/libvpx/libvpx/test/comp_avg_pred_test.cc` | `de9842a88f4036a1a775a0ab28821b08a924703c` | 9553 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: avg_with_rounding@27; AvgPredTest@51; TEST_P@207; TEST_P@209; TEST_P@211; TEST_P@253; TEST_P@255; TEST_P@257
+Dependencies: gtest/gtest.h@11; ./vpx_dsp_rtcd.h@13; test/acm_random.h@15; test/buffer.h@16; test/register_state_check.h@17; vpx_config.h@18; vpx_ports/vpx_timer.h@19
+
+`media/libvpx/libvpx/test/config_test.cc` | `d3aca4cfb557408fba652e5c11fae6c238493cc5` | 1723 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ConfigTest@18; frame_count_max_@24; TEST_P@51
+Dependencies: gtest/gtest.h@10; test/codec_factory.h@11; test/encode_test_driver.h@12; test/util.h@13; test/video_source.h@14
+
+`media/libvpx/libvpx/test/consistency_test.cc` | `3e73bec492cfcf7f8d1c2f1a74de25e35119988a` | 7105 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ConsistencyTestBase@38; ConsistencyTestBase@40; SetUpTestSuite@42; ClearSsim@54; TearDownTestSuite@55; FillRandom@81; FillRandom@89; Copy@93; Blur@97; ConsistencyVP9Test@132; ConsistencyVP9Test@136; CheckConsistency@139; TEST_P@153
+Dependencies: limits.h@11; stdio.h@12; string.h@13; tuple@14; gtest/gtest.h@16; ./vpx_config.h@18; ./vp9_rtcd.h@20; test/acm_random.h@23; test/clear_system_state.h@24; test/register_state_check.h@25; test/util.h@26; vpx_dsp/ssim.h@27; vpx_mem/vpx_mem.h@28
+
+`media/libvpx/libvpx/test/convolve_test.cc` | `90bdcbc108603018494180208580afac84059374` | 86166 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ConvolveFunctions@54; use_highbd_@61; ConvolveFunctions12Tap@91; use_highbd_@94; clip_pixel@127; ConvolveTest@374; SetUpTestSuite@376; TearDownTestSuite@398; Width@423; Height@424; BorderLeft@425; BorderTop@429; IsIndexInBorder@431; SetConstantInput@478; CopyOutputToRef@485; CheckGuardBlocks@493; lookup@540; assign_val@552; ConvolveTest12Tap@585; SetUpTestSuite@587; TearDownTestSuite@605; Width@626; Height@627; BorderLeft@628; BorderTop@632; IsIndexInBorder@634; SetConstantInput@681; CheckGuardBlocks@688; lookup@722; assign_val@734; TEST_P@762; TEST_P@844; TEST_P@947; TEST_P@970; TEST_P@993; TEST_P@1017; TEST_P@1019; TEST_P@1039; TEST_P@1059; TEST_P@1082; TEST_P@1105; TEST_P@1128; TEST_P@1151; TEST_P@1174; TEST_P@1197; TEST_P@1219; TEST_P@1242; TEST_P@1260; TEST_P@1282; TEST_P@1300; TEST_P@1318; TEST@1339; TEST_P@1364; TEST_P@1444; TEST_P@1547
+Dependencies: string.h@11; tuple@12; gtest/gtest.h@14; ./vp9_rtcd.h@16; ./vpx_config.h@17; ./vpx_dsp_rtcd.h@18; test/acm_random.h@19; test/clear_system_state.h@20; test/register_state_check.h@21; test/util.h@22; vp9/common/vp9_common.h@23; vp9/common/vp9_filter.h@24; vpx_dsp/vpx_dsp_common.h@25; vpx_dsp/vpx_filter.h@26; vpx_mem/vpx_mem.h@27; vpx_ports/mem.h@28; vpx_ports/vpx_timer.h@29
+
+`media/libvpx/libvpx/test/cpu_speed_test.cc` | `6e0a0466337c93b3b73457c441fa483cd14c5acb` | 5175 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: CpuSpeedTest@21; tune_content_@28; TEST_P@69; TEST_P@89; TEST_P@104; TEST_P@119; TEST_P@136
+Dependencies: gtest/gtest.h@10; test/codec_factory.h@11; test/encode_test_driver.h@12; test/i420_video_source.h@13; test/util.h@14; test/y4m_video_source.h@15
+
+`media/libvpx/libvpx/test/cq_test.cc` | `52590d0666682777f61006b0068ca2a204dda04e` | 4339 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: CQTest@27; SetUpTestSuite@33; TearDownTestSuite@35; CQTest@50; GetLinearPSNROverBitrate@86; cq_level@91; file_size@92; n_frames@93; TEST_P@106
+Dependencies: cmath@10; map@11; gtest/gtest.h@12; test/codec_factory.h@13; test/encode_test_driver.h@14; test/i420_video_source.h@15; test/util.h@16; vpx_config.h@17
+
+`media/libvpx/libvpx/test/cx_set_ref.sh` | `0a3d50ce1fb2bde4e8e2cb6feeeea9da55720000` | 1867 bytes | test-path,data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/libvpx/test/dct16x16_test.cc` | `a3382ab64e64bee4659c63b31f9cdc51be535047` | 35944 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: butterfly_16x16_dct_1d@53; reference_16x16_dct_2d@209; fht16x16_ref@248; idct16x16_10@258; idct16x16_12@262; iht16x16_10@276; iht16x16_12@280; idct16x16_10_add_10_c@285; idct16x16_10_add_12_c@289; idct16x16_256_add_10_sse2@293; idct16x16_256_add_12_sse2@297; idct16x16_10_add_10_sse2@301; idct16x16_10_add_12_sse2@305; Trans16x16TestBase@311; RunAccuracyCheck@320; RunCoeffCheck@381; RunMemCheck@403; RunQuantCheck@434; RunInvAccuracyCheck@495; RunSpeedTest@552; CompareInvReference@590; RunInvTrans16x16SpeedTest@646; Trans16x16DCT@728; TEST_P@766; TEST_P@768; TEST_P@770; TEST_P@772; TEST_P@778; TEST_P@780; Trans16x16HT@782; TEST_P@820; TEST_P@822; TEST_P@824; TEST_P@826; InvTrans16x16DCT@832; TEST_P@860; TEST_P@864
+Dependencies: math.h@11; stdlib.h@12; string.h@13; tuple@14; gtest/gtest.h@16; ./vp9_rtcd.h@18; ./vpx_dsp_rtcd.h@19; test/acm_random.h@20; test/clear_system_state.h@21; test/register_state_check.h@22; test/util.h@23; vp9/common/vp9_entropy.h@24; vp9/common/vp9_scan.h@25; vpx/vpx_codec.h@26; vpx/vpx_integer.h@27; vpx_config.h@28; vpx_ports/mem.h@29; vpx_ports/vpx_timer.h@30
+
+`media/libvpx/libvpx/test/dct32x32_test.cc` | `77447481cb722387d038d0c49b97e1d95aefa7d8` | 21378 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: reference_32x32_dct_1d@39; idct32x32_10@79; idct32x32_12@83; Trans32x32Test@88; Trans32x32Test::Run@115; TEST_P@117; TEST_P@182; TEST_P@211; TEST_P@253; TEST_P@266; InvTrans32x32Test@321; RunRefTxfm@339; RunInvTxfm@342; RunInvTrans32x32SpeedTest@355; CompareInvReference32x32@428; TEST_P@486; TEST_P@487
+Dependencies: math.h@11; stdlib.h@12; string.h@13; tuple@14; gtest/gtest.h@16; ./vp9_rtcd.h@18; ./vpx_config.h@19; ./vpx_dsp_rtcd.h@20; test/acm_random.h@21; test/bench.h@22; test/clear_system_state.h@23; test/register_state_check.h@24; test/util.h@25; vp9/common/vp9_entropy.h@26; vp9/common/vp9_scan.h@27; vpx/vpx_codec.h@28; vpx/vpx_integer.h@29; vpx_ports/mem.h@30; vpx_ports/vpx_timer.h@31
+
+`media/libvpx/libvpx/test/dct_partial_test.cc` | `dc4921ab949fd12f14d95c01bc2b2078673e3323` | 6743 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: partial_fdct_ref@41; PartialFdctTest@63; PartialFdctTest@65; RunTest@74; TEST_P@112
+Dependencies: math.h@11; stdlib.h@12; string.h@13; limits@14; tuple@15; gtest/gtest.h@17; ./vpx_dsp_rtcd.h@19; test/acm_random.h@20; test/buffer.h@21; test/clear_system_state.h@22; test/register_state_check.h@23; test/util.h@24; vpx_config.h@25; vpx/vpx_codec.h@26; vpx/vpx_integer.h@27; vpx_dsp/vpx_dsp_common.h@28
+
+`media/libvpx/libvpx/test/dct_test.cc` | `7c581674f1b00f40a449a64460b587e85b2f5b4a` | 28834 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: fdct_wrapper@49; FuncInfo@90; TransTestBase@136; InitMem@178; RunFwdTxfm@200; RunInvTxfm@204; RunAccuracyCheck@209; RunCoeffCheck@271; RunMemCheck@301; RunInvAccuracyCheck@354; TransDCT@429; TransDCT@431; TEST_P@434; TEST_P@444; TEST_P@446; TEST_P@448; TransHT@618; TransHT@620; TEST_P@623; TEST_P@627; TEST_P@629; TEST_P@631; TransWHT@742; TransWHT@744; TEST_P@747; TEST_P@749; TEST_P@751; TEST_P@753
+Dependencies: math.h@11; stdlib.h@12; string.h@13; tuple@14; gtest/gtest.h@16; ./vp9_rtcd.h@18; ./vpx_dsp_rtcd.h@19; test/acm_random.h@20; test/buffer.h@21; test/clear_system_state.h@22; test/register_state_check.h@23; test/util.h@24; vp9/common/vp9_entropy.h@25; vpx_config.h@26; vpx/vpx_codec.h@27; vpx/vpx_integer.h@28; vpx_ports/mem.h@29
+
+`media/libvpx/libvpx/test/decode_api_test.cc` | `b95d5191e18c9274ff4ba7b66351640436fb4449` | 20638 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: TEST@30; TEST@75; TEST@89; TEST@107; TEST@146; TEST@163; TEST@252; PatternVideoSource@255; TestVp9Controls@362; TEST@399; TEST@448; TEST@463; TEST@474; TEST@518
+Dependencies: array@11; vector@12; gtest/gtest.h@14; ./vpx_config.h@16; test/ivf_video_source.h@17; test/video_source.h@18; vpx/vp8cx.h@20; vpx/vp8dx.h@22; vpx/vpx_decoder.h@23; vpx/vpx_encoder.h@24
+
+`media/libvpx/libvpx/test/decode_corrupted.cc` | `55919d0f49d71259d1724f0c33e6031b3cb5d583` | 3168 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: DecodeCorruptedFrameTest@24; DecodeCorruptedFrameTest@29; TEST_P@80
+Dependencies: tuple@11; gtest/gtest.h@13; test/codec_factory.h@15; test/encode_test_driver.h@16; test/util.h@17; test/i420_video_source.h@18; vpx_config.h@19; vpx_mem/vpx_mem.h@20
+
+`media/libvpx/libvpx/test/decode_perf_test.cc` | `69c30a9e800cc97de3b0089e2e7f4abf3938f013` | 8941 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: DecodePerfTest@74; TEST_P@76; VP9NewEncodeDecodePerfTest@113; outfile_@119; set_speed@182; EncodePerfTestVideo@191; frames@195; TEST_P@207
+Dependencies: string@11; tuple@12; test/codec_factory.h@14; test/decode_test_driver.h@15; test/encode_test_driver.h@16; test/i420_video_source.h@17; test/ivf_video_source.h@18; test/md5_helper.h@19; test/util.h@20; test/webm_video_source.h@21; vpx/vpx_codec.h@22; vpx_ports/vpx_timer.h@23; ./ivfenc.h@24
+
+`media/libvpx/libvpx/test/decode_svc_test.cc` | `7098e7b27048e1cad59ac77cb839ccf2784bdfc4` | 4604 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: DecodeSvcTest@24; DecodeSvcTest@27; TEST_P@54; TEST_P@71; TEST_P@88; TEST_P@106
+Dependencies: memory@11; string@12; test/codec_factory.h@14; test/decode_test_driver.h@15; test/ivf_video_source.h@16; test/test_vectors.h@17; test/util.h@18
+
+`media/libvpx/libvpx/test/decode_test_driver.cc` | `af87bc25fbdedb823f48438bbf999085081d93d9` | 4138 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: libvpx_test@18; Decoder::DecodeFrame@28; Decoder::IsVP8@42; DecoderTest::RunLoop@108; DecoderTest::set_cfg@113; DecoderTest::set_flags@117
+Dependencies: gtest/gtest.h@11; test/codec_factory.h@13; test/decode_test_driver.h@14; test/register_state_check.h@15; test/video_source.h@16
+
+`media/libvpx/libvpx/test/decode_test_driver.h` | `81f5001ebc5da4802e51d568217ce377711e54e3` | 5211 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: libvpx_test@18; CodecFactory@20; CompressedVideoSource@21; DxDataIterator@24; decoder_@27; Decoder@39; cfg_@42; cfg_@47; GetDxData@61; Control@63; Control@65; Control@71; InitOnce@102; DecoderTest@118; codec_@151
+Dependencies: cstring@13; gtest/gtest.h@14; ./vpx_config.h@15; vpx/vpx_decoder.h@16
+
+`media/libvpx/libvpx/test/decode_to_md5.sh` | `15eee39facb5ed91667749b654cbcdc348b7c8fe` | 2496 bytes | test-path,data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/libvpx/test/decode_with_drops.sh` | `2c826045b332f6c4c53578a20c624d36a2588d1d` | 2892 bytes | test-path,data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/libvpx/test/encode_api_test.cc` | `73baf0c0e3a42772fb83b56cef0278be015c1e4c` | 128964 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: IsVP9@52; EncodeWithConfig@127; TEST@140; TEST@180; UVStride@190; IsVP9@212; TEST@270; TEST@288; TEST@306; TEST@337; TEST@389; TEST@416; TEST@451; TEST@537; VP8Encoder@576; VP8Encoder@578; VP8Encoder::~VP8Encoder@594; VP8Encoder::Encode@633; TEST@656; TEST@668; Encoder@673; TEST@692; TEST@742; TEST@779; TEST@817; EncodeOssFuzz69906@863; TEST@908; TEST@920; TEST@967; TEST@994; TEST@1018; TEST@1040; TEST@1087; TEST@1118; TEST@1197; TEST@1256; TEST@1364; Encoder@1372; TEST@1396; Encoder@1404; TEST@1440; TEST@1458; TEST@1482; TEST@1512; TEST@1565; TEST@1625; Encoder@1635; VP9Encoder@1656; fmt_@1660; speed_@1666; VP9Encoder::~VP9Encoder@1687; VP9Encoder::Encode@1740; TEST@1758; TEST@1773; TEST@1798; TEST@1842; TEST@1862; TEST@1876; TEST@1907; TEST@1935; TEST@1954; TEST@1970; TEST@1992; TEST@2038; TEST@2054; TEST@2085; TEST@2127; TEST@2176; TEST@2182; TEST@2197; TEST@2218; TEST@2240; TEST@2252; TEST@2261; TEST@2279; TEST@2324; TEST@2397; TEST@2465; TEST@2480; TEST@2493; TEST@2506; TEST@2522; TEST@2585; Encoder@2629; TEST@2700; TEST@2736; TEST@2772; TEST@2852; TEST@2875; TEST@2897; TestEncoderImageMismatch@2931; TEST@2968; TEST@2972; TEST@2977; TEST@3056; TEST@3071; TEST@3145; TEST@3221; TEST@3229; TEST@3236; TEST@3243; VerifyVp9UnsafeCastEosCount@3250; TEST@3269; TEST@3271; TEST@3273; TEST@3275; TEST@3352; TEST@3396; TEST@3447; TEST@3493; TEST@3534; TEST@3559; TEST@3613; TEST@3666
+Dependencies: array@11; cmath@12; cassert@13; climits@14; cstdint@15; cstdio@16; cstdlib@17; cstring@18; initializer_list@19; memory@20; vector@21; gtest/gtest.h@23; test/acm_random.h@24; test/video_source.h@25; test/y4m_video_source.h@26; test/yuv_video_source.h@27; ./vpx_config.h@29; vpx/vp8cx.h@30; vpx/vpx_codec.h@31; vpx/vpx_encoder.h@32; vpx/vpx_image.h@33; vpx_mem/vpx_mem.h@34; vp9/encoder/vp9_encoder.h@37; vp9/encoder/vp9_firstpass_stats.h@38
+
+`media/libvpx/libvpx/test/encode_perf_test.cc` | `75d6838f602070a6c83e0e8fd7b36d34ef2aa408` | 6580 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: EncodePerfTestVideo@26; frames@30; VP9EncodePerfTest@56; encoding_mode_@62; min_psnr@110; set_speed@112; set_threads@114; TEST_P@124
+Dependencies: cstdio@10; string@11; gtest/gtest.h@12; test/codec_factory.h@13; test/encode_test_driver.h@14; test/i420_video_source.h@15; test/util.h@16; test/y4m_video_source.h@17; vpx/vpx_codec.h@18; vpx_ports/vpx_timer.h@19
+
+`media/libvpx/libvpx/test/encode_test_driver.cc` | `770f410d80cc21c21b4ecb51c79055fb5f5ea064` | 8589 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: libvpx_test@23; Encoder::InitEncoder@24; Encoder::Flush@93; EncoderTest::InitializeConfig@102; EncoderTest::SetMode@108; compare_img@129; EncoderTest::RunLoop@166
+Dependencies: memory@11; string@12; gtest/gtest.h@14; ./vpx_config.h@16; test/codec_factory.h@17; test/decode_test_driver.h@18; test/encode_test_driver.h@19; test/register_state_check.h@20; test/video_source.h@21
+
+`media/libvpx/libvpx/test/encode_test_driver.h` | `c9a7c154f28664293378a1a6daf14b751537cd95` | 10374 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: libvpx_test@24; CodecFactory@26; VideoSource@27; TestMode@29; CxDataIterator@58; encoder_@61; TwopassStatsStore@73; Append@75; buf@80; Reset@85; Encoder@96; cfg_@100; GetCxData@106; EncodeFrame@118; Control@120; Control@125; Control@130; Control@135; Control@140; Control@145; Control@150; Control@155; Control@161; Control@166; Control@173; Control@178; Config@183; set_deadline@189; EncoderTest@220; codec_@223; set_init_flags@237; BeginPassHook@245; EndPassHook@248; PreEncodeFrameHook@251; PostEncodeFrameHook@258; FramePktHook@261; PSNRPktHook@264; StatsPktHook@267; Continue@270; DoDecode@276
+Dependencies: string@13; vector@14; gtest/gtest.h@16; ./vpx_config.h@18; vpx/vp8cx.h@20; vpx/vpx_tpl.h@22
+
+`media/libvpx/libvpx/test/error_resilience_test.cc` | `9bd43b72bfd342b292c7beb96859b30b1b809b27` | 20264 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ErrorResilienceTestLarge@23; encoding_mode_@30; Reset@36; SetFrameFlags@67; GetAveragePsnr@123; GetAverageMismatchPsnr@128; SetErrorFrames@154; SetDroppableFrames@166; SetPatternSwitch@180; TEST_P@197; TEST_P@237; TEST_P@296; TEST_P@343; ErrorResilienceTestLargeCodecControls@381; EncoderTest@386; Reset@392; SetFrameFlags@420; SetLayerId@449; TEST_P@535
+Dependencies: gtest/gtest.h@11; test/codec_factory.h@12; test/encode_test_driver.h@13; test/i420_video_source.h@14; test/util.h@15; vpx_config.h@16
+
+`media/libvpx/libvpx/test/examples.sh` | `629f04239c593f759bccb58ec773abcf8efc52e4` | 954 bytes | test-path,data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/libvpx/test/external_frame_buffer_test.cc` | `7b9a836fbc7676a45c822771ea72df45a6926504` | 17713 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ExternalFrameBuffer@29; ExternalFrameBufferList@36; num_buffers_@39; CreateBufferList@49; GetFreeFrameBuffer@63; GetZeroFrameBuffer@83; ReturnFrameBuffer@100; CheckImageFrameBuffer@119; num_used_buffers@129; FindFreeBufferIndex@134; SetFrameBuffer@145; release_vp9_frame_buffer@172; ExternalFrameBufferMD5Test@205; md5_file_@211; OpenMD5File@228; set_num_buffers@272; num_buffers@273; ExternalFrameBufferTest@286; video_@289; DecodeOneFrame@321; DecodeRemainingFrames@329; CheckDecodedFrames@339; ExternalFrameBufferNonRefTest@355; CheckFrameBufferRelease@368; TEST_P@380; TEST_F@420; TEST_F@430; TEST_F@442; TEST_F@456; TEST_F@465; TEST_F@473; TEST_F@481; TEST_F@488; TEST_F@495; TEST_F@503
+Dependencies: memory@11; string@12; ./vpx_config.h@14; test/codec_factory.h@15; test/decode_test_driver.h@16; test/ivf_video_source.h@17; test/md5_helper.h@18; test/test_vectors.h@19; test/util.h@20; test/webm_video_source.h@22
+
+`media/libvpx/libvpx/test/fdct8x8_test.cc` | `4c2cbf43fd9429215cfb28fc5bf37588bf2ad73f` | 28742 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: reference_8x8_dct_1d@52; fht8x8_ref@87; idct8x8_10@92; idct8x8_12@96; iht8x8_10@100; iht8x8_12@104; idct8x8_12_add_10_c@110; idct8x8_12_add_12_c@114; idct8x8_12_add_10_sse2@118; idct8x8_12_add_12_sse2@122; idct8x8_64_add_10_sse2@126; idct8x8_64_add_12_sse2@130; FwdTrans8x8TestBase@148; RunSignBiasCheck@156; RunRoundTripErrorCheck@226; RunExtremalCheck@300; RunInvAccuracyCheck@390; RunFwdAccuracyCheck@448; CompareInvReference@478; FwdTrans8x8DCT@543; TEST_P@572; TEST_P@574; TEST_P@576; TEST_P@578; TEST_P@580; FwdTrans8x8HT@582; TEST_P@611; TEST_P@613; TEST_P@615; InvTrans8x8DCT@618; TEST_P@647
+Dependencies: math.h@11; stdlib.h@12; string.h@13; tuple@14; gtest/gtest.h@16; ./vp9_rtcd.h@18; ./vpx_dsp_rtcd.h@19; test/acm_random.h@20; test/clear_system_state.h@21; test/register_state_check.h@22; test/util.h@23; vp9/common/vp9_entropy.h@24; vp9/common/vp9_scan.h@25; vpx_config.h@26; vpx/vpx_codec.h@27; vpx/vpx_integer.h@28; vpx_ports/mem.h@29
+
+`media/libvpx/libvpx/test/frame_size_tests.cc` | `a86ca9a42ad3ec1f38a1438fb10bed62718bb8cb` | 7427 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: EncoderWithExpectedError@20; VP9FrameSizeTestsLarge@77; EncoderTest@81; TEST_F@170; TEST_F@186; TEST_F@220
+Dependencies: memory@10; gtest/gtest.h@12; test/codec_factory.h@13; test/register_state_check.h@14; test/video_source.h@15; vpx_config.h@16
+
+`media/libvpx/libvpx/test/hadamard_test.cc` | `5b94da5a710167afc1cc554bb89673aec89464ee` | 12307 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: hadamard_loop@29; reference_hadamard8x8@52; reference_hadamard16x16@64; reference_hadamard32x32@96; HadamardFuncWithSize@122; HadamardFuncWithSize@123; HadamardTestBase@132; CompareReferenceRandom@159; ExtremeValuesTest@180; VaryStride@205; SpeedTest@227; HadamardLowbdTest@253; TEST_P@263; TEST_P@265; TEST_P@267; TEST_P@269; HadamardHighbdTest@336; TEST_P@346; TEST_P@348; TEST_P@350
+Dependencies: algorithm@11; gtest/gtest.h@13; ./vpx_dsp_rtcd.h@15; vpx_ports/vpx_timer.h@16; test/acm_random.h@18; test/register_state_check.h@19; vpx_config.h@20
+
+`media/libvpx/libvpx/test/i420_video_source.h` | `97473b5c2f1bbd36c6696b0a35cd7842bc281a9e` | 1179 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: libvpx_test@18; I420VideoSource@22
+Dependencies: cstdio@12; cstdlib@13; string@14; test/yuv_video_source.h@16
+
+`media/libvpx/libvpx/test/idct8x8_test.cc` | `28ab257e6eebe3d08e08b4bf83090a47245c4ecc` | 2647 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: reference_dct_1d@25; reference_dct_2d@37; TEST@56
+Dependencies: math.h@11; stdlib.h@12; string.h@13; gtest/gtest.h@15; ./vpx_dsp_rtcd.h@17; test/acm_random.h@18; vpx/vpx_integer.h@19
+
+`media/libvpx/libvpx/test/idct_test.cc` | `4c7c4db58aa25402c995c59fcf52d4d4f7d66067` | 5183 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: IDCTTest@28; TEST_P@57; TEST_P@73; TEST_P@89; TEST_P@122
+Dependencies: ./vpx_config.h@11; ./vp8_rtcd.h@12; gtest/gtest.h@14; test/buffer.h@16; test/clear_system_state.h@17; test/register_state_check.h@18; vpx/vpx_integer.h@19
+
+`media/libvpx/libvpx/test/init_vpx_test.cc` | `4caf3a0bc876268e108e3626523a3dea833815c1` | 3349 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: append_negative_gtest_filter@36; libvpx_test@56; init_vpx_test@57
+Dependencies: test/init_vpx_test.h@11; ./vpx_config.h@13; string@16; gtest/gtest.h@17; vpx_ports/arm.h@19; vpx_ports/x86.h@22
+
+`media/libvpx/libvpx/test/init_vpx_test.h` | `5e0dbb0e7ed2e34770a84714e23a7cf93b86b545` | 555 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: libvpx_test@14
+
+`media/libvpx/libvpx/test/invalid_file_test.cc` | `0b895ed90216711958c9888dff120c74f9a2571c` | 7965 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: DecodeParam@29; InvalidFileTest@38; InvalidFileTest@41; OpenResFile@47; RunTest@85; TEST_P@121; InvalidFileInvalidPeekTest@171; InvalidFileInvalidPeekTest@173; TEST_P@179
+Dependencies: cstdio@11; cstdlib@12; memory@13; string@14; vector@15; gtest/gtest.h@16; ./vpx_config.h@17; test/codec_factory.h@18; test/decode_test_driver.h@19; test/ivf_video_source.h@20; test/util.h@21; test/webm_video_source.h@23; vpx_mem/vpx_mem.h@25
+
+`media/libvpx/libvpx/test/ivf_video_source.h` | `57df29e9dcb78dc0822ceadf692b9050fdac7ccb` | 3690 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: libvpx_test@18; IVFVideoSource@29; end_of_file_@34; FillFrame@79
+Dependencies: cstdio@12; cstdlib@13; new@14; string@15; test/video_source.h@16
+
+`media/libvpx/libvpx/test/keyframe_test.cc` | `c49ea91bd230b64095da48ca62a80b32224d25b0` | 8520 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: KeyframeTest@26; KeyframeTest@30; TEST_P@67; TEST_P@82; TEST_P@92; TEST_P@106; TEST_P@119; IsVP9@156; TEST@235
+Dependencies: climits@10; cstring@11; vector@12; gtest/gtest.h@13; test/codec_factory.h@14; test/encode_test_driver.h@15; test/i420_video_source.h@16; test/util.h@17; ./vpx_config.h@18; vpx/vp8cx.h@19; vpx/vpx_codec.h@20; vpx/vpx_encoder.h@21; vpx/vpx_image.h@22
+
+`media/libvpx/libvpx/test/level_test.cc` | `03217a293e0b2b0d0caca49d743c3fea561470be` | 5387 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: LevelTest@18; level_@25; TEST_P@70; TEST_P@84; TEST_P@98; TEST_P@113; TEST_P@127; TEST_P@134
+Dependencies: gtest/gtest.h@10; test/codec_factory.h@11; test/encode_test_driver.h@12; test/i420_video_source.h@13; test/util.h@14; vpx_config.h@15
+
+`media/libvpx/libvpx/test/lpf_test.cc` | `b1688f7d2603e5445b00331765abed6f33ad613c` | 34443 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: GetOuterThresh@118; GetInnerThresh@122; GetHevThresh@126; Loop8Test6Param@130; Loop8Test9Param@152; TEST_P@174; TEST_P@221; TEST_P@286; TEST_P@349
+Dependencies: cmath@11; cstdlib@12; string@13; tuple@14; gtest/gtest.h@16; ./vpx_config.h@18; ./vpx_dsp_rtcd.h@19; test/acm_random.h@20; test/clear_system_state.h@21; test/register_state_check.h@22; test/util.h@23; vp9/common/vp9_entropy.h@24; vp9/common/vp9_loopfilter.h@25; vpx/vpx_integer.h@26
+
+`media/libvpx/libvpx/test/md5_helper.h` | `9095d96a8a3b3f666c2b1577c79adb707e2f1c2f` | 2135 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: libvpx_test@17; MD5@18; MD5@20; Add@22; Add@46
+Dependencies: ./md5_utils.h@14; vpx/vpx_decoder.h@15
+
+`media/libvpx/libvpx/test/minmax_test.cc` | `8c758ab45f1da42eccaf4d8b5b1ac3da9db14b65` | 7686 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: MinMaxTest@31; TEST_P@59; TEST_P@73; TEST_P@87; TEST_P@101; TEST_P@142; TEST_P@161; TEST_P@180; TEST_P@199
+Dependencies: stdlib.h@11; string.h@12; gtest/gtest.h@14; vpx_config.h@16; ./vpx_dsp_rtcd.h@17; vpx/vpx_integer.h@18; vpx_mem/vpx_mem.h@19; test/acm_random.h@21; test/register_state_check.h@22
+
+`media/libvpx/libvpx/test/non_greedy_mv_test.cc` | `6b5dcc651b02488cdbdea483101e0d191295311f` | 6741 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: int@40; TEST@125; TEST@166
+Dependencies: math.h@11; gtest/gtest.h@12; vp9/encoder/vp9_non_greedy_mv.h@13; ./vpx_dsp_rtcd.h@14
+
+`media/libvpx/libvpx/test/partial_idct_test.cc` | `da391b1a7e2bb10ca6bbdac32b5037d0fc728b04` | 47256 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: wrapper@41; highbd_wrapper@51; PartialIDctTest@62; InitMem@115; InitInput@132; PrintDiff@147; TEST_P@196; TEST_P@245; TEST_P@260; TEST_P@277; TEST_P@302
+Dependencies: math.h@11; stdlib.h@12; string.h@13; limits@14; tuple@15; gtest/gtest.h@17; ./vp9_rtcd.h@19; ./vpx_dsp_rtcd.h@20; test/acm_random.h@21; test/clear_system_state.h@22; test/register_state_check.h@23; test/util.h@24; vp9/common/vp9_blockd.h@25; vp9/common/vp9_scan.h@26; vpx/vpx_integer.h@27; vpx_config.h@28; vpx_ports/vpx_timer.h@29
+
+`media/libvpx/libvpx/test/postproc.sh` | `91ca9b26fea90b9a2aff13449c8c45ac6b3b9e6e` | 1967 bytes | test-path,data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/libvpx/test/postproc_test.cc` | `f430dfa27d7b4165305b403460cbb68f3e5bb123` | 8564 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: TestParam@35; PostProcTest@63; DecoderTest@67; PostProcTest::DecodeTest@89; TEST_P@116; GeneratePostProcFlags@118; PostProcTestInvalidFiles@161; TEST_P@175
+Dependencies: algorithm@11; array@12; memory@13; new@14; ostream@15; string@16; tuple@17; vector@18; gtest/gtest.h@20; test/codec_factory.h@22; test/decode_test_driver.h@23; test/ivf_video_source.h@24; test/test_vectors.h@25; test/util.h@26; test/webm_video_source.h@28; vpx/vp8dx.h@30; vpx/vpx_decoder.h@31
+
+`media/libvpx/libvpx/test/pp_filter_test.cc` | `4ab7fb9d355acddeba103bc5e4e6ad387034a114` | 21589 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: q2mbl@42; VpxPostProcDownAndAcrossMbRowTest@49; mb_post_proc_down_and_across_@54; VpxPostProcDownAndAcrossMbRowTest::Run@69; TEST_P@79; TEST_P@126; TEST_P@202; VpxMbPostProcAcrossIpTest@255; src_@261; SetCols@267; VpxMbPostProcAcrossIpTest::Run@300; TEST_P@305; TEST_P@319; TEST_P@332; TEST_P@350; TEST_P@373; VpxMbPostProcDownTest@383; src_c_@389; SetRows@396; VpxMbPostProcDownTest::Run@427; TEST_P@432; TEST_P@464; TEST_P@491; TEST_P@506; TEST_P@539
+Dependencies: limits.h@11; stdio.h@12; memory@14; ./vpx_config.h@16; ./vpx_dsp_rtcd.h@17; gtest/gtest.h@18; test/acm_random.h@19; test/bench.h@20; test/buffer.h@21; test/clear_system_state.h@22; test/register_state_check.h@23; vpx/vpx_integer.h@24; vpx_mem/vpx_mem.h@25
+
+`media/libvpx/libvpx/test/predict_test.cc` | `b8693dc7e66c94c488829e8a76f6701ea12582ee` | 20149 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: PredictTestBase@41; src_@46; TestWithRandomData@154; TestWithUnalignedDst@182; SixtapPredictTest@228; TEST_P@230; TEST_P@233; TEST_P@237; BilinearPredictTest@363; TEST_P@365; TEST_P@368; TEST_P@371; BuildInterPredictorTest@416; RunAndCheck@470; TEST_F@512
+Dependencies: stdio.h@11; stdlib.h@12; string.h@13; tuple@14; gtest/gtest.h@16; ./vp8_rtcd.h@18; ./vpx_config.h@19; test/acm_random.h@20; test/bench.h@21; test/clear_system_state.h@22; test/register_state_check.h@23; test/util.h@24; vp8/common/blockd.h@25; vp8/common/reconinter.h@26; vpx/vpx_integer.h@27; vpx_mem/vpx_mem.h@28
+
+`media/libvpx/libvpx/test/quantize_test.cc` | `8185dd6356d0026acba0aff83337284b571a7937` | 6816 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: QuantizeTestBase@45; SetupCompressor@56; UpdateQuantizer@80; FillCoeffConstant@87; FillCoeffRandom@93; CheckOutput@99; QuantizeTest@120; RunComparison@134; TEST_P@151; TEST_P@156; TEST_P@164; TEST_P@169; TEST_P@177
+Dependencies: string.h@11; tuple@12; gtest/gtest.h@14; ./vp8_rtcd.h@16; ./vpx_config.h@17; test/acm_random.h@18; test/bench.h@19; test/clear_system_state.h@20; test/register_state_check.h@21; test/util.h@22; vp8/common/blockd.h@23; vp8/common/onyx.h@24; vp8/encoder/block.h@25; vp8/encoder/onyx_int.h@26; vp8/encoder/quantize.h@27; vpx/vpx_integer.h@28; vpx_mem/vpx_mem.h@29
+
+`media/libvpx/libvpx/test/realtime_test.cc` | `b0cc929dda2b4c3d091f367319428b24cf9803ca` | 3690 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: RealtimeTest@25; RealtimeTest@29; IsVP9@60; TestIntegerOverflow@68; TestEncode@76; TEST_P@88; TEST_P@90; TEST_P@95; TEST_P@97
+Dependencies: limits.h@10; gtest/gtest.h@12; test/codec_factory.h@13; test/encode_test_driver.h@14; test/util.h@15; test/video_source.h@16; vpx_config.h@17
+
+`media/libvpx/libvpx/test/register_state_check.h` | `96795f65be0503c1c35c10429e4caddf817ddc6a` | 6315 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: libvpx_test@46; RegisterStateCheck@51; RegisterStateCheck@53; StoreRegisters@57; Check@67; libvpx_test@104; RegisterStateCheck@109; RegisterStateCheck@111; Check@116; libvpx_test@149; RegisterStateCheck@151; libvpx_test@161; RegisterStateCheckMMX@164; RegisterStateCheckMMX@166; Check@174
+Dependencies: gtest/gtest.h@14; ./vpx_config.h@15; vpx/vpx_integer.h@16; intrin.h@38; windows.h@39; winnt.h@40
+
+`media/libvpx/libvpx/test/resize_test.cc` | `175a22826a7d279ab451a56e73fad728445fe7d9` | 25491 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mem_put_le16@26; mem_put_le32@31; write_ivf_frame_size@59; FrameInfo@84; pts@86; ResizingVideoSource@246; configured_width_@250; ResizeTest@289; ResizeTest@293; TEST_P@327; ResizeInternalTest@355; ResizeTest@359; ResizeInternalTest@361; vpx_scaling_mode@388; vpx_scaling_mode@392; vpx_scaling_mode@399; vpx_scaling_mode@403; TEST_P@435; TEST_P@463; ResizeRealtimeTest@472; ResizeRealtimeTest@476; DefaultConfig@531; TEST_P@562; TEST_P@592; TEST_P@623; TEST_P@654; TEST_P@692; CspForFrameNumber@740; ResizeCspTest@746; ResizeTest@750; ResizeCspTest@752; ResizingCspVideoSource@816; ResizingCspVideoSource@818; TEST_P@833
+Dependencies: climits@10; vector@11; gtest/gtest.h@12; test/codec_factory.h@13; test/encode_test_driver.h@14; test/i420_video_source.h@15; test/util.h@16; test/video_source.h@17; vpx_config.h@18
+
+`media/libvpx/libvpx/test/sad_test.cc` | `2e2e10e4865173cb8dfa2bdbd42bc649d61037a8` | 91760 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: TestParams@34; width@36; SADTestBase@72; SADTestBase@74; GetBlockRefOffset@134; ReferenceSAD@157; ReferenceSADSkip@185; FillConstant@244; FillRandomWH@262; FillRandom@280; SADx4Test@304; SADx4Test@306; SADs@309; CheckSADs@317; SADSkipx4Test@330; SADSkipx4Test@332; SADs@335; CheckSADs@343; SADTest@356; SADTest@358; CheckSAD@370; SADSkipTest@383; SADSkipTest@385; CheckSAD@397; SADavgTest@410; SADavgTest@412; CheckSAD@425; TEST_P@438; TEST_P@444; TEST_P@450; TEST_P@459; TEST_P@470; TEST_P@479; TEST_P@490; TEST_P@496; TEST_P@502; TEST_P@511; TEST_P@522; TEST_P@531; TEST_P@542; TEST_P@548; TEST_P@555; TEST_P@565; TEST_P@577; TEST_P@587; TEST_P@600; TEST_P@609; TEST_P@618; TEST_P@630; TEST_P@644; TEST_P@656; TEST_P@668; TEST_P@699; TEST_P@708; TEST_P@717; TEST_P@729; TEST_P@743; TEST_P@755; TEST_P@767
+Dependencies: stdio.h@11; string.h@12; limits.h@13; gtest/gtest.h@15; ./vpx_config.h@17; ./vpx_dsp_rtcd.h@18; test/acm_random.h@19; test/bench.h@20; test/clear_system_state.h@21; test/register_state_check.h@22; test/util.h@23; vpx/vpx_codec.h@24; vpx_mem/vpx_mem.h@25; vpx_ports/mem.h@26; vpx_ports/vpx_timer.h@27
+
+`media/libvpx/libvpx/test/set_maps.sh` | `f45dc51f4917ef7d1fafb6c2023bd243ebcf856f` | 1805 bytes | test-path,data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/libvpx/test/set_roi.cc` | `ac07ca161f627c22157bf18658c49d9c7d005e01` | 6052 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: TEST@28
+Dependencies: math.h@11; stddef.h@12; stdio.h@13; stdlib.h@14; string.h@15; sys/types.h@16; gtest/gtest.h@18; test/acm_random.h@19; vp8/encoder/onyx_int.h@20; vpx/vpx_integer.h@21; vpx_mem/vpx_mem.h@22
+
+`media/libvpx/libvpx/test/simple_decoder.sh` | `65fc4828ed8aa32148b83ed56fcbee2a28731ed4` | 1984 bytes | test-path,data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/libvpx/test/simple_encoder.sh` | `dc7f46ff38c4d188dc3fba4e915d2c124491f01f` | 1889 bytes | test-path,data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/libvpx/test/stress.sh` | `ba79a52ac3cf58db8259c46b95f40644c1acc902` | 6210 bytes | test-path,data-or-other | UTF-8 | mode 100755
+
+`media/libvpx/libvpx/test/sum_squares_test.cc` | `50f0c532018f3bf4a055cd23cbb2deadb2a10a97` | 10474 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: SumSquaresTest@40; TEST_P@56; TEST_P@84; TestSSEFuncs@146; ref_func@148; SSETest@155; GenRandomData@180; SSETest::RunTest@222; TEST_P@288; TEST_P@294; TEST_P@300
+Dependencies: cmath@11; cstdint@12; cstdlib@13; string@14; tuple@15; gtest/gtest.h@17; ./vpx_config.h@19; ./vpx_dsp_rtcd.h@20; test/acm_random.h@21; test/clear_system_state.h@22; test/register_state_check.h@23; test/util.h@24; vpx_mem/vpx_mem.h@25; vpx_ports/mem.h@26; vpx_ports/vpx_timer.h@27
+
+`media/libvpx/libvpx/test/superframe_test.cc` | `9319fab2ae9407b6a90f2bd05070b5e0e2548579` | 3385 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: SuperframeTest@25; EncoderTest@30; TEST_P@88
+Dependencies: climits@10; tuple@11; gtest/gtest.h@13; test/codec_factory.h@14; test/encode_test_driver.h@15; test/i420_video_source.h@16; test/util.h@17
+
+`media/libvpx/libvpx/test/svc_datarate_test.cc` | `7e0f95277ed72dfa7269e75bf9283b73f54e8009` | 84036 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: svc_test@22; INTER_LAYER_PRED@25; DatarateOnePassCbrSvc@38; OnePassCbrSvc@41; ResetModel@48; ResizingVideoSource@814; ResizingVideoSource@816; DatarateOnePassCbrSvcSingleBR@847; DatarateOnePassCbrSvcSingleBR@851; TEST_P@867; TEST_P@898; TEST_P@932; TEST_P@972; TEST_P@1014; TEST_P@1044; TEST_P@1075; TEST_P@1182; TEST_P@1217; TEST_P@1257; TEST_P@1288; DatarateOnePassCbrSvcMultiBR@1503; DatarateOnePassCbrSvcMultiBR@1507; TEST_P@1523; TEST_P@1555; DatarateOnePassCbrSvcFrameDropMultiBR@1585; DatarateOnePassCbrSvc@1590; TEST_P@1606; TEST_P@1637; TEST_P@1735; DatarateOnePassCbrSvcInterLayerPredSingleBR@1762; DatarateOnePassCbrSvc@1767; TEST_P@1785; TEST_P@1818; DatarateOnePassCbrSvcDenoiser@1849; DatarateOnePassCbrSvcDenoiser@1853; TEST_P@1870; DatarateOnePassCbrSvcSmallKF@1907; DatarateOnePassCbrSvcSmallKF@1911; TEST_P@1927; TEST_P@1960; TEST_P@1995; TEST_P@2026; TEST_P@2058; DatarateOnePassCbrSvcPostencodeDrop@2110; DatarateOnePassCbrSvcPostencodeDrop@2114; TEST_P@2130
+Dependencies: ./vpx_config.h@10; gtest/gtest.h@11; test/codec_factory.h@12; test/encode_test_driver.h@13; test/i420_video_source.h@14; test/svc_test.h@15; test/util.h@16; test/y4m_video_source.h@17; vp9/common/vp9_onyxc_int.h@18; vpx/vpx_codec.h@19; vpx_ports/bitops.h@20
+
+`media/libvpx/libvpx/test/svc_end_to_end_test.cc` | `3bd6b1307cb8b9aca64ee4af680ba7a626048712` | 29948 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: svc_test@22; INTER_LAYER_PRED@25; ScalePartitionOnePassCbrSvc@38; OnePassCbrSvc@43; TEST_P@85; SyncFrameOnePassCbrSvc@117; num_nonref_frames_@126; TEST_P@365; TEST_P@394; TEST_P@422; TEST_P@450; TEST_P@479; TEST_P@563; TEST_P@594; TEST_P@625; LoopfilterOnePassCbrSvc@650; mismatch_nframes_@655; GetMismatchFrames@714; GetNonRefFrames@715; TEST_P@724; TEST_P@753; TEST_P@784
+Dependencies: ./vpx_config.h@10; gtest/gtest.h@11; test/codec_factory.h@12; test/encode_test_driver.h@13; test/i420_video_source.h@14; test/svc_test.h@15; test/util.h@16; test/y4m_video_source.h@17; vp9/common/vp9_onyxc_int.h@18; vpx/vpx_codec.h@19; vpx_ports/bitops.h@20
+
+`media/libvpx/libvpx/test/svc_test.cc` | `cbc0abe032da3675e74478f7a933d7ec3ab8053e` | 5498 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: svc_test@13; OnePassCbrSvc::PostEncodeFrameHook@76; OnePassCbrSvc::AssignLayerBitrates@89
+Dependencies: test/svc_test.h@11
+
+`media/libvpx/libvpx/test/svc_test.h` | `de39412f6db207ef8b3c51f62c8dcc595a817663` | 2265 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: svc_test@24; OnePassCbrSvc@25; number_spatial_layers_@30
+Dependencies: ./vpx_config.h@14; gtest/gtest.h@15; test/codec_factory.h@16; test/encode_test_driver.h@17; test/i420_video_source.h@18; test/util.h@19; test/y4m_video_source.h@20; vpx/vpx_codec.h@21; vpx_ports/bitops.h@22
+
+`media/libvpx/libvpx/test/test-data.mk` | `29045d02ca2cade50c532fb8b99fd05f27630f94` | 66283 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/test/test-data.sha1` | `f0d32cd44daada8ad9e7f5995b7497d406ed3ab3` | 65775 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/test/test.mk` | `47860e6f751ffc93d99a25a32673ce3295bd5fa8` | 10574 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`media/libvpx/libvpx/test/test_intra_pred_speed.cc` | `3b2db879f276233b6b65c2f833ecbb2e35b11072` | 34650 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: IntraPredTestMem@44; Init@45; TestIntraPred4@106; TestIntraPred8@119; TestIntraPred16@132; TestIntraPred32@145; TEST@164; TestHighbdIntraPred4@401; TestHighbdIntraPred8@414; TestHighbdIntraPred16@427; TestHighbdIntraPred32@440; TEST@459; main@661
+Dependencies: stdio.h@12; string.h@13; gtest/gtest.h@15; ./vpx_config.h@17; ./vpx_dsp_rtcd.h@18; test/acm_random.h@19; test/clear_system_state.h@20; test/init_vpx_test.h@21; test/md5_helper.h@22; vpx/vpx_integer.h@23; vpx_ports/mem.h@24; vpx_ports/vpx_timer.h@25
+
+`media/libvpx/libvpx/test/test_libvpx.cc` | `ba27102385c98ebfd74c388bba2cacbe40a5f34b` | 608 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: main@14
+Dependencies: gtest/gtest.h@11; test/init_vpx_test.h@12
+
+`media/libvpx/libvpx/test/test_rc_interface.cc` | `840a299f82a0bdd76c6ef2f7c075fb80ef406a36` | 542 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: main@13
+Dependencies: gtest/gtest.h@11
+
+## Validation and limits
+
+Every listed blob was read from the pinned Git tree and its Git SHA-1 was recomputed. Extraction is structural only. Read implementations, callers, build conditions, and tests before making a behavior claim. Runtime behavior and historical reasons remain unverified. Reproduce a file with `git show 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b:path` in the corresponding source clone. The full study coverage and navigation note records aggregate results.

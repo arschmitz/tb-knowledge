@@ -1,0 +1,1013 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:14:46.642314+00:00","paths":["intl/icu/source/data/zone/ceb.txt","intl/icu/source/data/zone/cgg.txt","intl/icu/source/data/zone/chr.txt","intl/icu/source/data/zone/ckb.txt","intl/icu/source/data/zone/cs.txt","intl/icu/source/data/zone/csw.txt","intl/icu/source/data/zone/cv.txt","intl/icu/source/data/zone/cy.txt","intl/icu/source/data/zone/da.txt","intl/icu/source/data/zone/dav.txt","intl/icu/source/data/zone/de.txt","intl/icu/source/data/zone/de_CH.txt","intl/icu/source/data/zone/dje.txt","intl/icu/source/data/zone/doi.txt","intl/icu/source/data/zone/dsb.txt","intl/icu/source/data/zone/dua.txt","intl/icu/source/data/zone/dyo.txt","intl/icu/source/data/zone/dz.txt","intl/icu/source/data/zone/ebu.txt","intl/icu/source/data/zone/ee.txt","intl/icu/source/data/zone/el.txt","intl/icu/source/data/zone/en.txt","intl/icu/source/data/zone/en_001.txt","intl/icu/source/data/zone/en_150.txt","intl/icu/source/data/zone/en_AE.txt","intl/icu/source/data/zone/en_AG.txt","intl/icu/source/data/zone/en_AI.txt","intl/icu/source/data/zone/en_AT.txt","intl/icu/source/data/zone/en_AU.txt","intl/icu/source/data/zone/en_BB.txt","intl/icu/source/data/zone/en_BE.txt","intl/icu/source/data/zone/en_BM.txt","intl/icu/source/data/zone/en_BS.txt","intl/icu/source/data/zone/en_BW.txt","intl/icu/source/data/zone/en_BZ.txt","intl/icu/source/data/zone/en_CA.txt","intl/icu/source/data/zone/en_CC.txt","intl/icu/source/data/zone/en_CH.txt","intl/icu/source/data/zone/en_CK.txt","intl/icu/source/data/zone/en_CM.txt","intl/icu/source/data/zone/en_CX.txt","intl/icu/source/data/zone/en_CY.txt","intl/icu/source/data/zone/en_CZ.txt","intl/icu/source/data/zone/en_DE.txt","intl/icu/source/data/zone/en_DG.txt","intl/icu/source/data/zone/en_DK.txt","intl/icu/source/data/zone/en_DM.txt","intl/icu/source/data/zone/en_EE.txt","intl/icu/source/data/zone/en_ER.txt","intl/icu/source/data/zone/en_ES.txt","intl/icu/source/data/zone/en_FI.txt","intl/icu/source/data/zone/en_FJ.txt","intl/icu/source/data/zone/en_FK.txt","intl/icu/source/data/zone/en_FM.txt","intl/icu/source/data/zone/en_FR.txt","intl/icu/source/data/zone/en_GB.txt","intl/icu/source/data/zone/en_GD.txt","intl/icu/source/data/zone/en_GE.txt","intl/icu/source/data/zone/en_GG.txt","intl/icu/source/data/zone/en_GH.txt","intl/icu/source/data/zone/en_GI.txt","intl/icu/source/data/zone/en_GM.txt","intl/icu/source/data/zone/en_GS.txt","intl/icu/source/data/zone/en_GU.txt","intl/icu/source/data/zone/en_GY.txt","intl/icu/source/data/zone/en_HK.txt","intl/icu/source/data/zone/en_HU.txt","intl/icu/source/data/zone/en_ID.txt","intl/icu/source/data/zone/en_IE.txt","intl/icu/source/data/zone/en_IL.txt","intl/icu/source/data/zone/en_IM.txt","intl/icu/source/data/zone/en_IN.txt","intl/icu/source/data/zone/en_IO.txt","intl/icu/source/data/zone/en_IT.txt","intl/icu/source/data/zone/en_JE.txt","intl/icu/source/data/zone/en_JM.txt","intl/icu/source/data/zone/en_JP.txt","intl/icu/source/data/zone/en_KE.txt","intl/icu/source/data/zone/en_KI.txt","intl/icu/source/data/zone/en_KN.txt","intl/icu/source/data/zone/en_KY.txt","intl/icu/source/data/zone/en_LC.txt","intl/icu/source/data/zone/en_LR.txt","intl/icu/source/data/zone/en_LS.txt","intl/icu/source/data/zone/en_LT.txt","intl/icu/source/data/zone/en_LV.txt","intl/icu/source/data/zone/en_MG.txt","intl/icu/source/data/zone/en_MH.txt","intl/icu/source/data/zone/en_MO.txt","intl/icu/source/data/zone/en_MP.txt","intl/icu/source/data/zone/en_MS.txt","intl/icu/source/data/zone/en_MT.txt","intl/icu/source/data/zone/en_MU.txt","intl/icu/source/data/zone/en_MV.txt","intl/icu/source/data/zone/en_MW.txt","intl/icu/source/data/zone/en_MY.txt","intl/icu/source/data/zone/en_NA.txt","intl/icu/source/data/zone/en_NF.txt","intl/icu/source/data/zone/en_NG.txt","intl/icu/source/data/zone/en_NH.txt","intl/icu/source/data/zone/en_NL.txt","intl/icu/source/data/zone/en_NO.txt","intl/icu/source/data/zone/en_NR.txt","intl/icu/source/data/zone/en_NU.txt","intl/icu/source/data/zone/en_NZ.txt","intl/icu/source/data/zone/en_PG.txt","intl/icu/source/data/zone/en_PK.txt","intl/icu/source/data/zone/en_PL.txt","intl/icu/source/data/zone/en_PN.txt","intl/icu/source/data/zone/en_PT.txt","intl/icu/source/data/zone/en_PW.txt","intl/icu/source/data/zone/en_RH.txt","intl/icu/source/data/zone/en_RO.txt","intl/icu/source/data/zone/en_RW.txt","intl/icu/source/data/zone/en_SB.txt","intl/icu/source/data/zone/en_SC.txt","intl/icu/source/data/zone/en_SD.txt","intl/icu/source/data/zone/en_SE.txt","intl/icu/source/data/zone/en_SG.txt","intl/icu/source/data/zone/en_SH.txt","intl/icu/source/data/zone/en_SI.txt","intl/icu/source/data/zone/en_SK.txt","intl/icu/source/data/zone/en_SL.txt","intl/icu/source/data/zone/en_SS.txt","intl/icu/source/data/zone/en_SX.txt","intl/icu/source/data/zone/en_SZ.txt","intl/icu/source/data/zone/en_TC.txt","intl/icu/source/data/zone/en_TK.txt","intl/icu/source/data/zone/en_TO.txt","intl/icu/source/data/zone/en_TT.txt","intl/icu/source/data/zone/en_TV.txt","intl/icu/source/data/zone/en_TZ.txt","intl/icu/source/data/zone/en_UA.txt","intl/icu/source/data/zone/en_UG.txt","intl/icu/source/data/zone/en_VC.txt","intl/icu/source/data/zone/en_VG.txt","intl/icu/source/data/zone/en_VU.txt","intl/icu/source/data/zone/en_WS.txt","intl/icu/source/data/zone/en_ZA.txt","intl/icu/source/data/zone/en_ZM.txt","intl/icu/source/data/zone/en_ZW.txt","intl/icu/source/data/zone/eo.txt","intl/icu/source/data/zone/es.txt","intl/icu/source/data/zone/es_419.txt","intl/icu/source/data/zone/es_AR.txt","intl/icu/source/data/zone/es_BO.txt","intl/icu/source/data/zone/es_BR.txt","intl/icu/source/data/zone/es_BZ.txt","intl/icu/source/data/zone/es_CL.txt","intl/icu/source/data/zone/es_CO.txt","intl/icu/source/data/zone/es_CR.txt","intl/icu/source/data/zone/es_CU.txt","intl/icu/source/data/zone/es_DO.txt","intl/icu/source/data/zone/es_EC.txt","intl/icu/source/data/zone/es_GT.txt","intl/icu/source/data/zone/es_HN.txt","intl/icu/source/data/zone/es_MX.txt","intl/icu/source/data/zone/es_NI.txt","intl/icu/source/data/zone/es_PA.txt","intl/icu/source/data/zone/es_PE.txt","intl/icu/source/data/zone/es_PR.txt","intl/icu/source/data/zone/es_PY.txt","intl/icu/source/data/zone/es_SV.txt","intl/icu/source/data/zone/es_US.txt","intl/icu/source/data/zone/es_UY.txt","intl/icu/source/data/zone/es_VE.txt","intl/icu/source/data/zone/et.txt","intl/icu/source/data/zone/eu.txt","intl/icu/source/data/zone/ewo.txt","intl/icu/source/data/zone/fa.txt","intl/icu/source/data/zone/ff.txt","intl/icu/source/data/zone/ff_Adlm.txt","intl/icu/source/data/zone/ff_CM.txt","intl/icu/source/data/zone/ff_GN.txt","intl/icu/source/data/zone/ff_Latn.txt","intl/icu/source/data/zone/ff_Latn_CM.txt","intl/icu/source/data/zone/ff_Latn_GN.txt","intl/icu/source/data/zone/ff_Latn_MR.txt","intl/icu/source/data/zone/ff_Latn_SN.txt","intl/icu/source/data/zone/ff_MR.txt","intl/icu/source/data/zone/ff_SN.txt","intl/icu/source/data/zone/fi.txt","intl/icu/source/data/zone/fil.txt","intl/icu/source/data/zone/fil_PH.txt","intl/icu/source/data/zone/fo.txt","intl/icu/source/data/zone/fr.txt","intl/icu/source/data/zone/fr_CA.txt","intl/icu/source/data/zone/fr_GF.txt","intl/icu/source/data/zone/fur.txt","intl/icu/source/data/zone/fy.txt","intl/icu/source/data/zone/ga.txt","intl/icu/source/data/zone/gaa.txt","intl/icu/source/data/zone/gd.txt","intl/icu/source/data/zone/gl.txt","intl/icu/source/data/zone/gsw.txt","intl/icu/source/data/zone/gu.txt","intl/icu/source/data/zone/guz.txt","intl/icu/source/data/zone/gv.txt","intl/icu/source/data/zone/ha.txt","intl/icu/source/data/zone/haw.txt","intl/icu/source/data/zone/he.txt","intl/icu/source/data/zone/he_IL.txt","intl/icu/source/data/zone/hi.txt","intl/icu/source/data/zone/hi_Latn.txt","intl/icu/source/data/zone/hr.txt","intl/icu/source/data/zone/hsb.txt","intl/icu/source/data/zone/hu.txt","intl/icu/source/data/zone/hy.txt","intl/icu/source/data/zone/ia.txt","intl/icu/source/data/zone/id.txt","intl/icu/source/data/zone/id_ID.txt","intl/icu/source/data/zone/ie.txt","intl/icu/source/data/zone/ig.txt","intl/icu/source/data/zone/ii.txt","intl/icu/source/data/zone/in.txt","intl/icu/source/data/zone/in_ID.txt","intl/icu/source/data/zone/is.txt","intl/icu/source/data/zone/it.txt","intl/icu/source/data/zone/iw.txt","intl/icu/source/data/zone/iw_IL.txt","intl/icu/source/data/zone/ja.txt","intl/icu/source/data/zone/jgo.txt","intl/icu/source/data/zone/jmc.txt","intl/icu/source/data/zone/jv.txt","intl/icu/source/data/zone/ka.txt","intl/icu/source/data/zone/kab.txt","intl/icu/source/data/zone/kam.txt","intl/icu/source/data/zone/kde.txt","intl/icu/source/data/zone/kea.txt","intl/icu/source/data/zone/kgp.txt","intl/icu/source/data/zone/khq.txt","intl/icu/source/data/zone/ki.txt","intl/icu/source/data/zone/kk.txt","intl/icu/source/data/zone/kk_Arab.txt","intl/icu/source/data/zone/kkj.txt","intl/icu/source/data/zone/kl.txt","intl/icu/source/data/zone/kln.txt","intl/icu/source/data/zone/km.txt","intl/icu/source/data/zone/kn.txt","intl/icu/source/data/zone/ko.txt","intl/icu/source/data/zone/ko_KP.txt","intl/icu/source/data/zone/kok.txt","intl/icu/source/data/zone/kok_Latn.txt","intl/icu/source/data/zone/ks.txt","intl/icu/source/data/zone/ks_Arab.txt","intl/icu/source/data/zone/ks_Arab_IN.txt","intl/icu/source/data/zone/ks_Deva.txt","intl/icu/source/data/zone/ks_IN.txt","intl/icu/source/data/zone/ksb.txt","intl/icu/source/data/zone/ksf.txt","intl/icu/source/data/zone/ksh.txt","intl/icu/source/data/zone/ku.txt","intl/icu/source/data/zone/ku_Latn.txt","intl/icu/source/data/zone/ku_Latn_SY.txt","intl/icu/source/data/zone/ku_SY.txt","intl/icu/source/data/zone/kw.txt","intl/icu/source/data/zone/kxv.txt","intl/icu/source/data/zone/kxv_Deva.txt","intl/icu/source/data/zone/kxv_IN.txt","intl/icu/source/data/zone/kxv_Latn.txt","intl/icu/source/data/zone/kxv_Latn_IN.txt","intl/icu/source/data/zone/kxv_Orya.txt","intl/icu/source/data/zone/kxv_Telu.txt","intl/icu/source/data/zone/ky.txt","intl/icu/source/data/zone/lag.txt","intl/icu/source/data/zone/lb.txt","intl/icu/source/data/zone/lg.txt","intl/icu/source/data/zone/lij.txt","intl/icu/source/data/zone/lkt.txt","intl/icu/source/data/zone/lmo.txt","intl/icu/source/data/zone/ln.txt","intl/icu/source/data/zone/lo.txt","intl/icu/source/data/zone/lrc.txt","intl/icu/source/data/zone/lt.txt","intl/icu/source/data/zone/lu.txt","intl/icu/source/data/zone/luo.txt","intl/icu/source/data/zone/luy.txt","intl/icu/source/data/zone/lv.txt","intl/icu/source/data/zone/mai.txt","intl/icu/source/data/zone/mas.txt","intl/icu/source/data/zone/mer.txt","intl/icu/source/data/zone/mfe.txt","intl/icu/source/data/zone/mg.txt","intl/icu/source/data/zone/mgh.txt","intl/icu/source/data/zone/mgo.txt","intl/icu/source/data/zone/mi.txt","intl/icu/source/data/zone/mk.txt","intl/icu/source/data/zone/ml.txt","intl/icu/source/data/zone/mn.txt","intl/icu/source/data/zone/mni.txt","intl/icu/source/data/zone/mni_Beng.txt","intl/icu/source/data/zone/mni_Beng_IN.txt","intl/icu/source/data/zone/mni_IN.txt","intl/icu/source/data/zone/mo.txt","intl/icu/source/data/zone/mr.txt","intl/icu/source/data/zone/ms.txt","intl/icu/source/data/zone/ms_ID.txt","intl/icu/source/data/zone/mt.txt","intl/icu/source/data/zone/mua.txt","intl/icu/source/data/zone/my.txt","intl/icu/source/data/zone/mzn.txt","intl/icu/source/data/zone/naq.txt","intl/icu/source/data/zone/nb.txt","intl/icu/source/data/zone/nd.txt","intl/icu/source/data/zone/nds.txt","intl/icu/source/data/zone/ne.txt","intl/icu/source/data/zone/ne_IN.txt","intl/icu/source/data/zone/nl.txt","intl/icu/source/data/zone/nl_SR.txt","intl/icu/source/data/zone/nmg.txt","intl/icu/source/data/zone/nn.txt","intl/icu/source/data/zone/nn_NO.txt","intl/icu/source/data/zone/nnh.txt","intl/icu/source/data/zone/no.txt","intl/icu/source/data/zone/no_NO.txt","intl/icu/source/data/zone/no_NO_NY.txt","intl/icu/source/data/zone/nqo.txt","intl/icu/source/data/zone/nso.txt","intl/icu/source/data/zone/nus.txt","intl/icu/source/data/zone/nyn.txt","intl/icu/source/data/zone/oc.txt","intl/icu/source/data/zone/om.txt","intl/icu/source/data/zone/or.txt","intl/icu/source/data/zone/os.txt","intl/icu/source/data/zone/pa.txt","intl/icu/source/data/zone/pa_Arab.txt","intl/icu/source/data/zone/pa_Arab_PK.txt","intl/icu/source/data/zone/pa_Guru.txt","intl/icu/source/data/zone/pa_Guru_IN.txt","intl/icu/source/data/zone/pa_IN.txt","intl/icu/source/data/zone/pa_PK.txt","intl/icu/source/data/zone/pcm.txt","intl/icu/source/data/zone/pl.txt","intl/icu/source/data/zone/pms.txt","intl/icu/source/data/zone/prg.txt","intl/icu/source/data/zone/ps.txt","intl/icu/source/data/zone/ps_PK.txt","intl/icu/source/data/zone/pt.txt","intl/icu/source/data/zone/pt_AO.txt","intl/icu/source/data/zone/pt_CH.txt","intl/icu/source/data/zone/pt_CV.txt","intl/icu/source/data/zone/pt_GQ.txt","intl/icu/source/data/zone/pt_GW.txt","intl/icu/source/data/zone/pt_LU.txt","intl/icu/source/data/zone/pt_MO.txt","intl/icu/source/data/zone/pt_MZ.txt","intl/icu/source/data/zone/pt_PT.txt","intl/icu/source/data/zone/pt_ST.txt","intl/icu/source/data/zone/pt_TL.txt","intl/icu/source/data/zone/qu.txt","intl/icu/source/data/zone/qu_BO.txt","intl/icu/source/data/zone/qu_EC.txt","intl/icu/source/data/zone/raj.txt","intl/icu/source/data/zone/rm.txt","intl/icu/source/data/zone/rn.txt","intl/icu/source/data/zone/ro.txt","intl/icu/source/data/zone/rof.txt","intl/icu/source/data/zone/root.txt","intl/icu/source/data/zone/ru.txt","intl/icu/source/data/zone/rw.txt","intl/icu/source/data/zone/rwk.txt","intl/icu/source/data/zone/sa.txt","intl/icu/source/data/zone/sah.txt","intl/icu/source/data/zone/saq.txt","intl/icu/source/data/zone/sat.txt","intl/icu/source/data/zone/sat_IN.txt","intl/icu/source/data/zone/sat_Olck.txt","intl/icu/source/data/zone/sat_Olck_IN.txt","intl/icu/source/data/zone/sbp.txt","intl/icu/source/data/zone/sc.txt","intl/icu/source/data/zone/scn.txt","intl/icu/source/data/zone/sd.txt","intl/icu/source/data/zone/sd_Arab.txt","intl/icu/source/data/zone/sd_Arab_PK.txt","intl/icu/source/data/zone/sd_Deva.txt","intl/icu/source/data/zone/sd_Deva_IN.txt","intl/icu/source/data/zone/sd_IN.txt","intl/icu/source/data/zone/sd_PK.txt","intl/icu/source/data/zone/se.txt","intl/icu/source/data/zone/se_FI.txt","intl/icu/source/data/zone/seh.txt","intl/icu/source/data/zone/ses.txt","intl/icu/source/data/zone/sg.txt","intl/icu/source/data/zone/sh.txt","intl/icu/source/data/zone/sh_BA.txt","intl/icu/source/data/zone/sh_CS.txt","intl/icu/source/data/zone/sh_YU.txt","intl/icu/source/data/zone/shi.txt","intl/icu/source/data/zone/shi_Latn.txt","intl/icu/source/data/zone/shi_MA.txt","intl/icu/source/data/zone/shi_Tfng.txt","intl/icu/source/data/zone/shi_Tfng_MA.txt","intl/icu/source/data/zone/shn.txt","intl/icu/source/data/zone/si.txt","intl/icu/source/data/zone/sk.txt","intl/icu/source/data/zone/sl.txt","intl/icu/source/data/zone/smn.txt","intl/icu/source/data/zone/sn.txt","intl/icu/source/data/zone/so.txt","intl/icu/source/data/zone/sq.txt","intl/icu/source/data/zone/sr.txt","intl/icu/source/data/zone/sr_BA.txt","intl/icu/source/data/zone/sr_CS.txt","intl/icu/source/data/zone/sr_Cyrl.txt","intl/icu/source/data/zone/sr_Cyrl_BA.txt","intl/icu/source/data/zone/sr_Cyrl_CS.txt","intl/icu/source/data/zone/sr_Cyrl_RS.txt","intl/icu/source/data/zone/sr_Cyrl_XK.txt","intl/icu/source/data/zone/sr_Cyrl_YU.txt","intl/icu/source/data/zone/sr_Latn.txt","intl/icu/source/data/zone/sr_Latn_BA.txt","intl/icu/source/data/zone/sr_Latn_CS.txt","intl/icu/source/data/zone/sr_Latn_ME.txt","intl/icu/source/data/zone/sr_Latn_RS.txt","intl/icu/source/data/zone/sr_Latn_YU.txt","intl/icu/source/data/zone/sr_ME.txt","intl/icu/source/data/zone/sr_RS.txt","intl/icu/source/data/zone/sr_XK.txt","intl/icu/source/data/zone/sr_YU.txt","intl/icu/source/data/zone/st.txt","intl/icu/source/data/zone/su.txt","intl/icu/source/data/zone/su_ID.txt","intl/icu/source/data/zone/su_Latn.txt","intl/icu/source/data/zone/su_Latn_ID.txt","intl/icu/source/data/zone/sv.txt","intl/icu/source/data/zone/sw.txt","intl/icu/source/data/zone/sw_KE.txt","intl/icu/source/data/zone/syr.txt","intl/icu/source/data/zone/szl.txt","intl/icu/source/data/zone/ta.txt","intl/icu/source/data/zone/ta_MY.txt","intl/icu/source/data/zone/ta_SG.txt","intl/icu/source/data/zone/te.txt","intl/icu/source/data/zone/teo.txt","intl/icu/source/data/zone/tg.txt","intl/icu/source/data/zone/th.txt","intl/icu/source/data/zone/ti.txt","intl/icu/source/data/zone/tk.txt","intl/icu/source/data/zone/tl.txt","intl/icu/source/data/zone/tl_PH.txt","intl/icu/source/data/zone/tn.txt","intl/icu/source/data/zone/to.txt","intl/icu/source/data/zone/tok.txt","intl/icu/source/data/zone/tr.txt","intl/icu/source/data/zone/tt.txt","intl/icu/source/data/zone/twq.txt","intl/icu/source/data/zone/tyv.txt","intl/icu/source/data/zone/tzdbNames.txt","intl/icu/source/data/zone/tzm.txt","intl/icu/source/data/zone/ug.txt","intl/icu/source/data/zone/uk.txt","intl/icu/source/data/zone/ur.txt","intl/icu/source/data/zone/ur_IN.txt","intl/icu/source/data/zone/uz.txt","intl/icu/source/data/zone/uz_AF.txt","intl/icu/source/data/zone/uz_Arab.txt","intl/icu/source/data/zone/uz_Arab_AF.txt","intl/icu/source/data/zone/uz_Cyrl.txt","intl/icu/source/data/zone/uz_Latn.txt","intl/icu/source/data/zone/uz_Latn_UZ.txt","intl/icu/source/data/zone/uz_UZ.txt","intl/icu/source/data/zone/vai.txt","intl/icu/source/data/zone/vai_LR.txt","intl/icu/source/data/zone/vai_Latn.txt","intl/icu/source/data/zone/vai_Vaii.txt","intl/icu/source/data/zone/vai_Vaii_LR.txt","intl/icu/source/data/zone/vec.txt","intl/icu/source/data/zone/vi.txt","intl/icu/source/data/zone/vmw.txt","intl/icu/source/data/zone/vun.txt","intl/icu/source/data/zone/wae.txt","intl/icu/source/data/zone/wo.txt","intl/icu/source/data/zone/xh.txt","intl/icu/source/data/zone/xnr.txt","intl/icu/source/data/zone/xog.txt","intl/icu/source/data/zone/yav.txt","intl/icu/source/data/zone/yi.txt","intl/icu/source/data/zone/yo.txt","intl/icu/source/data/zone/yo_BJ.txt","intl/icu/source/data/zone/yrl.txt","intl/icu/source/data/zone/yrl_CO.txt","intl/icu/source/data/zone/yrl_VE.txt","intl/icu/source/data/zone/yue.txt","intl/icu/source/data/zone/yue_CN.txt","intl/icu/source/data/zone/yue_HK.txt","intl/icu/source/data/zone/yue_Hans.txt","intl/icu/source/data/zone/yue_Hans_CN.txt","intl/icu/source/data/zone/yue_Hant.txt","intl/icu/source/data/zone/yue_Hant_HK.txt","intl/icu/source/data/zone/za.txt","intl/icu/source/data/zone/zgh.txt","intl/icu/source/data/zone/zh.txt","intl/icu/source/data/zone/zh_CN.txt","intl/icu/source/data/zone/zh_HK.txt","intl/icu/source/data/zone/zh_Hans.txt","intl/icu/source/data/zone/zh_Hans_CN.txt","intl/icu/source/data/zone/zh_Hans_SG.txt","intl/icu/source/data/zone/zh_Hant.txt","intl/icu/source/data/zone/zh_Hant_HK.txt","intl/icu/source/data/zone/zh_Hant_MO.txt"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013"}} -->
+# firefox/intl structural source map 185
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. This is an automated navigation map, not a behavior review.
+Each row gives the repository-relative path, Git blob ID, byte size, role inferred from the path, declaration candidates, and literal dependency candidates. `@N` is the source line.
+Candidates come from line-based patterns. They can miss multiline, anonymous, macro-generated, and language-specific declarations or match comments and fixture text. Dependencies are not resolved imports, runtime calls, or a complete graph. No candidates does not mean no functions or dependencies.
+Imported code and tests are included. Binary and non-UTF-8 files have a census entry but no declaration extraction. Symlink contents are scanned as text, not followed. No uncommitted changes, build products, ignored files, or untracked files are studied.
+
+## File map
+
+`intl/icu/source/data/zone/ceb.txt` | `8f2e3eae20cdf6d164ba9152efede98bfd65168b` | 17780 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/cgg.txt` | `225f42ad9d008e23eccdd7fa19e02e8063f6a97b` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/chr.txt` | `29f8afd3e3b2603322ae95c7125d69f73140747c` | 53548 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ckb.txt` | `e95781501258f795fa9b0d9db326845d9c80d459` | 420 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/cs.txt` | `78f3e07494e9e0ccad794a2b86641fe80acab580` | 29607 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/csw.txt` | `b3fbbe47fa1ae0ab3eb73ced32f860d47dac019a` | 1033 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/cv.txt` | `dfdf2dc184834b4d992df82c5486ef2604ebb7de` | 64000 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/cy.txt` | `61872f9b5634cd561f575c2b27da571aae78aa3a` | 20353 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/da.txt` | `bb3d4e8966f072161edd44a8eaec79613ff2bcaf` | 21870 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/dav.txt` | `c9ea7fec1659b2e0581340552430fb97b4b94fb8` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/de.txt` | `6b1bd1ea292b8f8926b5913a8088a0009e761a2f` | 24755 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/de_CH.txt` | `e0572bea6f168f12615ffa3e5417e71865da3a42` | 501 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/dje.txt` | `ec29c36b11cdda9c4c875ebb31da30172d845226` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/doi.txt` | `2abf29c11e57fd1c09a45b4384bc9f43ba360a8a` | 3343 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/dsb.txt` | `fd136bd338825635a30d0ba66e1353cb5607a118` | 23960 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/dua.txt` | `5f635f697085c1d6bcaf920aeca70f95cae781c9` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/dyo.txt` | `0bd783cc270b244095022d087ec062b48125ea4e` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/dz.txt` | `fa08958727e2146ec09a79e0f92614a490af1fe0` | 26636 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ebu.txt` | `5d17edb1f228dc4170b15d1586d91307def1bff1` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ee.txt` | `3ed16e8350cbdb43bcc8add1fbf6154795bfb500` | 19570 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/el.txt` | `e4add283d0b9515f2efb7e03dbdaa734c92ef73c` | 54883 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en.txt` | `f3573b7e24eb20b118c429418704051aecff61dd` | 21980 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_001.txt` | `d7014ac04d80a3b90623ff5b2988f256455086f0` | 1790 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_150.txt` | `21980ee7af095a8748b46c7fdb1ff2df1f38b1f7` | 539 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_AE.txt` | `3c1d0c5b5c818b21622158115fead206ac79b8e3` | 1172 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_AG.txt` | `88d617268fced00eab0d40fb967e9865ee3b917e` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_AI.txt` | `6b0a0fd304e1cb94fde5fb5a69aa085cd81d004c` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_AT.txt` | `f4098bbd3501be16b93c776f81a3d7a98e7f537e` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_AU.txt` | `049b2ffe50b753eb260293bd4056f6007ce88548` | 1749 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_BB.txt` | `fa43dab3aec927b873e8d3f6e07b9029a5a78549` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_BE.txt` | `39cda08af71feb16eb4a063c1422881c3ebc44db` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_BM.txt` | `b6af32ef9b89496f0d749092bb4ef9f14b0fe9af` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_BS.txt` | `42d99db61b0cfd880845c7257c4517f2476ef2e7` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_BW.txt` | `0483b2d592ed24c44399773b80f72cd93d859715` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_BZ.txt` | `902a487a07516b8f0d1c1a875db6de6ee4213b5a` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_CA.txt` | `7603b5bc5bcd868b34018e95e828fa2c8bdeb2ee` | 1235 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_CC.txt` | `2e678216b8732e58dd3927442941852e7599e893` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_CH.txt` | `2ebd8d57654ed4e1b4b68f295ff988ab1b863857` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_CK.txt` | `4f4a974ff0c5aeefc8fd8fba7546b0a2a93a1d75` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_CM.txt` | `2f1d6cece075c2a44b1ac706070bcf20584aedf6` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_CX.txt` | `19107824615d77fc08c508934e1f5930a1482319` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_CY.txt` | `d3c276cea964ab7c170d636cd9ae29f9191f9dc1` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_CZ.txt` | `c530d791412c98b1886947a2f91b613ed976dc25` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_DE.txt` | `f3252af2ae78e3f70ed4b006e59a720634169a82` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_DG.txt` | `0a867efa006f0580394c21cd6ccd2ad543186bb3` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_DK.txt` | `38a7ca6367ed1cea53337efafb97a45074093a9b` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_DM.txt` | `c8a870de8681b26605e0fb25978956468b782ca0` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_EE.txt` | `32c793218ef44204413963a9bd45dd2016f9a8b9` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_ER.txt` | `8a794f6922c1a972204438d8e0549b9fc684a0b6` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_ES.txt` | `f4e417c4ed1aac09bc3febaa132292e0f5a4552a` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_FI.txt` | `1170e91b42c7bc48ecad51c0752b082fab22331c` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_FJ.txt` | `3d4ed8ae1a0d644def358e17655ab149b458567f` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_FK.txt` | `d634be8d22ff03893a466b5854fea3813fa0eb05` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_FM.txt` | `7d381fc061d4162bb11fb48aa797ba7ccfd1c9ca` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_FR.txt` | `98577953f6a47353c02fb5594b6692598e42047a` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_GB.txt` | `f2f22f1eaea997b9ecedca351302b630dbdff31e` | 794 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_GD.txt` | `4356dde5b41d7328e7d605ddff82dfc0e6ace18e` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_GE.txt` | `aeb99a95a2a0111401e8af6ae8ce453e0af26085` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_GG.txt` | `99b0b726709836c1e4a647b925550ee776887be2` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_GH.txt` | `a87f99c3c371f8f5dea5907d6dbd029ac5236a7b` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_GI.txt` | `5463d78c44bf98c8272921aee6e1b60cf6e389fe` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_GM.txt` | `847d9547e067c3dfd4b3a3789b973d0fb3ac5d80` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_GS.txt` | `599bf9d650e8665e1a8eadb2c60fcc26f7037a43` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_GU.txt` | `384c6064a8ddd924b6cfd119ba18c698ce2066b0` | 249 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_GY.txt` | `dc466639f46e0fd9d9c135ad4ec038dd2ba89577` | 269 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_HK.txt` | `56ee7ed1023a7fef7665e25d4d98457de63f4258` | 317 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_HU.txt` | `d683642a15c4c643cd5e1563faed7bbbcf282949` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_ID.txt` | `6ea929bd419c865de7e31df59051f15e411af715` | 413 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_IE.txt` | `f92b5fed8f8d8ecd8bdd75ebca8531af71dbb983` | 271 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_IL.txt` | `fcfc49d339591f989866a694bee6e267c8034fe6` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_IM.txt` | `a1bd298d300efef6a4f69091ef14d412e840b5eb` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_IN.txt` | `039bb852c49449b53c99eda4b6278f3705f5e3ff` | 321 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_IO.txt` | `eafd4e69588bfc9ccd057821f17b8564d3e2ef42` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_IT.txt` | `a74c41fff869cd4a901dc0d09424bac14e0e9bf4` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_JE.txt` | `b8614d1af4463728cdfe28800157155b35479b9e` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_JM.txt` | `ed62422af693f81035f11829d6ed836ae182881e` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_JP.txt` | `409db45e28514463678a9a975c5ab9d4fc0fce3e` | 1119 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_KE.txt` | `5a22c1dfbecd79c336e46564b82ba595733b6779` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_KI.txt` | `d8cef1e8da336596e568c5beacf31fa550d45588` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_KN.txt` | `d5c77da68bc85677f5ee4c77c2e87d6f514b1f21` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_KY.txt` | `1f1acced2e06078b9bfc09ecbec0e8be979696da` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_LC.txt` | `747867bc2cf4b52a665a907862a66a5d5b4e16b2` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_LR.txt` | `ccc11da0141d55d7ef0dfea4728ee7549bd87d1a` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_LS.txt` | `42cdfa033937c6951d8fc37989d0416b4f216d26` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_LT.txt` | `3ebe5daa31ade1689712e50d8d7a03d756a63805` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_LV.txt` | `a2d7c79712544748f5f0e04c367ae32aa1c099aa` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_MG.txt` | `f3891b08f60edba51446ac2eae21fdea4c4c2414` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_MH.txt` | `d14b8650e39a01e5aa64a276b85664783728891a` | 1119 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_MO.txt` | `f264a649d9e84cb4ff04e1b4ed8e30c4fdd4e225` | 415 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_MP.txt` | `feafbd27bc8b9a1a74cc9cae30d0e7a5300972f0` | 1119 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_MS.txt` | `82acb18f2e76cec471b4e4355ef93295818ea7c4` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_MT.txt` | `a38bb793d762867197bf2dabe75cd036fea55fa1` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_MU.txt` | `3e861f9046ee5ec83f8953b76d5c2bab6dc40980` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_MV.txt` | `8f902fc237d733024ddcd7b41bfd48137f566b0b` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_MW.txt` | `ba0349dfb5dd56a6ae17cf90a9d62fc9972deb56` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_MY.txt` | `59100ae46114df61b13858eff5a38805e966e8ab` | 271 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_NA.txt` | `e67b3cdb3e9c549db49b2ea4b33fe4c270a82589` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_NF.txt` | `02f38aa2c40a56cdad8e4b0a925d8c3288e38e2c` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_NG.txt` | `97564de978d5f82f73b743871bb2117dd78430db` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_NH.txt` | `ae3aedb4869967d4664cb4b1f973c3b98a08f12e` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_NL.txt` | `261841be3f7cc61ea7c5e6dfd65ebce8e10b46bc` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_NO.txt` | `8e69e47d3fa45bbcf852761a038ae2edeb0280e1` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_NR.txt` | `defb40d86e89b9ad429046f8af3e2dc075f7fe91` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_NU.txt` | `a5e925ffc3696f3f2704e201a1f61d14b799c1d4` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_NZ.txt` | `bccdc2efc92800dc1116c3089a372b3701a98bae` | 987 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_PG.txt` | `907a7be7b1f0d0739b0c24d18e175d0765f7e22b` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_PK.txt` | `297356a50808173edccb4f0189b3db1a0a4bb283` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_PL.txt` | `942d6810f6411d0a79bb29b77ef829d65a0c95d9` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_PN.txt` | `88824aaca9fbba0c84cf41cb886b9f5e67ced615` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_PT.txt` | `a9d70f11070f815066d872b8941ff5dfb9078ff1` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_PW.txt` | `49c1faeeb415b23cdd92de283630d7b96929379b` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_RH.txt` | `2e5822f251b02d1a4f751b9bd10c59941ae4d8e9` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_RO.txt` | `8d9ec0b3450f0ddee8d785bbdad9fd6c764a8d70` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_RW.txt` | `05036269f7de0aaaae92564bd945b977d48e0b4c` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_SB.txt` | `26131ea085169d8248ae8c54f00769adf61dd6c3` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_SC.txt` | `fe8ba01fc28043813510caf3e4778a78089643cd` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_SD.txt` | `c29a5816d517b83b361b58343332afadd4dd06e0` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_SE.txt` | `3a9d24abf343562b256d2ea6508690f8b2a8bd6d` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_SG.txt` | `781379da4b9bc9e88bea7fa65f7fbeff4b964c4c` | 329 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_SH.txt` | `93d287111ac5dcbc9d1f55c733accd09b035c6a9` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_SI.txt` | `5ea231deacbdfd2d96a1a68de086b8729c1ecaba` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_SK.txt` | `c28fa4d1d31332ee4c6402d35621adc8c733c915` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_SL.txt` | `59c682652b2b5fb356cf678813c05b42a5a7dc09` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_SS.txt` | `733eac6be3acc688a02de5450d8771ffc922f42e` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_SX.txt` | `a437c2e282d3c6d8e774bb306de1dc32c8f124f9` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_SZ.txt` | `b927f3eba625c054c5b83f3a055f656a8434026a` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_TC.txt` | `35df5be00eb9a2307a1168b98e614c8943cc45c6` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_TK.txt` | `d3ccaf651a033e5a1b9f137b24224985aac57739` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_TO.txt` | `68f59e4443653ba44416d27bdff84ef11790c525` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_TT.txt` | `808e390f741d21a6dd3795ba2f6fdf8df3cd85dd` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_TV.txt` | `0c2f4a397a35cf393fab0180b8fbbc4e1550780e` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_TZ.txt` | `97638c3faf820ee98a018b74a225d0ad2fa11f14` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_UA.txt` | `6501f5184e6d5c5b0e07f2bda0b2d69c9fb6119e` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_UG.txt` | `8e3adff1c55a9637ab94f4583f3e30d91a05260f` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_VC.txt` | `60263a9bce79c4bfd9ec9d132e1fb8df0c3ba461` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_VG.txt` | `f00070bb5d443cbc16047bea1a2feaac41446239` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_VU.txt` | `aa79d74645c309132cec29da8a907c80e37b54f3` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_WS.txt` | `82f99ff368cb62c9c9fab341e366db08fc114550` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_ZA.txt` | `3686e5361bd23b42dea15317f6a3f32323a42c97` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_ZM.txt` | `77892b0b37f1d9af455afa89cc73fb8c2bbc5a84` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/en_ZW.txt` | `c387b0e69003d6f982c6dbb2cb308d7fe50c9a29` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/eo.txt` | `ea6a2cefbfad89500ee854f7a3cf619dd2a9d370` | 37080 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es.txt` | `a92c25bd748a722447ca0da97dbd80ade4dea884` | 30492 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_419.txt` | `56bd154447f66e60bf7819a0d7d09577bbcae851` | 3485 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_AR.txt` | `bce58eac797b086745121b90b5ff8a2fb13f4d9d` | 431 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_BO.txt` | `26197f4b519b36c85dcebd51b3d8d50a3eafe3c6` | 270 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_BR.txt` | `8667e8f0f5d5242f4b56bbcf61a37a8efe7bf908` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_BZ.txt` | `07b41f70db001ee930ddcc68d7c81988184827ca` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_CL.txt` | `1d7a340493deb075329c114db2676074ce870d88` | 313 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_CO.txt` | `9e174c7707a4110e558f446e87180665da3b204b` | 316 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_CR.txt` | `87b78e367bb568332a2bfd1f1c4526713165f871` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_CU.txt` | `508539a8e2f62719aca491512134ae19c887a333` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_DO.txt` | `90d27d8f92b945d9d67a1557d5b34b255497bf43` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_EC.txt` | `813f9a20dca398356dddfb8005b540220971715d` | 270 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_GT.txt` | `095148c39620e28016d0d220c69f39aac151fa9f` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_HN.txt` | `bcf2ca549d178557da0e416f660bf13d2c6295a7` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_MX.txt` | `ab7a08be80f0868300ffb5d2c8ec05ccc317c0d3` | 2639 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_NI.txt` | `45e702b07e33a79a1444720733b928c2653ca196` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_PA.txt` | `d0c28faf0869adf239122c824704b7d9cc19b491` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_PE.txt` | `ea0a1366fb9242af74262bfda4f734b6229f4ab6` | 312 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_PR.txt` | `59bce144c48d6bef5ec9997a836da7bb03e7a9d8` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_PY.txt` | `ec579376357f1e9ad50306218b4abd619ad0ea14` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_SV.txt` | `4e3a34ebe0d67918bab02e0eeba76fcd7d8bc9e3` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_US.txt` | `0cf7514b0f2b86f84d8aa875c5337729604420bf` | 3961 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_UY.txt` | `ff0b98203dca12aa222ee474855809c675627a1f` | 315 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/es_VE.txt` | `9d00cd2b6f64fe9bd95189e567f6fcb893d6c47d` | 272 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/et.txt` | `d4b947d986a662b568e31c027d9eda9301f11a7a` | 24673 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/eu.txt` | `2cbdb897882bf2fd43666bc8be043838a7259a59` | 27706 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ewo.txt` | `abcd6ac3c7f93d5a8d48dce2c79aaf6b3071567b` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/fa.txt` | `bf52cc81da671e42694b1214d35a992a687798f2` | 51756 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ff.txt` | `80688a439ebedf0dacad9f09a0a8f89070399d08` | 165 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ff_Adlm.txt` | `27004247d0377baadcaf2d294685b978692a12a1` | 78653 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ff_CM.txt` | `7b79bfe0b89bd39449bcaece31f361f7680a526b` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ff_GN.txt` | `74f07dc98a2c0fb9d0ccaf91d5c2cb93340b69be` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ff_Latn.txt` | `21de771f31deb4a18a1652a6fb2f34e3c5d30e01` | 170 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ff_Latn_CM.txt` | `72d32b2f72eec94b1c566da61bae1f09b096fe93` | 219 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ff_Latn_GN.txt` | `ed2110832361b69b4acc5ae49a1148ae327c3dba` | 219 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ff_Latn_MR.txt` | `aad71016d712757ec2fa06123fa1e176caa0d470` | 219 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ff_Latn_SN.txt` | `3a31baf3ef3780ad0ae047270c3fccd355f6bd09` | 219 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ff_MR.txt` | `c0b7eee0d7db50d66c3e3cca1cd0ef275dda9fbf` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ff_SN.txt` | `7d5419051d49f7a3c775848151a95e23e7e58645` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/fi.txt` | `6ab84b7afeebbf6de1c257a0ab3c8d00be710ed0` | 25604 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/fil.txt` | `033518daf2728fa893dadc9835a65ec5940aaded` | 20310 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/fil_PH.txt` | `4e2c133c7a945440e55c8e80354f4d6d7e90faac` | 215 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/fo.txt` | `5e9c6f1f6a5d8d1c9271cd7f374aaef1b0c9a8ea` | 19765 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/fr.txt` | `39457befc82b241856264c354a1790d0ef22d764` | 28637 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/fr_CA.txt` | `3b0d37b9c0465eaae703eda7af14a9db8ae229f3` | 16852 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/fr_GF.txt` | `ab88e0c82defcd89af0604432c2e93463bf9df85` | 253 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/fur.txt` | `99293b8bed7b330d303a126474e0f790e2b65e76` | 2041 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/fy.txt` | `e67a1b644114ee148cee887922fadda6a8ea212d` | 24408 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ga.txt` | `9e190be32a489e2f684bc83e75259b28e22beea4` | 30423 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/gaa.txt` | `66f1ed0bede1260bd40b7a777000d48fb75d8b6c` | 414 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/gd.txt` | `154ccb29d20c7629af63e1e1b5d570bfac848216` | 27077 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/gl.txt` | `1e5bc475ff59d88460f032c1e8cdc6a13eadb650` | 28005 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/gsw.txt` | `bfd958015b69832b86ca9576b82301281ca1eed0` | 7062 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/gu.txt` | `75d7fc5ea2671ff8aeb8d5d00dd6cf8b4ad56f76` | 62117 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/guz.txt` | `f1bd9367deecc2c20aa9a01330ccffeb0cbbc65c` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/gv.txt` | `57f73b88fdbf331fd895206383cd5ea5d51c2849` | 165 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ha.txt` | `21bea9439ea6e55211f53c78652835851f262900` | 19032 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/haw.txt` | `a2b453c1171ac9dee61c18046e75a7b07c6e7cb3` | 501 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/he.txt` | `598ebc9964e3105a660da25816049964d2fe49cb` | 51856 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/he_IL.txt` | `a66e3f81b1f0d2b0c7f7ede6bf5d439b3e3adb27` | 214 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/hi.txt` | `94ed401a98c6fd54856fd6cd63f6d95770398aa1` | 61373 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/hi_Latn.txt` | `60fc96a8e2594c65fedeae1a3b1f80a09fbf7fa9` | 2695 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/hr.txt` | `de8b519aee19da4ddfe3ab6761844fe9eee50d9b` | 27458 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/hsb.txt` | `cc4c23c6f5a391a310aec81ea79045757928a567` | 23893 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/hu.txt` | `7693104b1a476980ff6a414411d99c5199e3d631` | 29254 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/hy.txt` | `d889407c2a6baa53aacae58585346d2d693d3c1f` | 56042 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ia.txt` | `28ecefde3c0da453dda53b50d2e30a46caefa601` | 21479 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/id.txt` | `59802c16f02f44404285075c2a40804830e2bd5b` | 23400 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/id_ID.txt` | `2dd5548a7bece3595669baedf9b957873cd1765b` | 214 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ie.txt` | `797da0949400d21c8a305cda3b511cc4ac2ab6fd` | 889 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ig.txt` | `b62bd796728031b1deabf573e42b17a03689bdcb` | 17793 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ii.txt` | `0bdd9aeb623b1d6c6e72399f003a29fa1375988c` | 575 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/in.txt` | `eb9d14e09fb34cc7496910ee5a09e2c9528785e7` | 185 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/in_ID.txt` | `33097c5a00fbb0498cf34b4150e81d1bea6be9a2` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/is.txt` | `00fdaad2c538d2f337411ff82c55315d8940f6bd` | 25925 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/it.txt` | `b6970d9666158b8e38c6597cecef2851572861d8` | 24839 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/iw.txt` | `39c0f34fc94803d7bb693aa49a7643ea57b59751` | 185 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/iw_IL.txt` | `9565788aa86765c1ff53fb8669f2f13dc2150ddb` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ja.txt` | `2e5d9b34c31fe68d1114a39429d207bb17adcc87` | 50769 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/jgo.txt` | `5453cdad9f0f52ad95200cea4d10500e72f125fd` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/jmc.txt` | `7374aaf5a41cc3596eaa745ff4d3c095dc62506e` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/jv.txt` | `a6a33ca8c84475e56b427565187aa547a1edacf3` | 22372 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ka.txt` | `c6a38b4d8d6ab495df2885311a746463501b6e42` | 63849 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/kab.txt` | `d465766ab768ec79db3520fcab288f50fde5b08e` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/kam.txt` | `ca6631e8c52936f7c7d4abccf295fdaffd62a632` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/kde.txt` | `c164c03bae6e0d79b8c102d56adc56866b76868c` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/kea.txt` | `c098285ef6a562090c5bd0184bbd593b986aae73` | 7680 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/kgp.txt` | `b0124be1bbdc8de0262aa3c63300a3976942dd75` | 46834 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/khq.txt` | `0a26c5ad0d09012804940c33ee391498cf254480` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ki.txt` | `e86be4f051b82dcf51ceeb05bbf9f2d4931c106a` | 165 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/kk.txt` | `458b94e1ca6b0a5021a943b7631821658273e3ab` | 54313 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/kk_Arab.txt` | `a86669a9ae98078947536ee86cf82e06df5354d2` | 55514 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/kkj.txt` | `a5effa7cd75965213e1f7faf06f07434e9ea6d65` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/kl.txt` | `b23d5ff5a9e93ef003fff50f7fcdcc38d699a099` | 165 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/kln.txt` | `6f9d1a2f82ca49cbd91b15489d497cb5fd0598a3` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/km.txt` | `a4abd517502f86cb59ba284fb6159ab755cc76b5` | 67838 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/kn.txt` | `2f1c83c7021e733190bff05a2e85a61b3d81237a` | 64565 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ko.txt` | `8a95c6bccd1e1abc8ce2d80a865b09f3755292c6` | 48375 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ko_KP.txt` | `51664a618742a0ec1bbf46a4bdfb373116d307aa` | 332 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/kok.txt` | `23beb43ca08e1194af2bc416804834c4bcf6a009` | 59467 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/kok_Latn.txt` | `d3f529e72552cdbeccbdcfbf34d98c95addc6a9e` | 643 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ks.txt` | `a86f79b1f3697950b1a7001fe40d98590513eff7` | 53774 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ks_Arab.txt` | `00759421d5fd3f4b6f923279aba5bf9cf6ea32e9` | 170 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ks_Arab_IN.txt` | `fe9ecd808a7d5b6f39023ee2b8e80e1054326d5f` | 219 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ks_Deva.txt` | `a9817eff05aa21dc48939cd2892b81723cbe2ea6` | 2696 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ks_IN.txt` | `afba823c07be7d9c54afbbe78a2035e8d904e9e2` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ksb.txt` | `86301eeed9cd02116fd37c19eea1bdb81f208229` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ksf.txt` | `1a4df8ec537dffb5b8baeec3304846b2e07ce2ae` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ksh.txt` | `e3e0eeb1b5423e47f3c787dbe5a326ee23ccf60f` | 8359 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ku.txt` | `9928c832be92b5ce8a9e60017a9dc9b6481f80c8` | 29585 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ku_Latn.txt` | `9db3fb301c7a92c85d6cc3c1b76dfb5d9eaf5fae` | 170 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ku_Latn_SY.txt` | `eb494ab3895e2689c710e627c0e53f35feacf63e` | 219 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ku_SY.txt` | `5e528bebbb51c3665e7b20d082e26145b4f0b9f8` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/kw.txt` | `a0e0304a3afffb14a43933dfe2653e724563fa9a` | 165 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/kxv.txt` | `f42cc79160524a6c2303c12116cd0c0ec98e631b` | 45040 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/kxv_Deva.txt` | `c77b18493320edeff6304922e229160ace180808` | 61205 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/kxv_IN.txt` | `9b959007a432b7d85cd575b4b734f2660a9df255` | 198 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/kxv_Latn.txt` | `7029a78c5311a3fe80df07929d21433f60505ff4` | 171 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/kxv_Latn_IN.txt` | `9034564887610c7dd74def8193ad992ce0c1b8d8` | 220 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/kxv_Orya.txt` | `d3872ab086358be59be192aaaadfc8a70a22a2d9` | 60640 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/kxv_Telu.txt` | `47ca9c265807ac7821b47859437cca07cb96d694` | 62843 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ky.txt` | `4855388db4b6713d40e830f0d72ea56a31f6411e` | 53943 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/lag.txt` | `fcef6aa6e692d374048f85e8e4e8bb4e53d10e7d` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/lb.txt` | `a1eca7217cd1152e036c3bd81ae30f461aadb471` | 22779 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/lg.txt` | `1091290675c5ae179ad1f34eec69c5ec2c1a67d9` | 165 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/lij.txt` | `d7bb8c25944e574111939a74425b6d495d1a23a6` | 489 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/lkt.txt` | `6439f8efd0920686fd120f51afca9aa7a7d08de2` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/lmo.txt` | `8847e9346a89a2f164edb371b27ff804b1a69a14` | 260 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ln.txt` | `6cb7c8075d0816620014d3f0dad51158ab96c69d` | 226 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/lo.txt` | `facd5d95170dd7ef1c8f067184a398050fbe093e` | 64398 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/lrc.txt` | `2c5f1b7ba7de7c2facc9eb4602df83be31a962a8` | 465 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/lt.txt` | `83b2dc18ec8c30d7d7668046828fb4cb3927fe07` | 45580 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/lu.txt` | `bda017fcb5b8d1d1980a8b1c4d77bc3b2253228e` | 165 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/luo.txt` | `559a30c7709e879296277820f5aa582f07253442` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/luy.txt` | `c0fca5976845ff27a15bb2ee9589ac7200ab62c7` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/lv.txt` | `eee469a7e5cdf94832e0dc6805942a36812453f8` | 42802 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/mai.txt` | `7309b57f45074e20c9f02c77f1945a83db0ebdd7` | 52262 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/mas.txt` | `8ca1d774755882f259216822a9b8320290acbf88` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/mer.txt` | `c0f5118ca55e7d4c1c52e1ce4dbcdb0cff3eac6d` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/mfe.txt` | `fc1b8bed106ab6da9827742374899e96b9e86f70` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/mg.txt` | `9920e171538667b7dc2083a6b8924e863eb56b6b` | 165 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/mgh.txt` | `636df755365a3ddd928582942e978e9b0e0fb427` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/mgo.txt` | `29b8518aa16183b25a4de5b3e9059a013f706388` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/mi.txt` | `24c23aed54c95b116a4c8241fffc616eaa092de8` | 24250 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/mk.txt` | `ec08ea1eb90d01f25612338dd6b54c44ef98c5af` | 56886 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ml.txt` | `74af1275a592d4b84ea805bb59721c770f765a59` | 67927 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/mn.txt` | `8a3870aaf329261f32d1841a80bc8d1be82a6696` | 51953 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/mni.txt` | `2bc9e67e37ef169fdf6a15c093c43a2248f942d4` | 3638 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/mni_Beng.txt` | `af6a31e717586398e1ac36dc15a5445f4887934c` | 171 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/mni_Beng_IN.txt` | `bb049f2dd688f175196a923edfadeda91c5e8dc8` | 220 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/mni_IN.txt` | `7b17d0a388e682d2f1062d4b3271da157bdafde6` | 198 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/mo.txt` | `f5394cfaf93705c1b5ff05407093292cd40ea629` | 185 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/mr.txt` | `707c58d5efa5802112ff2c006140ae341f49e798` | 62853 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ms.txt` | `9fafe9208ed040b95ad2d629168fd515680ba448` | 20029 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ms_ID.txt` | `b0708e6d3b31ce9d4a01b8307020beefc44b6829` | 227 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/mt.txt` | `13c967f5520e514d0ff385b6d9f55ffedf05978f` | 2875 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/mua.txt` | `0b6e6f5b7d355644db25dff3eb1aa8d05c0c7f11` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/my.txt` | `143b1e9d2a7335497ef2366ad2eea9952a7e3320` | 65802 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/mzn.txt` | `e5c250a3222ea5957e4cbc8683d0d52f629871f3` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/naq.txt` | `2f8365705cffef13b0da17131c3c41569df89390` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/nb.txt` | `0edb1bdd120745cba6f27886c6bfebaad9e8a092` | 184 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/nd.txt` | `1d3663b8a5b655b4e4c1d321d8b71da2097825eb` | 165 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/nds.txt` | `b43c97520d0d2c41aa0fc08b3058786a02621ba0` | 481 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ne.txt` | `f27fb9f6063b2ff288bdcdca0954b0e21a7ce6c9` | 60392 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ne_IN.txt` | `835558fa5679c70c449c2429ee69dbe2547b4708` | 245 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/nl.txt` | `505a283e6aa41ecdc51c3574f1e8d60895e2525a` | 25281 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/nl_SR.txt` | `a35781770cb4ecbc88c5b13a8bc93b7112f517fb` | 248 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/nmg.txt` | `c50ae3d4aafac0b8c20eeffb6ac2bc201ffedf53` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/nn.txt` | `feaf7ecb41d86a48671d0851252297dcd1c59b8f` | 14555 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/nn_NO.txt` | `924a0390b606a2f0f3c36981a3ad0c884af7ef01` | 214 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/nnh.txt` | `26675abc7f01d05dc9c7c61486a37c7f3b289ae9` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/no.txt` | `183fea5b801853620a87aaa32dab069292cd7d96` | 24658 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/no_NO.txt` | `206a38ca0d61414ebf7ed8818119f6a2722991e0` | 188 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/no_NO_NY.txt` | `d835c28c11b79f55957b8882b8d8ab6bce9251f4` | 194 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/nqo.txt` | `f43ba8a1f4c58db5e1fc153e00a24e2aa823e0ab` | 56198 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/nso.txt` | `7fd706356276fbd66c7cb0ffbdec09a2f3fb6ba1` | 264 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/nus.txt` | `8a5251624b0b2dd91b3c5ce6cd93581be6041bc2` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/nyn.txt` | `31eaa8728efb9d4e9eaadf1d5899adda5934bd28` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/oc.txt` | `d7cc0a136756b7ec45be6602eebb151f1da9608a` | 461 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/om.txt` | `7212fca5663e9f84781ef24885f2a204b08525a5` | 20699 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/or.txt` | `1b89f91e12373f81bfeb5d5357814763c1b960b9` | 63962 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/os.txt` | `6ba2c3bd4fb3e2bfc159612e93bf7fed0b4e5ec3` | 1881 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pa.txt` | `8409d47c9d0d0e28ea522fcdfd48c94bcb55ea49` | 60782 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pa_Arab.txt` | `9ca5df5a0b863211d0541155450a3b7119b8e706` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pa_Arab_PK.txt` | `7115eae83321a7bf890afa8c44380505e28ec28d` | 219 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pa_Guru.txt` | `ff84891014ab235b75a8c6763a867929af29ab9a` | 170 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pa_Guru_IN.txt` | `387160d5c79734c1fe4be2a1eea1bcd7e18cccbd` | 219 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pa_IN.txt` | `f967e61c69dd0755e42a3bfe6db3416a7caa399c` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pa_PK.txt` | `41a9da4ef49994e612f127155f0cccf4211bd8fa` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pcm.txt` | `a6c43ad8034269b4eeff8b6285ce2fd8af49a806` | 44880 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pl.txt` | `cad4627c8d4fc597a1c28ab9556d58e148c6b6ee` | 29572 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pms.txt` | `94c63c3993fedd22c609a93f3fd5ececccc259c1` | 384 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/prg.txt` | `615db0ef5696715061cc95bbd20c373ee2a5f867` | 393 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ps.txt` | `b4d3e4c1afd66cb38461c307f6412a126a64108f` | 49862 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ps_PK.txt` | `159ac17d604c317191987a28b3969d632e452a48` | 3009 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pt.txt` | `fc48bb4f0d7a80c52b30ad111d06ad2e65f827bb` | 29655 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pt_AO.txt` | `0deddf09b018c25c20d0f2548d01fb0c5e57b36a` | 705 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pt_CH.txt` | `b95843b6a3d94b9db5cfd8de7336e04b43efa9b4` | 190 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pt_CV.txt` | `9cf424bf31218b01183a51f13be7bb942eae87a2` | 700 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pt_GQ.txt` | `03137d69e0daecbd64a43cc34b1b108e0c3ec130` | 190 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pt_GW.txt` | `821c39901ff40180686d0754fa499c71a69d357e` | 705 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pt_LU.txt` | `b0cdd9ed90f7a37d66cb0d1afaaded09f52ea45b` | 190 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pt_MO.txt` | `311c20f1d21088ddac113c240f131b8f7968659f` | 705 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pt_MZ.txt` | `f565b160f1b65c9246c02afba19389bb8675c5d8` | 705 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pt_PT.txt` | `ac418d6ff81300026638b259f3bf212b8da54f06` | 26410 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pt_ST.txt` | `9ff916e45ce49b5dd6d4e5d72de98bd9994220f2` | 705 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/pt_TL.txt` | `94fa6ebd26c86d2d606db99b30a6ac46fdc0eefd` | 705 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/qu.txt` | `ec5fe7ce69d3540c995beb6a00678dcf17ef32fa` | 23863 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/qu_BO.txt` | `12c5ec473dfa521dffd07802627ddf8072546c23` | 362 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/qu_EC.txt` | `688fe5324dcb86c23b5ec96321dab31ff72ae4a6` | 362 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/raj.txt` | `83d7027a8d345617df6ace685a4a0fd322e4b563` | 286 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/rm.txt` | `78157262aec820bfecfb49ac63730db52a4e2f36` | 24143 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/rn.txt` | `b92393e853c5cb488fdf6a220bff3143ac08449d` | 165 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ro.txt` | `eb8c8e1430223c3699d9cee88c0ac70f13f31cb3` | 25030 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/rof.txt` | `caa97b11aa57ac66978360fc95d8397b33f7d60f` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/root.txt` | `be1251de311d369af79c02c3bbc8aecf955179a9` | 5481 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ru.txt` | `a7bda1e95ea5dc496152d99b7140502478cf7d0e` | 54884 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/rw.txt` | `f187d12de516f2fa94520494319de5a7c001a8f1` | 256 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/rwk.txt` | `86ab4936c7cd2fec277ab869979709ae0d0cbe01` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sa.txt` | `6adc18c7826542fa5ce4dd0b6260a71fa4b8c947` | 3192 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sah.txt` | `d66976bc610b51e0bd1ad317b3d550460d47ca45` | 7661 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/saq.txt` | `6e87a1d6ed8194317f8f93b4357fb9dda5770d16` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sat.txt` | `68b861727e94c254840299e59b32bbe0f67a869f` | 3973 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sat_IN.txt` | `2ab23ea28dd5608d00c54b3f7105377aeff71e95` | 198 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sat_Olck.txt` | `0e6c591d7d3785d643dc43f34d7732de0043d57d` | 171 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sat_Olck_IN.txt` | `c9949e3c9aec612692b79f13308b3e4ae88ac517` | 220 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sbp.txt` | `52ac366f3025665b3de8f279d38172d0ec606db2` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sc.txt` | `fa05256201afc3070397114a7f545509ac45546b` | 26997 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/scn.txt` | `f769e3896f451f30bdcabcb26532e9cdc2f12b81` | 25670 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sd.txt` | `ae960a223568e71f9866d2240667656055bb9e5e` | 51735 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sd_Arab.txt` | `1ca8e71bb0fbac2a397383d6ee0ebac776974b79` | 170 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sd_Arab_PK.txt` | `9c555dadb429e57d06a5535b573ffa930a967649` | 219 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sd_Deva.txt` | `d9b03e78d8ab2530f52866e790c7f048ac1f25bf` | 3068 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sd_Deva_IN.txt` | `76ac49d1d4f3c2cd6849cd78bea3988c62710e87` | 219 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sd_IN.txt` | `9a07168af6fc726e0a996a111e8c757da6b70c26` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sd_PK.txt` | `e0c785726a9496995064d684faafe3fdccb3fe0a` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/se.txt` | `4f3e07af3c18a3334dc21af40dc4aa30cc99a880` | 1603 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/se_FI.txt` | `e408cc5bdc32d7aa5a1595bb300e2d5520405552` | 19941 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/seh.txt` | `7d25e1936be05e97e595874839d26cea501dbce3` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ses.txt` | `ce584abab3f8e8a990dc199d93fffe40669afeb2` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sg.txt` | `ebe1df4fd228e1e0d830a4ed15b489947a18e06d` | 165 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sh.txt` | `5b624714e35775f5ec69cb4b2752d319a2c1da6c` | 190 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sh_BA.txt` | `87d87119bd869d7a3341146fdb62d42246e80024` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sh_CS.txt` | `e6fadaae6d7715baeb1cf537c71300cdba8822f6` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sh_YU.txt` | `f73827c8597b38a4e7cdf17acd798073427b6771` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/shi.txt` | `47c93ef7071becc66e8e24b215e9f76b3d6e708e` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/shi_Latn.txt` | `2804c47c9fe10756bd565f8268dca1e52b6d6a68` | 192 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/shi_MA.txt` | `b279dd1de425ecd0ea12614c5b7a7ef8052a18f2` | 198 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/shi_Tfng.txt` | `920e5112e792925d08d9fe5e079728f408cdc4ec` | 171 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/shi_Tfng_MA.txt` | `421d6a00d0686e8a5643eefadca9758d16106c14` | 220 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/shn.txt` | `9cb5de25509f85ecd61658ba846f10595427cecc` | 79512 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/si.txt` | `c6ae6a6cefdaad115f22548cad977ac4574fdc2a` | 63197 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sk.txt` | `b9dabd10c5a427630f935e2a46a4947d2d9aee6b` | 28687 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sl.txt` | `5778e8f420370a3581f1f1fb5e58ce8dc7b6a889` | 26832 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/smn.txt` | `3ee25226de8e5a104c0265421d98c504d38613c6` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sn.txt` | `0c9eecda9e24ddbedb1e16fabf28e30a535c4e41` | 165 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/so.txt` | `75fa686d11fa9a6217750ebb50ddbc61d412a5ee` | 43681 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sq.txt` | `a1961246f91c7751d4bb39b745eedda051941100` | 39049 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sr.txt` | `959ee69bb0df29747fcb09ab002cc59df6cdeb62` | 56274 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sr_BA.txt` | `920dd1218cbccd4589a664ecc9fdaa8dba9a4870` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sr_CS.txt` | `a0ca7049e63e2786523dea369ce07f42f8e6161e` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sr_Cyrl.txt` | `f9ad12d1b826902becc618498a8cea7d2aa10b4c` | 170 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sr_Cyrl_BA.txt` | `f0d48fa81a343756a8d109703535b898ee0cc59f` | 26476 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sr_Cyrl_CS.txt` | `97bb2090b9e0d85133c67c204741d45498c5bdf8` | 201 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sr_Cyrl_RS.txt` | `71f5697698c90f24659f885eaa427894b79265f7` | 219 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sr_Cyrl_XK.txt` | `5ae864aeff5ca1a55b8f01f8e811bf1dc304d5e1` | 219 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sr_Cyrl_YU.txt` | `8fd066c54c05cab2f6e885728a62ef5933089f25` | 201 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sr_Latn.txt` | `87e573d179dad8e6d118675f18b0f2dc8ff2919f` | 46947 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sr_Latn_BA.txt` | `ecd7e48ba8c1369f9a2b72202fea36893750e24e` | 20092 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sr_Latn_CS.txt` | `58163a24c4e83c1adb4af73b4e853e7f08d3b35f` | 201 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sr_Latn_ME.txt` | `b4b2a22c81812a6f8ef48264f18fa5a77612ee61` | 219 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sr_Latn_RS.txt` | `eebab9ac772c06f4c4e4ad40bcb9e30232dc5af0` | 219 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sr_Latn_YU.txt` | `64fb2ddc497df0dc09c9ca75258a0bd60e6eaf5d` | 201 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sr_ME.txt` | `de0e159259b2e4c6b48b11911f9bf242984c027f` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sr_RS.txt` | `078c7acc294e492b160397db46f08ad37e8d40ea` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sr_XK.txt` | `99a4774c47a515f9c729ef2e44598c89aa49b5c5` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sr_YU.txt` | `2ff7b5fb3de684cb9200f932f6f19c94744ca1cc` | 191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/st.txt` | `8edb4e51d38d6d5cd6caf32fef58314176c9ab21` | 396 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/su.txt` | `7cf2c20ef3e24165793d01b29b70f511f1baeb4d` | 1921 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/su_ID.txt` | `53cb8e50aa1f7978590c29dc5a2d8777ff14b0b0` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/su_Latn.txt` | `908c5a03c7ff586bc7c9ca960a996d6c66a0e340` | 170 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/su_Latn_ID.txt` | `45966df280a013234940da80287c7dc066250617` | 219 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sv.txt` | `d3ccbe501c8637fe55b489ddf70eab07b60bbc85` | 23485 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sw.txt` | `404042baa94bb99dfb82f3c43efe1850f486a9f5` | 20027 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/sw_KE.txt` | `463bd5a6e3b5616f28d77b606b8d0cc874bb8f91` | 11197 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/syr.txt` | `06696033808583e7b36695f676b36c5f0c873c5f` | 54802 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/szl.txt` | `b158e91292adb3b3e52cee97b0999a0758b6c8bc` | 397 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ta.txt` | `492769cc0fe468dce7d727cf39dba103d2095711` | 66288 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ta_MY.txt` | `22159b044887f5df6018df8572cb437c3ff91316` | 366 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ta_SG.txt` | `e2b149e2eeb5277b88f8dbcf8c1f05f946fd9e9e` | 366 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/te.txt` | `8cf82e4596b0dc9fa82a417ad4203b901d26ea5d` | 66242 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/teo.txt` | `ab6ac7d2b39d9288606a4f986e8d41df30bf1d54` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/tg.txt` | `4c0df3a4fe601acf1d62dc31d18d1af5d0af1763` | 53265 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/th.txt` | `88f10d397cc79370f35f77e5ab44b0899476d5f4` | 64352 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ti.txt` | `bf65085c9eba8bd52271b32c6b271599b36664b2` | 52240 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/tk.txt` | `6865568023180155a3de3fefc3e8730472e056fc` | 38705 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/tl.txt` | `ee2b81c0393436113e256fa00939c018709fc4d7` | 186 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/tl_PH.txt` | `43babbdacdcd3e5f2984c9df5ec0949e9d5b1499` | 192 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/tn.txt` | `f824dfeb8613d696c12d23ba1e9a0b7cec4c0b69` | 286 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/to.txt` | `05475501a53f41d6bfd3295e8d8a2ed9ef219bb2` | 24837 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/tok.txt` | `077b354f54c8f4597668f7d1e54deb4265126efb` | 460 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/tr.txt` | `6d7878cbb069ceeff482fde9a778eeb585ea3604` | 26442 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/tt.txt` | `42c154e99b20776be89afe26a16125c0750f5760` | 54383 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/twq.txt` | `4c799be85315ad98470708ebb62a7af6153ff9a0` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/tyv.txt` | `3955896d7831be6fe73681d71ea3b0352b24087c` | 390 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/tzdbNames.txt` | `e220d33ee21a23c1f31dde4f75b1c0e6cd17dec9` | 15131 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/tzm.txt` | `ca6c4ad44b112a63a35213663ce01ff8957b322d` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ug.txt` | `fc665957cf4366d01533c64de032b3df1b5a9268` | 25734 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/uk.txt` | `d9f511c0610be5dbe5fd708717592c37a4c169ae` | 59739 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ur.txt` | `2ed1c2dfded864b4435b7c111d16b1c03126a7ab` | 51873 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/ur_IN.txt` | `9bce5942d9cb4aa77fdcc891cb243ceb1faecb54` | 6908 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/uz.txt` | `88fa74e43953c14aaeea9f378d5b652799b7f21c` | 36173 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/uz_AF.txt` | `adbc2ede5b5cd3337497efb4b6a460acf0973886` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/uz_Arab.txt` | `b6ba42f5c44e5dc02f14626517db7f83ad11a0a1` | 273 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/uz_Arab_AF.txt` | `a4825348478c4cdc49bdc818c368ed542a525d71` | 219 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/uz_Cyrl.txt` | `d4eed8e536ebc127866d0063433eb4ceb5089007` | 22211 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/uz_Latn.txt` | `d810a57d76dbc55730ef708b76ee9aa6c483c4f5` | 170 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/uz_Latn_UZ.txt` | `4dacb4dd99d5a7e790508b7fdd37b2d2dc429c0f` | 219 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/uz_UZ.txt` | `24f47948ba5ce138b60e35a19646743e1756c3ed` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/vai.txt` | `a3261310adac24843e17744a1392a5357d3a4ea8` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/vai_LR.txt` | `2b7e4774173af8555eba32ae00fbeaaca24e0912` | 198 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/vai_Latn.txt` | `c0a2288bb42e5ac35545737014d546281c13549b` | 192 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/vai_Vaii.txt` | `186423ef3918cda8d9e33a44fb6d0cb67474e333` | 171 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/vai_Vaii_LR.txt` | `79164aa6a10fef0cff1ec8627273df38d2668482` | 220 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/vec.txt` | `9e6dad775dd57af4ee751b797971d0c3745049e1` | 33939 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/vi.txt` | `1a6f701e8ee57a77094998485f0f08ad61562542` | 21798 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/vmw.txt` | `17e62f58355937c1f49121873fb2a456faf3a5bf` | 449 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/vun.txt` | `8575b63f86ea230a35ab86c9fecf53253736de0a` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/wae.txt` | `d5b2c52304c90c66299cbc0436b823a1e5642f11` | 3603 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/wo.txt` | `4bcf76970567f235603ea192ba97fab107957198` | 17227 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/xh.txt` | `06c40bcb71f1bb6d4b32fb3f17213ab550e39342` | 17603 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/xnr.txt` | `f80d58803d9f0c5e91fdab6262f57c92febb6dcb` | 62874 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/xog.txt` | `5674bbe2ef36c71b89bd3a042311680a15a9d152` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/yav.txt` | `99389b6ed48aff3bf63189256b536f732ad3a240` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/yi.txt` | `bf76c0f53bb3738dbf80c789408fac49cc653042` | 640 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/yo.txt` | `6ed0b879cfb4a7ec629044a4d28c806672834868` | 27425 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/yo_BJ.txt` | `778617ddcd41d7f629365b3229cb25b13c9ef2df` | 16315 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/yrl.txt` | `28a5c1545a37bfc786c9bd0a9d0798572c6de853` | 46195 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/yrl_CO.txt` | `c745d649b199962fa6bf1ac42b6d13178c86bc6b` | 545 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/yrl_VE.txt` | `1b5b93e9170d2e256ed35f9c25d47a2c1c1526c9` | 545 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/yue.txt` | `6626662462fdf8b9fddd082264657353d44b8fac` | 47165 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/yue_CN.txt` | `2bdd7326e8cd372016fdef6386f27a8e961f3e80` | 198 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/yue_HK.txt` | `a0e9bcdc48a47b59583e6d46d59d8476d0a81df3` | 198 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/yue_Hans.txt` | `1434f334614d9b511197f838a6ef9be8cca3520b` | 47191 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/yue_Hans_CN.txt` | `399d286ae33a82062d90232ec27dc5f747d8496b` | 220 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/yue_Hant.txt` | `1dad0a6ce955c63218c8129ee881cae588619d19` | 171 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/yue_Hant_HK.txt` | `539a5e41a814944ad3b57c8a13bcb2ed5dca8d9b` | 220 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/za.txt` | `975aa11b9c431d1f82ec5da6d98625683665c9d1` | 409 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/zgh.txt` | `01c7916866b54fa92c6dc6f9641d42a1d710e2e2` | 166 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/zh.txt` | `f9417c8c50492b7af83646b3d1fc2e2c453dd66d` | 47648 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/zh_CN.txt` | `59144144529089d39c39f1f5b2d3f1eb123d261d` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/zh_HK.txt` | `c7c7377a12f9744b19f2efdeeb37d1020475d3f2` | 196 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/zh_Hans.txt` | `04ef229513c4eee77aef4a5cc0184885c17535b3` | 170 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/zh_Hans_CN.txt` | `b63d757c2486c1548c6c144bbf341451a978a47e` | 219 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/zh_Hans_SG.txt` | `452585f985cf7911bc7aa052a5a56fa2fd5abc60` | 390 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/zh_Hant.txt` | `429042893631ea6dc2fc17b15acedb2f4419abfe` | 47717 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/zh_Hant_HK.txt` | `c2f9cb756960af4661238306aa82d2caf1dd484e` | 15192 bytes | data-or-other | UTF-8 | mode 100644
+
+`intl/icu/source/data/zone/zh_Hant_MO.txt` | `1b5d1762578c0fe37a7fa485721a7f368ad109c4` | 200 bytes | data-or-other | UTF-8 | mode 100644
+
+## Validation and limits
+
+Every listed blob was read from the pinned Git tree and its Git SHA-1 was recomputed. Extraction is structural only. Read implementations, callers, build conditions, and tests before making a behavior claim. Runtime behavior and historical reasons remain unverified. Reproduce a file with `git show 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b:path` in the corresponding source clone. The full study coverage and navigation note records aggregate results.

@@ -1,0 +1,1590 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:14:46.642314+00:00","paths":["dom/quota/QuotaManager.h","dom/quota/QuotaManagerImpl.h","dom/quota/QuotaManagerService.cpp","dom/quota/QuotaManagerService.h","dom/quota/QuotaObject.cpp","dom/quota/QuotaObject.h","dom/quota/QuotaParent.cpp","dom/quota/QuotaParent.h","dom/quota/QuotaPrefs.cpp","dom/quota/QuotaPrefs.h","dom/quota/QuotaRequestBase.cpp","dom/quota/QuotaRequestBase.h","dom/quota/QuotaRequests.cpp","dom/quota/QuotaRequests.h","dom/quota/QuotaResults.cpp","dom/quota/QuotaResults.h","dom/quota/QuotaUsageRequestChild.cpp","dom/quota/QuotaUsageRequestChild.h","dom/quota/QuotaUsageRequestParent.cpp","dom/quota/QuotaUsageRequestParent.h","dom/quota/QuotaUtilsService.sys.mjs","dom/quota/RemoteQuotaObject.cpp","dom/quota/RemoteQuotaObject.h","dom/quota/RemoteQuotaObjectChild.cpp","dom/quota/RemoteQuotaObjectChild.h","dom/quota/RemoteQuotaObjectParent.cpp","dom/quota/RemoteQuotaObjectParent.h","dom/quota/RemoteQuotaObjectParentTracker.h","dom/quota/RemoveParen.h","dom/quota/ResolvableNormalOriginOp.h","dom/quota/ResultExtensions.h","dom/quota/SanitizationUtils.cpp","dom/quota/SanitizationUtils.h","dom/quota/ScopedLogExtraInfo.cpp","dom/quota/ScopedLogExtraInfo.h","dom/quota/SerializationHelpers.h","dom/quota/StorageHelpers.cpp","dom/quota/StorageHelpers.h","dom/quota/StorageManager.cpp","dom/quota/StorageManager.h","dom/quota/StorageOriginAttributes.cpp","dom/quota/StorageOriginAttributes.h","dom/quota/StreamUtils.cpp","dom/quota/StreamUtils.h","dom/quota/StringifyUtils.cpp","dom/quota/StringifyUtils.h","dom/quota/TargetPtrHolder.h","dom/quota/ThreadUtils.cpp","dom/quota/ThreadUtils.h","dom/quota/UniversalDirectoryLock.cpp","dom/quota/UniversalDirectoryLock.h","dom/quota/UsageInfo.h","dom/quota/components.conf","dom/quota/gecko-trace.yaml","dom/quota/metrics.yaml","dom/quota/moz.build","dom/quota/nsIQuotaArtificialFailure.idl","dom/quota/nsIQuotaCallbacks.idl","dom/quota/nsIQuotaManagerService.idl","dom/quota/nsIQuotaManagerServiceInternal.idl","dom/quota/nsIQuotaRequests.idl","dom/quota/nsIQuotaResults.idl","dom/quota/nsIQuotaUtilsService.idl","dom/quota/nsIndexedDBProtocolHandler.cpp","dom/quota/nsIndexedDBProtocolHandler.h","dom/quota/scripts/qm-try-analysis/.containerignore","dom/quota/scripts/qm-try-analysis/Containerfile","dom/quota/scripts/qm-try-analysis/README.md","dom/quota/scripts/qm-try-analysis/poetry.lock","dom/quota/scripts/qm-try-analysis/pyproject.toml","dom/quota/scripts/qm-try-analysis/qm_try_analysis/__init__.py","dom/quota/scripts/qm-try-analysis/qm_try_analysis/analyze.py","dom/quota/scripts/qm-try-analysis/qm_try_analysis/cli.py","dom/quota/scripts/qm-try-analysis/qm_try_analysis/fetch.py","dom/quota/scripts/qm-try-analysis/qm_try_analysis/fetch_fn_names.sh","dom/quota/scripts/qm-try-analysis/qm_try_analysis/fn_anchors.py","dom/quota/scripts/qm-try-analysis/qm_try_analysis/htmlreport.py","dom/quota/scripts/qm-try-analysis/qm_try_analysis/logging.py","dom/quota/scripts/qm-try-analysis/qm_try_analysis/report.py","dom/quota/scripts/qm-try-analysis/qm_try_analysis/stackanalysis.py","dom/quota/scripts/qm-try-analysis/qm_try_analysis/telemetry.py","dom/quota/scripts/qm-try-analysis/qm_try_analysis/utils.py","dom/quota/scripts/qm-try-analysis/tests/test_reporting.py","dom/quota/test/README.md","dom/quota/test/browser/browser.toml","dom/quota/test/browser/browser_permissionsCrossOrigin.js","dom/quota/test/browser/browser_permissionsPromptAllow.js","dom/quota/test/browser/browser_permissionsPromptDeny.js","dom/quota/test/browser/browser_permissionsPromptUnknown.js","dom/quota/test/browser/browser_simpledb.js","dom/quota/test/browser/empty.html","dom/quota/test/browser/head.js","dom/quota/test/browser/helpers.js","dom/quota/test/browser/permissionsPrompt.html","dom/quota/test/common/browser.js","dom/quota/test/common/content.js","dom/quota/test/common/file.js","dom/quota/test/common/global.js","dom/quota/test/common/mochitest.js","dom/quota/test/common/nestedtest.js","dom/quota/test/common/system.js","dom/quota/test/common/test_simpledb.js","dom/quota/test/common/test_storage_manager_persist_allow.js","dom/quota/test/common/test_storage_manager_persist_deny.js","dom/quota/test/common/test_storage_manager_persisted.js","dom/quota/test/common/xpcshell.js","dom/quota/test/gtest/Common.cpp","dom/quota/test/gtest/Common.h","dom/quota/test/gtest/PQuotaTest.ipdl","dom/quota/test/gtest/QuotaManagerDependencyFixture.cpp","dom/quota/test/gtest/QuotaManagerDependencyFixture.h","dom/quota/test/gtest/QuotaManagerTestHelpers.cpp","dom/quota/test/gtest/QuotaManagerTestHelpers.h","dom/quota/test/gtest/QuotaTestChild.h","dom/quota/test/gtest/QuotaTestParent.h","dom/quota/test/gtest/TestCheckedUnsafePtr.cpp","dom/quota/test/gtest/TestClientDirectoryLockHandle.cpp","dom/quota/test/gtest/TestClientStorageScope.cpp","dom/quota/test/gtest/TestClientUsageArray.cpp","dom/quota/test/gtest/TestCommonMetadata.cpp","dom/quota/test/gtest/TestDate.cpp","dom/quota/test/gtest/TestDirectoryLock.cpp","dom/quota/test/gtest/TestEncryptedRandomAccessBlock.cpp","dom/quota/test/gtest/TestEncryptedRandomAccessStream.cpp","dom/quota/test/gtest/TestEncryptedStream.cpp","dom/quota/test/gtest/TestFileOutputStream.cpp","dom/quota/test/gtest/TestFlatten.cpp","dom/quota/test/gtest/TestForwardDecls.cpp","dom/quota/test/gtest/TestMozPromiseUtils.cpp","dom/quota/test/gtest/TestNSSCipherStrategy.cpp","dom/quota/test/gtest/TestNSSRandomAccessCipherStrategy.cpp","dom/quota/test/gtest/TestOpenClientDirectoryInfo.cpp","dom/quota/test/gtest/TestOriginParser.cpp","dom/quota/test/gtest/TestOriginScope.cpp","dom/quota/test/gtest/TestPersistenceScope.cpp","dom/quota/test/gtest/TestPersistenceType.cpp","dom/quota/test/gtest/TestQMResult.cpp","dom/quota/test/gtest/TestQuotaCommon.cpp","dom/quota/test/gtest/TestQuotaManager.cpp","dom/quota/test/gtest/TestResultExtensions.cpp","dom/quota/test/gtest/TestScopedLogExtraInfo.cpp","dom/quota/test/gtest/TestStorageConnection.cpp","dom/quota/test/gtest/TestStorageOriginAttributes.cpp","dom/quota/test/gtest/TestStringifyUtils.cpp","dom/quota/test/gtest/TestTelemetry.cpp","dom/quota/test/gtest/TestThreadUtils.cpp","dom/quota/test/gtest/TestUsageInfo.cpp","dom/quota/test/gtest/moz.build","dom/quota/test/marionette/manifest.toml","dom/quota/test/marionette/quota_test_case.py","dom/quota/test/marionette/test_private_repository_cleanup.py","dom/quota/test/mochitest/helpers.js","dom/quota/test/mochitest/mochitest.toml","dom/quota/test/mochitest/test_simpledb.html","dom/quota/test/mochitest/test_storage_manager_persist_allow.html","dom/quota/test/mochitest/test_storage_manager_persist_deny.html","dom/quota/test/mochitest/test_storage_manager_persisted.html","dom/quota/test/modules/content/Assert.mjs","dom/quota/test/modules/content/ModuleLoader.mjs","dom/quota/test/modules/content/StorageUtils.mjs","dom/quota/test/modules/content/Utils.mjs","dom/quota/test/modules/content/UtilsParent.mjs","dom/quota/test/modules/content/WorkerDriver.mjs","dom/quota/test/modules/content/worker/Assert.js","dom/quota/test/modules/content/worker/ModuleLoader.js","dom/quota/test/modules/content/worker/Utils.js","dom/quota/test/modules/content/worker/UtilsChild.mjs","dom/quota/test/modules/content/worker/head.js","dom/quota/test/modules/system/FileUtils.sys.mjs","dom/quota/test/modules/system/ModuleLoader.sys.mjs","dom/quota/test/modules/system/PrefUtils.sys.mjs","dom/quota/test/modules/system/PrincipalUtils.sys.mjs","dom/quota/test/modules/system/ProcessUtils.sys.mjs","dom/quota/test/modules/system/QuotaUtils.sys.mjs","dom/quota/test/modules/system/RequestError.sys.mjs","dom/quota/test/modules/system/StorageUtils.sys.mjs","dom/quota/test/modules/system/Utils.sys.mjs","dom/quota/test/modules/system/UtilsParent.sys.mjs","dom/quota/test/modules/system/WorkerDriver.sys.mjs","dom/quota/test/modules/system/worker/.eslintrc.mjs","dom/quota/test/modules/system/worker/Assert.js","dom/quota/test/modules/system/worker/ModuleLoader.js","dom/quota/test/modules/system/worker/Utils.js","dom/quota/test/modules/system/worker/UtilsChild.mjs","dom/quota/test/modules/system/worker/head.js","dom/quota/test/moz.build","dom/quota/test/xpcshell/basics_profile.zip","dom/quota/test/xpcshell/caching/groupMismatch_profile.zip","dom/quota/test/xpcshell/caching/head.js","dom/quota/test/xpcshell/caching/make_unsetLastAccessTime.js","dom/quota/test/xpcshell/caching/removedOrigin_profile.zip","dom/quota/test/xpcshell/caching/test_groupMismatch.js","dom/quota/test/xpcshell/caching/test_removedOrigin.js","dom/quota/test/xpcshell/caching/test_unsetLastAccessTime.js","dom/quota/test/xpcshell/caching/unsetLastAccessTime_profile.zip","dom/quota/test/xpcshell/caching/xpcshell.toml","dom/quota/test/xpcshell/clearStoragesForClient_profile.json","dom/quota/test/xpcshell/clearStoragesForClient_profile.zip","dom/quota/test/xpcshell/clearStoragesForOriginPrefix_profile.json","dom/quota/test/xpcshell/clearStoragesForOriginPrefix_profile.zip","dom/quota/test/xpcshell/clearStoragesForPrincipal_profile.zip","dom/quota/test/xpcshell/clearStoragesForPrivateBrowsing_profile.json","dom/quota/test/xpcshell/clearStoragesForPrivateBrowsing_profile.zip","dom/quota/test/xpcshell/common/head.js","dom/quota/test/xpcshell/common/utils.js","dom/quota/test/xpcshell/createLocalStorage_profile.zip","dom/quota/test/xpcshell/defaultStorageDirectory_shared.json","dom/quota/test/xpcshell/defaultStorageDirectory_shared.zip","dom/quota/test/xpcshell/getCachedUsageForPrincipal_profile.zip","dom/quota/test/xpcshell/getUsageForPrincipal_profile.zip","dom/quota/test/xpcshell/getUsage_profile.zip","dom/quota/test/xpcshell/groupMismatch_profile.zip","dom/quota/test/xpcshell/head.js","dom/quota/test/xpcshell/indexedDBDirectory_shared.json","dom/quota/test/xpcshell/indexedDBDirectory_shared.zip","dom/quota/test/xpcshell/make_getCachedUsageForPrincipal.js","dom/quota/test/xpcshell/make_getUsageForPrincipal.js","dom/quota/test/xpcshell/make_secondaryCacheValidity.js","dom/quota/test/xpcshell/make_unknownFiles.js","dom/quota/test/xpcshell/make_unsetLastAccessTime.js","dom/quota/test/xpcshell/originMismatch_profile.json","dom/quota/test/xpcshell/originMismatch_profile.zip","dom/quota/test/xpcshell/persistentStorageDirectory_shared.json","dom/quota/test/xpcshell/persistentStorageDirectory_shared.zip","dom/quota/test/xpcshell/removeLocalStorage1_profile.zip","dom/quota/test/xpcshell/removeLocalStorage2_profile.zip","dom/quota/test/xpcshell/secondaryCacheValidity_profile.zip","dom/quota/test/xpcshell/telemetry/head.js","dom/quota/test/xpcshell/telemetry/test_dom_quota_try.js","dom/quota/test/xpcshell/telemetry/test_qm_first_initialization_attempt.js","dom/quota/test/xpcshell/telemetry/version0_0_make_it_unusable.zip","dom/quota/test/xpcshell/telemetry/version0_0_profile.zip","dom/quota/test/xpcshell/telemetry/version1_0_make_it_unusable.zip","dom/quota/test/xpcshell/telemetry/version1_0_profile.zip","dom/quota/test/xpcshell/telemetry/version2_0_make_it_unusable.zip","dom/quota/test/xpcshell/telemetry/version2_0_profile.zip","dom/quota/test/xpcshell/telemetry/version2_1_make_it_unusable.zip","dom/quota/test/xpcshell/telemetry/version2_1_profile.zip","dom/quota/test/xpcshell/telemetry/version2_2_make_it_unusable.zip","dom/quota/test/xpcshell/telemetry/version2_2_profile.zip","dom/quota/test/xpcshell/telemetry/xpcshell.toml","dom/quota/test/xpcshell/tempMetadataCleanup_profile.zip","dom/quota/test/xpcshell/test_allowListFiles.js","dom/quota/test/xpcshell/test_artificialFailure.js","dom/quota/test/xpcshell/test_bad_origin_directory.js","dom/quota/test/xpcshell/test_basics.js","dom/quota/test/xpcshell/test_cacheSchemaMismatch.js","dom/quota/test/xpcshell/test_clearStoragesForClient.js","dom/quota/test/xpcshell/test_clearStoragesForOriginAttributesPattern.js","dom/quota/test/xpcshell/test_clearStoragesForOriginPrefix.js","dom/quota/test/xpcshell/test_clearStoragesForPrincipal.js","dom/quota/test/xpcshell/test_clearStoragesForPrivateBrowsing.js","dom/quota/test/xpcshell/test_clearStoragesForPrivateBrowsing_callback.js","dom/quota/test/xpcshell/test_clientDirectoryOpeningStarted.js","dom/quota/test/xpcshell/test_corruptStorageSqlite.js","dom/quota/test/xpcshell/test_createLocalStorage.js","dom/quota/test/xpcshell/test_estimateGroupUsage.js","dom/quota/test/xpcshell/test_estimateOrigin.js","dom/quota/test/xpcshell/test_getCachedUsageForPrincipal.js","dom/quota/test/xpcshell/test_getUsage.js","dom/quota/test/xpcshell/test_getUsageForPrincipal.js","dom/quota/test/xpcshell/test_groupInitializationStarted.js","dom/quota/test/xpcshell/test_groupMismatch.js","dom/quota/test/xpcshell/test_idle_maintenance.js","dom/quota/test/xpcshell/test_initTemporaryStorage.js","dom/quota/test/xpcshell/test_initializeAllTemporaryOrigins.js","dom/quota/test/xpcshell/test_initializePersistentClient.js","dom/quota/test/xpcshell/test_initializePersistentOrigin.js","dom/quota/test/xpcshell/test_initializePersistentStorage.js","dom/quota/test/xpcshell/test_initializeTemporaryClient.js","dom/quota/test/xpcshell/test_initializeTemporaryOrigin.js","dom/quota/test/xpcshell/test_initializeTemporaryOrigin_failure.js","dom/quota/test/xpcshell/test_listCachedOrigins.js","dom/quota/test/xpcshell/test_listOrigins.js","dom/quota/test/xpcshell/test_originEndsWithDot.js","dom/quota/test/xpcshell/test_originInitializationStarted.js","dom/quota/test/xpcshell/test_originMismatch.js","dom/quota/test/xpcshell/test_originWithCaret.js","dom/quota/test/xpcshell/test_orpahnedQuotaObject.js","dom/quota/test/xpcshell/test_persist.js","dom/quota/test/xpcshell/test_persist_eviction.js","dom/quota/test/xpcshell/test_persist_globalLimit.js","dom/quota/test/xpcshell/test_persist_groupLimit.js","dom/quota/test/xpcshell/test_quotaClientInteractions.js","dom/quota/test/xpcshell/test_quotaUtilsService.js","dom/quota/test/xpcshell/test_removeLocalStorage.js","dom/quota/test/xpcshell/test_secondaryCacheValidity.js","dom/quota/test/xpcshell/test_shutdownDuringAllTemporaryOriginsInitialization.js","dom/quota/test/xpcshell/test_shutdownDuringAllTemporaryOriginsInitialization2.js","dom/quota/test/xpcshell/test_shutdownDuringRepositoryInitialization.js","dom/quota/test/xpcshell/test_simpledb.js","dom/quota/test/xpcshell/test_specialOrigins.js","dom/quota/test/xpcshell/test_storagePressure.js","dom/quota/test/xpcshell/test_tempMetadataCleanup.js","dom/quota/test/xpcshell/test_temporaryStorageCleanup.js","dom/quota/test/xpcshell/test_temporaryStorageEviction.js","dom/quota/test/xpcshell/test_temporaryStorageRFP.js","dom/quota/test/xpcshell/test_unaccessedOrigins.js","dom/quota/test/xpcshell/test_underflowedCacheRescan.js","dom/quota/test/xpcshell/test_unknownFiles.js","dom/quota/test/xpcshell/test_unsetLastAccessTime.js","dom/quota/test/xpcshell/test_validOrigins.js","dom/quota/test/xpcshell/unknownFiles_profile.zip","dom/quota/test/xpcshell/unsetLastAccessTime_profile.zip","dom/quota/test/xpcshell/upgrades/cacheVersion1_profile.json","dom/quota/test/xpcshell/upgrades/cacheVersion1_profile.zip","dom/quota/test/xpcshell/upgrades/head.js","dom/quota/test/xpcshell/upgrades/indexedDBAndPersistentStorageDirectory_profile.json","dom/quota/test/xpcshell/upgrades/indexedDBAndPersistentStorageDirectory_profile.zip","dom/quota/test/xpcshell/upgrades/indexedDBDirectory_flatOriginDirectories_profile.json","dom/quota/test/xpcshell/upgrades/indexedDBDirectory_flatOriginDirectories_profile.zip","dom/quota/test/xpcshell/upgrades/indexedDBDirectory_profile.json","dom/quota/test/xpcshell/upgrades/indexedDBDirectory_profile.zip","dom/quota/test/xpcshell/upgrades/localStorageArchive1upgrade_profile.zip","dom/quota/test/xpcshell/upgrades/localStorageArchive4upgrade_profile.zip","dom/quota/test/xpcshell/upgrades/localStorageArchiveDowngrade_profile.zip","dom/quota/test/xpcshell/upgrades/make_upgradeStorageFrom3to4.js","dom/quota/test/xpcshell/upgrades/persistentAndDefaultStorageDirectory_profile.json","dom/quota/test/xpcshell/upgrades/persistentAndDefaultStorageDirectory_profile.zip","dom/quota/test/xpcshell/upgrades/persistentStorageDirectory_flatOriginDirectories_profile.json","dom/quota/test/xpcshell/upgrades/persistentStorageDirectory_flatOriginDirectories_profile.zip","dom/quota/test/xpcshell/upgrades/persistentStorageDirectory_originDirectories_profile.json","dom/quota/test/xpcshell/upgrades/persistentStorageDirectory_originDirectories_profile.zip","dom/quota/test/xpcshell/upgrades/persistentStorageDirectory_profile.json","dom/quota/test/xpcshell/upgrades/persistentStorageDirectory_profile.zip","dom/quota/test/xpcshell/upgrades/test_localStorageArchive1upgrade.js","dom/quota/test/xpcshell/upgrades/test_localStorageArchive4upgrade.js","dom/quota/test/xpcshell/upgrades/test_localStorageArchiveDowngrade.js","dom/quota/test/xpcshell/upgrades/test_upgradeCacheFrom1.js","dom/quota/test/xpcshell/upgrades/test_upgradeFromFlatOriginDirectories.js","dom/quota/test/xpcshell/upgrades/test_upgradeFromIndexedDBDirectory.js","dom/quota/test/xpcshell/upgrades/test_upgradeFromIndexedDBDirectory_removeOldDirectory.js","dom/quota/test/xpcshell/upgrades/test_upgradeFromPersistentStorageDirectory.js","dom/quota/test/xpcshell/upgrades/test_upgradeFromPersistentStorageDirectory_removeOldDirectory.js","dom/quota/test/xpcshell/upgrades/test_upgradeFromPersistentStorageDirectory_upgradeOriginDirectories.js","dom/quota/test/xpcshell/upgrades/test_upgradeStorageFrom0_0.js","dom/quota/test/xpcshell/upgrades/test_upgradeStorageFrom1_0_idb.js","dom/quota/test/xpcshell/upgrades/test_upgradeStorageFrom1_0_removeAppsData.js","dom/quota/test/xpcshell/upgrades/test_upgradeStorageFrom1_0_removeMorgueDirectory.js","dom/quota/test/xpcshell/upgrades/test_upgradeStorageFrom1_0_stripObsoleteOriginAttributes.js","dom/quota/test/xpcshell/upgrades/test_upgradeStorageFrom2_0.js","dom/quota/test/xpcshell/upgrades/test_upgradeStorageFrom2_1.js","dom/quota/test/xpcshell/upgrades/test_upgradeStorageFrom2_2.js","dom/quota/test/xpcshell/upgrades/test_upgradeStorageFrom3to4.js","dom/quota/test/xpcshell/upgrades/upgradeStorageFrom3to4_profile.zip","dom/quota/test/xpcshell/upgrades/version0_0_profile.json","dom/quota/test/xpcshell/upgrades/version0_0_profile.zip","dom/quota/test/xpcshell/upgrades/version1_0_appsData_profile.json","dom/quota/test/xpcshell/upgrades/version1_0_appsData_profile.zip","dom/quota/test/xpcshell/upgrades/version1_0_idb_profile.json","dom/quota/test/xpcshell/upgrades/version1_0_idb_profile.zip","dom/quota/test/xpcshell/upgrades/version1_0_morgueDirectory_profile.json","dom/quota/test/xpcshell/upgrades/version1_0_morgueDirectory_profile.zip","dom/quota/test/xpcshell/upgrades/version1_0_obsoleteOriginAttributes_profile.json","dom/quota/test/xpcshell/upgrades/version1_0_obsoleteOriginAttributes_profile.zip","dom/quota/test/xpcshell/upgrades/version2_0_profile.json","dom/quota/test/xpcshell/upgrades/version2_0_profile.zip","dom/quota/test/xpcshell/upgrades/version2_1_profile.json","dom/quota/test/xpcshell/upgrades/version2_1_profile.zip","dom/quota/test/xpcshell/upgrades/version2_2_profile.json","dom/quota/test/xpcshell/upgrades/version2_2_profile.zip","dom/quota/test/xpcshell/upgrades/xpcshell.toml","dom/quota/test/xpcshell/xpcshell.toml","dom/reporting/CSPViolationReportBody.cpp","dom/reporting/CSPViolationReportBody.h","dom/reporting/ConnectionAllowlistViolationReportBody.cpp","dom/reporting/ConnectionAllowlistViolationReportBody.h","dom/reporting/CrashReport.cpp","dom/reporting/CrashReport.h","dom/reporting/DeprecationReportBody.cpp","dom/reporting/DeprecationReportBody.h","dom/reporting/IntegrityViolationReportBody.cpp","dom/reporting/IntegrityViolationReportBody.h","dom/reporting/PermissionsPolicyViolationReportBody.cpp","dom/reporting/PermissionsPolicyViolationReportBody.h","dom/reporting/Report.cpp","dom/reporting/Report.h","dom/reporting/ReportBody.cpp","dom/reporting/ReportBody.h","dom/reporting/ReportDeliver.cpp","dom/reporting/ReportDeliver.h","dom/reporting/ReportingHeader.cpp","dom/reporting/ReportingHeader.h","dom/reporting/ReportingObserver.cpp","dom/reporting/ReportingObserver.h","dom/reporting/ReportingUtils.cpp","dom/reporting/ReportingUtils.h","dom/reporting/TestReportBody.cpp","dom/reporting/TestReportBody.h","dom/reporting/TestReportGenerator.cpp","dom/reporting/TestReportGenerator.h","dom/reporting/TestingDeprecatedInterface.cpp","dom/reporting/TestingDeprecatedInterface.h","dom/reporting/moz.build","dom/reporting/tests/browser.toml","dom/reporting/tests/browser_purgeHost.js","dom/reporting/tests/browser_reportGeneration.js","dom/reporting/tests/common_deprecated.js","dom/reporting/tests/delivering.sjs","dom/reporting/tests/empty.html","dom/reporting/tests/gtest/TestReportToParser.cpp","dom/reporting/tests/gtest/TestReportingEndpointsParser.cpp","dom/reporting/tests/gtest/moz.build","dom/reporting/tests/iframe_delivering.html","dom/reporting/tests/iframe_delivering_chips.html","dom/reporting/tests/iframe_delivering_chips_worker.html","dom/reporting/tests/mochitest.toml","dom/reporting/tests/reporting_endpoints.sjs","dom/reporting/tests/test_delivering.html","dom/reporting/tests/test_delivering_chips.html","dom/reporting/tests/test_delivering_chips_worker.html","dom/reporting/tests/test_deprecated.html","dom/reporting/tests/test_memoryPressure.html","dom/reporting/tests/worker_delivering_chips.js","dom/reporting/tests/worker_deprecated.js","dom/script/AutoEntryScript.cpp","dom/script/AutoEntryScript.h","dom/script/ModuleLoader.cpp","dom/script/ModuleLoader.h","dom/script/ScriptCompression.cpp","dom/script/ScriptCompression.h","dom/script/ScriptDecoding.h","dom/script/ScriptElement.cpp","dom/script/ScriptElement.h","dom/script/ScriptLoadContext.cpp","dom/script/ScriptLoadContext.h","dom/script/ScriptLoadHandler.cpp","dom/script/ScriptLoadHandler.h","dom/script/ScriptLoadRequestType.h","dom/script/ScriptLoader.cpp","dom/script/ScriptLoader.h","dom/script/ScriptSettings.cpp","dom/script/ScriptSettings.h","dom/script/ScriptTrace.cpp","dom/script/ScriptTrace.h","dom/script/SharedScriptCache.cpp","dom/script/SharedScriptCache.h","dom/script/moz.build","dom/script/nsIScriptElement.cpp","dom/script/nsIScriptElement.h","dom/script/nsIScriptLoaderObserver.h","dom/security/CSPEvalChecker.cpp","dom/security/CSPEvalChecker.h","dom/security/CSPViolationData.cpp","dom/security/CSPViolationData.h","dom/security/ConnectionAllowlists.cpp","dom/security/ConnectionAllowlists.h","dom/security/ConnectionAllowlistsService.cpp","dom/security/ConnectionAllowlistsService.h","dom/security/DOMSecurityMonitor.cpp","dom/security/DOMSecurityMonitor.h","dom/security/DomSecurityIPCUtils.h","dom/security/FramingChecker.cpp","dom/security/FramingChecker.h","dom/security/IntegrityPolicy.cpp","dom/security/IntegrityPolicy.h","dom/security/IntegrityPolicyService.cpp","dom/security/IntegrityPolicyService.h","dom/security/IntegrityPolicyWAICT.cpp","dom/security/IntegrityPolicyWAICT.h","dom/security/OffThreadCSPContext.cpp","dom/security/OffThreadCSPContext.h","dom/security/PolicyContainer.cpp","dom/security/PolicyContainer.h","dom/security/PolicyTokenizer.cpp","dom/security/PolicyTokenizer.h","dom/security/ReferrerInfo.cpp","dom/security/ReferrerInfo.h","dom/security/ResourceHasher.cpp","dom/security/ResourceHasher.h","dom/security/SRICheck.cpp","dom/security/SRICheck.h","dom/security/SRILogHelper.h","dom/security/SRIMetadata.cpp","dom/security/SRIMetadata.h","dom/security/SecFetch.cpp","dom/security/SecFetch.h","dom/security/WAICTUtils.cpp","dom/security/WAICTUtils.h","dom/security/fuzztest/csp_fuzzer.cpp","dom/security/fuzztest/csp_fuzzer.dict","dom/security/fuzztest/moz.build","dom/security/metrics.yaml","dom/security/moz.build","dom/security/nsCSPContext.cpp","dom/security/nsCSPContext.h","dom/security/nsCSPParser.cpp","dom/security/nsCSPParser.h","dom/security/nsCSPService.cpp","dom/security/nsCSPService.h","dom/security/nsCSPUtils.cpp","dom/security/nsCSPUtils.h","dom/security/nsContentSecurityManager.cpp","dom/security/nsContentSecurityManager.h"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013"}} -->
+# firefox/dom structural source map 124
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. This is an automated navigation map, not a behavior review.
+Each row gives the repository-relative path, Git blob ID, byte size, role inferred from the path, declaration candidates, and literal dependency candidates. `@N` is the source line.
+Candidates come from line-based patterns. They can miss multiline, anonymous, macro-generated, and language-specific declarations or match comments and fixture text. Dependencies are not resolved imports, runtime calls, or a complete graph. No candidates does not mean no functions or dependencies.
+Imported code and tests are included. Binary and non-UTF-8 files have a census entry but no declaration extraction. Symlink contents are scanned as text, not followed. No uncommitted changes, build products, ignored files, or untracked files are studied.
+
+## File map
+
+`dom/quota/QuotaManager.h` | `a0cbab2e5ffabcd7afc059efe30548cacaf04f1b` | 48991 bytes | source | UTF-8 | mode 100644
+Declarations: mozIStorageConnection@50; nsIEventTarget@51; nsIFile@52; nsIRunnable@53; nsIThread@54; nsITimer@55; mozilla@57; OriginAttributes@59; OriginAttributesPattern@60; ipc@62; PrincipalInfo@64; mozilla@70; CanonicalQuotaObject@72; ClearDataOp@73; ClearRequestBase@74; ClientStorageScope@75; ClientUsageArray@76; ClientDirectoryLock@77; ClientDirectoryLockHandle@78; DirectoryLockImpl@79; DirtyTrackingAutoLock@80; GroupInfo@81; GroupInfoPair@82; NormalOriginOperationBase@83; OriginCacheMap@84; OriginDirectoryLock@85; OriginInfo@86; OriginScope@87; OriginUpserter@88; QuotaObject@89; SaveOriginAccessTimeOp@90; UniversalDirectoryLock@91; test@93; GTEST_CLASS@94; QuotaManager@98; Observer@130; IsRunningXPCShellTests@142; IsRunningGTests@148; IsPersistentOriginInitializedInternal@195; IsTemporaryStorageInitializedInternal@201; RemoveQuotaForRepository@249; IsStorageInitialized@415; IsStorageInitializedInternal@421; IsPersistentStorageInitialized@453; IsPersistentStorageInitializedInternal@459; IsTemporaryStorageInitialized@569; StartIdleMaintenance@655; StopIdleMaintenance@665; AssertCurrentThreadOwnsQuotaMutex@673; AssertNotCurrentThreadOwnsQuotaMutex@677; IOThread@681; class@793; ReleaseIOThreadObjects@982; BackgroundThreadAccessible@1210; IOThreadAccessible@1234
+Dependencies: cstdint@8; utility@9; Client.h@11; ErrorList.h@12; PLDHashTable.h@13; mozilla/AlreadyAddRefed.h@14; mozilla/Assertions.h@15; mozilla/InitializedOnce.h@16; mozilla/MozPromise.h@17; mozilla/Mutex.h@18; mozilla/RefPtr.h@19; mozilla/Result.h@20; mozilla/ThreadBound.h@21; mozilla/dom/Nullable.h@22; mozilla/dom/UnboundedMPSCQueue.h@23; mozilla/dom/ipc/IdType.h@24; mozilla/dom/quota/Assertions.h@25; mozilla/dom/quota/BackgroundThreadObject.h@26; mozilla/dom/quota/CommonMetadata.h@27; mozilla/dom/quota/DirectoryLockCategory.h@28; mozilla/dom/quota/ForwardDecls.h@29; mozilla/dom/quota/HashKeys.h@30; mozilla/dom/quota/InitializationTypes.h@31; mozilla/dom/quota/NotifyUtils.h@32; mozilla/dom/quota/OpenClientDirectoryInfo.h@33; mozilla/dom/quota/OriginOperationCallbacks.h@34; mozilla/dom/quota/PersistenceType.h@35; nsCOMPtr.h@36; nsClassHashtable.h@37; nsDebug.h@38; nsHashKeys.h@39; nsISupports.h@40; nsStringFwd.h@41; nsTArray.h@42; nsTHashMap.h@43; nsTStringRepr.h@44; nscore.h@45; prenv.h@46
+
+`dom/quota/QuotaManagerImpl.h` | `a4673fdbee49370138a351f09a7eb4c34a64f345` | 1716 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; QuotaManager::CollectPendingOriginsForListing@29; QuotaManager::MaybeRecordQuotaManagerShutdownStepWith@51
+Dependencies: GroupInfo.h@8; GroupInfoPair.h@9; OriginInfo.h@10; mozilla/dom/quota/QuotaManager.h@11
+
+`dom/quota/QuotaManagerService.cpp` | `25f405f2617d8f12252f29306e775ba0d1319469` | 52813 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@57; ResponseTypeTraits@96; ResponseTypeTraits@99; CreateVariant@102; ResponseTypeTraits@110; CreateVariant@113; ResponseTypeTraits@121; ResponseTypeTraits@150; ResponseTypeTraits@182; CreateVariant@185; ResponsePromiseResolveOrRejectCallback@197; mRequest@200; operator@202; QuotaManagerService@254; PendingRequestInfo@259; GetRequest@263; QuotaManagerService@268; PendingRequestInfo@273; QuotaManagerService@281; PendingRequestInfo@286; mIdleObserverRegistered@294; QuotaManagerService::~QuotaManagerService@298; QuotaManagerService::GetOrCreate@304; QuotaManagerService::Get@333; QuotaManagerService::FactoryCreate@339; QuotaManagerService::ClearBackgroundActor@344; QuotaManagerService::Init@366; QuotaManagerService::Destroy@386; QuotaManagerService::EnsureBackgroundActor@396; QuotaManagerService::InitiateRequest@429; QuotaManagerService::PerformIdleMaintenance@443; QuotaManagerService::RemoveIdleObserver@492; QuotaManagerService::StorageName@515; QuotaManagerService::StorageInitialized@539; QuotaManagerService::PersistentStorageInitialized@560; QuotaManagerService::TemporaryStorageInitialized@581; QuotaManagerService::Init@721; QuotaManagerService::InitializePersistentStorage@742; QuotaManagerService::InitTemporaryStorage@763; QuotaManagerService::InitializeAllTemporaryOrigins@784; QuotaManagerService::Clear@1167; QuotaManagerService::Reset@1383; QuotaManagerService::ListOrigins@1623; QuotaManagerService::ListCachedOrigins@1639; QuotaManagerService::Notify@1711; QuotaManagerService::RequestInfo::InitiateRequest@1716
+Dependencies: QuotaManagerService.h@5; ActorsChild.h@8; Client.h@9; QuotaManager.h@10; QuotaRequests.h@11; QuotaResults.h@12; cstdint@15; cstring@16; utility@17; MainThreadUtils.h@19; mozilla/Assertions.h@20; mozilla/Atomics.h@21; mozilla/ClearOnShutdown.h@22; mozilla/Hal.h@23; mozilla/Maybe.h@24; mozilla/OriginAttributes.h@25; mozilla/RefPtr.h@26; mozilla/Services.h@27; mozilla/StaticPrefs_dom.h@28; mozilla/StaticPtr.h@29; mozilla/dom/quota/PQuota.h@30; mozilla/dom/quota/PersistenceType.h@31; mozilla/dom/quota/PrincipalUtils.h@32; mozilla/dom/quota/QuotaUsageRequestChild.h@33; mozilla/dom/quota/ResultExtensions.h@34; mozilla/fallible.h@35; mozilla/hal_sandbox/PHal.h@36; mozilla/ipc/BackgroundChild.h@37; mozilla/ipc/BackgroundUtils.h@38; mozilla/ipc/Endpoint.h@39; mozilla/ipc/PBackgroundChild.h@40; mozilla/ipc/PBackgroundSharedTypes.h@41; nsCOMPtr.h@42; nsContentUtils.h@43; nsDebug.h@44; nsError.h@45; nsIObserverService.h@46; nsIPrincipal.h@47; nsIUserIdleService.h@48; nsServiceManagerUtils.h@49; nsStringFwd.h@50; nsVariant.h@51; nsXULAppAPI.h@52; nscore.h@53
+
+`dom/quota/QuotaManagerService.h` | `87504844b3337879d8d6cd6d1e78d21a99799fe3` | 2572 bytes | source | UTF-8 | mode 100644
+Declarations: nsIPrincipal@20; nsIQuotaRequest@21; nsIQuotaUsageCallback@22; nsIQuotaUsageRequest@23; mozilla@25; ipc@26; PBackgroundChild@28; hal@32; BatteryInformation@33; dom@36; QuotaChild@38; QuotaManager@39; QuotaManagerService@41; BackgroundCreateCallback@47; PendingRequestInfo@48; UsageRequestInfo@49; RequestInfo@50; IdleMaintenanceInfo@51
+Dependencies: ErrorList.h@8; mozilla/AlreadyAddRefed.h@9; mozilla/HalBatteryInformation.h@10; mozilla/dom/ipc/IdType.h@11; nsIObserver.h@12; nsIQuotaManagerService.h@13; nsIQuotaManagerServiceInternal.h@14; nsISupports.h@15
+
+`dom/quota/QuotaObject.cpp` | `3a9f0b71be8df3144d287300a398afb34da05f12` | 2386 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@18; QuotaObject::AsCanonicalQuotaObject@20; QuotaObject::AsRemoteQuotaObject@24; QuotaObject::Serialize@28; QuotaObject::Deserialize@59
+Dependencies: QuotaObject.h@5; CanonicalQuotaObject.h@7; RemoteQuotaObject.h@8; mozilla/dom/quota/IPCQuotaObject.h@9; mozilla/dom/quota/PRemoteQuotaObject.h@10; mozilla/dom/quota/RemoteQuotaObjectChild.h@11; mozilla/dom/quota/RemoteQuotaObjectParent.h@12; mozilla/dom/quota/RemoteQuotaObjectParentTracker.h@13; mozilla/ipc/BackgroundParent.h@14; nsIInterfaceRequestor.h@15; nsIInterfaceRequestorUtils.h@16
+
+`dom/quota/QuotaObject.h` | `2c4bd011169d9e69879d4b8a40709685cec7d872` | 2426 bytes | source | UTF-8 | mode 100644
+Declarations: nsIInterfaceRequestor@10; mozilla@12; CanonicalQuotaObject@14; IPCQuotaObject@15; RemoteQuotaObject@16; QuotaObject@29; QuotaObject@59
+Dependencies: nsISupportsImpl.h@8
+
+`dom/quota/QuotaParent.cpp` | `4156a403ba542f611efb379f00beafc4cbd1730f` | 40322 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@31; PromiseResolveOrRejectCallbackBase@38; mResolver@42; CanSend@45; PromiseResolveOrRejectCallback@54; PromiseResolveOrRejectCallback@59; Base@70; operator@72; PromiseResolveOrRejectCallback@85; Base@96; operator@98; AllocPQuotaParent@129; Quota::~Quota@142; Quota::TrustParams@147; Quota::VerifyPrincipalInfo@165; Quota::VerifyRequestParams@172; Quota::ActorDestroy@248; NS_WARN_IF@272; Quota::DeallocPQuotaRequestParent@328; Quota::RecvStartIdleMaintenance@1141; Quota::RecvStopIdleMaintenance@1166
+Dependencies: QuotaParent.h@5; mozilla/Assertions.h@7; OriginOperations.h@9; QuotaRequestBase.h@10; mozilla/RefPtr.h@11; mozilla/dom/quota/ErrorHandling.h@12; mozilla/dom/quota/PQuota.h@13; mozilla/dom/quota/PQuotaRequestParent.h@14; mozilla/dom/quota/PQuotaUsageRequestParent.h@15; mozilla/dom/quota/PrincipalUtils.h@16; mozilla/dom/quota/QuotaManager.h@17; mozilla/dom/quota/QuotaUsageRequestParent.h@18; mozilla/dom/quota/ResultExtensions.h@19; mozilla/ipc/BackgroundParent.h@20; nsDebug.h@21; nsError.h@22
+
+`dom/quota/QuotaParent.h` | `2670cefd27028949cf7ecc9f47cf7f1457ea533d` | 7271 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; Quota@14
+Dependencies: mozilla/Result.h@8; mozilla/dom/quota/PQuotaParent.h@9; nsISupportsImpl.h@10
+
+`dom/quota/QuotaPrefs.cpp` | `a377f932219444f5b584ba24d51201fe70d287a5` | 1449 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@16; QuotaPrefs::LazyOriginInitializationEnabled@19; QuotaPrefs::TriggerOriginInitializationInBackgroundEnabled@26; QuotaPrefs::IncrementalOriginInitializationEnabled@33
+Dependencies: QuotaPrefs.h@5; mozilla/StaticPrefs_dom.h@7; prenv.h@8
+
+`dom/quota/QuotaPrefs.h` | `f1a54db62f4a440ad0ee8dfb77b8a12cee5fe829` | 696 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@8; QuotaPrefs@14
+
+`dom/quota/QuotaRequestBase.cpp` | `219460b47908ac102407a1b6ff0a01c120a41d4e` | 1236 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; mActorDestroyed@15; QuotaRequestBase::~QuotaRequestBase@17; QuotaRequestBase::SendResults@22; QuotaRequestBase::ActorDestroy@42
+Dependencies: QuotaRequestBase.h@5; mozilla/dom/quota/PQuotaUsageRequest.h@7; mozilla/dom/quota/QuotaManager.h@8
+
+`dom/quota/QuotaRequestBase.h` | `b9faee5f0ffd97713f58d3b8219483c515734bf2` | 1323 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@11; RequestResponse@13; QuotaRequestBase@15; NoteActorDestroyed@26; IsActorDestroyed@32
+Dependencies: NormalOriginOperationBase.h@8; mozilla/dom/quota/PQuotaRequestParent.h@9
+
+`dom/quota/QuotaRequests.cpp` | `0a07349a693baf7e81ad4607261b5f0636350b2c` | 6230 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@20; Runnable@21; mozilla@24; RequestBase::RequestBase@26; mHaveResultOrErrorCode@33; RequestBase::AssertIsOnOwningThread@39; RequestBase::SetError@45; RequestBase::GetPrincipal@66; RequestBase::GetResultCode@75; RequestBase::GetResultName@88; mCallback@100; mCanceled@110; UsageRequest::~UsageRequest@116; UsageRequest::SetResult@131; UsageRequest::GetResult@153; UsageRequest::GetCallback@166; UsageRequest::SetCallback@175; UsageRequest::Cancel@183; UsageRequest::FireCallback@200; Request::Request@210; Request::Request@212; Request::Request@217; Request::~Request@222; Request::SetResult@224; Request::GetResult@237; Request::GetCallback@259; Request::SetCallback@268; Request::FireCallback@275
+Dependencies: QuotaRequests.h@5; ActorsChild.h@8; mozilla/ErrorNames.h@11; mozilla/dom/quota/QuotaUsageRequestChild.h@12; nsDebug.h@13; nsIQuotaCallbacks.h@14; nsISupportsUtils.h@15; nsIVariant.h@16; nsStringFwd.h@17; nscore.h@18
+
+`dom/quota/QuotaRequests.h` | `0ac08c1285c80a79aa879f5d9ff0b4317db9a290` | 2603 bytes | source | UTF-8 | mode 100644
+Declarations: nsIQuotaCallback@15; nsIQuotaUsageCallback@16; nsIVariant@17; mozilla@19; QuotaUsageRequestChild@21; RequestBase@23; UsageRequest@55; ClearBackgroundActor@71; Request@90
+Dependencies: ErrorList.h@8; nsCOMPtr.h@9; nsCycleCollectionParticipant.h@10; nsIPrincipal.h@11; nsIQuotaRequests.h@12; nsISupports.h@13
+
+`dom/quota/QuotaResults.cpp` | `457998f980ea91bda221587c580928099d528db1` | 5443 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; mFullOriginMetadata@16; FullOriginMetadataResult::GetSuffix@21; FullOriginMetadataResult::GetGroup@27; FullOriginMetadataResult::GetOrigin@33; FullOriginMetadataResult::GetStorageOrigin@39; FullOriginMetadataResult::GetPrivate@45; FullOriginMetadataResult::GetPersistenceType@53; FullOriginMetadataResult::GetLastAccessTime@60; FullOriginMetadataResult::GetAccessed@77; FullOriginMetadataResult::GetPersisted@85; FullOriginMetadataResult::GetClientUsages@93; FullOriginMetadataResult::GetOriginUsage@99; FullOriginMetadataResult::GetQuotaVersion@107; mLastAccessed@119; UsageResult::GetOrigin@124; UsageResult::GetPersisted@130; UsageResult::GetUsage@138; UsageResult::GetLastAccessed@146; mUsageInfo@154; OriginUsageResult::GetDatabaseUsage@159; OriginUsageResult::GetFileUsage@167; OriginUsageResult::GetUsage@175; OriginUsageResult::GetDatabaseUsageIsExplicit@183; OriginUsageResult::GetFileUsageIsExplicit@191; OriginUsageResult::GetTotalUsageIsExplicit@199; OriginUsageResult::GetUsageInfo@206; mUsage@209; EstimateResult::GetUsage@214; EstimateResult::GetLimit@222
+Dependencies: QuotaResults.h@5; ErrorList.h@7; mozilla/Assertions.h@8; mozilla/dom/quota/Assertions.h@9; nscore.h@10
+
+`dom/quota/QuotaResults.h` | `659c8ceccb06a1fe293363668819a122d059eafe` | 1823 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@16; FullOriginMetadataResult@18; UsageResult@32; OriginUsageResult@49; EstimateResult@62
+Dependencies: cstdint@8; mozilla/dom/quota/CommonMetadata.h@10; mozilla/dom/quota/UsageInfo.h@11; nsIQuotaResults.h@12; nsISupports.h@13; nsString.h@14
+
+`dom/quota/QuotaUsageRequestChild.cpp` | `1636367b65997acc375bd0499582f194d84e713f` | 1269 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; mRequest@16; QuotaUsageRequestChild::~QuotaUsageRequestChild@22; QuotaUsageRequestChild::AssertIsOnOwningThread@30; QuotaUsageRequestChild::Recv__delete__@37; QuotaUsageRequestChild::ActorDestroy@44
+Dependencies: QuotaUsageRequestChild.h@5; QuotaRequests.h@8; mozilla/Assertions.h@11
+
+`dom/quota/QuotaUsageRequestChild.h` | `1407b2255b6de6a5bc313921e0b72f144f2eb921` | 1244 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; QuotaManagerService@14; UsageRequest@15; QuotaUsageRequestChild@17
+Dependencies: mozilla/RefPtr.h@8; mozilla/dom/quota/PQuotaUsageRequestChild.h@9; nsISupportsImpl.h@10
+
+`dom/quota/QuotaUsageRequestParent.cpp` | `9d24598e3899402a15c4244f770e94ec0ad9c149` | 1032 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@7; QuotaUsageRequestParent::~QuotaUsageRequestParent@9; QuotaUsageRequestParent::OnCancel@13; QuotaUsageRequestParent::Destroy@19; QuotaUsageRequestParent::RecvCancel@27; QuotaUsageRequestParent::ActorDestroy@35
+Dependencies: QuotaUsageRequestParent.h@5
+
+`dom/quota/QuotaUsageRequestParent.h` | `70b8aab13d57a4226d92c38f67f4a50875ce585d` | 1090 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; QuotaUsageRequestParent@14
+Dependencies: mozilla/dom/quota/BackgroundThreadObject.h@8; mozilla/dom/quota/ForwardDecls.h@9; mozilla/dom/quota/PQuotaUsageRequestParent.h@10
+
+`dom/quota/QuotaUtilsService.sys.mjs` | `5d661e0dda2142ba755162cde740154d4859c835` | 853 bytes | source | UTF-8 | mode 100644
+Declarations: QuotaUtilsService@7; getPrivateIdentityId@10
+Dependencies: moz-src:///toolkit/components/contextualidentity/ContextualIdentityService.sys.mjs@5
+
+`dom/quota/RemoteQuotaObject.cpp` | `b888a9c0b7c34706938c3fdc6b05c774fc027f57` | 1502 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; QuotaObject@13; RemoteQuotaObject::~RemoteQuotaObject@19; RemoteQuotaObject::ClearActor@25; RemoteQuotaObject::Close@31; RemoteQuotaObject::MaybeUpdateSize@44
+Dependencies: RemoteQuotaObject.h@5; mozilla/dom/quota/RemoteQuotaObjectChild.h@7; mozilla/ipc/BackgroundParent.h@8
+
+`dom/quota/RemoteQuotaObject.h` | `7fb074854d6da691626a18e5d68ce265224961a4` | 1264 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; RemoteQuotaObjectChild@12; RemoteQuotaObject@15
+Dependencies: mozilla/dom/quota/QuotaObject.h@8
+
+`dom/quota/RemoteQuotaObjectChild.cpp` | `abfd7a32931ee33de982edf3edbe7390e2106e37` | 881 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@9; mRemoteQuotaObject@12; RemoteQuotaObjectChild::ActorDestroy@24
+Dependencies: RemoteQuotaObjectChild.h@5; RemoteQuotaObject.h@7
+
+`dom/quota/RemoteQuotaObjectChild.h` | `c2ef810e900f52e8e7b2a823eb0044eaba48f078` | 963 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; RemoteQuotaObject@12; RemoteQuotaObjectChild@14
+Dependencies: mozilla/dom/quota/PRemoteQuotaObjectChild.h@8
+
+`dom/quota/RemoteQuotaObjectParent.cpp` | `d3c5440c0808571da9bae2464a36db2a5c88a50f` | 1977 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; mTracker@18; RemoteQuotaObjectParent::~RemoteQuotaObjectParent@20; QM_TRY@28; RemoteQuotaObjectParent::ActorDestroy@37; RemoteQuotaObjectParent::CheckFileAfterClose@47
+Dependencies: RemoteQuotaObjectParent.h@5; CanonicalQuotaObject.h@7; mozilla/dom/quota/RemoteQuotaObjectParentTracker.h@8; mozilla/dom/quota/ResultExtensions.h@9; mozilla/ipc/BackgroundParent.h@10
+
+`dom/quota/RemoteQuotaObjectParent.h` | `cf1d9c4fabfa05e045b2bbda3c20c081e46f7bb6` | 1242 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; CanonicalQuotaObject@12; RemoteQuotaObjectParentTracker@13; RemoteQuotaObjectParent@15
+Dependencies: mozilla/dom/quota/PRemoteQuotaObjectParent.h@8
+
+`dom/quota/RemoteQuotaObjectParentTracker.h` | `0b3be8dd9d81534a5aca9c36654679fe368879fb` | 1104 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@14; RemoteQuotaObjectParent@16; RemoteQuotaObjectParentTracker@18
+Dependencies: mozilla/NotNull.h@8; nsISupports.h@9
+
+`dom/quota/RemoveParen.h` | `3ce1191e32e9114598bc964b9f0cd9267eb52a18` | 779 bytes | source | UTF-8 | mode 100644
+
+`dom/quota/ResolvableNormalOriginOp.h` | `852fcee00f819cdd63d086c16bb9da6e244da521` | 1809 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; ResolvableNormalOriginOp@15; OnResults@21; NormalOriginOperationBase@30; ResolveValueConsumed@39
+Dependencies: NormalOriginOperationBase.h@8; mozilla/MozPromise.h@9; mozilla/dom/FlippedOnce.h@10
+
+`dom/quota/ResultExtensions.h` | `6f3c0b9e46cd8002a0f9dee17be61d52bb2cfd90` | 4891 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@19; GenericErrorResult@31; GenericErrorResult@36; ToNSResult@54; mErrorValue@67; mErrorValue@72; GenericErrorResult@78; GenericErrorResult@82; QMResult@84; nsresult@86; ResultTypeTraits@90; From@91; From@93; From@95
+Dependencies: mozilla/Result.h@8; mozilla/ResultExtensions.h@9; mozilla/dom/QMResult.h@10; mozilla/dom/quota/Config.h@11; mozilla/dom/quota/RemoveParen.h@12; nsError.h@13; mozilla/ResultVariant.h@16
+
+`dom/quota/SanitizationUtils.cpp` | `f52d1262ee0d9a6f7393b58575689f560e36c421` | 1006 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; MakeSanitizedOriginCString@12; MakeSanitizedOriginString@26
+Dependencies: SanitizationUtils.h@5; mozilla/dom/quota/QuotaManager.h@7; nsString.h@8
+
+`dom/quota/SanitizationUtils.h` | `346091c54574f771e6eebad52ed47a2c51ba288d` | 561 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10
+Dependencies: nsStringFwd.h@8
+
+`dom/quota/ScopedLogExtraInfo.cpp` | `8c48bd8dcd0dc322a28acb6ebc0e92deb796c7a3` | 2544 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@7; ScopedLogExtraInfo::FindSlot@18; ScopedLogExtraInfo::~ScopedLogExtraInfo@36; mCurrentValue@48; ScopedLogExtraInfo::GetExtraInfoMap@54; ScopedLogExtraInfo::AddInfo@81
+Dependencies: ScopedLogExtraInfo.h@5
+
+`dom/quota/ScopedLogExtraInfo.h` | `d378f6d3539f41a6652e6e6b81a3daf3614c3adb` | 2322 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@17; MOZ_STACK_CLASS@19; ScopedLogExtraInfo@64
+Dependencies: map@8; mozilla/Attributes.h@10; mozilla/Tainting.h@11; mozilla/ThreadLocal.h@12; mozilla/dom/quota/Config.h@13; nsString.h@14; nsXULAppAPI.h@15
+
+`dom/quota/SerializationHelpers.h` | `053cf894a09d9d6795460bca0e0e51a11e6110ee` | 4656 bytes | source | UTF-8 | mode 100644
+Declarations: IPC@17; ParamTraits@20; ParamTraits@27; ParamTraits@33; Write@36; Read@43; ParamTraits@74; Write@77; Read@81; ParamTraits@93; Write@96; Read@100; ParamTraits@112; Write@115; Read@120
+Dependencies: ipc/EnumSerializer.h@8; ipc/IPCMessageUtils.h@9; ipc/IPCMessageUtilsSpecializations.h@10; mozilla/OriginAttributes.h@11; mozilla/dom/quota/Client.h@12; mozilla/dom/quota/CommonMetadata.h@13; mozilla/dom/quota/PersistenceType.h@14; mozilla/dom/quota/UsageInfo.h@15
+
+`dom/quota/StorageHelpers.cpp` | `2ade32d9069c619d5f1d60fb6baf66914b98c9c5` | 1894 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; mAttached@18; AutoDatabaseAttacher::~AutoDatabaseAttacher@20; AutoDatabaseAttacher::Attach@26; AutoDatabaseAttacher::Detach@57
+Dependencies: mozilla/dom/quota/StorageHelpers.h@5; mozilla/dom/quota/QuotaCommon.h@7; mozilla/dom/quota/ResultExtensions.h@8
+
+`dom/quota/StorageHelpers.h` | `36a015106f78135ac6d9133493aa77c7c546fe05` | 1658 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; MOZ_STACK_CLASS@29
+Dependencies: mozIStorageConnection.h@8; mozilla/dom/quota/QuotaCommon.h@9; nsCOMPtr.h@10; nsString.h@11
+
+`dom/quota/StorageManager.cpp` | `60591a4272aafefe091070e7ea120ff78c147f8d` | 21558 bytes | source | UTF-8 | mode 100644
+Declarations: JSObject@49; JSContext@50; nsID@51; mozilla@53; Runnable@54; mozilla@59; RequestResolver@65; Type@67; FinishWorkerRunnable@70; mPersisted@87; mProxy@93; RequestResolver@116; mResolver@123; EstimateWorkerMainThreadRunnable@131; mProxy@139; PersistedWorkerMainThreadRunnable@148; mProxy@157; PersistentStoragePermissionRequest@170; mPromise@181; RequestResolver::ResolveOrReject@401; MOZ_STACK_CLASS@402; AutoCleanup@406; RequestResolver::GetStorageEstimate@456; RequestResolver::GetPersisted@483; RequestResolver::OnCompleteInternal@510; RequestResolver::Finish@544; RequestResolver::OnComplete@571; EstimateWorkerMainThreadRunnable::MainThreadRun@597; PersistedWorkerMainThreadRunnable::MainThreadRun@624; PersistentStoragePermissionRequest::Start@651; PersistentStoragePermissionRequest::Cancel@676; PersistentStoragePermissionRequest::Allow@689; StorageManager::StorageManager@716; StorageManager::~StorageManager@720; StorageManager::Shutdown@741; StorageManager::GetFileSystemManager@748; StorageManager::Persisted@767; StorageManager::Persist@774; StorageManager::Estimate@781; StorageManager::GetDirectory@788
+Dependencies: StorageManager.h@5; cstdint@7; cstdlib@8; ErrorList.h@10; MainThreadUtils.h@11; fs/FileSystemRequestHandler.h@12; js/CallArgs.h@13; js/TypeDecls.h@14; mozilla/Attributes.h@15; mozilla/ErrorResult.h@16; mozilla/Maybe.h@17; mozilla/Mutex.h@18; mozilla/RefPtr.h@19; mozilla/dom/BindingDeclarations.h@20; mozilla/dom/Document.h@21; mozilla/dom/FileSystemManager.h@22; mozilla/dom/Promise.h@23; mozilla/dom/PromiseWorkerProxy.h@24; mozilla/dom/StorageManagerBinding.h@25; mozilla/dom/WorkerCommon.h@26; mozilla/dom/WorkerPrivate.h@27; mozilla/dom/WorkerRunnable.h@28; mozilla/dom/WorkerStatus.h@29; mozilla/dom/quota/QuotaManagerService.h@30; nsContentPermissionHelper.h@31; nsContentUtils.h@32; nsDebug.h@33; nsError.h@34; nsIGlobalObject.h@35; nsIPrincipal.h@36; nsIQuotaCallbacks.h@37; nsIQuotaManagerService.h@38; nsIQuotaRequests.h@39; nsIQuotaResults.h@40; nsIVariant.h@41; nsLiteralString.h@42; nsPIDOMWindow.h@43; nsString.h@44; nsStringFlags.h@45; nsTLiteralString.h@46; nscore.h@47
+
+`dom/quota/StorageManager.h` | `d161fc0bc86ddc280ab75520dfdaece6ae1b6d70` | 1624 bytes | source | UTF-8 | mode 100644
+Declarations: JSObject@15; nsIGlobalObject@16; JSContext@17; mozilla@19; ErrorResult@20; dom@22; FileSystemManager@24; Promise@25; StorageEstimate@26; StorageManager@28; GetParentObject@42
+Dependencies: js/TypeDecls.h@8; mozilla/AlreadyAddRefed.h@9; nsCOMPtr.h@10; nsCycleCollectionParticipant.h@11; nsISupports.h@12; nsWrapperCache.h@13
+
+`dom/quota/StorageOriginAttributes.cpp` | `7b6f676f0366f8d653be8abfa9defc5b769503c9` | 2659 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; StorageOriginAttributes::CreateSuffix@14; StorageOriginAttributes::PopulateFromSuffix@58
+Dependencies: StorageOriginAttributes.h@5; mozilla/Assertions.h@7; mozilla/dom/quota/QuotaManager.h@8; nsString.h@9; nsURLHelper.h@10
+
+`dom/quota/StorageOriginAttributes.h` | `cf2183ebd1f142ef1ca6d763cbe7b52618f7bc7b` | 1889 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; StorageOriginAttributes@14; StorageOriginAttributes@16; mInIsolatedMozBrowser@19; InIsolatedMozBrowser@21; UserContextId@23; SetInIsolatedMozBrowser@27; SetUserContextId@31
+Dependencies: mozilla/OriginAttributes.h@8
+
+`dom/quota/StreamUtils.cpp` | `f8e844727a35e0a17a260431674d58f579de95c7` | 2719 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@21
+Dependencies: StreamUtils.h@5; mozilla/GeckoTrace.h@7; mozilla/Result.h@8; mozilla/dom/quota/Assertions.h@9; mozilla/dom/quota/QuotaCommon.h@10; mozilla/dom/quota/ResultExtensions.h@11; nsCOMPtr.h@12; nsIFile.h@13; nsIObjectInputStream.h@14; nsIObjectOutputStream.h@15; nsIOutputStream.h@16; nsIRandomAccessStream.h@17; nsNetUtil.h@18; prio.h@19
+
+`dom/quota/StreamUtils.h` | `c115186087c428f920649dc3ab03883079814c62` | 1088 bytes | source | UTF-8 | mode 100644
+Declarations: nsIBinaryInputStream@10; nsIBinaryOutputStream@11; nsCOMPtr@13; nsIFile@14; nsIOutputStream@15; class@16; mozilla@18; Result@21; dom@23; FileFlag@25
+Dependencies: nsStringFwd.h@8
+
+`dom/quota/StringifyUtils.cpp` | `2a8a12b60239e02e0cf9ea49fd4c361c7deb1a76` | 1591 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; Stringifyable::Stringify@19; Stringifyable::IsActive@40; Stringifyable::SetActive@46
+Dependencies: mozilla/dom/quota/StringifyUtils.h@5; mozilla/ThreadLocal.h@7; nsTHashSet.h@8
+
+`dom/quota/StringifyUtils.h` | `4ce16c4a534f3c0121659435eb80132140508ecb` | 1724 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; Stringifyable@33
+Dependencies: mozilla/ThreadLocal.h@8; nsLiteralString.h@9; nsTHashSet.h@10
+
+`dom/quota/TargetPtrHolder.h` | `822cf95fe239e153ea9d4fdb6ef5b4c52b29616c` | 1374 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; TargetPtrHolder@17; mTarget@20; get@40
+Dependencies: mozilla/RefPtr.h@8; nsCOMPtr.h@9; nsProxyRelease.h@10; nsThreadUtils.h@11
+
+`dom/quota/ThreadUtils.cpp` | `23e9c1a1ad73fc02901f5816281571caf030911c` | 2426 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@15; RunAfterProcessingCurrentEventHelper@19; RunAfterProcessingCurrentEventHelper::OnDispatchedEvent@49; RunAfterProcessingCurrentEvent@72; SleepIfEnabled@84
+Dependencies: mozilla/dom/quota/ThreadUtils.h@5; mozilla/dom/quota/QuotaCommon.h@7; mozilla/dom/quota/ResultExtensions.h@8; nsIThreadInternal.h@9; nsThreadPool.h@10; nsThreadUtils.h@11; prinrval.h@12; prthread.h@13
+
+`dom/quota/ThreadUtils.h` | `95afb2b307f6ad22f0f50917867d88d9b433015b` | 2456 bytes | source | UTF-8 | mode 100644
+Declarations: class@13; mozilla@15
+Dependencies: cstdint@8; functional@9; mozilla/StaticPrefsBase.h@11
+
+`dom/quota/UniversalDirectoryLock.cpp` | `5b0f3f2311e63f8f4514f60fd9304bb71b65136e` | 2911 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@22; Reversed@52
+Dependencies: UniversalDirectoryLock.h@5; utility@7; mozilla/Assertions.h@9; mozilla/NotNull.h@10; mozilla/RefPtr.h@11; mozilla/ReverseIterator.h@12; mozilla/dom/Nullable.h@13; mozilla/dom/quota/ClientDirectoryLock.h@14; mozilla/dom/quota/CommonMetadata.h@15; mozilla/dom/quota/OriginScope.h@16; mozilla/dom/quota/PersistenceScope.h@17; mozilla/dom/quota/QuotaManager.h@18; nsDebug.h@19; nsString.h@20
+
+`dom/quota/UniversalDirectoryLock.h` | `9f4d4ae36dbe19c98b168d0e66640f593f795cce` | 2040 bytes | source | UTF-8 | mode 100644
+Declarations: RefPtr@13; mozilla@15; MovingNotNull@18; mozilla@22; Nullable@25; mozilla@29; ClientDirectoruLock@31; class@32; OriginMetadata@33; OriginScope@34; PersistenceScope@35; QuotaManager@36; UniversalDirectoryLock@48
+Dependencies: mozilla/dom/quota/Client.h@8; mozilla/dom/quota/DirectoryLockImpl.h@9; mozilla/dom/quota/PersistenceType.h@10
+
+`dom/quota/UsageInfo.h` | `0d395c209a8ff3d17df27e470ea35f4ccbc7db07` | 2457 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; struct@15; detail@17; AddCapped@18; Usage@29; Usage@30; GetValue@32; UsageInfo@54; UsageInfo@58; UsageInfo@60; DatabaseUsage@84; FileUsage@86; TotalUsage@88
+Dependencies: cstdint@8; mozilla/CheckedInt.h@10; mozilla/Maybe.h@11
+
+`dom/quota/components.conf` | `84f3d7d5b87fc6e1c5b54889fa3f21704d01f7fd` | 1032 bytes | build-registration | UTF-8 | mode 100644
+
+`dom/quota/gecko-trace.yaml` | `e60a228488cf689df094b208162a2de9c03e8b21` | 490 bytes | data-or-other | UTF-8 | mode 100644
+
+`dom/quota/metrics.yaml` | `ebb055061699ecd517b70f8178d5b4381ab08306` | 11378 bytes | data-or-other | UTF-8 | mode 100644
+
+`dom/quota/moz.build` | `0aed2f4667dbe17da046d54439c63bcb997e0a40` | 5847 bytes | build-registration | UTF-8 | mode 100644
+Dependencies: /ipc/chromium/chromium-config.mozbuild@197
+
+`dom/quota/nsIQuotaArtificialFailure.idl` | `0e8399b8166d20a26db0a999968dd382e730d67b` | 579 bytes | source | UTF-8 | mode 100644
+Declarations: nsIQuotaArtificialFailure@8
+Dependencies: nsISupports.idl@5
+
+`dom/quota/nsIQuotaCallbacks.idl` | `b276415ef8ee2f7e221282b558c1049d280f8c97` | 630 bytes | source | UTF-8 | mode 100644
+Declarations: nsIQuotaRequest@7; nsIQuotaUsageRequest@8; nsIQuotaUsageCallback@11; nsIQuotaCallback@17
+Dependencies: nsISupports.idl@5
+
+`dom/quota/nsIQuotaManagerService.idl` | `68f6a5f6d09bce7bd62b356d4946037cf11784bb` | 20041 bytes | source | UTF-8 | mode 100644
+Declarations: nsIPrincipal@7; nsIQuotaRequest@8; nsIQuotaCallback@9; nsIQuotaUsageCallback@10; nsIQuotaUsageRequest@11; nsIQuotaManagerService@14
+Dependencies: nsISupports.idl@5
+
+`dom/quota/nsIQuotaManagerServiceInternal.idl` | `d4ab31b48d27d5525eb3ef818a1db6ec568b4f05` | 1393 bytes | source | UTF-8 | mode 100644
+Declarations: nsIQuotaManagerServiceInternal@13
+Dependencies: nsISupports.idl@5
+
+`dom/quota/nsIQuotaRequests.idl` | `08a9e335c767c82a6c033a542577016d50690371` | 1289 bytes | source | UTF-8 | mode 100644
+Declarations: nsIPrincipal@7; nsIQuotaCallback@8; nsIQuotaUsageCallback@9; nsIVariant@10; nsIQuotaRequestBase@13; nsIQuotaUsageRequest@23; nsIQuotaRequest@37
+Dependencies: nsISupports.idl@5
+
+`dom/quota/nsIQuotaResults.idl` | `0bb38d57e3a6622c2ef1a669f09ea0c217af730f` | 2118 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@8; UsageInfo@9; nsIQuotaFullOriginMetadataResult@17; nsIQuotaUsageResult@47; nsIQuotaOriginUsageResult@59; nsIQuotaEstimateResult@78
+Dependencies: nsISupports.idl@5
+
+`dom/quota/nsIQuotaUtilsService.idl` | `ac0cdeb7bfba768c8718c5958a092c8b62107450` | 890 bytes | source | UTF-8 | mode 100644
+Declarations: nsIQuotaUtilsService@14
+Dependencies: nsISupports.idl@5
+
+`dom/quota/nsIndexedDBProtocolHandler.cpp` | `4a8af8ed04298ea2267e1191e500018f2f7727d1` | 1182 bytes | source | UTF-8 | mode 100644
+Declarations: nsIndexedDBProtocolHandler::GetScheme@25
+Dependencies: nsIndexedDBProtocolHandler.h@6; cstdint@8; ErrorList.h@10; nsIWeakReference.h@11; nsStandardURL.h@12; nsStringFwd.h@13; nscore.h@14
+
+`dom/quota/nsIndexedDBProtocolHandler.h` | `57782b16f5a3564db4e0bd20b96ec2304d50013b` | 700 bytes | source | UTF-8 | mode 100644
+Declarations: nsIndexedDBProtocolHandler@12
+Dependencies: nsIProtocolHandler.h@8; nsISupports.h@9; nsWeakReference.h@10
+
+`dom/quota/scripts/qm-try-analysis/.containerignore` | `39b984a0454daecfa686b391536188ef6acf5b15` | 46 bytes | data-or-other | UTF-8 | mode 100644
+
+`dom/quota/scripts/qm-try-analysis/Containerfile` | `7c923a4faf26ed228aea218c700dbc8436db56fb` | 659 bytes | data-or-other | UTF-8 | mode 100644
+
+`dom/quota/scripts/qm-try-analysis/README.md` | `584112a89eafc002f35f81c5ff4c3363f2d3a949` | 4081 bytes | documentation | UTF-8 | mode 100644
+
+`dom/quota/scripts/qm-try-analysis/poetry.lock` | `079172f13319a3e5e3dfacee20d6c9e796e02d6f` | 21725 bytes | data-or-other | UTF-8 | mode 100644
+
+`dom/quota/scripts/qm-try-analysis/pyproject.toml` | `f567928dd8ccf32f4c61b2616a926258450bce73` | 513 bytes | data-or-other | UTF-8 | mode 100644
+
+`dom/quota/scripts/qm-try-analysis/qm_try_analysis/__init__.py` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | source | UTF-8 | mode 100644
+
+`dom/quota/scripts/qm-try-analysis/qm_try_analysis/analyze.py` | `943c25e1ffb10686b56ccc8d527120be2f3d036d` | 5312 bytes | source | UTF-8 | mode 100755
+Declarations: analyze_qm_failures@55; getFname@76; print_to_output@127
+Dependencies: os@7; qm_try_analysis@11; qm_try_analysis.logging@12
+
+`dom/quota/scripts/qm-try-analysis/qm_try_analysis/cli.py` | `81868e6773f5a12590e8c31e0a2f5657feaa979e` | 729 bytes | source | UTF-8 | mode 100644
+Declarations: cli@14
+Dependencies: qm_try_analysis.analyze@7; qm_try_analysis.fetch@8; qm_try_analysis.htmlreport@9; qm_try_analysis.report@10
+
+`dom/quota/scripts/qm-try-analysis/qm_try_analysis/fetch.py` | `2ae48a5d3db41fdf5ba5cf3d28f85b5a40d8a0c1` | 4634 bytes | source | UTF-8 | mode 100644
+Declarations: fetch_qm_failures@89
+Dependencies: qm_try_analysis@10; qm_try_analysis.logging@11
+
+`dom/quota/scripts/qm-try-analysis/qm_try_analysis/fetch_fn_names.sh` | `bd619186cd216b1a0f2454511c699370283e5090` | 575 bytes | data-or-other | UTF-8 | mode 100755
+
+`dom/quota/scripts/qm-try-analysis/qm_try_analysis/fn_anchors.py` | `ba3c1c65c02bf26d834f78c88937d1ec587d30b8` | 2165 bytes | source | UTF-8 | mode 100644
+Declarations: getMetricsJson@15; getSpaceFunctionsRecursive@32; getSourceFunctions@49; getFunctionName@57
+Dependencies: os@6; mozfile@8; qm_try_analysis.logging@10
+
+`dom/quota/scripts/qm-try-analysis/qm_try_analysis/htmlreport.py` | `420892f17cb01bdd62d88d10320667f30c5d3722` | 6846 bytes | source | UTF-8 | mode 100644
+Declarations: renderLink@93; renderFrame@97; renderBuild@109; renderHeader@118; renderStack@123; renderStacks@135; renderAnchors@142; html_qm_failures@165
+Dependencies: datetime@7; html@8; os@9; qm_try_analysis@13; qm_try_analysis.logging@14
+
+`dom/quota/scripts/qm-try-analysis/qm_try_analysis/logging.py` | `c96679f96c92d14608567426ad7d34b965153727` | 566 bytes | source | UTF-8 | mode 100644
+Declarations: debug@8; info@12; warning@16; error@20
+
+`dom/quota/scripts/qm-try-analysis/qm_try_analysis/report.py` | `67a0d9b2e5ee02ab83ec031fc35167323755f7d8` | 9433 bytes | source | UTF-8 | mode 100644
+Declarations: report_qm_failures@64; post_comment@96; generate_comment@120; reduce@143; hash_str@250; remove_duplicates@258; resolve_if_dupe@264
+Dependencies: typing@9; click.utils@13; mozfile@14; qm_try_analysis@16; qm_try_analysis.logging@17
+
+`dom/quota/scripts/qm-try-analysis/qm_try_analysis/stackanalysis.py` | `00d75718f2090364a83a1736d5bf1bcf0f831daf` | 13875 bytes | source | UTF-8 | mode 100644
+Declarations: sanitize@7; extractBuildIDs@26; constructSearchfoxLinks@42; constructHGLinks@53; isTopmostFrame@68; addTopmostFrame@73; addFrameDelta@81; checkAverageFrameTimeDeltas@109; collectTopmostFrames@134; getFrameKey@197; getStackKey@201; collectRawStacks@217; mergeEqualStacks@261; filterStacksForPropagation@294; printStacks@312; groupStacksForAnchors@341; getSummaryForAnchor@354; searchBugForAnchor@358; createBugForAnchor@365; ensureBugForAnchor@386; addCommentForAnchor@395; addCommentsForStacks@406
+
+`dom/quota/scripts/qm-try-analysis/qm_try_analysis/telemetry.py` | `6ec4bcb50bb3dc3554924ca0a2d527730f805eb4` | 1749 bytes | source | UTF-8 | mode 100644
+Declarations: query@14; getLastEventTimeAbs@54
+Dependencies: qm_try_analysis.logging@9
+
+`dom/quota/scripts/qm-try-analysis/qm_try_analysis/utils.py` | `a4df1ffec0dbcc7e67853b23e76e7c540528bc9d` | 3008 bytes | source | UTF-8 | mode 100644
+Declarations: readJSONFile@14; writeJSONFile@21; dateback@26; lastweek@32; fetchBuildRevisions@40; fetchGitCommit@63; readExecutionFile@71; writeExecutionFile@79; getLastRunFromExecutionFile@87; updateLastRunToExecutionFile@94; addNewRunToExecutionFile@100
+Dependencies: mozfile@9; qm_try_analysis.logging@11
+
+`dom/quota/scripts/qm-try-analysis/tests/test_reporting.py` | `279fe91426476e3dfb90348add5e6e39909033dd` | 3119 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: MockClient@6; __init__@7; get_bug@11; test_duplicate_bug_removal@21
+Dependencies: qm_try_analysis.report@3
+
+`dom/quota/test/README.md` | `2afaa40ed096458f80d8d515f331f03d71630623` | 1128 bytes | test-path,documentation | UTF-8 | mode 100644
+
+`dom/quota/test/browser/browser.toml` | `1995e8feba558c9d40408462c382dc8976877ef7` | 350 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/browser/browser_permissionsCrossOrigin.js` | `df96e02c9795714f0a4fc840bcf35b8dd4ddd8ff` | 1715 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: addTest@9; registerPopupEventHandler@10; registerPopupEventHandler@13; registerPopupEventHandler@16
+
+`dom/quota/test/browser/browser_permissionsPromptAllow.js` | `06e928c40f742d1540e459f85d956cbda83a07be` | 2058 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: addTest@9; registerPopupEventHandler@12; registerPopupEventHandler@15; registerPopupEventHandler@19; addTest@40; registerPopupEventHandler@41; registerPopupEventHandler@44; registerPopupEventHandler@47
+
+`dom/quota/test/browser/browser_permissionsPromptDeny.js` | `927cbdd07418fc86b05c3d899c56ce00cd1fa0c7` | 4757 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: addTest@9; registerPopupEventHandler@10; registerPopupEventHandler@13; registerPopupEventHandler@17; addTest@49; registerPopupEventHandler@52; registerPopupEventHandler@55; registerPopupEventHandler@59; addTest@80; registerPopupEventHandler@81; registerPopupEventHandler@84; registerPopupEventHandler@87; addTest@108; registerPopupEventHandler@109; registerPopupEventHandler@112; registerPopupEventHandler@117
+
+`dom/quota/test/browser/browser_permissionsPromptUnknown.js` | `8b1be6d65d5740334aeafad53169fe660405bcdb` | 1481 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: addTest@9; function@16; function@23; function@30
+
+`dom/quota/test/browser/browser_simpledb.js` | `9cf426133209e7c4127361c2b58fad2865e0f84e` | 1260 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: addTest@9
+
+`dom/quota/test/browser/empty.html` | `1ad28bb1f729be97ea0d61d3c39b92dc67015397` | 87 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/quota/test/browser/head.js` | `2aaa3faed5d750f820e109c0d4e0b03f89197bc4` | 4323 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: loadScript@10; registerPopupEventHandler@20; unregisterAllPopupEventHandlers@42; triggerMainCommand@55; triggerSecondaryCommand@68; dismissNotification@81; executeSoon@83; waitForMessage@88; removePermission@118; getPermission@132
+
+`dom/quota/test/browser/helpers.js` | `34493532f87d86312b918471d30e6a7741f89376` | 873 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: loadScript@11; runTest@16; clearAllDatabases@17; finishTestNow@23; finishTest@30; clearAllDatabases@31; setTimeout@33; continueToNextStep@39; setTimeout@40
+
+`dom/quota/test/browser/permissionsPrompt.html` | `5f11bf6c953ee46970892511ea98037d3da12ae0` | 849 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/quota/test/common/browser.js` | `5d9abd79e3fc3b79d09df41217c31210d7be2ad2` | 760 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: addTest@8; enableStorageTesting@23
+
+`dom/quota/test/common/content.js` | `ffe58c556dc78c9db484735eee86637fc4fcf6dc` | 2333 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: clearAllDatabases@11; getSimpleDatabase@39; requestFinished@51
+
+`dom/quota/test/common/file.js` | `55e2e189fbe41243183edfe3c16b33599224e93f` | 1191 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getBuffer@6; getRandomBuffer@15; compareBuffers@24; getBlob@39; getNullBlob@43
+
+`dom/quota/test/common/global.js` | `cc7d9d97a278dc9c362158ac5fb307cc928065ed` | 1306 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: RequestError@8; constructor@9; openDBRequestUpgradeNeeded@17; openDBRequestSucceeded@33
+
+`dom/quota/test/common/mochitest.js` | `4bcfcf1138022f09cb50cf874518993a0e01093e` | 495 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: enableStorageTesting@8
+
+`dom/quota/test/common/nestedtest.js` | `5c2011bfe905b0c9df59999d31e67401546409ff` | 162 bytes | test-path,source | UTF-8 | mode 100644
+
+`dom/quota/test/common/system.js` | `b01bb8d1fa47979c3a37d6dcdcf34afa8db877fe` | 1870 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getProfileDir@12; getRelativeFile@21; getCurrentPrincipal@44; getSimpleDatabase@48; requestFinished@62
+
+`dom/quota/test/common/test_simpledb.js` | `dee70190977439cb70b72a398604a9590de8672d` | 1178 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@8
+
+`dom/quota/test/common/test_storage_manager_persist_allow.js` | `0a6e59843d5b67137c827319580003441034f693` | 668 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6
+
+`dom/quota/test/common/test_storage_manager_persist_deny.js` | `855d739ca3123bad5cdaa542691901b4354274d1` | 727 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6
+
+`dom/quota/test/common/test_storage_manager_persisted.js` | `ebda93649a8419945bd74c452b6cfe93e665e41d` | 321 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6
+
+`dom/quota/test/common/xpcshell.js` | `d0c5d784919bf97f56a20aac3a0d206609cb7d3f` | 2397 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: enableStorageTesting@8; resetStorageTesting@16; clear@24; reset@31; installPackage@38
+
+`dom/quota/test/gtest/Common.cpp` | `0cb6ee9834d0c7fd334178ec930a0bf4ce032a80` | 673 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@9; DOM_Quota_Test::SetUpTestCase@15; DOM_Quota_Test::IncreaseExpectedStackId@20; DOM_Quota_Test::ExpectedStackId@23
+Dependencies: Common.h@5; mozilla/dom/QMResult.h@7
+
+`dom/quota/test/gtest/Common.h` | `d55e6ee56157dbd1f06aed9afe11c0998c2a37bf` | 736 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@13; DOM_Quota_Test@15
+Dependencies: cstdint@8; gtest/gtest.h@10; mozilla/dom/quota/Config.h@11
+
+`dom/quota/test/gtest/PQuotaTest.ipdl` | `3ea2d0c3f95a6a628805fd54dc37ce8e3f6dbf53` | 717 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@5; dom@6; quota@7
+
+`dom/quota/test/gtest/QuotaManagerDependencyFixture.cpp` | `9177ea74d05650ec896d2545ac7b9fe23eed57d9` | 17952 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@28; RequestResolver@32; RequestResolver@34; IsDone@36; QuotaManagerDependencyFixture::InitializeFixture@68; QuotaManagerDependencyFixture::ShutdownFixture@102; PerformOnBackgroundThread@113; QuotaManagerDependencyFixture::InitializeStorage@119; PerformOnBackgroundThread@120; QuotaManagerDependencyFixture::StorageInitialized@129; PerformOnBackgroundThread@132; QuotaManagerDependencyFixture::AssertStorageInitialized@146; QuotaManagerDependencyFixture::AssertStorageNotInitialized@153; QuotaManagerDependencyFixture::ClearStorage@160; PerformOnBackgroundThread@161; QuotaManagerDependencyFixture::ShutdownStorage@170; PerformOnBackgroundThread@171; QuotaManagerDependencyFixture::InitializeTemporaryStorage@180; PerformOnBackgroundThread@181; QuotaManagerDependencyFixture::TemporaryStorageInitialized@190; PerformOnBackgroundThread@193; QuotaManagerDependencyFixture::AssertTemporaryStorageInitialized@207; QuotaManagerDependencyFixture::AssertTemporaryStorageNotInitialized@214; QuotaManagerDependencyFixture::ShutdownTemporaryStorage@221; PerformOnBackgroundThread@231; PerformOnBackgroundThread@245; PerformOnBackgroundThread@278; PerformOnBackgroundThread@340; PerformOnBackgroundThread@352; PerformOnBackgroundThread@363; QuotaManagerDependencyFixture::ListOrigins@373; QuotaManagerDependencyFixture::ListCachedOrigins@388; PerformOnBackgroundThread@408; QuotaManagerDependencyFixture::ProcessPendingNormalOriginOperations@419; PerformOnBackgroundThread@420; QuotaManagerDependencyFixture::TotalDirectoryIterations@483; QuotaManagerDependencyFixture::SaveOriginAccessTimeCount@495; QuotaManagerDependencyFixture::SaveOriginAccessTimeCountInternal@507; QuotaManagerDependencyFixture::GetTestPrincipalMetadata@519; QuotaManagerDependencyFixture::GetTestPersistentOriginMetadata@525; QuotaManagerDependencyFixture::GetTestPersistentClientMetadata@531; QuotaManagerDependencyFixture::GetTestOriginMetadata@536; QuotaManagerDependencyFixture::GetTestClientMetadata@541; QuotaManagerDependencyFixture::GetTestPrivateOriginMetadata@546; QuotaManagerDependencyFixture::GetTestPrivateClientMetadata@551; QuotaManagerDependencyFixture::GetOtherTestPrincipalMetadata@557; QuotaManagerDependencyFixture::GetOtherTestOriginMetadata@563; QuotaManagerDependencyFixture::GetOtherTestClientMetadata@568; QuotaManagerDependencyFixture::EnsureQuotaManager@573
+Dependencies: QuotaManagerDependencyFixture.h@5; DirectoryMetadata.h@7; QuotaManagerTestHelpers.h@8; mozIStorageService.h@9; mozStorageCID.h@10; mozilla/BasePrincipal.h@11; mozilla/dom/ScriptSettings.h@12; mozilla/dom/quota/QuotaManagerService.h@13; mozilla/dom/quota/ResultExtensions.h@14; mozilla/dom/quota/StreamUtils.h@15; mozilla/dom/quota/UsageInfo.h@16; mozilla/gtest/MozAssertions.h@17; mozilla/ipc/BackgroundUtils.h@18; mozilla/ipc/PBackgroundSharedTypes.h@19; nsIBinaryInputStream.h@20; nsIPrefBranch.h@21; nsIPrefService.h@22; nsIQuotaCallbacks.h@23; nsIQuotaRequests.h@24; nsIVariant.h@25; nsScriptSecurityManager.h@26
+
+`dom/quota/test/gtest/QuotaManagerDependencyFixture.h` | `a9ce75c6d1bf8fe55b0d65586f9573aa34eb775b` | 10119 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@28; QuotaManagerDependencyFixture@30; constexpr@130; SpinEventLoopUntil@143; constexpr@145; SpinEventLoopUntil@197; Await@214; constexpr@223; SpinEventLoopUntil@241
+Dependencies: gtest/gtest.h@8; mozilla/MozPromise.h@9; mozilla/SpinEventLoopUntil.h@10; mozilla/dom/quota/ClientDirectoryLock.h@11; mozilla/dom/quota/ClientDirectoryLockHandle.h@12; mozilla/dom/quota/DirectoryLock.h@13; mozilla/dom/quota/DirectoryLockInlines.h@14; mozilla/dom/quota/ForwardDecls.h@15; mozilla/dom/quota/QuotaManager.h@16
+
+`dom/quota/test/gtest/QuotaManagerTestHelpers.cpp` | `f73bfa9ccba0465960cb6e038a0ed416ee4b844f` | 2668 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@11
+Dependencies: QuotaManagerTestHelpers.h@5; mozilla/dom/quota/CommonMetadata.h@7; nsIDUtils.h@8; nsString.h@9
+
+`dom/quota/test/gtest/QuotaManagerTestHelpers.h` | `18dcda203e221195f2f4c96a1303c9e10dead390` | 5427 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@10; PrincipalMetadata@12; OriginMetadata@13; OriginStateMetadata@14; FullOriginMetadata@15; test@17
+Dependencies: nsStringFwd.h@8
+
+`dom/quota/test/gtest/QuotaTestChild.h` | `3c3b284f8e6e190d9e6da7702a058ee0b8abc1d1` | 629 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@10; QuotaTestChild@12
+Dependencies: mozilla/dom/quota/PQuotaTestChild.h@8
+
+`dom/quota/test/gtest/QuotaTestParent.h` | `1a21149794ac955dfeca45abd0fd17d7c77b44bd` | 1036 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@10; QuotaTestParent@12
+Dependencies: mozilla/dom/quota/PQuotaTestParent.h@8
+
+`dom/quota/test/gtest/TestCheckedUnsafePtr.cpp` | `fe770ab46109abd6c3444051a0946ee69b029606` | 5218 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: NoCheckTestType@12; TestCheckingPolicy@25; mPassedCheck@28; NotifyCheckFailure@32; BasePointee@37; DerivedPointee@42; CheckedUnsafePtrTest@46; TEST_F@51; TypedCheckedUnsafePtrTest@59; TYPED_TEST_P@63; TYPED_TEST_P@71; TYPED_TEST_P@80; TYPED_TEST_P@90
+Dependencies: type_traits@5; gtest/gtest.h@7; mozilla/dom/quota/CheckedUnsafePtr.h@8
+
+`dom/quota/test/gtest/TestClientDirectoryLockHandle.cpp` | `243a8b21ee3de092ffc2a0fad2745e964a6cb108` | 2579 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@9; DOM_Quota_ClientDirectoryLockHandle@11; SetUpTestCase@14; TearDownTestCase@16; TEST_F@19; GetTestClientMetadata@21; TEST_F@34; GetTestClientMetadata@36; TEST_F@47; GetTestClientMetadata@49; TEST_F@63; GetTestClientMetadata@65
+Dependencies: QuotaManagerDependencyFixture.h@5; mozilla/dom/quota/ClientDirectoryLockHandle.h@6; mozilla/dom/quota/ConditionalCompilation.h@7
+
+`dom/quota/test/gtest/TestClientStorageScope.cpp` | `ab1305258dfa37c6b961e9d229ea70d5644b5e67` | 3622 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@8; TEST@10; TEST@32; TEST@83
+Dependencies: gtest/gtest.h@5; mozilla/dom/quota/ClientStorageScope.h@6
+
+`dom/quota/test/gtest/TestClientUsageArray.cpp` | `6e85a77f740a0836d7f27c026c3a1df0e578cd6b` | 483 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: TEST@10
+Dependencies: ClientUsageArray.h@5; gtest/gtest.h@6
+
+`dom/quota/test/gtest/TestCommonMetadata.cpp` | `13b05ff69ba3baaa0778241916b0186e17b77dca` | 15944 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@10; TEST@12; TEST@66; TEST@113; TEST@174; TEST@184; TEST@343; TEST@450
+Dependencies: QuotaManagerTestHelpers.h@5; gtest/gtest.h@6; mozilla/dom/quota/CommonMetadata.h@7; nsString.h@8
+
+`dom/quota/test/gtest/TestDate.cpp` | `460e85aa2ccbf2493fae8c4e03921b70307ff962` | 1214 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@8; TEST@10; TEST@16; TEST@22; TEST@28
+Dependencies: gtest/gtest.h@5; mozilla/dom/quota/Date.h@6
+
+`dom/quota/test/gtest/TestDirectoryLock.cpp` | `9e2809c13657d1c90db2819fb0a86b56d3988f18` | 5608 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@12; DOM_Quota_DirectoryLock@14; SetUpTestCase@16; TearDownTestCase@18; DOM_Quota_DirectoryLockWithBoolTriple@23; TEST_F@27; PerformOnBackgroundThread@28; TEST_F@41; PerformOnBackgroundThread@42; SpinEventLoopUntil@60; SpinEventLoopUntil@81; TEST_P@89
+Dependencies: DirectoryLockImpl.h@5; QuotaManagerDependencyFixture.h@6; gtest/gtest.h@7; mozilla/SpinEventLoopUntil.h@8; mozilla/dom/quota/OriginScope.h@9; mozilla/dom/quota/UniversalDirectoryLock.h@10
+
+`dom/quota/test/gtest/TestEncryptedRandomAccessBlock.cpp` | `af7ed1197e1ab568357ffb473763fb197dd25a26` | 5552 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@14; IsAllZero@16; TEST@30; TEST@72
+Dependencies: algorithm@5; array@6; cstring@7; numeric@8; EncryptedRandomAccessBlock.h@10; EncryptedRandomAccessBlockView.h@11; gtest/gtest.h@12
+
+`dom/quota/test/gtest/TestEncryptedRandomAccessStream.cpp` | `9fee308321f129c381fec336464f86d8ea487083` | 109005 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@34; CreatePlaintext@49; CreateOverwritePattern@59; XorWithDummyCipherStrategy@68; DecryptFailingDummyRandomAccessCipherStrategy@76; Decrypt@78; EncryptFailingDummyRandomAccessCipherStrategy@83; Encrypt@85; PartialSegmentWriterClosure@95; mData@99; PartialSegmentReaderClosure@127; mData@131; ScopedTestFileStream@158; mFile@162; CreateEncryptedRandomAccessStream@290; ReadDataFromFile@316; DecryptedBlockLayout@324; ReadDecryptedBlock@335; ParameterizedEncryptedRandomAccessStreamTest@405; GapFillEncryptedRandomAccessStreamTest@408; WriteToEmptyStreamEncryptedRandomAccessStreamTest@411; SetEOFResizeCase@416; SetEOFResizeEncryptedRandomAccessStreamTest@422; SetEOFBufferedExpandCase@425; SetEOFBufferedExpandEncryptedRandomAccessStreamTest@431; GetSizeAfterSetEOFEncryptedRandomAccessStreamTest@434
+Dependencies: algorithm@5; array@6; cstdint@7; cstring@8; limits@9; utility@10; vector@11; DummyRandomAccessCipherStrategy.h@13; EncryptedRandomAccessBlock.h@14; EncryptedRandomAccessBlockView.h@15; EncryptedRandomAccessStream.h@16; EncryptedRandomAccessStream_impl.h@17; ErrorList.h@18; NSSRandomAccessCipherStrategy.h@19; gtest/gtest.h@20; mozilla/EndianUtils.h@21; mozilla/NotNull.h@22; mozilla/Result.h@23; mozilla/ResultExtensions.h@24; nsCOMPtr.h@25; nsDirectoryServiceDefs.h@26; nsDirectoryServiceUtils.h@27; nsIFile.h@28; nsIFileStreams.h@29; nsIRandomAccessStream.h@30; nsISeekableStream.h@31; nsNetUtil.h@32
+
+`dom/quota/test/gtest/TestEncryptedStream.cpp` | `a34225aefb399ae890e8daf547ce922ab59ed049` | 33140 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@44; ArrayBufferInputStream@49; SetCloseOnEOF@54; mCloseOnEOF@88; ArrayBufferInputStream::Close@93; ArrayBufferInputStream::Available@99; ArrayBufferInputStream::StreamStatus@114; ArrayBufferInputStream::IsNonBlocking@172; ArrayBufferInputStream::Tell@179; ArrayBufferInputStream::SetEOF@222; ArrayBufferInputStream::GetCloneable@227; ArrayBufferInputStream::Clone@232; DOM_Quota_EncryptedStream@244; SetUpTestCase@246; TearDownTestCase@257; NSSInitContextDeleter@260; operator@261; struct@270; struct@271; TestParams@289; mCloseOnEOF@296; EffectiveWriteChunkSize@300; EffectiveReadChunkSize@304; FlushMode@321; ParametrizedCryptTest@349; MakeTestData@353; TEST_P@478; TEST_P@491; TEST_P@509; TEST_P@561; TEST_P@580; TEST_P@600; TEST_P@632; TEST_P@654; struct@668; SeekTestParams@683; mCloseOnEOF@693; ParametrizedSeekCryptTest@751; DoSeekTest@756; TEST_P@853; TEST_P@857
+Dependencies: algorithm@5; cstdint@6; new@7; numeric@8; string@9; utility@10; vector@11; ErrorList.h@13; gmock/gmock.h@14; gtest/gtest.h@15; mozilla/Assertions.h@16; mozilla/Attributes.h@17; mozilla/FixedBufferOutputStream.h@18; mozilla/NotNull.h@19; mozilla/RefPtr.h@20; mozilla/Span.h@21; mozilla/UniquePtr.h@22; mozilla/dom/SafeRefPtr.h@23; mozilla/dom/quota/DecryptingInputStream_impl.h@24; mozilla/dom/quota/DummyCipherStrategy.h@25; mozilla/dom/quota/EncryptedBlock.h@26; mozilla/dom/quota/EncryptingOutputStream_impl.h@27; mozilla/dom/quota/NSSCipherStrategy.h@28; nsCOMPtr.h@29; nsError.h@30; nsICloneableInputStream.h@31; nsIInputStream.h@32; nsIOutputStream.h@33; nsISeekableStream.h@34; nsISupports.h@35; nsITellableStream.h@36; nsStreamUtils.h@37; nsString.h@38; nsStringFwd.h@39; nsTArray.h@40; nscore.h@41; nss.h@42
+
+`dom/quota/test/gtest/TestFileOutputStream.cpp` | `f1e825cbaeb827046146261f7470952d51676839` | 6973 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@16; GetOutputStreamTestOriginMetadata@18; TestFileOutputStream@27; SetUpTestCase@29; TearDownTestCase@38; TEST_F@52; SpinEventLoopUntil@207
+Dependencies: QuotaManagerDependencyFixture.h@5; mozilla/dom/quota/Client.h@6; mozilla/dom/quota/ClientDirectoryLock.h@7; mozilla/dom/quota/ClientDirectoryLockHandle.h@8; mozilla/dom/quota/CommonMetadata.h@9; mozilla/dom/quota/FileStreams.h@10; mozilla/dom/quota/QuotaManager.h@11; mozilla/gtest/MozAssertions.h@12; nsIPrefBranch.h@13; nsIPrefService.h@14
+
+`dom/quota/test/gtest/TestFlatten.cpp` | `7e6d80c777b5f484d64625c5b1b6043120a5bc16` | 2377 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@9; TEST@15; TEST@27; TEST@39; TEST@55; TEST@70; TEST@85
+Dependencies: Flatten.h@5; gtest/gtest.h@6; nsTArray.h@7
+
+`dom/quota/test/gtest/TestForwardDecls.cpp` | `96be28c50f94ecdcccb07b1fe39d33ab4d7774bd` | 363 bytes | test-path,source | UTF-8 | mode 100644
+Dependencies: type_traits@5; mozilla/dom/quota/ForwardDecls.h@7
+
+`dom/quota/test/gtest/TestMozPromiseUtils.cpp` | `2fed740abf9f6feb1037507b029f5fae9bd75ce2` | 1497 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@8; TEST@10; TEST@20; TEST@32
+Dependencies: QuotaManagerDependencyFixture.h@5; mozilla/dom/quota/MozPromiseUtils.h@6
+
+`dom/quota/test/gtest/TestNSSCipherStrategy.cpp` | `4657c3467a490b26ad2673cf1f67227f02840b95` | 6299 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@15; MakeKey@25; MakePlaintext@31; NonceOf@37; TEST@43; TEST@68; TEST@96; TEST@124; TEST@154
+Dependencies: array@5; cstdint@6; numeric@7; set@8; vector@9; NSSCipherStrategy.h@11; gtest/gtest.h@12; mozilla/Span.h@13
+
+`dom/quota/test/gtest/TestNSSRandomAccessCipherStrategy.cpp` | `1f07cc19a9c5c5ac0b6ac3b2e2244187a851a302` | 14750 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@13; EncryptionTestData@40; MakeEncryptionTestData@49; TEST@79
+Dependencies: array@5; cstddef@6; cstdint@7; numeric@8; NSSRandomAccessCipherStrategy.h@10; gtest/gtest.h@11
+
+`dom/quota/test/gtest/TestOpenClientDirectoryInfo.cpp` | `aff52298828b0c14c799c73e1df753b9e1cc3123` | 1129 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@8; TEST@10
+Dependencies: gtest/gtest.h@5; mozilla/dom/quota/OpenClientDirectoryInfo.h@6
+
+`dom/quota/test/gtest/TestOriginParser.cpp` | `8576b9d2baff787d67d252e4101625f8db5db09e` | 2526 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@10; TEST@12; TEST@17; TEST@28; TEST@39; TEST@50; TEST@69
+Dependencies: OriginParser.h@5; gtest/gtest.h@6; mozilla/OriginAttributes.h@7; nsFmtString.h@8
+
+`dom/quota/test/gtest/TestOriginScope.cpp` | `b95b0a6b29033dfd4aeb2dfdc700795ddab3eac5` | 6081 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@12; TEST@16; TEST@45; TEST@101
+Dependencies: QuotaManagerTestHelpers.h@5; gtest/gtest.h@6; mozilla/dom/quota/OriginScope.h@7; nsStringFwd.h@8; nsTDependentString.h@9; nsTLiteralString.h@10
+
+`dom/quota/test/gtest/TestPersistenceScope.cpp` | `d20522c2bb8c110954ac031a192d6535042034a6` | 4978 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@8; TEST@10; TEST@27; TEST@73
+Dependencies: gtest/gtest.h@5; mozilla/dom/quota/PersistenceScope.h@6
+
+`dom/quota/test/gtest/TestPersistenceType.cpp` | `30b87ce8292c99a01c070e08b8334276e139f5fe` | 1695 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@11; TEST@13; TEST@40
+Dependencies: gtest/gtest.h@5; mozilla/dom/quota/PersistenceType.h@6; nsDirectoryServiceDefs.h@7; nsDirectoryServiceUtils.h@8; nsIFile.h@9
+
+`dom/quota/test/gtest/TestQMResult.cpp` | `eb8accad6cac9ca1005f80c1f8a8dc62d895aaa7` | 1747 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: DOM_Quota_QMResult@12; TEST_F@15; TEST_F@26; TEST_F@41; TEST_F@58
+Dependencies: Common.h@5; gtest/gtest.h@6; mozilla/dom/QMResult.h@7
+
+`dom/quota/test/gtest/TestQuotaCommon.cpp` | `a7834915805c5df02009076ca790eb2ff60bfdca` | 62755 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: nsISupports@32; mozilla@34; TEST@80; TEST@154; TEST@170; TEST@182; TEST@195; TEST@211; TEST@230; TEST@246; TEST@265; QM_TRY@272; TEST@289; TEST@308; TEST@324; TEST@340; TEST@365; TEST@378; TEST@401; TEST@428; TEST@470; TEST@477; TEST@501; TEST@525; TEST@557; TEST@589; TEST@621; TEST@638; TEST@650; TEST@663; TEST@681; TEST@697; TEST@723; TEST@744; TEST@762; TEST@781; TEST@808; TEST@823; TEST@848; TEST@877; TEST@886; TEST@895; TEST@905; TEST@933; TEST@962; TEST@997; TEST@1033; TEST@1073; TEST@1082; TEST@1091; TEST@1105; TEST@1120; TEST@1135; TEST@1151; TEST@1174; TEST@1194; TEST@1209; TEST@1224; TEST@1240; TEST@1264; TEST@1287; TEST@1299; TEST@1320; TEST@1341; TEST@1357; QM_FAIL@1363; TEST@1375; TEST@1391; QM_WARNONLY_TRY@1399; TEST@1412; TEST@1428; QM_WARNONLY_TRY@1436; TEST@1449; TEST@1467; TEST@1491; TEST@1509; TEST@1532; QM_TRY@1538; TEST@1553; QM_TRY@1561; TEST@1575; QM_TRY@1583; TEST@1597; TEST@1625; TEST@1653; TEST@1681; TEST@1709; TEST@1716; TEST@1723; TEST@1730; TEST@1737; TEST@1744; TEST@1751; TEST@1758; TEST@1765; TEST@1772; TEST@1779; TEST@1786; TEST@1794; TEST@1802; TEST@1808; TEST@1815; TEST@1823; TEST@1831; TEST@1836; TEST@1841; TEST@1848; TEST@1855; TEST@1862; TEST@1869; TEST@1875; StringPairParameterized@1882; TEST_P@1885; Failed@1902; Fail@1904; Task1@1915; TEST@1918; TEST@1938; TEST@1957; TEST@1976; TEST@1995; TEST@2014; TEST@2028; TEST@2043; TEST@2059; TEST@2080; TEST@2104; TEST@2117; TEST@2132; TEST@2147; TEST@2164; MakeSourceTreePath@2186; TEST@2198; TEST@2211; TEST@2228; TEST@2258; TEST@2271
+Dependencies: array@5; cstddef@6; cstdint@7; new@8; type_traits@9; utility@10; vector@11; ErrorList.h@13; gtest/gtest.h@14; mozilla/Assertions.h@15; mozilla/Result.h@16; mozilla/ResultExtensions.h@17; mozilla/ResultVariant.h@18; mozilla/SourcePathLiteral.h@19; mozilla/dom/quota/QuotaCommon.h@20; mozilla/dom/quota/QuotaTestParent.h@21; mozilla/dom/quota/ResultExtensions.h@22; nsCOMPtr.h@23; nsDirectoryServiceDefs.h@24; nsDirectoryServiceUtils.h@25; nsIFile.h@26; nsLiteralString.h@27; nsString.h@28; nsStringFwd.h@29; nsTLiteralString.h@30
+
+`dom/quota/test/gtest/TestQuotaManager.cpp` | `64eed6013792965ee1168c659f07a5f6d7d02310` | 148410 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@28; TestQuotaManager@30; SetUpTestCase@32; TearDownTestCase@34; TestQuotaManagerAndClearStorage@41; TestQuotaManagerAndClearStorageWithBoolPair@48; TestQuotaManagerAndShutdownFixture@52; TEST_F@60; PerformOnIOThread@61; TEST_F@75; PerformOnBackgroundThread@80; PerformOnBackgroundThread@182; TEST_F@255; PerformOnBackgroundThread@260; TEST_F@300; PerformOnBackgroundThread@305; PerformOnBackgroundThread@370; TEST_F@421; PerformOnBackgroundThread@438; TEST_F@486; PerformOnBackgroundThread@512; PerformOnBackgroundThread@587; PerformOnBackgroundThread@667; TEST_F@728; TEST_F@902; PerformOnBackgroundThread@907; PerformOnBackgroundThread@1008; TEST_F@1081; PerformOnBackgroundThread@1086; TEST_F@1128; PerformOnBackgroundThread@1133; PerformOnBackgroundThread@1199; TEST_F@1250; PerformOnBackgroundThread@1255; PerformOnBackgroundThread@1325; TEST_F@1351; PerformOnBackgroundThread@1356; TEST_F@1374; PerformOnBackgroundThread@1379; TEST_F@1404; PerformOnBackgroundThread@1409; PerformOnBackgroundThread@1442; TEST_F@1482; PerformOnBackgroundThread@1487; TEST_F@1533; PerformOnBackgroundThread@1538; PerformOnBackgroundThread@1583; TEST_F@1623; PerformOnBackgroundThread@1628; TEST_F@1654; PerformOnBackgroundThread@1659; TEST_F@1692; PerformOnBackgroundThread@1697; PerformOnBackgroundThread@1755; PerformOnBackgroundThread@1817; PerformOnBackgroundThread@1863; TEST_F@1911; PerformOnBackgroundThread@1916; PerformOnBackgroundThread@1960; PerformOnBackgroundThread@2005; PerformOnBackgroundThread@2050; TEST_F@2098; PerformOnBackgroundThread@2103; PerformOnBackgroundThread@2147; PerformOnBackgroundThread@2192; PerformOnBackgroundThread@2249; TEST_F@2310; PerformOnBackgroundThread@2315; PerformOnBackgroundThread@2369; PerformOnBackgroundThread@2424; PerformOnBackgroundThread@2475; PerformOnBackgroundThread@2532; PerformOnBackgroundThread@2591; TEST_F@2653; PerformOnBackgroundThread@2658; PerformOnBackgroundThread@2703; TEST_F@2760; PerformOnBackgroundThread@2779; TEST_F@2810; PerformOnBackgroundThread@2828; TEST_F@2859; PerformOnBackgroundThread@2882; TEST_F@2914; PerformOnBackgroundThread@2937; TEST_F@2970; PerformOnBackgroundThread@2988; PerformOnBackgroundThread@3038; TEST_F@3070; PerformOnBackgroundThread@3088; PerformOnBackgroundThread@3138; TEST_F@3161; PerformOnBackgroundThread@3181; TEST_F@3201; PerformOnBackgroundThread@3224; TEST_F@3247; PerformOnBackgroundThread@3265; TEST_F@3296; PerformOnBackgroundThread@3314; TEST_F@3345; PerformOnBackgroundThread@3367; TEST_F@3399; PerformOnBackgroundThread@3421; TEST_F@3454; PerformOnBackgroundThread@3463; TEST_F@3481; PerformOnBackgroundThread@3490; TEST_F@3515; PerformOnBackgroundThread@3524; TEST_F@3554; PerformOnBackgroundThread@3555; TEST_F@3588; PerformOnBackgroundThread@3593; TEST_F@3619; TEST_F@3632; TEST_F@3654; TEST_F@3671; TEST_F@3691; PerformOnBackgroundThread@3701; TEST_F@3724; TEST_F@3755; PerformOnIOThread@3899; PerformOnIOThread@3972; TEST_F@4126; PerformOnIOThread@4127; TEST_F@4137; PerformOnIOThread@4138; TEST_F@4149; PerformOnIOThread@4150
+Dependencies: QuotaManagerDependencyFixture.h@5; QuotaManagerTestHelpers.h@6; gtest/gtest.h@7; mozilla/BasePrincipal.h@8; mozilla/dom/quota/Client.h@9; mozilla/dom/quota/ClientDirectoryLock.h@10; mozilla/dom/quota/ClientDirectoryLockHandle.h@11; mozilla/dom/quota/CommonMetadata.h@12; mozilla/dom/quota/DirectoryLock.h@13; mozilla/dom/quota/DirectoryLockInlines.h@14; mozilla/dom/quota/OriginScope.h@15; mozilla/dom/quota/PersistenceScope.h@16; mozilla/dom/quota/QuotaManager.h@17; mozilla/dom/quota/ResultExtensions.h@18; mozilla/dom/quota/UniversalDirectoryLock.h@19; mozilla/gtest/MozAssertions.h@20; mozilla/ipc/PBackgroundSharedTypes.h@21; nsFmtString.h@22; nsIFile.h@23; nsIPrefBranch.h@24; nsIPrefService.h@25; prtime.h@26
+
+`dom/quota/test/gtest/TestResultExtensions.cpp` | `9840881e0857e68022c73a98dbbb011126495a16` | 9330 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: TestClass@14; NonOverloadedNoInputComplex@18; NonOverloadedNoInputFailsComplex@22; DOM_Quota_ResultExtensions_ToResult@28; DOM_Quota_ResultExtensions_GenericErrorResult@29; TEST_F@31; TEST_F@48; TEST_F@88; TEST_F@105; TEST@142; TEST@155; TEST@168; TEST@183; TEST@198; TEST@211; TEST@227; TEST@240; TEST@256; TEST@272
+Dependencies: Common.h@5; gtest/gtest.h@6; mozilla/dom/QMResult.h@7; mozilla/dom/quota/ResultExtensions.h@8
+
+`dom/quota/test/gtest/TestScopedLogExtraInfo.cpp` | `cc516c2d2d5e2f7899acef8b430dde6ac10680b7` | 2357 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: TEST@10; TEST@36
+Dependencies: gtest/gtest.h@5; mozilla/dom/quota/ScopedLogExtraInfo.h@6
+
+`dom/quota/test/gtest/TestStorageConnection.cpp` | `701549a991ae862e483bf9530665c64c62d402d9` | 9839 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@20; NSSInitContextDeleter@22; operator@23; dom@26; InitializeClientDirectory@30; TestStorageConnection@155; SetUpTestCase@157; TearDownTestCase@170; NSSInitContextDeleter@181; operator@182; TEST_F@190; PerformClientDirectoryTest@194; TEST_F@215; GetTestClientMetadata@220; TEST_F@244; GetTestClientMetadata@249
+Dependencies: QuotaManagerDependencyFixture.h@5; mozIStorageConnection.h@6; mozIStorageService.h@7; mozStorageCID.h@8; mozilla/dom/quota/IPCStreamCipherStrategy.h@9; mozilla/dom/quota/QuotaCommon.h@10; mozilla/dom/quota/QuotaManager.h@11; mozilla/dom/quota/QuotaObject.h@12; mozilla/dom/quota/ResultExtensions.h@13; nsIFile.h@14; nsIFileProtocolHandler.h@15; nsIFileURL.h@16; nsIURIMutator.h@17; nss.h@18
+
+`dom/quota/test/gtest/TestStorageOriginAttributes.cpp` | `1571c2ee408d409d9a667bc39b1ea2c0d6fc921e` | 7036 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@8; TEST@10; TEST@20; TEST@37; TEST@118; TEST@158; TEST@174; TEST@190; TEST@201; TEST@213; TEST@225
+Dependencies: gtest/gtest.h@5; mozilla/StorageOriginAttributes.h@6
+
+`dom/quota/test/gtest/TestStringifyUtils.cpp` | `64c2f8c2131c2b1f14e84de017f28509b6e3cc88` | 1193 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@8; B@10; A@11; A@13; setB@15; B@21; B@23; setA@25; A::DoStringify@31; B::DoStringify@36; TEST@41
+Dependencies: gtest/gtest.h@5; mozilla/dom/quota/StringifyUtils.h@6
+
+`dom/quota/test/gtest/TestTelemetry.cpp` | `433fc80d0f5bdd8ca7bf7f17b21aef214a83e5cb` | 1431 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@9; TEST@11
+Dependencies: QuotaManagerDependencyFixture.h@5; mozilla/glean/DomQuotaMetrics.h@6; mozilla/glean/fog_ffi_generated.h@7
+
+`dom/quota/test/gtest/TestThreadUtils.cpp` | `245db4ac5318497d27feda0cb521a233d2a4b03b` | 5935 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: mozilla@10; GetRefCount@14; OneTimeRunnable@22; class@24; Init@26; Create@33; GetState@40; GetCurrent@42; GetCurrentRefCount@44; Runnable@58; TestThreadUtils@80; SetUpTestCase@82; TearDownTestCase@84; TEST_F@87; RunAfterProcessingCurrentEvent@102; ASSERT_NO_FATAL_FAILURE@131; TEST_F@138; RunAfterProcessingCurrentEvent@153; ASSERT_NO_FATAL_FAILURE@182
+Dependencies: QuotaManagerDependencyFixture.h@5; mozilla/dom/quota/QuotaManager.h@6; mozilla/dom/quota/ThreadUtils.h@7; mozilla/gtest/MozAssertions.h@8
+
+`dom/quota/test/gtest/TestUsageInfo.cpp` | `31a0e9d57ebcf21a3593520d9a30c7d3f22bf074` | 3632 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: TEST@20; TEST@27; TEST@38; TEST@49; TEST@60; TEST@71; TEST@83; TEST@95; TEST@107; TEST@119
+Dependencies: cstdint@5; gtest/gtest.h@7; mozilla/Maybe.h@8; mozilla/dom/quota/QuotaCommon.h@9; mozilla/dom/quota/UsageInfo.h@10
+
+`dom/quota/test/gtest/moz.build` | `91e26bdb08262b7c4538f1937b6f5f293e8fa2d0` | 1721 bytes | test-path,build-registration | UTF-8 | mode 100644
+Dependencies: /ipc/chromium/chromium-config.mozbuild@57
+
+`dom/quota/test/marionette/manifest.toml` | `8e510f81d9bb44fcbdd47177d1914e94753bfb11` | 154 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/marionette/quota_test_case.py` | `4bf6ed96e997941c61f9e7dd709200de5b028dc3` | 7267 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: QuotaTestCase@12; executeAsyncScript@13; RequestError@18; constructor@19; requestFinished@27; ensureInvariantHolds@58; findDirObj@65; getFullOriginMetadata@71; main@77; getStoragePath@94; getRepositoryPath@104; initStorage@110; main@114; initTemporaryOrigin@124; main@129; initTemporaryStorage@146; main@150; resetStoragesForClient@160; main@169; using_new_window@186
+Dependencies: contextlib@6; marionette_driver@8; marionette_harness@9
+
+`dom/quota/test/marionette/test_private_repository_cleanup.py` | `8813c8038f16d9434de1c548d8ce82a524d4748c` | 2972 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: PrivateRepositoryCleanup@23; setUp@24; tearDown@35; doStorageWork@42; verifyCleanup@48; getPrivateRepository@53; PBM@57; test_ensure_cleanup@58; test_ensure_cleanup_after_crash@65; PBMAutoStart@75; setUp@76; test_ensure_cleanup@79; test_ensure_cleanup_after_crash@88
+Dependencies: pathlib@7; quota_test_case@10
+
+`dom/quota/test/mochitest/helpers.js` | `e610a5438a474357915facb2c459addc1a0aa861` | 7175 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: loadScript@15; loadWorkerScript@24; testHarnessSteps@29; nextTestHarnessStep@30; clearAllDatabases@101; finishTest@151; clearAllDatabases@153; grabArgAndContinueHandler@159; continueToNextStep@163; continueToNextStepSync@169; workerScript@173; executeSoon@253; executeSoon@294
+
+`dom/quota/test/mochitest/mochitest.toml` | `59160df2f4e2eaec54b81f4c45b7a9ade51fcb4e` | 334 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/mochitest/test_simpledb.html` | `29ca8be65e99d52b41f3f11cab85cf7782c2d9ec` | 511 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/quota/test/mochitest/test_storage_manager_persist_allow.html` | `8477630f212b34c29b51f8fa5e1f0ef84ae3ef3b` | 558 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/quota/test/mochitest/test_storage_manager_persist_deny.html` | `2b0fab44234814492c514803e3941dba78228830` | 556 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/quota/test/mochitest/test_storage_manager_persisted.html` | `6e03f33e2d810c2415dc9e79742698bb7e755199` | 597 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/quota/test/modules/content/Assert.mjs` | `63ac9000cc29726883171eb975d78875176393dd` | 324 bytes | test-path,source | UTF-8 | mode 100644
+
+`dom/quota/test/modules/content/ModuleLoader.mjs` | `68260bbee6e42d0187531a2bca1f22ce5053c41b` | 1889 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ModuleLoader@10
+
+`dom/quota/test/modules/content/StorageUtils.mjs` | `a78d4d42eb3a62df7f230236080737f149332731` | 1848 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: RequestError@10; constructor@11; setStoragePrefs@19; getCachedUsageForOrigin@36; function@39; clearStoragesForOrigin@55
+
+`dom/quota/test/modules/content/Utils.mjs` | `acc8d5ea5ce67ada412ab6d6962412e0cf511713` | 506 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getCachedOriginUsage@13
+Dependencies: ./StorageUtils.mjs@10
+
+`dom/quota/test/modules/content/UtilsParent.mjs` | `f7ebde3c34354fcd699e5bc5bd2c765659d587dd` | 478 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: OnMessageReceived@9
+Dependencies: ./Utils.mjs@6
+
+`dom/quota/test/modules/content/WorkerDriver.mjs` | `0ba74b65f7af0b73c866b73673451404b45cc0ee` | 1742 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: runTestInWorker@6
+
+`dom/quota/test/modules/content/worker/Assert.js` | `7c7e2683eaac367a15071954a4f5d68290532dc1` | 346 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ok@7; equal@14
+
+`dom/quota/test/modules/content/worker/ModuleLoader.js` | `5354c26e3421112c9d5be901af97109987ef6005` | 1120 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ModuleLoader@6
+
+`dom/quota/test/modules/content/worker/Utils.js` | `965a20dc71061ffebb9062b4de869579bf134488` | 528 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ensureUtilsChild@8; getCachedOriginUsage@20
+
+`dom/quota/test/modules/content/worker/UtilsChild.mjs` | `db5757bff0946e9c802acabae83cbc0033d8ab53` | 547 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getCachedOriginUsage@7; addEventListener@15
+
+`dom/quota/test/modules/content/worker/head.js` | `ab7a916d22e2f6a15fa89a6dad2d90952d04bc3f` | 1253 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@10; addEventListener@19; info@20; executeSoon@24; runNextTest@32
+
+`dom/quota/test/modules/system/FileUtils.sys.mjs` | `d548a3772fcfe464d428f1fa67690b87c67e1fec` | 734 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getProfileDirectory@7; getFile@11
+
+`dom/quota/test/modules/system/ModuleLoader.sys.mjs` | `64b7b419dd3dff7a20074e3404850da53843c39c` | 1533 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ModuleLoader@6
+
+`dom/quota/test/modules/system/PrefUtils.sys.mjs` | `8625bbc3ea3a57e251e8fe8ead90c86da8b4a6d5` | 2595 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getPrefs@23; setPrefs@55
+
+`dom/quota/test/modules/system/PrincipalUtils.sys.mjs` | `ed02be54c41774dc5c4c28d0a122a8c2867e5b7f` | 295 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: createPrincipal@7
+
+`dom/quota/test/modules/system/ProcessUtils.sys.mjs` | `97194d005cb71f7f2bb4dc4353beb8879b6f6ca5` | 272 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: isInParentProcess@7
+
+`dom/quota/test/modules/system/QuotaUtils.sys.mjs` | `75c7638b7b3e330a2cd5806da59ef1bc1e2ebe8f` | 3523 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: requestFinished@29; withArtificialFailures@59; startShutdown@90
+Dependencies: resource://testing-common/dom/quota/test/modules/PrefUtils.sys.mjs@6; resource://testing-common/dom/quota/test/modules/RequestError.sys.mjs@7
+
+`dom/quota/test/modules/system/RequestError.sys.mjs` | `fd7cdd3b0c4ce196a97c640c2aff72da0d3cb4e8` | 374 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: RequestError@6; constructor@7
+
+`dom/quota/test/modules/system/StorageUtils.sys.mjs` | `9389150d7f29bf623db1645c711d4aed9e8baf7d` | 2299 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: RequestError@6; constructor@7; setStoragePrefs@15; clearStoragePrefs@31; getCachedUsageForOrigin@47; function@50; clearStoragesForOrigin@66; resetStorage@82
+
+`dom/quota/test/modules/system/Utils.sys.mjs` | `6011837a2b809ea9317ef9bf23eae2acce7b7562` | 1464 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ensureNSSInitialized@17; getCachedOriginUsage@25; shrinkStorageSize@33; restoreStorageSize@43
+
+`dom/quota/test/modules/system/UtilsParent.sys.mjs` | `41ca7e2940ef01a7e4e8bb1117e1f3dd5ac8d9e3` | 838 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: OnMessageReceived@9
+Dependencies: resource://testing-common/dom/quota/test/modules/Utils.sys.mjs@6
+
+`dom/quota/test/modules/system/WorkerDriver.sys.mjs` | `60e67907608d59896b0595608aaedc8a659fa6ae` | 1754 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: runTestInWorker@6
+
+`dom/quota/test/modules/system/worker/.eslintrc.mjs` | `8efc103c05a438ae4f8266b68e1831c5e503e637` | 236 bytes | test-path,source | UTF-8 | mode 100644
+Dependencies: globals@6
+
+`dom/quota/test/modules/system/worker/Assert.js` | `7c7e2683eaac367a15071954a4f5d68290532dc1` | 346 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ok@7; equal@14
+
+`dom/quota/test/modules/system/worker/ModuleLoader.js` | `5354c26e3421112c9d5be901af97109987ef6005` | 1120 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ModuleLoader@6
+
+`dom/quota/test/modules/system/worker/Utils.js` | `de935e4f586f8d899bfc3ddf9087f685d00bc36d` | 818 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ensureUtilsChild@8; getCachedOriginUsage@20; shrinkStorageSize@27; restoreStorageSize@34
+
+`dom/quota/test/modules/system/worker/UtilsChild.mjs` | `d3b5455a59dff3258c218c5add60bf9ddd2e97dc` | 1001 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: _sendMessage@6; _recvMessage@17; addEventListener@19; getCachedOriginUsage@28; shrinkStorageSize@36; restoreStorageSize@45
+
+`dom/quota/test/modules/system/worker/head.js` | `c415e0c56b8b3fce9172eadf20cf04cfeeec7569` | 1306 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@11; addEventListener@20; info@21; executeSoon@25; runNextTest@33
+
+`dom/quota/test/moz.build` | `291d79ff5a58f9dcb6198ad180ea0a903cc48142` | 2995 bytes | test-path,build-registration | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/basics_profile.zip` | `bbdb0f50cf947ddb6b53214d4ef6ca283ba5431d` | 3405 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/caching/groupMismatch_profile.zip` | `8124e589de0662c15d297f463399876f2b5692cc` | 2576 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/caching/head.js` | `fe3cc5b10f8e8c2ead0b1bcd738440b5539cf183` | 429 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: loadScript@11
+
+`dom/quota/test/xpcshell/caching/make_unsetLastAccessTime.js` | `9be377e4f3fb67000de1b5a7ab153a321261347a` | 620 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6
+
+`dom/quota/test/xpcshell/caching/removedOrigin_profile.zip` | `a5ccc05aa9140833976d6284d21e7a630252f938` | 1551 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/caching/test_groupMismatch.js` | `399193bcc36055626853500981eb57cb22cee875` | 1895 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@11
+
+`dom/quota/test/xpcshell/caching/test_removedOrigin.js` | `01573f5234f762e5d7d9b13b3bf20570120f1ac1` | 1948 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@13
+
+`dom/quota/test/xpcshell/caching/test_unsetLastAccessTime.js` | `69d94ccad525221cd4f7a8cc970cd1fd325940e7` | 1476 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6
+
+`dom/quota/test/xpcshell/caching/unsetLastAccessTime_profile.zip` | `2b14ca72764d9c554245fb08d8908a976963bbed` | 1574 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/caching/xpcshell.toml` | `28b3cfe4b51322d18f7745106911f43b1a75bd7c` | 389 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/clearStoragesForClient_profile.json` | `483beb0ed8e24d313f821bea72e8d3d9a993cddc` | 31061 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/clearStoragesForClient_profile.zip` | `b6a3877d3e7ea8510af57cf5953622aeadb38797` | 21241 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/clearStoragesForOriginPrefix_profile.json` | `6df0726773adfdcaa9f546e2d73c23e361024525` | 25721 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/clearStoragesForOriginPrefix_profile.zip` | `b6a3877d3e7ea8510af57cf5953622aeadb38797` | 21241 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/clearStoragesForPrincipal_profile.zip` | `7d7985ddd04de0a65bfb80635e928f546cd7aa02` | 7380 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/clearStoragesForPrivateBrowsing_profile.json` | `b4b8e3afdabcd88b5b7d8dafda3447f9b42e49fa` | 4516 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/clearStoragesForPrivateBrowsing_profile.zip` | `4bbb8a5c77bd2fe7821c3f9d9d44812eb565e30c` | 7500 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/common/head.js` | `0b8bd515e3b609473df1cda34db162f893e766b6` | 18209 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: log@17; is@23; ok@27; todo@31; run_test@35; registerCleanupFunction@57; finishTest@82; executeSoon@86; grabArgAndContinueHandler@91; continueToNextStep@95; executeSoon@96; continueToNextStepSync@101; enableTesting@105; resetTesting@112; setGlobalLimit@118; resetGlobalLimit@125; storageInitialized@129; persistentStorageInitialized@136; temporaryStorageInitialized@143; persistentOriginInitialized@150; temporaryOriginInitialized@158; init@168; initializePersistentStorage@175; initTemporaryStorage@182; initPersistentOrigin@189; initTemporaryOrigin@197; initPersistentClient@213; initTemporaryClient@223; getFullOriginMetadata@241; clearClient@251; clearOrigin@262; clearOriginsByPrefix@272; clearPrivateBrowsing@282; resetClient@290; persist@300; persisted@307; estimateOrigin@314; estimateGroupUsage@321; listOrigins@328; getPersistedFromMetadata@335; grabResultAndContinueHandler@343; grabUsageAndContinueHandler@347; getUsage@351; getOriginUsage@357; getCachedOriginUsage@363; function@366; getCachedOriginUsage@372; getCurrentUsage@378; getPrincipal@390; getBoolPref@401; setBoolPref@405; setIntPref@409; clearUserPref@413; _getPrefs@417; _getQuotaManager@424; installPackages@431; verifyStorage@446; verifyEntries@451; getCurrentEntries@506; getEntryForFile@509; getEntriesFromPackageDefinition@551; addSharedEntries@594; compareEntries@634; verifyInitializationStatus@696
+
+`dom/quota/test/xpcshell/common/utils.js` | `17f4077b972822f1092e693fb987418602365c56` | 1421 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getOriginDir@8; getMetadataFile@12; populateRepository@18; makeRepositoryUnusable@23; fillOrigin@31
+
+`dom/quota/test/xpcshell/createLocalStorage_profile.zip` | `d5958dbd5946fef2835373ad735f9992dcaf0cbb` | 1006 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/defaultStorageDirectory_shared.json` | `fdc0fe0396ac1c9c19a96375bd4cd65c0768838e` | 5383 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/defaultStorageDirectory_shared.zip` | `61e5b60a87e35d6b7139dbcd5a6a6cdc6deaff60` | 1804 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/getCachedUsageForPrincipal_profile.zip` | `4cf7ba9ff2006870b7985f26cdc0803f452e8315` | 8554 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/getUsageForPrincipal_profile.zip` | `4cf7ba9ff2006870b7985f26cdc0803f452e8315` | 8554 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/getUsage_profile.zip` | `5144112bde351703f42ab87f817421af09cdae53` | 24717 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/groupMismatch_profile.zip` | `182b013de0f35607e7655415cde3a3fc558d3d5d` | 1706 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/head.js` | `a104ec88e0924f2affad107a31ee4fd8e6519e30` | 426 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: loadScript@11
+
+`dom/quota/test/xpcshell/indexedDBDirectory_shared.json` | `6e3d63bafcfb9b6b50ef067425c0b69adf7e5748` | 694 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/indexedDBDirectory_shared.zip` | `6b959e752587970224df679b147be2c8434001f0` | 524 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/make_getCachedUsageForPrincipal.js` | `db009cd3aeb928f816a3c9682b0b269e45088af0` | 381 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6
+
+`dom/quota/test/xpcshell/make_getUsageForPrincipal.js` | `21a6ac108daf908f0f86f9cd4ed1377511c9aa09` | 375 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6
+
+`dom/quota/test/xpcshell/make_secondaryCacheValidity.js` | `8713689ad571e8534e31069adc1d5edbf059f89a` | 4583 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: makeSecondaryCacheValidity@25; sandboxScript@47; sandboxScript@95; testSteps@163
+
+`dom/quota/test/xpcshell/make_unknownFiles.js` | `b48cbd8acede194228f581e785dc7f825d85f768` | 4660 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@8; createUnknownFileIn@17; createUnknownDirectoryIn@45; sandboxScript@111
+
+`dom/quota/test/xpcshell/make_unsetLastAccessTime.js` | `9be377e4f3fb67000de1b5a7ab153a321261347a` | 620 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6
+
+`dom/quota/test/xpcshell/originMismatch_profile.json` | `cbeaef728a395bf357f83737526d5274b5b969c6` | 2023 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/originMismatch_profile.zip` | `601633ad81d27a59d1efb99553bc497a84dfec98` | 3103 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/persistentStorageDirectory_shared.json` | `8d36293bbf63be0866ed9c754f47f3c77668adc7` | 1294 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/persistentStorageDirectory_shared.zip` | `b80bfe904bc23a0a1c86a94022928eb47266ac8a` | 1272 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/removeLocalStorage1_profile.zip` | `19e971433cf24ec2c7420f5cb1bf12a5ac468d55` | 1187 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/removeLocalStorage2_profile.zip` | `04d1a3462b535b6832db6a47f8d768220d36f725` | 2827 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/secondaryCacheValidity_profile.zip` | `0745bbdcf84be62846fde847795a0f06bdb33f07` | 13491 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/telemetry/head.js` | `fe3cc5b10f8e8c2ead0b1bcd738440b5539cf183` | 429 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: loadScript@11
+
+`dom/quota/test/xpcshell/telemetry/test_dom_quota_try.js` | `4bc417e8dee9461ca78b8c7da36b0106dd9ac3d9` | 4565 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: setup@41; getExpectedNumberOfEvents@80; cleanup@100; verifyEvents@109; testSteps@141
+
+`dom/quota/test/xpcshell/telemetry/test_qm_first_initialization_attempt.js` | `46fc61b364285b142796aa3f1ab40052f0c80d77` | 24556 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: setup@42; setup@70; getExpectedSnapshots@86; setup@172; setup@227; getExpectedSnapshots@239; setup@325; setup@381; setup@433; setup@481; setup@525; setup@568; setup@636; setup@701; setup@800; verifyMetric@915; testSteps@938
+
+`dom/quota/test/xpcshell/telemetry/version0_0_make_it_unusable.zip` | `92dcfb777e67f167c60b89cd9d47336bbdab9c6d` | 1978 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/telemetry/version0_0_profile.zip` | `2fb0f525c210d584df79a3f53aab23ed9aa029fe` | 1292 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/telemetry/version1_0_make_it_unusable.zip` | `92dcfb777e67f167c60b89cd9d47336bbdab9c6d` | 1978 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/telemetry/version1_0_profile.zip` | `6169f439c10a1185bd80f9b92f2e97b5fe8e30a2` | 1475 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/telemetry/version2_0_make_it_unusable.zip` | `92dcfb777e67f167c60b89cd9d47336bbdab9c6d` | 1978 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/telemetry/version2_0_profile.zip` | `465f53cea923bab644cb225fe89d554e6638ae85` | 1473 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/telemetry/version2_1_make_it_unusable.zip` | `92dcfb777e67f167c60b89cd9d47336bbdab9c6d` | 1978 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/telemetry/version2_1_profile.zip` | `81463235aba4b98849d6104a2383c82858d2b3b2` | 1472 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/telemetry/version2_2_make_it_unusable.zip` | `b6b8eecabf7191391d09c5bca42866398cff2645` | 299 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/telemetry/version2_2_profile.zip` | `e572726cca108b0005460e2562c2abd90d6827c5` | 1507 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/telemetry/xpcshell.toml` | `fa5ac194bff56f30b655cb96f47b79d27def9f3e` | 690 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/tempMetadataCleanup_profile.zip` | `da1de0979bb4955e4ac2a3d082c875573b0e714b` | 1569 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/test_allowListFiles.js` | `04c64c2ef5682621d96b2198d0adea46064d235e` | 1539 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@13
+
+`dom/quota/test/xpcshell/test_artificialFailure.js` | `db8a3a58d45bec48cfc0c658683c12557e923ae7` | 2458 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testArtificialFailure@16; function@50; testSteps@84
+
+`dom/quota/test/xpcshell/test_bad_origin_directory.js` | `303fd82bd8463b9ed2e3fa80ae4a6396203e3755` | 1055 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6
+
+`dom/quota/test/xpcshell/test_basics.js` | `98ac0d53ad293a747476bcf4e2c291967895e877` | 3435 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6
+
+`dom/quota/test/xpcshell/test_cacheSchemaMismatch.js` | `af8ea05ea4effbbc7ca370cdcde910d5a1e5786b` | 3688 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@13; runScenario@25
+
+`dom/quota/test/xpcshell/test_clearStoragesForClient.js` | `1c4c4cb33f116fe4c5a4349d73a3c06ee2d422b6` | 1863 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@10
+
+`dom/quota/test/xpcshell/test_clearStoragesForOriginAttributesPattern.js` | `096cf2be7050c43f86a439fc1e64de04b02597b0` | 1477 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6; getOriginDirectory@30
+
+`dom/quota/test/xpcshell/test_clearStoragesForOriginPrefix.js` | `f36750b0ec3ff6495090b10a1a3e1089e0c8d5ab` | 1791 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@10
+
+`dom/quota/test/xpcshell/test_clearStoragesForPrincipal.js` | `0a7c4ecfa6f3b66af2b5e4c6ce921c36bb44366b` | 1613 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@12
+
+`dom/quota/test/xpcshell/test_clearStoragesForPrivateBrowsing.js` | `6a94e5c98edffd40146813758d6fa387eb1ea3db` | 828 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@10
+
+`dom/quota/test/xpcshell/test_clearStoragesForPrivateBrowsing_callback.js` | `2101a9606db3b4cf40c5384ea440c2cd39735e43` | 2001 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: clearPrivateBrowsingViaService@14; onDataDeleted@18; testSteps@28
+
+`dom/quota/test/xpcshell/test_clientDirectoryOpeningStarted.js` | `0c543e705e0648045264d7613d69617080882a8a` | 1163 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@17
+
+`dom/quota/test/xpcshell/test_corruptStorageSqlite.js` | `3897fdac588ecabdfb2c8f9730485ec3a5a96731` | 5960 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: runQuickCheck@21; testSteps@33; test_corruptFreelistRecovery@41
+
+`dom/quota/test/xpcshell/test_createLocalStorage.js` | `8394a7d2356350420308efbd1db8e7746cd35013` | 3774 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6; checkArchiveFileNotExists@11; checkArchiveFileExists@27
+
+`dom/quota/test/xpcshell/test_estimateGroupUsage.js` | `c5a5c7b3300fa39bb4ea57af5c3b31d1c9d5db35` | 2849 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: verifyGroupEstimation@8; testSteps@18
+
+`dom/quota/test/xpcshell/test_estimateOrigin.js` | `ab987cf57f2bdaba8c5c60923d763f13c3805614` | 3808 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: verifyOriginEstimation@8; testSteps@18
+
+`dom/quota/test/xpcshell/test_getCachedUsageForPrincipal.js` | `8340300fea341186a8b5ccc8c993ba72b4c4ceb5` | 2089 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6; verifyResult@14
+
+`dom/quota/test/xpcshell/test_getUsage.js` | `dc8f6df03e671ec8bbe9d84d254b40997259cfa7` | 3327 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6; verifyResult@53; dummy@87
+
+`dom/quota/test/xpcshell/test_getUsageForPrincipal.js` | `23f969f757e892b18cdab90013e8388b3516e14e` | 2422 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6; verifyResult@21
+
+`dom/quota/test/xpcshell/test_groupInitializationStarted.js` | `e0c4c588cbf5815a47ad4e52b21e53b87bd120a7` | 1353 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@17
+
+`dom/quota/test/xpcshell/test_groupMismatch.js` | `4bc5be7b97b18735a9e556b8d0d5e9e7a111e6d2` | 2157 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@13; readMetadataFile@18
+
+`dom/quota/test/xpcshell/test_idle_maintenance.js` | `09d89c8d2ffc8eb0ef177f6d26505d00c737e23a` | 561 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@11
+
+`dom/quota/test/xpcshell/test_initTemporaryStorage.js` | `c3e3d1cf9c709986ad5227c87621408c70e4188b` | 1426 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@13
+
+`dom/quota/test/xpcshell/test_initializeAllTemporaryOrigins.js` | `8956a5291270b93285d9e23bdc4f962c341566e6` | 3209 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testInitializeAllTemporaryOrigins@13; testSteps@104
+
+`dom/quota/test/xpcshell/test_initializePersistentClient.js` | `d359ff40bd24564d71046bfd60833ba5e305be4a` | 1127 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@12
+
+`dom/quota/test/xpcshell/test_initializePersistentOrigin.js` | `60ea5408c9c1d7658c84a59f7b77acb72f1dde5f` | 1154 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@12
+
+`dom/quota/test/xpcshell/test_initializePersistentStorage.js` | `db27a12273f0ff5445a337bb2d1ec86fa1eb0bff` | 1344 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@13
+
+`dom/quota/test/xpcshell/test_initializeTemporaryClient.js` | `d2b1273f105a3229a9ca297ad3fb6f809254c2c6` | 1927 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@12
+
+`dom/quota/test/xpcshell/test_initializeTemporaryOrigin.js` | `b6f6110fd84805504122710f1498af64133d654a` | 1367 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@12
+
+`dom/quota/test/xpcshell/test_initializeTemporaryOrigin_failure.js` | `9f6a08f63c83c13d932eeb5c9e47009e4aea2370` | 4386 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testCachedOrigins@16; function@47; testCreateConnection@99; function@137; testSteps@176
+
+`dom/quota/test/xpcshell/test_listCachedOrigins.js` | `4deb33c99040053662f3ab80b9e1baeced48bf02` | 2531 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@13; verifyResult@20
+
+`dom/quota/test/xpcshell/test_listOrigins.js` | `7577e494287ed565f97ce9f4b63f58bc3b7a734b` | 2466 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@13; verifyResult@20
+
+`dom/quota/test/xpcshell/test_originEndsWithDot.js` | `6fd017a58bc43bdd61f47109c7c2eef13aa0353b` | 1999 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@8
+
+`dom/quota/test/xpcshell/test_originInitializationStarted.js` | `30719deaa45bcb9e018ad131d0581724f7c6252d` | 1204 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@17
+
+`dom/quota/test/xpcshell/test_originMismatch.js` | `c50abd5edafb624fece1d553ec06e932cd7e23a7` | 2502 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testOriginMismatch@12; testSteps@77
+
+`dom/quota/test/xpcshell/test_originWithCaret.js` | `7afce4f5cccf6b1506c620cdd6217159c49a274c` | 370 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@8
+
+`dom/quota/test/xpcshell/test_orpahnedQuotaObject.js` | `aefc30a7c3db412ffc2077d5005e9475c96b772c` | 938 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6
+
+`dom/quota/test/xpcshell/test_persist.js` | `d12563e64ff5f210189e673d0f9a6809c556f13d` | 5387 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6
+
+`dom/quota/test/xpcshell/test_persist_eviction.js` | `d2a6e04dce2bbb43caf6a59bf2b1b93efcfe6e6e` | 2829 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@14
+
+`dom/quota/test/xpcshell/test_persist_globalLimit.js` | `99ed0f43ffdd3bbdfb88ccdac81761bf9c657293` | 1903 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@13
+
+`dom/quota/test/xpcshell/test_persist_groupLimit.js` | `d2dc1a987db425883db88fbedf1e4361e3d179b9` | 2971 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@21
+
+`dom/quota/test/xpcshell/test_quotaClientInteractions.js` | `0fa258f537f3e6fc4b7a92d173940bea63e4979e` | 2027 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testNonExistentOriginDirectory@19; testSteps@66
+
+`dom/quota/test/xpcshell/test_quotaUtilsService.js` | `c814a79ee50f728d3056b83819739e9475830648` | 547 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@7
+
+`dom/quota/test/xpcshell/test_removeLocalStorage.js` | `781c71a56f2160c752d72d6cf7a3a584716fe662` | 1949 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6
+
+`dom/quota/test/xpcshell/test_secondaryCacheValidity.js` | `38e109fb30908d12e2e723672f79ce95576a9b6d` | 5367 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSecondaryCacheValidity@44; testSteps@162
+
+`dom/quota/test/xpcshell/test_shutdownDuringAllTemporaryOriginsInitialization.js` | `6dfb0653cd01d4489116f356f0b320b8c02b1148` | 6470 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testShutdownDuringAllTemporaryOriginsInitialization@58; testSteps@187
+
+`dom/quota/test/xpcshell/test_shutdownDuringAllTemporaryOriginsInitialization2.js` | `8c50130e0875ff612da5acf10ba45006c0471e19` | 5458 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testShutdownDuringAllTemporaryOriginsInitialization2@52; testSteps@162
+
+`dom/quota/test/xpcshell/test_shutdownDuringRepositoryInitialization.js` | `388e66226b0f69eeebcad53bf681290a4f465936` | 5186 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testShutdownDuringRepositoryInitialization@52; testSteps@165
+
+`dom/quota/test/xpcshell/test_simpledb.js` | `b698d778e090d97eca65bbacf98cbf1fc6156d86` | 168 bytes | test-path,source | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/test_specialOrigins.js` | `d66700d359942850840ff7fe77dc05579a5a65e3` | 1238 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6
+
+`dom/quota/test/xpcshell/test_storagePressure.js` | `b115c68629176c243429b82a0ac99fb8190c58b9` | 3180 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: awaitStoragePressure@19; testSteps@27
+
+`dom/quota/test/xpcshell/test_tempMetadataCleanup.js` | `3110c0b2a589d7bc73ca1ebf90aef7cf81523e8d` | 1032 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6
+
+`dom/quota/test/xpcshell/test_temporaryStorageCleanup.js` | `8871d4803208c867127a192a1d94bb4e6fbba78b` | 9674 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: withArtificialAccessTime@48; testNonPersistedZeroUsageOriginsClearing@75; withArtificialAccessTime@135; testSteps@273; function@284; function@302; function@319
+
+`dom/quota/test/xpcshell/test_temporaryStorageEviction.js` | `427919120c9aa9b577608ef056f230e7d2c3ed94` | 11503 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testTemporaryStorageEviction@55; checkUsage@108; createAndOpenConnection@127; testSteps@316
+
+`dom/quota/test/xpcshell/test_temporaryStorageRFP.js` | `efd3c52dc048c90da323df5b451825a7a61d0e0a` | 1671 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@10
+
+`dom/quota/test/xpcshell/test_unaccessedOrigins.js` | `3a45528b987b277e729d7b8877defe2042f60623` | 4426 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testUnaccessedOrigins@8; getHostname@9; getOrigin@13; getOriginDir@17; updateOriginLastAccessTime@21; verifyOriginDir@56; testSteps@174
+
+`dom/quota/test/xpcshell/test_underflowedCacheRescan.js` | `099af46fc2e0a71152bccf6587e7423478b12138` | 6887 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: initStorage@20; setupStorage@35; corruptL1Cache@75; corruptL2Cache@88; checkUsage@148; testL1L2Corruption@186; testL1L2CorruptionUnaccessedOrigin@205; testSteps@226
+
+`dom/quota/test/xpcshell/test_unknownFiles.js` | `eeb72160c9744997e9510f33c8798346e1f9c3e4` | 3117 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@12; testFunctionality@15; testFunctionality@88; testFunctionality@104
+
+`dom/quota/test/xpcshell/test_unsetLastAccessTime.js` | `ff55e81695477efef95443fa8899feb8c49c6938` | 1947 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6; getLastAccessTime@11
+
+`dom/quota/test/xpcshell/test_validOrigins.js` | `84c8e45093de93093aea6620ddadfb11d7a1bab8` | 2846 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@10
+
+`dom/quota/test/xpcshell/unknownFiles_profile.zip` | `75bfa09003e0b2f48229794ece572e20fd88089a` | 13859 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/unsetLastAccessTime_profile.zip` | `2b14ca72764d9c554245fb08d8908a976963bbed` | 1574 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/cacheVersion1_profile.json` | `f04f79a6d7b184687eccc8622fb40371f8b8f86e` | 1574 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/cacheVersion1_profile.zip` | `c09b503c18838fb96e01b78d49f0bf5487af57d0` | 2675 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/head.js` | `fe3cc5b10f8e8c2ead0b1bcd738440b5539cf183` | 429 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: loadScript@11
+
+`dom/quota/test/xpcshell/upgrades/indexedDBAndPersistentStorageDirectory_profile.json` | `db66d824ebb14b7a47210806245e7d729b7b4e70` | 1409 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/indexedDBAndPersistentStorageDirectory_profile.zip` | `63936ecf9a9c2100b63e3fe7bbfa95d1cc31a616` | 1336 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/indexedDBDirectory_flatOriginDirectories_profile.json` | `7916c25b73116c7838923a0e9a48a812d59d9c01` | 1560 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/indexedDBDirectory_flatOriginDirectories_profile.zip` | `a0a56a77dfc1b3f48465b4181fff824cdc4b3377` | 812 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/indexedDBDirectory_profile.json` | `715c954915dd0e77e3b5dd2707b22bca66b75e04` | 1754 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/indexedDBDirectory_profile.zip` | `589e65ec82ce6f79f1a52177ef9a9b964e0f1b0b` | 1508 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/localStorageArchive1upgrade_profile.zip` | `a17b90dedfccb12bcd151c2d010af48ac46f2729` | 7675 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/localStorageArchive4upgrade_profile.zip` | `cf5b29adae091387926af9a1c9c8b54cf10cc606` | 7853 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/localStorageArchiveDowngrade_profile.zip` | `2f11abe85833b925e280b936e8ccf241900ecb91` | 7799 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/make_upgradeStorageFrom3to4.js` | `a136d0adbcc0df82daeecc44a8a313106d5e48dc` | 7421 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: enumerateTree@33; zipProfile@51; sandboxOp@119; populateOrigin@138; makeProfile@198; testSteps@248
+
+`dom/quota/test/xpcshell/upgrades/persistentAndDefaultStorageDirectory_profile.json` | `a25f2575736480836587f34e17648927eab1aad6` | 1451 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/persistentAndDefaultStorageDirectory_profile.zip` | `9ddd9af6a90c82761522a8a3dfb6af26d0221172` | 1413 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/persistentStorageDirectory_flatOriginDirectories_profile.json` | `c80a3cc283fd6a4213014869688730451cf56245` | 1738 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/persistentStorageDirectory_flatOriginDirectories_profile.zip` | `436ebf9070817aac5b9c654aea58b6cdff421443` | 1028 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/persistentStorageDirectory_originDirectories_profile.json` | `98d23af161c8121c0bdce29f1b58796a1b19d9e0` | 2692 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/persistentStorageDirectory_originDirectories_profile.zip` | `0c5200adf48e96e17cb3ad1eb4090425ec8433be` | 2720 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/persistentStorageDirectory_profile.json` | `c97c537d9861b2c8efc97dbbb9750c73b6ee8b21` | 12382 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/persistentStorageDirectory_profile.zip` | `ab8c045be9f803b0e1be43ffda7ed989e431be7f` | 12717 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/test_localStorageArchive1upgrade.js` | `3b8a8cb003694bd5ecc548edee22e9ab817c5c21` | 1945 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@12
+
+`dom/quota/test/xpcshell/upgrades/test_localStorageArchive4upgrade.js` | `74eb3face127a7ad4fe0735951c976180ba7fbfa` | 2977 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@12; getLocalStorage@31
+
+`dom/quota/test/xpcshell/upgrades/test_localStorageArchiveDowngrade.js` | `82b0bbec1c07d5ad77077d480533c25360405b4b` | 2014 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@12
+
+`dom/quota/test/xpcshell/upgrades/test_upgradeCacheFrom1.js` | `f7416e308260d20169be94ce0d6901d64d6dfbc5` | 2250 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@10
+
+`dom/quota/test/xpcshell/upgrades/test_upgradeFromFlatOriginDirectories.js` | `c1e5eb142ad8f18634c3eb7f392a7c55e2b78e1c` | 5405 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@10
+
+`dom/quota/test/xpcshell/upgrades/test_upgradeFromIndexedDBDirectory.js` | `b47860f6a8d1424d779e21e6044ac4649f7b0ed7` | 2948 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@11
+
+`dom/quota/test/xpcshell/upgrades/test_upgradeFromIndexedDBDirectory_removeOldDirectory.js` | `a7beced885a61901e33a32947f98534b10a7ded2` | 2398 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@11
+
+`dom/quota/test/xpcshell/upgrades/test_upgradeFromPersistentStorageDirectory.js` | `a15dd20b64bff042af20f42e67229ed08b773bce` | 10621 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@13
+
+`dom/quota/test/xpcshell/upgrades/test_upgradeFromPersistentStorageDirectory_removeOldDirectory.js` | `2393ac4daf61df3a1e5e6a72c989ae59d951481e` | 3262 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testUpgradeFromPersistentStorageDirectory_removeOldDirectory@11; testSteps@104
+
+`dom/quota/test/xpcshell/upgrades/test_upgradeFromPersistentStorageDirectory_upgradeOriginDirectories.js` | `f6ea0ffaec23974d612458a2f5cbe06b465e1d36` | 4261 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@6
+
+`dom/quota/test/xpcshell/upgrades/test_upgradeStorageFrom0_0.js` | `77e05e0ae86d436d3dbc2291daf2a87f087761a5` | 4216 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@10
+
+`dom/quota/test/xpcshell/upgrades/test_upgradeStorageFrom1_0_idb.js` | `34508f85e8c496f68ed4b1b93be6f7519ef71d63` | 863 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@11
+
+`dom/quota/test/xpcshell/upgrades/test_upgradeStorageFrom1_0_removeAppsData.js` | `c3589ee68631ec174559ae07a8ba8f49fae4212b` | 2323 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@10
+
+`dom/quota/test/xpcshell/upgrades/test_upgradeStorageFrom1_0_removeMorgueDirectory.js` | `b58f170d522e6a69dd717f2287e88e7178f147ce` | 1257 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@10
+
+`dom/quota/test/xpcshell/upgrades/test_upgradeStorageFrom1_0_stripObsoleteOriginAttributes.js` | `7332ce8fccefc898e56cfe919aa4c1f9c9d7104a` | 5256 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@12
+
+`dom/quota/test/xpcshell/upgrades/test_upgradeStorageFrom2_0.js` | `b7a4ffaea03a52809b801ec800ee6841fb832fe9` | 2944 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@10
+
+`dom/quota/test/xpcshell/upgrades/test_upgradeStorageFrom2_1.js` | `eed7ed21d5c4ac1fac7daca3ace03457700fbdc5` | 2311 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@11
+
+`dom/quota/test/xpcshell/upgrades/test_upgradeStorageFrom2_2.js` | `8f41c05b49484b918c5255d16815b9319dd8772d` | 1395 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSteps@10; verifyDatabaseTable@17
+
+`dom/quota/test/xpcshell/upgrades/test_upgradeStorageFrom3to4.js` | `a758fe50c06133b77d82aee361a89ee7660b80e5` | 7407 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: sandboxOp@39; verifyOrigin@58; runCase@154; testSteps@204; test_happyPath@212; test_missingStorageSqlite@224; function@227; test_emptyStorageSqlite@244; function@247
+
+`dom/quota/test/xpcshell/upgrades/upgradeStorageFrom3to4_profile.zip` | `3fad84294600281016d37735737653277a477073` | 22431 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/version0_0_profile.json` | `05c0d27fe33f0bcc66586e5030d5bb992f31ae13` | 2536 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/version0_0_profile.zip` | `5ef577191cbfc301ef24d1c726dce88f925014ff` | 2684 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/version1_0_appsData_profile.json` | `88f5d5dceebde017ff32cbe2dcadc3655220d634` | 1896 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/version1_0_appsData_profile.zip` | `582edb43af082bc2b9ceed98b02eb6418f149a81` | 3145 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/version1_0_idb_profile.json` | `babd4f2870b6bfcf76005f98a1e0a0719a200073` | 1247 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/version1_0_idb_profile.zip` | `8abfae79c25ac6721fc8f0078f96525943ec0d9d` | 3944 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/version1_0_morgueDirectory_profile.json` | `855f7846bcf60d895095418398fb83196fb44141` | 1341 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/version1_0_morgueDirectory_profile.zip` | `88543784ecf774e33737ac6e1fa66a5ed3ec7631` | 1438 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/version1_0_obsoleteOriginAttributes_profile.json` | `071c4413f4202327d270057831c63ddf4f83df3d` | 3201 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/version1_0_obsoleteOriginAttributes_profile.zip` | `2b4125edf9f5badb590f5566fb07a775f70727a6` | 4843 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/version2_0_profile.json` | `04ad73eae30d990b5cf9f0afe007bbe42d22266e` | 3017 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/version2_0_profile.zip` | `c140df56e4b14219d71912a3a01a7743cd2b2fac` | 5119 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/version2_1_profile.json` | `a7866d1123c98539ea854259a722cf46cdd70dac` | 1835 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/version2_1_profile.zip` | `908dac705860cd0107b72d95240a6a2d2ffc2938` | 2400 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/version2_2_profile.json` | `4b7265e3b4155efa97a2ddb062ba568cd8d9e9de` | 381 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/version2_2_profile.zip` | `b6ae7e7d7607d9dd77567ab497d858249d1d9d20` | 237 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/quota/test/xpcshell/upgrades/xpcshell.toml` | `9e8e0c2f7f667497cf51db7a59c116c23cd4da3b` | 2905 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/quota/test/xpcshell/xpcshell.toml` | `ae4471d8154483de8e22767676d42070417d6ab5` | 6890 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/reporting/CSPViolationReportBody.cpp` | `a05eb4b9fc9146b8335115df05db11864dd0349b` | 4881 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; CSPViolationReportBody::GetBlockedURL@41; CSPViolationReportBody::GetDocumentURL@45; CSPViolationReportBody::GetReferrer@49; CSPViolationReportBody::GetOriginalPolicy@58; CSPViolationReportBody::GetSourceFile@62; CSPViolationReportBody::GetSample@66; CSPViolationReportBody::Disposition@71; CSPViolationReportBody::StatusCode@75; CSPViolationReportBody::GetLineNumber@77; CSPViolationReportBody::GetColumnNumber@81; CSPViolationReportBody::ToJSON@85
+Dependencies: mozilla/dom/CSPViolationReportBody.h@5; mozilla/JSONWriter.h@7; mozilla/dom/ReportingBinding.h@8
+
+`dom/reporting/CSPViolationReportBody.h` | `da7b6139414a70795030be6040db1628abd6df2c` | 1896 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; CSPViolationReportBody@14
+Dependencies: mozilla/dom/Nullable.h@8; mozilla/dom/ReportBody.h@9; mozilla/dom/SecurityPolicyViolationEvent.h@10
+
+`dom/reporting/ConnectionAllowlistViolationReportBody.cpp` | `33a3e34f2a9ba811f391dc12020e2a1a8e1234d2` | 2136 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; mDisposition@20; ConnectionAllowlistViolationReportBody::GetUrl@31; ConnectionAllowlistViolationReportBody::Disposition@46
+Dependencies: mozilla/dom/ConnectionAllowlistViolationReportBody.h@5; mozilla/JSONWriter.h@7; mozilla/dom/BindingUtils.h@8
+
+`dom/reporting/ConnectionAllowlistViolationReportBody.h` | `912938c7c04eb55583d2dbc3943428cbe3b688e9` | 1634 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; ConnectionAllowlistViolationReportBody@17
+Dependencies: mozilla/dom/ReportBody.h@8; mozilla/dom/ReportingBinding.h@9; nsTArray.h@10
+
+`dom/reporting/CrashReport.cpp` | `a173f373ca242a6e8e3f59dee78c840a28ca8e42` | 1899 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@15; CrashReport::Deliver@18
+Dependencies: mozilla/dom/CrashReport.h@5; mozilla/JSONStringWriteFuncs.h@7; mozilla/dom/Navigator.h@8; mozilla/dom/ReportDeliver.h@9; mozilla/dom/ReportingHeader.h@10; nsIPrincipal.h@11; nsIURIMutator.h@12; nsString.h@13
+
+`dom/reporting/CrashReport.h` | `1ed86668de4b8815d844ff6c565360f30b8169a1` | 507 bytes | source | UTF-8 | mode 100644
+Declarations: nsIPrincipal@10; mozilla@12; CrashReport@14
+Dependencies: nsCOMPtr.h@8
+
+`dom/reporting/DeprecationReportBody.cpp` | `ffa0e521d012170a49c7181db8a629543bdc9105` | 2612 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@11; mColumnNumber@24; DeprecationReportBody::GetId@35; DeprecationReportBody::GetMessage@46; DeprecationReportBody::GetSourceFile@50; DeprecationReportBody::GetLineNumber@54; DeprecationReportBody::GetColumnNumber@58; DeprecationReportBody::ToJSON@62
+Dependencies: mozilla/dom/DeprecationReportBody.h@5; js/Date.h@7; mozilla/JSONWriter.h@8; mozilla/dom/ReportingBinding.h@9
+
+`dom/reporting/DeprecationReportBody.h` | `16345bac0d63714fa93a2180c99cbd990e6831d7` | 1686 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; DeprecationReportBody@14
+Dependencies: mozilla/dom/Nullable.h@8; mozilla/dom/ReportBody.h@9; nsString.h@10
+
+`dom/reporting/IntegrityViolationReportBody.cpp` | `9cee86af834eee8b25be3e280b18fcae62d70fc7` | 2106 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@11; mReason@22; IntegrityViolationReportBody::GetDocumentURL@31; IntegrityViolationReportBody::GetBlockedURL@35; IntegrityViolationReportBody::ReportOnly@44; IntegrityViolationReportBody::GetReason@46; IntegrityViolationReportBody::ToJSON@51
+Dependencies: mozilla/dom/IntegrityViolationReportBody.h@5; mozilla/JSONWriter.h@7; mozilla/dom/BindingUtils.h@8; mozilla/dom/ReportingBinding.h@9
+
+`dom/reporting/IntegrityViolationReportBody.h` | `d6453a4ac44637c8218996aaeed560bcb0e5be5c` | 1502 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; IntegrityViolationReportBody@14
+Dependencies: mozilla/dom/Nullable.h@8; mozilla/dom/ReportBody.h@9; mozilla/dom/ReportingBinding.h@10
+
+`dom/reporting/PermissionsPolicyViolationReportBody.cpp` | `0a2beff33155a5767cf5210a166418871bbe626b` | 2517 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; mDisposition@21; PermissionsPolicyViolationReportBody::GetLineNumber@42; PermissionsPolicyViolationReportBody::GetColumnNumber@46; PermissionsPolicyViolationReportBody::ToJSON@56
+Dependencies: mozilla/dom/PermissionsPolicyViolationReportBody.h@5; mozilla/JSONWriter.h@7; mozilla/dom/PermissionsPolicyBinding.h@8
+
+`dom/reporting/PermissionsPolicyViolationReportBody.h` | `4a56997e4a079ba09473813028be9ff229fc2797` | 1702 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; PermissionsPolicyViolationReportBody@14
+Dependencies: mozilla/dom/Nullable.h@8; mozilla/dom/ReportBody.h@9; nsString.h@10
+
+`dom/reporting/Report.cpp` | `91402532af76d760af5c27d9b65186864805ac66` | 1500 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@11; mGlobal@24; Report::Clone@31; Report::Type@41; Report::GetType@43; Report::GetUrl@45; Report::GetBody@47
+Dependencies: mozilla/dom/Report.h@5; mozilla/dom/ReportBody.h@7; mozilla/dom/ReportingBinding.h@8; nsIGlobalObject.h@9
+
+`dom/reporting/Report.h` | `aa200d5f1797f09901d476f18172b042c3f25934` | 1412 bytes | source | UTF-8 | mode 100644
+Declarations: nsIGlobalObject@18; mozilla@20; ReportBody@22; Report@24; GetParentObject@37
+Dependencies: js/TypeDecls.h@8; mozilla/AlreadyAddRefed.h@9; mozilla/RefPtr.h@10; nsAtom.h@11; nsCOMPtr.h@12; nsCycleCollectionParticipant.h@13; nsISupports.h@14; nsString.h@15; nsWrapperCache.h@16
+
+`dom/reporting/ReportBody.cpp` | `cbeced84e7b9047e0a3561cce9854018e12aefdc` | 761 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@9; ReportBody::ReportBody@20
+Dependencies: mozilla/dom/ReportBody.h@5; nsIGlobalObject.h@7
+
+`dom/reporting/ReportBody.h` | `fe3e363317f66c5af5147b0fabaeacdd1a9053dc` | 973 bytes | source | UTF-8 | mode 100644
+Declarations: nsIGlobalObject@13; mozilla@15; JSONWriter@17; dom@19; ReportBody@21; GetParentObject@28
+Dependencies: nsCOMPtr.h@8; nsCycleCollectionParticipant.h@9; nsISupports.h@10; nsWrapperCache.h@11
+
+`dom/reporting/ReportDeliver.cpp` | `ae268553c9d155476f448b26cea086612fe1b5bc` | 17554 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@29; ReportFetchHandler@39; mReports@45; ReportJSONWriter@105; JSONWriter@108; ReportDeliver::ScheduleFetch@329; ReportDeliver::EnqueueReport@345; StaticPrefs::dom_reporting_delivering_maxFailures@353; StaticPrefs::dom_reporting_delivering_maxReports@362; ReportDeliver::Initialize@369; ReportDeliver::RemoveGlobalEndpoints@475; ReportDeliver::Fetch@491; StaticPrefs::dom_reporting_delivering_maxFailures@493; ReportDeliver::Notify@500; ReportDeliver::GetName@530
+Dependencies: mozilla/dom/ReportDeliver.h@5; algorithm@7; mozilla/JSONStringWriteFuncs.h@9; mozilla/StaticPrefs_dom.h@10; mozilla/dom/Document.h@11; mozilla/dom/Fetch.h@12; mozilla/dom/Navigator.h@13; mozilla/dom/Promise.h@14; mozilla/dom/ReportBody.h@15; mozilla/dom/Request.h@16; mozilla/dom/RequestBinding.h@17; mozilla/dom/Response.h@18; mozilla/dom/RootedDictionary.h@19; mozilla/ipc/BackgroundChild.h@20; mozilla/ipc/PBackgroundChild.h@21; mozilla/ipc/PBackgroundSharedTypes.h@22; nsGlobalWindowInner.h@23; nsIGlobalObject.h@24; nsIXPConnect.h@25; nsNetUtil.h@26; nsStringStream.h@27
+
+`dom/reporting/ReportDeliver.h` | `69ead6aea9bd3f65867d74aa2e183b5072833035` | 3606 bytes | source | UTF-8 | mode 100644
+Declarations: nsICookieJarSettings@17; nsIPrincipal@18; nsPIDOMWindowInner@19; nsIGlobalObject@20; mozilla@22; ReportBody@24; GlobalReportingData@28; ReportDeliver@34; ReportData@40
+Dependencies: mozilla/dom/ReportingHeader.h@8; nsIObserver.h@9; nsITimer.h@10; nsTArray.h@11; nsTHashMap.h@12; nsIPrincipal.h@15
+
+`dom/reporting/ReportingHeader.cpp` | `81b345cb4806eaeda5f1704b53523a63763ffa30` | 26737 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@39; ReportingHeader::Initialize@48; ReportingHeader::Shutdown@73; ReportingHeader::ReportingFromChannel@150; ReportingHeader::RemoveOriginsFromHost@790; ReportingHeader::RemoveOrigins@842; ReportingHeader::RemoveOriginsForTTL@847; EndpointsList::RemoveEndpoint@882; ReportingHeader::HasReportingHeaderForOrigin@893; ReportingHeader::Notify@902; ReportingHeader::GetName@912; ReportingHeader::MaybeCreateCleanupTimer@917; ReportingHeader::MaybeCancelCleanupTimer@933
+Dependencies: mozilla/dom/ReportingHeader.h@5; limits@7; js/Array.h@9; js/GCAPI.h@10; js/JSON.h@11; js/PropertyAndElement.h@12; mozilla/BasePrincipal.h@13; mozilla/OriginAttributes.h@14; mozilla/Services.h@15; mozilla/StaticPrefs_dom.h@16; mozilla/StaticPtr.h@17; mozilla/dom/ReportingBinding.h@18; mozilla/dom/ScriptSettings.h@19; mozilla/dom/SimpleGlobalObject.h@20; mozilla/ipc/BackgroundUtils.h@21; mozilla/net/SFV.h@22; nsCOMPtr.h@23; nsContentUtils.h@24; nsIEffectiveTLDService.h@25; nsIHttpChannel.h@26; nsIHttpProtocolHandler.h@27; nsIObserverService.h@28; nsIPrincipal.h@29; nsIRandomGenerator.h@30; nsIScriptError.h@31; nsMixedContentBlocker.h@32; nsNetUtil.h@33; nsXULAppAPI.h@34
+
+`dom/reporting/ReportingHeader.h` | `14f70a634734ef580dc50efbe0884fe13dce7244` | 5759 bytes | source | UTF-8 | mode 100644
+Declarations: nsIChannel@16; nsIHttpChannel@17; nsIPrincipal@18; mozilla@20; OriginAttributesPattern@22; ipc@24; PrincipalInfo@25; dom@28; EndpointsList@30; ReportingHeader@32; Endpoint@46; Group@59; Client@67; EndpointsList@167
+Dependencies: mozilla/TimeStamp.h@8; nsClassHashtable.h@9; nsIObserver.h@10; nsITimer.h@11; nsIURI.h@12; nsTHashMap.h@13; nsTObserverArray.h@14
+
+`dom/reporting/ReportingObserver.cpp` | `2826d80dc45ba0c0e415eef90e500fa06be31d7d` | 4186 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; mBuffered@55; ReportingObserver::~ReportingObserver@59; ReportingObserver::Observe@66; ReportingObserver::Disconnect@70; ReportingObserver::TakeRecords@76; ReportRunnable@82; DiscardableRunnable@85; ReportingObserver::MaybeReport@100; ReportingObserver::MaybeNotify@125; ReportingObserver::ForgetReports@145
+Dependencies: mozilla/dom/ReportingObserver.h@5; mozilla/dom/Report.h@7; mozilla/dom/ReportingBinding.h@8; nsContentUtils.h@9; nsIGlobalObject.h@10; nsThreadUtils.h@11
+
+`dom/reporting/ReportingObserver.h` | `01d0177a2980f4f1cc360dfd0897fbed37ab3681` | 2012 bytes | source | UTF-8 | mode 100644
+Declarations: nsIGlobalObject@19; mozilla@21; ErrorResult@22; dom@24; GlobalObject@25; Report@26; ReportingObserverCallback@27; ReportingObserverOptions@28; ReportingObserver@30; GetParentObject@46
+Dependencies: js/TypeDecls.h@8; mozilla/AlreadyAddRefed.h@9; mozilla/Attributes.h@10; mozilla/RefPtr.h@11; nsCOMPtr.h@12; nsCycleCollectionParticipant.h@13; nsISupports.h@14; nsStringFwd.h@15; nsTArray.h@16; nsWrapperCache.h@17
+
+`dom/reporting/ReportingUtils.cpp` | `7aa19f8d65757b4f3ddb9fa60decd585ae216c0c` | 4045 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@19; ReportingUtils::StripURL@23
+Dependencies: mozilla/dom/ReportingUtils.h@5; mozilla/dom/CSPViolationReportBody.h@7; mozilla/dom/Report.h@8; mozilla/dom/ReportBody.h@9; mozilla/dom/ReportDeliver.h@10; mozilla/dom/SecurityPolicyViolationEvent.h@11; mozilla/dom/WorkerPrivate.h@12; nsAtom.h@13; nsIGlobalObject.h@14; nsIURIMutator.h@15; nsNetUtil.h@16; nsPIDOMWindowInlines.h@17
+
+`dom/reporting/ReportingUtils.h` | `760d5ebaf69aada3cad6720e17edae493f404f52` | 1423 bytes | source | UTF-8 | mode 100644
+Declarations: nsAtom@11; nsIGlobalObject@12; nsIURI@13; mozilla@15; EventTarget@17; ReportBody@18; ReportingUtils@20
+Dependencies: mozilla/SourceLocation.h@8; nsString.h@9
+
+`dom/reporting/TestReportBody.cpp` | `c11cce5c555a2f75ffb455cf95b6c8946732c284` | 1090 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; ReportBody@14; TestReportBody::GetMessage@23; TestReportBody::ToJSON@27
+Dependencies: mozilla/dom/TestReportBody.h@5; mozilla/JSONWriter.h@7; mozilla/dom/ReportingBinding.h@8
+
+`dom/reporting/TestReportBody.h` | `659893ae65cd5deb8eb64bab753c98aa6666fb1f` | 914 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; TestReportBody@14
+Dependencies: mozilla/dom/Nullable.h@8; mozilla/dom/ReportBody.h@9; mozilla/dom/SecurityPolicyViolationEvent.h@10
+
+`dom/reporting/TestReportGenerator.cpp` | `7b808b68df39db70b496e2d82a1b8505d4d8655d` | 2070 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12
+Dependencies: mozilla/dom/TestReportGenerator.h@5; mozilla/dom/Document.h@7; mozilla/dom/ReportingBinding.h@8; mozilla/dom/ReportingUtils.h@9; mozilla/dom/TestReportBody.h@10
+
+`dom/reporting/TestReportGenerator.h` | `9d38c4994f9fe1af63c49432005ce3ab33679367` | 660 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; GenerateTestReportParameters@12; TestReportGenerator@14
+Dependencies: mozilla/dom/Promise.h@8
+
+`dom/reporting/TestingDeprecatedInterface.cpp` | `857444e1be5c743c335c8c6763fd6e65e0e52ee1` | 1618 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; TestingDeprecatedInterface::Constructor@24; mGlobal@34; TestingDeprecatedInterface::DeprecatedMethod@43; TestingDeprecatedInterface::DeprecatedAttribute@45
+Dependencies: mozilla/dom/TestingDeprecatedInterface.h@5; mozilla/dom/BindingDeclarations.h@7; mozilla/dom/ReportingBinding.h@8
+
+`dom/reporting/TestingDeprecatedInterface.h` | `3aa99e35a18411caeccafe86f8f866a9fb70dd66` | 1388 bytes | source | UTF-8 | mode 100644
+Declarations: nsIGlobalObject@15; mozilla@17; GlobalObject@18; TestingDeprecatedInterface@20; GetParentObject@32
+Dependencies: js/TypeDecls.h@8; mozilla/AlreadyAddRefed.h@9; nsCOMPtr.h@10; nsCycleCollectionParticipant.h@11; nsISupports.h@12; nsWrapperCache.h@13
+
+`dom/reporting/moz.build` | `6d1fcdf33aa203abb10b549b4d6e36d92234b4b8` | 1429 bytes | build-registration | UTF-8 | mode 100644
+Dependencies: /ipc/chromium/chromium-config.mozbuild@41
+
+`dom/reporting/tests/browser.toml` | `a6cf58adf9e8d2ec57775472024f30be8b0bca33` | 154 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/reporting/tests/browser_purgeHost.js` | `fe449a008651f17c6f23f47462bb47faf8f96a44` | 2246 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: registerEndpointsFor@8; purgeHost@16; add_setup@20; registerCleanupFunction@28; add_task@33; add_task@44; add_task@55; add_task@73
+
+`dom/reporting/tests/browser_reportGeneration.js` | `18914c5aaca622e48aa1f920e6550dc82382721e` | 1371 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@4; add_task@14; add_task@40
+
+`dom/reporting/tests/common_deprecated.js` | `c2ed6af26ab23ba529d977fd38571f584b1e4c38` | 6371 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: test_deprecatedInterface@6; test_deprecatedMethod@52; test_deprecatedMethodWithDataURI@100; test_deprecatedAttribute@129; test_takeRecords@176
+
+`dom/reporting/tests/delivering.sjs` | `f6e2e2955935f931f59ab2b56cacd719ef5e16f5` | 5323 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/reporting/tests/empty.html` | `cd0875583aabe89ee197ea133980a9085d08e497` | 13 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/reporting/tests/gtest/TestReportToParser.cpp` | `3c3d35211ae6111b0eebfb86ccd03870c97471e7` | 17868 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: TEST@13
+Dependencies: gtest/gtest.h@5; mozilla/dom/ReportingHeader.h@6; nsIURI.h@7; nsNetUtil.h@8
+
+`dom/reporting/tests/gtest/TestReportingEndpointsParser.cpp` | `3e7cfec93e4ccd2acfd9d31900d65cce5b644207` | 5153 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: TEST@12; TEST@111
+Dependencies: gtest/gtest.h@4; mozilla/dom/ReportingHeader.h@5; nsIURI.h@6; nsNetUtil.h@7
+
+`dom/reporting/tests/gtest/moz.build` | `dfd9fd259c9eb42d6047048365a03ed4cc1f080c` | 372 bytes | test-path,build-registration | UTF-8 | mode 100644
+Dependencies: /ipc/chromium/chromium-config.mozbuild@10
+
+`dom/reporting/tests/iframe_delivering.html` | `a83121f03ab4a2b0506bf739ceb212a9455039a1` | 2284 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/reporting/tests/iframe_delivering_chips.html` | `0e508dd45b3d6f7ce6bd976a7dc9edfc8f509373` | 874 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/reporting/tests/iframe_delivering_chips_worker.html` | `329de8420095bdd84060485412a7e6be18fe93fc` | 994 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/reporting/tests/mochitest.toml` | `9d4051a0805f2f4b047fbc59244f891fef69eed0` | 808 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/reporting/tests/reporting_endpoints.sjs` | `6de7dd5df4034deabb2f42eb142b30860ffc772c` | 533 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/reporting/tests/test_delivering.html` | `2a586c55bf1d5c166eacd02c08cca26937007f2b` | 1135 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/reporting/tests/test_delivering_chips.html` | `50dc691282c8ab0e084afe006676608742463ad8` | 1295 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/reporting/tests/test_delivering_chips_worker.html` | `14d8f0d945330973da9165826b09f70bf10b6380` | 1323 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/reporting/tests/test_deprecated.html` | `da55978e9b33f5e6237cc7333f5bfc0633749e34` | 1080 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/reporting/tests/test_memoryPressure.html` | `1bb887b05e4667622c43f38462e72c226fb189a0` | 852 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/reporting/tests/worker_delivering_chips.js` | `cbae41c186e2d0005499be8a3155a3085c3e64f1` | 105 bytes | test-path,source | UTF-8 | mode 100644
+
+`dom/reporting/tests/worker_deprecated.js` | `934efaa57ad4acf556795cac26d9dbcf008905c9` | 678 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ok@5; is@10; info@15; finish@19
+
+`dom/script/AutoEntryScript.cpp` | `dafcef605ab7c6fd7bf5e5d204cc2368071c8bec` | 2331 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@23; AssertIfNotSafeToRunScript@30; mJSThreadExecution@58; AutoEntryScript@71
+Dependencies: mozilla/dom/AutoEntryScript.h@5; stdint.h@7; js/ProfilingCategory.h@9; js/ProfilingStack.h@10; jsapi.h@11; mozilla/Assertions.h@12; nsCOMPtr.h@13; nsContentUtils.h@14; nsGlobalWindowInner.h@15; nsIDocShell.h@16; nsJSUtils.h@17; nsPIDOMWindow.h@18; nsPIDOMWindowInlines.h@19; nsString.h@20; xpcpublic.h@21
+
+`dom/script/AutoEntryScript.h` | `863faab5476509a8444f974b982522f4c4617616` | 2768 bytes | source | UTF-8 | mode 100644
+Declarations: nsIGlobalObject@18; nsIPrincipal@19; xpc@21; AutoScriptActivity@22; mozilla@25; MOZ_STACK_CLASS@35; SetWebIDLCallerPrincipal@53
+Dependencies: MainThreadUtils.h@8; js/Debug.h@9; js/TypeDecls.h@10; jsapi.h@11; mozilla/Attributes.h@12; mozilla/Maybe.h@13; mozilla/ProfilerLabels.h@14; mozilla/dom/JSExecutionManager.h@15; mozilla/dom/ScriptSettings.h@16
+
+`dom/script/ModuleLoader.cpp` | `4cedaeadef5f89acd137dbe9233277a812dd06e9` | 25069 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@47; ModuleLoaderBase@62; ModuleLoader::GetScriptLoader@64; ModuleLoader::CanStartLoad@68; IsResourceDocumentLoadingTrustedURI@111; ModuleLoader::StartFetch@121; ModuleLoader::AsyncExecuteInlineModule@159; ModuleLoader::ExecuteInlineModule@166; ModuleLoader::OnModuleLoadComplete@182; constexpr@552; constexpr@595; ModuleLoader::CreateDefaultScriptFetchOptions@668; ModuleLoader::GetClientReferrerURI@675; ModuleLoader::~ModuleLoader@687
+Dependencies: ModuleLoader.h@5; type_traits@7; GeckoProfiler.h@9; ScriptLoader.h@10; ScriptTrace.h@11; js/CompileOptions.h@12; js/ContextOptions.h@13; js/MemoryFunctions.h@14; js/Modules.h@15; js/PropertyAndElement.h@16; js/Realm.h@17; js/SourceText.h@18; js/experimental/JSStencil.h@19; js/friend/ErrorMessages.h@20; js/loader/LoadedScript.h@21; js/loader/ModuleLoadRequest.h@22; js/loader/ModuleLoaderBase.h@23; js/loader/ScriptLoadRequest.h@24; jsapi.h@25; mozilla/Assertions.h@26; mozilla/CycleCollectedJSContext.h@27; mozilla/LoadInfo.h@28; mozilla/StaticPrefs_dom.h@29; mozilla/StyleSheet.h@30; mozilla/StyleSheetInlines.h@31; mozilla/dom/AutoEntryScript.h@32; mozilla/dom/Document.h@33; mozilla/dom/Element.h@34; mozilla/dom/RequestBinding.h@35; nsContentSecurityManager.h@36; nsContentSecurityUtils.h@37; nsError.h@38; nsIContent.h@39; nsIPrincipal.h@40; nsJSUtils.h@41; xpcpublic.h@42
+
+`dom/script/ModuleLoader.h` | `fa74d7de580f2491633bd9e2e0e88fda93f4ffd6` | 4728 bytes | source | UTF-8 | mode 100644
+Declarations: nsIGlobalObject@12; nsIURI@13; JS@15; CompileOptions@17; loader@19; ModuleLoadRequest@21; mozilla@26; ScriptLoader@28; ScriptLoadContext@29; SRIMetadata@30; ModuleLoader@36; Kind@41; GetKind@46; From@80
+Dependencies: ScriptLoader.h@8; js/loader/ModuleLoaderBase.h@9; mozilla/dom/ScriptLoadRequestType.h@10
+
+`dom/script/ScriptCompression.cpp` | `cdf7c95c7c85cf6c1717a576d004ed51fc1ded5d` | 6666 bytes | source | UTF-8 | mode 100644
+Declarations: JS@17; ScriptBytecodeDataLayout@30; mBytecode@34; prelude@36; preludeLength@37; bytecode@39; bytecodeLength@40; ScriptBytecodeCompressedDataLayout@52; mBytecode@58; prelude@60; preludeLength@61; uncompressedLength@63; uncompressedLengthLength@64; bytecode@68; bytecodeLength@71; sizeof@140
+Dependencies: ScriptLoadRequest.h@5; ScriptLoader.h@6; mozilla/PerfStats.h@7; mozilla/Preferences.h@8; mozilla/ProfilerMarkers.h@9; mozilla/ScopeExit.h@10; mozilla/StaticPrefs_browser.h@11; mozilla/Vector.h@12; zlib.h@13
+
+`dom/script/ScriptCompression.h` | `c8466e85d241e22a2a9603d1eb8480fa4570538e` | 1525 bytes | source | UTF-8 | mode 100644
+Declarations: JS@11; ScriptLoadRequest@13
+Dependencies: ErrorList.h@8; mozilla/Vector.h@9
+
+`dom/script/ScriptDecoding.h` | `7dd45b4ca1e1819ef06a45ef96cd0c72cda764f6` | 3266 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@22; ScriptDecoding@25; ScriptDecoding@32; ScriptDecoding@55
+Dependencies: stddef.h@10; stdint.h@11; type_traits@13; mozilla/Assertions.h@15; mozilla/CheckedInt.h@16; mozilla/Encoding.h@17; mozilla/Span.h@18; mozilla/UniquePtr.h@19; mozilla/Utf8.h@20
+
+`dom/script/ScriptElement.cpp` | `1606e78b57411bf8cd312958165aafbf9c9648fe` | 14881 bytes | source | UTF-8 | mode 100644
+Declarations: ScriptElement::FireErrorEvent@62; ScriptElement::MaybeProcessScript@165; ScriptElement::MaybeProcessScript@236; ScriptElement::GetScriptType@325; StaticPrefs::dom_security_trusted_types_enabled@354
+Dependencies: ScriptElement.h@5; ScriptLoader.h@7; mozilla/BasicEvents.h@8; mozilla/CycleCollectedJSContext.h@9; mozilla/EventDispatcher.h@10; mozilla/StaticPrefs_dom.h@11; mozilla/dom/Document.h@12; mozilla/dom/Element.h@13; mozilla/dom/TrustedTypeUtils.h@14; mozilla/dom/TrustedTypesConstants.h@15; mozilla/extensions/WebExtensionPolicy.h@16; nsContentSink.h@17; nsContentUtils.h@18; nsGkAtoms.h@19; nsIMutationObserver.h@20; nsIParser.h@21; nsPresContext.h@22; nsThreadUtils.h@23
+
+`dom/script/ScriptElement.h` | `3e83aee418d26a038700c6851ec1004116f99bca` | 1934 bytes | source | UTF-8 | mode 100644
+Declarations: nsIParser@13; mozilla@15; ScriptElement@23; nsIScriptElement@36
+Dependencies: mozilla/Attributes.h@8; nsIScriptElement.h@9; nsIScriptLoaderObserver.h@10; nsStubMutationObserver.h@11
+
+`dom/script/ScriptLoadContext.cpp` | `41786528836970066443038b7b6fe9b1ba473c78` | 9298 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@21; mSourceText@68; ScriptLoadContext::~ScriptLoadContext@70; ScriptLoadContext::BlockOnload@83; ScriptLoadContext::MaybeUnblockOnload@89; ScriptLoadContext::NotifyPreloadCoalescingResult@96; ScriptLoadContext::MaybeCancelOffThreadScript@126; ScriptLoadContext::PrioritizeAsPreload@154; ScriptLoadContext::IsPreload@163; ScriptLoadContext::CompileStarted@175; ScriptLoadContext::HasScriptElement@179; ScriptLoadContext::GetInlineScriptText@181; ScriptLoadContext::GetHintCharset@191; ScriptLoadContext::GetScriptLineNumber@196; ScriptLoadContext::GetScriptColumnNumber@203; ScriptLoadContext::BeginEvaluatingTopLevel@210; ScriptLoadContext::EndEvaluatingTopLevel@215; ScriptLoadContext::UnblockParser@220; ScriptLoadContext::ContinueParserAsync@225; ScriptLoadContext::GetScriptOwnerDocument@230; ScriptLoadContext::SetIsLoadRequest@236; ScriptLoadContext::GetProfilerLabel@244
+Dependencies: ScriptLoadContext.h@5; GeckoProfiler.h@7; ModuleLoadRequest.h@8; js/SourceText.h@9; js/loader/LoadContextBase.h@10; js/loader/ModuleLoadRequest.h@11; mozilla/HoldDropJSObjects.h@12; mozilla/StaticPrefs_dom.h@13; mozilla/Utf8.h@14; mozilla/dom/Document.h@15; nsContentUtils.h@16; nsICacheInfoChannel.h@17; nsIClassOfService.h@18; nsISupportsPriority.h@19
+
+`dom/script/ScriptLoadContext.h` | `7750767f4268946b808ea4ea4f507d16d1a9ab05` | 16286 bytes | source | UTF-8 | mode 100644
+Declarations: nsICacheInfoChannel@37; JSContext@38; mozilla@40; Element@42; ScriptDecodeTask@79; StencilCompileOrDecodeTask@80; WasmCompileTask@81; CompileOrDecodeTask@84; class@86; CancelTask@95; IsStencilTask@110; IsDecodeTask@113; IsWasmTask@114; MayStillRun@137; StencilCompileOrDecodeTask@146; WasmCompileTask@192; CompileOrDecodeTask@197; CompileOrDecodeTask::AsStencilCompileOrDecodeTask@225; CompileOrDecodeTask::AsWasmCompileTask@230; ScriptLoadContext@235; GetClassificationFlags@254; SetIsCoalescedModulePreload@270; NotifyModuleWaitFinished@275; class@288; IsLinkPreloadScript@298; IsBlockingScript@302; IsDeferredScript@304; IsAsyncScript@306; GetScriptElementForLoadingNode@319; GetScriptElementForTrace@327; GetScriptElementForCurrentParserInsertedScript@332; GetScriptElementForObserver@339; GetScriptElementForUrlClassifier@345; GetScriptElementForCurrentScript@351; SetIsPreloadRequest@375; GetParserCreated@384
+Dependencies: js/AllocPolicy.h@8; js/ColumnNumber.h@9; js/CompileOptions.h@10; js/RootingAPI.h@11; js/SourceText.h@12; js/Transcoding.h@13; js/TypeDecls.h@14; js/WasmModule.h@15; js/experimental/JSStencil.h@16; js/loader/LoadContextBase.h@17; js/loader/ScriptKind.h@18; mozilla/AlreadyAddRefed.h@19; mozilla/Assertions.h@20; mozilla/Atomics.h@21; mozilla/CORSMode.h@22; mozilla/Mutex.h@23; mozilla/PreloaderBase.h@24; mozilla/RefPtr.h@25; mozilla/StaticPrefs_dom.h@26; mozilla/TaskController.h@27; mozilla/Utf8.h@28; mozilla/Vector.h@29; mozilla/dom/SRIMetadata.h@30; mozilla/net/UrlClassifierCommon.h@31; nsCOMPtr.h@32; nsCycleCollectionParticipant.h@33; nsIClassifiedChannel.h@34; nsIScriptElement.h@35
+
+`dom/script/ScriptLoadHandler.cpp` | `aeaec5741f56cbff0b629519a3595f438045ce2f` | 21797 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@56; mSRIStatus@134; ScriptLoadHandler::OnStartRequest@146; ScriptLoadHandler::MaybeDecodeSRI@299; ScriptLoadHandler::EnsureKnownDataType@330; NS_ConvertUTF8toUTF16@346; ScriptLoadHandler::GetInterface@599
+Dependencies: ScriptLoadHandler.h@5; stdlib.h@7; utility@9; ScriptCompression.h@11; ScriptLoader.h@12; ScriptTrace.h@13; js/Transcoding.h@14; js/loader/LoadedScript.h@15; js/loader/ModuleLoadRequest.h@16; js/loader/ScriptLoadRequest.h@17; mozilla/Assertions.h@18; mozilla/CheckedInt.h@19; mozilla/DebugOnly.h@20; mozilla/Encoding.h@21; mozilla/Logging.h@22; mozilla/PerfStats.h@23; mozilla/ScopeExit.h@24; mozilla/SharedSubResourceCache.h@25; mozilla/StaticPrefs_dom.h@26; mozilla/StaticPrefs_javascript.h@27; mozilla/Utf8.h@28; mozilla/Vector.h@29; mozilla/dom/CacheExpirationTime.h@30; mozilla/dom/Document.h@31; mozilla/dom/IntegrityPolicyWAICT.h@33; mozilla/dom/PolicyContainer.h@34; mozilla/dom/ResourceHasher.h@35; mozilla/dom/WAICTUtils.h@36; mozilla/dom/SRICheck.h@38; mozilla/dom/ScriptDecoding.h@39; nsCOMPtr.h@40; nsContentUtils.h@41; nsDebug.h@42; nsIAsyncVerifyRedirectCallback.h@43; nsICacheInfoChannel.h@44; nsIChannel.h@45; nsIHttpChannel.h@46; nsIRequest.h@47; nsIScriptElement.h@48; nsIURI.h@49; nsJSUtils.h@50; nsMimeTypes.h@51; nsString.h@52; nsTArray.h@53; zlib.h@54
+
+`dom/script/ScriptLoadHandler.h` | `c013b82e911d2ca0b7403cc41b83284a06b586c8` | 4792 bytes | source | UTF-8 | mode 100644
+Declarations: JS@20; ScriptLoadRequest@21; mozilla@24; Decoder@26; dom@28; ResourceHasher@31; ScriptLoader@33; SRICheckDataVerifier@34; ScriptDecoder@36; BOMHandling@38; ScriptLoadHandler@70
+Dependencies: mozilla/Encoding.h@12; mozilla/RefPtr.h@13; mozilla/UniquePtr.h@14; nsIChannelEventSink.h@15; nsIIncrementalStreamLoader.h@16; nsIInterfaceRequestor.h@17; nsISupports.h@18
+
+`dom/script/ScriptLoadRequestType.h` | `443b1e2e80fb5a0534cfc680d322c79cec3e1e0d` | 489 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@8; dom@9; class@11
+
+`dom/script/ScriptLoader.cpp` | `604017002b48a421730927958d28827f2e70a77f` | 211046 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@117; ShutdownAndMemoryPressureObserver::OnShutdown@139; ShutdownAndMemoryPressureObserver::OnMemoryPressure@146; ShutdownAndMemoryPressureObserver::Unregister@152; ImplCycleCollectionUnlink@185; mDocument@240; StaticPrefs::dom_script_loader_experimental_navigation_cache@252; ScriptLoader::~ScriptLoader@267; ScriptLoader::SetGlobalObject@329; ScriptLoader::DropDocumentReference@349; ScriptLoader::RegisterToCache@357; ScriptLoader::DeregisterFromCache@364; ScriptLoader::LoaderPrincipal@372; ScriptLoader::PartitionedPrincipal@376; ScriptLoader::ShouldBypassCache@380; ScriptLoader::WAICTHandlesScripts@385; ScriptLoader::RegisterContentScriptModuleLoader@396; CollectScriptTelemetry@405; IsScriptEventHandler@460; ScriptLoader::GetBaseURI@642; ScriptRequestProcessor@647; mRequest@656; ScriptLoader::RunScriptWhenSafe@662; ScriptLoader::RestartLoad@667; ScriptLoader::StartLoad@692; CORSModeToSecurityFlags@700; ScriptLoader::OnDelayedReady@711; ScriptLoader::StartClassicLoad@728; IsWebExtensionRequest@767; do_QueryInterface@872; do_QueryInterface@905; GetInitiatorType@991; ScriptLoader::NotifyPreloadCoalescing@1061; ScriptLoader::NotifyObserversForCachedScript@1200; GetClassicScriptFallbackEncoding@1360; ScriptLoader::EmulateNetworkEvents@1470; GetParserMetadata@1538; GetClassicScriptFallbackEncoding@2134; ScriptLoader::GetReferrerPolicy@2193; ScriptLoader::CancelAndClearScriptLoadRequests@2201; OffThreadCompilationCompleteTask@2256; mLoader@2262; RecordStartTime@2266; RecordStopTime@2267; mType@2467; CompileOrDecodeTask::Run@2469; CompileOrDecodeTask::Cancel@2483; CompileOrDecodeTask::WaitForRunningTask@2492; CompileOrDecodeTask::ForgetFinishedCancelledTasks@2502; CompileOrDecodeTask::EnsureCancelledTasksList@2515; CompileOrDecodeTask::TrackCancelled@2534; mOptions@2554; StencilCompileOrDecodeTask::~StencilCompileOrDecodeTask@2556; StencilCompileOrDecodeTask::CancelTask@2563; StencilCompileOrDecodeTask::InitFrontendContext@2570; StencilCompileOrDecodeTask::DidRunTask@2580; mozilla::MakeScopeExit@2596; class@2625; ScriptOrModuleCompileTask@2628; mMaybeSource@2633; Init@2635; RunTask@2647; Compile@2655; constexpr@2661; constexpr@2674; ScriptOrModuleCompileTask@2688; ScriptOrModuleCompileTask@2690; ScriptDecodeTask@2692; mSerializedStencilOffset@2698; TakeBuffer@2700; Init@2704; RunTask@2716; Range@2727; Decode@2733; CompileOrDecodeTask::AsScriptDecodeTask@2759; StencilCompileOrDecodeTask::TakeSRIAndSerializedStencil@2764; WasmCompileTask::Init@2768; WasmCompileTask::RunTask@2778; ScriptLoader::ProcessOffThreadRequest@2881; ScriptLoader::ProcessRequest@2949; ScriptLoader::GetScriptGlobalObject@3092; ApplyEagerBaselineStrategy@3114; ScriptLoader::GetDiskCacheStrategy@3206; IsScriptingDisabled@3250; ScriptLoader::CalculateCacheFlag@3259; MOZ_RAII@3528; mContext@3534; ScriptLoader::EvaluateScriptElement@3555; ScriptLoader::TryCacheRequest@3999; ShouldApplyDelazifyStrategy@4210; ScriptLoader::GetActiveScriptFetchInfo@4273; ScriptLoader::RegisterForDiskCache@4282; ScriptLoader::LoadEventFired@4301; ScriptLoader::Destroy@4306; ScriptLoader::OnMemoryPressure@4321; ScriptLoader::StopCollectingDelazifications@4331; ScriptLoader::MaybeUpdateDiskCache@4353; ScriptLoader::UpdateDiskCache@4409; ScriptLoader::GiveUpDiskCaching@4589; ScriptLoader::HasPendingRequests@4617; ScriptLoader::HasPendingDynamicImports@4626; ScriptLoader::ProcessPendingRequestsAsync@4640; ScriptLoader::ProcessPendingRequestsAsyncBypassParserBlocking@4659; ScriptLoader::ProcessPendingRequests@4674; ReadyToExecuteParserBlockingScripts@4683; ReadyToExecuteParserBlockingScripts@4747; ScriptLoader::IsBeforeFCP@4774; ScriptLoader::ReadyToExecuteParserBlockingScripts@4800; getter_AddRefs@4954; StaticPrefs::dom_script_loader_bytecode_cache_enabled@5007; ScriptLoader::ReportPreloadErrorsToConsole@5206; ScriptLoader::UnblockParser@5311; ScriptLoader::NumberOfProcessors@5320; ScriptLoader::PhysicalSizeOfMemoryInGB@5332; ScriptLoader::ShouldApplyDelazifyStrategy@5345; StaticPrefs::dom_script_loader_delazification_min_mem@5353; ScriptLoader::ApplyDelazifyStrategy@5379; ScriptLoader::ShouldCompileOffThread@5411; dom_script_loader_external_scripts_speculate_non_parser_inserted_enabled@5423; dom_script_loader_external_scripts_speculate_async_enabled@5430; dom_script_loader_external_scripts_speculate_link_preload_enabled@5436; ScriptLoader::DeferCheckpointReached@5611; ScriptLoader::ParsingComplete@5622; ScriptLoader::AddDeferRequest@5730; ScriptLoader::AddAsyncRequest@5746; ScriptLoader::MaybeMoveToLoadedList@5760; ScriptLoader::MaybeRemovedDeferRequests@5788; ScriptLoader::GetDocGroup@5797; ScriptLoader::BeginDeferringScripts@5799; nsAutoScriptLoaderDisabler::nsAutoScriptLoaderDisabler@5816; nsAutoScriptLoaderDisabler::~nsAutoScriptLoaderDisabler@5824
+Dependencies: ScriptLoader.h@5; GeckoProfiler.h@7; ModuleLoader.h@8; ReferrerInfo.h@9; ScriptCompression.h@10; ScriptLoadHandler.h@11; ScriptTrace.h@12; SharedScriptCache.h@13; js/ColumnNumber.h@14; js/CompilationAndEvaluation.h@15; js/CompileOptions.h@16; js/ContextOptions.h@17; js/MemoryFunctions.h@18; js/Modules.h@19; js/PropertyAndElement.h@20; js/Transcoding.h@21; js/Utility.h@22; js/experimental/CompileScript.h@23; js/experimental/JSStencil.h@24; js/loader/LoadedScript.h@25; js/loader/ModuleLoadRequest.h@26; js/loader/ModuleLoaderBase.h@27; js/loader/ScriptLoadRequest.h@28; mozilla/AppShutdown.h@29; mozilla/Assertions.h@30; mozilla/AsyncEventDispatcher.h@31; mozilla/Attributes.h@32; mozilla/ClearOnShutdown.h@33; mozilla/ConsoleReportCollector.h@34; mozilla/CycleCollectedJSContext.h@35; mozilla/Encoding.h@36; mozilla/EventQueue.h@37; mozilla/LoadInfo.h@38; mozilla/Logging.h@39; mozilla/Maybe.h@40; mozilla/Mutex.h@41; mozilla/PreloadHashKey.h@42; mozilla/ProfilerMarkers.h@43; mozilla/ScopeExit.h@44; mozilla/StaticPrefs_browser.h@45; mozilla/StaticPrefs_dom.h@46; mozilla/StaticPrefs_javascript.h@47; mozilla/StaticPrefs_network.h@48; mozilla/StaticPtr.h@49; mozilla/TaskController.h@50; mozilla/Telemetry.h@51; mozilla/TimeStamp.h@52; mozilla/UniquePtr.h@53; mozilla/Utf8.h@54; mozilla/dom/AutoEntryScript.h@55; mozilla/dom/DocGroup.h@56; mozilla/dom/DocumentInlines.h@57; mozilla/dom/Element.h@58; mozilla/dom/FetchPriority.h@59; mozilla/dom/SpeculationRules.h@60; mozilla/dom/IntegrityPolicyWAICT.h@62; mozilla/FlowMarkers.h@64; mozilla/dom/JSExecutionUtils.h@65; mozilla/dom/PolicyContainer.h@66; mozilla/dom/RequestBinding.h@67; mozilla/dom/SRILogHelper.h@68; mozilla/dom/ScriptDecoding.h@69; mozilla/dom/ScriptSettings.h@70; mozilla/dom/SpeculationRuleSet.h@71; mozilla/dom/WindowContext.h@72; mozilla/glean/DomMetrics.h@73; mozilla/net/ChannelClassifierUtils.h@74; mozilla/net/HttpBaseChannel.h@75; nsAboutProtocolUtils.h@76; nsCRT.h@77; nsContentCreatorFunctions.h@78; nsContentPolicyUtils.h@79; nsContentSecurityManager.h@80; nsContentSecurityUtils.h@81; nsContentUtils.h@82; nsCycleCollectionParticipant.h@83; nsError.h@84; nsGenericHTMLElement.h@85; nsGkAtoms.h@86; nsIAsyncOutputStream.h@87; nsICacheInfoChannel.h@88; nsIClassOfService.h@89; nsIClassifiedChannel.h@90; nsIContent.h@91; nsIContentSecurityPolicy.h@92; nsIDocShell.h@93; nsIHttpChannel.h@94; nsIHttpChannelInternal.h@95; nsIPrincipal.h@96; nsIScriptContext.h@97; nsIScriptElement.h@98; nsIScriptError.h@99; nsIScriptGlobalObject.h@100; nsISupportsPriority.h@101; nsITimedChannel.h@102; nsITimer.h@103; nsJSPrincipals.h@104; nsJSUtils.h@105; nsNetUtil.h@106; nsPresContext.h@107; nsProxyRelease.h@108; nsQueryObject.h@109; nsThreadUtils.h@110; nsUnicharUtils.h@111; prsystem.h@112; xpcpublic.h@113
+
+`dom/script/ScriptLoader.h` | `c86905dc8da86e1d961cb9aa955b2c0255aeb503` | 38669 bytes | source | UTF-8 | mode 100644
+Declarations: nsCycleCollectionTraversalCallback@35; nsIChannel@36; nsIConsoleReportCollector@37; nsIContent@38; nsIIncrementalStreamLoader@39; nsIPrincipal@40; nsIScriptGlobalObject@41; nsITimer@42; nsIURI@43; JS@45; CompileOptions@47; SourceText@50; loader@52; LoadedScript@54; ModuleLoadRequest@55; ModuleScript@56; ScriptLoadRequest@57; mozilla@62; LazyLogModule@64; dom@67; AutoJSAPI@69; DocGroup@70; Document@71; ModuleLoader@72; SRICheckDataVerifier@73; SRIMetadata@74; ScriptLoadHandler@75; ScriptLoadContext@76; ScriptLoader@77; ScriptRequestProcessor@78; class@80; class@81; ShutdownAndMemoryPressureObserver@83; mScriptLoader@88; ScriptLoader@107; MOZ_STACK_CLASS@108; mScriptLoader@113; HasLoaded@185; AddObserver@196; RemoveObserver@205; GetCurrentScript@235; ContinueParsingDocumentAfterCurrentScript@237; GetCurrentParserInsertedScript@242; GetEnabled@252; SetEnabled@254; GetModuleLoader@261; SpeculativeOMTParsingEnabled@271; AddParserBlockingScriptExecutionBlocker@280; RemoveParserBlockingScriptExecutionBlocker@284; AddExecuteBlocker@294; RemoveExecuteBlocker@296; HasPendingOrCurrentScripts@411; AddPendingChildLoader@444; GetDocument@481; class@534; SelfReadyToExecuteParserBlockingScripts@652; ReadyToExecuteScripts@659; class@713; UsesMemoryCache@873; DiskCacheStrategy@876; GetLoadedFromNeckoAsText@886; GetLoadedFromNeckoAsSerializedStencil@887; GetMemoryCacheUsed@890; GetMemoryCacheRevived@891; GetMemoryCacheEvictedDirty@892; PreloadInfo@966; PreloadRequestComparator@975; PreloadURIComparator@982; nsAutoScriptLoaderDisabler@1070
+Dependencies: SharedScriptCache.h@8; js/TypeDecls.h@9; js/Utility.h@10; js/experimental/CompileScript.h@11; js/loader/LoadedScript.h@12; js/loader/ScriptKind.h@13; js/loader/ScriptLoadRequest.h@14; js/loader/ScriptLoadRequestList.h@15; js/loader/ScriptLoaderInterface.h@16; mozilla/CORSMode.h@17; mozilla/Encoding.h@18; mozilla/MaybeOneOf.h@19; mozilla/MozPromise.h@20; mozilla/dom/ScriptLoadContext.h@21; mozilla/dom/ScriptLoadRequestType.h@22; nsCOMArray.h@23; nsCOMPtr.h@24; nsCycleCollectionParticipant.h@25; nsILoadInfo.h@26; nsINode.h@27; nsIObserver.h@28; nsIScriptElement.h@29; nsIScriptLoaderObserver.h@30; nsRefPtrHashtable.h@31; nsTArray.h@32; nsURIHashKey.h@33
+
+`dom/script/ScriptSettings.cpp` | `d1cf4b188f3f344a2c96718cfe385e80e6501a6a` | 23718 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@47; dom@48; ScriptSettingsStack@52; Top@54; Push@56; Pop@70; IncumbentGlobal@75; EntryPoint@86; EntryGlobal@97; TopNonIncumbentScript@106; InitScriptSettings@119; DestroyScriptSettings@128; mGlobalObject@134; ScriptSettingsStackEntry::~ScriptSettingsStackEntry@144; ClampToSubject@167; GetEntryGlobal@182; GetEntryDocument@186; GetIncumbentGlobal@193; GetCurrentGlobal@218; GetWebTaskSchedulingState@232; GetWebIDLCallerPrincipal@239; IsJSAPIActive@253; danger@258; GetJSContext@259; RootingCx@262; AutoJSAPI::~AutoJSAPI@272; mIsMainThread@395; AutoJSAPI::Init@404; AutoJSAPI::Init@411; AutoJSAPI::Init@428; AutoJSAPI::Init@432; AutoJSAPI::Init@437; AutoJSAPI::Init@441; AutoJSAPI::Init@445; AutoJSAPI::Init@449; WarningOnlyErrorReporter@459; AutoJSAPI::ReportException@483; JS::GetNonCCWObjectGlobal@532; AutoJSAPI::PeekException@576; AutoJSAPI::StealException@583; AutoJSAPI::StealExceptionAndStack@592; AutoJSAPI::IsStackTop@601; mCallerOverride@608; AutoIncumbentScript::~AutoIncumbentScript@612; mCallerOverride@617; AutoNoJSAPI::~AutoNoJSAPI@623; AutoJSContext::AutoJSContext@627; AutoSafeJSContext::AutoSafeJSContext@642; AutoSlowOperation::AutoSlowOperation@652; AutoSlowOperation::CheckForInterrupt@658; AutoAllowLegacyScriptExecution::AutoAllowLegacyScriptExecution@674; AutoAllowLegacyScriptExecution::~AutoAllowLegacyScriptExecution@685; AutoAllowLegacyScriptExecution::IsAllowed@701
+Dependencies: mozilla/dom/ScriptSettings.h@5; MainThreadUtils.h@7; js/CharacterEncoding.h@8; js/CompilationAndEvaluation.h@9; js/Conversions.h@10; js/ErrorReport.h@11; js/Exception.h@12; js/GCAPI.h@13; js/PropertyAndElement.h@14; js/TypeDecls.h@15; js/Value.h@16; js/Warnings.h@17; js/Wrapper.h@18; js/friend/ErrorMessages.h@19; js/loader/LoadedScript.h@20; js/loader/ScriptLoadRequest.h@21; jsapi.h@22; mozilla/Assertions.h@23; mozilla/BasePrincipal.h@24; mozilla/CycleCollectedJSContext.h@25; mozilla/DebugOnly.h@26; mozilla/RefPtr.h@27; mozilla/ThreadLocal.h@28; mozilla/dom/AutoEntryScript.h@29; mozilla/dom/BindingUtils.h@30; mozilla/dom/Document.h@31; mozilla/dom/Element.h@32; mozilla/dom/WorkerCommon.h@33; nsContentUtils.h@34; nsDebug.h@35; nsGlobalWindowInner.h@36; nsIGlobalObject.h@37; nsINode.h@38; nsIPrincipal.h@39; nsISupports.h@40; nsJSUtils.h@41; nsPIDOMWindow.h@42; nsString.h@43; nscore.h@44; xpcpublic.h@45
+
+`dom/script/ScriptSettings.h` | `28f46764ccbfdb8d5610d30b89f8961cff3e835b` | 15739 bytes | source | UTF-8 | mode 100644
+Declarations: JSObject@17; nsIGlobalObject@18; nsIPrincipal@19; nsPIDOMWindowInner@20; nsGlobalWindowInner@21; nsIScriptContext@22; JSContext@23; JS@25; ExceptionStack@26; Value@27; mozilla@30; dom@31; Document@33; WebTaskSchedulingState@34; danger@124; ScriptSettingsStack@135; ScriptSettingsStackEntry@136; NoJSAPI@142; IsEntryCandidate@143; IsIncumbentCandidate@146; IsIncumbentScript@147; Type@150; MOZ_STACK_CLASS@190; cx@246; HasException@259; ClearException@284; AutoIncumbentScript@309; AutoNoJSAPI@326; AutoNoJSAPI@329; MOZ_RAII@348; MOZ_RAII@365; MOZ_RAII@383; MOZ_RAII@396; mCx@399; MOZ_RAII@413
+Dependencies: js/Exception.h@10; js/Warnings.h@11; jsapi.h@12; mozilla/Maybe.h@13; mozilla/dom/JSExecutionManager.h@14; xpcpublic.h@15
+
+`dom/script/ScriptTrace.cpp` | `b07062d5eddcd7993fe2b196e806157ee2288c4a` | 2682 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@15; ScriptLoaderTestRunnable@17; Runnable@22
+Dependencies: ScriptTrace.h@5; mozilla/Services.h@7; mozilla/dom/Element.h@8; mozilla/dom/ScriptLoadContext.h@9; nsCOMPtr.h@10; nsIObserverService.h@11; nsIScriptElement.h@12; nsThreadUtils.h@13
+
+`dom/script/ScriptTrace.h` | `8e5ec4423f32c7fd04ab5bd6f43db45fc2dfbb0c` | 2089 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@25; TestingNotifyObserver@49
+Dependencies: js/loader/LoadedScript.h@8; js/loader/ScriptLoadRequest.h@9; mozilla/StaticPrefs_dom.h@10
+
+`dom/script/SharedScriptCache.cpp` | `3b836c4688498b9dabc661c71e2f865c2f0a2a25` | 22367 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@30; mReferrerPolicy@43; ScriptHashKey@52; ScriptHashKey::KeyEquals@54; ScriptHashKey::ToStringForLookup@95; mNetworkMetadata@275; SharedScriptCache::Init@283; SharedScriptCache::~SharedScriptCache@297; SharedScriptCache::ShouldIgnoreMemoryPressure@302; SharedScriptCache::ClearInProcessForMemoryPressure@309; SharedScriptCache::Invalidate@353; SharedScriptCache::InvalidateInProcess@407; SharedScriptCache::PrepareForLastCC@418; SharedScriptCache::MaybeScheduleUpdateDiskCache@453; SharedScriptCache::SetDiskCacheTimer@481; SharedScriptCache::ClearDiskCacheTimer@503; SharedScriptCache::OnDiskCacheTimer@512; ScriptEncodeAndCompressionTask@523; Task@526; ScriptSaveTask@542; ScriptSaveTask@544; SharedScriptCache::UpdateDiskCache@560; SharedScriptCache::EncodeAndCompress@602; SharedScriptCache::SaveToDiskCache@620; SharedScriptCache::OnEntryInserted@647; SharedScriptCache::OnEntryEverHit@649; SharedScriptCache::UpdateEverHitTelemetry@651; SharedScriptCache::EnsureEverHitMap@697; SharedScriptCache::OnContentShutdown@719; SharedScriptCache::OnProfileBeforeChange@751; SharedScriptCache::AccumulateEverHitTelemetry@765
+Dependencies: SharedScriptCache.h@5; memory@7; ScriptLoadHandler.h@9; ScriptLoader.h@10; ScriptTrace.h@11; js/RootingAPI.h@12; js/Value.h@13; js/experimental/CompileScript.h@14; js/experimental/JSStencil.h@15; mozilla/HalTypes.h@16; mozilla/Maybe.h@17; mozilla/TaskController.h@18; mozilla/dom/ContentChild.h@19; mozilla/dom/ContentParent.h@20; mozilla/glean/DomMetrics.h@21; nsIMemoryReporter.h@22; nsIPrefBranch.h@23; nsIPrefService.h@24; nsIPrincipal.h@25; nsIPropertyBag2.h@26; nsISupportsImpl.h@27; nsStringFwd.h@28
+
+`dom/script/SharedScriptCache.h` | `7b5c338b9c2dd9e887a41e66cabc47d3bbb6e68c` | 13125 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@31; dom@32; ScriptLoader@34; ScriptLoadData@35; ScriptHashKey@37; mClassicScriptHintEncoding@50; ScriptHashKey@54; mClassicScriptHintEncoding@64; mClassicScriptHintEncoding@92; KeyEquals@102; HashKey@109; LoaderPrincipal@113; PartitionPrincipal@114; URI@116; ScriptLoadData@153; DidCancelLoad@181; ShouldDefer@183; ValueForCache@185; Loader@191; SharedScriptCacheTraits@203; KeyFromLoadingValue@209; SharedScriptCache@214; EncodeItem@291; mLoadedScript@297
+Dependencies: PLDHashTable.h@8; js/TypeDecls.h@9; js/loader/LoadedScript.h@10; js/loader/ScriptFetchOptions.h@11; js/loader/ScriptKind.h@12; js/loader/ScriptLoadRequest.h@13; mozilla/CORSMode.h@14; mozilla/Encoding.h@15; mozilla/HashTable.h@16; mozilla/MemoryReporting.h@17; mozilla/Mutex.h@18; mozilla/RefPtr.h@19; mozilla/SharedSubResourceCache.h@20; mozilla/ThreadSafety.h@21; mozilla/UniquePtr.h@22; mozilla/WeakPtr.h@23; mozilla/dom/CacheExpirationTime.h@24; nsIMemoryReporter.h@25; nsIObserver.h@26; nsIPrincipal.h@27; nsISupports.h@28; nsStringFwd.h@29
+
+`dom/script/moz.build` | `1cf187b764af55db678c208f717d908a2c44a66b` | 1196 bytes | build-registration | UTF-8 | mode 100644
+Dependencies: /ipc/chromium/chromium-config.mozbuild@50
+
+`dom/script/nsIScriptElement.cpp` | `7b44a70bfb5100fa4caeb6dffdf81c58e30ecfb5` | 3570 bytes | source | UTF-8 | mode 100644
+Declarations: nsIScriptElement::IsClassicNonAsyncDefer@15; nsIScriptElement::SetCreatorParser@19; nsIScriptElement::UnblockParser@23; nsIScriptElement::ContinueParserAsync@36; nsIScriptElement::BeginEvaluating@48; nsIScriptElement::EndEvaluating@58; nsIScriptElement::GetCreatorParser@68; nsIScriptElement::AttemptToExecute@73; nsIScriptElement::GetReferrerPolicy@84
+Dependencies: nsIScriptElement.h@5; js/loader/ScriptKind.h@7; mozilla/dom/Document.h@8; mozilla/dom/ReferrerPolicyBinding.h@9; nsIParser.h@10; nsIWeakReference.h@11
+
+`dom/script/nsIScriptElement.h` | `15221cb1d102754e3c974c78a87335975d3e6a5a` | 10441 bytes | source | UTF-8 | mode 100644
+Declarations: nsIContent@25; nsIParser@26; nsIPrincipal@27; mozilla@29; Document@30; class@31; class@32; nsIScriptElement@42; mCreatorParser@66; GetScriptURI@79; GetScriptURITriggeringPrincipal@84; GetScriptIsModule@111; GetScriptIsImportMap@119; GetScriptIsSpeculationRules@127; GetScriptDeferred@135; GetScriptAsync@143; GetScriptExternal@151; GetParserCreated@159; SetScriptLineNumber@161; GetScriptLineNumber@163; SetScriptColumnNumber@165; GetScriptColumnNumber@169; SetIsMalformed@171; IsMalformed@173; PreventExecution@175; LoseParserInsertedness@177; GetCORSMode@232
+Dependencies: js/ColumnNumber.h@8; js/loader/ScriptKind.h@9; mozilla/AlreadyAddRefed.h@10; mozilla/Assertions.h@11; mozilla/CORSMode.h@12; mozilla/dom/FromParser.h@13; nsCOMPtr.h@14; nsID.h@15; nsIScriptLoaderObserver.h@16; nsIURI.h@17; nsIWeakReferenceUtils.h@18; nsStringFwd.h@19; nscore.h@20; nsIPrincipal.h@23
+
+`dom/script/nsIScriptLoaderObserver.h` | `8ae1577da43c4cd25671c0dc9fc99ae015ab5432` | 2591 bytes | source | UTF-8 | mode 100644
+Declarations: nsIScriptElement@11; nsIURI@12; NS_NO_VTABLE@17
+Dependencies: js/GCAnnotations.h@8; nsISupports.h@9
+
+`dom/security/CSPEvalChecker.cpp` | `e0472d70a35cea0816c11a6b74538f1b2e0d9c97` | 5255 bytes | source | UTF-8 | mode 100644
+Declarations: WorkerCSPCheckRunnable@66; mEvalAllowed@74; GetResult@86
+Dependencies: mozilla/dom/CSPEvalChecker.h@5; mozilla/ErrorResult.h@7; mozilla/dom/Document.h@8; mozilla/dom/PolicyContainer.h@9; mozilla/dom/WorkerPrivate.h@10; mozilla/dom/WorkerRunnable.h@11; nsCOMPtr.h@12; nsContentSecurityUtils.h@13; nsContentUtils.h@14; nsGlobalWindowInner.h@15
+
+`dom/security/CSPEvalChecker.h` | `4f49f62c2cbde8a36ad53e8aaa3545497d535957` | 900 bytes | source | UTF-8 | mode 100644
+Declarations: JSContext@10; nsGlobalWindowInner@11; mozilla@13; WorkerPrivate@15; CSPEvalChecker@17
+Dependencies: nsString.h@8
+
+`dom/security/CSPViolationData.cpp` | `115d7946b2c45c4b83c0f7628a03c6f74c0ae14e` | 3178 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@15
+Dependencies: mozilla/dom/CSPViolationData.h@5; utility@7; mozilla/Utf16.h@9; mozilla/dom/Element.h@10; mozilla/dom/nsCSPContext.h@11; nsCharTraits.h@12; nsContentUtils.h@13
+
+`dom/security/CSPViolationData.h` | `6d548f1916fd483972a564d85b4089ad22149f0f` | 2228 bytes | source | UTF-8 | mode 100644
+Declarations: nsIURI@17; mozilla@19; Element@20; CSPViolationData@24; class@25
+Dependencies: cstdint@8; mozilla/RefPtr.h@10; mozilla/Variant.h@11; nsCOMPtr.h@12; nsIContentSecurityPolicy.h@13; nsIURI.h@14; nsString.h@15
+
+`dom/security/ConnectionAllowlists.cpp` | `5c5b99dd907ee6fdfd3c0305cac2df2646096bc3` | 14490 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@31; ConnectionAllowlists::SetResponseURI@174; NS_WARN_IF@387; NS_NewURI@414
+Dependencies: ConnectionAllowlists.h@5; functional@7; utility@8; mozilla/Logging.h@10; mozilla/StaticPrefs_security.h@11; mozilla/dom/ConnectionAllowlistViolationReportBody.h@12; mozilla/dom/Document.h@13; mozilla/dom/ReportingUtils.h@14; mozilla/ipc/PBackgroundSharedTypes.h@15; mozilla/net/SFV.h@16; mozilla/net/URLPatternGlue.h@17; nsGlobalWindowInner.h@18; nsIGlobalObject.h@19; nsILoadInfo.h@20; nsNetUtil.h@21; nsScriptSecurityManager.h@22; nsString.h@23
+
+`dom/security/ConnectionAllowlists.h` | `a92b4be150c4dfab95f27e5e45c422935254cb21` | 4490 bytes | source | UTF-8 | mode 100644
+Declarations: nsILoadInfo@21; mozilla@23; ConnectionAllowlistEntry@24; ConnectionAllowlistsArgs@25; mozilla@28; ConnectionAllowlists@34; Freeze@49; class@64; class@65; class@66; UrlPatternDeleter@70; operator@71; Allowlist@80
+Dependencies: cstdint@8; memory@9; type_traits@10; mozilla/Maybe.h@12; mozilla/Variant.h@13; mozilla/net/urlpattern_glue.h@14; nsCOMPtr.h@15; nsISupportsImpl.h@16; nsIURI.h@17; nsString.h@18; nsTArray.h@19
+
+`dom/security/ConnectionAllowlistsService.cpp` | `972d73ecee3724fc018f13b468e228a128a76e93` | 1409 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13
+Dependencies: ConnectionAllowlistsService.h@5; ConnectionAllowlists.h@7; PolicyContainer.h@8; mozilla/RefPtr.h@9; nsCOMPtr.h@10; nsILoadInfo.h@11
+
+`dom/security/ConnectionAllowlistsService.h` | `86c4c456d5a0c6b9346774a4bf7e85ebb2db5853` | 779 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; ConnectionAllowlistsService@14
+Dependencies: nsIContentPolicy.h@8
+
+`dom/security/DOMSecurityMonitor.cpp` | `09a435e47773167fc0de3aa56367367e49c32749` | 5074 bytes | source | UTF-8 | mode 100644
+Declarations: DOMSecurityMonitor::AuditUseOfJavaScriptURI@107
+Dependencies: DOMSecurityMonitor.h@5; mozilla/BasePrincipal.h@7; mozilla/StaticPrefs_dom.h@8; nsContentUtils.h@9; nsIChannel.h@10; nsILoadInfo.h@11; nsIPrincipal.h@12; nsIURI.h@13; nsJSUtils.h@14; xpcpublic.h@15
+
+`dom/security/DOMSecurityMonitor.h` | `33335d82f167328350664336e1da2b5861ec1801` | 1476 bytes | source | UTF-8 | mode 100644
+Declarations: nsIChannel@10; nsIPrincipal@11; DOMSecurityMonitor@13
+Dependencies: nsStringFwd.h@8
+
+`dom/security/DomSecurityIPCUtils.h` | `8341527fc03efac4aba80ee058255fecf1e432d2` | 1545 bytes | source | UTF-8 | mode 100644
+Declarations: IPC@12; ParamTraits@16; ParamTraits@23; ParamTraits@30
+Dependencies: ipc/EnumSerializer.h@8; nsIContentSecurityPolicy.h@9; nsILoadInfo.h@10
+
+`dom/security/FramingChecker.cpp` | `e395b139bed70ab0149483104f8a6012f45ff6ca` | 8254 bytes | source | UTF-8 | mode 100644
+Dependencies: FramingChecker.h@5; stdint.h@7; mozilla/Assertions.h@9; mozilla/RefPtr.h@10; mozilla/Services.h@11; mozilla/dom/WindowGlobalParent.h@12; mozilla/net/HttpBaseChannel.h@13; nsCOMPtr.h@14; nsContentSecurityUtils.h@15; nsContentUtils.h@16; nsDebug.h@17; nsError.h@18; nsGlobalWindowOuter.h@19; nsHttpChannel.h@20; nsIContentPolicy.h@21; nsIObserverService.h@22; nsIScriptError.h@23; nsLiteralString.h@24; nsStringFwd.h@25; nsTArray.h@26
+
+`dom/security/FramingChecker.h` | `5304adacd58b2ad34965e48b4ea6da899e9997ef` | 1455 bytes | source | UTF-8 | mode 100644
+Declarations: nsIDocShell@10; nsIChannel@11; nsIHttpChannel@12; nsIDocShellTreeItem@13; nsIURI@14; nsIContentSecurityPolicy@15; mozilla@17; BrowsingContext@18; FramingChecker@21; XFOHeader@30
+Dependencies: nsStringFwd.h@8
+
+`dom/security/IntegrityPolicy.cpp` | `a58fc86e5f36c7159b4f77fd70427eb681c5e96d` | 15780 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@25; ContentTypeToDestination@27; IntegrityPolicy::ContentTypeToDestinationType@68; IntegrityPolicy::InitFromOther@347; IntegrityPolicy::Read@414; IntegrityPolicy::Write@465
+Dependencies: IntegrityPolicy.h@5; mozilla/Logging.h@7; mozilla/StaticPrefs_security.h@8; mozilla/dom/RequestBinding.h@9; mozilla/dom/WindowGlobalChild.h@10; mozilla/ipc/PBackgroundSharedTypes.h@11; mozilla/net/SFV.h@12; nsCOMPtr.h@13; nsIClassInfoImpl.h@14; nsIObjectInputStream.h@15; nsIObjectOutputStream.h@16; nsString.h@17
+
+`dom/security/IntegrityPolicy.h` | `e927228d4aeb3b031de06101f84c28ff56507037` | 3767 bytes | source | UTF-8 | mode 100644
+Declarations: nsILoadInfo@23; mozilla@25; ipc@26; IntegrityPolicyArgs@27; dom@29; Document@31; IntegrityPolicy@33; class@45; class@48; Cast@70; Entry@87; mEndpoints@93; mEndpoints@98; MaxEnumValue@117; MaxEnumValue@123
+Dependencies: mozilla/EnumSet.h@8; mozilla/EnumTypeTraits.h@9; mozilla/Maybe.h@10; mozilla/MozPromise.h@11; mozilla/dom/WAICTManifestBinding.h@12; mozilla/net/SFV.h@13; nsHashKeys.h@14; nsIContentPolicy.h@15; nsIIntegrityPolicy.h@16; nsTArray.h@17; nsTHashMap.h@18; nsTHashSet.h@19
+
+`dom/security/IntegrityPolicyService.cpp` | `2424e92351b047ad14980914699750ac6ebdc31c` | 13622 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@31; do_QueryInterface@248
+Dependencies: IntegrityPolicyService.h@5; mozilla/BasePrincipal.h@7; mozilla/Logging.h@8; mozilla/StaticPrefs_security.h@9; mozilla/dom/Document.h@10; mozilla/dom/IntegrityPolicy.h@11; mozilla/dom/IntegrityViolationReportBody.h@12; mozilla/dom/PolicyContainer.h@13; mozilla/dom/ReportingUtils.h@14; mozilla/dom/RequestBinding.h@15; mozilla/dom/SRIMetadata.h@16; mozilla/net/SFVService.h@17; nsContentSecurityManager.h@18; nsContentSecurityUtils.h@19; nsContentUtils.h@20; nsILoadInfo.h@21; nsString.h@22
+
+`dom/security/IntegrityPolicyService.h` | `56632bdf18349c08801c1c7a00807de6f221e593` | 1406 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@16; IntegrityPolicyService@18
+Dependencies: mozilla/dom/IntegrityPolicy.h@8; nsIContentPolicy.h@9
+
+`dom/security/IntegrityPolicyWAICT.cpp` | `32c1f0b5f8432348dbbf7eed36c6b6d0960d79dc` | 16273 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@22; mPrincipal@32; IntegrityPolicyWAICT::~IntegrityPolicyWAICT@34; IntegrityPolicyWAICT::WaitForManifestLoad@41; IntegrityPolicyWAICT::ParseHeader@151; ValidateHashValue@217; NS_FAILED@332; IntegrityPolicyWAICT::ResolvePromiseInvalidManifest@356; IntegrityPolicyWAICT::FetchManifest@361; IntegrityPolicyWAICT::FlushConsoleMessages@394
+Dependencies: IntegrityPolicyWAICT.h@5; IntegrityPolicy.h@7; WAICTUtils.h@8; mozilla/Logging.h@9; mozilla/StaticPrefs_security.h@10; mozilla/dom/Document.h@11; mozilla/dom/IntegrityViolationReportBody.h@12; mozilla/dom/ReportingUtils.h@13; mozilla/dom/WindowGlobalChild.h@14; mozilla/net/SFV.h@15; nsCSPParser.h@16; nsContentUtils.h@17; nsIScriptError.h@18
+
+`dom/security/IntegrityPolicyWAICT.h` | `bcf4fd28333a5e893148c565ea802d0fb10502ff` | 3190 bytes | source | UTF-8 | mode 100644
+Declarations: WAICTHeaderParsingTest@20; nsIPrincipal@22; nsIURI@23; mozilla@25; Document@27; IntegrityPolicyWAICT@29; ShouldHandle@39; class@52; ConsoleMsgQueueElem@91
+Dependencies: mozilla/MozPromise.h@8; mozilla/dom/IntegrityPolicy.h@9; mozilla/dom/ReportingBinding.h@10; mozilla/dom/WAICTManifestBinding.h@11; nsCOMPtr.h@12; nsHashKeys.h@13; nsIStreamLoader.h@14; nsTHashMap.h@15; nsTHashSet.h@16; nsWeakReference.h@17
+
+`dom/security/OffThreadCSPContext.cpp` | `a06a1a86e7327650226b2d95593c0dd85d902970` | 3052 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@14; OffThreadCSPContext::CreateFromCSP@18; OffThreadCSPContext::IsEvalAllowed@34; OffThreadCSPContext::IsWasmEvalAllowed@56; OffThreadCSPContext::EnsureIPCPoliciesRead@73; NS_NewURI@82
+Dependencies: OffThreadCSPContext.h@5; MainThreadUtils.h@7; mozilla/StaticPrefs_dom.h@8; mozilla/dom/nsCSPParser.h@9; mozilla/dom/nsCSPUtils.h@10; mozilla/ipc/BackgroundUtils.h@11; nsNetUtil.h@12
+
+`dom/security/OffThreadCSPContext.h` | `5f73b14b23e392d5d8e398486b79a6dd170e6275` | 1651 bytes | source | UTF-8 | mode 100644
+Declarations: nsIContentSecurityPolicy@14; mozilla@16; OffThreadCSPContext@19; mCSPInfo@22
+Dependencies: mozilla/Result.h@8; mozilla/UniquePtr.h@9; mozilla/dom/nsCSPUtils.h@10; mozilla/ipc/PBackgroundSharedTypes.h@11; nscore.h@12
+
+`dom/security/PolicyContainer.cpp` | `4b834dad3c22734531ad83b2da495d15df97e34b` | 9061 bytes | source | UTF-8 | mode 100644
+Declarations: PolicyContainer::Read@25; PolicyContainer::Write@75; PolicyContainer::InitFromOther@151; PolicyContainer::InitFromCSP@179; IntegrityPolicy::Cast@203; PolicyContainer::SetCSP@219; PolicyContainer::GetCSP@223; PolicyContainer::SetIntegrityPolicy@234; PolicyContainer::GetIntegrityPolicy@238; PolicyContainer::SetIntegrityPolicyWAICT@251; PolicyContainer::GetIntegrityPolicyWAICT@255; PolicyContainer::GetConnectionAllowlists@273; PolicyContainer::GetIPAddressSpace@286; PolicyContainer::GetCsp@295
+Dependencies: PolicyContainer.h@5; mozilla/dom/ConnectionAllowlists.h@7; mozilla/dom/IntegrityPolicy.h@8; mozilla/dom/IntegrityPolicyWAICT.h@9; mozilla/dom/nsCSPContext.h@10; mozilla/ipc/PBackgroundSharedTypes.h@11; nsIClassInfoImpl.h@12; nsIObjectInputStream.h@13; nsIObjectOutputStream.h@14
+
+`dom/security/PolicyContainer.h` | `5f952a5d791d98619ce8b6f3dbc7fc416e6ed320` | 3808 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@14; PolicyContainerArgs@15; mozilla@18; ConnectionAllowlists@19; Document@20; IntegrityPolicyWAICT@21; nsIContentSecurityPolicy@26; nsIIntegrityPolicy@27; PolicyContainer@35; Cast@56
+Dependencies: nsCOMPtr.h@8; nsIContentSecurityPolicy.h@9; nsIIntegrityPolicy.h@10; nsILoadInfo.h@11; nsIPolicyContainer.h@12
+
+`dom/security/PolicyTokenizer.cpp` | `c6f8c4cd58f8dbc1b37fa125904ecb712cd8922d` | 2168 bytes | source | UTF-8 | mode 100644
+Declarations: GetPolicyTokenizerLog@9; mCurChar@20; PolicyTokenizer::~PolicyTokenizer@24; PolicyTokenizer::generateNextToken@28; PolicyTokenizer::generateTokens@43
+Dependencies: PolicyTokenizer.h@5; mozilla/Logging.h@7
+
+`dom/security/PolicyTokenizer.h` | `e8fae71c49b5e08c802ad9ae2ea0f7a5632600bd` | 1968 bytes | source | UTF-8 | mode 100644
+Declarations: PolicyTokenizer@33; atEnd@42; skipWhiteSpace@44; skipWhiteSpaceAndSemicolon@51; accept@59
+Dependencies: nsContentUtils.h@8; nsString.h@9
+
+`dom/security/ReferrerInfo.cpp` | `37dd9e15300dd7f82dbaeeb76db5d8290b1d2481` | 54944 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@45; DefaultReferrerPolicy@64; GetDefaultFirstPartyReferrerPolicyPref@71; GetDefaultThirdPartyReferrerPolicyPref@77; LegacyReferrerPolicyTokenMap@97; ReferrerInfo::GetUserReferrerSendingPolicy@184; ReferrerInfo::GetUserXOriginSendingPolicy@191; ReferrerInfo::GetUserTrimmingPolicy@198; ReferrerInfo::GetUserXOriginTrimmingPolicy@205; ReferrerInfo::IsReferrerSchemeAllowed@260; ReferrerInfo::ShouldResponseInheritReferrerInfo@273; StringEndsWith@336; ReferrerPolicy@428; ReferrerInfo::IsCrossOriginRequest@487; ReferrerInfo::IsCrossSiteRequest@530; IsReferrerCrossOrigin@572; IsCrossOriginRequest@591; StaticPrefs::network_http_referer_referrerLengthLimit@616; StaticPrefs::network_http_referer_referrerLengthLimit@637; mOverridePolicyByDefault@941; ReferrerInfo@944; ReferrerInfo::ReferrerInfo@949; ReferrerInfo@955; mComputedReferrer@972; mComputedReferrer@981; ReferrerInfo::Serialize@983; ReferrerInfo::Clone@1039; ReferrerInfo::GetOriginalReferrer@1060; ReferrerInfo::GetReferrerPolicyString@1074; ReferrerInfo::ReferrerPolicy@1079; ReferrerInfo::GetSendReferrer@1082; ReferrerInfo::Equals@1088; ReferrerInfo::GetComputedReferrerSpec@1124; ReferrerInfo::GetComputedReferrer@1130; ReferrerInfo::Hash@1144; ReferrerInfo::InitWithDocument@1175; ReferrerPolicyFromAttribute@1195; StaticPrefs::mathml_a_element_enabled@1201; ReferrerInfo::InitWithElement@1208; ReferrerInfo::CreateForInternalCSSAndSVGResources@1303; ReferrerInfo::ComputeReferrer@1309; ShouldIgnoreLessRestrictedPolicies@1355; IsReferrerCrossOrigin@1453; ReferrerInfo::Read@1576; ReferrerInfo::Write@1664
+Dependencies: ReferrerInfo.h@5; ipc/IPCMessageUtilsSpecializations.h@7; mozilla/BasePrincipal.h@8; mozilla/ContentBlockingAllowList.h@9; mozilla/RefPtr.h@10; mozilla/StaticPrefs_mathml.h@11; mozilla/StaticPrefs_network.h@12; mozilla/StorageAccess.h@13; mozilla/StyleSheet.h@14; mozilla/dom/Document.h@15; mozilla/dom/Element.h@16; mozilla/dom/FetchIPCTypes.h@17; mozilla/dom/ReferrerPolicyBinding.h@18; mozilla/dom/RequestBinding.h@19; mozilla/glean/DomSecurityMetrics.h@20; mozilla/ipc/URIUtils.h@21; mozilla/net/CookieJarSettings.h@22; mozilla/net/HttpBaseChannel.h@23; nsCharSeparatedTokenizer.h@24; nsContentUtils.h@25; nsIClassInfoImpl.h@26; nsIEffectiveTLDService.h@27; nsIHttpChannel.h@28; nsIOService.h@29; nsIObjectInputStream.h@30; nsIObjectOutputStream.h@31; nsIPipe.h@32; nsIURL.h@33; nsIWebProgressListener.h@34; nsNetUtil.h@35; nsScriptSecurityManager.h@36; nsStreamUtils.h@37
+
+`dom/security/ReferrerInfo.h` | `69c6e8e908319b4a9af1a1375bce496f0078bbb1` | 16340 bytes | source | UTF-8 | mode 100644
+Declarations: IPC@15; MessageReader@16; MessageWriter@17; nsIHttpChannel@25; nsIURI@26; nsIChannel@27; nsILoadInfo@28; nsINode@29; nsIPrincipal@30; mozilla@32; StyleSheet@33; URLAndReferrerInfo@34; net@36; HttpBaseChannel@37; nsHttpChannel@38; mozilla@42; ReferrerInfo@58; enum@60; TrimmingPolicy@276; ReferrerSendingPolicy@288; XOriginSendingPolicy@298; IsInitialized@345; IsPolicyOverrided@353
+Dependencies: mozilla/HashFunctions.h@8; mozilla/Maybe.h@9; mozilla/dom/ReferrerPolicyBinding.h@10; nsCOMPtr.h@11; nsIReferrerInfo.h@12; nsReadableUtils.h@13
+
+`dom/security/ResourceHasher.cpp` | `ad7237864fddc8dec6186a716d2d1bc4206dc2bb` | 2176 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@15; mCrypto@20; ResourceHasher::Init@22; ResourceHasher::Update@43; ResourceHasher::Finish@55
+Dependencies: ResourceHasher.h@5; cinttypes@7; WAICTUtils.h@9; nsComponentManagerUtils.h@10; nsNetCID.h@11
+
+`dom/security/ResourceHasher.h` | `4cdc4cca1f46b895b80207b09fb6b3ba393f55ea` | 1009 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; ResourceHasher@14
+Dependencies: nsCOMPtr.h@8; nsICryptoHash.h@9; nsString.h@10
+
+`dom/security/SRICheck.cpp` | `8224dda67f88f2bacd8a71b393f6cd08d3085d48` | 18089 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@28; GetChannelRequestURI@30; GetReferrerSpec@38; mComplete@171; SRICheckDataVerifier::EnsureCryptoHash@189; SRICheckDataVerifier::Update@204; SRICheckDataVerifier::Finish@224; SRICheckDataVerifier::DataSummaryLength@378; SRICheckDataVerifier::EmptyDataSummaryLength@383
+Dependencies: SRICheck.h@5; mozilla/Base64.h@7; mozilla/LoadTainting.h@8; mozilla/Logging.h@9; mozilla/dom/SRILogHelper.h@10; mozilla/dom/SRIMetadata.h@11; nsContentUtils.h@12; nsIChannel.h@13; nsIConsoleReportCollector.h@14; nsIHttpChannel.h@15; nsIScriptError.h@16; nsIURI.h@17; nsNetUtil.h@18; nsWhitespaceTokenizer.h@19
+
+`dom/security/SRICheck.h` | `9d17b642227d2adb65c0979acdfda7b1c4a12751` | 4114 bytes | source | UTF-8 | mode 100644
+Declarations: nsIChannel@14; nsIConsoleReportCollector@15; mozilla@17; SRIMetadata@19; SRICheck@21; SRICheckDataVerifier@47; IsComplete@67; IsInvalid@68
+Dependencies: mozilla/LoadTainting.h@8; nsCOMPtr.h@9; nsICryptoHash.h@10; nsStringFwd.h@11; nsTString.h@12
+
+`dom/security/SRILogHelper.h` | `f2399ebeb644ff47c3d2892caff8ade29175b689` | 544 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; SRILogHelper@12; GetSriLog@14
+Dependencies: mozilla/Logging.h@8
+
+`dom/security/SRIMetadata.cpp` | `94797c891cc45304de0c5aada266e731fbe4712d` | 6995 bytes | source | UTF-8 | mode 100644
+Declarations: GetSriMetadataLog@12; mozilla@22; mAlgorithmType@25; Substring@60; SRIMetadata::GetHash@135; SRIMetadata::GetHashType@144; SRIMetadata::CanTrustBeDelegatedTo@163; SRIMetadata::SizeOfIncludingThis@196
+Dependencies: SRIMetadata.h@5; hasht.h@7; mozilla/Logging.h@8; nsCSPParser.h@9; nsICryptoHash.h@10
+
+`dom/security/SRIMetadata.h` | `07d5b3d1200d71a8daf3651c1e670a8dff92f596` | 2764 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; SRIMetadata@15; SRIMetadata@25; IsEmpty@54; IsMalformed@55; IsAlgorithmSupported@56; IsValid@59; HashCount@61; GetAlgorithm@63
+Dependencies: SRICheck.h@8; mozilla/MemoryReporting.h@9; nsString.h@10; nsTArray.h@11
+
+`dom/security/SecFetch.cpp` | `7257e0671b990adb8df6907c0ca6b17209e66fd1` | 14901 bytes | source | UTF-8 | mode 100644
+Declarations: MapInternalContentPolicyTypeToDest@21; IsSameOrigin@151; IsSameSite@196; IsUserTriggeredForSecFetchSite@245; mozilla::dom::SecFetch::AddSecFetchDest@299; mozilla::dom::SecFetch::AddSecFetchMode@309; mozilla::dom::SecFetch::AddSecFetchSite@331; mozilla::dom::SecFetch::AddSecFetchUser@353; mozilla::dom::SecFetch::AddSecFetchHeader@376
+Dependencies: SecFetch.h@5; mozIThirdPartyUtil.h@7; mozilla/BasePrincipal.h@8; mozilla/StaticPrefs_dom.h@9; mozilla/dom/RequestBinding.h@10; nsContentSecurityManager.h@11; nsContentUtils.h@12; nsIHttpChannel.h@13; nsIRedirectHistoryEntry.h@14; nsIReferrerInfo.h@15; nsMixedContentBlocker.h@16; nsNetUtil.h@17
+
+`dom/security/SecFetch.h` | `7986bcfa849f8dc41293f13506cb86291d21fbee` | 736 bytes | source | UTF-8 | mode 100644
+Declarations: nsIHttpChannel@8; mozilla@10; SecFetch@12
+
+`dom/security/WAICTUtils.cpp` | `f7758e9a6455af096ed1b08231fc5d5d4923db48` | 1475 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12
+Dependencies: WAICTUtils.h@5; cstdint@7; mozilla/net/SFV.h@9; nsString.h@10
+
+`dom/security/WAICTUtils.h` | `611a9e25c4422519ee94f705149ba940bda115d9` | 768 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@15; class@23
+Dependencies: cstdint@8; mozilla/Logging.h@10; mozilla/Result.h@11; mozilla/net/SFV.h@12; nsString.h@13
+
+`dom/security/fuzztest/csp_fuzzer.cpp` | `556bfaae960498f4c9618d8ed6990233d7ea94e3` | 1311 bytes | source | UTF-8 | mode 100644
+Declarations: LLVMFuzzerTestOneInput@12
+Dependencies: FuzzingInterface.h@5; mozilla/BasePrincipal.h@6; nsCSPContext.h@7; nsComponentManagerUtils.h@8; nsNetUtil.h@9; nsStringFwd.h@10
+
+`dom/security/fuzztest/csp_fuzzer.dict` | `480165d929b62160ac50602e3f3c4cc3583bf12d` | 1096 bytes | data-or-other | UTF-8 | mode 100644
+
+`dom/security/fuzztest/moz.build` | `02d71d809dfb3a2b22ec6f6ecbb76e41e6f10394` | 408 bytes | build-registration | UTF-8 | mode 100644
+Dependencies: /tools/fuzzing/libfuzzer-config.mozbuild@12
+
+`dom/security/metrics.yaml` | `ddec3cfdacb0d70d335ea0cfb48b8519f25e67b2` | 19396 bytes | data-or-other | UTF-8 | mode 100644
+
+`dom/security/moz.build` | `faff244f374024a019ebc010b4c59efb4f4d2aa1` | 2530 bytes | build-registration | UTF-8 | mode 100644
+Dependencies: /ipc/chromium/chromium-config.mozbuild@81; /tools/fuzzing/libfuzzer-config.mozbuild@92
+
+`dom/security/nsCSPContext.cpp` | `825a234f0607b25e0529ca4f757a9b2e82c53d63` | 87695 bytes | source | UTF-8 | mode 100644
+Declarations: GetCspContextLog@68; GetCspOriginLogLog@78; ValidateDirectiveName@93; mQueueUpMessages@260; nsCSPContext::~nsCSPContext@264; nsCSPContext::InitFromOther@305; nsCSPContext::EnsureIPCPoliciesRead@337; nsCSPContext::GetPolicyString@358; nsCSPContext::GetPolicyCount@377; nsCSPContext::GetUpgradeInsecureRequests@384; nsCSPContext::GetBlockAllMixedContent@399; nsCSPContext::GetEnforcesFrameAncestors@414; security_allow_unsafe_dangerous_privileged_evil_eval_AtStartup@512; NS_NewCryptoHash@605; do_QueryInterface@693; CSPKeyword@788; nsCSPContext::SetRequestContextWithDocument@864; nsCSPContext::GetRequestPrincipal@909; nsCSPContext::GetSelfURI@911; nsCSPContext::GetReferrer@914; nsCSPContext::GetInnerWindowID@919; nsCSPContext::GetSkipAllowInlineStyleCheck@921; nsCSPContext::EnsureEventTarget@931; ConsoleMsgQueueElem@943; nsCSPContext::flushConsoleMessages@953; ShouldThrottleReport@1239; WindowGlobalParent::GetByInnerWindowId@1589; CSPReportSenderRunnable@1618; mCSPContext@1635; ReportToConsole@1711; nsCSPContext::ToJSON@2023; nsCSPContext::GetCSPSandboxFlags@2045; CSPViolationReportListener::OnStartRequest@2120; CSPReportRedirectSink::GetInterface@2165; nsCSPContext::Read@2185; nsCSPContext::PolicyContainerRead@2189; nsCSPContext::Write@2365; nsCSPContext::AddIPCPolicy@2401; nsCSPContext::GetReportGroupFor@2428
+Dependencies: nsCSPContext.h@5; string@7; unordered_set@8; utility@9; mozilla/Logging.h@11; mozilla/Preferences.h@12; mozilla/StaticPrefs_security.h@13; mozilla/dom/CSPDictionariesBinding.h@14; mozilla/dom/CSPReportBinding.h@15; mozilla/dom/CSPViolationReportBody.h@16; mozilla/dom/DocGroup.h@17; mozilla/dom/Document.h@18; mozilla/dom/Element.h@19; mozilla/dom/LinkStyle.h@20; mozilla/dom/ReportingUtils.h@21; mozilla/dom/WindowGlobalParent.h@22; mozilla/glean/DomSecurityMetrics.h@23; mozilla/ipc/PBackgroundSharedTypes.h@24; nsCOMPtr.h@25; nsCSPParser.h@26; nsCSPService.h@27; nsCSPUtils.h@28; nsContentPolicyUtils.h@29; nsContentSecurityUtils.h@30; nsContentUtils.h@31; nsError.h@32; nsGlobalWindowOuter.h@33; nsIAsyncVerifyRedirectCallback.h@34; nsIClassInfoImpl.h@35; nsIContentPolicy.h@36; nsIEventTarget.h@37; nsIHttpChannel.h@38; nsIInterfaceRequestor.h@39; nsIInterfaceRequestorUtils.h@40; nsINetworkInterceptController.h@41; nsIObjectInputStream.h@42; nsIObjectOutputStream.h@43; nsIObserver.h@44; nsIObserverService.h@45; nsIScriptElement.h@46; nsIScriptError.h@47; nsIStringStream.h@48; nsISupportsPrimitives.h@49; nsIURIMutator.h@50; nsIUploadChannel.h@51; nsJSUtils.h@52; nsMimeTypes.h@53; nsNetUtil.h@54; nsSandboxFlags.h@55; nsScriptSecurityManager.h@56; nsStreamUtils.h@57; nsString.h@58; nsStringStream.h@59; nsSupportsPrimitives.h@60; nsThreadUtils.h@61; nsXULAppAPI.h@62
+
+`dom/security/nsCSPContext.h` | `f54ece51de922283a2d84d30284919af030be15a` | 10877 bytes | source | UTF-8 | mode 100644
+Declarations: nsINetworkInterceptController@25; nsIEventTarget@26; ConsoleMsgQueueElem@27; mozilla@29; dom@30; Element@31; ipc@33; ContentSecurityPolicy@34; nsCSPContext@38; SuppressParserLogMessages@60; clearLoadingPrincipal@147; GetLoadingContext@149; ScriptSampleMaxLength@151; Cast@164; class@172; class@207; CSPViolationReportListener@253; CSPReportRedirectSink@269
+Dependencies: mozilla/StaticPrefs_security.h@8; mozilla/dom/CSPViolationData.h@9; mozilla/dom/SecurityPolicyViolationEvent.h@10; mozilla/dom/nsCSPUtils.h@11; nsIChannel.h@12; nsIChannelEventSink.h@13; nsIContentSecurityPolicy.h@14; nsIInterfaceRequestor.h@15; nsIStreamListener.h@16; nsIWeakReferenceUtils.h@17; nsXPCOM.h@18
+
+`dom/security/nsCSPParser.cpp` | `65ff731e525df069e400b89d07a1817175ea3a2f` | 53924 bytes | source | UTF-8 | mode 100644
+Declarations: GetCspParserLog@27; mSuppressLogMessages@63; nsCSPParser::~nsCSPParser@67; isCharacterToken@69; isNumberToken@74; isValidHexDig@78; isGroupDelim@83; nsCSPParser::isValidBase64Value@91; nsCSPParser::resetCurChar@118; nsCSPParser::atEndOfPath@127; nsCSPParser::atValidUnreservedChar@132; nsCSPParser::atValidSubDelimChar@143; nsCSPParser::atValidPctEncodedChar@150; nsCSPParser::atValidPathChar@169; nsCSPParser::hostChar@193; nsCSPParser::schemeChar@201; nsCSPParser::port@210; nsCSPParser::subPath@241; nsCSPParser::path@291; nsCSPParser::subHost@327; nsCSPParser::host@354; nsCSPParser::keywordSource@408; CSP_IsKeyword@472; nsCSPParser::hostSource@480; nsCSPParser::schemeSource@520; nsCSPParser::nonceSource@547; nsCSPParser::hashSource@578; nsCSPParser::sourceExpression@616; nsCSPParser::logWarningForIgnoringNoneKeywordToConsole@703; nsCSPParser::sourceList@712; nsCSPParser::reportURIList@755; nsCSPParser::reportGroup@797; nsContentUtils::IsHTMLWhitespace@818; nsCSPParser::sandboxFlagList@840; nsCSPParser::handleRequireTrustedTypesForDirective@879; IsValidTrustedTypesWildcard@934; IsValidTrustedTypesPolicyNameChar@939; IsValidTrustedTypesPolicyName@949; nsCSPParser::handleTrustedTypesDirective@966; nsCSPParser::directiveValue@1017; nsCSPParser::directiveName@1025; security_mixed_content_upgrade_display_content@1082; nsCSPParser::directive@1136; nsCSPParser::MaybeWarnAboutUnsafeInline@1295; nsCSPParser::MaybeWarnAboutUnsafeEval@1314; nsCSPParser::policy@1327
+Dependencies: nsCSPParser.h@5; cstdint@7; utility@8; mozilla/Preferences.h@10; mozilla/StaticPrefs_dom.h@11; mozilla/StaticPrefs_security.h@12; mozilla/dom/Document.h@13; mozilla/dom/TrustedTypesConstants.h@14; nsCOMPtr.h@15; nsCSPUtils.h@16; nsContentUtils.h@17; nsIScriptError.h@18; nsNetUtil.h@19; nsReadableUtils.h@20; nsServiceManagerUtils.h@21; nsUnicharUtils.h@22
+
+`dom/security/nsCSPParser.h` | `40cfe2364380cb0c383c155d29dd9d09849c4cc5` | 8290 bytes | source | UTF-8 | mode 100644
+Declarations: nsCSPParser@39; atEnd@101; accept@103; accept@110; peek@117; peek@124; advance@131; resetCurValue@139
+Dependencies: PolicyTokenizer.h@8; nsCSPContext.h@9; nsCSPUtils.h@10; nsIURI.h@11
+
+`dom/security/nsCSPService.cpp` | `1fec52b3535c82f6dab1c2308e26d1e8960ff248` | 13985 bytes | source | UTF-8 | mode 100644
+Declarations: nsContentUtils::IsPDFJS@110
+Dependencies: nsCSPService.h@5; mozilla/Logging.h@7; mozilla/Preferences.h@8; mozilla/StaticPrefs_security.h@9; mozilla/dom/PolicyContainer.h@10; mozilla/net/DocumentChannel.h@11; mozilla/net/DocumentLoadListener.h@12; nsAsyncRedirectVerifyHelper.h@13; nsCOMPtr.h@14; nsContentPolicyUtils.h@15; nsContentUtils.h@16; nsError.h@17; nsIAsyncVerifyRedirectCallback.h@18; nsIContent.h@19; nsIContentSecurityPolicy.h@20; nsIProtocolHandler.h@21; nsIURI.h@22; nsNetUtil.h@23; nsQueryObject.h@24; nsString.h@25
+
+`dom/security/nsCSPService.h` | `5cb1912f0feaf6528e9d076b519fe5a9dd4d2114` | 1473 bytes | source | UTF-8 | mode 100644
+Declarations: CSPService@16
+Dependencies: nsIChannel.h@8; nsIChannelEventSink.h@9; nsIContentPolicy.h@10; nsXPCOM.h@11
+
+`dom/security/nsCSPUtils.cpp` | `11de03cf6eaf8fa6fff602cc12a78acc08f2e25f` | 68326 bytes | source | UTF-8 | mode 100644
+Declarations: GetCspUtilsLog@40; CSP_PercentDecodeStr@50; local@54; convertHexDig@55; CSP_ShouldResponseInheritCSP@107; CSP_ShouldURIInheritCSP@119; CSP_IsBrowserXHTML@178; CSP_LogStrMessage@212; CSP_StringToCSPDirective@276; CSP_ContentTypeToDirective@310; CSP_CreateHostSrcFromSelfURI@440; CSP_IsEmptyDirective@472; CSP_IsInvalidDirectiveValue@476; CSP_IsDirective@485; CSP_IsKeyword@489; CSP_IsQuotelessKeyword@493; nsCharSeparatedTokenizer@595; nsCSPSchemeSrc::nsCSPSchemeSrc@637; nsCSPSchemeSrc::visit@653; nsCSPSchemeSrc::toString@657; mWithinFrameAncstorsDir@668; nsCSPHostSrc::visit@888; nsCSPHostSrc::toString@892; nsCSPHostSrc::setScheme@921; nsCSPHostSrc::setPort@926; nsCSPHostSrc::appendPath@928; mKeyword@933; nsCSPKeywordSrc::visit@948; nsCSPKeywordSrc::toString@952; nsCSPNonceSrc::nsCSPNonceSrc@958; nsCSPNonceSrc::visit@975; nsCSPNonceSrc::toString@979; mAlgorithm@988; nsCSPHashSrc::visit@1038; nsCSPHashSrc::toString@1042; nsCSPReportURI::nsCSPReportURI@1052; nsCSPReportURI::visit@1056; nsCSPReportURI::toString@1058; nsCSPGroup::nsCSPGroup@1069; nsCSPGroup::visit@1073; nsCSPGroup::toString@1075; nsCSPSandboxFlags::nsCSPSandboxFlags@1079; nsCSPSandboxFlags::visit@1085; nsCSPSandboxFlags::toString@1087; nsCSPTrustedTypesDirectivePolicyName::toString@1122; nsCSPDirective::nsCSPDirective@1146; nsCSPDirective::~nsCSPDirective@1150; ParseSRIMetadata@1192; nsCSPDirective::allowsAllInlineBehavior@1389; nsCSPDirective::toString@1458; nsCSPDirective::toDomCSPStruct@1473; nsCSPDirective::isDefaultDirective@1624; nsCSPDirective::getReportURIs@1628; nsCSPDirective::getReportGroup@1641; nsCSPDirective::visitSrcs@1649; nsCSPDirective::equals@1658; nsCSPDirective::getDirName@1662; nsCSPDirective::hasReportSampleKeyword@1666; mRestrictWorkers@1701; nsCSPChildSrcDirective::equals@1705; nsCSPDirective@1718; nsCSPScriptSrcDirective::equals@1722; nsCSPDirective@1738; nsCSPStyleSrcDirective::equals@1742; nsCSPDirective@1756; nsBlockAllMixedContentDirective::toString@1760; nsBlockAllMixedContentDirective::getDirName@1765; nsCSPDirective@1773; nsUpgradeInsecureDirective::toString@1777; nsUpgradeInsecureDirective::getDirName@1782; mDeliveredViaMetaTag@1792; nsCSPPolicy::~nsCSPPolicy@1796; nsCSPPolicy::toString@1892; nsCSPPolicy::toDomCSPStruct@1899; nsCSPPolicy::hasDirective@1907; nsCSPPolicy::allowsAllInlineBehavior@1916; nsCSPPolicy::getSandboxFlags@1975; nsCSPPolicy::getReportURIs@1995; nsCSPPolicy::getReportGroup@2005; nsCSPPolicy::getDirectiveNames@2014
+Dependencies: nsCSPUtils.h@5; mozilla/Assertions.h@7; mozilla/Components.h@8; mozilla/StaticPrefs_security.h@9; mozilla/dom/CSPDictionariesBinding.h@10; mozilla/dom/Document.h@11; mozilla/dom/PolicyContainer.h@12; mozilla/dom/SRIMetadata.h@13; mozilla/dom/TrustedTypesConstants.h@14; nsAboutProtocolUtils.h@15; nsAttrValue.h@16; nsCSPParser.h@17; nsCharSeparatedTokenizer.h@18; nsComponentManagerUtils.h@19; nsContentUtils.h@20; nsDebug.h@21; nsIChannel.h@22; nsIConsoleService.h@23; nsIContentSecurityPolicy.h@24; nsICryptoHash.h@25; nsIScriptError.h@26; nsIStringBundle.h@27; nsIURL.h@28; nsNetUtil.h@29; nsReadableUtils.h@30; nsSandboxFlags.h@31; nsServiceManagerUtils.h@32; nsWhitespaceTokenizer.h@33
+
+`dom/security/nsCSPUtils.h` | `ddc5b3eec628412c063e58c11edf6039fdc225bc` | 26860 bytes | source | UTF-8 | mode 100644
+Declarations: nsIChannel@16; mozilla@18; CSP@19; Document@20; CSPKeyword@120; CSP_UTF16KeywordToEnum@177; nsCSPHostSrc@200; nsCSPSrcVisitor@210; nsCSPBaseSrc@224; isReportSample@236; isHash@238; isNonce@239; isKeyword@240; isTrustedTypesDirectivePolicyName@241; nsCSPSchemeSrc@246; getScheme@256; nsCSPHostSrc@264; setGeneratedFromSelfKeyword@278; setIsUniqueOrigin@282; setWithinFrameAncestorsDir@284; getScheme@288; getHost@290; getPort@292; getPath@294; nsCSPKeywordSrc@308; getKeyword@318; nsCSPNonceSrc@332; getNonce@342; nsCSPHashSrc@352; getAlgorithm@362; getHash@366; nsCSPReportURI@377; nsCSPGroup@391; nsCSPSandboxFlags@405; nsCSPRequireTrustedTypesForDirectiveValue@419; nsCSPTrustedTypesDirectivePolicyName@433; nsCSPTrustedTypesDirectiveInvalidToken@449; nsCSPSrcVisitor@464; nsCSPDirective@483; addSrcs@509; nsCSPChildSrcDirective@544; setRestrictFrames@549; setRestrictWorkers@551; nsCSPScriptSrcDirective@567; setRestrictWorkers@572; setRestrictScriptElem@573; setRestrictScriptAttr@574; nsCSPStyleSrcDirective@590; setRestrictStyleElem@595; setRestrictStyleAttr@596; nsBlockAllMixedContentDirective@607; permits@618; nsUpgradeInsecureDirective@665; permits@676; nsCSPPolicy@694; addDirective@708; addUpgradeInsecDir@716; setDeliveredViaMetaTagFlag@723; getDeliveredViaMetaTagFlag@727; hasRequireTrustedTypesForDirective@731; setReportOnlyFlag@735; getReportOnlyFlag@739; class@741; getDisposition@743; getNumDirectives@758
+Dependencies: mozilla/ErrorResult.h@8; nsCOMPtr.h@9; nsILoadInfo.h@10; nsIURI.h@11; nsString.h@12; nsTArray.h@13; nsUnicharUtils.h@14
+
+`dom/security/nsContentSecurityManager.cpp` | `346b2c5ff4fff8deb1ffc8cc1d4d45b2acf7bf52` | 70366 bytes | source | UTF-8 | mode 100644
+Declarations: ValidateSecurityFlags@192; IsImageLoadInEditorAppType@243; DoCheckLoadURIChecks@280; mozilla::StaticPrefs::dom_fetch_allow_force_allowed_dtd@285; mozilla::StaticPrefs::dom_fetch_allow_force_allowed_dtd@300; URIHasFlags@325; nsContentUtils::SchemeIs@337; DeterminePrincipalForCORSChecks@356; LogHTTPSOnlyInfo@550; LogSecurityFlags@644; DebugSecFlagType@645; mozilla::EnvHasValue@1054; CheckAllowFileProtocolScriptLoad@1206; NS_ConvertUTF8toUTF16@1233; CheckAllowExtensionProtocolScriptLoad@1259; NS_ConvertUTF8toUTF16@1302; CheckAllowLoadByTriggeringRemoteType@1328; AddLoadFlags@1561; nsContentSecurityManager::CheckChannel@1572; net::SchemeIsHttpOrHttps@1847
+Dependencies: nsContentSecurityManager.h@5; js/RegExp.h@7; jsapi.h@8; mozilla/BasePrincipal.h@9; mozilla/ClearOnShutdown.h@10; mozilla/CmdLineAndEnvUtils.h@11; mozilla/Components.h@12; mozilla/ExtensionPolicyService.h@13; mozilla/Logging.h@14; mozilla/Maybe.h@15; mozilla/Preferences.h@16; mozilla/StaticPrefs_content.h@17; mozilla/StaticPrefs_dom.h@18; mozilla/StaticPrefs_security.h@19; mozilla/dom/BrowserChild.h@20; mozilla/dom/ContentChild.h@21; mozilla/dom/ContentParent.h@22; mozilla/dom/Document.h@23; mozilla/dom/Element.h@24; mozilla/dom/PolicyContainer.h@25; mozilla/dom/nsMixedContentBlocker.h@26; mozilla/extensions/WebExtensionPolicy.h@27; mozilla/glean/DomSecurityMetrics.h@28; nsAboutProtocolUtils.h@29; nsArray.h@30; nsCORSListenerProxy.h@31; nsContentPolicyUtils.h@32; nsContentSecurityUtils.h@33; nsContentUtils.h@34; nsDataHandler.h@35; nsEscape.h@36; nsIChannel.h@37; nsIContentPolicy.h@38; nsIHttpChannelInternal.h@39; nsILoadInfo.h@40; nsIMIMEService.h@41; nsINode.h@42; nsIOService.h@43; nsIParentChannel.h@44; nsIRedirectHistoryEntry.h@45; nsIStreamListener.h@46; nsIXPConnect.h@47; nsIXULRuntime.h@48; nsMimeTypes.h@49; nsNetUtil.h@50; nsReadableUtils.h@51; nsSandboxFlags.h@52; nsScriptSecurityManager.h@53; xpcpublic.h@54
+
+`dom/security/nsContentSecurityManager.h` | `d667890157d435f664ba04235a47e2c92a1f96ff` | 4023 bytes | source | UTF-8 | mode 100644
+Declarations: nsILoadInfo@14; nsIStreamListener@15; nsContentSecurityManager@23; CORSSecurityMapping@43
+Dependencies: mozilla/CORSMode.h@8; nsIChannel.h@9; nsIChannelEventSink.h@10; nsIContentSecurityManager.h@11; nsILoadInfo.h@12
+
+## Validation and limits
+
+Every listed blob was read from the pinned Git tree and its Git SHA-1 was recomputed. Extraction is structural only. Read implementations, callers, build conditions, and tests before making a behavior claim. Runtime behavior and historical reasons remain unverified. Reproduce a file with `git show 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b:path` in the corresponding source clone. The full study coverage and navigation note records aggregate results.

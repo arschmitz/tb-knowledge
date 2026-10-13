@@ -1,0 +1,1274 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:14:46.642314+00:00","paths":["js/src/jit-test/tests/wasm/builtin-modules/js-string/bug1903219.js","js/src/jit-test/tests/wasm/builtin-modules/js-string/constants.js","js/src/jit-test/tests/wasm/builtin-modules/js-string/directives.txt","js/src/jit-test/tests/wasm/builtin-modules/js-string/import-reflection.js","js/src/jit-test/tests/wasm/builtin-modules/js-string/inline-code.js","js/src/jit-test/tests/wasm/builtin-modules/js-string/per-function-polyfill.js","js/src/jit-test/tests/wasm/builtin-modules/oom-test.js","js/src/jit-test/tests/wasm/builtin-modules/unknown-builtins.js","js/src/jit-test/tests/wasm/builtin-modules/uses-memory.js","js/src/jit-test/tests/wasm/builtin.js","js/src/jit-test/tests/wasm/caching.js","js/src/jit-test/tests/wasm/comments.js","js/src/jit-test/tests/wasm/compare-select-i32-i64.js","js/src/jit-test/tests/wasm/compiler-frame-depth.js","js/src/jit-test/tests/wasm/components/aliases.js","js/src/jit-test/tests/wasm/components/bug2041991.js","js/src/jit-test/tests/wasm/components/bug2056372.js","js/src/jit-test/tests/wasm/components/canon.js","js/src/jit-test/tests/wasm/components/coreinstances.js","js/src/jit-test/tests/wasm/components/coremodules.js","js/src/jit-test/tests/wasm/components/custom.js","js/src/jit-test/tests/wasm/components/directives.txt","js/src/jit-test/tests/wasm/components/disabled.js","js/src/jit-test/tests/wasm/components/exports.js","js/src/jit-test/tests/wasm/components/imports.js","js/src/jit-test/tests/wasm/components/instantiation.js","js/src/jit-test/tests/wasm/components/js-api.js","js/src/jit-test/tests/wasm/components/name-validation.js","js/src/jit-test/tests/wasm/components/names.js","js/src/jit-test/tests/wasm/components/preamble.js","js/src/jit-test/tests/wasm/components/resources.js","js/src/jit-test/tests/wasm/components/strongly-unique.js","js/src/jit-test/tests/wasm/components/types.js","js/src/jit-test/tests/wasm/const.js","js/src/jit-test/tests/wasm/control-flow-phi-inputs.js","js/src/jit-test/tests/wasm/control-flow.js","js/src/jit-test/tests/wasm/conversion.js","js/src/jit-test/tests/wasm/cross-global.js","js/src/jit-test/tests/wasm/custom-page-sizes/bug2026383.js","js/src/jit-test/tests/wasm/custom-page-sizes/decoding.js","js/src/jit-test/tests/wasm/custom-page-sizes/directives.txt","js/src/jit-test/tests/wasm/custom-page-sizes/disabled.js","js/src/jit-test/tests/wasm/custom-page-sizes/js-api.js","js/src/jit-test/tests/wasm/custom-page-sizes/runtime.js","js/src/jit-test/tests/wasm/custom-section.js","js/src/jit-test/tests/wasm/declared-segs.js","js/src/jit-test/tests/wasm/denormals.js","js/src/jit-test/tests/wasm/directiveless/README.md","js/src/jit-test/tests/wasm/directiveless/bug1645310.js","js/src/jit-test/tests/wasm/directiveless/bug1664979.js","js/src/jit-test/tests/wasm/directiveless/bug1666051.js","js/src/jit-test/tests/wasm/directiveless/bug1877358.js","js/src/jit-test/tests/wasm/directiveless/features.js","js/src/jit-test/tests/wasm/directives.txt","js/src/jit-test/tests/wasm/disasm.js","js/src/jit-test/tests/wasm/drop.js","js/src/jit-test/tests/wasm/effective-address1.js","js/src/jit-test/tests/wasm/errors.js","js/src/jit-test/tests/wasm/exceptions/bug-1744663-extended.js","js/src/jit-test/tests/wasm/exceptions/bug-1744663.js","js/src/jit-test/tests/wasm/exceptions/bug-1747562.js","js/src/jit-test/tests/wasm/exceptions/bug-1747704.js","js/src/jit-test/tests/wasm/exceptions/bug-1751699.js","js/src/jit-test/tests/wasm/exceptions/bug-1767446.js","js/src/jit-test/tests/wasm/exceptions/bug-1788213.js","js/src/jit-test/tests/wasm/exceptions/bug-1791361.js","js/src/jit-test/tests/wasm/exceptions/bug-1797685.js","js/src/jit-test/tests/wasm/exceptions/bug-1893915.js","js/src/jit-test/tests/wasm/exceptions/bug1904644-1.js","js/src/jit-test/tests/wasm/exceptions/bug1904644-2.js","js/src/jit-test/tests/wasm/exceptions/bug2029716.js","js/src/jit-test/tests/wasm/exceptions/bug2043268-copied-trap.js","js/src/jit-test/tests/wasm/exceptions/caching.js","js/src/jit-test/tests/wasm/exceptions/calls.js","js/src/jit-test/tests/wasm/exceptions/directives.txt","js/src/jit-test/tests/wasm/exceptions/events.js","js/src/jit-test/tests/wasm/exceptions/example.js","js/src/jit-test/tests/wasm/exceptions/import-export.js","js/src/jit-test/tests/wasm/exceptions/instructions.js","js/src/jit-test/tests/wasm/exceptions/ion-loop-phi.js","js/src/jit-test/tests/wasm/exceptions/js-api.js","js/src/jit-test/tests/wasm/exceptions/memory.js","js/src/jit-test/tests/wasm/exceptions/oom-construct-message.js","js/src/jit-test/tests/wasm/exceptions/oom-create-exception-data.js","js/src/jit-test/tests/wasm/exceptions/oom-tag-constructor.js","js/src/jit-test/tests/wasm/exceptions/prototypes.js","js/src/jit-test/tests/wasm/exceptions/reftypes.js","js/src/jit-test/tests/wasm/exceptions/side-effects-in-try.js","js/src/jit-test/tests/wasm/exceptions/stack.js","js/src/jit-test/tests/wasm/exceptions/throw-to-js.js","js/src/jit-test/tests/wasm/exceptions/unreachable.js","js/src/jit-test/tests/wasm/exceptions/validation.js","js/src/jit-test/tests/wasm/excessive-inlining.js","js/src/jit-test/tests/wasm/exnref/bug1883865.js","js/src/jit-test/tests/wasm/exnref/bug1883944.js","js/src/jit-test/tests/wasm/exnref/casting.js","js/src/jit-test/tests/wasm/exnref/directives.txt","js/src/jit-test/tests/wasm/exnref/throw-ref.js","js/src/jit-test/tests/wasm/exnref/try-table.js","js/src/jit-test/tests/wasm/extended-const/basic.js","js/src/jit-test/tests/wasm/extended-const/directives.txt","js/src/jit-test/tests/wasm/extended-const/pathological.js","js/src/jit-test/tests/wasm/extract-code.js","js/src/jit-test/tests/wasm/fac.js","js/src/jit-test/tests/wasm/fence.js","js/src/jit-test/tests/wasm/float-unaligned.js","js/src/jit-test/tests/wasm/float.js","js/src/jit-test/tests/wasm/full-cycle.js","js/src/jit-test/tests/wasm/function-call-bind.js","js/src/jit-test/tests/wasm/function-references/as-non-null.js","js/src/jit-test/tests/wasm/function-references/binary.js","js/src/jit-test/tests/wasm/function-references/br-non-null.js","js/src/jit-test/tests/wasm/function-references/br-null.js","js/src/jit-test/tests/wasm/function-references/call_ref.js","js/src/jit-test/tests/wasm/function-references/directives.txt","js/src/jit-test/tests/wasm/function-references/nnl-test.js","js/src/jit-test/tests/wasm/function-references/non-nullable-table.js","js/src/jit-test/tests/wasm/function-references/non-nullable.js","js/src/jit-test/tests/wasm/function-references/reftype-parse.js","js/src/jit-test/tests/wasm/gc/TypedObject.js","js/src/jit-test/tests/wasm/gc/allocation-metadata.js","js/src/jit-test/tests/wasm/gc/array-bce-ion-mir.js","js/src/jit-test/tests/wasm/gc/arrays.js","js/src/jit-test/tests/wasm/gc/big-arrays.js","js/src/jit-test/tests/wasm/gc/binary.js","js/src/jit-test/tests/wasm/gc/block-subtyping.js","js/src/jit-test/tests/wasm/gc/br-on-cast-fail.js","js/src/jit-test/tests/wasm/gc/br-on-cast.js","js/src/jit-test/tests/wasm/gc/bug-1841119.js","js/src/jit-test/tests/wasm/gc/bug-1843295.js","js/src/jit-test/tests/wasm/gc/bug-1845436.js","js/src/jit-test/tests/wasm/gc/bug-1845673.js","js/src/jit-test/tests/wasm/gc/bug-1854007.js","js/src/jit-test/tests/wasm/gc/bug-1879096.js","js/src/jit-test/tests/wasm/gc/bug-1903041.js","js/src/jit-test/tests/wasm/gc/bug-1962023.js","js/src/jit-test/tests/wasm/gc/bug-1962634.js","js/src/jit-test/tests/wasm/gc/bug-1968410.js","js/src/jit-test/tests/wasm/gc/bug-1970545.js","js/src/jit-test/tests/wasm/gc/bug-1970713.js","js/src/jit-test/tests/wasm/gc/bug-1993004.js","js/src/jit-test/tests/wasm/gc/bug-2042765.js","js/src/jit-test/tests/wasm/gc/bug1833681.js","js/src/jit-test/tests/wasm/gc/bug1998895.js","js/src/jit-test/tests/wasm/gc/bug2022052.js","js/src/jit-test/tests/wasm/gc/bug2041977.js","js/src/jit-test/tests/wasm/gc/bug2051555.js","js/src/jit-test/tests/wasm/gc/bug2061530.js","js/src/jit-test/tests/wasm/gc/bug2068315.js","js/src/jit-test/tests/wasm/gc/call-indirect-subtyping.js","js/src/jit-test/tests/wasm/gc/cast-abstract.js","js/src/jit-test/tests/wasm/gc/cast-extern.js","js/src/jit-test/tests/wasm/gc/cast-optimizations.js","js/src/jit-test/tests/wasm/gc/casting.js","js/src/jit-test/tests/wasm/gc/debugger.js","js/src/jit-test/tests/wasm/gc/declared-subtyping.js","js/src/jit-test/tests/wasm/gc/defaultable.js","js/src/jit-test/tests/wasm/gc/directives.txt","js/src/jit-test/tests/wasm/gc/externref-boxing-struct.js","js/src/jit-test/tests/wasm/gc/externref-conversions.js","js/src/jit-test/tests/wasm/gc/final_types.js","js/src/jit-test/tests/wasm/gc/function_subtyping.js","js/src/jit-test/tests/wasm/gc/giant-frames.js","js/src/jit-test/tests/wasm/gc/global-get.js","js/src/jit-test/tests/wasm/gc/globals.js","js/src/jit-test/tests/wasm/gc/i31ref.js","js/src/jit-test/tests/wasm/gc/init-expr.js","js/src/jit-test/tests/wasm/gc/ion-and-baseline.js","js/src/jit-test/tests/wasm/gc/js-boundary.js","js/src/jit-test/tests/wasm/gc/limits/array-new-fixed.js","js/src/jit-test/tests/wasm/gc/limits/load-mod.js","js/src/jit-test/tests/wasm/gc/limits/rec-groups-1.js","js/src/jit-test/tests/wasm/gc/limits/rec-groups-2.js","js/src/jit-test/tests/wasm/gc/limits/struct-fields.js","js/src/jit-test/tests/wasm/gc/limits/subtyping-depth.js","js/src/jit-test/tests/wasm/gc/limits/types-1.js","js/src/jit-test/tests/wasm/gc/limits/types-2.js","js/src/jit-test/tests/wasm/gc/limits/types-3.js","js/src/jit-test/tests/wasm/gc/limits/types-4.js","js/src/jit-test/tests/wasm/gc/linking.js","js/src/jit-test/tests/wasm/gc/ref-eq.js","js/src/jit-test/tests/wasm/gc/ref-global.js","js/src/jit-test/tests/wasm/gc/ref-gvn.js","js/src/jit-test/tests/wasm/gc/ref-struct.js","js/src/jit-test/tests/wasm/gc/ref.js","js/src/jit-test/tests/wasm/gc/regress-1633355.js","js/src/jit-test/tests/wasm/gc/regress-1739330.js","js/src/jit-test/tests/wasm/gc/regress-1745391.js","js/src/jit-test/tests/wasm/gc/regress-1754701.js","js/src/jit-test/tests/wasm/gc/regress-1830975.js","js/src/jit-test/tests/wasm/gc/regress-1884767.js","js/src/jit-test/tests/wasm/gc/regress-1884887.js","js/src/jit-test/tests/wasm/gc/regress-1885829.js","js/src/jit-test/tests/wasm/gc/regress-1904243.js","js/src/jit-test/tests/wasm/gc/regress-1954042.js","js/src/jit-test/tests/wasm/gc/regress-2013741.js","js/src/jit-test/tests/wasm/gc/regress-outline-repr.js","js/src/jit-test/tests/wasm/gc/scalar_replacement.js","js/src/jit-test/tests/wasm/gc/signal-null-check.js","js/src/jit-test/tests/wasm/gc/speculative-inlining.js","js/src/jit-test/tests/wasm/gc/structs.js","js/src/jit-test/tests/wasm/gc/structs2.js","js/src/jit-test/tests/wasm/gc/supertype_later_in_group.js","js/src/jit-test/tests/wasm/gc/tables-generalized-struct.js","js/src/jit-test/tests/wasm/gc/tables.js","js/src/jit-test/tests/wasm/gc/trailers-gc-stress.js","js/src/jit-test/tests/wasm/gc/unreachable.js","js/src/jit-test/tests/wasm/gc/value_subtyping.js","js/src/jit-test/tests/wasm/globals-impl.js","js/src/jit-test/tests/wasm/globals.js","js/src/jit-test/tests/wasm/grow-memory-resizable-buffer.js","js/src/jit-test/tests/wasm/grow-memory.js","js/src/jit-test/tests/wasm/import-callables.js","js/src/jit-test/tests/wasm/import-export-sigs.js","js/src/jit-test/tests/wasm/import-export.js","js/src/jit-test/tests/wasm/import-gc.js","js/src/jit-test/tests/wasm/inlining-stack-trace.js","js/src/jit-test/tests/wasm/integer.js","js/src/jit-test/tests/wasm/ion-adhoc-multiplatform.js","js/src/jit-test/tests/wasm/ion-args.js","js/src/jit-test/tests/wasm/ion-asmjs-ctor.js","js/src/jit-test/tests/wasm/ion-debugger.js","js/src/jit-test/tests/wasm/ion-error-ool.js","js/src/jit-test/tests/wasm/ion-error-throw.js","js/src/jit-test/tests/wasm/ion-error-trace.js","js/src/jit-test/tests/wasm/ion-gc.js","js/src/jit-test/tests/wasm/ion-lazy-tables.js","js/src/jit-test/tests/wasm/ion2wasm.js","js/src/jit-test/tests/wasm/js-direct-call-wasm.js","js/src/jit-test/tests/wasm/js-promise-integration/basic-profiler-1.js","js/src/jit-test/tests/wasm/js-promise-integration/basic-profiler-2.js","js/src/jit-test/tests/wasm/js-promise-integration/basic2.js","js/src/jit-test/tests/wasm/js-promise-integration/bug2043040.js","js/src/jit-test/tests/wasm/js-promise-integration/concurrent.js","js/src/jit-test/tests/wasm/js-promise-integration/cross-realm.js","js/src/jit-test/tests/wasm/js-promise-integration/debug-cont-frame-onpop-gc.js","js/src/jit-test/tests/wasm/js-promise-integration/debug-cont-frame-onstep-gc.js","js/src/jit-test/tests/wasm/js-promise-integration/debug-frame-offset-non-debug.js","js/src/jit-test/tests/wasm/js-promise-integration/debug-mixed-frames.js","js/src/jit-test/tests/wasm/js-promise-integration/debug-onStep-suspended.js","js/src/jit-test/tests/wasm/js-promise-integration/debug-stale-cont-env.js","js/src/jit-test/tests/wasm/js-promise-integration/debug-stale-cont-frame.js","js/src/jit-test/tests/wasm/js-promise-integration/debug-terminated.js","js/src/jit-test/tests/wasm/js-promise-integration/debug.js","js/src/jit-test/tests/wasm/js-promise-integration/debugger-early-reaction.js","js/src/jit-test/tests/wasm/js-promise-integration/directives.txt","js/src/jit-test/tests/wasm/js-promise-integration/error-stack.js","js/src/jit-test/tests/wasm/js-promise-integration/exception-handling.js","js/src/jit-test/tests/wasm/js-promise-integration/gc-2.js","js/src/jit-test/tests/wasm/js-promise-integration/gc-3.js","js/src/jit-test/tests/wasm/js-promise-integration/gc-4.js","js/src/jit-test/tests/wasm/js-promise-integration/gc-barrier.js","js/src/jit-test/tests/wasm/js-promise-integration/gc-update-data-pointers.js","js/src/jit-test/tests/wasm/js-promise-integration/gc.js","js/src/jit-test/tests/wasm/js-promise-integration/guard-suspending.js","js/src/jit-test/tests/wasm/js-promise-integration/jitexit-profiler.js","js/src/jit-test/tests/wasm/js-promise-integration/jitexit.js","js/src/jit-test/tests/wasm/js-promise-integration/js-promise-integration.new.js","js/src/jit-test/tests/wasm/js-promise-integration/many-outstanding.js","js/src/jit-test/tests/wasm/js-promise-integration/multi.js","js/src/jit-test/tests/wasm/js-promise-integration/multiple-suspending.js","js/src/jit-test/tests/wasm/js-promise-integration/multivalue.js","js/src/jit-test/tests/wasm/js-promise-integration/no-directives/interrupt-forced-return.js","js/src/jit-test/tests/wasm/js-promise-integration/oom-1.js","js/src/jit-test/tests/wasm/js-promise-integration/oom-2.js","js/src/jit-test/tests/wasm/js-promise-integration/promising-nonfinal-type.js","js/src/jit-test/tests/wasm/js-promise-integration/proxy.js","js/src/jit-test/tests/wasm/js-promise-integration/recursive-promising.js","js/src/jit-test/tests/wasm/js-promise-integration/saved-stacks.js","js/src/jit-test/tests/wasm/js-promise-integration/shutdown.js","js/src/jit-test/tests/wasm/js-promise-integration/simple.js","js/src/jit-test/tests/wasm/js-promise-integration/stress.js","js/src/jit-test/tests/wasm/js-promise-integration/suspender.js","js/src/jit-test/tests/wasm/js-promise-integration/suspending-canonical-type.js","js/src/jit-test/tests/wasm/js-promise-integration/sync-throw.js","js/src/jit-test/tests/wasm/js-promise-integration/thenable.js","js/src/jit-test/tests/wasm/js-promise-integration/timeout.js","js/src/jit-test/tests/wasm/js-promise-integration/types.js","js/src/jit-test/tests/wasm/js-reexport.js","js/src/jit-test/tests/wasm/js-types/bug1949101.js","js/src/jit-test/tests/wasm/js-types/directives.txt","js/src/jit-test/tests/wasm/js-types/function-ctor-callable.js","js/src/jit-test/tests/wasm/js-types/table-js-funcs.js","js/src/jit-test/tests/wasm/large-memory-atomics-index-zero-extended.js","js/src/jit-test/tests/wasm/large-memory-index-not-clobbered.js","js/src/jit-test/tests/wasm/large-memory.js","js/src/jit-test/tests/wasm/lazy-stubs-jitentry.js","js/src/jit-test/tests/wasm/lazy-tiering-codegen.js","js/src/jit-test/tests/wasm/limits-br-table.js","js/src/jit-test/tests/wasm/limits.js","js/src/jit-test/tests/wasm/memory-aliasing.js","js/src/jit-test/tests/wasm/memory-arm64-ion-codegen.js","js/src/jit-test/tests/wasm/memory-cloning-new-global.js","js/src/jit-test/tests/wasm/memory-cloning.js","js/src/jit-test/tests/wasm/memory-control/directives.txt","js/src/jit-test/tests/wasm/memory-control/disabled.js","js/src/jit-test/tests/wasm/memory-control/memory-discard.js","js/src/jit-test/tests/wasm/memory-loong64-ion-codegen.js","js/src/jit-test/tests/wasm/memory-maximum-clamping.js","js/src/jit-test/tests/wasm/memory-oob-message.js","js/src/jit-test/tests/wasm/memory-partial-oob-store.js","js/src/jit-test/tests/wasm/memory-riscv64-ion-codegen.js","js/src/jit-test/tests/wasm/memory-sharing-off.js","js/src/jit-test/tests/wasm/memory-sharing.js","js/src/jit-test/tests/wasm/memory.js","js/src/jit-test/tests/wasm/memory64/basic.js","js/src/jit-test/tests/wasm/memory64/bug1900526.js","js/src/jit-test/tests/wasm/memory64/bug1912695.js","js/src/jit-test/tests/wasm/memory64/data-active.js","js/src/jit-test/tests/wasm/memory64/directives.txt","js/src/jit-test/tests/wasm/memory64/memory-copy-shared.js","js/src/jit-test/tests/wasm/memory64/memory-copy.js","js/src/jit-test/tests/wasm/memory64/memory-fill-shared.js","js/src/jit-test/tests/wasm/memory64/memory-fill.js","js/src/jit-test/tests/wasm/memory64/memory-grow.js","js/src/jit-test/tests/wasm/memory64/memory-init.js","js/src/jit-test/tests/wasm/memory64/utility.js","js/src/jit-test/tests/wasm/movegroup-chaining.js","js/src/jit-test/tests/wasm/multi-memory/directives.txt","js/src/jit-test/tests/wasm/multi-memory/memory_copy.js","js/src/jit-test/tests/wasm/multi-value/block-run.js","js/src/jit-test/tests/wasm/multi-value/block-validate.js","js/src/jit-test/tests/wasm/multi-value/call-js.js","js/src/jit-test/tests/wasm/multi-value/call-ref.js","js/src/jit-test/tests/wasm/multi-value/call-run.js","js/src/jit-test/tests/wasm/multi-value/call-validate.js","js/src/jit-test/tests/wasm/multi-value/directives.txt","js/src/jit-test/tests/wasm/multi-value/i32-stack-results.js","js/src/jit-test/tests/wasm/multi-value/ion-inlining.js","js/src/jit-test/tests/wasm/multi-value/random-tests.js","js/src/jit-test/tests/wasm/multi-value/regress-1597200.js","js/src/jit-test/tests/wasm/multi-value/regress-1621645-2.js","js/src/jit-test/tests/wasm/multi-value/regress-1621645.js","js/src/jit-test/tests/wasm/multi-value/regress-1628417.js","js/src/jit-test/tests/wasm/multi-value/regress-1628426.js","js/src/jit-test/tests/wasm/multi-value/regress-1628429.js","js/src/jit-test/tests/wasm/multi-value/regress-1628499.js","js/src/jit-test/tests/wasm/multi-value/regress-1629496.js","js/src/jit-test/tests/wasm/multi-value/regress-1631423.js","js/src/jit-test/tests/wasm/multi-value/regress-1661723.js","js/src/jit-test/tests/wasm/name.js","js/src/jit-test/tests/wasm/nan-semantics.js","js/src/jit-test/tests/wasm/oom/breakpoints.js","js/src/jit-test/tests/wasm/oom/bug1922861.js","js/src/jit-test/tests/wasm/oom/bug1969375.js","js/src/jit-test/tests/wasm/oom/bug1972235.js","js/src/jit-test/tests/wasm/oom/bug2028881.js","js/src/jit-test/tests/wasm/oom/bug2045444.js","js/src/jit-test/tests/wasm/oom/bug2045447.js","js/src/jit-test/tests/wasm/oom/directives.txt","js/src/jit-test/tests/wasm/oom/exports.js","js/src/jit-test/tests/wasm/oom/jsapi-prototype.js","js/src/jit-test/tests/wasm/passive-segs-boundary.js","js/src/jit-test/tests/wasm/passive-segs-nonboundary.js","js/src/jit-test/tests/wasm/passive-segs-partial-mem.js","js/src/jit-test/tests/wasm/passive-segs-partial-table.js","js/src/jit-test/tests/wasm/profiling.js","js/src/jit-test/tests/wasm/prototypes.js","js/src/jit-test/tests/wasm/ref-types/directives.txt","js/src/jit-test/tests/wasm/ref-types/externref-boxing.js","js/src/jit-test/tests/wasm/ref-types/externref-fastpaths.js","js/src/jit-test/tests/wasm/ref-types/externref-global-object.js","js/src/jit-test/tests/wasm/ref-types/externref-global-postbarrier.js","js/src/jit-test/tests/wasm/ref-types/externref-global-prebarrier.js","js/src/jit-test/tests/wasm/ref-types/externref-val-tracing.js","js/src/jit-test/tests/wasm/ref-types/externref.js","js/src/jit-test/tests/wasm/ref-types/funcref-fastpaths.js","js/src/jit-test/tests/wasm/ref-types/funcref.js","js/src/jit-test/tests/wasm/ref-types/fuzz-gc-while-allocating-global.js","js/src/jit-test/tests/wasm/ref-types/ref-func.js","js/src/jit-test/tests/wasm/ref-types/stackmaps1.js","js/src/jit-test/tests/wasm/ref-types/stackmaps2.js","js/src/jit-test/tests/wasm/ref-types/stackmaps3.js","js/src/jit-test/tests/wasm/ref-types/stackmaps4-params-n-locals.js","js/src/jit-test/tests/wasm/ref-types/stackmaps5.js","js/src/jit-test/tests/wasm/ref-types/tables-api.js","js/src/jit-test/tests/wasm/ref-types/tables-fill.js","js/src/jit-test/tests/wasm/ref-types/tables-generalized.js","js/src/jit-test/tests/wasm/ref-types/tables-multiple.js","js/src/jit-test/tests/wasm/ref-types/tables-postbarrier-grow.js","js/src/jit-test/tests/wasm/ref-types/tables-stress.js","js/src/jit-test/tests/wasm/regress/baseline-arm64-chunk-pop.js","js/src/jit-test/tests/wasm/regress/baseline-builtin-abi.js","js/src/jit-test/tests/wasm/regress/baseline-bytereg.js","js/src/jit-test/tests/wasm/regress/baseline-extend8.js","js/src/jit-test/tests/wasm/regress/baseline-getglobal-scratch.js","js/src/jit-test/tests/wasm/regress/baseline-i64-opt-cmp.js","js/src/jit-test/tests/wasm/regress/baseline-joinreg.js","js/src/jit-test/tests/wasm/regress/baseline-many-results.js","js/src/jit-test/tests/wasm/regress/baseline-nops-jumptable.js","js/src/jit-test/tests/wasm/regress/baseline-pop-along-edge.js","js/src/jit-test/tests/wasm/regress/baseline-pop-before-capture.js","js/src/jit-test/tests/wasm/regress/baseline-stack-height-during-stackmap.js","js/src/jit-test/tests/wasm/regress/baseline-stack-height.js","js/src/jit-test/tests/wasm/regress/baseline-stack-height.wasm","js/src/jit-test/tests/wasm/regress/brtable-conditionblock-folding.js","js/src/jit-test/tests/wasm/regress/bug-1833339.js","js/src/jit-test/tests/wasm/regress/bug1300546.js","js/src/jit-test/tests/wasm/regress/bug1311019.js","js/src/jit-test/tests/wasm/regress/bug1392105.js","js/src/jit-test/tests/wasm/regress/bug1440512.js","js/src/jit-test/tests/wasm/regress/bug1450800.js","js/src/jit-test/tests/wasm/regress/bug1467415.js","js/src/jit-test/tests/wasm/regress/bug1491322.js","js/src/jit-test/tests/wasm/regress/bug1502886.js","js/src/jit-test/tests/wasm/regress/bug1507314.js","js/src/jit-test/tests/wasm/regress/bug1533204.js","js/src/jit-test/tests/wasm/regress/bug1566992.js","js/src/jit-test/tests/wasm/regress/bug1569137.js","js/src/jit-test/tests/wasm/regress/bug1590920.js","js/src/jit-test/tests/wasm/regress/bug1678542.js","js/src/jit-test/tests/wasm/regress/bug1678785.js","js/src/jit-test/tests/wasm/regress/bug1684861.js","js/src/jit-test/tests/wasm/regress/bug1699647.js","js/src/jit-test/tests/wasm/regress/bug1700610.js","js/src/jit-test/tests/wasm/regress/bug1708124.js","js/src/jit-test/tests/wasm/regress/bug1713581.js","js/src/jit-test/tests/wasm/regress/bug1727284/directives.txt","js/src/jit-test/tests/wasm/regress/bug1727284/test.js","js/src/jit-test/tests/wasm/regress/bug1747870.js","js/src/jit-test/tests/wasm/regress/bug1761850.js","js/src/jit-test/tests/wasm/regress/bug1762899.js","js/src/jit-test/tests/wasm/regress/bug1770335.js","js/src/jit-test/tests/wasm/regress/bug1777604/directives.txt","js/src/jit-test/tests/wasm/regress/bug1777604/test.js","js/src/jit-test/tests/wasm/regress/bug1821582.js","js/src/jit-test/tests/wasm/regress/bug1836708.js","js/src/jit-test/tests/wasm/regress/bug1837686.js","js/src/jit-test/tests/wasm/regress/bug1839065.js","js/src/jit-test/tests/wasm/regress/bug1839142.js","js/src/jit-test/tests/wasm/regress/bug1856733.js","js/src/jit-test/tests/wasm/regress/bug1857829.js","js/src/jit-test/tests/wasm/regress/bug1858982.js","js/src/jit-test/tests/wasm/regress/bug1866545.js","js/src/jit-test/tests/wasm/regress/bug1878673.js","js/src/jit-test/tests/wasm/regress/bug1880770.js","js/src/jit-test/tests/wasm/regress/bug1886870.js","js/src/jit-test/tests/wasm/regress/bug1887535.js","js/src/jit-test/tests/wasm/regress/bug1887596.js","js/src/jit-test/tests/wasm/regress/bug1891658.js","js/src/jit-test/tests/wasm/regress/bug1895123.js","js/src/jit-test/tests/wasm/regress/bug1906451.js","js/src/jit-test/tests/wasm/regress/bug1913876.js","js/src/jit-test/tests/wasm/regress/bug1917807.js","js/src/jit-test/tests/wasm/regress/bug1928645.js","js/src/jit-test/tests/wasm/regress/bug1928993.js","js/src/jit-test/tests/wasm/regress/bug1931407.js","js/src/jit-test/tests/wasm/regress/bug1932651.js","js/src/jit-test/tests/wasm/regress/bug1936689.js","js/src/jit-test/tests/wasm/regress/bug1941179.js","js/src/jit-test/tests/wasm/regress/bug1947697.js","js/src/jit-test/tests/wasm/regress/bug1953381.js","js/src/jit-test/tests/wasm/regress/bug1956768.js","js/src/jit-test/tests/wasm/regress/bug1957086.js","js/src/jit-test/tests/wasm/regress/bug1957544.js","js/src/jit-test/tests/wasm/regress/bug1957545.js","js/src/jit-test/tests/wasm/regress/bug1958393.js","js/src/jit-test/tests/wasm/regress/bug1966577.js","js/src/jit-test/tests/wasm/regress/bug1975045.js","js/src/jit-test/tests/wasm/regress/bug1977469.js","js/src/jit-test/tests/wasm/regress/bug1987624.js","js/src/jit-test/tests/wasm/regress/bug1992130.js","js/src/jit-test/tests/wasm/regress/bug2010050.js","js/src/jit-test/tests/wasm/regress/bug2011834.js","js/src/jit-test/tests/wasm/regress/bug2013165.js","js/src/jit-test/tests/wasm/regress/bug2013616.js","js/src/jit-test/tests/wasm/regress/bug2013739.js","js/src/jit-test/tests/wasm/regress/bug2016956.js","js/src/jit-test/tests/wasm/regress/bug2023384.js","js/src/jit-test/tests/wasm/regress/bug2024918.js","js/src/jit-test/tests/wasm/regress/bug2029293.js","js/src/jit-test/tests/wasm/regress/bug2029735.js","js/src/jit-test/tests/wasm/regress/bug2035907.js","js/src/jit-test/tests/wasm/regress/bug2038964-trap.js","js/src/jit-test/tests/wasm/regress/bug2038964.js","js/src/jit-test/tests/wasm/regress/bug2042279.js","js/src/jit-test/tests/wasm/regress/bug2045312.js","js/src/jit-test/tests/wasm/regress/bug2045575.js","js/src/jit-test/tests/wasm/regress/bug2046325.js","js/src/jit-test/tests/wasm/regress/bug2055416.js","js/src/jit-test/tests/wasm/regress/bug2058673.js","js/src/jit-test/tests/wasm/regress/bug2059109.js","js/src/jit-test/tests/wasm/regress/bug2061399.js","js/src/jit-test/tests/wasm/regress/bug2063089.js","js/src/jit-test/tests/wasm/regress/bug2067564.js","js/src/jit-test/tests/wasm/regress/bug2068386.js","js/src/jit-test/tests/wasm/regress/bug2070383.js","js/src/jit-test/tests/wasm/regress/bug2074892.js","js/src/jit-test/tests/wasm/regress/builtin-import-sigs.js","js/src/jit-test/tests/wasm/regress/cache-entry-error.js","js/src/jit-test/tests/wasm/regress/caller-property.js","js/src/jit-test/tests/wasm/regress/current-memory-tls.js","js/src/jit-test/tests/wasm/regress/debug-clone-segment.js","js/src/jit-test/tests/wasm/regress/debug-exception-in-fast-import.js","js/src/jit-test/tests/wasm/regress/debug-osr.js","js/src/jit-test/tests/wasm/regress/directives.txt","js/src/jit-test/tests/wasm/regress/enable-profiling-in-import.js","js/src/jit-test/tests/wasm/regress/frame-offset-stack-arg.js","js/src/jit-test/tests/wasm/regress/fuzzsafe-bug1645610.js","js/src/jit-test/tests/wasm/regress/gvn-unremovable-phi.js"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013"}} -->
+# firefox/js structural source map 217
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. This is an automated navigation map, not a behavior review.
+Each row gives the repository-relative path, Git blob ID, byte size, role inferred from the path, declaration candidates, and literal dependency candidates. `@N` is the source line.
+Candidates come from line-based patterns. They can miss multiline, anonymous, macro-generated, and language-specific declarations or match comments and fixture text. Dependencies are not resolved imports, runtime calls, or a complete graph. No candidates does not mean no functions or dependencies.
+Imported code and tests are included. Binary and non-UTF-8 files have a census entry but no declaration extraction. Symlink contents are scanned as text, not followed. No uncommitted changes, build products, ignored files, or untracked files are studied.
+
+## File map
+
+`js/src/jit-test/tests/wasm/builtin-modules/js-string/bug1903219.js` | `5dc7e74a51f00b04ed108ecd6312c6ef33a84c0b` | 319 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/builtin-modules/js-string/constants.js` | `dcd43ad24c68631b830c631621653935c89cbddb` | 1400 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: wasmEvalWithConstants@1; assertErrorMessage@6; assertErrorMessage@11; assertErrorMessage@14; testString@18
+
+`js/src/jit-test/tests/wasm/builtin-modules/js-string/directives.txt` | `43811389cbbdddc23e0c601c465a99e4c3df9183` | 101 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/builtin-modules/js-string/import-reflection.js` | `1371771a78b439d8aaffb1d60e7cebb3afd6fee5` | 1601 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/builtin-modules/js-string/inline-code.js` | `376f47641fc30c7693036148d9e9abc969b0e6f9` | 901 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/builtin-modules/js-string/per-function-polyfill.js` | `5da47e50e5c40eefad3b2b10cb39bb2c7c75c1dc` | 2167 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@39
+
+`js/src/jit-test/tests/wasm/builtin-modules/oom-test.js` | `aaf8d1e5c3f542a4077bf25a4bac390b43d05fd9` | 102 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@1
+
+`js/src/jit-test/tests/wasm/builtin-modules/unknown-builtins.js` | `9f228b01f225354b8b624ee5f467c6751cd7d22f` | 245 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/builtin-modules/uses-memory.js` | `3c04c75a98d72912d7e855a30e25cda281bcec73` | 1643 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@18; assertErrorMessage@26
+
+`js/src/jit-test/tests/wasm/builtin.js` | `65d673d9a7015fc9c19e2fc13d542f2ab6df1f7e` | 3269 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: unary@3; binary@52
+
+`js/src/jit-test/tests/wasm/caching.js` | `08ef3c27e917ad2139a5b1007520e414eb894c1c` | 1759 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/comments.js` | `4fc29ec19bd186028de601941bad88617a0160f3` | 1552 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@2; assertErrorMessage@28; assertErrorMessage@29; assertErrorMessage@30; assertErrorMessage@31
+
+`js/src/jit-test/tests/wasm/compare-select-i32-i64.js` | `34657053ac597c253ef0e8ba2af4c5d32e5b57fa` | 14039 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getCmpVals@32; classifyResult@41
+
+`js/src/jit-test/tests/wasm/compiler-frame-depth.js` | `319755c60929d6281a2943bc8dbb23f4333b1b3e` | 643 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/components/aliases.js` | `fb24679e4bda60804e9698c7fe586dcb6762a42f` | 3849 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/components/bug2041991.js` | `ce06afa9f5abbc9635bebdd3baecc2f207646bfe` | 510 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/components/bug2056372.js` | `9da0eb9532a51863b892742f754fb1b9d3e3f3ae` | 682 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/components/canon.js` | `1b47afa83d62e9ec67a5a8b4fcf6e95ef90b1399` | 42831 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: componentWithLift@6; componentWithLower@39; liftVariant@169; requiresMemoryOnly@946; requiresRealloc@956; depthinate@1283; resourceBuiltinImportedAs@1343
+
+`js/src/jit-test/tests/wasm/components/coreinstances.js` | `60c516e666f46b38894dc4d6926f0b8a5bc4d6d4` | 15185 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: linkModules@121
+
+`js/src/jit-test/tests/wasm/components/coremodules.js` | `0ce5d2da6a8e3d60f9f76b15f581d13378e23a8e` | 494 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/components/custom.js` | `383fdcf4808e9e9f86033abe0a5751b3ce73f7e9` | 649 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/components/directives.txt` | `d462acb6600e1c2599450c753c599cb478a98dd8` | 169 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/components/disabled.js` | `f75cb190385a5a902f14d63b884fde3aab475d42` | 400 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@6; assertErrorMessage@7
+
+`js/src/jit-test/tests/wasm/components/exports.js` | `ff385dbcff8f8f03684498405cb1bcb999a553f7` | 7618 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/components/imports.js` | `ad7f96f4d42d4ffe4f132c57e2adeb23267d8c69` | 1736 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/components/instantiation.js` | `11cb88a61d20f8563e953737a5a847605352884e` | 14531 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@32; assertErrorMessage@158; assertErrorMessage@159; assertErrorMessage@160; assertErrorMessage@161
+
+`js/src/jit-test/tests/wasm/components/js-api.js` | `290a120a08e30b8c1f29d852ac376623ff46a298` | 718 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@9; assertErrorMessage@10; assertThrowsInstanceOfAsync@14
+
+`js/src/jit-test/tests/wasm/components/name-validation.js` | `3186d616bca3c8ee9b0f6a89a7906eb6052ec50b` | 25851 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/components/names.js` | `658adebcf50c7f73b96869e95b336943173ef175` | 6061 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: validName@6; invalidName@11; validFuncName@62; invalidFuncName@86
+
+`js/src/jit-test/tests/wasm/components/preamble.js` | `78ce302b1a91124e15a3bf1c046107ccbe4a1cf9` | 2168 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@3; assertErrorMessage@7; assertErrorMessage@11; assertErrorMessage@15; assertErrorMessage@21; assertErrorMessage@38; assertErrorMessage@48; assertErrorMessage@56
+
+`js/src/jit-test/tests/wasm/components/resources.js` | `c3757480f231a90cd45479a3133e4fd91dc7b086` | 6133 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/components/strongly-unique.js` | `97e5e6d0d359771bbd6bf1c583a6ab9772264b94` | 2359 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertNotStronglyUnique@24
+
+`js/src/jit-test/tests/wasm/components/types.js` | `f85dd867d2038008d7dd688b5cbc036680ca55f6` | 20210 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertValTypesEqual@442; assertValTypesUnequal@462; test@469
+
+`js/src/jit-test/tests/wasm/const.js` | `4b900398ef6de73f2a67b9b670c97ebdc5dda68f` | 10962 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testConst@1; testConstError@8; assertErrorMessage@9
+
+`js/src/jit-test/tests/wasm/control-flow-phi-inputs.js` | `4e3fb2328679324bca567da67234e971828d685d` | 1474 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/control-flow.js` | `7ffd9bd8fdb0245fa4c4067e33c43c24e1d9e29c` | 27516 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: notcalled@262; called@263; ifTrue@397; ifFalse@398
+
+`js/src/jit-test/tests/wasm/conversion.js` | `3d965ebd5dcee4e8799f4e73c97842d4fc8fcd3a` | 19327 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testConversion0@1; testConversion@50; testSignExtension@54; testTrap@58; assertErrorMessage@76
+
+`js/src/jit-test/tests/wasm/cross-global.js` | `07b705d540be95ff8a184ac6e05093954be8cbde` | 372 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/custom-page-sizes/bug2026383.js` | `348722cf29474988c287c7dffb11fd796e3da0f1` | 410 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/custom-page-sizes/decoding.js` | `983a60c65c849722ac6e37aef0e977465f5f267b` | 3424 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@16; assertErrorMessage@19; assertErrorMessage@22; checkInvalidPageSize@24; assertErrorMessage@25; maxPageCount@60; maxPageCount64@66; checkPageCount@72; check@73; checkPageCount64@91; check@92
+
+`js/src/jit-test/tests/wasm/custom-page-sizes/directives.txt` | `d9046abe9412bc0ebd65395ed8cd64e51e00dff9` | 254 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/custom-page-sizes/disabled.js` | `77f2d571b27043bd3fede742af3a0976b7bfdb6b` | 420 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/custom-page-sizes/js-api.js` | `fbd375a4d2d1b1e8163fef1c229bc286d19e137f` | 1896 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/custom-page-sizes/runtime.js` | `41556c478ccc303c2a205082ff3fa3bf074bb255` | 49454 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: addr@6; assertErrorMessage@31; assertErrorMessage@33; assertErrorMessage@34; assertErrorMessage@35; assertErrorMessage@36; assertErrorMessage@37; assertErrorMessage@38; assertErrorMessage@39; assertErrorMessage@41; assertErrorMessage@42; assertErrorMessage@43; assertErrorMessage@44; f@50; assertErrorMessage@81; assertErrorMessage@82; assertErrorMessage@83; assertErrorMessage@84; assertErrorMessage@86; assertErrorMessage@87; assertErrorMessage@110; assertErrorMessage@112; assertErrorMessage@113; assertErrorMessage@114; assertErrorMessage@115; assertErrorMessage@116; assertErrorMessage@117; assertErrorMessage@118; assertErrorMessage@119; assertErrorMessage@120; assertErrorMessage@121; assertErrorMessage@122; assertErrorMessage@124; assertErrorMessage@125; assertErrorMessage@126; assertErrorMessage@127; assertErrorMessage@128; assertErrorMessage@129; f@135; assertErrorMessage@171; assertErrorMessage@172; assertErrorMessage@173; assertErrorMessage@174; assertErrorMessage@175; assertErrorMessage@176; assertErrorMessage@177; assertErrorMessage@178; assertErrorMessage@179; assertErrorMessage@180; assertErrorMessage@182; assertErrorMessage@183; assertErrorMessage@184; assertErrorMessage@185; assertErrorMessage@186; assertErrorMessage@187; assertErrorMessage@212; assertErrorMessage@214; assertErrorMessage@215; assertErrorMessage@216; assertErrorMessage@217; assertErrorMessage@218; assertErrorMessage@219; assertErrorMessage@220; assertErrorMessage@221; assertErrorMessage@222; assertErrorMessage@223; assertErrorMessage@224; assertErrorMessage@225; assertErrorMessage@226; assertErrorMessage@227; assertErrorMessage@228; assertErrorMessage@230; assertErrorMessage@231; assertErrorMessage@232; assertErrorMessage@233; assertErrorMessage@234; assertErrorMessage@235; f@241; assertErrorMessage@277; assertErrorMessage@278; assertErrorMessage@279; assertErrorMessage@280; assertErrorMessage@281; assertErrorMessage@282; assertErrorMessage@283; assertErrorMessage@284; assertErrorMessage@285; assertErrorMessage@286; assertErrorMessage@287; assertErrorMessage@288; assertErrorMessage@290; assertErrorMessage@291; assertErrorMessage@292; assertErrorMessage@293; assertErrorMessage@314; assertErrorMessage@316; assertErrorMessage@317; assertErrorMessage@318; assertErrorMessage@319; assertErrorMessage@320; assertErrorMessage@321; assertErrorMessage@322; assertErrorMessage@323; assertErrorMessage@324; assertErrorMessage@325; assertErrorMessage@326; assertErrorMessage@327; assertErrorMessage@328; assertErrorMessage@329; assertErrorMessage@330; assertErrorMessage@331; assertErrorMessage@332; assertErrorMessage@333; assertErrorMessage@334; assertErrorMessage@336; assertErrorMessage@337; assertErrorMessage@338; assertErrorMessage@339; assertErrorMessage@340; assertErrorMessage@341; f@347; assertErrorMessage@387; assertErrorMessage@388; assertErrorMessage@389; assertErrorMessage@390; assertErrorMessage@391; assertErrorMessage@392; assertErrorMessage@393; assertErrorMessage@394; assertErrorMessage@395; assertErrorMessage@396; assertErrorMessage@397; assertErrorMessage@398; assertErrorMessage@399; assertErrorMessage@400; assertErrorMessage@401; assertErrorMessage@402; assertErrorMessage@403; assertErrorMessage@404; assertErrorMessage@406; assertErrorMessage@407; assertErrorMessage@408; assertErrorMessage@409; assertErrorMessage@410; assertErrorMessage@411; assertErrorMessage@440; assertErrorMessage@442; assertErrorMessage@443; assertErrorMessage@444; assertErrorMessage@445; assertErrorMessage@446; assertErrorMessage@447; assertErrorMessage@448; assertErrorMessage@449; assertErrorMessage@450; assertErrorMessage@451; assertErrorMessage@452; assertErrorMessage@453; assertErrorMessage@454; assertErrorMessage@455; assertErrorMessage@456; assertErrorMessage@457; assertErrorMessage@458; assertErrorMessage@460; assertErrorMessage@461; assertErrorMessage@462; assertErrorMessage@463; assertErrorMessage@464; assertErrorMessage@465; f@471; assertErrorMessage@514; assertErrorMessage@515; assertErrorMessage@516; assertErrorMessage@517; assertErrorMessage@518; assertErrorMessage@519; assertErrorMessage@520; assertErrorMessage@521; assertErrorMessage@522; assertErrorMessage@523; assertErrorMessage@524; assertErrorMessage@525; assertErrorMessage@526; assertErrorMessage@527; assertErrorMessage@528; assertErrorMessage@529; assertErrorMessage@531; assertErrorMessage@532; assertErrorMessage@533; assertErrorMessage@534; assertErrorMessage@535; assertErrorMessage@536; assertErrorMessage@561; assertErrorMessage@562; assertErrorMessage@563; assertErrorMessage@564; assertErrorMessage@565; assertErrorMessage@566; assertErrorMessage@567; assertErrorMessage@568; assertErrorMessage@569; assertErrorMessage@570; assertErrorMessage@571; assertErrorMessage@572; assertErrorMessage@573; assertErrorMessage@574; assertErrorMessage@575; assertErrorMessage@600; assertErrorMessage@601; assertErrorMessage@602; assertErrorMessage@603; assertErrorMessage@604; assertErrorMessage@605; assertErrorMessage@606; assertErrorMessage@607; assertErrorMessage@608; assertErrorMessage@609; assertErrorMessage@610; assertErrorMessage@611; assertErrorMessage@612; assertErrorMessage@613; assertErrorMessage@639; assertErrorMessage@641; assertErrorMessage@642; assertErrorMessage@643; assertErrorMessage@644; assertErrorMessage@645; assertErrorMessage@646; assertErrorMessage@647; assertErrorMessage@648; assertErrorMessage@649; assertErrorMessage@650; assertErrorMessage@651; assertErrorMessage@677; assertErrorMessage@680; assertErrorMessage@682; assertErrorMessage@683; assertErrorMessage@684; assertErrorMessage@685; assertErrorMessage@686; assertErrorMessage@687; assertErrorMessage@688; assertErrorMessage@689; assertErrorMessage@715; assertErrorMessage@718; assertErrorMessage@721; assertErrorMessage@723; assertErrorMessage@724; assertErrorMessage@725; assertErrorMessage@726; assertErrorMessage@727; assertErrorMessage@753; assertErrorMessage@756; assertErrorMessage@759; assertErrorMessage@762; assertErrorMessage@764; assertErrorMessage@765; assertErrorMessage@781; assertErrorMessage@782; assertErrorMessage@796; assertErrorMessage@797; assertErrorMessage@810; assertErrorMessage@822; assertErrorMessage@834; assertErrorMessage@846; assertErrorMessage@858; assertErrorMessage@870; assertErrorMessage@882; assertErrorMessage@912; assertErrorMessage@928; assertErrorMessage@929; assertErrorMessage@945; assertErrorMessage@946; assertErrorMessage@972
+
+`js/src/jit-test/tests/wasm/custom-section.js` | `e0a9946242d2fd95aa6dddb8d5bb47b79e1a5435` | 1251 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: arraysEqual@1; testCustomSection@13
+
+`js/src/jit-test/tests/wasm/declared-segs.js` | `269a1440fcec2e5238e0bd0cecc1798f47e17da3` | 1271 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@31
+
+`js/src/jit-test/tests/wasm/denormals.js` | `b50845b1174b299c4878c0489741df170e828522` | 4742 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: jsFlushesDenormals@9; checkImport@32; checkImport@61; throwingImport@80; setInterruptCallback@128; requestInterrupt@132; setInterruptCallback@158
+
+`js/src/jit-test/tests/wasm/directiveless/README.md` | `9687e7a9b6a3d02a964afbe4b57b82420967417c` | 104 bytes | test-path,documentation | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/directiveless/bug1645310.js` | `3532886c6a89f258a171a30d651e768fd2d39ad2` | 2234 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/directiveless/bug1664979.js` | `e6b8bd7c3c7cdeec26a376a1b6c296269f557d46` | 512 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: AsmModule@4; fltConvNot@7
+
+`js/src/jit-test/tests/wasm/directiveless/bug1666051.js` | `6b94ef921e772ea467db08dcac9d39db942fdcbb` | 295 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@6
+
+`js/src/jit-test/tests/wasm/directiveless/bug1877358.js` | `8d512efcfe320e4db004c85b3c028c503ed7b0d5` | 242 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/directiveless/features.js` | `a5427050b6bb5611850d5d23ca81dc825827c8c7` | 4732 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: check@30
+
+`js/src/jit-test/tests/wasm/directives.txt` | `b6758bffa4590c4e0c5ae64b90bde25008ec2495` | 572 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/disasm.js` | `9e9a3f211651ec2d88889c70d1d691df30a5765e` | 1582 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/drop.js` | `3a2bda66e51edb47f713ecaa91f1074d66eabb4d` | 1101 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/effective-address1.js` | `d5b4b2557408d1562b3f557bc50ace7fd520484e` | 1992 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/errors.js` | `2bb18ae6e270475daa8a4dd3c172653ab0f85994` | 10525 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getWasmFunctionIndex@10; getWasmBytecode@14; parseStack@18; testExn@29; test@45; testAccess@57; testLoad@74; testStore@79; testCompileError@172
+
+`js/src/jit-test/tests/wasm/exceptions/bug-1744663-extended.js` | `d6bf53df5d67b28fb9b9dc4a0c8a6fd16a2a8536` | 8332 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: rethrowingIndirectly@61
+
+`js/src/jit-test/tests/wasm/exceptions/bug-1744663.js` | `2ab1a6b9255e4ada1cadcef0fbab7fc0ff86dca3` | 1946 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: failureCallingTestFunction@3; failureRethrow1@33
+
+`js/src/jit-test/tests/wasm/exceptions/bug-1747562.js` | `e54b860664d06e2db1d0e1d664bba4e98d8f2ef5` | 620 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/exceptions/bug-1747704.js` | `f9f429296150c8c2ba7a9aa995bb2a7f08ee26d7` | 287 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/exceptions/bug-1751699.js` | `c60a94a8edd053ebb859d65c3ab6e12507ae45a9` | 104 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@1
+
+`js/src/jit-test/tests/wasm/exceptions/bug-1767446.js` | `5cf38a757cb4a9e75bec8b853aabc1656ab6488b` | 579 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/exceptions/bug-1788213.js` | `7c0710c117ace089fca04dcd1b894b1863e76151` | 99 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@1
+
+`js/src/jit-test/tests/wasm/exceptions/bug-1791361.js` | `0e09a8a7464e16809100a831a4d20ef3e18338d7` | 195 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@1
+
+`js/src/jit-test/tests/wasm/exceptions/bug-1797685.js` | `d2f02a8fd6abbb8d0a37d522a92240ab7a7e4e50` | 157 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@1
+
+`js/src/jit-test/tests/wasm/exceptions/bug-1893915.js` | `d951aacabd54c2efaf0256d7102e69b8cf254806` | 658 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: t@9
+
+`js/src/jit-test/tests/wasm/exceptions/bug1904644-1.js` | `7eedab0164fcf9983426dec43c672e5469038a3f` | 816 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: test@1
+
+`js/src/jit-test/tests/wasm/exceptions/bug1904644-2.js` | `02312f3df87ca47e7ca122f14b06ea6908bb46f3` | 948 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: test@1
+
+`js/src/jit-test/tests/wasm/exceptions/bug2029716.js` | `7bae783f8354a8c6eb61e66d205405521364a141` | 320 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/exceptions/bug2043268-copied-trap.js` | `a9423483239570163292e9e7f924aca340604399` | 1641 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@25; copiedTrapThroughDebugger@28
+
+`js/src/jit-test/tests/wasm/exceptions/caching.js` | `5427de5102b00d1b81ebbfae356bc3399db49ab4` | 544 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@12
+
+`js/src/jit-test/tests/wasm/exceptions/calls.js` | `0fa07e5577320e4850fb3f72ef75c9dd1209a7c2` | 15110 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: generateLocalThrows@23; basicNesting@125; testDirectCallsThrowing@204; testDirectLocalCallsThrowing@248; testDirectImportedCallsThrowing@256; testIndirectCallsThrowing@278; moduleIndirectLocalLocal@325; moduleIndirectLocalImport@346; moduleIndirectImportImport@353; getModuleTextsForFunctionBody@359
+
+`js/src/jit-test/tests/wasm/exceptions/directives.txt` | `314de248c3ffeeec376da9a872d8e3d457124fef` | 258 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/exceptions/events.js` | `17a46fa37114e969ea679798e9e830df1b0f01be` | 3042 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: wasmEval@5; wasmError@9; assertErrorMessage@10
+
+`js/src/jit-test/tests/wasm/exceptions/example.js` | `ef9ecfdfced24ea7d66bb30d0e0aa2f2d7e84144` | 966 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/exceptions/import-export.js` | `77916089902ae4ec66f81491bbf456c10adac7c6` | 2555 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testImports@3; testExports@17; testImportExport@35; testImportExportRecGroup@67; assertErrorMessage@72; testDescriptions@84
+
+`js/src/jit-test/tests/wasm/exceptions/instructions.js` | `a7f908704dbcc596c806ef2f3c972f504b25bd60` | 33604 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: foreign@894; foreign@940; foreign@961
+
+`js/src/jit-test/tests/wasm/exceptions/ion-loop-phi.js` | `bdf49ca97b00548039ff15b1a1c982c0c7e18fb3` | 1304 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/exceptions/js-api.js` | `378153f1f0ba19de23b116f50df02f8cbd044719` | 12740 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@168; assertErrorMessage@169; assertErrorMessage@179; assertErrorMessage@187; assertErrorMessage@195; assertErrorMessage@203
+
+`js/src/jit-test/tests/wasm/exceptions/memory.js` | `61c68782ba613cea084af0be148bd8310fea5991` | 2818 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testMemoryAfterCall@23
+
+`js/src/jit-test/tests/wasm/exceptions/oom-construct-message.js` | `8eb515ea9b0f3ba08f948d52f479e8eaeb75cf74` | 116 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@2
+
+`js/src/jit-test/tests/wasm/exceptions/oom-create-exception-data.js` | `51d4558da8ad88fdf2df2518a9ce1148b516f94a` | 208 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@3
+
+`js/src/jit-test/tests/wasm/exceptions/oom-tag-constructor.js` | `6747a0e4056a4f585dae8e1f562969666684b090` | 118 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@2
+
+`js/src/jit-test/tests/wasm/exceptions/prototypes.js` | `757ed2ddba808eaffaf8dd949b5effe36eb8807e` | 363 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: _Tag@1; _Exception@2
+
+`js/src/jit-test/tests/wasm/exceptions/reftypes.js` | `efd577dec834bd811cc136a88d19f476cb2603dc` | 3327 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/exceptions/side-effects-in-try.js` | `4df38e3f3ebbb8204af7c0db1d77a656b49584f8` | 8462 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSideEffectsOnLocals@11; testGlobals@194
+
+`js/src/jit-test/tests/wasm/exceptions/stack.js` | `337ecd54b84638b3e95516bfb1806f244be8b074` | 825 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: construct@3; noStack@6; hasStack@9; assertErrorMessage@23
+
+`js/src/jit-test/tests/wasm/exceptions/throw-to-js.js` | `6ddc389cc147415312fe1a11ecd3b579976022b7` | 7061 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertWasmThrowsExn@3; assertWasmThrowsExn@17; assertWasmThrowsExn@27; assertWasmThrowsExn@39; assertWasmThrowsExn@49; assertWasmThrowsExn@62; assertWasmThrowsExn@75; assertWasmThrowsExn@88; assertWasmThrowsExn@101; assertWasmThrowsExn@116; assertWasmThrowsExn@244; assertWasmThrowsExn@316; assertWasmThrowsExn@327
+
+`js/src/jit-test/tests/wasm/exceptions/unreachable.js` | `5f57e125df6eeec4fbf74ed4a6497ff5505d310b` | 513 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/exceptions/validation.js` | `34b208e0f17040fb3b2955ba71f64843a451aca9` | 14062 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: wasmValid@6; wasmInvalid@10; testValidateDecode@26; testValidateThrow@128; testValidateTryCatch@177; mod_with@178; testValidateCatch@258; testValidateCatchAll@274; testValidateExnPayload@329; testValidateRethrow@452; testValidateDelegate@567
+
+`js/src/jit-test/tests/wasm/excessive-inlining.js` | `91ec710e4e46c423f77409223441d371097157f9` | 3972 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/exnref/bug1883865.js` | `d6418d128500aae0a111713e96d99a5a5a2f7859` | 425 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/exnref/bug1883944.js` | `7e5609991710e6e94edf480b408ad6e88327a1c3` | 264 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/exnref/casting.js` | `5d48d48146f100c369f95712467f6039f0bcfd02` | 4748 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@101; assertErrorMessage@193
+
+`js/src/jit-test/tests/wasm/exnref/directives.txt` | `314de248c3ffeeec376da9a872d8e3d457124fef` | 258 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/exnref/throw-ref.js` | `4f6716d639ef73bd1db9665d14f6582e9a284813` | 1411 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/exnref/try-table.js` | `c6a4c0ec062b10e4d9e908753a421248d001c2fe` | 10537 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: throwJS@350; throwJS@397
+
+`js/src/jit-test/tests/wasm/extended-const/basic.js` | `6b71385cb69a1501b9b835a74da549a1967ff40c` | 3274 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testPrivateGlobal@1; testExportedGlobal@11; testIndirectGlobal@23; testI32@36; testI64@56; testGlobalGet@74
+
+`js/src/jit-test/tests/wasm/extended-const/directives.txt` | `c4b5e420f12d0b0b86fc52049d9d055cbc7e5755` | 186 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/extended-const/pathological.js` | `c0e3d19d24acc386f53150e7e190521d40c903dc` | 2260 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testFancyZeroOffset@2
+
+`js/src/jit-test/tests/wasm/extract-code.js` | `c2c3163652e4181802d9b837cf5bd9b9cb482398` | 591 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/fac.js` | `5b3435a389324ac5b506657f82194d1caf1845b7` | 566 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/fence.js` | `1b839bb9f9c9ac4f3482c9126c600eb4db15de4e` | 483 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/float-unaligned.js` | `a22ffe5feecff0a17589a18921c83b4d09fe6b84` | 4655 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: makeLoadStore@15; ballast@64; makeInstance@76
+
+`js/src/jit-test/tests/wasm/float.js` | `fe86ac1801e65a9b0326364d15cd92e5a0fb407b` | 6582 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testUnary@14; testBinary@21; testComparison@28
+
+`js/src/jit-test/tests/wasm/full-cycle.js` | `7368fc0b7ddcb8aabc761740adaeeded5ab58da3` | 3788 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/function-call-bind.js` | `afae8dc16f394df45843d2e68ee1344a5391ac4c` | 2593 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: wrapFunc@4; func@74
+
+`js/src/jit-test/tests/wasm/function-references/as-non-null.js` | `68eeeab8545ce53e36889856324dc6e6cdbb2590` | 370 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@8
+
+`js/src/jit-test/tests/wasm/function-references/binary.js` | `d10d7a542a42eab092530f3e002bc2ef26f4ba00` | 2139 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: checkInvalid@6; assertErrorMessage@7
+
+`js/src/jit-test/tests/wasm/function-references/br-non-null.js` | `feee72ed8622fb9fbfa16bab04bcbe876d051756` | 1528 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/function-references/br-null.js` | `b18332b5e6ee61a0c74d288b6f58b9477fa588e6` | 1017 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/function-references/call_ref.js` | `eebf9736cadf60ce9ee78e8b94be74bded6084dc` | 2423 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@88
+
+`js/src/jit-test/tests/wasm/function-references/directives.txt` | `dc2c263275f2029e079f7b1296fac31803fa3d06` | 173 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/function-references/nnl-test.js` | `2bdd35469d54207fe036ebadb033f68a63ec343e` | 4508 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: generateBlock@29; generateModule@71
+
+`js/src/jit-test/tests/wasm/function-references/non-nullable-table.js` | `9031807e04ac8e9439deb6373a241befdb53c96f` | 3243 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertThrows@85; assertThrows@86; assertThrows@98
+
+`js/src/jit-test/tests/wasm/function-references/non-nullable.js` | `70810d4804a46bc0e61b398fef15a52833639987` | 4366 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@115; returnNull@121; returnMultiNullReg@124; returnMultiNullStack@127; assertErrorMessage@147; assertErrorMessage@148; assertErrorMessage@149
+
+`js/src/jit-test/tests/wasm/function-references/reftype-parse.js` | `d175108d463a3d98feb7da66937e532eb0dbe732` | 915 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/TypedObject.js` | `e8400c4ee1883cd4a70cdbbd829822ce302dc5c2` | 3841 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@12; assertErrorMessage@24; assertErrorMessage@64; assertErrorMessage@65; assertErrorMessage@80
+
+`js/src/jit-test/tests/wasm/gc/allocation-metadata.js` | `38d633a2b8565a6f10fa17d554f73f3acfc86b55` | 1484 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/array-bce-ion-mir.js` | `205f5b94b633eed88b682a088ae83b7e2ece283a` | 6964 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@114; assertErrorMessage@185
+
+`js/src/jit-test/tests/wasm/gc/arrays.js` | `c84a2052a6b2decf938d085fe7ddc7da0b4a55d0` | 81251 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: checkArray@71; assertErrorMessage@95; assertErrorMessage@98; assertErrorMessage@183; assertErrorMessage@199; assertErrorMessage@212; assertErrorMessage@225; number@289; assertErrorMessage@302; assertErrorMessage@313; assertErrorMessage@325; assertNoWarning@337; assertErrorMessage@352; assertNoWarning@362; assertNoWarning@371; assertErrorMessage@494; assertErrorMessage@505; assertErrorMessage@516; assertErrorMessage@528; assertErrorMessage@568; assertErrorMessage@586; assertErrorMessage@604; assertErrorMessage@643; assertErrorMessage@663; assertErrorMessage@683; assertErrorMessage@699; assertErrorMessage@787; assertErrorMessage@802; assertErrorMessage@818; assertErrorMessage@833; assertErrorMessage@848; assertErrorMessage@900; assertErrorMessage@922; assertErrorMessage@944; assertErrorMessage@989; assertErrorMessage@1012; assertErrorMessage@1035; assertErrorMessage@1076; assertErrorMessage@1097; assertErrorMessage@1118; assertErrorMessage@1138; assertErrorMessage@1239; assertErrorMessage@1252; assertErrorMessage@1265; assertErrorMessage@1278; assertErrorMessage@1292; assertErrorMessage@1317; assertErrorMessage@1355; assertErrorMessage@1375; assertErrorMessage@1413; assertErrorMessage@1453; assertErrorMessage@1474; assertErrorMessage@1515; assertErrorMessage@1533; assertErrorMessage@1551; assertErrorMessage@1569; assertErrorMessage@1587; assertErrorMessage@1664; assertErrorMessage@1681; assertErrorMessage@1699; assertErrorMessage@1716; assertErrorMessage@1733; assertErrorMessage@1750; assertErrorMessage@1783; assertErrorMessage@1829; assertErrorMessage@1853; assertErrorMessage@1899; assertErrorMessage@1947; assertErrorMessage@1972; assertErrorMessage@2020; assertErrorMessage@2042; assertErrorMessage@2064; assertErrorMessage@2139; assertErrorMessage@2149; assertErrorMessage@2160; assertErrorMessage@2176; eqArrays@2271; len@2272; get@2275; show@2286; assertErrorMessage@2310; assertErrorMessage@2315; assertErrorMessage@2320; assertErrorMessage@2325; assertErrorMessage@2330; assertErrorMessage@2335; assertErrorMessage@2343; assertErrorMessage@2351; assertErrorMessage@2356; assertErrorMessage@2361; assertErrorMessage@2379; assertErrorMessage@2397; assertErrorMessage@2417; assertErrorMessage@2430; assertErrorMessage@2443; assertErrorMessage@2467; assertErrorMessage@2484; assertErrorMessage@2516; assertErrorMessage@2533
+
+`js/src/jit-test/tests/wasm/gc/big-arrays.js` | `e667d93810413a85a05ba11e43b5f94f8fa4d142` | 6955 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: maxNumElementsForSize@10; assertErrorMessage@68; assertErrorMessage@81; assertErrorMessage@130; assertErrorMessage@143; assertErrorMessage@151; assertErrorMessage@157; assertErrorMessage@163; assertErrorMessage@169; assertErrorMessage@197; assertErrorMessage@198; assertErrorMessage@199; assertErrorMessage@200
+
+`js/src/jit-test/tests/wasm/gc/binary.js` | `dfed84f60a0f6214a31e4845440a0819ad0929e8` | 725 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: checkInvalid@3; assertErrorMessage@4
+
+`js/src/jit-test/tests/wasm/gc/block-subtyping.js` | `f979e677272748c912f25383791410a9d0a288b7` | 207 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/br-on-cast-fail.js` | `45c899a3abf905b4c20fa417dcbd1c361128eb9d` | 7344 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: typingModule@1; validTyping@19; invalidTyping@23; assertEqResults@111; testExtra@130
+
+`js/src/jit-test/tests/wasm/gc/br-on-cast.js` | `2c0e95c472202fe0dde0e7a6a9c97b4c819fe4b8` | 10283 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: typingModule@1; validTyping@19; invalidTyping@23; assertEqResults@111; testExtra@130; assertEqResults@180; testExtra@199
+
+`js/src/jit-test/tests/wasm/gc/bug-1841119.js` | `607eaefdd05ccc5b2a92565b3407f3c83f55cb3e` | 326 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@3
+
+`js/src/jit-test/tests/wasm/gc/bug-1843295.js` | `de6416c7b7aefb79d3442dd278fc80f9f33882a8` | 232 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/bug-1845436.js` | `f9dbb54610d6161482349a9b1ea22b44e8f11d84` | 362 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/bug-1845673.js` | `579cfd1cf453e7ae13586b111eb9b9a7ccdc95e1` | 279 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/bug-1854007.js` | `ff531eafacb2655e2560da42d7e2cfd1641945a1` | 425 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/bug-1879096.js` | `d8e3d8459c112cb5db7cd6fb73d7fceeefc5a393` | 2463 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/bug-1903041.js` | `012c64b1eb7d75025bdbad34713ee169d1ac9297` | 547 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/bug-1962023.js` | `c671e5faa6c6529af7087fd23ea48173e5c26694` | 247 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/bug-1962634.js` | `1f402fb23db3a1e83e9f5f5bcf673d8dbac6147c` | 829 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: Debugger@6
+
+`js/src/jit-test/tests/wasm/gc/bug-1968410.js` | `e651b6cd4cb4a76b0af361bfdb7f02c2c3369dad` | 358 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/bug-1970545.js` | `2cdaf2415d3790d914039e5c2342715a89686905` | 2792 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/bug-1970713.js` | `e44342df3c0f08f46de9b12e4e33aff328a09c4e` | 206 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/bug-1993004.js` | `ccd7b522d1c69868a529f4b428281f607bb320c4` | 897 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: b@2; d@8
+
+`js/src/jit-test/tests/wasm/gc/bug-2042765.js` | `6e0676b122c7570d8df5ef9df16676d5400a39ec` | 628 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@21
+
+`js/src/jit-test/tests/wasm/gc/bug1833681.js` | `5946dda2d4a8c8930940c2030f7ba8d083669e99` | 2414 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/bug1998895.js` | `ba91e10c4c0f710ed75b68bd79af717298d550fa` | 319 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@1
+
+`js/src/jit-test/tests/wasm/gc/bug2022052.js` | `8d9964399f995fcedbbe8f16c16c9563468c4f44` | 690 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/bug2041977.js` | `8122f2331f044939350eb609272e15c30a4d9675` | 741 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/bug2051555.js` | `4b064d8638165b06ac96cddcda6f7d9a7906532c` | 1727 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/bug2061530.js` | `ec38ab365c53fd02ac8a4b5269fdd472baaeaa4a` | 1342 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/bug2068315.js` | `41e251bb463cf1d757be8851f91dff12873e9fa9` | 373 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/call-indirect-subtyping.js` | `bead12c8f53966404b32fa4f299b14759e54a17c` | 3847 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: funcref@95
+
+`js/src/jit-test/tests/wasm/gc/cast-abstract.js` | `617204eb9ead2d11958a3ad38b2c4ee18221ef29` | 9933 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: isSubtype@101; assertCast@256; assertCast@281
+
+`js/src/jit-test/tests/wasm/gc/cast-extern.js` | `90d961174b817c29ab05c83fa26ebacf1414dd17` | 1343 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@48
+
+`js/src/jit-test/tests/wasm/gc/cast-optimizations.js` | `88d487fecfb5df707c31b5996d4efd2a79b55386` | 876 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@35
+
+`js/src/jit-test/tests/wasm/gc/casting.js` | `7a9be6af64491105a94789f5e9ffd1a26e5804a1` | 5927 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: manualIsSubtype@59; makeAnyModule@66; makeFuncModule@90; testAllCasts@117
+
+`js/src/jit-test/tests/wasm/gc/debugger.js` | `dea6581eb808dc74c6fbf772ec146aabff70f33c` | 1218 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: Debugger@23
+
+`js/src/jit-test/tests/wasm/gc/declared-subtyping.js` | `1ad665398bf6b303fa5cf9dfcf6c9ceef4079005` | 608 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertCanBeSubtype@1; assertCannotBeSubtype@7; assertErrorMessage@8
+
+`js/src/jit-test/tests/wasm/gc/defaultable.js` | `b1e927a7f37635dfef195911a073db1a69626c49` | 1527 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/directives.txt` | `dc2c263275f2029e079f7b1296fac31803fa3d06` | 173 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/externref-boxing-struct.js` | `805da2307833812d03e3b37fa77780b59d788a5c` | 2947 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/externref-conversions.js` | `432b0a48406ee242339bf58964ed3e6c45f05a2d` | 2206 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/final_types.js` | `554e7e9e943e4d686a315a4ce9ed75134efeef0c` | 1362 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/function_subtyping.js` | `401c6dbfda84700dc4f262592e9b37cc9f37e33c` | 3176 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/giant-frames.js` | `82fc19a758ec5f0fd091e136c468202ea9abba7e` | 432 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/global-get.js` | `034b33acc3b39467a0658e5a576b914779a0aea2` | 739 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@3; assertErrorMessage@7
+
+`js/src/jit-test/tests/wasm/gc/globals.js` | `8c49d158890bed6fa8fb8a27f4f107e402e45434` | 9537 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@41; assertErrorMessage@77; assertErrorMessage@112; importGlobalIntoType@132; assertErrorMessage@143; assertErrorMessage@144; assertErrorMessage@146; assertErrorMessage@150; assertErrorMessage@152; assertErrorMessage@154; assertErrorMessage@155; assertErrorMessage@158; assertErrorMessage@159; importValueIntoType@174; assertErrorMessage@180; assertErrorMessage@183; assertErrorMessage@184; assertErrorMessage@186; assertErrorMessage@189; assertErrorMessage@191; assertErrorMessage@192; assertErrorMessage@193; assertErrorMessage@196; assertErrorMessage@197; assertErrorMessage@199; assertErrorMessage@200; assertErrorMessage@201; assertErrorMessage@203; assertErrorMessage@206; importValueIntoType@210; assertErrorMessage@216; importValueIntoType@220; assertErrorMessage@226; assertErrorMessage@227; assertErrorMessage@228
+
+`js/src/jit-test/tests/wasm/gc/i31ref.js` | `a03f4f6bd86ad88a29d99cff346a50c2c9830d2d` | 5029 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: valueAsI31GetU@20; assertErrorMessage@179; assertErrorMessage@180
+
+`js/src/jit-test/tests/wasm/gc/init-expr.js` | `9cc86dd36d972ea8830fb727b95d3026cead8594` | 10536 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/ion-and-baseline.js` | `891042560e6fe38dcb12711721d4a6289b4211ec` | 2931 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@71; assertErrorMessage@75; assertErrorMessage@79; assertErrorMessage@83
+
+`js/src/jit-test/tests/wasm/gc/js-boundary.js` | `91eadcdc42645047faf61a43dfa9d24ae4e1646e` | 4162 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: test@15; assertErrorMessage@24; returnVal@32; assertErrorMessage@43; returnVal@46; assertErrorMessage@78; assertErrorMessage@84; assertErrorMessage@97; assertErrorMessage@114; assertErrorMessage@115
+
+`js/src/jit-test/tests/wasm/gc/limits/array-new-fixed.js` | `50631d119a3f228f363d1fdde29a561c1fceaf8f` | 192 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/limits/load-mod.js` | `cd972ceb651d1e9b0024381a4414a16c06d252e8` | 262 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: loadMod@3
+
+`js/src/jit-test/tests/wasm/gc/limits/rec-groups-1.js` | `00bab5ce16cfe586eb3e117fd06f225b478d4627` | 168 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/limits/rec-groups-2.js` | `3ea0fba8271a9f28ffab00143916b9fcbb1bc069` | 185 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/limits/struct-fields.js` | `e8e667dfbf5ac204d2ad711e24da22f72d98a191` | 458 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/limits/subtyping-depth.js` | `20c1a0b278a9afadf260d07550cae62094748fe2` | 500 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: moduleSubtypingDepth@4
+
+`js/src/jit-test/tests/wasm/gc/limits/types-1.js` | `70f75804a885f713590e446a75ecaf849e686c9c` | 187 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/limits/types-2.js` | `81ffd9ffda7b22b87553101806e26e1a669a8c9a` | 189 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/limits/types-3.js` | `fa00985d3d8a1e614d4a0e0d0031f9688f905685` | 204 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/limits/types-4.js` | `6dbcf85c8ef3a821b13d53ffe8f1f28cba42af7d` | 206 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/linking.js` | `a96cda21034c774e2da23416cba75ad36fcdaf00` | 1591 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: linkGlobals@1; linkTables@15; linkFuncs@29
+
+`js/src/jit-test/tests/wasm/gc/ref-eq.js` | `7ba73dad42f84e5e0d5078a4a24c0054f7560928` | 825 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/ref-global.js` | `f56e87a5dfc3c21658062a1c49768a288624a028` | 2915 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@65; assertErrorMessage@76
+
+`js/src/jit-test/tests/wasm/gc/ref-gvn.js` | `8ea72dba592ca0e46968dc506114859b739305b4` | 40536 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: dummy1@69; dummy2@70; countAnyref@71; countExternref@74; dummy@168; count@169; dummy@267; count@268; dummy@371; count@372; dummy@444; countI31@445; countI32@448; countU32@451; countNull@652; countNonNull@655; dummy@725; count@726; dummy1@816; dummy2@817; countAnyref@818; countExternref@821; assertErrorMessage@1235
+
+`js/src/jit-test/tests/wasm/gc/ref-struct.js` | `2a84b4bf4d263a305bc9fb01e24d63957fec400d` | 11876 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: checkInvalid@9; assertErrorMessage@10; pr_int@94; pr_lp@95; pr_rp@96; assertErrorMessage@144; assertErrorMessage@245; assertErrorMessage@255; assertErrorMessage@265; assertErrorMessage@275; assertErrorMessage@285; assertErrorMessage@296; assertErrorMessage@307; assertErrorMessage@322
+
+`js/src/jit-test/tests/wasm/gc/ref.js` | `f570ef37ae89b7e8207b578c7187395198e54bf1` | 5703 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@86; assertErrorMessage@103; assertErrorMessage@112; assertErrorMessage@131; assertErrorMessage@139; assertErrorMessage@158; assertErrorMessage@166; assertErrorMessage@176
+
+`js/src/jit-test/tests/wasm/gc/regress-1633355.js` | `be6dcca1ec936a07263ef5085bf931194ff04a82` | 932 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/regress-1739330.js` | `ffe45baf6531b5da307f9992386b93d50a5358d3` | 415 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: a@3
+
+`js/src/jit-test/tests/wasm/gc/regress-1745391.js` | `ceb74b10469492d75cc44e329435d34c0573d87b` | 345 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@10
+
+`js/src/jit-test/tests/wasm/gc/regress-1754701.js` | `8b6755a1d1f44374e74b9779d83a35ce5179a7f8` | 643 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@26; oomTest@27; oomTest@28
+
+`js/src/jit-test/tests/wasm/gc/regress-1830975.js` | `850f72628d44cc5bcfc81cd5749f7be36c143162` | 202 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/regress-1884767.js` | `b5c26ad7f24c22098ae96849f40e593106db7723` | 322 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@11
+
+`js/src/jit-test/tests/wasm/gc/regress-1884887.js` | `bf25ef886feb7244af76215088f32adbd0d3660b` | 364 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/regress-1885829.js` | `f191d00ee2b6a909ba2d758f722ebd9a7969d74e` | 426 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@21
+
+`js/src/jit-test/tests/wasm/gc/regress-1904243.js` | `8280780e516a6c2f5f3d489f984d1fc27c809ca4` | 380 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/regress-1954042.js` | `0ea7bebe210f657983ffef41cf025450ed1dc316` | 276 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testNewStruct@2
+
+`js/src/jit-test/tests/wasm/gc/regress-2013741.js` | `eb39760655424e29a73cb970a73d55f508d4b7f6` | 1855 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/regress-outline-repr.js` | `bfc925c3b35e2ab3db0ffac9f8f56ea3c10a87ce` | 3319 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/scalar_replacement.js` | `77672937eef909aed16d61910e20dfc6a8e380d9` | 38983 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: evalAndCountNewStruct@16
+
+`js/src/jit-test/tests/wasm/gc/signal-null-check.js` | `83385dc52a70cc8a63c183f22a64cbaf750de236` | 5737 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testStructGetSet@28; assertDereferenceNull@84; assertDereferenceNull@85; assertDereferenceNull@86; assertDereferenceNull@87; assertDereferenceNull@88; assertDereferenceNull@89; testArrayGetSet@96; assertDereferenceNull@133; assertDereferenceNull@134; assertDereferenceNull@135; assertDereferenceNull@136; assertDereferenceNull@137; assertDereferenceNull@138; assertDereferenceNull@146
+
+`js/src/jit-test/tests/wasm/gc/speculative-inlining.js` | `63259b73db06bf1b669a016d1feeb77b7e8bc51e` | 2367 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: invokeTestWith@17; assertErrorMessage@28
+
+`js/src/jit-test/tests/wasm/gc/structs.js` | `d38a452ae092cc289fb8190909b9628a9492eac1` | 23368 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@407; assertErrorMessage@425; assertErrorMessage@461; assertErrorMessage@471; assertErrorMessage@481; assertErrorMessage@494; assertErrorMessage@529; assertErrorMessage@538; assertErrorMessage@544; assertErrorMessage@550; assertErrorMessage@556; assertErrorMessage@562; assertErrorMessage@570; assertErrorMessage@589; assertErrorMessage@590; assertErrorMessage@617
+
+`js/src/jit-test/tests/wasm/gc/structs2.js` | `00bd349aeb51c76a5ea05a3bb6569de6f8ead65e` | 12306 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/supertype_later_in_group.js` | `a98df193e903032bb3c9940d7f43d2096879838b` | 456 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/tables-generalized-struct.js` | `6f5de7e0812e598b5305ae4c1c339b6e3d9329b0` | 1791 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@28; assertErrorMessage@29
+
+`js/src/jit-test/tests/wasm/gc/tables.js` | `4c79ddffcf17fd2d3dd881c6e5fbfb56909c49bb` | 3997 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@162
+
+`js/src/jit-test/tests/wasm/gc/trailers-gc-stress.js` | `0be75830150a24a6e61ce8d2ba89bf20c7aaadd5` | 7091 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/unreachable.js` | `c97bd48d640929e89e072b1fcc0aef996547e8e1` | 1436 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/gc/value_subtyping.js` | `cb795adca1fb77cfaada133910c0deaa4c91489b` | 7760 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: simpleTypeSection@1; assertSubtype@5; assertNotSubtype@20; assertErrorMessage@21
+
+`js/src/jit-test/tests/wasm/globals-impl.js` | `15aea8f395f52e5126f7b466592b5f822c71f718` | 1757 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: test_driver@41
+
+`js/src/jit-test/tests/wasm/globals.js` | `3fc32a9d9280f189648cc597e85d4a57934c1409` | 19111 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@4; assertErrorMessage@6; assertErrorMessage@7; testInner@17; assertStringInMem@94; get_set@112; assertErrorMessage@191; testInitExpr@241; assertEq@335; assertErrorMessage@369; assertErrorMessage@496; assertErrorMessage@505; assertErrorMessage@510
+
+`js/src/jit-test/tests/wasm/grow-memory-resizable-buffer.js` | `fad5dbab02514216a778bcff939e6022dfbd425d` | 1587 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testResize@3; testGrow@25
+
+`js/src/jit-test/tests/wasm/grow-memory.js` | `702a28e6537e9adbcd93d439f5eeedc1367f37f5` | 1640 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: linearModule@1
+
+`js/src/jit-test/tests/wasm/import-callables.js` | `9053baa575a857046e662bf187c8fb8fd6ebf5a5` | 1754 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: test@15; assertEq@30; testThrowsLinkError@41; assertErrorMessage@42
+
+`js/src/jit-test/tests/wasm/import-export-sigs.js` | `8765d56b156e8fed3eb85508fe05a526f6543821` | 1565 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/import-export.js` | `62338ea42d8605d60e47849001b06a77621ce5d3` | 32264 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertSegmentFitError@18; assertErrorMessage@23; assertErrorMessage@24; assertErrorMessage@25; assertErrorMessage@26; assertErrorMessage@27; assertEq@28; assertErrorMessage@31; assertErrorMessage@32; assertErrorMessage@33; assertErrorMessage@34; assertErrorMessage@35; assertErrorMessage@36; assertErrorMessage@37; assertErrorMessage@38; assertErrorMessage@40; assertErrorMessage@43; assertErrorMessage@46; assertErrorMessage@47; assertErrorMessage@48; assertErrorMessage@49; assertErrorMessage@50; assertErrorMessage@51; assertEq@52; assertErrorMessage@55; assertErrorMessage@56; assertErrorMessage@57; assertErrorMessage@58; assertErrorMessage@59; assertErrorMessage@60; assertEq@61; assertErrorMessage@64; assertErrorMessage@70; assertErrorMessage@76; assertErrorMessage@77; assertErrorMessage@78; assertErrorMessage@79; assertErrorMessage@92; assertErrorMessage@93; assertErrorMessage@96; foo@102; baz@103; assertErrorMessage@105; foo@110; baz@114; assertErrorMessage@116; foo@121; baz@125; foo@135; baz@139; assertErrorMessage@266; assertSegmentFitError@440; assertSegmentFitError@441; assertSegmentFitError@448; assertSegmentFitError@455; assertSegmentFitError@493; assertSegmentFitError@505; assertSegmentFitError@539; assertSegmentFitError@556; ffi@656; sum@658; assertErrorMessage@729; assertErrorMessage@732; assertErrorMessage@735; assertEq@790; assertEq@792
+
+`js/src/jit-test/tests/wasm/import-gc.js` | `02caea73d99c66b77fcdc8ea2bac18b4c1fbf689` | 1615 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/inlining-stack-trace.js` | `a8d005a3cf4f99d91e50993c28d90445edca68ae` | 2243 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/integer.js` | `0d09854afc5faf6a64c2fbd7eb9678f7681add03` | 19378 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testUnary@7; testBinary64@21; testBinary32@31; testComparison32@39; testComparison64@42; testI64Eqz@69; testTrap32@77; assertErrorMessage@78; assertErrorMessage@80; testTrap64@85
+
+`js/src/jit-test/tests/wasm/ion-adhoc-multiplatform.js` | `4c795710149fd7a6bd6748f48faaaf9f6b253965` | 17771 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/ion-args.js` | `69c349f36ebbc6ed1c8b9d3bf9e78b4cd9df4ccc` | 3463 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: i32@27; f32@28; f64@29; call@32
+
+`js/src/jit-test/tests/wasm/ion-asmjs-ctor.js` | `0cc0bcb821a8c71e73d65c6d34e9d787dfc3dae7` | 192 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@4
+
+`js/src/jit-test/tests/wasm/ion-debugger.js` | `13d09d83b6412d037389973a635d416ecfaee33a` | 508 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: processModule@14
+
+`js/src/jit-test/tests/wasm/ion-error-ool.js` | `910432d0ba087934053abad1db6edc23be8c4f05` | 2679 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: loopBody@28; main@41; loopBody@55
+
+`js/src/jit-test/tests/wasm/ion-error-throw.js` | `c760dbe2375af72b191f21ed578aa8a2d0c13d09` | 1209 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: main@28
+
+`js/src/jit-test/tests/wasm/ion-error-trace.js` | `cd9d9dd1ad9697b65149e0af9dae6f9d13932b43` | 2437 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: debug@7; f@14; loopBody@41; main@53; debug@70; f@77; loopBody@105; main@117
+
+`js/src/jit-test/tests/wasm/ion-gc.js` | `e4ed091b02eaf810f94a66fbd070679a59f8ddd2` | 1467 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: loopBody@18; main@29; loopBody@48
+
+`js/src/jit-test/tests/wasm/ion-lazy-tables.js` | `b4a868170e3e7a784c798b5b994207b715b26bd5` | 2004 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: main@16; withTier2@34
+
+`js/src/jit-test/tests/wasm/ion2wasm.js` | `abd88a0406db0a098f698f26f8d4e342aaeb02a9` | 4271 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: run@36; testCallKnown@42; testCallKnownRectifying@48; jsAdd@54; testCallGeneric@58; testCallGenericRectifying@65; testCallScriptedGetter@72; testCallScriptedGetterRectifying@82; testCallScriptedSetter@93; testCallScriptedSetterRectifying@104; testFunctionApplyArray@115; testFunctionApplyArrayRectifying@121; testFunctionApplyArgs@127; wrapper@128; testFunctionApplyArgsRectifying@136; wrapper@137; testFunctionCall@145; testFunctionCallRectifying@151
+
+`js/src/jit-test/tests/wasm/js-direct-call-wasm.js` | `d70e2fbbb624e01b2f22454ddc96ae3282001efe` | 533 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: jsFunc@13
+
+`js/src/jit-test/tests/wasm/js-promise-integration/basic-profiler-1.js` | `24f79623e6f82165a2215462151c2456a92263a7` | 2704 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: wb@39
+
+`js/src/jit-test/tests/wasm/js-promise-integration/basic-profiler-2.js` | `3e066db546cbb3873f278c66a2e393d473b4e27d` | 1977 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: wb@36
+
+`js/src/jit-test/tests/wasm/js-promise-integration/basic2.js` | `243e4beded3a2986b5840b56fabf2c4332240874` | 2740 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: init_state@29; test@48; init_state@76
+
+`js/src/jit-test/tests/wasm/js-promise-integration/bug2043040.js` | `775c483299fc4daff53a7f4610029c786f54350b` | 967 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-promise-integration/concurrent.js` | `21ff4478c008949828909a70fc6c86a095fc792a` | 1530 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-promise-integration/cross-realm.js` | `eb8286756347d07fd0a2924a8d57f9a90df0e2a8` | 1275 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-promise-integration/debug-cont-frame-onpop-gc.js` | `4f39873102442c7a135ca8367798af9275f96fa3` | 853 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: Debugger@9
+
+`js/src/jit-test/tests/wasm/js-promise-integration/debug-cont-frame-onstep-gc.js` | `acb8e5e3796f53c626950fa83974b544a94baa14` | 871 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-promise-integration/debug-frame-offset-non-debug.js` | `d3bb240fde413649990182f5d08848abf851ab35` | 1070 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: susp@17
+
+`js/src/jit-test/tests/wasm/js-promise-integration/debug-mixed-frames.js` | `d7c03ba94e71d8ffee8987724bfd9c481395bb8f` | 1882 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: wasmEvalText@25; wasmEvalText@45
+
+`js/src/jit-test/tests/wasm/js-promise-integration/debug-onStep-suspended.js` | `b20b99272ae47c67800405f727a6b9a997dfd35d` | 1627 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-promise-integration/debug-stale-cont-env.js` | `c195cad449d2272ec7f798d716c69b3e209ce16e` | 4201 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testSingle@3; hold@20; testNested@72; hold@85; callInner@102
+
+`js/src/jit-test/tests/wasm/js-promise-integration/debug-stale-cont-frame.js` | `f185a424d8195b7a27f24edcd7ed52e607faa3dc` | 2223 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-promise-integration/debug-terminated.js` | `e110a26d582d0f9e78b2719bc1ec80573213abfc` | 1225 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-promise-integration/debug.js` | `792290f1570d3050a876b5249d24f8f8de2fc026` | 2464 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: wrapStackInfo@11; checkStack@18; wasmEvalText@50
+
+`js/src/jit-test/tests/wasm/js-promise-integration/debugger-early-reaction.js` | `c64bf63c89bfbf507efd4410a579f0c50bb33bf0` | 1543 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-promise-integration/directives.txt` | `4f7445c733f9f9499c02826d421bd031a072e8b3` | 71 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-promise-integration/error-stack.js` | `501898f3a65c3af4430a3aabbc248bb43a118ed8` | 579 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-promise-integration/exception-handling.js` | `652b0043613bc60b4253e0eb82ac558f6df1f5e2` | 3612 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: wasmException@6; testWasmException@49; jsException@78; testJSException@132
+
+`js/src/jit-test/tests/wasm/js-promise-integration/gc-2.js` | `47045dccc74f553f31cede01aca6ea55787ea516` | 1528 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: init_state@29
+
+`js/src/jit-test/tests/wasm/js-promise-integration/gc-3.js` | `89ffa8d8c9a43b9355d49cd1d98619f21a108dbe` | 596 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-promise-integration/gc-4.js` | `e7be6f6fdc54aab0e2c2a8cf565cc2e56e8ad7ca` | 2826 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-promise-integration/gc-barrier.js` | `aa9f9a9b3550995bb593ae9ddc067f72966d0ffd` | 817 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f0@7
+
+`js/src/jit-test/tests/wasm/js-promise-integration/gc-update-data-pointers.js` | `b891f3654bdcce8f83861c675acc53323935452e` | 1021 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: run@3
+
+`js/src/jit-test/tests/wasm/js-promise-integration/gc.js` | `823e9b31abd6e1968136ba585f881da7be3bae36` | 1216 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: js_import@6; async@12
+
+`js/src/jit-test/tests/wasm/js-promise-integration/guard-suspending.js` | `1282aba14a81612623aa75a08f345e9a3020cc61` | 427 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@11
+
+`js/src/jit-test/tests/wasm/js-promise-integration/jitexit-profiler.js` | `49670dfcf6e796d1026fafa45e4074ea4847ce15` | 3641 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ffi@13; sum@15; assertErrorMessage@151; assertErrorMessage@154; assertErrorMessage@157
+
+`js/src/jit-test/tests/wasm/js-promise-integration/jitexit.js` | `879d4b2e7f515feeaf5e69156c42bc55f1b3d900` | 2615 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ffi@13; sum@15; assertErrorMessage@90; assertErrorMessage@93; assertErrorMessage@96
+
+`js/src/jit-test/tests/wasm/js-promise-integration/js-promise-integration.new.js` | `6000859d512276514614434474c25f26f5f27aa4` | 17178 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: test@7; promise_test@18; assert_true@26; assert_false@27; assert_equals@28; assert_array_equals@29; assert_throws@35; promise_rejects@44; Promising@52; Suspending@56; test@61; assert_throws@62; assert_throws@64; assert_throws@66; assert_throws@68; asmModule@70; x@72; assert_throws@77; test@81; test@86; promise_test@103; promise_test@121; js_import@123; promise_test@160; recordAbeforeB@203; promise_test@220; promise_test@252; js_import@284; promise_test@308; js_import@311; TestNestedSuspenders@337; promise_test@382; promise_test@386; test@390; assert_throws@410; promise_test@416; promise_test@436; js_import@438; promise_test@461; js_import@463; test@486; promise_test@498; promise_test@511; import1@517; import2@521; promise_test@551
+
+`js/src/jit-test/tests/wasm/js-promise-integration/many-outstanding.js` | `c0e4e023a4c15cb6af6bcb29840589492c5e9c2d` | 1039 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: js_import@6; wrapped_export@44
+
+`js/src/jit-test/tests/wasm/js-promise-integration/multi.js` | `97a7ec84dd7ba08eaad59731e9351b393a6819b1` | 660 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: js_import@5
+
+`js/src/jit-test/tests/wasm/js-promise-integration/multiple-suspending.js` | `22e434e1f5725b16d61d2c7fb5b5da78a6aa1b8c` | 1639 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-promise-integration/multivalue.js` | `9c577e8807450139ba82ef04325717e4699592fb` | 2036 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: async@6
+
+`js/src/jit-test/tests/wasm/js-promise-integration/no-directives/interrupt-forced-return.js` | `aa0beedad19d2cb39758b5ab5378fe1315fbbbbd` | 1405 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-promise-integration/oom-1.js` | `a6e32aaac9a8ab441daf003ee34bacf255c80a09` | 457 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@17
+
+`js/src/jit-test/tests/wasm/js-promise-integration/oom-2.js` | `1d482d4fc6aacb9cb0d6469b427228a8e06cd7bf` | 807 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@11; oomTest@21
+
+`js/src/jit-test/tests/wasm/js-promise-integration/promising-nonfinal-type.js` | `2e385c4ae515c01f43c02a045145a4c1a79a39da` | 880 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-promise-integration/proxy.js` | `9ded1959f06c284c92857a831a5a90a1c3918855` | 1728 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: apply@10; apply@33
+
+`js/src/jit-test/tests/wasm/js-promise-integration/recursive-promising.js` | `44fa7dee61dc3b875e09f68b2390d0e76abe9635` | 916 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-promise-integration/saved-stacks.js` | `a2af8fa46dfecde3fc5051374a4c6150321bdc7e` | 739 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-promise-integration/shutdown.js` | `92079da334118f9909090c48a4e6d21f6869f864` | 401 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-promise-integration/simple.js` | `9f6d17b69fac7ad5c43cbf97bbf7c08b58a24314` | 1097 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: init_state@25
+
+`js/src/jit-test/tests/wasm/js-promise-integration/stress.js` | `2fdaef9107695ade592580657687ed61a5deb889` | 573 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: test@15
+
+`js/src/jit-test/tests/wasm/js-promise-integration/suspender.js` | `9b54bfb219d1c06e348b151549b3ad765b526206` | 386 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-promise-integration/suspending-canonical-type.js` | `20d82b8fcf3de5c64d62fa83cbee976e0a8cb03f` | 2281 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: promising@51
+
+`js/src/jit-test/tests/wasm/js-promise-integration/sync-throw.js` | `8043750a1747c58ef30fd5792199bb216cc4d995` | 2415 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-promise-integration/thenable.js` | `6b28dbca076bfc5696c7599ff9a71ce936d97069` | 1106 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: then@13
+
+`js/src/jit-test/tests/wasm/js-promise-integration/timeout.js` | `2ce908c6178270748d9ec07c47ffae21365528c4` | 1052 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: timeout@55
+
+`js/src/jit-test/tests/wasm/js-promise-integration/types.js` | `20af8784ce4b9fe5ef885b97e47a19fc06a6abed` | 1442 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-reexport.js` | `023007728b7c22a01c5c0d21d1162ed71b7289c4` | 2872 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: accum@6
+
+`js/src/jit-test/tests/wasm/js-types/bug1949101.js` | `c85bdc634693834fa5a096b0a1cc52c9ae74946d` | 386 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-types/directives.txt` | `01f722ba1e9024800cc8619f27eabc9e123bbcf2` | 27 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/js-types/function-ctor-callable.js` | `3f59cbf1cbad585b0522e744188e0425375fc870` | 1527 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testWasmFunc@5; testWasmFunc@18; assertErrorMessage@26; assertErrorMessage@27; assertErrorMessage@28; assertErrorMessage@33
+
+`js/src/jit-test/tests/wasm/js-types/table-js-funcs.js` | `92b6c462ef2992e9a25ec165848291c81b519c2a` | 996 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testfunc@3
+
+`js/src/jit-test/tests/wasm/large-memory-atomics-index-zero-extended.js` | `6d964cd05e8ff976d65b91b9798d945db09fef44` | 10167 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: rmw_name@14
+
+`js/src/jit-test/tests/wasm/large-memory-index-not-clobbered.js` | `e6330a06ae9b687fd54acf1edbec80f7d1e763d8` | 1381 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/large-memory.js` | `20c9c3b371810b2c5eda26fc53dbcb6692173ae4` | 11506 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@107; assertErrorMessage@112; assertErrorMessage@116; assertErrorMessage@122; assertErrorMessage@128; assertErrorMessage@133; assertErrorMessage@146; assertErrorMessage@157; assertErrorMessage@163; assertErrorMessage@174; assertErrorMessage@220; assertErrorMessage@223; assertErrorMessage@226; assertErrorMessage@239; assertErrorMessage@242; assertErrorMessage@256; assertErrorMessage@269; assertErrorMessage@272; assertErrorMessage@323
+
+`js/src/jit-test/tests/wasm/lazy-stubs-jitentry.js` | `d235e523435a055da2f2da843093dd8d1641fd2f` | 1535 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: test@1
+
+`js/src/jit-test/tests/wasm/lazy-tiering-codegen.js` | `4843de455c6e6f8f2f999e5519ed9c3a463e2a87` | 1486 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/limits-br-table.js` | `89d0b2d12fe474e5e53bd29a01604985a97de039` | 634 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/limits.js` | `7a176b9cd1f8971749647d58bcb71f8d790a03e6` | 9505 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testMemoryValidate@11; testMemoryFailValidate@28; testMemoryFailConstruct@41; assertErrorMessage@42; testMemoryCreate@58; assertErrorMessage@89; assertErrorMessage@92; assertErrorMessage@104; assertErrorMessage@107; testMemoryFailGrow@122; assertErrorMessage@137; testTableValidate@145; testTableFailValidate@159; testTableFailConstruct@171; assertErrorMessage@172; testTableCreate@184; testTableFailCreate@213; assertErrorMessage@214; assertErrorMessage@217; testTableFailGrow@229; assertErrorMessage@245; generateMemories@252; assertErrorMessage@263
+
+`js/src/jit-test/tests/wasm/memory-aliasing.js` | `4d76c9eb168ac338661e13973b97d74fb2906736` | 686 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/memory-arm64-ion-codegen.js` | `4ef09ff751661ac594d853bb1dda835352f0c6e3` | 1469 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/memory-cloning-new-global.js` | `a7b632f3fd805bbc343523eca4da78ff2cac5f81` | 530 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/memory-cloning.js` | `8b182fc0a5f02194a7dd89e42a7b54005a80ff92` | 3752 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: makeMemoryDesc@7; Idx@14; Zero@18; assertErrorMessage@27; assertErrorMessage@30; assertErrorMessage@90
+
+`js/src/jit-test/tests/wasm/memory-control/directives.txt` | `811195c7b2b97a1c56b213d5b4eebd1b8c058a35` | 315 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/memory-control/disabled.js` | `48903521db56508508f50c6a3f577746d22acc1b` | 484 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/memory-control/memory-discard.js` | `5bebbe5d14f5ec37a18e1d6b4a5a9a7e3e3c7c8e` | 8027 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: initModule@11; checkRegion@33; checkFirstHalf@40; checkSecondHalf@41; checkWholeAlphabet@42; testAll@44; testAll@55; testAll@81; testAll@96; testAll@131; assertErrorMessage@137; testAll@143; assertErrorMessage@150; testAll@156; assertErrorMessage@162; assertErrorMessage@177; assertErrorMessage@195; testAll@201; assertErrorMessage@207; testAll@213; assertErrorMessage@219
+
+`js/src/jit-test/tests/wasm/memory-loong64-ion-codegen.js` | `1b3281798ced73dca2b9f627424c655b784a9735` | 8579 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/memory-maximum-clamping.js` | `dfd1d175d720d8d3750f9606d92cb107533838ba` | 1034 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testLinkFail@7; assertErrorMessage@8
+
+`js/src/jit-test/tests/wasm/memory-oob-message.js` | `75248c6e6a56948ec496e12afcbf575b350ac41e` | 3513 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oobPattern@9; assertErrorMessage@56; assertErrorMessage@57; assertErrorMessage@58; assertErrorMessage@59; assertErrorMessage@60; assertErrorMessage@61; assertErrorMessage@62; assertErrorMessage@63; assertErrorMessage@70; assertErrorMessage@71; assertErrorMessage@72; assertErrorMessage@73; assertErrorMessage@74; assertErrorMessage@75; assertErrorMessage@76; assertErrorMessage@77
+
+`js/src/jit-test/tests/wasm/memory-partial-oob-store.js` | `8f77e740a8cfe4dd93ec553dace71770d8bfefe3` | 5075 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: storeModuleSrc@18; storeModule@41; testStoreOOB@48; assertErrorMessage@51; assertErrorMessage@58
+
+`js/src/jit-test/tests/wasm/memory-riscv64-ion-codegen.js` | `6afd700ec356bae71c4783649b374d7fcf85a229` | 4212 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/memory-sharing-off.js` | `f3588c98b1c7b20772f2f5330559d3cb3a89f793` | 697 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@14; assertErrorMessage@20
+
+`js/src/jit-test/tests/wasm/memory-sharing.js` | `d67baad4fa7868b74ee6d664116d530f7ed1494f` | 8168 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@30; assertErrorMessage@41; assertErrorMessage@58; assertErrorMessage@83; assertErrorMessage@96; assertErrorMessage@114; assertErrorMessage@120; assertErrorMessage@126; assertErrorMessage@153; assertErrorMessage@164; assertErrorMessage@175; assertErrorMessage@194
+
+`js/src/jit-test/tests/wasm/memory.js` | `648a5c125d7de6bd84e513442310b03004fd4e43` | 20734 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: loadModuleSrc@3; loadModule@19; storeModuleSrc@23; storeModule@45; storeModuleCstSrc@49; storeModuleCst@71; testLoad@75; testLoadOOB@89; assertErrorMessage@90; testStore@93; testStoreOOB@113; assertErrorMessage@115; assertErrorMessage@120; badLoadModule@124; badStoreModule@128; testRegisters@306; makeIt@424; assertErrorMessage@450; assertErrorMessage@455; assertErrorMessage@467; assertErrorMessage@470; assertErrorMessage@479; assertErrorMessage@483; assertErrorMessage@487; assertErrorMessage@493; assertErrorMessage@499
+
+`js/src/jit-test/tests/wasm/memory64/basic.js` | `e563c1e79e7dc1981f799b29a9c8cc59e73bd40d` | 86271 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: memoryTypeModuleText@7; memoryTypeDescriptor@11; validAndInstantiableMemoryType@19; validButNotInstantiableMemoryType@24; assertErrorMessage@26; assertErrorMessage@27; invalidMemoryType@29; assertErrorMessage@31; assertErrorMessage@32; tableTypeModuleText@35; tableTypeDescriptor@40; validAndInstantiableTableType@48; validButNotInstantiableTableType@53; assertErrorMessage@55; assertErrorMessage@56; invalidTableType@58; assertErrorMessage@60; assertErrorMessage@61; assertErrorMessage@95; assertErrorMessage@98; assertErrorMessage@99; assertErrorMessage@100; assertErrorMessage@101; assertErrorMessage@102; assertErrorMessage@103; assertErrorMessage@104; assertErrorMessage@105; assertErrorMessage@106; assertErrorMessage@107; assertErrorMessage@108; assertErrorMessage@109; testLinkMemory@112; assertErrorMessage@123; testLinkTable@126; assertErrorMessage@138; mod@223; mod@249; mod@295; makeTest@470; i32Random@1146; i64Random@1155; Random@1159; Random2@1165; Random4@1169; Zero@1173; testRead@1179; assertErrorMessage@1216; assertErrorMessage@1220; assertErrorMessage@1227; assertErrorMessage@1233; assertErrorMessage@1239; testReadV128@1245; assertErrorMessage@1285; assertErrorMessage@1289; assertErrorMessage@1296; assertErrorMessage@1302; testWrite@1332; assertErrorMessage@1367; assertErrorMessage@1371; assertErrorMessage@1377; assertErrorMessage@1385; assertErrorMessage@1391; testWriteV128@1397; assertErrorMessage@1437; assertErrorMessage@1441; assertErrorMessage@1446; testAtomicRMW@1459; assertErrorMessage@1483; assertErrorMessage@1487; assertErrorMessage@1492; testAtomicCmpxchg@1498; assertErrorMessage@1524; assertErrorMessage@1528; assertErrorMessage@1533; testAtomicWake@1539; assertErrorMessage@1549; assertErrorMessage@1553; assertErrorMessage@1558; testAtomicRMW@1601; testAtomicRMW@1602; testAtomicRMW@1603; testAtomicRMW@1604; testAtomicRMW@1605; testAtomicRMW@1606; makeModule@1620; assertErrorMessage@1733; assertErrorMessage@1737; assertErrorMessage@1747; assertErrorMessage@1757; assertErrorMessage@1861; assertErrorMessage@1862; assertErrorMessage@1864; assertErrorMessage@1865; assertErrorMessage@1868; assertErrorMessage@1869; assertErrorMessage@1871; assertErrorMessage@1872; assertErrorMessage@1908; assertErrorMessage@1909; assertErrorMessage@1912; assertErrorMessage@1913; assertErrorMessage@1926; assertErrorMessage@1927; assertErrorMessage@1928; assertErrorMessage@1929; addr1@2049; addr2@2053; len@2057; tryGrow@2061; testFuncTable@2068; testExtnTable@2083; tryGrow@2117; tryGrow@2118; tryGrow@2119; tryGrow@2120; assertErrorMessage@2139; assertErrorMessage@2140; assertErrorMessage@2141; tryGrow@2212; tryGrow@2213; tryGrow@2214; tryGrow@2215; assertErrorMessage@2231; assertErrorMessage@2232; assertErrorMessage@2237; assertErrorMessage@2238
+
+`js/src/jit-test/tests/wasm/memory64/bug1900526.js` | `3c00968d3ab09d594d06657425aed8da17e1c22f` | 375 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/memory64/bug1912695.js` | `6d440f53dac4acef8b390a7d553776b5c4623e6e` | 202 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/memory64/data-active.js` | `a54037f6eef217fef7c057c4b36e00cd7fcd917b` | 1298 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testIt@3; assertErrorMessage@28
+
+`js/src/jit-test/tests/wasm/memory64/directives.txt` | `15d6ce54900f27a69d55d07964964c9254f520bd` | 186 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/memory64/memory-copy-shared.js` | `107efebe6c561973e2b6a10cd47630802de2e3ae` | 1975 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@36; assertErrorMessage@44; doit@56
+
+`js/src/jit-test/tests/wasm/memory64/memory-copy.js` | `e0e3aef37eb19920fd301b6d0eb35f546b3eff6c` | 1803 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@34; assertErrorMessage@42; doit@54
+
+`js/src/jit-test/tests/wasm/memory64/memory-fill-shared.js` | `6505ed3d7e6b30b0e095db481c29dca711a72048` | 1763 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@26; assertErrorMessage@41; doit@47
+
+`js/src/jit-test/tests/wasm/memory64/memory-fill.js` | `cdca4646d9946f29b7efc46a40af392e89694291` | 1586 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@24; assertErrorMessage@39; doit@45
+
+`js/src/jit-test/tests/wasm/memory64/memory-grow.js` | `650cdc254f262ce43359f5069f4f83a4ffa4d983` | 953 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/memory64/memory-init.js` | `b821a4842cdbcf7147fba6f6e2da21da003ec18c` | 1259 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@31; doit@39
+
+`js/src/jit-test/tests/wasm/memory64/utility.js` | `510228d6ac38bbc2827c0c0a79a1a6c03f20a6b9` | 421 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/movegroup-chaining.js` | `6392e2173b0aa908f8d7f4c18cae84c27d3d7f6e` | 5961 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/multi-memory/directives.txt` | `d76bf3d66896104cbd83777f2191327dcf3019e7` | 101 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/multi-memory/memory_copy.js` | `13f0de3dded09237b49682ef3ac88ac671ec57d9` | 2412 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@66; assertErrorMessage@71; assertErrorMessage@74; assertErrorMessage@77
+
+`js/src/jit-test/tests/wasm/multi-value/block-run.js` | `3b6689d2f9a79c1386cc3f145d728ec47296f8f3` | 5888 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/multi-value/block-validate.js` | `7845c016e3615f6e2907a2571e62f00e336ff1fb` | 6045 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/multi-value/call-js.js` | `7af031e5f075a41f6f878750b3ea0c66ba8abad6` | 4233 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: expectMultiValuePass@45; expectMultiValueError@56; assertErrorMessage@66; expectMultiValuePass@69; expectMultiValuePass@70; expectMultiValuePass@71; expectMultiValuePass@72; expectMultiValuePass@73; expectMultiValuePass@74; expectMultiValueError@77; expectMultiValueError@78; expectMultiValueError@82; expectMultiValueError@83; expectMultiValueError@84; expectMultiValueError@85; log@91; logged@92; expectMultiValuePass@93; expectMultiValueResult@97
+
+`js/src/jit-test/tests/wasm/multi-value/call-ref.js` | `63b7eb271b6d323287fa366ff398c111cbca4bf1` | 2582 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: resetCounter@2; boxNextInt@4; unboxInt@5; boxNextThreeInts@6; unboxThreeInts@9; testAddNextThreeIntsInner@13; testAddNextThreeInts@20; testAddNextThreeIntsInner@24; testAddNextThreeIntsInner@77
+
+`js/src/jit-test/tests/wasm/multi-value/call-run.js` | `67662a4af5296274d8ac852e08059dacc3009dae` | 2489 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/multi-value/call-validate.js` | `513e11bc6e650e8470fdcfa8151971500792d2e6` | 955 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/multi-value/directives.txt` | `b5a203297fc83221f298f47818f49caab23ee63c` | 297 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/multi-value/i32-stack-results.js` | `e60b4fc1e72f6d21c416beeb05448c62000aae93` | 976 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/multi-value/ion-inlining.js` | `0d9a05214e5e68fd2cbb6b58c4ace35815b790fa` | 359 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/multi-value/random-tests.js` | `828c13a7f516468c66121634edb329542fc7832d` | 19719 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: funcs_util@36; funcs_rng@120; strcmp@182; genEnd@210; genMiddle@231; genStart@263; toRandomPermutation@350; testMain@365; summariseVec@413
+
+`js/src/jit-test/tests/wasm/multi-value/regress-1597200.js` | `542bd542abc52b446ae972babdc46314809300e9` | 910 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/multi-value/regress-1621645-2.js` | `4ba4b3b1164632a9e1e3c496c4bdf0f6c35247c6` | 589 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/multi-value/regress-1621645.js` | `dc9aaf264ca6aab33a5d136916f979c17d289db2` | 471 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/multi-value/regress-1628417.js` | `eb97b2116faf5cf452a649eb5e7e402bba767de4` | 281 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/multi-value/regress-1628426.js` | `ffb13333c4a00a42144c9578e85b37b431569b39` | 586 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/multi-value/regress-1628429.js` | `3446e0bc8b2d2dbc48cbeb73383ec82fc017f0ed` | 237 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/multi-value/regress-1628499.js` | `e4360fcb9c026d17998eb03fe9047a43d753d486` | 358 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/multi-value/regress-1629496.js` | `220fcf8d3de8b28d9cf83b684d91ed26f8d52540` | 213 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/multi-value/regress-1631423.js` | `2460830dfd452bb9c88732918108c7a451c3de70` | 331 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/multi-value/regress-1661723.js` | `3248c13444e1c876b74fc7b267d8f8e318fd55f9` | 524 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: fn@15
+
+`js/src/jit-test/tests/wasm/name.js` | `ce61eb032b601d625a388afdf022b5f70684d1be` | 549 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/nan-semantics.js` | `b2a8587a4f9d21e19e1484e7197b876239d2b264` | 6083 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertSameBitPattern@5; float32@24; float64@28; test@132
+
+`js/src/jit-test/tests/wasm/oom/breakpoints.js` | `eabb660e0fef7509322c90ccc5473cf52a4a24a8` | 210 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@5
+
+`js/src/jit-test/tests/wasm/oom/bug1922861.js` | `8196b1a21d9369642c01a668011b63fa6c9ec691` | 201 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@1
+
+`js/src/jit-test/tests/wasm/oom/bug1969375.js` | `10b4314ebc1a13f1745db99c203611e92a98176d` | 111 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@2
+
+`js/src/jit-test/tests/wasm/oom/bug1972235.js` | `7d9e709ef65eb175cc50c1c1bc34a6344118ae8e` | 344 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@5; oomTest@11
+
+`js/src/jit-test/tests/wasm/oom/bug2028881.js` | `5d9cf3ddf7e19d26a639087af21a5a2622eec582` | 174 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@4
+
+`js/src/jit-test/tests/wasm/oom/bug2045444.js` | `1220e760ebf593805c3ff93c1d8978feaa486828` | 1130 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@19
+
+`js/src/jit-test/tests/wasm/oom/bug2045447.js` | `1b06df3cfd72c158e8973846eab8229fde88cc6b` | 986 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/oom/directives.txt` | `6c28625dd160de28d78ce79f00c732859729ac9d` | 212 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/oom/exports.js` | `f75ada6199eafabcfb733f2040c745062c86ee57` | 248 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@1
+
+`js/src/jit-test/tests/wasm/oom/jsapi-prototype.js` | `f5f319a8c59792cb0a971fbca65dd49fd43076e2` | 962 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@1; oomTest@6; oomTest@11; oomTest@16; oomTest@22
+
+`js/src/jit-test/tests/wasm/passive-segs-boundary.js` | `97e506b6b39917b888e89f7e17ecd8848e934b98` | 17582 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: do_test@22; mem_test@99; mem_test_nofail@105; tab_test@111; tab_test_nofail@117
+
+`js/src/jit-test/tests/wasm/passive-segs-nonboundary.js` | `dd7d84f0a823a3613b7a1aa2739a694f3a341bea` | 48457 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: gen_tab_impmod_t@30; tab_test@73; gen_mem_mod_t@167; mem_test@188; checkDataCount@261; assertErrorMessage@270; checkNoDataCount@281; assertErrorMessage@288; checkMiscPrefixed@309; assertErrorMessage@320; assertErrorMessage@359; assertErrorMessage@376; assertErrorMessage@390; assertErrorMessage@405; checkRange@417; assertErrorMessage@453; assertErrorMessage@467; assertErrorMessage@508; assertErrorMessage@602; assertErrorMessage@616; assertErrorMessage@630; assertErrorMessage@644; assertErrorMessage@689; assertErrorMessage@716
+
+`js/src/jit-test/tests/wasm/passive-segs-partial-mem.js` | `e602ebd2543753e04a5ceb339c2a90271ba1a0cc` | 6478 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getBuildConfiguration@3; mem_fill@18; assertErrorMessage@30; mem_init@57; assertErrorMessage@72; mem_copy@114; assertErrorMessage@132
+
+`js/src/jit-test/tests/wasm/passive-segs-partial-table.js` | `2d2e8fcf72d181516ec2cb2b759c7285d007a136` | 6291 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: tbl_init@12; assertErrorMessage@41; tbl_copy@85; assertErrorMessage@117
+
+`js/src/jit-test/tests/wasm/profiling.js` | `2d92060f39273af283f29ee40925493507170136` | 12126 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: test@14; testError@136; ffi@300; sumTwo@306
+
+`js/src/jit-test/tests/wasm/prototypes.js` | `2c57009b2cf98d8018c8335dc0d6f856a22c12fb` | 1003 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: _Module@1; _Instance@2; _Memory@3; _Table@4; _Global@5
+
+`js/src/jit-test/tests/wasm/ref-types/directives.txt` | `f9c573abef838c8bd7f0a9528ef8400ee4cf14b4` | 262 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/ref-types/externref-boxing.js` | `854f3e781500c932feb3306c775840fa48eea590` | 4242 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/ref-types/externref-fastpaths.js` | `14349a15d5af3de19a3b0f31c590f0cf0c2bd7eb` | 3959 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: js_externref_regarg@24; js_externref_stackarg@35; js_returns_externref@79
+
+`js/src/jit-test/tests/wasm/ref-types/externref-global-object.js` | `806896e9b8502d482737983de9192b6208bbfaf7` | 2652 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: Baguette@4; assertErrorMessage@14; assertErrorMessage@21; assertErrorMessage@26
+
+`js/src/jit-test/tests/wasm/ref-types/externref-global-postbarrier.js` | `06d9521504524f67b26d3f46b191e4bccfd20d51` | 2381 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: Baguette@4; test@41; testStacks@75
+
+`js/src/jit-test/tests/wasm/ref-types/externref-global-prebarrier.js` | `139f71e758664954a944ea98129d7bec2cee4b1e` | 1690 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/ref-types/externref-val-tracing.js` | `3c7e596d1205bf8267398422d73eea59362e3166` | 293 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/ref-types/externref.js` | `37a9de1da0106a6e5b28231b043a23d332ff37a0` | 13085 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: Baguette@2; assertErrorMessage@10; assertErrorMessage@16; assertErrorMessage@25; wasmEvalText@51; assertJoin@164; param@262; ret@280; mirror@355; augment@358; assertErrorMessage@398; assertErrorMessage@402
+
+`js/src/jit-test/tests/wasm/ref-types/funcref-fastpaths.js` | `1650deda3fd1d3edda56fa38da53fd4fa61e5dc9` | 2995 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: js_funcref_regarg@30; js_funcref_stackarg@41
+
+`js/src/jit-test/tests/wasm/ref-types/funcref.js` | `21ce95c0cbee7747d5d4188166a7bc00006af260` | 5877 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@99; assertErrorMessage@111; assertErrorMessage@121; assertErrorMessage@123; assertErrorMessage@130; assertErrorMessage@135
+
+`js/src/jit-test/tests/wasm/ref-types/fuzz-gc-while-allocating-global.js` | `0b516223976346e91645ea33bf247ceb54579ea7` | 100 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/ref-types/ref-func.js` | `2036f6b88ae6a235aeb29d72fbca48036ab2fa73` | 9540 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@69; validFuncRefText@77; assertErrorMessage@89; assertErrorMessage@107; assertErrorMessage@114; checkPassiveElemSegment@138; assertErrorMessage@160; testCodeRefFuncIndex@246; assertErrorMessage@247; testGlobalRefFuncIndex@270; assertErrorMessage@271
+
+`js/src/jit-test/tests/wasm/ref-types/stackmaps1.js` | `0776b490b2f31a3dd33109da1effac0bb155e159` | 2950 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: Croissant@68; allocates@73; check3@77
+
+`js/src/jit-test/tests/wasm/ref-types/stackmaps2.js` | `986d378a753a7f6330a2bd03fd1ead9171a1d8fc` | 4398 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: Croissant@85; allocates@90; handler@96; quitp@119; check3@123
+
+`js/src/jit-test/tests/wasm/ref-types/stackmaps3.js` | `1b4c15abd261d43b1a745cec0c063a7b8ee9e751` | 5356 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: BoxedInt@102; mkBoxedInt@107; printBoxedInt@111; Cons@115; mkCons@120; showList@124; checkList@134; Croissant@155; allocates@159; handler@163
+
+`js/src/jit-test/tests/wasm/ref-types/stackmaps4-params-n-locals.js` | `2b95ea14a65df3a17af6d4e14fc4bea48ebff8ef` | 4102 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: Stuff@3; allocate@6; visit@16
+
+`js/src/jit-test/tests/wasm/ref-types/stackmaps5.js` | `e6ec80607933b81d347d1db54bc85ec23110b9f0` | 605 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/ref-types/tables-api.js` | `a2ae3c45f0daff8463de52aa02c0aa66f2a28f72` | 2796 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertTableFilled@3
+
+`js/src/jit-test/tests/wasm/ref-types/tables-fill.js` | `29f732cf4be0904a018ab73855c97cbd93deb09d` | 7556 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testTableFill@3; check_table0@35; assertErrorMessage@57; assertErrorMessage@106; assertErrorMessage@110; assertErrorMessage@117; assertErrorMessage@121; assertErrorMessage@125; assertErrorMessage@129; assertErrorMessage@149; assertErrorMessage@157; assertErrorMessage@165; assertErrorMessage@173; assertErrorMessage@182; assertErrorMessage@191; assertErrorMessage@200; assertErrorMessage@209
+
+`js/src/jit-test/tests/wasm/ref-types/tables-generalized.js` | `19e530baae680e933720221454fc393f65ad44c0` | 15577 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@80; assertErrorMessage@97; assertErrorMessage@108; assertErrorMessage@119; assertErrorMessage@129; assertErrorMessage@143; assertErrorMessage@164; dummy@202; testTableGet@213; assertErrorMessage@222; assertErrorMessage@223; assertErrorMessage@230; assertErrorMessage@240; testTableSet@251; assertErrorMessage@264; assertErrorMessage@265; assertErrorMessage@272; assertErrorMessage@282; assertErrorMessage@292; assertErrorMessage@299; assertErrorMessage@309; testTableGrow@316; assertErrorMessage@342; assertErrorMessage@343; assertErrorMessage@356; assertErrorMessage@380; assertErrorMessage@390
+
+`js/src/jit-test/tests/wasm/ref-types/tables-multiple.js` | `4d6cf1a492bc4dd85f2ca4fa576076ecf880f67a` | 17360 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@320; assertErrorMessage@323; assertErrorMessage@326; assertErrorMessage@329; assertErrorMessage@339; assertErrorMessage@348; assertErrorMessage@357; assertErrorMessage@366; assertErrorMessage@375; assertErrorMessage@384; assertErrorMessage@393; assertErrorMessage@402; assertErrorMessage@409; assertErrorMessage@420; assertErrorMessage@429
+
+`js/src/jit-test/tests/wasm/ref-types/tables-postbarrier-grow.js` | `20086e6579872f986aec0e0ca0512c7cb058b582` | 522 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/ref-types/tables-stress.js` | `ccee9100b197944bc64a4ec0f020ca268494d17a` | 2016 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/baseline-arm64-chunk-pop.js` | `a951b6747a3957b9c92ddcce4c3b731b396ebc73` | 663 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/baseline-builtin-abi.js` | `16de2dc40004a387a128a00d91e57fa38b21249b` | 702 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/baseline-bytereg.js` | `8bdcc32618baf3ad201a8bcd6db13e91ad087a79` | 1055 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/baseline-extend8.js` | `6e637e97c9a209c49680211014f21fa6832a0d92` | 1084 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: adds@20; drops@27
+
+`js/src/jit-test/tests/wasm/regress/baseline-getglobal-scratch.js` | `2f4d74b91212e83db0c7e8cd47040a09b846b873` | 1199 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/baseline-i64-opt-cmp.js` | `eb6cafb8f0326b427d674569dc3f10d24e09555e` | 479 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/baseline-joinreg.js` | `01bc3d5bbcebb989ddfe7ba328cac8e5d4e33848` | 715 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/baseline-many-results.js` | `ff4d9c35dd0bd43ef89167d8c84234859610e5cb` | 1278 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@60
+
+`js/src/jit-test/tests/wasm/regress/baseline-nops-jumptable.js` | `e4388296fb31c3e58f65b35ccd584efbcadbced1` | 308 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/baseline-pop-along-edge.js` | `650931c99a3f5ee127b57cf88a6d018c0f2dd871` | 2124 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/baseline-pop-before-capture.js` | `b3a41f69492b852fc7c02900948d103810f0a408` | 169 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/baseline-stack-height-during-stackmap.js` | `d2d1623bd8acfb59f8b1de799f5eb34206af7c01` | 883 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/baseline-stack-height.js` | `185a7c3069bfc8559769a3e30ad913743fbb5f45` | 95 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/baseline-stack-height.wasm` | `cc25a1dac8033e72ef5ea8f7a207f6f1636beaed` | 67032 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/brtable-conditionblock-folding.js` | `c1c4e9970ce7c152f50beac1186993fda57f959e` | 276 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug-1833339.js` | `fb99428f88d8d742c90c85a5be91734c8a26ff5a` | 292 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1300546.js` | `2897995deb35138da7573f1d0ad9a48cfdddd7d5` | 802 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1311019.js` | `0a9e5bbb1ef9115c63a2e22872ec01ff818f6488` | 226 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1392105.js` | `4752da8ddff3941356371a3008c9a78a49fe579d` | 246 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1440512.js` | `1997b34f7f5439894e1d76ef86392ffcbef14fd2` | 7029 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: makeSig@22; Binary@30; emit_u8@31; emit_u32v@34; emit_bytes@42; emit_string@47; emit_header@54; emit_section@57; WasmFunctionBuilder@65; constructor@66; exportAs@69; addBody@72; WasmModuleBuilder@78; constructor@79; addType@85; addFunction@88; addImport@94; addExport@101; toArray@106; toBuffer@180; toModule@190; testProperties@195
+
+`js/src/jit-test/tests/wasm/regress/bug1450800.js` | `fb8493c102b4987a5f90b15e3a146bd5ef1a2d84` | 951 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: wasmEvalText@4; testInitExpr@16
+
+`js/src/jit-test/tests/wasm/regress/bug1467415.js` | `177e67ba08e30d6620fe363f99cf4efcc822a9cb` | 931 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1491322.js` | `ae3d6a0e7336e785b1634705057e759bce5c4c00` | 953 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1502886.js` | `a45bf774a45af969d1d500ab7df0edc6bdeb1384` | 828 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@5
+
+`js/src/jit-test/tests/wasm/regress/bug1507314.js` | `db07593d875d5ef0b6f7c75c94e733e663f74558` | 240 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1533204.js` | `e901fd066bbcac52bc54edb23ee6f611d469af6a` | 217 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: DiagModule@4; diag@6
+
+`js/src/jit-test/tests/wasm/regress/bug1566992.js` | `52d2c0710cd13d7e79ee39bf2f708109f34c627e` | 284 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1569137.js` | `d80ae954867961e737b17d682deba1ee692ee233` | 1424 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1590920.js` | `4317a53b2625152a6e1f2d127992625f42cf0292` | 320 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1678542.js` | `8c3f44fa6db62a6fa3a9941ee24943ddfcbde25d` | 380 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1678785.js` | `b04ac8480bf84fc1239dc91e19486035f919f022` | 532 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1684861.js` | `15856730f4ec9621b9587cd6275ddcac967b660e` | 1838 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@19; assertErrorMessage@33; assertErrorMessage@55; assertErrorMessage@56
+
+`js/src/jit-test/tests/wasm/regress/bug1699647.js` | `4e51013b8579517e5df0277647746f160c57727a` | 456 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1700610.js` | `adeca4cb88e937c13ece06d990f1765ca1b3db9a` | 376 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1708124.js` | `3cccd59dc097bc0c572d47e5e7f89af9a6e31474` | 191 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1713581.js` | `a7201ccb225e07ee6a73ff0a8041ec7db4896497` | 343 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: wasmEvalText@1
+
+`js/src/jit-test/tests/wasm/regress/bug1727284/directives.txt` | `82e51d5a0192bcf4c40ecbe1f6ee02904f366999` | 96 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1727284/test.js` | `54d7350be9ce860ab5725eb443e15b6352a630a7` | 303 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: test@1
+
+`js/src/jit-test/tests/wasm/regress/bug1747870.js` | `2625e965fbf1585175181df541316f725762155d` | 495 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1761850.js` | `609991bde46e141798d2c80024510165e13af04a` | 3020 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: lt@5; le@6; gt@7; ge@8; eq@9; ne@10; lt@42; le@43; gt@44; ge@45; eq@46; ne@47
+
+`js/src/jit-test/tests/wasm/regress/bug1762899.js` | `3938c93a02d1afc9d54dfbef51dc2712f50e0217` | 1070 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1770335.js` | `569d7bd35e72890b58653720708f7b362855fd9a` | 1160 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1777604/directives.txt` | `e627a218801d3acf8f848b36f94f358d0e196d34` | 69 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1777604/test.js` | `5accdbdd1445056a99ed42103a5e58686cb7ccee` | 1247 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: compileAndRun@10; compileStreaming@13
+
+`js/src/jit-test/tests/wasm/regress/bug1821582.js` | `5a8cc90d8e90c7d17dc3fee054560701d54b374e` | 6459 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testMemoryWithTypedArrays@7; testPlainSABBeforeWasmMemory@45; testMultiplePlainSABsBeforeWasmMemory@66; testDuplicateMemoryReference@90; testTwoIndependentMemories@109; testPlainSABThenMemoryThenTypedArray@134; testNestedMemoryWithOuterTypedArray@155
+
+`js/src/jit-test/tests/wasm/regress/bug1836708.js` | `87b7483bd6a6921c77e35dde619fe57c87e33ab5` | 517 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1837686.js` | `3ae29ceac9bfe983ae4593cb9e3548e07927371a` | 1007 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1839065.js` | `4bb46862921317218cbae35cbc9e28628be18dfa` | 716 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: wasmEvalText@1
+
+`js/src/jit-test/tests/wasm/regress/bug1839142.js` | `71047f9a7ea67b7439b02252b4c033d349c5ec44` | 4365 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1856733.js` | `1809cdb7e3faf021012c33a2b3c6d62dd1888e36` | 1254 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1857829.js` | `2ef2f8db7a4382af31e253572ccf6384985ad327` | 696 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1858982.js` | `8d499f9de875b713125e82269499c8f4d1ef8650` | 1039 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1866545.js` | `6c6a92c0abb1584cea9b6f5220d1e73bea67c1ae` | 449 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1878673.js` | `edf2e671877dce836ef555aa4c492419482e0d9f` | 275 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@3
+
+`js/src/jit-test/tests/wasm/regress/bug1880770.js` | `0e748137d2f4b57486a3b4187be30f6731591a68` | 487 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: function@6; oomTest@18
+
+`js/src/jit-test/tests/wasm/regress/bug1886870.js` | `a4947bd91a28776cbcf357d05a9752b72bfc0a79` | 199 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@3
+
+`js/src/jit-test/tests/wasm/regress/bug1887535.js` | `e2793831bf39fc7bd08fb0b96706d09c01fb8711` | 411 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: C2@5; f@9; f4@18
+
+`js/src/jit-test/tests/wasm/regress/bug1887596.js` | `8ff579fc351165a8cce005dcbf66d948205853c9` | 443 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1891658.js` | `304ea0f5ea22e1c29a2cfd1a37774a581992a4dd` | 233 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1895123.js` | `2f065be8a16f50d01e0b1ae66e4d47ab8a7a2c1b` | 432 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: timeout@6
+
+`js/src/jit-test/tests/wasm/regress/bug1906451.js` | `65571d76ae8c65a35e9c34062a0a8959b99499fd` | 474 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1913876.js` | `1048fa59c3ad9f796aac8a0c5c7b073e26c34802` | 398 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1917807.js` | `3751cef9ba585463f1350310bbd15e9775e24577` | 643 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: processWAST@5
+
+`js/src/jit-test/tests/wasm/regress/bug1928645.js` | `d79a852225928f3444d0e70c283e3c391a5417e3` | 2991 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1928993.js` | `37abdfac6078530ff3cb17018d9ad3b4b86348b3` | 319 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@12
+
+`js/src/jit-test/tests/wasm/regress/bug1931407.js` | `c2fc84cf63739dc5c18d02b5fd9bdd30944f5c63` | 419 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@3
+
+`js/src/jit-test/tests/wasm/regress/bug1932651.js` | `a67f3cb6b8b8503b5f099013c2de5022b25decf6` | 371 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1936689.js` | `ded34a8088a1845b9170cc6de44a4f828d70345a` | 224 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@7
+
+`js/src/jit-test/tests/wasm/regress/bug1941179.js` | `f9cb22d2caec59a9af6e3dc423e2f2921dbbf561` | 220 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@1
+
+`js/src/jit-test/tests/wasm/regress/bug1947697.js` | `9e6e4ff097dbd320cd98f5f988da67023c572f04` | 454 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1953381.js` | `3fa1a3f32a9c2bb434f049921560c9ec868582f8` | 1187 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1956768.js` | `caeceb54256f5216f3d239253f55b1db06cad7af` | 656 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@19
+
+`js/src/jit-test/tests/wasm/regress/bug1957086.js` | `152520df0fda7228c3b99cc59d3ec43f1a6a5803` | 256 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@5
+
+`js/src/jit-test/tests/wasm/regress/bug1957544.js` | `0bedb88c27035e0f8a453883c1b1fc42452c43a8` | 110 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug1957545.js` | `6b59925a6159bda73fc0e14dfcb996adbdbef12c` | 108 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@1
+
+`js/src/jit-test/tests/wasm/regress/bug1958393.js` | `d85431b3c642df68f0df7e60adececc21bf5d12f` | 329 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@7
+
+`js/src/jit-test/tests/wasm/regress/bug1966577.js` | `a29f19214e7e2d97de915f1537094830a5f022e9` | 292 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@2
+
+`js/src/jit-test/tests/wasm/regress/bug1975045.js` | `c4bee8dc26bbee75961ac0cd4846e18e4e6e6df5` | 134 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@1
+
+`js/src/jit-test/tests/wasm/regress/bug1977469.js` | `aca8c441e902d200a95c1a9316dc331ec908af4e` | 200 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@2
+
+`js/src/jit-test/tests/wasm/regress/bug1987624.js` | `1ff1c25e315d8ed916b11273fdcb941e1eef61fc` | 154 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: get@3
+
+`js/src/jit-test/tests/wasm/regress/bug1992130.js` | `41892067ff0086bf752e8b6ab4829df70452911f` | 529 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug2010050.js` | `4783045c3f21a9295eeb1fcddeaacd7d9b3fcd1e` | 794 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@27
+
+`js/src/jit-test/tests/wasm/regress/bug2011834.js` | `869cf886c0c3ce6e1171af1cc55f79974bc1783e` | 583 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: b@5; d@9; assertErrorMessage@23
+
+`js/src/jit-test/tests/wasm/regress/bug2013165.js` | `51298c3d6e60b9239d23f12d51591f8af6be2c60` | 1417 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug2013616.js` | `44ba2e54a3de20b5b990c22d61204e81a2ceb25e` | 2190 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug2013739.js` | `78bb8be304e71195c10c1434a9ad5dd0869b18af` | 1402 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: gcWrapper@5
+
+`js/src/jit-test/tests/wasm/regress/bug2016956.js` | `aac04007fd4ba6802e5758b3233777c5f7cb0439` | 428 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug2023384.js` | `30271c9b7bea33de94095eac112343d2e4e3e641` | 457 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug2024918.js` | `5c856daefd53048eb39d5a3bc0e10a9a6f1f0b3d` | 1294 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug2029293.js` | `6b310dc821deb172d5e6455f287c908b2bb18208` | 1077 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug2029735.js` | `91d0b9c11ac4a1566361c88f2d03b0ee7e51bd31` | 466 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug2035907.js` | `5e045b3be79e5147e2e71f3dd089557b95e41119` | 260 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@8
+
+`js/src/jit-test/tests/wasm/regress/bug2038964-trap.js` | `fb94860e4197d5c32c258e884086aab161b43bb2` | 848 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: test@3
+
+`js/src/jit-test/tests/wasm/regress/bug2038964.js` | `a41a6d8fed9bb07330d40826e081fd9b9aa29b6d` | 711 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: test@3
+
+`js/src/jit-test/tests/wasm/regress/bug2042279.js` | `994abb3b89d128afff72c81186120f16a5aa386c` | 993 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug2045312.js` | `ff1db8f3b6c9dcda04dc7bd75b0ee38eb8c9152e` | 3528 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ref@62
+
+`js/src/jit-test/tests/wasm/regress/bug2045575.js` | `c4878f6bc19482eefd1b43a6bc2cdf0d98e01ce1` | 3096 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug2046325.js` | `77ea7db8ef80d222d5f08f58d17afe3cece47f7a` | 1262 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: hitsForFuncAtIndex@3
+
+`js/src/jit-test/tests/wasm/regress/bug2055416.js` | `1909e3e9e8e0894b1946162a273b1238554cffce` | 368 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug2058673.js` | `82851be75bc68e269b7815a4cf3e6ce7384f38ea` | 2533 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug2059109.js` | `be4bb0ec35a51aa16b866bcc6267e51e15812c5c` | 1485 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug2061399.js` | `7efdbf12781871979f7c6f7ff21bfca344ba1f87` | 2016 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug2063089.js` | `cf258afe0f97889608e8e660d7369eef96035ad4` | 1338 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug2067564.js` | `b82e4208fe45449368389530a17857b18537fc0b` | 615 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@1
+
+`js/src/jit-test/tests/wasm/regress/bug2068386.js` | `91c648e6ab8e6cae189528585868f5d7bb74e1e5` | 901 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/bug2070383.js` | `0eb6c6f10178ab59084329d8a77f377e390fcfb2` | 206 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: oomTest@1
+
+`js/src/jit-test/tests/wasm/regress/bug2074892.js` | `7f907de94f0af6c1af2fab078f5f21591a8924ee` | 856 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: test@1
+
+`js/src/jit-test/tests/wasm/regress/builtin-import-sigs.js` | `50aa2a41d16473bf52b6601831b79a9e7e1e0291` | 718 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/cache-entry-error.js` | `9abc13d5021c4a9c582724076936627e960f6dd9` | 321 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@4; assertErrorMessage@6
+
+`js/src/jit-test/tests/wasm/regress/caller-property.js` | `8b9a95a98975a07e7fff9a67200b011f477d7913` | 181 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: testCaller@3
+
+`js/src/jit-test/tests/wasm/regress/current-memory-tls.js` | `5c36364a3668325244f1d079633a63fdfe071090` | 2293 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: assertErrorMessage@88
+
+`js/src/jit-test/tests/wasm/regress/debug-clone-segment.js` | `f91f62df32f333ad33cf3d432e4e31c312185220` | 764 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: processModule@32
+
+`js/src/jit-test/tests/wasm/regress/debug-exception-in-fast-import.js` | `bba37b38b005637445dc638ea46d7a912e71e0d3` | 617 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: Debugger@5; function@14
+
+`js/src/jit-test/tests/wasm/regress/debug-osr.js` | `e8d3285ed490163a28b91c75a6b49bc52fe774e9` | 500 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: Debugger@5
+
+`js/src/jit-test/tests/wasm/regress/directives.txt` | `0e4ef74ec737cff57a47eb180ff54f6587ac0de7` | 319 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/enable-profiling-in-import.js` | `dd17b2089fac7eb175dd462ba2a6a30e674d0b7e` | 261 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/frame-offset-stack-arg.js` | `6ab2834d79f4ed44ebef895e169ada1fd1e88b43` | 1455 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: f@8
+
+`js/src/jit-test/tests/wasm/regress/fuzzsafe-bug1645610.js` | `6bd88e95bce16936e064eeb0e838aeb4639f27ff` | 447 bytes | test-path,source | UTF-8 | mode 100644
+
+`js/src/jit-test/tests/wasm/regress/gvn-unremovable-phi.js` | `98869a642758f32a3c0ced81752a3afe4a47db4d` | 355 bytes | test-path,source | UTF-8 | mode 100644
+
+## Validation and limits
+
+Every listed blob was read from the pinned Git tree and its Git SHA-1 was recomputed. Extraction is structural only. Read implementations, callers, build conditions, and tests before making a behavior claim. Runtime behavior and historical reasons remain unverified. Reproduce a file with `git show 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b:path` in the corresponding source clone. The full study coverage and navigation note records aggregate results.

@@ -1,0 +1,1408 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:14:46.642314+00:00","paths":["dom/worklet/tests/worklet_audioWorklet_options.js","dom/worklet/tests/worklet_console.js","dom/worklet/tests/worklet_dump.js","dom/worklet/tests/worklet_exception.js","dom/worklet/tests/worklet_paintWorklet.js","dom/worklet/tests/worklet_promise.js","dom/worklet/tests/worklet_test_audioWorkletGlobalScopeRegisterProcessor.js","dom/xhr/XMLHttpRequest.cpp","dom/xhr/XMLHttpRequest.h","dom/xhr/XMLHttpRequestEventTarget.cpp","dom/xhr/XMLHttpRequestEventTarget.h","dom/xhr/XMLHttpRequestMainThread.cpp","dom/xhr/XMLHttpRequestMainThread.h","dom/xhr/XMLHttpRequestString.cpp","dom/xhr/XMLHttpRequestString.h","dom/xhr/XMLHttpRequestUpload.cpp","dom/xhr/XMLHttpRequestUpload.h","dom/xhr/XMLHttpRequestWorker.cpp","dom/xhr/XMLHttpRequestWorker.h","dom/xhr/moz.build","dom/xhr/tests/browser.toml","dom/xhr/tests/browser_blobFromFile.js","dom/xhr/tests/browser_block_sync_xhr_system_requests.js","dom/xhr/tests/browser_sync_xhr_event_handing_switch_bcg.js","dom/xhr/tests/browser_temporaryFile.js","dom/xhr/tests/browser_xhr_onchange_leak.html","dom/xhr/tests/browser_xhr_onchange_leak.js","dom/xhr/tests/browser_xhr_substituted_protocol_responseURL.js","dom/xhr/tests/common_temporaryFileBlob.js","dom/xhr/tests/crashtests/1546185.html","dom/xhr/tests/crashtests/crashtests.list","dom/xhr/tests/echo.sjs","dom/xhr/tests/empty.html","dom/xhr/tests/empty_parent.html","dom/xhr/tests/file_XHRDocURI.html","dom/xhr/tests/file_XHRDocURI.html^headers^","dom/xhr/tests/file_XHRDocURI.sjs","dom/xhr/tests/file_XHRDocURI.text","dom/xhr/tests/file_XHRDocURI.text^headers^","dom/xhr/tests/file_XHRDocURI.xml","dom/xhr/tests/file_XHRDocURI.xml^headers^","dom/xhr/tests/file_XHRResponseURL.js","dom/xhr/tests/file_XHRResponseURL.sjs","dom/xhr/tests/file_XHRResponseURL.text","dom/xhr/tests/file_XHRResponseURL.text^headers^","dom/xhr/tests/file_XHRResponseURL_nocors.text","dom/xhr/tests/file_XHRSendData.sjs","dom/xhr/tests/file_XHRSendData_doc.xml","dom/xhr/tests/file_XHRSendData_doc.xml^headers^","dom/xhr/tests/file_XHR_anon.sjs","dom/xhr/tests/file_XHR_binary1.bin","dom/xhr/tests/file_XHR_binary1.bin^headers^","dom/xhr/tests/file_XHR_binary2.bin","dom/xhr/tests/file_XHR_fail1.txt","dom/xhr/tests/file_XHR_fail1.txt^headers^","dom/xhr/tests/file_XHR_fail1b.txt","dom/xhr/tests/file_XHR_header.sjs","dom/xhr/tests/file_XHR_pass1.xml","dom/xhr/tests/file_XHR_pass2.txt","dom/xhr/tests/file_XHR_pass3.txt","dom/xhr/tests/file_XHR_pass3.txt^headers^","dom/xhr/tests/file_XHR_system_redirect.html","dom/xhr/tests/file_XHR_system_redirect.html^headers^","dom/xhr/tests/file_XHR_timeout.sjs","dom/xhr/tests/file_html_in_xhr.html","dom/xhr/tests/file_html_in_xhr.sjs","dom/xhr/tests/file_html_in_xhr2.html","dom/xhr/tests/file_html_in_xhr3.html","dom/xhr/tests/file_sync_xhr_document_write_with_iframe.html","dom/xhr/tests/file_sync_xhr_event_handling_helper.html","dom/xhr/tests/file_sync_xhr_nested_helper.html","dom/xhr/tests/iframe_sync_xhr_unload.html","dom/xhr/tests/mochitest.toml","dom/xhr/tests/progressserver.sjs","dom/xhr/tests/relativeLoad_import.js","dom/xhr/tests/relativeLoad_worker.js","dom/xhr/tests/relativeLoad_worker2.js","dom/xhr/tests/responseIdentical.sjs","dom/xhr/tests/slow.sjs","dom/xhr/tests/subdir/relativeLoad_sub_import.js","dom/xhr/tests/subdir/relativeLoad_sub_worker.js","dom/xhr/tests/subdir/relativeLoad_sub_worker2.js","dom/xhr/tests/sync_xhr_unload.sjs","dom/xhr/tests/temporaryFileBlob.sjs","dom/xhr/tests/terminateSyncXHR_worker.js","dom/xhr/tests/test_XHR.html","dom/xhr/tests/test_XHR.js","dom/xhr/tests/test_XHRDocURI.html","dom/xhr/tests/test_XHRResponseURL.html","dom/xhr/tests/test_XHRSendData.html","dom/xhr/tests/test_XHR_anon.html","dom/xhr/tests/test_XHR_header.html","dom/xhr/tests/test_XHR_http2.html","dom/xhr/tests/test_XHR_onuploadprogress.html","dom/xhr/tests/test_XHR_parameters.html","dom/xhr/tests/test_XHR_system.html","dom/xhr/tests/test_XHR_timeout.html","dom/xhr/tests/test_XHR_timeout.js","dom/xhr/tests/test_bug1070763.html","dom/xhr/tests/test_bug1300552.html","dom/xhr/tests/test_bug1697539.html","dom/xhr/tests/test_bug1752863.html","dom/xhr/tests/test_bug1752863_worker.js","dom/xhr/tests/test_bug1788125.html","dom/xhr/tests/test_event_listener_leaks.html","dom/xhr/tests/test_html_in_xhr.html","dom/xhr/tests/test_nestedSyncXHR.html","dom/xhr/tests/test_relativeLoad.html","dom/xhr/tests/test_sharedworker_xhr.html","dom/xhr/tests/test_sync_xhr_document_write_with_iframe.html","dom/xhr/tests/test_sync_xhr_event_handling.html","dom/xhr/tests/test_sync_xhr_nested.html","dom/xhr/tests/test_sync_xhr_timer.xhtml","dom/xhr/tests/test_sync_xhr_unload.html","dom/xhr/tests/test_temporaryFileBlob.html","dom/xhr/tests/test_worker_terminateSyncXHR.html","dom/xhr/tests/test_worker_xhr.html","dom/xhr/tests/test_worker_xhr2.html","dom/xhr/tests/test_worker_xhrAbort.html","dom/xhr/tests/test_worker_xhrAbortDuringTerminate.html","dom/xhr/tests/test_worker_xhr_3rdparty.html","dom/xhr/tests/test_worker_xhr_cors_redirect.html","dom/xhr/tests/test_worker_xhr_doubleSend.html","dom/xhr/tests/test_worker_xhr_headers.html","dom/xhr/tests/test_worker_xhr_implicit_cancel.html","dom/xhr/tests/test_worker_xhr_parameters.html","dom/xhr/tests/test_worker_xhr_parameters.js","dom/xhr/tests/test_worker_xhr_responseURL.html","dom/xhr/tests/test_worker_xhr_system.html","dom/xhr/tests/test_worker_xhr_system.js","dom/xhr/tests/test_worker_xhr_timeout.html","dom/xhr/tests/test_xhr_abort_after_load.html","dom/xhr/tests/test_xhr_forbidden_headers.html","dom/xhr/tests/test_xhr_overridemimetype_throws_on_invalid_state.html","dom/xhr/tests/test_xhr_progressevents.html","dom/xhr/tests/test_xhr_send.html","dom/xhr/tests/test_xhr_send_readystate.html","dom/xhr/tests/test_xhr_withCredentials.html","dom/xhr/tests/window_worker_xhr_3rdparty.html","dom/xhr/tests/worker_bug1300552.js","dom/xhr/tests/worker_bug1697539.js","dom/xhr/tests/worker_file_getcookie.sjs","dom/xhr/tests/worker_temporaryFileBlob.js","dom/xhr/tests/worker_terminateSyncXHR_frame.html","dom/xhr/tests/worker_testXHR.txt","dom/xhr/tests/worker_xhr_cors_redirect.js","dom/xhr/tests/worker_xhr_cors_redirect.sjs","dom/xhr/tests/worker_xhr_headers_server.sjs","dom/xhr/tests/worker_xhr_headers_worker.js","dom/xhr/tests/xhr2_worker.js","dom/xhr/tests/xhrAbortDuringTerminate_worker.js","dom/xhr/tests/xhrAbort_worker.js","dom/xhr/tests/xhr_implicit_cancel_worker.js","dom/xhr/tests/xhr_sharedworker.js","dom/xhr/tests/xhr_worker.js","dom/xhr/tests/xhr_worker_doubleSend.js","dom/xml/CDATASection.cpp","dom/xml/CDATASection.h","dom/xml/ProcessingInstruction.cpp","dom/xml/ProcessingInstruction.h","dom/xml/XMLDocument.cpp","dom/xml/XMLDocument.h","dom/xml/XMLStylesheetProcessingInstruction.cpp","dom/xml/XMLStylesheetProcessingInstruction.h","dom/xml/crashtests/1038887.xhtml","dom/xml/crashtests/1192544.xhtml","dom/xml/crashtests/136896-1.xml","dom/xml/crashtests/1405878.xml","dom/xml/crashtests/1523655.xml","dom/xml/crashtests/185285-1.xml","dom/xml/crashtests/2073692-frame.xml","dom/xml/crashtests/2073692.html","dom/xml/crashtests/2075996-1.html","dom/xml/crashtests/2075996-2.html","dom/xml/crashtests/2075996.sjs","dom/xml/crashtests/382636-1.xml","dom/xml/crashtests/382636-2.svg","dom/xml/crashtests/382636-3.xhtml","dom/xml/crashtests/382636-4.xhtml","dom/xml/crashtests/420429.xhtml","dom/xml/crashtests/431703-1.xhtml","dom/xml/crashtests/453278-frame.xml","dom/xml/crashtests/453278.html","dom/xml/crashtests/803586.xhtml","dom/xml/crashtests/994740-1.xhtml","dom/xml/crashtests/crashtests.list","dom/xml/crashtests/tree.gif","dom/xml/htmlmathml-f.ent","dom/xml/moz.build","dom/xml/nsIXMLContentSink.h","dom/xml/nsXMLContentSink.cpp","dom/xml/nsXMLContentSink.h","dom/xml/nsXMLElement.cpp","dom/xml/nsXMLElement.h","dom/xml/nsXMLFragmentContentSink.cpp","dom/xml/nsXMLPrettyPrinter.cpp","dom/xml/nsXMLPrettyPrinter.h","dom/xml/resources/XMLPrettyPrint.css","dom/xml/resources/XMLPrettyPrint.xsl","dom/xml/resources/jar.mn","dom/xml/resources/moz.build","dom/xml/test/file_bug1666613.xml","dom/xml/test/file_bug293347.xml","dom/xml/test/file_bug293347xslt.xml","dom/xml/test/file_bug343870.xml","dom/xml/test/file_bug691215.xml","dom/xml/test/mochitest-xslt.toml","dom/xml/test/mochitest.toml","dom/xml/test/old/books/bethlehem.gif","dom/xml/test/old/books/bill.gif","dom/xml/test/old/books/books.js","dom/xml/test/old/books/books.xml","dom/xml/test/old/books/charing.gif","dom/xml/test/old/books/classic.css","dom/xml/test/old/books/common.css","dom/xml/test/old/books/kerouac.gif","dom/xml/test/old/books/list.css","dom/xml/test/old/books/road.gif","dom/xml/test/old/books/welville.gif","dom/xml/test/old/docbook.css","dom/xml/test/old/docbooktest.xml","dom/xml/test/old/flamer.gif","dom/xml/test/old/script.xml","dom/xml/test/old/simple.xml","dom/xml/test/old/toc/book.css","dom/xml/test/old/toc/irslogo.gif","dom/xml/test/old/toc/minus.gif","dom/xml/test/old/toc/plus.gif","dom/xml/test/old/toc/rights.xml","dom/xml/test/old/toc/toc.css","dom/xml/test/old/toc/toc.js","dom/xml/test/old/xlink/auto.xml","dom/xml/test/old/xlink/link.css","dom/xml/test/old/xlink/manual.xml","dom/xml/test/old/xmlbase/xmlbase.css","dom/xml/test/old/xmlbase/xmlbase.xml","dom/xml/test/test_bug1666613.html","dom/xml/test/test_bug232004.xhtml","dom/xml/test/test_bug293347.html","dom/xml/test/test_bug343870.xhtml","dom/xml/test/test_bug355213.xhtml","dom/xml/test/test_bug691215.html","dom/xslt/base/moz.build","dom/xslt/base/txCore.h","dom/xslt/base/txDouble.cpp","dom/xslt/base/txErrorObserver.h","dom/xslt/base/txExpandedName.cpp","dom/xslt/base/txExpandedName.h","dom/xslt/base/txExpandedNameMap.cpp","dom/xslt/base/txExpandedNameMap.h","dom/xslt/base/txList.cpp","dom/xslt/base/txList.h","dom/xslt/base/txLog.h","dom/xslt/base/txNamespaceMap.cpp","dom/xslt/base/txNamespaceMap.h","dom/xslt/base/txOwningArray.h","dom/xslt/base/txStack.h","dom/xslt/base/txStringUtils.h","dom/xslt/base/txURIUtils.cpp","dom/xslt/base/txURIUtils.h","dom/xslt/crashtests/1089049.html","dom/xslt/crashtests/111994.xml","dom/xslt/crashtests/111994.xsl","dom/xslt/crashtests/1205163.xml","dom/xslt/crashtests/1205163.xsl","dom/xslt/crashtests/1243337.xml","dom/xslt/crashtests/1243337.xsl","dom/xslt/crashtests/1330492.html","dom/xslt/crashtests/1336828.html","dom/xslt/crashtests/1336830.html","dom/xslt/crashtests/1336832.html","dom/xslt/crashtests/1338277.html","dom/xslt/crashtests/1361892.html","dom/xslt/crashtests/1430818.sjs","dom/xslt/crashtests/1430818.xml","dom/xslt/crashtests/1527277.html","dom/xslt/crashtests/1589930.xml","dom/xslt/crashtests/182460-select.xml","dom/xslt/crashtests/182460-selects.xsl","dom/xslt/crashtests/182460-table.xhtml","dom/xslt/crashtests/1936613.html","dom/xslt/crashtests/1941002-1.html","dom/xslt/crashtests/1941002-2.html","dom/xslt/crashtests/1941002-3.html","dom/xslt/crashtests/1941002.sjs","dom/xslt/crashtests/226425.xml","dom/xslt/crashtests/226425.xsl","dom/xslt/crashtests/406106-1.html","dom/xslt/crashtests/483444.xml","dom/xslt/crashtests/485217.xml","dom/xslt/crashtests/485217.xsl","dom/xslt/crashtests/485286.xml","dom/xslt/crashtests/527558_1.xml","dom/xslt/crashtests/528300.xml","dom/xslt/crashtests/528488.xml","dom/xslt/crashtests/528963.xml","dom/xslt/crashtests/545927.html","dom/xslt/crashtests/601543.html","dom/xslt/crashtests/602115.html","dom/xslt/crashtests/603844.html","dom/xslt/crashtests/667315.xml","dom/xslt/crashtests/91332.xml","dom/xslt/crashtests/91332.xsl","dom/xslt/crashtests/949990.html","dom/xslt/crashtests/crashtests.list","dom/xslt/moz.build","dom/xslt/nsIDocumentTransformer.h","dom/xslt/tests/browser/browser.toml","dom/xslt/tests/browser/browser_bug1309630.js","dom/xslt/tests/browser/bug1309630.sjs","dom/xslt/tests/browser/file_bug1309630.html","dom/xslt/tests/mochitest/bug1729517_2.sjs","dom/xslt/tests/mochitest/bug1769155.sjs","dom/xslt/tests/mochitest/file_bug1135764.xml","dom/xslt/tests/mochitest/file_bug1135764.xsl","dom/xslt/tests/mochitest/file_bug1729517.js","dom/xslt/tests/mochitest/file_bug1729517.xml","dom/xslt/tests/mochitest/file_bug1729517_2.xml","dom/xslt/tests/mochitest/file_bug1729517_2.xml^headers^","dom/xslt/tests/mochitest/file_bug1769155.html","dom/xslt/tests/mochitest/file_metaRefresh.xml","dom/xslt/tests/mochitest/mochitest.toml","dom/xslt/tests/mochitest/test_bug1072116.html","dom/xslt/tests/mochitest/test_bug1135764.html","dom/xslt/tests/mochitest/test_bug1436040.html","dom/xslt/tests/mochitest/test_bug1527308.html","dom/xslt/tests/mochitest/test_bug1729517.html","dom/xslt/tests/mochitest/test_bug1769155.html","dom/xslt/tests/mochitest/test_bug319374.html","dom/xslt/tests/mochitest/test_bug325891.html","dom/xslt/tests/mochitest/test_bug427060.html","dom/xslt/tests/mochitest/test_bug440974.html","dom/xslt/tests/mochitest/test_bug453441.html","dom/xslt/tests/mochitest/test_bug468208.html","dom/xslt/tests/mochitest/test_bug511487.html","dom/xslt/tests/mochitest/test_bug551412.html","dom/xslt/tests/mochitest/test_bug551654.html","dom/xslt/tests/mochitest/test_bug566629.html","dom/xslt/tests/mochitest/test_bug566629.xhtml","dom/xslt/tests/mochitest/test_bug603159.html","dom/xslt/tests/mochitest/test_bug616774.html","dom/xslt/tests/mochitest/test_bug667315.html","dom/xslt/tests/mochitest/test_exslt.html","dom/xslt/tests/mochitest/test_metaRefresh.html","dom/xslt/tests/mochitest/test_parameter.html","dom/xslt/tests/mochitest/test_parameter_conversion.html","dom/xslt/tests/mochitest/test_sorting_invalid_lang.html","dom/xslt/xml/moz.build","dom/xslt/xml/txXMLParser.cpp","dom/xslt/xml/txXMLParser.h","dom/xslt/xml/txXMLUtils.cpp","dom/xslt/xml/txXMLUtils.h","dom/xslt/xpath/XPathEvaluator.cpp","dom/xslt/xpath/XPathEvaluator.h","dom/xslt/xpath/XPathExpression.cpp","dom/xslt/xpath/XPathExpression.h","dom/xslt/xpath/XPathResult.cpp","dom/xslt/xpath/XPathResult.h","dom/xslt/xpath/moz.build","dom/xslt/xpath/txBooleanExpr.cpp","dom/xslt/xpath/txBooleanResult.cpp","dom/xslt/xpath/txCoreFunctionCall.cpp","dom/xslt/xpath/txErrorExpr.cpp","dom/xslt/xpath/txExpr.cpp","dom/xslt/xpath/txExpr.h","dom/xslt/xpath/txExprLexer.cpp","dom/xslt/xpath/txExprLexer.h","dom/xslt/xpath/txExprParser.cpp","dom/xslt/xpath/txExprParser.h","dom/xslt/xpath/txExprResult.h","dom/xslt/xpath/txFilterExpr.cpp","dom/xslt/xpath/txForwardContext.cpp","dom/xslt/xpath/txForwardContext.h","dom/xslt/xpath/txFunctionCall.cpp","dom/xslt/xpath/txIXPathContext.h","dom/xslt/xpath/txLiteralExpr.cpp","dom/xslt/xpath/txLocationStep.cpp","dom/xslt/xpath/txMozillaXPathTreeWalker.cpp","dom/xslt/xpath/txNameTest.cpp","dom/xslt/xpath/txNamedAttributeStep.cpp","dom/xslt/xpath/txNodeSet.cpp","dom/xslt/xpath/txNodeSet.h","dom/xslt/xpath/txNodeSetContext.cpp","dom/xslt/xpath/txNodeSetContext.h","dom/xslt/xpath/txNodeTypeTest.cpp","dom/xslt/xpath/txNumberExpr.cpp","dom/xslt/xpath/txNumberResult.cpp","dom/xslt/xpath/txPathExpr.cpp","dom/xslt/xpath/txPredicateList.cpp","dom/xslt/xpath/txPredicatedNodeTest.cpp","dom/xslt/xpath/txRelationalExpr.cpp","dom/xslt/xpath/txResultRecycler.cpp","dom/xslt/xpath/txResultRecycler.h","dom/xslt/xpath/txRootExpr.cpp","dom/xslt/xpath/txSingleNodeContext.h","dom/xslt/xpath/txStringResult.cpp","dom/xslt/xpath/txUnaryExpr.cpp","dom/xslt/xpath/txUnionExpr.cpp","dom/xslt/xpath/txUnionNodeTest.cpp","dom/xslt/xpath/txVariableRefExpr.cpp","dom/xslt/xpath/txXPathNode.h","dom/xslt/xpath/txXPathOptimizer.cpp","dom/xslt/xpath/txXPathOptimizer.h","dom/xslt/xpath/txXPathTreeWalker.h","dom/xslt/xslt/moz.build","dom/xslt/xslt/txBufferingHandler.cpp","dom/xslt/xslt/txBufferingHandler.h","dom/xslt/xslt/txCurrentFunctionCall.cpp","dom/xslt/xslt/txDocumentFunctionCall.cpp","dom/xslt/xslt/txEXSLTFunctions.cpp","dom/xslt/xslt/txEXSLTRegExFunctions.sys.mjs","dom/xslt/xslt/txExecutionState.cpp","dom/xslt/xslt/txExecutionState.h","dom/xslt/xslt/txFormatNumberFunctionCall.cpp","dom/xslt/xslt/txGenerateIdFunctionCall.cpp","dom/xslt/xslt/txIEXSLTFunctions.idl","dom/xslt/xslt/txInstructions.cpp","dom/xslt/xslt/txInstructions.h","dom/xslt/xslt/txKey.h","dom/xslt/xslt/txKeyFunctionCall.cpp","dom/xslt/xslt/txMozillaStylesheetCompiler.cpp","dom/xslt/xslt/txMozillaTextOutput.cpp","dom/xslt/xslt/txMozillaTextOutput.h","dom/xslt/xslt/txMozillaXMLOutput.cpp","dom/xslt/xslt/txMozillaXMLOutput.h","dom/xslt/xslt/txMozillaXSLTProcessor.cpp","dom/xslt/xslt/txMozillaXSLTProcessor.h","dom/xslt/xslt/txNodeSorter.cpp","dom/xslt/xslt/txNodeSorter.h","dom/xslt/xslt/txOutputFormat.cpp","dom/xslt/xslt/txOutputFormat.h","dom/xslt/xslt/txPatternOptimizer.cpp","dom/xslt/xslt/txPatternOptimizer.h","dom/xslt/xslt/txPatternParser.cpp","dom/xslt/xslt/txPatternParser.h","dom/xslt/xslt/txRtfHandler.cpp","dom/xslt/xslt/txRtfHandler.h","dom/xslt/xslt/txStylesheet.cpp","dom/xslt/xslt/txStylesheet.h","dom/xslt/xslt/txStylesheetCompileHandlers.cpp","dom/xslt/xslt/txStylesheetCompileHandlers.h","dom/xslt/xslt/txStylesheetCompiler.cpp","dom/xslt/xslt/txStylesheetCompiler.h","dom/xslt/xslt/txTextHandler.cpp","dom/xslt/xslt/txTextHandler.h","dom/xslt/xslt/txToplevelItems.cpp","dom/xslt/xslt/txToplevelItems.h","dom/xslt/xslt/txUnknownHandler.cpp","dom/xslt/xslt/txUnknownHandler.h","dom/xslt/xslt/txVariableMap.h","dom/xslt/xslt/txXMLEventHandler.h","dom/xslt/xslt/txXPathResultComparator.cpp","dom/xslt/xslt/txXPathResultComparator.h","dom/xslt/xslt/txXSLTEnvironmentFunctionCall.cpp","dom/xslt/xslt/txXSLTFunctions.h","dom/xslt/xslt/txXSLTNumber.cpp","dom/xslt/xslt/txXSLTNumber.h","dom/xslt/xslt/txXSLTNumberCounters.cpp","dom/xslt/xslt/txXSLTPatterns.cpp","dom/xslt/xslt/txXSLTPatterns.h","dom/xslt/xslt/txXSLTProcessor.cpp","dom/xslt/xslt/txXSLTProcessor.h","dom/xul/ChromeObserver.cpp","dom/xul/ChromeObserver.h","dom/xul/MenuBarListener.cpp","dom/xul/MenuBarListener.h","dom/xul/XULBroadcastManager.cpp","dom/xul/XULBroadcastManager.h","dom/xul/XULButtonElement.cpp","dom/xul/XULButtonElement.h","dom/xul/XULFrameElement.cpp","dom/xul/XULFrameElement.h","dom/xul/XULMenuBarElement.cpp","dom/xul/XULMenuBarElement.h","dom/xul/XULMenuElement.cpp","dom/xul/XULMenuElement.h","dom/xul/XULMenuParentElement.cpp","dom/xul/XULMenuParentElement.h","dom/xul/XULPersist.cpp","dom/xul/XULPersist.h","dom/xul/XULPopupElement.cpp","dom/xul/XULPopupElement.h","dom/xul/XULResizerElement.cpp","dom/xul/XULResizerElement.h","dom/xul/XULTextElement.cpp","dom/xul/XULTextElement.h","dom/xul/XULTooltipElement.cpp","dom/xul/XULTooltipElement.h","dom/xul/XULTreeElement.cpp","dom/xul/XULTreeElement.h","dom/xul/crashtests/107518-1.xml","dom/xul/crashtests/253479-1.xhtml","dom/xul/crashtests/253479-2.xhtml","dom/xul/crashtests/326204-1.xhtml","dom/xul/crashtests/326644-1-inner.xhtml","dom/xul/crashtests/326644-1.html","dom/xul/crashtests/326875-1.xhtml","dom/xul/crashtests/329982-1.xhtml","dom/xul/crashtests/336096-1.xhtml","dom/xul/crashtests/344215-1.xhtml"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013"}} -->
+# firefox/dom structural source map 142
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. This is an automated navigation map, not a behavior review.
+Each row gives the repository-relative path, Git blob ID, byte size, role inferred from the path, declaration candidates, and literal dependency candidates. `@N` is the source line.
+Candidates come from line-based patterns. They can miss multiline, anonymous, macro-generated, and language-specific declarations or match comments and fixture text. Dependencies are not resolved imports, runtime calls, or a complete graph. No candidates does not mean no functions or dependencies.
+Imported code and tests are included. Binary and non-UTF-8 files have a census entry but no declaration extraction. Symlink contents are scanned as text, not followed. No uncommitted changes, build products, ignored files, or untracked files are studied.
+
+## File map
+
+`dom/worklet/tests/worklet_audioWorklet_options.js` | `557deec3fd853be520ed28a685e715c3c38b768b` | 272 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: OptionsProcessWorkletProcessor@1; constructor@2; process@7
+
+`dom/worklet/tests/worklet_console.js` | `557beb1af2b5b4ed8d83c4e9ca5022911fe5c1b0` | 43 bytes | test-path,source | UTF-8 | mode 100644
+
+`dom/worklet/tests/worklet_dump.js` | `439d13f700fd5b5047456babdcadddc12e865db9` | 36 bytes | test-path,source | UTF-8 | mode 100644
+
+`dom/worklet/tests/worklet_exception.js` | `de4a7987c0ff935b3dcb2c4572376638f5bf9992` | 47 bytes | test-path,source | UTF-8 | mode 100644
+
+`dom/worklet/tests/worklet_paintWorklet.js` | `5a362281d04745cef1d304360d435ee932297bb0` | 226 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: registerPaint@3
+
+`dom/worklet/tests/worklet_promise.js` | `644bd40faa19c263b5c719db5bc25724879d5608` | 466 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: WasmProcessWorkletProcessor@1; constructor@2; process@16
+
+`dom/worklet/tests/worklet_test_audioWorkletGlobalScopeRegisterProcessor.js` | `cddb9524ecf8b8a067b903fa24f811e81cad596a` | 8349 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: EmptyWorkletProcessor@2; NoProcessWorkletProcessor@4; constructor@5; BadDescriptorsWorkletProcessor@10; constructor@11; process@15; parameterDescriptors@19; GoodDescriptorsWorkletProcessor@24; constructor@25; process@29; parameterDescriptors@33; DummyProcessWorkletProcessor@43; constructor@44; process@48; DescriptorsNoNameWorkletProcessor@53; constructor@54; process@58; parameterDescriptors@62; DescriptorsDefaultValueNotNumberWorkletProcessor@71; constructor@72; process@76; parameterDescriptors@80; DescriptorsMinValueNotNumberWorkletProcessor@90; constructor@91; process@95; parameterDescriptors@99; DescriptorsMaxValueNotNumberWorkletProcessor@109; constructor@110; process@114; parameterDescriptors@118; DescriptorsDuplicatedNameWorkletProcessor@128; constructor@129; process@133; parameterDescriptors@137; DescriptorsNotDictWorkletProcessor@149; constructor@150; process@154; parameterDescriptors@158; DescriptorsOutOfRangeMinWorkletProcessor@163; constructor@164; process@168; parameterDescriptors@172; DescriptorsOutOfRangeMaxWorkletProcessor@184; constructor@185; process@189; parameterDescriptors@193; DescriptorsBadRangeMaxWorkletProcessor@205; constructor@206; process@210; parameterDescriptors@214; registerProcessor@229
+
+`dom/xhr/XMLHttpRequest.cpp` | `a05a442ae77691a6f5d71afa8c5cb8ee5ecd2d01` | 2216 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@16
+Dependencies: XMLHttpRequest.h@5; XMLHttpRequestMainThread.h@7; XMLHttpRequestWorker.h@8; mozilla/BasePrincipal.h@9; mozilla/Logging.h@10; mozilla/StaticPrefs_network.h@11; mozilla/net/CookieJarSettings.h@12
+
+`dom/xhr/XMLHttpRequest.h` | `f24cfd55bcf17c4f8627b35c6021010b43584b55` | 7141 bytes | source | UTF-8 | mode 100644
+Declarations: nsIInputStream@14; mozilla@16; Blob@18; DOMString@19; FormData@20; URLSearchParams@21; XMLHttpRequestUpload@22; XMLHttpRequest@24; EventType@26; cStr@31; ProgressEventType@58; EventType@60; ErrorProgressEventType@63; ProgressEventType@67; Events@78; XMLHttpRequestEventTarget@187; XMLHttpRequest@190
+Dependencies: iterator@8; mozilla/ErrorResult.h@10; mozilla/dom/XMLHttpRequestBinding.h@11; mozilla/dom/XMLHttpRequestEventTarget.h@12
+
+`dom/xhr/XMLHttpRequestEventTarget.cpp` | `dbfe9ab9cc6864dfccf791e0662e61530e80f3df` | 1352 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@9; XMLHttpRequestEventTarget::GetDebuggerNotificationType@28; XMLHttpRequestEventTarget::DisconnectFromOwner@32
+Dependencies: XMLHttpRequestEventTarget.h@5; mozilla/dom/DebuggerNotificationBinding.h@7
+
+`dom/xhr/XMLHttpRequestEventTarget.h` | `4c067651eb08e76e8ec5b7e375cf433e98a8b6fc` | 1406 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; XMLHttpRequestEventTarget@12; DOMEventTargetHelper@15; DOMEventTargetHelper@18; GetParentObject@38
+Dependencies: mozilla/DOMEventTargetHelper.h@8
+
+`dom/xhr/XMLHttpRequestMainThread.cpp` | `71eee59ba934d2e217ab03c20ee028f25e59f74a` | 141596 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@121; nsResumeTimeoutsEvent@150; Runnable@153; AddLoadFlags@166; DebugWorkerRefs@190; mMutex@196; mDelayedDoneNotifier@297; XMLHttpRequestMainThread::~XMLHttpRequestMainThread@302; XMLHttpRequestMainThread::InitParameters@340; XMLHttpRequestMainThread::SetAssociatedBrowsingContextID@388; XMLHttpRequestMainThread::ResetResponse@392; XMLHttpRequestMainThread::IsCertainlyAliveForCC@453; XMLHttpRequestMainThread::DisconnectFromOwner@472; XMLHttpRequestMainThread::GetResponseXML@521; XMLHttpRequestMainThread::DetectCharset@542; XMLHttpRequestMainThread::CreateResponseParsedJSON@697; XMLHttpRequestMainThread::GetResponseBlobImpl@836; XMLHttpRequestMainThread::GetResponseArrayBufferBuilder@849; XMLHttpRequestMainThread::GetResponseTextForJSON@862; XMLHttpRequestMainThread::IsCrossSiteCORSRequest@875; XMLHttpRequestMainThread::IsDeniedCrossSiteCORSRequest@884; XMLHttpRequestMainThread::BadContentRangeRequested@895; XMLHttpRequestMainThread::GetRequestedContentRange@911; XMLHttpRequestMainThread::GetContentRangeHeader@920; XMLHttpRequestMainThread::GetResponseURL@933; XMLHttpRequestMainThread::GetStatus@956; XMLHttpRequestMainThread::TerminateOngoingFetch@1032; XMLHttpRequestMainThread::CloseRequest@1044; XMLHttpRequestMainThread::Abort@1149; XMLHttpRequestMainThread::AbortInternal@1155; nsCCharSeparatedTokenizer@1217; XMLHttpRequestMainThread::GetContentType@1235; XMLHttpRequestMainThread::GetLoadGroup@1383; XMLHttpRequestMainThread::FireReadystatechangeEvent@1401; XMLHttpRequestMainThread::SuspendEventDispatching@1478; XMLHttpRequestMainThread::ResumeEventDispatching@1483; XMLHttpRequestMainThread::GetCurrentHttpChannel@1499; XMLHttpRequestMainThread::GetCurrentJARChannel@1505; XMLHttpRequestMainThread::IsSystemXHR@1510; XMLHttpRequestMainThread::InUploadPhase@1514; GetOwnerWindow@1539; GetLocalFileFromChannel@1789; FileCreationHandler@1817; Create@1821; FileCreationHandler@1851; XMLHttpRequestMainThread::LocalFileToBlobCompleted@1864; XMLHttpRequestMainThread::OnStartRequest@1945; NS_SUCCEEDED@2031; StringEndsWith@2119; XMLHttpRequestMainThread::OnBodyParseEnd@2473; XMLHttpRequestMainThread::MatchCharsetAndDecoderToResponseDocument@2479; XMLHttpRequestMainThread::DisconnectDoneNotifier@2490; XMLHttpRequestMainThread::ChangeStateToDone@2499; XMLHttpRequestMainThread::ChangeStateToDoneInternal@2525; XMLHttpRequestMainThread::CreateChannel@2583; XMLHttpRequestMainThread::MaybeLowerChannelPriority@2689; StaticPrefs::network_xhr_block_sync_system_requests@2731; XMLHttpRequestMainThread::FindPreload@2925; XMLHttpRequestMainThread::EnsureChannelContentType@2960; XMLHttpRequestMainThread::ResumeTimeout@2981; XMLHttpRequestMainThread::MaybeSilentSendFailure@3054; XMLHttpRequestMainThread::CanSend@3070; StaticPrefs::dom_mapped_arraybuffer_enabled@3214; GetOwnerWindow@3255; XMLHttpRequestMainThread::SetTimeout@3388; HasOrHasHadOwnerWindow@3392; XMLHttpRequestMainThread::GetTimerEventTarget@3407; XMLHttpRequestMainThread::StartTimeoutTimer@3423; XMLHttpRequestMainThread::ReadyState@3449; XMLHttpRequestMainThread::MozBackgroundRequest@3471; XMLHttpRequestMainThread::WithCredentials@3514; XMLHttpRequestMainThread::AllowUploadProgress@3677; XMLHttpRequestMainThread::GetInterface@3685; XMLHttpRequestMainThread::GetUpload@3752; XMLHttpRequestMainThread::MozAnon@3759; XMLHttpRequestMainThread::MozSystem@3761; XMLHttpRequestMainThread::HandleTimeoutCallback@3763; XMLHttpRequestMainThread::CancelTimeoutTimer@3777; XMLHttpRequestMainThread::Notify@3786; XMLHttpRequestMainThread::HandleProgressTimerCallback@3809; XMLHttpRequestMainThread::StopProgressEventTimer@3847; XMLHttpRequestMainThread::StartProgressEventTimer@3854; XMLHttpRequestMainThread::MaybeStartSyncTimeoutTimer@3867; XMLHttpRequestMainThread::HandleSyncTimeoutTimer@3893; XMLHttpRequestMainThread::CancelSyncTimeoutTimer@3902; XMLHttpRequestMainThread::EnsureXPCOMifier@3910; XMLHttpRequestMainThread::ShouldBlockAuthPrompt@3918; XMLHttpRequestMainThread::TruncateResponseText@3937; mXHR@3961; XMLHttpRequestMainThread::MaybeCreateBlobStorage@3965; XMLHttpRequestMainThread::GetName@4003; nsXMLHttpRequestXPCOMifier::GetInterface@4040; mNeutered@4059; ArrayBufferBuilder::~ArrayBufferBuilder@4061; ArrayBufferBuilder::SetCapacity@4075; ArrayBufferBuilder::Length@4150; ArrayBufferBuilder::Capacity@4156; ArrayBufferBuilder::TakeArrayBuffer@4162; RequestHeaders::Find@4256; RequestHeaders::IsEmpty@4265; RequestHeaders::Has@4267; RequestHeaders::Has@4271; RequestHeaders::Get@4273; RequestHeaders::Get@4277; RequestHeaders::Set@4286; RequestHeaders::Set@4290; RequestHeaders::MergeOrSet@4300; RequestHeaders::Clear@4316; RequestHeaders::GetCORSUnsafeHeaders@4352; mSource@4366; RequestHeaders::CharsetIterator::Replace@4377; RequestHeaders::CharsetIterator::Next@4384
+Dependencies: XMLHttpRequestMainThread.h@5; algorithm@7; unistd.h@9; GeckoProfiler.h@11; MultipartBlobImpl.h@12; XMLHttpRequestUpload.h@13; js/ArrayBuffer.h@14; js/JSON.h@15; js/MemoryFunctions.h@16; js/RootingAPI.h@17; js/Value.h@18; jsapi.h@19; mozilla/AppShutdown.h@20; mozilla/BasePrincipal.h@21; mozilla/CheckedInt.h@22; mozilla/Components.h@23; mozilla/Encoding.h@24; mozilla/EventDispatcher.h@25; mozilla/EventListenerManager.h@26; mozilla/HoldDropJSObjects.h@27; mozilla/LoadContext.h@28; mozilla/LoadInfo.h@29; mozilla/MemoryReporting.h@30; mozilla/Preferences.h@31; mozilla/PreloaderBase.h@32; mozilla/ScopeExit.h@33; mozilla/SpinEventLoopUntil.h@34; mozilla/StaticPrefs_dom.h@35; mozilla/StaticPrefs_network.h@36; mozilla/StaticPrefs_privacy.h@37; mozilla/dom/AutoSuppressEventHandlingAndSuspend.h@38; mozilla/dom/BlobBinding.h@39; mozilla/dom/BlobURLChannel.h@40; mozilla/dom/BlobURLProtocolHandler.h@41; mozilla/dom/DOMString.h@42; mozilla/dom/DocGroup.h@43; mozilla/dom/FetchUtil.h@44; mozilla/dom/File.h@45; mozilla/dom/FileBinding.h@46; mozilla/dom/FileCreatorHelper.h@47; mozilla/dom/FormData.h@48; mozilla/dom/MutableBlobStorage.h@49; mozilla/dom/ProgressEvent.h@50; mozilla/dom/Promise.h@51; mozilla/dom/PromiseNativeHandler.h@52; mozilla/dom/ReferrerInfo.h@53; mozilla/dom/URLSearchParams.h@54; mozilla/dom/UserActivation.h@55; mozilla/dom/WorkerError.h@56; mozilla/dom/XMLDocument.h@57; mozilla/dom/XMLHttpRequestBinding.h@58; mozilla/dom/quota/QuotaCommon.h@59; mozilla/glean/DomMetrics.h@60; mozilla/net/ContentRange.h@61; nsAsyncRedirectVerifyHelper.h@62; nsCharSeparatedTokenizer.h@63; nsContentUtils.h@64; nsCycleCollectionParticipant.h@65; nsDataChannel.h@66; nsError.h@67; nsGlobalWindowInner.h@68; nsIAuthPrompt.h@69; nsIAuthPrompt2.h@70; nsIBaseChannel.h@71; nsICachingChannel.h@72; nsIClassOfService.h@73; nsIClassifiedChannel.h@74; nsIContentPolicy.h@75; nsICookieJarSettings.h@76; nsIDOMEventListener.h@77; nsIFileChannel.h@78; nsIHttpChannel.h@79; nsIHttpChannelInternal.h@80; nsIInterfaceRequestorUtils.h@81; nsIJARChannel.h@82; nsIJARURI.h@83; nsILoadGroup.h@84; nsIPermissionManager.h@85; nsIPromptFactory.h@86; nsIScriptError.h@87; nsISupportsPriority.h@88; nsITimedChannel.h@89; nsIURI.h@90; nsIURIMutator.h@91; nsIUploadChannel.h@92; nsIUploadChannel2.h@93; nsIWindowWatcher.h@94; nsMimeTypes.h@95; nsNetUtil.h@96; nsPIDOMWindowInlines.h@97; nsQueryObject.h@98; nsReadableUtils.h@99; nsSandboxFlags.h@100; nsStreamListenerWrapper.h@101; nsStreamUtils.h@102; nsStringStream.h@103; nsThreadUtils.h@104; nsVariant.h@105; nsWrapperCacheInlines.h@106; nsXPCOM.h@107; nsZipArchive.h@108; private/pprio.h@109
+
+`dom/xhr/XMLHttpRequestMainThread.h` | `d2e9ba63c6062a07a2afb84ae91cf9802648cb7d` | 28378 bytes | source | UTF-8 | mode 100644
+Declarations: Status@52; __StatusTmp@54; nsIHttpChannel@57; nsIJARChannel@58; nsILoadGroup@59; mozilla@61; ProfileChunkedBuffer@62; net@64; ContentRange@65; dom@68; DOMString@70; XMLHttpRequestUpload@71; SerializedStackHolder@72; OriginAttributesDictionary@73; ArrayBufferBuilder@82; nsXMLHttpRequestXPCOMifier@139; RequestHeaders@141; RequestHeader@142; CharsetIterator@150; nsXHRParseEndListener@178; XMLHttpRequestDoneNotifier@179; XMLHttpRequestMainThread@183; class@200; SetParameters@220; Abort@323; SetResponseTypeRaw@358; ErrorDetail@390; SetDontWarnAboutSyncXHR@422; DontWarnAboutSyncXHR@425; PendingEvent@503; nsHeaderVisitor@524; HeaderEntry@525; mName@530; SyncTimeoutType@683; MOZ_STACK_CLASS@775; mOldVal@778; nsXMLHttpRequestXPCOMifier@792; mXHR@804; XMLHttpRequestDoneNotifier@828; Runnable@831; Disconnect@843; nsXHRParseEndListener@849; nsXHRParseEndListener@859
+Dependencies: mozilla/Assertions.h@8; mozilla/Attributes.h@9; mozilla/DOMEventTargetHelper.h@10; mozilla/Encoding.h@11; mozilla/Maybe.h@12; mozilla/MemoryReporting.h@13; mozilla/NotNull.h@14; mozilla/WeakPtr.h@15; mozilla/dom/BodyExtractor.h@16; mozilla/dom/ClientInfo.h@17; mozilla/dom/Document.h@18; mozilla/dom/File.h@19; mozilla/dom/FormData.h@20; mozilla/dom/MimeType.h@21; mozilla/dom/MutableBlobStorage.h@22; mozilla/dom/PerformanceStorage.h@23; mozilla/dom/ServiceWorkerDescriptor.h@24; mozilla/dom/TypedArray.h@25; mozilla/dom/URLSearchParams.h@26; mozilla/dom/WorkerRef.h@27; mozilla/dom/XMLHttpRequest.h@28; mozilla/dom/XMLHttpRequestBinding.h@29; mozilla/dom/XMLHttpRequestEventTarget.h@30; mozilla/dom/XMLHttpRequestString.h@31; nsIAsyncVerifyRedirectCallback.h@32; nsIChannelEventSink.h@33; nsIDOMEventListener.h@34; nsIHttpHeaderVisitor.h@35; nsIInputStream.h@36; nsIInterfaceRequestor.h@37; nsIPrincipal.h@38; nsIProgressEventSink.h@39; nsIScriptObjectPrincipal.h@40; nsISizeOfEventTarget.h@41; nsIStreamListener.h@42; nsISupportsUtils.h@43; nsITimer.h@44; nsIURI.h@45; nsJSUtils.h@46; nsTArray.h@47
+
+`dom/xhr/XMLHttpRequestString.cpp` | `51e98776f01d4f15d8d737e1efb00e209382c3eb` | 4431 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@11; XMLHttpRequestStringBuffer@13; XMLHttpRequestStringBuffer@21; Length@23; Append@37; SizeOfThis@49; CreateSnapshot@54; mBuffer@72; XMLHttpRequestString::Truncate@76; XMLHttpRequestString::Length@80; XMLHttpRequestString::Append@82; XMLHttpRequestString::GetAsString@86; XMLHttpRequestString::SizeOfThis@90; XMLHttpRequestString::IsEmpty@94; XMLHttpRequestStringSnapshot::XMLHttpRequestStringSnapshot@104; XMLHttpRequestStringSnapshot::ResetInternal@108; XMLHttpRequestStringSnapshot::Set@113; XMLHttpRequestStringSnapshot::GetAsString@120; mBuffer@145; XMLHttpRequestStringWriterHelper::Length@149; XMLHttpRequestStringWriterHelper::BulkWrite@154
+Dependencies: XMLHttpRequestString.h@5; js/String.h@7; mozilla/dom/DOMString.h@8; nsISupportsImpl.h@9
+
+`dom/xhr/XMLHttpRequestString.h` | `95c078651ff08c3505d8337e5d8f4e81316faf91` | 3868 bytes | source | UTF-8 | mode 100644
+Declarations: JSContext@11; JSString@12; mozilla@14; ArrayBufferBuilder@16; BlobImpl@17; DOMString@18; XMLHttpRequestStringBuffer@19; XMLHttpRequestStringSnapshot@20; XMLHttpRequestStringWriterHelper@21; XMLHttpRequestString@27; MOZ_STACK_CLASS@62; XMLHttpRequestStringSnapshot@91; Reset@104; SetVoid@106; IsVoid@108; IsEmpty@110
+Dependencies: mozilla/Mutex.h@8; nsString.h@9
+
+`dom/xhr/XMLHttpRequestUpload.cpp` | `087bdd283e345c92ca26e6674cfe07294203447a` | 830 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@9
+Dependencies: XMLHttpRequestUpload.h@5; mozilla/dom/XMLHttpRequestUploadBinding.h@7
+
+`dom/xhr/XMLHttpRequestUpload.h` | `27883cf2fec4564397d911b84454f3bee49f6259` | 1059 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; XMLHttpRequestUpload@15; XMLHttpRequestEventTarget@18; HasListeners@25
+Dependencies: mozilla/dom/XMLHttpRequestEventTarget.h@8; mozilla/EventListenerManager.h@11
+
+`dom/xhr/XMLHttpRequestWorker.cpp` | `2b4a1718bf1ef7ec01b2a5af09f783591a8bcd4f` | 73583 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@42; Proxy@90; mInOpen@159; Reset@175; GetEventTarget@183; Private@191; DebugStoreWorkerRef@199; DebugForgetWorkerRef@205; WorkerThreadProxySyncRunnable@220; mErrorCode@233; SendRunnable@263; mHasUploadListeners@281; SetHaveUploadListeners@283; SetSyncXHRSyncLoopTarget@287; MainThreadProxyRunnable@299; mProxy@306; AsyncTeardownRunnable@313; Runnable@318; LoadStartDetectionRunnable@336; ProxyCompleteRunnable@343; mChannelId@351; mReceivedLoadStart@384; RegisterAndDispatch@392; EventRunnable@410; mScopeObj@447; mScopeObj@464; SyncTeardownRunnable@473; WorkerThreadProxySyncRunnable@476; SetBackgroundRequestRunnable@487; WorkerThreadProxySyncRunnable@494; SetWithCredentialsRunnable@505; WorkerThreadProxySyncRunnable@511; SetResponseTypeRunnable@521; mResponseType@528; ResponseType@530; SetTimeoutRunnable@541; mTimeout@548; AbortRunnable@558; WorkerThreadProxySyncRunnable@561; GetAllResponseHeadersRunnable@569; mResponseHeaders@577; GetResponseHeaderRunnable@587; mValue@596; OpenRunnable@606; mSource@646; SetRequestHeaderRunnable@690; mValue@699; OverrideMimeTypeRunnable@709; mMimeType@716; AutoUnpinXHR@726; mXMLHttpRequestPrivate@731; Clear@741; Proxy::Init@746; Proxy::Teardown@789; Proxy::AddRemoveEventListeners@830; Proxy::HandleEvent@865; LoadStartDetectionRunnable::Run@943; LoadStartDetectionRunnable::HandleEvent@970; EventRunnable::PreDispatch@985; EventRunnable::WorkerRun@1053; WorkerThreadProxySyncRunnable::MainThreadRun@1162; AbortRunnable::RunOnMainThread@1178; OpenRunnable::MainThreadRunInternal@1211; SendRunnable::RunOnMainThread@1271; mMimeTypeOverride@1362; XMLHttpRequestWorker::~XMLHttpRequestWorker@1368; XMLHttpRequestWorker::ResponseData::ResponseData@1376; XMLHttpRequestWorker::ReleaseProxy@1439; XMLHttpRequestWorker::MaybePin@1491; StrongWorkerRef::Create@1502; XMLHttpRequestWorker::SetResponseToNetworkError@1521; XMLHttpRequestWorker::Unpin@1670; XMLHttpRequestWorker::ReadyState@1687; NS_ERROR_GET_MODULE@1797; XMLHttpRequestWorker::SetTimeout@1912; XMLHttpRequestWorker::GetUpload@1984; XMLHttpRequestWorker::Abort@2084; XMLHttpRequestWorker::ResetResponseData@2404
+Dependencies: XMLHttpRequestWorker.h@5; memory@7; GeckoProfiler.h@9; XMLHttpRequestMainThread.h@10; XMLHttpRequestUpload.h@11; js/ArrayBuffer.h@12; js/GCPolicyAPI.h@13; js/JSON.h@14; js/RootingAPI.h@15; js/TracingAPI.h@16; js/Value.h@17; jsfriendapi.h@18; mozilla/HoldDropJSObjects.h@19; mozilla/UniquePtr.h@20; mozilla/dom/Event.h@21; mozilla/dom/Exceptions.h@22; mozilla/dom/File.h@23; mozilla/dom/FormData.h@24; mozilla/dom/ProgressEvent.h@25; mozilla/dom/SerializedStackHolder.h@26; mozilla/dom/StreamBlobImpl.h@27; mozilla/dom/StructuredCloneHolder.h@28; mozilla/dom/URLSearchParams.h@29; mozilla/dom/WorkerRef.h@30; mozilla/dom/WorkerRunnable.h@31; mozilla/dom/WorkerScope.h@32; mozilla/dom/XMLHttpRequestBinding.h@33; nsComponentManagerUtils.h@34; nsContentUtils.h@35; nsIDOMEventListener.h@36; nsJSUtils.h@37; nsThreadUtils.h@38
+
+`dom/xhr/XMLHttpRequestWorker.h` | `0e79d66ef96968c72c93028ec5a0c6aca5ffec3a` | 8463 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@17; Proxy@19; DOMString@20; SendRunnable@21; ThreadSafeWorkerRef@22; WorkerPrivate@23; XMLHttpRequestWorker@25; ResponseData@29; StateData@47; EventStreamId@111; GetUploadObjectNoCreate@219; SendInProgress@232; ReleaseType@239
+Dependencies: XMLHttpRequest.h@8; XMLHttpRequestString.h@9; mozilla/WeakPtr.h@10; mozilla/dom/BodyExtractor.h@11; mozilla/dom/TypedArray.h@12; mozilla/dom/BlobImpl.h@15
+
+`dom/xhr/moz.build` | `3bac3da256422208baa44658f6e6460b1cf33318` | 972 bytes | build-registration | UTF-8 | mode 100644
+Dependencies: /ipc/chromium/chromium-config.mozbuild@35
+
+`dom/xhr/tests/browser.toml` | `fc91aa94ec89a03d67b7e74d057efd1960038225` | 419 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/browser_blobFromFile.js` | `deaec142ae06e3e366b27d14c25b2816917fa397` | 1669 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@1; function@43
+
+`dom/xhr/tests/browser_block_sync_xhr_system_requests.js` | `66a110c9408888ba3bcc1b370a2a5294a01e4557` | 933 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@4; add_task@21
+
+`dom/xhr/tests/browser_sync_xhr_event_handing_switch_bcg.js` | `b34c138d12894fe9cccefde3cacec18a43bec772` | 3892 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_setup@9; checkInputManagerStatus@25; function@47; add_task@144
+
+`dom/xhr/tests/browser_temporaryFile.js` | `c3694d9237b899e3a9ed5a209dccc695b7d7fdc1` | 1630 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: toString@28; toString@58
+
+`dom/xhr/tests/browser_xhr_onchange_leak.html` | `56eb455330c2543d772bb36b02e5fa038899ee3e` | 572 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/browser_xhr_onchange_leak.js` | `6c4dbcaf7f2e8c8cf3178bc2c9cc0854506aa9e0` | 1208 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@10
+
+`dom/xhr/tests/browser_xhr_substituted_protocol_responseURL.js` | `b5556d549f504193fc627c8a46e7e07da0b488b9` | 839 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: add_task@12
+
+`dom/xhr/tests/common_temporaryFileBlob.js` | `a84d58dd771b4fdfe570bd5027aa709c80e26e68` | 2883 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: createXHR@5; toString@10; test_simple@17; test_abort@43; test_reuse@58; toString@88; test_worker_generic@96; test_worker@113; test_worker_abort@118; test_worker_reuse@123
+
+`dom/xhr/tests/crashtests/1546185.html` | `98eb673592e20566c93212368d8411b945618b3b` | 684 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/crashtests/crashtests.list` | `bd78bc54dcd15578f1cdcdafc6a647335b892e10` | 18 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/echo.sjs` | `e2a1553cb46ba50f5c9855e0d42117c6fc271e9f` | 624 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/empty.html` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/empty_parent.html` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHRDocURI.html` | `8dbbb05491920be81d6b22c150e1d9f4a90f5232` | 154 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHRDocURI.html^headers^` | `ddfd8c0a9e2b62b0fa45ff7c43cc9ac6772afd05` | 67 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHRDocURI.sjs` | `452cb77f941deaa1d9b428c4c89e78b3b846d925` | 411 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHRDocURI.text` | `c1dead8d7a21da40d6c91bf460961c8b0647983a` | 16 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHRDocURI.text^headers^` | `b2fe7cdeb4b9a78291416880da7700459681004e` | 68 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHRDocURI.xml` | `c1a9a525665856383d3a0e90e81ac842e50f0837` | 51 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHRDocURI.xml^headers^` | `f47804337a652431cf6628a70145a55b5f96b282` | 73 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHRResponseURL.js` | `29e6ddea69c66bd2c30817a0691858151f862fc2` | 12254 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: isInWorker@5; message@13; is@23; ok@34; info@44; request@53; createSequentialRequest@69; testSuccessResponse@83; testFailedResponse@239; testNotToLeakResponseURLWhileDoingRedirects@263; testNotToLeakResponseURLWhileDoingRedirectsInWindow@272; observe@275; testNotToLeakResponseURLWhileDoingRedirectsInWorker@313; waitForAllMessagesProcessed@347
+
+`dom/xhr/tests/file_XHRResponseURL.sjs` | `792680dfce03388aa2ee5363d01d65720afda1d1` | 477 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHRResponseURL.text` | `1269488f7fb1f4b56a8c0e5eb48cecbfadfa9219` | 5 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHRResponseURL.text^headers^` | `b2fe7cdeb4b9a78291416880da7700459681004e` | 68 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHRResponseURL_nocors.text` | `1269488f7fb1f4b56a8c0e5eb48cecbfadfa9219` | 5 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHRSendData.sjs` | `a39d888fdc5c67af51ccf82bce7657106710064f` | 983 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHRSendData_doc.xml` | `2e385258cb9406f346654b95dbd62c8bf0256b6b` | 31 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHRSendData_doc.xml^headers^` | `b0f1ebfbf3ce86cd4edaa8ab2ee02b167d5f6846` | 50 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHR_anon.sjs` | `8440e9f0c2dadf831059647d70174778b758b415` | 740 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHR_binary1.bin` | `39e527bfc33b57fd176d1f4b75829d44462de848` | 12 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/xhr/tests/file_XHR_binary1.bin^headers^` | `8e8c8d859e67ae49104831541d60a316fcfbbf97` | 33 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHR_binary2.bin` | `9f442b092d4eec5c07087f507aef024c031658c2` | 65536 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/xhr/tests/file_XHR_fail1.txt` | `462209d8da48b8928b5ce86b0464a2b1e5b99851` | 14 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHR_fail1.txt^headers^` | `41c2359329e1b2df0e25c9da7fa11122a11a64b9` | 95 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHR_fail1b.txt` | `8944657af127d302b51c9c169a58fd9b027dc067` | 12 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHR_header.sjs` | `d520d2befe5d99c3cfc0f2878130c9c3ff1ba7f0` | 406 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHR_pass1.xml` | `06826d6c675594bd4559882f8aa0f82a4774ac32` | 17 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHR_pass2.txt` | `0d7f879f95e7753eb370293f966bc29db5769acd` | 11 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHR_pass3.txt` | `462209d8da48b8928b5ce86b0464a2b1e5b99851` | 14 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHR_pass3.txt^headers^` | `fb5056c382178fee71cec3104fc0d284fa680579` | 56 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHR_system_redirect.html` | `eaca3f49fd15840a3688a10a91b56524566893c5` | 46 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHR_system_redirect.html^headers^` | `cefb165b02564058fdc277443fa605e9063fc751` | 44 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_XHR_timeout.sjs` | `5eb14e96bcf8e2ae35ab3ac0aa60efca64251993` | 439 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_html_in_xhr.html` | `d77aeb4402b2e23e9255af3d96053fbbe7754176` | 648 bytes | test-path,markup-or-style | non-UTF-8 | mode 100644
+
+`dom/xhr/tests/file_html_in_xhr.sjs` | `6e7c57cae4b9a00df564ec6f0911624c6b77d6ca` | 608 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_html_in_xhr2.html` | `046052c753af2cc045dbb8bf65d166cbb4153e44` | 31 bytes | test-path,markup-or-style | non-UTF-8 | mode 100644
+
+`dom/xhr/tests/file_html_in_xhr3.html` | `ff43ca409150a5479415981803955ee1d40e4d16` | 8 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_sync_xhr_document_write_with_iframe.html` | `895fbc4e4beab0c1b124b87efe7d6243f33d8445` | 487 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_sync_xhr_event_handling_helper.html` | `c442ba024bbad206863f5caaa2b1e7257881a64f` | 979 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/file_sync_xhr_nested_helper.html` | `65346de1c3bb5ff099f1e17b555833dd5b2df237` | 727 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/iframe_sync_xhr_unload.html` | `134fad76d0805b6d6ddbfd20afd786caae974c9a` | 314 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/mochitest.toml` | `d4973312e541ff9620276455f3fc8f37968baec5` | 4878 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/progressserver.sjs` | `3aae7e91dbe20e326e6bba1e19c5dc417f058fc3` | 1327 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/relativeLoad_import.js` | `114d1883cdcc8bdda4cbc4ca4dec8fa0eb26b9b0` | 157 bytes | test-path,source | UTF-8 | mode 100644
+
+`dom/xhr/tests/relativeLoad_worker.js` | `9b9f39b9e9be63aaeb544fd09b9036b9c4785409` | 767 bytes | test-path,source | UTF-8 | mode 100644
+
+`dom/xhr/tests/relativeLoad_worker2.js` | `5c200887ce269b6ebd851ec539e9f6dcb3e22bd1` | 233 bytes | test-path,source | UTF-8 | mode 100644
+
+`dom/xhr/tests/responseIdentical.sjs` | `0e7b796e0fe88f73a9022e56a2a59c91d0ef50e9` | 584 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/slow.sjs` | `0d0308f6e7c2ca301e16f89d03f3fa0c51f5050f` | 308 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/subdir/relativeLoad_sub_import.js` | `cac2a6f04148ba972a8666195fd9812313924619` | 171 bytes | test-path,source | UTF-8 | mode 100644
+
+`dom/xhr/tests/subdir/relativeLoad_sub_worker.js` | `0e4d4bfdb891ef0082dadc7e1ec3212019461444` | 720 bytes | test-path,source | UTF-8 | mode 100644
+
+`dom/xhr/tests/subdir/relativeLoad_sub_worker2.js` | `1be913a6a994757b62ea84abd1c92d4e0cfe59a7` | 249 bytes | test-path,source | UTF-8 | mode 100644
+
+`dom/xhr/tests/sync_xhr_unload.sjs` | `f4f92649a88e39b859e5282d631452396ed48744` | 440 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/temporaryFileBlob.sjs` | `151c05a231aa1999e2aa3f72020e940b389d4b0e` | 1062 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/terminateSyncXHR_worker.js` | `29a5a8a369adc92cbe7fe4a35aa80a77d64e278a` | 466 bytes | test-path,source | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_XHR.html` | `b8925750f62e7ffd3400d19fbf873d4ca7daf184` | 435 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_XHR.js` | `0034f8a0eb48bf6157160896cdc59472d3343232` | 13462 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: continueTest@8; runTests@12; is@43; checkResponseTextAccessThrows@120; checkResponseXMLAccessThrows@129; checkSetResponseType@138; checkSetResponseTypeThrows@148; checkOpenThrows@157; arraybuffer_equals_to@219; checkXHRStatus@301
+
+`dom/xhr/tests/test_XHRDocURI.html` | `61be580dddb0b6de67717674dca62ac4e55a0577` | 14764 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_XHRResponseURL.html` | `5efa2233220f06163f33572ab815779f38b10a22` | 1656 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_XHRSendData.html` | `260a4b83a6d50ea8ff8895f40b841419ebb5e23a` | 8636 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_XHR_anon.html` | `6747b6a918b96363df66cf8ad63578671a58b287` | 4804 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_XHR_header.html` | `0fd5829cac060f2fc06ee2a09ce1588923ae9aee` | 858 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_XHR_http2.html` | `b8925750f62e7ffd3400d19fbf873d4ca7daf184` | 435 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_XHR_onuploadprogress.html` | `b0b34ec8eff722491c381b6b0ce16b0fae31d817` | 896 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_XHR_parameters.html` | `4ba1c5562a89c30dccbf468654546cc5799b3636` | 2409 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_XHR_system.html` | `917a034ada620d5b95617a71a6c295ba885fbb21` | 2707 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_XHR_timeout.html` | `4c1cc5cab1b73dd189ae5310cf9ea21f9df45e1a` | 1611 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_XHR_timeout.js` | `5360608a3ec1f4d4163072614fae3126af214ec9` | 9840 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: message@17; is@25; ok@35; RequestTracker@62; startXHR@79; handleEvent@84; getMessage@126; handleEvent@142; AbortedRequest@172; startXHR@181; handleEvent@186; abortReq@197; noEventsFired@224; getMessage@238; handleEvent@247; startXHR@261; startXHR@276; testComplete@395; next@402
+
+`dom/xhr/tests/test_bug1070763.html` | `baf6ade4c1d46f88a4f9000c7cc225495d0f97f3` | 1435 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_bug1300552.html` | `2374eb7c9700d540e81fa1e2957c2c761d3b1153` | 673 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_bug1697539.html` | `c776bf97961e5804dff42e14bb2bd3e7e822a175` | 632 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_bug1752863.html` | `567fdb017db708d18575694390ca56a01ea3a691` | 884 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_bug1752863_worker.js` | `929b0059394a571a09cb4b85ab696a95c80a8ac3` | 1053 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: handleLoadstart@4
+
+`dom/xhr/tests/test_bug1788125.html` | `0695e87bed9827b46e4cf801b0a998ba269bc0f5` | 1316 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_event_listener_leaks.html` | `da0ca7532363cfbdd056e332f0016224f6d73703` | 1235 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_html_in_xhr.html` | `b9c007e960abc29dc2b58c581e9fde6d0643430b` | 3229 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_nestedSyncXHR.html` | `88effd59031c1f45e40b911e39a2087a0096ce56` | 2368 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_relativeLoad.html` | `fdfe35ddd84decee512f88c8518f5345b466f8ff` | 1104 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_sharedworker_xhr.html` | `c0c43bcb26d71a9c6a1a3ad92a997132a069352f` | 563 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_sync_xhr_document_write_with_iframe.html` | `eb03f7cf23130a831620091ff607e42aaf96199d` | 620 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_sync_xhr_event_handling.html` | `745ef99c81e5746461f1a9404e778918ab7583a6` | 1041 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_sync_xhr_nested.html` | `d650ab5a5b69ba563ee2c187bee23042657c73a0` | 1191 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_sync_xhr_timer.xhtml` | `823488889fce2a90692ef4c4eeecc1db4e66aa3c` | 1103 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_sync_xhr_unload.html` | `069071461b4cd13b451304a3181a42f215d9a91a` | 856 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_temporaryFileBlob.html` | `ed0bca28e2e2acb5400efc6cf24cc7b28f6a34d4` | 830 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_worker_terminateSyncXHR.html` | `d952e3c6e774137a02cdbae1ebe114c40c66e3eb` | 1136 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_worker_xhr.html` | `f95fbe8050ea39e7ebb41cf5c36d17d20c9087de` | 1945 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_worker_xhr2.html` | `41a7b8ee85a3aeb8fad2e198270f21b69893aed3` | 948 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_worker_xhrAbort.html` | `35e77077c07121f2c485db416bd88e1f86078398` | 1122 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_worker_xhrAbortDuringTerminate.html` | `b14fd34511c0f739e341b7e7b7c07828b4a63022` | 1473 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_worker_xhr_3rdparty.html` | `ab29b09615b22e1b120da3dcbd4f816c77b97857` | 1376 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_worker_xhr_cors_redirect.html` | `777c31b1c22252eea6f411510fd4bc77352df05f` | 902 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_worker_xhr_doubleSend.html` | `d5a052bcf93f4018a8ecc38d8bbd0191ed8b5e06` | 747 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_worker_xhr_headers.html` | `1416ababd7df5fcee523cdee6e8db0c1b5dfd6d6` | 2429 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_worker_xhr_implicit_cancel.html` | `d749b0696fd4f1d237a7c10b6a059b0f144bc8d1` | 1166 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_worker_xhr_parameters.html` | `dde0c32ed7c419edd56850465cfcd7d91711bd5b` | 1396 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_worker_xhr_parameters.js` | `688457db96e2596ff92a317374e83757637d2e0e` | 1854 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ok@1; is@5; mozAnon@19; mozSystem@33; testParameters@39; testValidParameter@40; testInvalidParameter@62
+
+`dom/xhr/tests/test_worker_xhr_responseURL.html` | `5e1ef1876fe4a8c9e15bf083685ee2e30e3d2918` | 1754 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_worker_xhr_system.html` | `6d86d110e5f812e8100e711ea180097a957544fc` | 1122 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_worker_xhr_system.js` | `ee5934363dd6a9e34616d2ab81233277e0d2f705` | 931 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: ok@3; is@7
+
+`dom/xhr/tests/test_worker_xhr_timeout.html` | `dc1e48a47f9e99286dafeb1f16345a638460e59b` | 1484 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_xhr_abort_after_load.html` | `f3d6f4d2f234aad783d5bd5e3c559a2366b00ff7` | 1969 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_xhr_forbidden_headers.html` | `69339caf54dd0ea4691b1d6d6d4ffbe3a664c594` | 2563 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_xhr_overridemimetype_throws_on_invalid_state.html` | `99e6bde004b04a954f6e6299eebd5f1442111ac0` | 1928 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_xhr_progressevents.html` | `69f549f7a801d517cb3fef8e876252149f74d8f5` | 11075 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_xhr_send.html` | `8ba6eeeae4699689e6c603570f0c01965c8aec3d` | 1956 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_xhr_send_readystate.html` | `0dab7444f33df67eacffc25520aa182c85752d8f` | 1098 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/test_xhr_withCredentials.html` | `aadc94c2baea607b8ccfd2f84323d93912b11fa3` | 942 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/window_worker_xhr_3rdparty.html` | `1c22a3aad0387369b59223c0aeebfdbd4b8ca0ce` | 1706 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/worker_bug1300552.js` | `d874f32c8d50f8be48eca6947db13bd841ba1138` | 675 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: info@1; ok@5; finish@9; toString@21
+
+`dom/xhr/tests/worker_bug1697539.js` | `faef1f1614e771df0455d46fb4f39cedd803c75f` | 441 bytes | test-path,source | UTF-8 | mode 100644
+
+`dom/xhr/tests/worker_file_getcookie.sjs` | `b5204bdd71ec584f47b6a5a137b78cd02501fc9b` | 499 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/worker_temporaryFileBlob.js` | `c5cad6baa8bf387f1ff33edd32ab1e1eb22eb7ea` | 595 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: info@5; ok@9; is@13; next@17
+
+`dom/xhr/tests/worker_terminateSyncXHR_frame.html` | `720cf9551df9e1da0077c1d0e2909c2d757a6330` | 568 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xhr/tests/worker_testXHR.txt` | `2beab22c6609621dde22be781172ca2f28e29333` | 31 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/worker_xhr_cors_redirect.js` | `0d86e75eaa1213e5aa13555eae231cea2ec4f287` | 226 bytes | test-path,source | UTF-8 | mode 100644
+
+`dom/xhr/tests/worker_xhr_cors_redirect.sjs` | `aac9c8ffe6c5fee6fc7eab4baa61cc50b41b45e9` | 317 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/worker_xhr_headers_server.sjs` | `c2a944f6efc22ac13a9bbbdda09b5c8b4501762c` | 1852 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xhr/tests/worker_xhr_headers_worker.js` | `e4f4341cefa9791f36b74e75d2c579eebf48858c` | 457 bytes | test-path,source | UTF-8 | mode 100644
+
+`dom/xhr/tests/xhr2_worker.js` | `98a57f34ba6653995deedff25be04ad2e18a68db` | 2407 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getResponse@15; testResponseTextException@50
+
+`dom/xhr/tests/xhrAbortDuringTerminate_worker.js` | `e0784739dca6594c0184652d0a865cbfc19edd55` | 489 bytes | test-path,source | UTF-8 | mode 100644
+
+`dom/xhr/tests/xhrAbort_worker.js` | `fb60f70cd2109c0146247ef4238bc43ada328aca` | 1991 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: runTest@7; pushEvent@11; messageListener@91
+
+`dom/xhr/tests/xhr_implicit_cancel_worker.js` | `2045452caa176b73d96ef9555f229d3ef3bc1489` | 276 bytes | test-path,source | UTF-8 | mode 100644
+
+`dom/xhr/tests/xhr_sharedworker.js` | `a4fb6857bd6eb3bd2705cf077dff86280cbbc728` | 2576 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: getResponse@16; testResponseTextException@51
+
+`dom/xhr/tests/xhr_worker.js` | `4361b347e5ee076896b915edef1ae8251a84d97a` | 2252 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: onload@7; onprogress@43
+
+`dom/xhr/tests/xhr_worker_doubleSend.js` | `1ecf28e57ca34dc42875d3712937396b729ad5e8` | 261 bytes | test-path,source | UTF-8 | mode 100644
+
+`dom/xml/CDATASection.cpp` | `d49cfcef6683d8b1687115597f04cd5745837862` | 1454 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; CDATASection::List@32
+Dependencies: mozilla/dom/CDATASection.h@5; mozilla/IntegerPrintfMacros.h@7; mozilla/dom/CDATASectionBinding.h@8
+
+`dom/xml/CDATASection.h` | `43b932310e43bbc5a77ac3b522e32f1770a9d942` | 1524 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; CDATASection@12; Init@14; Text@23
+Dependencies: mozilla/dom/Text.h@8
+
+`dom/xml/ProcessingInstruction.cpp` | `4783e8920b4ecd987fe1902968aecf1778b17db8` | 3637 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@44; CharacterData@48; ProcessingInstruction::GetSheetForBindings@58; ProcessingInstruction::GetAttrValue@70; ProcessingInstruction::List@87
+Dependencies: mozilla/dom/ProcessingInstruction.h@5; mozilla/IntegerPrintfMacros.h@7; mozilla/dom/LinkStyle.h@8; mozilla/dom/ProcessingInstructionBinding.h@9; mozilla/dom/XMLStylesheetProcessingInstruction.h@10; nsContentUtils.h@11; nsGkAtoms.h@12; nsUnicharUtils.h@13
+
+`dom/xml/ProcessingInstruction.h` | `f8ef9a96571abffa4c6863f431bc5b3baec3e091` | 2354 bytes | source | UTF-8 | mode 100644
+Declarations: nsIPrincipal@11; nsIURI@12; mozilla@14; StyleSheet@16; dom@18; ProcessingInstruction@20; GetTarget@35
+Dependencies: mozilla/dom/CharacterData.h@8; nsAString.h@9
+
+`dom/xml/XMLDocument.cpp` | `509bde4d472494f25a2b0d7d25075c7bdddc4fdf` | 11988 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@204; mSuppressParserErrorConsoleMessages@212; XMLDocument::Reset@224; XMLDocument::SetSuppressParserErrorElement@241; XMLDocument::SuppressParserErrorElement@245; XMLDocument::SetSuppressParserErrorConsoleMessages@249; XMLDocument::SuppressParserErrorConsoleMessages@253; XMLDocument::EndLoad@301; XMLDocument::DocAddSizeOfExcludingThis@318; XMLDocument::Clone@324
+Dependencies: mozilla/dom/XMLDocument.h@5; mozilla/BasicEvents.h@7; mozilla/Encoding.h@8; mozilla/EventDispatcher.h@9; mozilla/dom/Attr.h@10; mozilla/dom/DocGroup.h@11; mozilla/dom/DocumentBinding.h@12; mozilla/dom/DocumentType.h@13; mozilla/dom/Element.h@14; mozilla/dom/XMLDocumentBinding.h@15; nsCExternalHandlerService.h@16; nsCOMPtr.h@17; nsCRT.h@18; nsCharsetSource.h@19; nsComponentManagerUtils.h@20; nsContentCreatorFunctions.h@21; nsContentPolicyUtils.h@22; nsContentUtils.h@23; nsError.h@24; nsHTMLDocument.h@25; nsHTMLParts.h@26; nsIConsoleService.h@27; nsIContent.h@28; nsIDocShell.h@29; nsIPrincipal.h@30; nsIScriptError.h@31; nsIURI.h@32; nsIXMLContentSink.h@33; nsJSUtils.h@34; nsMimeTypes.h@35; nsNetUtil.h@36; nsParser.h@37; nsPresContext.h@38; nsString.h@39; nsThreadUtils.h@40
+
+`dom/xml/XMLDocument.h` | `f54a2ac6dcde7d704b1c523199e717a326e28859` | 3468 bytes | source | UTF-8 | mode 100644
+Declarations: nsIURI@13; nsIChannel@14; mozilla@16; XMLDocument@18
+Dependencies: mozilla/Attributes.h@8; mozilla/dom/BindingDeclarations.h@9; mozilla/dom/Document.h@10; nsIScriptContext.h@11
+
+`dom/xml/XMLStylesheetProcessingInstruction.cpp` | `4649b5188df33d8af8cea85f671083332a87eb25` | 5337 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@13; XMLStylesheetProcessingInstruction::GetCharset@82; XMLStylesheetProcessingInstruction::OverrideBaseURI@88; XMLStylesheetProcessingInstruction::GetStyleSheetInfo@93
+Dependencies: XMLStylesheetProcessingInstruction.h@5; mozilla/dom/Document.h@7; mozilla/dom/FetchPriority.h@8; mozilla/dom/ReferrerInfo.h@9; nsContentUtils.h@10; nsNetUtil.h@11
+
+`dom/xml/XMLStylesheetProcessingInstruction.h` | `e6cfd50aa4a0850930b24930fbfa71de0232d7e0` | 2811 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; XMLStylesheetProcessingInstruction@14; ProcessingInstruction@20
+Dependencies: mozilla/dom/LinkStyle.h@8; mozilla/dom/ProcessingInstruction.h@9; nsIURI.h@10
+
+`dom/xml/crashtests/1038887.xhtml` | `18b12083a9d70a5cfec267a892bc62da44c286b0` | 114 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/crashtests/1192544.xhtml` | `036078c59c9851c9d9cb8cf88b69f0795822183e` | 1503 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/crashtests/136896-1.xml` | `a54f95393f8a72e2225df740deb08a9bca9f5ef3` | 1423 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/crashtests/1405878.xml` | `12677ade938d989f409a7c3c66d0d4b407dbe9a8` | 282 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/crashtests/1523655.xml` | `e905e9104d219f836fcb3a4b67ec8c1c1f50df31` | 148 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/crashtests/185285-1.xml` | `9ab44d33568ea016bfb36091a71ca0469d67e993` | 84 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/crashtests/2073692-frame.xml` | `d56986231a97781838cf125bc964614783b4e9ec` | 54 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/crashtests/2073692.html` | `a46bc060057148cfa3410c00309b788e864c3df2` | 402 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/crashtests/2075996-1.html` | `f07d1a39d073f894e01591c381a881a3f94669fa` | 886 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/crashtests/2075996-2.html` | `9e10c74b93eeac69131b991e411eead89f885046` | 882 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/crashtests/2075996.sjs` | `d8dcedee1333c0fa2aca8029b1b7b5bc8ca7530e` | 551 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/crashtests/382636-1.xml` | `da5110ad0502ececb5666ae57e6c6901b51b4d5f` | 141 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/crashtests/382636-2.svg` | `2be0060eede523a8bd5b7ab714d2ccbca02817be` | 183 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/crashtests/382636-3.xhtml` | `da5110ad0502ececb5666ae57e6c6901b51b4d5f` | 141 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/crashtests/382636-4.xhtml` | `e1c65b9030458a748dd5f051c634911e88c42549` | 221 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/crashtests/420429.xhtml` | `e71af4ef21c58e4833baacc0e57ebca35aa2de45` | 376 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/crashtests/431703-1.xhtml` | `622e4455cc9a72d4ccac4111fb9fc906c589e929` | 241 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/crashtests/453278-frame.xml` | `7ced674cc565b5b0f3aa7b05d2874854c789da53` | 122 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/crashtests/453278.html` | `f30ea3833ea97b329e5976c98718db9a91d55463` | 255 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/crashtests/803586.xhtml` | `002de07724fd6a852c25c885c592b2dcf8ecae3d` | 158 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/crashtests/994740-1.xhtml` | `4d71cef27f6cc65777722c7aa6a341d472aa73b0` | 205 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/crashtests/crashtests.list` | `8945f90c92dab58ece4a937c1e65f66613fbb85d` | 477 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/crashtests/tree.gif` | `360897e910aa112632135574a8c19887e8cae231` | 1140 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/xml/htmlmathml-f.ent` | `37b2599769550232add624315fa77db3868e8b21` | 159182 bytes | data-or-other | UTF-8 | mode 100644
+
+`dom/xml/moz.build` | `d958352bc442536c50d819cbc248e6031ee2d75d` | 1110 bytes | build-registration | UTF-8 | mode 100644
+
+`dom/xml/nsIXMLContentSink.h` | `fa12795faf9b24e2aeeccd199e08fbb4a5cc1e73` | 2024 bytes | source | UTF-8 | mode 100644
+Declarations: nsIURI@10; nsIChannel@11; mozilla@12; Document@13; nsIXMLContentSink@42; IsPrettyPrintXML@45; IsPrettyPrintHasSpecialRoot@46
+Dependencies: nsIContentSink.h@7; nsISupports.h@8
+
+`dom/xml/nsXMLContentSink.cpp` | `263008e0701693b1320cfb5f95f97d4bedc39fe1` | 49156 bytes | source | UTF-8 | mode 100644
+Declarations: nsXMLContentSink::WillParse@121; nsXMLContentSink::WillBuildModel@124; nsXMLContentSink::CanStillPrettyPrint@142; nsXMLContentSink::MaybePrettyPrint@147; nsXMLContentSink::DidBuildModel@220; IsXSLTError@353; nsXMLContentSink::WillInterrupt@434; nsXMLContentSink::WillResume@436; nsXMLContentSink::SetParser@439; FindIsAttrValue@445; HasCustomElementRegistryAttr@464; nsXMLContentSink::CloseElement@601; nsXMLContentSink::AddContentAsLeaf@671; nsXMLContentSink::LoadXSLStyleSheet@699; nsXMLContentSink::SetDocumentCharset@807; nsXMLContentSink::GetTarget@813; nsXMLContentSink::FlushText@815; nsXMLContentSink::GetCurrentContent@853; nsXMLContentSink::PushContent@857; nsXMLContentSink::PopContent@872; nsXMLContentSink::MaybeStartLayout@881; nsXMLContentSink::HandleEndElement@1069; nsXMLContentSink::HandleComment@1143; nsXMLContentSink::HandleCDataSection@1154; nsXMLContentSink::HandleCharacterData@1197; nsXMLContentSink::AddText@1400; nsXMLContentSink::InitialTranslationCompleted@1422; nsXMLContentSink::FlushPendingNotifications@1424; nsXMLContentSink::ContinueInterruptedParsingIfEnabled@1432; nsXMLContentSink::ContinueInterruptedParsingAsync@1438; nsXMLContentSink::GetParser@1445
+Dependencies: nsXMLContentSink.h@5; js/ColumnNumber.h@7; mozilla/AutoRestore.h@8; mozilla/CycleCollectedJSContext.h@9; mozilla/LoadInfo.h@10; mozilla/Logging.h@11; mozilla/StyleSheetInlines.h@12; mozilla/UseCounter.h@13; mozilla/css/Loader.h@14; mozilla/dom/CDATASection.h@15; mozilla/dom/Comment.h@16; mozilla/dom/CustomElementRegistry.h@17; mozilla/dom/DocGroup.h@18; mozilla/dom/Document.h@19; mozilla/dom/DocumentType.h@20; mozilla/dom/Element.h@21; mozilla/dom/HTMLTemplateElement.h@22; mozilla/dom/MutationObservers.h@23; mozilla/dom/NameSpaceConstants.h@24; mozilla/dom/ProcessingInstruction.h@25; mozilla/dom/ScriptLoader.h@26; mozilla/dom/nsCSPUtils.h@27; mozilla/dom/txMozillaXSLTProcessor.h@28; mozilla/intl/LocaleService.h@29; nsCOMPtr.h@30; nsCRT.h@31; nsContentCreatorFunctions.h@32; nsContentPolicyUtils.h@33; nsContentUtils.h@34; nsDocElementCreatedNotificationRunner.h@35; nsError.h@36; nsGkAtoms.h@37; nsHTMLParts.h@38; nsHtml5SVGLoadDispatcher.h@39; nsIChannel.h@40; nsIContent.h@41; nsIContentPolicy.h@42; nsIDocShell.h@43; nsIDocumentViewer.h@44; nsIParser.h@45; nsIScriptContext.h@46; nsIScriptElement.h@47; nsIScriptGlobalObject.h@48; nsIScriptSecurityManager.h@49; nsIURI.h@50; nsMimeTypes.h@51; nsNameSpaceManager.h@52; nsNetUtil.h@53; nsNodeInfoManager.h@54; nsReadableUtils.h@55; nsRect.h@56; nsTextNode.h@57; nsUnicharUtils.h@58; nsXMLPrettyPrinter.h@59; prtime.h@60
+
+`dom/xml/nsXMLContentSink.h` | `d326f9a47cfb15031923e11a9eb0b95196d0324a` | 8083 bytes | source | UTF-8 | mode 100644
+Declarations: nsIURI@20; nsIContent@21; nsIParser@22; nsTextNode@23; mozilla@25; Element@26; NodeInfo@27; ProcessingInstruction@28; XMLContentSinkState@31; nsXMLContentSink@37
+Dependencies: js/ColumnNumber.h@8; mozilla/Span.h@9; mozilla/dom/FromParser.h@10; nsCOMPtr.h@11; nsCRT.h@12; nsContentSink.h@13; nsCycleCollectionParticipant.h@14; nsIDocumentTransformer.h@15; nsIExpatSink.h@16; nsIXMLContentSink.h@17; nsTArray.h@18
+
+`dom/xml/nsXMLElement.cpp` | `a07733d51b8d750738971531396a779c87a02368` | 1760 bytes | source | UTF-8 | mode 100644
+Declarations: nsXMLElement::UnbindFromTree@24
+Dependencies: nsXMLElement.h@5; mozilla/dom/ElementBinding.h@7; mozilla/dom/ElementInlines.h@8; nsContentUtils.h@9
+
+`dom/xml/nsXMLElement.h` | `339da36a9071a488b248ddcf463d11bf2a727f67` | 814 bytes | source | UTF-8 | mode 100644
+Declarations: nsXMLElement@10; mozilla::dom::Element@13
+Dependencies: mozilla/dom/Element.h@8
+
+`dom/xml/nsXMLFragmentContentSink.cpp` | `fc00573c2f09ffb00b97c9852de6eb648c184149` | 12124 bytes | source | UTF-8 | mode 100644
+Declarations: nsXMLFragmentContentSink@27; NS_NewXMLFragmentContentSink@101; nsXMLFragmentContentSink::nsXMLFragmentContentSink@107; nsXMLFragmentContentSink::WillBuildModel@124; nsXMLFragmentContentSink::DidBuildModel@139; nsXMLFragmentContentSink::GetTarget@152; nsXMLFragmentContentSink::MaybeStartLayout@195; nsXMLFragmentContentSink::FinishFragmentParsing@288; nsXMLFragmentContentSink::SetTargetDocument@310; nsXMLFragmentContentSink::WillBuildContent@320; nsXMLFragmentContentSink::DidBuildContent@327; nsXMLFragmentContentSink::DidProcessATokenImpl@339; nsXMLFragmentContentSink::IgnoreFirstContainer@342; nsXMLFragmentContentSink::SetPreventScriptExecution@348
+Dependencies: mozilla/css/Loader.h@5; mozilla/dom/Document.h@6; mozilla/dom/DocumentFragment.h@7; mozilla/dom/NodeInfo.h@8; mozilla/dom/ProcessingInstruction.h@9; mozilla/dom/ScriptLoader.h@10; nsCOMPtr.h@11; nsContentCreatorFunctions.h@12; nsContentSink.h@13; nsCycleCollectionParticipant.h@14; nsError.h@15; nsHashKeys.h@16; nsIContent.h@17; nsIDocShell.h@18; nsIExpatSink.h@19; nsIFragmentContentSink.h@20; nsIScriptError.h@21; nsTArray.h@22; nsXMLContentSink.h@23
+
+`dom/xml/nsXMLPrettyPrinter.cpp` | `a20ada9be82bf4d68602acf7bf82553c4810b66f` | 7210 bytes | source | UTF-8 | mode 100644
+Declarations: mDocument@31; nsXMLPrettyPrinter::~nsXMLPrettyPrinter@33; nsXMLPrettyPrinter::MaybeUnhook@146; nsXMLPrettyPrinter::Unhook@164; nsXMLPrettyPrinter::NodeWillBeDestroyed@200; NS_NewXMLPrettyPrinter@208
+Dependencies: nsXMLPrettyPrinter.h@5; mozilla/Preferences.h@7; mozilla/dom/CustomEvent.h@8; mozilla/dom/Document.h@9; mozilla/dom/DocumentFragment.h@10; mozilla/dom/DocumentL10n.h@11; mozilla/dom/Element.h@12; mozilla/dom/ScriptSettings.h@13; mozilla/dom/ShadowRoot.h@14; mozilla/dom/ToJSValue.h@15; mozilla/dom/txMozillaXSLTProcessor.h@16; nsContentUtils.h@17; nsGkAtoms.h@18; nsICSSDeclaration.h@19; nsNetUtil.h@20; nsPIDOMWindow.h@21; nsSyncLoadService.h@22; nsVariant.h@23
+
+`dom/xml/nsXMLPrettyPrinter.h` | `8beca1084f170ee3c59f37a287ce6c97cecd4bc4` | 1835 bytes | source | UTF-8 | mode 100644
+Declarations: nsXMLPrettyPrinter@12
+Dependencies: nsCOMPtr.h@8; nsIWeakReferenceUtils.h@9; nsStubDocumentObserver.h@10
+
+`dom/xml/resources/XMLPrettyPrint.css` | `0c94a873246b0d18a6dfda398e7ae6f0dd4021e3` | 1160 bytes | markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/resources/XMLPrettyPrint.xsl` | `10858c8909564202103ef9d07af1aa54a103c3e5` | 4541 bytes | data-or-other | UTF-8 | mode 100644
+
+`dom/xml/resources/jar.mn` | `14fc365a3e2dc5bd2559147a32caa26023095192` | 371 bytes | build-registration | UTF-8 | mode 100644
+
+`dom/xml/resources/moz.build` | `527b359d11f2469b044f12905f09ccbbafd038ee` | 228 bytes | build-registration | UTF-8 | mode 100644
+
+`dom/xml/test/file_bug1666613.xml` | `a130e8ddd962ea48db1f76aa1576e8d1430c8a64` | 9 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/test/file_bug293347.xml` | `d041450e2f176fecdd92ce6274472cd2a2024594` | 71 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/test/file_bug293347xslt.xml` | `44df7749e0007219342cd3ab077128afa24a36e0` | 443 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/test/file_bug343870.xml` | `cf9c60544c15777db8e348a6d845a62612a78c73` | 168 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/test/file_bug691215.xml` | `37ae932348369694ba53ef3e212c9f4743a2129f` | 30 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/test/mochitest-xslt.toml` | `bbe128ccffa84b7d532196f871b39b2b7bdd652f` | 69 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/test/mochitest.toml` | `302179816c373579d1622361c65502f020c5bcfd` | 353 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/test/old/books/bethlehem.gif` | `db41f52fb4e07e3b118cc1ffc1177bc6f17bc495` | 5565 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/xml/test/old/books/bill.gif` | `4b00f890cb0812ec6489f8ef9bfe0be684c00a61` | 5022 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/xml/test/old/books/books.js` | `8ae17d8a4722193670751922d4d9edb5954490c5` | 2426 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: sort@2; collectInfo@30; toggleStyleSheet@58; initiateToggle@72
+
+`dom/xml/test/old/books/books.xml` | `2067487d8d2a32dd925605853374d5d803eea4b1` | 5304 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/test/old/books/charing.gif` | `9a63fb0b2757b83b6c1365f01e9685d946bac11b` | 5947 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/xml/test/old/books/classic.css` | `6574e91409478bb89b680e509abf76f1e06336c1` | 949 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/test/old/books/common.css` | `05b91fd2555b8312b967ee3bb170cdaf46a644ff` | 602 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/test/old/books/kerouac.gif` | `df2b371d0730ce71d6ba7d3bc9d212103c93b8cc` | 50387 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/xml/test/old/books/list.css` | `e0740dd145c2082f8809b9d7dff7616471939dd0` | 666 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/test/old/books/road.gif` | `5ba7920c7e4bfad90f58724d3c5b616c648cff7a` | 8004 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/xml/test/old/books/welville.gif` | `7ff24a99ec7f45d2aa4757e9dd34d3c22ae67b03` | 4535 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/xml/test/old/docbook.css` | `562c8d213313062450f5a545c39355446081e41a` | 7242 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/test/old/docbooktest.xml` | `d47c3cb12e304cc6950b01a4a703350f93045ff7` | 7348 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/test/old/flamer.gif` | `5a05df583f1f690b913469e3d5ff1aa2371384f8` | 11284 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/xml/test/old/script.xml` | `f21d30d973f39704ac7e126712f4310d94b913ae` | 1693 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/test/old/simple.xml` | `c94708c6655d3149579d1f4dbb42f897494ed4cf` | 363 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/test/old/toc/book.css` | `778c4244c2955554c3f16631209c3a6ff3ddcc0f` | 2053 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/test/old/toc/irslogo.gif` | `daab0ca3ab4fb4cbb8c4fbc8534533930f20658e` | 2605 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/xml/test/old/toc/minus.gif` | `8adf8d6add844ce8b6deddc9c0f0a97a42db3e55` | 85 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/xml/test/old/toc/plus.gif` | `55446e34c908ba7aa6273d9f4e1b9902abeee923` | 88 bytes | test-path,data-or-other | binary-NUL | mode 100644
+
+`dom/xml/test/old/toc/rights.xml` | `520eef3de11aaf9e2fead0992af1ed6cdcd2b47e` | 14277 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/test/old/toc/toc.css` | `99c0c9d3278184d7b3a99c2d77254c0bc2e6bd19` | 1235 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/test/old/toc/toc.js` | `f30ffd6cff79566234e93fbe0c58a252c26a3f87` | 4231 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: toggleDisplay@6; addToToc@30; createToc@101
+
+`dom/xml/test/old/xlink/auto.xml` | `91eb15ff430001718f7f41d0cf1740efdb0af653` | 1111 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/test/old/xlink/link.css` | `59d792c586234fdcb95414eaabab7d2f491bbb8c` | 422 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/test/old/xlink/manual.xml` | `fd7d49fc1770d7fc7b883fa518af9aa3a5c8dce9` | 678 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xml/test/old/xmlbase/xmlbase.css` | `485a802ccffee6e497dd0c643f67ff3e1166fb39` | 542 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/test/old/xmlbase/xmlbase.xml` | `b4cce1dc51dde584140e8271df72969b186292f7` | 3922 bytes | test-path,data-or-other | non-UTF-8 | mode 100644
+
+`dom/xml/test/test_bug1666613.html` | `838923b9dccb04f978492a29d112c1cd7d084caa` | 1127 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/test/test_bug232004.xhtml` | `44a032f998c19585d0db1a275812b33f5c241c14` | 970 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/test/test_bug293347.html` | `6db99bdaa319a3d71d5e2d2036d6183ac829bb48` | 950 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/test/test_bug343870.xhtml` | `49df5d2e0adeb11487d3487da5d1ccfa1241b154` | 1088 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/test/test_bug355213.xhtml` | `f94798015bc9abd593a295eec8884bb089d58b0e` | 907 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xml/test/test_bug691215.html` | `87b30eb65273fff32e40da745fbb65c9a14f318e` | 1291 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/base/moz.build` | `f20443f469ddd7c5b749eba421c9aecdcce2505f` | 718 bytes | build-registration | UTF-8 | mode 100644
+
+`dom/xslt/base/txCore.h` | `07d0639d7d8854450a098e5d249e88284103a112` | 922 bytes | source | UTF-8 | mode 100644
+Declarations: txObject@13; txDouble@26
+Dependencies: nsDebug.h@8; nsISupportsImpl.h@9; nsStringFwd.h@10; nscore.h@11
+
+`dom/xslt/base/txDouble.cpp` | `20c89580a055c42eafa61a17acde412fa2a7d7f1` | 4614 bytes | source | UTF-8 | mode 100644
+Declarations: txStringToDouble@26; txStringToDouble@28; Parse@30; getDouble@90; txDouble::toDouble@104; txDouble::toString@115
+Dependencies: math.h@5; algorithm@7; mozilla/FloatingPoint.h@9; nsString.h@10; txCore.h@11; txXMLUtils.h@12; float.h@14; prdtoa.h@16
+
+`dom/xslt/base/txErrorObserver.h` | `2fe783e2ff6fea1c04d9939ce31c43fa0eb6123d` | 863 bytes | source | UTF-8 | mode 100644
+Declarations: ErrorObserver@13; receiveError@29
+Dependencies: txCore.h@8
+
+`dom/xslt/base/txExpandedName.cpp` | `fc0f4f91d8c8c808ff3336aacdea44fa341ab55e` | 1207 bytes | source | UTF-8 | mode 100644
+Dependencies: txExpandedName.h@5; nsReadableUtils.h@7; nsString.h@8; txNamespaceMap.h@9; txStringUtils.h@10; txXMLUtils.h@11
+
+`dom/xslt/base/txExpandedName.h` | `157912ddd1aba302a56d2440f9103bac34af7e15` | 1344 bytes | source | UTF-8 | mode 100644
+Declarations: txNamespaceMap@12; txExpandedName@14; txExpandedName@16; mNamespaceID@19; reset@26; isNull@31
+Dependencies: mozilla/dom/NameSpaceConstants.h@8; nsAtom.h@9; nsCOMPtr.h@10
+
+`dom/xslt/base/txExpandedNameMap.cpp` | `9c1d6b1ceaab55fd82c083d016b3218bc9af048f` | 2697 bytes | source | UTF-8 | mode 100644
+Declarations: txMapItemComparator@9; txExpandedNameMap_base::getItem@70; txExpandedNameMap_base::removeItem@85
+Dependencies: txExpandedNameMap.h@5; txCore.h@7
+
+`dom/xslt/base/txExpandedNameMap.h` | `8d49b97e48a1b33642a73e8d53df0b7b0e6bedb1` | 4183 bytes | source | UTF-8 | mode 100644
+Declarations: txExpandedNameMap_base@14; clearItems@52; iterator_base@54; mMap@57; next@59; itemValue@69; MapItem@83; txExpandedNameMap@93; add@95; set@99; get@104; remove@106; clear@108; iterator@110; iterator@112; value@114; txOwningExpandedNameMap@119; add@123; set@127; get@132; remove@134; clear@136; iterator@144; iterator@146; value@148
+Dependencies: mozilla/UniquePtr.h@8; mozilla/UniquePtrExtensions.h@9; nsError.h@10; nsTArray.h@11; txExpandedName.h@12
+
+`dom/xslt/base/txList.cpp` | `6b8ab54a6d47b629dabe1f183a74a123e4257b41` | 6355 bytes | source | UTF-8 | mode 100644
+Declarations: txList::txList@15; txList::~txList@25; txList::add@27; List::getLength@32; txList::insertAfter@41; txList::insertBefore@52; txList::remove@83; txList::clear@104; txListIterator::txListIterator@124; txListIterator::addAfter@136; txListIterator::addBefore@150; txListIterator::hasNext@163; txListIterator::next@176; txListIterator::previous@194; txListIterator::current@212; txListIterator::remove@222; txListIterator::reset@237; txListIterator::resetToEnd@245
+Dependencies: txList.h@5
+
+`dom/xslt/base/txList.h` | `008ca1b39c49262ff6008abd8eed9bb51b1f4d53` | 3291 bytes | source | UTF-8 | mode 100644
+Declarations: txListIterator@10; txList@15; isEmpty@39; ListItem@52; txListIterator@75
+Dependencies: txCore.h@8
+
+`dom/xslt/base/txLog.h` | `9bbfd06165e8f426c473ed0f701d155581300726` | 551 bytes | source | UTF-8 | mode 100644
+Declarations: txLog@10
+Dependencies: mozilla/Logging.h@8
+
+`dom/xslt/base/txNamespaceMap.cpp` | `17fbd5698952645fd3f5b19984592b396cafb8af` | 2141 bytes | source | UTF-8 | mode 100644
+Declarations: mNamespaces@14; txNamespaceMap::lookupNamespace@55; txNamespaceMap::lookupNamespaceWithDefault@74
+Dependencies: txNamespaceMap.h@5; nsGkAtoms.h@7; txXPathNode.h@8
+
+`dom/xslt/base/txNamespaceMap.h` | `4bb0207ef363f7c069097781a1329818073e29a4` | 963 bytes | source | UTF-8 | mode 100644
+Declarations: txNamespaceMap@12; AddRef@17; Release@18
+Dependencies: nsAtom.h@8; nsCOMPtr.h@9; nsTArray.h@10
+
+`dom/xslt/base/txOwningArray.h` | `d9189b419bcb794af01b32a6d0d687bce3e9daa1` | 841 bytes | source | UTF-8 | mode 100644
+Declarations: txOwningArray@15; nsTArray@17; typename@18
+Dependencies: nsTArray.h@8
+
+`dom/xslt/base/txStack.h` | `3638c8bdf7b288a10c938e8d41487ed9dbdaf6fb` | 2329 bytes | source | UTF-8 | mode 100644
+Declarations: txStack@10; peek@18; push@29; pop@37; isEmpty@51; size@58; txStackIterator@64; mStack@72; hasNext@79; next@86
+Dependencies: nsTArray.h@8
+
+`dom/xslt/base/txStringUtils.h` | `9b7f34c3199febf8d0f8f1a62d9f2d8eb130daa9` | 771 bytes | source | UTF-8 | mode 100644
+Declarations: TX_StringEqualsAtom@16; TX_ToLowerCaseAtom@20
+Dependencies: nsAString.h@8; nsAtom.h@9; nsContentUtils.h@10; nsUnicharUtils.h@11
+
+`dom/xslt/base/txURIUtils.cpp` | `5aca79357b1d5a0f1de4623e93098d920cc82936` | 3153 bytes | source | UTF-8 | mode 100644
+Declarations: URIUtils::ResetWithSource@47
+Dependencies: txURIUtils.h@5; mozilla/LoadInfo.h@7; mozilla/dom/Document.h@8; mozilla/dom/PolicyContainer.h@9; mozilla/dom/nsCSPContext.h@10; nsIPrincipal.h@11; nsNetUtil.h@12
+
+`dom/xslt/base/txURIUtils.h` | `0509a020699a3d3864a302d158b2c71e15fe357e` | 1015 bytes | source | UTF-8 | mode 100644
+Declarations: nsINode@10; mozilla@12; Document@13; URIUtils@21
+Dependencies: txCore.h@8
+
+`dom/xslt/crashtests/1089049.html` | `84ef6494c354027133234bc78bfdd15e2b534aab` | 115 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/111994.xml` | `ce7ffad2ac53a894ab3cd1ed3536b2f5dcc0cb79` | 147 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/111994.xsl` | `4cf68179fa5e56b83dddda0c8f2f52c3a214fe98` | 415 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/1205163.xml` | `2d450a1d502c3c10b66f4cdc78a924c3ccebd0fc` | 143 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/1205163.xsl` | `f0bbb5cb953af030b2d8438c2b0ea0b4aea2cabe` | 317 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/1243337.xml` | `40f5e3a35d63022bdac8a859caca28ae717210c0` | 103 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/1243337.xsl` | `0e659bf9005151a98e307d7c09f2bb7f320c2051` | 206 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/1330492.html` | `a19c646a173d98b1912c3123ddaa1f8865e5cb90` | 746 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/1336828.html` | `3f25e23e034e0c9ef7e576e4f173adc4274b11cc` | 773 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/1336830.html` | `907f589563949363bb8566bcec8967b420063a12` | 928 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/1336832.html` | `0fb9033d1a34ef6e64af8f3fe5e1e7aa40de7275` | 894 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/1338277.html` | `d928819c7572b55a2dea99b314c71161d176370d` | 794 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/1361892.html` | `a7befd2c42125e3cc61e40ca71936f7da405dd04` | 848 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/1430818.sjs` | `a1c9f1e662660e6fbb8ecab1147468a6f8e97933` | 1687 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/1430818.xml` | `95731bcb0bdc478ad8bd37f003433b2260dd0a59` | 91 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/1527277.html` | `ef437803c97a2e36b3f6371d22515142f213d3e6` | 578 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/1589930.xml` | `74d4cc84635cf7a43f371809296e10dd5c187b4d` | 362 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/182460-select.xml` | `bb9f79b040f378fadfc4269de2d4762d3203d9b7` | 109 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/182460-selects.xsl` | `f083ea31fe41490759237449f8bcab49adf0b38e` | 38 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/182460-table.xhtml` | `1bf2a23cb40d644abffec2d3883f4176ebb889c9` | 230 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/1936613.html` | `77a028cd09f81358c95ad8d29c2b99b48ad95886` | 1013 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/1941002-1.html` | `cfd84787f34c740449ef4881645c12bd41d28aa6` | 1457 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/1941002-2.html` | `8448b70d1e98de26cf3daffb224cfbd6f857a838` | 1659 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/1941002-3.html` | `e49df462c66fbd6410eba61aa34257d81622af53` | 1479 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/1941002.sjs` | `8fc2c2aefa9642819c3c78b7646de7e37a96fa63` | 585 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/226425.xml` | `c6662cfe2c017c96ca1a1c28fd67380147786d9c` | 113 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/226425.xsl` | `ddb61ae6804a580349a1e5f9624b26b6d5b3debb` | 308 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/406106-1.html` | `86ab510ff8ea5eb0e2802fbef6f9d7eba5205a6e` | 201 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/483444.xml` | `18fffceba5e30e37f1450950604dda817787500d` | 568 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/485217.xml` | `93a20e4f772bd964603b2bb8209cd827187f1423` | 239 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/485217.xsl` | `2935c5a41b3bd3b0c71db36932dfb6bb8130991e` | 584 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/485286.xml` | `c87aa940ef297c4198acb701571ee93714e5e99b` | 371 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/527558_1.xml` | `ebb6c3d53302bc5c8b0c60dced18c8c3eb46edb3` | 442 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/528300.xml` | `8902bb373e803ea308e3e47cbc7ba2ba86f079a6` | 439 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/528488.xml` | `904b3456123069b03de339efb1d9d0594c68e170` | 539 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/528963.xml` | `d855e7563460d707cc08c394b0aff71ba0393280` | 504 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/545927.html` | `0a9010e21e48cbf16623511a3ed60698d5a8b237` | 719 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/601543.html` | `af025b242a628ff49bedfa4b32b5e089c1a1f514` | 89 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/602115.html` | `ad42d76a05f8f2ef0d69bf93c7e384417fbea080` | 556 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/603844.html` | `f576effdb6a8fbac67f04c7afe36c4fda772ca26` | 640 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/667315.xml` | `7a560ba3bdea56289838694b0437d7f11a2e5f3b` | 390 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/91332.xml` | `c5a463c8a96b28d5ac4aeacdedf3eb81202bb8a0` | 254 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/91332.xsl` | `7d01df22b6c354bc58072cd144542cdcbfb93c12` | 638 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/949990.html` | `23868e4db3bae74c9a5ad9f646ba4c19bd2ec2a4` | 213 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/crashtests/crashtests.list` | `316bf3729e6477b8a5394d0ec6189a46f6fc6d2f` | 1567 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/moz.build` | `2d03a66e94e1d91df3eed76403e349d5562c9ded` | 517 bytes | build-registration | UTF-8 | mode 100644
+
+`dom/xslt/nsIDocumentTransformer.h` | `770aa52321bdf2fd533e5a910fe6ba7629af7d0d` | 1997 bytes | source | UTF-8 | mode 100644
+Declarations: nsCOMPtr@12; nsIContent@13; nsINode@14; nsIURI@15; nsTArray@17; mozilla@19; dom@20; Document@21; nsITransformObserver@28; nsIDocumentTransformer@44
+Dependencies: nsISupports.h@8; nsStringFwd.h@9
+
+`dom/xslt/tests/browser/browser.toml` | `14f35f8164bd3ab618170e4aac8a1e531069bb4d` | 175 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/tests/browser/browser_bug1309630.js` | `0056870fd92012436b1937e82fae9bda914d400d` | 2293 bytes | test-path,source | UTF-8 | mode 100644
+Declarations: resetCounter@6; recordCounter@9; waitForCounterChangeAbove@15; add_task@28; function@32; function@56
+
+`dom/xslt/tests/browser/bug1309630.sjs` | `9a3f464139064c706f19e19f291da083a7f8c201` | 2096 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/tests/browser/file_bug1309630.html` | `c22889358c769ace5bccad64f8f75ba58c3a3973` | 525 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/bug1729517_2.sjs` | `2537a971b094fbd66423b5943e1f5afb6679d982` | 112 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/bug1769155.sjs` | `a93038d5a5db4723313559d814baa1f9fe7e656d` | 1067 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/file_bug1135764.xml` | `b9da87e5e58ed9b478648bd8f63ce6f941b36f71` | 109 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/file_bug1135764.xsl` | `e739086cbee2f50e4ae72b49e15cc8c49e3baa63` | 372 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/file_bug1729517.js` | `b404dc67781dd84b92c3b460437a3896a176ca07` | 116 bytes | test-path,source | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/file_bug1729517.xml` | `48658468fcba6a7aa92e77e6866d94a4c61be9e2` | 1095 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/file_bug1729517_2.xml` | `5d706e7a05d09849952ce7bb140f16320cde3ded` | 1207 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/file_bug1729517_2.xml^headers^` | `6c83b8d686d6d808e62ad9d24c8bd58121c2a9a1` | 72 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/file_bug1769155.html` | `60ee2ac02f547e0fb45df261e0be41441d13fae7` | 397 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/file_metaRefresh.xml` | `b9e127b8a588b82c98568155b08c2555f30ac698` | 420 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/mochitest.toml` | `b1e45d80d3b2bb109c57a7ad172abe36c4f728f3` | 1027 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_bug1072116.html` | `73c5ca14c45654b54e3b9510b34cc914af359672` | 815 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_bug1135764.html` | `c8d3abb309cbb3f7d6c5d983107753e2bf158b4c` | 1291 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_bug1436040.html` | `df17e75779cc7efdaf8b51970f08a889cb508a44` | 2460 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_bug1527308.html` | `c37a0c1f007f2994b6ab72428c2badaf8abbe4f0` | 1600 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_bug1729517.html` | `3dc9eca3c091200a0148066e58435ab1d757ed07` | 1642 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_bug1769155.html` | `eebe1450b549d596218ac727c6a63815bec440a6` | 2194 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_bug319374.html` | `a833cf281fbf969c7dde8483234250818c045ca0` | 3541 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_bug325891.html` | `93cfebafa591c22558d055a34ab3379d6068443b` | 2144 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_bug427060.html` | `f71593deba9d6791fd795922f13d36c105458fd7` | 1357 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_bug440974.html` | `b9ac1624bed9c71d7534ca85ba09138ffd100712` | 1581 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_bug453441.html` | `4c85b8ea13049fce87a82d985ca4c034321276bc` | 1402 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_bug468208.html` | `a09387047cd66068b43542b6731b335b97a691d8` | 922 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_bug511487.html` | `3fbcc84197d125b0d388134425fe7706e4740898` | 1879 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_bug551412.html` | `4cec6b6101497d02afe94014da67b17d289b2bee` | 1498 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_bug551654.html` | `e79232a676d34caf79d35704c39263fa2f820c92` | 1494 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_bug566629.html` | `91023044b5998cea5fe15f8638add1c1455e8512` | 2698 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_bug566629.xhtml` | `f67dc9564ece09430749ee4411a35f65dcb83de4` | 2837 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_bug603159.html` | `840f1132dabba91ac765765e479e5c0e49049bf8` | 1786 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_bug616774.html` | `1c7f56251ea5fa294b777db06c28c7185673831e` | 1038 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_bug667315.html` | `a1ac9c72a8b6d463d6fda422c528b10d3fadc548` | 1270 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_exslt.html` | `739d1c1988ada1ea8b6e07c281e2addc375be3a9` | 8563 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_metaRefresh.html` | `21338bed82a8749ea50b395deb9275484fcb4fd0` | 1598 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_parameter.html` | `32acd72fb28c11b76779f275f33595fa2b1697ae` | 5248 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_parameter_conversion.html` | `a0ea6acce2d9506dfd3de61e706df151531c0396` | 1687 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/tests/mochitest/test_sorting_invalid_lang.html` | `80c94280af09aa6d01c73b5b92395919fa97b75a` | 2212 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xslt/xml/moz.build` | `bf8c842708da4c8451a0fe859e9f3f12acad7232` | 441 bytes | build-registration | UTF-8 | mode 100644
+
+`dom/xslt/xml/txXMLParser.cpp` | `8b95e1fa21a67643744f5ce3ec4d541a3c1b3185` | 1837 bytes | source | UTF-8 | mode 100644
+Dependencies: txXMLParser.h@5; mozilla/dom/Document.h@7; nsIURI.h@8; nsNetUtil.h@9; nsSyncLoadService.h@10; txURIUtils.h@11; txXPathTreeWalker.h@12
+
+`dom/xslt/xml/txXMLParser.h` | `5d29318e50c202e851c9ec878f83e11555e0f88d` | 783 bytes | source | UTF-8 | mode 100644
+Declarations: txXPathNode@10; mozilla@12; Result@14
+Dependencies: txCore.h@8
+
+`dom/xslt/xml/txXMLUtils.cpp` | `ffaa1ad48b071be54a74600ad38e00bc42363349` | 4093 bytes | source | UTF-8 | mode 100644
+Declarations: XMLUtils::isWhitespace@102; XMLUtils::normalizePIValue@117; XMLUtils::isValidQName@144; XMLUtils::getXMLSpacePreserve@149
+Dependencies: txXMLUtils.h@9; nsContentUtils.h@11; nsGkAtoms.h@12; nsReadableUtils.h@13; nsString.h@14; txNamespaceMap.h@15; txStringUtils.h@16; txXPathTreeWalker.h@17
+
+`dom/xslt/xml/txXMLUtils.h` | `d3084c1af64223fc5a16c391b92edc5fe79ded88` | 2061 bytes | source | UTF-8 | mode 100644
+Declarations: nsAtom@21; XMLUtils@23; isWhitespace@33; isLetter@56; isNCNameChar@63
+Dependencies: nsDependentSubstring.h@12; txCore.h@13; txXPathNode.h@14
+
+`dom/xslt/xpath/XPathEvaluator.cpp` | `97c316b869361772f746cc8974e78e94cf3aa31a` | 5712 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@26; XPathEvaluatorParseContext@29; mIsCaseSensitive@35; mIsCaseSensitive@40; getError@42; XPathEvaluator::XPathEvaluator@57; XPathEvaluatorParseContext::resolveNamespacePrefix@130; XPathEvaluatorParseContext::caseInsensitiveNameTests@178; XPathEvaluatorParseContext::SetErrorOffset@182
+Dependencies: mozilla/dom/XPathEvaluator.h@5; utility@7; XPathResult.h@9; mozilla/dom/BindingUtils.h@10; mozilla/dom/Document.h@11; mozilla/dom/XPathEvaluatorBinding.h@12; mozilla/dom/XPathExpression.h@13; mozilla/dom/XPathNSResolverBinding.h@14; nsAtom.h@15; nsCOMPtr.h@16; nsContentUtils.h@17; nsDOMString.h@18; nsError.h@19; nsNameSpaceManager.h@20; txExpr.h@21; txExprParser.h@22; txIXPathContext.h@23; txURIUtils.h@24
+
+`dom/xslt/xpath/XPathEvaluator.h` | `d1f8f95c2738e452aca191bf86f7a1678b107a50` | 2251 bytes | source | UTF-8 | mode 100644
+Declarations: nsINode@12; txIParseContext@13; txResultRecycler@14; mozilla@16; ErrorResult@17; dom@19; GlobalObject@21; XPathExpression@22; XPathNSResolver@23; XPathResult@24; XPathEvaluator@29; GetParentObject@37; CreateNSResolver@49
+Dependencies: mozilla/dom/Document.h@8; mozilla/dom/NonRefcountedDOMObject.h@9; nsString.h@10
+
+`dom/xslt/xpath/XPathExpression.cpp` | `baf4e2f662b2cf2336cce88ec87e50a6c3d01582` | 6298 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@21; MOZ_STACK_CLASS@23; mRecycler@31; getError@33; mCheckDocument@51; EvalContextImpl::getPrivateContext@191; EvalContextImpl::recycler@196; EvalContextImpl::receiveError@198; EvalContextImpl::size@205; EvalContextImpl::position@207
+Dependencies: XPathExpression.h@5; utility@7; XPathResult.h@9; mozilla/dom/BindingUtils.h@10; mozilla/dom/Text.h@11; mozilla/dom/XPathResultBinding.h@12; nsError.h@13; nsINode.h@14; txExpr.h@15; txExprResult.h@16; txIXPathContext.h@17; txURIUtils.h@18; txXPathTreeWalker.h@19
+
+`dom/xslt/xpath/XPathExpression.h` | `cb85b424cbb2fcb663ff4c15d1e7b699e566484d` | 2376 bytes | source | UTF-8 | mode 100644
+Declarations: Expr@14; nsINode@16; txResultRecycler@17; mozilla@19; Document@21; XPathResult@22; XPathExpression@27
+Dependencies: mozilla/UniquePtr.h@8; mozilla/dom/NonRefcountedDOMObject.h@9; mozilla/dom/XPathExpressionBinding.h@10; nsCycleCollectionParticipant.h@11; nsIWeakReferenceUtils.h@12
+
+`dom/xslt/xpath/XPathResult.cpp` | `d2a600ecff3d6ce8b496a4dfdeac672126724cc7` | 7625 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@17; mNumberResult@26; mStringResult@39; XPathResult::~XPathResult@45; NS_IMPL_CYCLE_COLLECTION_UNLINK@51; XPathResult::RemoveObserver@74; XPathResult::IterateNext@80; XPathResult::NodeWillBeDestroyed@95; XPathResult::Invalidate@204; XPathResult::GetExprResult@221; XPathResult::Clone@253
+Dependencies: XPathResult.h@5; mozilla/dom/Attr.h@7; mozilla/dom/Element.h@8; mozilla/dom/XPathResultBinding.h@9; nsCycleCollectionParticipant.h@10; nsDOMString.h@11; nsError.h@12; txExprResult.h@13; txNodeSet.h@14; txXPathTreeWalker.h@15
+
+`dom/xslt/xpath/XPathResult.h` | `58663f0eb6c1cc56088df8f9e7ca0551b75cced8` | 4610 bytes | source | UTF-8 | mode 100644
+Declarations: txAExprResult@18; mozilla@20; XPathResult@25; GetParentObject@51; ResultType@52; GetNumberValue@53; GetStringValue@61; GetBooleanValue@69; GetSingleNodeValue@77; InvalidIteratorState@85; GetSnapshotLength@88; SnapshotItem@97; isSnapshot@121; isIterator@125; isNode@129; isSnapshot@133; isIterator@134; isNode@135
+Dependencies: mozilla/ErrorResult.h@8; nsCOMPtr.h@9; nsCycleCollectionParticipant.h@10; nsINode.h@11; nsIWeakReferenceUtils.h@12; nsString.h@13; nsStubMutationObserver.h@14; nsTArray.h@15; nsWrapperCache.h@16
+
+`dom/xslt/xpath/moz.build` | `f6ad29149035ec9e9ffecbdfe7c477e862d94914` | 1645 bytes | build-registration | UTF-8 | mode 100644
+
+`dom/xslt/xpath/txBooleanExpr.cpp` | `91f80130efeecb5c0bfca7984e503fde887e44f9` | 1984 bytes | source | UTF-8 | mode 100644
+Declarations: BooleanExpr::isSensitiveTo@52; BooleanExpr::toString@58
+Dependencies: txExpr.h@10; txIXPathContext.h@11
+
+`dom/xslt/xpath/txBooleanResult.cpp` | `e7a6774033d5530b288164040e3375a132fd5810` | 1270 bytes | source | UTF-8 | mode 100644
+Declarations: BooleanResult::BooleanResult@16; BooleanResult::getResultType@24; BooleanResult::stringValue@28; BooleanResult::booleanValue@43; BooleanResult::numberValue@45
+Dependencies: txExprResult.h@9
+
+`dom/xslt/xpath/txCoreFunctionCall.cpp` | `533f25f79e899d94ba74f143fe66007b2a97ace8` | 19550 bytes | source | UTF-8 | mode 100644
+Declarations: txCoreFunctionDescriptor@19; txXPathNodeUtils::isProcessingInstruction@174; txCoreFunctionCall::getReturnType@591; txCoreFunctionCall::isSensitiveTo@595; txCoreFunctionCall::getTypeFromAtom@646; txCoreFunctionCall::appendName@660
+Dependencies: math.h@5; mozilla/FloatingPoint.h@7; nsGkAtoms.h@8; nsWhitespaceTokenizer.h@9; txExpr.h@10; txIXPathContext.h@11; txNodeSet.h@12; txStringUtils.h@13; txXMLUtils.h@14; txXPathTreeWalker.h@15
+
+`dom/xslt/xpath/txErrorExpr.cpp` | `f3c688ec075014eabb9e6d1dd45e336a1fc6322e` | 1053 bytes | source | UTF-8 | mode 100644
+Declarations: txErrorExpr::isSensitiveTo@26; txErrorExpr::toString@33
+Dependencies: nsError.h@5; nsString.h@6; txExpr.h@7; txIXPathContext.h@8
+
+`dom/xslt/xpath/txExpr.cpp` | `9baa735fbc23df94d40bc1b343fc4ce628f65762` | 736 bytes | source | UTF-8 | mode 100644
+Declarations: Expr::evaluateToBool@7; Expr::evaluateToString@17
+Dependencies: txExpr.h@5
+
+`dom/xslt/xpath/txExpr.h` | `6f672859a123952f52381f4e7f19701e663b0b09` | 24174 bytes | source | UTF-8 | mode 100644
+Declarations: nsAtom@24; txIMatchContext@25; txIEvalContext@26; txNodeSet@27; txXPathNode@28; txXPathTreeWalker@29; Expr@34; ExprType@52; getType@59; canReturnType@74; _class::getReturnType@154; _class::getSubExprAt@158; _class::setSubExprAt@159; _class::getSubExprAt@165; _class::setSubExprAt@171; _class::getSubExprAt@179; _class::setSubExprAt@190; _class::getSubExprAt@203; _class::setSubExprAt@206; FunctionCall@216; addParam@224; txCoreFunctionCall@273; eType@277; txCoreFunctionCall@313; txNodeTest@326; NodeTestType@344; getType@345; txNameTest@368; txNodeTypeTest@392; NodeType@394; txNodeTypeTest@399; setNodeName@404; getNodeTestType@406; txPredicatedNodeTest@421; PredicateList@435; add@443; dropFirst@453; isEmpty@458; getSubExprAt@474; setSubExprAt@475; LocationStep@485; LocationStepType@487; mNodeTest@509; getNodeTest@513; setNodeTest@514; getAxisIdentifier@518; setAxisIdentifier@519; FilterExpr@552; FilterExpr@558; txLiteralExpr@567; mValue@570; mValue@572; txLiteralExpr@573; UnaryExpr@584; UnaryExpr@586; BooleanExpr@598; _BooleanExprType@601; leftExpr@604; txNumberExpr@621; eOp@623; mLeftExpr@626; RelationalExpr@645; RelationalExprType@647; mLeftExpr@657; VariableRefExpr@674; PathExpr@689; PathOperator@694; deleteExprAt@707; getPathOpAt@714; setPathOpAt@718; PathExprItem@724; RootExpr@743; setSerialize@754; UnionExpr@765; addExpr@773; deleteExprAt@778; txNamedAttributeStep@796; txUnionNodeTest@811; addNodeTest@813; txErrorExpr@826; txErrorExpr@829
+Dependencies: mozilla/UniquePtr.h@8; nsAtom.h@9; nsString.h@10; txCore.h@11; txExprResult.h@12; txOwningArray.h@13
+
+`dom/xslt/xpath/txExprLexer.cpp` | `c941bbc559fc2c446c9156abec70bfc4ec2d363b` | 10437 bytes | source | UTF-8 | mode 100644
+Declarations: mTokenCount@24; txExprLexer::~txExprLexer@29; txExprLexer::nextToken@40; txExprLexer::addToken@56; txExprLexer::nextIsOperatorToken@73; txExprLexer::parse@84
+Dependencies: txExprLexer.h@9; nsError.h@11; nsGkAtoms.h@12; nsString.h@13; txXMLUtils.h@14
+
+`dom/xslt/xpath/txExprLexer.h` | `8203ee66f9fb59386f93eb8bc1933d336ae5a59d` | 4503 bytes | source | UTF-8 | mode 100644
+Declarations: Token@17; Type@22; mStart@89; mStart@91; txExprLexer@107; peek@129; peekAhead@133; hasMoreTokens@139; _TrivialTokens@148; isXPathDigit@196
+Dependencies: nsString.h@8; txCore.h@9
+
+`dom/xslt/xpath/txExprParser.cpp` | `83649fa0a5d9ef8a2f6aa96bdcaf592b9f482bc4` | 25814 bytes | source | UTF-8 | mode 100644
+Declarations: txCoreFunctionCall::getTypeFromAtom@416; txExprParser::isLocationStepToken@706; txExprParser::precedence@790
+Dependencies: txExprParser.h@11; memory@13; utility@14; nsError.h@16; nsGkAtoms.h@17; txExpr.h@18; txExprLexer.h@19; txIXPathContext.h@20; txStack.h@21; txStringUtils.h@22; txXPathNode.h@23; txXPathOptimizer.h@24
+
+`dom/xslt/xpath/txExprParser.h` | `2645298f3191eaa127feaa1dcec4093572f1fa7b` | 3627 bytes | source | UTF-8 | mode 100644
+Declarations: Expr@18; txExprLexer@19; FunctionCall@20; LocationStep@21; nsAtom@22; PredicateList@23; Token@24; txIParseContext@25; txNodeTest@26; txExprParser@28
+Dependencies: mozilla/UniquePtr.h@14; nsString.h@15; txCore.h@16
+
+`dom/xslt/xpath/txExprResult.h` | `aea42046ff8c1b334970e85d5a7eda21a2a9a651` | 2785 bytes | source | UTF-8 | mode 100644
+Declarations: txAExprResult@21; ResultType@27; txAExprResult@35; AddRef@38; BooleanResult@88; NumberResult@98; StringResult@107
+Dependencies: nsString.h@8; txCore.h@9; txResultRecycler.h@10
+
+`dom/xslt/xpath/txFilterExpr.cpp` | `9c622178199a5a51a1821db02d15b5e8556d7918` | 2390 bytes | source | UTF-8 | mode 100644
+Declarations: FilterExpr::getSubExprAt@57; FilterExpr::setSubExprAt@64; FilterExpr::isSensitiveTo@73; FilterExpr::toString@79
+Dependencies: txExpr.h@5; txIXPathContext.h@6; txNodeSet.h@7
+
+`dom/xslt/xpath/txForwardContext.cpp` | `fd3adbba89d59910151c470951a8e642738a1c9f` | 1654 bytes | source | UTF-8 | mode 100644
+Declarations: txForwardContext::size@11; txForwardContext::position@13; txForwardContext::getPrivateContext@31; txForwardContext::recycler@36; txForwardContext::receiveError@41
+Dependencies: txForwardContext.h@5; txNodeSet.h@7
+
+`dom/xslt/xpath/txForwardContext.h` | `d21f2aa53384a22991acbc33dd6c22f2c5136736` | 768 bytes | source | UTF-8 | mode 100644
+Declarations: MOZ_STACK_CLASS@11; mContextSet@17
+Dependencies: txIXPathContext.h@8; txNodeSet.h@9
+
+`dom/xslt/xpath/txFunctionCall.cpp` | `03899082893f157f70290e0810a5229dee3ae787` | 3094 bytes | source | UTF-8 | mode 100644
+Declarations: FunctionCall::getSubExprAt@80; FunctionCall::setSubExprAt@84; FunctionCall::argsSensitiveTo@89; FunctionCall::toString@101
+Dependencies: nsAtom.h@5; txExpr.h@6; txIXPathContext.h@7; txNodeSet.h@8; nsReadableUtils.h@11
+
+`dom/xslt/xpath/txIXPathContext.h` | `d4842cc4b0f254fe0e9c1f1f7e188c2e73cda353` | 3902 bytes | source | UTF-8 | mode 100644
+Declarations: FunctionCall@12; nsAtom@13; txAExprResult@14; txResultRecycler@15; txXPathNode@16; txIParseContext@27; Allowed@53; allowed@54; txIMatchContext@66; txIEvalContext@106
+Dependencies: nsISupportsImpl.h@8; nsStringFwd.h@9; nscore.h@10
+
+`dom/xslt/xpath/txLiteralExpr.cpp` | `132a3a9a4a133c06620ab67b4d3aa76f4cae7a75` | 2058 bytes | source | UTF-8 | mode 100644
+Declarations: txLiteralExpr::getReturnType@25; txLiteralExpr::getSubExprAt@29; txLiteralExpr::setSubExprAt@30; txLiteralExpr::isSensitiveTo@34; txLiteralExpr::toString@37
+Dependencies: txExpr.h@5
+
+`dom/xslt/xpath/txLocationStep.cpp` | `637faa5d905a5f4af05d7832c7dfbe9ffac1a78f` | 8024 bytes | source | UTF-8 | mode 100644
+Declarations: LocationStep::getType@243; LocationStep::getSubExprAt@247; LocationStep::setSubExprAt@251; LocationStep::isSensitiveTo@255; LocationStep::toString@261
+Dependencies: txExpr.h@9; txIXPathContext.h@10; txNodeSet.h@11; txXPathTreeWalker.h@12
+
+`dom/xslt/xpath/txMozillaXPathTreeWalker.cpp` | `62eaaed5579e10760a0459fa76ca777689450306` | 16897 bytes | source | UTF-8 | mode 100644
+Declarations: mPosition@32; txXPathTreeWalker::moveToRoot@34; txXPathTreeWalker::moveToElementById@53; txXPathTreeWalker::moveToFirstAttribute@83; txXPathTreeWalker::moveToNextAttribute@91; txXPathTreeWalker::moveToValidAttribute@100; txXPathTreeWalker::moveToFirstChild@147; txXPathTreeWalker::moveToLastChild@162; txXPathTreeWalker::moveToNextSibling@178; txXPathTreeWalker::moveToPreviousSibling@193; txXPathTreeWalker::moveToParent@208; txXPathNodeUtils::getPrefix@269; txXPathNodeUtils::getNodeName@326; txXPathNodeUtils::getNamespaceID@353; txXPathNodeUtils::getNodeType@376; txXPathNodeUtils::isWhitespace@421; txXPathNodeUtils::getOwnerDocument@428; txXPathNativeNode::createXPathNode@571; txXPathNativeNode::getNode@606; txXPathNativeNode::getContent@625; txXPathNativeNode::getDocument@632
+Dependencies: stdint.h@5; algorithm@7; mozilla/Maybe.h@9; mozilla/dom/Attr.h@10; mozilla/dom/CharacterData.h@11; mozilla/dom/Element.h@12; nsAtom.h@13; nsAttrName.h@14; nsINode.h@15; nsNameSpaceManager.h@16; nsPrintfCString.h@17; nsReadableUtils.h@18; nsString.h@19; nsTArray.h@20; nsUnicharUtils.h@21; txLog.h@22; txXMLUtils.h@23; txXPathTreeWalker.h@24
+
+`dom/xslt/xpath/txNameTest.cpp` | `7a4c6af7d6533ee376ea9ba1279b65fd06ebf8bd` | 2662 bytes | source | UTF-8 | mode 100644
+Declarations: mNodeType@16; txXPathNodeUtils::isHTMLElementInHTMLDocument@46; txNameTest::getDefaultPriority@65; txNameTest::getType@73; txNameTest::isSensitiveTo@75; txNameTest::toString@80
+Dependencies: nsAtom.h@5; nsGkAtoms.h@6; txExpr.h@7; txIXPathContext.h@8; txXPathTreeWalker.h@9
+
+`dom/xslt/xpath/txNamedAttributeStep.cpp` | `92d54befb6f02c274f62a0fd5a9b3a7759fd3d09` | 1593 bytes | source | UTF-8 | mode 100644
+Declarations: mNamespace@13; txNamedAttributeStep::isSensitiveTo@35; txNamedAttributeStep::toString@40
+Dependencies: nsAtom.h@5; txExpr.h@6; txIXPathContext.h@7; txNodeSet.h@8; txXPathTreeWalker.h@9
+
+`dom/xslt/xpath/txNodeSet.cpp` | `c65fcea6f67e626f53824e0efbd094049a8fdf6d` | 15155 bytes | source | UTF-8 | mode 100644
+Declarations: mMarks@47; mMarks@56; mMarks@72; txNodeSet::~txNodeSet@76; txNodeSet::add@86; txNodeSet::add@123; txNodeSet::addAndTransfer@127; txXPathNodeUtils::comparePosition@199; txNodeSet::append@299; txNodeSet::append@316; txNodeSet::mark@335; txNodeSet::sweep@352; txNodeSet::clear@390; txNodeSet::indexOf@404; txNodeSet::getResultType@430; txNodeSet::booleanValue@432; txNodeSet::numberValue@433; txNodeSet::stringValue@440; txNodeSet::ensureGrowSize@451
+Dependencies: txNodeSet.h@5; algorithm@7; txLog.h@9; txXPathTreeWalker.h@10
+
+`dom/xslt/xpath/txNodeSet.h` | `0104b35d3fd09484f4a90740128653aeb665ec48` | 6605 bytes | source | UTF-8 | mode 100644
+Declarations: txNodeSet@16; add@46; append@75; setReverse@97; unsetReverse@98; contains@129; isEmpty@142; size@148
+Dependencies: nsError.h@12; txExprResult.h@13; txXPathNode.h@14
+
+`dom/xslt/xpath/txNodeSetContext.cpp` | `e0be579100f0fbf028d611b314dfa0e97f910e63` | 1610 bytes | source | UTF-8 | mode 100644
+Declarations: txNodeSetContext::size@13; txNodeSetContext::position@15; txNodeSetContext::getPrivateContext@32; txNodeSetContext::recycler@37; txNodeSetContext::receiveError@42
+Dependencies: txNodeSetContext.h@5; txNodeSet.h@7
+
+`dom/xslt/xpath/txNodeSetContext.h` | `73eeb8d5664ec3eee5097ddfbd06b93c5a06467d` | 1004 bytes | source | UTF-8 | mode 100644
+Declarations: txNodeSetContext@11; mContextSet@14; hasNext@17; next@18; setPosition@22
+Dependencies: txIXPathContext.h@8; txNodeSet.h@9
+
+`dom/xslt/xpath/txNodeTypeTest.cpp` | `ffdffc13bbfa2ca7dfa49459958b66e1f6a02c0f` | 2449 bytes | source | UTF-8 | mode 100644
+Declarations: txNodeTypeTest::getType@54; txNodeTypeTest::getDefaultPriority@59; txNodeTypeTest::isSensitiveTo@61; txNodeTypeTest::toString@66
+Dependencies: nsAtom.h@5; txExpr.h@6; txIXPathContext.h@7; txXPathTreeWalker.h@8
+
+`dom/xslt/xpath/txNumberExpr.cpp` | `2e3cd58dcf31e8729f1111fbbfb5f9bcea49a79a` | 2775 bytes | source | UTF-8 | mode 100644
+Declarations: txNumberExpr::isSensitiveTo@78; txNumberExpr::toString@84
+Dependencies: math.h@5; mozilla/FloatingPoint.h@7; txExpr.h@8; txIXPathContext.h@9
+
+`dom/xslt/xpath/txNumberResult.cpp` | `fb71d70cfd04eded47e234a8c0eb6fb6dfe0053d` | 1300 bytes | source | UTF-8 | mode 100644
+Declarations: txAExprResult@21; NumberResult::getResultType@27; NumberResult::stringValue@31; NumberResult::booleanValue@37; NumberResult::numberValue@45
+Dependencies: txExprResult.h@10
+
+`dom/xslt/xpath/txPathExpr.cpp` | `f0b8680beda0ea5d7c0dc97f14280059446a71ca` | 6777 bytes | source | UTF-8 | mode 100644
+Declarations: PathExpr::addExpr@22; PathExpr::evaluate@41; txXPathNodeUtils::isWhitespace@160; PathExpr::getType@169; PathExpr::getSubExprAt@173; PathExpr::setSubExprAt@176; PathExpr::isSensitiveTo@182; PathExpr::toString@207
+Dependencies: txExpr.h@5; txNodeSet.h@6; txNodeSetContext.h@7; txSingleNodeContext.h@8; txXMLUtils.h@9; txXPathTreeWalker.h@10
+
+`dom/xslt/xpath/txPredicateList.cpp` | `6aec03813123370a86d1e7343da1c1c1851b2389` | 2267 bytes | source | UTF-8 | mode 100644
+Declarations: PredicateList::isSensitiveTo@51; PredicateList::toString@70
+Dependencies: txExpr.h@5; txNodeSet.h@6; txNodeSetContext.h@7
+
+`dom/xslt/xpath/txPredicatedNodeTest.cpp` | `1e18c2870c0b0cb8e91aa8e5c14f815cc7c50be3` | 1594 bytes | source | UTF-8 | mode 100644
+Declarations: mNodeTest@11; txPredicatedNodeTest::getDefaultPriority@35; txPredicatedNodeTest::isSensitiveTo@37; txPredicatedNodeTest::toString@43
+Dependencies: txExpr.h@5; txExprResult.h@6; txSingleNodeContext.h@7
+
+`dom/xslt/xpath/txRelationalExpr.cpp` | `fcae014a5bb41153f509ff687452c827be3b1b33` | 5300 bytes | source | UTF-8 | mode 100644
+Declarations: RelationalExpr::isSensitiveTo@151; RelationalExpr::toString@157
+Dependencies: txExpr.h@5; txIXPathContext.h@6; txNodeSet.h@7; txXPathTreeWalker.h@8
+
+`dom/xslt/xpath/txResultRecycler.cpp` | `8da2cf54a53acb7ea6292152fa4fd629ab9dfe46` | 4714 bytes | source | UTF-8 | mode 100644
+Declarations: mFalseResult@13; txResultRecycler::~txResultRecycler@15; txResultRecycler::recycle@30; txResultRecycler::getStringResult@55; txResultRecycler::getEmptyStringResult@83; txResultRecycler::getNodeSet@88; txResultRecycler::getBoolResult@144; txAExprResult::Release@161
+Dependencies: txResultRecycler.h@5; txExprResult.h@7; txNodeSet.h@8
+
+`dom/xslt/xpath/txResultRecycler.h` | `0016083066362f1b6484266ebe2ab81a76bdb104` | 2140 bytes | source | UTF-8 | mode 100644
+Declarations: txAExprResult@11; StringResult@12; txNodeSet@13; txXPathNode@14; NumberResult@15; BooleanResult@16; txResultRecycler@18; AddRef@23; Release@27
+Dependencies: nsCOMPtr.h@8; txStack.h@9
+
+`dom/xslt/xpath/txRootExpr.cpp` | `cae855ef6107413372b8772679b981bc0f97ca11` | 1097 bytes | source | UTF-8 | mode 100644
+Declarations: RootExpr::evaluate@17; RootExpr::isSensitiveTo@26; RootExpr::toString@31
+Dependencies: txExpr.h@5; txIXPathContext.h@6; txNodeSet.h@7; txXPathTreeWalker.h@8
+
+`dom/xslt/xpath/txSingleNodeContext.h` | `670b919771d3b2c9921fbe1b474308c1efd097c9` | 1876 bytes | source | UTF-8 | mode 100644
+Declarations: txSingleNodeContext@11; mNode@15
+Dependencies: txIXPathContext.h@8; txXPathNode.h@9
+
+`dom/xslt/xpath/txStringResult.cpp` | `5e55f535dddd287461b7d992bd2f5dcaf99f8a20` | 1201 bytes | source | UTF-8 | mode 100644
+Declarations: txAExprResult@15; txAExprResult@22; StringResult::getResultType@28; StringResult::stringValue@32; StringResult::booleanValue@36; StringResult::numberValue@40
+Dependencies: txExprResult.h@9
+
+`dom/xslt/xpath/txUnaryExpr.cpp` | `71ec9876bd6c911aed32db6931b89c27ce2fb716` | 1208 bytes | source | UTF-8 | mode 100644
+Declarations: UnaryExpr::isSensitiveTo@29; UnaryExpr::toString@34
+Dependencies: txExpr.h@5; txIXPathContext.h@6
+
+`dom/xslt/xpath/txUnionExpr.cpp` | `b1ada7a098714890840e83d06404fa624c533b23` | 2464 bytes | source | UTF-8 | mode 100644
+Declarations: UnionExpr::getType@64; UnionExpr::isSensitiveTo@68; UnionExpr::toString@80
+Dependencies: txExpr.h@5; txIXPathContext.h@6; txNodeSet.h@7; nsReadableUtils.h@10
+
+`dom/xslt/xpath/txUnionNodeTest.cpp` | `69edab641968ad6b3397e4a8c00c30738c36b236` | 1441 bytes | source | UTF-8 | mode 100644
+Declarations: txUnionNodeTest::getDefaultPriority@30; txUnionNodeTest::isSensitiveTo@35; txUnionNodeTest::toString@47
+Dependencies: mozilla/FloatingPoint.h@5; txExpr.h@6; txExprResult.h@7; txSingleNodeContext.h@8; nsReadableUtils.h@11
+
+`dom/xslt/xpath/txVariableRefExpr.cpp` | `2b9f51933bf8709f7ea586803135a8360616031d` | 1833 bytes | source | UTF-8 | mode 100644
+Declarations: mPrefix@20; VariableRefExpr::isSensitiveTo@44; VariableRefExpr::toString@49
+Dependencies: nsAtom.h@5; nsGkAtoms.h@6; txExpr.h@7; txIXPathContext.h@8; txNodeSet.h@9
+
+`dom/xslt/xpath/txXPathNode.h` | `75a97c41d97123a6f10fc929ee94388f5f959a16` | 4821 bytes | source | UTF-8 | mode 100644
+Declarations: txXPathNode@43; mNode@46; mNode@50; mNode@55; mNode@59; OwnerDoc@68; txXPathNode@75; RootOf@79; Root@80; isDocument@82; isContent@83; isAttribute@84; Content@86; Document@90; PositionType@95; txNamespaceManager@104
+Dependencies: mozilla/dom/Document.h@8; nsIContent.h@9; nsINode.h@10; nsNameSpaceManager.h@11
+
+`dom/xslt/xpath/txXPathOptimizer.cpp` | `2baa2eba82dca55493bda689cbf94f5acb88e016` | 7954 bytes | source | UTF-8 | mode 100644
+Declarations: txEarlyEvalContext@17; mRecycler@20; txXPathOptimizer::optimize@48; txXPathOptimizer::optimizeStep@103; txXPathOptimizer::optimizePath@130; txXPathOptimizer::optimizeUnion@182
+Dependencies: txXPathOptimizer.h@5; mozilla/Assertions.h@7; nsAtom.h@8; nsGkAtoms.h@9; txExpr.h@10; txExprResult.h@11; txIXPathContext.h@12; txXPathNode.h@13
+
+`dom/xslt/xpath/txXPathOptimizer.h` | `710396e0afb9293dbe06c06912b20ba89e56faad` | 842 bytes | source | UTF-8 | mode 100644
+Declarations: Expr@10; txXPathOptimizer@12
+Dependencies: txCore.h@8
+
+`dom/xslt/xpath/txXPathTreeWalker.h` | `f142658ce47efdaa6518744c1cfa7d7cdf08aabd` | 5977 bytes | source | UTF-8 | mode 100644
+Declarations: nsAtom@13; txXPathTreeWalker@15; txXPathNodeUtils@49; isHTMLElementInHTMLDocument@77; txXPathNativeNode@86; txXPathTreeWalker::getNamespaceID@103; txXPathTreeWalker::appendNodeValue@107; txXPathTreeWalker::getNodeName@111; txXPathTreeWalker::moveTo@115; txXPathTreeWalker::isOnNode@120; txXPathNodeUtils::getUniqueIdentifier@125; txXPathNodeUtils::isRoot@143; txXPathNodeUtils::isElement@148; txXPathNodeUtils::isAttribute@153; txXPathNodeUtils::isComment@164; txXPathNodeUtils::isText@169
+Dependencies: nsIContentInlines.h@8; nsTArray.h@9; txCore.h@10; txXPathNode.h@11
+
+`dom/xslt/xslt/moz.build` | `b0f8de624a1933ff0cadc80a0e025cba9c2db0bf` | 2173 bytes | build-registration | UTF-8 | mode 100644
+Dependencies: /ipc/chromium/chromium-config.mozbuild@52
+
+`dom/xslt/xslt/txBufferingHandler.cpp` | `bde8acd0df94b7e8e7f15d294a53cda07482320f` | 13440 bytes | source | UTF-8 | mode 100644
+Declarations: txOutputTransaction@9; txTransactionType@11; txOutputTransaction@24; txCharacterTransaction@31; txOutputTransaction@34; txCommentTransaction@43; txOutputTransaction@46; txPITransaction@55; txOutputTransaction@58; txStartElementAtomTransaction@68; mNsID@76; txStartElementTransaction@90; mNsID@97; txAttributeTransaction@108; mValue@116; txAttributeAtomTransaction@128; mValue@138; txBufferingHandler::txBufferingHandler@151; txBufferingHandler::~txBufferingHandler@156; txBufferingHandler::characters@191; txBufferingHandler::comment@213; txBufferingHandler::endDocument@222; txBufferingHandler::endElement@230; txBufferingHandler::startDocument@250; txResultBuffer::txResultBuffer@282; txResultBuffer::~txResultBuffer@284; txResultBuffer::addTransaction@291; txResultBuffer::flushToHandler@366; txResultBuffer::getLastTransaction@378
+Dependencies: txBufferingHandler.h@5
+
+`dom/xslt/xslt/txBufferingHandler.h` | `668438d94c83b7c0aa37ee6a9e39512a10d41a26` | 1005 bytes | source | UTF-8 | mode 100644
+Declarations: txOutputTransaction@13; txResultBuffer@15; txBufferingHandler@32
+Dependencies: mozilla/UniquePtr.h@8; nsString.h@9; nsTArray.h@10; txXMLEventHandler.h@11
+
+`dom/xslt/xslt/txCurrentFunctionCall.cpp` | `03efeeb2a9653e1e49a872586e1b3f40354c0d03` | 1474 bytes | source | UTF-8 | mode 100644
+Declarations: CurrentFunctionCall::getReturnType@40; CurrentFunctionCall::isSensitiveTo@42; CurrentFunctionCall::appendName@47
+Dependencies: nsGkAtoms.h@5; txExecutionState.h@6; txXSLTFunctions.h@7
+
+`dom/xslt/xslt/txDocumentFunctionCall.cpp` | `5315ccb70a217fdcb54f2d9bcd9c8667abe7d6bc` | 4535 bytes | source | UTF-8 | mode 100644
+Declarations: mBaseURI@20; DocumentFunctionCall::getReturnType@137; DocumentFunctionCall::isSensitiveTo@141; DocumentFunctionCall::appendName@146
+Dependencies: nsGkAtoms.h@10; txExecutionState.h@11; txIXPathContext.h@12; txURIUtils.h@13; txXSLTFunctions.h@14
+
+`dom/xslt/xslt/txEXSLTFunctions.cpp` | `ba2f3c2e6022c7dc4c15b331a3f0ee5eadc6b550` | 25474 bytes | source | UTF-8 | mode 100644
+Declarations: txStylesheetCompilerState@34; getSourceDocument@40; class@138; txEXSLTFunctionDescriptor@173; txEXSLTFunctionCall@186; txEXSLTFunctionCall@188; Create@190; txEXSLTRegExFunctionCall@201; txEXSLTRegExFunctionCall@203; Create@205; txEXSLTFunctionCall::getReturnType@637; txEXSLTFunctionCall::isSensitiveTo@641; txEXSLTFunctionCall::appendName@650; txEXSLTRegExFunctionCall::getReturnType@740; txEXSLTRegExFunctionCall::isSensitiveTo@744; txEXSLTRegExFunctionCall::appendName@752; TX_InitEXSLTFunction@770
+Dependencies: mozilla/EnumeratedArray.h@5; mozilla/EnumeratedRange.h@6; mozilla/FloatingPoint.h@7; mozilla/MacroArgs.h@8; mozilla/MacroForEach.h@9; mozilla/dom/DocumentFragmentBinding.h@10; nsAtom.h@11; nsComponentManagerUtils.h@12; nsContentCreatorFunctions.h@13; nsGkAtoms.h@14; nsIContent.h@15; nsImportModule.h@16; nsPrintfCString.h@17; nsTextNode.h@18; prtime.h@19; txExecutionState.h@20; txExpr.h@21; txIEXSLTFunctions.h@22; txIXPathContext.h@23; txMozillaXMLOutput.h@24; txNodeSet.h@25; txOutputFormat.h@26; txRtfHandler.h@27; txXPathTreeWalker.h@28; xpcprivate.h@29
+
+`dom/xslt/xslt/txEXSLTRegExFunctions.sys.mjs` | `5d98d03bdde6eafa4952da09562b3803ac848394` | 909 bytes | source | UTF-8 | mode 100644
+Declarations: replace@21; test@27
+
+`dom/xslt/xslt/txExecutionState.cpp` | `0dc31ee6cd4cd809a440f3789dae7f530d87c2f6` | 13705 bytes | source | UTF-8 | mode 100644
+Declarations: txLoadedDocumentsHash::init@21; WithEntryHandle@40; mDisableLoads@59; txExecutionState::~txExecutionState@63; txExecutionState::end@142; txExecutionState::popAndDeleteEvalContextUntil@153; txExecutionState::getPrivateContext@279; txExecutionState::recycler@281; txExecutionState::receiveError@283; txExecutionState::pushEvalContext@287; txExecutionState::popEvalContext@292; txExecutionState::pushBool@299; txExecutionState::popBool@301; txExecutionState::pushResultHandler@307; txExecutionState::popResultHandler@312; txExecutionState::popTemplateRule@329; txExecutionState::getEvalContext@334; txExecutionState::getCurrentTemplateRule@376; txExecutionState::getNextInstruction@382; txExecutionState::runTemplate@395; txExecutionState::gotoInstruction@408; txExecutionState::returnFromTemplate@412; txExecutionState::removeVariable@429; txExecutionState::pushParamMap@433; txExecutionState::popParamMap@438
+Dependencies: txExecutionState.h@5; txInstructions.h@7; txLog.h@8; txRtfHandler.h@9; txSingleNodeContext.h@10; txStylesheet.h@11; txURIUtils.h@12; txVariableMap.h@13; txXMLParser.h@14; txXSLTProcessor.h@15
+
+`dom/xslt/xslt/txExecutionState.h` | `67fa5150f239e3c2a832c2d665d91f3bb858858a` | 4474 bytes | source | UTF-8 | mode 100644
+Declarations: txAOutputHandlerFactory@21; txAXMLEventHandler@22; txInstruction@23; txLoadedDocumentsHash@27; txLoadedDocumentsHash@30; txExecutionState@39; TemplateRule@52; stopProcessing@102
+Dependencies: mozilla/Result.h@8; nsHashKeys.h@9; nsTArray.h@10; nsTHashtable.h@11; txCore.h@12; txIXPathContext.h@13; txKey.h@14; txStack.h@15; txStylesheet.h@16; txVariableMap.h@17; txXMLUtils.h@18; txXPathTreeWalker.h@19
+
+`dom/xslt/xslt/txFormatNumberFunctionCall.cpp` | `7e302a711cea1c12529e27d4477a050827e6ba25` | 11342 bytes | source | UTF-8 | mode 100644
+Declarations: mStylesheet@29; txFormatNumberFunctionCall::ReportInvalidArg@31; txFormatNumberFunctionCall::getReturnType@365; txFormatNumberFunctionCall::isSensitiveTo@369; txFormatNumberFunctionCall::appendName@374; mInfinity@385; txDecimalFormat::isEqual@396
+Dependencies: math.h@5; mozilla/FloatingPoint.h@7; nsGkAtoms.h@8; prdtoa.h@9; txIXPathContext.h@10; txNamespaceMap.h@11; txStylesheet.h@12; txXSLTFunctions.h@13
+
+`dom/xslt/xslt/txGenerateIdFunctionCall.cpp` | `2a0fedb40a938647162b8358aac90269411d857e` | 2652 bytes | source | UTF-8 | mode 100644
+Declarations: GenerateIdFunctionCall::getReturnType@78; GenerateIdFunctionCall::isSensitiveTo@82; GenerateIdFunctionCall::appendName@95
+Dependencies: nsGkAtoms.h@5; txExecutionState.h@6; txIXPathContext.h@7; txNodeSet.h@8; txXPathTreeWalker.h@9; txXSLTFunctions.h@10
+
+`dom/xslt/xslt/txIEXSLTFunctions.idl` | `50b2e9cfdf54e9636f3d152916bc81cd2af6a143` | 680 bytes | source | UTF-8 | mode 100644
+Declarations: txIEXSLTFunctions@11
+Dependencies: nsISupports.idl@5
+
+`dom/xslt/xslt/txInstructions.cpp` | `0b7aadc1669b771db82302c1a5f4da3793a71320` | 23262 bytes | source | UTF-8 | mode 100644
+Declarations: txApplyDefaultElementTemplate::execute@26; txApplyImportsEnd::execute@41; txApplyImportsStart::execute@48; mMode@79; txApplyTemplates::execute@81; mMappings@98; txAttribute::execute@100; TX_StringEqualsAtom@110; txCallTemplate::txCallTemplate@141; txCallTemplate::execute@143; mName@154; txCheckParam::execute@156; mCondition@174; txConditionalGoto::execute@176; txComment::execute@188; txCopyBase::copyNode@204; txCopy::txCopy@281; txCopy::execute@283; txCopyOf::txCopyOf@322; txCopyOf::execute@324; txEndElement::execute@359; txErrorInstruction::execute@370; txGoTo::txGoTo@375; txGoTo::execute@377; txInsertAttrSet::txInsertAttrSet@383; txInsertAttrSet::execute@385; txLoopNodeSet::txLoopNodeSet@395; txLoopNodeSet::execute@397; mValue@418; txLREAttribute::execute@424; txMessage::txMessage@441; txMessage::execute@443; mGroupingSize@469; txNumber::execute@471; txPopParams::execute@481; mName@488; txProcessingInstruction::execute@490; mSelect@511; txPushNewContext::execute@515; txPushNullTemplateRule::execute@570; txPushParams::execute@575; txPushRTFHandler::execute@580; mOnlyText@587; txPushStringHandler::execute@589; mName@596; txRemoveVariable::execute@598; txReturn::execute@604; mName@612; txSetParam::execute@614; mName@639; txSetVariable::execute@641; mMappings@662; txStartElement::execute@664; mNamespaceID@719; txStartLREElement::execute@725; txText::txText@735; txText::execute@737; mExpr@742; txValueOf::execute@744
+Dependencies: txInstructions.h@5; utility@7; nsError.h@9; nsGkAtoms.h@10; nsIConsoleService.h@11; nsServiceManagerUtils.h@12; txExecutionState.h@13; txExpr.h@14; txNodeSetContext.h@15; txNodeSorter.h@16; txRtfHandler.h@17; txStringUtils.h@18; txStylesheet.h@19; txTextHandler.h@20; txXSLTNumber.h@21
+
+`dom/xslt/xslt/txInstructions.h` | `eb292f444e471dcd6a1b2f16d4487945701a8cba` | 7975 bytes | source | UTF-8 | mode 100644
+Declarations: nsAtom@18; txExecutionState@19; txInstruction@21; txApplyDefaultElementTemplate@43; txApplyImportsEnd@48; txApplyImportsStart@53; txApplyTemplates@58; txAttribute@67; txCallTemplate@79; txCheckParam@88; txConditionalGoto@98; txComment@109; txCopyBase@114; txCopy@119; txCopyOf@128; txEndElement@137; txErrorInstruction@142; txGoTo@147; txInsertAttrSet@156; txLoopNodeSet@165; txLREAttribute@174; txMessage@188; txNumber@197; txPopParams@218; txProcessingInstruction@223; txPushNewContext@232; SortKey@245; txPushNullTemplateRule@258; txPushParams@263; txPushRTFHandler@268; txPushStringHandler@273; txRemoveVariable@282; txReturn@291; txSetParam@296; txSetVariable@306; txStartElement@316; txStartLREElement@329; txText@341; txValueOf@351
+Dependencies: mozilla/UniquePtr.h@8; nsCOMPtr.h@9; nsString.h@10; nsTArray.h@11; txCore.h@12; txExpandedName.h@13; txNamespaceMap.h@14; txXMLUtils.h@15; txXSLTNumber.h@16
+
+`dom/xslt/xslt/txKey.h` | `6a8fa2446b6b5ca13cad2012cc3d5bba7e52e0eb` | 5423 bytes | source | UTF-8 | mode 100644
+Declarations: txPattern@15; Expr@16; txExecutionState@17; txKeyValueHashKey@19; mRootIdentifier@25; txKeyValueHashEntry@32; mKey@38; mKey@41; KeyToPointer@45; txIndexedKeyHashKey@57; mKeyName@60; txIndexedKeyHashEntry@66; txIndexedKeyHashEntry@71; mIsBeingIndexed@76; KeyToPointer@80; txXSLKey@97; txXSLKey@99; Key@146; txKeyHash@162; mKeyValues@165
+Dependencies: nsTHashtable.h@8; txExpandedNameMap.h@9; txList.h@10; txNodeSet.h@11; txXMLUtils.h@12; txXSLTPatterns.h@13
+
+`dom/xslt/xslt/txKeyFunctionCall.cpp` | `67dedf3a38411453e657e399a47b9ad2b2ef3365` | 11124 bytes | source | UTF-8 | mode 100644
+Declarations: mMappings@28; txKeyFunctionCall::getReturnType@96; txKeyFunctionCall::isSensitiveTo@98; txKeyFunctionCall::appendName@103; txKeyValueHashEntry::KeyEquals@112; txKeyValueHashEntry::HashKey@118; txIndexedKeyHashEntry::KeyEquals@125; txIndexedKeyHashEntry::HashKey@130; txKeyHash::init@222; txXSLKey::addKey@234
+Dependencies: utility@5; mozilla/HashFunctions.h@7; nsGkAtoms.h@8; nsReadableUtils.h@9; txExecutionState.h@10; txKey.h@11; txNamespaceMap.h@12; txSingleNodeContext.h@13; txXSLTFunctions.h@14; txXSLTPatterns.h@15
+
+`dom/xslt/xslt/txMozillaStylesheetCompiler.cpp` | `6c44685a80292b447a78dc671b1dbb05141d2f9a` | 19840 bytes | source | UTF-8 | mode 100644
+Declarations: getSpec@41; txStylesheetSink@57; mCheckedForXML@99; txStylesheetSink::HandleEndElement@123; txStylesheetSink::HandleComment@135; txStylesheetSink::HandleCDataSection@138; txStylesheetSink::HandleCharacterData@152; txStylesheetSink::DidBuildModel@190; txStylesheetSink::OnStartRequest@216; txStylesheetSink::OnStopRequest@272; txStylesheetSink::GetInterface@308; txCompileObserver@330; mProcessor@355; handleNode@459; txSyncCompileObserver@513; mProcessor@528
+Dependencies: ReferrerInfo.h@5; mozilla/Encoding.h@6; mozilla/UniquePtr.h@7; mozilla/dom/Document.h@8; mozilla/dom/Element.h@9; mozilla/dom/Text.h@10; nsAttrName.h@11; nsCharsetSource.h@12; nsComponentManagerUtils.h@13; nsContentPolicyUtils.h@14; nsError.h@15; nsIAuthPrompt.h@16; nsIExpatSink.h@17; nsIHttpChannel.h@18; nsIInterfaceRequestor.h@19; nsILoadGroup.h@20; nsIPrincipal.h@21; nsIRequestObserver.h@22; nsIScriptError.h@23; nsIStreamConverterService.h@24; nsIURI.h@25; nsIWindowWatcher.h@26; nsIXMLContentSink.h@27; nsMimeTypes.h@28; nsNetUtil.h@29; nsParser.h@30; nsSyncLoadService.h@31; txLog.h@32; txMozillaXSLTProcessor.h@33; txStylesheetCompiler.h@34; txXMLUtils.h@35
+
+`dom/xslt/xslt/txMozillaTextOutput.cpp` | `bedf792fb0b61cc1147a7172921fb2ddd32cb4f0` | 8259 bytes | source | UTF-8 | mode 100644
+Declarations: mCreatedDocument@28; mCreatedDocument@35; txMozillaTextOutput::~txMozillaTextOutput@41; txMozillaTextOutput::characters@57; txMozillaTextOutput::comment@63; txMozillaTextOutput::endElement@105; txMozillaTextOutput::startDocument@112; txMozillaTextOutput::createResultDocument@114; txMozillaTextOutput::getOutputDocument@249
+Dependencies: txMozillaTextOutput.h@5; mozilla/Encoding.h@7; mozilla/dom/Document.h@8; mozilla/dom/DocumentFragment.h@9; mozilla/dom/ScriptLoader.h@10; nsCharsetSource.h@11; nsContentCreatorFunctions.h@12; nsContentUtils.h@13; nsGkAtoms.h@14; nsIContent.h@15; nsIDocumentTransformer.h@16; nsNameSpaceManager.h@17; nsTextNode.h@18; txURIUtils.h@19
+
+`dom/xslt/xslt/txMozillaTextOutput.h` | `fee669b828b8feeecf8f1d1048ac8dd34d0d2fd1` | 1325 bytes | source | UTF-8 | mode 100644
+Declarations: nsITransformObserver@13; nsIContent@14; mozilla@16; Document@17; DocumentFragment@18; Element@19; txMozillaTextOutput@22
+Dependencies: nsCOMPtr.h@8; nsIWeakReferenceUtils.h@9; txOutputFormat.h@10; txXMLEventHandler.h@11
+
+`dom/xslt/xslt/txMozillaXMLOutput.cpp` | `f69a70fb0b4fc0bac7f47cc8d122977cf0793b9f` | 29062 bytes | source | UTF-8 | mode 100644
+Declarations: mNoFixup@64; mNoFixup@86; txMozillaXMLOutput::~txMozillaXMLOutput@96; txMozillaXMLOutput::characters@162; txMozillaXMLOutput::comment@173; txMozillaXMLOutput::getOutputDocument@324; txMozillaXMLOutput::startDocument@368; txMozillaXMLOutput::closePrevious@491; txMozillaXMLOutput::createTxWrapper@546; NS_PTR_TO_INT32@603; NS_PTR_TO_INT32@616; txMozillaXMLOutput::endHTMLElement@659; mInTransform@823; txTransformNotifier::Init@872; txTransformNotifier::AddScriptElement@876; txTransformNotifier::AddPendingStylesheet@880; txTransformNotifier::OnTransformEnd@882; txTransformNotifier::OnTransformStart@887; txTransformNotifier::SetOutputDocument@889; txTransformNotifier::SignalTransformEnd@896
+Dependencies: txMozillaXMLOutput.h@5; algorithm@7; mozilla/CycleCollectedJSContext.h@9; mozilla/Encoding.h@10; mozilla/StyleSheetInlines.h@11; mozilla/Try.h@12; mozilla/css/Loader.h@13; mozilla/dom/Comment.h@14; mozilla/dom/Document.h@15; mozilla/dom/DocumentFragment.h@16; mozilla/dom/DocumentType.h@17; mozilla/dom/Element.h@18; mozilla/dom/PermissionsPolicy.h@19; mozilla/dom/ProcessingInstruction.h@20; mozilla/dom/ScriptLoader.h@21; nsCharsetSource.h@22; nsContentCreatorFunctions.h@23; nsContentSink.h@24; nsContentUtils.h@25; nsDocElementCreatedNotificationRunner.h@26; nsDocShell.h@27; nsError.h@28; nsGkAtoms.h@29; nsIContent.h@30; nsIDocShell.h@31; nsIDocumentTransformer.h@32; nsIFrame.h@33; nsINode.h@34; nsIRefreshURI.h@35; nsIScriptElement.h@36; nsNameSpaceManager.h@37; nsPIDOMWindow.h@38; nsStringFlags.h@39; nsStyleUtil.h@40; nsTextNode.h@41; nsUnicharUtils.h@42; txLog.h@43; txStringUtils.h@44; txURIUtils.h@45; txXMLUtils.h@46
+
+`dom/xslt/xslt/txMozillaXMLOutput.h` | `31e893522a159d529889d9d76bc44ae3292dcf4c` | 4123 bytes | source | UTF-8 | mode 100644
+Declarations: nsIContent@16; nsAtom@17; nsITransformObserver@18; nsNodeInfoManager@19; nsINode@20; mozilla@22; Document@23; DocumentFragment@24; Element@25; txTransformNotifier@28; txMozillaXMLOutput@59; TableState@105; txAction@125
+Dependencies: nsCOMPtr.h@8; nsICSSLoaderObserver.h@9; nsIScriptLoaderObserver.h@10; nsTArray.h@11; txOutputFormat.h@12; txStack.h@13; txXMLEventHandler.h@14
+
+`dom/xslt/xslt/txMozillaXSLTProcessor.cpp` | `21e9d4f13ea9c44d71e8dcee372a483e5993de9b` | 42005 bytes | source | UTF-8 | mode 100644
+Declarations: txToDocHandlerFactory@43; mDocumentIsData@50; txToFragmentHandlerFactory@61; mFragment@64; txVariable@200; mUnionValue@207; getUnionValue@218; setValue@221; mFlags@296; mFlags@302; txMozillaXSLTProcessor::~txMozillaXSLTProcessor@304; txMozillaXSLTProcessor::SetTransformObserver@310; txMozillaXSLTProcessor::SetSourceContentModel@316; MOZ_STACK_CLASS@338; mResolver@343; nsTransformBlockerEvent@472; mozilla::Runnable@477; txMozillaXSLTProcessor::DoTransform@493; XSLTProcessRequest@595; XSLTProcessRequest@597; Done@602; XSLTProcessRequest::GetName@611; XSLTProcessRequest::IsPending@617; XSLTProcessRequest::GetStatus@623; XSLTProcessRequest::SetCanceledReason@628; XSLTProcessRequest::GetCanceledReason@632; XSLTProcessRequest::Cancel@642; XSLTProcessRequest::Suspend@648; XSLTProcessRequest::Resume@651; XSLTProcessRequest::GetLoadGroup@654; XSLTProcessRequest::SetLoadGroup@660; XSLTProcessRequest::GetLoadFlags@663; XSLTProcessRequest::SetLoadFlags@669; XSLTProcessRequest::GetTRRMode@672; XSLTProcessRequest::SetTRRMode@677; txMozillaXSLTProcessor::ClearParameters@932; txMozillaXSLTProcessor::Reset@941; txMozillaXSLTProcessor::SetFlags@957; txMozillaXSLTProcessor::Flags@961; txMozillaXSLTProcessor::setStylesheet@986; StatusCodeToL10nId@994; txMozillaXSLTProcessor::notifyError@1127; txMozillaXSLTProcessor::ensureStylesheet@1195; txMozillaXSLTProcessor::NodeWillBeDestroyed@1216; txMozillaXSLTProcessor::GetDocGroup@1260; txMozillaXSLTProcessor::Startup@1279; txMozillaXSLTProcessor::Shutdown@1288
+Dependencies: txMozillaXSLTProcessor.h@5; memory@7; XPathResult.h@9; jsapi.h@10; mozilla/AutoRestore.h@11; mozilla/Components.h@12; mozilla/dom/Document.h@13; mozilla/dom/DocumentFragment.h@14; mozilla/dom/Element.h@15; mozilla/dom/XSLTProcessorBinding.h@16; mozilla/intl/Localization.h@17; nsError.h@18; nsIPrincipal.h@19; nsIURI.h@20; nsIXPConnect.h@21; nsJSUtils.h@22; nsNameSpaceManager.h@23; nsRFPService.h@24; nsTextNode.h@25; nsThreadUtils.h@26; nsVariant.h@27; txExecutionState.h@28; txExprParser.h@29; txMozillaTextOutput.h@30; txMozillaXMLOutput.h@31; txURIUtils.h@32; txUnknownHandler.h@33; txXMLUtils.h@34; txXSLTProcessor.h@35
+
+`dom/xslt/xslt/txMozillaXSLTProcessor.h` | `ab9dfca2d873915be2575449692d153c79684bb2` | 6103 bytes | source | UTF-8 | mode 100644
+Declarations: nsINode@17; nsIURI@18; nsIVariant@19; txStylesheet@20; txResultRecycler@21; txIGlobalParameter@22; mozilla@24; ErrorResult@25; dom@27; DocGroup@29; Document@30; DocumentFragment@31; GlobalObject@32; class@33; txMozillaXSLTProcessor@40; mozilla@44; mozilla@47; GetParentObject@86; GetSourceContentModel@118; IsLoadDisabled@123; class@161
+Dependencies: mozilla/dom/BindingDeclarations.h@8; mozilla/dom/XSLTProcessorBinding.h@9; nsCycleCollectionParticipant.h@10; nsIDocumentTransformer.h@11; nsStubMutationObserver.h@12; nsWrapperCache.h@13; txExpandedNameMap.h@14; txNamespaceMap.h@15
+
+`dom/xslt/xslt/txNodeSorter.cpp` | `dbfdc455eff24d5833d77abe7b4bb9770521dc77` | 7024 bytes | source | UTF-8 | mode 100644
+Declarations: txNodeSorter::txNodeSorter@30; txNodeSorter::~txNodeSorter@32
+Dependencies: txNodeSorter.h@5; memory@7; mozilla/CheckedInt.h@9; mozilla/UniquePtrExtensions.h@10; nsGkAtoms.h@11; nsRFPService.h@12; txExecutionState.h@13; txExpr.h@14; txNodeSetContext.h@15; txStringUtils.h@16; txXPathResultComparator.h@17
+
+`dom/xslt/xslt/txNodeSorter.h` | `8909c3ba2d478ffb9c730f8a8a41bd4316df12d9` | 1534 bytes | source | UTF-8 | mode 100644
+Declarations: Expr@11; txExecutionState@12; txNodeSet@13; txObject@14; txXPathResultComparator@15; txIEvalContext@16; txNodeSetContext@17; txNodeSorter@23; SortData@35; SortKey@41
+Dependencies: txCore.h@8; txList.h@9
+
+`dom/xslt/xslt/txOutputFormat.cpp` | `28d5f2f6ce09f44840c7fb3043c6c46d72f9989b` | 2865 bytes | source | UTF-8 | mode 100644
+Declarations: mIndent@14; txOutputFormat::~txOutputFormat@16; txOutputFormat::reset@21; txOutputFormat::merge@34; txOutputFormat::setFromDefaults@63
+Dependencies: txOutputFormat.h@5; txExpandedName.h@7; txXMLUtils.h@8
+
+`dom/xslt/xslt/txOutputFormat.h` | `3fab1851677fe47c483c2ecb32e665d392f38c0a` | 1681 bytes | source | UTF-8 | mode 100644
+Declarations: txOutputMethod@11; txThreeState@13; txOutputFormat@15
+Dependencies: nsString.h@8; txList.h@9
+
+`dom/xslt/xslt/txPatternOptimizer.cpp` | `7f39fa59238e4fff601dfc876da8486fd46d872f` | 1818 bytes | source | UTF-8 | mode 100644
+Dependencies: txPatternOptimizer.h@5; txXSLTPatterns.h@7
+
+`dom/xslt/xslt/txPatternOptimizer.h` | `ae7b16f309ecc1c35d74f13fc0ab4d3c6479c338` | 839 bytes | source | UTF-8 | mode 100644
+Declarations: txPattern@10; txPatternOptimizer@12
+Dependencies: txXPathOptimizer.h@8
+
+`dom/xslt/xslt/txPatternParser.cpp` | `4e17a98875c21db53881ce4513e3f480c0b793da` | 8017 bytes | source | UTF-8 | mode 100644
+Dependencies: txPatternParser.h@5; memory@7; nsError.h@9; nsGkAtoms.h@10; txExprLexer.h@11; txPatternOptimizer.h@12; txStringUtils.h@13; txStylesheetCompiler.h@14; txXSLTPatterns.h@15
+
+`dom/xslt/xslt/txPatternParser.h` | `c216c93baca7182babbe69de16d7ae3793d44831` | 1394 bytes | source | UTF-8 | mode 100644
+Declarations: txStylesheetCompilerState@11; txPatternParser@13
+Dependencies: txExprParser.h@8; txXSLTPatterns.h@9
+
+`dom/xslt/xslt/txRtfHandler.cpp` | `ee952659eed4fec2762948dc22aebbfd7c9e720f` | 1406 bytes | source | UTF-8 | mode 100644
+Declarations: txAExprResult@11; txResultTreeFragment::getResultType@13; txResultTreeFragment::stringValue@15; txResultTreeFragment::booleanValue@27; txResultTreeFragment::numberValue@29; txResultTreeFragment::flushToHandler@37; txRtfHandler::getAsRTF@45; txRtfHandler::endDocument@51; txRtfHandler::startDocument@53
+Dependencies: txRtfHandler.h@5; utility@7
+
+`dom/xslt/xslt/txRtfHandler.h` | `9b126cb98608e5988fa393801b4a1d6088b3d6d6` | 1091 bytes | source | UTF-8 | mode 100644
+Declarations: txResultTreeFragment@12; setNode@20; txRtfHandler@32
+Dependencies: txBufferingHandler.h@8; txExprResult.h@9; txXPathNode.h@10
+
+`dom/xslt/xslt/txStylesheet.cpp` | `65f10438f3643b7dbb1514bbbf9fb554facbe83d` | 16529 bytes | source | UTF-8 | mode 100644
+Declarations: txStylesheet::txStylesheet@24; txStylesheet::init@26; txStylesheet::~txStylesheet@68; txXPathNodeUtils::isText@169; txXPathNodeUtils::isRoot@172; txStylesheet::getDecimalFormat@182; txStylesheet::getAttributeSet@186; txStylesheet::getNamedTemplate@190; txStylesheet::getOutputFormat@194; txStylesheet::doneCompiling@252; txStylesheet::addFrames@404; txStylesheet::addAttributeSet@445; txStylesheet::addGlobalVariable@483; txStylesheet::ImportFrame::~ImportFrame@536; mIsParam@548
+Dependencies: txStylesheet.h@5; memory@7; utility@8; txExpr.h@10; txInstructions.h@11; txKey.h@12; txLog.h@13; txToplevelItems.h@14; txXPathTreeWalker.h@15; txXSLTFunctions.h@16; txXSLTPatterns.h@17
+
+`dom/xslt/xslt/txStylesheet.h` | `849d78171d673e295295f3d744e4aef80902a6f4` | 5517 bytes | source | UTF-8 | mode 100644
+Declarations: txInstruction@14; txTemplateItem@15; txVariableItem@16; txStripSpaceItem@17; txAttributeSetItem@18; txDecimalFormat@19; txStripSpaceTest@20; txXSLKey@21; txStylesheet@23; ImportFrame@25; GlobalVariable@26; MatchableTemplate@66; ImportFrame@75; ImportFrame@77; GlobalVariable@90; txStripSpaceTest@153; mStrips@158; stripsSpace@165; getDefaultPriority@167; txIGlobalParameter@177
+Dependencies: nsISupportsImpl.h@8; txExpandedNameMap.h@9; txList.h@10; txOutputFormat.h@11; txXSLTPatterns.h@12
+
+`dom/xslt/xslt/txStylesheetCompileHandlers.cpp` | `df2a19cb72e96bbf01b550d2b2b049a3bda22683` | 75374 bytes | source | UTF-8 | mode 100644
+Declarations: XMLUtils::isWhitespace@55; popInstruction@314; clearAttributes@333; txFnEndElementIgnore@352; txFnEndElementSetIgnore@368; txFnEndElementError@380; txFnEndStylesheet@412; txFnEndLREStylesheet@450; txFnEndEmbed@476; txFnEndOtherTop@502; txFnEndAttributeSet@531; txFnEndDecimalFormat@609; txFnEndImport@638; txFnEndInclude@662; txFnEndKey@698; txFnEndNamespaceAlias@724; txFnEndOutput@821; txFnEndStripSpace@888; txFnEndTemplate@929; txFnEndTopVariable@971; txFnEndLRE@1060; txFnEndApplyImports@1097; txFnEndApplyTemplates@1147; txFnEndAttribute@1198; txFnEndCallTemplate@1232; txFnEndChoose@1266; txFnEndComment@1293; txFnEndCopy@1315; txFnEndCopyOf@1345; txFnEndElement@1381; txFnEndFallback@1402; txFnEndForEach@1442; txFnEndIf@1500; txFnEndMessage@1529; txFnEndNumber@1608; txFnEndOtherwise@1627; txFnEndParam@1674; txFnEndPI@1717; txFnEndSort@1771; txFnEndText@1799; txFnEndValueOf@1839; txFnEndVariable@1881; txFnEndWhen@1946; txFnEndWithParam@1993; txFnEndUnknownInstruction@2033; txHandlerTableData@2047; mOtherHandler@2264; txHandlerTable::init@2310; txHandlerTable::shutdown@2334
+Dependencies: txStylesheetCompileHandlers.h@5; memory@7; utility@8; mozilla/FloatingPoint.h@10; nsGkAtoms.h@11; nsStringFlags.h@12; nsStringIterator.h@13; nsStyleUtil.h@14; nsWhitespaceTokenizer.h@15; txCore.h@16; txInstructions.h@17; txNamespaceMap.h@18; txPatternParser.h@19; txStringUtils.h@20; txStylesheet.h@21; txStylesheetCompiler.h@22; txToplevelItems.h@23; txURIUtils.h@24; txXSLTFunctions.h@25
+
+`dom/xslt/xslt/txStylesheetCompileHandlers.h` | `9389afd22a4aee473fb21d080b1cc2199268a879` | 1811 bytes | source | UTF-8 | mode 100644
+Declarations: txStylesheetAttr@12; txStylesheetCompilerState@13; txElementHandler@24; txHandlerTable@31
+Dependencies: nsError.h@8; txExpandedNameMap.h@9; txNamespaceMap.h@10
+
+`dom/xslt/xslt/txStylesheetCompiler.cpp` | `d6e07ee3b5ac378f9c2a6f7bb125b2fdfad9b07a` | 26597 bytes | source | UTF-8 | mode 100644
+Declarations: txStylesheetCompilerState@32; txStylesheetCompilerState@41; txStylesheetCompiler::setBaseURI@45; txStylesheetCompiler::endElement@280; txStylesheetCompiler::characters@312; txStylesheetCompiler::doneLoading@324; txStylesheetCompiler::getStylesheet@355; txStylesheetCompiler::flushCharacters@387; txStylesheetCompiler::ensureNewElementContext@407; txStylesheetCompiler::maybeDoneCompiling@421; mReferrerPolicy@461; txStylesheetCompilerState::~txStylesheetCompilerState@511; txStylesheetCompilerState::pushHandlerTable@517; txStylesheetCompilerState::popHandlerTable@522; txStylesheetCompilerState::pushSorter@526; txStylesheetCompilerState::popSorter@531; txStylesheetCompilerState::pushChooseGotoList@535; txStylesheetCompilerState::popChooseGotoList@540; txStylesheetCompilerState::pushObject@545; txStylesheetCompilerState::popObject@549; txStylesheetCompilerState::pushPtr@553; txStylesheetCompilerState::popPtr@562; txStylesheetCompilerState::addToplevelItem@582; txStylesheetCompilerState::closeInstructionContainer@594; txStylesheetCompilerState::addGotoTarget@683; txStylesheetCompilerState::addVariable@687; txStylesheetCompilerState::resolveNamespacePrefix@691; txErrorFunctionCall@701; txErrorFunctionCall@703; txErrorFunctionCall::getReturnType@718; txErrorFunctionCall::isSensitiveTo@724; txErrorFunctionCall::appendName@731; TX_XSLTFunctionAvailable@789; txStylesheetCompilerState::caseInsensitiveNameTests@814; txStylesheetCompilerState::SetErrorOffset@816; mDepth@825; mDepth@834
+Dependencies: txStylesheetCompiler.h@5; memory@7; utility@8; mozilla/UniquePtr.h@10; nsGkAtoms.h@11; nsServiceManagerUtils.h@12; nsTArray.h@13; nsWhitespaceTokenizer.h@14; txExprParser.h@15; txInstructions.h@16; txLog.h@17; txPatternParser.h@18; txStringUtils.h@19; txStylesheet.h@20; txStylesheetCompileHandlers.h@21; txToplevelItems.h@22; txURIUtils.h@23; txXSLTFunctions.h@24
+
+`dom/xslt/xslt/txStylesheetCompiler.h` | `09c5ae7f39ef40e46e8a46bca6c0e00f67b1ca9a` | 7827 bytes | source | UTF-8 | mode 100644
+Declarations: txHandlerTable@18; txElementContext@19; txInstructionContainer@20; txInstruction@21; txNamespaceMap@22; txToplevelItem@23; txPushNewContext@24; txStylesheetCompiler@25; txElementContext@27; txACompileObserver@42; txInScopeVariable@63; mName@66; txStylesheetCompilerState@71; handleEmbeddedSheet@80; doneEmbedding@81; enumStackType@84; addInstruction@113; fcp@134; ignoreError@140; txStylesheetAttr@176; txStylesheetCompiler@183
+Dependencies: mozilla/UniquePtr.h@8; nsTArray.h@9; txExpr.h@10; txIXPathContext.h@11; txStack.h@12; txStylesheet.h@13; txXSLTPatterns.h@14
+
+`dom/xslt/xslt/txTextHandler.cpp` | `ca6b97863f8e45c728faa1c767c6c78332a44ecf` | 1812 bytes | source | UTF-8 | mode 100644
+Declarations: mLevel@10; txTextHandler::characters@23; txTextHandler::comment@29; txTextHandler::endDocument@31; txTextHandler::endElement@33; txTextHandler::startDocument@44
+Dependencies: txTextHandler.h@5; nsAString.h@7
+
+`dom/xslt/xslt/txTextHandler.h` | `a60a92c4927d1a016ff009e8a4eb86930fec47bd` | 537 bytes | source | UTF-8 | mode 100644
+Declarations: txTextHandler@11
+Dependencies: nsString.h@8; txXMLEventHandler.h@9
+
+`dom/xslt/xslt/txToplevelItems.cpp` | `26fd61b7502710e198a7e9dbb89de6c84c154dfa` | 1537 bytes | source | UTF-8 | mode 100644
+Declarations: txStripSpaceItem::~txStripSpaceItem@22; txStripSpaceItem::addStripSpaceTest@29; mMatch@38; mName@44
+Dependencies: txToplevelItems.h@5; utility@7; txInstructions.h@9; txStylesheet.h@10; txXSLTPatterns.h@11
+
+`dom/xslt/xslt/txToplevelItems.h` | `e4607764685b44e470bcb2b0b1e6506a683ed717` | 2641 bytes | source | UTF-8 | mode 100644
+Declarations: txPattern@14; Expr@15; txToplevelItem@17; type@22; getType@33; _class::getType@38; txInstructionContainer@40; txAttributeSetItem@46; txAttributeSetItem@48; txImportItem@56; txOutputItem@64; txDummyItem@72; txStripSpaceItem@78; txTemplateItem@90; txVariableItem@105
+Dependencies: nsError.h@8; txInstructions.h@9; txOutputFormat.h@10; txStylesheet.h@11; txXMLUtils.h@12
+
+`dom/xslt/xslt/txUnknownHandler.cpp` | `fd339da3525394e301a67a1774742f9fd557d303` | 6669 bytes | source | UTF-8 | mode 100644
+Declarations: mEs@18; txUnknownHandler::~txUnknownHandler@22; txUnknownHandler::characters@46; txUnknownHandler::comment@51; txUnknownHandler::endDocument@56; txUnknownHandler::endElement@78; txUnknownHandler::startDocument@89
+Dependencies: txUnknownHandler.h@5; utility@7; nsGkAtoms.h@9; txExecutionState.h@10; txStringUtils.h@11; txStylesheet.h@12
+
+`dom/xslt/xslt/txUnknownHandler.h` | `b682f36c6104bfdebfeb9f4f7c31ff9138b7b263` | 1074 bytes | source | UTF-8 | mode 100644
+Declarations: txExecutionState@11; txUnknownHandler@13
+Dependencies: txBufferingHandler.h@8; txOutputFormat.h@9
+
+`dom/xslt/xslt/txVariableMap.h` | `7b559b811fc1c1447c88a2e85d5665c552891211` | 2468 bytes | source | UTF-8 | mode 100644
+Declarations: txVariableMapBase@17; txVariableMap@36; txVariableMap@38; txParameterMap@46; txVariableMapBase::~txVariableMapBase@54; txVariableMapBase::removeVariable@82
+Dependencies: nsError.h@8; txExpandedNameMap.h@9; txExprResult.h@10; txXMLUtils.h@11
+
+`dom/xslt/xslt/txXMLEventHandler.h` | `b447b7c674431333b40ad7a3ed1233e80c278937` | 6880 bytes | source | UTF-8 | mode 100644
+Declarations: txOutputFormat@14; mozilla@15; Document@16; txAXMLEventHandler@24; txAOutputXMLEventHandler@135; txAOutputHandlerFactory@151
+Dependencies: nsAtom.h@8; txCore.h@9
+
+`dom/xslt/xslt/txXPathResultComparator.cpp` | `b70200c1553bf0305a50f3363ea7aab955c121d4` | 3698 bytes | source | UTF-8 | mode 100644
+Declarations: txResultStringComparator::compareValues@69; txResultNumberComparator::txResultNumberComparator@78; txResultNumberComparator::compareValues@92
+Dependencies: txXPathResultComparator.h@5; mozilla/intl/Collator.h@7; mozilla/intl/LocaleService.h@8; nsComponentManagerUtils.h@9; nsRFPService.h@10; txCore.h@11; txExpr.h@12
+
+`dom/xslt/xslt/txXPathResultComparator.h` | `003fd351d4f09fa330f2692bf1a328ec03695e5c` | 2326 bytes | source | UTF-8 | mode 100644
+Declarations: Expr@14; txIEvalContext@15; txXPathResultComparator@20; txResultStringComparator@41; StringValue@54; mString@57; txResultNumberComparator@66; NumberValue@77; NumberValue@79
+Dependencies: mozilla/UniquePtr.h@8; mozilla/intl/Collator.h@9; nsCOMPtr.h@10; nsString.h@11; txCore.h@12
+
+`dom/xslt/xslt/txXSLTEnvironmentFunctionCall.cpp` | `fac746d2283fbec48f91b25884d9d5bc27fc3526` | 5132 bytes | source | UTF-8 | mode 100644
+Declarations: txXSLTEnvironmentFunctionCall::getReturnType@106; txXSLTEnvironmentFunctionCall::isSensitiveTo@111; txXSLTEnvironmentFunctionCall::appendName@116
+Dependencies: nsError.h@5; nsGkAtoms.h@6; txExpandedName.h@7; txIXPathContext.h@8; txNamespaceMap.h@9; txXMLUtils.h@10; txXSLTFunctions.h@11
+
+`dom/xslt/xslt/txXSLTFunctions.h` | `fbb86adaf44c440cc029c626b2342175018b335d` | 3092 bytes | source | UTF-8 | mode 100644
+Declarations: txStylesheet@12; DocumentFunctionCall@17; txKeyFunctionCall@33; txFormatNumberFunctionCall@49; FormatParseState@62; txDecimalFormat@83; CurrentFunctionCall@107; GenerateIdFunctionCall@120; txXSLTEnvironmentFunctionCall@133; eType@135; mType@138
+Dependencies: txExpr.h@8; txNamespaceMap.h@9; txXMLUtils.h@10
+
+`dom/xslt/xslt/txXSLTNumber.cpp` | `fbeab403d06b07f0ef3d02f2b470c8e7ccdc0ecc` | 20923 bytes | source | UTF-8 | mode 100644
+Declarations: isAlphaNumeric@372; txXSLTNumber::getPrevInDocumentOrder@418; CharRange@428; txXSLTNumber::isAlphaNumeric@435
+Dependencies: txXSLTNumber.h@5; math.h@7; algorithm@9; nsGkAtoms.h@11; txCore.h@12; txExpr.h@13; txIXPathContext.h@14; txXPathTreeWalker.h@15; txXSLTPatterns.h@16
+
+`dom/xslt/xslt/txXSLTNumber.h` | `a633b2b9f8e1ff84db5e8488cb95b5217843bef0` | 2265 bytes | source | UTF-8 | mode 100644
+Declarations: Expr@12; txPattern@13; txIEvalContext@14; txIMatchContext@15; txXPathTreeWalker@16; txXSLTNumber@18; LevelType@20; txFormattedCounter@53
+Dependencies: nsError.h@8; nsString.h@9; txList.h@10
+
+`dom/xslt/xslt/txXSLTNumberCounters.cpp` | `6404a968f8d408897376eab65ffab9b96fd5c4fa` | 5777 bytes | source | UTF-8 | mode 100644
+Declarations: txDecimalCounter@9; txDecimalCounter@11; txAlphaCounter@24; txAlphaCounter@26; txRomanCounter@34; txRomanCounter@36; mGroupSeparator@94; txDecimalCounter::appendNumber@100; txAlphaCounter::appendNumber@147; txRomanCounter::appendNumber@169
+Dependencies: nsReadableUtils.h@5; txCore.h@6; txXSLTNumber.h@7
+
+`dom/xslt/xslt/txXSLTPatterns.cpp` | `042987596a592d30ba28dc5e7d419c951e892091` | 14324 bytes | source | UTF-8 | mode 100644
+Declarations: txUnionPattern::getDefaultPriority@25; txUnionPattern::getType@55; txUnionPattern::getSubPatternAt@58; txUnionPattern::setSubPatternAt@62; txUnionPattern::toString@69; txLocPathPattern::addStep@89; txLocPathPattern::getDefaultPriority@187; txLocPathPattern::getSubPatternAt@194; txLocPathPattern::setSubPatternAt@198; txLocPathPattern::toString@206; txRootPattern::getDefaultPriority@238; txRootPattern::toString@244; txIdPattern::txIdPattern@263; txIdPattern::getDefaultPriority@290; txIdPattern::toString@296; txKeyPattern::getDefaultPriority@342; txKeyPattern::toString@348; txStepPattern::getDefaultPriority@498; txStepPattern::getType@503; txStepPattern::getSubExprAt@506; txStepPattern::setSubExprAt@510; txStepPattern::toString@515
+Dependencies: txXSLTPatterns.h@5; mozilla/FloatingPoint.h@7; nsIContent.h@8; nsReadableUtils.h@9; nsWhitespaceTokenizer.h@10; txExecutionState.h@11; txForwardContext.h@12; txNodeSetContext.h@13; txXMLUtils.h@14; txXSLTFunctions.h@15
+
+`dom/xslt/xslt/txXSLTPatterns.h` | `3555b5cd343650355d24285f5785bc425055e79b` | 5404 bytes | source | UTF-8 | mode 100644
+Declarations: txPattern@12; Type@34; getType@35; _class::getSubExprAt@90; _class::setSubExprAt@91; _class::getSubPatternAt@96; _class::setSubPatternAt@97; txUnionPattern@101; addPattern@103; txLocPathPattern@114; Step@121; txRootPattern@130; txRootPattern@133; setSerialize@140; txIdPattern@148; txKeyPattern@158; mValue@166; txStepPattern@179; mNodeTest@182; getNodeTest@187; setNodeTest@188
+Dependencies: txExpandedName.h@8; txExpr.h@9; txXMLUtils.h@10
+
+`dom/xslt/xslt/txXSLTProcessor.cpp` | `4008f7831ed52070cdaeff5de992d096fda2a3cf` | 1121 bytes | source | UTF-8 | mode 100644
+Declarations: txXSLTProcessor::init@17; txXSLTProcessor::shutdown@29; txXSLTProcessor::execute@32
+Dependencies: txXSLTProcessor.h@5; txExecutionState.h@7; txExprResult.h@8; txInstructions.h@9; txLog.h@10; txStylesheetCompileHandlers.h@11; txStylesheetCompiler.h@12
+
+`dom/xslt/xslt/txXSLTProcessor.h` | `c065e8a70d738c1c77c9b128f09bb9352025e9d1` | 705 bytes | source | UTF-8 | mode 100644
+Declarations: txXSLTProcessor@10
+Dependencies: txExecutionState.h@8
+
+`dom/xul/ChromeObserver.cpp` | `3b380b55302ac5291422db2cc333d14abdaf20dd` | 4257 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@18; nsStubMutationObserver@23; ChromeObserver::Init@25; ChromeObserver::GetWindowWidget@47; ChromeObserver::SetHideTitlebarSeparator@59; ChromeObserver::NodeWillBeDestroyed@99; ChromeObserver::SetMica@103; ChromeObserver::SetCustomTitlebar@109; ChromeObserver::HideWindowChrome@119
+Dependencies: ChromeObserver.h@5; mozilla/dom/Document.h@7; mozilla/dom/DocumentInlines.h@8; mozilla/dom/Element.h@9; nsContentUtils.h@10; nsIBaseWindow.h@11; nsIFrame.h@12; nsIMutationObserver.h@13; nsIWidget.h@14; nsPresContext.h@15; nsXULElement.h@16
+
+`dom/xul/ChromeObserver.h` | `5f8c3bfb1fa978846ede919e1721e24f95bcb6de` | 1022 bytes | source | UTF-8 | mode 100644
+Declarations: nsIWidget@10; mozilla@12; Document@13; ChromeObserver@15
+Dependencies: nsStubMutationObserver.h@8
+
+`dom/xul/MenuBarListener.cpp` | `099f5411a74b3355d0f698bf2ab7ad2150694c57` | 16409 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@32; mAccessKeyDownCanceled@40; MenuBarListener::~MenuBarListener@73; MenuBarListener::Detach@77; MenuBarListener::ToggleMenuActiveState@102; MenuBarListener::KeyUp@116; MenuBarListener::KeyPress@175; MenuBarListener::ReserveKeyIfNeeded@309; MenuBarListener::KeyDown@318; MenuBarListener::Blur@388; MenuBarListener::OnWindowDeactivated@399; MenuBarListener::IsMenuOpen@407; MenuBarListener::MouseDown@413; MenuBarListener::Fullscreen@437; MenuBarListener::HandleEvent@446
+Dependencies: MenuBarListener.h@5; XULButtonElement.h@7; mozilla/Attributes.h@8; nsISound.h@9; mozilla/BasicEvents.h@12; mozilla/LookAndFeel.h@13; mozilla/Preferences.h@14; mozilla/StaticPrefs_ui.h@15; mozilla/TextEvents.h@16; mozilla/dom/Document.h@17; mozilla/dom/Event.h@18; mozilla/dom/EventBinding.h@19; mozilla/dom/KeyboardEvent.h@20; mozilla/dom/KeyboardEventBinding.h@21; mozilla/dom/XULButtonElement.h@22; mozilla/dom/XULMenuBarElement.h@23; mozilla/dom/XULMenuParentElement.h@24; nsCOMPtr.h@25; nsContentUtils.h@26; nsIFrame.h@27; nsPIWindowRoot.h@28; nsWidgetsCID.h@29; nsXULPopupManager.h@30
+
+`dom/xul/MenuBarListener.h` | `ed7a888df13a04e6643496efc1abbd4cc467ceea` | 2443 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@11; Document@12; EventTarget@13; KeyboardEvent@14; XULMenuBarElement@15; XULButtonElement@16; MenuBarListener@18; class@56; Destroyed@59
+Dependencies: mozilla/Attributes.h@7; mozilla/EventForwards.h@8; nsIDOMEventListener.h@9
+
+`dom/xul/XULBroadcastManager.cpp` | `54f2f426e5e6c0fccc21341a3bd188e5ff4278bf` | 18498 bytes | source | UTF-8 | mode 100644
+Declarations: nsAttrNameInfo@14; mNamespaceID@16; CanBroadcast@25; mozilla@38; XULBroadcastManager@41; mNeedsAttrChange@49; mNeedsAttrChange@59; Comparator@73; XULBroadcastManager::MayNeedListener@84; mHandlingDelayedBroadcasters@102; XULBroadcastManager::DropDocumentReference@106; XULBroadcastManager::MaybeBroadcast@343; XULBroadcastManager::AddListener@526; XULBroadcastManager::RemoveListener@530
+Dependencies: XULBroadcastManager.h@5; mozilla/EventDispatcher.h@7; mozilla/Logging.h@8; mozilla/dom/DocumentInlines.h@9; nsCOMPtr.h@10; nsContentUtils.h@11; nsXULElement.h@12
+
+`dom/xul/XULBroadcastManager.h` | `5482f9270e40ea58d64aa2fc28bc41b96c77c798` | 3294 bytes | source | UTF-8 | mode 100644
+Declarations: nsXULElement@13; mozilla@15; ErrorResult@17; dom@19; Document@21; Element@22; XULBroadcastManager@24; HookupAction@46; BroadcastListener@72; nsDelayedBroadcastUpdate@82
+Dependencies: nsAtom.h@8; nsIWeakReferenceUtils.h@9; nsTArray.h@10; nsTHashMap.h@11
+
+`dom/xul/XULButtonElement.cpp` | `98d32fd8c5b8775c8d2cc003a0dec6363b061592` | 27593 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@34; XULButtonElement::~XULButtonElement@45; IsAnyOfXULElements@53; XULButtonElement::PopupOpened@65; XULButtonElement::PopupClosed@73; XULButtonElement::IsMenuActive@89; XULButtonElement::HandleEnterKeyPress@96; XULButtonElement::IsMenuPopupOpen@120; XULButtonElement::IsOnMenu@125; XULButtonElement::IsOnMenuList@130; XULButtonElement::IsOnMenuBar@138; XULButtonElement::GetContainingPopupWithoutFlushing@145; XULButtonElement::GetContainingPopupElement@152; XULButtonElement::IsOnContextMenu@156; XULButtonElement::ToggleMenuState@163; XULButtonElement::KillMenuOpenTimer@171; XULButtonElement::OpenMenuPopup@178; XULButtonElement::CloseMenuPopup@205; XULButtonElement::MenuOpenCloseDelay@221; XULButtonElement::StopBlinking@257; XULButtonElement::PassMenuCommandEventToPopupManager@268; XULButtonElement::StartBlinking@281; XULButtonElement::UnbindFromTree@323; XULButtonElement::ExecuteMenu@328; XULButtonElement::PostHandleEvent@535; XULButtonElement::Blurred@627; State@629; XULButtonElement::OnPointerClicked@640; XULButtonElement::IsMenu@674; XULButtonElement::UncheckRadioSiblings@683; XULButtonElement::GetCheckedStateAttribute@720; XULButtonElement::GetMenuBar@797; XULButtonElement::GetMenuParent@804; XULButtonElement::GetMenuPopupContent@811; XULButtonElement::GetMenuPopupWithoutFlushing@823; XULButtonElement::GetMenuPopup@827; XULButtonElement::OpenedWithKey@835
+Dependencies: XULButtonElement.h@5; XULMenuParentElement.h@7; XULPopupElement.h@8; mozilla/Assertions.h@9; mozilla/Attributes.h@10; mozilla/EventDispatcher.h@11; mozilla/EventStateManager.h@12; mozilla/LookAndFeel.h@13; mozilla/TextEvents.h@14; mozilla/TimeStamp.h@15; mozilla/dom/AncestorIterator.h@16; mozilla/dom/DocumentInlines.h@17; mozilla/dom/MouseEventBinding.h@18; mozilla/dom/NameSpaceConstants.h@19; mozilla/dom/XULMenuBarElement.h@20; mozilla/glue/Debug.h@21; nsCaseTreatment.h@22; nsChangeHint.h@23; nsGkAtoms.h@24; nsIDOMXULButtonElement.h@25; nsISound.h@26; nsITimer.h@27; nsLayoutUtils.h@28; nsMenuPopupFrame.h@29; nsPlaceholderFrame.h@30; nsPresContext.h@31; nsXULPopupManager.h@32
+
+`dom/xul/XULButtonElement.h` | `8f4b881706b7e2efcb469a7f94b2c6d3c503b5ba` | 4298 bytes | source | UTF-8 | mode 100644
+Declarations: nsMenuBarFrame@12; nsMenuPopupFrame@13; nsXULMenuCommandEvent@14; mozilla@16; KeyboardEvent@18; XULPopupElement@19; XULMenuBarElement@20; XULMenuParentElement@21; XULButtonElement@23; IsMenuItem@42; IsMenuList@43; IsAlwaysMenu@65; class@94
+Dependencies: mozilla/Attributes.h@8; nsINode.h@9; nsXULElement.h@10
+
+`dom/xul/XULFrameElement.cpp` | `2143d3001353af0486c67c0b3aa715cd6e593ced` | 6777 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@20; XULFrameElement::GetDocShell@44; XULFrameElement::GetWebNavigation@49; XULFrameElement::GetContentWindow@55; XULFrameElement::GetContentDocument@64; XULFrameElement::BrowserId@75; XULFrameElement::GetOpenWindowInfo@84; XULFrameElement::SetOpenWindowInfo@88; XULFrameElement::LoadSrc@92; XULFrameElement::BindToTree@151; XULFrameElement::UnbindFromTree@164; XULFrameElement::DestroyContent@175
+Dependencies: mozilla/dom/XULFrameElement.h@5; mozilla/AsyncEventDispatcher.h@7; mozilla/dom/BindContext.h@8; mozilla/dom/BrowserParent.h@9; mozilla/dom/HTMLIFrameElement.h@10; mozilla/dom/UnbindContext.h@11; mozilla/dom/WindowProxyHolder.h@12; mozilla/dom/XULFrameElementBinding.h@13; nsCOMPtr.h@14; nsFrameLoader.h@15; nsIBrowser.h@16; nsIContent.h@17; nsIOpenWindowInfo.h@18
+
+`dom/xul/XULFrameElement.h` | `2c2d693fcea0b59e6c6433e9147e5321f175883c` | 2640 bytes | source | UTF-8 | mode 100644
+Declarations: nsIWebNavigation@18; nsFrameLoader@19; mozilla@21; ErrorResult@22; dom@24; BrowsingContext@26; XULFrameElement@28; nsXULElement@31
+Dependencies: js/TypeDecls.h@8; mozilla/dom/Nullable.h@9; mozilla/dom/WindowProxyHolder.h@10; nsCycleCollectionParticipant.h@11; nsFrameLoaderOwner.h@12; nsIOpenWindowInfo.h@13; nsString.h@14; nsWrapperCache.h@15; nsXULElement.h@16
+
+`dom/xul/XULMenuBarElement.cpp` | `2f9a16db48f9a4a8061c9bf79f7c23b0a4bf3945` | 3362 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@15; XULMenuParentElement@33; XULMenuBarElement::~XULMenuBarElement@35; XULMenuBarElement::SetActive@37; XULMenuBarElement::UnbindFromTree@86
+Dependencies: XULMenuBarElement.h@5; MenuBarListener.h@7; XULButtonElement.h@8; mozilla/Assertions.h@9; mozilla/AsyncEventDispatcher.h@10; mozilla/Try.h@11; mozilla/dom/BindContext.h@12; nsXULPopupManager.h@13
+
+`dom/xul/XULMenuBarElement.h` | `e80c9135781c670a9efa78fd09ac73d4669fc405` | 1737 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@14; KeyboardEvent@16; XULButtonElement@17; MenuBarListener@18; XULMenuBarElement@23; IsActive@33; SetActiveByKeyboard@35; IsActiveByKeyboard@36
+Dependencies: XULMenuParentElement.h@8; mozilla/Attributes.h@9; mozilla/dom/NameSpaceConstants.h@10; nsINode.h@11; nsISupports.h@12
+
+`dom/xul/XULMenuElement.cpp` | `549b4f887fdf256e738c8b05441eba5071a91272` | 2380 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@16; XULMenuElement::GetActiveMenuChild@23; XULMenuElement::SetActiveMenuChild@28; XULButtonElement::HandleKeyPress@46
+Dependencies: mozilla/dom/XULMenuElement.h@5; mozilla/StaticAnalysisFunctions.h@7; mozilla/dom/KeyboardEvent.h@8; mozilla/dom/KeyboardEventBinding.h@9; mozilla/dom/XULButtonElement.h@10; mozilla/dom/XULMenuElementBinding.h@11; mozilla/dom/XULPopupElement.h@12; nsMenuPopupFrame.h@13; nsXULPopupManager.h@14
+
+`dom/xul/XULMenuElement.h` | `c973a00821eeee3fb41d840a30b43adba57185a8` | 1053 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; KeyboardEvent@14; XULMenuElement@16; XULButtonElement@19
+Dependencies: XULButtonElement.h@8; nsINode.h@9; nsXULElement.h@10
+
+`dom/xul/XULMenuParentElement.cpp` | `35d071cd401a5bdb390eae7ed5c3bd0442a422ba` | 13070 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@24; nsXULElement@33; MenuActivateEvent@37; Runnable@40; ActivateOrDeactivate@73; XULMenuParentElement::GetContainingMenu@95; XULMenuParentElement::LockMenuUntilClosed@106; class@195; XULMenuParentElement::GetFirstMenuItem@227; XULMenuParentElement::GetLastMenuItem@231; XULMenuParentElement::GetNextMenuItem@245; XULMenuParentElement::GetPrevMenuItem@257; XULMenuParentElement::SelectFirstItem@269; XULMenuParentElement::HandleEnterKeyPress@392
+Dependencies: XULMenuParentElement.h@5; XULButtonElement.h@7; XULMenuBarElement.h@8; XULPopupElement.h@9; mozilla/EventDispatcher.h@10; mozilla/LookAndFeel.h@11; mozilla/StaticAnalysisFunctions.h@12; mozilla/TextEvents.h@13; mozilla/Utf16.h@14; mozilla/dom/DocumentInlines.h@15; mozilla/dom/KeyboardEvent.h@16; nsDebug.h@17; nsMenuPopupFrame.h@18; nsString.h@19; nsStringFwd.h@20; nsXULElement.h@21; nsXULPopupManager.h@22
+
+`dom/xul/XULMenuParentElement.h` | `d843ef3a7f6eeab0693a6c8edf049e89ed8c2cca` | 2597 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@12; KeyboardEvent@14; XULButtonElement@15; XULMenuParentElement@20; IsMenuBar@28; IsMenu@29; IsLocked@31; IsInMenuList@35; GetActiveMenuChild@50; class@51; class@61
+Dependencies: mozilla/Attributes.h@8; nsISupports.h@9; nsXULElement.h@10
+
+`dom/xul/XULPersist.cpp` | `91ce17ac1d89d9caf6abec33651c4bf61f220878` | 7397 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@16; IsRootElement@18; ShouldPersistAttribute@27; nsStubDocumentObserver@48; XULPersist::Init@52; XULPersist::DropDocumentReference@57; XULPersist::Persist@86; XULPersist::ApplyPersistentAttributes@131; nsContentUtils::IsEventAttributeName@219
+Dependencies: XULPersist.h@5; mozilla/BasePrincipal.h@7; mozilla/dom/Document.h@8; mozilla/dom/Element.h@9; nsContentUtils.h@10; nsIAppWindow.h@11; nsIStringEnumerator.h@12; nsIXULStore.h@13; nsServiceManagerUtils.h@14
+
+`dom/xul/XULPersist.h` | `f4af80558caf0a1d40c0fd5fb962e027d9fc3b5f` | 1634 bytes | source | UTF-8 | mode 100644
+Declarations: nsIXULStore@12; nsCOMArray@16; mozilla@18; XULPersist@27
+Dependencies: nsStubDocumentObserver.h@8; nsCOMPtr.h@11
+
+`dom/xul/XULPopupElement.cpp` | `3417f49994603ddf19058a9bc6232be3c6b9c7b0` | 11725 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@27; XULPopupElement::GetFrame@41; XULPopupElement::HidePopup@115; ConvertModifiers@127; XULPopupElement::PopupOpened@144; XULPopupElement::PopupClosed@155; XULPopupElement::MoveTo@208; XULPopupElement::SizeTo@224; XULPopupElement::GetState@244; XULPopupElement::GetTriggerNode@272; XULPopupElement::GetAnchorNode@278; XULPopupElement::GetOuterScreenRect@286; XULPopupElement::SetConstraintRect@316; XULPopupElement::IsWaylandDragSource@325; XULPopupElement::IsWaylandPopup@334; XULPopupElement::IsNativeMenu@342
+Dependencies: mozilla/dom/XULPopupElement.h@5; XULMenuParentElement.h@7; mozilla/AppUnits.h@8; mozilla/AsyncEventDispatcher.h@9; mozilla/dom/DOMRect.h@10; mozilla/dom/Document.h@11; mozilla/dom/Element.h@12; mozilla/dom/Event.h@13; mozilla/dom/XULButtonElement.h@14; mozilla/dom/XULMenuElement.h@15; mozilla/dom/XULPopupElementBinding.h@16; nsCOMPtr.h@17; nsDOMCSSDeclaration.h@18; nsIContent.h@19; nsMenuPopupFrame.h@20; nsNameSpaceManager.h@21; nsStringFwd.h@22; mozilla/WidgetUtilsGtk.h@24
+
+`dom/xul/XULPopupElement.h` | `d69a28e7f1672fc247a3c1f393de2a8db5c1351e` | 3505 bytes | source | UTF-8 | mode 100644
+Declarations: nsMenuPopupFrame@16; JSContext@17; mozilla@19; ErrorResult@20; dom@22; DOMRect@24; Element@25; Event@26; StringOrOpenPopupOptions@27; ActivateMenuItemOptions@28; XULPopupElement@33; XULMenuParentElement@39; GetLabel@41; SetLabel@42; IsMenu@46; GetPosition@48; SetPosition@51
+Dependencies: XULMenuParentElement.h@8; mozilla/Attributes.h@9; nsCycleCollectionParticipant.h@10; nsINode.h@11; nsString.h@12; nsWrapperCache.h@13; nsXULElement.h@14
+
+`dom/xul/XULResizerElement.cpp` | `dbc7f6df8ff604d01bad1256b44f6c2bae39cf0e` | 11929 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@22; XULResizerElement::GetDirection@59; XULResizerElement::PostHandleEvent@103; XULResizerElement::GetCurrentSize@110; XULResizerElement::GetContentToResize@277; XULResizerElement::RestoreOriginalSize@339
+Dependencies: mozilla/dom/XULResizerElement.h@5; memory@7; mozilla/EventDispatcher.h@9; mozilla/MouseEvents.h@10; mozilla/PresShell.h@11; mozilla/dom/Document.h@12; mozilla/dom/DocumentInlines.h@13; mozilla/dom/XULResizerElementBinding.h@14; nsContentUtils.h@15; nsDOMCSSDeclaration.h@16; nsIFrame.h@17; nsLayoutUtils.h@18; nsPresContext.h@19; nsStyledElement.h@20
+
+`dom/xul/XULResizerElement.h` | `076ad2d65131d8abf3d5699c52890b901b63cd8c` | 1911 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@11; XULResizerElement@16; nsXULElement@19; Direction@31; SizeInfo@41
+Dependencies: Units.h@8; nsXULElement.h@9
+
+`dom/xul/XULTextElement.cpp` | `ba568e32e9c72738c602ab879e22e7530e9518ee` | 2192 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@16
+Dependencies: mozilla/dom/XULTextElement.h@5; mozilla/dom/Element.h@7; mozilla/dom/ToJSValue.h@8; mozilla/dom/XULTextElementBinding.h@9; nsCOMPtr.h@10; nsChangeHint.h@11; nsIContent.h@12; nsIMutationObserver.h@13; nsPresContext.h@14
+
+`dom/xul/XULTextElement.h` | `5249168b3e32fb06fc55536423909323c522cedb` | 1808 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; XULTextElement@12; nsXULElement@15; Disabled@17; GetValue@21; GetAccessKey@25
+Dependencies: nsXULElement.h@8
+
+`dom/xul/XULTooltipElement.cpp` | `8ecb5df218c834ab7402ed8c069bdd826157d9ac` | 4186 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@18; XULTooltipElement::Init@30; XULTooltipElement::PostHandleEvent@74
+Dependencies: mozilla/dom/XULTooltipElement.h@5; mozilla/EventDispatcher.h@7; mozilla/dom/Event.h@8; mozilla/dom/NodeInfo.h@9; nsCOMPtr.h@10; nsCTooltipTextProvider.h@11; nsContentCreatorFunctions.h@12; nsContentUtils.h@13; nsITooltipTextProvider.h@14; nsServiceManagerUtils.h@15; nsThreadUtils.h@16
+
+`dom/xul/XULTooltipElement.h` | `0d4f1b52a06092a3ad1c5f5a8a13d3a3fc427cdb` | 1033 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@10; XULTooltipElement@15; XULPopupElement@18
+Dependencies: XULPopupElement.h@8
+
+`dom/xul/XULTreeElement.cpp` | `fe9373c2cf54904518c9e32748d526e35163f2fd` | 11238 bytes | source | UTF-8 | mode 100644
+Declarations: mozilla@21; XULTreeElement::UnbindFromTree@31; XULTreeElement::DestroyContent@46; FindBodyElement@61; XULTreeElement::GetTreeBodyFrame@82; XULTreeElement::GetView@109; XULTreeElement::Focused@150; XULTreeElement::SetFocused@158; XULTreeElement::GetTreeBody@165; XULTreeElement::RowHeight@184; XULTreeElement::RowWidth@192; XULTreeElement::GetFirstVisibleRow@200; XULTreeElement::GetLastVisibleRow@208; XULTreeElement::GetPageLength@216; XULTreeElement::EnsureRowIsVisible@224; XULTreeElement::ScrollToRow@242; XULTreeElement::ScrollByLines@251; XULTreeElement::ScrollByPages@259; XULTreeElement::Invalidate@266; XULTreeElement::InvalidateColumn@273; XULTreeElement::InvalidateRow@280; XULTreeElement::InvalidateCell@287; XULTreeElement::InvalidateRange@294; XULTreeElement::GetRowAt@301; XULTreeElement::RowCountChanged@363; XULTreeElement::BeginUpdateBatch@370; XULTreeElement::EndUpdateBatch@377; XULTreeElement::ClearStyleAndImageCaches@384; FindScrollbar@404; XULTreeElement::ScrollbarPosition@417; XULTreeElement::ScrollbarMaxPosition@424
+Dependencies: mozilla/dom/XULTreeElement.h@5; ChildIterator.h@7; mozilla/dom/BindingUtils.h@8; mozilla/dom/DOMRect.h@9; mozilla/dom/Document.h@10; mozilla/dom/Element.h@11; mozilla/dom/ToJSValue.h@12; mozilla/dom/XULTreeElementBinding.h@13; nsCOMPtr.h@14; nsError.h@15; nsITreeSelection.h@16; nsScrollbarFrame.h@17; nsTreeBodyFrame.h@18; nsTreeContentView.h@19
+
+`dom/xul/XULTreeElement.h` | `bcc23f94697570ccbb4e24cf19f4085b1b9ed3a9` | 3623 bytes | source | UTF-8 | mode 100644
+Declarations: nsTreeBodyFrame@14; nsTreeColumn@15; nsTreeColumns@16; mozilla@18; ErrorResult@19; dom@21; TreeCellInfo@23; DOMRect@24; class@25; XULTreeElement@27; mTreeBody@32; GetCachedTreeBodyFrame@40; GetView@44; BodyDestroyed@102; GetCachedTopVisibleRow@107
+Dependencies: nsCycleCollectionParticipant.h@8; nsITreeView.h@9; nsString.h@10; nsWrapperCache.h@11; nsXULElement.h@12
+
+`dom/xul/crashtests/107518-1.xml` | `58e652624c3ee7c52391139b51009be051ef1b39` | 1344 bytes | test-path,data-or-other | UTF-8 | mode 100644
+
+`dom/xul/crashtests/253479-1.xhtml` | `5860d2200d6706dbbc81b69c30af49fd99a909de` | 202 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xul/crashtests/253479-2.xhtml` | `43a8c17b8412de4fb4ea29a568f46786d97c0b93` | 162 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xul/crashtests/326204-1.xhtml` | `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391` | 0 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xul/crashtests/326644-1-inner.xhtml` | `63ed9b72120355f5ecfcc1893688a500d32e42ca` | 810 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xul/crashtests/326644-1.html` | `6f1d88a5ebef8a4b6023480ed75c3b7b58c65e18` | 183 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xul/crashtests/326875-1.xhtml` | `9dca9a0d53557741d784730cfb3acbcaa73f40eb` | 395 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xul/crashtests/329982-1.xhtml` | `43f374a57edd8b63938d5e114a79727b9b8c473e` | 790 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xul/crashtests/336096-1.xhtml` | `e15691d88df72593322a1102e3fdc1301ae92bd4` | 912 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+`dom/xul/crashtests/344215-1.xhtml` | `6443c22d6cf040a2301a90794349548cd0c996af` | 182 bytes | test-path,markup-or-style | UTF-8 | mode 100644
+
+## Validation and limits
+
+Every listed blob was read from the pinned Git tree and its Git SHA-1 was recomputed. Extraction is structural only. Read implementations, callers, build conditions, and tests before making a behavior claim. Runtime behavior and historical reasons remain unverified. Reproduce a file with `git show 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b:path` in the corresponding source clone. The full study coverage and navigation note records aggregate results.
