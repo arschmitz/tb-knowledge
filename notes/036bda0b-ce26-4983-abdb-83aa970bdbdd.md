@@ -1,0 +1,927 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["testing/web-platform/tests/third_party/test262/test/language/expressions/object/fn-name-gen.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/getter-body-strict-inside.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/getter-body-strict-outside.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/getter-param-dflt.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/getter-prop-desc.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/getter-super-prop.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-break-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-case-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-catch-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-class-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-const-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-continue-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-debugger-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-default-escaped-ext.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-default-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-default.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-delete-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-do-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-else-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-enum-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-export-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-extends-escaped-ext.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-extends-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-extends.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-finally-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-for-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-function-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-if-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-implements-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-import-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-in-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-instanceof-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-interface-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-let-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-new-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-package-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-private-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-protected-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-public-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-return-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-static-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-super-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-switch-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-this-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-throw-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-try-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-typeof-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-var-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-void-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-while-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-with-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-await-static-init.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-break-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-case-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-catch-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-class-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-const-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-continue-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-debugger-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-default-escaped-ext.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-default-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-default.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-delete-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-do-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-else-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-enum-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-export-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-extends-escaped-ext.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-extends-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-extends.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-finally-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-for-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-function-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-if-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-implements-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-import-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-in-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-instanceof-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-interface-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-let-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-new-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-package-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-private-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-protected-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-public-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-return-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-static-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-super-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-switch-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-this-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-throw-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-try-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-typeof-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-var-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-void-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-while-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-with-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-await-strict-mode.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-implements-invalid-strict-mode.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-interface-invalid-strict-mode.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-invalid-computed-name.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-invalid-zero.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-let-invalid-strict-mode.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-package-invalid-strict-mode.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-private-invalid-strict-mode.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-protected-invalid-strict-mode.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-public-invalid-strict-mode.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-static-init-await-invalid.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-static-init-await-valid.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-static-invalid-strict-mode.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-yield-invalid-strict-mode.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/let-non-strict-access.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/let-non-strict-syntax.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/literal-property-name-bigint.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-await-as-binding-identifier-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-await-as-binding-identifier.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-await-as-identifier-reference-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-await-as-identifier-reference.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-await-as-label-identifier-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-await-as-label-identifier.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-await-as-binding-identifier-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-await-as-binding-identifier.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-await-as-identifier-reference-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-await-as-identifier-reference.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-await-as-label-identifier-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-await-as-label-identifier.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-array-destructuring-param-strict-body.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-dflt-params-abrupt.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-dflt-params-arg-val-not-undefined.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-dflt-params-arg-val-undefined.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-dflt-params-duplicates.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-dflt-params-ref-later.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-dflt-params-ref-prior.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-dflt-params-ref-self.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-dflt-params-rest.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-dflt-params-trailing-comma.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-escaped-async.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-eval-var-scope-syntax-err.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-object-destructuring-param-strict-body.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-params-trailing-comma-multiple.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-params-trailing-comma-single.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-rest-param-strict-body.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-rest-params-trailing-comma-early-error.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-yield-as-binding-identifier-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-yield-as-binding-identifier.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-yield-as-identifier-reference-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-yield-as-identifier-reference.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-yield-as-label-identifier-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-yield-as-label-identifier.js","testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-yield-identifier-non-strict.js"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013"}} -->
+# firefox/testing JavaScript function map 1067
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/fn-name-gen.js
+
+Blob: `a266d10fbd7efada87ba55e76ff50d9fd8d1d1bf`. Role: imported-path,test-path,source. Parse: module.
+
+- x @23-23; FunctionExpression; parameters=0; async=false; generator=true
+- id @24-24; FunctionExpression; parameters=0; async=false; generator=true
+- anonSym @25-25; FunctionExpression; parameters=0; async=false; generator=true
+- namedSym @26-26; FunctionExpression; parameters=0; async=false; generator=true
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/getter-body-strict-inside.js
+
+Blob: `d888d6caf56165d71cd4658a19f5454f9d32ff69`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: The keyword 'public' is reserved
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/getter-body-strict-outside.js
+
+Blob: `edf31412e416475caf9d026ed135880c0b4859c4`. Role: imported-path,test-path,source. Parse: script.
+
+- x @17-19; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/getter-param-dflt.js
+
+Blob: `8fcc61a4069a7665f804797134af4cac3ef0e588`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: getter should have no params
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/getter-prop-desc.js
+
+Blob: `ce401e64eac85b872f42eae0f8d6daec0562848d`. Role: imported-path,test-path,source. Parse: module.
+
+- m @29-29; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/getter-super-prop.js
+
+Blob: `492774764b246a239522b64b0aece4a53db0d455`. Role: imported-path,test-path,source. Parse: module.
+
+- x @10-12; FunctionExpression; parameters=0; async=false; generator=false
+- x @16-18; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-break-escaped.js
+
+Blob: `4399baca3f8a26fcd5348b74b3685c20190f4d5c`. Role: imported-path,test-path,source. Parse: module.
+
+- break @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-case-escaped.js
+
+Blob: `eb175eabc33a880979f9b2bb248dcc06600787cf`. Role: imported-path,test-path,source. Parse: module.
+
+- case @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-catch-escaped.js
+
+Blob: `4f0bb8ba2e461a6bd41dbf1e81a84c77b4b37ab6`. Role: imported-path,test-path,source. Parse: module.
+
+- catch @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-class-escaped.js
+
+Blob: `56111c3e263c7a4403fdfa9e7b82efb5618be0f0`. Role: imported-path,test-path,source. Parse: module.
+
+- class @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-const-escaped.js
+
+Blob: `a5d491c939f50877e754d9a9a905b9a7698323e7`. Role: imported-path,test-path,source. Parse: module.
+
+- const @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-continue-escaped.js
+
+Blob: `0709dcf09816fa02898d76035a14fc9ce15b9a03`. Role: imported-path,test-path,source. Parse: module.
+
+- continue @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-debugger-escaped.js
+
+Blob: `c508451b642bb3e6ec0ae804696a2a7405b75e16`. Role: imported-path,test-path,source. Parse: module.
+
+- debugger @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-default-escaped-ext.js
+
+Blob: `0023bf41f2330253a60b4933d326e41e5ee36a97`. Role: imported-path,test-path,source. Parse: module.
+
+- default @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-default-escaped.js
+
+Blob: `900527e1adf7eb495fd9484e78f7f953a184ff22`. Role: imported-path,test-path,source. Parse: module.
+
+- default @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-default.js
+
+Blob: `3c0c89463aca4e82b821d8a3167bace362270b9e`. Role: imported-path,test-path,source. Parse: module.
+
+- default @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-delete-escaped.js
+
+Blob: `4ca589e4fa7ec8459a488728313ee603b4f765e3`. Role: imported-path,test-path,source. Parse: module.
+
+- delete @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-do-escaped.js
+
+Blob: `375fcdad6be368ab0bf7caba6562c85d0fe171f3`. Role: imported-path,test-path,source. Parse: module.
+
+- do @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-else-escaped.js
+
+Blob: `a18fc25055d1b74c4752c69e4a799db1beb41bfd`. Role: imported-path,test-path,source. Parse: module.
+
+- else @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-enum-escaped.js
+
+Blob: `261fed6bc50c8896c3b15de2596e915e0060d2a0`. Role: imported-path,test-path,source. Parse: module.
+
+- enum @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-export-escaped.js
+
+Blob: `bf51c39327ff777f6f687c333cdd478110ac4ad8`. Role: imported-path,test-path,source. Parse: module.
+
+- export @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-extends-escaped-ext.js
+
+Blob: `cc8e5dd33ff93a9a7034f70c16ca31a49c8ae444`. Role: imported-path,test-path,source. Parse: module.
+
+- extends @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-extends-escaped.js
+
+Blob: `7dc703bbec48138ddabb0df3839b5853113b9c22`. Role: imported-path,test-path,source. Parse: module.
+
+- extends @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-extends.js
+
+Blob: `ee4dbafb6b78413c08ae51fc782f28e95e6893c0`. Role: imported-path,test-path,source. Parse: module.
+
+- extends @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-finally-escaped.js
+
+Blob: `40c9bdee74c457191cd7e3565f1a74355ef70880`. Role: imported-path,test-path,source. Parse: module.
+
+- finally @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-for-escaped.js
+
+Blob: `41c7d2e099dde676a85a5fd7ef3aeb139489480a`. Role: imported-path,test-path,source. Parse: module.
+
+- for @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-function-escaped.js
+
+Blob: `6713cad21981192b917d0bba6e8ba5f6ac327225`. Role: imported-path,test-path,source. Parse: module.
+
+- function @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-if-escaped.js
+
+Blob: `70e88905a06dd840d00b8bc7faf7b2e9574146b7`. Role: imported-path,test-path,source. Parse: module.
+
+- if @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-implements-escaped.js
+
+Blob: `8164e224c9cf709f64d0198bf1aba12c10e0782b`. Role: imported-path,test-path,source. Parse: module.
+
+- implements @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-import-escaped.js
+
+Blob: `60054b88a11b645a658d664af4559c8daf40de37`. Role: imported-path,test-path,source. Parse: module.
+
+- import @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-in-escaped.js
+
+Blob: `f8fd036a2a45d27a86e3d53aeb2ff9a9f5fee45b`. Role: imported-path,test-path,source. Parse: module.
+
+- in @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-instanceof-escaped.js
+
+Blob: `cb22b0a2d81c4b66e19ec5947cc6d479f964081e`. Role: imported-path,test-path,source. Parse: module.
+
+- instanceof @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-interface-escaped.js
+
+Blob: `e8304d29eede60332a709f19d89013ae892b6dee`. Role: imported-path,test-path,source. Parse: module.
+
+- interface @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-let-escaped.js
+
+Blob: `ec1b9c315579100199f40a760c0814767ef1394a`. Role: imported-path,test-path,source. Parse: module.
+
+- let @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-new-escaped.js
+
+Blob: `4ff299eb3418dd0f3dc9c157aba2afc84d2290f7`. Role: imported-path,test-path,source. Parse: module.
+
+- new @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-package-escaped.js
+
+Blob: `1c3e36a6223d2c4e99085dc14b58d40e1afb8676`. Role: imported-path,test-path,source. Parse: module.
+
+- package @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-private-escaped.js
+
+Blob: `296bf512c8fb2120cb7268e6b0073614626a3fcf`. Role: imported-path,test-path,source. Parse: module.
+
+- private @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-protected-escaped.js
+
+Blob: `4f046eb3b92ef2adfbaaca91fc3af4b7aefa124f`. Role: imported-path,test-path,source. Parse: module.
+
+- protected @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-public-escaped.js
+
+Blob: `8171ee1c6c2b6ac672148572f738631661b243c2`. Role: imported-path,test-path,source. Parse: module.
+
+- public @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-return-escaped.js
+
+Blob: `2514033632b8e59219b7c84ee3a0982534feb14c`. Role: imported-path,test-path,source. Parse: module.
+
+- return @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-static-escaped.js
+
+Blob: `5b1c580f42988c65f2d196fee91dbb5721f8f373`. Role: imported-path,test-path,source. Parse: module.
+
+- static @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-super-escaped.js
+
+Blob: `2b0d892084fba9e00765cbc61c47bb7b55bcb109`. Role: imported-path,test-path,source. Parse: module.
+
+- super @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-switch-escaped.js
+
+Blob: `c69e6180c7b4cd6566d7bf7f5743724e755b62f2`. Role: imported-path,test-path,source. Parse: module.
+
+- switch @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-this-escaped.js
+
+Blob: `0f498f984a44731e9578df97629d9439da287ebf`. Role: imported-path,test-path,source. Parse: module.
+
+- this @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-throw-escaped.js
+
+Blob: `6ad8c22b14d6370d1dd94c4dcf8cb659d98d1981`. Role: imported-path,test-path,source. Parse: module.
+
+- throw @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-try-escaped.js
+
+Blob: `d8a36783f75002373c18e3d51ac97db844940441`. Role: imported-path,test-path,source. Parse: module.
+
+- try @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-typeof-escaped.js
+
+Blob: `3203e44f75689ecb00a935c76abb54908dcde143`. Role: imported-path,test-path,source. Parse: module.
+
+- typeof @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-var-escaped.js
+
+Blob: `8bbbaf257390f97a79810312040c2c2c94fd33f8`. Role: imported-path,test-path,source. Parse: module.
+
+- var @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-void-escaped.js
+
+Blob: `938f98936ddf8ccb2c319441c314f6bbbade28b8`. Role: imported-path,test-path,source. Parse: module.
+
+- void @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-while-escaped.js
+
+Blob: `6481748843f30770e1fffd8c0fdaf58860c39fe3`. Role: imported-path,test-path,source. Parse: module.
+
+- while @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-method-def-with-escaped.js
+
+Blob: `2d407652d56cc8ccc7cae28c20e25d4f1ff5b55e`. Role: imported-path,test-path,source. Parse: module.
+
+- with @39-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-await-static-init.js
+
+Blob: `ab01dfc8e8f38a97054fb4f21dc3ae41dac02383`. Role: imported-path,test-path,source. Parse: module.
+
+- Class C @17-21
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-break-escaped.js
+
+Blob: `1795ac488570f56620b678e35fd82d77fa335df6`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-case-escaped.js
+
+Blob: `e96991d4ba4658b62e9175a6da0aa9d36f245814`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-catch-escaped.js
+
+Blob: `a71681a3548840bc7813b2264e79f1d01eefe382`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-class-escaped.js
+
+Blob: `21e1f03cbd80c1a695f9af05c6764254f7c1988c`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-const-escaped.js
+
+Blob: `4c02e7de9f291d819f8c4315db7398fd95fdef02`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-continue-escaped.js
+
+Blob: `6ef8e304a181a8a5f191574d5c760cbdb2f668c8`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-debugger-escaped.js
+
+Blob: `c7cf859ebcc9fc8ae1006d8dfc633c1f58ca5bd2`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-default-escaped-ext.js
+
+Blob: `63af82a9f79f21ab4a3412ce40c6d11fd25ff727`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-default-escaped.js
+
+Blob: `ad008e65d3aedd79cdee1056b2c8547a2df3b3e4`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-default.js
+
+Blob: `55e2d582d85d5f5feeb527b63845dbccc4ccff39`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-delete-escaped.js
+
+Blob: `bf8ddca9867525add960c214220630574f4cc666`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-do-escaped.js
+
+Blob: `0312a3b3e8d05eacf2720683482e12ee63fd4d08`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-else-escaped.js
+
+Blob: `08a30f801a9a7e70205fc0422ac149bdacf512c5`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-enum-escaped.js
+
+Blob: `dce66641c08f4eb70dfa450986411d6526b2de3e`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-export-escaped.js
+
+Blob: `d8d2fa8d41ca0c28805c5a71b3070a596dd76e82`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-extends-escaped-ext.js
+
+Blob: `401985f10db21b4073e44e879153c826b5e0a046`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-extends-escaped.js
+
+Blob: `5a1627f93ccbe492a73825fd8c6cf65b3d0030b1`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-extends.js
+
+Blob: `7868f97015288c46ac3a8b28db69b3d56b3c9c0f`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-finally-escaped.js
+
+Blob: `625038bfb1e65835ba9672b7653c8da5675838d0`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-for-escaped.js
+
+Blob: `2614fdb52573c3c387355e7a8e6a070eda492afb`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-function-escaped.js
+
+Blob: `f63ecbbf920dd2d62b4fc5ed79add21ba62ee69b`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-if-escaped.js
+
+Blob: `3e1decb1f293e4176db707146d71aa9272892a4e`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-implements-escaped.js
+
+Blob: `33e389e96c6aa25b25602e5a8e3664b8e59eb26b`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-import-escaped.js
+
+Blob: `845127b5757890e366ae539b308f767a070f01f1`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-in-escaped.js
+
+Blob: `3efb914acb0a1621d5dd656db79bc74230982c64`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-instanceof-escaped.js
+
+Blob: `aa5f60769b1053244eccf378c8251debb065372e`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-interface-escaped.js
+
+Blob: `13822fdcb94ec3191107d4157e3457b6e0e5ccd1`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-let-escaped.js
+
+Blob: `473656a024872adb7f0eba8a61a1f3d3d8e98bb3`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-new-escaped.js
+
+Blob: `d8d7b7e53857172c17d48ba3438c74439675305b`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-package-escaped.js
+
+Blob: `f1369c6877519b5c52ed3a61b2786f60b2c2fbe1`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-private-escaped.js
+
+Blob: `106f007d09339cd9d50bd266d1c26446541172d8`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-protected-escaped.js
+
+Blob: `f87ef8a5839139f55d0e7df132c27acce2edafd2`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-public-escaped.js
+
+Blob: `a353c279eea46b3a5d0559a80c1b60fb1a6a950c`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-return-escaped.js
+
+Blob: `ced79a6c44eb8f5f90b099e8bb8ef1f7e235f1da`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-static-escaped.js
+
+Blob: `8c776e09eed9c2cfa765439164ba555b89af2fe6`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-super-escaped.js
+
+Blob: `cb2d0cd989f96b485d7294193d8d6a4989a1f58f`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-switch-escaped.js
+
+Blob: `c4852196e39b2960a3bdd022b77ee438bb0f46ea`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-this-escaped.js
+
+Blob: `b03c9505aa392f442d2c66ae3c97a2e24b46d828`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-throw-escaped.js
+
+Blob: `0841967007688efb21a105cd4f86d0f4c896bb2f`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-try-escaped.js
+
+Blob: `d0d95d82c55e3284e3403c05fb0369732f63d056`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-typeof-escaped.js
+
+Blob: `0619fccbea442555752b565be72216b4a3dd7187`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-var-escaped.js
+
+Blob: `ceb637680c8632d239955f4fdb7a4a9e7bff66c4`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-void-escaped.js
+
+Blob: `1eb5a2da75c31665be887754d54dc12584cb2f82`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-while-escaped.js
+
+Blob: `d837793c2d94db0ccef5f023ab9c33bdcee99a5c`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/ident-name-prop-name-literal-with-escaped.js
+
+Blob: `6e81bd261878badad0f5b23a848e0c46a73987d4`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-await-strict-mode.js
+
+Blob: `f789d2ee85faefebc7f7ec1e2788a1e5d6436e23`. Role: imported-path,test-path,source. Parse: script.
+
+- (anonymous) @20-25; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-implements-invalid-strict-mode.js
+
+Blob: `30eb84ba404b1876ec41d52085e6e9b4e3a4a778`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: The keyword 'implements' is reserved
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-interface-invalid-strict-mode.js
+
+Blob: `559cb77975473878e98f721136de819ff5e739c2`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: The keyword 'interface' is reserved
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-invalid-computed-name.js
+
+Blob: `680350a3696c85b967c248e83e6c57e5056223cb`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token }
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-invalid-zero.js
+
+Blob: `d08db2875c592ab4224afc46a4705cc653a97745`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token }
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-let-invalid-strict-mode.js
+
+Blob: `6c59c1327f85be3660001413a28ec331f9ab6c22`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: The keyword 'let' is reserved
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-package-invalid-strict-mode.js
+
+Blob: `a237541784894d0a2a9fea525806b071f751177e`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: The keyword 'package' is reserved
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-private-invalid-strict-mode.js
+
+Blob: `8901acd67570c8b700591fd71a36a81da51fb23e`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: The keyword 'private' is reserved
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-protected-invalid-strict-mode.js
+
+Blob: `22ddb72b62b59d3ca61b6b0d3090299216fbbe13`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: The keyword 'protected' is reserved
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-public-invalid-strict-mode.js
+
+Blob: `e9fc80e86a1d6e2431f06b52aaaceebf75f3da32`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: The keyword 'public' is reserved
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-static-init-await-invalid.js
+
+Blob: `2f693b46ac9ed15782c37a7fd92946003db29af1`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use await in class static initialization block
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-static-init-await-valid.js
+
+Blob: `868bb9842f70b8f02c03186f13d0dcab55e8b05a`. Role: imported-path,test-path,source. Parse: script.
+
+- (anonymous) @16-16; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class C @14-18
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-static-invalid-strict-mode.js
+
+Blob: `85b4693596334fb0da9a4cf4c6ee8d871d2c0f44`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: The keyword 'static' is reserved
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/identifier-shorthand-yield-invalid-strict-mode.js
+
+Blob: `82eecffd650cd47c3870bf6a6a131e6cffa7f5a7`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: The keyword 'yield' is reserved
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/let-non-strict-access.js
+
+Blob: `26c2cd8b2197fcaa1b020c989a24cb381c456eed`. Role: imported-path,test-path,source. Parse: script.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/let-non-strict-syntax.js
+
+Blob: `c700e2c303808efe76aca4657c4e3394f6e21e9e`. Role: imported-path,test-path,source. Parse: script.
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/literal-property-name-bigint.js
+
+Blob: `5764e345504dcf7fdd4324e11bc7147608d97837`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @38-38; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @43-43; FunctionExpression; parameters=0; async=false; generator=false
+- Class C @42-44
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-await-as-binding-identifier-escaped.js
+
+Blob: `09c5cc170cb76b458d7570a9239a9de87870576b`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'await' as identifier inside an async function
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-await-as-binding-identifier.js
+
+Blob: `f2c4499b66aee3e73a34588345d4b4e055396ab2`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'await' as identifier inside an async function
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-await-as-identifier-reference-escaped.js
+
+Blob: `a34e8212031537324c2c5bedecae27d87f4cabad`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'await' as identifier inside an async function
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-await-as-identifier-reference.js
+
+Blob: `a201e8de27e4a0b0b092c0ac84095e7d24abfb18`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token ;
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-await-as-label-identifier-escaped.js
+
+Blob: `a3a6202957871157d78ee71154abcfbb6edc387e`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'await' as identifier inside an async function
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-await-as-label-identifier.js
+
+Blob: `4a2efe54afd5eae85efb8edcc9e947330d56500c`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token :
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-await-as-binding-identifier-escaped.js
+
+Blob: `6b55d7fbdf55e164dd69388aa7f9ab137c33378d`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'await' as identifier inside an async function
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-await-as-binding-identifier.js
+
+Blob: `a641df8715c1cdda21fd956e7f3231e90f7493c1`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'await' as identifier inside an async function
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-await-as-identifier-reference-escaped.js
+
+Blob: `37afa09def125d47c7432cd88c266f397b198779`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'await' as identifier inside an async function
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-await-as-identifier-reference.js
+
+Blob: `8bacfc238bb777e9f0a21e9deabc443331734526`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token ;
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-await-as-label-identifier-escaped.js
+
+Blob: `b93ff75c8e8e0ccee32536b6076a37657c04c219`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'await' as identifier inside an async function
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-await-as-label-identifier.js
+
+Blob: `d61b3ae2b7c314b006617109a8c8e18e5187f53a`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token :
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-array-destructuring-param-strict-body.js
+
+Blob: `799906467c8820713ce8c1602eaebefb65a07a18`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Illegal 'use strict' directive in function with non-simple parameter list
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-dflt-params-abrupt.js
+
+Blob: `30d6e00f9e7ecb7b8971d2bf6846fc279541e90c`. Role: imported-path,test-path,source. Parse: module.
+
+- method @38-41; FunctionExpression; parameters=1; async=true; generator=true
+- (anonymous) @38-38; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @44-46; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-dflt-params-arg-val-not-undefined.js
+
+Blob: `d733fae0666488f9e98cfc741e6647b2980dcd31`. Role: imported-path,test-path,source. Parse: module.
+
+- method @49-57; FunctionExpression; parameters=6; async=true; generator=true
+- (anonymous) @63-65; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-dflt-params-arg-val-undefined.js
+
+Blob: `303a2633cd2cceae7544258386f2758ee3f0e441`. Role: imported-path,test-path,source. Parse: module.
+
+- method @42-47; FunctionExpression; parameters=3; async=true; generator=true
+- (anonymous) @53-55; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-dflt-params-duplicates.js
+
+Blob: `b76d0ba232a2b664f8b5253b81fdf92f2bfe2603`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Argument name clash
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-dflt-params-ref-later.js
+
+Blob: `40cc9de66433496808380dcc62d004e48ec1f249`. Role: imported-path,test-path,source. Parse: module.
+
+- method @39-42; FunctionExpression; parameters=2; async=true; generator=true
+- (anonymous) @45-47; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-dflt-params-ref-prior.js
+
+Blob: `d7b07d73b3e1b2a28e8945682c3842772bf3a591`. Role: imported-path,test-path,source. Parse: module.
+
+- method @39-44; FunctionExpression; parameters=3; async=true; generator=true
+- (anonymous) @50-52; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-dflt-params-ref-self.js
+
+Blob: `876cf947ffb78bc6da28a767a24a8b53f34941e9`. Role: imported-path,test-path,source. Parse: module.
+
+- method @39-42; FunctionExpression; parameters=1; async=true; generator=true
+- (anonymous) @45-47; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-dflt-params-rest.js
+
+Blob: `e2a7403bc0f8dd73320822b73396f7458c48e07c`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token =
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-dflt-params-trailing-comma.js
+
+Blob: `2ac6f787635e0455bafbaf7cb94446c50ed4b4f4`. Role: imported-path,test-path,source. Parse: module.
+
+- method @33-37; FunctionExpression; parameters=2; async=true; generator=true
+- (anonymous) @43-45; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-escaped-async.js
+
+Blob: `2a80013fe365bc7ba993ae28ee75835d34fbdccc`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token *
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-eval-var-scope-syntax-err.js
+
+Blob: `fd1e69c74239a571bdf0612772e7b029d845b127`. Role: imported-path,test-path,source. Parse: module.
+
+- method @34-37; FunctionExpression; parameters=1; async=true; generator=true
+- (anonymous) @40-42; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-object-destructuring-param-strict-body.js
+
+Blob: `be0f6e6dee94ab5431077425c1d3cb373b09630a`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Illegal 'use strict' directive in function with non-simple parameter list
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-params-trailing-comma-multiple.js
+
+Blob: `fb46babf2307026873d6db11c63fafbc195c0745`. Role: imported-path,test-path,source. Parse: module.
+
+- method @33-37; FunctionExpression; parameters=2; async=true; generator=true
+- (anonymous) @43-45; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-params-trailing-comma-single.js
+
+Blob: `5712c60642cefc6468a944c31826ee9e4bed0e80`. Role: imported-path,test-path,source. Parse: module.
+
+- method @33-36; FunctionExpression; parameters=1; async=true; generator=true
+- (anonymous) @42-44; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-rest-param-strict-body.js
+
+Blob: `b4065e962e82e4d2865b2c1786d6d51277e95e38`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Illegal 'use strict' directive in function with non-simple parameter list
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-meth-rest-params-trailing-comma-early-error.js
+
+Blob: `bd8e8ccae10d2aa83fe85d877fc90554e069daa3`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Comma is not permitted after the rest element
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-yield-as-binding-identifier-escaped.js
+
+Blob: `87527724caba8d85bd1d19cc3e0aee0f00f3dd83`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-yield-as-binding-identifier.js
+
+Blob: `49dd69fda6e8c7bf47ace0cc7fcf380d6edc1507`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-yield-as-identifier-reference-escaped.js
+
+Blob: `78bf52d9a1c5c77fb2d501cd08d9b3afb178f2a4`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-yield-as-identifier-reference.js
+
+Blob: `3e42123ca5dbb7b7e2d18523f389bb3b3e7344b4`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-yield-as-label-identifier-escaped.js
+
+Blob: `2355d3eaa48304492679e6df37e599792eabdd01`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-yield-as-label-identifier.js
+
+Blob: `792178ffacf6acf4fd9e6e740f34d8dae463e069`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token :
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/object/method-definition/async-gen-yield-identifier-non-strict.js
+
+Blob: `f02a132462717661301ae06f9b3e043a71242570`. Role: imported-path,test-path,source. Parse: script.
+
+- method @21-27; FunctionExpression; parameters=0; async=true; generator=true
+- (anonymous) @23-26; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @34-37; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @41-44; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.

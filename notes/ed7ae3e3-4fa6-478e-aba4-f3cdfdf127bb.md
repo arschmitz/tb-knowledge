@@ -1,0 +1,851 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["js/src/tests/test262/annexB/language/eval-code/direct/global-block-decl-eval-global-skip-early-err-switch.js","js/src/tests/test262/annexB/language/eval-code/direct/global-block-decl-eval-global-skip-early-err-try.js","js/src/tests/test262/annexB/language/eval-code/direct/global-block-decl-eval-global-skip-early-err.js","js/src/tests/test262/annexB/language/eval-code/direct/global-block-decl-eval-global-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-block-scoping.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-existing-block-fn-no-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-existing-block-fn-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-existing-fn-no-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-existing-fn-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-existing-global-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-existing-global-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-existing-non-enumerable-global-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-existing-var-no-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-existing-var-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-no-skip-try.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-skip-early-err-block.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-skip-early-err-for-in.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-skip-early-err-for-of.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-skip-early-err-for.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-skip-early-err-switch.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-skip-early-err-try.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-skip-early-err.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-block-scoping.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-existing-block-fn-no-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-existing-block-fn-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-existing-fn-no-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-existing-fn-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-existing-global-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-existing-global-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-existing-non-enumerable-global-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-existing-var-no-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-existing-var-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-no-skip-try.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-skip-early-err-block.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-skip-early-err-for-in.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-skip-early-err-for-of.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-skip-early-err-for.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-skip-early-err-switch.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-skip-early-err-try.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-skip-early-err.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-block-scoping.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-existing-block-fn-no-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-existing-block-fn-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-existing-fn-no-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-existing-fn-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-existing-global-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-existing-global-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-existing-non-enumerable-global-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-existing-var-no-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-existing-var-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-no-skip-try.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-skip-early-err-block.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-skip-early-err-for-in.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-skip-early-err-for-of.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-skip-early-err-for.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-skip-early-err-switch.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-skip-early-err-try.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-skip-early-err.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-block-scoping.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-existing-block-fn-no-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-existing-block-fn-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-existing-fn-no-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-existing-fn-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-existing-global-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-existing-global-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-existing-non-enumerable-global-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-existing-var-no-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-existing-var-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-no-skip-try.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-skip-early-err-block.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-skip-early-err-for-in.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-skip-early-err-for-of.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-skip-early-err-for.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-skip-early-err-switch.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-skip-early-err-try.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-skip-early-err.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-block-scoping.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-existing-block-fn-no-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-existing-block-fn-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-existing-fn-no-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-existing-fn-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-existing-global-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-existing-global-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-existing-non-enumerable-global-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-existing-var-no-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-existing-var-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-no-skip-try.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-skip-early-err-block.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-skip-early-err-for-in.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-skip-early-err-for-of.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-skip-early-err-for.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-skip-early-err-switch.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-skip-early-err-try.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-skip-early-err.js","js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-block-scoping.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-existing-block-fn-no-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-existing-block-fn-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-existing-fn-no-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-existing-fn-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-existing-global-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-existing-global-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-existing-non-enumerable-global-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-existing-var-no-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-existing-var-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-no-skip-try.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-skip-early-err-block.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-skip-early-err-for-in.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-skip-early-err-for-of.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-skip-early-err-for.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-skip-early-err-switch.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-skip-early-err-try.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-skip-early-err.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-block-scoping.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-existing-block-fn-no-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-existing-block-fn-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-existing-fn-no-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-existing-fn-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-existing-global-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-existing-global-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-existing-non-enumerable-global-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-existing-var-no-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-existing-var-update.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-init.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-no-skip-try.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-skip-early-err-block.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-skip-early-err-for-in.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-skip-early-err-for-of.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-skip-early-err-for.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-skip-early-err-switch.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-skip-early-err-try.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-skip-early-err.js","js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-update.js","js/src/tests/test262/annexB/language/eval-code/direct/script-decl-lex-no-collision.js","js/src/tests/test262/annexB/language/eval-code/direct/shell.js","js/src/tests/test262/annexB/language/eval-code/direct/switch-case-decl-nostrict.js","js/src/tests/test262/annexB/language/eval-code/direct/switch-dflt-decl-nostrict.js","js/src/tests/test262/annexB/language/eval-code/direct/var-env-lower-lex-catch-non-strict.js","js/src/tests/test262/annexB/language/eval-code/indirect/browser.js"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013"}} -->
+# firefox/js JavaScript function map 314
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-block-decl-eval-global-skip-early-err-switch.js
+
+Blob: `13b06566435042610b35db6ad792c5c802d7e86f`. Role: test-path,source. Parse: module.
+
+- (anonymous) @17-19; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @32-34; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-block-decl-eval-global-skip-early-err-try.js
+
+Blob: `0b3c4f3e3486a441abb6ad6b3c407dfda843b6cc`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-block-decl-eval-global-skip-early-err.js
+
+Blob: `072f3cefa1a395f6f21f288afa0855001404a6f1`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-block-decl-eval-global-update.js
+
+Blob: `fce91ea18f048f34c4b1f49bb04e91f21cc6a0ef`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-block-scoping.js
+
+Blob: `bd1871bea61ce70a8c362cb15c97720ffa844718`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-existing-block-fn-no-init.js
+
+Blob: `c55406f3e6438d365a32b228931dca9c2a681edb`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-existing-block-fn-update.js
+
+Blob: `00bb3ebbe6d69716e55fec5b57318012fe8a8140`. Role: test-path,source. Parse: module.
+
+- f @33-35; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-existing-fn-no-init.js
+
+Blob: `6dbc46727ad0d1d8eefcb1c1137fb7c57a3cf108`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-existing-fn-update.js
+
+Blob: `3cf73b92c60f3d5c942bf330704dc0cc518a50b0`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-existing-global-init.js
+
+Blob: `9b570eafc1b7cd2c0a8a6edc3ebbfad1ef2f0abe`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-existing-global-update.js
+
+Blob: `8da6813afe05408d88c730a9ced25c6302a917c9`. Role: test-path,source. Parse: module.
+
+- value @35-35; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-existing-non-enumerable-global-init.js
+
+Blob: `d307ae71cab5f39102806e189ca2724ec0788cfb`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-existing-var-no-init.js
+
+Blob: `1de4d888a7e7ff86a54df2dd814d47ef3added46`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-existing-var-update.js
+
+Blob: `43575b820b2f81522a23a5ee0b8c87b7baeefdd4`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-init.js
+
+Blob: `b1f5d3e40c9fec6fd19df18673bf07b1b8a2d516`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-no-skip-try.js
+
+Blob: `2ad6e3551371c5eb1e0c352979cba87ebca6eb9d`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-skip-early-err-block.js
+
+Blob: `0f8badd8477e35fb53eb5708514ff88b4a229134`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @40-42; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-skip-early-err-for-in.js
+
+Blob: `fd73cacbf6b56c895ebf37baba63a1b5acd12466`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-skip-early-err-for-of.js
+
+Blob: `6fd5517f51632c8daa6e450011a3b9a188ab3eaa`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-skip-early-err-for.js
+
+Blob: `4123b4d0de117daf1ee324fdc57235f294641d15`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @40-42; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-skip-early-err-switch.js
+
+Blob: `b85956ea8eb21529349881b6214e5d13b5ccc9e3`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @41-43; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-skip-early-err-try.js
+
+Blob: `52d2fa1a47dddcc752216382e05b0de044ad78a4`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-skip-early-err.js
+
+Blob: `362e2c12bba37743af324cfc638e91759cddeb59`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-a-eval-global-update.js
+
+Blob: `ba396ac827222c22c8845eebf78bbc7c53dfbe2e`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-block-scoping.js
+
+Blob: `c7660f45224dc42a25216a6a04590a38268862b5`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-existing-block-fn-no-init.js
+
+Blob: `1cb198728171a849f156e22d9e5f67088dfbd9f4`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-existing-block-fn-update.js
+
+Blob: `d1f08ff72b015bdaeb8991b48b56d827869d7bf2`. Role: test-path,source. Parse: module.
+
+- f @33-35; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-existing-fn-no-init.js
+
+Blob: `45ab2ac91492694c9aba930ac1dfd8a3d371eb3d`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-existing-fn-update.js
+
+Blob: `a086f12d7cbcb21720a33d36c1b4178cff4231e4`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-existing-global-init.js
+
+Blob: `2ed1e34431995735209b1915f9a5c78e35d2c8cd`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-existing-global-update.js
+
+Blob: `c31ccf055ee4b00503e41eb11cedc7bd392d5b77`. Role: test-path,source. Parse: module.
+
+- value @35-35; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-existing-non-enumerable-global-init.js
+
+Blob: `305db7f8c578e8db3e7a04de3ef51698f3ff3534`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-existing-var-no-init.js
+
+Blob: `36263be7c43d1eea81d8c82594510fda231d0ff1`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-existing-var-update.js
+
+Blob: `68bdffca6161b8a37fc67a82fc6613983e43904b`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-init.js
+
+Blob: `9f160ecd44e8aaf4495dd773d63b2e4bceafc725`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-no-skip-try.js
+
+Blob: `fe995f4bd4f8c12ab57835ba75adc64992e7d293`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-skip-early-err-block.js
+
+Blob: `d4eb7c3028cebe1d8061fbffc7d71c7331fd9db0`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @40-42; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-skip-early-err-for-in.js
+
+Blob: `6728a080a065f79b9951485693bd71b7e3e4e966`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-skip-early-err-for-of.js
+
+Blob: `03a0fb211dbc63e82e50323a8699a6f87f6a5392`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-skip-early-err-for.js
+
+Blob: `fe1e9f54eb104580fa23fe51329024238f107fef`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @40-42; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-skip-early-err-switch.js
+
+Blob: `bd50eeed587bb5ffe419a3e39719cdd8212e36d9`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @41-43; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-skip-early-err-try.js
+
+Blob: `cb5d5a7c8548f9b32538d638e45d769b045dafd1`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-skip-early-err.js
+
+Blob: `eaca19d8f055296929942f98602a7271e0cca085`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-decl-b-eval-global-update.js
+
+Blob: `c8a0558349cfa963f6997ad7598b4874209b936f`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-block-scoping.js
+
+Blob: `84ac92489cdec48a700015f80d3970276c61c5a1`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-existing-block-fn-no-init.js
+
+Blob: `531a25f08650c9aa0c2055d351b2741e46f7c37b`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-existing-block-fn-update.js
+
+Blob: `ee47fed2e6ddeb976e39c71daacf654f291fb5a9`. Role: test-path,source. Parse: module.
+
+- f @33-35; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-existing-fn-no-init.js
+
+Blob: `5cc29090365b09daa4f67bd6fe4813928fac2f1d`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-existing-fn-update.js
+
+Blob: `25a8cd02b696685e069140cc0ede9878c1321bf4`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-existing-global-init.js
+
+Blob: `3804c3c5d7ad8ccc4b749c5ad188d3bedf214dc5`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-existing-global-update.js
+
+Blob: `aef8081328be4bfb97aee3f29d654811cc37feb7`. Role: test-path,source. Parse: module.
+
+- value @35-35; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-existing-non-enumerable-global-init.js
+
+Blob: `f76ac278bed8de22be9e39bf4bd029c30a6a3927`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-existing-var-no-init.js
+
+Blob: `4efa8e99cf8894bf882cf22a63b1e726c6e0b206`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-existing-var-update.js
+
+Blob: `343d40399c0d10379cade88088662489ce8e0ea5`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-init.js
+
+Blob: `5202231f758af467269cfc581561055c3735be03`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-no-skip-try.js
+
+Blob: `e46c03ff9ae6f224590e434bb1ee8763717571c6`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-skip-early-err-block.js
+
+Blob: `e42f9c995ce93d395db7c643a21ca35f712785a2`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @40-42; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-skip-early-err-for-in.js
+
+Blob: `03ee9404d50d0b43ee4acddeeef253b4abd4d5e9`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-skip-early-err-for-of.js
+
+Blob: `0c56312a507a09b7383cd5aed9f1effdfb983c42`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-skip-early-err-for.js
+
+Blob: `04b01bfaa7cee8e0c4016d3979c654546db33ae9`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @40-42; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-skip-early-err-switch.js
+
+Blob: `c130d23ece98a3d0213bf5fedc0d2cfb6f55ce22`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @41-43; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-skip-early-err-try.js
+
+Blob: `5787a86a771a4f4195f1886f337b988aa2e5783f`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-skip-early-err.js
+
+Blob: `0e5e13743d3a082477a5f49a8cd57ff6fb23afaf`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-else-stmt-eval-global-update.js
+
+Blob: `22d6905e4ce30aa80614650b077115addfcf86e8`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-block-scoping.js
+
+Blob: `c2dec250114044313db391756a81794c929a9af4`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-existing-block-fn-no-init.js
+
+Blob: `46b3fb179e4cdbb21508229cd91356288b9b1f2f`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-existing-block-fn-update.js
+
+Blob: `46a6dc98611a238f8f7bb0df27c3dfd61287f37c`. Role: test-path,source. Parse: module.
+
+- f @33-35; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-existing-fn-no-init.js
+
+Blob: `c5e44f12e3948cffee9bdc115917ab9945cc269f`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-existing-fn-update.js
+
+Blob: `f4cf01ce8a10ad6de045739ef8fe9dab58923383`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-existing-global-init.js
+
+Blob: `70eec47a74d305297f3d654464a401e477bcb515`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-existing-global-update.js
+
+Blob: `8e8922ac59c84b727da91a460c8f45d8df8a8558`. Role: test-path,source. Parse: module.
+
+- value @35-35; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-existing-non-enumerable-global-init.js
+
+Blob: `36319fc6976eddccb7cce83a821a9e5c9fcfd20e`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-existing-var-no-init.js
+
+Blob: `9c035099114a6bdeb42e7c011362b7d2213b83d6`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-existing-var-update.js
+
+Blob: `001326e03a56e3d50dea48b8b52f721ced938463`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-init.js
+
+Blob: `2c1121e2d62578b5c58dcc6fcd582fb6a13e2ca4`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-no-skip-try.js
+
+Blob: `a7b457c08d44fe0e471ea650d19720090b66dcfe`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-skip-early-err-block.js
+
+Blob: `d2c9f1e277eb4124292a3bb96338b1bd07cd06fb`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @40-42; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-skip-early-err-for-in.js
+
+Blob: `daf0b03731320ffffe4d759a9291bfe7ee5bb2ca`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-skip-early-err-for-of.js
+
+Blob: `61f4f03e60ad31dd76e2748a04edf271026fec01`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-skip-early-err-for.js
+
+Blob: `fc006bfe7638572242f76b823f10d04910dc7f6a`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @40-42; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-skip-early-err-switch.js
+
+Blob: `f532f79ae1973bbf5c501c8abc260b823403aa78`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @41-43; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-skip-early-err-try.js
+
+Blob: `4eeb4e633b0a1711b87b86483b996000f3caea21`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-skip-early-err.js
+
+Blob: `5ebc6cfc4d173b938f4b27e22e2133ab15f59e95`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-decl-no-else-eval-global-update.js
+
+Blob: `1f396a89a59fabc7b112afef826ee9693a08782c`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-block-scoping.js
+
+Blob: `c8e410fe38d76ad210e94376a1711eb61cc57e3d`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-existing-block-fn-no-init.js
+
+Blob: `bd2ff524a01ec72a8d4f0dacafab5ab0700e8089`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-existing-block-fn-update.js
+
+Blob: `da854b53dfc02b318d3b5c8be1c222a2c81eec42`. Role: test-path,source. Parse: module.
+
+- f @33-35; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-existing-fn-no-init.js
+
+Blob: `4c434402ca0345cc66e2e44e69376e9082d3b662`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-existing-fn-update.js
+
+Blob: `1835faf6a110fa50c218f82581c9b847727218ce`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-existing-global-init.js
+
+Blob: `4f04be8aa3cdeab981d3bf7fee4e39cad0fe247d`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-existing-global-update.js
+
+Blob: `297c307fa32c622a4575767740e1206a99474a8e`. Role: test-path,source. Parse: module.
+
+- value @35-35; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-existing-non-enumerable-global-init.js
+
+Blob: `668b112545fedb326d0e302be31dddb9e4da81b5`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-existing-var-no-init.js
+
+Blob: `1f28a31233b1bb4f250014b042d26edd3d864cb8`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-existing-var-update.js
+
+Blob: `cf1f9d8235fc494e292c6714220fab8d86d8d158`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-init.js
+
+Blob: `ed46bb57a1b19b73e85d90e8f57e48adb90e6f12`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-no-skip-try.js
+
+Blob: `4c2d8aa17888ba2b0dd07b3739971f2daf11c1b7`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-skip-early-err-block.js
+
+Blob: `32a5b08edb45a36229738e19f69313ef06cd3ad6`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @40-42; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-skip-early-err-for-in.js
+
+Blob: `6560a6dc6e50f3fc0132db18b362edb75b602a7f`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-skip-early-err-for-of.js
+
+Blob: `44ce2beaed12b2461871370a567aa1fe9538639b`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-skip-early-err-for.js
+
+Blob: `0606b0417a3f7e3911b9edfe84083731698d94ef`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @40-42; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-skip-early-err-switch.js
+
+Blob: `523924c4d8b00e53027362d8b15d1df8e70ed687`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @41-43; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-skip-early-err-try.js
+
+Blob: `081172cc6028d9ebcf9520177f5a1a0179c16d8f`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-skip-early-err.js
+
+Blob: `55e67d5a1b7eb5bfebbbd77710b6e5576e455c05`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-if-stmt-else-decl-eval-global-update.js
+
+Blob: `55d7c28fdd4461464f3c96fe07b31f8605e6242f`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-block-scoping.js
+
+Blob: `0bf1535d9201850b85a427111bfb6aa3d40abf22`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-existing-block-fn-no-init.js
+
+Blob: `1a6fbe35d214f5fd906d1a4678b8bf9ebc6e3c16`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-existing-block-fn-update.js
+
+Blob: `26ae63c0bbf59d2b10b3bb0940d997bb84506498`. Role: test-path,source. Parse: module.
+
+- f @24-26; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-existing-fn-no-init.js
+
+Blob: `9e987fa5769cdf1a2e8a17e96c13b80ce2ee31c2`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-existing-fn-update.js
+
+Blob: `9162230086a9fc96dc4dcd9688aa126164a92227`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-existing-global-init.js
+
+Blob: `9786610e2c2720d9a33f4222839ff45e1c11e27b`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-existing-global-update.js
+
+Blob: `2e399df93cd848b85ecde7b4cf23d77448101697`. Role: test-path,source. Parse: module.
+
+- value @26-26; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-existing-non-enumerable-global-init.js
+
+Blob: `7e7fcabd678e25d6d9b2e63ce96e2259f8141a47`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-existing-var-no-init.js
+
+Blob: `47fa604f5e6b2a58f404d0d7f9d993cd0d667512`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-existing-var-update.js
+
+Blob: `8ee5f582c3f1f2455673331ab45ce1657cceefba`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-init.js
+
+Blob: `229410f0feeeb9b727be5257386536fcceb7fa6e`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-no-skip-try.js
+
+Blob: `121088754936ebb875c1876c5891e35b52d1b851`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-skip-early-err-block.js
+
+Blob: `02bab370e3d0f6b97c662eb25f960c23f7e6eda4`. Role: test-path,source. Parse: module.
+
+- (anonymous) @17-19; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @35-37; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-skip-early-err-for-in.js
+
+Blob: `cae6d7676f204c309e52b6a4aa7124623cf2411a`. Role: test-path,source. Parse: module.
+
+- (anonymous) @17-19; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @34-36; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-skip-early-err-for-of.js
+
+Blob: `d703814eb3f8023e8ad4c6b9132ff9058fead563`. Role: test-path,source. Parse: module.
+
+- (anonymous) @17-19; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @34-36; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-skip-early-err-for.js
+
+Blob: `27f66647755d38faa6db4358f09ecf689d674604`. Role: test-path,source. Parse: module.
+
+- (anonymous) @17-19; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @35-37; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-skip-early-err-switch.js
+
+Blob: `253ed73cc6b3e71d09b4ebbb6481142f72422731`. Role: test-path,source. Parse: module.
+
+- (anonymous) @17-19; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @36-38; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-skip-early-err-try.js
+
+Blob: `b2d625c02a23d7920d030c2c2780e07b5516be8e`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-skip-early-err.js
+
+Blob: `8a9c92b466f8c96270d744ddc700bbec05083130`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-case-eval-global-update.js
+
+Blob: `198649ed2981c1dfa6b183eb21344df1ef53e86d`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-block-scoping.js
+
+Blob: `ba7a492e646439426c629df4817e7aa0a050a104`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-existing-block-fn-no-init.js
+
+Blob: `f9237012f6fa6f3accaf8e79beb5375cad5fa568`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-existing-block-fn-update.js
+
+Blob: `52ed82190ced33551791323bfd9615ed5d0c9138`. Role: test-path,source. Parse: module.
+
+- f @24-26; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-existing-fn-no-init.js
+
+Blob: `d7b5a0786e1e872a0b1290df1b96b405143534c8`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-existing-fn-update.js
+
+Blob: `780449a32d5c3f7ba05f55de27dc9a7fb2b77cd6`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-existing-global-init.js
+
+Blob: `f0da10714ef860f2455e29df57bc871903ff3249`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-existing-global-update.js
+
+Blob: `b2fe4cbaaa71ce36f88ba8daff036b5ea479d276`. Role: test-path,source. Parse: module.
+
+- value @26-26; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-existing-non-enumerable-global-init.js
+
+Blob: `e2ebe8da66d3a6804c0304e5539872d82abbbe88`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-existing-var-no-init.js
+
+Blob: `0d69f2e47b5b5d404b2919854174c36344079e36`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-existing-var-update.js
+
+Blob: `09da0ec602da3a0324caf017e53f07d8b0743448`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-init.js
+
+Blob: `5028ad5b237d5406adf5610f5f939c308aa5f261`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-no-skip-try.js
+
+Blob: `398cbc09d0d86540f92f39366b0d73ad0c0d7d53`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-skip-early-err-block.js
+
+Blob: `95bec647031537ea799cdf873a633cef3028fffd`. Role: test-path,source. Parse: module.
+
+- (anonymous) @17-19; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @35-37; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-skip-early-err-for-in.js
+
+Blob: `34731cb9431cb4029de8c2e96b792267993a7f7e`. Role: test-path,source. Parse: module.
+
+- (anonymous) @17-19; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @34-36; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-skip-early-err-for-of.js
+
+Blob: `7a87bd93dc3cfa9e5772ddeaaa4766cc156d1fe9`. Role: test-path,source. Parse: module.
+
+- (anonymous) @17-19; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @34-36; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-skip-early-err-for.js
+
+Blob: `cb4f0ab8961072c6d3afba2bb6693915559a535f`. Role: test-path,source. Parse: module.
+
+- (anonymous) @17-19; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @35-37; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-skip-early-err-switch.js
+
+Blob: `be6f13629d16c5a08adeaf5b34353ad39a629622`. Role: test-path,source. Parse: module.
+
+- (anonymous) @17-19; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @36-38; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-skip-early-err-try.js
+
+Blob: `3cdad6b1d9442d4b5276b32cd7b4eef4f514b69c`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-skip-early-err.js
+
+Blob: `896ffef4d0795ec779fcb320abb71df7dcfd0b54`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/global-switch-dflt-eval-global-update.js
+
+Blob: `ea66a6217387311a81f648a735c5e965a06d196c`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/script-decl-lex-no-collision.js
+
+Blob: `643b11831decfe26ccb8c8e9e3470b240c09745d`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/shell.js
+
+Blob: `d8963d9d6017861c44335955222eff487a7ffade`. Role: test-path,source. Parse: module.
+
+- fnGlobalObject @12-14; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/annexB/language/eval-code/direct/switch-case-decl-nostrict.js
+
+Blob: `cef6f4afa153744ef31a30b5df8794eac4367929`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/switch-dflt-decl-nostrict.js
+
+Blob: `d8becb2074cce45cc0d7e435751166f0f3446c4c`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/direct/var-env-lower-lex-catch-non-strict.js
+
+Blob: `11f306aecd281e50217d977764bbec411c8ec5b5`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/annexB/language/eval-code/indirect/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.

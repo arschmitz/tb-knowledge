@@ -1,0 +1,1509 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/async-private-method/await-as-label-identifier-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/async-private-method/await-as-label-identifier.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/async-private-method/returns-async-arrow-returns-arguments-from-parent-function.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/async-private-method/returns-async-arrow-returns-newtarget.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/async-private-method/returns-async-arrow.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/async-private-method/returns-async-function-returns-arguments-from-own-function.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/async-private-method/returns-async-function-returns-newtarget.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/async-private-method/returns-async-function.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/class-name-static-initializer-anonymous.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/class-name-static-initializer-decl.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/class-name-static-initializer-default-export.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/class-name-static-initializer-expr.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/comp-name-init-err-contains-arguments.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/comp-name-init-err-contains-super.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/computed-name-toprimitive-symbol.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/computed-name-toprimitive.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/ctor-called-after-fields-init.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/derived-cls-direct-eval-contains-superproperty-1.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/derived-cls-direct-eval-contains-superproperty-2.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/derived-cls-direct-eval-err-contains-supercall-1.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/derived-cls-direct-eval-err-contains-supercall-2.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/derived-cls-direct-eval-err-contains-supercall.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/derived-cls-indirect-eval-contains-superproperty-1.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/derived-cls-indirect-eval-contains-superproperty-2.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/derived-cls-indirect-eval-err-contains-supercall-1.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/derived-cls-indirect-eval-err-contains-supercall-2.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/derived-cls-indirect-eval-err-contains-supercall.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/direct-eval-err-contains-arguments.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/direct-eval-err-contains-newtarget.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/equality-init-err-contains-arguments.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/equality-init-err-contains-super.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/evaluation-error/computed-name-referenceerror.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/evaluation-error/computed-name-toprimitive-err.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/evaluation-error/computed-name-toprimitive-returns-noncallable.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/evaluation-error/computed-name-toprimitive-returns-nonobject.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/evaluation-error/computed-name-tostring-err.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/evaluation-error/computed-name-valueof-err.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/field-declaration.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/field-definition-accessor-no-line-terminator.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-anonymous-function-length.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-asi-1.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-asi-2.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-asi-3.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-asi-4.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-asi-5.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-asi-same-line-1.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-asi-same-line-2.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-computed-name-static-propname-prototype.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-duplicate-privatenames.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-literal-name-propname-constructor.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-literal-name-static-propname-constructor.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-literal-name-static-propname-prototype.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-multiple-definitions-static-private-methods-proxy.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-run-once-on-double-super.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-string-name-propname-constructor.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-string-name-static-propname-constructor.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-string-name-static-propname-prototype.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-as-binding-identifier-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-as-binding-identifier.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-as-identifier-reference-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-as-identifier-reference.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-as-label-identifier-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-as-label-identifier.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-identifier-spread-strict.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-identifier-strict.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-spread-arr-multiple.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-spread-arr-single.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-spread-obj.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-as-binding-identifier-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-as-binding-identifier.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-as-identifier-reference-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-as-identifier-reference.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-as-label-identifier-escaped.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-as-label-identifier.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-identifier-spread-strict.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-identifier-strict.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-spread-arr-multiple.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-spread-arr-single.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-spread-obj.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/grammar-private-field-optional-chaining.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/indirect-eval-contains-arguments.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/indirect-eval-err-contains-newtarget.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/init-err-evaluation.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/init-value-defined-after-class.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/init-value-incremental.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/intercalated-static-non-static-computed-fields.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/literal-name-init-err-contains-arguments.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/literal-name-init-err-contains-super.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-computed-names.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-computed-symbol-names.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-grammar-privatename-identifier-semantics-stringvalue.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-literal-names-asi.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-literal-names.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-private-field-usage.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-private-method-getter-usage.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-private-method-usage.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-private-names.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-field-identifier-initializer.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-field-identifier.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-private-getter-alt.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-private-getter.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-private-method-alt.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-private-method.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-private-setter-alt.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-private-setter.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-privatename-identifier-alt.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-privatename-identifier-initializer-alt.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-privatename-identifier-initializer.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-privatename-identifier.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-async-generator-method-privatename-identifier-alt.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-async-generator-method-privatename-identifier.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-async-method-privatename-identifier-alt.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-async-method-privatename-identifier.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-generator-method-privatename-identifier-alt.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-generator-method-privatename-identifier.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-method-privatename-identifier-alt.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-method-privatename-identifier.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-privatename-identifier-alt-by-classname.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-privatename-identifier-alt.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-privatename-identifier-by-classname.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-privatename-identifier-initializer-alt-by-classname.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-privatename-identifier-initializer-alt.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-privatename-identifier-initializer.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-privatename-identifier.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-static-private-fields.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-static-private-methods-with-fields.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-static-private-methods.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-string-literal-names.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-computed-names.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-computed-symbol-names.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-grammar-privatename-identifier-semantics-stringvalue.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-literal-names-asi.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-literal-names.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-private-field-usage.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-private-method-getter-usage.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-private-method-usage.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-private-names.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-field-identifier-initializer.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-field-identifier.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-private-getter-alt.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-private-getter.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-private-method-alt.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-private-method.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-private-setter-alt.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-private-setter.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-privatename-identifier-alt.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-privatename-identifier-initializer-alt.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-privatename-identifier-initializer.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-privatename-identifier.js","testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-static-async-generator-method-privatename-identifier-alt.js"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013"}} -->
+# firefox/testing JavaScript function map 1034
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/async-private-method/await-as-label-identifier-escaped.js
+
+Blob: `df664ed867f0987e59173b08493b321b28f81dae`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'await' as identifier inside an async function
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/async-private-method/await-as-label-identifier.js
+
+Blob: `f76fcf8f6da9fb03bc495f1cd0e923efd8ca23be`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token :
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/async-private-method/returns-async-arrow-returns-arguments-from-parent-function.js
+
+Blob: `7aeabb785795761458bac2bb57363a012e4b120a`. Role: imported-path,test-path,source. Parse: module.
+
+- method @26-29; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @28-28; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- method @30-32; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @38-41; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @41-44; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @25-33
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/async-private-method/returns-async-arrow-returns-newtarget.js
+
+Blob: `2dce5461106b12341646d9971308344bb1f843d6`. Role: imported-path,test-path,source. Parse: module.
+
+- method @26-28; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @27-27; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- method @29-31; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @37-40; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @40-43; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @25-32
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/async-private-method/returns-async-arrow.js
+
+Blob: `a582f4f61c940a019aaf9d9307f7dbd92cfefe05`. Role: imported-path,test-path,source. Parse: module.
+
+- method @26-28; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @27-27; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- method @29-31; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @37-40; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @40-43; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @25-32
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/async-private-method/returns-async-function-returns-arguments-from-own-function.js
+
+Blob: `69141be6ed6981b31a503bbd8e90559170497292`. Role: imported-path,test-path,source. Parse: module.
+
+- method @26-29; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @28-28; FunctionExpression; parameters=0; async=true; generator=false
+- method @30-32; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @38-41; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @41-44; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @25-33
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/async-private-method/returns-async-function-returns-newtarget.js
+
+Blob: `b911d8a1c535cd55e449f110d5075fcbf8a7cc77`. Role: imported-path,test-path,source. Parse: module.
+
+- method @26-28; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @27-27; FunctionExpression; parameters=0; async=true; generator=false
+- method @29-31; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @37-40; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @40-43; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @25-32
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/async-private-method/returns-async-function.js
+
+Blob: `736fa079878c4d8fc4918241348915b9e08664ed`. Role: imported-path,test-path,source. Parse: module.
+
+- method @26-28; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @27-27; FunctionExpression; parameters=0; async=true; generator=false
+- method @29-31; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @37-40; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @40-43; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @25-32
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/class-name-static-initializer-anonymous.js
+
+Blob: `daca9b6ab2c0a65c0f57484334e2d9a32c62bfc9`. Role: imported-path,test-path,source. Parse: module.
+
+- Class (anonymous) @22-24
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/class-name-static-initializer-decl.js
+
+Blob: `6f9ec9e077dc201be14240dc50816a02b671e782`. Role: imported-path,test-path,source. Parse: module.
+
+- Class C @22-24
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/class-name-static-initializer-default-export.js
+
+Blob: `5ce104f4b1cd44b22a6fe807ac8e2baae9008623`. Role: imported-path,test-path,source. Parse: module.
+
+- Class (anonymous) @23-25
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/class-name-static-initializer-expr.js
+
+Blob: `1ff5f8d38aff91b5701c1d4b3582c665469a7dc4`. Role: imported-path,test-path,source. Parse: module.
+
+- Class C @22-24
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/comp-name-init-err-contains-arguments.js
+
+Blob: `7f0cecb79bfd82e2110ceefc289971f4ac4b34cd`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'arguments' in class field initializer
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/comp-name-init-err-contains-super.js
+
+Blob: `eab5577bc0d842f92ecc51c084fb79fb3ed7c83f`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: super() call outside constructor of a subclass
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/computed-name-toprimitive-symbol.js
+
+Blob: `d7f5891d7a606493ba4683c67e17b5dd0e6d2b54`. Role: imported-path,test-path,source. Parse: module.
+
+- err @48-48; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @50-50; FunctionExpression; parameters=0; async=false; generator=false
+- toString @56-56; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @62-62; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @67-71
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/computed-name-toprimitive.js
+
+Blob: `f969bc1c3760cfee0886437235bfd1e186fe4144`. Role: imported-path,test-path,source. Parse: module.
+
+- err @45-45; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @47-47; FunctionExpression; parameters=0; async=false; generator=false
+- toString @53-53; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @59-59; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @64-68
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/ctor-called-after-fields-init.js
+
+Blob: `cc3ca819a6c0cd452e9080af1b1f0cfc62a00368`. Role: imported-path,test-path,source. Parse: module.
+
+- constructor @25-27; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @24-29
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/derived-cls-direct-eval-contains-superproperty-1.js
+
+Blob: `d5a2baac2072564d55b9cd52a2a5806b22dce027`. Role: imported-path,test-path,source. Parse: module.
+
+- Class (anonymous) @28-30
+- Class (anonymous) @27-27
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/derived-cls-direct-eval-contains-superproperty-2.js
+
+Blob: `8db334e9a54814d8456a8b974c7d3374c6c2fdd9`. Role: imported-path,test-path,source. Parse: module.
+
+- Class (anonymous) @25-27
+- Class (anonymous) @24-24
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/derived-cls-direct-eval-err-contains-supercall-1.js
+
+Blob: `74140ba0ccc230b9bca77cc49043c50ad33f38d9`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @32-34; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @28-30
+- Class (anonymous) @27-27
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/derived-cls-direct-eval-err-contains-supercall-2.js
+
+Blob: `16982d52f3969b20989036060562bd4355120efc`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @25-27; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @21-23
+- Class (anonymous) @20-20
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/derived-cls-direct-eval-err-contains-supercall.js
+
+Blob: `cc2b9e2a5bb764b83958c34137e1cd6cfad1a7b2`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @32-34; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @28-30
+- Class (anonymous) @27-27
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/derived-cls-indirect-eval-contains-superproperty-1.js
+
+Blob: `844be8428bb1c746b4633e5e686ee6bf9b4ae5cb`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @32-34; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @28-30
+- Class (anonymous) @27-27
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/derived-cls-indirect-eval-contains-superproperty-2.js
+
+Blob: `48a751c2e8f198610fab2a786058454243093466`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @29-31; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @25-27
+- Class (anonymous) @24-24
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/derived-cls-indirect-eval-err-contains-supercall-1.js
+
+Blob: `bcb3e3e715ff445076375583d747f964f883b19c`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @32-34; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @28-30
+- Class (anonymous) @27-27
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/derived-cls-indirect-eval-err-contains-supercall-2.js
+
+Blob: `36feb74e76c7107048cebe98ec49ee965d5dc86f`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @25-27; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @21-23
+- Class (anonymous) @20-20
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/derived-cls-indirect-eval-err-contains-supercall.js
+
+Blob: `cba0d102ddc4edda1b9b510a4028aec029ba7094`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @32-34; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @28-30
+- Class (anonymous) @27-27
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/direct-eval-err-contains-arguments.js
+
+Blob: `533d77105acc1f3c56ff5efd33bc47ab0d43874e`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @32-34; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @28-30
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/direct-eval-err-contains-newtarget.js
+
+Blob: `f9365d09de7a986d412e8d9c71481c5285357e5a`. Role: imported-path,test-path,source. Parse: module.
+
+- Class (anonymous) @27-29
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/equality-init-err-contains-arguments.js
+
+Blob: `5501e918bd7c84fed166fe89da9aaa27dd57b41c`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'arguments' in class field initializer
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/equality-init-err-contains-super.js
+
+Blob: `f526efff25bc18533ecbe5f5174dc2a708ec0323`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: super() call outside constructor of a subclass
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/evaluation-error/computed-name-referenceerror.js
+
+Blob: `85ce08804987ef43b95bb73853a63fc1efad65c0`. Role: imported-path,test-path,source. Parse: module.
+
+- fn @44-46; FunctionDeclaration; parameters=0; async=false; generator=false
+- evaluate @50-54; FunctionDeclaration; parameters=0; async=false; generator=false
+- Class (anonymous) @51-53
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/evaluation-error/computed-name-toprimitive-err.js
+
+Blob: `a375ad04e84aa111e4d8304777e27448082fd05a`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @45-47; FunctionExpression; parameters=0; async=false; generator=false
+- evaluate @52-56; FunctionDeclaration; parameters=0; async=false; generator=false
+- Class (anonymous) @53-55
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/evaluation-error/computed-name-toprimitive-returns-noncallable.js
+
+Blob: `f0df33ca9140cc6f5a06c9899292817f0b3b73c0`. Role: imported-path,test-path,source. Parse: module.
+
+- evaluate @50-54; FunctionDeclaration; parameters=0; async=false; generator=false
+- Class (anonymous) @51-53
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/evaluation-error/computed-name-toprimitive-returns-nonobject.js
+
+Blob: `68afd4b12fba3b8cadd5ccf09472545c7bc85c7c`. Role: imported-path,test-path,source. Parse: module.
+
+- evaluate @50-54; FunctionDeclaration; parameters=0; async=false; generator=false
+- Class (anonymous) @51-53
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/evaluation-error/computed-name-tostring-err.js
+
+Blob: `166496bed62a07779d354a7ebfd29029479cd67b`. Role: imported-path,test-path,source. Parse: module.
+
+- toString @45-47; FunctionExpression; parameters=0; async=false; generator=false
+- evaluate @52-56; FunctionDeclaration; parameters=0; async=false; generator=false
+- Class (anonymous) @53-55
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/evaluation-error/computed-name-valueof-err.js
+
+Blob: `17c8381b9516d1a3dda85e4aa9e58a55ff833ddb`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @46-48; FunctionExpression; parameters=0; async=false; generator=false
+- evaluate @53-57; FunctionDeclaration; parameters=0; async=false; generator=false
+- Class (anonymous) @54-56
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/field-declaration.js
+
+Blob: `c2a123c1f1d53471d11a05a815fb019ec2799e9b`. Role: imported-path,test-path,source. Parse: module.
+
+- Class (anonymous) @52-57
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/field-definition-accessor-no-line-terminator.js
+
+Blob: `96ab5aaabc1d210c15e6b32ca7ccc3b296ad178b`. Role: imported-path,test-path,source. Parse: module.
+
+- Class (anonymous) @16-22
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-anonymous-function-length.js
+
+Blob: `514eb6571899c3097164eec85d719752dc9fbe2e`. Role: imported-path,test-path,source. Parse: module.
+
+- field @36-36; FunctionExpression; parameters=0; async=false; generator=false
+- field @37-37; ArrowFunctionExpression; parameters=4; async=false; generator=false
+- accessPrivateField @39-41; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @35-42
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-asi-1.js
+
+Blob: `d570c2c1c45c7b42b621de327c3c3cb4b6b929f1`. Role: imported-path,test-path,source. Parse: module.
+
+- Class (anonymous) @11-14
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-asi-2.js
+
+Blob: `bcd88e6746de27dcfede99be1d666eefeb8ca747`. Role: imported-path,test-path,source. Parse: module.
+
+- Class (anonymous) @10-13
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-asi-3.js
+
+Blob: `e63aa4410669f3144a0bb6b9ebcba2a8cf73acad`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token {
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-asi-4.js
+
+Blob: `dc207ba8b5a82cdfa8184a2323becc747b431e7a`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token {
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-asi-5.js
+
+Blob: `1ec899ceaeb9aac207c7617c07c61a2b199803de`. Role: imported-path,test-path,source. Parse: module.
+
+- Class (anonymous) @14-21
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-asi-same-line-1.js
+
+Blob: `d500358b003e2dc3e279faa7fb0be45d1d8decfd`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token method
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-asi-same-line-2.js
+
+Blob: `6e7fe27eebd9055ba5d6fcf85e3ff6b0a8ff77ee`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token method
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-computed-name-static-propname-prototype.js
+
+Blob: `e1366634d80039e676d635d1a8707cc75097b7b0`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @22-26; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @28-32; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @29-31
+- Class (anonymous) @23-25
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-duplicate-privatenames.js
+
+Blob: `913cc812dc0235657dc919997208effc0198bf03`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Identifier '#x' has already been declared
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-literal-name-propname-constructor.js
+
+Blob: `215facdaceb7b374e6727f4632611d7ca1da9385`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Classes can't have a field named 'constructor'
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-literal-name-static-propname-constructor.js
+
+Blob: `6e403bb88961eef606051a3fc8ee2aa67663196f`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Classes can't have a field named 'constructor'
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-literal-name-static-propname-prototype.js
+
+Blob: `bf988cb266bf33c49966e61687837ae4b4c75481`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Classes can't have a static field named 'prototype'
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-multiple-definitions-static-private-methods-proxy.js
+
+Blob: `7fe3de974e5d9a23dbb5bf8142ed3799a051b406`. Role: imported-path,test-path,source. Parse: module.
+
+- x @26-28; FunctionExpression; parameters=1; async=false; generator=false
+- x @29-31; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @37-39; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @25-32
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-run-once-on-double-super.js
+
+Blob: `e01de58ca803339881911ce79f7f4bb54e219efa`. Role: imported-path,test-path,source. Parse: module.
+
+- constructor @21-23; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @28-35; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @34-34; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @26-36
+- Class Base @20-24
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-string-name-propname-constructor.js
+
+Blob: `270ff49f08a75fa175960d758ce20ec7849bf718`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Classes can't have a field named 'constructor'
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-string-name-static-propname-constructor.js
+
+Blob: `4140a989b91c9a3483dcecaa615ae69b92daae7b`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Classes can't have a field named 'constructor'
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/fields-string-name-static-propname-prototype.js
+
+Blob: `f4bff12d1eea58275d00935b98f3424931047133`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Classes can't have a static field named 'prototype'
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-as-binding-identifier-escaped.js
+
+Blob: `069cd96a8cd65f8457590845a783ac0704c361a2`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-as-binding-identifier.js
+
+Blob: `6fd622c96cc104601d4f71665b65b1a57ec58230`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-as-identifier-reference-escaped.js
+
+Blob: `1a9d1e8f2cfb6b1af8d9ab3918a275d87352cfb2`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-as-identifier-reference.js
+
+Blob: `e27e4587c8a666a57802ee1ae3a1f8b55dc5a007`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-as-label-identifier-escaped.js
+
+Blob: `9c79dd2fb99f9196f6cb6781068c2520c3d6f26c`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-as-label-identifier.js
+
+Blob: `ca8a2f0f4275df77ac2e87b9398989a7362ca061`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token :
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-identifier-spread-strict.js
+
+Blob: `13ea2450aedd82963715c6206ce32c5f04764700`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: The keyword 'yield' is reserved
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-identifier-strict.js
+
+Blob: `ff874f7b857791f1535a498a0735fb14456a64c3`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: The keyword 'yield' is reserved
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-spread-arr-multiple.js
+
+Blob: `162675ae583fde3c22b252de09fddf0538e8af23`. Role: imported-path,test-path,source. Parse: module.
+
+- gen @35-38; FunctionExpression; parameters=0; async=false; generator=true
+- gen @39-39; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @34-40
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-spread-arr-single.js
+
+Blob: `345242d81550fb068c9943adb6af2e111d87fd00`. Role: imported-path,test-path,source. Parse: module.
+
+- gen @32-35; FunctionExpression; parameters=0; async=false; generator=true
+- gen @36-36; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @31-37
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method-static/yield-spread-obj.js
+
+Blob: `2d3843849ca5e62069cc1db50ecccbf2bcc60f1b`. Role: imported-path,test-path,source. Parse: module.
+
+- gen @33-40; FunctionExpression; parameters=0; async=false; generator=true
+- gen @41-41; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @32-42
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-as-binding-identifier-escaped.js
+
+Blob: `72f907625fc16857375111ffa7106d63892a7db6`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-as-binding-identifier.js
+
+Blob: `5835b36392c4bae8f545182f8630b1537f054b19`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-as-identifier-reference-escaped.js
+
+Blob: `18cb04ad4ee8b54a190cbc49c634717f5a116ac6`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-as-identifier-reference.js
+
+Blob: `ddfc0e4dd7cdfdab3b69ad1c064a2ef0abde038b`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-as-label-identifier-escaped.js
+
+Blob: `e2e88380c118f92e01d3852d8a98a9eeb4fc5082`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-as-label-identifier.js
+
+Blob: `80b1e7ac0321da05d5f55678d3678e27da416c18`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Unexpected token :
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-identifier-spread-strict.js
+
+Blob: `55208f5109280982b7456c52f0e8ec68a8301459`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: The keyword 'yield' is reserved
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-identifier-strict.js
+
+Blob: `a41c87971c96aedf81c465181505be73265a43f3`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: The keyword 'yield' is reserved
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-spread-arr-multiple.js
+
+Blob: `721c5877643b024ec6b13e075664d388c3f1ec7e`. Role: imported-path,test-path,source. Parse: module.
+
+- gen @35-38; FunctionExpression; parameters=0; async=false; generator=true
+- gen @39-39; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @34-40
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-spread-arr-single.js
+
+Blob: `ad359f906298b39fb72eac3b060b4c7278200d16`. Role: imported-path,test-path,source. Parse: module.
+
+- gen @32-35; FunctionExpression; parameters=0; async=false; generator=true
+- gen @36-36; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @31-37
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/gen-private-method/yield-spread-obj.js
+
+Blob: `e47d35c6a53fcc6df1866fce67cb0256bcd1336a`. Role: imported-path,test-path,source. Parse: module.
+
+- gen @33-40; FunctionExpression; parameters=0; async=false; generator=true
+- gen @41-41; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @32-42
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/grammar-private-field-optional-chaining.js
+
+Blob: `12805771e991d3c997eb77f16206e1347709b95f`. Role: imported-path,test-path,source. Parse: module.
+
+- access @25-27; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @37-39; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @22-28
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/indirect-eval-contains-arguments.js
+
+Blob: `14dc7dd8d7a2a7a23d911320e5a9a3c994bcdaf3`. Role: imported-path,test-path,source. Parse: script.
+
+- Class (anonymous) @18-20
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/indirect-eval-err-contains-newtarget.js
+
+Blob: `4dab81f9e6082a99945194c81aabad3ef40767f0`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @31-33; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @27-29
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/init-err-evaluation.js
+
+Blob: `e978218054b329dbdd1f7a468e8f3b79d4545e09`. Role: imported-path,test-path,source. Parse: module.
+
+- fn1 @22-22; FunctionDeclaration; parameters=0; async=false; generator=false
+- fn2 @23-23; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @32-34; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @26-30
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/init-value-defined-after-class.js
+
+Blob: `092fb12bfd19b7507ff2dbaf4940d1c74145b32e`. Role: imported-path,test-path,source. Parse: module.
+
+- Class (anonymous) @25-27
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/init-value-incremental.js
+
+Blob: `16687a4ebedc3668535f53a6ba61b9df7afefeae`. Role: imported-path,test-path,source. Parse: module.
+
+- Class (anonymous) @34-37
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/intercalated-static-non-static-computed-fields.js
+
+Blob: `bcdae4cdfc73947aef2e4183aeeee0a0262ecbed`. Role: imported-path,test-path,source. Parse: module.
+
+- Class (anonymous) @42-46
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/literal-name-init-err-contains-arguments.js
+
+Blob: `41257db8b76ac2760a3d63e5eb7c0eac6eec695b`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Cannot use 'arguments' in class field initializer
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/literal-name-init-err-contains-super.js
+
+Blob: `f9c215cab4182b6013d749dfa7b9d308e4b508fd`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: super() call outside constructor of a subclass
+
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-computed-names.js
+
+Blob: `7a1b86393c072dd88a1335c2f11bc272d5403c4c`. Role: imported-path,test-path,source. Parse: module.
+
+- m @28-28; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @30-30; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @26-33
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-computed-symbol-names.js
+
+Blob: `cf962016796d2a2f7375ac1c45ead29d578405e5`. Role: imported-path,test-path,source. Parse: module.
+
+- m @29-29; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @31-31; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @27-34
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-grammar-privatename-identifier-semantics-stringvalue.js
+
+Blob: `72670a62ae6a2f76e430410c8588a1d25b4c7d58`. Role: imported-path,test-path,source. Parse: module.
+
+- m @68-68; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @73-73; FunctionExpression; parameters=0; async=false; generator=false
+- o @75-78; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @79-82; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @83-86; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @87-90; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @66-91
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-literal-names-asi.js
+
+Blob: `643a4c7077dbce5606c8bbedc5000f37d0975883`. Role: imported-path,test-path,source. Parse: module.
+
+- m @26-26; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @29-29; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @24-32
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-literal-names.js
+
+Blob: `cc183721a9abc859012eed941c178c90956b1c1a`. Role: imported-path,test-path,source. Parse: module.
+
+- fn @22-22; FunctionExpression; parameters=0; async=false; generator=false
+- m @28-28; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @31-31; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @26-34
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-private-field-usage.js
+
+Blob: `8cf7bc5731f3dbda5f498dd9d9d2c507b974c80b`. Role: imported-path,test-path,source. Parse: module.
+
+- m @27-27; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @29-29; FunctionExpression; parameters=0; async=false; generator=false
+- method @31-33; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @25-34
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-private-method-getter-usage.js
+
+Blob: `58ced382a8dbca37aa036eba2a54edc7f755af80`. Role: imported-path,test-path,source. Parse: module.
+
+- m @27-27; FunctionExpression; parameters=0; async=false; generator=false
+- m @28-28; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @29-29; FunctionExpression; parameters=0; async=false; generator=false
+- method @31-33; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @25-34
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-private-method-usage.js
+
+Blob: `6cda155da2e2580cead0d21274bcb81046dfef22`. Role: imported-path,test-path,source. Parse: module.
+
+- m @27-27; FunctionExpression; parameters=0; async=false; generator=false
+- m @28-28; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @29-29; FunctionExpression; parameters=0; async=false; generator=false
+- method @31-33; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @25-34
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-private-names.js
+
+Blob: `bdc59a7f02eebcdc07d54c2a46ca298743a2b70a`. Role: imported-path,test-path,source. Parse: module.
+
+- m @29-29; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @31-31; FunctionExpression; parameters=0; async=false; generator=false
+- x @33-36; FunctionExpression; parameters=0; async=false; generator=false
+- y @37-40; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @27-41
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-field-identifier-initializer.js
+
+Blob: `70f168c54becbb8a6d6ef48b63692e6978c019d1`. Role: imported-path,test-path,source. Parse: module.
+
+- m @62-62; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @64-64; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @60-67
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-field-identifier.js
+
+Blob: `740dfc0755e8dee7773a2a6915e812754556428c`. Role: imported-path,test-path,source. Parse: module.
+
+- m @62-62; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @64-64; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @60-67
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-private-getter-alt.js
+
+Blob: `50886c4cb7f803eaba861eec8f9b1b7d502d1042`. Role: imported-path,test-path,source. Parse: module.
+
+- m @60-60; FunctionExpression; parameters=0; async=false; generator=false
+- $ @62-64; FunctionExpression; parameters=0; async=false; generator=false
+- _ @65-67; FunctionExpression; parameters=0; async=false; generator=false
+- o @68-70; FunctionExpression; parameters=0; async=false; generator=false
+- ℘ @71-73; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‌_NJ @74-76; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‍_J @77-79; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @81-81; FunctionExpression; parameters=0; async=false; generator=false
+- $ @83-86; FunctionExpression; parameters=1; async=false; generator=false
+- _ @87-90; FunctionExpression; parameters=1; async=false; generator=false
+- o @91-94; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @95-98; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @99-102; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @103-106; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @58-108
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-private-getter.js
+
+Blob: `85ff55f0ec5c20a5382520ab3b10efe84fae7e66`. Role: imported-path,test-path,source. Parse: module.
+
+- m @60-60; FunctionExpression; parameters=0; async=false; generator=false
+- $ @62-64; FunctionExpression; parameters=0; async=false; generator=false
+- _ @65-67; FunctionExpression; parameters=0; async=false; generator=false
+- o @68-70; FunctionExpression; parameters=0; async=false; generator=false
+- ℘ @71-73; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‌_NJ @74-76; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‍_J @77-79; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @81-81; FunctionExpression; parameters=0; async=false; generator=false
+- $ @83-86; FunctionExpression; parameters=1; async=false; generator=false
+- _ @87-90; FunctionExpression; parameters=1; async=false; generator=false
+- o @91-94; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @95-98; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @99-102; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @103-106; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @58-108
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-private-method-alt.js
+
+Blob: `79791cdc6521fb24da6029a0c2d84b5b4b7788e0`. Role: imported-path,test-path,source. Parse: module.
+
+- m @59-59; FunctionExpression; parameters=0; async=false; generator=false
+- $ @61-63; FunctionExpression; parameters=0; async=false; generator=false
+- _ @64-66; FunctionExpression; parameters=0; async=false; generator=false
+- o @67-69; FunctionExpression; parameters=0; async=false; generator=false
+- ℘ @70-72; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‌_NJ @73-75; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‍_J @76-78; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @80-80; FunctionExpression; parameters=0; async=false; generator=false
+- $ @82-85; FunctionExpression; parameters=1; async=false; generator=false
+- _ @86-89; FunctionExpression; parameters=1; async=false; generator=false
+- o @90-93; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @94-97; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @98-101; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @102-105; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @57-107
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-private-method.js
+
+Blob: `78859e3b300e9ea127444989d836981d32255754`. Role: imported-path,test-path,source. Parse: module.
+
+- m @59-59; FunctionExpression; parameters=0; async=false; generator=false
+- $ @61-63; FunctionExpression; parameters=0; async=false; generator=false
+- _ @64-66; FunctionExpression; parameters=0; async=false; generator=false
+- o @67-69; FunctionExpression; parameters=0; async=false; generator=false
+- ℘ @70-72; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‌_NJ @73-75; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‍_J @76-78; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @80-80; FunctionExpression; parameters=0; async=false; generator=false
+- $ @82-85; FunctionExpression; parameters=1; async=false; generator=false
+- _ @86-89; FunctionExpression; parameters=1; async=false; generator=false
+- o @90-93; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @94-97; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @98-101; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @102-105; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @57-107
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-private-setter-alt.js
+
+Blob: `f30377236797501d07bdb471cda0ede18d8f0ecd`. Role: imported-path,test-path,source. Parse: module.
+
+- m @59-59; FunctionExpression; parameters=0; async=false; generator=false
+- $ @61-63; FunctionExpression; parameters=1; async=false; generator=false
+- _ @64-66; FunctionExpression; parameters=1; async=false; generator=false
+- o @67-69; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @70-72; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @73-75; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @76-78; FunctionExpression; parameters=1; async=false; generator=false
+- m2 @80-80; FunctionExpression; parameters=0; async=false; generator=false
+- $ @82-85; FunctionExpression; parameters=1; async=false; generator=false
+- _ @86-89; FunctionExpression; parameters=1; async=false; generator=false
+- o @90-93; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @94-97; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @98-101; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @102-105; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @57-107
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-private-setter.js
+
+Blob: `e60807e31e48c0699141bb178972230411e0f098`. Role: imported-path,test-path,source. Parse: module.
+
+- m @59-59; FunctionExpression; parameters=0; async=false; generator=false
+- $ @61-63; FunctionExpression; parameters=1; async=false; generator=false
+- _ @64-66; FunctionExpression; parameters=1; async=false; generator=false
+- o @67-69; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @70-72; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @73-75; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @76-78; FunctionExpression; parameters=1; async=false; generator=false
+- m2 @80-80; FunctionExpression; parameters=0; async=false; generator=false
+- $ @82-85; FunctionExpression; parameters=1; async=false; generator=false
+- _ @86-89; FunctionExpression; parameters=1; async=false; generator=false
+- o @90-93; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @94-97; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @98-101; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @102-105; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @57-107
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-privatename-identifier-alt.js
+
+Blob: `437c0c3ed6f2812bff000fbb728a08e206cfe7f9`. Role: imported-path,test-path,source. Parse: module.
+
+- m @60-60; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @62-62; FunctionExpression; parameters=0; async=false; generator=false
+- $ @64-67; FunctionExpression; parameters=1; async=false; generator=false
+- _ @68-71; FunctionExpression; parameters=1; async=false; generator=false
+- o @72-75; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @76-79; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @80-83; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @84-87; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @58-88
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-privatename-identifier-initializer-alt.js
+
+Blob: `e3a7d0165c6b8c11206b2604c80e2e12d53a2922`. Role: imported-path,test-path,source. Parse: module.
+
+- m @60-60; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @62-62; FunctionExpression; parameters=0; async=false; generator=false
+- $ @64-66; FunctionExpression; parameters=0; async=false; generator=false
+- _ @67-69; FunctionExpression; parameters=0; async=false; generator=false
+- o @70-72; FunctionExpression; parameters=0; async=false; generator=false
+- ℘ @73-75; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‌_NJ @76-78; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‍_J @79-81; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @58-82
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-privatename-identifier-initializer.js
+
+Blob: `f401180ac7c03bfd186b6df2fe445b5729a34015`. Role: imported-path,test-path,source. Parse: module.
+
+- m @60-60; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @62-62; FunctionExpression; parameters=0; async=false; generator=false
+- $ @64-66; FunctionExpression; parameters=0; async=false; generator=false
+- _ @67-69; FunctionExpression; parameters=0; async=false; generator=false
+- o @70-72; FunctionExpression; parameters=0; async=false; generator=false
+- ℘ @73-75; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‌_NJ @76-78; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‍_J @79-81; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @58-82
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-privatename-identifier.js
+
+Blob: `758241ea82dceaa1688a9961f7dcbadf44349f59`. Role: imported-path,test-path,source. Parse: module.
+
+- m @60-60; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @62-62; FunctionExpression; parameters=0; async=false; generator=false
+- $ @64-67; FunctionExpression; parameters=1; async=false; generator=false
+- _ @68-71; FunctionExpression; parameters=1; async=false; generator=false
+- o @72-75; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @76-79; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @80-83; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @84-87; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @58-88
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-async-generator-method-privatename-identifier-alt.js
+
+Blob: `3da8b949af20fe9b9067485de5c74e24152b0dfb`. Role: imported-path,test-path,source. Parse: module.
+
+- m @64-64; FunctionExpression; parameters=0; async=false; generator=false
+- $ @65-67; FunctionExpression; parameters=1; async=true; generator=true
+- _ @68-70; FunctionExpression; parameters=1; async=true; generator=true
+- o @71-73; FunctionExpression; parameters=1; async=true; generator=true
+- ℘ @74-76; FunctionExpression; parameters=1; async=true; generator=true
+- ZW_‌_NJ @77-79; FunctionExpression; parameters=1; async=true; generator=true
+- ZW_‍_J @80-82; FunctionExpression; parameters=1; async=true; generator=true
+- m2 @83-83; FunctionExpression; parameters=0; async=false; generator=false
+- $ @85-87; FunctionExpression; parameters=0; async=false; generator=false
+- _ @88-90; FunctionExpression; parameters=0; async=false; generator=false
+- o @91-93; FunctionExpression; parameters=0; async=false; generator=false
+- ℘ @94-96; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‌_NJ @97-99; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‍_J @100-102; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @175-184; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @62-104
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-async-generator-method-privatename-identifier.js
+
+Blob: `cba65379108b4cf039f13d54fbd82a8b603268bb`. Role: imported-path,test-path,source. Parse: module.
+
+- m @64-64; FunctionExpression; parameters=0; async=false; generator=false
+- $ @65-67; FunctionExpression; parameters=1; async=true; generator=true
+- _ @68-70; FunctionExpression; parameters=1; async=true; generator=true
+- o @71-73; FunctionExpression; parameters=1; async=true; generator=true
+- ℘ @74-76; FunctionExpression; parameters=1; async=true; generator=true
+- ZW_‌_NJ @77-79; FunctionExpression; parameters=1; async=true; generator=true
+- ZW_‍_J @80-82; FunctionExpression; parameters=1; async=true; generator=true
+- m2 @83-83; FunctionExpression; parameters=0; async=false; generator=false
+- $ @85-87; FunctionExpression; parameters=0; async=false; generator=false
+- _ @88-90; FunctionExpression; parameters=0; async=false; generator=false
+- o @91-93; FunctionExpression; parameters=0; async=false; generator=false
+- ℘ @94-96; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‌_NJ @97-99; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‍_J @100-102; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @175-184; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @62-104
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-async-method-privatename-identifier-alt.js
+
+Blob: `52dae257dcb5e2e4ac2a550bfa4102d795e1f7cc`. Role: imported-path,test-path,source. Parse: module.
+
+- m @64-64; FunctionExpression; parameters=0; async=false; generator=false
+- $ @65-67; FunctionExpression; parameters=1; async=true; generator=false
+- _ @68-70; FunctionExpression; parameters=1; async=true; generator=false
+- o @71-73; FunctionExpression; parameters=1; async=true; generator=false
+- ℘ @74-76; FunctionExpression; parameters=1; async=true; generator=false
+- ZW_‌_NJ @77-79; FunctionExpression; parameters=1; async=true; generator=false
+- ZW_‍_J @80-82; FunctionExpression; parameters=1; async=true; generator=false
+- m2 @83-83; FunctionExpression; parameters=0; async=false; generator=false
+- $ @85-87; FunctionExpression; parameters=1; async=true; generator=false
+- _ @88-90; FunctionExpression; parameters=1; async=true; generator=false
+- o @91-93; FunctionExpression; parameters=1; async=true; generator=false
+- ℘ @94-96; FunctionExpression; parameters=1; async=true; generator=false
+- ZW_‌_NJ @97-99; FunctionExpression; parameters=1; async=true; generator=false
+- ZW_‍_J @100-102; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @175-184; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @62-104
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-async-method-privatename-identifier.js
+
+Blob: `32e1d4fc44c9017ff7fa4185c8b00033e922b391`. Role: imported-path,test-path,source. Parse: module.
+
+- m @64-64; FunctionExpression; parameters=0; async=false; generator=false
+- $ @65-67; FunctionExpression; parameters=1; async=true; generator=false
+- _ @68-70; FunctionExpression; parameters=1; async=true; generator=false
+- o @71-73; FunctionExpression; parameters=1; async=true; generator=false
+- ℘ @74-76; FunctionExpression; parameters=1; async=true; generator=false
+- ZW_‌_NJ @77-79; FunctionExpression; parameters=1; async=true; generator=false
+- ZW_‍_J @80-82; FunctionExpression; parameters=1; async=true; generator=false
+- m2 @83-83; FunctionExpression; parameters=0; async=false; generator=false
+- $ @85-87; FunctionExpression; parameters=1; async=true; generator=false
+- _ @88-90; FunctionExpression; parameters=1; async=true; generator=false
+- o @91-93; FunctionExpression; parameters=1; async=true; generator=false
+- ℘ @94-96; FunctionExpression; parameters=1; async=true; generator=false
+- ZW_‌_NJ @97-99; FunctionExpression; parameters=1; async=true; generator=false
+- ZW_‍_J @100-102; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @175-184; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @62-104
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-generator-method-privatename-identifier-alt.js
+
+Blob: `d05d952a16ba6eddeac62110d8b8ce65928e9cca`. Role: imported-path,test-path,source. Parse: module.
+
+- m @64-64; FunctionExpression; parameters=0; async=false; generator=false
+- $ @65-67; FunctionExpression; parameters=1; async=false; generator=true
+- _ @68-70; FunctionExpression; parameters=1; async=false; generator=true
+- o @71-73; FunctionExpression; parameters=1; async=false; generator=true
+- ℘ @74-76; FunctionExpression; parameters=1; async=false; generator=true
+- ZW_‌_NJ @77-79; FunctionExpression; parameters=1; async=false; generator=true
+- ZW_‍_J @80-82; FunctionExpression; parameters=1; async=false; generator=true
+- m2 @83-83; FunctionExpression; parameters=0; async=false; generator=false
+- $ @85-87; FunctionExpression; parameters=0; async=false; generator=false
+- _ @88-90; FunctionExpression; parameters=0; async=false; generator=false
+- o @91-93; FunctionExpression; parameters=0; async=false; generator=false
+- ℘ @94-96; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‌_NJ @97-99; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‍_J @100-102; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @62-104
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-generator-method-privatename-identifier.js
+
+Blob: `3b76746f0bf900621aa5207379f25c65d4c69a87`. Role: imported-path,test-path,source. Parse: module.
+
+- m @64-64; FunctionExpression; parameters=0; async=false; generator=false
+- $ @65-67; FunctionExpression; parameters=1; async=false; generator=true
+- _ @68-70; FunctionExpression; parameters=1; async=false; generator=true
+- o @71-73; FunctionExpression; parameters=1; async=false; generator=true
+- ℘ @74-76; FunctionExpression; parameters=1; async=false; generator=true
+- ZW_‌_NJ @77-79; FunctionExpression; parameters=1; async=false; generator=true
+- ZW_‍_J @80-82; FunctionExpression; parameters=1; async=false; generator=true
+- m2 @83-83; FunctionExpression; parameters=0; async=false; generator=false
+- $ @85-87; FunctionExpression; parameters=0; async=false; generator=false
+- _ @88-90; FunctionExpression; parameters=0; async=false; generator=false
+- o @91-93; FunctionExpression; parameters=0; async=false; generator=false
+- ℘ @94-96; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‌_NJ @97-99; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‍_J @100-102; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @62-104
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-method-privatename-identifier-alt.js
+
+Blob: `d502c68fde606ba683499cc45509d758adab670a`. Role: imported-path,test-path,source. Parse: module.
+
+- m @61-61; FunctionExpression; parameters=0; async=false; generator=false
+- $ @62-64; FunctionExpression; parameters=1; async=false; generator=false
+- _ @65-67; FunctionExpression; parameters=1; async=false; generator=false
+- o @68-70; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @71-73; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @74-76; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @77-79; FunctionExpression; parameters=1; async=false; generator=false
+- m2 @80-80; FunctionExpression; parameters=0; async=false; generator=false
+- $ @82-84; FunctionExpression; parameters=1; async=false; generator=false
+- _ @85-87; FunctionExpression; parameters=1; async=false; generator=false
+- o @88-90; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @91-93; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @94-96; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @97-99; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @59-101
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-method-privatename-identifier.js
+
+Blob: `ef6d5d33c34e4faff72dae3a5d28794b485f750c`. Role: imported-path,test-path,source. Parse: module.
+
+- m @61-61; FunctionExpression; parameters=0; async=false; generator=false
+- $ @62-64; FunctionExpression; parameters=1; async=false; generator=false
+- _ @65-67; FunctionExpression; parameters=1; async=false; generator=false
+- o @68-70; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @71-73; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @74-76; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @77-79; FunctionExpression; parameters=1; async=false; generator=false
+- m2 @80-80; FunctionExpression; parameters=0; async=false; generator=false
+- $ @82-84; FunctionExpression; parameters=1; async=false; generator=false
+- _ @85-87; FunctionExpression; parameters=1; async=false; generator=false
+- o @88-90; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @91-93; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @94-96; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @97-99; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @59-101
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-privatename-identifier-alt-by-classname.js
+
+Blob: `a3fcab79fdceba8ad1c0229dc651c2ba521b288b`. Role: imported-path,test-path,source. Parse: module.
+
+- m @61-61; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @63-63; FunctionExpression; parameters=0; async=false; generator=false
+- $ @65-68; FunctionExpression; parameters=1; async=false; generator=false
+- _ @69-72; FunctionExpression; parameters=1; async=false; generator=false
+- o @73-76; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @77-80; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @81-84; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @85-88; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @59-89
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-privatename-identifier-alt.js
+
+Blob: `36f07790aa7006980211b946df4c88669320f859`. Role: imported-path,test-path,source. Parse: module.
+
+- m @61-61; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @63-63; FunctionExpression; parameters=0; async=false; generator=false
+- $ @65-68; FunctionExpression; parameters=1; async=false; generator=false
+- _ @69-72; FunctionExpression; parameters=1; async=false; generator=false
+- o @73-76; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @77-80; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @81-84; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @85-88; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @59-89
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-privatename-identifier-by-classname.js
+
+Blob: `88dfb0e441d0497bade24e874a17eccfb79104ec`. Role: imported-path,test-path,source. Parse: module.
+
+- m @61-61; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @63-63; FunctionExpression; parameters=0; async=false; generator=false
+- $ @65-68; FunctionExpression; parameters=1; async=false; generator=false
+- _ @69-72; FunctionExpression; parameters=1; async=false; generator=false
+- o @73-76; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @77-80; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @81-84; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @85-88; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @59-89
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-privatename-identifier-initializer-alt-by-classname.js
+
+Blob: `7102b1f6b3bd6f54a67bf331bc80a130e0dfce73`. Role: imported-path,test-path,source. Parse: module.
+
+- m @61-61; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @63-63; FunctionExpression; parameters=0; async=false; generator=false
+- $ @65-67; FunctionExpression; parameters=0; async=false; generator=false
+- _ @68-70; FunctionExpression; parameters=0; async=false; generator=false
+- o @71-73; FunctionExpression; parameters=0; async=false; generator=false
+- ℘ @74-76; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‌_NJ @77-79; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‍_J @80-82; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @59-83
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-privatename-identifier-initializer-alt.js
+
+Blob: `885fb96a67ad24ba0ed3790105062b7291b563f8`. Role: imported-path,test-path,source. Parse: module.
+
+- m @61-61; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @63-63; FunctionExpression; parameters=0; async=false; generator=false
+- $ @65-67; FunctionExpression; parameters=0; async=false; generator=false
+- _ @68-70; FunctionExpression; parameters=0; async=false; generator=false
+- o @71-73; FunctionExpression; parameters=0; async=false; generator=false
+- ℘ @74-76; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‌_NJ @77-79; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‍_J @80-82; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @59-83
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-privatename-identifier-initializer.js
+
+Blob: `afb5041f62b28c3a7e0d119f7445abc81bc22b85`. Role: imported-path,test-path,source. Parse: module.
+
+- m @61-61; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @63-63; FunctionExpression; parameters=0; async=false; generator=false
+- $ @65-67; FunctionExpression; parameters=0; async=false; generator=false
+- _ @68-70; FunctionExpression; parameters=0; async=false; generator=false
+- o @71-73; FunctionExpression; parameters=0; async=false; generator=false
+- ℘ @74-76; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‌_NJ @77-79; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‍_J @80-82; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @59-83
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-rs-static-privatename-identifier.js
+
+Blob: `4f6345065559faf88e201145692cf406eb97aa42`. Role: imported-path,test-path,source. Parse: module.
+
+- m @61-61; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @63-63; FunctionExpression; parameters=0; async=false; generator=false
+- $ @65-68; FunctionExpression; parameters=1; async=false; generator=false
+- _ @69-72; FunctionExpression; parameters=1; async=false; generator=false
+- o @73-76; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @77-80; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @81-84; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @85-88; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @59-89
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-static-private-fields.js
+
+Blob: `1ddff9cfc1bfece30a72f320989ef95d6051db83`. Role: imported-path,test-path,source. Parse: module.
+
+- m @29-29; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @31-31; FunctionExpression; parameters=0; async=false; generator=false
+- x @33-36; FunctionExpression; parameters=0; async=false; generator=false
+- y @37-40; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @27-41
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-static-private-methods-with-fields.js
+
+Blob: `2180b23277e738d9c98eeedcd3c50ffa4dc43fea`. Role: imported-path,test-path,source. Parse: module.
+
+- m @29-29; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @31-31; FunctionExpression; parameters=0; async=false; generator=false
+- x @33-36; FunctionExpression; parameters=1; async=false; generator=false
+- y @37-40; FunctionExpression; parameters=1; async=false; generator=false
+- x @41-43; FunctionExpression; parameters=0; async=false; generator=false
+- y @44-46; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @27-47
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-static-private-methods.js
+
+Blob: `9fc27689d99f3e72b6616a00bc3f06737209b283`. Role: imported-path,test-path,source. Parse: module.
+
+- m @29-29; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @31-31; FunctionExpression; parameters=0; async=false; generator=false
+- x @33-35; FunctionExpression; parameters=1; async=false; generator=false
+- y @36-38; FunctionExpression; parameters=1; async=false; generator=false
+- x @39-41; FunctionExpression; parameters=0; async=false; generator=false
+- y @42-44; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @27-45
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-definitions-string-literal-names.js
+
+Blob: `239010c32878429a061c4cb03a6939a9bbbbef91`. Role: imported-path,test-path,source. Parse: module.
+
+- m @26-26; FunctionExpression; parameters=0; async=false; generator=false
+- m2 @29-29; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @24-32
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-computed-names.js
+
+Blob: `0c33251df69c135da817fbcef3d03a6aad1893d7`. Role: imported-path,test-path,source. Parse: module.
+
+- Class (anonymous) @26-31
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-computed-symbol-names.js
+
+Blob: `88c9671f827091fc68e959ce67205e47b5a217b8`. Role: imported-path,test-path,source. Parse: module.
+
+- Class (anonymous) @27-32
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-grammar-privatename-identifier-semantics-stringvalue.js
+
+Blob: `4c839216f9e0627ee9cd30dacfc9abf7ba074832`. Role: imported-path,test-path,source. Parse: module.
+
+- o @73-76; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @77-80; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @81-84; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @85-88; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @66-89
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-literal-names-asi.js
+
+Blob: `22e54027a9f7e053eb33e5c298a081af00c416c1`. Role: imported-path,test-path,source. Parse: module.
+
+- Class (anonymous) @24-30
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-literal-names.js
+
+Blob: `0c6fd536baa0123c9a397ba2958c69cd41be7f10`. Role: imported-path,test-path,source. Parse: module.
+
+- fn @22-22; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @26-32
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-private-field-usage.js
+
+Blob: `6d0312166fa69e617f3e8d718f2af742ed3e47aa`. Role: imported-path,test-path,source. Parse: module.
+
+- method @29-31; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @25-32
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-private-method-getter-usage.js
+
+Blob: `5a1d453080ed5a0637da4ce1d094ee45106ec784`. Role: imported-path,test-path,source. Parse: module.
+
+- m @26-26; FunctionExpression; parameters=0; async=false; generator=false
+- method @29-31; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @25-32
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-private-method-usage.js
+
+Blob: `6983bd279861640f03b2539af470b5d6ca95c894`. Role: imported-path,test-path,source. Parse: module.
+
+- m @26-26; FunctionExpression; parameters=0; async=false; generator=false
+- method @29-31; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @25-32
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-private-names.js
+
+Blob: `093d9bfd6607cb55161ceb5efb152e66933ff9f0`. Role: imported-path,test-path,source. Parse: module.
+
+- x @31-34; FunctionExpression; parameters=0; async=false; generator=false
+- y @35-38; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @27-39
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-field-identifier-initializer.js
+
+Blob: `e8aa94062ae8b65507e4d694e0f84b73264ba4e8`. Role: imported-path,test-path,source. Parse: module.
+
+- Class (anonymous) @60-65
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-field-identifier.js
+
+Blob: `a07fbdb0a1908a682b0d5d89bd60269c1122f1cf`. Role: imported-path,test-path,source. Parse: module.
+
+- Class (anonymous) @60-65
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-private-getter-alt.js
+
+Blob: `e8a67e18f8486df2bafb681038451d4560f98f4b`. Role: imported-path,test-path,source. Parse: module.
+
+- $ @60-62; FunctionExpression; parameters=0; async=false; generator=false
+- _ @63-65; FunctionExpression; parameters=0; async=false; generator=false
+- o @66-68; FunctionExpression; parameters=0; async=false; generator=false
+- ℘ @69-71; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‌_NJ @72-74; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‍_J @75-77; FunctionExpression; parameters=0; async=false; generator=false
+- $ @81-84; FunctionExpression; parameters=1; async=false; generator=false
+- _ @85-88; FunctionExpression; parameters=1; async=false; generator=false
+- o @89-92; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @93-96; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @97-100; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @101-104; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @58-106
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-private-getter.js
+
+Blob: `dace4876972d4c7813067a6391b3ede665f25645`. Role: imported-path,test-path,source. Parse: module.
+
+- $ @60-62; FunctionExpression; parameters=0; async=false; generator=false
+- _ @63-65; FunctionExpression; parameters=0; async=false; generator=false
+- o @66-68; FunctionExpression; parameters=0; async=false; generator=false
+- ℘ @69-71; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‌_NJ @72-74; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‍_J @75-77; FunctionExpression; parameters=0; async=false; generator=false
+- $ @81-84; FunctionExpression; parameters=1; async=false; generator=false
+- _ @85-88; FunctionExpression; parameters=1; async=false; generator=false
+- o @89-92; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @93-96; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @97-100; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @101-104; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @58-106
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-private-method-alt.js
+
+Blob: `c8700e6ed6033462ed64670c0ecb7ebd960a0ed4`. Role: imported-path,test-path,source. Parse: module.
+
+- $ @59-61; FunctionExpression; parameters=0; async=false; generator=false
+- _ @62-64; FunctionExpression; parameters=0; async=false; generator=false
+- o @65-67; FunctionExpression; parameters=0; async=false; generator=false
+- ℘ @68-70; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‌_NJ @71-73; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‍_J @74-76; FunctionExpression; parameters=0; async=false; generator=false
+- $ @80-83; FunctionExpression; parameters=1; async=false; generator=false
+- _ @84-87; FunctionExpression; parameters=1; async=false; generator=false
+- o @88-91; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @92-95; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @96-99; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @100-103; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @57-105
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-private-method.js
+
+Blob: `8c080f39e650bac14e9c80617543c4fdc3e2c65b`. Role: imported-path,test-path,source. Parse: module.
+
+- $ @59-61; FunctionExpression; parameters=0; async=false; generator=false
+- _ @62-64; FunctionExpression; parameters=0; async=false; generator=false
+- o @65-67; FunctionExpression; parameters=0; async=false; generator=false
+- ℘ @68-70; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‌_NJ @71-73; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‍_J @74-76; FunctionExpression; parameters=0; async=false; generator=false
+- $ @80-83; FunctionExpression; parameters=1; async=false; generator=false
+- _ @84-87; FunctionExpression; parameters=1; async=false; generator=false
+- o @88-91; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @92-95; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @96-99; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @100-103; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @57-105
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-private-setter-alt.js
+
+Blob: `fc21cdbae370f18295d002043a02ba48743d6a75`. Role: imported-path,test-path,source. Parse: module.
+
+- $ @59-61; FunctionExpression; parameters=1; async=false; generator=false
+- _ @62-64; FunctionExpression; parameters=1; async=false; generator=false
+- o @65-67; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @68-70; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @71-73; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @74-76; FunctionExpression; parameters=1; async=false; generator=false
+- $ @80-83; FunctionExpression; parameters=1; async=false; generator=false
+- _ @84-87; FunctionExpression; parameters=1; async=false; generator=false
+- o @88-91; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @92-95; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @96-99; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @100-103; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @57-105
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-private-setter.js
+
+Blob: `69b7a4e43d6320aa73527eb81ff447193a1f478f`. Role: imported-path,test-path,source. Parse: module.
+
+- $ @59-61; FunctionExpression; parameters=1; async=false; generator=false
+- _ @62-64; FunctionExpression; parameters=1; async=false; generator=false
+- o @65-67; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @68-70; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @71-73; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @74-76; FunctionExpression; parameters=1; async=false; generator=false
+- $ @80-83; FunctionExpression; parameters=1; async=false; generator=false
+- _ @84-87; FunctionExpression; parameters=1; async=false; generator=false
+- o @88-91; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @92-95; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @96-99; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @100-103; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @57-105
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-privatename-identifier-alt.js
+
+Blob: `6ed6a59b2ba9203513314e73ce769b61e4733576`. Role: imported-path,test-path,source. Parse: module.
+
+- $ @62-65; FunctionExpression; parameters=1; async=false; generator=false
+- _ @66-69; FunctionExpression; parameters=1; async=false; generator=false
+- o @70-73; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @74-77; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @78-81; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @82-85; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @58-86
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-privatename-identifier-initializer-alt.js
+
+Blob: `65dcb41aef66efbceadbaa4b1111ed605435b9da`. Role: imported-path,test-path,source. Parse: module.
+
+- $ @62-64; FunctionExpression; parameters=0; async=false; generator=false
+- _ @65-67; FunctionExpression; parameters=0; async=false; generator=false
+- o @68-70; FunctionExpression; parameters=0; async=false; generator=false
+- ℘ @71-73; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‌_NJ @74-76; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‍_J @77-79; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @58-80
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-privatename-identifier-initializer.js
+
+Blob: `8bc53dac8116bd4a54e151d46034872feed79246`. Role: imported-path,test-path,source. Parse: module.
+
+- $ @62-64; FunctionExpression; parameters=0; async=false; generator=false
+- _ @65-67; FunctionExpression; parameters=0; async=false; generator=false
+- o @68-70; FunctionExpression; parameters=0; async=false; generator=false
+- ℘ @71-73; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‌_NJ @74-76; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‍_J @77-79; FunctionExpression; parameters=0; async=false; generator=false
+- Class (anonymous) @58-80
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-privatename-identifier.js
+
+Blob: `00fbbb862af6115b69b2e8e86ae323fc775953d9`. Role: imported-path,test-path,source. Parse: module.
+
+- $ @62-65; FunctionExpression; parameters=1; async=false; generator=false
+- _ @66-69; FunctionExpression; parameters=1; async=false; generator=false
+- o @70-73; FunctionExpression; parameters=1; async=false; generator=false
+- ℘ @74-77; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‌_NJ @78-81; FunctionExpression; parameters=1; async=false; generator=false
+- ZW_‍_J @82-85; FunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @58-86
+
+### testing/web-platform/tests/third_party/test262/test/language/expressions/class/elements/multiple-stacked-definitions-rs-static-async-generator-method-privatename-identifier-alt.js
+
+Blob: `e83779c055a1cd76e262bbe8038b275f65346130`. Role: imported-path,test-path,source. Parse: module.
+
+- $ @63-65; FunctionExpression; parameters=1; async=true; generator=true
+- _ @66-68; FunctionExpression; parameters=1; async=true; generator=true
+- o @69-71; FunctionExpression; parameters=1; async=true; generator=true
+- ℘ @72-74; FunctionExpression; parameters=1; async=true; generator=true
+- ZW_‌_NJ @75-77; FunctionExpression; parameters=1; async=true; generator=true
+- ZW_‍_J @78-80; FunctionExpression; parameters=1; async=true; generator=true
+- $ @83-85; FunctionExpression; parameters=0; async=false; generator=false
+- _ @86-88; FunctionExpression; parameters=0; async=false; generator=false
+- o @89-91; FunctionExpression; parameters=0; async=false; generator=false
+- ℘ @92-94; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‌_NJ @95-97; FunctionExpression; parameters=0; async=false; generator=false
+- ZW_‍_J @98-100; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @147-156; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Class (anonymous) @62-102
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.

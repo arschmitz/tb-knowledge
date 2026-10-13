@@ -1,0 +1,964 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Sogdian.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Sora_Sompeng.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Soyombo.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Sundanese.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Sunuwar.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Syloti_Nagri.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Syriac.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tagalog.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tagbanwa.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tai_Le.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tai_Tham.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tai_Viet.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tai_Yo.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Takri.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tamil.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tangsa.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tangut.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Telugu.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Thaana.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Thai.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tibetan.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tifinagh.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tirhuta.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Todhri.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tolong_Siki.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Toto.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tulu_Tigalari.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Ugaritic.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Unknown.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Vai.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Vithkuqi.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Wancho.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Warang_Citi.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Yezidi.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Yi.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Zanabazar_Square.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Sentence_Terminal.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Soft_Dotted.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Terminal_Punctuation.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Unified_Ideograph.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Uppercase.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Variation_Selector.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/White_Space.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/XID_Continue.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/XID_Start.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/Basic_Emoji-negative-CharacterClass.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/Basic_Emoji-negative-P.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/Basic_Emoji-negative-u.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/Basic_Emoji.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/Emoji_Keycap_Sequence-negative-CharacterClass.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/Emoji_Keycap_Sequence-negative-P.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/Emoji_Keycap_Sequence-negative-u.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/Emoji_Keycap_Sequence.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji-negative-CharacterClass.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji-negative-P.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji-negative-u.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Flag_Sequence-negative-CharacterClass.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Flag_Sequence-negative-P.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Flag_Sequence-negative-u.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Flag_Sequence.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Modifier_Sequence-negative-CharacterClass.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Modifier_Sequence-negative-P.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Modifier_Sequence-negative-u.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Modifier_Sequence.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Tag_Sequence-negative-CharacterClass.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Tag_Sequence-negative-P.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Tag_Sequence-negative-u.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Tag_Sequence.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_ZWJ_Sequence-negative-CharacterClass.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_ZWJ_Sequence-negative-P.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_ZWJ_Sequence-negative-u.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_ZWJ_Sequence.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-In-prefix-Block-implicit-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-In-prefix-Block-implicit.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-In-prefix-Script-implicit-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-In-prefix-Script-implicit.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-In-prefix-Script-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-In-prefix-Script.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-Is-prefix-Script-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-Is-prefix-Script.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-circumflex-negation-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-circumflex-negation.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-empty-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-empty.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-invalid-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-invalid.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-no-braces-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-no-braces-value-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-no-braces-value.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-no-braces.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-separator-and-value-only-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-separator-and-value-only.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-separator-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-separator-only-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-separator-only.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-separator.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-unclosed-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-unclosed.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-unopened-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-unopened.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-01-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-01.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-02-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-02.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-03-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-03.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-04-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-04.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-05-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-05.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-06-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-06.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-07-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-07.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-08-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-08.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-09-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-09.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-10-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-10.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-11-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-11.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-12-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-12.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-13-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-13.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-14-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-14.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-General_Category-equals-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-General_Category-equals.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-General_Category-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-General_Category.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-Script-equals-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-Script-equals.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-Script-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-Script.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-Script_Extensions-equals-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-Script_Extensions-equals.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-Script_Extensions-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-Script_Extensions.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-existent-binary-property-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-existent-binary-property.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-existent-property-and-value-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-existent-property-and-value.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-existent-property-existing-value-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-existent-property-existing-value.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-existent-property-value-General_Category-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-existent-property-value-Script-negated.js","testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-existent-property-value-Script.js"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013"}} -->
+# firefox/testing JavaScript function map 901
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Sogdian.js
+
+Blob: `869b0101c16bb2dd5a087682b9ff80c4a7256392`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Sora_Sompeng.js
+
+Blob: `5b7bd27d680c3e19269d5db97d6ee86456ddef89`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Soyombo.js
+
+Blob: `4d6c9d206ac9a7e3ca69df9a9c7581a00d10d4c6`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Sundanese.js
+
+Blob: `e56ca9e5903a7cbd2c46c505104cd5d48d4e7a7c`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Sunuwar.js
+
+Blob: `226aecf44735265f0477db7983ef4a8273ca8084`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Syloti_Nagri.js
+
+Blob: `f6eebb324ce4298b9f349d42ab895c5eeae3836c`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Syriac.js
+
+Blob: `45698a7ad3c666f2133107c01bf984cfaf1897f9`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tagalog.js
+
+Blob: `92969e5788e33f52dc254c7a093e63520307df99`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tagbanwa.js
+
+Blob: `0df6b32b08a42d8e4dad7d9458a3e7c5d3efa5a1`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tai_Le.js
+
+Blob: `fef3aeb981149c0f413ffd459f4e498de3c95498`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tai_Tham.js
+
+Blob: `a02cfe37268548704791111287202ad92f44fec1`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tai_Viet.js
+
+Blob: `f032ecf4df6d094f3462b52a760909726d74e784`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tai_Yo.js
+
+Blob: `29ea0b9daa5e0c3b4ac0459bcf2dad18af0e3f50`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /^\p{Script_Extensions=Tai_Yo}+$/: Invalid property value
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Takri.js
+
+Blob: `fbdeee519b1fc09cb5f28d9c3ede5e4576fd16a3`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tamil.js
+
+Blob: `f973df5eef3d35955d707b24a114d41e4ce14126`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tangsa.js
+
+Blob: `e860e6fea6fcc74108c9aa2f026c2b470e99b5b1`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tangut.js
+
+Blob: `ece0ff977313f52611ad06590157bdc79dadda77`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Telugu.js
+
+Blob: `7ec45c1f33f973b8b37906616f53739801e4e652`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Thaana.js
+
+Blob: `083cb99d5c83918866dfd145a8c080b9181435fa`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Thai.js
+
+Blob: `938220b7181ac87c6a1cd5ca5dafd7df0daff84e`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tibetan.js
+
+Blob: `ba6580bb52f777c4f7c5009a1aded3bf86cc8572`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tifinagh.js
+
+Blob: `d320de8c5a419efe5a683af07a4b55c0f0e8cc81`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tirhuta.js
+
+Blob: `71bf8213d0a4cdc1131593d65307f8e841c76876`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Todhri.js
+
+Blob: `899bde674e4efa184da754a2fdbb6f10db8183f8`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tolong_Siki.js
+
+Blob: `fb16b291bca1de936ef0c9eb862e4cb430be68f0`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /^\p{Script_Extensions=Tolong_Siki}+$/: Invalid property value
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Toto.js
+
+Blob: `73fa79b8fb9c8bf934485b342ed1889b4d430390`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Tulu_Tigalari.js
+
+Blob: `c3667531f5f2de818e6780ba19d7f53b2e43f481`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Ugaritic.js
+
+Blob: `da54e701a0094ab9e80cdf94d6365c62bd1af6c9`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Unknown.js
+
+Blob: `823a5f7ceb91885b5231a525599923a683686fdf`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Vai.js
+
+Blob: `9c14378176a96d2f99d41bcb05fd531d7b4b1297`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Vithkuqi.js
+
+Blob: `e4bb10d373c00deb318e5436909924bfaeec2f49`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Wancho.js
+
+Blob: `77d8251396213ccde4d92e153576675d59fe139b`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Warang_Citi.js
+
+Blob: `825b7103ca6fd0c07bbaf5d84667290793dc2fbd`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Yezidi.js
+
+Blob: `2c50989fbff632bc86d6180882333dc38271875d`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Yi.js
+
+Blob: `32117f8b13901197e47e1f5448ed723f05171dd3`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Script_Extensions_-_Zanabazar_Square.js
+
+Blob: `7e8ddd39ff5370293152218089042c5303ccae15`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Sentence_Terminal.js
+
+Blob: `4ad388dd0d6fde3e1cbf99579d689f7fe00bf07d`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Soft_Dotted.js
+
+Blob: `e71c40f95473f2456fc0b0f32cdd830b5e4b9a1b`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Terminal_Punctuation.js
+
+Blob: `5b638830e996b0222c73beb25415485fb3842879`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Unified_Ideograph.js
+
+Blob: `c2100ee9ab32985d7a6693a3c46914b14803ede3`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Uppercase.js
+
+Blob: `1555af7badd2107d3edc37f3b28920d3e0a5e371`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/Variation_Selector.js
+
+Blob: `da54fcdc42ea1a992c3110fbc6bf059b0fc752ee`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/White_Space.js
+
+Blob: `76388e2ddc668244184feed3a7205ac75049d94a`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/XID_Continue.js
+
+Blob: `138fb82a8e8857be9bb008b4fc7932d6050aa444`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/XID_Start.js
+
+Blob: `7cc9999c81190f7dbce21b043c4ca0b5352dd4d9`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/Basic_Emoji-negative-CharacterClass.js
+
+Blob: `c6a344e93b73eec8e775a1febfe195b64d07f3d3`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /[^\p{Basic_Emoji}]/: Negated character class may contain strings
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/Basic_Emoji-negative-P.js
+
+Blob: `2c6740ee6cf481be4ca6c137936f148a8ad2bf1e`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{Basic_Emoji}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/Basic_Emoji-negative-u.js
+
+Blob: `25d44b6d413338849e211284a1249d244875239d`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{Basic_Emoji}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/Basic_Emoji.js
+
+Blob: `f2e3bba2507c88005574a0cd820bb935eefcc754`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/Emoji_Keycap_Sequence-negative-CharacterClass.js
+
+Blob: `db53eab8124420542c77ead4ed70c3b8cf3fd8eb`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /[^\p{Emoji_Keycap_Sequence}]/: Negated character class may contain strings
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/Emoji_Keycap_Sequence-negative-P.js
+
+Blob: `e32bb5b84ce0be10fefb0acf02971850aeeb8903`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{Emoji_Keycap_Sequence}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/Emoji_Keycap_Sequence-negative-u.js
+
+Blob: `e15d449f5f3b8cd9250423d48e465c01ee1a23ef`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{Emoji_Keycap_Sequence}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/Emoji_Keycap_Sequence.js
+
+Blob: `a15549c1c6bbabd1187f823aa4e623d4cccf914a`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji-negative-CharacterClass.js
+
+Blob: `22d04736790230c693769b073062b69acbf81f21`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /[^\p{RGI_Emoji}]/: Negated character class may contain strings
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji-negative-P.js
+
+Blob: `e9e61557ef8baf2d2ac459d0a22b7a6afb5e5adf`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{RGI_Emoji}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji-negative-u.js
+
+Blob: `f5118581a3b8383292d09413428294d271f48eac`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{RGI_Emoji}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji.js
+
+Blob: `e73a3c184bda3f40cb4d4d5fe0a4d4ed1fd85f9b`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Flag_Sequence-negative-CharacterClass.js
+
+Blob: `86ccf42f3a7cccd968c5aaf6a36d0af4bb575c34`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /[^\p{RGI_Emoji_Flag_Sequence}]/: Negated character class may contain strings
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Flag_Sequence-negative-P.js
+
+Blob: `eba6b80e9d632b7fdf2637efb3256f108df02ecb`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{RGI_Emoji_Flag_Sequence}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Flag_Sequence-negative-u.js
+
+Blob: `49dbe8301e1c503dce132a54ea66d5b85c50dd35`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{RGI_Emoji_Flag_Sequence}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Flag_Sequence.js
+
+Blob: `75da613fb1f98adf731c284d6f2a4e1d933c9244`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Modifier_Sequence-negative-CharacterClass.js
+
+Blob: `35cb33230585af9ad6ddf14394c6d8ccee95163d`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /[^\p{RGI_Emoji_Modifier_Sequence}]/: Negated character class may contain strings
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Modifier_Sequence-negative-P.js
+
+Blob: `3da5db7f9ae80d6a4d94db3f9354788f557d570b`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{RGI_Emoji_Modifier_Sequence}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Modifier_Sequence-negative-u.js
+
+Blob: `5273c428a6ad8019dcc28c3f200c9373a83279fe`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{RGI_Emoji_Modifier_Sequence}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Modifier_Sequence.js
+
+Blob: `439a26a9fc56c97c2ef859c2f8c1b85fb1dab59e`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Tag_Sequence-negative-CharacterClass.js
+
+Blob: `7a93ea811f861659fd8bd7227d6dc241be1fc2e1`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /[^\p{RGI_Emoji_Tag_Sequence}]/: Negated character class may contain strings
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Tag_Sequence-negative-P.js
+
+Blob: `247fef0848b791d1b938b0a9c30866f0c98255e9`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{RGI_Emoji_Tag_Sequence}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Tag_Sequence-negative-u.js
+
+Blob: `0b23bffd9e916c5c04fa6f8e992af7d8155e2a99`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{RGI_Emoji_Tag_Sequence}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_Tag_Sequence.js
+
+Blob: `467233cb7b5e56713b247f8d954cfcda5157f8ee`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_ZWJ_Sequence-negative-CharacterClass.js
+
+Blob: `705b8499ab601ce4427d0bf9d83b28716223b8a4`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /[^\p{RGI_Emoji_ZWJ_Sequence}]/: Negated character class may contain strings
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_ZWJ_Sequence-negative-P.js
+
+Blob: `a104bdd34c15f8fedd1105dc35c548071efdb723`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{RGI_Emoji_ZWJ_Sequence}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_ZWJ_Sequence-negative-u.js
+
+Blob: `45736bacc60fb0a5b58d4ce89bbc38a24f8cd914`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{RGI_Emoji_ZWJ_Sequence}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/generated/strings/RGI_Emoji_ZWJ_Sequence.js
+
+Blob: `64b63ab1a4ddf5cf078f3496d88c7cc2a8dcf65c`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-In-prefix-Block-implicit-negated.js
+
+Blob: `974f8111f3181e9c434093f37cc747f393b24796`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{InAdlam}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-In-prefix-Block-implicit.js
+
+Blob: `72397e68cb02a55d99089d3dd3e1f943c58dc2e9`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{InAdlam}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-In-prefix-Script-implicit-negated.js
+
+Blob: `974f8111f3181e9c434093f37cc747f393b24796`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{InAdlam}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-In-prefix-Script-implicit.js
+
+Blob: `72397e68cb02a55d99089d3dd3e1f943c58dc2e9`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{InAdlam}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-In-prefix-Script-negated.js
+
+Blob: `02ec4892a59cff5b8ef47d642f25d45a16caf9cf`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{InScript=Adlam}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-In-prefix-Script.js
+
+Blob: `c35fe6e9bbf7743f33d1136b82a8f393b1f2afbc`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{InScript=Adlam}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-Is-prefix-Script-negated.js
+
+Blob: `661aa07f431ba252ff95e1f5ce2ff4a97674bc08`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{IsScript=Adlam}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-Is-prefix-Script.js
+
+Blob: `41b74da2c685c9f9933c98bf0f14a0cbaa74fcbb`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{IsScript=Adlam}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-circumflex-negation-negated.js
+
+Blob: `662badac6c04114783cac7f16adfba83f369e480`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{^General_Category=Letter}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-circumflex-negation.js
+
+Blob: `31d5bf903785049aad228e237d2e78d9ad9e48df`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{^General_Category=Letter}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-empty-negated.js
+
+Blob: `93e38c7bf5f04e41270e7b5730b7ddd01079f1a1`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /[\p{}]/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-empty.js
+
+Blob: `74d4db7164d01961ab339f474e07ac08cbf93222`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /[\P{}]/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-invalid-negated.js
+
+Blob: `17236a5678be9dcb0a17cc173b870642fc407cc0`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /[\P{invalid}]/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-invalid.js
+
+Blob: `70389b29bba2c8ed1809507b649d1dd8fef1fc22`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /[\p{invalid}]/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-no-braces-negated.js
+
+Blob: `4a33a1ae946c46664ec72af916a47cec1142aa63`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-no-braces-value-negated.js
+
+Blob: `2c3e2017212ec64a70c37e3f3fd1731485e311c1`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\PL/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-no-braces-value.js
+
+Blob: `551e2373140d3d63ce86abc3ac73910335604ec3`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\pL/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-no-braces.js
+
+Blob: `054e0a41ea93fa072f47bbce8324344ed0de37a6`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-separator-and-value-only-negated.js
+
+Blob: `6d6773ae55caf9ad775e38bf82ff19d1420eaf70`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{=Letter}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-separator-and-value-only.js
+
+Blob: `0386d03d2157c865343763226e1623c6166146df`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{=Letter}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-separator-negated.js
+
+Blob: `d567be4fd996e18807d6874a2e412646589e05bd`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{General_Category:Letter}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-separator-only-negated.js
+
+Blob: `71530768defc11924c6afb47347ce053d3382e96`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{=}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-separator-only.js
+
+Blob: `2bbb08b8e69b0619dcbb98edea4f76c3101a29b4`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{=}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-separator.js
+
+Blob: `b4f0eea24491fa0d0e8ca9e041f6264eeece11b1`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{General_Category:Letter}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-unclosed-negated.js
+
+Blob: `6404b1566a5d8550e5ed424a04a7f35879407d18`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-unclosed.js
+
+Blob: `9d0fbd81062daf3edb7f0a1c4d05fb6043b3e704`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-unopened-negated.js
+
+Blob: `c8a3d8b39757329252cd09d5e7ac4fd2be3437f6`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/grammar-extension-unopened.js
+
+Blob: `1bea2dd00de6d1763f19d45d2e45d097f785d1ce`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-01-negated.js
+
+Blob: `fa270c9d8b7ca1cfe62e8e1268f34dd3b5a21b01`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{ General_Category=Uppercase_Letter }/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-01.js
+
+Blob: `d46e8cdbcd2ab22ce9dd00421e817414c2849683`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{ General_Category=Uppercase_Letter }/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-02-negated.js
+
+Blob: `210b7171f57c89f21a8042663f809afe807c37a6`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{ Lowercase }/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-02.js
+
+Blob: `2e079c113c08112b03aac6cd65ff77e9987987a7`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{ Lowercase }/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-03-negated.js
+
+Blob: `072db718c2b65a9150d0390d88355b53aeb6d586`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{ANY}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-03.js
+
+Blob: `3bca142493aee7f049528b6207480ab47f1c3e0e`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{ANY}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-04-negated.js
+
+Blob: `508bb23dd0e3c197e2cc802bf12561f5ede635cd`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{ASSIGNED}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-04.js
+
+Blob: `7b32ed24ff24d2ae415dd8583610c3840e069fe8`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{ASSIGNED}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-05-negated.js
+
+Blob: `85425d890e9775243c08fa3bcd33e74cf3dbf970`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{Ascii}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-05.js
+
+Blob: `ad8e0f520f6d227006dc18ae802a37967dd8e8bb`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{Ascii}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-06-negated.js
+
+Blob: `ebd792c378adabfe7e29dab438b14e0cd4340741`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{General_Category = Uppercase_Letter}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-06.js
+
+Blob: `c17f1b9cd7552f68518cbfe018044c1d4d0be42e`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{General_Category = Uppercase_Letter}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-07-negated.js
+
+Blob: `e6cb0af42341e943fa8e3227619447e935ce0354`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{_-_lOwEr_C-A_S-E_-_}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-07.js
+
+Blob: `ff53f295fa791128fc8307b08e30c269b9409f56`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{_-_lOwEr_C-A_S-E_-_}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-08-negated.js
+
+Blob: `d63de28431d04af4992c3faeb63fd2345d66fe26`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{any}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-08.js
+
+Blob: `265123dce9a20860ee79b713c9d4312fc4de4de1`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{any}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-09-negated.js
+
+Blob: `01b6461fa524f5278aae02a10e8948c28b0a9c38`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{ascii}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-09.js
+
+Blob: `c6d9dd3a2a82ae8e0310cb62f9f4c2d594b9176b`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{ascii}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-10-negated.js
+
+Blob: `5386ab7072b14c9dbf34dd53b0f183b0a5bb2a0a`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{assigned}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-10.js
+
+Blob: `c92922fb6412356d0423c637fd3cfda39103373f`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{assigned}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-11-negated.js
+
+Blob: `94eac819321fa88d1e6d6f87e932741f7251cc86`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{gC=uppercase_letter}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-11.js
+
+Blob: `f153aae1f0efded9cc0cf8cca65843c0612a9644`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{gC=uppercase_letter}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-12-negated.js
+
+Blob: `f942b99fb28a023c17640f85e4c083d14487f150`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{gc=uppercaseletter}/: Invalid property value
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-12.js
+
+Blob: `637945520f74f411271f77089d09e98a93a3d0f0`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{gc=uppercaseletter}/: Invalid property value
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-13-negated.js
+
+Blob: `45985d222ba0f23e38cf6cac80c9075e68e727ce`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{lowercase}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-13.js
+
+Blob: `2c1f13497c7647e352c780e1827ae198d8ec8af1`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{lowercase}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-14-negated.js
+
+Blob: `45985d222ba0f23e38cf6cac80c9075e68e727ce`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{lowercase}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/loose-matching-14.js
+
+Blob: `2c1f13497c7647e352c780e1827ae198d8ec8af1`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{lowercase}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-General_Category-equals-negated.js
+
+Blob: `f8a48d8b287be4dc64f8cbfb1e0d60379787650f`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{General_Category=}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-General_Category-equals.js
+
+Blob: `22c8abea25a7bc2f047f5e129440306816e9972a`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{General_Category=}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-General_Category-negated.js
+
+Blob: `7bb270990c7ac632784ad8234263c09703acc3b2`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{General_Category}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-General_Category.js
+
+Blob: `a7f6bd56851a27ffa1e7479a80370d0d317ca1d9`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{General_Category}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-Script-equals-negated.js
+
+Blob: `194a451d5b3271b1a884138a04a5c25dd023310f`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{Script=}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-Script-equals.js
+
+Blob: `d600c2655894b82e0e18c560c371202d4ce482e2`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{Script=}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-Script-negated.js
+
+Blob: `6b04000d3d5b6bc8e817ab997d41d605b1d5ec5b`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{Script}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-Script.js
+
+Blob: `8f5a3ac05f3440879d3ff2301352a8a5156d250e`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{Script}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-Script_Extensions-equals-negated.js
+
+Blob: `3f57b277023c7659ed9146ab4ab61b1e3bee1224`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{Script_Extensions=}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-Script_Extensions-equals.js
+
+Blob: `2d7fe89c9e6751d63e52989ca29e866bd2567ce7`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{Script_Extensions=}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-Script_Extensions-negated.js
+
+Blob: `6351d4df65db4edf844ce2daaf0b2e63931bf437`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{Script_Extensions}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-binary-property-without-value-Script_Extensions.js
+
+Blob: `fb67aa40cb45a27e8911b040696d05b6348c5a1a`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{Script_Extensions}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-existent-binary-property-negated.js
+
+Blob: `e4863440ff44ee06e7ee9f964d402cb52865927e`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{UnknownBinaryProperty}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-existent-binary-property.js
+
+Blob: `383dcafe5aaa19711fdd85eb85f83f1ac23a1fe4`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{UnknownBinaryProperty}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-existent-property-and-value-negated.js
+
+Blob: `90de6ce86f63924383b12eae70dddaba2070cafd`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{Line_Breakz=WAT}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-existent-property-and-value.js
+
+Blob: `4e62aff7a76103405ed259737adf3f406eca69e4`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{Line_Breakz=WAT}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-existent-property-existing-value-negated.js
+
+Blob: `2346b017368da057691add595f7338c9ef99a65b`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\P{Line_Breakz=Alphabetic}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-existent-property-existing-value.js
+
+Blob: `8cf1ae618c39ff58f7ecc3bed80855bab496b953`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\p{Line_Breakz=Alphabetic}/: Invalid property name
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-existent-property-value-General_Category-negated.js
+
+Blob: `c4e27b8a7dbac3893b54cef7f92b904dde21b966`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\\P{General_Category=WAT}/: Incomplete quantifier
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-existent-property-value-Script-negated.js
+
+Blob: `f32abaf29e1f703805c85d054197711f8779ffbf`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\\P{Script=FooBarBazInvalid}/: Incomplete quantifier
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/RegExp/property-escapes/non-existent-property-value-Script.js
+
+Blob: `7aa7a23764e2757565034b0a2cbc40f12710609c`. Role: imported-path,test-path,source. Parse: failed.
+
+Failure: Invalid regular expression: /\\p{Script=FooBarBazInvalid}/: Incomplete quantifier
+
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.

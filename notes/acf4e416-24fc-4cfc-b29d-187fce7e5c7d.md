@@ -1,0 +1,850 @@
+<!-- knowledge: {"repository": "git:314d8065c5ad68c7e5c5f92d", "at": "2026-10-13T04:18:44.114924+00:00", "paths": ["testing/webcompat/interventions/tests/test_1830739_1902471_springbokcasino_co_za.py", "testing/webcompat/interventions/tests/test_1830739_1902493_ozwincasino_com.py", "testing/webcompat/interventions/tests/test_1830739_1947963_slotmadness_com.py", "testing/webcompat/interventions/tests/test_1830739_1964350_bonusblitz_com.py", "testing/webcompat/interventions/tests/test_1830739_79490_captainjackcasino_com.py", "testing/webcompat/interventions/tests/test_1830796_copyleaks_com.py", "testing/webcompat/interventions/tests/test_1830821_113663_webcartop_jp.py", "testing/webcompat/interventions/tests/test_1830821_90981_enjoy_point_auone_jp.py", "testing/webcompat/interventions/tests/test_1836103_autostar_novoross_ru.py", "testing/webcompat/interventions/tests/test_1836109_watch_tonton_com_my.py", "testing/webcompat/interventions/tests/test_1836135_gts_pro_iyuno_com.py", "testing/webcompat/interventions/tests/test_1836141_yabbycasino_com.py", "testing/webcompat/interventions/tests/test_1836178_atracker_pro.py", "testing/webcompat/interventions/tests/test_1842767_passport_bilibili_com.py", "testing/webcompat/interventions/tests/test_1844503_1849058_nicochannel_jp.py", "testing/webcompat/interventions/tests/test_1845299_docs_google_com_presentation.py", "testing/webcompat/interventions/tests/test_1847971_ebay_com.py", "testing/webcompat/interventions/tests/test_1850998_chaturbate_com.py", "testing/webcompat/interventions/tests/test_1855014_77221_eksiseyler_com.py", "testing/webcompat/interventions/tests/test_1855088_125039_hrmis2_eghrmis_gov_my.py", "testing/webcompat/interventions/tests/test_1855102_121877_my_southerncross_co_nz.py", "testing/webcompat/interventions/tests/test_1864999_autotrader_ca.py", "testing/webcompat/interventions/tests/test_1865000_bmo_com.py", "testing/webcompat/interventions/tests/test_1865004_digimart_net.py", "testing/webcompat/interventions/tests/test_1865007_portal_circle_ms.py", "testing/webcompat/interventions/tests/test_1868345_tvmovie_de.py", "testing/webcompat/interventions/tests/test_1873166_108319_www_nsandi_com.py", "testing/webcompat/interventions/tests/test_1873166_108408_secure_nsandi_com.py", "testing/webcompat/interventions/tests/test_1878024_g1_globo_com.py", "testing/webcompat/interventions/tests/test_1884779_forum_memurlar_net.py", "testing/webcompat/interventions/tests/test_1886285_1650317_livescience_com.py", "testing/webcompat/interventions/tests/test_1886285_1829949_tomshardware_com.py", "testing/webcompat/interventions/tests/test_1886285_188628501_androidcentral_com.py", "testing/webcompat/interventions/tests/test_1886285_188628502_creativebloq_com.py", "testing/webcompat/interventions/tests/test_1886285_188628503_cyclingnews_com.py", "testing/webcompat/interventions/tests/test_1886285_188628504_gamesradar_com.py", "testing/webcompat/interventions/tests/test_1886285_188628505_imore_com.py", "testing/webcompat/interventions/tests/test_1886285_188628506_itpro_com.py", "testing/webcompat/interventions/tests/test_1886285_188628509_laptopmag_com.py", "testing/webcompat/interventions/tests/test_1886285_188628510_loudersound_com.py", "testing/webcompat/interventions/tests/test_1886285_188628511_musicradar_com.py", "testing/webcompat/interventions/tests/test_1886285_188628512_pcgamer_com.py", "testing/webcompat/interventions/tests/test_1886285_188628513_space_com.py", "testing/webcompat/interventions/tests/test_1886285_188628514_techradar_com.py", "testing/webcompat/interventions/tests/test_1886285_188628515_windowscentral_com.py", "testing/webcompat/interventions/tests/test_1886566_qceservices_quezoncity_gov_ph.py", "testing/webcompat/interventions/tests/test_1886591_la-vache-noire_com.py", "testing/webcompat/interventions/tests/test_1886616_www_six-group_com.py", "testing/webcompat/interventions/tests/test_1892073_snapchat_com.py", "testing/webcompat/interventions/tests/test_1892898_investopedia_com.py", "testing/webcompat/interventions/tests/test_1893908_www_1blv_com.py", "testing/webcompat/interventions/tests/test_1894308_docs_dingtalk_com.py", "testing/webcompat/interventions/tests/test_1895672_hackgreensdr_org.py", "testing/webcompat/interventions/tests/test_1895672_websdr_78dx_ru.py", "testing/webcompat/interventions/tests/test_1895997_e_seb_lt.py", "testing/webcompat/interventions/tests/test_1896349_vivaldi_com.py", "testing/webcompat/interventions/tests/test_1896354_my_rhinoshield_fr.py", "testing/webcompat/interventions/tests/test_1896571_gracobaby_ca.py", "testing/webcompat/interventions/tests/test_1898638_gmbinder_com.py", "testing/webcompat/interventions/tests/test_1898895_eslatam_trygalaxy_com.py", "testing/webcompat/interventions/tests/test_1898898_app_libry_jp.py", "testing/webcompat/interventions/tests/test_1898904_indigo_shireburn_com.py", "testing/webcompat/interventions/tests/test_1898911_forms_ontariodrugbenefit_ca.py", "testing/webcompat/interventions/tests/test_1898915_locator_dhl_com.py", "testing/webcompat/interventions/tests/test_1898916_smartmirror_link.py", "testing/webcompat/interventions/tests/test_1898917_sekowf_wns_com.py", "testing/webcompat/interventions/tests/test_1898923_trade-in_vodafone_com.py", "testing/webcompat/interventions/tests/test_1898926_dgslms_aduacademy_in.py", "testing/webcompat/interventions/tests/test_1898928_cleanfeed_net.py", "testing/webcompat/interventions/tests/test_1898929_app_sessionlinkpro_com.py", "testing/webcompat/interventions/tests/test_1898931_facturador_afip_gob_ar.py", "testing/webcompat/interventions/tests/test_1898932_account_gov_il.py", "testing/webcompat/interventions/tests/test_1898934_tza_red.py", "testing/webcompat/interventions/tests/test_1898936_app_stormx_io.py", "testing/webcompat/interventions/tests/test_1898937_goodyearfiaetrc_com.py", "testing/webcompat/interventions/tests/test_1898938_conference_amwell_com.py", "testing/webcompat/interventions/tests/test_1898939_smartgpseco_com.py", "testing/webcompat/interventions/tests/test_1898943_carelink_minimed_eu.py", "testing/webcompat/interventions/tests/test_1898946_transcrib_io.py", "testing/webcompat/interventions/tests/test_1898949_my_murj_com.py", "testing/webcompat/interventions/tests/test_1898951_hexagame_io.py", "testing/webcompat/interventions/tests/test_1898952_digits_t-mobile_com.py", "testing/webcompat/interventions/tests/test_1898960_hrm_online_comarch_pl.py", "testing/webcompat/interventions/tests/test_1898963_england_nhs_attendanywhere_com.py", "testing/webcompat/interventions/tests/test_1898983_elibrary_ferc_gov.py", "testing/webcompat/interventions/tests/test_1898988_prudential_com_hk.py", "testing/webcompat/interventions/tests/test_1898989_mymsc_com.py", "testing/webcompat/interventions/tests/test_1898996_horizon_meta_com.py", "testing/webcompat/interventions/tests/test_1898996_oculus_com.py", "testing/webcompat/interventions/tests/test_1899049_bcbs_pinpointglobal_com.py", "testing/webcompat/interventions/tests/test_1899054_icorrectproof_com.py", "testing/webcompat/interventions/tests/test_1899060_18990601_wbte_drcedirect_com.py", "testing/webcompat/interventions/tests/test_1899060_18990602_wbte_drcedirect_com.py", "testing/webcompat/interventions/tests/test_1899063_onlinestep_pgc_edu.py", "testing/webcompat/interventions/tests/test_1899065_centerparcs_co_uk.py", "testing/webcompat/interventions/tests/test_1899066_app_bookcreator_com.py", "testing/webcompat/interventions/tests/test_1899067_game_granbluefantasy_jp.py", "testing/webcompat/interventions/tests/test_1899072_passpoint_boingo_com.py", "testing/webcompat/interventions/tests/test_1899829_animeflv_net.py", "testing/webcompat/interventions/tests/test_1899923_findmy_tokyo.py"], "source": {"reference": "Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b", "revision": "1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b", "status": "provisional", "study": "architecture-study-20261013"}} -->
+# firefox/testing Python and build syntax map 115
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Python AST parser; no source was executed. Functions and classes have source ranges. Imports are written names, not resolved modules. Build entries list assignments with literal string lists and registration calls. Conditions are not evaluated; listed files are not necessarily built or shipped. Dynamic expressions and included build files need separate analysis. Failed parses remain listed.
+
+### testing/webcompat/interventions/tests/test_1830739_1902471_springbokcasino_co_za.py
+
+Blob: `61a5dbcd9fb2261fd919ebd5ed3e3b675ec074f9`. Parse: parsed.
+
+- import pytest @1
+- async-function get_to_page @12-15
+- async-function test_enabled @21-23
+- async-function test_disabled @29-31
+
+### testing/webcompat/interventions/tests/test_1830739_1902493_ozwincasino_com.py
+
+Blob: `ac9235a1a39e64b4e3377a2b64dfd0a5e478fb76`. Parse: parsed.
+
+- import pytest @1
+- async-function get_to_page @12-17
+- async-function test_enabled @23-25
+- async-function test_disabled @31-33
+
+### testing/webcompat/interventions/tests/test_1830739_1947963_slotmadness_com.py
+
+Blob: `de59b9c982bbc88a0426c39faadd118ed4866dfb`. Parse: parsed.
+
+- import pytest @1
+- async-function get_to_page @10-13
+- async-function test_enabled @19-21
+- async-function test_disabled @27-29
+
+### testing/webcompat/interventions/tests/test_1830739_1964350_bonusblitz_com.py
+
+Blob: `b8b0fffcc3988860554ba90ccdf67598cd56c432`. Parse: parsed.
+
+- import pytest @1
+- async-function get_to_page @10-12
+- async-function test_enabled @18-20
+- async-function test_disabled @26-28
+
+### testing/webcompat/interventions/tests/test_1830739_79490_captainjackcasino_com.py
+
+Blob: `de47749bc73b4750872120208fec9248066359f6`. Parse: parsed.
+
+- import asyncio @1
+- import pytest @3
+- async-function check_for_message @12-22
+- async-function test_enabled @28-29
+- async-function test_disabled @35-36
+
+### testing/webcompat/interventions/tests/test_1830796_copyleaks_com.py
+
+Blob: `8991b1e831865d581477ae8c797ebe37b361d694`. Parse: parsed.
+
+- import pytest @1
+- from webdriver import NoSuchElementException @2
+- async-function test_regression @12-21
+
+### testing/webcompat/interventions/tests/test_1830821_113663_webcartop_jp.py
+
+Blob: `a1b105ed159f165d81432e946ce30eb91165b07c`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-14
+- async-function test_disabled @20-23
+
+### testing/webcompat/interventions/tests/test_1830821_90981_enjoy_point_auone_jp.py
+
+Blob: `f8ccf39674e4c58bb3f9869b56faf35a8d5e11ba`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-13
+- async-function test_disabled @19-21
+
+### testing/webcompat/interventions/tests/test_1836103_autostar_novoross_ru.py
+
+Blob: `71b642c699701fa031505968bb9655294a5ec160`. Parse: parsed.
+
+- import pytest @1
+- async-function test_regression @9-11
+
+### testing/webcompat/interventions/tests/test_1836109_watch_tonton_com_my.py
+
+Blob: `896e847f1b0693ddf962821039e1c4b27ed1b6cf`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @17-19
+- async-function test_disabled @25-27
+
+### testing/webcompat/interventions/tests/test_1836135_gts_pro_iyuno_com.py
+
+Blob: `0780d8f7c7bf20063ed0531b566598f42e84c803`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @10-12
+- async-function test_disabled @17-19
+
+### testing/webcompat/interventions/tests/test_1836141_yabbycasino_com.py
+
+Blob: `bcf6de192db9b6dc4ec1f68aeccdbbe112d2a376`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @12-15
+- async-function test_disabled @21-24
+
+### testing/webcompat/interventions/tests/test_1836178_atracker_pro.py
+
+Blob: `cbf0c0b946d574d05400cd03a7722cbafd317042`. Parse: parsed.
+
+- import pytest @1
+- async-function get_login_popup_url @7-11
+- async-function test_enabled @16-17
+- async-function test_disabled @22-23
+
+### testing/webcompat/interventions/tests/test_1842767_passport_bilibili_com.py
+
+Blob: `3766b1dc2ab89d8d2e88c31b6dab8f6af532450c`. Parse: parsed.
+
+- import asyncio @1
+- import pytest @3
+- async-function test_enabled @13-16
+- async-function test_disabled @22-26
+
+### testing/webcompat/interventions/tests/test_1844503_1849058_nicochannel_jp.py
+
+Blob: `3b20ae98bd6cb13d0b823b812f14f76309db7ea5`. Parse: parsed.
+
+- import pytest @1
+- async-function check_for_regression @6-35
+- async-function test_disabled @40-41
+
+### testing/webcompat/interventions/tests/test_1845299_docs_google_com_presentation.py
+
+Blob: `ae2c15122dd3853bfb2116770c66a3ee8b814311`. Parse: parsed.
+
+- import pytest @1
+- async-function is_scrollbar_hidden @8-16
+- async-function test_enabled @23-24
+- async-function test_disabled @31-32
+
+### testing/webcompat/interventions/tests/test_1847971_ebay_com.py
+
+Blob: `8b440ba7a11520b723dc0d549594ee44a512a63b`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @13-16
+- async-function test_disabled @22-25
+
+### testing/webcompat/interventions/tests/test_1850998_chaturbate_com.py
+
+Blob: `8986d4f1e79b8c316fe3aae55640f8444fae47e5`. Parse: parsed.
+
+- import pytest @1
+- async-function is_requestFullscreen_called @11-37
+- async-function test_enabled @43-44
+- async-function test_disabled @50-51
+
+### testing/webcompat/interventions/tests/test_1855014_77221_eksiseyler_com.py
+
+Blob: `9f6b1226cb90ebb3c7a43b51de97b261c9ceb626`. Parse: parsed.
+
+- import pytest @1
+- from webdriver.error import NoSuchElementException @2
+- async-function visit_site @13-21
+- async-function test_enabled @27-29
+- async-function test_disabled @35-39
+
+### testing/webcompat/interventions/tests/test_1855088_125039_hrmis2_eghrmis_gov_my.py
+
+Blob: `33f0193b9a76fe6a238b66efce4763b8a5eba3d7`. Parse: parsed.
+
+- import time @1
+- import pytest @3
+- async-function is_dialog_shown @9-13
+- async-function test_enabled @18-19
+- async-function test_disabled @24-25
+
+### testing/webcompat/interventions/tests/test_1855102_121877_my_southerncross_co_nz.py
+
+Blob: `00a17883f307cec570227e75643c8bd23222dad8`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-14
+- async-function test_disabled @20-23
+
+### testing/webcompat/interventions/tests/test_1864999_autotrader_ca.py
+
+Blob: `d7638f235d3b3a569083620bae311d7628a66fc0`. Parse: parsed.
+
+- import time @1
+- import pytest @3
+- from webdriver import NoSuchElementException,WebDriverException @4
+- async-function are_filter_options_onscreen @14-43
+- async-function test_regression @49-50
+
+### testing/webcompat/interventions/tests/test_1865000_bmo_com.py
+
+Blob: `c348414c05447ec6653fc7da2de9f5ceca05e60a`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-14
+- async-function test_disabled @19-21
+
+### testing/webcompat/interventions/tests/test_1865004_digimart_net.py
+
+Blob: `2bdef3c098e1e42f8fadaad093749db793974d51`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-14
+- async-function test_disabled @20-23
+
+### testing/webcompat/interventions/tests/test_1865007_portal_circle_ms.py
+
+Blob: `41c7e21fb07e28ab91bdee5ddf7da27cf3b2e98b`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @9-11
+- async-function test_disabled @17-19
+
+### testing/webcompat/interventions/tests/test_1868345_tvmovie_de.py
+
+Blob: `9c0601aedf7f00390ed00caf430f58f934e86c50`. Parse: parsed.
+
+- import asyncio @1
+- import pytest @3
+- from webdriver import NoSuchElementException @4
+- async-function check_if_scroll_bounces @13-39
+- async-function test_disabled @45-46
+
+### testing/webcompat/interventions/tests/test_1873166_108319_www_nsandi_com.py
+
+Blob: `f46e66a85b8897f5c6a599e06e723501c3b4acb5`. Parse: parsed.
+
+- import pytest @1
+- async-function is_warning_shown @9-12
+- async-function test_enabled @18-19
+- async-function test_disabled @25-26
+
+### testing/webcompat/interventions/tests/test_1873166_108408_secure_nsandi_com.py
+
+Blob: `7080117d9980c8f1e2f498d6b1d41f06ce764c8f`. Parse: parsed.
+
+- import pytest @1
+- async-function is_warning_shown @10-17
+- async-function test_enabled @23-24
+- async-function test_disabled @30-31
+
+### testing/webcompat/interventions/tests/test_1878024_g1_globo_com.py
+
+Blob: `c356dce0c1707b15c78a47dd2db92e5c80a9a8c9`. Parse: parsed.
+
+- import pytest @1
+- async-function are_imgs_squashed @7-38
+- async-function test_enabled @44-45
+- async-function test_disabled @51-52
+
+### testing/webcompat/interventions/tests/test_1884779_forum_memurlar_net.py
+
+Blob: `f7c9b84714ff6157a2d70a44c9c46be0af3a136a`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-14
+- async-function test_disabled @20-23
+
+### testing/webcompat/interventions/tests/test_1886285_1650317_livescience_com.py
+
+Blob: `3151ef2426b8d32c11e544f2cb6f7aa2393fce00`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @10-12
+- async-function test_disabled @19-21
+
+### testing/webcompat/interventions/tests/test_1886285_1829949_tomshardware_com.py
+
+Blob: `728d00a754b2cfebdfc215a104774cd679c4ee05`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @10-12
+- async-function test_disabled @19-21
+
+### testing/webcompat/interventions/tests/test_1886285_188628501_androidcentral_com.py
+
+Blob: `64120c0f5cdb78cccec5fca9374570cbbbe1f1c9`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @10-12
+- async-function test_disabled @19-21
+
+### testing/webcompat/interventions/tests/test_1886285_188628502_creativebloq_com.py
+
+Blob: `6aa911d00ffde099d6f78e4d47d1a598bd5d4eca`. Parse: parsed.
+
+- import pytest @1
+- async-function do_test @6-10
+- async-function test_enabled @17-18
+- async-function test_disabled @25-26
+
+### testing/webcompat/interventions/tests/test_1886285_188628503_cyclingnews_com.py
+
+Blob: `64bf686a0b2e94482589b1aea72c0d45c42b4a9a`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @10-12
+- async-function test_disabled @19-21
+
+### testing/webcompat/interventions/tests/test_1886285_188628504_gamesradar_com.py
+
+Blob: `51710371419799ffeb6d041affe7be395706306d`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @10-12
+- async-function test_disabled @19-21
+
+### testing/webcompat/interventions/tests/test_1886285_188628505_imore_com.py
+
+Blob: `ec6408dc3b0f456dfea8994569d29b8e049cbd5d`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @10-12
+- async-function test_disabled @19-21
+
+### testing/webcompat/interventions/tests/test_1886285_188628506_itpro_com.py
+
+Blob: `4f639b6de9b2be5d065af7b9f3066f67c8d4dcd3`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @10-13
+- async-function test_disabled @20-23
+
+### testing/webcompat/interventions/tests/test_1886285_188628509_laptopmag_com.py
+
+Blob: `6b9dcfd37210e32e5e314fd2e951079fcfbe0470`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @10-12
+- async-function test_disabled @19-21
+
+### testing/webcompat/interventions/tests/test_1886285_188628510_loudersound_com.py
+
+Blob: `bd8432f508a52654485af72af517dfa2e5fd93cb`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @10-12
+- async-function test_disabled @19-21
+
+### testing/webcompat/interventions/tests/test_1886285_188628511_musicradar_com.py
+
+Blob: `d51ee5c74a78be340b7a40133ad472e1cc128d55`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @10-12
+- async-function test_disabled @19-21
+
+### testing/webcompat/interventions/tests/test_1886285_188628512_pcgamer_com.py
+
+Blob: `5f95837fb9b77b2fa516979c64ce0e5190d02efc`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @10-12
+- async-function test_disabled @19-21
+
+### testing/webcompat/interventions/tests/test_1886285_188628513_space_com.py
+
+Blob: `932c9c1c08ab90cf48c802a142db7654f43c4e13`. Parse: parsed.
+
+- import pytest @1
+- async-function test_regression @12-15
+
+### testing/webcompat/interventions/tests/test_1886285_188628514_techradar_com.py
+
+Blob: `ec13cd7c9ada14042b709954bc3a7eef489c0b39`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @10-12
+- async-function test_disabled @19-21
+
+### testing/webcompat/interventions/tests/test_1886285_188628515_windowscentral_com.py
+
+Blob: `c05ddf5fd0e31665a4423ece8df2c9569926c36b`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @10-12
+- async-function test_disabled @19-21
+
+### testing/webcompat/interventions/tests/test_1886566_qceservices_quezoncity_gov_ph.py
+
+Blob: `43f743f3056144c5367badee1cb63807a77ecf26`. Parse: parsed.
+
+- import pytest @1
+- from webdriver.error import NoSuchElementException @2
+- async-function is_iframe_visible @10-37
+- async-function test_now_works_with_just_pref @44-45
+- async-function test_still_works_without_pref @52-53
+- async-function test_still_does_not_work_without_pref_or_intervention @60-63
+- async-function test_did_work_with_intervention @69-70
+- async-function test_did_not_work_without_intervention @76-77
+
+### testing/webcompat/interventions/tests/test_1886591_la-vache-noire_com.py
+
+Blob: `5fce6ed0da90e065e30bfcc4b376d386520f8169`. Parse: parsed.
+
+- import pytest @1
+- async-function is_cookie_banner_visible @8-18
+- async-function test_disabled @23-24
+
+### testing/webcompat/interventions/tests/test_1886616_www_six-group_com.py
+
+Blob: `58049580012096c3dd73619ebed1f07e74c38ad8`. Parse: parsed.
+
+- import pytest @1
+- from webdriver.error import NoSuchElementException @2
+- async-function select_value_is_visible @9-27
+- async-function test_enabled @33-35
+- async-function test_disabled @41-43
+- async-function test_regression @49-51
+
+### testing/webcompat/interventions/tests/test_1892073_snapchat_com.py
+
+Blob: `0a87d6e56de856f60cebd040e51556900fa07767`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @13-16
+- async-function test_disabled @23-26
+
+### testing/webcompat/interventions/tests/test_1892898_investopedia_com.py
+
+Blob: `02296a6a872151a76bd9fa31fa93b41a7a0c568c`. Parse: parsed.
+
+- import pytest @1
+- async-function are_cards_too_tall @8-16
+- async-function test_regression @22-23
+
+### testing/webcompat/interventions/tests/test_1893908_www_1blv_com.py
+
+Blob: `8f755696b04d351bbb2a1a7f54a5d8ed2fc63d64`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-14
+- async-function test_disabled @20-23
+
+### testing/webcompat/interventions/tests/test_1894308_docs_dingtalk_com.py
+
+Blob: `3c849d8a381e246bc686780fa6ea32214079c025`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @12-15
+- async-function test_disabled @21-23
+
+### testing/webcompat/interventions/tests/test_1895672_hackgreensdr_org.py
+
+Blob: `027ab4db0cb7a1dc703897b978387012c3877edc`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @10-12
+- async-function test_disabled @17-20
+
+### testing/webcompat/interventions/tests/test_1895672_websdr_78dx_ru.py
+
+Blob: `716c8311510c0b91cfb2562ff2a0e01411bd2996`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @10-12
+- async-function test_disabled @17-20
+
+### testing/webcompat/interventions/tests/test_1895997_e_seb_lt.py
+
+Blob: `57c772e32eec7c8c6507074efc74e95b0ae35322`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-15
+- async-function test_disabled @20-22
+
+### testing/webcompat/interventions/tests/test_1896349_vivaldi_com.py
+
+Blob: `28abff156294d088fd3c4f1125c7d47f8e01b195`. Parse: parsed.
+
+- import pytest @1
+- async-function is_selection_different @7-26
+- async-function test_regression @31-33
+
+### testing/webcompat/interventions/tests/test_1896354_my_rhinoshield_fr.py
+
+Blob: `e7ab038e57b47cfe9868ca73452e77b2b06204dc`. Parse: parsed.
+
+- import pytest @1
+- from webdriver.error import NoSuchElementException @2
+- async-function test_enabled @10-16
+- async-function test_disabled @21-23
+
+### testing/webcompat/interventions/tests/test_1896571_gracobaby_ca.py
+
+Blob: `27c7e080e8ab87103c8254bab9d7c8c643ceff5d`. Parse: parsed.
+
+- import time @1
+- import pytest @3
+- async-function check_can_scroll @8-23
+- async-function test_enabled @30-31
+- async-function test_enabled2 @38-39
+- async-function test_disabled @46-47
+
+### testing/webcompat/interventions/tests/test_1898638_gmbinder_com.py
+
+Blob: `3be979cad746481f159ddf94fe5947a44fba0230`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @10-13
+- async-function test_disabled @18-20
+
+### testing/webcompat/interventions/tests/test_1898895_eslatam_trygalaxy_com.py
+
+Blob: `0bf925acbf77570e19029e61cb84d93c6e9fc2e3`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @12-15
+- async-function test_disabled @21-24
+
+### testing/webcompat/interventions/tests/test_1898898_app_libry_jp.py
+
+Blob: `ef84d9fe296be10b3a2138f42d0a78fa5c144217`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @10-13
+- async-function test_disabled @18-21
+
+### testing/webcompat/interventions/tests/test_1898904_indigo_shireburn_com.py
+
+Blob: `6b7cb7e7518458650764c116b499989aeaa05b12`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-14
+- async-function test_disabled @19-22
+
+### testing/webcompat/interventions/tests/test_1898911_forms_ontariodrugbenefit_ca.py
+
+Blob: `f662c8cd8e9761f9eb06509ed4b36be7c591011a`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @12-16
+- async-function test_disabled @21-25
+
+### testing/webcompat/interventions/tests/test_1898915_locator_dhl_com.py
+
+Blob: `8841e81bcade6dd887f7d029165f7ca97d48fa1b`. Parse: parsed.
+
+- import asyncio @1
+- import pytest @3
+- async-function test_enabled @14-18
+- async-function test_disabled @24-27
+
+### testing/webcompat/interventions/tests/test_1898916_smartmirror_link.py
+
+Blob: `c5b1cc1e15d604afc46f29b0a0612353dfff23a8`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-14
+- async-function test_disabled @20-23
+
+### testing/webcompat/interventions/tests/test_1898917_sekowf_wns_com.py
+
+Blob: `4f8dbae8b9becd4813b7f6b629af2892953c4111`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-14
+- async-function test_disabled @19-22
+
+### testing/webcompat/interventions/tests/test_1898923_trade-in_vodafone_com.py
+
+Blob: `a1f83b9fbdacc3bb47c49546d6d4e50e5ad6687c`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-15
+- async-function test_disabled @20-22
+
+### testing/webcompat/interventions/tests/test_1898926_dgslms_aduacademy_in.py
+
+Blob: `3d4d687624fb7f09afbc08de30ee0acff808097b`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @12-15
+- async-function test_disabled @21-24
+
+### testing/webcompat/interventions/tests/test_1898928_cleanfeed_net.py
+
+Blob: `0290f8c542ecbd94b434fd64c92ae55fbf331f37`. Parse: parsed.
+
+- import pytest @1
+- async-function test_regression @10-13
+
+### testing/webcompat/interventions/tests/test_1898929_app_sessionlinkpro_com.py
+
+Blob: `6b944c533e1083fc060c0f7eeb19a8369b327a60`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-14
+- async-function test_disabled @19-21
+
+### testing/webcompat/interventions/tests/test_1898931_facturador_afip_gob_ar.py
+
+Blob: `4727bd7bb33f9bb50f5a3e262b1e9fdd00f2fd83`. Parse: parsed.
+
+- import pytest @1
+- from webdriver.error import NoSuchElementException @2
+- async-function visit_site @10-19
+- async-function test_enabled @24-26
+- async-function test_disabled @31-33
+
+### testing/webcompat/interventions/tests/test_1898932_account_gov_il.py
+
+Blob: `a3c5c4a0907078037aceda7c83fd1ab4e239fa58`. Parse: parsed.
+
+- import asyncio @1
+- import pytest @3
+- async-function test_enabled @13-16
+- async-function test_disabled @21-24
+
+### testing/webcompat/interventions/tests/test_1898934_tza_red.py
+
+Blob: `e37c323fb24a19a7bb507887c435f65ca1c37e27`. Parse: parsed.
+
+- import pytest @1
+- from webdriver.error import NoSuchElementException @2
+- async-function test_enabled @11-17
+- async-function test_disabled @22-24
+
+### testing/webcompat/interventions/tests/test_1898936_app_stormx_io.py
+
+Blob: `1c7569ac8ce2d368e5ba11159f5a3986d39f2ac7`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-14
+- async-function test_disabled @20-23
+- async-function test_not_blocked_on_android @29-32
+
+### testing/webcompat/interventions/tests/test_1898937_goodyearfiaetrc_com.py
+
+Blob: `02db2e125c74f847a62380475e9b536349d0ffba`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-14
+- async-function test_disabled @19-22
+
+### testing/webcompat/interventions/tests/test_1898938_conference_amwell_com.py
+
+Blob: `c0c0d7a7ae9b242769f4231aacdf6abc1e439323`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-14
+- async-function test_disabled @19-22
+
+### testing/webcompat/interventions/tests/test_1898939_smartgpseco_com.py
+
+Blob: `4354964aba885a3d34d35ba2e5122873eb447eae`. Parse: parsed.
+
+- import pytest @1
+- from webdriver.error import NoSuchElementException @2
+- async-function test_enabled @11-17
+- async-function test_disabled @22-24
+
+### testing/webcompat/interventions/tests/test_1898943_carelink_minimed_eu.py
+
+Blob: `d6288265eff11be7299181ff72a7d9e3ef3c1252`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @12-15
+- async-function test_disabled @21-24
+
+### testing/webcompat/interventions/tests/test_1898946_transcrib_io.py
+
+Blob: `4f38cb731a148f475acb61f96bcf1d2e7b0f72c8`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-14
+- async-function test_disabled @19-22
+
+### testing/webcompat/interventions/tests/test_1898949_my_murj_com.py
+
+Blob: `8b79830a3d5ff159faea39b0d6924196750c9992`. Parse: parsed.
+
+- import asyncio @1
+- import pytest @3
+- async-function test_enabled @12-15
+- async-function test_disabled @20-22
+
+### testing/webcompat/interventions/tests/test_1898951_hexagame_io.py
+
+Blob: `b59e9bfd2beb52dad38fff2a612186e23cecfb09`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @10-12
+- async-function test_disabled @18-20
+
+### testing/webcompat/interventions/tests/test_1898952_digits_t-mobile_com.py
+
+Blob: `c6ec576964b9fc955a2d03eab3066825a007807b`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-14
+- async-function test_disabled @20-23
+
+### testing/webcompat/interventions/tests/test_1898960_hrm_online_comarch_pl.py
+
+Blob: `ad6f1144da2ff0fb22f9452f9b4ec311cdbd97a4`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @12-15
+- async-function test_disabled @21-24
+
+### testing/webcompat/interventions/tests/test_1898963_england_nhs_attendanywhere_com.py
+
+Blob: `b52da1f1c78be5ae469b38e1771854621edc8f27`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-14
+- async-function test_disabled @19-22
+
+### testing/webcompat/interventions/tests/test_1898983_elibrary_ferc_gov.py
+
+Blob: `b7f80a0accd82cdb089bd8c59e51e2778ef0977c`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @10-13
+- async-function test_disabled @18-20
+
+### testing/webcompat/interventions/tests/test_1898988_prudential_com_hk.py
+
+Blob: `6cc9f2c3642fe8c99faf1f796c617edfb5e79df5`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-14
+- async-function test_disabled @19-22
+
+### testing/webcompat/interventions/tests/test_1898989_mymsc_com.py
+
+Blob: `229a10af1ef01980f4f7e9a1eed6b31235e6c33d`. Parse: parsed.
+
+- import asyncio @1
+- import pytest @3
+- async-function test_enabled @12-15
+- async-function test_disabled @21-23
+
+### testing/webcompat/interventions/tests/test_1898996_horizon_meta_com.py
+
+Blob: `11143b69054c4eb301af58c0cfeb6b7bf3fd71e1`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @12-15
+- async-function test_disabled @21-24
+
+### testing/webcompat/interventions/tests/test_1898996_oculus_com.py
+
+Blob: `1e83f105c930b3c3c58a5802b50eae7b35cfea97`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @12-15
+- async-function test_disabled @21-24
+
+### testing/webcompat/interventions/tests/test_1899049_bcbs_pinpointglobal_com.py
+
+Blob: `6f4230e9f897bb36c731ee625b5031f3340482c9`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @10-13
+- async-function test_disabled @18-21
+
+### testing/webcompat/interventions/tests/test_1899054_icorrectproof_com.py
+
+Blob: `01228068c39b5255af0c4f7116494096542a8281`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-14
+- async-function test_disabled @19-22
+
+### testing/webcompat/interventions/tests/test_1899060_18990601_wbte_drcedirect_com.py
+
+Blob: `7b5239458167887888aeffd719687cb8f1c80b92`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @12-15
+- async-function test_disabled @21-24
+
+### testing/webcompat/interventions/tests/test_1899060_18990602_wbte_drcedirect_com.py
+
+Blob: `ea304d5e3376f432bef5e8c6ef311c19bb90755c`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @12-15
+- async-function test_disabled @21-24
+
+### testing/webcompat/interventions/tests/test_1899063_onlinestep_pgc_edu.py
+
+Blob: `cb97518deaec1074e6bec29c786560fef5a83dda`. Parse: parsed.
+
+- import asyncio @1
+- import pytest @3
+- async-function test_enabled @12-15
+- async-function test_disabled @20-22
+
+### testing/webcompat/interventions/tests/test_1899065_centerparcs_co_uk.py
+
+Blob: `17804319fe4799763efd6ab5dc2c2992524826cb`. Parse: parsed.
+
+- import asyncio @1
+- import pytest @3
+- async-function test_regression @12-15
+
+### testing/webcompat/interventions/tests/test_1899066_app_bookcreator_com.py
+
+Blob: `2384b8ce28eedfffe247065d384f8a8a13c78a25`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @16-19
+- async-function test_disabled @25-28
+
+### testing/webcompat/interventions/tests/test_1899067_game_granbluefantasy_jp.py
+
+Blob: `6137fe1c03a2ca7b527bb2648aa20ac2c2232b9a`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @11-14
+- async-function test_disabled @20-23
+
+### testing/webcompat/interventions/tests/test_1899072_passpoint_boingo_com.py
+
+Blob: `3d49cf7214e9764ddfd58b1cf098c811dc341e64`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @12-15
+- async-function test_disabled @21-24
+
+### testing/webcompat/interventions/tests/test_1899829_animeflv_net.py
+
+Blob: `097b895b5fff1ac5be55906ae758227face35414`. Parse: parsed.
+
+- import pytest @1
+- async-function is_green_estreno_banner_visible @7-15
+- async-function test_enabled @21-22
+- async-function test_disabled @28-29
+
+### testing/webcompat/interventions/tests/test_1899923_findmy_tokyo.py
+
+Blob: `a1902e51f271d87d623b7e1cf366d5f17b785719`. Parse: parsed.
+
+- import pytest @1
+- async-function test_enabled @12-15
+- async-function test_disabled @21-24
+
+## Validation and limits
+
+The parser checked syntax only. This pass cannot prove runtime contracts, ownership, selected build settings, executed branches, or design reasons. Build files use a Python-based domain-specific language; parsing them as Python does not validate the build system. Byte decoding uses UTF-8; special encoding declarations and intentionally invalid fixtures may fail.

@@ -1,0 +1,958 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["js/src/tests/test262/language/statements/let/static-init-await-binding-valid.js","js/src/tests/test262/language/statements/let/syntax/browser.js","js/src/tests/test262/language/statements/let/syntax/escaped-let.js","js/src/tests/test262/language/statements/let/syntax/identifier-let-allowed-as-lefthandside-expression-strict-strict.js","js/src/tests/test262/language/statements/let/syntax/identifier-let-disallowed-as-boundname.js","js/src/tests/test262/language/statements/let/syntax/let-closure-inside-condition.js","js/src/tests/test262/language/statements/let/syntax/let-closure-inside-initialization.js","js/src/tests/test262/language/statements/let/syntax/let-closure-inside-next-expression.js","js/src/tests/test262/language/statements/let/syntax/let-iteration-variable-is-freshly-allocated-for-each-iteration-multi-let-binding.js","js/src/tests/test262/language/statements/let/syntax/let-iteration-variable-is-freshly-allocated-for-each-iteration-single-let-binding.js","js/src/tests/test262/language/statements/let/syntax/let-let-declaration-split-across-two-lines.js","js/src/tests/test262/language/statements/let/syntax/let-let-declaration-with-initializer-split-across-two-lines.js","js/src/tests/test262/language/statements/let/syntax/let-newline-await-in-normal-function.js","js/src/tests/test262/language/statements/let/syntax/let-newline-yield-in-generator-function.js","js/src/tests/test262/language/statements/let/syntax/let-newline-yield-in-normal-function.js","js/src/tests/test262/language/statements/let/syntax/let-outer-inner-let-bindings.js","js/src/tests/test262/language/statements/let/syntax/let.js","js/src/tests/test262/language/statements/let/syntax/shell.js","js/src/tests/test262/language/statements/let/syntax/with-initialisers-in-statement-positions-case-expression-statement-list.js","js/src/tests/test262/language/statements/let/syntax/with-initialisers-in-statement-positions-default-statement-list.js","js/src/tests/test262/language/statements/let/syntax/with-initialisers-in-statement-positions-do-statement-while-expression.js","js/src/tests/test262/language/statements/let/syntax/with-initialisers-in-statement-positions-for-statement.js","js/src/tests/test262/language/statements/let/syntax/with-initialisers-in-statement-positions-if-expression-statement-else-statement.js","js/src/tests/test262/language/statements/let/syntax/with-initialisers-in-statement-positions-if-expression-statement.js","js/src/tests/test262/language/statements/let/syntax/with-initialisers-in-statement-positions-label-statement.js","js/src/tests/test262/language/statements/let/syntax/with-initialisers-in-statement-positions-while-expression-statement.js","js/src/tests/test262/language/statements/let/syntax/without-initialisers-in-statement-positions-case-expression-statement-list.js","js/src/tests/test262/language/statements/let/syntax/without-initialisers-in-statement-positions-default-statement-list.js","js/src/tests/test262/language/statements/let/syntax/without-initialisers-in-statement-positions-do-statement-while-expression.js","js/src/tests/test262/language/statements/let/syntax/without-initialisers-in-statement-positions-for-statement.js","js/src/tests/test262/language/statements/let/syntax/without-initialisers-in-statement-positions-if-expression-statement-else-statement.js","js/src/tests/test262/language/statements/let/syntax/without-initialisers-in-statement-positions-if-expression-statement.js","js/src/tests/test262/language/statements/let/syntax/without-initialisers-in-statement-positions-label-statement.js","js/src/tests/test262/language/statements/let/syntax/without-initialisers-in-statement-positions-while-expression-statement.js","js/src/tests/test262/language/statements/return/12.9-1.js","js/src/tests/test262/language/statements/return/S12.9_A1_T1.js","js/src/tests/test262/language/statements/return/S12.9_A1_T10.js","js/src/tests/test262/language/statements/return/S12.9_A1_T2.js","js/src/tests/test262/language/statements/return/S12.9_A1_T3.js","js/src/tests/test262/language/statements/return/S12.9_A1_T4.js","js/src/tests/test262/language/statements/return/S12.9_A1_T5.js","js/src/tests/test262/language/statements/return/S12.9_A1_T6.js","js/src/tests/test262/language/statements/return/S12.9_A1_T7.js","js/src/tests/test262/language/statements/return/S12.9_A1_T8.js","js/src/tests/test262/language/statements/return/S12.9_A1_T9.js","js/src/tests/test262/language/statements/return/S12.9_A3.js","js/src/tests/test262/language/statements/return/S12.9_A4.js","js/src/tests/test262/language/statements/return/S12.9_A5.js","js/src/tests/test262/language/statements/return/browser.js","js/src/tests/test262/language/statements/return/line-terminators.js","js/src/tests/test262/language/statements/return/shell.js","js/src/tests/test262/language/statements/return/tco-strict.js","js/src/tests/test262/language/statements/shell.js","js/src/tests/test262/language/statements/switch/S12.11_A1_T1.js","js/src/tests/test262/language/statements/switch/S12.11_A1_T2.js","js/src/tests/test262/language/statements/switch/S12.11_A1_T3.js","js/src/tests/test262/language/statements/switch/S12.11_A1_T4.js","js/src/tests/test262/language/statements/switch/S12.11_A2_T1.js","js/src/tests/test262/language/statements/switch/S12.11_A3_T1.js","js/src/tests/test262/language/statements/switch/S12.11_A3_T2.js","js/src/tests/test262/language/statements/switch/S12.11_A3_T3.js","js/src/tests/test262/language/statements/switch/S12.11_A3_T4.js","js/src/tests/test262/language/statements/switch/S12.11_A3_T5.js","js/src/tests/test262/language/statements/switch/S12.11_A4_T1.js","js/src/tests/test262/language/statements/switch/browser.js","js/src/tests/test262/language/statements/switch/cptn-a-abrupt-empty.js","js/src/tests/test262/language/statements/switch/cptn-a-fall-thru-abrupt-empty.js","js/src/tests/test262/language/statements/switch/cptn-a-fall-thru-nrml.js","js/src/tests/test262/language/statements/switch/cptn-abrupt-empty.js","js/src/tests/test262/language/statements/switch/cptn-b-abrupt-empty.js","js/src/tests/test262/language/statements/switch/cptn-b-fall-thru-abrupt-empty.js","js/src/tests/test262/language/statements/switch/cptn-b-fall-thru-nrml.js","js/src/tests/test262/language/statements/switch/cptn-b-final.js","js/src/tests/test262/language/statements/switch/cptn-dflt-abrupt-empty.js","js/src/tests/test262/language/statements/switch/cptn-dflt-b-abrupt-empty.js","js/src/tests/test262/language/statements/switch/cptn-dflt-b-fall-thru-abrupt-empty.js","js/src/tests/test262/language/statements/switch/cptn-dflt-b-fall-thru-nrml.js","js/src/tests/test262/language/statements/switch/cptn-dflt-b-final.js","js/src/tests/test262/language/statements/switch/cptn-dflt-fall-thru-abrupt-empty.js","js/src/tests/test262/language/statements/switch/cptn-dflt-fall-thru-nrml.js","js/src/tests/test262/language/statements/switch/cptn-dflt-final.js","js/src/tests/test262/language/statements/switch/cptn-no-dflt-match-abrupt-empty.js","js/src/tests/test262/language/statements/switch/cptn-no-dflt-match-fall-thru-abrupt-empty.js","js/src/tests/test262/language/statements/switch/cptn-no-dflt-match-fall-thru-nrml.js","js/src/tests/test262/language/statements/switch/cptn-no-dflt-match-final.js","js/src/tests/test262/language/statements/switch/cptn-no-dflt-no-match.js","js/src/tests/test262/language/statements/switch/scope-lex-async-function.js","js/src/tests/test262/language/statements/switch/scope-lex-async-generator.js","js/src/tests/test262/language/statements/switch/scope-lex-class.js","js/src/tests/test262/language/statements/switch/scope-lex-close-case.js","js/src/tests/test262/language/statements/switch/scope-lex-close-dflt.js","js/src/tests/test262/language/statements/switch/scope-lex-const.js","js/src/tests/test262/language/statements/switch/scope-lex-generator.js","js/src/tests/test262/language/statements/switch/scope-lex-let.js","js/src/tests/test262/language/statements/switch/scope-lex-open-case.js","js/src/tests/test262/language/statements/switch/scope-lex-open-dflt.js","js/src/tests/test262/language/statements/switch/scope-var-none-case.js","js/src/tests/test262/language/statements/switch/scope-var-none-dflt.js","js/src/tests/test262/language/statements/switch/shell.js","js/src/tests/test262/language/statements/switch/syntax/browser.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-function-name-redeclaration-attempt-with-async-function.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-function-name-redeclaration-attempt-with-async-generator.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-function-name-redeclaration-attempt-with-class.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-function-name-redeclaration-attempt-with-const.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-function-name-redeclaration-attempt-with-function.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-function-name-redeclaration-attempt-with-generator.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-function-name-redeclaration-attempt-with-let.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-function-name-redeclaration-attempt-with-var.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-generator-name-redeclaration-attempt-with-async-function.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-generator-name-redeclaration-attempt-with-async-generator.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-generator-name-redeclaration-attempt-with-class.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-generator-name-redeclaration-attempt-with-const.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-generator-name-redeclaration-attempt-with-function.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-generator-name-redeclaration-attempt-with-generator.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-generator-name-redeclaration-attempt-with-let.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-generator-name-redeclaration-attempt-with-var.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/browser.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/class-name-redeclaration-attempt-with-async-function.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/class-name-redeclaration-attempt-with-async-generator.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/class-name-redeclaration-attempt-with-class.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/class-name-redeclaration-attempt-with-const.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/class-name-redeclaration-attempt-with-function.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/class-name-redeclaration-attempt-with-generator.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/class-name-redeclaration-attempt-with-let.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/class-name-redeclaration-attempt-with-var.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/const-name-redeclaration-attempt-with-async-function.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/const-name-redeclaration-attempt-with-async-generator.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/const-name-redeclaration-attempt-with-class.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/const-name-redeclaration-attempt-with-const.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/const-name-redeclaration-attempt-with-function.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/const-name-redeclaration-attempt-with-generator.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/const-name-redeclaration-attempt-with-let.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/const-name-redeclaration-attempt-with-var.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/function-name-redeclaration-attempt-with-async-function.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/function-name-redeclaration-attempt-with-async-generator.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/function-name-redeclaration-attempt-with-class.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/function-name-redeclaration-attempt-with-const.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/function-name-redeclaration-attempt-with-function-strict.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/function-name-redeclaration-attempt-with-generator.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/function-name-redeclaration-attempt-with-let.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/function-name-redeclaration-attempt-with-var.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/generator-name-redeclaration-attempt-with-async-function.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/generator-name-redeclaration-attempt-with-async-generator.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/generator-name-redeclaration-attempt-with-class.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/generator-name-redeclaration-attempt-with-const.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/generator-name-redeclaration-attempt-with-function.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/generator-name-redeclaration-attempt-with-generator.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/generator-name-redeclaration-attempt-with-let.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/generator-name-redeclaration-attempt-with-var.js","js/src/tests/test262/language/statements/switch/syntax/redeclaration/let-name-redeclaration-attempt-with-async-function.js"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013"}} -->
+# firefox/js JavaScript function map 677
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### js/src/tests/test262/language/statements/let/static-init-await-binding-valid.js
+
+Blob: `e6a531cd3de6a880c85c6bf8bd0500fe37f39962`. Role: test-path,source. Parse: script.
+
+- (anonymous) @16-16; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class C @14-18
+
+### js/src/tests/test262/language/statements/let/syntax/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/let/syntax/escaped-let.js
+
+Blob: `04c60ff8404e30602bcbc014f5d01a80401fc9ee`. Role: test-path,source. Parse: script.
+
+
+### js/src/tests/test262/language/statements/let/syntax/identifier-let-allowed-as-lefthandside-expression-strict-strict.js
+
+Blob: `3d8af4f80e160eb4ccccc7186a593ccc1d433383`. Role: test-path,source. Parse: failed.
+
+Failure: The keyword 'let' is reserved
+
+
+### js/src/tests/test262/language/statements/let/syntax/identifier-let-disallowed-as-boundname.js
+
+Blob: `f93207d8447bb9dce8792acc6c7b532a9da46eb4`. Role: test-path,source. Parse: failed.
+
+Failure: let is disallowed as a lexically bound name
+
+
+### js/src/tests/test262/language/statements/let/syntax/let-closure-inside-condition.js
+
+Blob: `e0d20e129e257a9bcdeae1a18ac4a747f8b76182`. Role: test-path,source. Parse: module.
+
+- (anonymous) @9-9; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/statements/let/syntax/let-closure-inside-initialization.js
+
+Blob: `29322ec1e135806a012a1c5fbecebfe881e71825`. Role: test-path,source. Parse: module.
+
+- f @9-9; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/statements/let/syntax/let-closure-inside-next-expression.js
+
+Blob: `e2d7a08ead3df0853277e49692887032d3182540`. Role: test-path,source. Parse: module.
+
+- (anonymous) @9-9; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/statements/let/syntax/let-iteration-variable-is-freshly-allocated-for-each-iteration-multi-let-binding.js
+
+Blob: `99b7421991ca7f9d7cb37c8d5530eb5bf71d813e`. Role: test-path,source. Parse: module.
+
+- (anonymous) @10-10; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @11-11; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/statements/let/syntax/let-iteration-variable-is-freshly-allocated-for-each-iteration-single-let-binding.js
+
+Blob: `33cc84c50a7d52cecbc80238204cef5026ea5559`. Role: test-path,source. Parse: module.
+
+- (anonymous) @10-10; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/statements/let/syntax/let-let-declaration-split-across-two-lines.js
+
+Blob: `ffc309bf531b9eff7234c6023e3a7c4f789e85c6`. Role: test-path,source. Parse: failed.
+
+Failure: let is disallowed as a lexically bound name
+
+
+### js/src/tests/test262/language/statements/let/syntax/let-let-declaration-with-initializer-split-across-two-lines.js
+
+Blob: `28d5758eb9c4c1e7014065c1f186cd34e4795e76`. Role: test-path,source. Parse: failed.
+
+Failure: let is disallowed as a lexically bound name
+
+
+### js/src/tests/test262/language/statements/let/syntax/let-newline-await-in-normal-function.js
+
+Blob: `aa3735d09a7c818543b9f75500d527d03ed19fa2`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token 0
+
+
+### js/src/tests/test262/language/statements/let/syntax/let-newline-yield-in-generator-function.js
+
+Blob: `86a3c429bf3a7bd0bdfed1ccde5fe9572df9a2c4`. Role: test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### js/src/tests/test262/language/statements/let/syntax/let-newline-yield-in-normal-function.js
+
+Blob: `fdf257f95f3dcd257652f6b208faba73a6b00ef2`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token 0
+
+
+### js/src/tests/test262/language/statements/let/syntax/let-outer-inner-let-bindings.js
+
+Blob: `ece8f016ef3c08cffdb5a7fcc5feb364b9a0a83b`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/let/syntax/let.js
+
+Blob: `cf9bd1b53c8ce3968453e54936e262f8baaad831`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/let/syntax/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/let/syntax/with-initialisers-in-statement-positions-case-expression-statement-list.js
+
+Blob: `79a17ed3c4d92da2b5c04afce4c222d3038b6a1c`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/let/syntax/with-initialisers-in-statement-positions-default-statement-list.js
+
+Blob: `0788ee9d8d06321ee033e7e7deb334be871ce0a7`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/let/syntax/with-initialisers-in-statement-positions-do-statement-while-expression.js
+
+Blob: `f452223e922dd1a2854ca29d50de0f69dc5cefe5`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token x
+
+
+### js/src/tests/test262/language/statements/let/syntax/with-initialisers-in-statement-positions-for-statement.js
+
+Blob: `cc0d1cd7965868dd0cf9cf96c5dc96ae1c9f89b2`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token x
+
+
+### js/src/tests/test262/language/statements/let/syntax/with-initialisers-in-statement-positions-if-expression-statement-else-statement.js
+
+Blob: `72ef204832a5b9b0d111a534ac176bf728d2a1a5`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token x
+
+
+### js/src/tests/test262/language/statements/let/syntax/with-initialisers-in-statement-positions-if-expression-statement.js
+
+Blob: `f0b34129e5d98295d6ba650845f61fedabd67027`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token x
+
+
+### js/src/tests/test262/language/statements/let/syntax/with-initialisers-in-statement-positions-label-statement.js
+
+Blob: `55336769c3ae72a4834e497d4175721537973e28`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token x
+
+
+### js/src/tests/test262/language/statements/let/syntax/with-initialisers-in-statement-positions-while-expression-statement.js
+
+Blob: `eb2f85897e8e3cdadf840ab713c600d594452e25`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token x
+
+
+### js/src/tests/test262/language/statements/let/syntax/without-initialisers-in-statement-positions-case-expression-statement-list.js
+
+Blob: `089beebeb39837e48b168392751f4912bbce1521`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/let/syntax/without-initialisers-in-statement-positions-default-statement-list.js
+
+Blob: `128f3cb6adbf820e7ef0df10d8b39bab3d11d39a`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/let/syntax/without-initialisers-in-statement-positions-do-statement-while-expression.js
+
+Blob: `568b4463b5d3dca8a7c4dd6a2c29f1c23ab5681d`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token x
+
+
+### js/src/tests/test262/language/statements/let/syntax/without-initialisers-in-statement-positions-for-statement.js
+
+Blob: `1730e07c1a857cfde1278be21f4dafff428b8f79`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token x
+
+
+### js/src/tests/test262/language/statements/let/syntax/without-initialisers-in-statement-positions-if-expression-statement-else-statement.js
+
+Blob: `bf634c51030a38fa783ec12c89eba015f674c11e`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token x
+
+
+### js/src/tests/test262/language/statements/let/syntax/without-initialisers-in-statement-positions-if-expression-statement.js
+
+Blob: `8c9ad1e56b056704995906994f8e81142ddc19db`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token x
+
+
+### js/src/tests/test262/language/statements/let/syntax/without-initialisers-in-statement-positions-label-statement.js
+
+Blob: `7298a666ad09de03435d21f013a3ebe5db8e7739`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token x
+
+
+### js/src/tests/test262/language/statements/let/syntax/without-initialisers-in-statement-positions-while-expression-statement.js
+
+Blob: `705e47e5d6a006422b3f278676211aa2c16ce3c3`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token x
+
+
+### js/src/tests/test262/language/statements/return/12.9-1.js
+
+Blob: `8d14087994967d40b6b99a98caa58ae643fcf992`. Role: test-path,source. Parse: module.
+
+- innerTest @12-20; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/statements/return/S12.9_A1_T1.js
+
+Blob: `2205a4163ee33d81a56334c722ff6f5dee21a9eb`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/return/S12.9_A1_T10.js
+
+Blob: `b62da2f4a64ba03b0d19dc019e243cb78f15633b`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/return/S12.9_A1_T2.js
+
+Blob: `b20861a898b18558fc62375797b151882ee4f2a0`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/return/S12.9_A1_T3.js
+
+Blob: `72d67624aa69619fad1db32daaaff337bc004668`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/return/S12.9_A1_T4.js
+
+Blob: `bc16285c74933f329461c4af6a713fca3d732244`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/return/S12.9_A1_T5.js
+
+Blob: `b6b3b653cdd0de22b7188ae3db0bf2664cdeff12`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/return/S12.9_A1_T6.js
+
+Blob: `af898c58308fd4d14a47efb46dbb5a95b195cb2f`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/return/S12.9_A1_T7.js
+
+Blob: `e4ba4e3ef6be42b405f6006f4e64f23189d67d3e`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/return/S12.9_A1_T8.js
+
+Blob: `2d7d918549ab3def145902cf6851985d97793f4e`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/return/S12.9_A1_T9.js
+
+Blob: `5ba06d10cf7d506e4cc9c30c5dd908aef2fd4cb3`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/return/S12.9_A3.js
+
+Blob: `979dd039d1d35f3f67691dfe4f01cfdab6d16da8`. Role: test-path,source. Parse: module.
+
+- (anonymous) @11-11; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/statements/return/S12.9_A4.js
+
+Blob: `1e808efd75e2aaa27cf340d967277f0c85abe8e7`. Role: test-path,source. Parse: module.
+
+- DD_operator @15-15; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @15-15; FunctionExpression; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/language/statements/return/S12.9_A5.js
+
+Blob: `8adf1f9140332d66184b574c1540060364a4d7a4`. Role: test-path,source. Parse: module.
+
+- myfunc1 @12-16; FunctionDeclaration; parameters=0; async=false; generator=false
+- myfunc2 @22-26; FunctionDeclaration; parameters=0; async=false; generator=false
+- myfunc3 @32-37; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/statements/return/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/return/line-terminators.js
+
+Blob: `6af7ff9af9dd57be14326b5c42595eb6696bcb12`. Role: test-path,source. Parse: module.
+
+- (anonymous) @13-14; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @20-21; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @28-29; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @35-36; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/statements/return/shell.js
+
+Blob: `43295587f41e0d2458a0ac7179806d31228fd1b2`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/return/tco-strict.js
+
+Blob: `619cfdfb7f456d48ce887e0e6bd2af9f36a6efb6`. Role: test-path,source. Parse: module.
+
+- f @14-20; FunctionExpression; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/language/statements/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/S12.11_A1_T1.js
+
+Blob: `7313278b82130185ded16189f21fc391c6b9d5a2`. Role: test-path,source. Parse: module.
+
+- SwitchTest @12-33; FunctionDeclaration; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/language/statements/switch/S12.11_A1_T2.js
+
+Blob: `43e524e89ce2cf21c47dbf0d616f17c1aed42977`. Role: test-path,source. Parse: module.
+
+- SwitchTest @14-43; FunctionDeclaration; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/language/statements/switch/S12.11_A1_T3.js
+
+Blob: `62298e3d6535d7cef86fe3a31372288121c6a23d`. Role: test-path,source. Parse: module.
+
+- SwitchTest @12-43; FunctionDeclaration; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/language/statements/switch/S12.11_A1_T4.js
+
+Blob: `8d2c19f49e1da21015ad68af4afb0ed4d67a0441`. Role: test-path,source. Parse: module.
+
+- SwitchTest @12-43; FunctionDeclaration; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/language/statements/switch/S12.11_A2_T1.js
+
+Blob: `293fcf6181364ef799c57fefb8735c4404e0beb3`. Role: test-path,source. Parse: failed.
+
+Failure: Multiple default clauses
+
+
+### js/src/tests/test262/language/statements/switch/S12.11_A3_T1.js
+
+Blob: `80e2a8c7e7661f3fbac563797e652a6650da35a0`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token )
+
+
+### js/src/tests/test262/language/statements/switch/S12.11_A3_T2.js
+
+Blob: `2605e24aa87e6ca3bd3971b68599223344266c27`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token {
+
+
+### js/src/tests/test262/language/statements/switch/S12.11_A3_T3.js
+
+Blob: `f946e094eb67fa17a9be2d989d7d2219807a4d34`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ;
+
+
+### js/src/tests/test262/language/statements/switch/S12.11_A3_T4.js
+
+Blob: `369011c9a7256630097312a278e5a4ecf15db711`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token :
+
+
+### js/src/tests/test262/language/statements/switch/S12.11_A3_T5.js
+
+Blob: `6439de051a0657cdc47f390848e59f0083691e19`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token result
+
+
+### js/src/tests/test262/language/statements/switch/S12.11_A4_T1.js
+
+Blob: `258870928809aabe42e3928e761966b992904f2b`. Role: test-path,source. Parse: module.
+
+- SwitchTest @10-31; FunctionDeclaration; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/language/statements/switch/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/cptn-a-abrupt-empty.js
+
+Blob: `2bd948fd21f209a359b71e28a79e31f37b66c051`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/cptn-a-fall-thru-abrupt-empty.js
+
+Blob: `8fa4a1b125f4884911331b21f60b4d52c011fb29`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/cptn-a-fall-thru-nrml.js
+
+Blob: `2bc7e5f0de7d8ac8942e0d9b5460a1ce3b6a49e0`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/cptn-abrupt-empty.js
+
+Blob: `b866c73b6deeea3627f77b66678ceb07b5a7e2c0`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/cptn-b-abrupt-empty.js
+
+Blob: `7e3b0ef97babc8f75c7757406c5e7cba84f647c0`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/cptn-b-fall-thru-abrupt-empty.js
+
+Blob: `59d82a569bd1414127cd16ee78da23d4fddc5959`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/cptn-b-fall-thru-nrml.js
+
+Blob: `2555aedb5423320c79c5f342822c2eb556a38b4c`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/cptn-b-final.js
+
+Blob: `90b0419e13c0734ba157f36d4da033d9f5c044d3`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/cptn-dflt-abrupt-empty.js
+
+Blob: `fc15af139837edd19adffd0b1459eb3183e8527f`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/cptn-dflt-b-abrupt-empty.js
+
+Blob: `567900f159db38dc9e7f35dd307d12994494ed9b`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/cptn-dflt-b-fall-thru-abrupt-empty.js
+
+Blob: `c37bd4b44220058ea8986694ea72c26c410f72ca`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/cptn-dflt-b-fall-thru-nrml.js
+
+Blob: `1a342ccdc5805d27ed3987ccf76c859603470ae6`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/cptn-dflt-b-final.js
+
+Blob: `a1ddd7dd7e3b509e8f8a023b73c382f48095a4ea`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/cptn-dflt-fall-thru-abrupt-empty.js
+
+Blob: `44d369ad25964ef8b5817989fdef8a2f2f6e48d4`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/cptn-dflt-fall-thru-nrml.js
+
+Blob: `42f52df835ec7bbe1698ba21762c784a884f4298`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/cptn-dflt-final.js
+
+Blob: `7099e69f59294791ed2405f0adb7d0bb4a288368`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/cptn-no-dflt-match-abrupt-empty.js
+
+Blob: `cf640d6b905711abe3f79691e9b3b99c44497fb8`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/cptn-no-dflt-match-fall-thru-abrupt-empty.js
+
+Blob: `4abf4d3e8adc2795e0375cc99c27aad80ff94dc1`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/cptn-no-dflt-match-fall-thru-nrml.js
+
+Blob: `594945d7db814fb84a633311a1335f5b85ebd52f`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/cptn-no-dflt-match-final.js
+
+Blob: `4eb34f8caeb96284f525ea38cb34a7ebf93c2b76`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/cptn-no-dflt-no-match.js
+
+Blob: `83ff4ad846ceefee237be84be47db94c79d452e9`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/scope-lex-async-function.js
+
+Blob: `737ab103b22e3d4e270e47dee0b3a60914f712fd`. Role: test-path,source. Parse: module.
+
+- x @22-22; FunctionDeclaration; parameters=0; async=true; generator=false
+
+### js/src/tests/test262/language/statements/switch/scope-lex-async-generator.js
+
+Blob: `7b1dc835e02f7253703f7d9b1a19d16fa93a5747`. Role: test-path,source. Parse: module.
+
+- x @22-22; FunctionDeclaration; parameters=0; async=true; generator=true
+
+### js/src/tests/test262/language/statements/switch/scope-lex-class.js
+
+Blob: `7cbf564b0a3d33baf152ae88719c6cbe817c4e2f`. Role: test-path,source. Parse: module.
+
+- Class x @22-22
+
+### js/src/tests/test262/language/statements/switch/scope-lex-close-case.js
+
+Blob: `beca515ece438f01a01694a189ad7544906f932a`. Role: test-path,source. Parse: module.
+
+- probe1 @25-25; FunctionExpression; parameters=0; async=false; generator=false
+- probe2 @27-27; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/statements/switch/scope-lex-close-dflt.js
+
+Blob: `e46fae794e23188c852e9ba306e36315b27cd11d`. Role: test-path,source. Parse: module.
+
+- probeDefault @25-25; FunctionExpression; parameters=0; async=false; generator=false
+- probeDefaultBeforeCase @34-34; FunctionExpression; parameters=0; async=false; generator=false
+- probeCase @36-36; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/statements/switch/scope-lex-const.js
+
+Blob: `27a1adcc2942e0be03ca9a3a259d36cbdb755c71`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/scope-lex-generator.js
+
+Blob: `1e417855b4e7a8e328e237f6a5da11606554b60b`. Role: test-path,source. Parse: module.
+
+- x @22-22; FunctionDeclaration; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/statements/switch/scope-lex-let.js
+
+Blob: `791d69c4c7fc452ffc44c2baa65e63b067330e00`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/scope-lex-open-case.js
+
+Blob: `e9360c40fecf1e889abdbcf1e1a503fef1b3ec65`. Role: test-path,source. Parse: module.
+
+- probeExpr @22-22; FunctionExpression; parameters=0; async=false; generator=false
+- probeSelector @23-23; FunctionExpression; parameters=0; async=false; generator=false
+- probeStmt @24-24; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/statements/switch/scope-lex-open-dflt.js
+
+Blob: `378dbed6557173e04e716c402f32b905c98f752d`. Role: test-path,source. Parse: module.
+
+- probeExpr @22-22; FunctionExpression; parameters=0; async=false; generator=false
+- probeStmt @24-24; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/statements/switch/scope-var-none-case.js
+
+Blob: `0b7767a7e0ff69440f2b57fe85f64470d4761aff`. Role: test-path,source. Parse: module.
+
+- probeBefore @20-20; FunctionExpression; parameters=0; async=false; generator=false
+- probeExpr @22-22; FunctionExpression; parameters=0; async=false; generator=false
+- probeSelector @23-23; FunctionExpression; parameters=0; async=false; generator=false
+- probeStmt @24-24; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/statements/switch/scope-var-none-dflt.js
+
+Blob: `06cf1f265868326e5bf7b7affb7b68a5e3b16d37`. Role: test-path,source. Parse: module.
+
+- probeBefore @20-20; FunctionExpression; parameters=0; async=false; generator=false
+- probeExpr @22-22; FunctionExpression; parameters=0; async=false; generator=false
+- probeStmt @24-24; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/statements/switch/shell.js
+
+Blob: `43295587f41e0d2458a0ac7179806d31228fd1b2`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/syntax/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-function-name-redeclaration-attempt-with-async-function.js
+
+Blob: `3ee12c3def751052d96a16068587c00c7bd7567d`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-function-name-redeclaration-attempt-with-async-generator.js
+
+Blob: `60eec83b9ca0aeee49cc6ae31e1d84e0c3ddf1ea`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-function-name-redeclaration-attempt-with-class.js
+
+Blob: `4728da3f760f4c11f0ebbe7dc685dd719793f0ff`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-function-name-redeclaration-attempt-with-const.js
+
+Blob: `2289b841bbbc24edd5bf1ec0494a9d512f3c1c37`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-function-name-redeclaration-attempt-with-function.js
+
+Blob: `b52c94257350b0512954388eecd7ecf85056b31f`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-function-name-redeclaration-attempt-with-generator.js
+
+Blob: `def04c2f1cf6e09fc4194596c4377ca6291f9b84`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-function-name-redeclaration-attempt-with-let.js
+
+Blob: `0999405b9dabac3a12218e9658c36646742900a9`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-function-name-redeclaration-attempt-with-var.js
+
+Blob: `4ec45cf63302351082245c9dc3dfcb106418f7a2`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-generator-name-redeclaration-attempt-with-async-function.js
+
+Blob: `828b885263f20b103b1ab748eea0fe6bb3243152`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-generator-name-redeclaration-attempt-with-async-generator.js
+
+Blob: `1cac5dc1fc1f501411016e89cceca8ae227bb39e`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-generator-name-redeclaration-attempt-with-class.js
+
+Blob: `6c8c86a5cbf87b9b0aec4bed0d431b860914dace`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-generator-name-redeclaration-attempt-with-const.js
+
+Blob: `20560718775574e4188caa7d0453c2d4657dd055`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-generator-name-redeclaration-attempt-with-function.js
+
+Blob: `8b953d7f2aa57d40ec5f6fb81005270ba37c9074`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-generator-name-redeclaration-attempt-with-generator.js
+
+Blob: `b04bf4d0fec656e9db5a75ae276032a1ca6a5ef2`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-generator-name-redeclaration-attempt-with-let.js
+
+Blob: `4608ab9a4335d92d0357c53dbe06e4c828b53cd7`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/async-generator-name-redeclaration-attempt-with-var.js
+
+Blob: `a0c1869be9400ea77a774e4b173922d869c5f1d0`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/class-name-redeclaration-attempt-with-async-function.js
+
+Blob: `fad2f88bb571e3f8c01425f58d9a406f48a679a4`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/class-name-redeclaration-attempt-with-async-generator.js
+
+Blob: `8d341655db56da10a5b63792064a672b81991557`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/class-name-redeclaration-attempt-with-class.js
+
+Blob: `4ad5a0ea36c65f7a7ccfb86beb4260b23b173094`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/class-name-redeclaration-attempt-with-const.js
+
+Blob: `c1c93ffde9eccfee808528eb9f1a2742df8bd7ec`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/class-name-redeclaration-attempt-with-function.js
+
+Blob: `8c1574c04e2b8080f0d23c41c5b2c23723baaffe`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/class-name-redeclaration-attempt-with-generator.js
+
+Blob: `dd1ec7996662badc7e53a992862b8be870bb6030`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/class-name-redeclaration-attempt-with-let.js
+
+Blob: `ff7ebcca515804693507de42898adcc0e6a94f24`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/class-name-redeclaration-attempt-with-var.js
+
+Blob: `bfb72715b458c36e6aa193bd0429f0abe2ae064a`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/const-name-redeclaration-attempt-with-async-function.js
+
+Blob: `ff5c0091a1323a77f486062d42dc7efc7ff6bc78`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/const-name-redeclaration-attempt-with-async-generator.js
+
+Blob: `8913273ff412f3caba78c69c1076b52efe908dc6`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/const-name-redeclaration-attempt-with-class.js
+
+Blob: `2cd4a1d34dd6eb3adf185f7338b5516275697020`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/const-name-redeclaration-attempt-with-const.js
+
+Blob: `72fa1dbd5864cd3c9dd63a20f05f76907ec617dd`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/const-name-redeclaration-attempt-with-function.js
+
+Blob: `f23baad402bc94e31b239c4da6152f6ddc2de303`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/const-name-redeclaration-attempt-with-generator.js
+
+Blob: `d577f27d4a7a291c6a2daba6d23c0d6f9fe2173b`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/const-name-redeclaration-attempt-with-let.js
+
+Blob: `5bac48e93a2a1ee4b08bd0e80a4ad5e0480c1471`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/const-name-redeclaration-attempt-with-var.js
+
+Blob: `e3645885edfa92e3c66b0ab6b24965c830a5122a`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/function-name-redeclaration-attempt-with-async-function.js
+
+Blob: `cae926f3d2160e107ae8619c1c5241036fffd1b8`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/function-name-redeclaration-attempt-with-async-generator.js
+
+Blob: `28d3c1e58122d61a47bef587c451b31623efd664`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/function-name-redeclaration-attempt-with-class.js
+
+Blob: `1095081ff9255ced7b1dc574802b67e5876e7540`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/function-name-redeclaration-attempt-with-const.js
+
+Blob: `8250fb9ff87f222d87743fb61aeba3d7dbe03c14`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/function-name-redeclaration-attempt-with-function-strict.js
+
+Blob: `0a56688b3935e6010a629dbe6e44da4f8669b9e0`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/function-name-redeclaration-attempt-with-generator.js
+
+Blob: `3914f675af281e655bfd1832cc852e6e59d1b180`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/function-name-redeclaration-attempt-with-let.js
+
+Blob: `154045a3d520de1f36f28ea85dad811bb7432ad7`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/function-name-redeclaration-attempt-with-var.js
+
+Blob: `6b158a101eef8d982d00c0e61448e3ca5c70aff3`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/generator-name-redeclaration-attempt-with-async-function.js
+
+Blob: `04fbfaad85535d391e2976ff4dfd3b8ff7e7ac79`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/generator-name-redeclaration-attempt-with-async-generator.js
+
+Blob: `a5ecdae25720f7fbb1bf6cf27e0e6ab08bcdd8c3`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/generator-name-redeclaration-attempt-with-class.js
+
+Blob: `468c37536a121a13d32868861c1dace383aef385`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/generator-name-redeclaration-attempt-with-const.js
+
+Blob: `9cbbb3f6e1920527dcfed9346e4b1eeb1d54a8e1`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/generator-name-redeclaration-attempt-with-function.js
+
+Blob: `084bf41aa9d78ce87b5d079505c183bcc7bc74af`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/generator-name-redeclaration-attempt-with-generator.js
+
+Blob: `275b18e9b2abab46dfce32207f96f7e6d0cc0604`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/generator-name-redeclaration-attempt-with-let.js
+
+Blob: `8c4bf0e039db14e91d85b5dd74ef3e6762d254ff`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/generator-name-redeclaration-attempt-with-var.js
+
+Blob: `4d6112bbf3975fcb6970e26f665ce4b860fc7ff7`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+### js/src/tests/test262/language/statements/switch/syntax/redeclaration/let-name-redeclaration-attempt-with-async-function.js
+
+Blob: `b5ff40d1498b2698b7c2214aacdbee0e538cfeee`. Role: test-path,source. Parse: failed.
+
+Failure: Identifier 'f' has already been declared
+
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.

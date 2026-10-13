@@ -1,0 +1,914 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMilliseconds/prop-desc.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMilliseconds/this-value-invalid-date.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMilliseconds/this-value-non-date.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMilliseconds/this-value-non-object.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMilliseconds/this-value-valid-date.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/arg-coercion-order.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/arg-min-to-number-err.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/arg-min-to-number.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/arg-ms-to-number-err.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/arg-ms-to-number.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/arg-sec-to-number-err.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/arg-sec-to-number.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/date-value-read-before-tonumber-when-date-is-invalid.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/date-value-read-before-tonumber-when-date-is-valid.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/length.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/name.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/new-value-time-clip.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/not-a-constructor.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/prop-desc.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/this-value-invalid-date.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/this-value-non-date.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/this-value-non-object.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/this-value-valid-date.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/arg-coercion-order.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/arg-date-to-number-err.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/arg-date-to-number.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/arg-month-to-number-err.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/arg-month-to-number.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/date-value-read-before-tonumber-when-date-is-invalid.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/date-value-read-before-tonumber-when-date-is-valid.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/length.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/name.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/new-value-time-clip.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/not-a-constructor.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/prop-desc.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/this-value-invalid-date.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/this-value-non-date.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/this-value-non-object.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/this-value-valid-date-date.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/this-value-valid-date-month.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/arg-coercion-order.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/arg-ms-to-number-err.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/arg-ms-to-number.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/arg-sec-to-number-err.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/arg-sec-to-number.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/date-value-read-before-tonumber-when-date-is-invalid.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/date-value-read-before-tonumber-when-date-is-valid.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/length.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/name.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/new-value-time-clip.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/not-a-constructor.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/prop-desc.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/this-value-invalid-date.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/this-value-non-date.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/this-value-non-object.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/this-value-valid-date-ms.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/this-value-valid-date-sec.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/arg-to-number-err.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/arg-to-number.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/length.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/name.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/new-value-time-clip.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/not-a-constructor.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/prop-desc.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/this-value-invalid-date.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/this-value-non-date.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/this-value-non-object.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/this-value-valid-date.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCDate/arg-coercion-order.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCDate/date-value-read-before-tonumber-when-date-is-invalid.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCDate/date-value-read-before-tonumber-when-date-is-valid.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCDate/length.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCDate/name.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCDate/not-a-constructor.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCDate/prop-desc.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCFullYear/date-value-read-before-tonumber-when-date-is-invalid.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCFullYear/date-value-read-before-tonumber-when-date-is-valid.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCFullYear/length.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCFullYear/name.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCFullYear/not-a-constructor.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCFullYear/prop-desc.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/arg-coercion-order.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/date-value-read-before-tonumber-when-date-is-invalid.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/date-value-read-before-tonumber-when-date-is-valid.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/length.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/name.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/not-a-constructor.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/prop-desc.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/this-value-valid-date-hour.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/this-value-valid-date-min.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/this-value-valid-date-ms.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/this-value-valid-date-sec.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMilliseconds/arg-coercion-order.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMilliseconds/date-value-read-before-tonumber-when-date-is-invalid.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMilliseconds/date-value-read-before-tonumber-when-date-is-valid.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMilliseconds/length.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMilliseconds/name.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMilliseconds/not-a-constructor.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMilliseconds/prop-desc.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMilliseconds/this-value-valid-date.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMinutes/arg-coercion-order.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMinutes/date-value-read-before-tonumber-when-date-is-invalid.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMinutes/date-value-read-before-tonumber-when-date-is-valid.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMinutes/length.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMinutes/name.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMinutes/not-a-constructor.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMinutes/prop-desc.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMinutes/this-value-valid-date.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMonth/arg-coercion-order.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMonth/date-value-read-before-tonumber-when-date-is-invalid.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMonth/date-value-read-before-tonumber-when-date-is-valid.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMonth/length.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMonth/name.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMonth/not-a-constructor.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMonth/prop-desc.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMonth/this-value-valid-date-date.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMonth/this-value-valid-date-month.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCSeconds/arg-coercion-order.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCSeconds/date-value-read-before-tonumber-when-date-is-invalid.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCSeconds/date-value-read-before-tonumber-when-date-is-valid.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCSeconds/length.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCSeconds/name.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCSeconds/not-a-constructor.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCSeconds/prop-desc.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCSeconds/this-value-valid-date-ms.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCSeconds/this-value-valid-date-sec.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toDateString/format.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toDateString/invalid-date.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toDateString/length.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toDateString/name.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toDateString/negative-year.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toDateString/not-a-constructor.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toDateString/prop-desc.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-10.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-11.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-12.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-13.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-14.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-15.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-16.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-2.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-3.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-4.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-5.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-6.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-7.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-8.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-9.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/name.js","testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/not-a-constructor.js"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013"}} -->
+# firefox/testing JavaScript function map 845
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMilliseconds/prop-desc.js
+
+Blob: `184f7c1dad718042b561b2ed9c37bf8f8286f37f`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMilliseconds/this-value-invalid-date.js
+
+Blob: `d431179449676f1fc036088d374a553f1125f3ce`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMilliseconds/this-value-non-date.js
+
+Blob: `0764a07113ff40f52b0ff50ed61e87e123290ca8`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @20-23; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @25-27; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @31-33; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @35-37; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMilliseconds/this-value-non-object.js
+
+Blob: `9f2c2823f9edd22623be57965bef1a82eb098fb4`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @20-23; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @29-31; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @33-35; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @37-39; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @41-43; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @45-47; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @49-51; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMilliseconds/this-value-valid-date.js
+
+Blob: `b9e101a840db0bd8aa29d18b490795a0ca133410`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/arg-coercion-order.js
+
+Blob: `1eca71dcc495df9af546ed11be525d48102037f8`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @25-28; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @31-34; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @37-40; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/arg-min-to-number-err.js
+
+Blob: `4c31d2d4cd900cc179afa4b8623e7c7fa9ee230a`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @15-17; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @20-22; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @25-27; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/arg-min-to-number.js
+
+Blob: `ac765cc9e9282ebe52a8dd9b3155c7527286db7d`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @22-27; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/arg-ms-to-number-err.js
+
+Blob: `54e7bbfb057d33f89ffde020f32e6e56778ca8c7`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @18-20; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @23-25; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/arg-ms-to-number.js
+
+Blob: `d982f187d5a73f2872eae0c5cf0271866b4eecd4`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @22-27; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/arg-sec-to-number-err.js
+
+Blob: `4460de0feb66b4724c4d29ebada28956d61ef98c`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @17-19; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @22-24; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @27-29; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/arg-sec-to-number.js
+
+Blob: `04df174754480bb6547d0d0ad60e197162d0e056`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @22-27; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/date-value-read-before-tonumber-when-date-is-invalid.js
+
+Blob: `cdb444d66087149d41ccb6935809cc1d1046684c`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @25-29; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/date-value-read-before-tonumber-when-date-is-valid.js
+
+Blob: `11961d504807ad416f90092187d6e8495e83e4e7`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @26-30; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/length.js
+
+Blob: `2431ce9c8126dc65d931182345cb524a91193dd3`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/name.js
+
+Blob: `6ea5b28b96584c0acf1ae5f6472b903135798ccb`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/new-value-time-clip.js
+
+Blob: `b6b6f3fd6f47ccb81e37232fb67f629157090e2d`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/not-a-constructor.js
+
+Blob: `d7c02ff0cac8e22f7890103018f4cf473774b5df`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @30-32; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/prop-desc.js
+
+Blob: `0d6794bf71e46a0e28a4f17e0a24fe770cacb3c2`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/this-value-invalid-date.js
+
+Blob: `760f19f58a672752496916250b998bb59cf6d996`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/this-value-non-date.js
+
+Blob: `94ca52345226921580c052943cd7ec9af373d3a0`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @20-23; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @25-27; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @31-33; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @35-37; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/this-value-non-object.js
+
+Blob: `cbd1585db59e83aed2fa3be6ac9dfb8cb384078f`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @20-23; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @29-31; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @33-35; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @37-39; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @41-43; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @45-47; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @49-51; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMinutes/this-value-valid-date.js
+
+Blob: `823835cd3b2868469ed4cb7467b98312da5f80c6`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/arg-coercion-order.js
+
+Blob: `dcd6ac3363cd0cf9f67e9c0d1a088f549ef39bd9`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @23-26; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @29-32; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/arg-date-to-number-err.js
+
+Blob: `70b549f26bb946e5e2abb5717fc439962c602768`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @16-18; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @21-23; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/arg-date-to-number.js
+
+Blob: `1ce319a199a3fde3b7ba440f47ee8432260175fa`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @21-26; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/arg-month-to-number-err.js
+
+Blob: `64e61a740663108a7b2391b63eddddec7d87cb57`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @18-20; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @23-25; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @28-30; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/arg-month-to-number.js
+
+Blob: `36d05418a7771f20179b7321d6a5d8aae95801e8`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @23-28; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/date-value-read-before-tonumber-when-date-is-invalid.js
+
+Blob: `e80b333d8cc0fea1f05c313435c39ba904e796f0`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @24-28; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/date-value-read-before-tonumber-when-date-is-valid.js
+
+Blob: `359caf5d5b70d567f0917153f23d249c924e183f`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @29-33; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/length.js
+
+Blob: `253a4101f42efe5251f9cd697256b1741b4c8a01`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/name.js
+
+Blob: `f50e3d5dde077dde0daa586dc908ae1d27aef7f6`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/new-value-time-clip.js
+
+Blob: `445701bd684aef12e44b8fc84bdf56877a822445`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/not-a-constructor.js
+
+Blob: `a7f30141717bb62c77b459375d4292b1ff99c899`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @30-32; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/prop-desc.js
+
+Blob: `8116a603577ea7057ae7544f8cac36aa66637427`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/this-value-invalid-date.js
+
+Blob: `9327a09940c46753f03cf915339801b2cfa57077`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/this-value-non-date.js
+
+Blob: `99019ea8a68987838b5b33552e40a216409fd36d`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @20-23; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @25-27; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @31-33; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @35-37; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/this-value-non-object.js
+
+Blob: `304bf415dfc8dd1b9ab63777f07ef979a7dd9952`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @20-23; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @29-31; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @33-35; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @37-39; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @41-43; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @45-47; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @49-51; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/this-value-valid-date-date.js
+
+Blob: `7e9f6081127001a5f02f4e61395d1657d43f5c9a`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setMonth/this-value-valid-date-month.js
+
+Blob: `07a8170645a6e57b5684916e4d0fb178967c210e`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/arg-coercion-order.js
+
+Blob: `e8adcd6f676789becb7c871cf0a811ac60693187`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @23-26; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @29-32; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/arg-ms-to-number-err.js
+
+Blob: `c02c60dee6022b6861d0d32fbb150c0407cd18bf`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @16-18; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @21-23; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/arg-ms-to-number.js
+
+Blob: `66caa7c97b393c29d47856b0f72ba628b4f4ec44`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @21-26; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/arg-sec-to-number-err.js
+
+Blob: `a22e9115ae7ad1da85ccee06c3ed1e0a212fe27f`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @15-17; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @20-22; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @25-27; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/arg-sec-to-number.js
+
+Blob: `474b09647685ecb64809bef6345a591fd82b2fee`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @21-26; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/date-value-read-before-tonumber-when-date-is-invalid.js
+
+Blob: `8fc4c48551182fd555c85f8aaae3cece96317f33`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @24-28; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/date-value-read-before-tonumber-when-date-is-valid.js
+
+Blob: `6d53ac05cea9a6cdbfefc50ac00fecf0768280d0`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @25-29; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/length.js
+
+Blob: `3e614cc9548f86e46ae7ddfa18a2dda892252594`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/name.js
+
+Blob: `ddf604549c32105a57a207848d2418a5f49810b4`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/new-value-time-clip.js
+
+Blob: `adebc07570a81508e353c31ac8edd77e4571eaef`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/not-a-constructor.js
+
+Blob: `8a0547aabb8d4807161197897f1b6ea3af8c8470`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @30-32; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/prop-desc.js
+
+Blob: `f09fe0da877e7deb2b34b7a4427cf760aba92c9c`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/this-value-invalid-date.js
+
+Blob: `2896704eec9d33f3eb0035a6251945231e55483c`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/this-value-non-date.js
+
+Blob: `f670c289d28508f374e30c46e85e52b0ac223eac`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @20-23; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @25-27; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @31-33; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @35-37; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/this-value-non-object.js
+
+Blob: `1ebcd4469f36ac659fd3fc90d364e22c7be6c0e0`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @20-23; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @29-31; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @33-35; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @37-39; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @41-43; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @45-47; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @49-51; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/this-value-valid-date-ms.js
+
+Blob: `bea26c68cff5980be66126e68afb3884d1492a8b`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setSeconds/this-value-valid-date-sec.js
+
+Blob: `bb969f1baef495a1e7f1bf707dbef27186a08909`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/arg-to-number-err.js
+
+Blob: `7d47e1f700bf3ee596142320a0db93ba3ac97f8e`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @14-16; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @19-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/arg-to-number.js
+
+Blob: `200bebee0634ce31f0749e34bf1093570df16e10`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @17-22; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/length.js
+
+Blob: `1f89b49c20bbdd8e6f502fb8e9bd2dbe558f71eb`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/name.js
+
+Blob: `42b96f3184ff70f5ed95e391de74c8203c780539`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/new-value-time-clip.js
+
+Blob: `610e42d52754e48c8904b0a96416f146236ed025`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/not-a-constructor.js
+
+Blob: `3e5671080e7e3a5f0b89475366ac1ee051568dba`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @30-32; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/prop-desc.js
+
+Blob: `26412db9fee248677a4465b2abda640cee657517`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/this-value-invalid-date.js
+
+Blob: `1e84f7b7f2fc786e6d2c56e6559c4fc92e4bf7d9`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/this-value-non-date.js
+
+Blob: `3837a8edf22354627d9ee970376251e074ddaff9`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @20-23; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @25-27; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @31-33; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @35-37; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/this-value-non-object.js
+
+Blob: `7426c14476dd38cf9669db13a8dc342c5edd7948`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @20-23; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @29-31; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @33-35; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @37-39; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @41-43; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @45-47; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @49-51; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setTime/this-value-valid-date.js
+
+Blob: `e9206c2d246749c1101d65939f843c7ee39f082c`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCDate/arg-coercion-order.js
+
+Blob: `af2c348ff018e46e3f732e884dd0e623280d4d23`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @19-22; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCDate/date-value-read-before-tonumber-when-date-is-invalid.js
+
+Blob: `fa71468c9ee1eed45ca17fcf176dde9a4fa13bf7`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @23-27; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCDate/date-value-read-before-tonumber-when-date-is-valid.js
+
+Blob: `cf17a11ec409418c8a10fd2a17adc70df603b03b`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @24-28; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCDate/length.js
+
+Blob: `d0c386afe42292b64e464b78370b8f13f21b2f96`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCDate/name.js
+
+Blob: `2066acd642ad24a52dfbd4417d31fa3487ef7916`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCDate/not-a-constructor.js
+
+Blob: `2de8486cc8c82d5a170e0c737ee4ee9410bbe50b`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @30-32; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCDate/prop-desc.js
+
+Blob: `5a5be2f72a1d12064cbcae0b6988efe50991d43e`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCFullYear/date-value-read-before-tonumber-when-date-is-invalid.js
+
+Blob: `cdc7168df2cd3c99d1d1046a365a377d49ab4329`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @23-27; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCFullYear/date-value-read-before-tonumber-when-date-is-valid.js
+
+Blob: `5300705776fca9ea23a92a729f936af5eae3d5a8`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @23-27; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCFullYear/length.js
+
+Blob: `6c53fc8d6f13989f49a78600f2fda2af86ce3c46`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCFullYear/name.js
+
+Blob: `0bab04e948ee22d738d2ab75a1b4d090fd1becaf`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCFullYear/not-a-constructor.js
+
+Blob: `b26ab45dc449b0c6638f1c72754a0781df036550`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @30-32; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCFullYear/prop-desc.js
+
+Blob: `7accc0e0ca405c22ca94f90bccbb989604244dd3`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/arg-coercion-order.js
+
+Blob: `6a3c4fb3f2e9df540b89cc34ac9478d01075cd12`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @26-29; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @32-35; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @38-41; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @44-47; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/date-value-read-before-tonumber-when-date-is-invalid.js
+
+Blob: `1fe9ff64ed9a037f65168d68a99e2c8b8c473b9e`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @26-30; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/date-value-read-before-tonumber-when-date-is-valid.js
+
+Blob: `722c203141b572812e602a79014d6b3a71b59f54`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @27-31; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/length.js
+
+Blob: `19fef54cd3ed8198d988346365895eacbefeeeb5`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/name.js
+
+Blob: `346aa9299a9598fb4ab608df77d32fdebaeca76e`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/not-a-constructor.js
+
+Blob: `d91af9ee28d9eb38be9701265d4198be8640c7e0`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @30-32; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/prop-desc.js
+
+Blob: `901c8ed28919e2c0b67c5efd46f3765f8c9ff550`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/this-value-valid-date-hour.js
+
+Blob: `9f2e02ef9220e48d464286822bb24ed1d8a4470f`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/this-value-valid-date-min.js
+
+Blob: `9b3be5cf4cad83c366fe25ca6ff68d2989f7c715`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/this-value-valid-date-ms.js
+
+Blob: `a30eb46f718febd8fcec5a79e5acf7ed918dcdf3`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCHours/this-value-valid-date-sec.js
+
+Blob: `41a82f48fc8cd3a4bdc3532cf3b36bb1883437e6`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMilliseconds/arg-coercion-order.js
+
+Blob: `fbac14cd9c31ae519e4427a0995402ccdbe0339d`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @20-23; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMilliseconds/date-value-read-before-tonumber-when-date-is-invalid.js
+
+Blob: `807318c63b030fa163194a5a918bd1e30c880b88`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @23-27; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMilliseconds/date-value-read-before-tonumber-when-date-is-valid.js
+
+Blob: `bc1493ca644288787a2ce8ec827de8926cd294c5`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @24-28; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMilliseconds/length.js
+
+Blob: `43b27566095c9bb62af5d4845713c18b26edb18e`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMilliseconds/name.js
+
+Blob: `3c349b386e28c40e0f5a0f85996b419aa16bf0e4`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMilliseconds/not-a-constructor.js
+
+Blob: `1bb9dd87d317ce8b5a45393e115d0b1d4f7ab9a0`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @30-32; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMilliseconds/prop-desc.js
+
+Blob: `c388f0e087a8d98a32eab27a5febec73965113db`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMilliseconds/this-value-valid-date.js
+
+Blob: `8aad36d338425d19c327f664d9184319f0f1f6fa`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMinutes/arg-coercion-order.js
+
+Blob: `28c4f60aed874e6aa3674d44b34410186c9996f8`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @24-27; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @30-33; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @36-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMinutes/date-value-read-before-tonumber-when-date-is-invalid.js
+
+Blob: `ea2654dd3c9b7ed55873f13fb18eaba571a5185e`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @25-29; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMinutes/date-value-read-before-tonumber-when-date-is-valid.js
+
+Blob: `8de9c385730d6d965ff74fb1da1d0391626c9ade`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @26-30; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMinutes/length.js
+
+Blob: `33977136dc9843e3162c1915336350eb9a62d41a`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMinutes/name.js
+
+Blob: `0a454d177b27143b4830abf86ef8231332acb801`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMinutes/not-a-constructor.js
+
+Blob: `c2ea041e2c34a0d3d7fd8495ef62ad240645cc6f`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @30-32; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMinutes/prop-desc.js
+
+Blob: `bbe3fc73bacee374e121900b9cee0b1f85660aac`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMinutes/this-value-valid-date.js
+
+Blob: `a4f8b4d839ed32df0753d4823f1c2c114b96aaa2`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMonth/arg-coercion-order.js
+
+Blob: `5053fd00ba792fbc10c8605e93eaa25bdfca61de`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @22-25; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @28-31; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMonth/date-value-read-before-tonumber-when-date-is-invalid.js
+
+Blob: `b05e7011579f6c93b0d3435cb2aed5b34b2c2b9b`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @24-28; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMonth/date-value-read-before-tonumber-when-date-is-valid.js
+
+Blob: `619e95b2be5ed0d423ab0f8cd1c544859d64fb79`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @25-29; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMonth/length.js
+
+Blob: `ec2e6450d56d834fdef365c8bd152679e16ae000`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMonth/name.js
+
+Blob: `9c51109f0ffe6c3f75d8e4421b392a7d320c09bf`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMonth/not-a-constructor.js
+
+Blob: `7d74c8f39fa5ab22b886b8a2a6c7a980f742a08b`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @30-32; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMonth/prop-desc.js
+
+Blob: `928f4ffe63ff9b3718728ba98f655087eb47c5e3`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMonth/this-value-valid-date-date.js
+
+Blob: `688ddc8144d263f0150e769641ccc53e7cb7226a`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCMonth/this-value-valid-date-month.js
+
+Blob: `e9e16a3c134b247661a20c2c19417fe8a1e0547f`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCSeconds/arg-coercion-order.js
+
+Blob: `79c851c7963b8a5fdce63d3f720b39671caccb50`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @22-25; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @28-31; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCSeconds/date-value-read-before-tonumber-when-date-is-invalid.js
+
+Blob: `f43efb95237b444fea8dbcfe1ac84e76b7e75777`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @24-28; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCSeconds/date-value-read-before-tonumber-when-date-is-valid.js
+
+Blob: `7c2c146be14a39dbf50f597c711bcd476578188b`. Role: imported-path,test-path,source. Parse: module.
+
+- valueOf @25-29; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCSeconds/length.js
+
+Blob: `b85b56268b7cc8141157ed0dc2503cd283ddc8c9`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCSeconds/name.js
+
+Blob: `caf3a73a623579b574b51064fb5d5333d085b862`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCSeconds/not-a-constructor.js
+
+Blob: `b2058e3632d1ce517c212de74d1d34007e02c5ac`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @30-32; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCSeconds/prop-desc.js
+
+Blob: `1361b58fb964e9abb5c7ab8a1a2bfd790dc97182`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCSeconds/this-value-valid-date-ms.js
+
+Blob: `5391a88d05e4281bc8f530edfb3136052c436b28`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/setUTCSeconds/this-value-valid-date-sec.js
+
+Blob: `2a1aa8d2dac2b93479752d50ce84d00c1c14e99b`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toDateString/format.js
+
+Blob: `cd384f677b4e2e190181bb1a24bcc55d7ca0cfd6`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toDateString/invalid-date.js
+
+Blob: `9f7cffda7387712b462fe2d6b848f8b1aaa9797a`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toDateString/length.js
+
+Blob: `ff7a9ebd0c9aeecfbc6281ecffcfa22f50452df2`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toDateString/name.js
+
+Blob: `84f9b858fafb79d7b9ad793a00530d4fe00814cd`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toDateString/negative-year.js
+
+Blob: `1960c94b8098acefbc4c666c2b57c25b447a6940`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toDateString/not-a-constructor.js
+
+Blob: `8b23807f76a81768384eba52237a664e21818e82`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @30-32; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toDateString/prop-desc.js
+
+Blob: `fc6e631aa427c2a5ab4fe385a827e62ecabf382d`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-10.js
+
+Blob: `9ea20f6838455495f83ce2a7c12a5b088ed57787`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @18-20; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-11.js
+
+Blob: `c712fac6f46209defdfe43a4b711c35948fd636a`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-12.js
+
+Blob: `923f0340b7e6fac817c4e05edef45383ffce6787`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-13.js
+
+Blob: `90ce9f84dbfbcd3cc12151e4537eff22833807cb`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @13-15; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-14.js
+
+Blob: `d131e91943200792d768f88870c4a47874f4cbb0`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @12-14; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-15.js
+
+Blob: `6834580f56305922e13d5ae382f71bb5c6801f41`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @12-14; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-16.js
+
+Blob: `327ea5320a599d75bed7e49d634a111d968db451`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @13-15; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-2.js
+
+Blob: `3ec63ce7250c9f4d41e10899981ba0bc18e9bfed`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-3.js
+
+Blob: `49f5dd48446fc12b337bbacf03c9033de4f0ee35`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-4.js
+
+Blob: `c69dee40ce365c541b15be35a520c9ff9abaf022`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-5.js
+
+Blob: `686fbfaafda0d17a999ecaf21c33a67a3402ee2d`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-6.js
+
+Blob: `073daedd55dd17678b96f8c7067351ea00e6811f`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @12-14; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-7.js
+
+Blob: `36ae0f895b04a4ac3b5faa089c1bfeddda8cf01b`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @12-14; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-8.js
+
+Blob: `82548da442c9036e49aaf84b0672113ad5b45a7d`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @14-22; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/15.9.5.43-0-9.js
+
+Blob: `787ec8e7bbe9019f611b58d738d9f51b46151fc7`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @18-20; FunctionExpression; parameters=0; async=false; generator=false
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/name.js
+
+Blob: `7d2848187d7fbf5c223c39de7bd76b3f86ced922`. Role: imported-path,test-path,source. Parse: module.
+
+
+### testing/web-platform/tests/third_party/test262/test/built-ins/Date/prototype/toISOString/not-a-constructor.js
+
+Blob: `baed6bfbffe6503644b07ee45c11b0cab1978a72`. Role: imported-path,test-path,source. Parse: module.
+
+- (anonymous) @30-32; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.

@@ -1,0 +1,1912 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["toolkit/components/reputationservice/test/unit/test_app_rep.js","toolkit/components/reputationservice/test/unit/test_app_rep_maclinux.js","toolkit/components/reputationservice/test/unit/test_app_rep_windows.js","toolkit/components/resistfingerprinting/CanvasHashData.sys.mjs","toolkit/components/resistfingerprinting/FingerprintingWebCompatService.sys.mjs","toolkit/components/resistfingerprinting/RFPHelper.sys.mjs","toolkit/components/resistfingerprinting/UserCharacteristicsPageService.sys.mjs","toolkit/components/resistfingerprinting/content/gl-matrix.js","toolkit/components/resistfingerprinting/content/ssdeep.js","toolkit/components/resistfingerprinting/content/usercharacteristics.js","toolkit/components/resistfingerprinting/tests/browser/browser_canvas_fingerprinter_telemetry.js","toolkit/components/resistfingerprinting/tests/browser/browser_canvas_randomization.js","toolkit/components/resistfingerprinting/tests/browser/browser_canvas_randomization_offscreen_transfer.js","toolkit/components/resistfingerprinting/tests/browser/browser_canvas_randomization_permission.js","toolkit/components/resistfingerprinting/tests/browser/browser_canvas_randomization_permission_background_load.js","toolkit/components/resistfingerprinting/tests/browser/browser_canvas_randomization_worker.js","toolkit/components/resistfingerprinting/tests/browser/browser_dpr_media_queries.js","toolkit/components/resistfingerprinting/tests/browser/browser_fingerprintingRemoteOverrides.js","toolkit/components/resistfingerprinting/tests/browser/browser_fingerprintingWebCompat.js","toolkit/components/resistfingerprinting/tests/browser/browser_fingerprinting_randomization_key.js","toolkit/components/resistfingerprinting/tests/browser/browser_font_fingerprinter_telemetry.js","toolkit/components/resistfingerprinting/tests/browser/browser_fpiServiceWorkers_fingerprinting.js","toolkit/components/resistfingerprinting/tests/browser/browser_fpp_protections_matrix_1.js","toolkit/components/resistfingerprinting/tests/browser/browser_fpp_protections_matrix_2.js","toolkit/components/resistfingerprinting/tests/browser/browser_fpp_protections_matrix_3.js","toolkit/components/resistfingerprinting/tests/browser/browser_fpp_protections_matrix_4.js","toolkit/components/resistfingerprinting/tests/browser/browser_fpp_remote_settings_jexl.js","toolkit/components/resistfingerprinting/tests/browser/browser_iframe_orientation.js","toolkit/components/resistfingerprinting/tests/browser/browser_js_locale.js","toolkit/components/resistfingerprinting/tests/browser/browser_navigator_online.js","toolkit/components/resistfingerprinting/tests/browser/browser_resistfingerprinting_getbuffersubdata.js","toolkit/components/resistfingerprinting/tests/browser/browser_resistfingerprinting_readpixels.js","toolkit/components/resistfingerprinting/tests/browser/browser_resistfingerprinting_readpixels_placeholder.js","toolkit/components/resistfingerprinting/tests/browser/browser_rfp_canvasplaceholder_pdfjs.js","toolkit/components/resistfingerprinting/tests/browser/browser_serviceWorker_fingerprinting_webcompat.js","toolkit/components/resistfingerprinting/tests/browser/browser_service_worker_granular_overrides.js","toolkit/components/resistfingerprinting/tests/browser/browser_service_worker_navigator_spoofing.js","toolkit/components/resistfingerprinting/tests/browser/browser_service_worker_overrides.js","toolkit/components/resistfingerprinting/tests/browser/browser_service_worker_randomization_key_originattrs.js","toolkit/components/resistfingerprinting/tests/browser/browser_service_worker_timer_precision.js","toolkit/components/resistfingerprinting/tests/browser/browser_srcset.js","toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics.js","toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_canvas_filtering.js","toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_canvas_font.js","toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_clientrects.js","toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_css.js","toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_gamepads.js","toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_linux_distro.js","toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_math.js","toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_mathml.js","toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_svg.js","toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_timezone.js","toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_voices.js","toolkit/components/resistfingerprinting/tests/browser/browser_worker_granular_overrides.js","toolkit/components/resistfingerprinting/tests/browser/browser_worker_overrides.js","toolkit/components/resistfingerprinting/tests/browser/head-fpp-matrix.js","toolkit/components/resistfingerprinting/tests/browser/head.js","toolkit/components/resistfingerprinting/tests/browser/serviceWorker.js","toolkit/components/resistfingerprinting/tests/browser/serviceWorkerTester.js","toolkit/components/resistfingerprinting/tests/browser/testHelpers.js","toolkit/components/resistfingerprinting/tests/browser/worker.js","toolkit/components/resistfingerprinting/tests/xpcshell/test_ohttp_client.js","toolkit/components/satchel/AutocompleteRemoveRecord.sys.mjs","toolkit/components/satchel/FillHelpers.sys.mjs","toolkit/components/satchel/FormHandlerChild.sys.mjs","toolkit/components/satchel/FormHandlerParent.sys.mjs","toolkit/components/satchel/FormHistory.sys.mjs","toolkit/components/satchel/FormHistoryAutoComplete.sys.mjs","toolkit/components/satchel/FormHistoryChild.sys.mjs","toolkit/components/satchel/FormHistoryParent.sys.mjs","toolkit/components/satchel/FormHistoryStartup.sys.mjs","toolkit/components/satchel/FormScenarios.sys.mjs","toolkit/components/satchel/SignUpFormRuleset.sys.mjs","toolkit/components/satchel/autocomplete-row-item/autocomplete-row-item.mjs","toolkit/components/satchel/autocomplete-row-item/autocomplete-row-item.stories.mjs","toolkit/components/satchel/integrations/FirefoxRelay.sys.mjs","toolkit/components/satchel/integrations/FirefoxRelayUtils.sys.mjs","toolkit/components/satchel/integrations/WebAuthnFeature.sys.mjs","toolkit/components/satchel/megalist/MegalistChild.sys.mjs","toolkit/components/satchel/megalist/MegalistParent.sys.mjs","toolkit/components/satchel/megalist/MegalistViewModel.sys.mjs","toolkit/components/satchel/megalist/aggregator/Aggregator.sys.mjs","toolkit/components/satchel/megalist/aggregator/DefaultAggregator.sys.mjs","toolkit/components/satchel/megalist/aggregator/datasources/AddressesDataSource.sys.mjs","toolkit/components/satchel/megalist/aggregator/datasources/BankCardDataSource.sys.mjs","toolkit/components/satchel/megalist/aggregator/datasources/DataSourceBase.sys.mjs","toolkit/components/satchel/megalist/aggregator/datasources/LoginDataSource.sys.mjs"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013"}} -->
+# firefox/toolkit JavaScript function map 1342
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### toolkit/components/reputationservice/test/unit/test_app_rep.js
+
+Blob: `16591a1c6fe8210ae511dbe9ddc8c41a721a1aff`. Role: test-path,source. Parse: module.
+
+- createReferrerInfo @39-44; FunctionDeclaration; parameters=2; async=false; generator=false
+- readFileToString @46-54; FunctionDeclaration; parameters=1; async=false; generator=false
+- registerTableUpdate @58-85; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @73-84; FunctionExpression; parameters=2; async=false; generator=false
+- test_setup @87-136; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @94-97; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @109-112; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @116-126; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @129-135; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @130-134; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @131-133; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- test_nullSourceURI @138-154; FunctionExpression; parameters=0; async=false; generator=false
+- onComplete @147-152; FunctionExpression; parameters=2; async=false; generator=false
+- test_nullCallback @156-176; FunctionExpression; parameters=0; async=false; generator=false
+- test_local_list @179-240; FunctionExpression; parameters=0; async=false; generator=false
+- processUpdateRequest @181-191; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @192-201; FunctionExpression; parameters=2; async=false; generator=false
+- updateSuccess @214-224; FunctionDeclaration; parameters=1; async=false; generator=false
+- handleError @226-228; FunctionDeclaration; parameters=1; async=false; generator=false
+- test_unlisted @242-260; FunctionExpression; parameters=0; async=false; generator=false
+- onComplete @253-258; FunctionExpression; parameters=2; async=false; generator=false
+- test_non_uri @262-282; FunctionExpression; parameters=0; async=false; generator=false
+- onComplete @275-280; FunctionExpression; parameters=2; async=false; generator=false
+- test_local_blacklist @284-304; FunctionExpression; parameters=0; async=false; generator=false
+- onComplete @296-302; FunctionExpression; parameters=2; async=false; generator=false
+- test_referer_blacklist @306-351; FunctionExpression; parameters=0; async=true; generator=false
+- runReferrerPolicyTest @320-342; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @321-341; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- onComplete @334-339; FunctionExpression; parameters=2; async=false; generator=false
+- test_blocklist_trumps_allowlist @353-377; FunctionExpression; parameters=0; async=false; generator=false
+- onComplete @369-375; FunctionExpression; parameters=2; async=false; generator=false
+- test_redirect_on_blocklist @379-428; FunctionExpression; parameters=0; async=false; generator=false
+- onComplete @421-426; FunctionExpression; parameters=2; async=false; generator=false
+- test_whitelisted_source @430-449; FunctionExpression; parameters=0; async=false; generator=false
+- onComplete @442-447; FunctionExpression; parameters=2; async=false; generator=false
+- test_whitelisted_non_binary_source @451-469; FunctionExpression; parameters=0; async=false; generator=false
+- onComplete @462-467; FunctionExpression; parameters=2; async=false; generator=false
+- test_whitelisted_referrer @471-490; FunctionExpression; parameters=0; async=false; generator=false
+- onComplete @483-488; FunctionExpression; parameters=2; async=false; generator=false
+- test_whitelisted_redirect @492-529; FunctionExpression; parameters=0; async=false; generator=false
+- onComplete @522-527; FunctionExpression; parameters=2; async=false; generator=false
+- test_remote_lookup_protocolbuf @531-575; FunctionExpression; parameters=0; async=false; generator=false
+- onComplete @566-573; FunctionExpression; parameters=2; async=false; generator=false
+- Module resource://gre/modules/NetUtil.sys.mjs @5; ChromeUtils-import-literal
+
+### toolkit/components/reputationservice/test/unit/test_app_rep_maclinux.js
+
+Blob: `240496b38697dea591944dcd2327d4fc16039c58`. Role: test-path,source. Parse: module.
+
+- readFileToString @20-28; FunctionDeclaration; parameters=1; async=false; generator=false
+- registerTableUpdate @30-57; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @45-56; FunctionExpression; parameters=2; async=false; generator=false
+- test_setup @61-144; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @63-67; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @83-88; FunctionExpression; parameters=0; async=false; generator=false
+- createVerdict @93-105; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @107-109; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @111-133; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @137-143; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @138-142; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @139-141; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- processUpdateRequest @147-157; FunctionDeclaration; parameters=0; async=false; generator=false
+- waitForUpdates @160-208; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @161-207; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @162-171; FunctionExpression; parameters=2; async=false; generator=false
+- updateSuccess @183-190; FunctionDeclaration; parameters=1; async=false; generator=false
+- handleError @192-195; FunctionDeclaration; parameters=1; async=false; generator=false
+- promiseQueryReputation @210-219; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @211-218; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- onComplete @212-216; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @221-224; FunctionExpression; parameters=0; async=true; generator=false
+- test_blocked_binary @226-245; FunctionExpression; parameters=0; async=true; generator=false
+- test_non_binary @247-265; FunctionExpression; parameters=0; async=true; generator=false
+- test_good_binary @267-286; FunctionExpression; parameters=0; async=true; generator=false
+- test_disabled @288-312; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @303-311; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- onComplete @304-310; FunctionExpression; parameters=2; async=false; generator=false
+- test_disabled_through_lists @314-338; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @329-337; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- onComplete @330-336; FunctionExpression; parameters=2; async=false; generator=false
+- test_teardown @339-341; FunctionExpression; parameters=0; async=true; generator=false
+
+### toolkit/components/reputationservice/test/unit/test_app_rep_windows.js
+
+Blob: `260f281e141576048bef532280b38a1af8388063`. Role: test-path,source. Parse: module.
+
+- readFileToString @39-47; FunctionDeclaration; parameters=1; async=false; generator=false
+- promiseSaverComplete @61-78; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @62-77; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- BFSO_onSaveComplete @64-68; FunctionExpression; parameters=2; async=false; generator=false
+- BFSO_onSaveComplete @69-75; FunctionExpression; parameters=2; async=false; generator=false
+- promiseCopyToSaver @94-124; FunctionDeclaration; parameters=3; async=false; generator=false
+- (anonymous) @95-123; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- onStartRequest @112-112; FunctionExpression; parameters=0; async=false; generator=false
+- onStopRequest @113-119; FunctionExpression; parameters=3; async=false; generator=false
+- registerTableUpdate @127-154; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @142-153; FunctionExpression; parameters=2; async=false; generator=false
+- test_setup @158-247; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @160-164; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @185-191; FunctionExpression; parameters=0; async=false; generator=false
+- createVerdict @196-208; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @210-212; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @214-236; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @240-246; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @241-245; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @242-244; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- processUpdateRequest @250-260; FunctionDeclaration; parameters=0; async=false; generator=false
+- waitForUpdates @263-311; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @264-310; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @265-274; FunctionExpression; parameters=2; async=false; generator=false
+- updateSuccess @286-293; FunctionDeclaration; parameters=1; async=false; generator=false
+- handleError @295-298; FunctionDeclaration; parameters=1; async=false; generator=false
+- promiseQueryReputation @313-322; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @314-321; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- onComplete @315-319; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @324-327; FunctionExpression; parameters=0; async=true; generator=false
+- test_signature_whitelists @329-364; FunctionExpression; parameters=0; async=true; generator=false
+- test_blocked_binary @366-386; FunctionExpression; parameters=0; async=true; generator=false
+- test_non_binary @388-406; FunctionExpression; parameters=0; async=true; generator=false
+- test_good_binary @408-427; FunctionExpression; parameters=0; async=true; generator=false
+- test_disabled @429-453; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @444-452; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- onComplete @445-451; FunctionExpression; parameters=2; async=false; generator=false
+- test_disabled_through_lists @455-479; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @470-478; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- onComplete @471-477; FunctionExpression; parameters=2; async=false; generator=false
+- test_teardown @480-482; FunctionExpression; parameters=0; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/CanvasHashData.sys.mjs
+
+Blob: `334b35b97f357198c29a8f0fa9c65018dcc50332`. Role: source. Parse: module.
+
+- getHashProbability @1199-1208; FunctionDeclaration; parameters=1; async=false; generator=false
+- isKnownHash @1210-1212; FunctionDeclaration; parameters=1; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/FingerprintingWebCompatService.sys.mjs
+
+Blob: `ed246939863cd32245b3f85c8163d2bac0648d57`. Role: source. Parse: module.
+
+- (anonymous) @13-19; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @81-86; FunctionExpression; parameters=4; async=false; generator=false
+- constructor @107-115; FunctionExpression; parameters=0; async=false; generator=false
+- init @117-154; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @139-142; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- getSchemaValidator @157-159; FunctionExpression; parameters=0; async=false; generator=false
+- importPrefOverrides @162-211; FunctionExpression; parameters=0; async=false; generator=false
+- importRemoteSettingsOverrides @214-223; FunctionExpression; parameters=0; async=true; generator=false
+- onRemoteUpdate @225-239; FunctionExpression; parameters=1; async=false; generator=false
+- createFingerprintingOverrideFrom @241-254; FunctionExpression; parameters=2; async=false; generator=false
+- populateOverrides @256-268; FunctionExpression; parameters=0; async=false; generator=false
+- observe @270-293; FunctionExpression; parameters=3; async=false; generator=false
+- (anonymous) @284-285; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- shutdown @295-301; FunctionExpression; parameters=0; async=false; generator=false
+- Class FingerprintingWebCompatService @94-302
+- Class FingerprintingOverride @77-87
+- Module resource://gre/modules/XPCOMUtils.sys.mjs @11; ImportDeclaration
+
+### toolkit/components/resistfingerprinting/RFPHelper.sys.mjs
+
+Blob: `f82d7309e129c4765ae86a4c8cdb20b9d214d73f`. Role: source. Parse: module.
+
+- (anonymous) @23-27; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- log @30-32; FunctionDeclaration; parameters=1; async=false; generator=false
+- constructor @45-47; FunctionExpression; parameters=0; async=false; generator=false
+- init @49-76; FunctionExpression; parameters=0; async=false; generator=false
+- uninit @78-89; FunctionExpression; parameters=0; async=false; generator=false
+- observe @91-111; FunctionExpression; parameters=3; async=false; generator=false
+- handleEvent @113-125; FunctionExpression; parameters=1; async=false; generator=false
+- _handlePrefChanged @127-141; FunctionExpression; parameters=1; async=false; generator=false
+- _addLanguagePrefObservers @146-151; FunctionExpression; parameters=0; async=false; generator=false
+- _removeLanguagePrefObservers @153-164; FunctionExpression; parameters=0; async=false; generator=false
+- _handleResistFingerprintingChanged @166-173; FunctionExpression; parameters=0; async=false; generator=false
+- _handleSpoofEnglishChanged @175-192; FunctionExpression; parameters=0; async=false; generator=false
+- _shouldPromptForLanguagePref @194-199; FunctionExpression; parameters=0; async=false; generator=false
+- _handleHttpOnModifyRequest @201-238; FunctionExpression; parameters=1; async=false; generator=false
+- _promptForLanguagePreference @240-263; FunctionExpression; parameters=0; async=false; generator=false
+- _getCurrentAcceptLanguageValue @265-281; FunctionExpression; parameters=1; async=false; generator=false
+- onLocationChange @290-292; FunctionExpression; parameters=1; async=false; generator=false
+- _handleLetterboxingPrefChanged @294-308; FunctionExpression; parameters=0; async=false; generator=false
+- _parseLetterboxingDimensions @313-331; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @323-330; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @324-324; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- getLetterboxingDefaultRule @333-354; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @337-353; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- _noLetterBoxingFor @356-373; FunctionExpression; parameters=1; async=false; generator=false
+- _roundOrResetContentSize @375-386; FunctionExpression; parameters=2; async=false; generator=false
+- steppedSize @391-404; FunctionExpression; parameters=2; async=false; generator=false
+- _roundContentSize @409-592; FunctionExpression; parameters=2; async=true; generator=false
+- (anonymous) @422-427; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @424-427; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- roundDimensions @443-489; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- r @444-453; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- queueIfNeeded @493-501; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @496-498; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- perform @502-520; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @503-519; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @512-517; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- _resetContentSize @594-596; FunctionExpression; parameters=1; async=false; generator=false
+- _updateSizeForTabsInWindow @598-612; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @609-611; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- _attachWindow @614-630; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @617-621; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- _attachAllWindows @632-644; FunctionExpression; parameters=0; async=false; generator=false
+- _detachWindow @646-668; FunctionExpression; parameters=1; async=false; generator=false
+- _detachAllWindows @670-682; FunctionExpression; parameters=0; async=false; generator=false
+- _handleDOMWindowOpened @684-709; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @689-706; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @701-703; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- _handleDOMWindowClosed @711-713; FunctionExpression; parameters=1; async=false; generator=false
+- getTargets @715-717; FunctionExpression; parameters=0; async=false; generator=false
+- getTargetDefaultsBaseline @719-723; FunctionExpression; parameters=0; async=false; generator=false
+- getTargetDefaults @725-729; FunctionExpression; parameters=0; async=false; generator=false
+- Class _RFPHelper @34-730
+- Module resource://gre/modules/XPCOMUtils.sys.mjs @5; ImportDeclaration
+- Module resource://gre/modules/RFPTargetConstants.sys.mjs @6; ImportDeclaration
+
+### toolkit/components/resistfingerprinting/UserCharacteristicsPageService.sys.mjs
+
+Blob: `1e06a37827edaf634bf0c34edcbb6fc9eae0f506`. Role: source. Parse: module.
+
+- (anonymous) @18-23; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @25-29; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @31-33; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @35-37; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @56-76; FunctionExpression; parameters=0; async=false; generator=false
+- shutdown @78-78; FunctionExpression; parameters=0; async=false; generator=false
+- createContentPage @80-146; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @100-145; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- cleanUp @148-156; FunctionExpression; parameters=0; async=false; generator=false
+- populateAndCollectErrors @158-216; FunctionExpression; parameters=2; async=true; generator=false
+- (anonymous) @184-185; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- compressRepeatedChars @220-229; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @225-225; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- collectGleanMetricsFromMap @231-249; FunctionExpression; parameters=2; async=true; generator=false
+- getActorFromTabsOrWindows @251-294; FunctionExpression; parameters=3; async=false; generator=true
+- initWindowInfoActor @296-342; FunctionExpression; parameters=0; async=true; generator=false
+- observe @310-313; FunctionExpression; parameters=3; async=false; generator=false
+- populateScreenInfo @344-353; FunctionExpression; parameters=0; async=true; generator=false
+- observe @347-350; FunctionExpression; parameters=3; async=false; generator=false
+- (anonymous) @352-352; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- populatePointerInfo @355-364; FunctionExpression; parameters=0; async=true; generator=false
+- observe @358-361; FunctionExpression; parameters=3; async=false; generator=false
+- (anonymous) @363-363; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- filterAndPopulateAllCanvasData @366-379; FunctionExpression; parameters=0; async=true; generator=false
+- filterAllCanvasRawData @384-683; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @421-421; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @582-582; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @585-585; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- getBaseName @604-610; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- isSoftware @612-612; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- getPriority @617-642; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @645-649; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @653-653; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- populateCanvasData @685-841; FunctionExpression; parameters=0; async=true; generator=false
+- attemptRender @701-801; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @731-734; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @815-815; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- populateZoomPrefs @843-857; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @844-854; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- handleResult @847-849; FunctionExpression; parameters=1; async=false; generator=false
+- handleCompletion @850-852; FunctionExpression; parameters=0; async=false; generator=false
+- populateIntlLocale @859-864; FunctionExpression; parameters=0; async=true; generator=false
+- populateGamepads @866-870; FunctionExpression; parameters=1; async=true; generator=false
+- populateWebGPUProperties @872-975; FunctionExpression; parameters=1; async=true; generator=false
+- populateUserAgent @977-979; FunctionExpression; parameters=1; async=true; generator=false
+- populateMappableData @981-1145; FunctionExpression; parameters=1; async=true; generator=false
+- populateMathOps @1147-1192; FunctionExpression; parameters=0; async=true; generator=false
+- getResults @1150-1181; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @1151-1179; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @1170-1170; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1171-1171; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1172-1172; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1173-1173; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1174-1174; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1175-1175; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1176-1176; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1177-1177; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1178-1178; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1179-1180; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1179-1179; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1179-1179; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- populateMathOpsFdlibm2 @1194-1271; FunctionExpression; parameters=0; async=true; generator=false
+- getResults @1197-1264; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- populateClientInfo @1273-1305; FunctionExpression; parameters=0; async=true; generator=false
+- populateCPUInfo @1307-1326; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @1309-1309; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- populateWebGlInfo @1333-1353; FunctionExpression; parameters=3; async=true; generator=false
+- pageLoaded @1355-1368; FunctionExpression; parameters=2; async=true; generator=false
+- populateDisabledMediaPrefs @1370-1396; FunctionExpression; parameters=0; async=true; generator=false
+- stringifyError @1402-1417; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @1411-1415; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @1412-1412; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @1412-1412; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @1413-1413; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @1413-1413; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- timeoutPromise @1419-1436; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @1420-1435; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @1421-1423; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @1426-1429; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1430-1433; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- sanitizeRemoteType @1443-1454; FunctionDeclaration; parameters=1; async=false; generator=false
+- isValidRemoteType @1456-1461; FunctionDeclaration; parameters=1; async=false; generator=false
+- Class UserCharacteristicsPageService @39-1397
+- Module resource://gre/modules/AppConstants.sys.mjs @16; ImportDeclaration
+- Module resource://gre/modules/CanvasHashData.sys.mjs @465; ChromeUtils-import-literal
+
+### toolkit/components/resistfingerprinting/content/gl-matrix.js
+
+Blob: `be99ef76f76ef2a88d2ab40c5d96576c649dbe2b`. Role: source. Parse: module.
+
+- (anonymous) @29-29; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @29-29; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @29-29; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- p1 @29-29; FunctionDeclaration; parameters=4; async=false; generator=false
+- (anonymous) @29-29; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- n1 @29-29; FunctionDeclaration; parameters=3; async=false; generator=false
+- (anonymous) @29-29; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- e1 @29-29; FunctionDeclaration; parameters=5; async=false; generator=false
+- (anonymous) @29-29; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- r1 @29-29; FunctionDeclaration; parameters=0; async=false; generator=false
+- L @29-29; ArrowFunctionExpression; parameters=3; async=false; generator=false
+- u @29-29; ArrowFunctionExpression; parameters=4; async=false; generator=false
+- get @29-29; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- E @29-29; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @29-29; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/content/ssdeep.js
+
+Blob: `6cbfcf3c306f6b9aa75b4b7005331cf50af0178a`. Role: source. Parse: module.
+
+- (anonymous) @27-172; FunctionExpression; parameters=0; async=false; generator=false
+- safe_add @41-45; FunctionDeclaration; parameters=2; async=false; generator=false
+- safe_multiply @53-82; FunctionDeclaration; parameters=2; async=false; generator=false
+- fnv @85-87; FunctionDeclaration; parameters=2; async=false; generator=false
+- RollHash @89-95; FunctionDeclaration; parameters=0; async=false; generator=false
+- RollHash.prototype.update @96-109; FunctionExpression; parameters=1; async=false; generator=false
+- RollHash.prototype.sum @110-112; FunctionExpression; parameters=0; async=false; generator=false
+- piecewiseHash @114-149; FunctionDeclaration; parameters=2; async=false; generator=false
+- digest @151-164; FunctionDeclaration; parameters=1; async=false; generator=false
+- ssdeep.digest @166-171; FunctionExpression; parameters=1; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/content/usercharacteristics.js
+
+Blob: `7f219f0011678438c2324ba441db53cd259fdae6`. Role: source. Parse: module.
+
+- debug @15-36; FunctionDeclaration; parameters=1; async=false; generator=false
+- stringify @22-27; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- sha1 @38-41; FunctionDeclaration; parameters=1; async=false; generator=false
+- sha1Uint8Array @43-48; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @46-46; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- stringifyError @50-65; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @59-63; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @60-60; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @60-60; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @61-61; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @61-61; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- sample @67-79; FunctionDeclaration; parameters=2; async=false; generator=false
+- mean @81-86; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @85-85; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- standardDeviation @88-91; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @90-90; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- decimalPlaces @95-117; FunctionDeclaration; parameters=1; async=false; generator=false
+- timeoutPromise @119-136; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @120-135; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @121-123; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @126-129; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @130-133; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- populateWebGLCanvases @141-461; FunctionDeclaration; parameters=1; async=false; generator=false
+- initBuffers @154-203; FunctionDeclaration; parameters=1; async=false; generator=false
+- drawScene @207-317; FunctionDeclaration; parameters=3; async=false; generator=false
+- initShaderProgram @321-343; FunctionDeclaration; parameters=3; async=false; generator=false
+- loadShader @350-370; FunctionDeclaration; parameters=3; async=false; generator=false
+- populateVoiceList @465-549; FunctionDeclaration; parameters=0; async=true; generator=false
+- trimVoiceURI @475-480; FunctionDeclaration; parameters=1; async=false; generator=false
+- processVoices @482-516; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @484-488; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @489-489; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @492-499; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @502-502; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @504-504; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- fetchVoices @518-542; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @519-527; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @520-522; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @529-539; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @530-538; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @544-548; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- populateMediaCapabilities @551-649; FunctionDeclaration; parameters=0; async=true; generator=false
+- h264CodecsSupported @580-609; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @583-587; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- getCapabilities @611-637; FunctionDeclaration; parameters=0; async=true; generator=false
+- populateAudioFingerprint @651-855; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @681-681; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @682-687; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @692-731; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @704-704; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @713-713; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @732-741; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- startRenderingAudio @748-820; FunctionDeclaration; parameters=1; async=false; generator=false
+- finalize @753-753; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @755-817; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- context.oncomplete @760-760; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- startRunningTimeout @762-770; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @764-764; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- tryRender @772-805; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- finalize @809-816; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- getHash @822-832; FunctionDeclaration; parameters=1; async=false; generator=false
+- hashAudioSamples @834-841; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @836-836; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @849-852; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- populateCSSQueries @857-861; FunctionDeclaration; parameters=0; async=true; generator=false
+- populateCSSSystemColors @863-957; FunctionDeclaration; parameters=0; async=true; generator=false
+- rgbToHex @909-934; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @931-931; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- populateCSSSystemFonts @959-990; FunctionDeclaration; parameters=0; async=true; generator=false
+- populateClientRects @992-1114; FunctionDeclaration; parameters=0; async=true; generator=false
+- serializeDOMRect @993-1007; FunctionDeclaration; parameters=1; async=false; generator=false
+- populateSVGRect @1116-1248; FunctionDeclaration; parameters=0; async=true; generator=false
+- serializeSVGRect @1190-1195; FunctionDeclaration; parameters=1; async=false; generator=false
+- populateNavigatorProperties @1250-1256; FunctionDeclaration; parameters=0; async=true; generator=false
+- populatePointerInfo @1258-1290; FunctionDeclaration; parameters=0; async=true; generator=false
+- populateICEFoundations @1292-1384; FunctionDeclaration; parameters=0; async=true; generator=false
+- getFoundationsAndLatencies @1299-1352; FunctionDeclaration; parameters=0; async=false; generator=false
+- calculateLatency @1312-1317; FunctionDeclaration; parameters=0; async=false; generator=false
+- pc.onicecandidate @1320-1326; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- pc.onicegatheringstatechange @1327-1333; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @1336-1339; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1343-1346; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @1348-1351; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1371-1371; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1376-1376; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- populateSDPCodecList @1386-1411; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @1403-1407; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- populateWebAuthnCapabilities @1413-1423; FunctionDeclaration; parameters=0; async=true; generator=false
+- populateStorageQuota @1425-1432; FunctionDeclaration; parameters=0; async=true; generator=false
+- populateSensorInfo @1434-1500; FunctionDeclaration; parameters=0; async=true; generator=false
+- processEvent @1451-1466; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1451-1466; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- processResult @1467-1473; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1481-1481; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @1485-1497; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- populateMathML @1502-1527; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @1510-1510; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1512-1515; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @1520-1520; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- populateAudioDeviceProperties @1529-1560; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @1536-1540; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @1538-1538; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @1550-1550; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- populateTimezoneWeb @1562-1576; FunctionDeclaration; parameters=0; async=true; generator=false
+- getCanvasSources @1580-1602; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @1585-1600; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1587-1587; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @1588-1588; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- startPopulating @1627-1699; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @1631-1631; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1632-1635; ArrowFunctionExpression; parameters=1; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_canvas_fingerprinter_telemetry.js
+
+Blob: `8428147bcc2970f0b7c75f59be3122c78dfc42c0`. Role: test-path,source. Parse: module.
+
+- clearTelemetry @20-25; FunctionDeclaration; parameters=0; async=true; generator=false
+- getLabeledCounter @27-36; FunctionDeclaration; parameters=3; async=true; generator=false
+- (anonymous) @30-34; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- checkLabeledCounter @38-43; FunctionDeclaration; parameters=3; async=true; generator=false
+- (anonymous) @39-41; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @45-47; FunctionExpression; parameters=0; async=true; generator=false
+- test_canvas_fingerprinting_telemetry @49-65; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @55-55; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- test_canvas_fingerprinting_telemetry @67-84; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @73-73; ArrowFunctionExpression; parameters=1; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_canvas_randomization.js
+
+Blob: `3e4c40d92867df1d1e73f66305fcca9770615d05`. Role: test-path,source. Parse: module.
+
+- extractCanvasData @22-41; FunctionExpression; parameters=0; async=false; generator=false
+- extractCanvasData @47-68; FunctionExpression; parameters=0; async=false; generator=false
+- extractCanvasData @74-95; FunctionExpression; parameters=0; async=false; generator=false
+- extractCanvasData @101-126; FunctionExpression; parameters=0; async=false; generator=false
+- extractCanvasData @132-162; FunctionExpression; parameters=0; async=true; generator=false
+- extractCanvasData @168-205; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @183-191; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @184-190; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- fileReader.onload @186-188; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @194-202; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @195-201; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- fileReader.onload @197-199; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- extractCanvasData @211-246; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @230-238; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @231-237; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- fileReader.onload @233-235; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- extractCanvasData @252-298; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @276-284; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @277-283; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- fileReader.onload @279-281; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @287-295; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @288-294; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- fileReader.onload @290-292; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- extractCanvasData @304-322; FunctionExpression; parameters=0; async=true; generator=false
+- extractCanvasData @328-352; FunctionExpression; parameters=0; async=true; generator=false
+- extractCanvasData @358-382; FunctionExpression; parameters=0; async=true; generator=false
+- extractCanvasData @388-405; FunctionExpression; parameters=0; async=false; generator=false
+- runExtractCanvasData @410-416; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @412-415; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- runTest @418-535; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @537-558; FunctionExpression; parameters=0; async=true; generator=false
+- run_tests_with_randomization_enabled @560-562; FunctionExpression; parameters=0; async=true; generator=false
+- run_tests_with_randomization_enabled_with_siphash @564-573; FunctionExpression; parameters=0; async=true; generator=false
+- run_tests_with_randomization_disabled @575-577; FunctionExpression; parameters=0; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_canvas_randomization_offscreen_transfer.js
+
+Blob: `0c7b7bf734838b790a475a9be4fb6d40ce1a178c`. Role: test-path,source. Parse: module.
+
+- extractCanvasData @18-89; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @47-50; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- worker.onmessage @48-48; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @52-52; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @57-61; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @71-76; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @73-73; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- getPixelsFromTransferredCanvas @91-96; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @93-95; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @100-115; FunctionExpression; parameters=0; async=true; generator=false
+- runTest @117-182; FunctionDeclaration; parameters=1; async=true; generator=false
+- run_tests_with_randomization_enabled @184-186; FunctionExpression; parameters=0; async=true; generator=false
+- run_tests_with_randomization_disabled @188-190; FunctionExpression; parameters=0; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_canvas_randomization_permission.js
+
+Blob: `5e9ee11ba94ffff37424266f2e7290c4a2e3c581`. Role: test-path,source. Parse: module.
+
+- getImageData @16-74; FunctionDeclaration; parameters=3; async=false; generator=false
+- extractCanvas @17-65; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @39-45; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @45-52; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- reader.onload @49-49; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @54-61; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- reader.onload @58-58; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @72-72; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- setup @88-119; FunctionExpression; parameters=0; async=true; generator=false
+- runTest @121-167; FunctionDeclaration; parameters=2; async=true; generator=false
+- test_rfp_no_permission @169-171; FunctionExpression; parameters=0; async=true; generator=false
+- test_rfp_permission @173-175; FunctionExpression; parameters=0; async=true; generator=false
+- test_fpp_no_permission @177-179; FunctionExpression; parameters=0; async=true; generator=false
+- test_fpp_permission @181-183; FunctionExpression; parameters=0; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_canvas_randomization_permission_background_load.js
+
+Blob: `91fc757d735c6fff7b97cc261b88555ef8e9b851`. Role: test-path,source. Parse: module.
+
+- assertShown @11-33; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @17-32; FunctionExpression; parameters=1; async=true; generator=false
+- testPermissionShown @35-52; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @46-49; FunctionExpression; parameters=0; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_canvas_randomization_worker.js
+
+Blob: `cdfbf19528702f947ae5eb7122484c4097820836`. Role: test-path,source. Parse: module.
+
+- extractCanvasData @22-37; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- extractCanvasData @42-74; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @55-61; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- fileReader.onload @57-59; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @65-71; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- fileReader.onload @67-69; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- extractCanvasData @79-116; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @97-103; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- fileReader.onload @99-101; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @107-113; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- fileReader.onload @109-111; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- extractCanvasData @121-159; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @140-146; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- fileReader.onload @142-144; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @150-156; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- fileReader.onload @152-154; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- runTest @164-271; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @273-297; FunctionExpression; parameters=0; async=true; generator=false
+- run_tests_with_randomization_enabled @299-301; FunctionExpression; parameters=0; async=true; generator=false
+- run_tests_with_randomization_disabled @303-305; FunctionExpression; parameters=0; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_dpr_media_queries.js
+
+Blob: `dd79f6dac5e75ac18989b5fdf45c1fc4a9aa30b0`. Role: test-path,source. Parse: module.
+
+- (anonymous) @17-46; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @35-42; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- runForZoomLevel @48-69; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @52-64; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @71-92; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- Module chrome://mochitests/content/browser/accessible/tests/browser/Layout.sys.mjs @36; ChromeUtils-import-literal
+- Module chrome://mochitests/content/browser/accessible/tests/browser/Layout.sys.mjs @53; ChromeUtils-import-literal
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_fingerprintingRemoteOverrides.js
+
+Blob: `1b8b1f244d7cdad5382922408c677b12a28041ee`. Role: test-path,source. Parse: module.
+
+- (anonymous) @271-279; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @276-278; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- addRemoteOverrides @283-290; FunctionDeclaration; parameters=1; async=true; generator=false
+- test_remote_settings @292-323; FunctionExpression; parameters=0; async=true; generator=false
+- test_remote_settings_pref @325-357; FunctionExpression; parameters=0; async=true; generator=false
+- test_pref @359-397; FunctionExpression; parameters=0; async=true; generator=false
+- test_pref_override_remote_settings @400-447; FunctionExpression; parameters=0; async=true; generator=false
+- test_pref_override_remote_settings2 @450-509; FunctionExpression; parameters=0; async=true; generator=false
+- test_beacon_request @513-555; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @520-543; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @524-528; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @530-539; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @532-538; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Module resource://services-settings/remote-settings.sys.mjs @7; ChromeUtils-import-literal
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_fingerprintingWebCompat.js
+
+Blob: `0fc07835bcbe812d3f1e695ad55b68dc185c83e3`. Role: test-path,source. Parse: module.
+
+- openAndSetupTestPage @253-284; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @263-280; ArrowFunctionExpression; parameters=2; async=true; generator=false
+- openAndSetupTestPageForPopup @286-330; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @296-326; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @306-319; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @308-315; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- verifyResultInTab @332-438; FunctionDeclaration; parameters=4; async=true; generator=false
+- testScreenAvailRect @333-343; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- testPrefersReducedMotion @345-355; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @374-375; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @403-403; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @431-431; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @440-453; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @450-452; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- addRemoteOverrides @457-464; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @466-483; FunctionExpression; parameters=0; async=true; generator=false
+- test_popup_inheritance @487-528; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @506-512; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @515-523; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Module resource://services-settings/remote-settings.sys.mjs @7; ChromeUtils-import-literal
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_fingerprinting_randomization_key.js
+
+Blob: `6759aa7a7854ff065b1a4fb5e781e36285232249`. Role: test-path,source. Parse: module.
+
+- getRandomKeyHexFromBrowser @36-159; FunctionDeclaration; parameters=3; async=true; generator=false
+- (anonymous) @43-43; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @46-48; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @50-50; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @60-72; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @69-71; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @75-75; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @85-89; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @92-92; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @104-117; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @113-116; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @121-121; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @133-146; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @142-145; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @150-150; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- test_randomization_disabled_with_rfp_disabled @163-206; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @195-197; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- test_generate_randomization_key @209-296; FunctionExpression; parameters=0; async=true; generator=false
+- test_reset_key_after_pbm_session_ends @300-349; FunctionExpression; parameters=0; async=true; generator=false
+- test_randomization_with_exempted_normal_window @353-419; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @387-389; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- test_reset_random_key_when_clear_site_data @422-486; FunctionExpression; parameters=0; async=true; generator=false
+- Module moz-src:///toolkit/components/forgetaboutsite/ForgetAboutSite.sys.mjs @1; ChromeUtils-import-literal
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_font_fingerprinter_telemetry.js
+
+Blob: `52bc970921f96d081c98ec2a88b622e4042768e8`. Role: test-path,source. Parse: module.
+
+- clearTelemetry @18-21; FunctionDeclaration; parameters=0; async=true; generator=false
+- getLabeledCounter @23-32; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @26-30; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- checkLabeledCounter @34-39; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @35-37; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @41-43; FunctionExpression; parameters=0; async=true; generator=false
+- test_font_fingerprinting_telemetry_normal @45-61; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @51-51; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- test_font_fingerprinting_telemetry_fingerprinter @63-78; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @69-69; ArrowFunctionExpression; parameters=1; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_fpiServiceWorkers_fingerprinting.js
+
+Blob: `7f756105e4869f8deae3aa349e0a74a76c316ec5`. Role: test-path,source. Parse: module.
+
+- (anonymous) @8-45; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @46-69; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @70-76; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @71-75; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @72-73; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_fpp_protections_matrix_1.js
+
+Blob: `6ff2ff49edb26266edbaaea487abf21f84d10984`. Role: test-path,source. Parse: module.
+
+- verifyOverridesNonGranular @14-16; FunctionExpression; parameters=0; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_fpp_protections_matrix_2.js
+
+Blob: `181c7ee33d11f3786f0dfe3b8fce1cd5b63e8274`. Role: test-path,source. Parse: module.
+
+- verifyOverridesGranular @14-16; FunctionExpression; parameters=0; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_fpp_protections_matrix_3.js
+
+Blob: `213691ac091f41febe1f1383a46bfa392374eba7`. Role: test-path,source. Parse: module.
+
+- verifyOverridesBFppGranular @14-16; FunctionExpression; parameters=0; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_fpp_protections_matrix_4.js
+
+Blob: `3d4e4595307d0c1f9c1ad3d7cce4a139a8e3f33c`. Role: test-path,source. Parse: module.
+
+- verifyOverridesFppGranular @14-16; FunctionExpression; parameters=0; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_fpp_remote_settings_jexl.js
+
+Blob: `0a6b86de0fa99d884b6c5fcf7900e29a5ce15828`. Role: test-path,source. Parse: module.
+
+- (anonymous) @22-30; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @27-29; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- addRemoteOverride @34-46; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @48-89; FunctionExpression; parameters=0; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_iframe_orientation.js
+
+Blob: `52363bb65247890d4ef56c857d53f93781fddc87`. Role: test-path,source. Parse: module.
+
+- runTest @7-59; FunctionDeclaration; parameters=3; async=true; generator=false
+- window.onresize @11-11; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @19-37; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @61-65; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @67-74; ArrowFunctionExpression; parameters=0; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_js_locale.js
+
+Blob: `82a1c06253008ce394155ec54f2fbc0824cbe187`. Role: test-path,source. Parse: module.
+
+- getDateString @14-33; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @23-27; FunctionExpression; parameters=1; async=false; generator=false
+- testWithPrefs @35-47; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- test_rfp @49-54; FunctionExpression; parameters=0; async=true; generator=false
+- test_fpp @56-62; FunctionExpression; parameters=0; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_navigator_online.js
+
+Blob: `46906a8bc63ed4e4796604a27102c140f225d9e1`. Role: test-path,source. Parse: module.
+
+- (anonymous) @11-43; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @18-18; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @36-36; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_resistfingerprinting_getbuffersubdata.js
+
+Blob: `8281aed9e55e5e8c0a2f1d0853d6cf20e6c36893`. Role: test-path,source. Parse: module.
+
+- extractCanvas @15-156; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- draw @51-125; ArrowFunctionExpression; parameters=3; async=false; generator=false
+- createShaderById @52-77; FunctionDeclaration; parameters=2; async=false; generator=false
+- createProgramByIds @79-101; FunctionDeclaration; parameters=3; async=false; generator=false
+- readPixels @126-147; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_rfp_no_permission @158-209; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @198-198; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @200-200; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_resistfingerprinting_readpixels.js
+
+Blob: `a3bc1c6b697b7d1c1aae3facc5e3982d9dc3a2e3`. Role: test-path,source. Parse: module.
+
+- extractCanvas @15-149; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- draw @51-125; ArrowFunctionExpression; parameters=3; async=false; generator=false
+- createShaderById @52-77; FunctionDeclaration; parameters=2; async=false; generator=false
+- createProgramByIds @79-101; FunctionDeclaration; parameters=3; async=false; generator=false
+- readPixels @126-140; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_randomization @151-202; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @191-191; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @193-193; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_resistfingerprinting_readpixels_placeholder.js
+
+Blob: `9745f2a87e0b13bc9b4c785cd6a3f8699b46e7e5`. Role: test-path,source. Parse: module.
+
+- extractCanvas @15-154; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- draw @58-132; ArrowFunctionExpression; parameters=3; async=false; generator=false
+- createShaderById @59-84; FunctionDeclaration; parameters=2; async=false; generator=false
+- createProgramByIds @86-108; FunctionDeclaration; parameters=3; async=false; generator=false
+- test_placeholder @156-246; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @193-193; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @197-197; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @235-235; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @236-236; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_rfp_canvasplaceholder_pdfjs.js
+
+Blob: `4077d4b7c8c1fac5c0579a86158b9d39e2edc39e`. Role: test-path,source. Parse: module.
+
+- canvas_placeholder_pdfjs @7-61; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @14-37; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- extractCanvasData @15-29; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @56-59; ArrowFunctionExpression; parameters=0; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_serviceWorker_fingerprinting_webcompat.js
+
+Blob: `adcdfc184e0dc83c7bfc386729b350be79dd7daf`. Role: test-path,source. Parse: module.
+
+- (anonymous) @9-29; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @31-59; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @61-67; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @62-66; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @63-64; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @93-113; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @115-143; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @145-151; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @146-150; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @147-148; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_service_worker_granular_overrides.js
+
+Blob: `ae8a4ed9889ecb5b0ba5b0a062bd09f616648df1`. Role: test-path,source. Parse: module.
+
+- getTimezoneOffset @16-24; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @17-23; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- createMessage @26-29; ArrowFunctionExpression; parameters=3; async=false; generator=false
+- runTest @31-36; ArrowFunctionExpression; parameters=4; async=true; generator=false
+- (anonymous) @48-51; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @55-73; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @58-58; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @59-59; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @77-96; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @80-80; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @81-81; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @100-118; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @103-103; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @104-104; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @122-141; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @125-125; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @126-126; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @145-164; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @148-148; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @149-149; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- firstAndThirdPartyContextRunner @178-220; ArrowFunctionExpression; parameters=3; async=true; generator=false
+- (anonymous) @199-210; ArrowFunctionExpression; parameters=1; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_service_worker_navigator_spoofing.js
+
+Blob: `82eb280959dcf68d218abd8272bf89f1221182ee`. Role: test-path,source. Parse: module.
+
+- readNavigatorIdentity @19-30; FunctionDeclaration; parameters=0; async=true; generator=false
+- readNavigatorLanguages @35-40; FunctionDeclaration; parameters=0; async=true; generator=false
+- readInWindow @45-49; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @46-47; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- runIdentityTest @51-93; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @55-91; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- test_sw_navigator_spoofing_enabled @95-97; FunctionExpression; parameters=0; async=true; generator=false
+- test_sw_navigator_consistency_disabled @99-101; FunctionExpression; parameters=0; async=true; generator=false
+- test_sw_navigator_language_spoofing @106-144; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @118-141; ArrowFunctionExpression; parameters=1; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_service_worker_overrides.js
+
+Blob: `756b5c3da40f20104b65a6eea4c2a01bbf6536d7`. Role: test-path,source. Parse: module.
+
+- (anonymous) @20-23; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- runTest @25-61; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @42-48; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- check_overrides_enabled @63-65; FunctionExpression; parameters=0; async=true; generator=false
+- check_overrides_disabled @67-69; FunctionExpression; parameters=0; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_service_worker_randomization_key_originattrs.js
+
+Blob: `8729799ccaa25470a073c41740693a5e3aafe90a`. Role: test-path,source. Parse: module.
+
+- runTest @19-80; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- func @36-48; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- check_with_fpi_enabled @82-84; FunctionExpression; parameters=0; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_service_worker_timer_precision.js
+
+Blob: `471e1a352f2fb4e0212c7325b4fd6b4add0e3706`. Role: test-path,source. Parse: module.
+
+- collectTimerSamples @22-36; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @30-30; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- collectInWindow @38-44; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @42-42; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- checkClamped @46-73; FunctionDeclaration; parameters=2; async=false; generator=false
+- test_sw_timer_precision_clamped @75-93; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @85-91; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- test_sw_timer_precision_disabled @97-127; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @105-125; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @112-112; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @117-117; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @122-122; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_srcset.js
+
+Blob: `ef4304d41b285af4a30295472285c2a5cd87e14f`. Role: test-path,source. Parse: module.
+
+- precacheAssets @7-17; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @8-16; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- runForZoomLevel @19-66; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @23-53; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @33-38; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @68-88; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- Module chrome://mochitests/content/browser/accessible/tests/browser/Layout.sys.mjs @9; ChromeUtils-import-literal
+- Module chrome://mochitests/content/browser/accessible/tests/browser/Layout.sys.mjs @26; ChromeUtils-import-literal
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics.js
+
+Blob: `52518683d32d7eb67eed82d335604485e309c63e`. Role: test-path,source. Parse: module.
+
+- run_test @11-35; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @14-33; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @16-20; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @21-32; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @24-24; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_canvas_filtering.js
+
+Blob: `41d08def645f41f6ed4701902bce079ab1d6b1e6`. Role: test-path,source. Parse: module.
+
+- createLargeData @20-29; FunctionDeclaration; parameters=1; async=false; generator=false
+- createAllKnownHashesData @32-69; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_all_known_hashes_removed @72-121; FunctionExpression; parameters=0; async=true; generator=false
+- test_one_unknown_hash_under_budget @124-162; FunctionExpression; parameters=0; async=true; generator=false
+- test_one_unknown_hash_over_budget @165-199; FunctionExpression; parameters=0; async=true; generator=false
+- test_01_software_preferred @202-248; FunctionExpression; parameters=0; async=true; generator=false
+- test_01_included_02_sw_omitted @251-298; FunctionExpression; parameters=0; async=true; generator=false
+- test_01_and_02_sw_included_02_hw_omitted @301-355; FunctionExpression; parameters=0; async=true; generator=false
+- test_01_02_included_09_omitted @358-417; FunctionExpression; parameters=0; async=true; generator=false
+- test_01_02_included_10_omitted @420-479; FunctionExpression; parameters=0; async=true; generator=false
+- test_01_02_09_10_included_13_omitted @482-570; FunctionExpression; parameters=0; async=true; generator=false
+- test_01_02_09_10_13_included_14_omitted @573-670; FunctionExpression; parameters=0; async=true; generator=false
+- Module resource://gre/modules/UserCharacteristicsPageService.sys.mjs @8; ChromeUtils-import-literal
+- Module resource://gre/modules/CanvasHashData.sys.mjs @13; ChromeUtils-import-literal
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_canvas_font.js
+
+Blob: `670ab674ed3cf91a64c48d877b2ad121d8544404`. Role: test-path,source. Parse: module.
+
+- registerActor @19-31; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_canvas_text_uses_bundled_font @33-116; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @35-37; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @39-115; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @49-49; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- renderInContent @65-93; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- renderHash @68-85; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @83-83; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @89-90; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @98-98; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_clientrects.js
+
+Blob: `7678e07a1ca7531bb9c7d7658f9cccf3e7816798`. Role: test-path,source. Parse: module.
+
+- test_clientrects_all_metrics @11-209; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @14-207; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @16-194; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @195-206; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @198-198; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_css.js
+
+Blob: `c73950b33dc8df014805cb7e40f14fcc38794d28`. Role: test-path,source. Parse: module.
+
+- test_css_system_colors_and_fonts @11-118; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @14-116; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @16-103; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @104-115; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @107-107; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_gamepads.js
+
+Blob: `30cefde0497fea97dc529f2366283cf0ba6986bc`. Role: test-path,source. Parse: module.
+
+- setup @11-15; FunctionExpression; parameters=0; async=true; generator=false
+- promiseObserverNotification @17-40; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @21-37; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @38-38; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test @42-89; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @47-87; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @48-77; ArrowFunctionExpression; parameters=1; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_linux_distro.js
+
+Blob: `562f478b8335a547c9bd3ae760f74e1f02a0fb26`. Role: test-path,source. Parse: module.
+
+- test_linux_distro_metrics @11-55; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @14-53; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @16-40; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @41-52; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @44-44; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_math.js
+
+Blob: `1947a0cfdcf287a8e7cfee3d3b4f641084b3fdea`. Role: test-path,source. Parse: module.
+
+- test_math_and_binary_arch @11-76; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @14-74; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @16-61; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @62-73; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @65-65; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_mathml.js
+
+Blob: `3b4f7a3ee4314ca5fea4cc1e33e585883c6792bd`. Role: test-path,source. Parse: module.
+
+- test_mathml_metrics @11-105; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @14-103; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @16-90; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @91-102; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @94-94; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_svg.js
+
+Blob: `fd9263413a50d5e9880dd5836efd1b4e314dcefe`. Role: test-path,source. Parse: module.
+
+- test_svg_metrics @11-110; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @14-108; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @16-95; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @96-107; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @99-99; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_timezone.js
+
+Blob: `a20a2ea895f6b79566502c0b0cc2fca4e45f02d2`. Role: test-path,source. Parse: module.
+
+- test_timezone_metrics @11-55; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @14-53; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @16-40; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @41-52; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @44-44; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_usercharacteristics_voices.js
+
+Blob: `617e9eb97239b164b38b956b435d63c229d372c7`. Role: test-path,source. Parse: module.
+
+- test_voices_absence_invariant @16-70; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @17-68; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @19-55; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @56-67; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @59-59; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_worker_granular_overrides.js
+
+Blob: `1c9456439068654a5c038f2bebc35b4c4baff638`. Role: test-path,source. Parse: module.
+
+- getTimezoneOffset @16-24; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @17-23; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @27-30; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- createMessage @32-35; ArrowFunctionExpression; parameters=3; async=false; generator=false
+- runTest @37-42; ArrowFunctionExpression; parameters=4; async=true; generator=false
+- (anonymous) @55-73; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @58-58; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @59-59; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @77-96; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @80-80; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @81-81; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @100-118; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @103-103; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @104-104; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @122-141; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @125-125; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @126-126; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @145-164; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @148-148; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @149-149; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- firstAndThirdPartyContextRunner @178-220; ArrowFunctionExpression; parameters=3; async=true; generator=false
+- (anonymous) @199-210; ArrowFunctionExpression; parameters=1; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/browser_worker_overrides.js
+
+Blob: `b96e87d2e52a2a201629ae5d6516d2573822ce66`. Role: test-path,source. Parse: module.
+
+- (anonymous) @19-22; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- runTest @24-57; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @38-44; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- check_overrides_enabled @59-61; FunctionExpression; parameters=0; async=true; generator=false
+- check_overrides_disabled @63-65; FunctionExpression; parameters=0; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/head-fpp-matrix.js
+
+Blob: `b5c3b23acf610105f674f0fb93398895c127c417`. Role: test-path,source. Parse: module.
+
+- generateTestCases @74-152; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @80-88; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @83-86; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- computeExpectedResults @108-138; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @141-141; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- runTestCase @154-194; FunctionDeclaration; parameters=4; async=true; generator=false
+- (anonymous) @179-187; FunctionExpression; parameters=2; async=true; generator=false
+- (anonymous) @199-215; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @209-214; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- runTestCases @217-226; FunctionDeclaration; parameters=1; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/head.js
+
+Blob: `e474db72a66c767e50bd748fb497d38c3214ab03`. Role: test-path,source. Parse: module.
+
+- countDifferencesInUint8Arrays @13-23; FunctionDeclaration; parameters=2; async=false; generator=false
+- countDifferencesInArrayBuffers @33-53; FunctionDeclaration; parameters=2; async=false; generator=false
+- isDataRandomizedFuzzy @55-77; FunctionDeclaration; parameters=4; async=false; generator=false
+- isDataRandomizedNotEqual @79-81; FunctionDeclaration; parameters=3; async=false; generator=false
+- isDataRandomizedGreaterThanZero @83-87; FunctionDeclaration; parameters=3; async=false; generator=false
+- promiseObserver @89-97; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @90-96; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- obs @91-94; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- runFunctionInWorker @108-124; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @109-123; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @114-122; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- worker.onmessage @115-117; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- runFunctionInServiceWorker @135-158; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @136-157; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @145-156; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @146-149; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @151-155; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- withServiceWorkerTab @172-194; FunctionDeclaration; parameters=3; async=true; generator=false
+- (anonymous) @187-191; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @188-189; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- isTimeValueRounded @208-232; FunctionDeclaration; parameters=2; async=false; generator=false
+- runTestInFirstAndThirdPartyContexts @259-374; FunctionDeclaration; parameters=5; async=false; generator=false
+- (anonymous) @266-366; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @291-304; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @294-299; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- runningCallbackTask @310-339; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @311-338; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- msg @314-337; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @368-373; ArrowFunctionExpression; parameters=1; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/serviceWorker.js
+
+Blob: `e9ee00cbf80565dcf2f4459cb5cccf00b92da849`. Role: test-path,source. Parse: module.
+
+- (anonymous) @1-15; ArrowFunctionExpression; parameters=1; async=true; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/serviceWorkerTester.js
+
+Blob: `090c2341c6fa5b866cf6cf39266681cdfa24c47f`. Role: test-path,source. Parse: module.
+
+- onmessage @1-12; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @5-11; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @6-10; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/testHelpers.js
+
+Blob: `3feb5dfc1156de571b56668c6b9815c46de0675e`. Role: test-path,source. Parse: module.
+
+- registerServiceWorker @1-16; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @4-12; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- onStateChange @6-11; FunctionExpression; parameters=0; async=false; generator=false
+- sendAndWaitWorkerMessage @18-30; FunctionDeclaration; parameters=3; async=false; generator=false
+- (anonymous) @19-29; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @22-24; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/tests/browser/worker.js
+
+Blob: `894b2085492ab4b168273457500658f9d80ee20f`. Role: test-path,source. Parse: module.
+
+- onmessage @1-7; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @4-6; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### toolkit/components/resistfingerprinting/tests/xpcshell/test_ohttp_client.js
+
+Blob: `e7cb211d56090bb9660db901e476a999e724e787`. Role: test-path,source. Parse: module.
+
+- (anonymous) @30-36; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @44-86; ArrowFunctionExpression; parameters=2; async=true; generator=false
+- resetPromises @89-97; FunctionDeclaration; parameters=0; async=false; generator=false
+- test_success @99-162; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @130-138; ArrowFunctionExpression; parameters=5; async=false; generator=false
+- (anonymous) @155-155; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- test_invalid_config @164-217; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @199-207; ArrowFunctionExpression; parameters=5; async=false; generator=false
+- test_ohttp_failure @219-287; FunctionDeclaration; parameters=0; async=true; generator=false
+- (anonymous) @255-263; ArrowFunctionExpression; parameters=5; async=false; generator=false
+- (anonymous) @280-280; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- run_tests @289-294; FunctionExpression; parameters=0; async=true; generator=false
+- Module resource://testing-common/AddonTestUtils.sys.mjs @7; ChromeUtils-import-literal
+
+### toolkit/components/satchel/AutocompleteRemoveRecord.sys.mjs
+
+Blob: `195e5f585f1cdad4b5dcc9455961bd3f96511edb`. Role: source. Parse: module.
+
+- (anonymous) @12-16; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- passwordOSAuthStrings @26-36; FunctionExpression; parameters=0; async=true; generator=false
+- confirmRemoval @38-66; FunctionExpression; parameters=2; async=true; generator=false
+- Module resource://gre/modules/AppConstants.sys.mjs @5; ImportDeclaration
+
+### toolkit/components/satchel/FillHelpers.sys.mjs
+
+Blob: `33c2d9bef62da2a79f2e28504363e93c6c95fbaf`. Role: source. Parse: module.
+
+- constructor @13-21; FunctionExpression; parameters=5; async=false; generator=false
+- adaptExternalAutocompleteItem @34-46; FunctionDeclaration; parameters=1; async=false; generator=false
+- showConfirmation @58-68; FunctionDeclaration; parameters=3; async=false; generator=false
+- Class GenericAutocompleteItem @8-22
+
+### toolkit/components/satchel/FormHandlerChild.sys.mjs
+
+Blob: `79f5e81d6302535b150c2a6cdbf091e4b0005445`. Role: source. Parse: module.
+
+- actorCreated @20-29; FunctionExpression; parameters=0; async=false; generator=false
+- handleEvent @41-67; FunctionExpression; parameters=1; async=false; generator=false
+- receiveMessage @69-82; FunctionExpression; parameters=1; async=false; generator=false
+- processDOMFormBeforeSubmitEvent @90-95; FunctionExpression; parameters=1; async=false; generator=false
+- processDOMDocFetchSuccessEvent @102-122; FunctionExpression; parameters=0; async=false; generator=false
+- processDOMFormRemovedEvent @130-136; FunctionExpression; parameters=1; async=false; generator=false
+- processDOMInputPasswordRemovedEvent @144-150; FunctionExpression; parameters=1; async=false; generator=false
+- processPageNavigation @157-165; FunctionExpression; parameters=0; async=false; generator=false
+- dispatchFormSubmissionEvent @177-183; FunctionExpression; parameters=2; async=false; generator=false
+- dispatchPrepareFormSubmissionEvent @190-198; FunctionExpression; parameters=0; async=false; generator=false
+- onNavigationObserved @208-222; FunctionExpression; parameters=1; async=false; generator=false
+- registerFormSubmissionInterest @241-289; FunctionExpression; parameters=2; async=false; generator=false
+- unregisterFormRemovalInterest @299-315; FunctionExpression; parameters=1; async=false; generator=false
+- registerProgressListener @326-339; FunctionExpression; parameters=0; async=false; generator=false
+- onLocationChange @352-362; FunctionExpression; parameters=4; async=false; generator=false
+- onStateChange @369-404; FunctionExpression; parameters=4; async=false; generator=false
+- notifyProcessRootOfNavigation @412-419; FunctionExpression; parameters=1; async=false; generator=false
+- Class FormHandlerChild @19-340
+
+### toolkit/components/satchel/FormHandlerParent.sys.mjs
+
+Blob: `37159507c768e2b3f92c5a5350180f640db21e10`. Role: source. Parse: module.
+
+- receiveMessage @6-23; FunctionExpression; parameters=1; async=false; generator=false
+- onPageNavigated @34-61; FunctionExpression; parameters=1; async=false; generator=false
+- registerProgressListenerAtTopLevel @68-72; FunctionExpression; parameters=0; async=false; generator=false
+- Class FormHandlerParent @5-73
+
+### toolkit/components/satchel/FormHistory.sys.mjs
+
+Blob: `1a3b37be571ea764d8fc46e1ea8e4efd9ed0deea`. Role: source. Parse: module.
+
+- wait @103-103; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @103-103; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- get @108-111; FunctionExpression; parameters=1; async=false; generator=false
+- ensureInitialized @113-133; FunctionExpression; parameters=0; async=false; generator=false
+- observe @135-174; FunctionExpression; parameters=3; async=false; generator=false
+- log @179-183; FunctionDeclaration; parameters=1; async=false; generator=false
+- sendNotification @185-206; FunctionDeclaration; parameters=2; async=false; generator=false
+- validateOpData @280-296; FunctionDeclaration; parameters=2; async=false; generator=false
+- validateSearchData @298-311; FunctionDeclaration; parameters=2; async=false; generator=false
+- makeQueryPredicates @313-340; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @316-316; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @317-337; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- generateGUID @342-357; FunctionDeclaration; parameters=0; async=false; generator=false
+- dbAsyncMigrateToVersion4 @361-367; FunctionExpression; parameters=1; async=true; generator=false
+- dbAsyncMigrateToVersion5 @370-376; FunctionExpression; parameters=1; async=true; generator=false
+- prepareInsertQuery @398-432; FunctionDeclaration; parameters=2; async=false; generator=false
+- add @442-455; FunctionExpression; parameters=2; async=false; generator=false
+- clear @457-464; FunctionExpression; parameters=1; async=false; generator=false
+- getAddSourceToGuidQueries @467-484; FunctionDeclaration; parameters=2; async=false; generator=false
+- updateFormHistoryWrite @494-698; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @537-542; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @686-690; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- expireOldEntriesDeletion @712-722; FunctionDeclaration; parameters=2; async=true; generator=false
+- expireOldEntriesVacuum @730-738; FunctionDeclaration; parameters=2; async=true; generator=false
+- createTable @740-754; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @743-743; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @744-744; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- path @771-773; FunctionExpression; parameters=0; async=false; generator=false
+- conn @788-802; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @790-799; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- _establishConn @824-956; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @829-830; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @909-923; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @926-931; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- _failover @968-982; FunctionExpression; parameters=1; async=true; generator=false
+- _expectedColumnsPresent @992-1009; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @995-995; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @998-1001; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- db @1013-1015; FunctionExpression; parameters=0; async=false; generator=false
+- enabled @1017-1019; FunctionExpression; parameters=0; async=false; generator=false
+- isAllowedFieldname @1027-1029; FunctionExpression; parameters=1; async=false; generator=false
+- isAllowedEntry @1038-1058; FunctionExpression; parameters=2; async=false; generator=false
+- search @1060-1088; FunctionExpression; parameters=3; async=true; generator=false
+- (anonymous) @1064-1064; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1078-1085; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- count @1090-1102; FunctionExpression; parameters=1; async=true; generator=false
+- update @1104-1186; FunctionExpression; parameters=1; async=true; generator=false
+- validIdentifier @1105-1109; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @1115-1115; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- getAutoCompleteResults @1209-1329; FunctionExpression; parameters=3; async=true; generator=false
+- (anonymous) @1307-1327; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- _supportsDeletedTable @1332-1334; FunctionExpression; parameters=0; async=false; generator=false
+- _supportsDeletedTable @1335-1337; FunctionExpression; parameters=1; async=false; generator=false
+- expireOldEntries @1340-1352; FunctionExpression; parameters=0; async=true; generator=false
+- Module resource://gre/modules/AppConstants.sys.mjs @84; ImportDeclaration
+
+### toolkit/components/satchel/FormHistoryAutoComplete.sys.mjs
+
+Blob: `03cc1ed80d9613a81a93bb25e248f43096e1e7ac`. Role: source. Parse: module.
+
+- (anonymous) @18-18; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @34-39; FunctionExpression; parameters=4; async=false; generator=false
+- fixedEntries @53-56; FunctionExpression; parameters=1; async=false; generator=false
+- removeDuplicateHistoryEntries @63-69; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @64-67; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @66-66; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- getAt @71-87; FunctionExpression; parameters=1; async=false; generator=false
+- wrappedJSObject @91-93; FunctionExpression; parameters=0; async=false; generator=false
+- defaultIndex @99-101; FunctionExpression; parameters=0; async=false; generator=false
+- searchResult @103-107; FunctionExpression; parameters=0; async=false; generator=false
+- matchCount @109-115; FunctionExpression; parameters=0; async=false; generator=false
+- getValueAt @117-120; FunctionExpression; parameters=1; async=false; generator=false
+- getLabelAt @122-125; FunctionExpression; parameters=1; async=false; generator=false
+- getCommentAt @127-146; FunctionExpression; parameters=1; async=false; generator=false
+- getStyleAt @148-164; FunctionExpression; parameters=1; async=false; generator=false
+- getImageAt @166-176; FunctionExpression; parameters=1; async=false; generator=false
+- getFinalCompleteValueAt @178-180; FunctionExpression; parameters=1; async=false; generator=false
+- isRemovableAt @182-184; FunctionExpression; parameters=1; async=false; generator=false
+- removeValueAt @186-194; FunctionExpression; parameters=1; async=false; generator=false
+- removeEntryData @196-203; FunctionExpression; parameters=1; async=false; generator=false
+- isFormHistoryEntry @205-207; FunctionExpression; parameters=1; async=false; generator=false
+- Class FormHistoryAutoCompleteResult @33-208
+- Module resource://gre/modules/XPCOMUtils.sys.mjs @5; ImportDeclaration
+
+### toolkit/components/satchel/FormHistoryChild.sys.mjs
+
+Blob: `b9d9b05179e3c17ae9c1ceb1184851618b9f7296`. Role: source. Parse: module.
+
+- log @32-37; FunctionDeclaration; parameters=1; async=false; generator=false
+- receiveMessage @40-46; FunctionExpression; parameters=1; async=false; generator=false
+- repopulateAutocompletePopup @48-57; FunctionExpression; parameters=0; async=false; generator=false
+- handleEvent @59-67; FunctionExpression; parameters=1; async=false; generator=false
+- getInputName @69-71; FunctionExpression; parameters=1; async=false; generator=false
+- onDOMFormBeforeSubmit @73-153; FunctionExpression; parameters=1; async=false; generator=false
+- actorName @155-157; FunctionExpression; parameters=0; async=false; generator=false
+- getAutoCompleteSearchOption @165-172; FunctionExpression; parameters=1; async=false; generator=false
+- shouldSearchForAutoComplete @181-200; FunctionExpression; parameters=1; async=false; generator=false
+- searchResultToAutoCompleteResult @210-241; FunctionExpression; parameters=3; async=false; generator=false
+- (anonymous) @229-229; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- isTextControl @243-255; FunctionExpression; parameters=1; async=false; generator=false
+- getDataListSuggestions @257-280; FunctionExpression; parameters=1; async=false; generator=false
+- Class FormHistoryChild @39-281
+- Module resource://gre/modules/XPCOMUtils.sys.mjs @5; ImportDeclaration
+
+### toolkit/components/satchel/FormHistoryParent.sys.mjs
+
+Blob: `b3d67d689bcc5300d32eeff0937f152cbc0f0c8f`. Role: source. Parse: module.
+
+- (anonymous) @16-30; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- receiveMessage @45-60; FunctionExpression; parameters=1; async=false; generator=false
+- onFormSubmitEntries @62-80; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @70-70; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @71-75; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- formOrigin @82-86; FunctionExpression; parameters=0; async=false; generator=false
+- onAutoCompleteSearch @88-146; FunctionExpression; parameters=1; async=true; generator=false
+- onRemoveEntry @148-164; FunctionExpression; parameters=1; async=false; generator=false
+- onAutoCompleteEntrySelected @166-174; FunctionExpression; parameters=2; async=true; generator=false
+- repopulateAutocompletePopup @176-182; FunctionExpression; parameters=0; async=false; generator=false
+- searchAutoCompleteEntries @184-195; FunctionExpression; parameters=2; async=true; generator=false
+- canSearchIncrementally @197-203; FunctionExpression; parameters=2; async=false; generator=false
+- incrementalSearch @205-225; FunctionExpression; parameters=3; async=false; generator=false
+- (anonymous) @217-217; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @223-223; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- calculateScore @236-254; FunctionExpression; parameters=3; async=false; generator=false
+- previewFields @256-258; FunctionExpression; parameters=1; async=false; generator=false
+- autofillFields @260-262; FunctionExpression; parameters=1; async=false; generator=false
+- Class FormHistoryParent @44-263
+- Module resource://gre/modules/AppConstants.sys.mjs @5; ImportDeclaration
+- Module resource://gre/modules/XPCOMUtils.sys.mjs @6; ImportDeclaration
+- Module moz-src:///browser/components/aiwindow/ui/modules/SmartFormFillAutocomplete.sys.mjs @22; ChromeUtils-import-literal
+
+### toolkit/components/satchel/FormHistoryStartup.sys.mjs
+
+Blob: `0c681531ab18306e9f2bfa631d45b2f3a72696be`. Role: source. Parse: module.
+
+- observe @19-29; FunctionExpression; parameters=3; async=false; generator=false
+- init @31-40; FunctionExpression; parameters=0; async=false; generator=false
+- Class FormHistoryStartup @11-41
+
+### toolkit/components/satchel/FormScenarios.sys.mjs
+
+Blob: `10ba4e2829424ba8d0b70183a6cb2a577015c3e8`. Role: source. Parse: module.
+
+- detect @25-41; FunctionExpression; parameters=1; async=false; generator=false
+- isProbablyASignUpForm @51-71; FunctionExpression; parameters=1; async=false; generator=false
+- Class FormScenarios @10-72
+- Module resource://gre/modules/FormLikeFactory.sys.mjs @5; ImportDeclaration
+- Module resource://gre/modules/SignUpFormRuleset.sys.mjs @6; ImportDeclaration
+- Module resource://gre/modules/FirefoxRelayUtils.sys.mjs @7; ImportDeclaration
+- Module resource://gre/modules/XPCOMUtils.sys.mjs @8; ImportDeclaration
+
+### toolkit/components/satchel/SignUpFormRuleset.sys.mjs
+
+Blob: `7a42880fdb628bfe09f5a0a337d38d0f82a36798`. Role: source. Parse: module.
+
+- createRuleset @88-580; FunctionDeclaration; parameters=2; async=false; generator=false
+- docTitleMatchesRegisterRegex @95-98; FunctionDeclaration; parameters=1; async=false; generator=false
+- docTitleMatchesEditProfileRegex @99-102; FunctionDeclaration; parameters=1; async=false; generator=false
+- closestHeaderMatchesLoginRegex @107-111; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @108-109; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- closestHeaderMatchesRegisterRegex @112-116; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @113-114; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- closestHeaderMatchesSubscriptionRegex @117-121; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @118-119; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- formHasRememberMeCheckbox @126-128; FunctionDeclaration; parameters=1; async=false; generator=false
+- formHasSubcriptionCheckbox @129-131; FunctionDeclaration; parameters=1; async=false; generator=false
+- formHasFirstOrLastNameField @136-146; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @140-144; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @141-141; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @142-143; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- formHasEmailField @147-157; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @150-155; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @153-154; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- formHasUsernameField @158-167; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @161-165; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @163-164; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- formHasPasswordField @168-176; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @172-174; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @173-173; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- formHasAcCurrentPassword @181-186; FunctionDeclaration; parameters=1; async=false; generator=false
+- formHasAcNewPassword @187-192; FunctionDeclaration; parameters=1; async=false; generator=false
+- formHasTermsAndConditionsHyperlink @197-202; FunctionDeclaration; parameters=1; async=false; generator=false
+- formHasPasswordForgottenHyperlink @203-208; FunctionDeclaration; parameters=1; async=false; generator=false
+- formHasAlreadySignedUpHyperlink @209-214; FunctionDeclaration; parameters=1; async=false; generator=false
+- closestElementIsEmailLabelLike @219-223; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @220-221; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- formHasRegisterButton @228-237; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @231-235; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @233-234; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- formHasLoginButton @238-247; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @241-245; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @243-244; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- formHasContinueButton @248-257; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @251-255; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @253-254; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- formHasSubscribeButton @258-267; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @261-265; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @263-264; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- formAttributesMatchRegisterRegex @272-276; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @273-274; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- formAttributesMatchLoginRegex @277-281; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @278-279; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- formAttributesMatchSubscriptionRegex @282-286; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @283-284; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- formAttributesMatchLoginAndRegisterRegex @287-291; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @288-289; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- elementMatchesPredicate @296-302; FunctionDeclaration; parameters=3; async=false; generator=false
+- formMatchesPredicate @303-305; FunctionDeclaration; parameters=2; async=false; generator=false
+- inputFieldMatchesPredicate @306-308; FunctionDeclaration; parameters=2; async=false; generator=false
+- inputFieldMatchesSelector @309-311; FunctionDeclaration; parameters=2; async=false; generator=false
+- buttonMatchesPredicate @312-318; FunctionDeclaration; parameters=2; async=false; generator=false
+- elementHasPredicateMatchingDescendant @319-322; FunctionDeclaration; parameters=3; async=false; generator=false
+- elementHasPredicateMatchingHeader @323-336; FunctionDeclaration; parameters=2; async=false; generator=false
+- elementHasPredicateMatchingButton @337-343; FunctionDeclaration; parameters=2; async=false; generator=false
+- elementHasPredicateMatchingInput @344-346; FunctionDeclaration; parameters=2; async=false; generator=false
+- elementHasPredicateMatchingHyperlink @347-361; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @351-359; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @356-356; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- elementHasRegexMatchingCheckbox @362-371; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @366-369; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @367-368; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- nextSiblingLabelMatchesRegex @373-382; FunctionDeclaration; parameters=2; async=false; generator=false
+- previousSiblingLabelMatchesRegex @384-393; FunctionDeclaration; parameters=2; async=false; generator=false
+- getElementDescendants @394-404; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @398-398; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @401-402; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- clearCache @406-409; FunctionDeclaration; parameters=0; async=false; generator=false
+- closestHeaderMatchesPredicate @410-415; FunctionDeclaration; parameters=2; async=false; generator=false
+- closestHeaderAboveMatchesPredicate @416-429; FunctionDeclaration; parameters=2; async=false; generator=false
+- closestElementPreceding @430-432; FunctionDeclaration; parameters=2; async=false; generator=false
+- closestElementFollowing @433-435; FunctionDeclaration; parameters=2; async=false; generator=false
+- getSurroundingNodes @436-452; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @440-440; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @443-451; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- closestFollowingNodeIndex @453-468; FunctionDeclaration; parameters=2; async=false; generator=false
+- checkValueAgainstAllRegex @470-472; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @471-471; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- checkValueAgainstRegex @474-476; FunctionDeclaration; parameters=2; async=false; generator=false
+- atLeastOne @477-479; FunctionDeclaration; parameters=1; async=false; generator=false
+- Module resource://gre/modules/third_party/fathom/fathom.mjs @18; ImportDeclaration
+
+### toolkit/components/satchel/autocomplete-row-item/autocomplete-row-item.mjs
+
+Blob: `13a54df0b53fc384ff47cae9f17875a0ad65f625`. Role: source. Parse: module.
+
+- openActionsMenu @36-75; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @55-60; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @66-70; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- closeActionsMenu @77-80; FunctionExpression; parameters=0; async=false; generator=false
+- getSecondaryActionItemIcon @82-93; FunctionExpression; parameters=1; async=false; generator=false
+- activateSecondaryAction @95-108; FunctionExpression; parameters=0; async=false; generator=false
+- renderSecondaryActionButton @110-141; FunctionExpression; parameters=0; async=false; generator=false
+- stopMouseEvents @116-116; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- onMouseDown @117-122; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- onClick @123-126; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- renderSmartFormFillLoader @143-150; FunctionExpression; parameters=0; async=false; generator=false
+- renderSourcesSummaryPill @152-189; FunctionExpression; parameters=0; async=false; generator=false
+- stopMouseEvents @153-153; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- onMouseDown @154-157; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @167-173; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- renderNamedSourcePills @191-207; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @195-203; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- renderSourcesValue @209-223; FunctionExpression; parameters=0; async=false; generator=false
+- renderSmartFormFillLabels @225-232; FunctionExpression; parameters=0; async=false; generator=false
+- renderDefaultLabels @234-239; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @237-237; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- render @241-262; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @250-250; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @257-258; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Class AutocompleteRowItem @12-263
+- Module chrome://global/content/vendor/lit.all.mjs @5; ImportDeclaration
+- Module chrome://global/content/lit-utils.mjs @10; ImportDeclaration
+
+### toolkit/components/satchel/autocomplete-row-item/autocomplete-row-item.stories.mjs
+
+Blob: `b3c64a99327bf14498a6e5b9aa2e0f2b69c735c1`. Role: source. Parse: module.
+
+- Template @21-29; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- primary @38-38; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- primary @49-49; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- action @52-52; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- Module lit.all.mjs @6; ImportDeclaration
+- Module ./autocomplete-row-item.mjs @7; ImportDeclaration
+
+### toolkit/components/satchel/integrations/FirefoxRelay.sys.mjs
+
+Blob: `be85b35afbb059ff5a500ddac0c720d626409ea7`. Role: source. Parse: module.
+
+- (anonymous) @17-47; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @49-50; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @52-55; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @57-58; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @60-66; FunctionExpression; parameters=0; async=false; generator=false
+- getRelayTokenAsync @90-97; FunctionDeclaration; parameters=0; async=true; generator=false
+- hasFirefoxAccountAsync @99-104; FunctionDeclaration; parameters=0; async=true; generator=false
+- fetchWithReauth @106-134; FunctionDeclaration; parameters=3; async=true; generator=false
+- getReusableMasksAsync @136-164; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @139-143; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- showErrorAsync @173-193; FunctionDeclaration; parameters=3; async=true; generator=false
+- customizeNotificationHeader @195-207; FunctionDeclaration; parameters=1; async=false; generator=false
+- formatMessages @209-226; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @217-225; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @220-220; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- getPostpone @228-241; FunctionDeclaration; parameters=2; async=false; generator=false
+- callback @233-239; FunctionExpression; parameters=0; async=false; generator=false
+- getDisableIntegration @243-254; FunctionDeclaration; parameters=2; async=false; generator=false
+- callback @248-252; FunctionExpression; parameters=0; async=false; generator=false
+- showReusableMasksAsync @256-485; FunctionDeclaration; parameters=3; async=true; generator=false
+- (anonymous) @276-276; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- callback @294-299; FunctionExpression; parameters=0; async=true; generator=false
+- callback @305-307; FunctionExpression; parameters=0; async=false; generator=false
+- getReusableMasksList @312-316; FunctionDeclaration; parameters=0; async=false; generator=false
+- notificationShown @318-445; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @349-363; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @357-360; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @383-383; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @385-414; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @399-410; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @440-443; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- notificationRemoved @447-450; FunctionDeclaration; parameters=0; async=false; generator=false
+- onNotificationEvent @452-465; FunctionDeclaration; parameters=1; async=false; generator=false
+- generateUsernameAsync @487-545; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @497-502; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- isSignup @547-549; FunctionDeclaration; parameters=1; async=false; generator=false
+- getListCollection @552-581; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @566-568; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- isOriginInList @612-644; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @626-626; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @632-638; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- shouldNotShowRelay @646-666; FunctionDeclaration; parameters=1; async=true; generator=false
+- cache @658-658; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- setCache @659-661; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- shouldShowRelay @668-688; FunctionDeclaration; parameters=1; async=true; generator=false
+- cache @680-680; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- setCache @681-683; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- autocompleteItemsAsync @691-727; FunctionExpression; parameters=3; async=true; generator=true
+- notifyServerTermsAcceptedAsync @729-751; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @732-736; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- offerRelayIntegration @753-768; FunctionExpression; parameters=3; async=true; generator=false
+- offerRelayIntegrationToSignedOutUser @770-923; FunctionExpression; parameters=3; async=true; generator=false
+- (anonymous) @774-774; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- callback @786-872; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- obs @812-856; ArrowFunctionExpression; parameters=2; async=true; generator=false
+- (anonymous) @832-832; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- eventCallback @889-919; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- offerRelayIntegrationToFxAUser @925-1021; FunctionExpression; parameters=4; async=true; generator=false
+- (anonymous) @929-929; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- callback @941-953; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- eventCallback @970-1016; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- autocompleteItemsAsync @1025-1055; FunctionExpression; parameters=3; async=true; generator=true
+- generateUsername @1057-1060; FunctionExpression; parameters=2; async=true; generator=false
+- constructor @1066-1074; FunctionExpression; parameters=0; async=false; generator=false
+- learnMoreUrl @1076-1078; FunctionExpression; parameters=0; async=false; generator=false
+- updateConfig @1080-1087; FunctionExpression; parameters=0; async=false; generator=false
+- autocompleteItemsAsync @1089-1110; FunctionExpression; parameters=1; async=true; generator=false
+- generateUsername @1112-1114; FunctionExpression; parameters=2; async=true; generator=false
+- offerRelayIntegration @1116-1118; FunctionExpression; parameters=2; async=true; generator=false
+- getRelayProfileInfo @1120-1130; FunctionExpression; parameters=0; async=true; generator=false
+- fetchRelayProfileInfo @1132-1225; FunctionExpression; parameters=0; async=true; generator=false
+- readStaleProfileCacheOrNull @1227-1236; FunctionExpression; parameters=0; async=false; generator=false
+- Class RelayFeature @1065-1237
+- Class RelayDisabled @1063-1063
+- Class RelayEnabled @1024-1061
+- Class RelayOffered @690-1022
+- Module resource://gre/modules/LoginHelper.sys.mjs @5; ImportDeclaration
+- Module resource://gre/modules/AppConstants.sys.mjs @10; ImportDeclaration
+- Module resource://gre/modules/TelemetryUtils.sys.mjs @11; ImportDeclaration
+- Module resource://gre/modules/FillHelpers.sys.mjs @12; ImportDeclaration
+- Module resource://gre/modules/FxAccounts.sys.mjs @53; ChromeUtils-import-literal
+- Module resource://gre/modules/FxAccountsCommon.sys.mjs @58; ChromeUtils-import-literal
+
+### toolkit/components/satchel/integrations/FirefoxRelayUtils.sys.mjs
+
+Blob: `0dfb2a969d7b0977bb83455837d833e5d54aa0da`. Role: source. Parse: module.
+
+- isRelayInterestedField @8-14; FunctionExpression; parameters=1; async=false; generator=false
+- relayIsAvailableOrEnabled @16-22; FunctionExpression; parameters=0; async=false; generator=false
+- Module resource://gre/modules/LoginHelper.sys.mjs @5; ImportDeclaration
+
+### toolkit/components/satchel/integrations/WebAuthnFeature.sys.mjs
+
+Blob: `711e15ae2e3a08baefc7200aafdd32fa45b26c27`. Role: source. Parse: module.
+
+- (anonymous) @24-24; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @26-27; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- getAutocompleteItemsAsync @37-97; FunctionExpression; parameters=2; async=true; generator=true
+- (anonymous) @46-55; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- reject @52-52; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @57-60; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- autocompleteItemsAsync @107-123; FunctionExpression; parameters=4; async=true; generator=false
+- promptForAuthenticator @125-135; FunctionExpression; parameters=2; async=true; generator=false
+- Class WebAuthnSupport @36-136
+- Module resource://gre/modules/LoginHelper.sys.mjs @5; ImportDeclaration
+- Module resource://gre/modules/XPCOMUtils.sys.mjs @10; ImportDeclaration
+
+### toolkit/components/satchel/megalist/MegalistChild.sys.mjs
+
+Blob: `cd17798c951b30dc7264231865b02c0d375394d7`. Role: source. Parse: module.
+
+- receiveMessage @6-13; FunctionExpression; parameters=1; async=false; generator=false
+- handleEvent @16-16; FunctionExpression; parameters=0; async=false; generator=false
+- Class MegalistChild @5-17
+
+### toolkit/components/satchel/megalist/MegalistParent.sys.mjs
+
+Blob: `46741f8c8b473bd0907669fbaa3e1e1551cb0eb9`. Role: source. Parse: module.
+
+- (anonymous) @8-18; FunctionExpression; parameters=0; async=false; generator=false
+- actorCreated @26-30; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @27-28; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- didDestroy @32-35; FunctionExpression; parameters=0; async=false; generator=false
+- receiveMessage @37-50; FunctionExpression; parameters=1; async=false; generator=false
+- authExpirationTime @52-54; FunctionExpression; parameters=0; async=false; generator=false
+- Class MegalistParent @23-55
+- Module resource://gre/modules/megalist/MegalistViewModel.sys.mjs @5; ImportDeclaration
+
+### toolkit/components/satchel/megalist/MegalistViewModel.sys.mjs
+
+Blob: `d4af6fc658897a1ba706cc7ed93ff1bc9dcd0cbc`. Role: source. Parse: module.
+
+- constructor @39-43; FunctionExpression; parameters=1; async=false; generator=false
+- authExpirationTime @45-47; FunctionExpression; parameters=0; async=false; generator=false
+- willDestroy @49-52; FunctionExpression; parameters=0; async=false; generator=false
+- refreshAllLinesOnScreen @54-56; FunctionExpression; parameters=0; async=false; generator=false
+- refreshSingleLineOnScreen @58-67; FunctionExpression; parameters=1; async=false; generator=false
+- processSnapshotView @76-129; FunctionExpression; parameters=2; async=false; generator=false
+- handleViewMessage @131-137; FunctionExpression; parameters=1; async=false; generator=false
+- receiveRefresh @139-141; FunctionExpression; parameters=0; async=false; generator=false
+- rebuildSnapshots @143-157; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @149-150; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- receiveUpdateFilter @159-164; FunctionExpression; parameters=1; async=false; generator=false
+- receiveReauthPrimaryPassword @166-172; FunctionExpression; parameters=0; async=true; generator=false
+- setNotification @174-176; FunctionExpression; parameters=1; async=false; generator=false
+- setDisplayMode @178-180; FunctionExpression; parameters=1; async=false; generator=false
+- discardChangesConfirmed @182-184; FunctionExpression; parameters=0; async=false; generator=false
+- setPrimaryPasswordAuthenticated @186-188; FunctionExpression; parameters=1; async=false; generator=false
+- receiveCommand @190-214; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @209-209; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- promptForReauth @216-245; FunctionExpression; parameters=1; async=true; generator=false
+- Class MegalistViewModel @23-246
+- Module resource://gre/modules/megalist/aggregator/DefaultAggregator.sys.mjs @5; ImportDeclaration
+
+### toolkit/components/satchel/megalist/aggregator/Aggregator.sys.mjs
+
+Blob: `62fe56775afd6d6264f4da9be9890d776a3b0849`. Role: source. Parse: module.
+
+- attachViewModel @14-17; FunctionExpression; parameters=1; async=false; generator=false
+- detachViewModel @19-30; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @28-28; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- forEachViewModel @38-47; FunctionExpression; parameters=1; async=false; generator=false
+- enumerateLines @49-53; FunctionExpression; parameters=1; async=false; generator=true
+- addSource @61-65; FunctionExpression; parameters=1; async=false; generator=false
+- callFunction @67-77; FunctionExpression; parameters=3; async=false; generator=false
+- (anonymous) @69-69; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- apiForDataSource @82-115; FunctionExpression; parameters=0; async=false; generator=false
+- refreshSingleLineOnScreen @85-87; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @86-86; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- refreshAllLinesOnScreen @89-91; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @90-90; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- setLayout @93-95; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @94-94; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- setNotification @97-99; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @98-98; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- setDisplayMode @101-103; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @102-102; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- discardChangesConfirmed @105-107; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @106-106; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- setPrimaryPasswordAuthenticated @109-113; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @110-111; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Class Aggregator @10-116
+
+### toolkit/components/satchel/megalist/aggregator/DefaultAggregator.sys.mjs
+
+Blob: `4ea172cc07a53c282f510a0d6077e6409a9c5f83`. Role: source. Parse: module.
+
+- constructor @9-12; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @11-11; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Class DefaultAggregator @8-13
+- Module resource://gre/modules/megalist/aggregator/Aggregator.sys.mjs @5; ImportDeclaration
+- Module resource://gre/modules/megalist/aggregator/datasources/LoginDataSource.sys.mjs @6; ImportDeclaration
+
+### toolkit/components/satchel/megalist/aggregator/datasources/AddressesDataSource.sys.mjs
+
+Blob: `764a3d966f99953261c2fc8e82384e886b5033aa`. Role: source. Parse: module.
+
+- updateAddress @8-13; FunctionDeclaration; parameters=3; async=true; generator=false
+- constructor @36-125; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @46-124; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- prototypeLine @63-89; FunctionDeclaration; parameters=3; async=false; generator=false
+- get @67-69; FunctionExpression; parameters=0; async=false; generator=false
+- value @75-78; FunctionExpression; parameters=0; async=false; generator=false
+- value @81-85; FunctionExpression; parameters=1; async=true; generator=false
+- reloadDataSource @127-166; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @139-164; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- enumerateLines @173-211; FunctionExpression; parameters=1; async=false; generator=true
+- (anonymous) @187-199; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @199-199; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @208-210; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- reloadEmptyDataSource @213-217; FunctionExpression; parameters=0; async=false; generator=false
+- observe @219-226; FunctionExpression; parameters=3; async=false; generator=false
+- Class AddressesDataSource @20-227
+- Module resource://gre/modules/megalist/aggregator/datasources/DataSourceBase.sys.mjs @5; ImportDeclaration
+- Module resource://autofill/FormAutofillStorage.sys.mjs @6; ImportDeclaration
+
+### toolkit/components/satchel/megalist/aggregator/datasources/BankCardDataSource.sys.mjs
+
+Blob: `7c28829976c72e3dcf0d8868c5aba8f5f64b72b9`. Role: source. Parse: module.
+
+- decryptCard @8-25; FunctionDeclaration; parameters=1; async=true; generator=false
+- updateCard @27-30; FunctionDeclaration; parameters=3; async=true; generator=false
+- constructor @48-208; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @59-207; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- get @82-96; FunctionExpression; parameters=0; async=true; generator=false
+- get @99-116; FunctionExpression; parameters=0; async=false; generator=false
+- value @119-129; FunctionExpression; parameters=0; async=false; generator=true
+- value @132-135; FunctionExpression; parameters=0; async=false; generator=false
+- value @138-141; FunctionExpression; parameters=0; async=false; generator=false
+- value @144-147; FunctionExpression; parameters=0; async=true; generator=false
+- value @150-154; FunctionExpression; parameters=0; async=true; generator=false
+- value @157-161; FunctionExpression; parameters=1; async=true; generator=false
+- get @167-169; FunctionExpression; parameters=0; async=false; generator=false
+- get @179-181; FunctionExpression; parameters=0; async=false; generator=false
+- value @187-190; FunctionExpression; parameters=0; async=false; generator=false
+- value @193-197; FunctionExpression; parameters=1; async=true; generator=false
+- enumerateLines @215-251; FunctionExpression; parameters=1; async=false; generator=true
+- (anonymous) @232-239; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @248-250; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- reloadDataSource @258-278; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @270-276; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- reloadEmptyDataSource @280-285; FunctionExpression; parameters=0; async=false; generator=false
+- observe @287-294; FunctionExpression; parameters=3; async=false; generator=false
+- Class BankCardDataSource @40-295
+- Module resource://gre/modules/megalist/aggregator/datasources/DataSourceBase.sys.mjs @5; ImportDeclaration
+- Module resource://autofill/FormAutofillStorage.sys.mjs @6; ImportDeclaration
+
+### toolkit/components/satchel/megalist/aggregator/datasources/DataSourceBase.sys.mjs
+
+Blob: `0d2ac02539e4a8e6e2d740077f41b6eec9e25f9f`. Role: source. Parse: module.
+
+- createFormatMessages @24-45; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @27-44; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @35-43; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @38-38; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- constructor @53-55; FunctionExpression; parameters=1; async=false; generator=false
+- refreshSingleLineOnScreen @59-61; FunctionExpression; parameters=1; async=false; generator=false
+- refreshAllLinesOnScreen @63-65; FunctionExpression; parameters=0; async=false; generator=false
+- setLayout @67-69; FunctionExpression; parameters=1; async=false; generator=false
+- setNotification @71-73; FunctionExpression; parameters=1; async=false; generator=false
+- setDisplayMode @75-77; FunctionExpression; parameters=1; async=false; generator=false
+- discardChangesConfirmed @79-81; FunctionExpression; parameters=0; async=false; generator=false
+- setPrimaryPasswordAuthenticated @83-85; FunctionExpression; parameters=1; async=false; generator=false
+- localizeStrings @95-117; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @100-100; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @102-102; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @103-103; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @110-110; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- getPlatformFtl @119-135; FunctionExpression; parameters=1; async=false; generator=false
+- lineIsReady @162-164; FunctionExpression; parameters=0; async=false; generator=false
+- isEditing @166-168; FunctionExpression; parameters=0; async=false; generator=false
+- copyToClipboard @170-178; FunctionExpression; parameters=1; async=false; generator=false
+- openLinkInTab @180-188; FunctionExpression; parameters=1; async=false; generator=false
+- executeCopy @194-196; FunctionExpression; parameters=0; async=false; generator=false
+- executeOpen @198-200; FunctionExpression; parameters=0; async=false; generator=false
+- executeEditInProgress @202-205; FunctionExpression; parameters=1; async=false; generator=false
+- executeCancel @207-210; FunctionExpression; parameters=0; async=false; generator=false
+- template @212-214; FunctionExpression; parameters=0; async=false; generator=false
+- refreshOnScreen @216-218; FunctionExpression; parameters=0; async=false; generator=false
+- setLayout @219-221; FunctionExpression; parameters=1; async=false; generator=false
+- createHeaderLine @229-257; FunctionExpression; parameters=0; async=false; generator=false
+- template @240-244; FunctionExpression; parameters=0; async=false; generator=false
+- lineIsReady @246-246; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- executeToggle @250-253; FunctionExpression; parameters=0; async=false; generator=false
+- prototypeDataLine @266-268; FunctionExpression; parameters=1; async=false; generator=false
+- beforeReloadingDataSource @279-281; FunctionExpression; parameters=0; async=false; generator=false
+- afterReloadingDataSource @287-301; FunctionExpression; parameters=0; async=false; generator=false
+- addOrUpdateLine @310-325; FunctionExpression; parameters=3; async=false; generator=false
+- (anonymous) @312-312; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- cancelDialog @327-329; FunctionExpression; parameters=0; async=false; generator=false
+- enumerateLinesForMatchingRecords @331-376; FunctionExpression; parameters=3; async=false; generator=true
+- Class DataSourceBase @50-377
+- Module resource://gre/modules/BinarySearch.sys.mjs @5; ImportDeclaration
+- Module resource://gre/modules/XPCOMUtils.sys.mjs @6; ImportDeclaration
+- Module resource://gre/modules/AppConstants.sys.mjs @7; ImportDeclaration
+- Module resource:///modules/BrowserWindowTracker.sys.mjs @181; ChromeUtils-import-literal
+
+### toolkit/components/satchel/megalist/aggregator/datasources/LoginDataSource.sys.mjs
+
+Blob: `cf4f7704437b51fad41ad4298035d42e396dbf56`. Role: source. Parse: module.
+
+- constructor @91-374; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @145-373; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- ?.header.executeImport @173-179; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- ?.header.executeOpenLink @181-181; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- ?.header.executeImportFromBrowser @182-182; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- ?.header.executeRemoveAll @183-183; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- ?.header.executeExport @184-184; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- ?.header.executeAddLogin @185-185; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- ?.header.executeUpdateLogin @186-186; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- ?.header.executeDeleteLogin @187-187; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- ?.header.executeDiscardChanges @188-188; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- ?.header.executeConfirmDiscardChanges @189-190; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- ?.header.executeUpdateDisplayMode @203-209; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- openOriginInNewTab @211-211; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- get @218-220; FunctionExpression; parameters=0; async=false; generator=false
+- get @223-225; FunctionExpression; parameters=0; async=false; generator=false
+- get @228-230; FunctionExpression; parameters=0; async=false; generator=false
+- value @248-252; FunctionExpression; parameters=0; async=false; generator=false
+- value @255-257; FunctionExpression; parameters=0; async=false; generator=false
+- value @260-262; FunctionExpression; parameters=0; async=false; generator=false
+- value @265-267; FunctionExpression; parameters=0; async=false; generator=false
+- get @274-276; FunctionExpression; parameters=0; async=false; generator=false
+- value @285-288; FunctionExpression; parameters=0; async=false; generator=false
+- get @297-302; FunctionExpression; parameters=0; async=false; generator=false
+- value @336-347; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @343-343; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- value @350-353; FunctionExpression; parameters=0; async=false; generator=false
+- value @356-358; FunctionExpression; parameters=0; async=false; generator=false
+- value @361-364; FunctionExpression; parameters=0; async=false; generator=false
+- willDestroy @376-378; FunctionExpression; parameters=0; async=false; generator=false
+- addObservers @380-394; FunctionExpression; parameters=0; async=false; generator=false
+- removeObservers @396-410; FunctionExpression; parameters=0; async=false; generator=false
+- recordLoginsUpdate @412-416; FunctionExpression; parameters=1; async=false; generator=false
+- importFromFile @418-474; FunctionExpression; parameters=4; async=true; generator=false
+- openFilePickerDialog @476-494; FunctionExpression; parameters=4; async=true; generator=false
+- (anonymous) @482-493; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @490-492; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- importFromBrowser @496-510; FunctionExpression; parameters=0; async=false; generator=false
+- isPasswordSyncEnabled @512-515; FunctionExpression; parameters=0; async=false; generator=false
+- removeAllPasswords @517-549; FunctionExpression; parameters=0; async=true; generator=false
+- confirmRemoveLogin @551-554; FunctionExpression; parameters=1; async=true; generator=false
+- confirmRetryImport @556-559; FunctionExpression; parameters=0; async=false; generator=false
+- exportLogins @561-593; FunctionExpression; parameters=0; async=true; generator=false
+- exportFilePickerDialog @595-620; FunctionExpression; parameters=1; async=false; generator=false
+- fpCallback @597-605; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- openLink @622-632; FunctionExpression; parameters=1; async=false; generator=false
+- showWindowPrompt @634-691; FunctionExpression; parameters=4; async=true; generator=false
+- addLogin @693-714; FunctionExpression; parameters=1; async=true; generator=false
+- updateLogin @716-752; FunctionExpression; parameters=1; async=true; generator=false
+- cancelEdit @754-756; FunctionExpression; parameters=0; async=false; generator=false
+- handleLoginStorageErrors @758-767; FunctionExpression; parameters=2; async=false; generator=false
+- deleteLogin @769-784; FunctionExpression; parameters=1; async=true; generator=false
+- enumerateLines @791-812; FunctionExpression; parameters=1; async=false; generator=true
+- (anonymous) @805-808; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- reloadDataSource @819-834; FunctionExpression; parameters=0; async=true; generator=false
+- syncReloadDataSource @841-904; FunctionExpression; parameters=3; async=false; generator=false
+- (anonymous) @845-848; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @854-899; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- getAuthTimeoutMs @906-908; FunctionExpression; parameters=0; async=false; generator=false
+- observe @910-926; FunctionExpression; parameters=3; async=false; generator=false
+- Class LoginDataSource @81-927
+- Module resource://gre/modules/XPCOMUtils.sys.mjs @5; ImportDeclaration
+- Module resource://gre/modules/LoginHelper.sys.mjs @6; ImportDeclaration
+- Module resource://gre/modules/megalist/aggregator/datasources/DataSourceBase.sys.mjs @7; ImportDeclaration
+- Module resource://gre/modules/LoginCSVImport.sys.mjs @8; ImportDeclaration
+- Module resource://gre/modules/LoginExport.sys.mjs @9; ImportDeclaration
+- Module resource://gre/modules/Timer.sys.mjs @10; ImportDeclaration
+- Module resource:///modules/BrowserWindowTracker.sys.mjs @419; ChromeUtils-import-literal
+- Module resource:///modules/BrowserWindowTracker.sys.mjs @497; ChromeUtils-import-literal
+- Module resource:///modules/BrowserWindowTracker.sys.mjs @562; ChromeUtils-import-literal
+- Module resource:///modules/BrowserWindowTracker.sys.mjs @623; ChromeUtils-import-literal
+- Module resource:///modules/BrowserWindowTracker.sys.mjs @640; ChromeUtils-import-literal
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.

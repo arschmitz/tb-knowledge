@@ -1,0 +1,1802 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustFxcontainers.sys.mjs","toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustInitRustComponents.sys.mjs","toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustLogins.sys.mjs","toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustRelevancy.sys.mjs","toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustRemoteSettings.sys.mjs","toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustSearch.sys.mjs","toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustSuggest.sys.mjs","toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustSync15.sys.mjs","toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustTabs.sys.mjs","toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustTracing.sys.mjs"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013"}} -->
+# firefox/toolkit JavaScript function map 1349
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustFxcontainers.sys.mjs
+
+Blob: `6bcd029e6adebb7a66d2ca7a91507b4851ea669a`. Role: source. Parse: module.
+
+- colorCode @41-57; FunctionDeclaration; parameters=2; async=false; generator=false
+- colorFromName @64-77; FunctionDeclaration; parameters=1; async=false; generator=false
+- colorGeckoL10nId @84-97; FunctionDeclaration; parameters=1; async=false; generator=false
+- colorName @104-117; FunctionDeclaration; parameters=1; async=false; generator=false
+- containerColorAliases @123-133; FunctionDeclaration; parameters=0; async=false; generator=false
+- containerColors @139-149; FunctionDeclaration; parameters=0; async=false; generator=false
+- containerIcons @155-165; FunctionDeclaration; parameters=0; async=false; generator=false
+- iconFromName @172-185; FunctionDeclaration; parameters=1; async=false; generator=false
+- iconGeckoL10nId @192-205; FunctionDeclaration; parameters=1; async=false; generator=false
+- iconName @212-225; FunctionDeclaration; parameters=1; async=false; generator=false
+- labelGeckoL10nId @232-245; FunctionDeclaration; parameters=1; async=false; generator=false
+- latestVersion @251-261; FunctionDeclaration; parameters=0; async=false; generator=false
+- maxUserContextId @267-277; FunctionDeclaration; parameters=0; async=false; generator=false
+- normalizeSite @285-298; FunctionDeclaration; parameters=1; async=false; generator=false
+- resolveColor @305-318; FunctionDeclaration; parameters=1; async=false; generator=false
+- read @394-426; FunctionExpression; parameters=1; async=false; generator=false
+- write @428-483; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @485-487; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @489-494; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @498-502; FunctionExpression; parameters=1; async=false; generator=false
+- read @504-514; FunctionExpression; parameters=1; async=false; generator=false
+- write @516-523; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @525-530; FunctionExpression; parameters=1; async=false; generator=false
+- read @587-613; FunctionExpression; parameters=1; async=false; generator=false
+- write @615-658; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @660-662; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @664-669; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @673-677; FunctionExpression; parameters=1; async=false; generator=false
+- read @679-689; FunctionExpression; parameters=1; async=false; generator=false
+- write @691-698; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @700-705; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @718-729; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @735-737; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @743-745; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @751-753; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @759-761; FunctionExpression; parameters=0; async=false; generator=false
+- read @766-784; FunctionExpression; parameters=1; async=false; generator=false
+- write @786-810; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @812-832; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @834-838; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @842-846; FunctionExpression; parameters=1; async=false; generator=false
+- read @848-858; FunctionExpression; parameters=1; async=false; generator=false
+- write @860-867; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @869-874; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @880-969; FunctionExpression; parameters=1; async=false; generator=false
+- equals @971-980; FunctionExpression; parameters=1; async=false; generator=false
+- read @985-994; FunctionExpression; parameters=1; async=false; generator=false
+- write @995-1002; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1004-1013; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1015-1068; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1081-1128; FunctionExpression; parameters=1; async=false; generator=false
+- equals @1130-1136; FunctionExpression; parameters=1; async=false; generator=false
+- read @1141-1147; FunctionExpression; parameters=1; async=false; generator=false
+- write @1148-1152; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1154-1160; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1162-1191; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1197-1230; FunctionExpression; parameters=1; async=false; generator=false
+- equals @1232-1237; FunctionExpression; parameters=1; async=false; generator=false
+- read @1242-1247; FunctionExpression; parameters=1; async=false; generator=false
+- write @1248-1251; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1253-1258; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1260-1281; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1296-1303; FunctionExpression; parameters=2; async=false; generator=false
+- toString @1304-1306; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1314-1321; FunctionExpression; parameters=2; async=false; generator=false
+- toString @1322-1324; FunctionExpression; parameters=0; async=false; generator=false
+- read @1329-1342; FunctionExpression; parameters=1; async=false; generator=false
+- computeSize @1343-1355; FunctionExpression; parameters=1; async=false; generator=false
+- write @1356-1368; FunctionExpression; parameters=2; async=false; generator=false
+- constructor @1384-1388; FunctionExpression; parameters=1; async=false; generator=false
+- toString @1389-1391; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1399-1403; FunctionExpression; parameters=1; async=false; generator=false
+- toString @1404-1406; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1414-1421; FunctionExpression; parameters=2; async=false; generator=false
+- toString @1422-1424; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1432-1436; FunctionExpression; parameters=1; async=false; generator=false
+- toString @1437-1439; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1447-1451; FunctionExpression; parameters=1; async=false; generator=false
+- toString @1452-1454; FunctionExpression; parameters=0; async=false; generator=false
+- read @1459-1480; FunctionExpression; parameters=1; async=false; generator=false
+- computeSize @1481-1501; FunctionExpression; parameters=1; async=false; generator=false
+- write @1502-1525; FunctionExpression; parameters=2; async=false; generator=false
+- checkType @1531-1535; FunctionExpression; parameters=1; async=false; generator=false
+- read @1537-1547; FunctionExpression; parameters=1; async=false; generator=false
+- write @1549-1556; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1558-1563; FunctionExpression; parameters=1; async=false; generator=false
+- read @1567-1574; FunctionExpression; parameters=1; async=false; generator=false
+- write @1576-1581; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @1578-1580; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @1583-1590; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1592-1606; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1596-1605; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- read @1610-1617; FunctionExpression; parameters=1; async=false; generator=false
+- write @1619-1624; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @1621-1623; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @1626-1633; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1635-1649; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1639-1648; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- read @1655-1662; FunctionExpression; parameters=1; async=false; generator=false
+- write @1664-1669; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @1666-1668; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @1671-1678; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1680-1694; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1684-1693; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- checkType @1698-1702; FunctionExpression; parameters=1; async=false; generator=false
+- read @1704-1714; FunctionExpression; parameters=1; async=false; generator=false
+- write @1716-1723; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1725-1730; FunctionExpression; parameters=1; async=false; generator=false
+- create @1746-1751; FunctionExpression; parameters=3; async=false; generator=false
+- createForPolicy @1757-1760; FunctionExpression; parameters=1; async=false; generator=false
+- getSiteAssociation @1766-1769; FunctionExpression; parameters=1; async=false; generator=false
+- getSiteAssociations @1775-1778; FunctionExpression; parameters=1; async=false; generator=false
+- moveContainers @1786-1790; FunctionExpression; parameters=2; async=false; generator=false
+- policyIdentities @1795-1797; FunctionExpression; parameters=0; async=false; generator=false
+- policyIdentity @1803-1806; FunctionExpression; parameters=1; async=false; generator=false
+- privateIdentity @1812-1815; FunctionExpression; parameters=1; async=false; generator=false
+- privateUserContextIds @1820-1822; FunctionExpression; parameters=0; async=false; generator=false
+- publicIdentities @1827-1829; FunctionExpression; parameters=0; async=false; generator=false
+- publicIdentityFromId @1835-1838; FunctionExpression; parameters=1; async=false; generator=false
+- publicUserContextIds @1843-1845; FunctionExpression; parameters=0; async=false; generator=false
+- remove @1852-1855; FunctionExpression; parameters=1; async=false; generator=false
+- removePolicyIdentity @1861-1864; FunctionExpression; parameters=1; async=false; generator=false
+- removeSiteAssociation @1869-1872; FunctionExpression; parameters=1; async=false; generator=false
+- serialize @1877-1879; FunctionExpression; parameters=0; async=false; generator=false
+- setSiteAssociation @1885-1889; FunctionExpression; parameters=2; async=false; generator=false
+- unsetCallback @1897-1899; FunctionExpression; parameters=0; async=false; generator=false
+- update @1908-1914; FunctionExpression; parameters=4; async=false; generator=false
+- constructor @1924-1934; FunctionExpression; parameters=1; async=false; generator=false
+- init @1950-1969; FunctionExpression; parameters=3; async=false; generator=false
+- create @1978-1998; FunctionExpression; parameters=3; async=false; generator=false
+- createForPolicy @2005-2019; FunctionExpression; parameters=1; async=false; generator=false
+- getSiteAssociation @2026-2040; FunctionExpression; parameters=1; async=false; generator=false
+- getSiteAssociations @2047-2061; FunctionExpression; parameters=1; async=false; generator=false
+- moveContainers @2070-2087; FunctionExpression; parameters=2; async=false; generator=false
+- policyIdentities @2093-2104; FunctionExpression; parameters=0; async=false; generator=false
+- policyIdentity @2111-2125; FunctionExpression; parameters=1; async=false; generator=false
+- privateIdentity @2132-2146; FunctionExpression; parameters=1; async=false; generator=false
+- privateUserContextIds @2152-2163; FunctionExpression; parameters=0; async=false; generator=false
+- publicIdentities @2169-2180; FunctionExpression; parameters=0; async=false; generator=false
+- publicIdentityFromId @2187-2201; FunctionExpression; parameters=1; async=false; generator=false
+- publicUserContextIds @2207-2218; FunctionExpression; parameters=0; async=false; generator=false
+- remove @2226-2240; FunctionExpression; parameters=1; async=false; generator=false
+- removePolicyIdentity @2247-2261; FunctionExpression; parameters=1; async=false; generator=false
+- removeSiteAssociation @2267-2281; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2278-2278; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- serialize @2287-2298; FunctionExpression; parameters=0; async=false; generator=false
+- setSiteAssociation @2305-2322; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @2319-2319; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- unsetCallback @2331-2342; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @2339-2339; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- update @2352-2375; FunctionExpression; parameters=4; async=false; generator=false
+- lift @2381-2385; FunctionExpression; parameters=1; async=false; generator=false
+- lower @2387-2393; FunctionExpression; parameters=1; async=false; generator=false
+- lowerReceiver @2395-2398; FunctionExpression; parameters=1; async=false; generator=false
+- read @2400-2402; FunctionExpression; parameters=1; async=false; generator=false
+- write @2404-2406; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2408-2410; FunctionExpression; parameters=1; async=false; generator=false
+- persist @2424-2426; FunctionExpression; parameters=0; async=false; generator=false
+- lower @2432-2437; FunctionExpression; parameters=1; async=false; generator=false
+- lift @2439-2441; FunctionExpression; parameters=1; async=false; generator=false
+- read @2443-2445; FunctionExpression; parameters=1; async=false; generator=false
+- write @2447-2449; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2451-2453; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2463-2463; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2464-2466; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- read @2475-2485; FunctionExpression; parameters=1; async=false; generator=false
+- write @2487-2493; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2495-2503; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2505-2525; FunctionExpression; parameters=1; async=false; generator=false
+- read @2529-2536; FunctionExpression; parameters=1; async=false; generator=false
+- write @2538-2543; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @2540-2542; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @2545-2552; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2554-2568; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2558-2567; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- read @2572-2579; FunctionExpression; parameters=1; async=false; generator=false
+- write @2581-2586; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @2583-2585; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @2588-2595; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2597-2611; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2601-2610; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- checkType @2615-2619; FunctionExpression; parameters=1; async=false; generator=false
+- read @2621-2631; FunctionExpression; parameters=1; async=false; generator=false
+- write @2633-2640; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2642-2647; FunctionExpression; parameters=1; async=false; generator=false
+- read @2651-2658; FunctionExpression; parameters=1; async=false; generator=false
+- write @2660-2665; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @2662-2664; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @2667-2674; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2676-2690; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2680-2689; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- checkType @2694-2698; FunctionExpression; parameters=1; async=false; generator=false
+- read @2700-2710; FunctionExpression; parameters=1; async=false; generator=false
+- write @2712-2719; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2721-2726; FunctionExpression; parameters=1; async=false; generator=false
+- Class FfiConverterOptionalSequenceTypeDefaultIdentity @2693-2727
+- Class FfiConverterSequenceTypeDefaultIdentity @2650-2691
+- Class FfiConverterOptionalBytes @2614-2648
+- Class FfiConverterSequenceTypeContainerIcon @2571-2612
+- Class FfiConverterSequenceTypeContainerColor @2528-2569
+- Class FfiConverterMapStringString @2474-2526
+- Class FfiConverterTypeContainersCallback @2431-2454
+- Class ContainersCallback @2420-2428
+- Class FfiConverterTypeContainersStore @2380-2411
+- Class ContainersStore @1921-2377
+- Class ContainersStoreInterface @1738-1916
+- Class FfiConverterOptionalTypeContainer @1697-1731
+- Class FfiConverterSequenceTypeContainer @1654-1695
+- Class FfiConverterSequenceUInt32 @1609-1650
+- Class FfiConverterSequenceTypeSiteAssociation @1566-1607
+- Class FfiConverterOptionalUInt32 @1530-1564
+- Class FfiConverterTypeStoreError @1458-1528
+- Class IdSpaceExhausted @1445-1455
+- Class InvalidSite @1430-1440
+- Class NoSuchContainer @1412-1425
+- Class EmptyPolicyId @1397-1407
+- Class EmptyName @1382-1392
+- Class StoreError @1376-1376
+- Class FfiConverterTypeInitError @1328-1371
+- Class UnsupportedVersion @1312-1325
+- Class Malformed @1294-1307
+- Class InitError @1287-1287
+- Class FfiConverterTypeSiteAssociation @1241-1282
+- Class SiteAssociation @1196-1238
+- Class FfiConverterTypeDefaultIdentity @1140-1192
+- Class DefaultIdentity @1080-1137
+- Class FfiConverterTypeContainer @984-1069
+- Class Container @879-981
+- Class FfiConverterOptionalString @841-875
+- Class FfiConverterTypeContainerLabel @765-839
+- Class (anonymous) @758-762
+- Class (anonymous) @750-754
+- Class (anonymous) @742-746
+- Class (anonymous) @734-738
+- Class (anonymous) @717-730
+- Class ContainerLabel @713-713
+- Class FfiConverterOptionalTypeContainerColor @672-706
+- Class FfiConverterTypeContainerColor @584-670
+- Class FfiConverterOptionalTypeContainerIcon @497-531
+- Class FfiConverterTypeContainerIcon @391-495
+- Module moz-src:///toolkit/components/uniffi-js/js/UniFFI.sys.mjs @4; ImportDeclaration
+
+### toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustInitRustComponents.sys.mjs
+
+Blob: `32d3b03d52ee922a3ec514d5f655e9af3115c8d1`. Role: source. Parse: module.
+
+- initialize @46-59; FunctionDeclaration; parameters=1; async=true; generator=false
+- (anonymous) @56-56; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Module moz-src:///toolkit/components/uniffi-js/js/UniFFI.sys.mjs @4; ImportDeclaration
+
+### toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustLogins.sys.mjs
+
+Blob: `8b85f8cb2088c44640e7f605ede4cd3be016e6c9`. Role: source. Parse: module.
+
+- createLoginStoreWithNssKeymanager @41-57; FunctionDeclaration; parameters=2; async=true; generator=false
+- createLoginStoreWithStaticKeyManager @66-82; FunctionDeclaration; parameters=2; async=true; generator=false
+- createManagedEncdec @90-103; FunctionDeclaration; parameters=1; async=true; generator=false
+- createStaticKeyManager @114-127; FunctionDeclaration; parameters=1; async=true; generator=false
+- checkType @137-141; FunctionExpression; parameters=1; async=false; generator=false
+- read @143-153; FunctionExpression; parameters=1; async=false; generator=false
+- write @155-162; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @164-169; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @173-177; FunctionExpression; parameters=1; async=false; generator=false
+- read @179-189; FunctionExpression; parameters=1; async=false; generator=false
+- write @191-198; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @200-205; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @211-398; FunctionExpression; parameters=1; async=false; generator=false
+- equals @400-416; FunctionExpression; parameters=1; async=false; generator=false
+- read @421-437; FunctionExpression; parameters=1; async=false; generator=false
+- write @438-452; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @454-470; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @472-581; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @590-749; FunctionExpression; parameters=1; async=false; generator=false
+- equals @751-765; FunctionExpression; parameters=1; async=false; generator=false
+- read @770-784; FunctionExpression; parameters=1; async=false; generator=false
+- write @785-797; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @799-813; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @815-908; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @915-1018; FunctionExpression; parameters=1; async=false; generator=false
+- equals @1020-1030; FunctionExpression; parameters=1; async=false; generator=false
+- read @1035-1045; FunctionExpression; parameters=1; async=false; generator=false
+- write @1046-1054; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1056-1066; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1068-1129; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1137-1226; FunctionExpression; parameters=1; async=false; generator=false
+- equals @1228-1237; FunctionExpression; parameters=1; async=false; generator=false
+- read @1242-1251; FunctionExpression; parameters=1; async=false; generator=false
+- write @1252-1259; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1261-1270; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1272-1325; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1332-1365; FunctionExpression; parameters=1; async=false; generator=false
+- equals @1367-1372; FunctionExpression; parameters=1; async=false; generator=false
+- read @1377-1382; FunctionExpression; parameters=1; async=false; generator=false
+- write @1383-1386; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1388-1393; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1395-1416; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1425-1458; FunctionExpression; parameters=1; async=false; generator=false
+- equals @1460-1465; FunctionExpression; parameters=1; async=false; generator=false
+- read @1470-1475; FunctionExpression; parameters=1; async=false; generator=false
+- write @1476-1479; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1481-1486; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1488-1509; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1517-1536; FunctionExpression; parameters=1; async=false; generator=false
+- equals @1538-1542; FunctionExpression; parameters=1; async=false; generator=false
+- read @1547-1551; FunctionExpression; parameters=1; async=false; generator=false
+- write @1552-1554; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1556-1560; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1562-1575; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1586-1597; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1603-1614; FunctionExpression; parameters=1; async=false; generator=false
+- read @1619-1633; FunctionExpression; parameters=1; async=false; generator=false
+- write @1635-1648; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1650-1662; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1664-1668; FunctionExpression; parameters=1; async=false; generator=false
+- read @1689-1699; FunctionExpression; parameters=1; async=false; generator=false
+- write @1701-1712; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1714-1716; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1718-1723; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1737-1741; FunctionExpression; parameters=1; async=false; generator=false
+- toString @1742-1744; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1752-1759; FunctionExpression; parameters=2; async=false; generator=false
+- toString @1760-1762; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1770-1777; FunctionExpression; parameters=2; async=false; generator=false
+- toString @1778-1780; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1788-1792; FunctionExpression; parameters=1; async=false; generator=false
+- toString @1793-1795; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1803-1810; FunctionExpression; parameters=2; async=false; generator=false
+- toString @1811-1813; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1821-1828; FunctionExpression; parameters=2; async=false; generator=false
+- toString @1829-1831; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1839-1843; FunctionExpression; parameters=1; async=false; generator=false
+- toString @1844-1846; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1854-1858; FunctionExpression; parameters=1; async=false; generator=false
+- toString @1859-1861; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1869-1876; FunctionExpression; parameters=2; async=false; generator=false
+- toString @1877-1879; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1887-1894; FunctionExpression; parameters=2; async=false; generator=false
+- toString @1895-1897; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1905-1912; FunctionExpression; parameters=2; async=false; generator=false
+- toString @1913-1915; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1926-1933; FunctionExpression; parameters=2; async=false; generator=false
+- toString @1934-1936; FunctionExpression; parameters=0; async=false; generator=false
+- read @1941-1990; FunctionExpression; parameters=1; async=false; generator=false
+- computeSize @1991-2039; FunctionExpression; parameters=1; async=false; generator=false
+- write @2040-2098; FunctionExpression; parameters=2; async=false; generator=false
+- read @2104-2111; FunctionExpression; parameters=1; async=false; generator=false
+- write @2113-2118; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @2115-2117; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @2120-2127; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2129-2143; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2133-2142; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- read @2147-2154; FunctionExpression; parameters=1; async=false; generator=false
+- write @2156-2161; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @2158-2160; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @2163-2170; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2172-2186; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2176-2185; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- read @2190-2197; FunctionExpression; parameters=1; async=false; generator=false
+- write @2199-2204; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @2201-2203; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @2206-2213; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2215-2229; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2219-2228; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- read @2233-2240; FunctionExpression; parameters=1; async=false; generator=false
+- write @2242-2247; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @2244-2246; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @2249-2256; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2258-2272; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2262-2271; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- apply @2288-2291; FunctionExpression; parameters=1; async=true; generator=false
+- ensureCurrentSyncId @2297-2300; FunctionExpression; parameters=1; async=true; generator=false
+- lastSync @2305-2307; FunctionExpression; parameters=0; async=true; generator=false
+- reset @2311-2313; FunctionExpression; parameters=0; async=true; generator=false
+- resetLastSync @2317-2319; FunctionExpression; parameters=0; async=true; generator=false
+- resetSyncId @2324-2326; FunctionExpression; parameters=0; async=true; generator=false
+- setUploaded @2332-2336; FunctionExpression; parameters=2; async=true; generator=false
+- storeIncoming @2341-2344; FunctionExpression; parameters=1; async=true; generator=false
+- syncFinished @2348-2350; FunctionExpression; parameters=0; async=true; generator=false
+- syncId @2355-2357; FunctionExpression; parameters=0; async=true; generator=false
+- syncStarted @2361-2363; FunctionExpression; parameters=0; async=true; generator=false
+- wipe @2367-2369; FunctionExpression; parameters=0; async=true; generator=false
+- constructor @2383-2393; FunctionExpression; parameters=1; async=false; generator=false
+- apply @2400-2414; FunctionExpression; parameters=1; async=true; generator=false
+- ensureCurrentSyncId @2421-2435; FunctionExpression; parameters=1; async=true; generator=false
+- lastSync @2441-2452; FunctionExpression; parameters=0; async=true; generator=false
+- reset @2457-2468; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @2465-2465; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- resetLastSync @2473-2484; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @2481-2481; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- resetSyncId @2490-2501; FunctionExpression; parameters=0; async=true; generator=false
+- setUploaded @2508-2525; FunctionExpression; parameters=2; async=true; generator=false
+- (anonymous) @2522-2522; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- storeIncoming @2531-2545; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @2542-2542; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- syncFinished @2550-2561; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @2558-2558; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- syncId @2567-2578; FunctionExpression; parameters=0; async=true; generator=false
+- syncStarted @2583-2594; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @2591-2591; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- wipe @2599-2610; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @2607-2607; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- lift @2616-2620; FunctionExpression; parameters=1; async=false; generator=false
+- lower @2622-2628; FunctionExpression; parameters=1; async=false; generator=false
+- lowerReceiver @2630-2633; FunctionExpression; parameters=1; async=false; generator=false
+- read @2635-2637; FunctionExpression; parameters=1; async=false; generator=false
+- write @2639-2641; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2643-2645; FunctionExpression; parameters=1; async=false; generator=false
+- read @2650-2657; FunctionExpression; parameters=1; async=false; generator=false
+- write @2659-2664; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @2661-2663; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @2666-2673; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2675-2689; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2679-2688; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- checkType @2693-2697; FunctionExpression; parameters=1; async=false; generator=false
+- read @2699-2709; FunctionExpression; parameters=1; async=false; generator=false
+- write @2711-2718; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2720-2725; FunctionExpression; parameters=1; async=false; generator=false
+- read @2729-2736; FunctionExpression; parameters=1; async=false; generator=false
+- write @2738-2743; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @2740-2742; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @2745-2752; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2754-2768; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2758-2767; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- read @2772-2779; FunctionExpression; parameters=1; async=false; generator=false
+- write @2781-2786; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @2783-2785; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @2788-2795; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2797-2811; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2801-2810; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- checkType @2815-2819; FunctionExpression; parameters=1; async=false; generator=false
+- read @2821-2831; FunctionExpression; parameters=1; async=false; generator=false
+- write @2833-2840; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2842-2847; FunctionExpression; parameters=1; async=false; generator=false
+- add @2859-2862; FunctionExpression; parameters=1; async=true; generator=false
+- addMany @2868-2871; FunctionExpression; parameters=1; async=true; generator=false
+- addManyWithMeta @2877-2880; FunctionExpression; parameters=1; async=true; generator=false
+- addOrUpdate @2886-2889; FunctionExpression; parameters=1; async=true; generator=false
+- addWithMeta @2895-2898; FunctionExpression; parameters=1; async=true; generator=false
+- arePotentiallyVulnerablePasswords @2908-2911; FunctionExpression; parameters=1; async=true; generator=false
+- bridgedEngine @2918-2920; FunctionExpression; parameters=0; async=true; generator=false
+- count @2925-2927; FunctionExpression; parameters=0; async=true; generator=false
+- countByFormActionOrigin @2933-2936; FunctionExpression; parameters=1; async=true; generator=false
+- countByOrigin @2942-2945; FunctionExpression; parameters=1; async=true; generator=false
+- delete @2951-2954; FunctionExpression; parameters=1; async=true; generator=false
+- deleteAll @2959-2961; FunctionExpression; parameters=0; async=true; generator=false
+- deleteAllExceptFxa @2967-2969; FunctionExpression; parameters=0; async=true; generator=false
+- deleteMany @2975-2978; FunctionExpression; parameters=1; async=true; generator=false
+- deleteUndecryptableRecordsForRemoteReplacement @2988-2990; FunctionExpression; parameters=0; async=true; generator=false
+- findLoginToUpdate @2996-2999; FunctionExpression; parameters=1; async=true; generator=false
+- get @3005-3008; FunctionExpression; parameters=1; async=true; generator=false
+- getByBaseDomain @3014-3017; FunctionExpression; parameters=1; async=true; generator=false
+- getMany @3024-3027; FunctionExpression; parameters=1; async=true; generator=false
+- hasLoginsByBaseDomain @3033-3036; FunctionExpression; parameters=1; async=true; generator=false
+- isEmpty @3041-3043; FunctionExpression; parameters=0; async=true; generator=false
+- isPotentiallyVulnerablePassword @3053-3056; FunctionExpression; parameters=1; async=true; generator=false
+- list @3061-3063; FunctionExpression; parameters=0; async=true; generator=false
+- listCandidates @3069-3071; FunctionExpression; parameters=0; async=true; generator=false
+- listCandidatesByOrigin @3082-3086; FunctionExpression; parameters=2; async=true; generator=false
+- recordBreachAlertDismissal @3091-3094; FunctionExpression; parameters=1; async=true; generator=false
+- recordBreachAlertDismissalTime @3100-3104; FunctionExpression; parameters=2; async=true; generator=false
+- recordPotentiallyVulnerablePasswords @3113-3116; FunctionExpression; parameters=1; async=true; generator=false
+- registerWithSyncManager @3120-3122; FunctionExpression; parameters=0; async=true; generator=false
+- reset @3126-3128; FunctionExpression; parameters=0; async=true; generator=false
+- resetAllBreaches @3132-3134; FunctionExpression; parameters=0; async=true; generator=false
+- runMaintenance @3142-3145; FunctionExpression; parameters=1; async=true; generator=false
+- shutdown @3149-3151; FunctionExpression; parameters=0; async=true; generator=false
+- touch @3156-3159; FunctionExpression; parameters=1; async=true; generator=false
+- update @3166-3170; FunctionExpression; parameters=2; async=true; generator=false
+- wipeLocal @3184-3186; FunctionExpression; parameters=0; async=true; generator=false
+- wipeLocalExceptFxa @3190-3192; FunctionExpression; parameters=0; async=true; generator=false
+- constructor @3202-3212; FunctionExpression; parameters=1; async=false; generator=false
+- init @3219-3235; FunctionExpression; parameters=2; async=true; generator=false
+- add @3242-3256; FunctionExpression; parameters=1; async=true; generator=false
+- addMany @3263-3277; FunctionExpression; parameters=1; async=true; generator=false
+- addManyWithMeta @3284-3298; FunctionExpression; parameters=1; async=true; generator=false
+- addOrUpdate @3305-3319; FunctionExpression; parameters=1; async=true; generator=false
+- addWithMeta @3326-3340; FunctionExpression; parameters=1; async=true; generator=false
+- arePotentiallyVulnerablePasswords @3351-3365; FunctionExpression; parameters=1; async=true; generator=false
+- bridgedEngine @3373-3384; FunctionExpression; parameters=0; async=true; generator=false
+- count @3390-3401; FunctionExpression; parameters=0; async=true; generator=false
+- countByFormActionOrigin @3408-3422; FunctionExpression; parameters=1; async=true; generator=false
+- countByOrigin @3429-3443; FunctionExpression; parameters=1; async=true; generator=false
+- delete @3450-3464; FunctionExpression; parameters=1; async=true; generator=false
+- deleteAll @3470-3481; FunctionExpression; parameters=0; async=true; generator=false
+- deleteAllExceptFxa @3488-3499; FunctionExpression; parameters=0; async=true; generator=false
+- deleteMany @3506-3520; FunctionExpression; parameters=1; async=true; generator=false
+- deleteUndecryptableRecordsForRemoteReplacement @3531-3542; FunctionExpression; parameters=0; async=true; generator=false
+- findLoginToUpdate @3549-3563; FunctionExpression; parameters=1; async=true; generator=false
+- get @3570-3584; FunctionExpression; parameters=1; async=true; generator=false
+- getByBaseDomain @3591-3605; FunctionExpression; parameters=1; async=true; generator=false
+- getMany @3613-3627; FunctionExpression; parameters=1; async=true; generator=false
+- hasLoginsByBaseDomain @3634-3648; FunctionExpression; parameters=1; async=true; generator=false
+- isEmpty @3654-3665; FunctionExpression; parameters=0; async=true; generator=false
+- isPotentiallyVulnerablePassword @3676-3690; FunctionExpression; parameters=1; async=true; generator=false
+- list @3696-3707; FunctionExpression; parameters=0; async=true; generator=false
+- listCandidates @3714-3725; FunctionExpression; parameters=0; async=true; generator=false
+- listCandidatesByOrigin @3737-3754; FunctionExpression; parameters=2; async=true; generator=false
+- recordBreachAlertDismissal @3760-3774; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @3771-3771; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- recordBreachAlertDismissalTime @3781-3798; FunctionExpression; parameters=2; async=true; generator=false
+- (anonymous) @3795-3795; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- recordPotentiallyVulnerablePasswords @3808-3822; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @3819-3819; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- registerWithSyncManager @3827-3838; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @3835-3835; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- reset @3843-3854; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @3851-3851; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- resetAllBreaches @3859-3870; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @3867-3867; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- runMaintenance @3879-3893; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @3890-3890; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- shutdown @3898-3909; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @3906-3906; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- touch @3915-3929; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @3926-3926; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- update @3937-3954; FunctionExpression; parameters=2; async=true; generator=false
+- wipeLocal @3969-3980; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @3977-3977; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- wipeLocalExceptFxa @3985-3996; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @3993-3993; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- lift @4002-4006; FunctionExpression; parameters=1; async=false; generator=false
+- lower @4008-4014; FunctionExpression; parameters=1; async=false; generator=false
+- lowerReceiver @4016-4019; FunctionExpression; parameters=1; async=false; generator=false
+- read @4021-4023; FunctionExpression; parameters=1; async=false; generator=false
+- write @4025-4027; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @4029-4031; FunctionExpression; parameters=1; async=false; generator=false
+- Class FfiConverterTypeLoginStore @4001-4032
+- Class LoginStore @3199-3998
+- Class LoginStoreInterface @2853-3194
+- Class FfiConverterOptionalTypeRunMaintenanceOptions @2814-2848
+- Class FfiConverterSequenceTypeLoginCandidate @2771-2812
+- Class FfiConverterSequenceTypeLogin @2728-2769
+- Class FfiConverterOptionalTypeLogin @2692-2726
+- Class FfiConverterSequenceBoolean @2649-2690
+- Class FfiConverterTypeLoginsBridgedEngine @2615-2646
+- Class LoginsBridgedEngine @2380-2612
+- Class LoginsBridgedEngineInterface @2282-2371
+- Class FfiConverterSequenceString @2232-2273
+- Class FfiConverterSequenceTypeLoginEntryWithMeta @2189-2230
+- Class FfiConverterSequenceTypeBulkResultEntry @2146-2187
+- Class FfiConverterSequenceTypeLoginEntry @2103-2144
+- Class FfiConverterTypeLoginsApiError @1940-2101
+- Class UnexpectedLoginsApiError @1924-1937
+- Class Interrupted @1903-1916
+- Class DecryptionFailed @1885-1898
+- Class EncryptionFailed @1867-1880
+- Class InvalidKey @1852-1862
+- Class MissingKey @1837-1847
+- Class NoSuchRecord @1819-1832
+- Class InvalidRecord @1801-1814
+- Class AuthenticationCanceled @1786-1796
+- Class AuthenticationError @1768-1781
+- Class NssAuthenticationError @1750-1763
+- Class NssUninitialized @1735-1745
+- Class LoginsApiError @1729-1729
+- Class FfiConverterTypeLoginOrErrorMessage @1686-1724
+- Class FfiConverterTypeBulkResultEntry @1618-1669
+- Class (anonymous) @1602-1615
+- Class (anonymous) @1585-1598
+- Class BulkResultEntry @1581-1581
+- Class FfiConverterTypeRunMaintenanceOptions @1546-1576
+- Class RunMaintenanceOptions @1516-1543
+- Class FfiConverterTypeLoginsDeletionMetrics @1469-1510
+- Class LoginsDeletionMetrics @1424-1466
+- Class FfiConverterTypeLoginEntryWithMeta @1376-1417
+- Class LoginEntryWithMeta @1331-1373
+- Class FfiConverterTypeLoginMeta @1241-1326
+- Class LoginMeta @1136-1238
+- Class FfiConverterTypeLoginEntry @1034-1130
+- Class LoginEntry @914-1031
+- Class FfiConverterTypeLoginCandidate @769-909
+- Class LoginCandidate @589-766
+- Class FfiConverterTypeLogin @420-582
+- Class Login @210-417
+- Class FfiConverterOptionalString @172-206
+- Class FfiConverterOptionalInt64 @136-170
+- Module moz-src:///toolkit/components/uniffi-js/js/UniFFI.sys.mjs @4; ImportDeclaration
+- Module ./RustDbCrypto.sys.mjs @4034; ImportDeclaration
+- Module ./RustDbCrypto.sys.mjs @4040; ImportDeclaration
+- Module ./RustDbCrypto.sys.mjs @4046; ImportDeclaration
+
+### toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustRelevancy.sys.mjs
+
+Blob: `6067d015df4b0d556bdb83a1fb70520b5f5f3bd4`. Role: source. Parse: module.
+
+- score @52-68; FunctionDeclaration; parameters=2; async=false; generator=false
+- constructor @80-169; FunctionExpression; parameters=1; async=false; generator=false
+- equals @171-180; FunctionExpression; parameters=1; async=false; generator=false
+- read @185-194; FunctionExpression; parameters=1; async=false; generator=false
+- write @195-202; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @204-213; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @215-268; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @285-341; FunctionExpression; parameters=1; async=false; generator=false
+- equals @343-349; FunctionExpression; parameters=1; async=false; generator=false
+- read @354-360; FunctionExpression; parameters=1; async=false; generator=false
+- write @361-365; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @367-373; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @375-404; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @413-684; FunctionExpression; parameters=1; async=false; generator=false
+- equals @686-708; FunctionExpression; parameters=1; async=false; generator=false
+- read @713-735; FunctionExpression; parameters=1; async=false; generator=false
+- write @736-756; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @758-780; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @782-939; FunctionExpression; parameters=1; async=false; generator=false
+- read @1030-1074; FunctionExpression; parameters=1; async=false; generator=false
+- write @1076-1155; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1157-1159; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1161-1166; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1180-1187; FunctionExpression; parameters=2; async=false; generator=false
+- toString @1188-1190; FunctionExpression; parameters=0; async=false; generator=false
+- read @1195-1204; FunctionExpression; parameters=1; async=false; generator=false
+- computeSize @1205-1213; FunctionExpression; parameters=1; async=false; generator=false
+- write @1214-1221; FunctionExpression; parameters=2; async=false; generator=false
+- read @1227-1234; FunctionExpression; parameters=1; async=false; generator=false
+- write @1236-1241; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @1238-1240; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @1243-1250; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1252-1266; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1256-1265; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- banditInit @1285-1289; FunctionExpression; parameters=2; async=true; generator=false
+- banditSelect @1302-1306; FunctionExpression; parameters=2; async=true; generator=false
+- banditUpdate @1319-1324; FunctionExpression; parameters=3; async=true; generator=false
+- close @1330-1332; FunctionExpression; parameters=0; async=false; generator=false
+- ensureInterestDataPopulated @1336-1338; FunctionExpression; parameters=0; async=true; generator=false
+- getBanditData @1345-1349; FunctionExpression; parameters=2; async=true; generator=false
+- ingest @1365-1368; FunctionExpression; parameters=1; async=true; generator=false
+- interrupt @1372-1374; FunctionExpression; parameters=0; async=false; generator=false
+- userInterestVector @1382-1384; FunctionExpression; parameters=0; async=true; generator=false
+- constructor @1394-1404; FunctionExpression; parameters=1; async=false; generator=false
+- init @1413-1429; FunctionExpression; parameters=2; async=false; generator=false
+- banditInit @1441-1458; FunctionExpression; parameters=2; async=true; generator=false
+- (anonymous) @1455-1455; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- banditSelect @1472-1489; FunctionExpression; parameters=2; async=true; generator=false
+- banditUpdate @1503-1523; FunctionExpression; parameters=3; async=true; generator=false
+- (anonymous) @1520-1520; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- close @1530-1541; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @1538-1538; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- ensureInterestDataPopulated @1546-1557; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @1554-1554; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- getBanditData @1565-1582; FunctionExpression; parameters=2; async=true; generator=false
+- ingest @1599-1613; FunctionExpression; parameters=1; async=true; generator=false
+- interrupt @1618-1629; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @1626-1626; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- userInterestVector @1638-1649; FunctionExpression; parameters=0; async=true; generator=false
+- lift @1655-1659; FunctionExpression; parameters=1; async=false; generator=false
+- lower @1661-1667; FunctionExpression; parameters=1; async=false; generator=false
+- lowerReceiver @1669-1672; FunctionExpression; parameters=1; async=false; generator=false
+- read @1674-1676; FunctionExpression; parameters=1; async=false; generator=false
+- write @1678-1680; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1682-1684; FunctionExpression; parameters=1; async=false; generator=false
+- read @1689-1696; FunctionExpression; parameters=1; async=false; generator=false
+- write @1698-1703; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @1700-1702; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @1705-1712; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1714-1728; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1718-1727; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- Class FfiConverterSequenceTypeInterest @1688-1729
+- Class FfiConverterTypeRelevancyStore @1654-1685
+- Class RelevancyStore @1391-1651
+- Class RelevancyStoreInterface @1274-1386
+- Class FfiConverterSequenceString @1226-1267
+- Class FfiConverterTypeRelevancyApiError @1194-1224
+- Class Unexpected @1178-1191
+- Class RelevancyApiError @1172-1172
+- Class FfiConverterTypeInterest @1027-1167
+- Class FfiConverterTypeInterestVector @712-940
+- Class InterestVector @412-709
+- Class FfiConverterTypeInterestMetrics @353-405
+- Class InterestMetrics @284-350
+- Class FfiConverterTypeBanditData @184-269
+- Class BanditData @79-181
+- Module moz-src:///toolkit/components/uniffi-js/js/UniFFI.sys.mjs @4; ImportDeclaration
+- Module ./RustRemoteSettings.sys.mjs @1732; ImportDeclaration
+
+### toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustRemoteSettings.sys.mjs
+
+Blob: `7a9a748b230baf562a7285b9d900836ef69307f7`. Role: source. Parse: module.
+
+- constructor @46-121; FunctionExpression; parameters=1; async=false; generator=false
+- equals @123-131; FunctionExpression; parameters=1; async=false; generator=false
+- read @136-144; FunctionExpression; parameters=1; async=false; generator=false
+- write @145-151; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @153-161; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @163-208; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @219-221; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @227-229; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @235-237; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @243-254; FunctionExpression; parameters=1; async=false; generator=false
+- read @259-275; FunctionExpression; parameters=1; async=false; generator=false
+- write @277-297; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @299-316; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @318-322; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @326-330; FunctionExpression; parameters=1; async=false; generator=false
+- read @332-342; FunctionExpression; parameters=1; async=false; generator=false
+- write @344-351; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @353-358; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @362-366; FunctionExpression; parameters=1; async=false; generator=false
+- read @368-378; FunctionExpression; parameters=1; async=false; generator=false
+- write @380-387; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @389-394; FunctionExpression; parameters=1; async=false; generator=false
+- read @398-408; FunctionExpression; parameters=1; async=false; generator=false
+- write @410-416; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @418-426; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @428-448; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @452-456; FunctionExpression; parameters=1; async=false; generator=false
+- read @458-468; FunctionExpression; parameters=1; async=false; generator=false
+- write @470-477; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @479-484; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @497-646; FunctionExpression; parameters=1; async=false; generator=false
+- equals @648-660; FunctionExpression; parameters=1; async=false; generator=false
+- read @665-677; FunctionExpression; parameters=1; async=false; generator=false
+- write @678-688; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @690-702; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @704-781; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @785-789; FunctionExpression; parameters=1; async=false; generator=false
+- read @791-801; FunctionExpression; parameters=1; async=false; generator=false
+- write @803-810; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @812-817; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @823-873; FunctionExpression; parameters=1; async=false; generator=false
+- equals @875-881; FunctionExpression; parameters=1; async=false; generator=false
+- read @886-892; FunctionExpression; parameters=1; async=false; generator=false
+- write @893-897; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @899-905; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @907-936; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @942-946; FunctionExpression; parameters=1; async=false; generator=false
+- read @948-958; FunctionExpression; parameters=1; async=false; generator=false
+- write @960-967; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @969-974; FunctionExpression; parameters=1; async=false; generator=false
+- lift @977-979; FunctionExpression; parameters=1; async=false; generator=false
+- lower @981-983; FunctionExpression; parameters=1; async=false; generator=false
+- write @985-987; FunctionExpression; parameters=2; async=false; generator=false
+- read @989-992; FunctionExpression; parameters=1; async=false; generator=false
+- computeSize @994-996; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @998-1002; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1009-1085; FunctionExpression; parameters=1; async=false; generator=false
+- equals @1087-1095; FunctionExpression; parameters=1; async=false; generator=false
+- read @1100-1108; FunctionExpression; parameters=1; async=false; generator=false
+- write @1109-1115; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1117-1125; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1127-1172; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1178-1288; FunctionExpression; parameters=1; async=false; generator=false
+- equals @1290-1300; FunctionExpression; parameters=1; async=false; generator=false
+- read @1305-1315; FunctionExpression; parameters=1; async=false; generator=false
+- write @1316-1324; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1326-1336; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1338-1399; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1413-1420; FunctionExpression; parameters=2; async=false; generator=false
+- toString @1421-1423; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1431-1438; FunctionExpression; parameters=2; async=false; generator=false
+- toString @1439-1441; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1449-1456; FunctionExpression; parameters=2; async=false; generator=false
+- toString @1457-1459; FunctionExpression; parameters=0; async=false; generator=false
+- read @1464-1481; FunctionExpression; parameters=1; async=false; generator=false
+- computeSize @1482-1498; FunctionExpression; parameters=1; async=false; generator=false
+- write @1499-1516; FunctionExpression; parameters=2; async=false; generator=false
+- read @1559-1579; FunctionExpression; parameters=1; async=false; generator=false
+- write @1581-1612; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1614-1616; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1618-1623; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1629-1633; FunctionExpression; parameters=1; async=false; generator=false
+- read @1635-1645; FunctionExpression; parameters=1; async=false; generator=false
+- write @1647-1654; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1656-1661; FunctionExpression; parameters=1; async=false; generator=false
+- read @1665-1672; FunctionExpression; parameters=1; async=false; generator=false
+- write @1674-1679; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @1676-1678; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @1681-1688; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1690-1704; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1694-1703; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- checkType @1708-1712; FunctionExpression; parameters=1; async=false; generator=false
+- read @1714-1724; FunctionExpression; parameters=1; async=false; generator=false
+- write @1726-1733; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1735-1740; FunctionExpression; parameters=1; async=false; generator=false
+- read @1744-1754; FunctionExpression; parameters=1; async=false; generator=false
+- write @1756-1762; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1764-1772; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1774-1794; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1798-1802; FunctionExpression; parameters=1; async=false; generator=false
+- read @1804-1814; FunctionExpression; parameters=1; async=false; generator=false
+- write @1816-1823; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1825-1830; FunctionExpression; parameters=1; async=false; generator=false
+- collectionName @1843-1845; FunctionExpression; parameters=0; async=true; generator=false
+- getAttachment @1859-1862; FunctionExpression; parameters=1; async=true; generator=false
+- getLastModifiedTimestamp @1867-1869; FunctionExpression; parameters=0; async=true; generator=false
+- getRecords @1890-1893; FunctionExpression; parameters=1; async=true; generator=false
+- getRecordsMap @1902-1905; FunctionExpression; parameters=1; async=true; generator=false
+- resetStorage @1909-1911; FunctionExpression; parameters=0; async=true; generator=false
+- shutdown @1915-1917; FunctionExpression; parameters=0; async=true; generator=false
+- sync @1921-1923; FunctionExpression; parameters=0; async=true; generator=false
+- constructor @1935-1945; FunctionExpression; parameters=1; async=false; generator=false
+- collectionName @1951-1962; FunctionExpression; parameters=0; async=true; generator=false
+- getAttachment @1977-1991; FunctionExpression; parameters=1; async=true; generator=false
+- getLastModifiedTimestamp @1997-2008; FunctionExpression; parameters=0; async=true; generator=false
+- getRecords @2030-2044; FunctionExpression; parameters=1; async=true; generator=false
+- getRecordsMap @2054-2068; FunctionExpression; parameters=1; async=true; generator=false
+- resetStorage @2073-2084; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @2081-2081; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- shutdown @2089-2100; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @2097-2097; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- sync @2105-2116; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @2113-2113; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- lift @2122-2126; FunctionExpression; parameters=1; async=false; generator=false
+- lower @2128-2134; FunctionExpression; parameters=1; async=false; generator=false
+- lowerReceiver @2136-2139; FunctionExpression; parameters=1; async=false; generator=false
+- read @2141-2143; FunctionExpression; parameters=1; async=false; generator=false
+- write @2145-2147; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2149-2151; FunctionExpression; parameters=1; async=false; generator=false
+- read @2156-2163; FunctionExpression; parameters=1; async=false; generator=false
+- write @2165-2170; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @2167-2169; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @2172-2179; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2181-2195; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2185-2194; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- clientUrl @2209-2211; FunctionExpression; parameters=0; async=false; generator=false
+- makeClient @2219-2222; FunctionExpression; parameters=1; async=true; generator=false
+- sync @2230-2232; FunctionExpression; parameters=0; async=true; generator=false
+- updateConfig @2243-2246; FunctionExpression; parameters=1; async=true; generator=false
+- constructor @2259-2269; FunctionExpression; parameters=1; async=false; generator=false
+- init @2285-2301; FunctionExpression; parameters=2; async=false; generator=false
+- clientUrl @2307-2318; FunctionExpression; parameters=0; async=false; generator=false
+- makeClient @2327-2341; FunctionExpression; parameters=1; async=true; generator=false
+- sync @2350-2361; FunctionExpression; parameters=0; async=true; generator=false
+- updateConfig @2373-2387; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @2384-2384; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- lift @2393-2397; FunctionExpression; parameters=1; async=false; generator=false
+- lower @2399-2405; FunctionExpression; parameters=1; async=false; generator=false
+- lowerReceiver @2407-2410; FunctionExpression; parameters=1; async=false; generator=false
+- read @2412-2414; FunctionExpression; parameters=1; async=false; generator=false
+- write @2416-2418; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2420-2422; FunctionExpression; parameters=1; async=false; generator=false
+- Class FfiConverterTypeRemoteSettingsService @2392-2423
+- Class RemoteSettingsService @2256-2389
+- Class RemoteSettingsServiceInterface @2204-2248
+- Class FfiConverterSequenceString @2155-2196
+- Class FfiConverterTypeRemoteSettingsClient @2121-2152
+- Class RemoteSettingsClient @1932-2118
+- Class RemoteSettingsClientInterface @1838-1925
+- Class FfiConverterOptionalMapStringTypeRemoteSettingsRecord @1797-1831
+- Class FfiConverterMapStringTypeRemoteSettingsRecord @1743-1795
+- Class FfiConverterOptionalSequenceTypeRemoteSettingsRecord @1707-1741
+- Class FfiConverterSequenceTypeRemoteSettingsRecord @1664-1705
+- Class FfiConverterOptionalUInt64 @1628-1662
+- Class FfiConverterTypeSyncStatus @1556-1624
+- Class FfiConverterTypeRemoteSettingsError @1463-1519
+- Class Other @1447-1460
+- Class Backoff @1429-1442
+- Class Network @1411-1424
+- Class RemoteSettingsError @1405-1405
+- Class FfiConverterTypeUptakeEventExtras @1304-1400
+- Class UptakeEventExtras @1177-1301
+- Class FfiConverterTypeRemoteSettingsRecord @1099-1173
+- Class RemoteSettingsRecord @1008-1096
+- Class FfiConverterTypeRsJsonObject @976-1003
+- Class FfiConverterOptionalTypeAttachment @941-975
+- Class FfiConverterTypeRemoteSettingsConfig @885-937
+- Class RemoteSettingsConfig @822-882
+- Class FfiConverterOptionalTypeRemoteSettingsContext @784-818
+- Class FfiConverterTypeRemoteSettingsContext @664-782
+- Class RemoteSettingsContext @496-661
+- Class FfiConverterOptionalMapStringString @451-485
+- Class FfiConverterMapStringString @397-449
+- Class FfiConverterOptionalString @361-395
+- Class FfiConverterOptionalTypeRemoteSettingsServer @325-359
+- Class FfiConverterTypeRemoteSettingsServer @258-323
+- Class (anonymous) @242-255
+- Class (anonymous) @234-238
+- Class (anonymous) @226-230
+- Class (anonymous) @218-222
+- Class RemoteSettingsServer @214-214
+- Class FfiConverterTypeAttachment @135-209
+- Class Attachment @45-132
+- Module moz-src:///toolkit/components/uniffi-js/js/UniFFI.sys.mjs @4; ImportDeclaration
+
+### toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustSearch.sys.mjs
+
+Blob: `049c6aae472d7e030b1c086fd50dcc997c66b74f`. Role: source. Parse: module.
+
+- checkType @41-45; FunctionExpression; parameters=1; async=false; generator=false
+- read @47-57; FunctionExpression; parameters=1; async=false; generator=false
+- write @59-66; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @68-73; FunctionExpression; parameters=1; async=false; generator=false
+- read @94-104; FunctionExpression; parameters=1; async=false; generator=false
+- write @106-117; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @119-121; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @123-128; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @132-136; FunctionExpression; parameters=1; async=false; generator=false
+- read @138-148; FunctionExpression; parameters=1; async=false; generator=false
+- write @150-157; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @159-164; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @171-240; FunctionExpression; parameters=1; async=false; generator=false
+- equals @242-249; FunctionExpression; parameters=1; async=false; generator=false
+- read @254-261; FunctionExpression; parameters=1; async=false; generator=false
+- write @262-267; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @269-276; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @278-315; FunctionExpression; parameters=1; async=false; generator=false
+- read @319-326; FunctionExpression; parameters=1; async=false; generator=false
+- write @328-333; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @330-332; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @335-342; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @344-358; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @348-357; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- checkType @362-366; FunctionExpression; parameters=1; async=false; generator=false
+- read @368-378; FunctionExpression; parameters=1; async=false; generator=false
+- write @380-387; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @389-394; FunctionExpression; parameters=1; async=false; generator=false
+- read @398-408; FunctionExpression; parameters=1; async=false; generator=false
+- write @410-416; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @418-426; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @428-448; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @452-456; FunctionExpression; parameters=1; async=false; generator=false
+- read @458-468; FunctionExpression; parameters=1; async=false; generator=false
+- write @470-477; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @479-484; FunctionExpression; parameters=1; async=false; generator=false
+- read @490-497; FunctionExpression; parameters=1; async=false; generator=false
+- write @499-504; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @501-503; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @506-513; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @515-529; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @519-528; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- checkType @533-537; FunctionExpression; parameters=1; async=false; generator=false
+- read @539-549; FunctionExpression; parameters=1; async=false; generator=false
+- write @551-558; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @560-565; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @573-714; FunctionExpression; parameters=1; async=false; generator=false
+- equals @716-727; FunctionExpression; parameters=1; async=false; generator=false
+- read @732-743; FunctionExpression; parameters=1; async=false; generator=false
+- write @744-753; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @755-766; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @768-837; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @841-845; FunctionExpression; parameters=1; async=false; generator=false
+- read @847-857; FunctionExpression; parameters=1; async=false; generator=false
+- write @859-866; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @868-873; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @879-959; FunctionExpression; parameters=1; async=false; generator=false
+- equals @961-969; FunctionExpression; parameters=1; async=false; generator=false
+- read @974-982; FunctionExpression; parameters=1; async=false; generator=false
+- write @983-989; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @991-999; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1001-1046; FunctionExpression; parameters=1; async=false; generator=false
+- read @1067-1077; FunctionExpression; parameters=1; async=false; generator=false
+- write @1079-1090; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1092-1094; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1096-1101; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1107-1245; FunctionExpression; parameters=1; async=false; generator=false
+- equals @1247-1258; FunctionExpression; parameters=1; async=false; generator=false
+- read @1263-1274; FunctionExpression; parameters=1; async=false; generator=false
+- write @1275-1284; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1286-1297; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1299-1368; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1372-1376; FunctionExpression; parameters=1; async=false; generator=false
+- read @1378-1388; FunctionExpression; parameters=1; async=false; generator=false
+- write @1390-1397; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1399-1404; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1410-1490; FunctionExpression; parameters=1; async=false; generator=false
+- equals @1492-1500; FunctionExpression; parameters=1; async=false; generator=false
+- read @1505-1513; FunctionExpression; parameters=1; async=false; generator=false
+- write @1514-1520; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1522-1530; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1532-1577; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1583-1587; FunctionExpression; parameters=1; async=false; generator=false
+- read @1589-1599; FunctionExpression; parameters=1; async=false; generator=false
+- write @1601-1608; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1610-1615; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1621-1822; FunctionExpression; parameters=1; async=false; generator=false
+- equals @1824-1839; FunctionExpression; parameters=1; async=false; generator=false
+- read @1844-1859; FunctionExpression; parameters=1; async=false; generator=false
+- write @1860-1873; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1875-1890; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1892-1993; FunctionExpression; parameters=1; async=false; generator=false
+- read @1997-2004; FunctionExpression; parameters=1; async=false; generator=false
+- write @2006-2011; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @2008-2010; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @2013-2020; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2022-2036; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2026-2035; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- constructor @2043-2110; FunctionExpression; parameters=1; async=false; generator=false
+- equals @2112-2118; FunctionExpression; parameters=1; async=false; generator=false
+- read @2123-2129; FunctionExpression; parameters=1; async=false; generator=false
+- write @2130-2134; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2136-2142; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2144-2173; FunctionExpression; parameters=1; async=false; generator=false
+- read @2211-2229; FunctionExpression; parameters=1; async=false; generator=false
+- write @2231-2258; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2260-2262; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2264-2269; FunctionExpression; parameters=1; async=false; generator=false
+- read @2302-2318; FunctionExpression; parameters=1; async=false; generator=false
+- write @2320-2343; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2345-2347; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2349-2354; FunctionExpression; parameters=1; async=false; generator=false
+- read @2379-2391; FunctionExpression; parameters=1; async=false; generator=false
+- write @2393-2408; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2410-2412; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2414-2419; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @2425-2553; FunctionExpression; parameters=1; async=false; generator=false
+- equals @2555-2566; FunctionExpression; parameters=1; async=false; generator=false
+- read @2571-2582; FunctionExpression; parameters=1; async=false; generator=false
+- write @2583-2592; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2594-2605; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2607-2676; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @2690-2697; FunctionExpression; parameters=2; async=false; generator=false
+- toString @2698-2700; FunctionExpression; parameters=0; async=false; generator=false
+- read @2705-2714; FunctionExpression; parameters=1; async=false; generator=false
+- computeSize @2715-2723; FunctionExpression; parameters=1; async=false; generator=false
+- write @2724-2731; FunctionExpression; parameters=2; async=false; generator=false
+- clearSearchConfig @2753-2755; FunctionExpression; parameters=0; async=false; generator=false
+- filterEngineConfiguration @2763-2766; FunctionExpression; parameters=1; async=false; generator=false
+- setConfigOverrides @2771-2774; FunctionExpression; parameters=1; async=false; generator=false
+- setSearchConfig @2783-2786; FunctionExpression; parameters=1; async=false; generator=false
+- useRemoteSettingsServer @2800-2804; FunctionExpression; parameters=2; async=true; generator=false
+- constructor @2816-2826; FunctionExpression; parameters=1; async=false; generator=false
+- init @2831-2841; FunctionExpression; parameters=0; async=false; generator=false
+- clearSearchConfig @2848-2859; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @2856-2856; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- filterEngineConfiguration @2868-2882; FunctionExpression; parameters=1; async=false; generator=false
+- setConfigOverrides @2888-2902; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2899-2899; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- setSearchConfig @2912-2926; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2923-2923; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- useRemoteSettingsServer @2941-2958; FunctionExpression; parameters=2; async=true; generator=false
+- (anonymous) @2955-2955; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- lift @2964-2968; FunctionExpression; parameters=1; async=false; generator=false
+- lower @2970-2976; FunctionExpression; parameters=1; async=false; generator=false
+- lowerReceiver @2978-2981; FunctionExpression; parameters=1; async=false; generator=false
+- read @2983-2985; FunctionExpression; parameters=1; async=false; generator=false
+- write @2987-2989; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2991-2993; FunctionExpression; parameters=1; async=false; generator=false
+- Class FfiConverterTypeSearchEngineSelector @2963-2994
+- Class SearchEngineSelector @2813-2960
+- Class SearchEngineSelectorInterface @2747-2806
+- Class FfiConverterTypeSearchApiError @2704-2734
+- Class Other @2688-2701
+- Class SearchApiError @2682-2682
+- Class FfiConverterTypeSearchUserEnvironment @2570-2677
+- Class SearchUserEnvironment @2424-2567
+- Class FfiConverterTypeSearchDeviceType @2376-2420
+- Class FfiConverterTypeSearchApplicationName @2299-2355
+- Class FfiConverterTypeSearchUpdateChannel @2208-2270
+- Class FfiConverterTypeRefinedSearchConfig @2122-2174
+- Class RefinedSearchConfig @2042-2119
+- Class FfiConverterSequenceTypeSearchEngineDefinition @1996-2037
+- Class FfiConverterTypeSearchEngineDefinition @1843-1994
+- Class SearchEngineDefinition @1620-1840
+- Class FfiConverterOptionalUInt32 @1582-1616
+- Class FfiConverterTypeSearchEngineUrls @1504-1578
+- Class SearchEngineUrls @1409-1501
+- Class FfiConverterOptionalTypeSearchEngineUrl @1371-1405
+- Class FfiConverterTypeSearchEngineUrl @1262-1369
+- Class SearchEngineUrl @1106-1259
+- Class FfiConverterTypeSearchEngineClassification @1064-1102
+- Class FfiConverterTypeJSONEngineUrls @973-1047
+- Class JsonEngineUrls @878-970
+- Class FfiConverterOptionalTypeJSONEngineUrl @840-874
+- Class FfiConverterTypeJSONEngineUrl @731-838
+- Class JsonEngineUrl @572-728
+- Class FfiConverterOptionalSequenceString @532-566
+- Class FfiConverterSequenceString @489-530
+- Class FfiConverterOptionalMapStringString @451-485
+- Class FfiConverterMapStringString @397-449
+- Class FfiConverterOptionalSequenceTypeSearchUrlParam @361-395
+- Class FfiConverterSequenceTypeSearchUrlParam @318-359
+- Class FfiConverterTypeSearchUrlParam @253-316
+- Class SearchUrlParam @170-250
+- Class FfiConverterOptionalTypeJSONEngineMethod @131-165
+- Class FfiConverterTypeJSONEngineMethod @91-129
+- Class FfiConverterOptionalString @40-74
+- Module moz-src:///toolkit/components/uniffi-js/js/UniFFI.sys.mjs @4; ImportDeclaration
+- Module ./RustRemoteSettings.sys.mjs @2735; ImportDeclaration
+
+### toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustSuggest.sys.mjs
+
+Blob: `0ccc64bec0b49d9aa70dcca16eee90c3565a3199`. Role: source. Parse: module.
+
+- rawSuggestionUrlMatches @43-59; FunctionDeclaration; parameters=2; async=false; generator=false
+- checkType @67-71; FunctionExpression; parameters=1; async=false; generator=false
+- read @73-83; FunctionExpression; parameters=1; async=false; generator=false
+- write @85-92; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @94-99; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @105-157; FunctionExpression; parameters=1; async=false; generator=false
+- equals @159-165; FunctionExpression; parameters=1; async=false; generator=false
+- read @170-176; FunctionExpression; parameters=1; async=false; generator=false
+- write @177-181; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @183-189; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @191-220; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @228-263; FunctionExpression; parameters=1; async=false; generator=false
+- equals @265-270; FunctionExpression; parameters=1; async=false; generator=false
+- read @275-280; FunctionExpression; parameters=1; async=false; generator=false
+- write @281-284; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @286-291; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @293-314; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @329-331; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @337-348; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @354-356; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @362-364; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @370-372; FunctionExpression; parameters=0; async=false; generator=false
+- read @377-395; FunctionExpression; parameters=1; async=false; generator=false
+- write @397-421; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @423-443; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @445-449; FunctionExpression; parameters=1; async=false; generator=false
+- read @453-463; FunctionExpression; parameters=1; async=false; generator=false
+- write @465-471; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @473-481; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @483-503; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @516-682; FunctionExpression; parameters=1; async=false; generator=false
+- equals @684-697; FunctionExpression; parameters=1; async=false; generator=false
+- read @702-715; FunctionExpression; parameters=1; async=false; generator=false
+- write @716-727; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @729-742; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @744-829; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @833-837; FunctionExpression; parameters=1; async=false; generator=false
+- read @839-849; FunctionExpression; parameters=1; async=false; generator=false
+- write @851-858; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @860-865; FunctionExpression; parameters=1; async=false; generator=false
+- read @869-879; FunctionExpression; parameters=1; async=false; generator=false
+- write @881-887; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @889-897; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @899-919; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @925-978; FunctionExpression; parameters=1; async=false; generator=false
+- equals @980-986; FunctionExpression; parameters=1; async=false; generator=false
+- read @991-997; FunctionExpression; parameters=1; async=false; generator=false
+- write @998-1002; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1004-1010; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1012-1041; FunctionExpression; parameters=1; async=false; generator=false
+- read @1066-1078; FunctionExpression; parameters=1; async=false; generator=false
+- write @1080-1095; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1097-1099; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1101-1106; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1112-1162; FunctionExpression; parameters=1; async=false; generator=false
+- equals @1164-1170; FunctionExpression; parameters=1; async=false; generator=false
+- read @1175-1181; FunctionExpression; parameters=1; async=false; generator=false
+- write @1182-1186; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1188-1194; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1196-1225; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1231-1265; FunctionExpression; parameters=1; async=false; generator=false
+- equals @1267-1272; FunctionExpression; parameters=1; async=false; generator=false
+- read @1277-1282; FunctionExpression; parameters=1; async=false; generator=false
+- write @1283-1286; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1288-1293; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1295-1316; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1322-1326; FunctionExpression; parameters=1; async=false; generator=false
+- read @1328-1338; FunctionExpression; parameters=1; async=false; generator=false
+- write @1340-1347; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1349-1354; FunctionExpression; parameters=1; async=false; generator=false
+- read @1360-1367; FunctionExpression; parameters=1; async=false; generator=false
+- write @1369-1374; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @1371-1373; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @1376-1383; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1385-1399; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1389-1398; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- checkType @1405-1409; FunctionExpression; parameters=1; async=false; generator=false
+- read @1411-1421; FunctionExpression; parameters=1; async=false; generator=false
+- write @1423-1430; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1432-1437; FunctionExpression; parameters=1; async=false; generator=false
+- read @1458-1468; FunctionExpression; parameters=1; async=false; generator=false
+- write @1470-1481; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1483-1485; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1487-1492; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1496-1500; FunctionExpression; parameters=1; async=false; generator=false
+- read @1502-1512; FunctionExpression; parameters=1; async=false; generator=false
+- write @1514-1521; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1523-1528; FunctionExpression; parameters=1; async=false; generator=false
+- lift @1531-1533; FunctionExpression; parameters=1; async=false; generator=false
+- lower @1535-1537; FunctionExpression; parameters=1; async=false; generator=false
+- write @1539-1541; FunctionExpression; parameters=2; async=false; generator=false
+- read @1543-1546; FunctionExpression; parameters=1; async=false; generator=false
+- computeSize @1548-1550; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1552-1556; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1560-1564; FunctionExpression; parameters=1; async=false; generator=false
+- read @1566-1576; FunctionExpression; parameters=1; async=false; generator=false
+- write @1578-1585; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1587-1592; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1603-1734; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1740-1783; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1789-1856; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1862-1937; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1943-1978; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1984-2003; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @2009-2044; FunctionExpression; parameters=1; async=false; generator=false
+- read @2049-2124; FunctionExpression; parameters=1; async=false; generator=false
+- write @2126-2205; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2207-2280; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2282-2286; FunctionExpression; parameters=1; async=false; generator=false
+- read @2290-2297; FunctionExpression; parameters=1; async=false; generator=false
+- write @2299-2304; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @2301-2303; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @2306-2313; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2315-2329; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2319-2328; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- read @2333-2340; FunctionExpression; parameters=1; async=false; generator=false
+- write @2342-2347; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @2344-2346; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @2349-2356; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2358-2372; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2362-2371; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- constructor @2378-2412; FunctionExpression; parameters=1; async=false; generator=false
+- equals @2414-2419; FunctionExpression; parameters=1; async=false; generator=false
+- read @2424-2429; FunctionExpression; parameters=1; async=false; generator=false
+- write @2430-2433; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2435-2440; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2442-2463; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @2469-2488; FunctionExpression; parameters=1; async=false; generator=false
+- equals @2490-2494; FunctionExpression; parameters=1; async=false; generator=false
+- read @2499-2503; FunctionExpression; parameters=1; async=false; generator=false
+- write @2504-2506; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2508-2512; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2514-2527; FunctionExpression; parameters=1; async=false; generator=false
+- read @2570-2590; FunctionExpression; parameters=1; async=false; generator=false
+- write @2592-2623; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2625-2627; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2629-2634; FunctionExpression; parameters=1; async=false; generator=false
+- read @2638-2645; FunctionExpression; parameters=1; async=false; generator=false
+- write @2647-2652; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @2649-2651; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @2654-2661; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2663-2677; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2667-2676; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- checkType @2681-2685; FunctionExpression; parameters=1; async=false; generator=false
+- read @2687-2697; FunctionExpression; parameters=1; async=false; generator=false
+- write @2699-2706; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2708-2713; FunctionExpression; parameters=1; async=false; generator=false
+- read @2717-2724; FunctionExpression; parameters=1; async=false; generator=false
+- write @2726-2731; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @2728-2730; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @2733-2740; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2742-2756; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2746-2755; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- checkType @2760-2764; FunctionExpression; parameters=1; async=false; generator=false
+- read @2766-2776; FunctionExpression; parameters=1; async=false; generator=false
+- write @2778-2785; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2787-2792; FunctionExpression; parameters=1; async=false; generator=false
+- read @2819-2831; FunctionExpression; parameters=1; async=false; generator=false
+- write @2833-2848; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2850-2852; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2854-2859; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2863-2867; FunctionExpression; parameters=1; async=false; generator=false
+- read @2869-2879; FunctionExpression; parameters=1; async=false; generator=false
+- write @2881-2888; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2890-2895; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @2902-2939; FunctionExpression; parameters=1; async=false; generator=false
+- equals @2941-2946; FunctionExpression; parameters=1; async=false; generator=false
+- read @2951-2956; FunctionExpression; parameters=1; async=false; generator=false
+- write @2957-2960; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2962-2967; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2969-2990; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2994-2998; FunctionExpression; parameters=1; async=false; generator=false
+- read @3000-3010; FunctionExpression; parameters=1; async=false; generator=false
+- write @3012-3019; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @3021-3026; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @3032-3081; FunctionExpression; parameters=1; async=false; generator=false
+- equals @3083-3089; FunctionExpression; parameters=1; async=false; generator=false
+- read @3094-3100; FunctionExpression; parameters=1; async=false; generator=false
+- write @3101-3105; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @3107-3113; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @3115-3144; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @3152-3187; FunctionExpression; parameters=1; async=false; generator=false
+- equals @3189-3194; FunctionExpression; parameters=1; async=false; generator=false
+- read @3199-3204; FunctionExpression; parameters=1; async=false; generator=false
+- write @3205-3208; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @3210-3215; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @3217-3238; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @3242-3246; FunctionExpression; parameters=1; async=false; generator=false
+- read @3248-3258; FunctionExpression; parameters=1; async=false; generator=false
+- write @3260-3267; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @3269-3274; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @3280-3341; FunctionExpression; parameters=1; async=false; generator=false
+- equals @3343-3350; FunctionExpression; parameters=1; async=false; generator=false
+- read @3355-3362; FunctionExpression; parameters=1; async=false; generator=false
+- write @3363-3368; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @3370-3377; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @3379-3416; FunctionExpression; parameters=1; async=false; generator=false
+- read @3442-3454; FunctionExpression; parameters=1; async=false; generator=false
+- write @3456-3471; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @3473-3475; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @3477-3482; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @3497-3504; FunctionExpression; parameters=2; async=false; generator=false
+- toString @3505-3507; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @3515-3522; FunctionExpression; parameters=2; async=false; generator=false
+- toString @3523-3525; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @3533-3537; FunctionExpression; parameters=1; async=false; generator=false
+- toString @3538-3540; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @3548-3555; FunctionExpression; parameters=2; async=false; generator=false
+- toString @3556-3558; FunctionExpression; parameters=0; async=false; generator=false
+- read @3563-3583; FunctionExpression; parameters=1; async=false; generator=false
+- computeSize @3584-3603; FunctionExpression; parameters=1; async=false; generator=false
+- write @3604-3625; FunctionExpression; parameters=2; async=false; generator=false
+- constructor @3638-3657; FunctionExpression; parameters=1; async=false; generator=false
+- read @3662-3673; FunctionExpression; parameters=1; async=false; generator=false
+- write @3675-3684; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @3686-3695; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @3697-3701; FunctionExpression; parameters=1; async=false; generator=false
+- read @3705-3712; FunctionExpression; parameters=1; async=false; generator=false
+- write @3714-3719; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @3716-3718; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @3721-3728; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @3730-3744; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @3734-3743; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- checkType @3748-3752; FunctionExpression; parameters=1; async=false; generator=false
+- read @3754-3764; FunctionExpression; parameters=1; async=false; generator=false
+- write @3766-3773; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @3775-3780; FunctionExpression; parameters=1; async=false; generator=false
+- read @3784-3791; FunctionExpression; parameters=1; async=false; generator=false
+- write @3793-3798; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @3795-3797; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @3800-3807; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @3809-3823; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @3813-3822; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- checkType @3827-3831; FunctionExpression; parameters=1; async=false; generator=false
+- read @3833-3843; FunctionExpression; parameters=1; async=false; generator=false
+- write @3845-3852; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @3854-3859; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @3863-3867; FunctionExpression; parameters=1; async=false; generator=false
+- read @3869-3879; FunctionExpression; parameters=1; async=false; generator=false
+- write @3881-3888; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @3890-3895; FunctionExpression; parameters=1; async=false; generator=false
+- anyDismissedSuggestions @3933-3935; FunctionExpression; parameters=0; async=true; generator=false
+- clear @3939-3941; FunctionExpression; parameters=0; async=true; generator=false
+- clearDismissedSuggestions @3945-3947; FunctionExpression; parameters=0; async=true; generator=false
+- dismissByKey @3958-3961; FunctionExpression; parameters=1; async=true; generator=false
+- dismissBySuggestion @3968-3971; FunctionExpression; parameters=1; async=true; generator=false
+- dismissSuggestion @3981-3984; FunctionExpression; parameters=1; async=true; generator=false
+- fetchGeonameAlternates @3992-3995; FunctionExpression; parameters=1; async=true; generator=false
+- fetchGeonames @4006-4011; FunctionExpression; parameters=3; async=true; generator=false
+- fetchGlobalConfig @4016-4018; FunctionExpression; parameters=0; async=true; generator=false
+- fetchProviderConfig @4024-4027; FunctionExpression; parameters=1; async=true; generator=false
+- ingest @4033-4036; FunctionExpression; parameters=1; async=true; generator=false
+- interrupt @4045-4048; FunctionExpression; parameters=1; async=false; generator=false
+- isDismissedByKey @4059-4062; FunctionExpression; parameters=1; async=true; generator=false
+- isDismissedBySuggestion @4072-4075; FunctionExpression; parameters=1; async=true; generator=false
+- query @4081-4084; FunctionExpression; parameters=1; async=true; generator=false
+- queryWithMetrics @4090-4093; FunctionExpression; parameters=1; async=true; generator=false
+- constructor @4130-4140; FunctionExpression; parameters=1; async=false; generator=false
+- init @4147-4163; FunctionExpression; parameters=2; async=false; generator=false
+- anyDismissedSuggestions @4169-4180; FunctionExpression; parameters=0; async=true; generator=false
+- clear @4185-4196; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @4193-4193; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- clearDismissedSuggestions @4201-4212; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @4209-4209; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- dismissByKey @4224-4238; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @4235-4235; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- dismissBySuggestion @4246-4260; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @4257-4257; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- dismissSuggestion @4271-4285; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @4282-4282; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- fetchGeonameAlternates @4294-4308; FunctionExpression; parameters=1; async=true; generator=false
+- fetchGeonames @4320-4340; FunctionExpression; parameters=3; async=true; generator=false
+- fetchGlobalConfig @4346-4357; FunctionExpression; parameters=0; async=true; generator=false
+- fetchProviderConfig @4364-4378; FunctionExpression; parameters=1; async=true; generator=false
+- ingest @4385-4399; FunctionExpression; parameters=1; async=true; generator=false
+- interrupt @4409-4423; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @4420-4420; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- isDismissedByKey @4435-4449; FunctionExpression; parameters=1; async=true; generator=false
+- isDismissedBySuggestion @4460-4474; FunctionExpression; parameters=1; async=true; generator=false
+- query @4481-4495; FunctionExpression; parameters=1; async=true; generator=false
+- queryWithMetrics @4502-4516; FunctionExpression; parameters=1; async=true; generator=false
+- lift @4522-4526; FunctionExpression; parameters=1; async=false; generator=false
+- lower @4528-4534; FunctionExpression; parameters=1; async=false; generator=false
+- lowerReceiver @4536-4539; FunctionExpression; parameters=1; async=false; generator=false
+- read @4541-4543; FunctionExpression; parameters=1; async=false; generator=false
+- write @4545-4547; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @4549-4551; FunctionExpression; parameters=1; async=false; generator=false
+- build @4578-4580; FunctionExpression; parameters=0; async=false; generator=false
+- cachePath @4586-4589; FunctionExpression; parameters=1; async=true; generator=false
+- dataPath @4595-4598; FunctionExpression; parameters=1; async=false; generator=false
+- loadExtension @4609-4613; FunctionExpression; parameters=2; async=false; generator=false
+- remoteSettingsBucketName @4619-4622; FunctionExpression; parameters=1; async=false; generator=false
+- remoteSettingsServer @4628-4631; FunctionExpression; parameters=1; async=false; generator=false
+- remoteSettingsService @4637-4640; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @4653-4663; FunctionExpression; parameters=1; async=false; generator=false
+- init @4668-4678; FunctionExpression; parameters=0; async=false; generator=false
+- build @4684-4695; FunctionExpression; parameters=0; async=false; generator=false
+- cachePath @4702-4716; FunctionExpression; parameters=1; async=true; generator=false
+- dataPath @4723-4737; FunctionExpression; parameters=1; async=false; generator=false
+- loadExtension @4749-4766; FunctionExpression; parameters=2; async=false; generator=false
+- remoteSettingsBucketName @4773-4787; FunctionExpression; parameters=1; async=false; generator=false
+- remoteSettingsServer @4794-4808; FunctionExpression; parameters=1; async=false; generator=false
+- remoteSettingsService @4815-4829; FunctionExpression; parameters=1; async=false; generator=false
+- lift @4835-4839; FunctionExpression; parameters=1; async=false; generator=false
+- lower @4841-4847; FunctionExpression; parameters=1; async=false; generator=false
+- lowerReceiver @4849-4852; FunctionExpression; parameters=1; async=false; generator=false
+- read @4854-4856; FunctionExpression; parameters=1; async=false; generator=false
+- write @4858-4860; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @4862-4864; FunctionExpression; parameters=1; async=false; generator=false
+- Class FfiConverterTypeSuggestStoreBuilder @4834-4865
+- Class SuggestStoreBuilder @4650-4831
+- Class SuggestStoreBuilderInterface @4573-4642
+- Class FfiConverterTypeSuggestStore @4521-4552
+- Class SuggestStore @4127-4518
+- Class SuggestStoreInterface @3928-4095
+- Class FfiConverterOptionalTypeInterruptKind @3862-3896
+- Class FfiConverterOptionalTypeSuggestProviderConfig @3826-3860
+- Class FfiConverterSequenceTypeGeonameMatch @3783-3824
+- Class FfiConverterOptionalSequenceTypeGeoname @3747-3781
+- Class FfiConverterSequenceTypeGeoname @3704-3745
+- Class FfiConverterTypeSuggestProviderConfig @3661-3702
+- Class (anonymous) @3637-3658
+- Class SuggestProviderConfig @3633-3633
+- Class FfiConverterTypeSuggestApiError @3562-3628
+- Class Other @3546-3559
+- Class Interrupted @3531-3541
+- Class Backoff @3513-3526
+- Class Network @3495-3508
+- Class SuggestApiError @3489-3489
+- Class FfiConverterTypeInterruptKind @3439-3483
+- Class FfiConverterTypeSuggestionQuery @3354-3417
+- Class SuggestionQuery @3279-3351
+- Class FfiConverterOptionalInt32 @3241-3275
+- Class FfiConverterTypeSuggestIngestionMetrics @3198-3239
+- Class SuggestIngestionMetrics @3151-3195
+- Class FfiConverterTypeSuggestIngestionConstraints @3093-3145
+- Class SuggestIngestionConstraints @3031-3090
+- Class FfiConverterOptionalTypeSuggestionProviderConstraints @2993-3027
+- Class FfiConverterTypeSuggestionProviderConstraints @2950-2991
+- Class SuggestionProviderConstraints @2901-2947
+- Class FfiConverterOptionalTypeAmpMatchingStrategy @2862-2896
+- Class FfiConverterTypeAmpMatchingStrategy @2816-2860
+- Class FfiConverterOptionalSequenceString @2759-2793
+- Class FfiConverterSequenceString @2716-2757
+- Class FfiConverterOptionalSequenceTypeSuggestionProvider @2680-2714
+- Class FfiConverterSequenceTypeSuggestionProvider @2637-2678
+- Class FfiConverterTypeSuggestionProvider @2567-2635
+- Class FfiConverterTypeSuggestGlobalConfig @2498-2528
+- Class SuggestGlobalConfig @2468-2495
+- Class FfiConverterTypeQueryWithMetricsResult @2423-2464
+- Class QueryWithMetricsResult @2377-2420
+- Class FfiConverterSequenceTypeLabeledTimingSample @2332-2373
+- Class FfiConverterSequenceTypeSuggestion @2289-2330
+- Class FfiConverterTypeSuggestion @2048-2287
+- Class (anonymous) @2008-2045
+- Class (anonymous) @1983-2004
+- Class (anonymous) @1942-1979
+- Class (anonymous) @1861-1938
+- Class (anonymous) @1788-1857
+- Class (anonymous) @1739-1784
+- Class (anonymous) @1602-1735
+- Class Suggestion @1598-1598
+- Class FfiConverterOptionalTypeJsonValue @1559-1593
+- Class FfiConverterTypeJsonValue @1530-1557
+- Class FfiConverterOptionalTypeGeoname @1495-1529
+- Class FfiConverterTypeYelpSubjectType @1455-1493
+- Class FfiConverterOptionalTypeFtsMatchInfo @1404-1438
+- Class FfiConverterSequenceInt32 @1359-1400
+- Class FfiConverterOptionalBytes @1321-1355
+- Class FfiConverterTypeLabeledTimingSample @1276-1317
+- Class LabeledTimingSample @1230-1273
+- Class FfiConverterTypeGeonameMatch @1174-1226
+- Class GeonameMatch @1111-1171
+- Class FfiConverterTypeGeonameMatchType @1063-1107
+- Class FfiConverterTypeGeonameAlternates @990-1042
+- Class GeonameAlternates @924-987
+- Class FfiConverterMapUInt8TypeAlternateNames @868-920
+- Class FfiConverterOptionalTypeAlternateNames @832-866
+- Class FfiConverterTypeGeoname @701-830
+- Class Geoname @515-698
+- Class FfiConverterMapUInt8String @452-504
+- Class FfiConverterTypeGeonameType @376-450
+- Class (anonymous) @369-373
+- Class (anonymous) @361-365
+- Class (anonymous) @353-357
+- Class (anonymous) @336-349
+- Class (anonymous) @328-332
+- Class GeonameType @324-324
+- Class FfiConverterTypeFtsMatchInfo @274-315
+- Class FtsMatchInfo @227-271
+- Class FfiConverterTypeAlternateNames @169-221
+- Class AlternateNames @104-166
+- Class FfiConverterOptionalString @66-100
+- Module moz-src:///toolkit/components/uniffi-js/js/UniFFI.sys.mjs @4; ImportDeclaration
+- Module ./RustRemoteSettings.sys.mjs @4554; ImportDeclaration
+- Module ./RustRemoteSettings.sys.mjs @4560; ImportDeclaration
+
+### toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustSync15.sys.mjs
+
+Blob: `376a97b20183ba0cdbcd7fc70538c09443934c97`. Role: source. Parse: module.
+
+- read @95-113; FunctionExpression; parameters=1; async=false; generator=false
+- write @115-142; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @144-146; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @148-153; FunctionExpression; parameters=1; async=false; generator=false
+- Class FfiConverterTypeDeviceType @92-154
+- Module moz-src:///toolkit/components/uniffi-js/js/UniFFI.sys.mjs @4; ImportDeclaration
+
+### toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustTabs.sys.mjs
+
+Blob: `af59efe47f4c62480a6a17e0a1b6cecab671cd79`. Role: source. Parse: module.
+
+- read @49-56; FunctionExpression; parameters=1; async=false; generator=false
+- write @58-63; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @60-62; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @65-72; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @74-88; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @78-87; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- checkType @92-96; FunctionExpression; parameters=1; async=false; generator=false
+- read @98-108; FunctionExpression; parameters=1; async=false; generator=false
+- write @110-117; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @119-124; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @134-266; FunctionExpression; parameters=1; async=false; generator=false
+- equals @268-280; FunctionExpression; parameters=1; async=false; generator=false
+- read @285-297; FunctionExpression; parameters=1; async=false; generator=false
+- write @298-308; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @310-322; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @324-401; FunctionExpression; parameters=1; async=false; generator=false
+- read @405-412; FunctionExpression; parameters=1; async=false; generator=false
+- write @414-419; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @416-418; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @421-428; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @430-444; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @434-443; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- constructor @450-511; FunctionExpression; parameters=1; async=false; generator=false
+- equals @513-520; FunctionExpression; parameters=1; async=false; generator=false
+- read @525-532; FunctionExpression; parameters=1; async=false; generator=false
+- write @533-538; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @540-547; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @549-586; FunctionExpression; parameters=1; async=false; generator=false
+- read @590-600; FunctionExpression; parameters=1; async=false; generator=false
+- write @602-608; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @610-618; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @620-640; FunctionExpression; parameters=1; async=false; generator=false
+- lift @643-645; FunctionExpression; parameters=1; async=false; generator=false
+- lower @647-649; FunctionExpression; parameters=1; async=false; generator=false
+- write @651-653; FunctionExpression; parameters=2; async=false; generator=false
+- read @655-658; FunctionExpression; parameters=1; async=false; generator=false
+- computeSize @660-662; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @664-668; FunctionExpression; parameters=1; async=false; generator=false
+- read @685-693; FunctionExpression; parameters=1; async=false; generator=false
+- write @695-702; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @704-706; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @708-713; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @719-780; FunctionExpression; parameters=1; async=false; generator=false
+- equals @782-789; FunctionExpression; parameters=1; async=false; generator=false
+- read @794-801; FunctionExpression; parameters=1; async=false; generator=false
+- write @802-807; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @809-816; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @818-855; FunctionExpression; parameters=1; async=false; generator=false
+- read @859-869; FunctionExpression; parameters=1; async=false; generator=false
+- write @871-877; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @879-887; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @889-909; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @915-1020; FunctionExpression; parameters=1; async=false; generator=false
+- equals @1022-1032; FunctionExpression; parameters=1; async=false; generator=false
+- read @1037-1047; FunctionExpression; parameters=1; async=false; generator=false
+- write @1048-1056; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1058-1068; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1070-1131; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1137-1184; FunctionExpression; parameters=1; async=false; generator=false
+- equals @1186-1192; FunctionExpression; parameters=1; async=false; generator=false
+- read @1197-1203; FunctionExpression; parameters=1; async=false; generator=false
+- write @1204-1208; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1210-1216; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1218-1247; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1258-1269; FunctionExpression; parameters=1; async=false; generator=false
+- read @1274-1284; FunctionExpression; parameters=1; async=false; generator=false
+- write @1286-1294; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1296-1304; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1306-1310; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1314-1318; FunctionExpression; parameters=1; async=false; generator=false
+- read @1320-1330; FunctionExpression; parameters=1; async=false; generator=false
+- write @1332-1339; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1341-1346; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1352-1413; FunctionExpression; parameters=1; async=false; generator=false
+- equals @1415-1422; FunctionExpression; parameters=1; async=false; generator=false
+- read @1427-1434; FunctionExpression; parameters=1; async=false; generator=false
+- write @1435-1440; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1442-1449; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1451-1488; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1502-1509; FunctionExpression; parameters=2; async=false; generator=false
+- toString @1510-1512; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1520-1527; FunctionExpression; parameters=2; async=false; generator=false
+- toString @1528-1530; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1538-1545; FunctionExpression; parameters=2; async=false; generator=false
+- toString @1546-1548; FunctionExpression; parameters=0; async=false; generator=false
+- read @1553-1570; FunctionExpression; parameters=1; async=false; generator=false
+- computeSize @1571-1587; FunctionExpression; parameters=1; async=false; generator=false
+- write @1588-1605; FunctionExpression; parameters=2; async=false; generator=false
+- read @1611-1618; FunctionExpression; parameters=1; async=false; generator=false
+- write @1620-1625; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @1622-1624; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @1627-1634; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @1636-1650; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1640-1649; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- addRemoteCommand @1663-1667; FunctionExpression; parameters=2; async=true; generator=false
+- addRemoteCommandAt @1675-1680; FunctionExpression; parameters=3; async=true; generator=false
+- getUnsentCommands @1685-1687; FunctionExpression; parameters=0; async=true; generator=false
+- removeRemoteCommand @1695-1699; FunctionExpression; parameters=2; async=true; generator=false
+- setPendingCommandSent @1705-1708; FunctionExpression; parameters=1; async=true; generator=false
+- constructor @1718-1728; FunctionExpression; parameters=1; async=false; generator=false
+- addRemoteCommand @1736-1753; FunctionExpression; parameters=2; async=true; generator=false
+- addRemoteCommandAt @1762-1782; FunctionExpression; parameters=3; async=true; generator=false
+- getUnsentCommands @1788-1799; FunctionExpression; parameters=0; async=true; generator=false
+- removeRemoteCommand @1808-1825; FunctionExpression; parameters=2; async=true; generator=false
+- setPendingCommandSent @1832-1846; FunctionExpression; parameters=1; async=true; generator=false
+- lift @1852-1856; FunctionExpression; parameters=1; async=false; generator=false
+- lower @1858-1864; FunctionExpression; parameters=1; async=false; generator=false
+- lowerReceiver @1866-1869; FunctionExpression; parameters=1; async=false; generator=false
+- read @1871-1873; FunctionExpression; parameters=1; async=false; generator=false
+- write @1875-1877; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @1879-1881; FunctionExpression; parameters=1; async=false; generator=false
+- apply @1898-1901; FunctionExpression; parameters=1; async=true; generator=false
+- ensureCurrentSyncId @1907-1910; FunctionExpression; parameters=1; async=true; generator=false
+- lastSync @1915-1917; FunctionExpression; parameters=0; async=true; generator=false
+- reset @1921-1923; FunctionExpression; parameters=0; async=true; generator=false
+- resetLastSync @1927-1929; FunctionExpression; parameters=0; async=true; generator=false
+- resetSyncId @1934-1936; FunctionExpression; parameters=0; async=true; generator=false
+- setClients @1941-1944; FunctionExpression; parameters=1; async=true; generator=false
+- setUploaded @1950-1954; FunctionExpression; parameters=2; async=true; generator=false
+- storeIncoming @1959-1962; FunctionExpression; parameters=1; async=true; generator=false
+- syncFinished @1966-1968; FunctionExpression; parameters=0; async=true; generator=false
+- syncId @1973-1975; FunctionExpression; parameters=0; async=true; generator=false
+- syncStarted @1979-1981; FunctionExpression; parameters=0; async=true; generator=false
+- wipe @1985-1987; FunctionExpression; parameters=0; async=true; generator=false
+- constructor @2001-2011; FunctionExpression; parameters=1; async=false; generator=false
+- apply @2018-2032; FunctionExpression; parameters=1; async=true; generator=false
+- ensureCurrentSyncId @2039-2053; FunctionExpression; parameters=1; async=true; generator=false
+- lastSync @2059-2070; FunctionExpression; parameters=0; async=true; generator=false
+- reset @2075-2086; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @2083-2083; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- resetLastSync @2091-2102; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @2099-2099; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- resetSyncId @2108-2119; FunctionExpression; parameters=0; async=true; generator=false
+- setClients @2125-2139; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @2136-2136; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- setUploaded @2146-2163; FunctionExpression; parameters=2; async=true; generator=false
+- (anonymous) @2160-2160; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- storeIncoming @2169-2183; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @2180-2180; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- syncFinished @2188-2199; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @2196-2196; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- syncId @2205-2216; FunctionExpression; parameters=0; async=true; generator=false
+- syncStarted @2221-2232; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @2229-2229; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- wipe @2237-2248; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @2245-2245; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- lift @2254-2258; FunctionExpression; parameters=1; async=false; generator=false
+- lower @2260-2266; FunctionExpression; parameters=1; async=false; generator=false
+- lowerReceiver @2268-2271; FunctionExpression; parameters=1; async=false; generator=false
+- read @2273-2275; FunctionExpression; parameters=1; async=false; generator=false
+- write @2277-2279; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2281-2283; FunctionExpression; parameters=1; async=false; generator=false
+- read @2288-2295; FunctionExpression; parameters=1; async=false; generator=false
+- write @2297-2302; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @2299-2301; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @2304-2311; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @2313-2327; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2317-2326; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- bridgedEngine @2338-2340; FunctionExpression; parameters=0; async=true; generator=false
+- closeConnection @2344-2346; FunctionExpression; parameters=0; async=true; generator=false
+- getAll @2351-2353; FunctionExpression; parameters=0; async=true; generator=false
+- newRemoteCommandStore @2358-2360; FunctionExpression; parameters=0; async=true; generator=false
+- registerWithSyncManager @2364-2366; FunctionExpression; parameters=0; async=true; generator=false
+- setLocalTabs @2371-2374; FunctionExpression; parameters=1; async=true; generator=false
+- setLocalTabsInfo @2379-2382; FunctionExpression; parameters=1; async=true; generator=false
+- constructor @2392-2402; FunctionExpression; parameters=1; async=false; generator=false
+- init @2408-2421; FunctionExpression; parameters=1; async=true; generator=false
+- bridgedEngine @2427-2438; FunctionExpression; parameters=0; async=true; generator=false
+- closeConnection @2443-2454; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @2451-2451; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- getAll @2460-2471; FunctionExpression; parameters=0; async=true; generator=false
+- newRemoteCommandStore @2477-2488; FunctionExpression; parameters=0; async=true; generator=false
+- registerWithSyncManager @2493-2504; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @2501-2501; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- setLocalTabs @2510-2524; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @2521-2521; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- setLocalTabsInfo @2530-2544; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @2541-2541; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- lift @2550-2554; FunctionExpression; parameters=1; async=false; generator=false
+- lower @2556-2562; FunctionExpression; parameters=1; async=false; generator=false
+- lowerReceiver @2564-2567; FunctionExpression; parameters=1; async=false; generator=false
+- read @2569-2571; FunctionExpression; parameters=1; async=false; generator=false
+- write @2573-2575; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @2577-2579; FunctionExpression; parameters=1; async=false; generator=false
+- Class FfiConverterTypeTabsStore @2549-2580
+- Class TabsStore @2389-2546
+- Class TabsStoreInterface @2333-2384
+- Class FfiConverterSequenceTypeClientRemoteTabs @2287-2328
+- Class FfiConverterTypeTabsBridgedEngine @2253-2284
+- Class TabsBridgedEngine @1998-2250
+- Class TabsBridgedEngineInterface @1892-1989
+- Class FfiConverterTypeRemoteCommandStore @1851-1882
+- Class RemoteCommandStore @1715-1848
+- Class RemoteCommandStoreInterface @1656-1710
+- Class FfiConverterSequenceTypePendingCommand @1610-1651
+- Class FfiConverterTypeTabsApiError @1552-1608
+- Class UnexpectedTabsError @1536-1549
+- Class SqlError @1518-1531
+- Class SyncError @1500-1513
+- Class TabsApiError @1494-1494
+- Class FfiConverterTypePendingCommand @1426-1489
+- Class PendingCommand @1351-1423
+- Class FfiConverterOptionalTypeTimestamp @1313-1347
+- Class FfiConverterTypeRemoteCommand @1273-1311
+- Class (anonymous) @1257-1270
+- Class RemoteCommand @1253-1253
+- Class FfiConverterTypeLocalTabsInfo @1196-1248
+- Class LocalTabsInfo @1136-1193
+- Class FfiConverterTypeClientRemoteTabs @1036-1132
+- Class ClientRemoteTabs @914-1033
+- Class FfiConverterMapStringTypeWindow @858-910
+- Class FfiConverterTypeWindow @793-856
+- Class Window @718-790
+- Class FfiConverterTypeWindowType @682-714
+- Class FfiConverterTypeTimestamp @642-669
+- Class FfiConverterMapStringTypeTabGroup @589-641
+- Class FfiConverterTypeTabGroup @524-587
+- Class TabGroup @449-521
+- Class FfiConverterSequenceTypeRemoteTabRecord @404-445
+- Class FfiConverterTypeRemoteTabRecord @284-402
+- Class RemoteTabRecord @133-281
+- Class FfiConverterOptionalString @91-125
+- Class FfiConverterSequenceString @48-89
+- Module moz-src:///toolkit/components/uniffi-js/js/UniFFI.sys.mjs @4; ImportDeclaration
+- Module ./RustSync15.sys.mjs @39; ImportDeclaration
+
+### toolkit/components/uniffi-bindgen-gecko-js/components/generated/RustTracing.sys.mjs
+
+Blob: `a7d1d6a696a6d68853c6579129a7a41310c18427`. Role: source. Parse: module.
+
+- registerEventSink @41-57; FunctionDeclaration; parameters=2; async=false; generator=false
+- unregisterEventSink @63-76; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @73-73; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- read @113-129; FunctionExpression; parameters=1; async=false; generator=false
+- write @131-154; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @156-158; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @160-165; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @171-204; FunctionExpression; parameters=1; async=false; generator=false
+- equals @206-211; FunctionExpression; parameters=1; async=false; generator=false
+- read @216-221; FunctionExpression; parameters=1; async=false; generator=false
+- write @222-225; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @227-232; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @234-255; FunctionExpression; parameters=1; async=false; generator=false
+- read @259-266; FunctionExpression; parameters=1; async=false; generator=false
+- write @268-273; FunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @270-272; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- computeSize @275-282; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @284-298; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @288-297; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- checkType @302-306; FunctionExpression; parameters=1; async=false; generator=false
+- read @308-318; FunctionExpression; parameters=1; async=false; generator=false
+- write @320-327; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @329-334; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @340-373; FunctionExpression; parameters=1; async=false; generator=false
+- equals @375-380; FunctionExpression; parameters=1; async=false; generator=false
+- read @385-390; FunctionExpression; parameters=1; async=false; generator=false
+- write @391-394; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @396-401; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @403-424; FunctionExpression; parameters=1; async=false; generator=false
+- lift @427-429; FunctionExpression; parameters=1; async=false; generator=false
+- lower @431-433; FunctionExpression; parameters=1; async=false; generator=false
+- write @435-437; FunctionExpression; parameters=2; async=false; generator=false
+- read @439-442; FunctionExpression; parameters=1; async=false; generator=false
+- computeSize @444-446; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @448-452; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @458-533; FunctionExpression; parameters=1; async=false; generator=false
+- equals @535-543; FunctionExpression; parameters=1; async=false; generator=false
+- read @548-556; FunctionExpression; parameters=1; async=false; generator=false
+- write @557-563; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @565-573; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @575-620; FunctionExpression; parameters=1; async=false; generator=false
+- lift @625-627; FunctionExpression; parameters=1; async=false; generator=false
+- lower @629-631; FunctionExpression; parameters=1; async=false; generator=false
+- write @633-635; FunctionExpression; parameters=2; async=false; generator=false
+- read @637-640; FunctionExpression; parameters=1; async=false; generator=false
+- computeSize @642-644; FunctionExpression; parameters=1; async=false; generator=false
+- checkType @646-650; FunctionExpression; parameters=1; async=false; generator=false
+- onEvent @661-664; FunctionExpression; parameters=1; async=false; generator=false
+- lower @670-675; FunctionExpression; parameters=1; async=false; generator=false
+- lift @677-679; FunctionExpression; parameters=1; async=false; generator=false
+- read @681-683; FunctionExpression; parameters=1; async=false; generator=false
+- write @685-687; FunctionExpression; parameters=2; async=false; generator=false
+- computeSize @689-691; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @702-702; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @703-705; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- Class FfiConverterTypeEventSink @669-692
+- Class EventSink @656-666
+- Class FfiConverterTypeEventSinkId @624-651
+- Class FfiConverterTypeTracingEvent @547-621
+- Class TracingEvent @457-544
+- Class FfiConverterTypeTracingJsonValue @426-453
+- Class FfiConverterTypeEventSinkSpecification @384-425
+- Class EventSinkSpecification @339-381
+- Class FfiConverterOptionalTypeTracingLevel @301-335
+- Class FfiConverterSequenceTypeEventTarget @258-299
+- Class FfiConverterTypeEventTarget @215-256
+- Class EventTarget @170-212
+- Class FfiConverterTypeTracingLevel @110-166
+- Module moz-src:///toolkit/components/uniffi-js/js/UniFFI.sys.mjs @4; ImportDeclaration
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.

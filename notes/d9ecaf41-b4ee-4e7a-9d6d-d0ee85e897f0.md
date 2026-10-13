@@ -1,0 +1,949 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["js/src/tests/test262/browser.js","js/src/tests/test262/built-ins/AbstractModuleSource/browser.js","js/src/tests/test262/built-ins/AbstractModuleSource/length.js","js/src/tests/test262/built-ins/AbstractModuleSource/name.js","js/src/tests/test262/built-ins/AbstractModuleSource/proto.js","js/src/tests/test262/built-ins/AbstractModuleSource/prototype.js","js/src/tests/test262/built-ins/AbstractModuleSource/prototype/Symbol.toStringTag.js","js/src/tests/test262/built-ins/AbstractModuleSource/prototype/browser.js","js/src/tests/test262/built-ins/AbstractModuleSource/prototype/constructor.js","js/src/tests/test262/built-ins/AbstractModuleSource/prototype/proto.js","js/src/tests/test262/built-ins/AbstractModuleSource/prototype/shell.js","js/src/tests/test262/built-ins/AbstractModuleSource/shell.js","js/src/tests/test262/built-ins/AbstractModuleSource/throw-from-constructor.js","js/src/tests/test262/built-ins/AggregateError/browser.js","js/src/tests/test262/built-ins/AggregateError/cause-property.js","js/src/tests/test262/built-ins/AggregateError/errors-iterabletolist-failures.js","js/src/tests/test262/built-ins/AggregateError/errors-iterabletolist.js","js/src/tests/test262/built-ins/AggregateError/is-a-constructor.js","js/src/tests/test262/built-ins/AggregateError/length.js","js/src/tests/test262/built-ins/AggregateError/message-method-prop-cast.js","js/src/tests/test262/built-ins/AggregateError/message-method-prop.js","js/src/tests/test262/built-ins/AggregateError/message-tostring-abrupt-symbol.js","js/src/tests/test262/built-ins/AggregateError/message-tostring-abrupt.js","js/src/tests/test262/built-ins/AggregateError/message-undefined-no-prop.js","js/src/tests/test262/built-ins/AggregateError/name.js","js/src/tests/test262/built-ins/AggregateError/newtarget-is-undefined.js","js/src/tests/test262/built-ins/AggregateError/newtarget-proto-custom.js","js/src/tests/test262/built-ins/AggregateError/newtarget-proto-fallback.js","js/src/tests/test262/built-ins/AggregateError/newtarget-proto.js","js/src/tests/test262/built-ins/AggregateError/order-of-args-evaluation.js","js/src/tests/test262/built-ins/AggregateError/prop-desc.js","js/src/tests/test262/built-ins/AggregateError/proto-from-ctor-realm.js","js/src/tests/test262/built-ins/AggregateError/proto.js","js/src/tests/test262/built-ins/AggregateError/prototype/browser.js","js/src/tests/test262/built-ins/AggregateError/prototype/constructor.js","js/src/tests/test262/built-ins/AggregateError/prototype/errors-absent-on-prototype.js","js/src/tests/test262/built-ins/AggregateError/prototype/message.js","js/src/tests/test262/built-ins/AggregateError/prototype/name.js","js/src/tests/test262/built-ins/AggregateError/prototype/prop-desc.js","js/src/tests/test262/built-ins/AggregateError/prototype/proto.js","js/src/tests/test262/built-ins/AggregateError/prototype/shell.js","js/src/tests/test262/built-ins/AggregateError/shell.js","js/src/tests/test262/built-ins/Array/15.4.5-1.js","js/src/tests/test262/built-ins/Array/15.4.5.1-5-1.js","js/src/tests/test262/built-ins/Array/15.4.5.1-5-2.js","js/src/tests/test262/built-ins/Array/S15.4.1_A1.1_T1.js","js/src/tests/test262/built-ins/Array/S15.4.1_A1.1_T2.js","js/src/tests/test262/built-ins/Array/S15.4.1_A1.1_T3.js","js/src/tests/test262/built-ins/Array/S15.4.1_A1.2_T1.js","js/src/tests/test262/built-ins/Array/S15.4.1_A1.3_T1.js","js/src/tests/test262/built-ins/Array/S15.4.1_A2.1_T1.js","js/src/tests/test262/built-ins/Array/S15.4.1_A2.2_T1.js","js/src/tests/test262/built-ins/Array/S15.4.1_A3.1_T1.js","js/src/tests/test262/built-ins/Array/S15.4.2.1_A1.1_T1.js","js/src/tests/test262/built-ins/Array/S15.4.2.1_A1.1_T2.js","js/src/tests/test262/built-ins/Array/S15.4.2.1_A1.1_T3.js","js/src/tests/test262/built-ins/Array/S15.4.2.1_A1.2_T1.js","js/src/tests/test262/built-ins/Array/S15.4.2.1_A1.3_T1.js","js/src/tests/test262/built-ins/Array/S15.4.2.1_A2.1_T1.js","js/src/tests/test262/built-ins/Array/S15.4.2.1_A2.2_T1.js","js/src/tests/test262/built-ins/Array/S15.4.3_A1.1_T1.js","js/src/tests/test262/built-ins/Array/S15.4.3_A1.1_T2.js","js/src/tests/test262/built-ins/Array/S15.4.3_A1.1_T3.js","js/src/tests/test262/built-ins/Array/S15.4.5.1_A1.2_T2.js","js/src/tests/test262/built-ins/Array/S15.4.5.1_A2.1_T1.js","js/src/tests/test262/built-ins/Array/S15.4.5.1_A2.2_T1.js","js/src/tests/test262/built-ins/Array/S15.4.5.1_A2.3_T1.js","js/src/tests/test262/built-ins/Array/S15.4.5.2_A1_T1.js","js/src/tests/test262/built-ins/Array/S15.4.5.2_A1_T2.js","js/src/tests/test262/built-ins/Array/S15.4.5.2_A2_T1.js","js/src/tests/test262/built-ins/Array/S15.4.5.2_A3_T1.js","js/src/tests/test262/built-ins/Array/S15.4.5.2_A3_T2.js","js/src/tests/test262/built-ins/Array/S15.4.5.2_A3_T3.js","js/src/tests/test262/built-ins/Array/S15.4_A1.1_T10.js","js/src/tests/test262/built-ins/Array/S15.4_A1.1_T4.js","js/src/tests/test262/built-ins/Array/S15.4_A1.1_T5.js","js/src/tests/test262/built-ins/Array/S15.4_A1.1_T6.js","js/src/tests/test262/built-ins/Array/S15.4_A1.1_T7.js","js/src/tests/test262/built-ins/Array/S15.4_A1.1_T8.js","js/src/tests/test262/built-ins/Array/S15.4_A1.1_T9.js","js/src/tests/test262/built-ins/Array/Symbol.species/browser.js","js/src/tests/test262/built-ins/Array/Symbol.species/length.js","js/src/tests/test262/built-ins/Array/Symbol.species/return-value.js","js/src/tests/test262/built-ins/Array/Symbol.species/shell.js","js/src/tests/test262/built-ins/Array/Symbol.species/symbol-species-name.js","js/src/tests/test262/built-ins/Array/Symbol.species/symbol-species.js","js/src/tests/test262/built-ins/Array/browser.js","js/src/tests/test262/built-ins/Array/constructor.js","js/src/tests/test262/built-ins/Array/from/Array.from-descriptor.js","js/src/tests/test262/built-ins/Array/from/Array.from-name.js","js/src/tests/test262/built-ins/Array/from/Array.from_arity.js","js/src/tests/test262/built-ins/Array/from/Array.from_forwards-length-for-array-likes.js","js/src/tests/test262/built-ins/Array/from/array-like-has-length-but-no-indexes-with-values.js","js/src/tests/test262/built-ins/Array/from/browser.js","js/src/tests/test262/built-ins/Array/from/calling-from-valid-1-noStrict.js","js/src/tests/test262/built-ins/Array/from/calling-from-valid-1-onlyStrict-strict.js","js/src/tests/test262/built-ins/Array/from/calling-from-valid-2.js","js/src/tests/test262/built-ins/Array/from/elements-added-after.js","js/src/tests/test262/built-ins/Array/from/elements-deleted-after.js","js/src/tests/test262/built-ins/Array/from/elements-updated-after.js","js/src/tests/test262/built-ins/Array/from/from-array.js","js/src/tests/test262/built-ins/Array/from/from-string.js","js/src/tests/test262/built-ins/Array/from/get-iter-method-err.js","js/src/tests/test262/built-ins/Array/from/items-is-arraybuffer.js","js/src/tests/test262/built-ins/Array/from/items-is-null-throws.js","js/src/tests/test262/built-ins/Array/from/iter-adv-err.js","js/src/tests/test262/built-ins/Array/from/iter-cstm-ctor-err.js","js/src/tests/test262/built-ins/Array/from/iter-cstm-ctor.js","js/src/tests/test262/built-ins/Array/from/iter-get-iter-err.js","js/src/tests/test262/built-ins/Array/from/iter-get-iter-val-err.js","js/src/tests/test262/built-ins/Array/from/iter-map-fn-args.js","js/src/tests/test262/built-ins/Array/from/iter-map-fn-err.js","js/src/tests/test262/built-ins/Array/from/iter-map-fn-return.js","js/src/tests/test262/built-ins/Array/from/iter-map-fn-this-arg.js","js/src/tests/test262/built-ins/Array/from/iter-map-fn-this-non-strict.js","js/src/tests/test262/built-ins/Array/from/iter-map-fn-this-strict-strict.js","js/src/tests/test262/built-ins/Array/from/iter-set-elem-prop-err.js","js/src/tests/test262/built-ins/Array/from/iter-set-elem-prop-non-writable.js","js/src/tests/test262/built-ins/Array/from/iter-set-elem-prop.js","js/src/tests/test262/built-ins/Array/from/iter-set-length-err.js","js/src/tests/test262/built-ins/Array/from/iter-set-length.js","js/src/tests/test262/built-ins/Array/from/mapfn-is-not-callable-typeerror.js","js/src/tests/test262/built-ins/Array/from/mapfn-is-symbol-throws.js","js/src/tests/test262/built-ins/Array/from/mapfn-throws-exception.js","js/src/tests/test262/built-ins/Array/from/not-a-constructor.js","js/src/tests/test262/built-ins/Array/from/proto-from-ctor-realm.js","js/src/tests/test262/built-ins/Array/from/shell.js","js/src/tests/test262/built-ins/Array/from/source-array-boundary.js","js/src/tests/test262/built-ins/Array/from/source-object-constructor.js","js/src/tests/test262/built-ins/Array/from/source-object-iterator-1.js","js/src/tests/test262/built-ins/Array/from/source-object-iterator-2.js","js/src/tests/test262/built-ins/Array/from/source-object-length-set-elem-prop-err.js","js/src/tests/test262/built-ins/Array/from/source-object-length-set-elem-prop-non-writable.js","js/src/tests/test262/built-ins/Array/from/source-object-length.js","js/src/tests/test262/built-ins/Array/from/source-object-missing.js","js/src/tests/test262/built-ins/Array/from/source-object-without.js","js/src/tests/test262/built-ins/Array/from/this-null.js","js/src/tests/test262/built-ins/Array/fromAsync/async-iterable-async-mapped-awaits-once.js","js/src/tests/test262/built-ins/Array/fromAsync/async-iterable-input-does-not-await-input.js","js/src/tests/test262/built-ins/Array/fromAsync/async-iterable-input-iteration-err.js","js/src/tests/test262/built-ins/Array/fromAsync/async-iterable-input.js","js/src/tests/test262/built-ins/Array/fromAsync/asyncitems-array-add-to-empty.js","js/src/tests/test262/built-ins/Array/fromAsync/asyncitems-array-add-to-singleton.js","js/src/tests/test262/built-ins/Array/fromAsync/asyncitems-array-add.js","js/src/tests/test262/built-ins/Array/fromAsync/asyncitems-array-mutate.js","js/src/tests/test262/built-ins/Array/fromAsync/asyncitems-array-remove.js","js/src/tests/test262/built-ins/Array/fromAsync/asyncitems-arraybuffer.js","js/src/tests/test262/built-ins/Array/fromAsync/asyncitems-arraylike-holes.js","js/src/tests/test262/built-ins/Array/fromAsync/asyncitems-arraylike-length-accessor-throws.js","js/src/tests/test262/built-ins/Array/fromAsync/asyncitems-arraylike-promise.js"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013"}} -->
+# firefox/js JavaScript function map 319
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### js/src/tests/test262/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AbstractModuleSource/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AbstractModuleSource/length.js
+
+Blob: `60440f143f2811db2366fc0edc9fb2f1e82c5b2d`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AbstractModuleSource/name.js
+
+Blob: `b76c9749cf690241136ea6017c351d6d648acd30`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AbstractModuleSource/proto.js
+
+Blob: `1fbc3461bf8b26ac1b0a089c926c783b7858cf3b`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AbstractModuleSource/prototype.js
+
+Blob: `71f80d243f356a3b93feafbebe8db5590703ace9`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AbstractModuleSource/prototype/Symbol.toStringTag.js
+
+Blob: `75b6e0527d83d65ec64e2ce836db7f4c7ad0a020`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AbstractModuleSource/prototype/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AbstractModuleSource/prototype/constructor.js
+
+Blob: `11b8a6234215fe1a01c472cbca8765e8da76dbc0`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AbstractModuleSource/prototype/proto.js
+
+Blob: `a9d08e9d7cb70f81160546ae286d2b3833361406`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AbstractModuleSource/prototype/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AbstractModuleSource/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AbstractModuleSource/throw-from-constructor.js
+
+Blob: `5ec608a30efa7ff631c11fde48e602c00f7e8629`. Role: test-path,source. Parse: module.
+
+- (anonymous) @17-19; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/AggregateError/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AggregateError/cause-property.js
+
+Blob: `f06df105417b118d9edd07f8ef124bdbd35d7201`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AggregateError/errors-iterabletolist-failures.js
+
+Blob: `c1ae1b37c7eee82549b202794fbe55727390fe98`. Role: test-path,source. Parse: module.
+
+- (anonymous) @48-50; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @53-55; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @58-60; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @63-65; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @68-70; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @73-75; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @78-80; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @83-85; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @88-90; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @93-95; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @98-104; FunctionExpression; parameters=0; async=false; generator=false
+- next @100-102; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @107-109; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @112-118; FunctionExpression; parameters=0; async=false; generator=false
+- next @114-116; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @121-123; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @126-132; FunctionExpression; parameters=0; async=false; generator=false
+- next @128-130; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @135-137; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @140-146; FunctionExpression; parameters=0; async=false; generator=false
+- next @142-144; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @149-151; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @154-160; FunctionExpression; parameters=0; async=false; generator=false
+- next @156-158; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @163-165; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @168-178; FunctionExpression; parameters=0; async=false; generator=false
+- next @170-176; FunctionExpression; parameters=0; async=false; generator=false
+- done @172-174; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @181-183; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/AggregateError/errors-iterabletolist.js
+
+Blob: `1917ae56bf9515f5815e537deddaacab922a6d10`. Role: test-path,source. Parse: module.
+
+- (anonymous) @51-63; FunctionExpression; parameters=0; async=false; generator=false
+- next @53-61; FunctionExpression; parameters=0; async=false; generator=false
+- value @57-59; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @71-73; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/AggregateError/is-a-constructor.js
+
+Blob: `43274be95d86620c8ae654eb1333eb940cd2ad05`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AggregateError/length.js
+
+Blob: `4de6eedb6b689af3596c810ba418de86b65b3d24`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AggregateError/message-method-prop-cast.js
+
+Blob: `f6b0d78f4788ca60b8cee6ea40ae1b2721773d02`. Role: test-path,source. Parse: module.
+
+- toString @53-53; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/AggregateError/message-method-prop.js
+
+Blob: `ca137c78d43f7eb8ace1ec1bf4dffe3a8cf541a8`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AggregateError/message-tostring-abrupt-symbol.js
+
+Blob: `fff1b0051cc2fc23f7ce8272ba2ec0cb280821e5`. Role: test-path,source. Parse: module.
+
+- (anonymous) @21-23; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- toString @29-31; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @32-34; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @37-39; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/AggregateError/message-tostring-abrupt.js
+
+Blob: `1c356d719a3ea86324fc79c79171d845b07b6d9b`. Role: test-path,source. Parse: module.
+
+- (anonymous) @20-22; FunctionExpression; parameters=0; async=false; generator=false
+- toString @23-25; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @31-33; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- toString @37-39; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @40-42; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @45-47; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- valueOf @52-54; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @57-59; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/AggregateError/message-undefined-no-prop.js
+
+Blob: `80885b45ce29910c8295d04264fcde4a9c266df0`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AggregateError/name.js
+
+Blob: `5120c2097dd5f0249f51e829734219ef4f69ca12`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AggregateError/newtarget-is-undefined.js
+
+Blob: `3f02d5509e8a0b2ccabb91b888a6342c411346b7`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AggregateError/newtarget-proto-custom.js
+
+Blob: `0cf7359a592a8b9e8aadba6d0199e467554446f2`. Role: test-path,source. Parse: module.
+
+- (anonymous) @34-34; FunctionExpression; parameters=0; async=false; generator=false
+- get @35-41; FunctionExpression; parameters=2; async=false; generator=false
+
+### js/src/tests/test262/built-ins/AggregateError/newtarget-proto-fallback.js
+
+Blob: `95083d9a471e4b767be632d835195b27a3629cab`. Role: test-path,source. Parse: module.
+
+- get @48-53; FunctionExpression; parameters=2; async=false; generator=false
+
+### js/src/tests/test262/built-ins/AggregateError/newtarget-proto.js
+
+Blob: `37dcaac082429343ada0b18f91ce369435760bec`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AggregateError/order-of-args-evaluation.js
+
+Blob: `18a8b8a0e0cfbc2da0df164a914b76c5f662f680`. Role: test-path,source. Parse: module.
+
+- toString @19-22; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @25-35; FunctionExpression; parameters=0; async=false; generator=false
+- next @28-33; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/AggregateError/prop-desc.js
+
+Blob: `ee7790224fb13d1b0e83f4cd0e66289ef407a9d7`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AggregateError/proto-from-ctor-realm.js
+
+Blob: `5575b8c10975444504b036cbb9b696da499c3c26`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AggregateError/proto.js
+
+Blob: `0149c38054718bbc3270cce4b6e87b7fe1748b3e`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AggregateError/prototype/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AggregateError/prototype/constructor.js
+
+Blob: `de481f082e90690d360fa3b95f99d569f246da7f`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AggregateError/prototype/errors-absent-on-prototype.js
+
+Blob: `b956a12d5f32e8a922f715379de5f39f7124b9b5`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AggregateError/prototype/message.js
+
+Blob: `c3ed7d98b14ac066a69a912348dce0c8761125c3`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AggregateError/prototype/name.js
+
+Blob: `7552a8af3512401617126691863776aa125082ee`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AggregateError/prototype/prop-desc.js
+
+Blob: `12b998f32cb3cbb77db787ac574d7038eb9c15bc`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AggregateError/prototype/proto.js
+
+Blob: `a42bab316ad46b7d5f1e06f41fa0dc52a6b0137c`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AggregateError/prototype/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/AggregateError/shell.js
+
+Blob: `6fbf1a63a4690cefec9d152dd0cc27df34695db5`. Role: test-path,source. Parse: module.
+
+- isConstructor @13-24; FunctionDeclaration; parameters=1; async=false; generator=false
+- (anonymous) @19-19; FunctionExpression; parameters=0; async=false; generator=false
+- checkSequence @38-47; FunctionDeclaration; parameters=2; async=false; generator=false
+- (anonymous) @39-44; FunctionExpression; parameters=2; async=false; generator=false
+- checkSettledPromises @49-101; FunctionDeclaration; parameters=3; async=false; generator=false
+- (anonymous) @60-100; ArrowFunctionExpression; parameters=2; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/15.4.5-1.js
+
+Blob: `5cefc5f280d21016a693e44b04ca40420c5d6c17`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/15.4.5.1-5-1.js
+
+Blob: `ca5c6f88e64bce4331456c8ce2e0eead2382b230`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/15.4.5.1-5-2.js
+
+Blob: `c0157dd77f22d55cc13d6a2916eac71cf7a0fbec`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.1_A1.1_T1.js
+
+Blob: `94bd07777f7bdd943bc4faf37480a911634b8122`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.1_A1.1_T2.js
+
+Blob: `864c449d4b1f5dfb3eacb87d4d3332ac02c08cb7`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.1_A1.1_T3.js
+
+Blob: `81e7b2db3109f58254dae1ca74da892a2fd898d4`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.1_A1.2_T1.js
+
+Blob: `c398a6535c04be94ff78d60247774d4497a03eae`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.1_A1.3_T1.js
+
+Blob: `cbb64bf16612bd91f9374e46f853565cd61b62d9`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.1_A2.1_T1.js
+
+Blob: `335ea90b3cf5b7fb6ac24a996b96ebf35d865074`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.1_A2.2_T1.js
+
+Blob: `b2cbaa38fed96926d304bfc89772b22a60d6612f`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.1_A3.1_T1.js
+
+Blob: `1e762e4a9f177e8be318c3b28a1ea0b9d7c7e18b`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.2.1_A1.1_T1.js
+
+Blob: `e682359d1b6f6064e209fef6823648e47022dd08`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.2.1_A1.1_T2.js
+
+Blob: `17a7a33d2e4cd60a8576be4810111cb50a3d6ed6`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.2.1_A1.1_T3.js
+
+Blob: `4bc7de6ea38fd2f2161229cf50f4f8a34fed8ba0`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.2.1_A1.2_T1.js
+
+Blob: `080ed966349da3f8d71f8a1b07c720e807e37411`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.2.1_A1.3_T1.js
+
+Blob: `15c5531212dc6216ed9fd4d8301185457a204687`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.2.1_A2.1_T1.js
+
+Blob: `c2e82b8c81e11f65211948bd9de1d323931401a8`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.2.1_A2.2_T1.js
+
+Blob: `8b56efd0ac8f142e9661eb1871bcba2896525061`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.3_A1.1_T1.js
+
+Blob: `c6872c6a8e1e96407ccb51f2d855254673a3282e`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.3_A1.1_T2.js
+
+Blob: `53fbd5f169858b87fc7de61f92c19b2ddacccf92`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.3_A1.1_T3.js
+
+Blob: `ac8d7021b30a6b32d2a24b836338b4df4ae50d70`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.5.1_A1.2_T2.js
+
+Blob: `aa7add8256453f3c650b59ddb65765eefd39fecf`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.5.1_A2.1_T1.js
+
+Blob: `7edca01d0f6d2b7ab1fcbb80621a9853028cb39b`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.5.1_A2.2_T1.js
+
+Blob: `0cf2eab493e55b0bab7b6e61dde9878c1e4cacc5`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.5.1_A2.3_T1.js
+
+Blob: `9a0a14eaba11990bdd94766ca4aed592200445ec`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.5.2_A1_T1.js
+
+Blob: `6da4cde919fa9c810d0d54c1ab231a86718fd99f`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.5.2_A1_T2.js
+
+Blob: `7cca401c0497c201956f3bcad690730e20649f8e`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.5.2_A2_T1.js
+
+Blob: `f4f37defe321c397671cac653030a517174bfaf8`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.5.2_A3_T1.js
+
+Blob: `bf423b476c3ecf24a15a9740268dcd4dff7d7905`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.5.2_A3_T2.js
+
+Blob: `1a7de49f02048e229dba2bbb1b0fdec2ee69ef25`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4.5.2_A3_T3.js
+
+Blob: `63bee674937c8fe36134cf8bf0d98b9acd7cb0c8`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4_A1.1_T10.js
+
+Blob: `6ba208ed862c22d81a4f1b7ac929409c6d2f29fd`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4_A1.1_T4.js
+
+Blob: `8918ed2b0841b94661b960bbaa5ce2b5b2235a74`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4_A1.1_T5.js
+
+Blob: `eced3ea7c4a0f2069b01980880da265ac72ac63c`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4_A1.1_T6.js
+
+Blob: `ba9403e4792d96b487af727dfb9467998603dd0d`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4_A1.1_T7.js
+
+Blob: `119c825b160f18a6ea3119bd883083ebe3ce6740`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4_A1.1_T8.js
+
+Blob: `feb6e094a03d42bf7a0fe625797c45b61fc0f820`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/S15.4_A1.1_T9.js
+
+Blob: `2b56d5a27bc65b10045ee4d85d7e5a393a176bd7`. Role: test-path,source. Parse: module.
+
+- valueOf @14-16; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @23-25; FunctionExpression; parameters=0; async=false; generator=false
+- toString @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @35-37; FunctionExpression; parameters=0; async=false; generator=false
+- toString @38-40; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @48-50; FunctionExpression; parameters=0; async=false; generator=false
+- toString @51-53; FunctionExpression; parameters=0; async=false; generator=false
+- toString @64-66; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @73-75; FunctionExpression; parameters=0; async=false; generator=false
+- toString @76-78; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @86-88; FunctionExpression; parameters=0; async=false; generator=false
+- toString @89-91; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @103-105; FunctionExpression; parameters=0; async=false; generator=false
+- toString @106-108; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/Symbol.species/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/Symbol.species/length.js
+
+Blob: `fba06806a37ea4f98b3b5d05fddea6eb350cd015`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/Symbol.species/return-value.js
+
+Blob: `96c47838e1643d7516cdb8a11f219c3581a31e2b`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/Symbol.species/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/Symbol.species/symbol-species-name.js
+
+Blob: `f74dac394e68b3642f52db2dd17dca0eace36830`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/Symbol.species/symbol-species.js
+
+Blob: `5aa214e570aec4c2883a56c4aabed20dd21e9e30`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/constructor.js
+
+Blob: `294e63ad80818b5e3bd6a426d99aa58f6bd3e1d1`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/from/Array.from-descriptor.js
+
+Blob: `9d85c89ac24a4d75cddcca248e27faf0ff7db8ea`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/from/Array.from-name.js
+
+Blob: `7aecd2cb32d04c38cd1b7970e92cca2490d1c101`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/from/Array.from_arity.js
+
+Blob: `9442265a5eab5472f3dc64414e94a56137b51634`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/from/Array.from_forwards-length-for-array-likes.js
+
+Blob: `8bb73635eef2864ca9d01d56c7031b1b52702225`. Role: test-path,source. Parse: module.
+
+- MyCollection @26-28; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/array-like-has-length-but-no-indexes-with-values.js
+
+Blob: `e83db0f6564a4a0e1dbe5cb8b0a130bd7830bfdd`. Role: test-path,source. Parse: module.
+
+- (anonymous) @33-33; ArrowFunctionExpression; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/from/calling-from-valid-1-noStrict.js
+
+Blob: `21eb245493773104b53ff966a0653ed3f9ef9ba9`. Role: test-path,source. Parse: module.
+
+- mapFn @36-42; FunctionDeclaration; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/calling-from-valid-1-onlyStrict-strict.js
+
+Blob: `415c0f8a350a65af3845a2e28062e678bc7d5527`. Role: test-path,source. Parse: module.
+
+- mapFn @37-43; FunctionDeclaration; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/calling-from-valid-2.js
+
+Blob: `835f3d3b97df53d4d543156445e252dc7741bfd5`. Role: test-path,source. Parse: module.
+
+- mapFn @37-43; FunctionDeclaration; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/elements-added-after.js
+
+Blob: `7676448d3234aa459dfc8e80f45da76ee6f5ce6d`. Role: test-path,source. Parse: module.
+
+- mapFn @23-30; FunctionDeclaration; parameters=2; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/elements-deleted-after.js
+
+Blob: `5b63a932aa78cec7771439a47e17e41c3de1d6d0`. Role: test-path,source. Parse: module.
+
+- mapFn @16-23; FunctionDeclaration; parameters=2; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/elements-updated-after.js
+
+Blob: `210aaf5fd46afe1619781714e499df2d1bcef54b`. Role: test-path,source. Parse: module.
+
+- mapFn @12-21; FunctionDeclaration; parameters=2; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/from-array.js
+
+Blob: `708a4779bcf7d8a1fc586a20c4d45d1673224a07`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/from/from-string.js
+
+Blob: `88772a85ecb6e6922ce08900102b832a5e297201`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/from/get-iter-method-err.js
+
+Blob: `c7795c53d1ba3c153dd47f60de4d6aa5f8793427`. Role: test-path,source. Parse: module.
+
+- get @15-17; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @20-22; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/items-is-arraybuffer.js
+
+Blob: `6a93179741b9ad14bb231d3654cd89e5ed64995d`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/from/items-is-null-throws.js
+
+Blob: `4142bc2553f265be79167ab29a33c9ede555a00c`. Role: test-path,source. Parse: module.
+
+- (anonymous) @15-17; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/iter-adv-err.js
+
+Blob: `66030a8e68591a8af0a09fb3a5e1fc8858cfe336`. Role: test-path,source. Parse: module.
+
+- items.[computed] @18-24; FunctionExpression; parameters=0; async=false; generator=false
+- next @20-22; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @26-28; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/iter-cstm-ctor-err.js
+
+Blob: `5b54e6d9e94a89a74d114ed72c5ceda069fad299`. Role: test-path,source. Parse: module.
+
+- C @18-20; FunctionExpression; parameters=0; async=false; generator=false
+- items.[computed] @22-22; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @24-26; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/iter-cstm-ctor.js
+
+Blob: `28922e7062f95842b6b6eaf8c02b6a95895d490e`. Role: test-path,source. Parse: module.
+
+- C @19-23; FunctionExpression; parameters=0; async=false; generator=false
+- items.[computed] @26-34; FunctionExpression; parameters=0; async=false; generator=false
+- next @28-32; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/iter-get-iter-err.js
+
+Blob: `278207b6b83f6a130c206eff40ad4ffa4c15ef26`. Role: test-path,source. Parse: module.
+
+- itemsPoisonedSymbolIterator.[computed] @16-18; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @20-22; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/iter-get-iter-val-err.js
+
+Blob: `c7ce81ce0b99e3d53e6e50091d2bb7cb7c4f3fba`. Role: test-path,source. Parse: module.
+
+- get @20-22; FunctionExpression; parameters=0; async=false; generator=false
+- itemsPoisonedIteratorValue.[computed] @24-30; FunctionExpression; parameters=0; async=false; generator=false
+- next @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @32-34; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/iter-map-fn-args.js
+
+Blob: `bab7631d3f9444c799641148cd00ba460a4eefcf`. Role: test-path,source. Parse: module.
+
+- mapFn @36-38; FunctionExpression; parameters=2; async=false; generator=false
+- items.[computed] @43-55; FunctionExpression; parameters=0; async=false; generator=false
+- next @45-53; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/iter-map-fn-err.js
+
+Blob: `beeca8e4ebcd25fd19c770f789411436d50bcee3`. Role: test-path,source. Parse: module.
+
+- mapFn @20-22; FunctionExpression; parameters=0; async=false; generator=false
+- items.[computed] @24-35; FunctionExpression; parameters=0; async=false; generator=false
+- return @26-28; FunctionExpression; parameters=0; async=false; generator=false
+- next @29-33; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @37-39; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/iter-map-fn-return.js
+
+Blob: `075bc6cd30009aa38e09f5201a6c5b39728f26a7`. Role: test-path,source. Parse: module.
+
+- mapFn @37-42; FunctionExpression; parameters=2; async=false; generator=false
+- items.[computed] @48-60; FunctionExpression; parameters=0; async=false; generator=false
+- next @50-58; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/iter-map-fn-this-arg.js
+
+Blob: `16e9381cafe06f1d8b5294dd3f9663dffeadccb1`. Role: test-path,source. Parse: module.
+
+- mapFn @33-35; FunctionExpression; parameters=0; async=false; generator=false
+- items.[computed] @39-51; FunctionExpression; parameters=0; async=false; generator=false
+- next @41-49; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/iter-map-fn-this-non-strict.js
+
+Blob: `bd54bcfa19be297ca8bb05078f749901b32c4727`. Role: test-path,source. Parse: module.
+
+- mapFn @34-36; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @38-40; FunctionExpression; parameters=0; async=false; generator=false
+- items.[computed] @42-54; FunctionExpression; parameters=0; async=false; generator=false
+- next @44-52; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/iter-map-fn-this-strict-strict.js
+
+Blob: `0404185f104b58869a72cbd727d11abf57ef08d2`. Role: test-path,source. Parse: module.
+
+- mapFn @35-37; FunctionExpression; parameters=0; async=false; generator=false
+- items.[computed] @40-52; FunctionExpression; parameters=0; async=false; generator=false
+- next @42-50; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/iter-set-elem-prop-err.js
+
+Blob: `96ce7a6f711ce979bbdaf86dcf6ef9f7db23c093`. Role: test-path,source. Parse: module.
+
+- constructorSetsIndex0ConfigurableFalse @19-24; FunctionExpression; parameters=0; async=false; generator=false
+- items.[computed] @31-46; FunctionExpression; parameters=0; async=false; generator=false
+- return @33-35; FunctionExpression; parameters=0; async=false; generator=false
+- next @36-44; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @48-50; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/iter-set-elem-prop-non-writable.js
+
+Blob: `ff34d68d117ed3905f6eb2f062a7e3840e442dfb`. Role: test-path,source. Parse: module.
+
+- items @23-25; FunctionExpression; parameters=0; async=false; generator=true
+- A @27-34; FunctionExpression; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/iter-set-elem-prop.js
+
+Blob: `20f0573f9833943e32bd365d98152c2817769aa0`. Role: test-path,source. Parse: module.
+
+- items.[computed] @34-45; FunctionExpression; parameters=0; async=false; generator=false
+- next @36-43; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/iter-set-length-err.js
+
+Blob: `215ca22e1e122ebf07a1244c63553e616ec1a287`. Role: test-path,source. Parse: module.
+
+- poisonedPrototypeLength @18-18; FunctionExpression; parameters=0; async=false; generator=false
+- set @21-23; FunctionExpression; parameters=1; async=false; generator=false
+- items.[computed] @25-33; FunctionExpression; parameters=0; async=false; generator=false
+- next @27-31; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @35-37; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/iter-set-length.js
+
+Blob: `341e0b4a145aad9f2814b373f71f4dda6dc269ed`. Role: test-path,source. Parse: module.
+
+- items.[computed] @21-29; FunctionExpression; parameters=0; async=false; generator=false
+- next @23-27; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/mapfn-is-not-callable-typeerror.js
+
+Blob: `663355bf7eefb9d13b82a7e6754f1cb326c14c20`. Role: test-path,source. Parse: module.
+
+- (anonymous) @16-18; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @20-22; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @24-26; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @28-30; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @32-34; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/mapfn-is-symbol-throws.js
+
+Blob: `8583e376c6c506284d3064e9a1120b738e1c27a8`. Role: test-path,source. Parse: module.
+
+- (anonymous) @18-20; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/mapfn-throws-exception.js
+
+Blob: `3b3148e6162b6df67977bff9a5e20bf54a0c7446`. Role: test-path,source. Parse: module.
+
+- mapFnThrows @12-14; FunctionDeclaration; parameters=3; async=false; generator=false
+- (anonymous) @16-18; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/not-a-constructor.js
+
+Blob: `067c4e88adc87099868fa0c992f5b5499e39b2ee`. Role: test-path,source. Parse: module.
+
+- (anonymous) @26-28; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/proto-from-ctor-realm.js
+
+Blob: `2debc14d0241a868d12ebb6bba2d68a391a5b909`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/from/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/from/source-array-boundary.js
+
+Blob: `69b35e4003542603d6d378988023a199cfe1c25d`. Role: test-path,source. Parse: module.
+
+- mapFn @13-19; FunctionDeclaration; parameters=2; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/source-object-constructor.js
+
+Blob: `7a0d1db9f19b0997f5a4fc2d5157452ec7bccd9f`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/from/source-object-iterator-1.js
+
+Blob: `908e5dad1619f98adbdde6de52219e342340fd3c`. Role: test-path,source. Parse: module.
+
+- (anonymous) @13-28; FunctionExpression; parameters=0; async=false; generator=false
+- next @16-18; FunctionExpression; parameters=0; async=false; generator=false
+- val @20-26; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @30-32; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/source-object-iterator-2.js
+
+Blob: `3f56c3ae78ae9d9605839a1c86a973197f98309b`. Role: test-path,source. Parse: module.
+
+- (anonymous) @13-31; FunctionExpression; parameters=0; async=false; generator=false
+- next @16-21; FunctionExpression; parameters=0; async=false; generator=false
+- val @23-29; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/source-object-length-set-elem-prop-err.js
+
+Blob: `119e5898b99d5b0200908ba0525e53c5a8f412d5`. Role: test-path,source. Parse: module.
+
+- A1 @34-37; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @39-41; FunctionExpression; parameters=0; async=false; generator=false
+- A2 @43-48; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @50-52; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/source-object-length-set-elem-prop-non-writable.js
+
+Blob: `0ade4a35795217339dcc921f37f95a9dcfc999d9`. Role: test-path,source. Parse: module.
+
+- A @30-37; FunctionExpression; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/from/source-object-length.js
+
+Blob: `c9262c824b3438097163da6f38d64466c550f0ca`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/from/source-object-missing.js
+
+Blob: `0acd29a6949bb730793fe7312fa98f14cb455e52`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/from/source-object-without.js
+
+Blob: `d3f131aead6e66b446e2f4d8f47e06434fcdb797`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/from/this-null.js
+
+Blob: `a46feccd5108ee4a2537d9d73e7b93dbffaabef0`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/built-ins/Array/fromAsync/async-iterable-async-mapped-awaits-once.js
+
+Blob: `19fea4fdfa65c86f940f8ba1ec5307f27055e9f3`. Role: test-path,source. Parse: module.
+
+- (anonymous) @14-31; FunctionExpression; parameters=0; async=true; generator=false
+- generateInput @15-17; FunctionDeclaration; parameters=0; async=true; generator=true
+- (anonymous) @20-29; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- then @24-27; FunctionExpression; parameters=2; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/fromAsync/async-iterable-input-does-not-await-input.js
+
+Blob: `7512a69e3fb0458407cd85fff99ede1bb61c661e`. Role: test-path,source. Parse: module.
+
+- (anonymous) @13-39; FunctionExpression; parameters=0; async=true; generator=false
+- createInput @17-34; FunctionDeclaration; parameters=0; async=false; generator=false
+- (anonymous) @21-32; FunctionExpression; parameters=0; async=false; generator=false
+- next @24-30; FunctionExpression; parameters=0; async=true; generator=false
+
+### js/src/tests/test262/built-ins/Array/fromAsync/async-iterable-input-iteration-err.js
+
+Blob: `c4c9baec1ec8836feaccec1ab71efc782bab0c9a`. Role: test-path,source. Parse: module.
+
+- (anonymous) @14-21; FunctionExpression; parameters=0; async=true; generator=false
+- generateInput @15-17; FunctionDeclaration; parameters=0; async=true; generator=true
+- (anonymous) @20-20; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/fromAsync/async-iterable-input.js
+
+Blob: `edf1c21de9d22223d91dc603983dfe4fb5bc6b67`. Role: test-path,source. Parse: module.
+
+- (anonymous) @14-24; FunctionExpression; parameters=0; async=true; generator=false
+- generateInput @17-19; FunctionDeclaration; parameters=0; async=true; generator=true
+
+### js/src/tests/test262/built-ins/Array/fromAsync/asyncitems-array-add-to-empty.js
+
+Blob: `ac4687646e9981bc7bb3d9f87847a4c02c9d4b72`. Role: test-path,source. Parse: module.
+
+- (anonymous) @36-45; FunctionExpression; parameters=0; async=true; generator=false
+
+### js/src/tests/test262/built-ins/Array/fromAsync/asyncitems-array-add-to-singleton.js
+
+Blob: `4cc0f501fa14d6f7e9c48f01554fd766d27e1d01`. Role: test-path,source. Parse: module.
+
+- (anonymous) @36-44; FunctionExpression; parameters=0; async=true; generator=false
+
+### js/src/tests/test262/built-ins/Array/fromAsync/asyncitems-array-add.js
+
+Blob: `6cf02babb91c2979541dddfbe8aecc77850c05e8`. Role: test-path,source. Parse: module.
+
+- (anonymous) @36-44; FunctionExpression; parameters=0; async=true; generator=false
+
+### js/src/tests/test262/built-ins/Array/fromAsync/asyncitems-array-mutate.js
+
+Blob: `2d910d25240763cbbab8c5d487b80664735dc4fa`. Role: test-path,source. Parse: module.
+
+- (anonymous) @36-45; FunctionExpression; parameters=0; async=true; generator=false
+
+### js/src/tests/test262/built-ins/Array/fromAsync/asyncitems-array-remove.js
+
+Blob: `6733b422605503b1119267ea6751b6ad1311069d`. Role: test-path,source. Parse: module.
+
+- (anonymous) @36-44; FunctionExpression; parameters=0; async=true; generator=false
+
+### js/src/tests/test262/built-ins/Array/fromAsync/asyncitems-arraybuffer.js
+
+Blob: `59df9897b51f65fc50ebb4614ccf775c5e11787b`. Role: test-path,source. Parse: module.
+
+- (anonymous) @14-18; FunctionExpression; parameters=0; async=true; generator=false
+
+### js/src/tests/test262/built-ins/Array/fromAsync/asyncitems-arraylike-holes.js
+
+Blob: `5396f9015b95cf4c3423ee4124ab0455e49836c3`. Role: test-path,source. Parse: module.
+
+- (anonymous) @15-25; FunctionExpression; parameters=0; async=true; generator=false
+
+### js/src/tests/test262/built-ins/Array/fromAsync/asyncitems-arraylike-length-accessor-throws.js
+
+Blob: `81932ec791096a6838adba3a998444c9fcde745e`. Role: test-path,source. Parse: module.
+
+- (anonymous) @15-26; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @16-20; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- length @17-19; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @22-25; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/built-ins/Array/fromAsync/asyncitems-arraylike-promise.js
+
+Blob: `141ce7f08cbeac705ef0e46b81af7082794f6bb8`. Role: test-path,source. Parse: module.
+
+- (anonymous) @14-32; FunctionExpression; parameters=0; async=true; generator=false
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.

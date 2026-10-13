@@ -1,0 +1,1056 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-import-defer-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-import-defer-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-import-source-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-import-source-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-import-source-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-import-source-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-not-extensible-args.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-typeof-import-call-source-property.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-typeof-import-source.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-typeof-import.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-import-call-unknown.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-import-defer-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-import-defer-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-import-defer-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-import-defer-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-import-source-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-import-source-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-import-source-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-import-source-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-not-extensible-args.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-typeof-import-call-source-property.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-typeof-import-source.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-typeof-import.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-import-call-unknown.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-import-defer-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-import-defer-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-import-defer-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-import-defer-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-import-source-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-import-source-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-import-source-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-import-source-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-not-extensible-args.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-import-call-unknown.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-import-defer-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-import-defer-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-import-defer-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-import-defer-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-import-source-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-import-source-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-import-source-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-import-source-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-not-extensible-args.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-typeof-import-call-source-property.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-typeof-import-source.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-typeof-import.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-typeof-import-call-source-property.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-typeof-import-source.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-typeof-import.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-import-call-unknown.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-import-defer-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-import-defer-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-import-defer-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-import-defer-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-import-source-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-import-source-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-import-source-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-import-source-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-not-extensible-args.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-typeof-import-call-source-property.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-typeof-import-source.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-typeof-import.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-import-call-unknown.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-import-defer-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-import-defer-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-import-defer-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-import-defer-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-import-source-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-import-source-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-import-source-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-import-source-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-import-call-unknown.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-import-defer-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-import-defer-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-import-defer-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-import-defer-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-import-source-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-import-source-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-import-source-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-import-source-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-not-extensible-args.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-typeof-import-call-source-property.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-typeof-import-source.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-typeof-import.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-not-extensible-args.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-typeof-import-call-source-property.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-typeof-import-source.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-typeof-import.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-import-call-unknown.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-import-defer-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-import-defer-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-import-defer-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-import-defer-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-import-source-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-import-source-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-import-source-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-import-source-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-not-extensible-args.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-typeof-import-call-source-property.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-typeof-import-source.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-typeof-import.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-import-call-unknown.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-import-defer-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-import-defer-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-import-defer-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-import-defer-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-import-source-assignment-expr-not-optional.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-import-source-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-import-source-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-import-source-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-no-new-call-expression-prop-access.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-no-new-call-expression.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-no-rest-param.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-not-extensible-args.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-typeof-import-call-source-property.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-typeof-import-source.js","js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-typeof-import.js"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013"}} -->
+# firefox/js JavaScript function map 577
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-import-defer-no-new-call-expression.js
+
+Blob: `3a36ac20749a27bba2744ac3be2145071eaf8f07`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-import-defer-no-rest-param.js
+
+Blob: `2a31a5da5942a4966939017c736f37dda8f5e4b0`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-import-source-assignment-expr-not-optional.js
+
+Blob: `74d5131ed383b49562ba4708629451fdc87677d9`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-import-source-no-new-call-expression-prop-access.js
+
+Blob: `6a354d73e832e82d8865bbbe91544908578594a3`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-import-source-no-new-call-expression.js
+
+Blob: `9d3316d4aeb06b30b092d8ba3b40ef42ec838750`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-import-source-no-rest-param.js
+
+Blob: `d9924bf28ce69cdef5d671333cd2e43fc275f4b5`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-no-new-call-expression-prop-access.js
+
+Blob: `0349163337ae9cf5e274e4970a292b4af1003d35`. Role: test-path,source. Parse: module.
+
+- (anonymous) @42-42; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- Module  @42; dynamic-import-literal
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-no-new-call-expression.js
+
+Blob: `6b33cf2e4774c6ad9fbc3c3b4fdc8d4d71f05cd9`. Role: test-path,source. Parse: module.
+
+- (anonymous) @37-37; ArrowFunctionExpression; parameters=0; async=true; generator=false
+- Module  @37; dynamic-import-literal
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-no-rest-param.js
+
+Blob: `19d0cd94b9372667018c442a984601640b78000f`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ...
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-not-extensible-args.js
+
+Blob: `9b123543f1f04be975198225ff3673ceb6136d58`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ''
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-typeof-import-call-source-property.js
+
+Blob: `9ce1984d06ad42c91bb4a76e4fe9540546212290`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-typeof-import-source.js
+
+Blob: `92ce342618eb9a542db3a3c94da7b1d31f2e4bb9`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-arrow-function-return-await-typeof-import.js
+
+Blob: `37fac4affa6090309a1a6330175926dc2ba9950a`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token )
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-assignment-expr-not-optional.js
+
+Blob: `f41d9ff14d5df01dec1dc2217ceff3364e30a1b0`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token )
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-assignment-expr-not-optional.js
+
+Blob: `d1bf625e57049347d9c47d96c8352bdf531f4836`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token )
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-import-call-unknown.js
+
+Blob: `ae3f7cb782cb949385a6a5736f5367a8ed4e65bd`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-import-defer-assignment-expr-not-optional.js
+
+Blob: `a277d6ecd75d15b8d19d7ca4cee6b97f51764a93`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-import-defer-no-new-call-expression-prop-access.js
+
+Blob: `a874fd91a959d0f3fbcb0db3726b5ecc0f9cc140`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-import-defer-no-new-call-expression.js
+
+Blob: `4a2a7cb9edbd3897ac6584c9ef5a71ed470c4e77`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-import-defer-no-rest-param.js
+
+Blob: `ba6dc494d509a68cfb1540b8768a33ad49bdc21e`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-import-source-assignment-expr-not-optional.js
+
+Blob: `1ad3e5fcd77a3802b7ea6ebf4b5d47c97c880d4e`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-import-source-no-new-call-expression-prop-access.js
+
+Blob: `395f852e55d61b63bb661eabd3d431c350e201e7`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-import-source-no-new-call-expression.js
+
+Blob: `b193535ffe1a99a0c7daa33e8c6964b28de7b635`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-import-source-no-rest-param.js
+
+Blob: `9cb17b662ca6572133757230196d020168c1368a`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-no-new-call-expression-prop-access.js
+
+Blob: `3d08787bc23a5c0b285fe0d9daaefb15f4f72ceb`. Role: test-path,source. Parse: module.
+
+- f @42-44; FunctionDeclaration; parameters=0; async=true; generator=false
+- Module  @43; dynamic-import-literal
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-no-new-call-expression.js
+
+Blob: `01d36264f007bde89410b6db9b19bf0bfde8a6d9`. Role: test-path,source. Parse: module.
+
+- f @37-39; FunctionDeclaration; parameters=0; async=true; generator=false
+- Module  @38; dynamic-import-literal
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-no-rest-param.js
+
+Blob: `dbf1c62cfa011a783b4998b23bf4ac9c4035d6ab`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ...
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-not-extensible-args.js
+
+Blob: `62ec93fe041b77edaa623da35a4d57d81bc4f889`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ''
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-typeof-import-call-source-property.js
+
+Blob: `83330c81de07671c522cc802c817b87bc8cbc371`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-typeof-import-source.js
+
+Blob: `4d9ba02c1d3d9e2867ba9af333e1f30e0a4c0435`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-await-typeof-import.js
+
+Blob: `9d684503a37900036c96439dfe624b7ac93feaff`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ;
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-import-call-unknown.js
+
+Blob: `1bb2d1161f53970ab367cf86f5de1421f01663bc`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-import-defer-assignment-expr-not-optional.js
+
+Blob: `c8d8c1c3863893c952d2ba21e4ea0884e7946b3c`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-import-defer-no-new-call-expression-prop-access.js
+
+Blob: `32ff407f66359915e2f1cf22237b0c04edbdbd62`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-import-defer-no-new-call-expression.js
+
+Blob: `d35a6a10f23cfdbb75611c453532731cff70f17e`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-import-defer-no-rest-param.js
+
+Blob: `fcb2579dbf030fde21f37b644d93c6cb52c0a52e`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-import-source-assignment-expr-not-optional.js
+
+Blob: `2481442659b7cd1650f37ad6dd7de0112459b08e`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-import-source-no-new-call-expression-prop-access.js
+
+Blob: `e7db3d7c584b0676a32a74ab74e38632f952ce3e`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-import-source-no-new-call-expression.js
+
+Blob: `6fcce56bd4b14ccb6bf6c8bd3bdec82b9737c40c`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-import-source-no-rest-param.js
+
+Blob: `746cb2e94f05042c220b5fc4048361fffd76aab5`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-no-new-call-expression-prop-access.js
+
+Blob: `f7c4a0719fe5e4d29eebaf187cb6f6510cce3ed8`. Role: test-path,source. Parse: module.
+
+- f @42-44; FunctionDeclaration; parameters=0; async=true; generator=false
+- Module  @43; dynamic-import-literal
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-no-new-call-expression.js
+
+Blob: `0f1c9fe21b90c213e6b4a51a4f76c2dc73943087`. Role: test-path,source. Parse: module.
+
+- f @37-39; FunctionDeclaration; parameters=0; async=true; generator=false
+- Module  @38; dynamic-import-literal
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-no-rest-param.js
+
+Blob: `d63e9c9c5f80e4fd8be53b8cef30f425e63dedbc`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ...
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-not-extensible-args.js
+
+Blob: `1373d34d56d0a8bdd25e14ab7f0b89a17ae30c50`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ''
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-assignment-expr-not-optional.js
+
+Blob: `a78a8a821bc4479a11856d79c5a82b5120c84663`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token )
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-import-call-unknown.js
+
+Blob: `98c9aa0ff1a6b136f350441de84db5f9364f162b`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-import-defer-assignment-expr-not-optional.js
+
+Blob: `be02e49533ca40f0a033b207a0aafc6afae0a831`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-import-defer-no-new-call-expression-prop-access.js
+
+Blob: `22955d38e62560356869df25c5f719a8904ece93`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-import-defer-no-new-call-expression.js
+
+Blob: `19ac274836fab48ac786a763ef80a0f62d0c6e26`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-import-defer-no-rest-param.js
+
+Blob: `538679cf7dd5279b3a25e1977f9c8a531cabf9ea`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-import-source-assignment-expr-not-optional.js
+
+Blob: `7211dafba00ba1f39a1cd59620f86ac7c401bfae`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-import-source-no-new-call-expression-prop-access.js
+
+Blob: `5775c7e6a079c60fe9842f5302e6d72fdaf172d1`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-import-source-no-new-call-expression.js
+
+Blob: `d2255e57c206f07afd3b16317d03cb989e5328ad`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-import-source-no-rest-param.js
+
+Blob: `da14db7429e44b253dab6ca1f38b85bf3b346bbc`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-no-new-call-expression-prop-access.js
+
+Blob: `ee1f61f239bedf51ff128603ff91ff513245348b`. Role: test-path,source. Parse: module.
+
+- f @42-44; FunctionDeclaration; parameters=0; async=true; generator=false
+- Module  @43; dynamic-import-literal
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-no-new-call-expression.js
+
+Blob: `af7017f8e592cdc50726171f06b1e532e1da956a`. Role: test-path,source. Parse: module.
+
+- f @37-39; FunctionDeclaration; parameters=0; async=true; generator=false
+- Module  @38; dynamic-import-literal
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-no-rest-param.js
+
+Blob: `48d4cc8c5072bd4fbce5dbf21cdead4c5aec796d`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ...
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-not-extensible-args.js
+
+Blob: `c0e5b889e265f8cd6c8ab380c7ea646b80ec2cab`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ''
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-typeof-import-call-source-property.js
+
+Blob: `be5c4d9e4e8a4c77697b8c51f04a1afccfa0d923`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-typeof-import-source.js
+
+Blob: `d1c385c5f9c757b67dc4e50703faf1dac472f681`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-return-await-typeof-import.js
+
+Blob: `a6059dd892d1fed1a26894c344ccf1147306ec07`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ;
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-typeof-import-call-source-property.js
+
+Blob: `38093bf2ada0d96301bcc795bfe2f62890219c61`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-typeof-import-source.js
+
+Blob: `cd33e039d7a7a8b7dd8403868808e701510b0064`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-function-typeof-import.js
+
+Blob: `f5bda057c64e83cde7bdd79a0bde45bd5fd0d00f`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ;
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-assignment-expr-not-optional.js
+
+Blob: `3c0354c36706dfbac0af748d839eccf881024344`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token )
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-import-call-unknown.js
+
+Blob: `d8adde1bdfbabf5aa85a124ffd7458dea5b034f8`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-import-defer-assignment-expr-not-optional.js
+
+Blob: `e2e043f91617d6c3ccdf5ab58ba067a5ac94beca`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-import-defer-no-new-call-expression-prop-access.js
+
+Blob: `65ad52a78c73405fd55456f0d4989472e3153449`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-import-defer-no-new-call-expression.js
+
+Blob: `af48eb409e4cf52c5b19caf0ab08ff359014f5f6`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-import-defer-no-rest-param.js
+
+Blob: `e664c6821d82f0f05b286604184b62b8767dbc1b`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-import-source-assignment-expr-not-optional.js
+
+Blob: `777984313b226b76464d344012fbb9df273bfed4`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-import-source-no-new-call-expression-prop-access.js
+
+Blob: `8ddd635ea91efe837347ac5ec36f4c8d3f3053f0`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-import-source-no-new-call-expression.js
+
+Blob: `90f7d5a57f5b3488c09d8a84677924c170382363`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-import-source-no-rest-param.js
+
+Blob: `78dcbf75a98f7475443218163426c25fe86918ef`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-no-new-call-expression-prop-access.js
+
+Blob: `4566976194d54c33eed3c65dda5bcdad0380497a`. Role: test-path,source. Parse: module.
+
+- f @42-44; FunctionDeclaration; parameters=0; async=true; generator=true
+- Module  @43; dynamic-import-literal
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-no-new-call-expression.js
+
+Blob: `a180c76d2e4252bd9874d50a5b3f03c4bae24ec9`. Role: test-path,source. Parse: module.
+
+- f @37-39; FunctionDeclaration; parameters=0; async=true; generator=true
+- Module  @38; dynamic-import-literal
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-no-rest-param.js
+
+Blob: `3a36475b66143e1b884ca34a5d1beca1039d3f21`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ...
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-not-extensible-args.js
+
+Blob: `bbabf51ae284adaffcb7860b3f84ec9e5fb0799d`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ''
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-typeof-import-call-source-property.js
+
+Blob: `7c1550d9f694506e1bfb2cd583ca2c62e5c23287`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-typeof-import-source.js
+
+Blob: `6de7cde415459a89011174be0db29d710719c201`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-async-gen-await-typeof-import.js
+
+Blob: `74dd1ebc868b927d41c8e06c5b51cde91e9f1295`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token }
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-assignment-expr-not-optional.js
+
+Blob: `7452bd129a68b5e46a79a226b464fc7d8e5ef60c`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token )
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-import-call-unknown.js
+
+Blob: `15288abc676cad9a6934cd96a6a5e6aed7acc54b`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-import-defer-assignment-expr-not-optional.js
+
+Blob: `30fa5843ec5d1c99d0f543b2230242427da3cf64`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-import-defer-no-new-call-expression-prop-access.js
+
+Blob: `a329b6084cd39153476d7be2f91574708a2a76fc`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-import-defer-no-new-call-expression.js
+
+Blob: `104cd9ae086cbf99dea61bf4b6c3f4daff3d8bff`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-import-defer-no-rest-param.js
+
+Blob: `0020491d08e899c49f1344c813f0555e18d8d5a3`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-import-source-assignment-expr-not-optional.js
+
+Blob: `91e8ac28fe545549b6e423e03a8d6b9841617c92`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-import-source-no-new-call-expression-prop-access.js
+
+Blob: `5e5b7c4eaac774216162c0c57532b835ccb96dd6`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-import-source-no-new-call-expression.js
+
+Blob: `699d1e2bc3f870e973fe847bc4fb1945a027689c`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-import-source-no-rest-param.js
+
+Blob: `8a30ab270a937bc000d42d660396dc86798e3ca6`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-assignment-expr-not-optional.js
+
+Blob: `d0315f0f99fb540a90738bc610809ee760e47ae6`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token )
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-import-call-unknown.js
+
+Blob: `ca6f125493470cd3f4e47eb159e6b15bc58fda5e`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-import-defer-assignment-expr-not-optional.js
+
+Blob: `d14a5ae23e4bb1225e0f5288a98796f4909698f6`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-import-defer-no-new-call-expression-prop-access.js
+
+Blob: `cfb6c88adefd44c94ccd00a0bcabb1ea495a547b`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-import-defer-no-new-call-expression.js
+
+Blob: `33048cb3dc95e602bb83ce766a3b15e8fc9dec19`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-import-defer-no-rest-param.js
+
+Blob: `a637368abd80c811127533685014817f63be7637`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-import-source-assignment-expr-not-optional.js
+
+Blob: `4b33245e00fb127e5da86cbc241b6ce76c842f30`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-import-source-no-new-call-expression-prop-access.js
+
+Blob: `6b64547b4f0eb32cd60627ad188f7b54dc4af817`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-import-source-no-new-call-expression.js
+
+Blob: `629cca8145cb8b2b39b69452efe0439ae6f5b873`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-import-source-no-rest-param.js
+
+Blob: `5a500e85d43685bc2453306b00fc0136eed63478`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-no-new-call-expression-prop-access.js
+
+Blob: `4cf00e276081f9d007e674e980d5125fb8cbd087`. Role: test-path,source. Parse: module.
+
+- Module  @43; dynamic-import-literal
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-no-new-call-expression.js
+
+Blob: `e7d2e7b7723cbf780c1a3c12515889cde8f2a891`. Role: test-path,source. Parse: module.
+
+- Module  @38; dynamic-import-literal
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-no-rest-param.js
+
+Blob: `256450971b9d6b633960b17ddf420bc0b916f1c6`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ...
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-not-extensible-args.js
+
+Blob: `7628fe57a122d43faae44a0c3003c589fe7ada7a`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ''
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-typeof-import-call-source-property.js
+
+Blob: `2c12de08a984ff6264a0982a4c5ac2706bccab38`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-typeof-import-source.js
+
+Blob: `2e268ba570c9a78af40fb0b0c668095e95f258ed`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-labeled-typeof-import.js
+
+Blob: `5c4ead6d9736ca5705b93024faa1f518a90dcf15`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ;
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-no-new-call-expression-prop-access.js
+
+Blob: `90fa8c49b1f07b057748d5e52c029d89c08e24e4`. Role: test-path,source. Parse: module.
+
+- Module  @43; dynamic-import-literal
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-no-new-call-expression.js
+
+Blob: `6e519ad4a028f6dc34236c27c4ee4e844a931522`. Role: test-path,source. Parse: module.
+
+- Module  @38; dynamic-import-literal
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-no-rest-param.js
+
+Blob: `d7cf1caee1b0dd569b19d1b9ee6d1e83d09f42f2`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ...
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-not-extensible-args.js
+
+Blob: `5ecf856ba00104099f7d7dade040f9ab3cecd51a`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ''
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-typeof-import-call-source-property.js
+
+Blob: `6904b50eb84d7c1c930060c018e6453cf878259b`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-typeof-import-source.js
+
+Blob: `e31f4fdae2879ec7833c030fb5aadafec4d48370`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-block-typeof-import.js
+
+Blob: `7ba2a82e7c9b60a6050d016f3e554e940a22d993`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ;
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-assignment-expr-not-optional.js
+
+Blob: `f8b900e5f5b6395d4bef364f27c573fee63cde0c`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token )
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-import-call-unknown.js
+
+Blob: `952668f1d4c7caf9aac802958d56fc9d32f19929`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-import-defer-assignment-expr-not-optional.js
+
+Blob: `60bb97b0e09aa29f975a9eac7177aa20fef1b584`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-import-defer-no-new-call-expression-prop-access.js
+
+Blob: `b87e1dcbcca76759246f5f88e4361ee24f8dd684`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-import-defer-no-new-call-expression.js
+
+Blob: `6bbd97a766492fe5ba6e07a57f302650cca7de20`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-import-defer-no-rest-param.js
+
+Blob: `c6207b819d4eddac3a3e76b0eae7509f61c7c272`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-import-source-assignment-expr-not-optional.js
+
+Blob: `8a44d2bdb6597c5c35d68246804cd90109879971`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-import-source-no-new-call-expression-prop-access.js
+
+Blob: `9e761c05dd3bad9fcb306c905863716f7bc2b232`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-import-source-no-new-call-expression.js
+
+Blob: `21cb40602bee449adc233fa3ecdddaab715ad003`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-import-source-no-rest-param.js
+
+Blob: `cbf7328141c5ae07d14855ec2a43c6b0b17477e1`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-no-new-call-expression-prop-access.js
+
+Blob: `f3a1541faf0a1aacd3d9178e973bb38f5fb6070a`. Role: test-path,source. Parse: module.
+
+- Module  @43; dynamic-import-literal
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-no-new-call-expression.js
+
+Blob: `7d7c6a03f6f4bb0c98fe3ffcede221a0feced3b1`. Role: test-path,source. Parse: module.
+
+- Module  @38; dynamic-import-literal
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-no-rest-param.js
+
+Blob: `d13e754090182cea9f944c1cab773b3f1328414a`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ...
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-not-extensible-args.js
+
+Blob: `27f71c5e487f737f2965bc56e7cdacbee7b87051`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ''
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-typeof-import-call-source-property.js
+
+Blob: `f1fd58cdead7c7ce6733f085aea813101c278524`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-typeof-import-source.js
+
+Blob: `34f2d032827c12c3ae7248fb660b13874cf9c5c5`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-do-while-typeof-import.js
+
+Blob: `6876a701619deae930daf1d6f9307f19f08cd88b`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ;
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-assignment-expr-not-optional.js
+
+Blob: `c5e65e3052d906d926f09743a936bc869520e23d`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token )
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-assignment-expr-not-optional.js
+
+Blob: `37dba7bca7e517ffa58d9e050f1781baf755662d`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token )
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-import-call-unknown.js
+
+Blob: `fee0456e3bcb6320428ec8e734e3f32ee6a44705`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-import-defer-assignment-expr-not-optional.js
+
+Blob: `c268f4cb4256377fca1ffb3bb4abb345c3a91286`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-import-defer-no-new-call-expression-prop-access.js
+
+Blob: `d0b8e4b7173db9fcc390fccf8c591b58e06963b5`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-import-defer-no-new-call-expression.js
+
+Blob: `6912aad93d4cc48b012dd5f5fab915b55c2817f7`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-import-defer-no-rest-param.js
+
+Blob: `798f14ebc0ff83b450699ab1cfc70ae9323bf08a`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-import-source-assignment-expr-not-optional.js
+
+Blob: `c79e1729f0c747aa9918d91b270d5e070932298e`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-import-source-no-new-call-expression-prop-access.js
+
+Blob: `4ad6175fbc53e9e689b08a9fc3dcd98d59ed3e8e`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-import-source-no-new-call-expression.js
+
+Blob: `139baf860c50c39c277c4491366f6c5108096a40`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-import-source-no-rest-param.js
+
+Blob: `fabc2f40784ff3e92cb09b0c9f18d809aa3cb71c`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-no-new-call-expression-prop-access.js
+
+Blob: `cea8f189ca0319991505adae4d51da73c8a35b6b`. Role: test-path,source. Parse: module.
+
+- Module  @44; dynamic-import-literal
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-no-new-call-expression.js
+
+Blob: `c889b7640dcb17a405a0a9d379f6acee389cf0b2`. Role: test-path,source. Parse: module.
+
+- Module  @39; dynamic-import-literal
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-no-rest-param.js
+
+Blob: `7bbc550c016d1cf46363ca87b10086bda03e1cf2`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ...
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-not-extensible-args.js
+
+Blob: `7a8b48ae28931ace74749364abcd4036e2994766`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ''
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-typeof-import-call-source-property.js
+
+Blob: `01a02ff0a855a8c7552cf17acd8288eb72b9610b`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-typeof-import-source.js
+
+Blob: `d449f3fe18adb1279a6071fa8cb303b799561867`. Role: test-path,source. Parse: failed.
+
+Failure: The only valid meta property for import is 'import.meta'
+
+
+### js/src/tests/test262/language/expressions/dynamic-import/syntax/invalid/nested-else-braceless-typeof-import.js
+
+Blob: `a4bfd9f9892032e3a1e26866a355ead17323e921`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ;
+
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.

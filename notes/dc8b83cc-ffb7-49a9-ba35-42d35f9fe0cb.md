@@ -1,0 +1,1006 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["js/src/tests/test262/language/expressions/generators/forbidden-ext/b2/shell.js","js/src/tests/test262/language/expressions/generators/forbidden-ext/browser.js","js/src/tests/test262/language/expressions/generators/forbidden-ext/shell.js","js/src/tests/test262/language/expressions/generators/generator-created-after-decl-inst.js","js/src/tests/test262/language/expressions/generators/has-instance.js","js/src/tests/test262/language/expressions/generators/implicit-name.js","js/src/tests/test262/language/expressions/generators/invoke-as-constructor.js","js/src/tests/test262/language/expressions/generators/length-dflt.js","js/src/tests/test262/language/expressions/generators/length-property-descriptor.js","js/src/tests/test262/language/expressions/generators/name.js","js/src/tests/test262/language/expressions/generators/named-no-strict-reassign-fn-name-in-body-in-arrow.js","js/src/tests/test262/language/expressions/generators/named-no-strict-reassign-fn-name-in-body-in-eval.js","js/src/tests/test262/language/expressions/generators/named-no-strict-reassign-fn-name-in-body.js","js/src/tests/test262/language/expressions/generators/named-strict-error-reassign-fn-name-in-body-in-arrow-strict.js","js/src/tests/test262/language/expressions/generators/named-strict-error-reassign-fn-name-in-body-in-eval-strict.js","js/src/tests/test262/language/expressions/generators/named-strict-error-reassign-fn-name-in-body-strict.js","js/src/tests/test262/language/expressions/generators/named-yield-as-binding-identifier-escaped.js","js/src/tests/test262/language/expressions/generators/named-yield-as-binding-identifier.js","js/src/tests/test262/language/expressions/generators/named-yield-as-identifier-reference-escaped.js","js/src/tests/test262/language/expressions/generators/named-yield-as-identifier-reference.js","js/src/tests/test262/language/expressions/generators/named-yield-as-label-identifier-escaped.js","js/src/tests/test262/language/expressions/generators/named-yield-as-label-identifier.js","js/src/tests/test262/language/expressions/generators/named-yield-identifier-non-strict.js","js/src/tests/test262/language/expressions/generators/named-yield-identifier-spread-non-strict.js","js/src/tests/test262/language/expressions/generators/named-yield-identifier-spread-strict-strict.js","js/src/tests/test262/language/expressions/generators/named-yield-identifier-strict-strict.js","js/src/tests/test262/language/expressions/generators/named-yield-spread-arr-multiple.js","js/src/tests/test262/language/expressions/generators/named-yield-spread-arr-single.js","js/src/tests/test262/language/expressions/generators/named-yield-spread-obj.js","js/src/tests/test262/language/expressions/generators/no-name.js","js/src/tests/test262/language/expressions/generators/no-yield.js","js/src/tests/test262/language/expressions/generators/object-destructuring-param-strict-body.js","js/src/tests/test262/language/expressions/generators/param-dflt-yield.js","js/src/tests/test262/language/expressions/generators/params-dflt-args-unmapped.js","js/src/tests/test262/language/expressions/generators/params-dflt-ref-arguments.js","js/src/tests/test262/language/expressions/generators/params-trailing-comma-multiple.js","js/src/tests/test262/language/expressions/generators/params-trailing-comma-single.js","js/src/tests/test262/language/expressions/generators/prototype-own-properties.js","js/src/tests/test262/language/expressions/generators/prototype-property-descriptor.js","js/src/tests/test262/language/expressions/generators/prototype-relation-to-function.js","js/src/tests/test262/language/expressions/generators/prototype-typeof.js","js/src/tests/test262/language/expressions/generators/prototype-uniqueness.js","js/src/tests/test262/language/expressions/generators/prototype-value.js","js/src/tests/test262/language/expressions/generators/rest-param-strict-body.js","js/src/tests/test262/language/expressions/generators/rest-params-trailing-comma-early-error.js","js/src/tests/test262/language/expressions/generators/return.js","js/src/tests/test262/language/expressions/generators/scope-body-lex-distinct.js","js/src/tests/test262/language/expressions/generators/scope-name-var-close.js","js/src/tests/test262/language/expressions/generators/scope-name-var-open-non-strict.js","js/src/tests/test262/language/expressions/generators/scope-name-var-open-strict-strict.js","js/src/tests/test262/language/expressions/generators/scope-param-elem-var-close.js","js/src/tests/test262/language/expressions/generators/scope-param-elem-var-open.js","js/src/tests/test262/language/expressions/generators/scope-param-rest-elem-var-close.js","js/src/tests/test262/language/expressions/generators/scope-param-rest-elem-var-open.js","js/src/tests/test262/language/expressions/generators/scope-paramsbody-var-close.js","js/src/tests/test262/language/expressions/generators/scope-paramsbody-var-open.js","js/src/tests/test262/language/expressions/generators/shell.js","js/src/tests/test262/language/expressions/generators/static-init-await-binding.js","js/src/tests/test262/language/expressions/generators/static-init-await-reference.js","js/src/tests/test262/language/expressions/generators/unscopables-with-in-nested-fn.js","js/src/tests/test262/language/expressions/generators/unscopables-with.js","js/src/tests/test262/language/expressions/generators/use-strict-with-non-simple-param.js","js/src/tests/test262/language/expressions/generators/yield-as-binding-identifier-escaped.js","js/src/tests/test262/language/expressions/generators/yield-as-binding-identifier.js","js/src/tests/test262/language/expressions/generators/yield-as-function-expression-binding-identifier.js","js/src/tests/test262/language/expressions/generators/yield-as-generator-expression-binding-identifier.js","js/src/tests/test262/language/expressions/generators/yield-as-identifier-in-nested-function.js","js/src/tests/test262/language/expressions/generators/yield-as-identifier-reference-escaped.js","js/src/tests/test262/language/expressions/generators/yield-as-identifier-reference.js","js/src/tests/test262/language/expressions/generators/yield-as-label-identifier-escaped.js","js/src/tests/test262/language/expressions/generators/yield-as-label-identifier.js","js/src/tests/test262/language/expressions/generators/yield-as-literal-property-name.js","js/src/tests/test262/language/expressions/generators/yield-as-logical-or-expression.js","js/src/tests/test262/language/expressions/generators/yield-as-parameter.js","js/src/tests/test262/language/expressions/generators/yield-as-property-name.js","js/src/tests/test262/language/expressions/generators/yield-as-statement.js","js/src/tests/test262/language/expressions/generators/yield-as-yield-operand.js","js/src/tests/test262/language/expressions/generators/yield-identifier-non-strict.js","js/src/tests/test262/language/expressions/generators/yield-identifier-spread-non-strict.js","js/src/tests/test262/language/expressions/generators/yield-identifier-spread-strict-strict.js","js/src/tests/test262/language/expressions/generators/yield-identifier-strict-strict.js","js/src/tests/test262/language/expressions/generators/yield-newline.js","js/src/tests/test262/language/expressions/generators/yield-spread-arr-multiple.js","js/src/tests/test262/language/expressions/generators/yield-spread-arr-single.js","js/src/tests/test262/language/expressions/generators/yield-spread-obj.js","js/src/tests/test262/language/expressions/generators/yield-star-after-newline.js","js/src/tests/test262/language/expressions/generators/yield-star-before-newline.js","js/src/tests/test262/language/expressions/generators/yield-weak-binding.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A1.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A2.1_T1.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A2.1_T2.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A2.1_T3.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A2.2_T1.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A2.3_T1.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A2.4_T1.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A2.4_T2.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A2.4_T3.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A2.4_T4.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T1.1.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T1.2.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T1.3.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T2.1.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T2.2.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T2.3.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T2.4.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T2.5.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T2.6.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T2.7.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T2.8.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T2.9.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.2_T1.1.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.2_T1.2.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.1.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.10.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.11.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.12_T1.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.12_T2.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.2.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.3.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.4.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.5.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.6.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.7.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.8.js","js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.9.js","js/src/tests/test262/language/expressions/greater-than-or-equal/bigint-and-bigint.js","js/src/tests/test262/language/expressions/greater-than-or-equal/bigint-and-incomparable-string.js","js/src/tests/test262/language/expressions/greater-than-or-equal/bigint-and-non-finite.js","js/src/tests/test262/language/expressions/greater-than-or-equal/bigint-and-number-extremes.js","js/src/tests/test262/language/expressions/greater-than-or-equal/bigint-and-number.js","js/src/tests/test262/language/expressions/greater-than-or-equal/bigint-and-string.js","js/src/tests/test262/language/expressions/greater-than-or-equal/browser.js","js/src/tests/test262/language/expressions/greater-than-or-equal/shell.js","js/src/tests/test262/language/expressions/greater-than/11.8.2-1.js","js/src/tests/test262/language/expressions/greater-than/11.8.2-2.js","js/src/tests/test262/language/expressions/greater-than/11.8.2-3.js","js/src/tests/test262/language/expressions/greater-than/11.8.2-4.js","js/src/tests/test262/language/expressions/greater-than/S11.8.2_A1.js","js/src/tests/test262/language/expressions/greater-than/S11.8.2_A2.1_T1.js","js/src/tests/test262/language/expressions/greater-than/S11.8.2_A2.1_T2.js","js/src/tests/test262/language/expressions/greater-than/S11.8.2_A2.1_T3.js","js/src/tests/test262/language/expressions/greater-than/S11.8.2_A2.2_T1.js","js/src/tests/test262/language/expressions/greater-than/S11.8.2_A2.3_T1.js","js/src/tests/test262/language/expressions/greater-than/S11.8.2_A2.4_T1.js","js/src/tests/test262/language/expressions/greater-than/S11.8.2_A2.4_T2.js","js/src/tests/test262/language/expressions/greater-than/S11.8.2_A2.4_T3.js","js/src/tests/test262/language/expressions/greater-than/S11.8.2_A2.4_T4.js","js/src/tests/test262/language/expressions/greater-than/S11.8.2_A3.1_T1.1.js","js/src/tests/test262/language/expressions/greater-than/S11.8.2_A3.1_T1.2.js","js/src/tests/test262/language/expressions/greater-than/S11.8.2_A3.1_T1.3.js"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013"}} -->
+# firefox/js JavaScript function map 585
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### js/src/tests/test262/language/expressions/generators/forbidden-ext/b2/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/generators/forbidden-ext/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/generators/forbidden-ext/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/generators/generator-created-after-decl-inst.js
+
+Blob: `740eb2d2432bf4ee3cedf14634c95cc50fb513ee`. Role: test-path,source. Parse: module.
+
+- g @20-20; FunctionExpression; parameters=1; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/has-instance.js
+
+Blob: `3167c590268dfedfeacfae52bb06d85469f7427b`. Role: test-path,source. Parse: module.
+
+- g @11-11; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/implicit-name.js
+
+Blob: `d7c3752b1a16adc9cf47f578abb25b7b4269fb0a`. Role: test-path,source. Parse: module.
+
+- f @13-13; FunctionExpression; parameters=1; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/invoke-as-constructor.js
+
+Blob: `d1f7f24879ed5ed14a7f003b530f6911902da64e`. Role: test-path,source. Parse: module.
+
+- g @11-11; FunctionExpression; parameters=0; async=false; generator=true
+- (anonymous) @13-15; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/length-dflt.js
+
+Blob: `cfa4064dc822e2b8e8d5b7fa5182dd213b8e3771`. Role: test-path,source. Parse: module.
+
+- f1 @34-34; FunctionExpression; parameters=1; async=false; generator=true
+- f2 @43-43; FunctionExpression; parameters=2; async=false; generator=true
+- f3 @52-52; FunctionExpression; parameters=2; async=false; generator=true
+- f4 @61-61; FunctionExpression; parameters=3; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/length-property-descriptor.js
+
+Blob: `4310824377d04262d81ef9df13366c3f89accec2`. Role: test-path,source. Parse: module.
+
+- g @12-12; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/name.js
+
+Blob: `72e5c44be3d58e3ff2e29dd87ce34725ed53c63f`. Role: test-path,source. Parse: module.
+
+- (anonymous) @31-31; FunctionExpression; parameters=0; async=false; generator=true
+- func @35-35; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/named-no-strict-reassign-fn-name-in-body-in-arrow.js
+
+Blob: `912d2ed2c1adde338f51cff5470e90e8f03a340c`. Role: test-path,source. Parse: module.
+
+- BindingIdentifier @16-22; FunctionExpression; parameters=0; async=false; generator=true
+- (anonymous) @18-20; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/named-no-strict-reassign-fn-name-in-body-in-eval.js
+
+Blob: `8d6044672635e76955f6b9d73009e6fc31aab037`. Role: test-path,source. Parse: module.
+
+- BindingIdentifier @16-20; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/named-no-strict-reassign-fn-name-in-body.js
+
+Blob: `98abcb882f5ccac2c0a7584295568e26174bdca9`. Role: test-path,source. Parse: module.
+
+- BindingIdentifier @16-20; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/named-strict-error-reassign-fn-name-in-body-in-arrow-strict.js
+
+Blob: `93b8ae92977e1b554abb11414e147a5c082dd346`. Role: test-path,source. Parse: module.
+
+- BindingIdentifier @17-23; FunctionExpression; parameters=0; async=false; generator=true
+- (anonymous) @19-21; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @25-27; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/named-strict-error-reassign-fn-name-in-body-in-eval-strict.js
+
+Blob: `9d20bb6237de452fb7d80ef9e2245b8ad558ed1c`. Role: test-path,source. Parse: module.
+
+- BindingIdentifier @17-21; FunctionExpression; parameters=0; async=false; generator=true
+- (anonymous) @23-25; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/named-strict-error-reassign-fn-name-in-body-strict.js
+
+Blob: `bf12ac88ca09ffb23ed633820081831e1f8d6050`. Role: test-path,source. Parse: module.
+
+- BindingIdentifier @17-21; FunctionExpression; parameters=0; async=false; generator=true
+- (anonymous) @23-25; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/named-yield-as-binding-identifier-escaped.js
+
+Blob: `87c9871b1c8ba8bc37dcb4e467723a5d2217594a`. Role: test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### js/src/tests/test262/language/expressions/generators/named-yield-as-binding-identifier.js
+
+Blob: `86de56e8b1632d60e67db731736534939085c4c8`. Role: test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### js/src/tests/test262/language/expressions/generators/named-yield-as-identifier-reference-escaped.js
+
+Blob: `010032dad4b1fc0cedd3b8471feda0c61061f141`. Role: test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### js/src/tests/test262/language/expressions/generators/named-yield-as-identifier-reference.js
+
+Blob: `186df1cc8af0328f290ca67fdee987fd4aceab68`. Role: test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### js/src/tests/test262/language/expressions/generators/named-yield-as-label-identifier-escaped.js
+
+Blob: `eab9d8a0344910c00ebf1ba4abf4e1bb2f1a5b9d`. Role: test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### js/src/tests/test262/language/expressions/generators/named-yield-as-label-identifier.js
+
+Blob: `f0d1001d49eecf968ba58cc18792c488cec68945`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token :
+
+
+### js/src/tests/test262/language/expressions/generators/named-yield-identifier-non-strict.js
+
+Blob: `a19f04a13aed64428600bf35fc6cd3ff10e7953c`. Role: test-path,source. Parse: script.
+
+- g @19-25; FunctionExpression; parameters=0; async=false; generator=true
+- (anonymous) @21-24; FunctionExpression; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/named-yield-identifier-spread-non-strict.js
+
+Blob: `596b2bde715f83b584afb1f993a9dac1ef0625c1`. Role: test-path,source. Parse: script.
+
+- g @27-37; FunctionExpression; parameters=0; async=false; generator=true
+- (anonymous) @31-34; FunctionExpression; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/named-yield-identifier-spread-strict-strict.js
+
+Blob: `c3177446bfeafd57b95e62353953ff74051f0031`. Role: test-path,source. Parse: failed.
+
+Failure: The keyword 'yield' is reserved
+
+
+### js/src/tests/test262/language/expressions/generators/named-yield-identifier-strict-strict.js
+
+Blob: `3317d213dac5ed8ad8af5e8bf30b43273f6ef46f`. Role: test-path,source. Parse: failed.
+
+Failure: The keyword 'yield' is reserved
+
+
+### js/src/tests/test262/language/expressions/generators/named-yield-spread-arr-multiple.js
+
+Blob: `2b3bdbaa4d945e2176d8b377b772da5dec3cc7f0`. Role: test-path,source. Parse: module.
+
+- g @28-31; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/named-yield-spread-arr-single.js
+
+Blob: `6009116c722a70498406ea7bbb38417659a829b0`. Role: test-path,source. Parse: module.
+
+- g @25-28; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/named-yield-spread-obj.js
+
+Blob: `aa58d44a2a71ca0e588480f8b48436e716fab057`. Role: test-path,source. Parse: module.
+
+- g @26-33; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/no-name.js
+
+Blob: `34d7e0b10e2c00da84ffbf617da5ef6f1a02f8b9`. Role: test-path,source. Parse: module.
+
+- (anonymous) @13-13; FunctionExpression; parameters=1; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/no-yield.js
+
+Blob: `ec30a1501e347701166713ecad684b21f5806f54`. Role: test-path,source. Parse: module.
+
+- foo @13-13; FunctionExpression; parameters=1; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/object-destructuring-param-strict-body.js
+
+Blob: `5c24fda86172d7c4a489ba30130bcecd5899d092`. Role: test-path,source. Parse: failed.
+
+Failure: Illegal 'use strict' directive in function with non-simple parameter list
+
+
+### js/src/tests/test262/language/expressions/generators/param-dflt-yield.js
+
+Blob: `5e3dc676424b84585c063e87376fc87abd035e57`. Role: test-path,source. Parse: failed.
+
+Failure: Yield expression cannot be a default value
+
+
+### js/src/tests/test262/language/expressions/generators/params-dflt-args-unmapped.js
+
+Blob: `9a76cfbe30b4a49dce6b51b5ad5712fbc0af95c0`. Role: test-path,source. Parse: module.
+
+- f @52-78; FunctionExpression; parameters=2; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/params-dflt-ref-arguments.js
+
+Blob: `cb0ddf5507f3072b90a79b265dc4264e1b17f03e`. Role: test-path,source. Parse: module.
+
+- f @52-57; FunctionExpression; parameters=3; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/params-trailing-comma-multiple.js
+
+Blob: `85216d808ab702da3861710e7accb5a929e44580`. Role: test-path,source. Parse: module.
+
+- ref @51-55; FunctionExpression; parameters=2; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/params-trailing-comma-single.js
+
+Blob: `e8cd6ca25ae2c78a2dca2866fe3a71e4940fb541`. Role: test-path,source. Parse: module.
+
+- ref @51-54; FunctionExpression; parameters=1; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/prototype-own-properties.js
+
+Blob: `f3a3c0f4c8f05d7e02fb287127a751b06bef344e`. Role: test-path,source. Parse: module.
+
+- (anonymous) @11-11; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/prototype-property-descriptor.js
+
+Blob: `0073e026de3604d360e094cedac486a17ab66d5a`. Role: test-path,source. Parse: module.
+
+- g @12-12; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/prototype-relation-to-function.js
+
+Blob: `3ff93f60ab07f3e3e26885b566a76bfb4b3982ee`. Role: test-path,source. Parse: module.
+
+- f @12-12; FunctionDeclaration; parameters=0; async=false; generator=false
+- g @13-13; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/prototype-typeof.js
+
+Blob: `6cb56f61d46c8316ffc321655df93dffba0bb17b`. Role: test-path,source. Parse: module.
+
+- (anonymous) @12-12; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/prototype-uniqueness.js
+
+Blob: `4a1b8c3c4b27cb688b10e518496fff4b2a576b29`. Role: test-path,source. Parse: module.
+
+- g1 @11-11; FunctionExpression; parameters=0; async=false; generator=true
+- g2 @12-12; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/prototype-value.js
+
+Blob: `2add152eb065ca3ea199eff124d96f02734c2a3a`. Role: test-path,source. Parse: module.
+
+- g @13-13; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/rest-param-strict-body.js
+
+Blob: `55f0858baac32b383d637074681a584b35f0b33a`. Role: test-path,source. Parse: failed.
+
+Failure: Illegal 'use strict' directive in function with non-simple parameter list
+
+
+### js/src/tests/test262/language/expressions/generators/rest-params-trailing-comma-early-error.js
+
+Blob: `c63f6963075499b5b5761c5cf9f7ab61cef5439e`. Role: test-path,source. Parse: failed.
+
+Failure: Comma is not permitted after the rest element
+
+
+### js/src/tests/test262/language/expressions/generators/return.js
+
+Blob: `f16a9cf1cf1204223ab780025bd33c41e8094eea`. Role: test-path,source. Parse: module.
+
+- g1 @12-12; FunctionExpression; parameters=0; async=false; generator=true
+- g2 @13-13; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/scope-body-lex-distinct.js
+
+Blob: `92242f65d5f4548acc87d2ea025849ebca4651f2`. Role: test-path,source. Parse: module.
+
+- g @46-49; FunctionExpression; parameters=0; async=false; generator=true
+- (anonymous) @52-54; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/scope-name-var-close.js
+
+Blob: `de11e23dbed72185c940f03f9ca14e9c892637b6`. Role: test-path,source. Parse: module.
+
+- g @21-23; FunctionExpression; parameters=0; async=false; generator=true
+- probe @22-22; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/scope-name-var-open-non-strict.js
+
+Blob: `2f3e32095331601286a7bdfbb3750e4d0353938e`. Role: test-path,source. Parse: module.
+
+- probeBefore @23-23; FunctionExpression; parameters=0; async=false; generator=false
+- setBefore @24-24; FunctionExpression; parameters=0; async=false; generator=false
+- g @27-35; FunctionExpression; parameters=1; async=false; generator=true
+- probeParams @29-29; FunctionExpression; parameters=0; async=false; generator=false
+- setParams @30-30; FunctionExpression; parameters=0; async=false; generator=false
+- probeBody @33-33; FunctionExpression; parameters=0; async=false; generator=false
+- setBody @34-34; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/scope-name-var-open-strict-strict.js
+
+Blob: `53bdbd04d02830a30d8e625a923e9449c2e344ce`. Role: test-path,source. Parse: module.
+
+- probeBefore @24-24; FunctionExpression; parameters=0; async=false; generator=false
+- setBefore @25-25; FunctionExpression; parameters=0; async=false; generator=false
+- g @28-36; FunctionExpression; parameters=1; async=false; generator=true
+- probeParams @30-30; FunctionExpression; parameters=0; async=false; generator=false
+- setParams @31-31; FunctionExpression; parameters=0; async=false; generator=false
+- probeBody @34-34; FunctionExpression; parameters=0; async=false; generator=false
+- setBody @35-35; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/scope-param-elem-var-close.js
+
+Blob: `a1efd3aeec38b7a2fe80c2fe8d4e96530fd30787`. Role: test-path,source. Parse: module.
+
+- (anonymous) @22-27; FunctionExpression; parameters=2; async=false; generator=true
+- probe1 @23-23; FunctionExpression; parameters=0; async=false; generator=false
+- probe2 @24-24; FunctionExpression; parameters=0; async=false; generator=false
+- probeBody @26-26; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/scope-param-elem-var-open.js
+
+Blob: `c37ce004f5fcaa68b8ea714cc13528410063ad32`. Role: test-path,source. Parse: module.
+
+- (anonymous) @22-26; FunctionExpression; parameters=2; async=false; generator=true
+- probe1 @23-23; FunctionExpression; parameters=0; async=false; generator=false
+- probe2 @24-24; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/scope-param-rest-elem-var-close.js
+
+Blob: `0575cb1130baa69beabde4bf802197cebfdc4271`. Role: test-path,source. Parse: module.
+
+- (anonymous) @22-26; FunctionExpression; parameters=1; async=false; generator=true
+- probeParam @23-23; FunctionExpression; parameters=0; async=false; generator=false
+- probeBody @25-25; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/scope-param-rest-elem-var-open.js
+
+Blob: `b7bf3a932be1ac8468322d08404ae01aea39f463`. Role: test-path,source. Parse: module.
+
+- (anonymous) @22-26; FunctionExpression; parameters=2; async=false; generator=true
+- probe1 @23-23; FunctionExpression; parameters=0; async=false; generator=false
+- probe2 @24-24; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/scope-paramsbody-var-close.js
+
+Blob: `483dbff6aa3331d04c55a3a5e09a5be6f8846da3`. Role: test-path,source. Parse: module.
+
+- (anonymous) @27-30; FunctionExpression; parameters=1; async=false; generator=true
+- probe @29-29; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/scope-paramsbody-var-open.js
+
+Blob: `ed694dbcc8c7eed30e238d58b59789aab0c41eb3`. Role: test-path,source. Parse: module.
+
+- (anonymous) @27-30; FunctionExpression; parameters=1; async=false; generator=true
+- probeParams @27-27; FunctionExpression; parameters=0; async=false; generator=false
+- probeBody @29-29; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/generators/static-init-await-binding.js
+
+Blob: `f8777fd0e8b95a3ea4094318a6f19371cb2eaadf`. Role: test-path,source. Parse: script.
+
+- await @16-16; FunctionExpression; parameters=1; async=false; generator=true
+- Class C @14-18
+
+### js/src/tests/test262/language/expressions/generators/static-init-await-reference.js
+
+Blob: `d31ca00b2005387a0ddb832c4274fe88b7006ccf`. Role: test-path,source. Parse: script.
+
+- (anonymous) @19-21; FunctionExpression; parameters=1; async=false; generator=true
+- Class C @17-23
+
+### js/src/tests/test262/language/expressions/generators/unscopables-with-in-nested-fn.js
+
+Blob: `32bb4ec49517883211e4489f0750a111e300d527`. Role: test-path,source. Parse: script.
+
+- ref @73-95; FunctionExpression; parameters=1; async=false; generator=true
+- (anonymous) @74-80; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @81-91; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/unscopables-with.js
+
+Blob: `8a2fc94bba56d808666735cb9a8f6fc7ecb30f83`. Role: test-path,source. Parse: script.
+
+- ref @73-89; FunctionExpression; parameters=1; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/use-strict-with-non-simple-param.js
+
+Blob: `cc050aa63e8574dcb2dbdcd3a344fd8684a649b7`. Role: test-path,source. Parse: failed.
+
+Failure: Illegal 'use strict' directive in function with non-simple parameter list
+
+
+### js/src/tests/test262/language/expressions/generators/yield-as-binding-identifier-escaped.js
+
+Blob: `549138e65902ee8646888cef3efba1ea792173cf`. Role: test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### js/src/tests/test262/language/expressions/generators/yield-as-binding-identifier.js
+
+Blob: `a8bc34bbf728b7df580016e6ad11b4982bbbee46`. Role: test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### js/src/tests/test262/language/expressions/generators/yield-as-function-expression-binding-identifier.js
+
+Blob: `298f5807e49685fa31c8fd53875484531b335e68`. Role: test-path,source. Parse: script.
+
+- g @14-16; FunctionExpression; parameters=0; async=false; generator=true
+- yield @15-15; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/yield-as-generator-expression-binding-identifier.js
+
+Blob: `4145deb8280b58055b3353115ed7e39c57c538b6`. Role: test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### js/src/tests/test262/language/expressions/generators/yield-as-identifier-in-nested-function.js
+
+Blob: `e7c621de11e1f660a973ccf9e2f11ea296a2280f`. Role: test-path,source. Parse: script.
+
+- g @14-18; FunctionExpression; parameters=0; async=false; generator=true
+- h @15-17; FunctionDeclaration; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/yield-as-identifier-reference-escaped.js
+
+Blob: `9ad170619d7332f89f54b54f10746d207b2d442c`. Role: test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### js/src/tests/test262/language/expressions/generators/yield-as-identifier-reference.js
+
+Blob: `37e9a13963c9cb00bf281f7b6bb628729edf128a`. Role: test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### js/src/tests/test262/language/expressions/generators/yield-as-label-identifier-escaped.js
+
+Blob: `5c25acd7fa98365790c8fa98b32d5b79cad81036`. Role: test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### js/src/tests/test262/language/expressions/generators/yield-as-label-identifier.js
+
+Blob: `430da1cdd225a7948203789286c8c133291a685a`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token :
+
+
+### js/src/tests/test262/language/expressions/generators/yield-as-literal-property-name.js
+
+Blob: `7f196e9413e33d5ff4559132c115d1a81d93f5e5`. Role: test-path,source. Parse: module.
+
+- g @13-15; FunctionExpression; parameters=0; async=false; generator=true
+- yield @14-14; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/yield-as-logical-or-expression.js
+
+Blob: `4612254f39eb16e664b6f6fd2267bb0e169a6819`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token ?
+
+
+### js/src/tests/test262/language/expressions/generators/yield-as-parameter.js
+
+Blob: `354507852cc92cec9b42a8480e2b6b2fee9b7496`. Role: test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### js/src/tests/test262/language/expressions/generators/yield-as-property-name.js
+
+Blob: `b5a33bd0d2c8e234edf0f1410e02f990a837b890`. Role: test-path,source. Parse: module.
+
+- g @13-15; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/yield-as-statement.js
+
+Blob: `84c918dd3980a4234ec003c74bd09349bc509283`. Role: test-path,source. Parse: module.
+
+- g1 @12-12; FunctionExpression; parameters=0; async=false; generator=true
+- g2 @13-13; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/yield-as-yield-operand.js
+
+Blob: `373ea81f6c76c8d2408cb6b7b04ecdd378e86797`. Role: test-path,source. Parse: module.
+
+- g @13-15; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/yield-identifier-non-strict.js
+
+Blob: `cb9b776051fc5bfa122ba0098a170e16431c9615`. Role: test-path,source. Parse: script.
+
+- gen @19-25; FunctionExpression; parameters=0; async=false; generator=true
+- (anonymous) @21-24; FunctionExpression; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/yield-identifier-spread-non-strict.js
+
+Blob: `421e84b08df0428892eb1a410f5aa21613d82a07`. Role: test-path,source. Parse: script.
+
+- gen @27-37; FunctionExpression; parameters=0; async=false; generator=true
+- (anonymous) @31-34; FunctionExpression; parameters=1; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/generators/yield-identifier-spread-strict-strict.js
+
+Blob: `5b37b6248e6b74c8ff86164dde7e0e8c0aa74df8`. Role: test-path,source. Parse: failed.
+
+Failure: The keyword 'yield' is reserved
+
+
+### js/src/tests/test262/language/expressions/generators/yield-identifier-strict-strict.js
+
+Blob: `6193f0d815d1133aa37adacbdb510260abb718c0`. Role: test-path,source. Parse: failed.
+
+Failure: The keyword 'yield' is reserved
+
+
+### js/src/tests/test262/language/expressions/generators/yield-newline.js
+
+Blob: `c257a1c54e7afa675f4a9eb145b8cd3b24be1575`. Role: test-path,source. Parse: module.
+
+- g @12-15; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/yield-spread-arr-multiple.js
+
+Blob: `6e0f57d47c663ab36d1fa7838adda2d21abf5bd7`. Role: test-path,source. Parse: module.
+
+- gen @28-31; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/yield-spread-arr-single.js
+
+Blob: `41bcc723ec14492c486c9a1a29323d6bf0efb7ad`. Role: test-path,source. Parse: module.
+
+- gen @25-28; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/yield-spread-obj.js
+
+Blob: `dec87332ea6fbf06eb1a267f0ecb5b4e39a09a78`. Role: test-path,source. Parse: module.
+
+- gen @26-33; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/yield-star-after-newline.js
+
+Blob: `a6556ee7008efca01916920f41a452ae9bd61d44`. Role: test-path,source. Parse: failed.
+
+Failure: Unexpected token *
+
+
+### js/src/tests/test262/language/expressions/generators/yield-star-before-newline.js
+
+Blob: `abed9e0c90176b2ab7850a506d6ec3367b8b5377`. Role: test-path,source. Parse: module.
+
+- g @12-15; FunctionExpression; parameters=0; async=false; generator=true
+- g2 @16-16; FunctionExpression; parameters=0; async=false; generator=true
+
+### js/src/tests/test262/language/expressions/generators/yield-weak-binding.js
+
+Blob: `9a32e8d234df6d545ba3f9e3fce30e760d6ade81`. Role: test-path,source. Parse: failed.
+
+Failure: Cannot use 'yield' as identifier inside a generator
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A1.js
+
+Blob: `2e94294a6126388dac0e498b87ee982bca52ba71`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A2.1_T1.js
+
+Blob: `ae56ab89291ec57569115d70f3fa01fcad47a29f`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A2.1_T2.js
+
+Blob: `3709bbcf0e711c4fb63eda8dba8aaf21aa7aee75`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A2.1_T3.js
+
+Blob: `a15f94e7558872c5af66c9262c51393b95d2fbd6`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A2.2_T1.js
+
+Blob: `46bc3879171c6b30d996da974d6bd6feca47be16`. Role: test-path,source. Parse: module.
+
+- valueOf @11-11; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @12-12; FunctionExpression; parameters=0; async=false; generator=false
+- toString @16-16; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @16-16; FunctionExpression; parameters=0; async=false; generator=false
+- toString @17-17; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @17-17; FunctionExpression; parameters=0; async=false; generator=false
+- toString @21-21; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @21-21; FunctionExpression; parameters=0; async=false; generator=false
+- toString @22-22; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @22-22; FunctionExpression; parameters=0; async=false; generator=false
+- toString @27-27; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @27-27; FunctionExpression; parameters=0; async=false; generator=false
+- toString @28-28; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @28-28; FunctionExpression; parameters=0; async=false; generator=false
+- toString @40-40; FunctionExpression; parameters=0; async=false; generator=false
+- toString @41-41; FunctionExpression; parameters=0; async=false; generator=false
+- toString @45-45; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @45-45; FunctionExpression; parameters=0; async=false; generator=false
+- toString @46-46; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @46-46; FunctionExpression; parameters=0; async=false; generator=false
+- toString @51-51; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @51-51; FunctionExpression; parameters=0; async=false; generator=false
+- toString @52-52; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @52-52; FunctionExpression; parameters=0; async=false; generator=false
+- toString @62-62; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @62-62; FunctionExpression; parameters=0; async=false; generator=false
+- toString @63-63; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @63-63; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A2.3_T1.js
+
+Blob: `bbc6874fba50e5555c947eb05bec9b8c0bb1e9fa`. Role: test-path,source. Parse: module.
+
+- valueOf @13-13; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @14-14; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A2.4_T1.js
+
+Blob: `7eb0324b6f768cd64d5fbfd7279e47f6d6d5c2c3`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A2.4_T2.js
+
+Blob: `92c3a5b5a7070d6d5f29ce851df2159911927c40`. Role: test-path,source. Parse: module.
+
+- x @11-11; FunctionExpression; parameters=0; async=false; generator=false
+- y @12-12; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A2.4_T3.js
+
+Blob: `c2efff4c92b81a1c44028f058c4264c120e7a1f9`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A2.4_T4.js
+
+Blob: `75dffdc7fc5af919a1194c4c0913beac5143c97e`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T1.1.js
+
+Blob: `185cac51fd59fe97a9dd4d772bda35ef7e3d18ed`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T1.2.js
+
+Blob: `67628abf1d292e2775728270ebe7305094a5cfce`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T1.3.js
+
+Blob: `5bff1ff2d81a3e48de9f0825c93adc37602ae694`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T2.1.js
+
+Blob: `ec275291f86347a7a6bc828a2dd0a49a282c290b`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T2.2.js
+
+Blob: `36bc9016ec8cf142dbb453f5cbae296c7e0ebf55`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T2.3.js
+
+Blob: `a8481c4c17bbb5217553f542ee194a7137f21309`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T2.4.js
+
+Blob: `b4a791a87c7002e627c3e0b009e4f30cb43f5de5`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T2.5.js
+
+Blob: `e83fd317c1b04f9191c1f7e103da8514b3ac0c02`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T2.6.js
+
+Blob: `0510751eeae236bb6e2980f82c76592bab4be838`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T2.7.js
+
+Blob: `756eb6dfb1ba47334c1ae2602a0035fbfef7dbd9`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T2.8.js
+
+Blob: `0b03ab1598d2ed16ccf33eaefe0f81871b7053ed`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.1_T2.9.js
+
+Blob: `54c69a751a60add3f4a0f7cc4be50bf923a3df5f`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.2_T1.1.js
+
+Blob: `d59ef44d17064b1f2f2343ef997961ac13fbd16f`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A3.2_T1.2.js
+
+Blob: `d5752b49d4243580054193f419d93ec8d3b546b5`. Role: test-path,source. Parse: module.
+
+- (anonymous) @15-15; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @15-15; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @20-20; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @20-20; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @25-25; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @25-25; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @25-25; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @25-25; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.1.js
+
+Blob: `4c3006197fa1073da9f1cc7b5cdef6a5d3894f4a`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.10.js
+
+Blob: `a99d5c3f57ab2a958f12d2066f55e2bb08492fe1`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.11.js
+
+Blob: `5856986f7a3758ee69120ef3d36933bfbbbcc17c`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.12_T1.js
+
+Blob: `026151f3a553b07475ef500f7361a582a14aba5c`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.12_T2.js
+
+Blob: `0e9d397eb902de3bc837b1d71bc0793267e5d28d`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.2.js
+
+Blob: `2d5595b7af4797371cd97f9bcdefbf7ae38233bd`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.3.js
+
+Blob: `de2f9e0ad62d4a02030ac8d31fc4e6339978dfc4`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.4.js
+
+Blob: `6548dbaa4b5c6469d044acd5f3406f20ad200b66`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.5.js
+
+Blob: `942f811e9d0a46787c02f1c39ada42ca51f2928e`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.6.js
+
+Blob: `66a6ccbe3b0db6770af6cdf7e870f96fbd9e034f`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.7.js
+
+Blob: `e76fd5be80a554b5b9bdf090041df9ac9fe09afa`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.8.js
+
+Blob: `64ee2a09ceb58ece056d14a8e1bfabd16a1ba51f`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/S11.8.4_A4.9.js
+
+Blob: `3d7bfb50a70d75db288d85f2ce18971ff0fdb1bd`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/bigint-and-bigint.js
+
+Blob: `bdd785f1608e67875c796a57aa091562c5f5ee97`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/bigint-and-incomparable-string.js
+
+Blob: `9b6cea7fe0ee56ed54b3601f984792b373db51b2`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/bigint-and-non-finite.js
+
+Blob: `2469d0fd09e805813b0e8a7d2813703ef672d152`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/bigint-and-number-extremes.js
+
+Blob: `fc6ae0f92c1875c3eda95dbb66dc25216dfcab14`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/bigint-and-number.js
+
+Blob: `c03309ba6e62f64c6cff04ca67f20a1e7b908d2a`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/bigint-and-string.js
+
+Blob: `2d9f4142b603ed28850e3f791c04595d62b024e2`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/browser.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than-or-equal/shell.js
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than/11.8.2-1.js
+
+Blob: `51d079402726d80098af60fe3389da53cfde1ff6`. Role: test-path,source. Parse: module.
+
+- valueOf @13-16; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @19-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/greater-than/11.8.2-2.js
+
+Blob: `3ce46ca740c7adf3645a0b5192a8681f0a08c2f8`. Role: test-path,source. Parse: module.
+
+- valueOf @13-16; FunctionExpression; parameters=0; async=false; generator=false
+- toString @19-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/greater-than/11.8.2-3.js
+
+Blob: `4960c372788d7247da0830ab45866f80526774a7`. Role: test-path,source. Parse: module.
+
+- toString @13-16; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @19-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/greater-than/11.8.2-4.js
+
+Blob: `fda8104eff67f5e7049e81bdb8f585545497e575`. Role: test-path,source. Parse: module.
+
+- toString @13-16; FunctionExpression; parameters=0; async=false; generator=false
+- toString @19-21; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/greater-than/S11.8.2_A1.js
+
+Blob: `ac04fe911d9f08757607296222abff4e2fdf7b20`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than/S11.8.2_A2.1_T1.js
+
+Blob: `7ad25738600c34f8fcfe9e22b305df438f3c473c`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than/S11.8.2_A2.1_T2.js
+
+Blob: `2ca35d386481330ea026e999a345d9e1ca921d32`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than/S11.8.2_A2.1_T3.js
+
+Blob: `ff3d7291b8fabc654b61b6d41b9b6c07e32e15b5`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than/S11.8.2_A2.2_T1.js
+
+Blob: `8aa14008a538ac2fb6e6eeb561872c6d4076dcd2`. Role: test-path,source. Parse: module.
+
+- valueOf @11-11; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @12-12; FunctionExpression; parameters=0; async=false; generator=false
+- toString @16-16; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @16-16; FunctionExpression; parameters=0; async=false; generator=false
+- toString @17-17; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @17-17; FunctionExpression; parameters=0; async=false; generator=false
+- toString @21-21; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @21-21; FunctionExpression; parameters=0; async=false; generator=false
+- toString @22-22; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @22-22; FunctionExpression; parameters=0; async=false; generator=false
+- toString @27-27; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @27-27; FunctionExpression; parameters=0; async=false; generator=false
+- toString @28-28; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @28-28; FunctionExpression; parameters=0; async=false; generator=false
+- toString @40-40; FunctionExpression; parameters=0; async=false; generator=false
+- toString @41-41; FunctionExpression; parameters=0; async=false; generator=false
+- toString @45-45; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @45-45; FunctionExpression; parameters=0; async=false; generator=false
+- toString @46-46; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @46-46; FunctionExpression; parameters=0; async=false; generator=false
+- toString @51-51; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @51-51; FunctionExpression; parameters=0; async=false; generator=false
+- toString @52-52; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @52-52; FunctionExpression; parameters=0; async=false; generator=false
+- toString @62-62; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @62-62; FunctionExpression; parameters=0; async=false; generator=false
+- toString @63-63; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @63-63; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/greater-than/S11.8.2_A2.3_T1.js
+
+Blob: `4c8b975924a5b444b76f622f272954501ef2e201`. Role: test-path,source. Parse: module.
+
+- valueOf @11-11; FunctionExpression; parameters=0; async=false; generator=false
+- valueOf @12-12; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/greater-than/S11.8.2_A2.4_T1.js
+
+Blob: `7fc28d9a56bf651d3e8a38ca2c352ce1f8a2e044`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than/S11.8.2_A2.4_T2.js
+
+Blob: `606bfe02ef35ade1900151aad201093d69da2d01`. Role: test-path,source. Parse: module.
+
+- x @11-11; FunctionExpression; parameters=0; async=false; generator=false
+- y @12-12; FunctionExpression; parameters=0; async=false; generator=false
+
+### js/src/tests/test262/language/expressions/greater-than/S11.8.2_A2.4_T3.js
+
+Blob: `03e6cc878cab8c4ec7d5524e20a869fd7d431b25`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than/S11.8.2_A2.4_T4.js
+
+Blob: `950aaa524f3f1600685a8dba9f4d73fd39bd6b74`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than/S11.8.2_A3.1_T1.1.js
+
+Blob: `cdbd11d1e8f82fa6b9feb37dd047e3f4a1b19647`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than/S11.8.2_A3.1_T1.2.js
+
+Blob: `55d596555813c9b3969f52a87874bcef3639db13`. Role: test-path,source. Parse: module.
+
+
+### js/src/tests/test262/language/expressions/greater-than/S11.8.2_A3.1_T1.3.js
+
+Blob: `c3548eda0b51d3b7e14c4dfeddd6320465ccc06c`. Role: test-path,source. Parse: module.
+
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.

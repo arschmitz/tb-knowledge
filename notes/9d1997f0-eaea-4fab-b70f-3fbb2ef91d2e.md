@@ -1,0 +1,1773 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-13T04:17:22.071Z","paths":["toolkit/components/certviewer/content/vendor/pkijs.js","toolkit/components/certviewer/tests/browser/adjustedCerts.js","toolkit/components/certviewer/tests/browser/browser_aboutcertificateviewer.js","toolkit/components/certviewer/tests/browser/browser_certificateTabLink.js","toolkit/components/certviewer/tests/browser/browser_checkAuthorityKeyID.js"],"source":{"reference":"Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","status":"provisional","study":"architecture-study-20261013"}} -->
+# firefox/toolkit JavaScript function map 1304
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Parser: Espree 10.3.0.
+
+Each entry records syntax from a parsed file. Functions include anonymous callbacks and arrows. A name inferred from an assignment or property is a navigation aid, not proof of the runtime receiver. Ranges refer to the pinned source. Parameter counts include rest and destructured parameters as one parameter each. Async means the syntax uses async. Generator means the syntax uses function*.
+
+Imports and literal importESModule calls identify written module names. They are not resolved dependencies. This map does not establish function behavior, runtime callers, thread use, side effects, failure handling, or reasons for the design. Parsing a fixture does not make its code production behavior. Failed parses remain listed.
+
+## File map
+
+### toolkit/components/certviewer/content/vendor/pkijs.js
+
+Blob: `c9e13a3ec005c4b29d5bae6d86bd16da0291a675`. Role: source. Parse: module.
+
+- isArrayBuffer @62-64; FunctionExpression; parameters=1; async=false; generator=false
+- toArrayBuffer @65-78; FunctionExpression; parameters=1; async=false; generator=false
+- toUint8Array @79-81; FunctionExpression; parameters=1; async=false; generator=false
+- toView @82-93; FunctionExpression; parameters=2; async=false; generator=false
+- isBufferSource @94-97; FunctionExpression; parameters=1; async=false; generator=false
+- isArrayBufferView @98-101; FunctionExpression; parameters=1; async=false; generator=false
+- isEqual @102-114; FunctionExpression; parameters=2; async=false; generator=false
+- concat @115-146; FunctionExpression; parameters=1; async=false; generator=false
+- fromString @154-161; FunctionExpression; parameters=1; async=false; generator=false
+- toString @162-170; FunctionExpression; parameters=1; async=false; generator=false
+- toString @173-182; FunctionExpression; parameters=2; async=false; generator=false
+- fromString @183-190; FunctionExpression; parameters=2; async=false; generator=false
+- isHex @193-196; FunctionExpression; parameters=1; async=false; generator=false
+- isBase64 @197-200; FunctionExpression; parameters=1; async=false; generator=false
+- isBase64Url @201-204; FunctionExpression; parameters=1; async=false; generator=false
+- ToString @205-226; FunctionExpression; parameters=2; async=false; generator=false
+- FromString @227-250; FunctionExpression; parameters=2; async=false; generator=false
+- ToBase64 @251-260; FunctionExpression; parameters=1; async=false; generator=false
+- FromBase64 @261-275; FunctionExpression; parameters=1; async=false; generator=false
+- FromBase64Url @276-285; FunctionExpression; parameters=1; async=false; generator=false
+- ToBase64Url @286-288; FunctionExpression; parameters=1; async=false; generator=false
+- FromUtf8String @289-304; FunctionExpression; parameters=2; async=false; generator=false
+- ToUtf8String @305-320; FunctionExpression; parameters=2; async=false; generator=false
+- FromBinary @321-328; FunctionExpression; parameters=1; async=false; generator=false
+- ToBinary @329-336; FunctionExpression; parameters=1; async=false; generator=false
+- ToHex @337-349; FunctionExpression; parameters=1; async=false; generator=false
+- FromHex @350-367; FunctionExpression; parameters=1; async=false; generator=false
+- ToUtf16String @368-370; FunctionExpression; parameters=2; async=false; generator=false
+- FromUtf16String @371-373; FunctionExpression; parameters=2; async=false; generator=false
+- Base64Padding @374-382; FunctionExpression; parameters=1; async=false; generator=false
+- formatString @383-385; FunctionExpression; parameters=1; async=false; generator=false
+- getParametersValue @393-399; FunctionDeclaration; parameters=3; async=false; generator=false
+- bufferToHexCodes @400-413; FunctionDeclaration; parameters=4; async=false; generator=false
+- utilFromBase @414-423; FunctionDeclaration; parameters=2; async=false; generator=false
+- utilToBase @424-454; FunctionDeclaration; parameters=3; async=false; generator=false
+- utilConcatBuf @455-468; FunctionDeclaration; parameters=1; async=false; generator=false
+- utilConcatView @469-482; FunctionDeclaration; parameters=1; async=false; generator=false
+- utilDecodeTC @483-507; FunctionDeclaration; parameters=0; async=false; generator=false
+- utilEncodeTC @508-537; FunctionDeclaration; parameters=1; async=false; generator=false
+- isEqualBuffer @538-550; FunctionDeclaration; parameters=2; async=false; generator=false
+- padNumber @551-563; FunctionDeclaration; parameters=2; async=false; generator=false
+- toBase64 @566-622; FunctionDeclaration; parameters=4; async=false; generator=false
+- fromBase64 @623-670; FunctionDeclaration; parameters=3; async=false; generator=false
+- indexOf @625-631; FunctionDeclaration; parameters=1; async=false; generator=false
+- test @632-634; FunctionDeclaration; parameters=1; async=false; generator=false
+- arrayBufferToString @671-678; FunctionDeclaration; parameters=1; async=false; generator=false
+- stringToArrayBuffer @679-687; FunctionDeclaration; parameters=1; async=false; generator=false
+- nearestPowerOf2 @689-694; FunctionDeclaration; parameters=1; async=false; generator=false
+- clearProps @695-699; FunctionDeclaration; parameters=2; async=false; generator=false
+- assertBigInt @736-740; FunctionDeclaration; parameters=0; async=false; generator=false
+- concat @741-755; FunctionDeclaration; parameters=1; async=false; generator=false
+- checkBufferParams @756-778; FunctionDeclaration; parameters=4; async=false; generator=false
+- constructor @781-783; FunctionExpression; parameters=0; async=false; generator=false
+- write @784-786; FunctionExpression; parameters=1; async=false; generator=false
+- final @787-789; FunctionExpression; parameters=0; async=false; generator=false
+- HexBlock @811-863; FunctionDeclaration; parameters=1; async=false; generator=false
+- valueHex @814-816; FunctionExpression; parameters=0; async=false; generator=false
+- valueHex @817-819; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @820-826; FunctionExpression; parameters=1; async=false; generator=false
+- fromBER @827-840; FunctionExpression; parameters=3; async=false; generator=false
+- toBER @841-852; FunctionExpression; parameters=1; async=false; generator=false
+- toJSON @853-859; FunctionExpression; parameters=0; async=false; generator=false
+- blockName @866-868; FunctionExpression; parameters=0; async=false; generator=false
+- valueBeforeDecode @869-871; FunctionExpression; parameters=0; async=false; generator=false
+- valueBeforeDecode @872-874; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @875-880; FunctionExpression; parameters=1; async=false; generator=false
+- toJSON @881-889; FunctionExpression; parameters=0; async=false; generator=false
+- fromBER @894-896; FunctionExpression; parameters=3; async=false; generator=false
+- toBER @897-899; FunctionExpression; parameters=2; async=false; generator=false
+- constructor @904-921; FunctionExpression; parameters=1; async=false; generator=false
+- toBER @922-975; FunctionExpression; parameters=1; async=false; generator=false
+- fromBER @976-1065; FunctionExpression; parameters=3; async=false; generator=false
+- toJSON @1066-1073; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1078-1084; FunctionExpression; parameters=1; async=false; generator=false
+- fromBER @1085-1128; FunctionExpression; parameters=3; async=false; generator=false
+- toBER @1129-1164; FunctionExpression; parameters=1; async=false; generator=false
+- toJSON @1165-1172; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1179-1189; FunctionExpression; parameters=2; async=false; generator=false
+- fromBER @1190-1205; FunctionExpression; parameters=3; async=false; generator=false
+- toBER @1206-1229; FunctionExpression; parameters=2; async=false; generator=false
+- toJSON @1230-1242; FunctionExpression; parameters=0; async=false; generator=false
+- toString @1243-1248; FunctionExpression; parameters=1; async=false; generator=false
+- onAsciiEncoding @1249-1253; FunctionExpression; parameters=0; async=false; generator=false
+- isEqual @1254-1264; FunctionExpression; parameters=1; async=false; generator=false
+- prepareIndefiniteForm @1267-1277; FunctionDeclaration; parameters=1; async=false; generator=false
+- getValue @1280-1282; FunctionExpression; parameters=0; async=false; generator=false
+- setValue @1283-1285; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1286-1291; FunctionExpression; parameters=2; async=false; generator=false
+- fromBER @1292-1308; FunctionExpression; parameters=3; async=false; generator=false
+- onAsciiEncoding @1309-1311; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1316-1319; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1325-1328; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1331-1333; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- localChangeType @1336-1346; FunctionDeclaration; parameters=2; async=false; generator=false
+- localFromBER @1347-1543; FunctionDeclaration; parameters=3; async=false; generator=false
+- fromBER @1544-1554; FunctionDeclaration; parameters=1; async=false; generator=false
+- checkLen @1556-1561; FunctionDeclaration; parameters=2; async=false; generator=false
+- constructor @1563-1567; FunctionExpression; parameters=1; async=false; generator=false
+- fromBER @1568-1603; FunctionExpression; parameters=3; async=false; generator=false
+- toBER @1604-1613; FunctionExpression; parameters=2; async=false; generator=false
+- toJSON @1614-1624; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1630-1633; FunctionExpression; parameters=1; async=false; generator=false
+- fromBER @1634-1648; FunctionExpression; parameters=3; async=false; generator=false
+- onAsciiEncoding @1649-1660; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @1652-1652; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1663-1665; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- fromBER @1669-1671; FunctionExpression; parameters=3; async=false; generator=false
+- toBER @1672-1674; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1680-1684; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @1687-1689; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @1694-1698; FunctionExpression; parameters=1; async=false; generator=false
+- fromBER @1699-1712; FunctionExpression; parameters=3; async=false; generator=false
+- toBER @1713-1724; FunctionExpression; parameters=2; async=false; generator=false
+- onAsciiEncoding @1725-1727; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @1730-1732; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- value @1736-1743; FunctionExpression; parameters=0; async=false; generator=false
+- value @1744-1746; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1747-1758; FunctionExpression; parameters=1; async=false; generator=false
+- fromBER @1759-1771; FunctionExpression; parameters=3; async=false; generator=false
+- toBER @1772-1774; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @1775-1780; FunctionExpression; parameters=0; async=false; generator=false
+- getValue @1786-1788; FunctionExpression; parameters=0; async=false; generator=false
+- setValue @1789-1791; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @1792-1796; FunctionExpression; parameters=1; async=false; generator=false
+- onAsciiEncoding @1797-1799; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @1802-1804; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @1808-1811; FunctionExpression; parameters=1; async=false; generator=false
+- fromBER @1812-1841; FunctionExpression; parameters=3; async=false; generator=false
+- toBER @1842-1848; FunctionExpression; parameters=2; async=false; generator=false
+- toJSON @1849-1854; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @1860-1876; FunctionExpression; parameters=1; async=false; generator=false
+- fromBER @1877-1902; FunctionExpression; parameters=3; async=false; generator=false
+- onAsciiEncoding @1903-1910; FunctionExpression; parameters=0; async=false; generator=false
+- getValue @1911-1922; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @1925-1927; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @1931-1936; FunctionExpression; parameters=1; async=false; generator=false
+- fromBER @1937-1995; FunctionExpression; parameters=3; async=false; generator=false
+- toBER @1996-2010; FunctionExpression; parameters=2; async=false; generator=false
+- toJSON @2011-2017; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @2023-2039; FunctionExpression; parameters=1; async=false; generator=false
+- fromBER @2040-2044; FunctionExpression; parameters=3; async=false; generator=false
+- onAsciiEncoding @2045-2060; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @2063-2065; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- viewAdd @2069-2100; FunctionDeclaration; parameters=2; async=false; generator=false
+- power2 @2101-2117; FunctionDeclaration; parameters=1; async=false; generator=false
+- viewSub @2118-2155; FunctionDeclaration; parameters=2; async=false; generator=false
+- setValueHex @2157-2169; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @2170-2179; FunctionExpression; parameters=1; async=false; generator=false
+- valueDec @2180-2184; FunctionExpression; parameters=1; async=false; generator=false
+- valueDec @2185-2187; FunctionExpression; parameters=0; async=false; generator=false
+- fromDER @2188-2206; FunctionExpression; parameters=4; async=false; generator=false
+- toDER @2207-2225; FunctionExpression; parameters=1; async=false; generator=false
+- fromBER @2226-2233; FunctionExpression; parameters=3; async=false; generator=false
+- toBER @2234-2238; FunctionExpression; parameters=1; async=false; generator=false
+- toJSON @2239-2244; FunctionExpression; parameters=0; async=false; generator=false
+- toString @2245-2279; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @2283-2293; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- set @2285-2288; FunctionExpression; parameters=1; async=false; generator=false
+- get @2289-2291; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @2297-2301; FunctionExpression; parameters=1; async=false; generator=false
+- toBigInt @2302-2305; FunctionExpression; parameters=0; async=false; generator=false
+- fromBigInt @2306-2329; FunctionExpression; parameters=1; async=false; generator=false
+- convertToDER @2330-2334; FunctionExpression; parameters=0; async=false; generator=false
+- convertFromDER @2335-2341; FunctionExpression; parameters=0; async=false; generator=false
+- onAsciiEncoding @2342-2344; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @2347-2349; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @2354-2358; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2361-2363; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @2367-2371; FunctionExpression; parameters=1; async=false; generator=false
+- fromBER @2372-2406; FunctionExpression; parameters=3; async=false; generator=false
+- valueBigInt @2407-2418; FunctionExpression; parameters=1; async=false; generator=false
+- toBER @2419-2444; FunctionExpression; parameters=1; async=false; generator=false
+- toString @2445-2470; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @2471-2477; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @2482-2488; FunctionExpression; parameters=1; async=false; generator=false
+- fromBER @2489-2506; FunctionExpression; parameters=3; async=false; generator=false
+- toBER @2507-2518; FunctionExpression; parameters=1; async=false; generator=false
+- fromString @2519-2573; FunctionExpression; parameters=1; async=false; generator=false
+- toString @2574-2593; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @2594-2604; FunctionExpression; parameters=0; async=false; generator=false
+- getValue @2610-2612; FunctionExpression; parameters=0; async=false; generator=false
+- setValue @2613-2615; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @2616-2620; FunctionExpression; parameters=1; async=false; generator=false
+- onAsciiEncoding @2621-2623; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @2624-2629; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @2632-2634; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @2638-2641; FunctionExpression; parameters=1; async=false; generator=false
+- fromBER @2642-2673; FunctionExpression; parameters=3; async=false; generator=false
+- toBER @2674-2699; FunctionExpression; parameters=1; async=false; generator=false
+- toString @2700-2708; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @2709-2714; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @2719-2725; FunctionExpression; parameters=1; async=false; generator=false
+- fromBER @2726-2741; FunctionExpression; parameters=3; async=false; generator=false
+- toBER @2742-2753; FunctionExpression; parameters=2; async=false; generator=false
+- fromString @2754-2773; FunctionExpression; parameters=1; async=false; generator=false
+- toString @2774-2790; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @2791-2800; FunctionExpression; parameters=0; async=false; generator=false
+- getValue @2806-2808; FunctionExpression; parameters=0; async=false; generator=false
+- setValue @2809-2811; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @2812-2816; FunctionExpression; parameters=1; async=false; generator=false
+- onAsciiEncoding @2817-2819; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @2820-2825; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @2828-2830; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @2835-2839; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2842-2844; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @2849-2853; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2856-2858; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @2862-2866; FunctionExpression; parameters=1; async=false; generator=false
+- toJSON @2867-2872; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @2881-2883; FunctionExpression; parameters=1; async=false; generator=false
+- fromBuffer @2884-2886; FunctionExpression; parameters=1; async=false; generator=false
+- fromString @2887-2893; FunctionExpression; parameters=1; async=false; generator=false
+- fromBuffer @2898-2907; FunctionExpression; parameters=1; async=false; generator=false
+- fromString @2908-2911; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @2917-2921; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2924-2926; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- fromBuffer @2930-2933; FunctionExpression; parameters=1; async=false; generator=false
+- fromString @2934-2937; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @2943-2947; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2950-2952; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- fromBuffer @2956-2966; FunctionExpression; parameters=1; async=false; generator=false
+- fromString @2967-2980; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @2986-2990; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @2993-2995; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @3000-3004; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @3007-3009; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @3014-3018; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @3021-3023; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @3028-3032; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @3035-3037; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @3042-3046; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @3049-3051; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @3056-3060; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @3063-3065; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @3070-3074; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @3077-3079; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @3084-3088; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @3091-3093; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @3098-3102; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @3105-3107; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @3112-3116; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @3119-3121; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @3126-3146; FunctionExpression; parameters=1; async=false; generator=false
+- fromBuffer @3147-3149; FunctionExpression; parameters=1; async=false; generator=false
+- toBuffer @3150-3157; FunctionExpression; parameters=0; async=false; generator=false
+- fromDate @3158-3165; FunctionExpression; parameters=1; async=false; generator=false
+- toDate @3166-3168; FunctionExpression; parameters=0; async=false; generator=false
+- fromString @3169-3186; FunctionExpression; parameters=1; async=false; generator=false
+- toString @3187-3200; FunctionExpression; parameters=1; async=false; generator=false
+- onAsciiEncoding @3201-3203; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @3204-3214; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @3217-3219; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @3224-3230; FunctionExpression; parameters=1; async=false; generator=false
+- fromDate @3231-3234; FunctionExpression; parameters=1; async=false; generator=false
+- toDate @3235-3238; FunctionExpression; parameters=0; async=false; generator=false
+- fromString @3239-3373; FunctionExpression; parameters=1; async=false; generator=false
+- toString @3374-3391; FunctionExpression; parameters=1; async=false; generator=false
+- toJSON @3392-3397; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @3400-3402; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @3407-3411; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @3414-3416; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @3421-3425; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @3428-3430; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @3435-3439; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @3442-3444; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @3449-3453; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @3456-3458; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @3463-3467; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @3470-3472; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @3476-3479; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @3483-3486; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @3490-3494; FunctionExpression; parameters=1; async=false; generator=false
+- data @3498-3500; FunctionExpression; parameters=0; async=false; generator=false
+- data @3501-3503; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @3504-3506; FunctionExpression; parameters=1; async=false; generator=false
+- fromBER @3507-3511; FunctionExpression; parameters=3; async=false; generator=false
+- toBER @3512-3514; FunctionExpression; parameters=1; async=false; generator=false
+- compareSchema @3517-3816; FunctionDeclaration; parameters=3; async=false; generator=false
+- constructor @3822-3825; FunctionExpression; parameters=0; async=false; generator=false
+- isType @3826-3845; FunctionExpression; parameters=2; async=false; generator=false
+- assert @3846-3854; FunctionExpression; parameters=3; async=false; generator=false
+- (anonymous) @3852-3852; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- assert @3859-3879; FunctionExpression; parameters=1; async=false; generator=false
+- assertEmpty @3880-3884; FunctionExpression; parameters=3; async=false; generator=false
+- constructor @3885-3898; FunctionExpression; parameters=3; async=false; generator=false
+- assertSchema @3903-3907; FunctionExpression; parameters=2; async=false; generator=false
+- assert @3908-3912; FunctionExpression; parameters=2; async=false; generator=false
+- constructor @3913-3916; FunctionExpression; parameters=1; async=false; generator=false
+- blockName @3920-3922; FunctionExpression; parameters=0; async=false; generator=false
+- fromBER @3923-3932; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @3933-3935; FunctionExpression; parameters=1; async=false; generator=false
+- schema @3936-3938; FunctionExpression; parameters=1; async=false; generator=false
+- className @3939-3941; FunctionExpression; parameters=0; async=false; generator=false
+- toString @3942-3951; FunctionExpression; parameters=1; async=false; generator=false
+- stringPrep @3955-3973; FunctionDeclaration; parameters=1; async=false; generator=false
+- constructor @3978-3985; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @3986-3995; FunctionExpression; parameters=1; async=false; generator=false
+- schema @3996-4005; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @4006-4020; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @4021-4028; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @4029-4040; FunctionExpression; parameters=0; async=false; generator=false
+- isEqual @4041-4089; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @4097-4104; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @4105-4114; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @4115-4124; FunctionExpression; parameters=2; async=false; generator=false
+- schema @4125-4143; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @4144-4160; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @4157-4157; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @4161-4175; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @4165-4165; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @4176-4180; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @4178-4178; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- isEqual @4181-4195; FunctionExpression; parameters=1; async=false; generator=false
+- builtInStandardAttributes @4201-4346; FunctionDeclaration; parameters=2; async=false; generator=false
+- builtInDomainDefinedAttributes @4347-4355; FunctionDeclaration; parameters=1; async=false; generator=false
+- extensionAttributes @4356-4378; FunctionDeclaration; parameters=1; async=false; generator=false
+- constructor @4380-4387; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @4388-4397; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @4398-4407; FunctionExpression; parameters=2; async=false; generator=false
+- schema @4408-4530; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @4531-4605; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @4606-4654; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @4655-4670; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @4681-4688; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @4689-4698; FunctionExpression; parameters=1; async=false; generator=false
+- schema @4699-4708; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @4709-4724; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @4725-4732; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @4733-4738; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @4746-4760; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @4761-4770; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @4771-4780; FunctionExpression; parameters=2; async=false; generator=false
+- schema @4781-4809; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @4810-4835; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @4836-4863; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @4864-4873; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @4886-4895; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @4896-4905; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @4906-4915; FunctionExpression; parameters=2; async=false; generator=false
+- schema @4916-4926; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @4927-4940; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @4941-4950; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @4951-4959; FunctionExpression; parameters=0; async=false; generator=false
+- isEqual @4960-4977; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @4986-4992; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @4993-5000; FunctionExpression; parameters=1; async=false; generator=false
+- schema @5001-5012; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @5013-5024; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @5022-5022; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @5025-5029; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @5027-5027; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @5030-5034; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @5032-5032; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @5045-5052; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @5053-5062; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @5063-5072; FunctionExpression; parameters=2; async=false; generator=false
+- schema @5073-5090; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @5091-5102; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @5103-5112; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @5113-5118; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @5116-5116; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @5129-5136; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @5137-5145; FunctionExpression; parameters=1; async=false; generator=false
+- schema @5146-5155; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @5156-5167; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @5168-5175; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @5176-5181; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @5188-5194; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @5195-5202; FunctionExpression; parameters=1; async=false; generator=false
+- schema @5203-5215; FunctionExpression; parameters=2; async=false; generator=false
+- fromSchema @5216-5229; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @5228-5228; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @5230-5234; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @5232-5232; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @5235-5239; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @5237-5237; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @5303-5317; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @5318-5329; FunctionExpression; parameters=1; async=false; generator=false
+- schema @5330-5366; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @5367-5383; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @5380-5380; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @5384-5416; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @5401-5401; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @5417-5429; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @5423-5423; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @5436-5445; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @5446-5453; FunctionExpression; parameters=1; async=false; generator=false
+- schema @5454-5469; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @5470-5493; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @5494-5509; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @5510-5524; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @5531-5538; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @5539-5547; FunctionExpression; parameters=1; async=false; generator=false
+- schema @5548-5550; FunctionExpression; parameters=0; async=false; generator=false
+- fromSchema @5551-5589; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @5590-5608; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @5609-5614; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @5625-5632; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @5633-5642; FunctionExpression; parameters=1; async=false; generator=false
+- schema @5643-5652; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @5653-5664; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @5665-5672; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @5673-5678; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @5689-5698; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @5699-5708; FunctionExpression; parameters=1; async=false; generator=false
+- schema @5709-5726; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @5727-5740; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @5738-5738; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @5741-5752; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @5746-5746; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @5753-5760; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @5758-5758; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @5769-5775; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @5776-5783; FunctionExpression; parameters=1; async=false; generator=false
+- schema @5784-5795; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @5796-5805; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @5804-5804; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @5806-5810; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @5808-5808; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @5811-5815; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @5813-5813; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @5828-5840; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @5841-5851; FunctionExpression; parameters=1; async=false; generator=false
+- schema @5852-5868; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @5869-5886; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @5887-5899; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @5900-5909; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @5925-5939; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @5940-5951; FunctionExpression; parameters=1; async=false; generator=false
+- schema @5952-6017; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @6018-6048; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @6032-6032; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @6046-6046; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @6049-6100; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @6059-6059; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @6094-6094; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @6101-6118; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @6105-6105; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @6115-6115; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @6127-6133; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @6134-6141; FunctionExpression; parameters=1; async=false; generator=false
+- schema @6142-6153; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @6154-6163; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @6162-6162; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @6164-6168; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @6166-6166; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @6169-6173; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @6171-6171; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @6182-6188; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @6189-6196; FunctionExpression; parameters=1; async=false; generator=false
+- schema @6197-6208; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @6209-6218; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @6217-6217; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @6219-6223; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @6221-6221; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @6224-6228; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @6234-6240; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @6241-6248; FunctionExpression; parameters=1; async=false; generator=false
+- schema @6249-6260; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @6261-6272; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @6271-6271; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @6273-6277; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @6275-6275; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @6278-6282; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @6280-6280; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @6303-6318; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @6319-6336; FunctionExpression; parameters=1; async=false; generator=false
+- schema @6337-6418; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @6419-6471; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @6436-6436; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @6472-6549; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @6482-6482; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @6550-6576; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @6554-6554; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @6589-6599; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @6600-6611; FunctionExpression; parameters=1; async=false; generator=false
+- schema @6612-6636; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @6637-6664; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @6665-6705; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @6706-6727; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @6738-6749; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @6750-6758; FunctionExpression; parameters=1; async=false; generator=false
+- schema @6759-6792; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @6793-6806; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @6803-6803; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @6805-6805; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @6807-6830; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @6815-6815; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @6824-6824; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @6831-6840; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @6834-6834; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @6837-6837; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @6851-6862; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @6863-6872; FunctionExpression; parameters=1; async=false; generator=false
+- schema @6873-6896; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @6897-6924; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @6925-6942; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @6943-6952; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @6963-6970; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @6971-6980; FunctionExpression; parameters=1; async=false; generator=false
+- schema @6981-6990; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @6991-7002; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @7003-7010; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @7011-7016; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @7025-7031; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @7032-7039; FunctionExpression; parameters=1; async=false; generator=false
+- schema @7040-7051; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @7052-7061; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @7060-7060; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @7062-7066; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @7064-7064; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @7067-7071; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @7069-7069; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @7082-7093; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @7094-7103; FunctionExpression; parameters=1; async=false; generator=false
+- schema @7104-7127; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @7128-7147; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @7148-7171; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @7172-7181; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @7196-7205; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @7206-7215; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @7216-7225; FunctionExpression; parameters=2; async=false; generator=false
+- schema @7226-7238; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @7239-7251; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @7252-7261; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @7262-7270; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @7274-7280; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @7281-7288; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @7289-7296; FunctionExpression; parameters=2; async=false; generator=false
+- schema @7297-7308; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @7309-7318; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @7317-7317; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @7319-7323; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @7321-7321; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @7324-7328; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @7326-7326; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @7333-7359; FunctionExpression; parameters=1; async=false; generator=false
+- buffer @7360-7363; FunctionExpression; parameters=1; async=false; generator=false
+- buffer @7364-7366; FunctionExpression; parameters=0; async=false; generator=false
+- view @7367-7371; FunctionExpression; parameters=1; async=false; generator=false
+- view @7372-7374; FunctionExpression; parameters=0; async=false; generator=false
+- length @7375-7377; FunctionExpression; parameters=0; async=false; generator=false
+- length @7378-7381; FunctionExpression; parameters=1; async=false; generator=false
+- clear @7382-7385; FunctionExpression; parameters=0; async=false; generator=false
+- fromArrayBuffer @7386-7389; FunctionExpression; parameters=1; async=false; generator=false
+- fromUint8Array @7390-7392; FunctionExpression; parameters=1; async=false; generator=false
+- fromString @7393-7398; FunctionExpression; parameters=1; async=false; generator=false
+- toString @7399-7410; FunctionExpression; parameters=2; async=false; generator=false
+- fromHexString @7411-7450; FunctionExpression; parameters=1; async=false; generator=false
+- toHexString @7451-7464; FunctionExpression; parameters=2; async=false; generator=false
+- copy @7465-7476; FunctionExpression; parameters=2; async=false; generator=false
+- slice @7477-7488; FunctionExpression; parameters=2; async=false; generator=false
+- realloc @7489-7499; FunctionExpression; parameters=1; async=false; generator=false
+- append @7500-7506; FunctionExpression; parameters=1; async=false; generator=false
+- insert @7507-7522; FunctionExpression; parameters=3; async=false; generator=false
+- isEqual @7523-7531; FunctionExpression; parameters=1; async=false; generator=false
+- isEqualView @7532-7540; FunctionExpression; parameters=1; async=false; generator=false
+- findPattern @7541-7564; FunctionExpression; parameters=4; async=false; generator=false
+- findFirstIn @7565-7593; FunctionExpression; parameters=4; async=false; generator=false
+- findAllIn @7594-7614; FunctionExpression; parameters=3; async=false; generator=false
+- findAllPatternIn @7615-7638; FunctionExpression; parameters=3; async=false; generator=false
+- findFirstNotIn @7639-7691; FunctionExpression; parameters=4; async=false; generator=false
+- findAllNotIn @7692-7723; FunctionExpression; parameters=3; async=false; generator=false
+- findFirstSequence @7724-7749; FunctionExpression; parameters=4; async=false; generator=false
+- findAllSequences @7750-7769; FunctionExpression; parameters=3; async=false; generator=false
+- findPairedPatterns @7770-7816; FunctionExpression; parameters=4; async=false; generator=false
+- (anonymous) @7814-7814; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- findPairedArrays @7817-7859; FunctionExpression; parameters=4; async=false; generator=false
+- (anonymous) @7857-7857; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- replacePattern @7860-7895; FunctionExpression; parameters=5; async=false; generator=false
+- (anonymous) @7878-7878; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- skipPatterns @7896-7924; FunctionExpression; parameters=4; async=false; generator=false
+- skipNotPatterns @7925-7949; FunctionExpression; parameters=4; async=false; generator=false
+- prepareFindParameters @7950-7974; FunctionExpression; parameters=3; async=false; generator=false
+- constructor @7979-8018; FunctionExpression; parameters=1; async=false; generator=false
+- stream @8019-8025; FunctionExpression; parameters=1; async=false; generator=false
+- stream @8026-8028; FunctionExpression; parameters=0; async=false; generator=false
+- length @8029-8032; FunctionExpression; parameters=1; async=false; generator=false
+- length @8033-8038; FunctionExpression; parameters=0; async=false; generator=false
+- start @8039-8046; FunctionExpression; parameters=1; async=false; generator=false
+- start @8047-8049; FunctionExpression; parameters=0; async=false; generator=false
+- buffer @8050-8052; FunctionExpression; parameters=0; async=false; generator=false
+- resetPosition @8053-8056; FunctionExpression; parameters=0; async=false; generator=false
+- findPattern @8057-8076; FunctionExpression; parameters=2; async=false; generator=false
+- findFirstIn @8077-8102; FunctionExpression; parameters=2; async=false; generator=false
+- findAllIn @8103-8106; FunctionExpression; parameters=1; async=false; generator=false
+- findFirstNotIn @8107-8166; FunctionExpression; parameters=2; async=false; generator=false
+- findAllNotIn @8167-8170; FunctionExpression; parameters=1; async=false; generator=false
+- findFirstSequence @8171-8200; FunctionExpression; parameters=3; async=false; generator=false
+- findAllSequences @8201-8204; FunctionExpression; parameters=1; async=false; generator=false
+- findPairedPatterns @8205-8224; FunctionExpression; parameters=3; async=false; generator=false
+- findPairedArrays @8225-8244; FunctionExpression; parameters=3; async=false; generator=false
+- replacePattern @8245-8248; FunctionExpression; parameters=2; async=false; generator=false
+- skipPatterns @8249-8253; FunctionExpression; parameters=1; async=false; generator=false
+- skipNotPatterns @8254-8260; FunctionExpression; parameters=1; async=false; generator=false
+- append @8261-8267; FunctionExpression; parameters=1; async=false; generator=false
+- appendView @8268-8274; FunctionExpression; parameters=1; async=false; generator=false
+- appendChar @8275-8281; FunctionExpression; parameters=1; async=false; generator=false
+- appendUint16 @8282-8291; FunctionExpression; parameters=1; async=false; generator=false
+- appendUint24 @8292-8302; FunctionExpression; parameters=1; async=false; generator=false
+- appendUint32 @8303-8314; FunctionExpression; parameters=1; async=false; generator=false
+- appendInt16 @8315-8324; FunctionExpression; parameters=1; async=false; generator=false
+- appendInt32 @8325-8336; FunctionExpression; parameters=1; async=false; generator=false
+- getBlock @8337-8359; FunctionExpression; parameters=2; async=false; generator=false
+- getUint16 @8360-8365; FunctionExpression; parameters=1; async=false; generator=false
+- getInt16 @8366-8373; FunctionExpression; parameters=1; async=false; generator=false
+- getUint24 @8374-8381; FunctionExpression; parameters=1; async=false; generator=false
+- getUint32 @8382-8390; FunctionExpression; parameters=1; async=false; generator=false
+- getInt32 @8391-8398; FunctionExpression; parameters=1; async=false; generator=false
+- beforeAppend @8399-8406; FunctionExpression; parameters=1; async=false; generator=false
+- isBytes @8411-8414; FunctionDeclaration; parameters=1; async=false; generator=false
+- bytes @8415-8420; FunctionDeclaration; parameters=2; async=false; generator=false
+- exists @8421-8426; FunctionDeclaration; parameters=2; async=false; generator=false
+- output @8427-8433; FunctionDeclaration; parameters=2; async=false; generator=false
+- createView @8443-8443; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- rotr @8445-8445; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- rotl @8447-8447; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- utf8ToBytes @8452-8456; FunctionDeclaration; parameters=1; async=false; generator=false
+- toBytes @8462-8467; FunctionDeclaration; parameters=1; async=false; generator=false
+- clone @8471-8473; FunctionExpression; parameters=0; async=false; generator=false
+- wrapConstructor @8475-8482; FunctionDeclaration; parameters=1; async=false; generator=false
+- hashC @8476-8476; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- hashC.create @8480-8480; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- setBigUint64 @8485-8496; FunctionDeclaration; parameters=4; async=false; generator=false
+- Chi @8498-8498; ArrowFunctionExpression; parameters=3; async=false; generator=false
+- Maj @8500-8500; ArrowFunctionExpression; parameters=3; async=false; generator=false
+- constructor @8506-8518; FunctionExpression; parameters=4; async=false; generator=false
+- update @8519-8544; FunctionExpression; parameters=1; async=false; generator=false
+- digestInto @8545-8582; FunctionExpression; parameters=1; async=false; generator=false
+- digest @8583-8589; FunctionExpression; parameters=0; async=false; generator=false
+- _cloneInto @8590-8601; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @8613-8620; FunctionExpression; parameters=0; async=false; generator=false
+- get @8621-8624; FunctionExpression; parameters=0; async=false; generator=false
+- set @8625-8631; FunctionExpression; parameters=5; async=false; generator=false
+- process @8632-8671; FunctionExpression; parameters=2; async=false; generator=false
+- roundClean @8672-8674; FunctionExpression; parameters=0; async=false; generator=false
+- destroy @8675-8678; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @8680-8680; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @8707-8719; FunctionExpression; parameters=0; async=false; generator=false
+- get @8720-8723; FunctionExpression; parameters=0; async=false; generator=false
+- set @8725-8734; FunctionExpression; parameters=8; async=false; generator=false
+- process @8735-8772; FunctionExpression; parameters=2; async=false; generator=false
+- roundClean @8773-8775; FunctionExpression; parameters=0; async=false; generator=false
+- destroy @8776-8779; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @8785-8785; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- fromBig @8790-8794; FunctionDeclaration; parameters=2; async=false; generator=false
+- split @8795-8803; FunctionDeclaration; parameters=2; async=false; generator=false
+- toBig @8804-8804; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- shrSH @8806-8806; ArrowFunctionExpression; parameters=3; async=false; generator=false
+- shrSL @8807-8807; ArrowFunctionExpression; parameters=3; async=false; generator=false
+- rotrSH @8809-8809; ArrowFunctionExpression; parameters=3; async=false; generator=false
+- rotrSL @8810-8810; ArrowFunctionExpression; parameters=3; async=false; generator=false
+- rotrBH @8812-8812; ArrowFunctionExpression; parameters=3; async=false; generator=false
+- rotrBL @8813-8813; ArrowFunctionExpression; parameters=3; async=false; generator=false
+- rotr32H @8815-8815; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- rotr32L @8816-8816; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- rotlSH @8818-8818; ArrowFunctionExpression; parameters=3; async=false; generator=false
+- rotlSL @8819-8819; ArrowFunctionExpression; parameters=3; async=false; generator=false
+- rotlBH @8821-8821; ArrowFunctionExpression; parameters=3; async=false; generator=false
+- rotlBL @8822-8822; ArrowFunctionExpression; parameters=3; async=false; generator=false
+- add @8825-8828; FunctionDeclaration; parameters=4; async=false; generator=false
+- add3L @8830-8830; ArrowFunctionExpression; parameters=3; async=false; generator=false
+- add3H @8831-8831; ArrowFunctionExpression; parameters=4; async=false; generator=false
+- add4L @8832-8832; ArrowFunctionExpression; parameters=4; async=false; generator=false
+- add4H @8833-8833; ArrowFunctionExpression; parameters=5; async=false; generator=false
+- add5L @8834-8834; ArrowFunctionExpression; parameters=5; async=false; generator=false
+- add5H @8835-8835; ArrowFunctionExpression; parameters=6; async=false; generator=false
+- (anonymous) @8848-8869; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @8869-8869; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @8874-8896; FunctionExpression; parameters=0; async=false; generator=false
+- get @8898-8901; FunctionExpression; parameters=0; async=false; generator=false
+- set @8903-8920; FunctionExpression; parameters=16; async=false; generator=false
+- process @8921-8990; FunctionExpression; parameters=2; async=false; generator=false
+- roundClean @8991-8994; FunctionExpression; parameters=0; async=false; generator=false
+- destroy @8995-8998; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @9001-9021; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @9023-9023; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @9024-9024; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- register @9028-9030; FunctionExpression; parameters=3; async=false; generator=false
+- find @9031-9033; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @9037-9044; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- constructor @9050-9061; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @9062-9072; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @9073-9085; FunctionExpression; parameters=2; async=false; generator=false
+- schema @9086-9088; FunctionExpression; parameters=0; async=false; generator=false
+- fromSchema @9089-9105; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @9106-9110; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @9111-9118; FunctionExpression; parameters=0; async=false; generator=false
+- fromJSON @9119-9147; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @9155-9165; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @9166-9175; FunctionExpression; parameters=1; async=false; generator=false
+- schema @9176-9185; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @9186-9197; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @9198-9205; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @9206-9211; FunctionExpression; parameters=0; async=false; generator=false
+- fromJSON @9212-9217; FunctionExpression; parameters=1; async=false; generator=false
+- parsedKey @9225-9258; FunctionExpression; parameters=0; async=false; generator=false
+- parsedKey @9259-9261; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @9262-9276; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @9277-9286; FunctionExpression; parameters=1; async=false; generator=false
+- schema @9287-9296; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @9297-9312; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @9313-9320; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @9321-9340; FunctionExpression; parameters=0; async=false; generator=false
+- fromJSON @9341-9363; FunctionExpression; parameters=1; async=false; generator=false
+- importKey @9364-9382; FunctionExpression; parameters=2; async=true; generator=false
+- constructor @9397-9413; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @9414-9427; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @9428-9443; FunctionExpression; parameters=2; async=false; generator=false
+- schema @9444-9473; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @9474-9497; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @9498-9528; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @9529-9544; FunctionExpression; parameters=0; async=false; generator=false
+- fromJSON @9545-9567; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @9580-9591; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @9592-9603; FunctionExpression; parameters=1; async=false; generator=false
+- schema @9604-9614; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @9615-9628; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @9629-9637; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @9638-9644; FunctionExpression; parameters=0; async=false; generator=false
+- fromJSON @9645-9650; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @9677-9697; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @9698-9723; FunctionExpression; parameters=1; async=false; generator=false
+- schema @9724-9749; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @9750-9782; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @9781-9781; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @9783-9802; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @9796-9796; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @9803-9818; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @9815-9815; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- fromJSON @9819-9832; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @9830-9830; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @9848-9865; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @9866-9881; FunctionExpression; parameters=1; async=false; generator=false
+- schema @9882-9905; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @9906-9948; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @9925-9925; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @9949-9968; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @9962-9962; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @9969-9993; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @9977-9977; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- fromJSON @9994-10016; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @10030-10063; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @10064-10075; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @10076-10087; FunctionExpression; parameters=2; async=false; generator=false
+- schema @10088-10120; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @10121-10142; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @10143-10162; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @10163-10172; FunctionExpression; parameters=0; async=false; generator=false
+- getEncryptedContent @10173-10178; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @10193-10202; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @10203-10225; FunctionExpression; parameters=1; async=false; generator=false
+- schema @10226-10265; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @10266-10293; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @10294-10335; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @10336-10351; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @10366-10379; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @10380-10396; FunctionExpression; parameters=1; async=false; generator=false
+- schema @10397-10420; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @10421-10448; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @10449-10464; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @10465-10479; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @10490-10497; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @10498-10507; FunctionExpression; parameters=1; async=false; generator=false
+- schema @10508-10517; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @10518-10537; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @10538-10545; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @10546-10551; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @10556-10562; FunctionExpression; parameters=1; async=false; generator=false
+- encrypt @10563-10565; FunctionExpression; parameters=1; async=true; generator=false
+- decrypt @10566-10568; FunctionExpression; parameters=1; async=true; generator=false
+- sign @10569-10571; FunctionExpression; parameters=1; async=false; generator=false
+- verify @10572-10574; FunctionExpression; parameters=1; async=true; generator=false
+- digest @10575-10577; FunctionExpression; parameters=1; async=true; generator=false
+- generateKey @10578-10580; FunctionExpression; parameters=1; async=true; generator=false
+- deriveKey @10581-10583; FunctionExpression; parameters=1; async=true; generator=false
+- deriveBits @10584-10586; FunctionExpression; parameters=1; async=true; generator=false
+- wrapKey @10587-10589; FunctionExpression; parameters=1; async=true; generator=false
+- unwrapKey @10590-10592; FunctionExpression; parameters=1; async=true; generator=false
+- exportKey @10593-10595; FunctionExpression; parameters=1; async=false; generator=false
+- importKey @10596-10598; FunctionExpression; parameters=1; async=false; generator=false
+- getRandomValues @10599-10604; FunctionExpression; parameters=1; async=false; generator=false
+- makePKCS12B2Key @10607-10680; FunctionDeclaration; parameters=5; async=true; generator=false
+- (anonymous) @10638-10638; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @10649-10649; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @10650-10650; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- (anonymous) @10663-10663; ArrowFunctionExpression; parameters=2; async=false; generator=false
+- prepareAlgorithm @10681-10692; FunctionDeclaration; parameters=1; async=false; generator=false
+- importKey @10694-10969; FunctionExpression; parameters=5; async=true; generator=false
+- exportKey @10970-11005; FunctionExpression; parameters=2; async=true; generator=false
+- convert @11006-11012; FunctionExpression; parameters=6; async=true; generator=false
+- getAlgorithmByOID @11013-11233; FunctionExpression; parameters=3; async=false; generator=false
+- getOIDByAlgorithm @11234-11402; FunctionExpression; parameters=3; async=false; generator=false
+- getAlgorithmParameters @11403-11817; FunctionExpression; parameters=2; async=false; generator=false
+- getHashAlgorithm @11818-11859; FunctionExpression; parameters=1; async=false; generator=false
+- encryptEncryptedContentInfo @11860-11919; FunctionExpression; parameters=1; async=true; generator=false
+- decryptEncryptedContentInfo @11920-11963; FunctionExpression; parameters=1; async=true; generator=false
+- stampDataWithPassword @11964-11995; FunctionExpression; parameters=1; async=true; generator=false
+- verifyDataStampedWithPassword @11996-12025; FunctionExpression; parameters=1; async=true; generator=false
+- getSignatureParameters @12026-12084; FunctionExpression; parameters=2; async=true; generator=false
+- signWithPrivateKey @12085-12091; FunctionExpression; parameters=3; async=true; generator=false
+- fillPublicKeyParameters @12092-12121; FunctionExpression; parameters=2; async=false; generator=false
+- getPublicKey @12122-12128; FunctionExpression; parameters=3; async=true; generator=false
+- verifyWithPublicKey @12129-12191; FunctionExpression; parameters=5; async=true; generator=false
+- isCryptoEngine @12198-12204; FunctionDeclaration; parameters=1; async=false; generator=false
+- setEngine @12205-12258; FunctionDeclaration; parameters=2; async=false; generator=false
+- getEngine @12259-12271; FunctionDeclaration; parameters=0; async=false; generator=false
+- getCrypto @12272-12278; FunctionDeclaration; parameters=1; async=false; generator=false
+- getRandomValues @12279-12281; FunctionDeclaration; parameters=1; async=false; generator=false
+- getOIDByAlgorithm @12282-12284; FunctionDeclaration; parameters=3; async=false; generator=false
+- getAlgorithmParameters @12285-12287; FunctionDeclaration; parameters=2; async=false; generator=false
+- createCMSECDSASignature @12288-12306; FunctionDeclaration; parameters=1; async=false; generator=false
+- createECDSASignatureFromCMS @12307-12319; FunctionDeclaration; parameters=2; async=false; generator=false
+- getAlgorithmByOID @12320-12322; FunctionDeclaration; parameters=3; async=false; generator=false
+- getHashAlgorithm @12323-12325; FunctionDeclaration; parameters=1; async=false; generator=false
+- kdfWithCounter @12326-12357; FunctionDeclaration; parameters=5; async=true; generator=false
+- kdf @12358-12414; FunctionDeclaration; parameters=5; async=true; generator=false
+- constructor @12435-12450; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @12451-12468; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @12469-12478; FunctionExpression; parameters=1; async=false; generator=false
+- fromStream @12479-12534; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @12535-12538; FunctionExpression; parameters=0; async=false; generator=false
+- toStream @12539-12600; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @12601-12611; FunctionExpression; parameters=0; async=false; generator=false
+- verify @12612-12642; FunctionExpression; parameters=4; async=true; generator=false
+- verifySCTsForCertificate @12645-12681; FunctionDeclaration; parameters=5; async=true; generator=false
+- constructor @12685-12691; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @12692-12699; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @12700-12707; FunctionExpression; parameters=2; async=false; generator=false
+- schema @12708-12716; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @12717-12733; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @12734-12748; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @12749-12753; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @12751-12751; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @12762-12768; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @12769-12776; FunctionExpression; parameters=1; async=false; generator=false
+- schema @12777-12788; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @12789-12798; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @12797-12797; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @12799-12803; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @12801-12801; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @12804-12808; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @12806-12806; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- getItems @12813-12840; FunctionExpression; parameters=0; async=false; generator=false
+- fromBER @12841-12858; FunctionExpression; parameters=2; async=false; generator=false
+- find @12859-12862; FunctionExpression; parameters=1; async=false; generator=false
+- register @12863-12865; FunctionExpression; parameters=3; async=false; generator=false
+- parsedValue @12878-12884; FunctionExpression; parameters=0; async=false; generator=false
+- parsedValue @12885-12887; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @12888-12904; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @12905-12918; FunctionExpression; parameters=1; async=false; generator=false
+- schema @12919-12932; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @12933-12948; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @12949-12959; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @12960-12972; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @12981-12987; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @12988-12995; FunctionExpression; parameters=1; async=false; generator=false
+- schema @12996-13008; FunctionExpression; parameters=2; async=false; generator=false
+- fromSchema @13009-13018; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @13017-13017; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @13019-13023; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @13021-13021; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @13024-13028; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @13026-13026; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @13041-13051; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @13052-13063; FunctionExpression; parameters=1; async=false; generator=false
+- schema @13064-13077; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @13078-13096; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @13097-13108; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @13109-13118; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @13145-13167; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @13168-13193; FunctionExpression; parameters=1; async=false; generator=false
+- schema @13194-13243; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @13244-13299; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @13292-13292; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @13300-13336; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @13327-13327; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @13337-13359; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @13351-13351; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @13372-13380; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @13381-13392; FunctionExpression; parameters=1; async=false; generator=false
+- schema @13393-13403; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @13404-13425; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @13426-13434; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @13435-13441; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @13456-13467; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @13468-13481; FunctionExpression; parameters=1; async=false; generator=false
+- schema @13482-13496; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @13497-13518; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @13519-13529; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @13530-13540; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @13553-13567; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @13568-13579; FunctionExpression; parameters=1; async=false; generator=false
+- schema @13580-13610; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @13611-13637; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @13638-13661; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @13662-13674; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @13687-13701; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @13702-13713; FunctionExpression; parameters=1; async=false; generator=false
+- schema @13714-13748; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @13749-13780; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @13781-13811; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @13812-13824; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @13849-13867; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @13868-13891; FunctionExpression; parameters=1; async=false; generator=false
+- schema @13892-13934; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @13935-13991; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @13984-13984; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @13992-14019; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @14008-14008; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @14020-14037; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @14028-14028; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @14050-14058; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @14059-14070; FunctionExpression; parameters=1; async=false; generator=false
+- schema @14071-14081; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @14082-14103; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @14104-14112; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @14113-14119; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @14127-14134; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @14135-14144; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @14145-14155; FunctionExpression; parameters=2; async=false; generator=false
+- schema @14156-14175; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @14176-14182; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @14183-14196; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @14197-14205; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @14219-14223; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @14225-14232; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @14233-14242; FunctionExpression; parameters=1; async=false; generator=false
+- schema @14243-14252; FunctionExpression; parameters=2; async=false; generator=false
+- fromSchema @14253-14270; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @14271-14279; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @14280-14285; FunctionExpression; parameters=0; async=false; generator=false
+- tbsCertificate @14331-14414; FunctionDeclaration; parameters=1; async=false; generator=false
+- tbs @14416-14418; FunctionExpression; parameters=0; async=false; generator=false
+- tbs @14419-14421; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @14422-14447; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @14448-14481; FunctionExpression; parameters=1; async=false; generator=false
+- schema @14482-14496; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @14497-14531; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @14528-14528; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- encodeTBS @14532-14592; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @14585-14585; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @14593-14613; FunctionExpression; parameters=1; async=false; generator=false
+- toJSON @14614-14641; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @14638-14638; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- getPublicKey @14642-14644; FunctionExpression; parameters=2; async=true; generator=false
+- getKeyHash @14645-14647; FunctionExpression; parameters=2; async=true; generator=false
+- sign @14648-14659; FunctionExpression; parameters=3; async=true; generator=false
+- verify @14660-14672; FunctionExpression; parameters=2; async=true; generator=false
+- checkCA @14675-14694; FunctionDeclaration; parameters=2; async=false; generator=false
+- constructor @14704-14714; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @14715-14726; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @14727-14738; FunctionExpression; parameters=2; async=false; generator=false
+- schema @14739-14754; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @14755-14787; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @14788-14810; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @14811-14816; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @14829-14839; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @14840-14851; FunctionExpression; parameters=1; async=false; generator=false
+- schema @14852-14871; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @14872-14881; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @14882-14893; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @14894-14903; FunctionExpression; parameters=0; async=false; generator=false
+- tbsCertList @14937-14998; FunctionDeclaration; parameters=1; async=false; generator=false
+- tbs @15012-15014; FunctionExpression; parameters=0; async=false; generator=false
+- tbs @15015-15017; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @15018-15039; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @15040-15065; FunctionExpression; parameters=1; async=false; generator=false
+- schema @15066-15080; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @15081-15103; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @15096-15096; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- encodeTBS @15104-15135; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @15117-15117; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @15136-15156; FunctionExpression; parameters=1; async=false; generator=false
+- toJSON @15157-15179; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @15173-15173; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- isCertificateRevoked @15180-15193; FunctionExpression; parameters=1; async=false; generator=false
+- sign @15194-15205; FunctionExpression; parameters=3; async=true; generator=false
+- verify @15206-15229; FunctionExpression; parameters=2; async=true; generator=false
+- constructor @15241-15251; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @15252-15263; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @15264-15275; FunctionExpression; parameters=2; async=false; generator=false
+- schema @15276-15291; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @15292-15312; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @15313-15330; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @15331-15336; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @15349-15359; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @15360-15371; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @15372-15385; FunctionExpression; parameters=2; async=false; generator=false
+- schema @15386-15408; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @15409-15427; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @15426-15426; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @15428-15445; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @15439-15439; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @15446-15454; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @15452-15452; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- encrypt @15455-15462; FunctionExpression; parameters=2; async=true; generator=false
+- decrypt @15463-15470; FunctionExpression; parameters=2; async=true; generator=false
+- constructor @15482-15492; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @15493-15504; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @15505-15517; FunctionExpression; parameters=2; async=false; generator=false
+- schema @15518-15541; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @15542-15557; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @15558-15565; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @15566-15571; FunctionExpression; parameters=0; async=false; generator=false
+- parseInternalValues @15572-15581; FunctionExpression; parameters=2; async=true; generator=false
+- makeInternalValues @15582-15597; FunctionExpression; parameters=2; async=true; generator=false
+- constructor @15608-15615; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @15616-15625; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @15626-15635; FunctionExpression; parameters=2; async=false; generator=false
+- schema @15636-15651; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @15652-15663; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @15664-15677; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @15678-15683; FunctionExpression; parameters=0; async=false; generator=false
+- getItems @15688-15699; FunctionExpression; parameters=0; async=false; generator=false
+- register @15700-15702; FunctionExpression; parameters=2; async=false; generator=false
+- find @15703-15705; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @15717-15727; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @15728-15739; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @15740-15751; FunctionExpression; parameters=2; async=false; generator=false
+- schema @15752-15776; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @15777-15796; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @15794-15794; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @15797-15816; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @15810-15810; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @15817-15826; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @15823-15823; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @15832-15838; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @15839-15846; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @15847-15854; FunctionExpression; parameters=2; async=false; generator=false
+- schema @15855-15866; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @15867-15878; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @15877-15877; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @15879-15883; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @15881-15881; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @15884-15888; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @15886-15886; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @15899-15906; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @15907-15916; FunctionExpression; parameters=1; async=false; generator=false
+- schema @15917-15926; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @15927-15933; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @15934-15941; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @15942-15950; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @15958-15964; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @15965-15972; FunctionExpression; parameters=1; async=false; generator=false
+- schema @15973-16020; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @16021-16047; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @16025-16046; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @16048-16082; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @16050-16080; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @16083-16087; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @16085-16085; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @16098-16105; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @16106-16115; FunctionExpression; parameters=1; async=false; generator=false
+- schema @16116-16125; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @16126-16132; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @16133-16140; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @16141-16149; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @16159-16166; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @16167-16176; FunctionExpression; parameters=1; async=false; generator=false
+- schema @16177-16202; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @16203-16219; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @16220-16232; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @16222-16222; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @16223-16228; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @16233-16238; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @16235-16235; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @16236-16236; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @16249-16255; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @16256-16265; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @16266-16275; FunctionExpression; parameters=2; async=false; generator=false
+- schema @16276-16301; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @16302-16325; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @16326-16349; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @16350-16359; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @16370-16377; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @16378-16387; FunctionExpression; parameters=1; async=false; generator=false
+- schema @16388-16397; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @16398-16413; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @16414-16421; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @16422-16427; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @16437-16446; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @16447-16456; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @16457-16466; FunctionExpression; parameters=2; async=false; generator=false
+- schema @16467-16485; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @16486-16502; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @16503-16524; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @16525-16533; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @16549-16559; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @16560-16575; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @16576-16590; FunctionExpression; parameters=2; async=false; generator=false
+- schema @16591-16602; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @16603-16631; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @16632-16655; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @16656-16663; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @16674-16681; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @16682-16691; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @16692-16700; FunctionExpression; parameters=2; async=false; generator=false
+- schema @16701-16710; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @16711-16726; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @16727-16734; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @16735-16740; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @16750-16759; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @16760-16769; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @16770-16779; FunctionExpression; parameters=2; async=false; generator=false
+- schema @16780-16806; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @16807-16835; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @16836-16854; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @16855-16863; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @16874-16883; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @16884-16893; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @16894-16903; FunctionExpression; parameters=2; async=false; generator=false
+- schema @16904-16917; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @16918-16931; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @16932-16941; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @16942-16950; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @16963-16975; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @16976-16987; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @16988-17005; FunctionExpression; parameters=2; async=false; generator=false
+- schema @17006-17019; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @17020-17039; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @17040-17052; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @17053-17064; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @17074-17081; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @17082-17091; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @17092-17101; FunctionExpression; parameters=2; async=false; generator=false
+- schema @17102-17125; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @17126-17146; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @17147-17162; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @17163-17171; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @17182-17189; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @17190-17199; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @17200-17209; FunctionExpression; parameters=2; async=false; generator=false
+- schema @17210-17219; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @17220-17235; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @17236-17243; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @17244-17249; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @17259-17265; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @17266-17273; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @17274-17281; FunctionExpression; parameters=2; async=false; generator=false
+- schema @17282-17293; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @17294-17303; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @17302-17302; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @17304-17308; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @17306-17306; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @17309-17313; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @17311-17311; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @17332-17346; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @17347-17366; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @17367-17386; FunctionExpression; parameters=2; async=false; generator=false
+- schema @17387-17414; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @17415-17445; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @17446-17471; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @17472-17483; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @17496-17508; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @17509-17520; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @17521-17539; FunctionExpression; parameters=2; async=false; generator=false
+- schema @17540-17553; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @17554-17573; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @17574-17586; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @17587-17598; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @17614-17624; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @17625-17640; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @17641-17658; FunctionExpression; parameters=2; async=false; generator=false
+- schema @17659-17670; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @17671-17694; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @17695-17704; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @17705-17712; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @17728-17740; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @17741-17756; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @17757-17771; FunctionExpression; parameters=2; async=false; generator=false
+- schema @17772-17791; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @17792-17817; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @17818-17835; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @17836-17846; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @17857-17864; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @17865-17874; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @17875-17884; FunctionExpression; parameters=2; async=false; generator=false
+- schema @17885-17894; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @17895-17906; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @17907-17914; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @17915-17923; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @17933-17942; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @17943-17952; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @17953-17962; FunctionExpression; parameters=2; async=false; generator=false
+- schema @17963-18006; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @18007-18044; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @18045-18060; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @18061-18069; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @18082-18090; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @18091-18114; FunctionExpression; parameters=1; async=false; generator=false
+- schema @18115-18146; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @18147-18175; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @18176-18208; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @18209-18221; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @18234-18244; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @18245-18256; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @18257-18266; FunctionExpression; parameters=2; async=false; generator=false
+- schema @18267-18292; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @18293-18311; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @18312-18334; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @18335-18344; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @18370-18387; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @18388-18403; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @18404-18420; FunctionExpression; parameters=2; async=false; generator=false
+- schema @18421-18460; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @18461-18489; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @18485-18485; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @18488-18488; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @18490-18520; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @18504-18504; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @18514-18514; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @18521-18532; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @18524-18524; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @18530-18530; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- addRecipientByCertificate @18533-18610; FunctionExpression; parameters=4; async=false; generator=false
+- addRecipientByPreDefinedData @18611-18698; FunctionExpression; parameters=4; async=false; generator=false
+- addRecipientByKeyIdentifier @18699-18708; FunctionExpression; parameters=4; async=false; generator=false
+- _addKeyAgreeRecipientInfo @18709-18743; FunctionExpression; parameters=4; async=false; generator=false
+- encrypt @18744-18924; FunctionExpression; parameters=3; async=true; generator=false
+- SubKeyAgreeRecipientInfo @18766-18839; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- SubKeyTransRecipientInfo @18840-18862; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- SubKEKRecipientInfo @18863-18869; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- SubPasswordRecipientinfo @18870-18903; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- decrypt @18925-19154; FunctionExpression; parameters=3; async=true; generator=false
+- SubKeyAgreeRecipientInfo @18930-19043; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- applyKDF @18996-19024; FunctionDeclaration; parameters=1; async=true; generator=false
+- importAesKwKey @19026-19028; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- unwrapSessionKey @19030-19034; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- SubKeyTransRecipientInfo @19044-19074; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- SubKEKRecipientInfo @19075-19087; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- SubPasswordRecipientinfo @19088-19124; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- constructor @19162-19171; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @19172-19181; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @19182-19191; FunctionExpression; parameters=2; async=false; generator=false
+- schema @19192-19203; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @19204-19215; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @19214-19214; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @19216-19220; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @19218-19218; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @19221-19225; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @19223-19223; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- parseInternalValues @19226-19284; FunctionExpression; parameters=2; async=true; generator=false
+- makeInternalValues @19285-19358; FunctionExpression; parameters=2; async=true; generator=false
+- create @19373-19377; FunctionExpression; parameters=3; async=true; generator=false
+- constructor @19378-19387; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @19388-19400; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @19401-19412; FunctionExpression; parameters=2; async=false; generator=false
+- schema @19413-19428; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @19429-19444; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @19445-19454; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @19455-19462; FunctionExpression; parameters=0; async=false; generator=false
+- isEqual @19463-19477; FunctionExpression; parameters=1; async=false; generator=false
+- createForCertificate @19478-19492; FunctionExpression; parameters=3; async=true; generator=false
+- constructor @19509-19523; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @19524-19538; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @19539-19554; FunctionExpression; parameters=2; async=false; generator=false
+- schema @19555-19617; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @19618-19645; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @19644-19644; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @19646-19672; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @19666-19666; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @19673-19686; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @19683-19683; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- tbs @19711-19713; FunctionExpression; parameters=0; async=false; generator=false
+- tbs @19714-19716; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @19717-19732; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @19733-19749; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @19750-19764; FunctionExpression; parameters=2; async=false; generator=false
+- schema @19765-19825; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @19826-19841; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @19838-19838; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @19840-19840; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @19842-19901; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @19883-19883; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @19892-19892; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @19902-19920; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @19914-19914; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @19917-19917; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @19932-19938; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @19940-19945; FunctionExpression; parameters=2; async=false; generator=false
+- isTrusted @19948-19955; FunctionDeclaration; parameters=2; async=false; generator=false
+- constructor @19957-19965; FunctionExpression; parameters=1; async=false; generator=false
+- defaultFindOrigin @19966-19984; FunctionExpression; parameters=2; async=false; generator=false
+- defaultFindIssuer @19985-20067; FunctionExpression; parameters=3; async=true; generator=false
+- checkCertificate @20018-20049; FunctionDeclaration; parameters=1; async=false; generator=false
+- defaultValues @20068-20087; FunctionExpression; parameters=1; async=false; generator=false
+- sort @20088-20443; FunctionExpression; parameters=2; async=true; generator=false
+- buildPath @20090-20131; ArrowFunctionExpression; parameters=2; async=true; generator=false
+- checkUnique @20092-20107; FunctionDeclaration; parameters=1; async=false; generator=false
+- findCRL @20132-20181; ArrowFunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @20136-20136; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @20143-20143; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- findOCSP @20182-20200; ArrowFunctionExpression; parameters=2; async=true; generator=false
+- checkForCA @20201-20265; FunctionDeclaration; parameters=2; async=true; generator=false
+- basicCheck @20266-20388; ArrowFunctionExpression; parameters=2; async=true; generator=false
+- verify @20444-21065; FunctionExpression; parameters=2; async=true; generator=false
+- compareDNSName @20445-20480; FunctionDeclaration; parameters=2; async=false; generator=false
+- compareRFC822Name @20481-20500; FunctionDeclaration; parameters=2; async=false; generator=false
+- compareUniformResourceIdentifier @20501-20526; FunctionDeclaration; parameters=2; async=false; generator=false
+- compareIPAddress @20527-20545; FunctionDeclaration; parameters=2; async=false; generator=false
+- compareDirectoryName @20546-20572; FunctionDeclaration; parameters=2; async=false; generator=false
+- constructor @21084-21095; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @21096-21109; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @21110-21131; FunctionExpression; parameters=2; async=false; generator=false
+- schema @21132-21165; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @21166-21176; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @21174-21174; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @21177-21198; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @21190-21190; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @21199-21209; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @21206-21206; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- getCertificateStatus @21210-21260; FunctionExpression; parameters=3; async=true; generator=false
+- sign @21261-21274; FunctionExpression; parameters=3; async=true; generator=false
+- verify @21275-21322; FunctionExpression; parameters=2; async=true; generator=false
+- CertificationRequestInfo @21347-21379; FunctionDeclaration; parameters=1; async=false; generator=false
+- tbs @21381-21383; FunctionExpression; parameters=0; async=false; generator=false
+- tbs @21384-21386; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @21387-21401; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @21402-21421; FunctionExpression; parameters=1; async=false; generator=false
+- schema @21422-21437; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @21438-21451; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @21447-21447; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- encodeTBS @21452-21470; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @21464-21464; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @21471-21491; FunctionExpression; parameters=1; async=false; generator=false
+- toJSON @21492-21505; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @21502-21502; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- sign @21506-21516; FunctionExpression; parameters=3; async=true; generator=false
+- verify @21517-21519; FunctionExpression; parameters=1; async=true; generator=false
+- getPublicKey @21520-21522; FunctionExpression; parameters=2; async=true; generator=false
+- constructor @21533-21540; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @21541-21550; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @21551-21561; FunctionExpression; parameters=2; async=false; generator=false
+- schema @21562-21575; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @21576-21591; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @21592-21599; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @21600-21605; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @21616-21649; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @21650-21659; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @21660-21673; FunctionExpression; parameters=2; async=false; generator=false
+- schema @21674-21692; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @21693-21705; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @21706-21724; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @21725-21733; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @21738-21740; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @21752-21762; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @21763-21774; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @21775-21787; FunctionExpression; parameters=2; async=false; generator=false
+- schema @21788-21806; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @21807-21825; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @21826-21837; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @21838-21847; FunctionExpression; parameters=0; async=false; generator=false
+- create @21858-21869; FunctionExpression; parameters=3; async=true; generator=false
+- constructor @21870-21877; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @21878-21887; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @21888-21897; FunctionExpression; parameters=2; async=false; generator=false
+- schema @21898-21907; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @21908-21923; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @21924-21931; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @21932-21937; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @21948-21957; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @21958-21967; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @21968-21977; FunctionExpression; parameters=2; async=false; generator=false
+- schema @21978-21998; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @21999-22020; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @22018-22018; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @22021-22041; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @22033-22033; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @22042-22050; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @22047-22047; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- tbs @22072-22074; FunctionExpression; parameters=0; async=false; generator=false
+- tbs @22075-22077; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @22078-22094; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @22095-22109; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @22110-22124; FunctionExpression; parameters=2; async=false; generator=false
+- schema @22125-22173; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @22174-22186; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @22183-22183; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @22185-22185; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @22187-22240; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @22220-22220; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @22230-22230; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @22241-22253; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @22248-22248; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @22250-22250; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @22261-22271; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @22272-22283; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @22284-22295; FunctionExpression; parameters=2; async=false; generator=false
+- schema @22296-22320; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @22321-22343; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @22342-22342; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @22344-22365; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @22357-22357; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @22366-22375; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @22372-22372; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @22386-22395; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @22396-22405; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @22406-22421; FunctionExpression; parameters=2; async=false; generator=false
+- schema @22422-22448; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @22449-22456; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @22457-22474; FunctionExpression; parameters=1; async=false; generator=false
+- toJSON @22475-22483; FunctionExpression; parameters=0; async=false; generator=false
+- createForCertificate @22484-22490; FunctionExpression; parameters=3; async=true; generator=false
+- sign @22491-22502; FunctionExpression; parameters=3; async=true; generator=false
+- verify @22503-22504; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @22515-22522; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @22523-22532; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @22533-22542; FunctionExpression; parameters=2; async=false; generator=false
+- schema @22543-22552; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @22553-22564; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @22565-22572; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @22573-22578; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @22585-22594; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @22595-22604; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @22605-22615; FunctionExpression; parameters=2; async=false; generator=false
+- schema @22616-22638; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @22639-22649; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @22650-22665; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @22666-22674; FunctionExpression; parameters=0; async=false; generator=false
+- getCertificateStatus @22675-22694; FunctionExpression; parameters=3; async=true; generator=false
+- sign @22695-22702; FunctionExpression; parameters=3; async=true; generator=false
+- verify @22703-22718; FunctionExpression; parameters=2; async=true; generator=false
+- constructor @22729-22737; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @22738-22749; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @22750-22761; FunctionExpression; parameters=2; async=false; generator=false
+- schema @22762-22778; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @22779-22799; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @22798-22798; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @22800-22811; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @22809-22809; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @22812-22819; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @22817-22817; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @22848-22864; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @22865-22884; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @22885-22911; FunctionExpression; parameters=2; async=false; generator=false
+- schema @22912-22973; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @22974-22991; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @22992-23015; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @23016-23035; FunctionExpression; parameters=0; async=false; generator=false
+- constructor @23073-23098; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @23099-23124; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @23125-23150; FunctionExpression; parameters=2; async=false; generator=false
+- schema @23151-23205; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @23206-23225; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @23224-23224; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @23226-23262; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @23256-23256; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @23263-23282; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @23280-23280; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- verify @23283-23299; FunctionExpression; parameters=2; async=true; generator=false
+- constructor @23326-23336; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @23339-23357; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @23358-23377; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @23378-23394; FunctionExpression; parameters=2; async=false; generator=false
+- schema @23395-23449; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @23450-23477; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @23456-23456; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @23467-23473; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @23476-23476; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @23478-23534; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @23480-23480; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @23481-23481; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @23484-23484; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @23487-23487; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @23488-23488; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @23497-23497; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @23517-23525; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @23529-23529; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @23535-23549; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @23538-23538; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @23540-23540; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @23543-23543; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @23546-23546; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- verify @23550-23816; FunctionExpression; parameters=2; async=true; generator=false
+- (anonymous) @23655-23655; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @23683-23691; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- sign @23817-23868; FunctionExpression; parameters=5; async=true; generator=false
+- (anonymous) @23829-23829; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @23883-23896; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @23897-23910; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @23911-23927; FunctionExpression; parameters=2; async=false; generator=false
+- schema @23928-23947; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @23948-23970; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @23971-23982; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @23983-23992; FunctionExpression; parameters=0; async=false; generator=false
+- makeInternalValues @23993-24092; FunctionExpression; parameters=2; async=true; generator=false
+- parseInternalValues @24093-24144; FunctionExpression; parameters=2; async=true; generator=false
+- (anonymous) @24157-24164; FunctionExpression; parameters=1; async=false; generator=false
+- constructor @24166-24178; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @24179-24190; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @24191-24202; FunctionExpression; parameters=2; async=false; generator=false
+- schema @24203-24224; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @24225-24245; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @24246-24261; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @24262-24273; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @24267-24267; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @24299-24318; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @24319-24336; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @24337-24353; FunctionExpression; parameters=2; async=false; generator=false
+- schema @24354-24390; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @24391-24405; FunctionExpression; parameters=1; async=false; generator=false
+- (anonymous) @24404-24404; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toSchema @24406-24428; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @24422-24422; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- toJSON @24429-24444; FunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @24441-24441; ArrowFunctionExpression; parameters=1; async=false; generator=false
+- constructor @24458-24467; FunctionExpression; parameters=1; async=false; generator=false
+- defaultValues @24468-24477; FunctionExpression; parameters=1; async=false; generator=false
+- compareWithDefault @24478-24490; FunctionExpression; parameters=2; async=false; generator=false
+- schema @24491-24509; FunctionExpression; parameters=1; async=false; generator=false
+- fromSchema @24510-24517; FunctionExpression; parameters=1; async=false; generator=false
+- toSchema @24518-24527; FunctionExpression; parameters=0; async=false; generator=false
+- toJSON @24528-24536; FunctionExpression; parameters=0; async=false; generator=false
+- sign @24537-24541; FunctionExpression; parameters=3; async=true; generator=false
+- verify @24542-24546; FunctionExpression; parameters=2; async=true; generator=false
+- assertContentType @24547-24554; FunctionExpression; parameters=0; async=false; generator=false
+- initCryptoEngine @24558-24571; FunctionDeclaration; parameters=0; async=false; generator=false
+- Class TimeStampResp @24457-24555
+- Class TimeStampReq @24298-24445
+- Class PKIStatusInfo @24165-24274
+- Class PFX @23882-24145
+- Class SignedData @23338-23869
+- Class SignedDataVerifyError @23325-23337
+- Class TSTInfo @23072-23300
+- Class SignerInfo @22847-23036
+- Class SignedAndUnsignedAttributes @22728-22820
+- Class OCSPResponse @22584-22719
+- Class ResponseBytes @22514-22579
+- Class OCSPRequest @22385-22505
+- Class Signature @22260-22376
+- Class TBSRequest @22071-22254
+- Class Request @21947-22051
+- Class MessageImprint @21857-21938
+- Class MacData @21751-21848
+- Class KeyBag @21737-21741
+- Class EncapsulatedContentInfo @21615-21734
+- Class DigestInfo @21532-21606
+- Class CertificationRequest @21380-21523
+- Class BasicOCSPResponse @21083-21323
+- Class CertificateChainValidationEngine @19956-21066
+- Class ChainValidationError @19939-19946
+- Class ResponseData @19710-19921
+- Class SingleResponse @19508-19687
+- Class CertID @19372-19493
+- Class AuthenticatedSafe @19161-19359
+- Class EnvelopedData @18369-19155
+- Class ECCCMSSharedInfo @18233-18345
+- Class RSAESOAEPParams @18081-18222
+- Class RecipientInfo @17932-18070
+- Class OtherRecipientInfo @17856-17924
+- Class PasswordRecipientinfo @17727-17847
+- Class KEKRecipientInfo @17613-17713
+- Class KEKIdentifier @17495-17599
+- Class KeyAgreeRecipientInfo @17331-17484
+- Class RecipientEncryptedKeys @17258-17314
+- Class RecipientEncryptedKey @17181-17250
+- Class KeyAgreeRecipientIdentifier @17073-17172
+- Class RecipientKeyIdentifier @16962-17065
+- Class OtherKeyAttribute @16873-16951
+- Class OriginatorIdentifierOrKey @16749-16864
+- Class OriginatorPublicKey @16673-16741
+- Class KeyTransRecipientInfo @16548-16664
+- Class RecipientIdentifier @16436-16534
+- Class IssuerAndSerialNumber @16369-16428
+- Class OriginatorInfo @16248-16360
+- Class RevocationInfoChoices @16158-16239
+- Class OtherRevocationInfoFormat @16097-16150
+- Class CertificateSet @15957-16088
+- Class OtherCertificateFormat @15898-15951
+- Class SafeContents @15831-15889
+- Class SafeBag @15716-15827
+- Class SafeBagValueFactory @15687-15706
+- Class SecretBag @15607-15684
+- Class PKCS8ShroudedKeyBag @15481-15598
+- Class EncryptedData @15348-15471
+- Class CRLBag @15240-15337
+- Class CertificateRevocationList @15011-15230
+- Class RevokedCertificate @14828-14904
+- Class CertBag @14703-14817
+- Class Certificate @14415-14673
+- Class Time @14224-14286
+- Class ContentInfo @14126-14206
+- Class AttributeCertificateV2 @14049-14120
+- Class AttributeCertificateInfoV2 @13848-14038
+- Class Holder @13686-13825
+- Class V2Form @13552-13675
+- Class ObjectDigestInfo @13455-13541
+- Class AttributeCertificateV1 @13371-13442
+- Class AttributeCertificateInfoV1 @13144-13360
+- Class IssuerSerial @13040-13119
+- Class Extensions @12980-13029
+- Class Extension @12877-12973
+- Class ExtensionValueFactory @12812-12866
+- Class SubjectDirectoryAttributes @12761-12809
+- Class SignedCertificateTimestampList @12684-12754
+- Class SignedCertificateTimestamp @12434-12643
+- Class CryptoEngine @10693-12192
+- Class AbstractCryptoEngine @10555-10605
+- Class PBES2Params @10489-10552
+- Class PBKDF2Params @10365-10480
+- Class RSASSAPSSParams @10192-10352
+- Class EncryptedContentInfo @10029-10179
+- Class PrivateKeyInfo @9847-10017
+- Class RSAPrivateKey @9676-9833
+- Class OtherPrimeInfo @9579-9651
+- Class ECPrivateKey @9396-9568
+- Class PublicKeyInfo @9224-9383
+- Class RSAPublicKey @9154-9218
+- Class ECPublicKey @9049-9148
+- Class ECNamedCurves @9027-9034
+- Class SHA384 @9000-9022
+- Class SHA512 @8873-8999
+- Class SHA256 @8706-8780
+- Class SHA1 @8612-8679
+- Class HashMD @8505-8602
+- Class Hash @8469-8474
+- Class SeqStream @7978-8407
+- Class ByteStream @7332-7975
+- Class QCStatements @7273-7329
+- Class QCStatement @7195-7271
+- Class PrivateKeyUsagePeriod @7081-7182
+- Class PolicyMappings @7024-7072
+- Class PolicyMapping @6962-7017
+- Class PolicyConstraints @6850-6953
+- Class NameConstraints @6737-6841
+- Class GeneralSubtree @6588-6728
+- Class IssuingDistributionPoint @6302-6577
+- Class InfoAccess @6233-6283
+- Class ExtKeyUsage @6181-6229
+- Class CRLDistributionPoints @6126-6174
+- Class DistributionPoint @5924-6119
+- Class CertificateTemplate @5827-5910
+- Class CertificatePolicies @5768-5816
+- Class PolicyInformation @5688-5761
+- Class PolicyQualifierInfo @5624-5679
+- Class CAVersion @5530-5615
+- Class BasicConstraints @5435-5525
+- Class AuthorityKeyIdentifier @5302-5430
+- Class GeneralNames @5187-5240
+- Class AttCertValidityPeriod @5128-5182
+- Class Attribute @5044-5119
+- Class AltName @4985-5035
+- Class AlgorithmIdentifier @4885-4978
+- Class Accuracy @4745-4874
+- Class AccessDescription @4680-4739
+- Class GeneralName @4379-4671
+- Class RelativeDistinguishedNames @4096-4196
+- Class AttributeTypeAndValue @3977-4090
+- Class PkiObject @3919-3952
+- Class AsnError @3902-3917
+- Class ParameterError @3858-3899
+- Class ArgumentError @3821-3855
+- Class RawData @3497-3515
+- Class Repeated @3489-3495
+- Class Choice @3482-3487
+- Class Any @3475-3480
+- Class TIME @3462-3468
+- Class Duration @3448-3454
+- Class DateTime @3434-3440
+- Class TimeOfDay @3420-3426
+- Class DATE @3406-3412
+- Class GeneralizedTime @3223-3398
+- Class UTCTime @3125-3215
+- Class CharacterString @3111-3117
+- Class GeneralString @3097-3103
+- Class VisibleString @3083-3089
+- Class GraphicString @3069-3075
+- Class IA5String @3055-3061
+- Class VideotexString @3041-3047
+- Class TeletexString @3027-3033
+- Class PrintableString @3013-3019
+- Class NumericString @2999-3005
+- Class UniversalString @2985-2991
+- Class LocalUniversalStringValueBlock @2955-2981
+- Class BmpString @2942-2948
+- Class LocalBmpStringValueBlock @2929-2938
+- Class Utf8String @2916-2922
+- Class LocalUtf8StringValueBlock @2897-2912
+- Class LocalSimpleStringBlock @2880-2894
+- Class LocalSimpleStringValueBlock @2876-2877
+- Class LocalStringValueBlock @2861-2873
+- Class Set @2848-2854
+- Class Sequence @2834-2840
+- Class RelativeObjectIdentifier @2805-2826
+- Class LocalRelativeObjectIdentifierValueBlock @2718-2801
+- Class LocalRelativeSidValueBlock @2637-2715
+- Class ObjectIdentifier @2609-2630
+- Class LocalObjectIdentifierValueBlock @2481-2605
+- Class LocalSidValueBlock @2366-2478
+- Class Enumerated @2353-2359
+- Class Integer @2296-2345
+- Class LocalIntegerValueBlock @2156-2280
+- Class BitString @2022-2061
+- Class LocalBitStringValueBlock @1930-2018
+- Class OctetString @1859-1923
+- Class LocalOctetStringValueBlock @1807-1855
+- Class Boolean @1785-1800
+- Class LocalBooleanValueBlock @1735-1781
+- Class Null @1693-1728
+- Class EndOfContent @1679-1685
+- Class LocalEndOfContentValueBlock @1668-1675
+- Class Constructed @1629-1661
+- Class LocalConstructedValueBlock @1562-1625
+- Class Primitive @1324-1329
+- Class LocalPrimitiveValueBlock @1315-1320
+- Class BaseStringBlock @1279-1312
+- Class BaseBlock @1178-1265
+- Class LocalLengthBlock @1077-1173
+- Class LocalIdentificationBlock @903-1074
+- Class ValueBlock @893-900
+- Class LocalBaseBlock @865-890
+- Class Some @813-860
+- Class ViewWriter @780-790
+- Class Convert @192-386
+- Class Utf16Converter @172-191
+- Class Utf8Converter @153-171
+- Class BufferSourceConverter @61-147
+
+### toolkit/components/certviewer/tests/browser/adjustedCerts.js
+
+Blob: `e91583553ab065d0b959f1982a5981c0d9cb9982`. Role: test-path,source. Parse: module.
+
+
+### toolkit/components/certviewer/tests/browser/browser_aboutcertificateviewer.js
+
+Blob: `efd78fc6f5bf7428eee4f794efb60d3b16610268`. Role: test-path,source. Parse: module.
+
+- checkForErrorSection @15-38; FunctionDeclaration; parameters=4; async=true; generator=false
+- (anonymous) @18-37; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @22-35; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @26-30; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test_checkForErrorSection @40-81; FunctionExpression; parameters=0; async=true; generator=false
+
+### toolkit/components/certviewer/tests/browser/browser_certificateTabLink.js
+
+Blob: `9c88d2bb030a88256ee044e1121078b1470230d5`. Role: test-path,source. Parse: module.
+
+- test_certificateTabLink @9-61; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @10-12; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @14-59; FunctionExpression; parameters=0; async=true; generator=false
+- (anonymous) @16-21; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @38-40; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- (anonymous) @46-48; ArrowFunctionExpression; parameters=0; async=false; generator=false
+
+### toolkit/components/certviewer/tests/browser/browser_checkAuthorityKeyID.js
+
+Blob: `a923f7acb35807626a04a7e984a4bc53509c3dc3`. Role: test-path,source. Parse: module.
+
+- checkAuthorityKeyID @6-32; FunctionDeclaration; parameters=2; async=true; generator=false
+- (anonymous) @7-31; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @11-29; FunctionExpression; parameters=1; async=true; generator=false
+- (anonymous) @12-14; ArrowFunctionExpression; parameters=0; async=false; generator=false
+- test @34-50; FunctionExpression; parameters=0; async=true; generator=false
+
+## Validation and limits
+
+Every successful file was parsed as a module or script with locations. Module parsing is attempted first. Preprocessing, unsupported syntax, and intentionally invalid fixtures can prevent parsing. Embedded scripts in markup and TypeScript are not parsed in this pass. Read the implementation and actual callers before relying on a inferred function name. No source was executed. No product tests ran for this map.

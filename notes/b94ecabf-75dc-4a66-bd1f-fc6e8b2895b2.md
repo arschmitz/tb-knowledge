@@ -1,0 +1,647 @@
+<!-- knowledge: {"repository": "git:314d8065c5ad68c7e5c5f92d", "at": "2026-10-13T04:18:44.114924+00:00", "paths": ["devtools/client/aboutdebugging/moz.build", "devtools/client/aboutdebugging/src/actions/moz.build", "devtools/client/aboutdebugging/src/components/connect/moz.build", "devtools/client/aboutdebugging/src/components/debugtarget/moz.build", "devtools/client/aboutdebugging/src/components/moz.build", "devtools/client/aboutdebugging/src/components/shared/moz.build", "devtools/client/aboutdebugging/src/components/sidebar/moz.build", "devtools/client/aboutdebugging/src/middleware/moz.build", "devtools/client/aboutdebugging/src/modules/moz.build", "devtools/client/aboutdebugging/src/moz.build", "devtools/client/aboutdebugging/src/reducers/moz.build", "devtools/client/aboutdebugging/src/types/moz.build", "devtools/client/aboutdebugging/test/backward_compat_test_server/__init__.py", "devtools/client/aboutdebugging/test/backward_compat_test_server/control.py", "devtools/client/aboutdebugging/test/backward_compat_test_server/downloads.py", "devtools/client/aboutdebugging/test/backward_compat_test_server/logs.py", "devtools/client/aboutdebugging/test/backward_compat_test_server/moz.build", "devtools/client/aboutdebugging/test/backward_compat_test_server/runner.py", "devtools/client/aboutdebugging/test/backward_compat_test_server/servers.py", "devtools/client/aboutdebugging/test/backward_compat_test_server/session.py", "devtools/client/accessibility/actions/moz.build", "devtools/client/accessibility/components/moz.build", "devtools/client/accessibility/moz.build", "devtools/client/accessibility/reducers/moz.build", "devtools/client/accessibility/utils/moz.build", "devtools/client/anti-tracking/moz.build", "devtools/client/application/moz.build", "devtools/client/application/src/actions/moz.build", "devtools/client/application/src/components/manifest/moz.build", "devtools/client/application/src/components/moz.build", "devtools/client/application/src/components/routing/moz.build", "devtools/client/application/src/components/service-workers/moz.build", "devtools/client/application/src/components/session-history/moz.build", "devtools/client/application/src/components/speculative-loads/moz.build", "devtools/client/application/src/components/ui/moz.build", "devtools/client/application/src/middleware/moz.build", "devtools/client/application/src/modules/moz.build", "devtools/client/application/src/moz.build", "devtools/client/application/src/reducers/moz.build", "devtools/client/application/src/types/moz.build", "devtools/client/debugger/dist/moz.build", "devtools/client/debugger/moz.build", "devtools/client/debugger/src/actions/ast/moz.build", "devtools/client/debugger/src/actions/breakpoints/moz.build", "devtools/client/debugger/src/actions/context-menus/moz.build", "devtools/client/debugger/src/actions/moz.build", "devtools/client/debugger/src/actions/pause/moz.build", "devtools/client/debugger/src/actions/sources/moz.build", "devtools/client/debugger/src/actions/utils/middleware/moz.build", "devtools/client/debugger/src/actions/utils/moz.build", "devtools/client/debugger/src/client/firefox/moz.build", "devtools/client/debugger/src/client/moz.build", "devtools/client/debugger/src/components/Editor/Preview/moz.build", "devtools/client/debugger/src/components/Editor/moz.build", "devtools/client/debugger/src/components/PrimaryPanes/moz.build", "devtools/client/debugger/src/components/SecondaryPanes/Breakpoints/moz.build", "devtools/client/debugger/src/components/SecondaryPanes/Frames/moz.build", "devtools/client/debugger/src/components/SecondaryPanes/moz.build", "devtools/client/debugger/src/components/moz.build", "devtools/client/debugger/src/components/shared/Button/moz.build", "devtools/client/debugger/src/components/shared/Button/styles/moz.build", "devtools/client/debugger/src/components/shared/moz.build", "devtools/client/debugger/src/context-menu/moz.build", "devtools/client/debugger/src/moz.build", "devtools/client/debugger/src/reducers/moz.build", "devtools/client/debugger/src/selectors/moz.build", "devtools/client/debugger/src/utils/breakpoint/moz.build", "devtools/client/debugger/src/utils/editor/moz.build", "devtools/client/debugger/src/utils/moz.build", "devtools/client/debugger/src/utils/pause/frames/moz.build", "devtools/client/debugger/src/utils/pause/mapScopes/moz.build", "devtools/client/debugger/src/utils/pause/moz.build", "devtools/client/debugger/src/utils/sources-tree/moz.build", "devtools/client/debugger/src/workers/moz.build", "devtools/client/debugger/src/workers/parser/moz.build", "devtools/client/debugger/src/workers/pretty-print/moz.build", "devtools/client/debugger/src/workers/search/moz.build", "devtools/client/dom/content/actions/moz.build", "devtools/client/dom/content/components/moz.build", "devtools/client/dom/content/moz.build", "devtools/client/dom/content/reducers/moz.build", "devtools/client/dom/moz.build", "devtools/client/framework/actions/moz.build", "devtools/client/framework/browser-toolbox/moz.build", "devtools/client/framework/components/moz.build", "devtools/client/framework/moz.build", "devtools/client/framework/reducers/moz.build", "devtools/client/framework/test/allocations/moz.build", "devtools/client/fronts/addon/moz.build", "devtools/client/fronts/descriptors/moz.build", "devtools/client/fronts/inspector/moz.build", "devtools/client/fronts/moz.build", "devtools/client/fronts/targets/moz.build", "devtools/client/fronts/worker/moz.build", "devtools/client/inspector/animation/actions/moz.build", "devtools/client/inspector/animation/components/graph/moz.build", "devtools/client/inspector/animation/components/keyframes-graph/moz.build", "devtools/client/inspector/animation/components/moz.build", "devtools/client/inspector/animation/moz.build", "devtools/client/inspector/animation/reducers/moz.build"], "source": {"reference": "Git commit 1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b", "revision": "1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b", "status": "provisional", "study": "architecture-study-20261013"}} -->
+# firefox/devtools Python and build syntax map 13
+
+Revision: `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Python AST parser; no source was executed. Functions and classes have source ranges. Imports are written names, not resolved modules. Build entries list assignments with literal string lists and registration calls. Conditions are not evaluated; listed files are not necessarily built or shipped. Dynamic expressions and included build files need separate analysis. Failed parses remain listed.
+
+### devtools/client/aboutdebugging/moz.build
+
+Blob: `a0bfdd20f04d5f02b5c75f2788f8998c6c2f12ec`. Parse: parsed.
+
+- build assignment DIRS @10: ["src"]
+- build assignment TEST_DIRS @14: ["test/backward_compat_test_server"]
+- build assignment XPCSHELL_TESTS_MANIFESTS @16: ["test/xpcshell/xpcshell.toml"]
+- build assignment BROWSER_CHROME_MANIFESTS @18: ["test/browser/browser.toml", "test/browser/browser_backward_compat.toml"]
+- build assignment BUG_COMPONENT @25: ["DevTools", "about:debugging"]
+
+### devtools/client/aboutdebugging/src/actions/moz.build
+
+Blob: `a750640d064d04b420678607e94a984af1eae0a8`. Parse: parsed.
+
+
+### devtools/client/aboutdebugging/src/components/connect/moz.build
+
+Blob: `9228e80125ce44372f5cde16669b9acb7d266578`. Parse: parsed.
+
+
+### devtools/client/aboutdebugging/src/components/debugtarget/moz.build
+
+Blob: `981e6887a2183515f8680f9a6d2f214d76963543`. Parse: parsed.
+
+
+### devtools/client/aboutdebugging/src/components/moz.build
+
+Blob: `c48d384b3dc67a916bab02b40f40492b96c0d694`. Parse: parsed.
+
+- build assignment DIRS @5: ["connect", "debugtarget", "shared", "sidebar"]
+
+### devtools/client/aboutdebugging/src/components/shared/moz.build
+
+Blob: `7e0e89f2a0073be985cb8d617d13dab9aa1f8800`. Parse: parsed.
+
+
+### devtools/client/aboutdebugging/src/components/sidebar/moz.build
+
+Blob: `6938e7d8420397fa841774cad38936f89cd53e33`. Parse: parsed.
+
+
+### devtools/client/aboutdebugging/src/middleware/moz.build
+
+Blob: `d8200392fb196ad50d0c443cbfe44713ff8b7552`. Parse: parsed.
+
+
+### devtools/client/aboutdebugging/src/modules/moz.build
+
+Blob: `909e1817143c618b65c0751416da5b47d1d3a260`. Parse: parsed.
+
+
+### devtools/client/aboutdebugging/src/moz.build
+
+Blob: `58e6f92857d955ac7bfecc4deb99d4b16ffeaa54`. Parse: parsed.
+
+- build assignment DIRS @5: ["actions", "components", "middleware", "modules", "reducers", "types"]
+
+### devtools/client/aboutdebugging/src/reducers/moz.build
+
+Blob: `24d3382f5b036d6298eb4db50a8c9ab5326fd45e`. Parse: parsed.
+
+
+### devtools/client/aboutdebugging/src/types/moz.build
+
+Blob: `a58a6e0e28ad814e1310c467f813302541fe7bbb`. Parse: parsed.
+
+
+### devtools/client/aboutdebugging/test/backward_compat_test_server/__init__.py
+
+Blob: `e69de29bb2d1d6434b8b29ae775ad8c2e48c5391`. Parse: parsed.
+
+
+### devtools/client/aboutdebugging/test/backward_compat_test_server/control.py
+
+Blob: `9b3b5a3038bfae89d2f9b4cec5f46c1048e4686b`. Parse: parsed.
+
+- from __future__ import annotations @17
+- import json @19
+- import os @20
+- import threading @21
+- from http.server import BaseHTTPRequestHandler,ThreadingHTTPServer @22
+- from marionette_driver.addons import Addons @24
+- from marionette_driver.by import By @25
+- from .servers import DesktopServer,find_free_port @27
+- class ControlServer @36-124
+- function ControlServer.__init__ @42-51
+- function ControlServer.start @53-57
+- function ControlServer.stop @59-63
+- function ControlServer.url @66-67
+- function ControlServer.run_command @69-75
+- function ControlServer._cmd_open_tab @77-85
+- function ControlServer._cmd_close_tab @87-95
+- function ControlServer._cmd_navigate @97-102
+- function ControlServer._cmd_reload @104-109
+- function ControlServer._cmd_click @111-116
+- function ControlServer._cmd_install_extension @118-120
+- function ControlServer._cmd_uninstall_extension @122-124
+- function _make_handler @127-157
+- class _make_handler.Handler @128-155
+- function _make_handler.Handler.log_message @131-132
+- function _make_handler.Handler._respond @134-140
+- function _make_handler.Handler.do_POST @142-155
+
+### devtools/client/aboutdebugging/test/backward_compat_test_server/downloads.py
+
+Blob: `1e47489a829d117314a113b5c7943b064c311ff1`. Parse: parsed.
+
+- from __future__ import annotations @14
+- import pathlib @16
+- import shutil @17
+- import urllib.parse @18
+- import mozinfo @20
+- import mozinstall @21
+- import requests @22
+- from .logs import log @24
+- function get_os @37-45
+- function resolve_archive_url @48-60
+- function archive_name @63-65
+- function download @68-83
+- function install @86-96
+- function provision @99-133
+
+### devtools/client/aboutdebugging/test/backward_compat_test_server/logs.py
+
+Blob: `26ac3077e636293f2a67acf7292fd49053ec0590`. Parse: parsed.
+
+- from __future__ import annotations @7
+- import sys @9
+- import mozlog @11
+- import mozlog.commandline @12
+- function _get_logger @19-27
+- function log @30-31
+
+### devtools/client/aboutdebugging/test/backward_compat_test_server/moz.build
+
+Blob: `32af930cc4912e241040f571d6b18fd0ebb32313`. Parse: parsed.
+
+- build assignment TEST_HARNESS_FILES.testing.devtools_compat @11: ["__init__.py", "control.py", "downloads.py", "logs.py", "servers.py", "session.py"]
+- build assignment TEST_HARNESS_FILES.testing.devtools_compat.fixtures.extension @20: ["fixtures/extension/background.js", "fixtures/extension/manifest.json"]
+- build assignment BUG_COMPONENT @26: ["DevTools", "about:debugging"]
+
+### devtools/client/aboutdebugging/test/backward_compat_test_server/runner.py
+
+Blob: `bd5075f4de59f1eccf5072ecdce24eb70b8cc945`. Parse: parsed.
+
+- from __future__ import annotations @12
+- import os @14
+- import subprocess @15
+- import sys @16
+- import tempfile @17
+- import mozpack.path @19
+- from .logs import log @21
+- from .session import provisioned_server @22
+- function run @27-60
+
+### devtools/client/aboutdebugging/test/backward_compat_test_server/servers.py
+
+Blob: `26790b7617121e23eb38c79e97098d9275fb80a5`. Parse: parsed.
+
+- from __future__ import annotations @13
+- import socket @15
+- import time @16
+- from marionette_driver.marionette import Marionette @18
+- function find_free_port @47-50
+- function wait_for_port @53-61
+- class DesktopServer @64-118
+- function DesktopServer.__init__ @76-86
+- function DesktopServer.start @88-98
+- function DesktopServer.stop @100-103
+- function DesktopServer.host @106-107
+- function DesktopServer.describe @109-111
+- function DesktopServer.__enter__ @113-115
+- function DesktopServer.__exit__ @117-118
+
+### devtools/client/aboutdebugging/test/backward_compat_test_server/session.py
+
+Blob: `b70839f3769e7dc89b2934e4b5f8c9865f8da83b`. Parse: parsed.
+
+- from __future__ import annotations @12
+- import contextlib @14
+- import json @15
+- import os @16
+- from typing import Iterator,Mapping @17
+- from . import downloads @19
+- from .control import ControlServer @20
+- from .logs import log @21
+- from .servers import DesktopServer @22
+- function create_server @29-49
+- function provisioned_server @53-100
+
+### devtools/client/accessibility/actions/moz.build
+
+Blob: `c4571d79985f11a2f479fe6ade2c2f080ab6e798`. Parse: parsed.
+
+
+### devtools/client/accessibility/components/moz.build
+
+Blob: `d23aff05ffa2565b2d0ff35656bb8f63546fbd67`. Parse: parsed.
+
+
+### devtools/client/accessibility/moz.build
+
+Blob: `26e265b58cb672af0ce3e7d5baf4489eabaac769`. Parse: parsed.
+
+- build assignment MOCHITEST_CHROME_MANIFESTS @5: ["test/chrome/chrome.toml"]
+- build assignment BROWSER_CHROME_MANIFESTS @6: ["test/browser/browser.toml"]
+- build assignment DIRS @8: ["actions", "components", "reducers", "utils"]
+- build assignment BUG_COMPONENT @20: ["DevTools", "Accessibility Tools"]
+
+### devtools/client/accessibility/reducers/moz.build
+
+Blob: `0c7398f3976a2facd3513cb748be90bb7e082f40`. Parse: parsed.
+
+
+### devtools/client/accessibility/utils/moz.build
+
+Blob: `8129eea8e567bb82a4d9cc2bee764a32cf57207c`. Parse: parsed.
+
+
+### devtools/client/anti-tracking/moz.build
+
+Blob: `7c8e986e804ad23b11078098e8f436964822c512`. Parse: parsed.
+
+- build assignment BROWSER_CHROME_MANIFESTS @12: ["test/browser/browser.toml"]
+
+### devtools/client/application/moz.build
+
+Blob: `f66b62ae3959c9515bf057c13dfe3f96802995e1`. Parse: parsed.
+
+- build assignment DIRS @5: ["src"]
+- build assignment BROWSER_CHROME_MANIFESTS @11: ["test/browser/browser.toml"]
+- build assignment XPCSHELL_TESTS_MANIFESTS @13: ["test/xpcshell/xpcshell.toml"]
+
+### devtools/client/application/src/actions/moz.build
+
+Blob: `3bbddc0e802ccb225f5739d5d4b8f14841791519`. Parse: parsed.
+
+
+### devtools/client/application/src/components/manifest/moz.build
+
+Blob: `bb799cbfc4de20591045dfc5ce6f08c0953e51b8`. Parse: parsed.
+
+
+### devtools/client/application/src/components/moz.build
+
+Blob: `debe7ea94b068ad2567444c9ef806927f44554dd`. Parse: parsed.
+
+- build assignment DIRS @5: ["routing", "manifest", "service-workers", "session-history", "speculative-loads", "ui"]
+
+### devtools/client/application/src/components/routing/moz.build
+
+Blob: `7e229856144145b37678649df9a4eee93a81b2ac`. Parse: parsed.
+
+
+### devtools/client/application/src/components/service-workers/moz.build
+
+Blob: `f9704b9df86417efd7e32ebe1996e5fb90d3aac8`. Parse: parsed.
+
+
+### devtools/client/application/src/components/session-history/moz.build
+
+Blob: `21e7a698f1270f853f31233f3b94155ee6cd712d`. Parse: parsed.
+
+
+### devtools/client/application/src/components/speculative-loads/moz.build
+
+Blob: `f04969751ef27391e523650a0db8a46a93d28d0c`. Parse: parsed.
+
+
+### devtools/client/application/src/components/ui/moz.build
+
+Blob: `f62f66d3104286ffaafd36763add716ab258eb0d`. Parse: parsed.
+
+
+### devtools/client/application/src/middleware/moz.build
+
+Blob: `5041f3ca13da72c1ba6f5e3d8f422536598a83b8`. Parse: parsed.
+
+
+### devtools/client/application/src/modules/moz.build
+
+Blob: `778345fb1f96d970b0c310f931b61971b788206b`. Parse: parsed.
+
+
+### devtools/client/application/src/moz.build
+
+Blob: `58e6f92857d955ac7bfecc4deb99d4b16ffeaa54`. Parse: parsed.
+
+- build assignment DIRS @5: ["actions", "components", "middleware", "modules", "reducers", "types"]
+
+### devtools/client/application/src/reducers/moz.build
+
+Blob: `d2da09c2a49ce2ab3c990a10d0cd0c68b6dc95ef`. Parse: parsed.
+
+
+### devtools/client/application/src/types/moz.build
+
+Blob: `c8161f448d92df2b5b33aea573e34f479f859911`. Parse: parsed.
+
+
+### devtools/client/debugger/dist/moz.build
+
+Blob: `0f936ecd5b21b848e2ff5b950a1f1f5524fe9b8b`. Parse: parsed.
+
+- build assignment LICENSES @11: ["babel"]
+- build assignment LICENSES @19: ["babylon"]
+- build assignment LICENSED_UNDER @27: ["babel", "babylon"]
+
+### devtools/client/debugger/moz.build
+
+Blob: `75368cd0b5375a8f7db832032a2bd162d72e6d49`. Parse: parsed.
+
+- build assignment DIRS @5: ["dist", "src"]
+- build call include @10: "../shared/build/node-templates.mozbuild"
+- build assignment XPCSHELL_TESTS_MANIFESTS @12: ["test/xpcshell/xpcshell.toml"]
+- build assignment BROWSER_CHROME_MANIFESTS @14: ["test/mochitest/browser_af.toml", "test/mochitest/browser_gp.toml", "test/mochitest/browser_qz.toml", "test/mochitest/integration/browser.toml", "test/mochitest/sourcemaps/browser.toml", "test/mochitest/tracer/browser.toml"]
+- build assignment BUG_COMPONENT @28: ["DevTools", "Debugger"]
+- build assignment LICENSED_UNDER @30: ["mit"]
+- build assignment LICENSED_UNDER['mit'].paths @31: ["test/mochitest/examples/react/build/main.js"]
+
+### devtools/client/debugger/src/actions/ast/moz.build
+
+Blob: `4569079b0e4c42737541fad42a6f925887b4ad49`. Parse: parsed.
+
+
+### devtools/client/debugger/src/actions/breakpoints/moz.build
+
+Blob: `b36bc7e3a198058b01a161c559b16c549030ad54`. Parse: parsed.
+
+
+### devtools/client/debugger/src/actions/context-menus/moz.build
+
+Blob: `4cefbed426ee25cafb55531e52ea4b577dd33c01`. Parse: parsed.
+
+
+### devtools/client/debugger/src/actions/moz.build
+
+Blob: `15fe11b372fd83f6b678e01fa4caf3d830d9514f`. Parse: parsed.
+
+- build assignment DIRS @5: ["ast", "breakpoints", "context-menus", "pause", "sources", "utils"]
+
+### devtools/client/debugger/src/actions/pause/moz.build
+
+Blob: `e0e7deb4a414786ff516535f69f1de6258082b3d`. Parse: parsed.
+
+
+### devtools/client/debugger/src/actions/sources/moz.build
+
+Blob: `520d01b9c4166db799cbb5b1aa8a61325dfe6c87`. Parse: parsed.
+
+
+### devtools/client/debugger/src/actions/utils/middleware/moz.build
+
+Blob: `9ef6b8461837996fe312d92b04c5d87bde80fc7c`. Parse: parsed.
+
+
+### devtools/client/debugger/src/actions/utils/moz.build
+
+Blob: `89b52782b19e99b3ded1f44a7a3d269e440d2aff`. Parse: parsed.
+
+- build assignment DIRS @5: ["middleware"]
+
+### devtools/client/debugger/src/client/firefox/moz.build
+
+Blob: `ae932945191b61fed33bd0434f1149a1b3ebaa98`. Parse: parsed.
+
+
+### devtools/client/debugger/src/client/moz.build
+
+Blob: `8f7a08fbf31114853b2cc277b395a12df0dde020`. Parse: parsed.
+
+- build assignment DIRS @5: ["firefox"]
+
+### devtools/client/debugger/src/components/Editor/Preview/moz.build
+
+Blob: `653041c8cb08ec9341d0efda33da54e862f25a83`. Parse: parsed.
+
+
+### devtools/client/debugger/src/components/Editor/moz.build
+
+Blob: `61cdb7b650b92cfc565a67574ff42fffaded64aa`. Parse: parsed.
+
+- build assignment DIRS @5: ["Preview"]
+
+### devtools/client/debugger/src/components/PrimaryPanes/moz.build
+
+Blob: `314befeb406dc33b06f55dd4baf684f6d1441b84`. Parse: parsed.
+
+
+### devtools/client/debugger/src/components/SecondaryPanes/Breakpoints/moz.build
+
+Blob: `1336df464daf33bf93896a10102b5f9a9efe2e24`. Parse: parsed.
+
+
+### devtools/client/debugger/src/components/SecondaryPanes/Frames/moz.build
+
+Blob: `2a639088328cb4134e046523d041ca0d2e71871e`. Parse: parsed.
+
+
+### devtools/client/debugger/src/components/SecondaryPanes/moz.build
+
+Blob: `a210c037135da922a034e9bc0fc7c8842d40bfd7`. Parse: parsed.
+
+- build assignment DIRS @5: ["Breakpoints", "Frames"]
+
+### devtools/client/debugger/src/components/moz.build
+
+Blob: `aebeabdefa217b9b7b4223375424dc0311cce507`. Parse: parsed.
+
+- build assignment DIRS @5: ["Editor", "PrimaryPanes", "SecondaryPanes", "shared"]
+
+### devtools/client/debugger/src/components/shared/Button/moz.build
+
+Blob: `87861fee82933bc42bf74247a73805bd811668ab`. Parse: parsed.
+
+- build assignment DIRS @5: ["styles"]
+
+### devtools/client/debugger/src/components/shared/Button/styles/moz.build
+
+Blob: `8afad9d648269eba3bb20f3999cbe9fde7c763aa`. Parse: parsed.
+
+
+### devtools/client/debugger/src/components/shared/moz.build
+
+Blob: `9862bbeb0f874f69f16b05f0b5d3790d3393d496`. Parse: parsed.
+
+- build assignment DIRS @5: ["Button"]
+
+### devtools/client/debugger/src/context-menu/moz.build
+
+Blob: `8213594461e95fd36117bb99103f67e661364b67`. Parse: parsed.
+
+
+### devtools/client/debugger/src/moz.build
+
+Blob: `ea81bf984be19504602419dc2233f9af9cc0ba9e`. Parse: parsed.
+
+- build assignment DIRS @5: ["actions", "client", "components", "context-menu", "reducers", "selectors", "utils", "workers"]
+
+### devtools/client/debugger/src/reducers/moz.build
+
+Blob: `7484f5050e254b2c69db9d4402eac77e8be8c8ad`. Parse: parsed.
+
+
+### devtools/client/debugger/src/selectors/moz.build
+
+Blob: `786684182c7a8ac2863b22d77cd9aeb66965c9e9`. Parse: parsed.
+
+
+### devtools/client/debugger/src/utils/breakpoint/moz.build
+
+Blob: `ea2e436085efc1ffc14f2236b5ee30b7c6ed6bc4`. Parse: parsed.
+
+
+### devtools/client/debugger/src/utils/editor/moz.build
+
+Blob: `295553729a50a81dc12ac70c690a55b361f3ce51`. Parse: parsed.
+
+
+### devtools/client/debugger/src/utils/moz.build
+
+Blob: `0cf2b2c821d1299f8010aeb45f8773b5219c469c`. Parse: parsed.
+
+- build assignment DIRS @5: ["breakpoint", "editor", "pause", "sources-tree"]
+
+### devtools/client/debugger/src/utils/pause/frames/moz.build
+
+Blob: `6b1718d3ff3745b6ef48bc76cbde1e0ef34b0c89`. Parse: parsed.
+
+
+### devtools/client/debugger/src/utils/pause/mapScopes/moz.build
+
+Blob: `0d665ea3f15b64530c02d7415f95d32568e91bce`. Parse: parsed.
+
+
+### devtools/client/debugger/src/utils/pause/moz.build
+
+Blob: `9c952660234f9ac3f766bbaa4e975ede20747ee4`. Parse: parsed.
+
+- build assignment DIRS @5: ["frames", "mapScopes"]
+
+### devtools/client/debugger/src/utils/sources-tree/moz.build
+
+Blob: `a59179de4c7afbb691754021e14d7d4b337c18cf`. Parse: parsed.
+
+
+### devtools/client/debugger/src/workers/moz.build
+
+Blob: `3cb15d0fc206ec6c4ed4a19d475d5a5a1781b70a`. Parse: parsed.
+
+- build assignment DIRS @5: ["parser", "pretty-print", "search"]
+
+### devtools/client/debugger/src/workers/parser/moz.build
+
+Blob: `1d4fa5f5ca1b90807f2ee5f6d6b6d2e061902072`. Parse: parsed.
+
+
+### devtools/client/debugger/src/workers/pretty-print/moz.build
+
+Blob: `1d4fa5f5ca1b90807f2ee5f6d6b6d2e061902072`. Parse: parsed.
+
+
+### devtools/client/debugger/src/workers/search/moz.build
+
+Blob: `1d4fa5f5ca1b90807f2ee5f6d6b6d2e061902072`. Parse: parsed.
+
+
+### devtools/client/dom/content/actions/moz.build
+
+Blob: `73b16f2c0ca292778acadf1b8e9288cb5c0f502e`. Parse: parsed.
+
+
+### devtools/client/dom/content/components/moz.build
+
+Blob: `43b3f8cb6a5a76cfd563e6fa4877394a2b5d1f01`. Parse: parsed.
+
+
+### devtools/client/dom/content/moz.build
+
+Blob: `32ded67408e296f8f56862d16a238892270c656a`. Parse: parsed.
+
+- build assignment DIRS @5: ["actions", "components", "reducers"]
+
+### devtools/client/dom/content/reducers/moz.build
+
+Blob: `9a256caf2b393d263ca75662dbd077ebbacd56b1`. Parse: parsed.
+
+
+### devtools/client/dom/moz.build
+
+Blob: `d438cd0d649ce4879837b58d015a8226d9d2e6b4`. Parse: parsed.
+
+- build assignment BROWSER_CHROME_MANIFESTS @5: ["test/browser.toml"]
+- build assignment DIRS @7: ["content"]
+- build assignment BUG_COMPONENT @16: ["DevTools", "DOM"]
+
+### devtools/client/framework/actions/moz.build
+
+Blob: `75fccb1b55aa1c17499f12a348a80df29a1adb55`. Parse: parsed.
+
+- build assignment BUG_COMPONENT @12: ["DevTools", "Framework"]
+
+### devtools/client/framework/browser-toolbox/moz.build
+
+Blob: `35c239c8cd22c376fabfe5a7a91477120dcf76f7`. Parse: parsed.
+
+- build assignment BROWSER_CHROME_MANIFESTS @5: ["test/browser.toml"]
+
+### devtools/client/framework/components/moz.build
+
+Blob: `12a01c9d3ad58d0ef3774df5e9fa541179314c07`. Parse: parsed.
+
+
+### devtools/client/framework/moz.build
+
+Blob: `af16818e50fddb8d8dbde7e304c126648a273554`. Parse: parsed.
+
+- build assignment BROWSER_CHROME_MANIFESTS @5: ["test/browser-telemetry-startup.toml", "test/browser.toml", "test/browser_destroying_iframes.toml", "test/metrics/browser_metrics.toml", "test/metrics/browser_metrics_debugger.toml", "test/metrics/browser_metrics_inspector.toml", "test/metrics/browser_metrics_netmonitor.toml", "test/metrics/browser_metrics_webconsole.toml"]
+- build assignment XPCSHELL_TESTS_MANIFESTS @15: ["test/xpcshell/xpcshell.toml"]
+- build assignment DIRS @17: ["actions", "browser-toolbox", "components", "reducers", "test/allocations"]
+- build assignment BUG_COMPONENT @48: ["DevTools", "Framework"]
+
+### devtools/client/framework/reducers/moz.build
+
+Blob: `75fccb1b55aa1c17499f12a348a80df29a1adb55`. Parse: parsed.
+
+- build assignment BUG_COMPONENT @12: ["DevTools", "Framework"]
+
+### devtools/client/framework/test/allocations/moz.build
+
+Blob: `b271cb15af33ad22ab933f83c6fca6eb6880465e`. Parse: parsed.
+
+- build assignment BROWSER_CHROME_MANIFESTS @5: ["browser_allocations_browser_console.toml", "browser_allocations_inspector_selections.toml", "browser_allocations_reload_debugger.toml", "browser_allocations_reload_inspector.toml", "browser_allocations_reload_netmonitor.toml", "browser_allocations_reload_no_devtools.toml", "browser_allocations_reload_webconsole.toml", "browser_allocations_target.toml", "browser_allocations_toolbox.toml"]
+
+### devtools/client/fronts/addon/moz.build
+
+Blob: `46a50d62b3139ea44a15c4ed503bb5b9489120a6`. Parse: parsed.
+
+
+### devtools/client/fronts/descriptors/moz.build
+
+Blob: `1dcf01730f23f7c1e9cb260b080ef779ce3afbec`. Parse: parsed.
+
+
+### devtools/client/fronts/inspector/moz.build
+
+Blob: `9dabc0eded927f0ea9793555a551ef62bb9a4cde`. Parse: parsed.
+
+
+### devtools/client/fronts/moz.build
+
+Blob: `90d1e76174f1de60b02d8b377fa93f87d72f6d76`. Parse: parsed.
+
+- build assignment DIRS @5: ["addon", "descriptors", "inspector", "targets", "worker"]
+
+### devtools/client/fronts/targets/moz.build
+
+Blob: `79cc3d8f36100c63c69f143db7fdddad4b22dc2c`. Parse: parsed.
+
+
+### devtools/client/fronts/worker/moz.build
+
+Blob: `010071d906903733e374acaf84e1fcc7bef02e9a`. Parse: parsed.
+
+
+### devtools/client/inspector/animation/actions/moz.build
+
+Blob: `f43007dd6ea1dfc3e1870539b1d81652b005cbef`. Parse: parsed.
+
+
+### devtools/client/inspector/animation/components/graph/moz.build
+
+Blob: `866bdd30ce75073fcc8fb11f7ec69298f15670e9`. Parse: parsed.
+
+
+### devtools/client/inspector/animation/components/keyframes-graph/moz.build
+
+Blob: `1ff518e21d2969c910fd797ef7105e67e2406edb`. Parse: parsed.
+
+
+### devtools/client/inspector/animation/components/moz.build
+
+Blob: `cd8ecc05c4e041849fc16c03f32ceb4acd1a63da`. Parse: parsed.
+
+- build assignment DIRS @5: ["graph", "keyframes-graph"]
+
+### devtools/client/inspector/animation/moz.build
+
+Blob: `7620ce28754c5989dbb10d0b068de220c0d1c56d`. Parse: parsed.
+
+- build assignment DIRS @5: ["actions", "components", "reducers", "utils"]
+- build assignment BROWSER_CHROME_MANIFESTS @7: ["test/browser.toml"]
+- build assignment BUG_COMPONENT @12: ["DevTools", "Inspector: Animations"]
+
+### devtools/client/inspector/animation/reducers/moz.build
+
+Blob: `8b20a9f6cd91e7d619e947c008b9868c6625ab1e`. Parse: parsed.
+
+
+## Validation and limits
+
+The parser checked syntax only. This pass cannot prove runtime contracts, ownership, selected build settings, executed branches, or design reasons. Build files use a Python-based domain-specific language; parsing them as Python does not validate the build system. Byte decoding uses UTF-8; special encoding declarations and intentionally invalid fixtures may fail.
