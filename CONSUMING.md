@@ -43,6 +43,14 @@ The guide is provisional. The
 file census and automated grammar pass, source-link corrections, and remaining
 extraction and meaning limits. It does not claim a manual review of every comment.
 
+When writing or self-reviewing tests, every assertion message must contain the
+word "should" and state the expected behavior. For example: "The Save button
+should be disabled." Check this before finishing a test change. When reviewing
+someone else's patch, prefer this form, but do not report a missing "should" alone
+as a defect. Still report messages that describe the wrong expected behavior.
+Later source studies or guidance can refine this rule through a deliberate
+instruction update. Until then, apply the current rule.
+
 These are deliberate user-directed instruction changes. Automatic learning must
 not edit them. Historical comments remain evidence, not authority. Do not use the
 guide to demand unrelated comment cleanup or to report harmless wording choices

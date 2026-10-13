@@ -199,7 +199,13 @@ valid exception. Do not turn a provisional historical summary into a mandate.
 
 Review test filenames, named tasks, harness-specific assertion APIs, messages,
 helper names, fixture names, and manifest entries together. Describe the expected
-behavior in assertion messages. Separate values when that gives useful failure
+behavior in assertion messages. When writing or self-reviewing tests, every
+assertion message must contain the word "should". For example: "The Save button
+should be disabled." When reviewing someone else's patch, prefer this form, but
+do not report a missing "should" alone as a defect. Report messages that describe
+the wrong expected behavior. Later source studies or guidance can refine this
+rule through a deliberate instruction update. Until then, apply the current rule.
+Separate values when that gives useful failure
 diagnostics; do not impose one assertion per line by preference. Use actual events
 or state conditions, cleanup support, and modern key descriptors where supported.
 Check real prompt/status text when it is part of the requested behavior.

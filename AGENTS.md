@@ -96,5 +96,12 @@ side effects accurate. State what an async promise resolves to and what completi
 means when callers need it. Use small checked examples when usage is unclear.
 Check: useful comment; true behavior; clear actor and target; clear condition,
 reason, and result; unambiguous references; accurate caller contract; local format.
+When writing or self-reviewing tests, every assertion message must contain the
+word "should" and state the expected behavior. For example: "The Save button
+should be disabled." Check this before finishing a test change. When reviewing
+someone else's patch, prefer this form, but do not report a missing "should" alone
+as a defect. Still report messages that describe the wrong expected behavior.
+Later source studies or guidance can refine this rule through a deliberate
+instruction update. Until then, apply the current rule.
 These are user-directed writing rules and practical suggestions, not a claim
 that every existing comment is correct. Do not rewrite unrelated comments.
