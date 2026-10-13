@@ -58,6 +58,34 @@ as defects. A fresh local Codex chat receives the guidance through its global
 AGENTS.md. Other computers need equivalent instructions or must read this checkout's
 AGENTS.md; publication cannot change every Codex chat's loaded context.
 
+## Code-style guidance
+
+When writing or reviewing Thunderbird code, apply the scoped guidance in
+AGENTS.md. Read the [practical code-style guide](notes/08ac54d5-331d-4ab5-bc8f-6120318565a3.md)
+for loop choices, expressions, names, imports, tests, language boundaries, and
+examples. Read the [coverage report](notes/c3a69f18-1758-4b7e-9d63-5e51cbbcfb54.md)
+for the exact source, full file census, JavaScript syntax/configuration checks,
+parser failures, and remaining limits. This is a deliberate instruction update;
+automatic learning must not edit it.
+
+Choose rules for the exact language, component, runtime, file role, and section.
+Separate required configuration, accepted local practice, and suggested defaults.
+For new JavaScript that visits values and performs actions, prefer for...of over
+Array.prototype.forEach when behavior stays the same and no stronger local
+contract applies. Preserve array operations that return values, index-controlled
+loops, snapshots, and custom scheduling APIs. Do not impose a blanket === rule
+or turn source counts into policy. Tests, shared helpers, fixtures, modules,
+workers, Storybook, Suite, and imported/generated code can have different rules.
+Check resolved settings when overrides overlap.
+
+The console supplies the full concise guidance directly through
+commands/knowledge/code-style.mjs on new turns and follow-ups, even without a
+shared checkout or successful search. Local Codex has matching Thunderbird-scoped
+text in its global AGENTS.md. Other computers need equivalent instructions or
+must read this checkout's AGENTS.md. Existing chats and a running backend may
+need to reload instructions before they receive changes. No unrelated cleanup
+or manual review of every source choice is implied.
+
 ## Optional tb-tools index
 
 Use Node.js 22.13 or later and the tb-tools checkout. Put local caches in a

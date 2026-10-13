@@ -112,6 +112,33 @@ These IDs identify records in the knowledge clone or console index. A copied
 skill remains usable without them, but must report missing source verification.
 Retrieve only examples relevant to this task. Do not load every record listed.
 
+## Loop choices depend on the section
+
+For new JavaScript that visits values and performs actions, prefer `for...of`
+over `Array.prototype.forEach` when behavior stays the same and no stronger local
+contract applies. Use an indexed `for` for indexes, reverse order, stride, or
+index-controlled mutation. Use `while` for condition-controlled work. Keep
+`map`/`filter` for returned arrays, `some`/`every` for Boolean results, and `find`
+for a matching value. Use `reduce` when the accumulated result stays clear.
+
+Check the actual receiver, sparse slots, mutation, visit range, callback arguments,
+`this`, and callback returns before replacing a loop. Iterate an iterator directly
+unless an array method or stable snapshot is needed. Calendar `cal.iterate.forEach`
+is a custom event-queue scheduler with its own completion and `BREAK`/`CONTINUE`
+contract. Do not replace it as if it were an array method.
+
+Use a loop with `await` for ordered work. Array `forEach` does not wait for callback
+promises. Use `Promise.all` only when overlap, rejection, and cleanup fit the caller.
+Do not parallelize sequential test steps as a style change. Check shared test
+helpers, fixtures, production sections, imported code, and generated code separately.
+One file can have several contracts. Check resolved rules when overrides overlap;
+Calendar and browser test rule arrays do not necessarily merge.
+
+This is deliberate user-directed guidance, not a rule inferred from counts. There
+is no blanket `===` mandate. The shared checkout's CONSUMING.md links the code-style
+guide and coverage report. A standalone copy still has the decision rules above;
+missing source evidence must remain an explicit limit.
+
 ## JavaScript syntax and API style beyond formatting
 
 - Use current lint for `const`/`let`, imports, unused values, and syntax. Separately
