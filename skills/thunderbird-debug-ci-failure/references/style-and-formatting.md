@@ -59,6 +59,21 @@ Use the actual per-file rules for wrapping, quotes, semicolons, parentheses,
 trailing commas, braces, import spacing, and alignment. Do not maintain a competing
 handwritten formatter or demand unrelated mechanical cleanup.
 
+## Check logical blank-line groups
+
+Keep useful blank-line groups and local method organization. Separate distinct
+logical steps with a blank line when it makes the flow easier to follow. Follow
+nearby accepted code and keep closely related statements together. In tests,
+make setup, actions, and expected results easy to distinguish. During writing,
+review, and verification, inspect this grouping separately from formatter and
+lint results. A formatter pass does not establish readable grouping. Do not
+impose fixed blank-line counts or add a blank line after every statement.
+
+For a finding, identify the steps whose grouping makes the flow hard to follow
+and explain the useful boundary. Do not report a harmless grouping alternative
+as a defect or demand unrelated cleanup. Keep generated and imported code
+exceptions and the actual language and component rules.
+
 ## Names: inspect each namespace separately
 
 | Name kind | Questions to answer |

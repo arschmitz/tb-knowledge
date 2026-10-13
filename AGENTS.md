@@ -122,7 +122,7 @@ that every existing comment is correct. Do not rewrite unrelated comments.
 Read the code-style section in CONSUMING.md for the cited guide and coverage limits.
 This is deliberate user-directed guidance, separate from automatic learning.
 
-When writing or reviewing Thunderbird code:
+When writing, reviewing, or verifying Thunderbird code:
 Choose style for the exact language, folder, file role, and section. Read the
 implementation, relevant callers, current per-file lint and formatter settings,
 inline exceptions, and nearby accepted code in the same component and harness.
@@ -168,6 +168,14 @@ Choose methods, functions, and arrows with this binding and callback identity in
 mind. Preserve listener removal, required signatures, and the caller's result.
 Follow the environment's static or lazy import rules. Handle async completion,
 rejection, cancellation, and cleanup explicitly when the caller needs them.
+
+Keep useful blank-line groups and local method organization. Separate distinct
+logical steps with a blank line when it makes the flow easier to follow. Follow
+nearby accepted code and keep closely related statements together. In tests,
+make setup, actions, and expected results easy to distinguish. During writing,
+review, and verification, inspect this grouping separately from formatter and
+lint results. A formatter pass does not establish readable grouping. Do not
+impose fixed blank-line counts or add a blank line after every statement.
 
 In tests, follow the actual harness and section: named tasks, assertion APIs,
 shared helpers, fixtures, setup, cleanup, and browser preference handling.

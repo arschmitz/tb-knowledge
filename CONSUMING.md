@@ -75,13 +75,18 @@ AGENTS.md; publication cannot change every Codex chat's loaded context.
 
 ## Code-style guidance
 
-When writing or reviewing Thunderbird code, apply the scoped guidance in
+When writing, reviewing, or verifying Thunderbird code, apply the scoped guidance in
 AGENTS.md. Read the [practical code-style guide](notes/08ac54d5-331d-4ab5-bc8f-6120318565a3.md)
 for loop choices, expressions, names, imports, tests, language boundaries, and
 examples. Read the [coverage report](notes/c3a69f18-1758-4b7e-9d63-5e51cbbcfb54.md)
 for the exact source, full file census, JavaScript syntax/configuration checks,
 parser failures, and remaining limits. This is a deliberate instruction update;
 automatic learning must not edit it.
+
+Read the [blank-line grouping supplement](notes/230b3c5f-5f79-4d66-b1f4-2d8b8bb9d46b.md)
+for the manual layout check used in writing, review, and verification. Preserve
+useful groups and separate distinct logical steps when it helps the reader.
+Formatter and lint success do not establish readable grouping.
 
 Read the [test-cleanup writing rule](notes/f706938f-ead2-4a9c-ad82-59db1d738286.md) with the practical guide.
 When writing tests, do not add `try/finally` blocks. Use harness setup and
