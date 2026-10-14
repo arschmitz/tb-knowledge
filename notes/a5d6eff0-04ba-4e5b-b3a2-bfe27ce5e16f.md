@@ -1,0 +1,788 @@
+<!-- knowledge: {"repository":"git:314d8065c5ad68c7e5c5f92d","at":"2026-10-14T01:22:58.059876+00:00","component":"DOM Canvas WebGL generated test wrappers","paths":["dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml","dom/canvas/test/webgl-conf/generate-wrappers-and-manifest.py","dom/canvas/test/webgl-conf/mochi-wrapper.html.template","dom/canvas/test/webgl-conf/generated/moz.build","dom/canvas/test/webgl-conf/mochi-single.html","dom/canvas/moz.build"],"source":{"reference":"https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml","revision":"1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b","type":"code-snapshot","basis":"All wrapper bytes, target blob identities and manifest registrations checked; independent source/tree review.","familyNote":"84e2b632-901b-4607-9126-4ea208c857c2.md","fileRole":"generated-test-wrapper","language":"HTML/TOML","runtime":"Mochitest browser frames","verification":"mechanical membership plus linked scoped shared behavior; no product run","pathScope":"Metadata paths cover the manifest and shared implementation. Member wrapper and target paths remain in the body and are not top-level path-filter metadata."}} -->
+# WebGL wrapper bindings: generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml
+
+This map records 68 checked wrapper members at Firefox `1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b`. Each wrapper matches the shared template byte for byte. Its actual iframe target, WebGL version, pinned target blob and manifest section remain separate evidence. See the [shared family description](84e2b632-901b-4607-9126-4ea208c857c2.md).
+
+The [generated build file](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/moz.build) lists this manifest. The [parent build entry](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/moz.build#L39-L41) includes the generated directory.
+
+Manifest blob: `90b714600cf1a36de9f552662b07189a8a98cd02`. The following [DEFAULT fields](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L1-L24) are preserved as source data. Their platform conditions and interaction with each test section were not evaluated.
+
+```json
+{
+  "subsuite": "webgl2-ext",
+  "prefs": [
+    "media.seamless-looping-video=false",
+    "privacy.baselineFingerprintingProtection=false",
+    "dom.navigation.navigationRateLimit.count=0"
+  ],
+  "support-files": [
+    "../*.css",
+    "../*.html",
+    "../checkout/conformance2/textures/**",
+    "../checkout/js/**",
+    "../checkout/resources/**"
+  ]
+}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-r11f_g11f_b10f-rgb-float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-r11f_g11f_b10f-rgb-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-r11f_g11f_b10f-rgb-float.html#L15); blob `538b2de1c6f4e2e928aa1972dce1743373f5107e`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-r11f_g11f_b10f-rgb-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-r11f_g11f_b10f-rgb-float.html); blob `8c801c4c9a720f2315045a4ccae911d5bfd889e0`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-r11f_g11f_b10f-rgb-float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-r11f_g11f_b10f-rgb-float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L25-L26). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-r11f_g11f_b10f-rgb-half_float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-r11f_g11f_b10f-rgb-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-r11f_g11f_b10f-rgb-half_float.html#L15); blob `0f2524d1b604b1342265a1e64fa14098c2906484`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-r11f_g11f_b10f-rgb-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-r11f_g11f_b10f-rgb-half_float.html); blob `05f02544ca8415a64562d962d94d06bd14e02185`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-r11f_g11f_b10f-rgb-half_float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-r11f_g11f_b10f-rgb-half_float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L27-L28). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-r11f_g11f_b10f-rgb-unsigned_int_10f_11f_11f_rev.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-r11f_g11f_b10f-rgb-unsigned_int_10f_11f_11f_rev.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-r11f_g11f_b10f-rgb-unsigned_int_10f_11f_11f_rev.html#L15); blob `a032873d4e52c45cc571cb806a6fb9381a026cb3`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-r11f_g11f_b10f-rgb-unsigned_int_10f_11f_11f_rev.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-r11f_g11f_b10f-rgb-unsigned_int_10f_11f_11f_rev.html); blob `36bd2e93d798d233b6f68e647974b3ad1d91c09b`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-r11f_g11f_b10f-rgb-unsigned_int_10f_11f_11f_rev.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-r11f_g11f_b10f-rgb-unsigned_int_10f_11f_11f_rev.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L29-L30). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-r16f-red-float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-r16f-red-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-r16f-red-float.html#L15); blob `5c5c8f7b9307e63acc04e7fa3df4a1cfe5a51b86`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-r16f-red-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-r16f-red-float.html); blob `46da6a298749a171b24c3b53a4014bd3f0ab9179`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-r16f-red-float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-r16f-red-float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L31-L32). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-r16f-red-half_float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-r16f-red-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-r16f-red-half_float.html#L15); blob `fc9ec1fcbca3175b72d66539baca7f486bb55f08`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-r16f-red-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-r16f-red-half_float.html); blob `82f9b029977505577aefecd804fb2218f89b15f6`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-r16f-red-half_float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-r16f-red-half_float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L33-L34). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-r32f-red-float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-r32f-red-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-r32f-red-float.html#L15); blob `a0ffef71cdfb9f7aa817b5e993a33c1566f08895`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-r32f-red-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-r32f-red-float.html); blob `7d22382c835c168b521777e6fafcc93ff9a01e29`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-r32f-red-float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-r32f-red-float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L35-L36). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-r8-red-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-r8-red-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-r8-red-unsigned_byte.html#L15); blob `871f9c51d508217a6d498ca4bfcac2a6f39b1626`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-r8-red-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-r8-red-unsigned_byte.html); blob `386ba29a399729a0a926c8989f40a5edbb8eaa5d`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-r8-red-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-r8-red-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L37-L38). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-r8ui-red_integer-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-r8ui-red_integer-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-r8ui-red_integer-unsigned_byte.html#L15); blob `ad73b061b7b9a4ac5a3b070be0199ea08d1da453`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-r8ui-red_integer-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-r8ui-red_integer-unsigned_byte.html); blob `c7a427708473eb68379fca22f547539d6e843ce2`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-r8ui-red_integer-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-r8ui-red_integer-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L39-L40). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rg16f-rg-float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rg16f-rg-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rg16f-rg-float.html#L15); blob `536865b39adbca2d87b259c7ff2fb23554cd6a26`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rg16f-rg-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rg16f-rg-float.html); blob `03e4239af34e5f6686551a7933a6664d2194d440`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rg16f-rg-float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rg16f-rg-float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L41-L42). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rg16f-rg-half_float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rg16f-rg-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rg16f-rg-half_float.html#L15); blob `748645327281b6cb0d9ba6d7cf8ad8448c443b2b`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rg16f-rg-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rg16f-rg-half_float.html); blob `5aba67f310384fc14d0b95aa24afa1c1ee0e2f6f`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rg16f-rg-half_float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rg16f-rg-half_float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L43-L44). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rg32f-rg-float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rg32f-rg-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rg32f-rg-float.html#L15); blob `3baedef4bac08929ba6570dd27a50d294a17ef89`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rg32f-rg-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rg32f-rg-float.html); blob `514c6b9bac523ab9e0e32125e90b5edcda3db0fa`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rg32f-rg-float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rg32f-rg-float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L45-L46). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rg8-rg-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rg8-rg-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rg8-rg-unsigned_byte.html#L15); blob `5d9db46a9cb6398ea148180b20ad6678ff38598e`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rg8-rg-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rg8-rg-unsigned_byte.html); blob `4fd44a8c026e81f856ea9e839b6377567db4677a`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rg8-rg-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rg8-rg-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L47-L48). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rg8ui-rg_integer-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rg8ui-rg_integer-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rg8ui-rg_integer-unsigned_byte.html#L15); blob `a2b66853a8603803e1c46349fc842d8844a4b004`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rg8ui-rg_integer-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rg8ui-rg_integer-unsigned_byte.html); blob `a5a70f80dfd00d3823c897e42859584f9bdacc3d`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rg8ui-rg_integer-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rg8ui-rg_integer-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L49-L50). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rgb10_a2-rgba-unsigned_int_2_10_10_10_rev.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb10_a2-rgba-unsigned_int_2_10_10_10_rev.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb10_a2-rgba-unsigned_int_2_10_10_10_rev.html#L15); blob `703be483f8f9a646153ec6d516d42fc12bfa8fdc`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb10_a2-rgba-unsigned_int_2_10_10_10_rev.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb10_a2-rgba-unsigned_int_2_10_10_10_rev.html); blob `36bc41080041d54ef9e7e1e8e0dd89ab2d2bc118`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rgb10_a2-rgba-unsigned_int_2_10_10_10_rev.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rgb10_a2-rgba-unsigned_int_2_10_10_10_rev.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L51-L55). Raw section fields:
+
+```json
+{
+  "fail-if": [
+    "true"
+  ]
+}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rgb16f-rgb-float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb16f-rgb-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb16f-rgb-float.html#L15); blob `a12337230b1285c91f2a6654386fd519ae55b8f5`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb16f-rgb-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb16f-rgb-float.html); blob `973470922f080fc314be2558c30fc81519751e5a`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rgb16f-rgb-float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rgb16f-rgb-float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L56-L57). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rgb16f-rgb-half_float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb16f-rgb-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb16f-rgb-half_float.html#L15); blob `da5f50e4b9f4a1aa035883b916deb8500b25e91f`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb16f-rgb-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb16f-rgb-half_float.html); blob `f5876b7b44d1e49ee66dc98e456bdb21166b6681`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rgb16f-rgb-half_float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rgb16f-rgb-half_float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L58-L59). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rgb32f-rgb-float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb32f-rgb-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb32f-rgb-float.html#L15); blob `93f1f878f45fca0e5a3427351bbffd75026457d1`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb32f-rgb-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb32f-rgb-float.html); blob `fddec39e8908a2608f21a14eaefea75603299c68`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rgb32f-rgb-float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rgb32f-rgb-float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L60-L61). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rgb565-rgb-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb565-rgb-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb565-rgb-unsigned_byte.html#L15); blob `78ea0304450dea712463438745a8905a05d6c97e`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb565-rgb-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb565-rgb-unsigned_byte.html); blob `9dce82e56c33612d71040c9152a181f4b4fd3e82`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rgb565-rgb-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rgb565-rgb-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L62-L63). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rgb565-rgb-unsigned_short_5_6_5.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb565-rgb-unsigned_short_5_6_5.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb565-rgb-unsigned_short_5_6_5.html#L15); blob `a67fa5b5620e1fa87d2a9f8eaa627d1ab7c167ad`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb565-rgb-unsigned_short_5_6_5.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb565-rgb-unsigned_short_5_6_5.html); blob `39c2aea9d1bce08e5235304f8f3daf875afc3c1f`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rgb565-rgb-unsigned_short_5_6_5.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rgb565-rgb-unsigned_short_5_6_5.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L64-L65). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rgb5_a1-rgba-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb5_a1-rgba-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb5_a1-rgba-unsigned_byte.html#L15); blob `350e8978c56adf7decf3a7797ad4e90233649d89`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb5_a1-rgba-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb5_a1-rgba-unsigned_byte.html); blob `d86acccec7353cad45a3ceb8cc7d64aebaf517f3`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rgb5_a1-rgba-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rgb5_a1-rgba-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L66-L67). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rgb5_a1-rgba-unsigned_short_5_5_5_1.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb5_a1-rgba-unsigned_short_5_5_5_1.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb5_a1-rgba-unsigned_short_5_5_5_1.html#L15); blob `5e60d09eb55eb38bbee72f36a425ec9a11459c8d`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb5_a1-rgba-unsigned_short_5_5_5_1.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb5_a1-rgba-unsigned_short_5_5_5_1.html); blob `87081717597bebfea1e2f3cf501193712f35d3d5`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rgb5_a1-rgba-unsigned_short_5_5_5_1.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rgb5_a1-rgba-unsigned_short_5_5_5_1.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L68-L69). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rgb8-rgb-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb8-rgb-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb8-rgb-unsigned_byte.html#L15); blob `202623909c4f4276022cf47ad4e781c5532a961f`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb8-rgb-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb8-rgb-unsigned_byte.html); blob `48fec819dd7281bd1c6e9ae3d5eb5ce07d83e139`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rgb8-rgb-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rgb8-rgb-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L70-L71). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rgb8ui-rgb_integer-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb8ui-rgb_integer-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb8ui-rgb_integer-unsigned_byte.html#L15); blob `1eb4336e73ba2f5d7183b539653d8de5ddc424ba`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb8ui-rgb_integer-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb8ui-rgb_integer-unsigned_byte.html); blob `06563eae3a710ea7aeadd22d1d34bc7243c249af`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rgb8ui-rgb_integer-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rgb8ui-rgb_integer-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L72-L73). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rgb9_e5-rgb-float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb9_e5-rgb-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb9_e5-rgb-float.html#L15); blob `d6870a02a8a8d438bd8049bf5bd2607fe2f2bad2`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb9_e5-rgb-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb9_e5-rgb-float.html); blob `487f31dba3872a9ddb89f7425fa579f8504881d2`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rgb9_e5-rgb-float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rgb9_e5-rgb-float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L74-L75). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rgb9_e5-rgb-half_float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb9_e5-rgb-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgb9_e5-rgb-half_float.html#L15); blob `de997ed040c59d0caec2ff7896f4e7aa76de997d`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb9_e5-rgb-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgb9_e5-rgb-half_float.html); blob `1370103dfe6ebea48d2b6c85ef3eed9c30edc541`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rgb9_e5-rgb-half_float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rgb9_e5-rgb-half_float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L76-L77). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rgba16f-rgba-float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgba16f-rgba-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgba16f-rgba-float.html#L15); blob `9bdd932252905730bb0dbe7718f710129a91b99f`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgba16f-rgba-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgba16f-rgba-float.html); blob `4991fa62849fb7b2d8dca381de6df64673c0a09f`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rgba16f-rgba-float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rgba16f-rgba-float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L78-L79). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rgba16f-rgba-half_float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgba16f-rgba-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgba16f-rgba-half_float.html#L15); blob `db4b725c19fc0f473c69ac12346d1c0e8688f4ca`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgba16f-rgba-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgba16f-rgba-half_float.html); blob `fb7ffa57eb78312c1ac9d7af25dd45088fc50c66`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rgba16f-rgba-half_float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rgba16f-rgba-half_float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L80-L81). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rgba32f-rgba-float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgba32f-rgba-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgba32f-rgba-float.html#L15); blob `9fcb3a1f8cec80b9d15e7e1c703cdacdedb215f4`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgba32f-rgba-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgba32f-rgba-float.html); blob `156de2a707ba2807ee80d6beadacb6642f2cc499`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rgba32f-rgba-float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rgba32f-rgba-float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L82-L83). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rgba4-rgba-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgba4-rgba-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgba4-rgba-unsigned_byte.html#L15); blob `8067dda413eee805418f815880aeb6751ea245a8`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgba4-rgba-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgba4-rgba-unsigned_byte.html); blob `57ff4c5ffe046d1a783950abd2663b5d593554c0`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rgba4-rgba-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rgba4-rgba-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L84-L85). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rgba4-rgba-unsigned_short_4_4_4_4.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgba4-rgba-unsigned_short_4_4_4_4.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgba4-rgba-unsigned_short_4_4_4_4.html#L15); blob `59dc25cb3bb7b26e93853701e1d61356b80e34cc`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgba4-rgba-unsigned_short_4_4_4_4.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgba4-rgba-unsigned_short_4_4_4_4.html); blob `60ef5bcf159dee70086db27ed3ead472afffc02c`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rgba4-rgba-unsigned_short_4_4_4_4.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rgba4-rgba-unsigned_short_4_4_4_4.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L86-L87). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rgba8-rgba-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgba8-rgba-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgba8-rgba-unsigned_byte.html#L15); blob `54bffe498c3ab80ec1d0d7613cb694212b6b376f`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgba8-rgba-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgba8-rgba-unsigned_byte.html); blob `9aab72ff234f46b63b1cb12fb26388c46854e286`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rgba8-rgba-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rgba8-rgba-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L88-L89). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-rgba8ui-rgba_integer-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgba8ui-rgba_integer-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-rgba8ui-rgba_integer-unsigned_byte.html#L15); blob `4584d22d197d7bc0f0ed445de7357758ec97c96f`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgba8ui-rgba_integer-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-rgba8ui-rgba_integer-unsigned_byte.html); blob `39137ef896e1be821334bd23242c0aece458ccae`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-rgba8ui-rgba_integer-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-rgba8ui-rgba_integer-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L90-L91). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-srgb8-rgb-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-srgb8-rgb-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-srgb8-rgb-unsigned_byte.html#L15); blob `49e6011c11f0fd769900cc000365172dccf4fa63`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-srgb8-rgb-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-srgb8-rgb-unsigned_byte.html); blob `34f3c2e24d29e87b2923f9a16924e38e28708a87`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-srgb8-rgb-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-srgb8-rgb-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L92-L93). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-2d-srgb8_alpha8-rgba-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-srgb8_alpha8-rgba-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-2d-srgb8_alpha8-rgba-unsigned_byte.html#L15); blob `e5efc4d69ad110a062ad0b5f0d89ce3d98024a0e`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-srgb8_alpha8-rgba-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-2d-srgb8_alpha8-rgba-unsigned_byte.html); blob `7bce656cf3fc3985520b14ce7446fe999eee9717`.
+- Target substitution: `conformance2/textures/canvas/tex-2d-srgb8_alpha8-rgba-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-2d-srgb8_alpha8-rgba-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L94-L95). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-r11f_g11f_b10f-rgb-float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-r11f_g11f_b10f-rgb-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-r11f_g11f_b10f-rgb-float.html#L15); blob `bec5f5eb7c98921a7a21357294f34a00b135b64a`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-r11f_g11f_b10f-rgb-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-r11f_g11f_b10f-rgb-float.html); blob `4aef15a592dc726221d150e452b0d021b2c7010e`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-r11f_g11f_b10f-rgb-float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-r11f_g11f_b10f-rgb-float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L96-L97). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-r11f_g11f_b10f-rgb-half_float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-r11f_g11f_b10f-rgb-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-r11f_g11f_b10f-rgb-half_float.html#L15); blob `afbbc3998b04dac556ad38511b14285c8af780d8`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-r11f_g11f_b10f-rgb-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-r11f_g11f_b10f-rgb-half_float.html); blob `3e5f79e8ed808175364a3b3eec972bc81d5cb566`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-r11f_g11f_b10f-rgb-half_float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-r11f_g11f_b10f-rgb-half_float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L98-L99). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-r11f_g11f_b10f-rgb-unsigned_int_10f_11f_11f_rev.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-r11f_g11f_b10f-rgb-unsigned_int_10f_11f_11f_rev.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-r11f_g11f_b10f-rgb-unsigned_int_10f_11f_11f_rev.html#L15); blob `36fc896a4d434bfd0a89f1999e01215442de7f0d`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-r11f_g11f_b10f-rgb-unsigned_int_10f_11f_11f_rev.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-r11f_g11f_b10f-rgb-unsigned_int_10f_11f_11f_rev.html); blob `070e764f13486c0df23ecb3486820f805d191f56`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-r11f_g11f_b10f-rgb-unsigned_int_10f_11f_11f_rev.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-r11f_g11f_b10f-rgb-unsigned_int_10f_11f_11f_rev.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L100-L101). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-r16f-red-float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-r16f-red-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-r16f-red-float.html#L15); blob `75b9da510c427a6a9b66e905109f0e179f8775f8`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-r16f-red-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-r16f-red-float.html); blob `07e504ad0158603444137239768490bd74f249e6`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-r16f-red-float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-r16f-red-float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L102-L103). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-r16f-red-half_float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-r16f-red-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-r16f-red-half_float.html#L15); blob `fbbce63131fbabc26ae28cb13c8b886896c904cd`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-r16f-red-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-r16f-red-half_float.html); blob `1b296d9f0ca69f417af6fdf59a9c6caafd45aab5`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-r16f-red-half_float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-r16f-red-half_float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L104-L105). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-r32f-red-float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-r32f-red-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-r32f-red-float.html#L15); blob `263fbc0c3e9de2b04fc1f2f064d118a89fd9285b`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-r32f-red-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-r32f-red-float.html); blob `b562f7154997dfae266f3550818e74b547c41c8b`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-r32f-red-float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-r32f-red-float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L106-L107). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-r8-red-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-r8-red-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-r8-red-unsigned_byte.html#L15); blob `424252c4edf3fbd4d7808edc1d8a4d1ce0425fe0`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-r8-red-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-r8-red-unsigned_byte.html); blob `0c0d824598c047213d13a238662a52aab0bb3d77`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-r8-red-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-r8-red-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L108-L109). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-r8ui-red_integer-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-r8ui-red_integer-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-r8ui-red_integer-unsigned_byte.html#L15); blob `052cb6a24948390e2ea167001eab5fc67a15e62a`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-r8ui-red_integer-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-r8ui-red_integer-unsigned_byte.html); blob `d5521e370c3f79ce5f6b610277e672eb6c422c48`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-r8ui-red_integer-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-r8ui-red_integer-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L110-L111). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rg16f-rg-float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rg16f-rg-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rg16f-rg-float.html#L15); blob `bea56ae3a739be555f73b818831d240178eac961`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rg16f-rg-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rg16f-rg-float.html); blob `52f234439431194769dcdca8a2d89efa6f49b7d1`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rg16f-rg-float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rg16f-rg-float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L112-L113). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rg16f-rg-half_float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rg16f-rg-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rg16f-rg-half_float.html#L15); blob `f41bd034d8648b45312f3b7bb8ca8edce073ef77`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rg16f-rg-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rg16f-rg-half_float.html); blob `7a02c62556d5b1b46b12e9335ad6b9c8f1b3eb7f`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rg16f-rg-half_float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rg16f-rg-half_float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L114-L115). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rg32f-rg-float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rg32f-rg-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rg32f-rg-float.html#L15); blob `20992fd0b88efcb45cf056e65da298bea67b6743`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rg32f-rg-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rg32f-rg-float.html); blob `1381c0a484c764747233d8718da66f2f3c7601fc`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rg32f-rg-float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rg32f-rg-float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L116-L117). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rg8-rg-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rg8-rg-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rg8-rg-unsigned_byte.html#L15); blob `7d45197eaea20725b50d541191c8f326f932cc79`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rg8-rg-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rg8-rg-unsigned_byte.html); blob `df3dfc0f8c358c5e6b1ec9af33abd60695eda466`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rg8-rg-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rg8-rg-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L118-L119). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rg8ui-rg_integer-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rg8ui-rg_integer-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rg8ui-rg_integer-unsigned_byte.html#L15); blob `dc813a1c5589b18e8db997bf136cbba81e185ebf`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rg8ui-rg_integer-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rg8ui-rg_integer-unsigned_byte.html); blob `e66ae71d977ba64fde71f5120a5d88df94886e4b`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rg8ui-rg_integer-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rg8ui-rg_integer-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L120-L121). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rgb10_a2-rgba-unsigned_int_2_10_10_10_rev.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb10_a2-rgba-unsigned_int_2_10_10_10_rev.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb10_a2-rgba-unsigned_int_2_10_10_10_rev.html#L15); blob `36f38f8fcd3c31f92dc4557733bb064a12533154`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb10_a2-rgba-unsigned_int_2_10_10_10_rev.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb10_a2-rgba-unsigned_int_2_10_10_10_rev.html); blob `ccc3d13c4462db0af70762c66e22cfcc28c20f9d`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rgb10_a2-rgba-unsigned_int_2_10_10_10_rev.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rgb10_a2-rgba-unsigned_int_2_10_10_10_rev.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L122-L126). Raw section fields:
+
+```json
+{
+  "fail-if": [
+    "true"
+  ]
+}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rgb16f-rgb-float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb16f-rgb-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb16f-rgb-float.html#L15); blob `a5d8b640fdeb4377fec487e94894ac01367a129f`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb16f-rgb-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb16f-rgb-float.html); blob `9deeff08400fbc7ee1940cf9bbfad8eb811b4d79`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rgb16f-rgb-float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rgb16f-rgb-float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L127-L128). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rgb16f-rgb-half_float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb16f-rgb-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb16f-rgb-half_float.html#L15); blob `49ffc6449dd0fffa4d3b22f5f6e888096092dc3e`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb16f-rgb-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb16f-rgb-half_float.html); blob `f16c2759f859601a92de8fcf8f872d987dc39a82`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rgb16f-rgb-half_float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rgb16f-rgb-half_float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L129-L130). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rgb32f-rgb-float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb32f-rgb-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb32f-rgb-float.html#L15); blob `660b0ef0b7ac1e6989f02bafc2b7aab30a99ddc8`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb32f-rgb-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb32f-rgb-float.html); blob `ede0abb981e0b1a540eaeed30d4a710c2058c30d`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rgb32f-rgb-float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rgb32f-rgb-float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L131-L132). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rgb565-rgb-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb565-rgb-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb565-rgb-unsigned_byte.html#L15); blob `200c25f6b461d826fef28bd97a129a8fc5f0ebba`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb565-rgb-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb565-rgb-unsigned_byte.html); blob `7f87bcfdd27c351571924052fe00ccdf5df6218c`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rgb565-rgb-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rgb565-rgb-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L133-L134). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rgb565-rgb-unsigned_short_5_6_5.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb565-rgb-unsigned_short_5_6_5.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb565-rgb-unsigned_short_5_6_5.html#L15); blob `5f6a170bc6d81ea4e5a246fcc8bc479268306b5f`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb565-rgb-unsigned_short_5_6_5.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb565-rgb-unsigned_short_5_6_5.html); blob `c503df8492fda9711074c0e6b1c91aa1216410ff`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rgb565-rgb-unsigned_short_5_6_5.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rgb565-rgb-unsigned_short_5_6_5.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L135-L136). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rgb5_a1-rgba-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb5_a1-rgba-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb5_a1-rgba-unsigned_byte.html#L15); blob `9e578698d9eb7b823cb260ad640c5715f536b27a`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb5_a1-rgba-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb5_a1-rgba-unsigned_byte.html); blob `6f2286d00a7ef008d2b3e025c42067e2f947b7b0`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rgb5_a1-rgba-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rgb5_a1-rgba-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L137-L138). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rgb5_a1-rgba-unsigned_short_5_5_5_1.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb5_a1-rgba-unsigned_short_5_5_5_1.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb5_a1-rgba-unsigned_short_5_5_5_1.html#L15); blob `f417e8e8c1894d626e345da53c6c28503b308a6a`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb5_a1-rgba-unsigned_short_5_5_5_1.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb5_a1-rgba-unsigned_short_5_5_5_1.html); blob `1112ac8c2a26f4770b3a5db8dec6956c2924ae4d`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rgb5_a1-rgba-unsigned_short_5_5_5_1.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rgb5_a1-rgba-unsigned_short_5_5_5_1.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L139-L140). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rgb8-rgb-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb8-rgb-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb8-rgb-unsigned_byte.html#L15); blob `d100b3830fca3ce4d8cfb23b0ba1ed7e137c142a`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb8-rgb-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb8-rgb-unsigned_byte.html); blob `2179eda930d73c35bc8efb5e17a834e1ec2e7480`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rgb8-rgb-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rgb8-rgb-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L141-L142). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rgb8ui-rgb_integer-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb8ui-rgb_integer-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb8ui-rgb_integer-unsigned_byte.html#L15); blob `d302f60ff3f3cafe1980c6c245b37ea01db15ff0`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb8ui-rgb_integer-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb8ui-rgb_integer-unsigned_byte.html); blob `727773822808a427471cb5d9375d3b54acf416a8`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rgb8ui-rgb_integer-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rgb8ui-rgb_integer-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L143-L144). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rgb9_e5-rgb-float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb9_e5-rgb-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb9_e5-rgb-float.html#L15); blob `d444657641c9b61c4e3799b184f0211bb260231e`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb9_e5-rgb-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb9_e5-rgb-float.html); blob `9308dffd3e88f6648cfcdaeec3299a8921582fa7`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rgb9_e5-rgb-float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rgb9_e5-rgb-float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L145-L146). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rgb9_e5-rgb-half_float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb9_e5-rgb-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgb9_e5-rgb-half_float.html#L15); blob `11d6a479303dad83f56acea271caf35079ef6fdb`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb9_e5-rgb-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgb9_e5-rgb-half_float.html); blob `2c5ad98f43b768904b9b45e29219d16fbd452725`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rgb9_e5-rgb-half_float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rgb9_e5-rgb-half_float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L147-L148). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rgba16f-rgba-float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgba16f-rgba-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgba16f-rgba-float.html#L15); blob `65899f13a975eb0bdd6245a36adb1006e89733c0`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgba16f-rgba-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgba16f-rgba-float.html); blob `894c6904266446b3cedb90d9d4f1eba3489f9a7f`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rgba16f-rgba-float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rgba16f-rgba-float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L149-L150). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rgba16f-rgba-half_float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgba16f-rgba-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgba16f-rgba-half_float.html#L15); blob `e0b32f8559934bda743f8cf7fe1e48e101e1728c`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgba16f-rgba-half_float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgba16f-rgba-half_float.html); blob `d4703bdf95de6e63b40cdf1b03a97d7d1892697a`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rgba16f-rgba-half_float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rgba16f-rgba-half_float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L151-L152). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rgba32f-rgba-float.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgba32f-rgba-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgba32f-rgba-float.html#L15); blob `94eb992a2e5977e73015441f8860ef247ff9e78a`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgba32f-rgba-float.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgba32f-rgba-float.html); blob `31ee95ac9c1c72181ab7bfa5fe507f1f612748fa`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rgba32f-rgba-float.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rgba32f-rgba-float.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L153-L154). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rgba4-rgba-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgba4-rgba-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgba4-rgba-unsigned_byte.html#L15); blob `a8d341284d89ab122da9c87807ea49f70f2d88b7`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgba4-rgba-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgba4-rgba-unsigned_byte.html); blob `a7581fa954cf604bf3b413de8263d07e6bef3f0b`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rgba4-rgba-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rgba4-rgba-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L155-L156). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rgba4-rgba-unsigned_short_4_4_4_4.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgba4-rgba-unsigned_short_4_4_4_4.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgba4-rgba-unsigned_short_4_4_4_4.html#L15); blob `5d3962b178ed8824c2fc9fa1f45430a2f978e252`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgba4-rgba-unsigned_short_4_4_4_4.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgba4-rgba-unsigned_short_4_4_4_4.html); blob `304f121ac1613358cf5fa9ec01af606ea8622afe`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rgba4-rgba-unsigned_short_4_4_4_4.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rgba4-rgba-unsigned_short_4_4_4_4.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L157-L158). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rgba8-rgba-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgba8-rgba-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgba8-rgba-unsigned_byte.html#L15); blob `7b3369363f2fb04170259f2725610adefc07436f`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgba8-rgba-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgba8-rgba-unsigned_byte.html); blob `c2fdcbbc5508adb06d5abd0d338be907c5d5b78d`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rgba8-rgba-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rgba8-rgba-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L159-L160). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-rgba8ui-rgba_integer-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgba8ui-rgba_integer-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-rgba8ui-rgba_integer-unsigned_byte.html#L15); blob `b66f0d74a8471800166951e68887fbd309888068`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgba8ui-rgba_integer-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-rgba8ui-rgba_integer-unsigned_byte.html); blob `5a5691b6d16ce3fa2d9e82832ab1707217663c95`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-rgba8ui-rgba_integer-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-rgba8ui-rgba_integer-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L161-L162). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-srgb8-rgb-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-srgb8-rgb-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-srgb8-rgb-unsigned_byte.html#L15); blob `f8223a5587869b5c6298e15778c9874b50c69786`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-srgb8-rgb-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-srgb8-rgb-unsigned_byte.html); blob `aa8ca643f9a1986d80c52cf63e2c4187a7947558`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-srgb8-rgb-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-srgb8-rgb-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L163-L164). Raw section fields:
+
+```json
+{}
+```
+
+## test_2_conformance2__textures__canvas__tex-3d-srgb8_alpha8-rgba-unsigned_byte.html
+
+- Wrapper: [dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-srgb8_alpha8-rgba-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/test_2_conformance2__textures__canvas__tex-3d-srgb8_alpha8-rgba-unsigned_byte.html#L15); blob `ec96df5fb5ff6d568659abfaca8a00383266db8f`.
+- Target: [dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-srgb8_alpha8-rgba-unsigned_byte.html](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/checkout/conformance2/textures/canvas/tex-3d-srgb8_alpha8-rgba-unsigned_byte.html); blob `7e5e0bea878c5c87ecd5e9bff31f15de4f26aa37`.
+- Target substitution: `conformance2/textures/canvas/tex-3d-srgb8_alpha8-rgba-unsigned_byte.html`. WebGL version: `2`. Appended query: `?webglVersion=2`.
+- Manifest section: [`test_2_conformance2__textures__canvas__tex-3d-srgb8_alpha8-rgba-unsigned_byte.html`](https://github.com/mozilla-firefox/firefox/blob/1a097ed8d31f6b307a5d0ebc34a82ceaf7f3727b/dom/canvas/test/webgl-conf/generated/generated-mochitest-webgl2-ext-conformance2-textures-canvas.toml#L165). Raw section fields:
+
+```json
+{}
+```
+
+## Validation and limits
+
+All listed wrapper/template bytes, forward filename mappings, target existence, unique manifest membership and generated build registration passed the family check. An independent reader verified pinned wrapper, target and manifest identities against the Git tree. The shared behavior notes read implementation and relevant callers; this map is structural context evidence.
+
+Each target body, its concrete assertions, configuration behavior and remaining runtime links retain their own analysis obligations. No target test passed merely because it appears here. No product test ran. This map does not establish cleanup, all callers, complete behavior coverage, or a population-wide speed improvement.
