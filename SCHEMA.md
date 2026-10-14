@@ -74,6 +74,30 @@ FORMAT.md defines the one-line JSON metadata header. The console creates a
 not an automatically supported lesson. A generated lesson note links to its
 lesson JSON and carries `source.recordId` or a publication key.
 
+## Retrieval selection and retained originals
+
+Retrieval selection is separate from the durable record schema. The console keeps
+an exclusion table in its local SQLite cache. It omits selected evidence from
+default search, vectors, and pending learning jobs without changing the original
+record, its digest, or its dependency links. Lessons are not excluded by their
+proof's classification.
+
+The current policy selects evidence with either exact `source.study` value
+`architecture-study-20261013` or `architecture-relationships-20261013`. These are
+generated parser inventories. It also selects `browser-discussion` records whose
+JSON `text` contains a nonempty `dom` string, and the exact operational source
+types listed in the console's `commands/knowledge/retrieval-policy.mjs`. Operational
+types cover queue transitions and inputs, history recovery, cache, checkpoint,
+manifest and source-packet records, and cleanup reports. A large file or an
+unrelated study tag does not meet this policy by itself.
+
+Full originals remain in `records/<ID>.json` and their existing note paths, or in
+the private store when they were never shared. Explicit ID reads and citation
+checks still resolve those originals. No physical archive path replaces them.
+Focused lessons and behavior evidence retain their existing status and scope;
+current code still decides whether a historical observation applies. Selection
+creates no new analysis, public proof, or independent copy of a source.
+
 ## Local index and queue
 
 The console builds SQLite full-text search and optional vectors outside Git.
