@@ -38,6 +38,43 @@ requests, and proposed rules. Prefer newer accepted source in the same scope.
 Keep rules outside lint and formatting visible. Preserve older counterexamples
 and exceptions. The human publication style guide remains a separate draft.
 
+## Focused retrieval and large inventories
+
+Start with focused notes and lessons. Check their source metadata, scope, revision,
+and evidence before reading a large generated inventory. The evidence tagged
+`source.study: architecture-study-20261013` or
+`source.study: architecture-relationships-20261013` is parser output for source
+navigation. It does not establish runtime behavior or ownership. Open an inventory
+when the task needs its names, imports, syntax sites, or line ranges. Check the
+current source before using those observations.
+
+The console excludes these two inventory studies, raw browser captures that
+contain DOM snapshots, and recognized operational records from default retrieval
+and learning. Focused behavior evidence, lessons, and ordinary source records stay
+available. This is not a rule to exclude a folder, language, or large file.
+Standalone file searches can still find the full inventories; inspect their
+metadata before loading them.
+
+The original notes and records remain at their existing paths. Use
+`records/<ID>.json`, the original note path, or `tb knowledge show RECORD_ID` for
+an explicit read. Private originals still require access to the local store.
+These sources remain citable. A note and its JSON mirror are copies of one source,
+not independent confirmation. Cleanup does not add analysis or strengthen a claim.
+No separate physical archive directory is introduced.
+
+The console cleanup command reports candidates without applying cleanup by
+default. Inspect that dry-run report before applying it:
+
+```sh
+tb knowledge clean
+tb knowledge clean --apply
+```
+
+Use `node /path/to/tb-tools/tb.mjs knowledge clean` if `tb` is unavailable.
+`--apply` removes derived search sections and vectors and skips pending learning
+jobs for the selected records. It preserves immutable files, IDs, citations, and
+completed study coverage. It does not delete evidence or rewrite lessons.
+
 ## Comment-writing guidance
 
 When writing or reviewing Thunderbird comments, apply the concise guidance in
