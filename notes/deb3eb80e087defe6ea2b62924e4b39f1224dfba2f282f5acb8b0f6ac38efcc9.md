@@ -1,0 +1,18 @@
+<!-- knowledge: {"repository":"thunderbird","at":"2026-10-15T23:26:52.677Z","paths":["mail/themes/shared/mail/accountHubForms.css"],"source":{"reference":"knowledge-record:deb3eb80e087defe6ea2b62924e4b39f1224dfba2f282f5acb8b0f6ac38efcc9","recordId":"deb3eb80e087defe6ea2b62924e4b39f1224dfba2f282f5acb8b0f6ac38efcc9","status":"supported","publicationKey":"2959c8838a9bff15c93e7f0a433edb1c5961f7f59734fff8d071e06b0b6fdfb7"}} -->
+# Keep the reason for the Account Hub open-menu outline override
+
+D230469 initially proposed combining focus selectors and dropping the explicit open-state outline override. The author reported an unwanted system-color outline during keyboard opening; the reviewer accepted that reason and requested the toolkit-style comment. The landing and fixed accepted stylesheet keep the override and comment. Preserve this narrow reason when changing the Account Hub selector. The historical control was XUL; current styling also covers HTML select.menulist, so current platform behavior still needs a live check. This is not a general instruction to suppress keyboard focus outlines.
+
+Scope: Account Hub CSS comment rationale.
+
+## Evidence
+
+[Lesson record](../records/deb3eb80e087defe6ea2b62924e4b39f1224dfba2f282f5acb8b0f6ac38efcc9.json).
+
+- [Supporting record](../records/68a6e0befb83a1a7a11d179553bf81c70086395bd541e7eb331bb4187325924e.json)
+- [Supporting record](../records/9998825e192c30e78096166334978c87c39d4a3740482c86a6c90183d712cbff.json)
+- [Supporting record](../records/cd660fe934dbf767716a2c0688da84cfaac3aa48947e115f60ef200a5105ff0f.json)
+
+## Validation and limits
+
+Status: **supported**. Quoted evidence supports the claim; its interpretation still needs current-source checks.
