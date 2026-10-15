@@ -11,6 +11,19 @@ Git tools. Keep useful project lessons in this repository, including style,
 syntax, names, tests, architecture, and breakages. Local capture alone does not
 complete a knowledge contribution.
 
+## Thunderbird scope
+
+For Thunderbird work, exclude Suite and SeaMonkey from history ingestion,
+source analysis, knowledge retrieval, examples, style and naming guidance,
+implementation, verification, and review. Do not use suite/ files or Suite-only
+commits and discussions as evidence for Thunderbird behavior or conventions.
+Classify excluded commits from paths and metadata; do not study their bodies.
+For mixed commits, inspect only Thunderbird and shared code used by Thunderbird.
+Keep explicit exclusions separate from completed Thunderbird audits. Existing
+Suite records remain historical evidence and must not guide Thunderbird work.
+This is deliberate user-directed scope guidance; automatic learning must not
+change it.
+
 ## Required development workflow
 
 Read [WORKFLOW.md](WORKFLOW.md) before source edits or Git changes. Follow its
@@ -127,7 +140,7 @@ Choose style for the exact language, folder, file role, and section. Read the
 implementation, relevant callers, current per-file lint and formatter settings,
 inline exceptions, and nearby accepted code in the same component and harness.
 Separate required configuration, accepted local practice, and suggested defaults.
-Tests, shared test head files, fixtures, generated code, imported code, Suite,
+Tests, shared test head files, fixtures, generated code, imported code,
 privileged modules, content scripts, workers, and Storybook can have different
 rules. A test exception does not authorize the same operation in production code.
 One file can contain sections with different contracts. Check the actual receiver

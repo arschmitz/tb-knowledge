@@ -18,6 +18,14 @@ folder. Neither path replaces the console or personal variants. Skills are
 reviewed instructions; the console syncs them but does not index them as lesson
 evidence or run learning over their text.
 
+## Thunderbird scope
+
+Suite and SeaMonkey are excluded from all Thunderbird work, including source
+study, knowledge use, examples, style, implementation, verification, and review.
+For mixed commits, keep only Thunderbird and shared code used by Thunderbird.
+Read the deliberate scope guidance in AGENTS.md. Preserve older records without
+using Suite-only evidence to guide Thunderbird work.
+
 ## Start with a task
 
 Read AGENTS.md. Identify the repository (`thunderbird` or `tb-tools`), component,
@@ -138,7 +146,7 @@ Array.prototype.forEach when behavior stays the same and no stronger local
 contract applies. Preserve array operations that return values, index-controlled
 loops, snapshots, and custom scheduling APIs. Do not impose a blanket === rule
 or turn source counts into policy. Tests, shared helpers, fixtures, modules,
-workers, Storybook, Suite, and imported/generated code can have different rules.
+workers, Storybook, and imported/generated code can have different rules.
 Check resolved settings when overrides overlap.
 
 The console supplies the full concise guidance directly through
