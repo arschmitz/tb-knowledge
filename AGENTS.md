@@ -96,6 +96,13 @@ When writing or reviewing source comments or JSDoc:
 Read the implementation and relevant callers first. Add a comment when it explains
 a reason, constraint, caller contract, or non-obvious action. Follow the affected
 repository's comment coverage rules. Do not add narration for obvious code.
+
+When code is complex or its purpose or behavior is not obvious, suggest a short
+inline comment beside the relevant code. State what needs explaining and why.
+Read the implementation and relevant callers before proposing the explanation.
+Explain the reason, constraint, ordering, or non-obvious action. Do not invent
+intent or repeat what clear code already says.
+
 Use short, natural sentences with common words. Name the actor and target. For a
 function summary, use a concrete present-tense verb: "Returns...", "Sets...", or
 "Removes...". The function is the implied subject. For instructions, use "Use..."
@@ -189,6 +196,13 @@ make setup, actions, and expected results easy to distinguish. During writing,
 review, and verification, inspect this grouping separately from formatter and
 lint results. A formatter pass does not establish readable grouping. Do not
 impose fixed blank-line counts or add a blank line after every statement.
+
+When code is too dense or blank lines do not follow the logical steps, suggest
+where to add, remove, or move a blank line. Name the steps that belong together
+and the boundary that needs separation. Explain how the proposed grouping makes
+the flow easier to follow. Keep this as a readability suggestion unless the
+current grouping causes a concrete problem or violates an applicable rule. Do
+not treat a different but clear grouping as a defect.
 
 In tests, follow the actual harness and section: named tasks, assertion APIs,
 shared helpers, fixtures, setup, cleanup, and browser preference handling.

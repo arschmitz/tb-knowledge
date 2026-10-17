@@ -69,6 +69,13 @@ review, and verification, inspect this grouping separately from formatter and
 lint results. A formatter pass does not establish readable grouping. Do not
 impose fixed blank-line counts or add a blank line after every statement.
 
+When code is too dense or blank lines do not follow the logical steps, suggest
+where to add, remove, or move a blank line. Name the steps that belong together
+and the boundary that needs separation. Explain how the proposed grouping makes
+the flow easier to follow. Keep this as a readability suggestion unless the
+current grouping causes a concrete problem or violates an applicable rule. Do
+not treat a different but clear grouping as a defect.
+
 For a finding, identify the steps whose grouping makes the flow hard to follow
 and explain the useful boundary. Do not report a harmless grouping alternative
 as a defect or demand unrelated cleanup. Keep generated and imported code
@@ -187,6 +194,12 @@ an unenforced preference as a proposal. Platform-specific inline style can be a
 valid exception. Do not turn a provisional historical summary into a mandate.
 
 ## Comments and JSDoc
+
+When code is complex or its purpose or behavior is not obvious, suggest a short
+inline comment beside the relevant code. State what needs explaining and why.
+Read the implementation and relevant callers before proposing the explanation.
+Explain the reason, constraint, ordering, or non-obvious action. Do not invent
+intent or repeat what clear code already says.
 
 - Comments describe the current contract and surprising reason, constraint,
   ownership, ordering, or workaround. Avoid explaining obvious syntax or a
