@@ -85,6 +85,11 @@ completed study coverage. It does not delete evidence or rewrite lessons.
 
 ## Comment-writing guidance
 
+Read the [inline comment suggestions update](notes/934eefde-0f40-4747-981b-5d822f963d89.md).
+Suggest a short inline comment where code is complex or its purpose or behavior
+is not obvious. Explain the specific reason or constraint after checking the
+implementation and callers. Do not add narration for obvious code.
+
 When writing or reviewing Thunderbird comments, apply the concise guidance in
 AGENTS.md. It is supplied directly to console AI turns and to the configured local
 Codex instructions. It does not depend on a search match. Read the
@@ -132,6 +137,10 @@ Read the [blank-line grouping supplement](notes/230b3c5f-5f79-4d66-b1f4-2d8b8bb9
 for the manual layout check used in writing, review, and verification. Preserve
 useful groups and separate distinct logical steps when it helps the reader.
 Formatter and lint success do not establish readable grouping.
+Also read the [grouping suggestions update](notes/ba637239-57c0-41aa-bc79-d5e3140745c7.md).
+If code is too dense or blank lines do not follow its logical steps, suggest
+specific separators and explain the grouping. Keep clear alternatives as
+suggestions rather than defects.
 
 Read the [test-cleanup writing rule](notes/f706938f-ead2-4a9c-ad82-59db1d738286.md) with the practical guide.
 When writing tests, do not add `try/finally` blocks. Use harness setup and
