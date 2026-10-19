@@ -252,6 +252,14 @@ intent or repeat what clear code already says.
 
 ## Test style and other languages
 
+Every assertion must have a non-empty message that states the expected behavior.
+Apply this rule when writing assertions, including examples and local experiments,
+and during every review, self-review, verification, and repair flow. Check the
+actual assertion API and message argument, including assertions in shared helpers.
+Report missing or empty messages in assertions within the review scope, including
+other authors' patches. Do not treat a nearby comment or test name as the message.
+Keep unrelated assertions outside the requested change unchanged.
+
 Review test filenames, named tasks, harness-specific assertion APIs, messages,
 helper names, fixture names, and manifest entries together. Describe the expected
 behavior in assertion messages. When writing or self-reviewing tests, every

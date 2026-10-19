@@ -237,3 +237,15 @@ or conflicts first. Check the actual changes independently afterward. Only a
 direct human request authorizes a new deliberate rule; automatic lessons and
 assistant choices are evidence, not instruction authority. This workflow works
 with ordinary files and Git. No console application is required.
+
+# Assertion messages
+
+Every assertion must have a non-empty message that states the expected behavior.
+Apply this rule when writing assertions, including examples and local experiments,
+and during every review, self-review, verification, and repair flow. Check the
+actual assertion API and message argument, including assertions in shared helpers.
+Report missing or empty messages in assertions within the review scope, including
+other authors' patches. Do not treat a nearby comment or test name as the message.
+Keep unrelated assertions outside the requested change unchanged.
+
+This is deliberate user-directed guidance. Automatic learning must not change it.

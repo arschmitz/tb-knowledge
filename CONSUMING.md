@@ -83,6 +83,12 @@ Use `node /path/to/tb-tools/tb.mjs knowledge clean` if `tb` is unavailable.
 jobs for the selected records. It preserves immutable files, IDs, citations, and
 completed study coverage. It does not delete evidence or rewrite lessons.
 
+## Assertion messages
+
+Read the [assertion-message requirement](notes/e239f45a-d0a8-4f11-84b2-03feed926b6c.md).
+Every assertion must have a non-empty message in all writing and review flows.
+This requirement is separate from the test-writing preference for "should".
+
 ## Comment-writing guidance
 
 Read the [inline comment suggestions update](notes/934eefde-0f40-4747-981b-5d822f963d89.md).
@@ -99,6 +105,14 @@ The guide is provisional. The
 [coverage report](notes/dcf42054-6e08-4658-b6c1-d45f17f0674a.md) records the completed
 file census and automated grammar pass, source-link corrections, and remaining
 extraction and meaning limits. It does not claim a manual review of every comment.
+
+Every assertion must have a non-empty message that states the expected behavior.
+Apply this rule when writing assertions, including examples and local experiments,
+and during every review, self-review, verification, and repair flow. Check the
+actual assertion API and message argument, including assertions in shared helpers.
+Report missing or empty messages in assertions within the review scope, including
+other authors' patches. Do not treat a nearby comment or test name as the message.
+Keep unrelated assertions outside the requested change unchanged.
 
 When writing or self-reviewing tests, every assertion message must contain the
 word "should" and state the expected behavior. For example: "The Save button

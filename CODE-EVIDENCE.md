@@ -1,8 +1,10 @@
 # Use knowledge before writing code
 
-This workflow applies to code written with this knowledge repository. It does
-not add review criteria for someone else's patch. The user's test-writing rule
-still applies only when writing or self-reviewing tests.
+This evidence workflow applies to code written with this knowledge repository.
+Its preparation requirements do not add review criteria for someone else's patch.
+The separate user-directed assertion rule requires every assertion to have a
+non-empty message in all writing and review flows. The requirement to use the word "should" applies when writing or
+self-reviewing tests.
 
 The repository is usable on its own. Read its Markdown files with an editor,
 search with `rg`, and inspect source with Git. No console, database, embedding
