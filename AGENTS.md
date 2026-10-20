@@ -255,13 +255,22 @@ This is deliberate user-directed guidance. Automatic learning must not change it
 Apply these readability rules when writing, reviewing, verifying, or repairing
 code, including examples and local experiments:
 
-- Avoid deeply nested logic. Use guard clauses, early returns, or small named
-  helpers when they make the flow easier to follow. Preserve behavior, execution
-  order, cleanup, and the caller's contract. Do not impose a fixed nesting limit.
+- Always prefer early returns. Preserve behavior, execution order, cleanup, and
+  the caller's contract. Use guard clauses to keep the remaining work out of a
+  nested branch. Do not skip required work or cleanup.
+- Avoid deeply nested logic. Use small named helpers when they make the flow
+  easier to follow. Do not impose a fixed nesting limit.
 - Add short clarifying comments beside complex or non-obvious logic. Explain the
   reason, constraint, ordering, or effect that the reader cannot readily infer.
   Read the implementation and relevant callers first. Do not narrate obvious
   code or invent intent.
+- Prefer a blank line before a return.
+- Prefer a blank line after a block of variable declarations.
+- Prefer blank lines before and after control structures, such as loops,
+  if statements, and switch statements. Keep directly related statements grouped
+  when that makes the structure easier to read.
+- Always separate complex multiline calls from other statements with blank lines.
+  Do not add blank lines just inside block boundaries.
 - Use line breaks and blank lines where they make logical steps easier to follow.
   Keep related statements together. Separate distinct steps where useful. Follow
   the applicable formatter for line wrapping, then check logical grouping by hand.
