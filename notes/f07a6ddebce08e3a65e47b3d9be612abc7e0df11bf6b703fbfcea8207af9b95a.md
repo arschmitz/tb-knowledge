@@ -1,0 +1,21 @@
+<!-- knowledge: {"repository":"thunderbird","at":"2026-10-29T19:07:53.359Z","paths":["mail/base/test/browser/browser_virtualFolderEdit.js","mail/locales/en-US/chrome/messenger/messenger.properties","mail/locales/en-US/messenger/virtualFolderProperties.ftl","mailnews/base/content/virtualFolderProperties.js","python/l10n/tb_fluent_migrations/bug_1935334_virt_properties.py"],"source":{"reference":"knowledge-record:f07a6ddebce08e3a65e47b3d9be612abc7e0df11bf6b703fbfcea8207af9b95a","recordId":"f07a6ddebce08e3a65e47b3d9be612abc7e0df11bf6b703fbfcea8207af9b95a","status":"supported","publicationKey":"b80e1ce14c8e232e4b5f164dcf31c72cb6549d2b3d30ad1b006e92279d3f7887"}} -->
+# Saved-search count text and folder-name tooltip use separate localization paths
+
+The saved-search properties migration formats virtual-folder-sources-chosen with a numeric count through an explicit synchronous Localization. It guards an empty URI string to produce zero and keeps the verbose folder-name tooltip separate, removing that tooltip at zero. The concrete chosenFoldersCount binding matches the label ID. The fixed formatter resource list has only virtualFolderProperties.ftl, unlike the original two-resource getter. The migration preserves the old plural patterns through PLURALS and #1-to-count replacement. The changed test waits for pending document localization, but its existing message-less checks cover English two/three counts, not zero, singular, tooltip text or all locale categories.
+
+Scope: saved-search properties count localization.
+
+## Evidence
+
+[Lesson record](../records/f07a6ddebce08e3a65e47b3d9be612abc7e0df11bf6b703fbfcea8207af9b95a.json).
+
+- [Supporting record](../records/0aeaa79e2ac450c178d5be54e74de34ed426ced22a233167132aaf8c1f23e459.json)
+- [Supporting record](../records/12455c77155a97c5f14ff176e46e55e80b73a9262bebe854bea1458d966005b2.json)
+- [Supporting record](../records/44504e73f8a2380b7bd8e53d5ecc6bcad6cfa7d89573c51970412db9b04422a8.json)
+- [Supporting record](../records/6b715ab8b1f6a1c8d91f23a08acd87582a22fe100678a4425d59f995d999b236.json)
+- [Supporting record](../records/bcf9a50d73d5a0e94f8de9b3ead4260457780dc3db78ba26b2ae82ac8f5d16d8.json)
+- [Supporting record](../records/cb2c6f033e01020454a3dd83b4fb11b92caf620b40573ce63cdca90ec1889ed9.json)
+
+## Validation and limits
+
+Status: **supported**. Quoted evidence supports the claim; its interpretation still needs current-source checks.
