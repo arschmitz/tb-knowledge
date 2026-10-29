@@ -1,0 +1,24 @@
+<!-- knowledge: {"repository":"thunderbird","at":"2026-10-29T02:11:14.747Z","paths":["mail/components/accountcreation/views/email.mjs"],"source":{"reference":"knowledge-record:aca8a5fcae22502d14965b80ba169059acde76bd84d3d4d7ea3a8e50dffccdaf","recordId":"aca8a5fcae22502d14965b80ba169059acde76bd84d3d4d7ea3a8e50dffccdaf","status":"supported","publicationKey":"f0cf38f4a7c781856c99b36ca6093e0ecb3f1ab0545fd5dda87b2673a28f82f6"}} -->
+# Account Hub sync cancellation keeps its controller through both result checks
+
+The owned handler cancels and clears legacy Abortable objects, but aborts an AbortController without clearing it so later awaited work can inspect the signal. Both paths restore loading controls immediately. In each original OAuth/password sync branch, address-book discovery is awaited first, then throwIfAborted runs before calendar discovery; a second check runs after calendars and before setState. The controller is cleared after those checks or in the catch. These DAV helper calls do not receive that signal, so the source establishes result/next-stage suppression rather than immediate transport cancellation. The original catch leaves an error notification on sync selection, and sync cancellation has no account-removal operation. The verification call starts backend addition without awaiting its async completion, so account existence needs separate evidence. Accepted later code consolidates the branches, labels the action Skip and routes UserSkippedError to success; that later outcome is separate. A generic null/shared-controller race or every request cancellation timing was not executed or proven.
+
+Scope: mail/account-hub/sync-discovery-cancellation.
+
+## Evidence
+
+[Lesson record](../records/aca8a5fcae22502d14965b80ba169059acde76bd84d3d4d7ea3a8e50dffccdaf.json).
+
+- [Supporting record](../records/02feacca36c77b9c959c4fa9483be6befa243246358d044663ba057a7c67fa3c.json)
+- [Supporting record](../records/102888c6445131209e481c8377c97f2e3c86cb74156b0e68988ae12fc1f64bdd.json)
+- [Supporting record](../records/108250f3c03fe4acaa5e277d57f28174b090f8031dabdd1e403738b791d0fc18.json)
+- [Supporting record](../records/274d27de7690849bee6ce08997a946dd5d447ef1a1ed18c3c1044c0f7958f9ce.json)
+- [Supporting record](../records/795e4ccaf2f268e891af1f56c6b5658406cde28acf84bf9e5bb45653e742facc.json)
+- [Supporting record](../records/9f361983b2279bb5799c67fc0d67275ed84393c71f250e4cddd5fc03230702d7.json)
+- [Supporting record](../records/a2a5f8ceaa5a11e74b695cf505c8fb2cc3c1d109de570d4eae534bcd01628116.json)
+- [Supporting record](../records/c2e4a4783e31bcb862765d026d772f489f3ca4fd81f437d652c963c7897c1fc4.json)
+- [Supporting record](../records/d849caf9ff173c4b52b5394c14d362470462c0e6311d9dae0142f03a29d75e17.json)
+
+## Validation and limits
+
+Status: **supported**. Quoted evidence supports the claim; its interpretation still needs current-source checks.
